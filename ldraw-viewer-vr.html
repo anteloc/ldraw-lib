@@ -177,12 +177,25 @@
     font-family: 'Space Mono', monospace;
     font-size: 11px;
     color: var(--text);
-    flex: 1;
-    word-break: break-all;
-    line-height: 1.5;
+    line-height: 1.4;
   }
-  /* Fuse.js highlight spans injected into name */
-  .mb-result-name mark {
+  .mb-result-filename {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    color: var(--muted);
+    line-height: 1.3;
+  }
+  .mb-result-label {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    min-width: 0;
+    word-break: break-all;
+  }
+  /* Fuse.js highlight spans injected into name and filename */
+  .mb-result-name mark,
+  .mb-result-filename mark {
     background: none;
     color: var(--accent);
     font-weight: 700;
@@ -365,10 +378,10 @@ THREE.Mesh.prototype.raycast                      = acceleratedRaycast;
 // ─── Models and parts URLs ────────────────────────────────────────────────────
 const BASE_REPO = 'anteloc/ldraw-lib';
 const REPO_BRANCH = 'test-scheduled-updates';
-const PARTS_CDN = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/ldraw/`;
-const DEMO_MODEL = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/ldraw/models/car.ldr`;
-const GITHUB_API = `https://api.github.com/repos/${BASE_REPO}/contents/models?ref=${REPO_BRANCH}`;
-const RAW_BASE   = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/models/`;
+const PARTS_CDN     = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/ldraw/`;
+const DEMO_MODEL    = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/ldraw/models/car.ldr`;
+const MODELS_INDEX  = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/models-index.jsonl`;
+const RAW_BASE      = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/models/`;
 
 // ─── Renderer ─────────────────────────────────────────────────────────────────
 const container = document.getElementById('canvas-container');
@@ -1294,31 +1307,47 @@ const mbSearchEl  = document.getElementById('mb-search-input');
 const mbResultsEl = document.getElementById('mb-results');
 const mbStatusEl  = document.getElementById('mb-status');
 
-// ── Fetch model list once on page load ────────────────────────────────────────
+// ── Fetch model index once on page load ───────────────────────────────────────
+//
+// The index is a JSONL file — one JSON object per line:
+//   {"name":"filename.mpd","search_key":"Human Readable Name"}
+//
+// Fuse.js searches both search_key (primary) and name (fallback).
+// Results are capped at MAX_RESULTS for rendering performance.
+//
+const MAX_RESULTS = 50;
+
 async function fetchModelList() {
   try {
-    const res = await fetch(GITHUB_API);
+    const res = await fetch(MODELS_INDEX);
     if (!res.ok) throw new Error('HTTP ' + res.status);
-    const files = await res.json();
-    mbModels = files
-      .filter(f => f.type === 'file')
-      .map(f => ({ name: f.name, url: RAW_BASE + encodeURIComponent(f.name) }));
+    const text = await res.text();
 
-    // Build Fuse.js index on the raw filename exactly as-is
+    mbModels = text
+      .split('\n')
+      .filter(line => line.trim())
+      .map(line => {
+        const { name, search_key } = JSON.parse(line);
+        return { name, search_key, url: RAW_BASE + encodeURIComponent(name) };
+      });
+
     mbFuse = new Fuse(mbModels, {
-      keys: ['name'],
-      threshold: 0.4,       // 0=exact match, 1=match anything; 0.4 is forgiving but not noisy
-      distance: 200,        // allow match indices spread across a long filename
-      minMatchCharLength: 3,
-      includeScore: true,
-      includeMatches: true, // needed for character-level highlight indices
+      keys: [
+        { name: 'search_key', weight: 2 },  // human label — higher weight
+        { name: 'name',       weight: 1 },  // filename — fallback
+      ],
+      threshold:        0.35,
+      distance:         200,
+      minMatchCharLength: 2,
+      includeScore:     true,
+      includeMatches:   true,
     });
 
     mbStatusEl.textContent = mbModels.length + ' models available — type to search';
-    mbResultsEl.innerHTML = '';
+    mbResultsEl.innerHTML  = '';
   } catch (err) {
     mbStatusEl.textContent = 'Could not load model list — check internet connection';
-    mbResultsEl.innerHTML = '<div class="mb-empty">GitHub API unavailable.<br>Try the URL loader instead.</div>';
+    mbResultsEl.innerHTML  = '<div class="mb-empty">Index unavailable.<br>Try the URL loader instead.</div>';
     console.warn('Model list fetch failed:', err);
   }
 }
@@ -1326,7 +1355,7 @@ fetchModelList();
 
 // ── Open / close ──────────────────────────────────────────────────────────────
 window.openModelBrowser = function() {
-  if (renderer.xr.isPresenting) return; // no browser UI while in headset
+  if (renderer.xr.isPresenting) return;
   mbOverlay.classList.add('open');
   mbSearchEl.value = '';
   mbFocused = -1;
@@ -1376,44 +1405,52 @@ mbSearchEl.addEventListener('input', () => {
   const q = mbSearchEl.value.trim();
   mbFocused = -1;
 
-  if (q.length < 3) {
+  if (q.length < 2) {
     renderResults([]);
-    if (q.length === 0) {
-      mbStatusEl.textContent = mbModels.length
-        ? mbModels.length + ' models available — type to search'
-        : 'Loading…';
-    } else {
-      const need = 3 - q.length;
-      mbStatusEl.textContent = need + ' more character' + (need > 1 ? 's' : '') + ' needed…';
-    }
+    mbStatusEl.textContent = q.length === 0
+      ? (mbModels.length ? mbModels.length + ' models available — type to search' : 'Loading…')
+      : '1 more character needed…';
     return;
   }
 
   if (!mbFuse) { mbStatusEl.textContent = 'Model list not ready yet'; return; }
 
-  const results = mbFuse.search(q);
+  const all     = mbFuse.search(q);
+  const capped  = all.length > MAX_RESULTS;
+  const results = capped ? all.slice(0, MAX_RESULTS) : all;
+
   renderResults(results);
-  mbStatusEl.textContent = results.length
-    ? results.length + ' match' + (results.length !== 1 ? 'es' : '') + ' for "' + q + '"'
-    : 'No matches for "' + q + '"';
+  mbStatusEl.textContent = all.length === 0
+    ? 'No matches for "' + q + '"'
+    : capped
+      ? `Top ${MAX_RESULTS} of ${all.length} matches for "${q}"`
+      : all.length + ' match' + (all.length !== 1 ? 'es' : '') + ' for "' + q + '"';
 });
 
 // ── Render results list ───────────────────────────────────────────────────────
 function renderResults(results) {
   if (results.length === 0) {
     const q = mbSearchEl.value.trim();
-    mbResultsEl.innerHTML = q.length >= 3
+    mbResultsEl.innerHTML = q.length >= 2
       ? '<div class="mb-empty">No matches for "<b>' + escHtml(q) + '</b>".<br>Try a set number, part of the name,<br>or a different spelling.</div>'
       : '';
     return;
   }
 
-  mbResultsEl.innerHTML = results.map((r, idx) =>
-    '<div class="mb-result" data-idx="' + idx + '" data-url="' + escHtml(r.item.url) + '" data-name="' + escHtml(r.item.name) + '">' +
-    '<span class="mb-result-name">' + highlightMatches(r.item.name, r.matches) + '</span>' +
-    '<button class="mb-load-btn">Load</button>' +
-    '</div>'
-  ).join('');
+  mbResultsEl.innerHTML = results.map((r, idx) => {
+    const { name, search_key, url } = r.item;
+    const labelHtml    = highlightField(search_key, r.matches, 'search_key');
+    const filenameHtml = highlightField(name,       r.matches, 'name');
+    return (
+      '<div class="mb-result" data-idx="' + idx + '" data-url="' + escHtml(url) + '" data-name="' + escHtml(search_key || name) + '">' +
+        '<div class="mb-result-label">' +
+          '<span class="mb-result-name">'     + labelHtml    + '</span>' +
+          '<span class="mb-result-filename">' + filenameHtml + '</span>' +
+        '</div>' +
+        '<button class="mb-load-btn">Load</button>' +
+      '</div>'
+    );
+  }).join('');
 
   mbResultsEl.querySelectorAll('.mb-result').forEach(el => {
     el.addEventListener('click', () => loadFromBrowser(el.dataset.url, el.dataset.name));
@@ -1424,24 +1461,27 @@ function renderResults(results) {
   });
 }
 
-// ── Character-level highlight using Fuse match indices ────────────────────────
-function highlightMatches(name, matches) {
-  if (!matches || !matches.length) return escHtml(name);
-  // Collect all matched character positions into a Set
+// ── Character-level highlight for a single field ──────────────────────────────
+function highlightField(text, matches, key) {
+  if (!text) return '';
+  if (!matches || !matches.length) return escHtml(text);
+
   const marked = new Set();
   for (const m of matches) {
-    if (m.key === 'name') {
+    if (m.key === key) {
       for (const [start, end] of m.indices) {
         for (let i = start; i <= end; i++) marked.add(i);
       }
     }
   }
-  // Build highlighted HTML character by character
+
+  if (marked.size === 0) return escHtml(text);
+
   let html = '', inMark = false;
-  for (let i = 0; i < name.length; i++) {
-    if (marked.has(i) && !inMark)  { html += '<mark>'; inMark = true; }
-    if (!marked.has(i) && inMark)  { html += '</mark>'; inMark = false; }
-    html += escHtml(name[i]);
+  for (let i = 0; i < text.length; i++) {
+    if (marked.has(i)  && !inMark) { html += '<mark>'; inMark = true; }
+    if (!marked.has(i) &&  inMark) { html += '</mark>'; inMark = false; }
+    html += escHtml(text[i]);
   }
   if (inMark) html += '</mark>';
   return html;
