@@ -246,6 +246,11 @@
     font-family: 'Space Mono', monospace; font-size: 10px;
     color: var(--muted); margin-bottom: 8px;
   }
+  .model-list-item.selected .model-list-name { color: var(--accent); }
+  .model-list-item.selected { border-color: rgba(255,204,0,.25); }
+  /* Show move cursor when hovering canvas in drag-ready state */
+  #canvas-container.drag-ready  { cursor: grab; }
+  #canvas-container.drag-active { cursor: grabbing; }
 
 </style>
 </head>
@@ -315,9 +320,14 @@
       <div class="sidebar-title">Browser Controls</div>
       <div class="hint">
         Left drag — Orbit<br>
-        Right drag — Pan<br>
+        Right drag — Pan camera<br>
         Scroll — Zoom<br>
-        Double-click — Focus
+        Double-click — Focus<br>
+        <br>
+        <b>Move a model:</b><br>
+        Right-drag on model<br>
+        Click model, then<br>
+        arrow keys to nudge
       </div>
     </div>
     <div class="sidebar-section">
@@ -1030,6 +1040,7 @@ vrButton.insertAdjacentElement('afterend', arButton);
 
 // ─── LDraw & model state ──────────────────────────────────────────────────────
 let edgesVisible  = true;
+let selectedEntry = null;   // model currently selected for keyboard nudge
 
 // ─── UI helpers ───────────────────────────────────────────────────────────────
 const dropZone       = document.getElementById('drop-zone');
@@ -1067,7 +1078,7 @@ function renderModelList() {
   sceneModelListEl.innerHTML = '';
   for (const entry of models) {
     const item = document.createElement('div');
-    item.className = 'model-list-item';
+    item.className = 'model-list-item' + (entry === selectedEntry ? ' selected' : '');
 
     const nameEl = document.createElement('span');
     nameEl.className = 'model-list-name';
@@ -1092,6 +1103,8 @@ function removeEntry(entry) {
       endInteraction(slot);
     }
   }
+  // Deselect if this was the selected model
+  if (selectedEntry === entry) selectedEntry = null;
 
   const { mesh, pivot, root } = entry;
   root.remove(mesh);
@@ -1162,6 +1175,17 @@ function onModelLoaded(model, filename) {
   scene.add(model);
   const entry = createEntry(model, filename);
   models.push(entry);
+
+  // In browser mode, separate models along X so they don't stack on top of each other.
+  // Compute the right edge of all existing models and place the new one just past it.
+  if (models.length > 1) {
+    const existingBox = new THREE.Box3();
+    for (const e of models.slice(0, -1)) existingBox.expandByObject(e.mesh);
+    const newBox  = new THREE.Box3().setFromObject(model);
+    const newSize = newBox.getSize(new THREE.Vector3());
+    const gap     = newSize.x * 0.2;   // 20% of own width as breathing room
+    model.position.x = existingBox.max.x + gap + newSize.x / 2 - newBox.getCenter(new THREE.Vector3()).x;
+  }
 
   if (models.length === 1) dropZone.style.display = 'none';
   fitCamera();
@@ -1295,6 +1319,174 @@ renderer.domElement.addEventListener('dblclick', e => {
   const meshes = models.map(e => e.mesh);
   const hits = raycaster.intersectObjects(meshes, true);
   if (hits.length) { controls.target.copy(hits[0].point); controls.update(); }
+});
+
+// ─── Browser model drag & selection ──────────────────────────────────────────
+//
+// Right-click drag on a model → move it in X/Z on its own ground plane.
+// Left-click on a model       → select it (arrow keys nudge it).
+// Right-click on empty space  → falls through to OrbitControls pan.
+// Quest 3 browser: click-and-hold (150 ms) triggers drag same as right-drag.
+//
+const NUDGE_STEP    = 100;   // LDU — about 4 cm at 1:1 scale
+const _browserRay   = new THREE.Raycaster();
+const _dragPlane    = new THREE.Plane();
+const _dragOffset   = new THREE.Vector3();
+const _planeHit     = new THREE.Vector3();
+const _ndcVec       = new THREE.Vector2();
+
+let _dragEntry      = null;   // entry currently being dragged
+let _dragActive     = false;
+let _holdTimer      = null;   // for Quest-style click-and-hold
+let _pointerDownPos = null;   // { x, y } at pointerdown
+
+function browserRaycast(clientX, clientY) {
+  const rect = renderer.domElement.getBoundingClientRect();
+  _ndcVec.set(
+    ((clientX - rect.left)  / rect.width)  * 2 - 1,
+    -((clientY - rect.top) / rect.height) * 2 + 1
+  );
+  _browserRay.setFromCamera(_ndcVec, camera);
+  const hits = _browserRay.intersectObjects(models.map(e => e.mesh), true);
+  return hits.length > 0 ? hits[0] : null;
+}
+
+function selectEntry(entry) {
+  selectedEntry = entry;
+  renderModelList();
+}
+
+function startDrag(entry, clientX, clientY) {
+  _dragEntry  = entry;
+  _dragActive = true;
+  controls.enabled = false;
+  container.classList.add('drag-active');
+  container.classList.remove('drag-ready');
+
+  // Build a horizontal plane at the model's current Y
+  _dragPlane.set(new THREE.Vector3(0, 1, 0), -entry.mesh.position.y);
+
+  // Record offset from plane hit to model origin so it doesn't snap to cursor
+  const rect = renderer.domElement.getBoundingClientRect();
+  _ndcVec.set(
+    ((clientX - rect.left) / rect.width) * 2 - 1,
+    -((clientY - rect.top) / rect.height) * 2 + 1
+  );
+  _browserRay.setFromCamera(_ndcVec, camera);
+  _browserRay.ray.intersectPlane(_dragPlane, _planeHit);
+  _dragOffset.set(
+    entry.mesh.position.x - _planeHit.x,
+    0,
+    entry.mesh.position.z - _planeHit.z
+  );
+}
+
+function moveDrag(clientX, clientY) {
+  if (!_dragActive || !_dragEntry) return;
+  const rect = renderer.domElement.getBoundingClientRect();
+  _ndcVec.set(
+    ((clientX - rect.left) / rect.width) * 2 - 1,
+    -((clientY - rect.top) / rect.height) * 2 + 1
+  );
+  _browserRay.setFromCamera(_ndcVec, camera);
+  if (_browserRay.ray.intersectPlane(_dragPlane, _planeHit)) {
+    _dragEntry.mesh.position.x = _planeHit.x + _dragOffset.x;
+    _dragEntry.mesh.position.z = _planeHit.z + _dragOffset.z;
+  }
+}
+
+function endDrag() {
+  if (_holdTimer) { clearTimeout(_holdTimer); _holdTimer = null; }
+  if (!_dragActive) return;
+  _dragActive = false;
+  _dragEntry  = null;
+  controls.enabled = true;
+  container.classList.remove('drag-active');
+}
+
+function hitToEntry(hit) {
+  // Walk up the hit object's ancestors to find which entry's mesh it belongs to
+  let obj = hit.object;
+  while (obj) {
+    const entry = models.find(e => e.mesh === obj);
+    if (entry) return entry;
+    obj = obj.parent;
+  }
+  return null;
+}
+
+// ── Pointer events (mouse + touch + Quest controller) ─────────────────────────
+renderer.domElement.addEventListener('pointerdown', e => {
+  if (renderer.xr.isPresenting || models.length === 0) return;
+  _pointerDownPos = { x: e.clientX, y: e.clientY };
+
+  const hit   = browserRaycast(e.clientX, e.clientY);
+  const entry = hit ? hitToEntry(hit) : null;
+
+  if (e.button === 2 && entry) {
+    // Right-click on model → immediate drag
+    e.preventDefault();
+    selectEntry(entry);
+    startDrag(entry, e.clientX, e.clientY);
+    return;
+  }
+
+  if (e.button === 0 && entry) {
+    // Left-click on model → select + arm hold-to-drag timer (Quest-style)
+    selectEntry(entry);
+    container.classList.add('drag-ready');
+    _holdTimer = setTimeout(() => {
+      if (_pointerDownPos) startDrag(entry, _pointerDownPos.x, _pointerDownPos.y);
+    }, 150);
+  }
+});
+
+renderer.domElement.addEventListener('pointermove', e => {
+  if (renderer.xr.isPresenting) return;
+  if (_dragActive) {
+    moveDrag(e.clientX, e.clientY);
+    return;
+  }
+  // Update drag-ready cursor when hovering over a model
+  if (!_dragActive && models.length > 0) {
+    const hit = browserRaycast(e.clientX, e.clientY);
+    container.classList.toggle('drag-ready', !!hit);
+  }
+});
+
+renderer.domElement.addEventListener('pointerup', e => {
+  if (renderer.xr.isPresenting) return;
+  if (_holdTimer) { clearTimeout(_holdTimer); _holdTimer = null; }
+  container.classList.remove('drag-ready');
+  _pointerDownPos = null;
+  if (_dragActive) { endDrag(); return; }
+  // Click on empty space → deselect
+  if (e.button === 0) {
+    const hit = browserRaycast(e.clientX, e.clientY);
+    if (!hit) { selectedEntry = null; renderModelList(); }
+  }
+});
+
+renderer.domElement.addEventListener('pointercancel', endDrag);
+
+// Suppress browser context menu so right-drag works uninterrupted
+renderer.domElement.addEventListener('contextmenu', e => e.preventDefault());
+
+// ── Keyboard nudge ────────────────────────────────────────────────────────────
+document.addEventListener('keydown', e => {
+  if (renderer.xr.isPresenting || !selectedEntry) return;
+  if (document.activeElement?.tagName === 'INPUT') return;
+  if (mbOverlay?.classList.contains('open')) return;   // model browser has its own arrow key nav
+  const step = NUDGE_STEP;
+  let moved = true;
+  switch (e.key) {
+    case 'ArrowLeft':  selectedEntry.mesh.position.x -= step; break;
+    case 'ArrowRight': selectedEntry.mesh.position.x += step; break;
+    case 'ArrowUp':    selectedEntry.mesh.position.z -= step; break;
+    case 'ArrowDown':  selectedEntry.mesh.position.z += step; break;
+    default: moved = false;
+  }
+  if (moved) e.preventDefault();
 });
 
 // ─── Model Browser ────────────────────────────────────────────────────────────
