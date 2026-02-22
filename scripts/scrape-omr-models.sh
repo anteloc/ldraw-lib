@@ -63,4 +63,9 @@ aria2c -i models-urls.txt \
     --split=4 \
     --file-allocation=none
 
+echo "[INFO] OMR models scraping completed. Starting indexing..."
+
+# indexer script located on the same directory as this script
+"$(dirname "$0")/index-models.sh" "$models_dir"
+
 echo "[INFO] Download completed. Models are stored in: $models_dir"
