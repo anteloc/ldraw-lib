@@ -389,7 +389,7 @@ THREE.Mesh.prototype.raycast                      = acceleratedRaycast;
 const BASE_REPO = 'anteloc/ldraw-lib';
 const REPO_BRANCH = 'test-scheduled-updates';
 const PARTS_CDN     = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/ldraw/`;
-const DEMO_MODEL    = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/ldraw/models/car.ldr`;
+const DEMO_MODEL    = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/models/8419-1.1.mpd`;
 const MODELS_INDEX  = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/models-index.jsonl`;
 const RAW_BASE      = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/models/`;
 
@@ -933,11 +933,33 @@ function onXRSessionStart(mode) {
     const box = new THREE.Box3().setFromObject(mesh);
     const centre = box.getCenter(new THREE.Vector3());
     mesh.position.sub(centre);
-    // Position shadow disc under first model pivot at floor level (approximation)
-    if (mode === 'mr') {
-      mrShadowDisc.position.set(pivot.position.x, pivot.position.y - 0.88, pivot.position.z);
-    }
   }
+
+  // Place pivots using the XR reference space viewer pose so we get the actual
+  // floor-relative eye height, then position models just below eye level.
+  // We poll every frame until the viewer pose is available (usually frame 1-2).
+  const placePivots = () => {
+    const frame    = renderer.xr.getFrame();
+    const refSpace = renderer.xr.getReferenceSpace();
+    if (!frame || !refSpace) { requestAnimationFrame(placePivots); return; }
+
+    const pose = frame.getViewerPose(refSpace);
+    if (!pose) { requestAnimationFrame(placePivots); return; }
+
+    // Eye height in the reference space — subtract 0.3 m for a comfortable
+    // slightly-below-eye-level position
+    // local-floor gives Y=0 at floor. Place models at comfortable table height.
+    const targetY = 0.9;
+    let x = 0;
+    for (const entry of models) {
+      entry.pivot.position.set(x, targetY, MODEL_PIVOT_Z);
+      x += MODEL_SPACING;
+    }
+    if (mode === 'mr') {
+      mrShadowDisc.position.set(0, 0.02, MODEL_PIVOT_Z);
+    }
+  };
+  requestAnimationFrame(placePivots);
 
 }
 
@@ -981,14 +1003,12 @@ function onXRSessionEnd() {
 }
 
 renderer.xr.addEventListener('sessionstart', () => {
-  // Determine if this is VR or MR by inspecting the active session mode
-  const session = renderer.xr.getSession();
-  const mode = session?.environmentBlendMode === 'additive' ||
-               session?.environmentBlendMode === 'alpha-blend'
-               ? 'mr' : 'vr';
-  onXRSessionStart(mode);
+  onXRSessionStart(_pendingXRMode || 'vr');
+  _pendingXRMode = null;
 });
 renderer.xr.addEventListener('sessionend', onXRSessionEnd);
+
+let _pendingXRMode = null;
 
 // ─── VR Button ────────────────────────────────────────────────────────────────
 function styleXRButton(btn, isMR) {
@@ -1015,7 +1035,43 @@ function styleXRButton(btn, isMR) {
 
 const controlsBar = document.querySelector('.controls');
 
-const vrButton = VRButton.createButton(renderer);
+// Create VR button manually so we can request 'local-floor' reference space.
+// VRButton.createButton() doesn't accept session options, so we replicate its
+// logic — check support, request the session ourselves, wire the button state.
+const vrButton = document.createElement('button');
+vrButton.textContent = 'ENTER VR';
+vrButton.disabled = true;
+
+if (navigator.xr) {
+  navigator.xr.isSessionSupported('immersive-vr').then(supported => {
+    vrButton.disabled = !supported;
+    vrButton.textContent = supported ? 'ENTER VR' : 'VR NOT SUPPORTED';
+  }).catch(() => { vrButton.disabled = true; vrButton.textContent = 'VR NOT SUPPORTED'; });
+
+  let vrSession = null;
+  vrButton.addEventListener('click', () => {
+    if (vrSession === null) {
+      navigator.xr.requestSession('immersive-vr', {
+        requiredFeatures: ['local-floor'],
+        optionalFeatures: ['bounded-floor', 'hand-tracking'],
+      }).then(session => {
+        _pendingXRMode = 'vr';
+        renderer.xr.setSession(session);
+        vrSession = session;
+        vrButton.textContent = 'EXIT VR';
+        session.addEventListener('end', () => {
+          vrSession = null;
+          vrButton.textContent = 'ENTER VR';
+        });
+      }).catch(err => console.error('VR session request failed:', err));
+    } else {
+      vrSession.end();
+    }
+  });
+} else {
+  vrButton.textContent = 'VR NOT SUPPORTED';
+}
+
 styleXRButton(vrButton, false);
 controlsBar.prepend(vrButton);
 
@@ -1024,6 +1080,7 @@ const arButton = ARButton.createButton(renderer, {
   requiredFeatures: ['local-floor'],
   optionalFeatures: ['bounded-floor', 'hand-tracking'],
 });
+arButton.addEventListener('click', () => { _pendingXRMode = 'mr'; }, true); // capture phase
 // Override the default label — ARButton says "START AR", we want "Enter MR"
 // We watch for the button to become enabled and relabel it
 const relabelAR = () => {
@@ -1252,15 +1309,19 @@ window.loadFromURL = function() {
 
 window.resetView = function() {
   if (renderer.xr.isPresenting) {
+    const frame    = renderer.xr.getFrame();
+    const refSpace = renderer.xr.getReferenceSpace();
+    const pose     = (frame && refSpace) ? frame.getViewerPose(refSpace) : null;
+    const targetY  = 0.9;
     let x = 0;
     for (const entry of models) {
       const { pivot, root } = entry;
       root.scale.setScalar(LDU_TO_METERS);
       root.rotation.set(0, 0, 0);
-      pivot.position.set(x, MODEL_PIVOT_Y, MODEL_PIVOT_Z);
+      pivot.position.set(x, targetY, MODEL_PIVOT_Z);
       x += MODEL_SPACING;
     }
-    mrShadowDisc.position.set(0, MODEL_PIVOT_Y - 0.88, MODEL_PIVOT_Z);
+    mrShadowDisc.position.set(0, 0.02, MODEL_PIVOT_Z);
     mrShadowDisc.scale.setScalar(1);
   } else {
     fitCamera();
@@ -1283,13 +1344,14 @@ window.toggleGrid = function() {
 
 // ─── Demo model ───────────────────────────────────────────────────────────────
 document.getElementById('btn-demo').addEventListener('click', () => {
-  showLoading('Loading demo…', 'Fetching packed .mpd from three.js GitHub');
-  const url = DEMO_MODEL;
+  showLoading('Loading demo…', 'Fetching packed .mpd from GitHub');
   const loader = makeLoader();
-  loader.load(url,
-    model => onModelLoaded(model, 'car (demo)'),
-    xhr => { if (xhr.total) loadingSub.textContent = 'Downloading… ' + Math.round(xhr.loaded / xhr.total * 100) + '%'; },
-    err => showError('Could not load demo — check your internet connection.\n' + err)
+  loader.preloadMaterials(PARTS_CDN + 'LDConfig.ldr').catch(() => {}).then(() =>
+    loader.load(DEMO_MODEL,
+      model => onModelLoaded(model, 'car (demo)'),
+      xhr => { if (xhr.total) loadingSub.textContent = 'Downloading… ' + Math.round(xhr.loaded / xhr.total * 100) + '%'; },
+      err => showError('Could not load demo — check your internet connection.\n' + err)
+    )
   );
 });
 
