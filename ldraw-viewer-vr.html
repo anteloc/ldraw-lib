@@ -286,14 +286,16 @@
     <div class="sidebar-section">
       <div class="sidebar-title">VR / MR Controls</div>
       <div class="hint">
-        <b>Right trigger</b> — Rotate<br>
-        <b>Right grip</b> — Pan<br>
-        <b>R thumbstick Y</b> — Zoom<br>
-        <b>L thumbstick Y</b> — Zoom<br>
-        <b>Both triggers</b> — Pinch scale<br>
+        Aim at the model, then:<br>
+        <b>Grip</b> — grab &amp; move<br>
+        <b>Trigger</b> — rotate (orbit)<br>
         <br>
-        Gold ray = rotating<br>
-        Blue ray = panning<br>
+        One action per controller.<br>
+        Grab + rotate together<br>
+        requires two controllers.<br>
+        <br>
+        White ray = ready<br>
+        Red ray = active<br>
         <br>
         <b>MR mode:</b> model floats<br>
         in your real room.<br>
@@ -328,8 +330,9 @@ import * as THREE from 'three';
 import { OrbitControls }  from 'three/addons/controls/OrbitControls.js';
 import { LDrawLoader }    from 'three/addons/loaders/LDrawLoader.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-import { VRButton }       from 'three/addons/webxr/VRButton.js';
-import { ARButton }       from 'three/addons/webxr/ARButton.js';
+import { VRButton }                from 'three/addons/webxr/VRButton.js';
+import { ARButton }                from 'three/addons/webxr/ARButton.js';
+import { XRControllerModelFactory } from 'three/addons/webxr/XRControllerModelFactory.js';
 
 // ─── Models and parts URLs ────────────────────────────────────────────────────
 const BASE_REPO = 'anteloc/ldraw-lib';
@@ -434,164 +437,277 @@ const vrRoot = new THREE.Group();
 vrRoot.scale.setScalar(LDU_TO_METERS);
 vrPivot.add(vrRoot);
 
-// ─── Controller ray helpers ───────────────────────────────────────────────────
-function makeRay(color) {
-  const geo = new THREE.BufferGeometry().setFromPoints([
-    new THREE.Vector3(0, 0, 0),
-    new THREE.Vector3(0, 0, -1),
-  ]);
-  const mat = new THREE.LineBasicMaterial({ color, transparent: true, opacity: 0.6 });
-  const line = new THREE.Line(geo, mat);
-  line.scale.z = 0.5;
-  line.visible = false;
-  return line;
-}
-const rayRight = makeRay(0xffcc00);
-const rayLeft  = makeRay(0x4488ff);
-scene.add(rayRight);
-scene.add(rayLeft);
+// ─── XR controllers ───────────────────────────────────────────────────────────
+//
+// Three.js exposes two separate tracked spaces per physical controller:
+//   getController(i)     → pointer / target-ray space  (laser origin)
+//   getControllerGrip(i) → grip space                  (where the hand holds it)
+//
+// The controller model from XRControllerModelFactory must be attached to the
+// grip space; the laser must be attached to the pointer space.
+// Both are added to the scene and their poses are updated automatically by the
+// XR runtime each frame — no manual position/quaternion sync needed.
 
-// ─── XR controller objects ────────────────────────────────────────────────────
-const ctrlRight = renderer.xr.getController(0);
-const ctrlLeft  = renderer.xr.getController(1);
-scene.add(ctrlRight);
-scene.add(ctrlLeft);
+const controllerModelFactory = new XRControllerModelFactory();
 
-// ─── Controller state ─────────────────────────────────────────────────────────
-const ctrl = {
-  right: {
-    obj: ctrlRight, ray: rayRight,
-    prevPos: new THREE.Vector3(), prevQuat: new THREE.Quaternion(),
-    hasPrev: false, trigger: false, grip: false, thumbY: 0, source: null,
-  },
-  left: {
-    obj: ctrlLeft, ray: rayLeft,
-    prevPos: new THREE.Vector3(), prevQuat: new THREE.Quaternion(),
-    hasPrev: false, trigger: false, grip: false, thumbY: 0, source: null,
-  },
-};
+// ── Laser constants ────────────────────────────────────────────────────────────
+const LASER_LENGTH        = 5;      // metres
+const LASER_RADIUS        = 0.003;  // metres — visible thickness in VR
+const COLOR_IDLE          = 0xffffff;
+const COLOR_GRABBED       = 0xff2222;
+const ROTATE_SENSITIVITY  = 10.0;  // rotation speed multiplier (tune after testing)
 
-function stateFor(xrCtrl) { return xrCtrl === ctrlRight ? ctrl.right : ctrl.left; }
+// ── Laser builder — returns a Group (cylinder beam + tip ring) ─────────────────
+//
+// A CylinderGeometry is used instead of Line because WebGL does not support
+// line widths > 1px on most drivers, making Line invisible at VR scale.
+// The cylinder is oriented along –Z (the pointer forward direction).
+function makeLaser() {
+  const group = new THREE.Group();
 
-function onSelectStart(e)  { stateFor(e.target).trigger = true; }
-function onSelectEnd(e)    { const s = stateFor(e.target); s.trigger = false; s.hasPrev = false; }
-function onSqueezeStart(e) { stateFor(e.target).grip = true; }
-function onSqueezeEnd(e)   { const s = stateFor(e.target); s.grip = false; s.hasPrev = false; }
-function onConnected(e)    { stateFor(e.target).source = e.data; }
-function onDisconnected(e) { stateFor(e.target).source = null; }
+  // Beam — thin cylinder from origin to LASER_LENGTH along –Z
+  const beamMat = new THREE.MeshBasicMaterial({ color: COLOR_IDLE, transparent: true, opacity: 0.6 });
+  const beam = new THREE.Mesh(new THREE.CylinderGeometry(LASER_RADIUS, LASER_RADIUS, LASER_LENGTH, 8), beamMat);
+  // CylinderGeometry stands along Y; rotate and translate so it lies along –Z
+  beam.rotation.x = Math.PI / 2;
+  beam.position.z = -LASER_LENGTH / 2;
+  group.add(beam);
 
-for (const xrCtrl of [ctrlRight, ctrlLeft]) {
-  xrCtrl.addEventListener('selectstart',  onSelectStart);
-  xrCtrl.addEventListener('selectend',    onSelectEnd);
-  xrCtrl.addEventListener('squeezestart', onSqueezeStart);
-  xrCtrl.addEventListener('squeezeend',   onSqueezeEnd);
-  xrCtrl.addEventListener('connected',    onConnected);
-  xrCtrl.addEventListener('disconnected', onDisconnected);
+  // Tip ring — faces along the ray axis (perpendicular to –Z)
+  const ringMat = new THREE.MeshBasicMaterial({ color: COLOR_IDLE, side: THREE.DoubleSide, transparent: true, opacity: 0.9 });
+  const ring = new THREE.Mesh(new THREE.RingGeometry(0.006, 0.012, 32), ringMat);
+  ring.position.z = -LASER_LENGTH;
+  group.add(ring);
+
+  return group;
 }
 
-let prevPinchDist = null;
+// ── Set the laser color on a pointer controller ────────────────────────────────
+function setLaserColor(pointer, color) {
+  // laser group is the first (and only) child of the pointer space
+  pointer.children[0].traverse(child => {
+    if (child.material) child.material.color.setHex(color);
+  });
+}
 
-// Reusable temporaries
-const _quatDelta = new THREE.Quaternion();
-const _quatInv   = new THREE.Quaternion();
-const _axis      = new THREE.Vector3();
-const _v3        = new THREE.Vector3();
+// ── Build both controllers ─────────────────────────────────────────────────────
+function buildController(index) {
+  // Pointer space — laser lives here
+  const pointer = renderer.xr.getController(index);
+  pointer.add(makeLaser());
+  scene.add(pointer);
 
-function updateXRControls() {
-  // Read thumbstick axes
-  for (const side of ['right', 'left']) {
-    const s = ctrl[side];
-    s.thumbY = 0;
-    if (s.source?.gamepad?.axes.length >= 4) s.thumbY = s.source.gamepad.axes[3];
+  // Grip space — hardware model lives here
+  const grip = renderer.xr.getControllerGrip(index);
+  grip.add(controllerModelFactory.createControllerModel(grip));
+  scene.add(grip);
+
+  return { pointer, grip };
+}
+
+const controllers = [buildController(0), buildController(1)];
+
+// ── Reusable temporaries (never allocated per-frame) ──────────────────────────
+const _ctrlWorldPos  = new THREE.Vector3();
+const _ctrlWorldQuat = new THREE.Quaternion();
+const _ctrlWorldQInv = new THREE.Quaternion();
+const _raycaster     = new THREE.Raycaster();
+const _rayOrigin     = new THREE.Vector3();
+const _rayDir        = new THREE.Vector3();
+const _fingerDelta   = new THREE.Vector3();
+const _oldArm        = new THREE.Vector3();
+const _newArm        = new THREE.Vector3();
+const _rotQuat       = new THREE.Quaternion();
+
+// ── Laser shortening ───────────────────────────────────────────────────────────
+//
+// Called every frame for each controller. Casts a ray from the pointer against
+// the current model, then scales the beam and repositions the tip ring to the
+// hit point (or restores full length on a miss).
+// Returns the hit point in world space, or null if the ray missed.
+//
+function updateLaser(pointer) {
+  const beam = pointer.children[0].children[0];   // laser group → beam cylinder
+  const ring = pointer.children[0].children[1];   // laser group → tip ring
+
+  if (!currentModel) {
+    beam.scale.z = 1;
+    ring.position.z = -LASER_LENGTH;
+    return null;
   }
 
-  // Update ray visuals
-  for (const side of ['right', 'left']) {
-    const s = ctrl[side];
-    s.ray.visible = true;
-    s.ray.position.copy(s.obj.position);
-    s.ray.quaternion.copy(s.obj.quaternion);
-    if (s.trigger)      { s.ray.material.color.setHex(0xffcc00); s.ray.material.opacity = 0.9; }
-    else if (s.grip)    { s.ray.material.color.setHex(0x4488ff); s.ray.material.opacity = 0.9; }
-    else                { s.ray.material.color.setHex(side === 'right' ? 0xffffff : 0x8888ff); s.ray.material.opacity = 0.35; }
+  pointer.getWorldPosition(_rayOrigin);
+  _rayDir.set(0, 0, -1).transformDirection(pointer.matrixWorld);
+  _raycaster.set(_rayOrigin, _rayDir);
+
+  const hits = _raycaster.intersectObject(currentModel, /* recursive */ true);
+
+  if (hits.length === 0) {
+    beam.scale.z = 1;
+    ring.position.z = -LASER_LENGTH;
+    return null;
+  }
+
+  const dist = hits[0].distance;
+  // Scale the beam (centred at –LASER_LENGTH/2) so it ends exactly at the surface
+  beam.scale.z = dist / LASER_LENGTH;
+  ring.position.z = -dist;
+  return hits[0].point;   // world-space hit point
+}
+
+// ── Active interaction ─────────────────────────────────────────────────────────
+//
+// Only one interaction at a time, from one controller.
+// 'grab'   (squeeze/grip) — translates the model, pierced by the laser
+// 'rotate' (trigger)      — rotates the model by dragging its surface,
+//                           like a finger pushing a toy
+//
+const interaction = {
+  type:       null,   // 'grab' | 'rotate' | null
+  controller: null,   // the active pointer Object3D
+};
+
+// ── Grab data ──────────────────────────────────────────────────────────────────
+const grabData = {
+  offsetPos:  new THREE.Vector3(),
+  offsetQuat: new THREE.Quaternion(),
+};
+
+// ── Rotate data ────────────────────────────────────────────────────────────────
+//
+// Finger-drag rotation: the controller position acts as a finger touching the
+// model surface at the hit point. Moving the finger drags that surface point,
+// rotating the model around its centroid.
+// If the ray misses in a given frame, rotation is paused (finger lifted off).
+//
+const rotateData = {
+  touchPointLocal: new THREE.Vector3(),   // hit point in vrRoot local space, locked at press
+  prevFingerPos:   new THREE.Vector3(),   // controller world pos last frame
+};
+
+// ── Interaction helpers ────────────────────────────────────────────────────────
+function isIdle() { return interaction.type === null; }
+
+function startGrab(pointer, hitPoint) {
+  pointer.getWorldPosition(_ctrlWorldPos);
+  pointer.getWorldQuaternion(_ctrlWorldQuat);
+  _ctrlWorldQInv.copy(_ctrlWorldQuat).invert();
+
+  grabData.offsetPos
+    .copy(vrPivot.position)
+    .sub(_ctrlWorldPos)
+    .applyQuaternion(_ctrlWorldQInv);
+
+  grabData.offsetQuat
+    .multiplyQuaternions(_ctrlWorldQInv, vrRoot.getWorldQuaternion(new THREE.Quaternion()));
+
+  interaction.type       = 'grab';
+  interaction.controller = pointer;
+  setLaserColor(pointer, COLOR_GRABBED);
+}
+
+function startRotate(pointer, hitPoint) {
+  // Store hit point in vrRoot local space so it stays glued to the model
+  vrRoot.worldToLocal(rotateData.touchPointLocal.copy(hitPoint));
+  pointer.getWorldPosition(rotateData.prevFingerPos);
+
+  interaction.type       = 'rotate';
+  interaction.controller = pointer;
+  setLaserColor(pointer, COLOR_GRABBED);
+}
+
+function endInteraction(pointer) {
+  if (interaction.controller !== pointer) return;
+  setLaserColor(pointer, COLOR_IDLE);
+  interaction.type       = null;
+  interaction.controller = null;
+}
+
+// ── Wire interaction events on both controllers ────────────────────────────────
+//
+// Squeeze (grip button) → grab/translate
+// Select  (trigger)     → rotate
+//
+// hitPoint is stored on pointer.userData each frame by updateLaser(), so it is
+// available to event handlers without an extra raycast.
+//
+for (const { pointer } of controllers) {
+  pointer.addEventListener('squeezestart', () => {
+    if (!isIdle()) return;
+    const hp = pointer.userData.hitPoint;
+    if (hp === null) return;
+    startGrab(pointer, hp);
+  });
+  pointer.addEventListener('squeezeend', () => endInteraction(pointer));
+
+  pointer.addEventListener('selectstart', () => {
+    if (!isIdle()) return;
+    const hp = pointer.userData.hitPoint;
+    if (hp === null) return;
+    startRotate(pointer, hp);
+  });
+  pointer.addEventListener('selectend', () => endInteraction(pointer));
+}
+
+// ── Main XR update — called every frame while presenting ──────────────────────
+function updateXRControls() {
+  // 1. Update laser visuals for both controllers and cache hit points
+  for (const { pointer } of controllers) {
+    pointer.userData.hitPoint = updateLaser(pointer);
   }
 
   if (!currentModel) return;
 
-  const R = ctrl.right;
-  const L = ctrl.left;
+  // 2. Apply active interaction
+  if (interaction.type === 'grab') {
+    const ctrl = interaction.controller;
+    ctrl.getWorldPosition(_ctrlWorldPos);
+    ctrl.getWorldQuaternion(_ctrlWorldQuat);
 
-  // ── Two-trigger pinch scale ────────────────────────────────────────────────
-  if (R.trigger && L.trigger) {
-    const dist = ctrlRight.position.distanceTo(ctrlLeft.position);
-    if (prevPinchDist !== null) {
-      const ratio = dist / prevPinchDist;
-      vrRoot.scale.setScalar(
-        THREE.MathUtils.clamp(vrRoot.scale.x * ratio, LDU_TO_METERS * 0.05, LDU_TO_METERS * 30)
-      );
-      // Keep shadow disc in sync
-      mrShadowDisc.scale.setScalar(vrRoot.scale.x / LDU_TO_METERS);
-    }
-    prevPinchDist = dist;
-    R.hasPrev = false; L.hasPrev = false;
-    return;
-  }
-  prevPinchDist = null;
+    vrPivot.position
+      .copy(grabData.offsetPos)
+      .applyQuaternion(_ctrlWorldQuat)
+      .add(_ctrlWorldPos);
 
-  // ── Right controller single-hand actions ───────────────────────────────────
-  const curPos  = ctrlRight.position;
-  const curQuat = ctrlRight.quaternion;
+    vrRoot.quaternion.multiplyQuaternions(_ctrlWorldQuat, grabData.offsetQuat);
 
-  // ROTATE — right trigger
-  if (R.trigger && !R.grip) {
-    if (R.hasPrev) {
-      _quatInv.copy(R.prevQuat).invert();
-      _quatDelta.multiplyQuaternions(curQuat, _quatInv);
-      const angle = 2 * Math.acos(THREE.MathUtils.clamp(_quatDelta.w, -1, 1));
-      if (angle > 0.0001) {
-        const sinHalf = Math.sqrt(1 - _quatDelta.w * _quatDelta.w);
-        if (sinHalf > 0.001) {
-          _axis.set(_quatDelta.x / sinHalf, _quatDelta.y / sinHalf, _quatDelta.z / sinHalf);
-        } else {
-          _axis.set(1, 0, 0);
-        }
-        vrRoot.rotateOnWorldAxis(
-          _axis.normalize().applyQuaternion(vrPivot.quaternion),
-          angle * 3.0
-        );
-      }
-    }
-    R.prevPos.copy(curPos);
-    R.prevQuat.copy(curQuat);
-    R.hasPrev = true;
+    mrShadowDisc.position.x = vrPivot.position.x;
+    mrShadowDisc.position.z = vrPivot.position.z;
   }
 
-  // PAN — right grip
-  if (R.grip && !R.trigger) {
-    if (R.hasPrev) {
-      _v3.copy(curPos).sub(R.prevPos);
-      vrPivot.position.add(_v3);
-      // Move shadow disc with the pivot
-      mrShadowDisc.position.x = vrPivot.position.x;
-      mrShadowDisc.position.z = vrPivot.position.z;
+  if (interaction.type === 'rotate') {
+    const ctrl = interaction.controller;
+
+    // Finger lifted — ray not hitting model this frame, pause rotation
+    if (ctrl.userData.hitPoint === null) {
+      ctrl.getWorldPosition(rotateData.prevFingerPos);
+      return;
     }
-    R.prevPos.copy(curPos);
-    R.prevQuat.copy(curQuat);
-    R.hasPrev = true;
-  }
 
-  if (!R.trigger && !R.grip) R.hasPrev = false;
+    ctrl.getWorldPosition(_ctrlWorldPos);
 
-  // ZOOM — thumbstick Y (either hand)
-  const zoomAxis = Math.abs(R.thumbY) > Math.abs(L.thumbY) ? R.thumbY : L.thumbY;
-  if (Math.abs(zoomAxis) > 0.1) {
-    const newScale = THREE.MathUtils.clamp(
-      vrRoot.scale.x * (1.0 - zoomAxis * 0.03),
-      LDU_TO_METERS * 0.05,
-      LDU_TO_METERS * 30
-    );
-    vrRoot.scale.setScalar(newScale);
-    mrShadowDisc.scale.setScalar(newScale / LDU_TO_METERS);
+    // How much did the finger move since last frame?
+    _fingerDelta.subVectors(_ctrlWorldPos, rotateData.prevFingerPos);
+
+    if (_fingerDelta.lengthSq() > 0) {
+      // Arm vector: centroid → touch point, fully in world space.
+      // applyMatrix4(matrixWorld) handles position + rotation + scale in one step,
+      // so the result is in metres regardless of vrRoot's LDU scale.
+      vrRoot.getWorldPosition(_newArm);   // _newArm = centroid (world space)
+      _oldArm.copy(rotateData.touchPointLocal)
+        .applyMatrix4(vrRoot.matrixWorld)
+        .sub(_newArm);                    // _oldArm = arm vector (world space, metres)
+
+      // Finger pushes the arm: new arm = old arm + (delta × sensitivity)
+      _newArm.copy(_oldArm).addScaledVector(_fingerDelta, ROTATE_SENSITIVITY);
+      _newArm.setLength(_oldArm.length());
+
+      // Rotation that brings oldArm direction to newArm direction
+      _rotQuat.setFromUnitVectors(_oldArm.normalize(), _newArm.normalize());
+      vrRoot.quaternion.premultiply(_rotQuat);
+    }
+
+    rotateData.prevFingerPos.copy(_ctrlWorldPos);
   }
 }
 
@@ -670,17 +786,18 @@ function onXRSessionStart(mode) {
     }
   }
 
-  // Reset controller state
-  for (const s of [ctrl.right, ctrl.left]) {
-    s.trigger = s.grip = false;
-    s.hasPrev = false;
-    s.thumbY = 0;
-  }
-  prevPinchDist = null;
 }
 
 function onXRSessionEnd() {
   setMode('browser');
+
+  // Drop any active interaction and reset laser colors
+  for (const { pointer } of controllers) {
+    setLaserColor(pointer, COLOR_IDLE);
+    pointer.userData.hitPoint = null;
+  }
+  interaction.type       = null;
+  interaction.controller = null;
 
   // Restore OrbitControls to the exact state they were in before XR started
   controls.reset();       // returns to saveState() snapshot
@@ -693,8 +810,6 @@ function onXRSessionEnd() {
   gridHelper.visible = document.getElementById('toggle-grid').classList.contains('on');
   ground.visible = true;
   mrShadowDisc.visible = false;
-  rayRight.visible = false;
-  rayLeft.visible = false;
 
   // Return model to scene root at original position
   if (currentModel) {
