@@ -17,8 +17,8 @@ jobs:
       - name: Run update LDraw library script
         run: bash scripts/update-lib.sh
 
-      # - name: Run OMR models script
-      #   run: bash scripts/scrape-omr-models.sh ./models
+      - name: Run OMR models script
+        run: bash scripts/scrape-omr-models.sh ./models
 
       - name: Push changes
         run: |

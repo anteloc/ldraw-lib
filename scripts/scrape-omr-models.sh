@@ -13,6 +13,7 @@ command -v aria2c >/dev/null 2>&1 \
     }
 
 ### Main script starts here ###
+echo "[INFO] Starting OMR models scraping..."
 
 models_dir="$1"
 
@@ -21,8 +22,7 @@ models_dir="$1"
 sets_url='https://library.ldraw.org/omr/sets'
 
 tmp_dir="$(mktemp -d)"
-# trap "rm -rf $tmp_dir" EXIT
-open $tmp_dir
+trap "rm -rf $tmp_dir" EXIT
 
 echo "[INFO] Temporary directory created at: $tmp_dir"
 
@@ -54,14 +54,7 @@ sets_dir="library.ldraw.org/omr/sets"
 # extract the urls of the models from the downloaded html files
 grep --no-filename -r -o -E 'https://library.ldraw.org/library/omr/.*\.(mpd|ldr)' $sets_dir > models-urls.txt
 
-# download the models using the extracted urls
-# wget -i models-urls.txt -P $models_dir --content-disposition --trust-server-names
-
-
-# parallelize the downloads, it will be faster
-# cat models-urls.txt | xargs -n 1 -P $num_jobs wget -P $models_dir 
-
-# Options
+# parallel download the models using aria2c, it will be faster than wget
 num_jobs=10
 
 aria2c -i models-urls.txt \
@@ -70,7 +63,4 @@ aria2c -i models-urls.txt \
     --split=4 \
     --file-allocation=none
 
-# TODO complete this
-
 echo "[INFO] Download completed. Models are stored in: $models_dir"
-
