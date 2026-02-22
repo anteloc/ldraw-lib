@@ -289,10 +289,10 @@
         Aim at the model, then:<br>
         <b>Grip</b> — grab &amp; move<br>
         <b>Trigger</b> — rotate (orbit)<br>
+        <b>Thumbstick ↑↓</b> — scale<br>
         <br>
-        One action per controller.<br>
-        Grab + rotate together<br>
-        requires two controllers.<br>
+        Scaling works alongside<br>
+        grab or rotate.<br>
         <br>
         White ray = ready<br>
         Red ray = active<br>
@@ -455,7 +455,8 @@ const LASER_LENGTH        = 5;      // metres
 const LASER_RADIUS        = 0.003;  // metres — visible thickness in VR
 const COLOR_IDLE          = 0xffffff;
 const COLOR_GRABBED       = 0xff2222;
-const ROTATE_SENSITIVITY  = 10.0;  // rotation speed multiplier (tune after testing)
+const ROTATE_SENSITIVITY  = 10.0;   // rotation speed multiplier
+const SCALE_SPEED         = 0.02;   // scale change per frame at full thumbstick deflection
 
 // ── Laser builder — returns a Group (cylinder beam + tip ring) ─────────────────
 //
@@ -632,6 +633,9 @@ function endInteraction(pointer) {
 // available to event handlers without an extra raycast.
 //
 for (const { pointer } of controllers) {
+  pointer.addEventListener('connected',    e => { pointer.userData.xrInputSource = e.data; });
+  pointer.addEventListener('disconnected', () => { pointer.userData.xrInputSource = null; });
+
   pointer.addEventListener('squeezestart', () => {
     if (!isIdle()) return;
     const hp = pointer.userData.hitPoint;
@@ -708,6 +712,27 @@ function updateXRControls() {
     }
 
     rotateData.prevFingerPos.copy(_ctrlWorldPos);
+  }
+
+  // 3. Thumbstick scaling — active on any controller whose laser hits the model,
+  //    regardless of what button interaction (if any) is currently active.
+  for (const { pointer } of controllers) {
+    if (pointer.userData.hitPoint === null) continue;
+
+    const source = pointer.userData.xrInputSource;
+    if (!source?.gamepad) continue;
+
+    // Thumbstick Y is axes[3] on Quest controllers; positive = forward = scale up
+    const thumbY = source.gamepad.axes[3] ?? 0;
+    if (Math.abs(thumbY) <= 0.1) continue;   // dead zone
+
+    const newScale = THREE.MathUtils.clamp(
+      vrRoot.scale.x * (1 + thumbY * SCALE_SPEED),
+      LDU_TO_METERS * 0.05,
+      LDU_TO_METERS * 30
+    );
+    vrRoot.scale.setScalar(newScale);
+    mrShadowDisc.scale.setScalar(newScale / LDU_TO_METERS);
   }
 }
 
@@ -794,7 +819,8 @@ function onXRSessionEnd() {
   // Drop any active interaction and reset laser colors
   for (const { pointer } of controllers) {
     setLaserColor(pointer, COLOR_IDLE);
-    pointer.userData.hitPoint = null;
+    pointer.userData.hitPoint      = null;
+    pointer.userData.xrInputSource = null;
   }
   interaction.type       = null;
   interaction.controller = null;
