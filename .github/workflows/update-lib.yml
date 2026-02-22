@@ -14,8 +14,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Run update script
+      - name: Run update LDraw library script
         run: bash scripts/update-lib.sh
+
+      # - name: Run OMR models script
+      #   run: bash scripts/scrape-omr-models.sh ./models
 
       - name: Push changes
         run: |

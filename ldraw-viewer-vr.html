@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LDraw Model Viewer v5</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap');
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #0e0e10; --panel: #16161a; --border: #2a2a30;
+    --accent: #ffcc00; --accent-mr: #00ddff; --text: #e8e8ec; --muted: #6b6b78;
+  }
+  body { background: var(--bg); color: var(--text); font-family: 'Syne', sans-serif; height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
+  header { display: flex; align-items: center; justify-content: space-between; padding: 12px 24px; border-bottom: 1px solid var(--border); background: var(--panel); flex-shrink: 0; }
+  .logo { display: flex; align-items: center; gap: 10px; }
+  .logo-brick { width: 28px; height: 20px; background: var(--accent); border-radius: 2px; position: relative; }
+  .logo-brick::before, .logo-brick::after { content: ''; position: absolute; top: -7px; width: 8px; height: 8px; background: var(--accent); border-radius: 50%; }
+  .logo-brick::before { left: 4px; } .logo-brick::after { right: 4px; }
+  .logo h1 { font-size: 16px; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
+  .logo span { color: var(--accent); }
+  .controls { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .btn { font-family: 'Space Mono', monospace; font-size: 11px; padding: 7px 14px; border-radius: 4px; border: 1px solid var(--border); background: transparent; color: var(--text); cursor: pointer; text-transform: uppercase; letter-spacing: .08em; transition: all .15s; white-space: nowrap; }
+  .btn:hover { border-color: var(--accent); color: var(--accent); }
+  .btn.primary { background: var(--accent); color: #000; border-color: var(--accent); font-weight: 700; }
+  .btn.primary:hover { background: #ffd633; }
+  /* MR button gets a cyan accent */
+  .btn.mr-btn { border-color: var(--accent-mr); color: var(--accent-mr); }
+  .btn.mr-btn:hover { background: var(--accent-mr); color: #000; }
+  .btn.mr-btn:disabled { border-color: var(--border); color: var(--muted); cursor: not-allowed; }
+  .workspace { flex: 1; display: flex; overflow: hidden; }
+  #canvas-container { flex: 1; position: relative; background: radial-gradient(ellipse at center, #1a1a2e 0%, #0e0e10 70%); }
+  canvas { display: block; }
+  .sidebar { width: 220px; background: var(--panel); border-left: 1px solid var(--border); display: flex; flex-direction: column; flex-shrink: 0; overflow-y: auto; }
+  .sidebar-section { padding: 16px; border-bottom: 1px solid var(--border); }
+  .sidebar-title { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: .15em; color: var(--muted); margin-bottom: 12px; }
+  .info-row { display: flex; justify-content: space-between; font-size: 11px; margin-bottom: 6px; font-family: 'Space Mono', monospace; }
+  .info-row .label { color: var(--muted); }
+  .info-row .value { color: var(--text); }
+  .toggle-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+  .toggle-label { font-size: 11px; font-family: 'Space Mono', monospace; text-transform: uppercase; letter-spacing: .05em; }
+  .toggle { width: 34px; height: 18px; background: var(--border); border-radius: 9px; cursor: pointer; position: relative; transition: background .2s; }
+  .toggle.on { background: var(--accent); }
+  .toggle::after { content: ''; position: absolute; top: 2px; left: 2px; width: 14px; height: 14px; background: #fff; border-radius: 50%; transition: left .2s; }
+  .toggle.on::after { left: 18px; }
+  .hint { font-size: 10px; color: var(--muted); font-family: 'Space Mono', monospace; line-height: 1.8; }
+  .hint b { color: var(--text); }
+  .url-input { width: 100%; background: var(--bg); border: 1px solid var(--border); border-radius: 3px; padding: 7px 8px; color: var(--text); font-family: 'Space Mono', monospace; font-size: 10px; margin-bottom: 6px; outline: none; }
+  .url-input:focus { border-color: var(--accent); }
+  .url-input::placeholder { color: var(--muted); }
+  #drop-zone { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; cursor: pointer; }
+  .drop-icon { width: 80px; height: 56px; border: 2px dashed var(--border); border-radius: 8px; display: flex; align-items: center; justify-content: center; transition: all .2s; }
+  .drop-zone-brick { width: 36px; height: 24px; background: var(--border); border-radius: 2px; position: relative; transition: background .2s; }
+  .drop-zone-brick::before, .drop-zone-brick::after { content: ''; position: absolute; top: -9px; width: 10px; height: 10px; background: var(--border); border-radius: 50%; transition: background .2s; }
+  .drop-zone-brick::before { left: 5px; } .drop-zone-brick::after { right: 5px; }
+  .drop-text { text-align: center; }
+  .drop-text h2 { font-size: 15px; font-weight: 600; }
+  .drop-text p { font-size: 11px; color: var(--muted); font-family: 'Space Mono', monospace; margin-top: 4px; }
+  #drop-zone.dragging .drop-icon, #drop-zone:hover .drop-icon { border-color: var(--accent); }
+  #drop-zone.dragging .drop-zone-brick, #drop-zone:hover .drop-zone-brick,
+  #drop-zone.dragging .drop-zone-brick::before, #drop-zone.dragging .drop-zone-brick::after,
+  #drop-zone:hover .drop-zone-brick::before, #drop-zone:hover .drop-zone-brick::after { background: var(--accent); }
+  #loading-overlay { display: none; position: absolute; inset: 0; background: rgba(14,14,16,.8); align-items: center; justify-content: center; flex-direction: column; gap: 14px; }
+  #loading-overlay.visible { display: flex; }
+  .spinner { width: 32px; height: 32px; border: 3px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin .8s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .loading-text { font-family: 'Space Mono', monospace; font-size: 12px; color: var(--text); }
+  .loading-sub { font-family: 'Space Mono', monospace; font-size: 10px; color: var(--muted); max-width: 280px; text-align: center; line-height: 1.6; }
+  #status { position: absolute; bottom: 16px; left: 16px; font-family: 'Space Mono', monospace; font-size: 11px; color: var(--muted); pointer-events: none; }
+  /* Mode badge — shown in VR/MR so user knows what mode they entered */
+  #mode-badge { position: absolute; top: 16px; right: 16px; font-family: 'Space Mono', monospace; font-size: 10px; padding: 4px 10px; border-radius: 3px; display: none; pointer-events: none; }
+  #mode-badge.vr { display: block; background: rgba(255,204,0,.15); border: 1px solid var(--accent); color: var(--accent); }
+  #mode-badge.mr { display: block; background: rgba(0,221,255,.15); border: 1px solid var(--accent-mr); color: var(--accent-mr); }
+  #file-input { display: none; }
+  .error-banner { display: none; position: absolute; top: 16px; left: 50%; transform: translateX(-50%); background: #2a1010; border: 1px solid #663333; border-radius: 6px; padding: 12px 20px; max-width: 420px; width: 90%; z-index: 10; }
+  .error-banner.visible { display: flex; align-items: flex-start; gap: 10px; }
+  .error-banner-text { flex: 1; font-size: 11px; font-family: 'Space Mono', monospace; color: #ff8888; line-height: 1.6; white-space: pre-wrap; }
+  .error-close { background: none; border: none; color: var(--muted); cursor: pointer; font-size: 16px; line-height: 1; padding: 0; flex-shrink: 0; }
+  /* MR shadow catcher — a subtle disc under the model in MR */
+  /* (handled via Three.js object, no CSS needed) */
+
+  /* ─── Model Browser Overlay ─────────────────────────────────────────────── */
+  #model-browser {
+    display: none;
+    position: fixed; inset: 0; z-index: 100;
+    background: rgba(8,8,10,.85);
+    backdrop-filter: blur(6px);
+    align-items: flex-start; justify-content: center;
+    padding-top: 80px;
+  }
+  #model-browser.open { display: flex; }
+
+  .mb-panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    width: 560px; max-width: 95vw;
+    max-height: 70vh;
+    display: flex; flex-direction: column;
+    box-shadow: 0 24px 64px rgba(0,0,0,.6);
+    overflow: hidden;
+  }
+
+  .mb-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 20px 12px;
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+  .mb-title {
+    font-size: 11px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: .15em; color: var(--muted);
+  }
+  .mb-close {
+    background: none; border: none; color: var(--muted);
+    cursor: pointer; font-size: 18px; line-height: 1; padding: 0;
+    transition: color .15s;
+  }
+  .mb-close:hover { color: var(--text); }
+
+  .mb-search-wrap {
+    padding: 14px 20px 10px;
+    flex-shrink: 0;
+    position: relative;
+  }
+  .mb-search {
+    width: 100%;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 10px 14px 10px 36px;
+    color: var(--text);
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    outline: none;
+    transition: border-color .15s;
+  }
+  .mb-search:focus { border-color: var(--accent); }
+  .mb-search::placeholder { color: var(--muted); }
+  .mb-search-icon {
+    position: absolute; left: 33px; top: 50%; transform: translateY(-50%);
+    color: var(--muted); font-size: 14px; pointer-events: none;
+  }
+
+  .mb-status {
+    padding: 0 20px 8px;
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    flex-shrink: 0;
+    min-height: 22px;
+  }
+
+  .mb-results {
+    flex: 1; overflow-y: auto;
+    padding: 0 12px 12px;
+  }
+  /* Custom scrollbar */
+  .mb-results::-webkit-scrollbar { width: 4px; }
+  .mb-results::-webkit-scrollbar-track { background: transparent; }
+  .mb-results::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+  .mb-result {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 10px 12px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all .12s;
+    margin-bottom: 4px;
+    gap: 12px;
+  }
+  .mb-result:hover { background: rgba(255,255,255,.04); border-color: var(--border); }
+  .mb-result.focused { background: rgba(255,204,0,.07); border-color: rgba(255,204,0,.3); }
+
+  .mb-result-name {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: var(--text);
+    flex: 1;
+    word-break: break-all;
+    line-height: 1.5;
+  }
+  /* Fuse.js highlight spans injected into name */
+  .mb-result-name mark {
+    background: none;
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  .mb-load-btn {
+    font-family: 'Space Mono', monospace; font-size: 10px;
+    padding: 5px 10px; border-radius: 3px;
+    border: 1px solid var(--border); background: transparent;
+    color: var(--muted); cursor: pointer; white-space: nowrap;
+    transition: all .12s; flex-shrink: 0;
+  }
+  .mb-result:hover .mb-load-btn,
+  .mb-result.focused .mb-load-btn { border-color: var(--accent); color: var(--accent); }
+
+  .mb-empty {
+    text-align: center; padding: 32px 20px;
+    font-family: 'Space Mono', monospace; font-size: 11px; color: var(--muted);
+    line-height: 1.8;
+  }
+
+  .mb-loading-indicator {
+    text-align: center; padding: 24px;
+    font-family: 'Space Mono', monospace; font-size: 11px; color: var(--muted);
+  }
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-brick"></div>
+    <h1>LDraw <span>Viewer</span> <span style="font-size:11px;opacity:.4;color:var(--text)">v5</span></h1>
+  </div>
+  <div class="controls">
+    <button class="btn" id="btn-demo">Load Demo</button>
+    <button class="btn" id="btn-browse" onclick="openModelBrowser()">Browse Models</button>
+    <button class="btn" onclick="resetView()">Reset View</button>
+    <button class="btn primary" onclick="document.getElementById('file-input').click()">Open File</button>
+    <input type="file" id="file-input" accept=".ldr,.mpd,.dat">
+    <!-- VR and MR buttons are injected here by JS after checking support -->
+  </div>
+</header>
+
+<div class="workspace">
+  <div id="canvas-container">
+    <div id="drop-zone">
+      <div class="drop-icon"><div class="drop-zone-brick"></div></div>
+      <div class="drop-text">
+        <h2>Drop LDraw File</h2>
+        <p>.ldr &nbsp;·&nbsp; .mpd &nbsp;·&nbsp; .dat</p>
+        <p style="margin-top:10px;font-size:10px;opacity:.6">Packed .mpd files work best<br>sub-parts are self-contained</p>
+      </div>
+    </div>
+    <div id="loading-overlay">
+      <div class="spinner"></div>
+      <div class="loading-text" id="loading-msg">Loading…</div>
+      <div class="loading-sub" id="loading-sub"></div>
+    </div>
+    <div class="error-banner" id="error-banner">
+      <div class="error-banner-text" id="error-text"></div>
+      <button class="error-close" onclick="document.getElementById('error-banner').classList.remove('visible')">✕</button>
+    </div>
+    <div id="mode-badge"></div>
+    <div id="status">No model loaded</div>
+  </div>
+
+  <div class="sidebar">
+    <div class="sidebar-section">
+      <div class="sidebar-title">Model Info</div>
+      <div class="info-row"><span class="label">File</span><span class="value" id="info-file">—</span></div>
+      <div class="info-row"><span class="label">Meshes</span><span class="value" id="info-parts">—</span></div>
+      <div class="info-row"><span class="label">Triangles</span><span class="value" id="info-tris">—</span></div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-title">Display</div>
+      <div class="toggle-row">
+        <span class="toggle-label">Edges</span>
+        <div class="toggle on" id="toggle-edges" onclick="toggleEdges()"></div>
+      </div>
+      <div class="toggle-row">
+        <span class="toggle-label">Grid</span>
+        <div class="toggle on" id="toggle-grid" onclick="toggleGrid()"></div>
+      </div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-title">Load URL</div>
+      <input type="text" class="url-input" id="url-input" placeholder="https://…/model.mpd">
+      <button class="btn" style="width:100%;margin-top:2px" onclick="loadFromURL()">Load</button>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-title">Browser Controls</div>
+      <div class="hint">
+        Left drag — Orbit<br>
+        Right drag — Pan<br>
+        Scroll — Zoom<br>
+        Double-click — Focus
+      </div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-title">VR / MR Controls</div>
+      <div class="hint">
+        <b>Right trigger</b> — Rotate<br>
+        <b>Right grip</b> — Pan<br>
+        <b>R thumbstick Y</b> — Zoom<br>
+        <b>L thumbstick Y</b> — Zoom<br>
+        <b>Both triggers</b> — Pinch scale<br>
+        <br>
+        Gold ray = rotating<br>
+        Blue ray = panning<br>
+        <br>
+        <b>MR mode:</b> model floats<br>
+        in your real room.<br>
+        Shadow disc shows<br>
+        where it sits.
+      </div>
+    </div>
+    <div class="sidebar-section" style="flex:1">
+      <div class="sidebar-title">File Format Tips</div>
+      <div class="hint">
+        Packed .mpd files load<br>fully self-contained.<br><br>
+        Plain .ldr files need<br>sub-parts fetched from<br>the LDraw CDN — requires<br>internet access.
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+  }
+}
+</script>
+
+<!-- Fuse.js for fuzzy search -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/7.0.0/fuse.min.js"></script>
+
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls }  from 'three/addons/controls/OrbitControls.js';
+import { LDrawLoader }    from 'three/addons/loaders/LDrawLoader.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { VRButton }       from 'three/addons/webxr/VRButton.js';
+import { ARButton }       from 'three/addons/webxr/ARButton.js';
+
+// ─── Models and parts URLs ────────────────────────────────────────────────────
+const BASE_REPO = 'anteloc/ldraw-lib';
+const PARTS_CDN = `https://raw.githubusercontent.com/${BASE_REPO}/master/ldraw/`;
+const DEMO_MODEL = `https://raw.githubusercontent.com/${BASE_REPO}/master/ldraw/models/car.ldr`;
+const GITHUB_API = `https://api.github.com/repos/${BASE_REPO}/contents/models?ref=master`;
+const RAW_BASE   = `https://raw.githubusercontent.com/${BASE_REPO}/master/models/`;
+
+// ─── Renderer ─────────────────────────────────────────────────────────────────
+const container = document.getElementById('canvas-container');
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+renderer.setPixelRatio(window.devicePixelRatio);
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.0;
+renderer.xr.enabled = true;
+container.appendChild(renderer.domElement);
+
+// ─── Scene ────────────────────────────────────────────────────────────────────
+const scene = new THREE.Scene();
+// Keep track of the "normal" browser background so we can restore it after MR
+const BROWSER_BG = new THREE.Color(0x0e0e10);
+scene.background = BROWSER_BG;
+
+const pmrem = new THREE.PMREMGenerator(renderer);
+scene.environment = pmrem.fromScene(new RoomEnvironment()).texture;
+
+// ─── Camera & browser controls ────────────────────────────────────────────────
+const camera = new THREE.PerspectiveCamera(45, 1, 0.01, 50000);
+camera.position.set(0, 400, 1200);
+
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+controls.dampingFactor = 0.06;
+
+// ─── Lights ───────────────────────────────────────────────────────────────────
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+scene.add(ambientLight);
+const dirLight = new THREE.DirectionalLight(0xffffff, 1.5);
+dirLight.position.set(500, 1000, 500);
+dirLight.castShadow = true;
+dirLight.shadow.mapSize.set(2048, 2048);
+Object.assign(dirLight.shadow.camera, { near: 1, far: 10000, left: -2000, right: 2000, top: 2000, bottom: -2000 });
+scene.add(dirLight);
+
+// ─── Grid & shadow ground (browser / VR only, hidden in MR) ──────────────────
+const gridHelper = new THREE.GridHelper(4000, 50, 0x333344, 0x222230);
+scene.add(gridHelper);
+
+const ground = new THREE.Mesh(
+  new THREE.PlaneGeometry(10000, 10000),
+  new THREE.ShadowMaterial({ opacity: 0.2 })
+);
+ground.rotation.x = -Math.PI / 2;
+ground.receiveShadow = true;
+scene.add(ground);
+
+// ─── MR shadow disc ───────────────────────────────────────────────────────────
+// In MR we hide the opaque grid but show a subtle circular shadow beneath the
+// model so it feels anchored to the surface rather than floating in mid-air.
+const mrShadowDisc = new THREE.Mesh(
+  new THREE.CircleGeometry(0.18, 64),
+  new THREE.MeshBasicMaterial({
+    color: 0x000000,
+    transparent: true,
+    opacity: 0.25,
+    depthWrite: false,
+  })
+);
+mrShadowDisc.rotation.x = -Math.PI / 2;
+mrShadowDisc.visible = false; // shown only in MR
+scene.add(mrShadowDisc);
+
+// ─── Resize ───────────────────────────────────────────────────────────────────
+function resize() {
+  const w = container.clientWidth, h = container.clientHeight;
+  renderer.setSize(w, h);
+  camera.aspect = w / h;
+  camera.updateProjectionMatrix();
+}
+resize();
+window.addEventListener('resize', resize);
+
+// ─── XR scene-root hierarchy ──────────────────────────────────────────────────
+//
+//  scene
+//    ├── (browser) currentModel   ← normal scale, LDU units
+//    └── vrPivot                  ← world position of model in XR
+//          └── vrRoot             ← uniform scale (LDU→metres) + rotation
+//                └── (XR) currentModel
+//
+// LDU → metres: 1 LDU = 0.4 mm = 0.0004 m, ×2.5 = hand-held / table-top scale
+const LDU_TO_METERS = 0.0004 * 2.5;
+
+const vrPivot = new THREE.Group();
+vrPivot.position.set(0, 0.9, -0.6); // 90 cm high, 60 cm in front
+scene.add(vrPivot);
+
+const vrRoot = new THREE.Group();
+vrRoot.scale.setScalar(LDU_TO_METERS);
+vrPivot.add(vrRoot);
+
+// ─── Controller ray helpers ───────────────────────────────────────────────────
+function makeRay(color) {
+  const geo = new THREE.BufferGeometry().setFromPoints([
+    new THREE.Vector3(0, 0, 0),
+    new THREE.Vector3(0, 0, -1),
+  ]);
+  const mat = new THREE.LineBasicMaterial({ color, transparent: true, opacity: 0.6 });
+  const line = new THREE.Line(geo, mat);
+  line.scale.z = 0.5;
+  line.visible = false;
+  return line;
+}
+const rayRight = makeRay(0xffcc00);
+const rayLeft  = makeRay(0x4488ff);
+scene.add(rayRight);
+scene.add(rayLeft);
+
+// ─── XR controller objects ────────────────────────────────────────────────────
+const ctrlRight = renderer.xr.getController(0);
+const ctrlLeft  = renderer.xr.getController(1);
+scene.add(ctrlRight);
+scene.add(ctrlLeft);
+
+// ─── Controller state ─────────────────────────────────────────────────────────
+const ctrl = {
+  right: {
+    obj: ctrlRight, ray: rayRight,
+    prevPos: new THREE.Vector3(), prevQuat: new THREE.Quaternion(),
+    hasPrev: false, trigger: false, grip: false, thumbY: 0, source: null,
+  },
+  left: {
+    obj: ctrlLeft, ray: rayLeft,
+    prevPos: new THREE.Vector3(), prevQuat: new THREE.Quaternion(),
+    hasPrev: false, trigger: false, grip: false, thumbY: 0, source: null,
+  },
+};
+
+function stateFor(xrCtrl) { return xrCtrl === ctrlRight ? ctrl.right : ctrl.left; }
+
+function onSelectStart(e)  { stateFor(e.target).trigger = true; }
+function onSelectEnd(e)    { const s = stateFor(e.target); s.trigger = false; s.hasPrev = false; }
+function onSqueezeStart(e) { stateFor(e.target).grip = true; }
+function onSqueezeEnd(e)   { const s = stateFor(e.target); s.grip = false; s.hasPrev = false; }
+function onConnected(e)    { stateFor(e.target).source = e.data; }
+function onDisconnected(e) { stateFor(e.target).source = null; }
+
+for (const xrCtrl of [ctrlRight, ctrlLeft]) {
+  xrCtrl.addEventListener('selectstart',  onSelectStart);
+  xrCtrl.addEventListener('selectend',    onSelectEnd);
+  xrCtrl.addEventListener('squeezestart', onSqueezeStart);
+  xrCtrl.addEventListener('squeezeend',   onSqueezeEnd);
+  xrCtrl.addEventListener('connected',    onConnected);
+  xrCtrl.addEventListener('disconnected', onDisconnected);
+}
+
+let prevPinchDist = null;
+
+// Reusable temporaries
+const _quatDelta = new THREE.Quaternion();
+const _quatInv   = new THREE.Quaternion();
+const _axis      = new THREE.Vector3();
+const _v3        = new THREE.Vector3();
+
+function updateXRControls() {
+  // Read thumbstick axes
+  for (const side of ['right', 'left']) {
+    const s = ctrl[side];
+    s.thumbY = 0;
+    if (s.source?.gamepad?.axes.length >= 4) s.thumbY = s.source.gamepad.axes[3];
+  }
+
+  // Update ray visuals
+  for (const side of ['right', 'left']) {
+    const s = ctrl[side];
+    s.ray.visible = true;
+    s.ray.position.copy(s.obj.position);
+    s.ray.quaternion.copy(s.obj.quaternion);
+    if (s.trigger)      { s.ray.material.color.setHex(0xffcc00); s.ray.material.opacity = 0.9; }
+    else if (s.grip)    { s.ray.material.color.setHex(0x4488ff); s.ray.material.opacity = 0.9; }
+    else                { s.ray.material.color.setHex(side === 'right' ? 0xffffff : 0x8888ff); s.ray.material.opacity = 0.35; }
+  }
+
+  if (!currentModel) return;
+
+  const R = ctrl.right;
+  const L = ctrl.left;
+
+  // ── Two-trigger pinch scale ────────────────────────────────────────────────
+  if (R.trigger && L.trigger) {
+    const dist = ctrlRight.position.distanceTo(ctrlLeft.position);
+    if (prevPinchDist !== null) {
+      const ratio = dist / prevPinchDist;
+      vrRoot.scale.setScalar(
+        THREE.MathUtils.clamp(vrRoot.scale.x * ratio, LDU_TO_METERS * 0.05, LDU_TO_METERS * 30)
+      );
+      // Keep shadow disc in sync
+      mrShadowDisc.scale.setScalar(vrRoot.scale.x / LDU_TO_METERS);
+    }
+    prevPinchDist = dist;
+    R.hasPrev = false; L.hasPrev = false;
+    return;
+  }
+  prevPinchDist = null;
+
+  // ── Right controller single-hand actions ───────────────────────────────────
+  const curPos  = ctrlRight.position;
+  const curQuat = ctrlRight.quaternion;
+
+  // ROTATE — right trigger
+  if (R.trigger && !R.grip) {
+    if (R.hasPrev) {
+      _quatInv.copy(R.prevQuat).invert();
+      _quatDelta.multiplyQuaternions(curQuat, _quatInv);
+      const angle = 2 * Math.acos(THREE.MathUtils.clamp(_quatDelta.w, -1, 1));
+      if (angle > 0.0001) {
+        const sinHalf = Math.sqrt(1 - _quatDelta.w * _quatDelta.w);
+        if (sinHalf > 0.001) {
+          _axis.set(_quatDelta.x / sinHalf, _quatDelta.y / sinHalf, _quatDelta.z / sinHalf);
+        } else {
+          _axis.set(1, 0, 0);
+        }
+        vrRoot.rotateOnWorldAxis(
+          _axis.normalize().applyQuaternion(vrPivot.quaternion),
+          angle * 3.0
+        );
+      }
+    }
+    R.prevPos.copy(curPos);
+    R.prevQuat.copy(curQuat);
+    R.hasPrev = true;
+  }
+
+  // PAN — right grip
+  if (R.grip && !R.trigger) {
+    if (R.hasPrev) {
+      _v3.copy(curPos).sub(R.prevPos);
+      vrPivot.position.add(_v3);
+      // Move shadow disc with the pivot
+      mrShadowDisc.position.x = vrPivot.position.x;
+      mrShadowDisc.position.z = vrPivot.position.z;
+    }
+    R.prevPos.copy(curPos);
+    R.prevQuat.copy(curQuat);
+    R.hasPrev = true;
+  }
+
+  if (!R.trigger && !R.grip) R.hasPrev = false;
+
+  // ZOOM — thumbstick Y (either hand)
+  const zoomAxis = Math.abs(R.thumbY) > Math.abs(L.thumbY) ? R.thumbY : L.thumbY;
+  if (Math.abs(zoomAxis) > 0.1) {
+    const newScale = THREE.MathUtils.clamp(
+      vrRoot.scale.x * (1.0 - zoomAxis * 0.03),
+      LDU_TO_METERS * 0.05,
+      LDU_TO_METERS * 30
+    );
+    vrRoot.scale.setScalar(newScale);
+    mrShadowDisc.scale.setScalar(newScale / LDU_TO_METERS);
+  }
+}
+
+// ─── Animation loop ───────────────────────────────────────────────────────────
+// IMPORTANT: controls.update() must NOT run while XR is presenting.
+// The XR runtime owns the camera pose during a session. If OrbitControls
+// also runs update() every frame — even with enabled=false, the damping
+// momentum still nudges camera.position — it fights the XR pose tracker
+// and produces the rapid head-movement jitter.
+renderer.setAnimationLoop((timestamp, frame) => {
+  if (renderer.xr.isPresenting && frame) {
+    updateXRControls();
+  } else {
+    controls.update(); // only touch the camera in browser mode
+  }
+  renderer.render(scene, camera);
+});
+
+// ─── Mode tracking ────────────────────────────────────────────────────────────
+// 'browser' | 'vr' | 'mr'
+let currentMode = 'browser';
+const modeBadge = document.getElementById('mode-badge');
+
+function setMode(mode) {
+  currentMode = mode;
+  modeBadge.className = '';
+  if (mode === 'vr') { modeBadge.className = 'vr'; modeBadge.textContent = '● VR'; }
+  if (mode === 'mr') { modeBadge.className = 'mr'; modeBadge.textContent = '● MR'; }
+}
+
+// ─── Shared XR session start / end logic ─────────────────────────────────────
+function onXRSessionStart(mode) {
+  setMode(mode);
+
+  // ── Flush OrbitControls damping before handing camera to XR ──────────────
+  // Even with controls.enabled = false, controls.update() with dampingFactor
+  // > 0 keeps applying residual momentum to camera.position every frame.
+  // Drain that momentum NOW before the XR runtime takes ownership of the
+  // camera, so there is zero leftover delta fighting the head-pose tracker.
+  controls.saveState();           // snapshot so we can restore on session end
+  controls.dampingFactor = 0;     // kill damping temporarily
+  controls.update();              // one tick to flush pending delta to zero
+  controls.dampingFactor = 0.06;  // restore (won't run again until session ends)
+  controls.enabled = false;       // disable input handling
+
+  gridHelper.visible = false;
+  ground.visible = false;
+
+  if (mode === 'mr') {
+    // Transparent background → passthrough shows through
+    scene.background = null;
+    renderer.setClearColor(0x000000, 0);
+    // Boost ambient slightly so model isn't too dark against bright room
+    ambientLight.intensity = 1.2;
+    mrShadowDisc.visible = true;
+  } else {
+    // VR: solid opaque black — gives the XR compositor a proper opaque layer.
+    // null/transparent in VR causes the compositor to blend against undefined
+    // content, contributing to silhouette-edge flicker.
+    scene.background = new THREE.Color(0x000000);
+    renderer.setClearColor(0x000000, 1);
+    ambientLight.intensity = 0.6;
+    mrShadowDisc.visible = false;
+  }
+
+  if (currentModel) {
+    scene.remove(currentModel);
+    vrRoot.add(currentModel);
+    // Re-centre so rotation pivots around model centre
+    const box = new THREE.Box3().setFromObject(currentModel);
+    const centre = box.getCenter(new THREE.Vector3());
+    currentModel.position.sub(centre);
+    // Position shadow disc under pivot at floor level (approximation)
+    if (mode === 'mr') {
+      mrShadowDisc.position.set(vrPivot.position.x, vrPivot.position.y - 0.88, vrPivot.position.z);
+    }
+  }
+
+  // Reset controller state
+  for (const s of [ctrl.right, ctrl.left]) {
+    s.trigger = s.grip = false;
+    s.hasPrev = false;
+    s.thumbY = 0;
+  }
+  prevPinchDist = null;
+}
+
+function onXRSessionEnd() {
+  setMode('browser');
+
+  // Restore OrbitControls to the exact state they were in before XR started
+  controls.reset();       // returns to saveState() snapshot
+  controls.enabled = true;
+
+  // Restore browser visuals
+  scene.background = BROWSER_BG;
+  renderer.setClearColor(0x000000, 1);
+  ambientLight.intensity = 0.6;
+  gridHelper.visible = document.getElementById('toggle-grid').classList.contains('on');
+  ground.visible = true;
+  mrShadowDisc.visible = false;
+  rayRight.visible = false;
+  rayLeft.visible = false;
+
+  // Return model to scene root at original position
+  if (currentModel) {
+    vrRoot.remove(currentModel);
+    currentModel.position.set(0, 0, 0);
+    scene.add(currentModel);
+    // Reset XR transforms for next session
+    vrRoot.scale.setScalar(LDU_TO_METERS);
+    vrRoot.rotation.set(0, 0, 0);
+    vrPivot.position.set(0, 0.9, -0.6);
+    fitCamera(currentModel);
+  }
+}
+
+renderer.xr.addEventListener('sessionstart', () => {
+  // Determine if this is VR or MR by inspecting the active session mode
+  const session = renderer.xr.getSession();
+  const mode = session?.environmentBlendMode === 'additive' ||
+               session?.environmentBlendMode === 'alpha-blend'
+               ? 'mr' : 'vr';
+  onXRSessionStart(mode);
+});
+renderer.xr.addEventListener('sessionend', onXRSessionEnd);
+
+// ─── VR Button ────────────────────────────────────────────────────────────────
+function styleXRButton(btn, isMR) {
+  Object.assign(btn.style, {
+    position: 'static', background: 'transparent',
+    fontFamily: "'Space Mono', monospace", fontSize: '11px',
+    padding: '7px 14px', borderRadius: '4px', cursor: 'pointer',
+    textTransform: 'uppercase', letterSpacing: '.08em', transition: 'all .15s',
+    width: 'auto', bottom: 'auto', left: 'auto', right: 'auto',
+    border: isMR ? '1px solid var(--accent-mr)' : '1px solid var(--border)',
+    color: isMR ? 'var(--accent-mr)' : 'var(--text)',
+  });
+  btn.onmouseenter = () => {
+    btn.style.background = isMR ? 'var(--accent-mr)' : 'var(--border)';
+    btn.style.color = isMR ? '#000' : 'var(--accent)';
+    if (!isMR) btn.style.borderColor = 'var(--accent)';
+  };
+  btn.onmouseleave = () => {
+    btn.style.background = 'transparent';
+    btn.style.color = isMR ? 'var(--accent-mr)' : 'var(--text)';
+    btn.style.borderColor = isMR ? 'var(--accent-mr)' : 'var(--border)';
+  };
+}
+
+const controlsBar = document.querySelector('.controls');
+
+const vrButton = VRButton.createButton(renderer);
+styleXRButton(vrButton, false);
+controlsBar.prepend(vrButton);
+
+// ARButton requires optionalFeatures for Quest 3 passthrough
+const arButton = ARButton.createButton(renderer, {
+  requiredFeatures: ['local-floor'],
+  optionalFeatures: ['bounded-floor', 'hand-tracking'],
+});
+// Override the default label — ARButton says "START AR", we want "Enter MR"
+// We watch for the button to become enabled and relabel it
+const relabelAR = () => {
+  if (arButton.textContent.includes('AR') || arButton.textContent.includes('SUPPORTED')) {
+    arButton.textContent = arButton.disabled ? 'MR NOT SUPPORTED' : 'ENTER MR';
+  }
+};
+new MutationObserver(relabelAR).observe(arButton, { childList: true, characterData: true, subtree: true });
+relabelAR();
+
+styleXRButton(arButton, true);
+// Insert MR button right after VR button
+vrButton.insertAdjacentElement('afterend', arButton);
+
+// ─── LDraw & model state ──────────────────────────────────────────────────────
+let currentModel  = null;
+let edgesVisible  = true;
+
+// ─── UI helpers ───────────────────────────────────────────────────────────────
+const dropZone       = document.getElementById('drop-zone');
+const loadingOverlay = document.getElementById('loading-overlay');
+const loadingMsg     = document.getElementById('loading-msg');
+const loadingSub     = document.getElementById('loading-sub');
+const statusEl       = document.getElementById('status');
+const errorBanner    = document.getElementById('error-banner');
+const errorText      = document.getElementById('error-text');
+
+function showLoading(msg, sub) {
+  loadingMsg.textContent = msg || 'Loading…';
+  loadingSub.textContent = sub || '';
+  loadingOverlay.classList.add('visible');
+  errorBanner.classList.remove('visible');
+}
+function hideLoading() { loadingOverlay.classList.remove('visible'); }
+function showError(msg) { hideLoading(); errorText.textContent = msg; errorBanner.classList.add('visible'); }
+function setStatus(s)   { statusEl.textContent = s; }
+
+function clearModel() {
+  if (currentModel) {
+    scene.remove(currentModel);
+    vrRoot.remove(currentModel);
+    currentModel.traverse(o => {
+      if (o.geometry) o.geometry.dispose();
+      if (o.material) [].concat(o.material).forEach(m => m.dispose());
+    });
+    currentModel = null;
+  }
+}
+
+function fitCamera(model) {
+  const box    = new THREE.Box3().setFromObject(model);
+  const size   = box.getSize(new THREE.Vector3());
+  const centre = box.getCenter(new THREE.Vector3());
+  const maxDim = Math.max(size.x, size.y, size.z);
+  const dist   = (maxDim / (2 * Math.tan(camera.fov * Math.PI / 360))) * 1.6;
+  controls.target.copy(centre);
+  camera.position.set(centre.x + dist * 0.3, centre.y + dist * 0.4, centre.z + dist);
+  controls.update();
+  gridHelper.position.y = box.min.y;
+  ground.position.y     = box.min.y;
+}
+
+function onModelLoaded(model, filename) {
+  clearModel();
+  dropZone.style.display = 'none';
+  errorBanner.classList.remove('visible');
+
+  model.rotation.x = Math.PI; // LDraw Y-down → Y-up
+  model.traverse(o => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } });
+
+  scene.add(model);
+  currentModel = model;
+  fitCamera(model);
+
+  let meshes = 0, tris = 0;
+  model.traverse(o => {
+    if (o.isMesh) {
+      meshes++;
+      const idx = o.geometry.index;
+      tris += idx ? idx.count / 3 : o.geometry.attributes.position.count / 3;
+    }
+  });
+  document.getElementById('info-file').textContent  = filename.slice(0, 18);
+  document.getElementById('info-parts').textContent = meshes.toLocaleString();
+  document.getElementById('info-tris').textContent  = Math.round(tris).toLocaleString();
+
+  edgesVisible = true;
+  document.getElementById('toggle-edges').classList.add('on');
+  hideLoading();
+  setStatus('Loaded: ' + filename);
+}
+
+function makeLoader() {
+  const l = new LDrawLoader();
+  l.setPartsLibraryPath(PARTS_CDN);
+  return l;
+}
+
+function loadText(text, filename) {
+  showLoading('Parsing model…', 'Sub-parts resolved from LDraw CDN — needs internet');
+  const loader = makeLoader();
+  loader.preloadMaterials(PARTS_CDN + 'LDConfig.ldr')
+    .catch(() => {})
+    .then(() => loader.parse(text,
+      model => onModelLoaded(model, filename),
+      err => {
+        console.error(err);
+        showError('Parse error: ' + (err?.message || String(err)) +
+          '\n\nPacked .mpd files work best — all sub-parts are bundled inside.');
+      }
+    ));
+}
+
+// ─── Public API ───────────────────────────────────────────────────────────────
+window.loadFile = function(file) {
+  if (!file) return;
+  showLoading('Reading file…', file.name);
+  const reader = new FileReader();
+  reader.onload = e => loadText(e.target.result, file.name);
+  reader.onerror = () => showError('Could not read file.');
+  reader.readAsText(file);
+};
+
+window.loadFromURL = function() {
+  const url = document.getElementById('url-input').value.trim();
+  if (!url) return;
+  showLoading('Fetching…', url);
+  const loader = makeLoader();
+  loader.preloadMaterials(PARTS_CDN + 'LDConfig.ldr').catch(() => {}).then(() =>
+    loader.load(url,
+      model => onModelLoaded(model, url.split('/').pop()),
+      xhr => { if (xhr.total) loadingSub.textContent = 'Downloading… ' + Math.round(xhr.loaded / xhr.total * 100) + '%'; },
+      err => showError('Could not load URL — CORS may be blocking it.\nTry downloading and opening locally.\n\n' + err)
+    )
+  );
+};
+
+window.resetView = function() {
+  if (renderer.xr.isPresenting) {
+    vrRoot.scale.setScalar(LDU_TO_METERS);
+    vrRoot.rotation.set(0, 0, 0);
+    vrPivot.position.set(0, 0.9, -0.6);
+    mrShadowDisc.position.set(0, vrPivot.position.y - 0.88, -0.6);
+    mrShadowDisc.scale.setScalar(1);
+  } else {
+    if (currentModel) fitCamera(currentModel);
+    else { camera.position.set(0, 400, 1200); controls.target.set(0, 0, 0); controls.update(); }
+  }
+};
+
+window.toggleEdges = function() {
+  edgesVisible = !edgesVisible;
+  document.getElementById('toggle-edges').classList.toggle('on', edgesVisible);
+  currentModel?.traverse(o => { if (o.isLineSegments) o.visible = edgesVisible; });
+};
+
+window.toggleGrid = function() {
+  const on = !gridHelper.visible;
+  gridHelper.visible = on;
+  document.getElementById('toggle-grid').classList.toggle('on', on);
+};
+
+// ─── Demo model ───────────────────────────────────────────────────────────────
+document.getElementById('btn-demo').addEventListener('click', () => {
+  showLoading('Loading demo…', 'Fetching packed .mpd from three.js GitHub');
+  const url = DEMO_MODEL;
+  const loader = makeLoader();
+  loader.load(url,
+    model => onModelLoaded(model, 'car (demo)'),
+    xhr => { if (xhr.total) loadingSub.textContent = 'Downloading… ' + Math.round(xhr.loaded / xhr.total * 100) + '%'; },
+    err => showError('Could not load demo — check your internet connection.\n' + err)
+  );
+});
+
+// ─── File input & drag-drop ───────────────────────────────────────────────────
+document.getElementById('file-input').addEventListener('change', function() {
+  if (this.files[0]) window.loadFile(this.files[0]);
+  this.value = '';
+});
+container.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('dragging'); });
+container.addEventListener('dragleave', () => dropZone.classList.remove('dragging'));
+container.addEventListener('drop', e => {
+  e.preventDefault();
+  dropZone.classList.remove('dragging');
+  if (e.dataTransfer.files[0]) window.loadFile(e.dataTransfer.files[0]);
+});
+dropZone.addEventListener('click', () => document.getElementById('file-input').click());
+
+// ─── Double-click to focus (browser only) ────────────────────────────────────
+renderer.domElement.addEventListener('dblclick', e => {
+  if (!currentModel || renderer.xr.isPresenting) return;
+  const rect = renderer.domElement.getBoundingClientRect();
+  const raycaster = new THREE.Raycaster();
+  raycaster.setFromCamera(
+    new THREE.Vector2(((e.clientX - rect.left) / rect.width) * 2 - 1, -((e.clientY - rect.top) / rect.height) * 2 + 1),
+    camera
+  );
+  const hits = raycaster.intersectObject(currentModel, true);
+  if (hits.length) { controls.target.copy(hits[0].point); controls.update(); }
+});
+
+// ─── Model Browser ────────────────────────────────────────────────────────────
+let mbModels  = [];   // [{ name, url }]
+let mbFuse    = null; // Fuse instance, built after model list loads
+let mbFocused = -1;   // keyboard-nav index into current result list
+
+const mbOverlay   = document.getElementById('model-browser');
+const mbSearchEl  = document.getElementById('mb-search-input');
+const mbResultsEl = document.getElementById('mb-results');
+const mbStatusEl  = document.getElementById('mb-status');
+
+// ── Fetch model list once on page load ────────────────────────────────────────
+async function fetchModelList() {
+  try {
+    const res = await fetch(GITHUB_API);
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const files = await res.json();
+    mbModels = files
+      .filter(f => f.type === 'file')
+      .map(f => ({ name: f.name, url: RAW_BASE + encodeURIComponent(f.name) }));
+
+    // Build Fuse.js index on the raw filename exactly as-is
+    mbFuse = new Fuse(mbModels, {
+      keys: ['name'],
+      threshold: 0.4,       // 0=exact match, 1=match anything; 0.4 is forgiving but not noisy
+      distance: 200,        // allow match indices spread across a long filename
+      minMatchCharLength: 3,
+      includeScore: true,
+      includeMatches: true, // needed for character-level highlight indices
+    });
+
+    mbStatusEl.textContent = mbModels.length + ' models available — type to search';
+    mbResultsEl.innerHTML = '';
+  } catch (err) {
+    mbStatusEl.textContent = 'Could not load model list — check internet connection';
+    mbResultsEl.innerHTML = '<div class="mb-empty">GitHub API unavailable.<br>Try the URL loader instead.</div>';
+    console.warn('Model list fetch failed:', err);
+  }
+}
+fetchModelList();
+
+// ── Open / close ──────────────────────────────────────────────────────────────
+window.openModelBrowser = function() {
+  if (renderer.xr.isPresenting) return; // no browser UI while in headset
+  mbOverlay.classList.add('open');
+  mbSearchEl.value = '';
+  mbFocused = -1;
+  renderResults([]);
+  mbStatusEl.textContent = mbModels.length
+    ? mbModels.length + ' models available — type to search'
+    : 'Loading model list…';
+  requestAnimationFrame(() => mbSearchEl.focus());
+};
+
+window.closeModelBrowser = function() {
+  mbOverlay.classList.remove('open');
+};
+
+// Close on backdrop click
+mbOverlay.addEventListener('click', e => { if (e.target === mbOverlay) closeModelBrowser(); });
+
+// Keyboard navigation
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && mbOverlay.classList.contains('open')) {
+    closeModelBrowser();
+    return;
+  }
+  if (!mbOverlay.classList.contains('open')) return;
+  const items = mbResultsEl.querySelectorAll('.mb-result');
+  if (!items.length) return;
+  if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    mbFocused = Math.min(mbFocused + 1, items.length - 1);
+    updateFocus(items);
+  } else if (e.key === 'ArrowUp') {
+    e.preventDefault();
+    mbFocused = Math.max(mbFocused - 1, 0);
+    updateFocus(items);
+  } else if (e.key === 'Enter' && mbFocused >= 0 && items[mbFocused]) {
+    items[mbFocused].querySelector('.mb-load-btn').click();
+  }
+});
+
+function updateFocus(items) {
+  items.forEach((el, i) => el.classList.toggle('focused', i === mbFocused));
+  if (items[mbFocused]) items[mbFocused].scrollIntoView({ block: 'nearest' });
+}
+
+// ── Search input ──────────────────────────────────────────────────────────────
+mbSearchEl.addEventListener('input', () => {
+  const q = mbSearchEl.value.trim();
+  mbFocused = -1;
+
+  if (q.length < 3) {
+    renderResults([]);
+    if (q.length === 0) {
+      mbStatusEl.textContent = mbModels.length
+        ? mbModels.length + ' models available — type to search'
+        : 'Loading…';
+    } else {
+      const need = 3 - q.length;
+      mbStatusEl.textContent = need + ' more character' + (need > 1 ? 's' : '') + ' needed…';
+    }
+    return;
+  }
+
+  if (!mbFuse) { mbStatusEl.textContent = 'Model list not ready yet'; return; }
+
+  const results = mbFuse.search(q);
+  renderResults(results);
+  mbStatusEl.textContent = results.length
+    ? results.length + ' match' + (results.length !== 1 ? 'es' : '') + ' for "' + q + '"'
+    : 'No matches for "' + q + '"';
+});
+
+// ── Render results list ───────────────────────────────────────────────────────
+function renderResults(results) {
+  if (results.length === 0) {
+    const q = mbSearchEl.value.trim();
+    mbResultsEl.innerHTML = q.length >= 3
+      ? '<div class="mb-empty">No matches for "<b>' + escHtml(q) + '</b>".<br>Try a set number, part of the name,<br>or a different spelling.</div>'
+      : '';
+    return;
+  }
+
+  mbResultsEl.innerHTML = results.map((r, idx) =>
+    '<div class="mb-result" data-idx="' + idx + '" data-url="' + escHtml(r.item.url) + '" data-name="' + escHtml(r.item.name) + '">' +
+    '<span class="mb-result-name">' + highlightMatches(r.item.name, r.matches) + '</span>' +
+    '<button class="mb-load-btn">Load</button>' +
+    '</div>'
+  ).join('');
+
+  mbResultsEl.querySelectorAll('.mb-result').forEach(el => {
+    el.addEventListener('click', () => loadFromBrowser(el.dataset.url, el.dataset.name));
+    el.addEventListener('mouseenter', () => {
+      mbFocused = parseInt(el.dataset.idx);
+      updateFocus(mbResultsEl.querySelectorAll('.mb-result'));
+    });
+  });
+}
+
+// ── Character-level highlight using Fuse match indices ────────────────────────
+function highlightMatches(name, matches) {
+  if (!matches || !matches.length) return escHtml(name);
+  // Collect all matched character positions into a Set
+  const marked = new Set();
+  for (const m of matches) {
+    if (m.key === 'name') {
+      for (const [start, end] of m.indices) {
+        for (let i = start; i <= end; i++) marked.add(i);
+      }
+    }
+  }
+  // Build highlighted HTML character by character
+  let html = '', inMark = false;
+  for (let i = 0; i < name.length; i++) {
+    if (marked.has(i) && !inMark)  { html += '<mark>'; inMark = true; }
+    if (!marked.has(i) && inMark)  { html += '</mark>'; inMark = false; }
+    html += escHtml(name[i]);
+  }
+  if (inMark) html += '</mark>';
+  return html;
+}
+
+function escHtml(s) {
+  return String(s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+// ── Load model chosen from browser ────────────────────────────────────────────
+function loadFromBrowser(url, name) {
+  closeModelBrowser();
+  showLoading('Loading model…', name);
+  const loader = makeLoader();
+  loader.preloadMaterials(PARTS_CDN + 'LDConfig.ldr').catch(() => {}).then(() =>
+    loader.load(
+      url,
+      model => onModelLoaded(model, name),
+      xhr  => { if (xhr.total) loadingSub.textContent = 'Downloading… ' + Math.round(xhr.loaded / xhr.total * 100) + '%'; },
+      err  => showError('Could not load model.\n\n' + err)
+    )
+  );
+}
+
+</script>
+<!-- ─── Model Browser Overlay ─────────────────────────────────────────────── -->
+<div id="model-browser">
+  <div class="mb-panel">
+    <div class="mb-header">
+      <span class="mb-title">Browse Official Models</span>
+      <button class="mb-close" onclick="closeModelBrowser()" title="Close">✕</button>
+    </div>
+    <div class="mb-search-wrap">
+      <span class="mb-search-icon">⌕</span>
+      <input
+        type="text"
+        class="mb-search"
+        id="mb-search-input"
+        placeholder="Type 3+ characters to search… (e.g. 7140, AT-ST, xwing)"
+        autocomplete="off"
+        spellcheck="false"
+      >
+    </div>
+    <div class="mb-status" id="mb-status">Loading model list…</div>
+    <div class="mb-results" id="mb-results">
+      <div class="mb-loading-indicator">Fetching model list from GitHub…</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
