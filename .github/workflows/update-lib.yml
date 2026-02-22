@@ -1,0 +1,22 @@
+name: Update LDraw Library
+
+on:
+  schedule:
+    - cron: '0 0 15 * *'
+  workflow_dispatch:
+
+jobs:
+  update-lib:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run update script
+        run: bash scripts/update-lib.sh
+
+      - name: Push changes
+        run: |
+          git push || echo "Nothing to push."
