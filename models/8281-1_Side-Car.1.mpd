@@ -1,0 +1,239 @@
+0 FILE 8281 - Main.ldr
+0 Main
+0 Name: 8281 - Main.ldr
+0 Author: Marc Giraudet [Mad_Marc]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+1 71 0.619 3.686 0.274 1 -0.017 0 0.017 1 -0.017 0 0.017 1 8281 - Side Car.ldr
+
+
+0 FILE 8281 - Side Car.ldr
+0 Side Car
+0 Name: 8281 - Side Car.ldr
+0 Author: Marc Giraudet [Mad_Marc]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+0 !LDCAD GROUP_DEF [topLevel=true] [LID=0] [GID=2lJI746Z0PN] [name=Group 1] [center=0 0 50]
+1 0 0 0 0 0 -1 0 -1 0 0 0 0 -1 32250.dat
+0 STEP
+1 71 -65 0 -80 1 0 0 0 -1 0 0 0 -1 44294.dat
+1 71 -45 0 0 1 0 0 0 -1 0 0 0 -1 32073.dat
+0 STEP
+1 0 -10 0 30 0 1 0 1 0 0 0 0 -1 32449.dat
+0 STEP
+1 2 -20 0 30 0 1 0 1 0 0 0 0 -1 32449.dat
+1 71 -15 0 -80 0 0 -1 1 0 0 0 -1 0 3713.dat
+1 71 -35 0 -80 0 0 -1 1 0 0 0 -1 0 3713.dat
+1 71 -55 0 -80 0 0 -1 1 0 0 0 -1 0 3713.dat
+0 STEP
+1 71 -35 0 60 -1 0 0 0 0 -1 0 -1 0 32073.dat
+1 4 5 0 60 -1 0 0 0 0 1 0 1 0 6536.dat
+0 STEP
+1 72 5 0 40 -1 0 0 0 0 -1 0 -1 0 6587.dat
+1 71 5 0 40 0 0 -1 1 0 0 0 -1 0 3713.dat
+0 STEP
+1 71 -15 -10 -40 1 0 0 0 1 0 0 0 1 8281 - Sub07.ldr
+0 STEP
+1 2 -50 0 30 0 1 0 1 0 0 0 0 -1 32449.dat
+1 0 -60 0 30 0 1 0 1 0 0 0 0 -1 32449.dat
+1 72 -45 0 40 1 0 0 0 -1 0 0 0 -1 32002.dat
+0 STEP
+1 0 -5 -40 0 1 0 0 0 -1 0 0 0 -1 32062.dat
+1 4 -35 -40 0 0 0 -1 1 0 0 0 -1 0 32034.dat
+1 0 -65 -40 0 1 0 0 0 -1 0 0 0 -1 32062.dat
+0 STEP
+1 0 -70 0 0 0 -1 0 -1 0 0 0 0 -1 32250.dat
+1 4 -75 0 60 -1 0 0 0 0 1 0 1 0 6536.dat
+0 STEP
+1 71 -85 0 -80 0 0 -1 1 0 0 0 -1 0 3713.dat
+1 4 -105 0 0 -1 0 0 0 0 -1 0 -1 0 32054.dat
+1 71 -80 -40 0 0 0 -1 1 0 0 0 -1 0 32123a.dat
+1 71 10 -40 0 0 0 -1 1 0 0 0 -1 0 32123a.dat
+0 STEP
+1 19 -35 -40 80 1 0 0 0 1 0 0 0 1 8281 - Sub12.ldr
+0 STEP
+1 0 -105 0 100 1 0 0 0 1 0 0 0 1 8281 - Sub13.ldr
+0 STEP
+1 71 -125 0 -80 0 0 -1 1 0 0 0 -1 0 3713.dat
+0 STEP
+1 19 -100 -103.599 -73.569 0 1 0 -1 0 0 0 0 1 8281 - Sub15.ldr
+0 STEP
+1 0 -125 -63.599 -93.569 -1 0 0 0 -0.295 -0.956 0 -0.956 0.295 32062.dat
+0 STEP
+1 0 -125 -71.432 9.878 1 0 0 0 0.9 -0.435 0 0.435 0.9 8281 - Sub17.ldr
+0 STEP
+1 71 -110 -54.012 -26.13 0 -1 0 0.9 0 -0.435 0.435 0 0.9 32056.dat
+0 STEP
+1 19 -125 -97.561 63.889 1 0 0 0 0.9 -0.435 0 0.435 0.9 8281 - Sub19.ldr
+0 STEP
+1 71 -140 -23.192 -49.215 0 -1 0 0.739 0 0.673 -0.673 0 0.739 6632.dat
+1 71 -150 -23.192 -49.215 0 -1 0 0.739 0 0.673 -0.673 0 0.739 6632.dat
+1 14 -35 -52.361 -63.511 1 0 0 0 0.588 0.809 0 -0.809 0.588 3482.dat
+1 256 -35 -52.361 -63.511 1 0 0 0 0.588 0.809 0 -0.809 0.588 2346.dat
+0 STEP
+1 14 25 0 40 0 0 1 0 1 0 -1 0 0 3482.dat
+1 256 25 0 40 0 0 -1 0 1 0 1 0 0 2346.dat
+1 19 -147 -14.985 78.584 0 0 -1 -0.187 0.982 0 0.982 0.187 0 8281 - Sub21.ldr
+0 STEP
+1 19 -125 -132.729 -114.09 1 0 0 0 0.956 0.295 0 -0.295 0.956 8281 - Sub22.ldr
+
+
+0 FILE 8281 - Sub07.ldr
+0 Sub07
+0 Name: 8281 - Sub07.ldr
+0 Author: Marc Giraudet [Mad_Marc]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+1 71 0 0 0 0 -1 0 0 0 -1 1 0 0 43857.dat
+1 0 -10 10 0 1 0 0 0 0 -1 0 1 0 2780.dat
+0 STEP
+1 1 -10 -10 0 -1 0 0 0 0.588 -0.809 0 -0.809 -0.588 43093.dat
+1 2 -20 10 40 0 -1 0 -1 0 0 0 0 -1 32140.dat
+0 STEP
+1 71 -20 -10 0 1 0 0 0 -0.809 0.588 0 -0.588 -0.809 6553.dat
+0 STEP
+1 71 -20 -31.843 -15.87 1 0 0 0 0.588 0.809 0 -0.809 0.588 6589.dat
+
+
+0 FILE 8281 - Sub12.ldr
+0 Sub12
+0 Name: 8281 - Sub12.ldr
+0 Author: Marc Giraudet [Mad_Marc]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+1 4 40 0 0 0 1 0 0 0 -1 -1 0 0 32014.dat
+1 71 0 0 0 -1 0 0 0 0 -1 0 -1 0 4519.dat
+0 STEP
+1 4 -40 0 0 0 -1 0 0 0 -1 1 0 0 32014.dat
+0 STEP
+1 19 -40 30 0 0 -1 0 -1 0 0 0 0 -1 3749.dat
+1 19 40 30 0 0 -1 0 -1 0 0 0 0 -1 3749.dat
+
+
+0 FILE 8281 - Sub13.ldr
+0 Sub13
+0 Name: 8281 - Sub13.ldr
+0 Author: Marc Giraudet [Mad_Marc]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+1 0 0 -18.731 -1.77 0 -1 0 -0.982 0 0.187 -0.187 0 -0.982 32271.dat
+0 STEP
+1 72 -20 -14.985 -21.416 1 0 0 0 -0.982 0.187 0 -0.187 -0.982 6587.dat
+1 72 -18 -23.192 -149.215 1 0 0 0 -0.673 0.739 0 -0.739 -0.673 6587.dat
+0 STEP
+1 71 -17 -14.985 -21.416 0 0 -1 -0.187 0.982 0 0.982 0.187 0 32198.dat
+0 STEP
+1 2 -20 -23.192 -149.215 0 -1 0 -0.739 0 -0.673 0.673 0 -0.739 32140.dat
+0 STEP
+1 0 -10 -36.661 -164 1 0 0 0 -0.673 0.739 0 -0.739 -0.673 2780.dat
+1 0 0 -18.33 -172 0 -1 0 0.4 0 -0.917 0.917 0 0.4 32523.dat
+
+
+0 FILE 8281 - Sub15.ldr
+0 Sub15
+0 Name: 8281 - Sub15.ldr
+0 Author: Marc Giraudet [Mad_Marc]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+0 !LDCAD GROUP_DEF [topLevel=false] [LID=0] [GID=2lJI746Z0PN]
+1 71 -7.68 0 10.91 0.956 0 -0.295 0 1 0 0.295 0 0.956 41677.dat
+0 STEP
+1 71 -13.58 -25 30.02 0 -0.956 -0.295 1 0 0 0 -0.295 0.956 4519.dat
+1 71 -7.68 -25 10.91 0 -0.956 -0.295 1 0 0 0 -0.295 0.956 4519.dat
+0 STEP
+1 71 -1.78 -10 -8.2 -0.956 0 -0.295 0 -1 0 -0.295 0 0.956 32056.dat
+0 STEP
+1 71 -1.78 -25 -8.2 0 0.295 -0.956 1 0 0 0 -0.956 -0.295 42003.dat
+0 STEP
+0 !LDCAD GROUP_NXT [ids=0] [nrs=-1]
+1 71 -58.59 -20 51.794 0.435 0 -0.9 0 1 0 0.9 0 0.435 32063.dat
+0 !LDCAD GROUP_NXT [ids=0] [nrs=2]
+1 71 -58.59 -30 51.794 0.435 0 -0.9 0 1 0 0.9 0 0.435 32063.dat
+1 0 -5.435 -25 -30.26 0.956 0 -0.295 0 1 0 0.295 0 0.956 2780.dat
+0 STEP
+1 71 -1.78 -40 -8.2 -0.956 0 -0.295 0 -1 0 -0.295 0 0.956 32056.dat
+1 71 -7.68 -50 10.91 -0.956 0 -0.295 0 -1 0 -0.295 0 0.956 41677.dat
+
+
+0 FILE 8281 - Sub17.ldr
+0 Sub17
+0 Name: 8281 - Sub17.ldr
+0 Author: Marc Giraudet [Mad_Marc]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+1 71 -15 0 -40 0 -1 0 1 0 0 0 0 1 32056.dat
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 32062.dat
+0 STEP
+1 2 -5 0 30 0 1 0 -1 0 0 0 0 1 32449.dat
+1 2 5 0 30 0 1 0 -1 0 0 0 0 1 32449.dat
+0 STEP
+1 0 0 0 -40 1 0 0 0 1 0 0 0 1 32062.dat
+1 0 0 40 -40 1 0 0 0 1 0 0 0 1 32062.dat
+
+
+0 FILE 8281 - Sub19.ldr
+0 Sub19
+0 Name: 8281 - Sub19.ldr
+0 Author: Marc Giraudet [Mad_Marc]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+1 0 0 0 0 1 0 0 0 0 1 0 -1 0 41678.dat
+0 STEP
+1 71 -10 -20 10 0 1 0 0 0 1 1 0 0 4274.dat
+1 71 10 -20 10 0 1 0 0 0 1 1 0 0 4274.dat
+0 STEP
+1 38 -10 -20 18 1 0 0 0 0 1 0 -1 0 6141.dat
+1 38 10 -20 18 1 0 0 0 0 1 0 -1 0 6141.dat
+1 0 0 0 0 1 0 0 0 0 1 0 -1 0 32062.dat
+
+
+0 FILE 8281 - Sub21.ldr
+0 Sub21
+0 Name: 8281 - Sub21.ldr
+0 Author: Marc Giraudet [Mad_Marc]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+1 14 0 0 0 1 0 0 0 1 0 0 0 1 2695.dat
+1 71 17.32 -10 -10 0 0 1 0 1 0 -1 0 0 4274.dat
+1 71 -17.32 10 -10 0 0 1 0 1 0 -1 0 0 4274.dat
+0 STEP
+1 14 0 0 -17 -1 0 0 0 1 0 0 0 -1 4185.dat
+0 STEP
+1 256 0 0 0 1 0 0 0 1 0 0 0 1 2696.dat
+
+
+0 FILE 8281 - Sub22.ldr
+0 Sub22
+0 Name: 8281 - Sub22.ldr
+0 Author: Marc Giraudet [Mad_Marc]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 3707.dat
+1 0 0 40 0 1 0 0 0 1 0 0 0 1 3705.dat
+1 2 -35 0 0 0 -1 0 0 0 1 -1 0 0 6632.dat
+0 STEP
+1 0 -25 60 0 0 -1 0 0 0 1 -1 0 0 32065.dat
+1 71 -15 40 0 0 0 -1 0 -1 0 -1 0 0 32123a.dat
+1 71 -15 0 0 0 0 -1 0 -1 0 -1 0 0 32123a.dat
+0 STEP
+1 0 0 0 0 -1 0 0 0 1 0 0 0 -1 32291.dat
+1 2 0 40 0 -1 0 0 0 0 1 0 1 0 6536.dat
+0 STEP
+1 71 15 40 0 0 0 -1 0 -1 0 -1 0 0 32123a.dat
+1 71 15 0 0 0 0 -1 0 -1 0 -1 0 0 32123a.dat
+1 0 0 120 0 1 0 0 0 1 0 0 0 1 3705.dat
+1 71 -35 120 0 0 0 -1 0 -1 0 -1 0 0 32123a.dat
+0 STEP
+1 14 -8 120 0 0 0 -1 0 -1 0 -1 0 0 2695.dat
+1 256 -8 120 0 0 0 -1 0 -1 0 -1 0 0 2696.dat
+0 STEP
+1 0 25 60 0 0 -1 0 0 0 1 -1 0 0 32065.dat
+1 71 -10 20 -10 0 -1 0 0 0 1 -1 0 0 4274.dat
+1 71 10 20 -10 0 -1 0 0 0 1 -1 0 0 4274.dat
+0 STEP
+1 71 35 120 0 0 0 -1 0 -1 0 -1 0 0 32123a.dat
+1 2 35 0 0 0 -1 0 0 0 1 -1 0 0 6632.dat
+1 47 0 20 -18 -1 0 0 0 0 1 0 1 0 3023.dat
+
+
+

@@ -1,0 +1,201 @@
+0 FILE 31072 - Main.ldr
+0 Main
+0 Name: 31072 - Main.ldr
+0 Author: Marc Belanger [MonsieurPoulet]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+
+0 !THEME Creator
+0 !KEYWORDS Car, Vehicles, Racing
+0 !HISTORY 2019-11-28 [MonsieurPoulet] Initial creation
+0 !HISTORY 2019-11-30 [MonsieurPoulet] Added Keywords
+
+
+
+
+0 !LDCAD GROUP_DEF [topLevel=true] [LID=0] [GID=80o0pgi0jAD] [name=Group 1] [center=0 0 0]
+0 !LDCAD GROUP_DEF [topLevel=true] [LID=1] [GID=LiF1vGtphVm] [name=Group 2] [center=0 0 0]
+0 !LDCAD GROUP_DEF [topLevel=true] [LID=2] [GID=2cFlogPSBKx] [name=Group 3] [center=0 0 0]
+0 !LDCAD GROUP_DEF [topLevel=true] [LID=3] [GID=EAl43lWKxEj] [name=Group 4] [center=0 0 0]
+0 !LDCAD GROUP_DEF [topLevel=true] [LID=4] [GID=DCVzKNnhvQ7] [name=Group 5] [center=0 0 0]
+0 !LDCAD GROUP_DEF [topLevel=true] [LID=5] [GID=6TDZa180Rsb] [name=Group 6] [center=0 0 0]
+0 !LDCAD GROUP_DEF [topLevel=true] [LID=6] [GID=AUbm4j7M3eM] [name=Group 7] [center=0 0 0]
+0 !LDCAD GROUP_DEF [topLevel=true] [LID=9] [GID=5iROzx47xa3] [name=Group 10] [center=0 0 0]
+0 !LDCAD GROUP_DEF [topLevel=true] [LID=10] [GID=2OpS6WLisxA] [name=Group 11] [center=0 0 0]
+0 !LDCAD GROUP_DEF [topLevel=true] [LID=12] [GID=LdmgpT9uMFH] [name=Group 13] [center=0 0 0]
+0 !LDCAD GROUP_DEF [topLevel=true] [LID=13] [GID=AWzOKjWlzqC] [name=Group 14] [center=0 0 0]
+
+1 0 0 0 0 0 0 1 0 1 0 -1 0 0 3020.dat
+0 STEP
+1 15 0 -8 -10 1 0 0 0 1 0 0 0 1 3023.dat
+0 STEP
+1 15 0 -32 50 1 0 0 0 1 0 0 0 1 11215.dat
+0 STEP
+1 72 10 -24 80 0 0 -1 0 1 0 1 0 0 3700.dat
+1 72 -10 -24 80 0 0 -1 0 1 0 1 0 0 3700.dat
+0 STEP
+1 15 10 0 70 0 0 -1 0 1 0 1 0 0 3623.dat
+1 15 -10 0 70 0 0 -1 0 1 0 1 0 0 3623.dat
+0 STEP
+0 !LDCAD GROUP_NXT [ids=0] [nrs=-1]
+1 71 0 0 -90 1 0 0 0 1 0 0 0 1 18649.dat
+0 !LDCAD GROUP_NXT [ids=0] [nrs=2]
+1 72 10 -24 -60 0 0 1 0 1 0 -1 0 0 3701.dat
+0 !LDCAD GROUP_NXT [ids=0] [nrs=3]
+1 72 -10 -24 -60 0 0 1 0 1 0 -1 0 0 3701.dat
+0 STEP
+1 15 0 -32 -70 1 0 0 0 1 0 0 0 1 3023.dat
+1 0 10 -32 -40 0 0 -1 0 1 0 1 0 0 44728.dat
+1 0 -10 -32 -40 0 0 1 0 1 0 -1 0 0 44728.dat
+0 STEP
+1 15 0 -40 -10 -1 0 0 0 1 0 0 0 -1 11215.dat
+0 STEP
+0 !LDCAD GROUP_NXT [ids=1] [nrs=-1]
+1 71 0 -14 -80 1 0 0 0 1 0 0 0 1 44294.dat
+0 !LDCAD GROUP_NXT [ids=1] [nrs=2]
+1 71 30 -14 -80 0 0 1 0 1 0 -1 0 0 3713.dat
+0 !LDCAD GROUP_NXT [ids=1] [nrs=3]
+1 71 -30 -14 -80 0 0 -1 0 1 0 1 0 0 3713.dat
+0 !LDCAD GROUP_NXT [ids=2] [nrs=-1]
+1 71 0 -14 80 1 0 0 0 1 0 0 0 1 44294.dat
+0 !LDCAD GROUP_NXT [ids=2] [nrs=2]
+1 71 30 -14 80 0 0 1 0 1 0 -1 0 0 3713.dat
+0 !LDCAD GROUP_NXT [ids=2] [nrs=3]
+1 71 -30 -14 80 0 0 -1 0 1 0 1 0 0 3713.dat
+0 STEP
+0 !LDCAD GROUP_NXT [ids=3] [nrs=-1]
+1 0 0 -32 -90 1 0 0 0 1 0 0 0 1 44728.dat
+0 !LDCAD GROUP_NXT [ids=3] [nrs=2]
+1 71 10 -12 -112 0 0 -1 -1 0 0 0 1 0 32028.dat
+0 !LDCAD GROUP_NXT [ids=3] [nrs=3]
+1 71 -10 -12 -112 0 0 1 1 0 0 0 1 0 32028.dat
+0 !LDCAD GROUP_NXT [ids=3] [nrs=5]
+1 15 -10 -12 -112 1 0 0 0 0 -1 0 1 0 61409.dat
+0 !LDCAD GROUP_NXT [ids=3] [nrs=4]
+1 15 10 -12 -112 1 0 0 0 0 -1 0 1 0 61409.dat
+0 STEP
+1 15 10 -40 60 0 0 -1 0 1 0 1 0 0 99780.dat
+1 15 -10 -40 60 0 0 1 0 1 0 -1 0 0 99780.dat
+1 0 0 -24 20 0 0 1 0 1 0 -1 0 0 3022.dat
+1 71 0 -40 90 1 0 0 0 1 0 0 0 1 18649.dat
+0 STEP
+0 !LDCAD GROUP_NXT [ids=4] [nrs=-1]
+1 15 10 -40 -80 0 0 -1 0 1 0 1 0 0 99780.dat
+0 !LDCAD GROUP_NXT [ids=4] [nrs=2]
+1 321 32 -42 -80 0 -1 0 0 0 -1 1 0 0 3023.dat
+0 !LDCAD GROUP_NXT [ids=5] [nrs=-1]
+1 15 -10 -40 -80 0 0 1 0 1 0 -1 0 0 99780.dat
+0 !LDCAD GROUP_NXT [ids=5] [nrs=2]
+1 321 -32 -42 -80 0 1 0 0 0 -1 -1 0 0 3023.dat
+0 STEP
+1 321 32 -32 0 0 -1 0 1 0 0 0 0 1 31072 - Right Door.ldr
+0 STEP
+1 321 -32 -32 0 0 1 0 1 0 0 0 0 -1 31072 - Left Door.ldr
+0 STEP
+1 321 40 -42 -60 0 -1 0 0 0 -1 1 0 0 3069b.dat
+1 321 -40 -42 -60 0 1 0 0 0 1 1 0 0 3069b.dat
+0 STEP
+1 15 0 -64 90 1 0 0 0 1 0 0 0 1 2877.dat
+1 321 -50 -56 40 1 0 0 0 1 0 0 0 1 61678.dat
+1 321 50 -56 40 1 0 0 0 1 0 0 0 1 61678.dat
+0 STEP
+1 15 -10 -48 -20 0 0 1 0 1 0 -1 0 0 92280.dat
+1 15 10 -48 -20 0 0 1 0 1 0 -1 0 0 92280.dat
+1 15 10 -48 60 1 0 0 0 1 0 0 0 1 92946.dat
+1 15 -10 -48 60 1 0 0 0 1 0 0 0 1 92946.dat
+0 STEP
+1 0 0 -56 70 1 0 0 0 1 0 0 0 1 3023.dat
+1 179 0 -72 -60 1 0 0 0 1 0 0 0 1 50943.dat
+0 STEP
+0 !LDCAD GROUP_NXT [ids=6] [nrs=-1]
+1 71 0 -40 -110 1 0 0 0 1 0 0 0 1 18649.dat
+0 !LDCAD GROUP_NXT [ids=6] [nrs=3]
+1 321 -10 -40 -100 0 0 1 0 1 0 -1 0 0 85984.dat
+0 !LDCAD GROUP_NXT [ids=6] [nrs=2]
+1 321 10 -40 -100 0 0 -1 0 1 0 1 0 0 85984.dat
+0 STEP
+1 15 0 -80 70 -1 0 0 0 1 0 0 0 -1 47759.dat
+0 STEP
+1 71 0 -54 -30 0 0 -1 -0.707 -0.707 0 -0.707 0.707 0 4697b.dat
+1 0 0 -65.314 -18.686 1 0 0 0 0.707 0.707 0 -0.707 0.707 30663.dat
+0 STEP
+0 !LDCAD GROUP_NXT [ids=9] [nrs=2]
+1 256 60 -14 -80 0 0 -1 0 1 0 1 0 0 89201.dat
+0 !LDCAD GROUP_NXT [ids=9] [nrs=-1]
+1 15 60 -14 -80 0 0 -1 0 1 0 1 0 0 55982.dat
+0 !LDCAD GROUP_NXT [ids=10] [nrs=-1]
+1 15 60 -14 80 0 0 -1 0 1 0 1 0 0 55982.dat
+0 !LDCAD GROUP_NXT [ids=10] [nrs=2]
+1 256 60 -14 80 0 0 -1 0 1 0 1 0 0 89201.dat
+0 !LDCAD GROUP_NXT [ids=12] [nrs=-1]
+1 15 -60 -14 -80 0 0 1 0 -1 0 1 0 0 55982.dat
+0 !LDCAD GROUP_NXT [ids=12] [nrs=2]
+1 256 -60 -14 -80 0 0 1 0 -1 0 1 0 0 89201.dat
+0 !LDCAD GROUP_NXT [ids=13] [nrs=-1]
+1 15 -60 -14 80 0 0 1 0 -1 0 1 0 0 55982.dat
+0 !LDCAD GROUP_NXT [ids=13] [nrs=2]
+1 256 -60 -14 80 0 0 1 0 -1 0 1 0 0 89201.dat
+
+
+
+
+0 FILE 31072 - Right Door.ldr
+0 Right Door
+0 Name: 31072 - Right Door.ldr
+0 Author: Marc Belanger [MonsieurPoulet]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+0 !THEME Creator
+0 !KEYWORDS Car, Vehicles, Racing
+0 !HISTORY 2019-11-28 [MonsieurPoulet] Initial creation
+0 !HISTORY 2019-11-30 [MonsieurPoulet] Added Keywords
+
+1 191 0 0 0 0 0 1 0 1 0 -1 0 0 3795.dat
+0 STEP
+1 191 0 -8 10 1 0 0 0 1 0 0 0 1 43722.dat
+1 321 20 -8 -40 0 0 -1 0 1 0 1 0 0 24307.dat
+0 STEP
+1 15 30 0 -30 0 0 -1 0 1 0 1 0 0 3623.dat
+0 STEP
+1 15 30 -8 0 0 0 -1 0 1 0 1 0 0 3023.dat
+1 191 0 0 -30 0 0 1 0 1 0 -1 0 0 11477.dat
+0 STEP
+1 15 10 -24 20 0 0 1 0 1 0 -1 0 0 99206.dat
+0 STEP
+1 15 30 -24 30 0 0 1 0 1 0 -1 0 0 6141.dat
+0 STEP
+1 321 30 -32 0 1 0 0 0 1 0 0 0 1 61678.dat
+
+
+
+
+0 FILE 31072 - Left Door.ldr
+0 Left Door
+0 Name: 31072 - Left Door.ldr
+0 Author: Marc Belanger [MonsieurPoulet]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+0 !THEME Creator
+0 !KEYWORDS Car, Vehicles, Racing
+0 !HISTORY 2019-11-28 [MonsieurPoulet] Initial creation
+0 !HISTORY 2019-11-30 [MonsieurPoulet] Added Keywords
+
+1 191 0 0 0 0 0 1 0 1 0 -1 0 0 3795.dat
+0 STEP
+1 321 20 -8 40 0 0 -1 0 1 0 1 0 0 24299.dat
+1 191 0 -8 -10 -1 0 0 0 1 0 0 0 -1 43723.dat
+0 STEP
+1 15 30 0 30 0 0 -1 0 1 0 1 0 0 3623.dat
+0 STEP
+1 15 30 -8 0 0 0 -1 0 1 0 1 0 0 3023.dat
+1 191 0 0 30 0 0 1 0 1 0 -1 0 0 11477.dat
+0 STEP
+1 15 10 -24 -20 0 0 1 0 1 0 -1 0 0 99206.dat
+0 STEP
+1 15 30 -24 -30 1 0 0 0 1 0 0 0 1 6141.dat
+0 STEP
+1 321 30 -32 0 -1 0 0 0 1 0 0 0 -1 61678.dat
+
+
+
+
