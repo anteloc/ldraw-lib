@@ -333,10 +333,11 @@ import { ARButton }       from 'three/addons/webxr/ARButton.js';
 
 // ─── Models and parts URLs ────────────────────────────────────────────────────
 const BASE_REPO = 'anteloc/ldraw-lib';
-const PARTS_CDN = `https://raw.githubusercontent.com/${BASE_REPO}/master/ldraw/`;
-const DEMO_MODEL = `https://raw.githubusercontent.com/${BASE_REPO}/master/ldraw/models/car.ldr`;
-const GITHUB_API = `https://api.github.com/repos/${BASE_REPO}/contents/models?ref=master`;
-const RAW_BASE   = `https://raw.githubusercontent.com/${BASE_REPO}/master/models/`;
+const REPO_BRANCH = 'test-scheduled-updates';
+const PARTS_CDN = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/ldraw/`;
+const DEMO_MODEL = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/ldraw/models/car.ldr`;
+const GITHUB_API = `https://api.github.com/repos/${BASE_REPO}/contents/models?ref=${REPO_BRANCH}`;
+const RAW_BASE   = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/models/`;
 
 // ─── Renderer ─────────────────────────────────────────────────────────────────
 const container = document.getElementById('canvas-container');
