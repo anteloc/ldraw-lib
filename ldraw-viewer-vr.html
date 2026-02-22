@@ -209,6 +209,31 @@
     font-family: 'Space Mono', monospace; font-size: 11px; color: var(--muted);
   }
 
+  /* ─── Scene model list ───────────────────────────────────────────────────── */
+  .model-list-item {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 5px 0; gap: 8px; border-bottom: 1px solid var(--border);
+  }
+  .model-list-item:last-child { border-bottom: none; }
+  .model-list-name {
+    font-family: 'Space Mono', monospace; font-size: 10px; color: var(--text);
+    flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .model-list-remove {
+    background: none; border: none; color: var(--muted); cursor: pointer;
+    font-size: 14px; line-height: 1; padding: 0 2px; flex-shrink: 0;
+    transition: color .15s;
+  }
+  .model-list-remove:hover { color: #ff5555; }
+  .model-list-empty {
+    font-family: 'Space Mono', monospace; font-size: 10px;
+    color: var(--muted); font-style: italic;
+  }
+  .model-list-count {
+    font-family: 'Space Mono', monospace; font-size: 10px;
+    color: var(--muted); margin-bottom: 8px;
+  }
+
 </style>
 </head>
 <body>
@@ -253,10 +278,9 @@
 
   <div class="sidebar">
     <div class="sidebar-section">
-      <div class="sidebar-title">Model Info</div>
-      <div class="info-row"><span class="label">File</span><span class="value" id="info-file">—</span></div>
-      <div class="info-row"><span class="label">Meshes</span><span class="value" id="info-parts">—</span></div>
-      <div class="info-row"><span class="label">Triangles</span><span class="value" id="info-tris">—</span></div>
+      <div class="sidebar-title">Scene</div>
+      <div class="model-list-count" id="scene-count">No models loaded</div>
+      <div id="scene-model-list"><span class="model-list-empty">—</span></div>
     </div>
     <div class="sidebar-section">
       <div class="sidebar-title">Display</div>
@@ -286,21 +310,17 @@
     <div class="sidebar-section">
       <div class="sidebar-title">VR / MR Controls</div>
       <div class="hint">
-        Aim at the model, then:<br>
+        Aim at a model, then:<br>
         <b>Grip</b> — grab &amp; move<br>
-        <b>Trigger</b> — rotate (orbit)<br>
+        <b>Trigger</b> — rotate<br>
         <b>Thumbstick ↑↓</b> — scale<br>
-        <br>
-        Scaling works alongside<br>
-        grab or rotate.<br>
+        <b>B / Y</b> — remove model<br>
         <br>
         White ray = ready<br>
         Red ray = active<br>
         <br>
-        <b>MR mode:</b> model floats<br>
-        in your real room.<br>
-        Shadow disc shows<br>
-        where it sits.
+        <b>MR mode:</b> models float<br>
+        in your real room.
       </div>
     </div>
     <div class="sidebar-section" style="flex:1">
@@ -317,7 +337,8 @@
 {
   "imports": {
     "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
-    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/",
+    "three-mesh-bvh": "https://cdn.jsdelivr.net/npm/three-mesh-bvh@0.9.4/src/index.js"
   }
 }
 </script>
@@ -333,6 +354,13 @@ import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { VRButton }                from 'three/addons/webxr/VRButton.js';
 import { ARButton }                from 'three/addons/webxr/ARButton.js';
 import { XRControllerModelFactory } from 'three/addons/webxr/XRControllerModelFactory.js';
+import { computeBoundsTree, disposeBoundsTree, acceleratedRaycast } from 'three-mesh-bvh';
+
+// Patch Three.js prototypes once — every Mesh and BufferGeometry in the scene
+// automatically gets BVH-accelerated raycasting after this point.
+THREE.BufferGeometry.prototype.computeBoundsTree  = computeBoundsTree;
+THREE.BufferGeometry.prototype.disposeBoundsTree  = disposeBoundsTree;
+THREE.Mesh.prototype.raycast                      = acceleratedRaycast;
 
 // ─── Models and parts URLs ────────────────────────────────────────────────────
 const BASE_REPO = 'anteloc/ldraw-lib';
@@ -347,7 +375,7 @@ const container = document.getElementById('canvas-container');
 const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.shadowMap.enabled = true;
-renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.shadowMap.type = THREE.PCFShadowMap;    // PCFSoft is overkill; PCF is a good balance
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
 renderer.toneMappingExposure = 1.0;
 renderer.xr.enabled = true;
@@ -376,7 +404,7 @@ scene.add(ambientLight);
 const dirLight = new THREE.DirectionalLight(0xffffff, 1.5);
 dirLight.position.set(500, 1000, 500);
 dirLight.castShadow = true;
-dirLight.shadow.mapSize.set(2048, 2048);
+dirLight.shadow.mapSize.set(1024, 1024);
 Object.assign(dirLight.shadow.camera, { near: 1, far: 10000, left: -2000, right: 2000, top: 2000, bottom: -2000 });
 scene.add(dirLight);
 
@@ -420,22 +448,46 @@ window.addEventListener('resize', resize);
 
 // ─── XR scene-root hierarchy ──────────────────────────────────────────────────
 //
-//  scene
-//    ├── (browser) currentModel   ← normal scale, LDU units
-//    └── vrPivot                  ← world position of model in XR
-//          └── vrRoot             ← uniform scale (LDU→metres) + rotation
-//                └── (XR) currentModel
+// Each loaded model lives in a ModelEntry:
+//
+//   scene
+//     ├── (browser) entry.mesh   ← normal scale, LDU units
+//     └── entry.pivot            ← world position of model in XR
+//           └── entry.root       ← uniform scale (LDU→metres) + rotation
+//                 └── (XR) entry.mesh
 //
 // LDU → metres: 1 LDU = 0.4 mm = 0.0004 m, ×2.5 = hand-held / table-top scale
 const LDU_TO_METERS = 0.0004 * 2.5;
 
-const vrPivot = new THREE.Group();
-vrPivot.position.set(0, 0.9, -0.6); // 90 cm high, 60 cm in front
-scene.add(vrPivot);
+// ── ModelEntry — one per loaded model ─────────────────────────────────────────
+//
+//   { mesh, pivot, root, name }
+//
+const MAX_MODELS      = 5;
+const MODEL_SPACING   = 0.35;   // metres between model pivots in XR
+const MODEL_PIVOT_Y   = 0.9;    // metres above floor
+const MODEL_PIVOT_Z   = -0.6;   // metres in front of user
 
-const vrRoot = new THREE.Group();
-vrRoot.scale.setScalar(LDU_TO_METERS);
-vrPivot.add(vrRoot);
+// All currently loaded models, in load order.
+const models = [];
+
+function createEntry(mesh, name) {
+  // Place new entry to the right of all existing ones
+  const pivotX = models.reduce(
+    (maxX, e) => Math.max(maxX, e.pivot.position.x),
+    0
+  ) + (models.length > 0 ? MODEL_SPACING : 0);
+
+  const pivot = new THREE.Group();
+  pivot.position.set(pivotX, MODEL_PIVOT_Y, MODEL_PIVOT_Z);
+  scene.add(pivot);
+
+  const root = new THREE.Group();
+  root.scale.setScalar(LDU_TO_METERS);
+  pivot.add(root);
+
+  return { mesh, pivot, root, name };
+}
 
 // ─── XR controllers ───────────────────────────────────────────────────────────
 //
@@ -457,6 +509,11 @@ const COLOR_IDLE          = 0xffffff;
 const COLOR_GRABBED       = 0xff2222;
 const ROTATE_SENSITIVITY  = 10.0;   // rotation speed multiplier
 const SCALE_SPEED         = 0.02;   // scale change per frame at full thumbstick deflection
+// Raycasting throttle: when no gesture is active, only raycast every N frames.
+// At 72fps, N=3 gives ~24 laser updates/sec — imperceptible for idle aiming.
+// Active gestures always raycast every frame for precision.
+const RAYCAST_IDLE_INTERVAL = 3;
+let   _frameCount           = 0;
 
 // ── Laser builder — returns a Group (cylinder beam + tip ring) ─────────────────
 //
@@ -513,6 +570,7 @@ const _ctrlWorldPos  = new THREE.Vector3();
 const _ctrlWorldQuat = new THREE.Quaternion();
 const _ctrlWorldQInv = new THREE.Quaternion();
 const _raycaster     = new THREE.Raycaster();
+_raycaster.firstHitOnly = true;   // BVH short-circuits after first hit — much faster
 const _rayOrigin     = new THREE.Vector3();
 const _rayDir        = new THREE.Vector3();
 const _fingerDelta   = new THREE.Vector3();
@@ -528,211 +586,256 @@ const _rotQuat       = new THREE.Quaternion();
 // Returns the hit point in world space, or null if the ray missed.
 //
 function updateLaser(pointer) {
-  const beam = pointer.children[0].children[0];   // laser group → beam cylinder
-  const ring = pointer.children[0].children[1];   // laser group → tip ring
+  const beam = pointer.children[0].children[0];
+  const ring = pointer.children[0].children[1];
 
-  if (!currentModel) {
+  if (models.length === 0) {
     beam.scale.z = 1;
     ring.position.z = -LASER_LENGTH;
-    return null;
+    return { hitPoint: null, hitEntry: null };
   }
 
   pointer.getWorldPosition(_rayOrigin);
   _rayDir.set(0, 0, -1).transformDirection(pointer.matrixWorld);
   _raycaster.set(_rayOrigin, _rayDir);
 
-  const hits = _raycaster.intersectObject(currentModel, /* recursive */ true);
+  // Test all loaded meshes; pick the nearest hit across all of them
+  let nearestDist  = Infinity;
+  let nearestPoint = null;
+  let nearestEntry = null;
 
-  if (hits.length === 0) {
-    beam.scale.z = 1;
-    ring.position.z = -LASER_LENGTH;
-    return null;
+  for (const entry of models) {
+    const hits = _raycaster.intersectObject(entry.mesh, /* recursive */ true);
+    if (hits.length > 0 && hits[0].distance < nearestDist) {
+      nearestDist  = hits[0].distance;
+      nearestPoint = hits[0].point;
+      nearestEntry = entry;
+    }
   }
 
-  const dist = hits[0].distance;
-  // Scale the beam (centred at –LASER_LENGTH/2) so it ends exactly at the surface
-  beam.scale.z = dist / LASER_LENGTH;
-  ring.position.z = -dist;
-  return hits[0].point;   // world-space hit point
+  if (nearestEntry === null) {
+    beam.scale.z = 1;
+    ring.position.z = -LASER_LENGTH;
+    return { hitPoint: null, hitEntry: null };
+  }
+
+  beam.scale.z = nearestDist / LASER_LENGTH;
+  ring.position.z = -nearestDist;
+  return { hitPoint: nearestPoint, hitEntry: nearestEntry };
 }
 
-// ── Active interaction ─────────────────────────────────────────────────────────
+// ── Per-controller interaction slots ──────────────────────────────────────────
 //
-// Only one interaction at a time, from one controller.
-// 'grab'   (squeeze/grip) — translates the model, pierced by the laser
-// 'rotate' (trigger)      — rotates the model by dragging its surface,
-//                           like a finger pushing a toy
+// Each physical controller has its own independent slot so both hands can
+// interact with different models simultaneously.
 //
-const interaction = {
-  type:       null,   // 'grab' | 'rotate' | null
-  controller: null,   // the active pointer Object3D
-};
-
-// ── Grab data ──────────────────────────────────────────────────────────────────
-const grabData = {
-  offsetPos:  new THREE.Vector3(),
-  offsetQuat: new THREE.Quaternion(),
-};
-
-// ── Rotate data ────────────────────────────────────────────────────────────────
+// slot.type      — null | 'grab' | 'rotate'
+// slot.grab      — grab state, valid while type === 'grab'
+// slot.rotate    — rotate state, valid while type === 'rotate'
 //
-// Finger-drag rotation: the controller position acts as a finger touching the
-// model surface at the hit point. Moving the finger drags that surface point,
-// rotating the model around its centroid.
-// If the ray misses in a given frame, rotation is paused (finger lifted off).
+// Cross-controller rule: two grabs on the *same* model are denied — they would
+// fight each other. Any other combination (grab A + rotate A, grab A + rotate B,
+// grab A + grab B) is allowed.
 //
-const rotateData = {
-  touchPointLocal: new THREE.Vector3(),   // hit point in vrRoot local space, locked at press
-  prevFingerPos:   new THREE.Vector3(),   // controller world pos last frame
-};
+function makeSlot() {
+  return {
+    type:    null,
+    pointer: null,
+    grab: {
+      entry:      null,
+      offsetPos:  new THREE.Vector3(),
+      offsetQuat: new THREE.Quaternion(),
+    },
+    rotate: {
+      entry:           null,
+      touchPointLocal: new THREE.Vector3(),
+      prevFingerPos:   new THREE.Vector3(),
+    },
+  };
+}
 
-// ── Interaction helpers ────────────────────────────────────────────────────────
-function isIdle() { return interaction.type === null; }
+const slots = [makeSlot(), makeSlot()];
 
-function startGrab(pointer, hitPoint) {
+// ── Slot helpers ───────────────────────────────────────────────────────────────
+function otherSlot(slot) {
+  return slots[slots.indexOf(slot) === 0 ? 1 : 0];
+}
+
+function startGrab(slot, pointer, hitPoint, hitEntry) {
+  // Deny if the other hand is already grabbing the same model
+  const other = otherSlot(slot);
+  if (other.type === 'grab' && other.grab.entry === hitEntry) return;
+
+  const { pivot, root } = hitEntry;
   pointer.getWorldPosition(_ctrlWorldPos);
   pointer.getWorldQuaternion(_ctrlWorldQuat);
   _ctrlWorldQInv.copy(_ctrlWorldQuat).invert();
 
-  grabData.offsetPos
-    .copy(vrPivot.position)
+  slot.grab.entry = hitEntry;
+  slot.grab.offsetPos
+    .copy(pivot.position)
     .sub(_ctrlWorldPos)
     .applyQuaternion(_ctrlWorldQInv);
+  slot.grab.offsetQuat
+    .multiplyQuaternions(_ctrlWorldQInv, root.getWorldQuaternion(new THREE.Quaternion()));
 
-  grabData.offsetQuat
-    .multiplyQuaternions(_ctrlWorldQInv, vrRoot.getWorldQuaternion(new THREE.Quaternion()));
-
-  interaction.type       = 'grab';
-  interaction.controller = pointer;
+  slot.type    = 'grab';
+  slot.pointer = pointer;
   setLaserColor(pointer, COLOR_GRABBED);
 }
 
-function startRotate(pointer, hitPoint) {
-  // Store hit point in vrRoot local space so it stays glued to the model
-  vrRoot.worldToLocal(rotateData.touchPointLocal.copy(hitPoint));
-  pointer.getWorldPosition(rotateData.prevFingerPos);
+function startRotate(slot, pointer, hitPoint, hitEntry) {
+  slot.rotate.entry = hitEntry;
+  hitEntry.root.worldToLocal(slot.rotate.touchPointLocal.copy(hitPoint));
+  pointer.getWorldPosition(slot.rotate.prevFingerPos);
 
-  interaction.type       = 'rotate';
-  interaction.controller = pointer;
+  slot.type    = 'rotate';
+  slot.pointer = pointer;
   setLaserColor(pointer, COLOR_GRABBED);
 }
 
-function endInteraction(pointer) {
-  if (interaction.controller !== pointer) return;
-  setLaserColor(pointer, COLOR_IDLE);
-  interaction.type       = null;
-  interaction.controller = null;
+function endInteraction(slot) {
+  if (!slot.type) return;
+  if (slot.pointer) setLaserColor(slot.pointer, COLOR_IDLE);
+  slot.type           = null;
+  slot.pointer        = null;
+  slot.grab.entry     = null;
+  slot.rotate.entry   = null;
 }
 
 // ── Wire interaction events on both controllers ────────────────────────────────
-//
-// Squeeze (grip button) → grab/translate
-// Select  (trigger)     → rotate
-//
-// hitPoint is stored on pointer.userData each frame by updateLaser(), so it is
-// available to event handlers without an extra raycast.
-//
-for (const { pointer } of controllers) {
+for (let i = 0; i < controllers.length; i++) {
+  const { pointer } = controllers[i];
+  const slot = slots[i];
+
   pointer.addEventListener('connected',    e => { pointer.userData.xrInputSource = e.data; });
   pointer.addEventListener('disconnected', () => { pointer.userData.xrInputSource = null; });
 
   pointer.addEventListener('squeezestart', () => {
-    if (!isIdle()) return;
-    const hp = pointer.userData.hitPoint;
-    if (hp === null) return;
-    startGrab(pointer, hp);
+    if (slot.type) return;   // this controller is busy
+    const { hitPoint, hitEntry } = pointer.userData;
+    if (!hitEntry) return;
+    startGrab(slot, pointer, hitPoint, hitEntry);
   });
-  pointer.addEventListener('squeezeend', () => endInteraction(pointer));
+  pointer.addEventListener('squeezeend', () => {
+    if (slot.type === 'grab') endInteraction(slot);
+  });
 
   pointer.addEventListener('selectstart', () => {
-    if (!isIdle()) return;
-    const hp = pointer.userData.hitPoint;
-    if (hp === null) return;
-    startRotate(pointer, hp);
+    if (slot.type) return;   // this controller is busy
+    const { hitPoint, hitEntry } = pointer.userData;
+    if (!hitEntry) return;
+    startRotate(slot, pointer, hitPoint, hitEntry);
   });
-  pointer.addEventListener('selectend', () => endInteraction(pointer));
+  pointer.addEventListener('selectend', () => {
+    if (slot.type === 'rotate') endInteraction(slot);
+  });
+}
+
+// ── Apply one grab slot ────────────────────────────────────────────────────────
+function applyGrab(slot) {
+  const { pivot, root } = slot.grab.entry;
+  const ctrl = slot.pointer;
+  ctrl.getWorldPosition(_ctrlWorldPos);
+  ctrl.getWorldQuaternion(_ctrlWorldQuat);
+
+  pivot.position
+    .copy(slot.grab.offsetPos)
+    .applyQuaternion(_ctrlWorldQuat)
+    .add(_ctrlWorldPos);
+
+  root.quaternion.multiplyQuaternions(_ctrlWorldQuat, slot.grab.offsetQuat);
+
+  mrShadowDisc.position.x = pivot.position.x;
+  mrShadowDisc.position.z = pivot.position.z;
+}
+
+// ── Apply one rotate slot ──────────────────────────────────────────────────────
+function applyRotate(slot) {
+  const ctrl = slot.pointer;
+
+  // Finger lifted — ray no longer on this model, pause rotation
+  if (ctrl.userData.hitEntry !== slot.rotate.entry) {
+    ctrl.getWorldPosition(slot.rotate.prevFingerPos);
+    return;
+  }
+
+  ctrl.getWorldPosition(_ctrlWorldPos);
+  _fingerDelta.subVectors(_ctrlWorldPos, slot.rotate.prevFingerPos);
+
+  if (_fingerDelta.lengthSq() > 0) {
+    const { root } = slot.rotate.entry;
+
+    root.getWorldPosition(_newArm);                 // centroid
+    _oldArm.copy(slot.rotate.touchPointLocal)
+      .applyMatrix4(root.matrixWorld)
+      .sub(_newArm);                                // arm: centroid → touch point
+
+    _newArm.copy(_oldArm).addScaledVector(_fingerDelta, ROTATE_SENSITIVITY);
+    _newArm.setLength(_oldArm.length());
+
+    _rotQuat.setFromUnitVectors(_oldArm.normalize(), _newArm.normalize());
+    root.quaternion.premultiply(_rotQuat);
+  }
+
+  slot.rotate.prevFingerPos.copy(_ctrlWorldPos);
 }
 
 // ── Main XR update — called every frame while presenting ──────────────────────
 function updateXRControls() {
-  // 1. Update laser visuals for both controllers and cache hit points
-  for (const { pointer } of controllers) {
-    pointer.userData.hitPoint = updateLaser(pointer);
-  }
+  _frameCount++;
 
-  if (!currentModel) return;
+  // 1. Update laser visuals — throttled when idle, every frame when active.
+  //    Active = at least one slot has an ongoing gesture.
+  const anyActive = slots.some(s => s.type !== null);
+  const doRaycast = anyActive || (_frameCount % RAYCAST_IDLE_INTERVAL === 0);
 
-  // 2. Apply active interaction
-  if (interaction.type === 'grab') {
-    const ctrl = interaction.controller;
-    ctrl.getWorldPosition(_ctrlWorldPos);
-    ctrl.getWorldQuaternion(_ctrlWorldQuat);
-
-    vrPivot.position
-      .copy(grabData.offsetPos)
-      .applyQuaternion(_ctrlWorldQuat)
-      .add(_ctrlWorldPos);
-
-    vrRoot.quaternion.multiplyQuaternions(_ctrlWorldQuat, grabData.offsetQuat);
-
-    mrShadowDisc.position.x = vrPivot.position.x;
-    mrShadowDisc.position.z = vrPivot.position.z;
-  }
-
-  if (interaction.type === 'rotate') {
-    const ctrl = interaction.controller;
-
-    // Finger lifted — ray not hitting model this frame, pause rotation
-    if (ctrl.userData.hitPoint === null) {
-      ctrl.getWorldPosition(rotateData.prevFingerPos);
-      return;
+  if (doRaycast) {
+    for (const { pointer } of controllers) {
+      const result = updateLaser(pointer);
+      pointer.userData.hitPoint = result.hitPoint;
+      pointer.userData.hitEntry = result.hitEntry;
     }
-
-    ctrl.getWorldPosition(_ctrlWorldPos);
-
-    // How much did the finger move since last frame?
-    _fingerDelta.subVectors(_ctrlWorldPos, rotateData.prevFingerPos);
-
-    if (_fingerDelta.lengthSq() > 0) {
-      // Arm vector: centroid → touch point, fully in world space.
-      // applyMatrix4(matrixWorld) handles position + rotation + scale in one step,
-      // so the result is in metres regardless of vrRoot's LDU scale.
-      vrRoot.getWorldPosition(_newArm);   // _newArm = centroid (world space)
-      _oldArm.copy(rotateData.touchPointLocal)
-        .applyMatrix4(vrRoot.matrixWorld)
-        .sub(_newArm);                    // _oldArm = arm vector (world space, metres)
-
-      // Finger pushes the arm: new arm = old arm + (delta × sensitivity)
-      _newArm.copy(_oldArm).addScaledVector(_fingerDelta, ROTATE_SENSITIVITY);
-      _newArm.setLength(_oldArm.length());
-
-      // Rotation that brings oldArm direction to newArm direction
-      _rotQuat.setFromUnitVectors(_oldArm.normalize(), _newArm.normalize());
-      vrRoot.quaternion.premultiply(_rotQuat);
-    }
-
-    rotateData.prevFingerPos.copy(_ctrlWorldPos);
   }
 
-  // 3. Thumbstick scaling — active on any controller whose laser hits the model,
-  //    regardless of what button interaction (if any) is currently active.
+  // 2. Apply both interaction slots independently
+  for (const slot of slots) {
+    if (slot.type === 'grab')   applyGrab(slot);
+    if (slot.type === 'rotate') applyRotate(slot);
+  }
+
+  // 3. Thumbstick scaling — active on any controller whose laser hits a model
   for (const { pointer } of controllers) {
-    if (pointer.userData.hitPoint === null) continue;
+    const entry = pointer.userData.hitEntry;
+    if (!entry) continue;
 
     const source = pointer.userData.xrInputSource;
     if (!source?.gamepad) continue;
 
-    // Thumbstick Y is axes[3] on Quest controllers; positive = forward = scale up
     const thumbY = source.gamepad.axes[3] ?? 0;
-    if (Math.abs(thumbY) <= 0.1) continue;   // dead zone
+    if (Math.abs(thumbY) <= 0.1) continue;
 
     const newScale = THREE.MathUtils.clamp(
-      vrRoot.scale.x * (1 + thumbY * SCALE_SPEED),
+      entry.root.scale.x * (1 + thumbY * SCALE_SPEED),
       LDU_TO_METERS * 0.05,
       LDU_TO_METERS * 30
     );
-    vrRoot.scale.setScalar(newScale);
+    entry.root.scale.setScalar(newScale);
     mrShadowDisc.scale.setScalar(newScale / LDU_TO_METERS);
+  }
+
+  // 4. B/Y button — remove the model the laser is currently hitting.
+  //    Rising-edge detection fires exactly once per press.
+  for (const { pointer } of controllers) {
+    const source = pointer.userData.xrInputSource;
+    const pressed    = source?.gamepad?.buttons[5]?.pressed ?? false;
+    const wasPressed = pointer.userData.prevBYPressed ?? false;
+    pointer.userData.prevBYPressed = pressed;
+
+    if (pressed && !wasPressed) {
+      const entry = pointer.userData.hitEntry;
+      if (entry) removeEntry(entry);
+    }
   }
 }
 
@@ -780,6 +883,7 @@ function onXRSessionStart(mode) {
 
   gridHelper.visible = false;
   ground.visible = false;
+  dirLight.castShadow = false;   // shadows off in XR — saves a full shadow map render every frame
 
   if (mode === 'mr') {
     // Transparent background → passthrough shows through
@@ -798,16 +902,17 @@ function onXRSessionStart(mode) {
     mrShadowDisc.visible = false;
   }
 
-  if (currentModel) {
-    scene.remove(currentModel);
-    vrRoot.add(currentModel);
+  for (const entry of models) {
+    const { mesh, pivot, root } = entry;
+    scene.remove(mesh);
+    root.add(mesh);
     // Re-centre so rotation pivots around model centre
-    const box = new THREE.Box3().setFromObject(currentModel);
+    const box = new THREE.Box3().setFromObject(mesh);
     const centre = box.getCenter(new THREE.Vector3());
-    currentModel.position.sub(centre);
-    // Position shadow disc under pivot at floor level (approximation)
+    mesh.position.sub(centre);
+    // Position shadow disc under first model pivot at floor level (approximation)
     if (mode === 'mr') {
-      mrShadowDisc.position.set(vrPivot.position.x, vrPivot.position.y - 0.88, vrPivot.position.z);
+      mrShadowDisc.position.set(pivot.position.x, pivot.position.y - 0.88, pivot.position.z);
     }
   }
 
@@ -816,14 +921,15 @@ function onXRSessionStart(mode) {
 function onXRSessionEnd() {
   setMode('browser');
 
-  // Drop any active interaction and reset laser colors
+  // Drop all active interactions and reset laser colors
+  for (const slot of slots) endInteraction(slot);
   for (const { pointer } of controllers) {
     setLaserColor(pointer, COLOR_IDLE);
     pointer.userData.hitPoint      = null;
+    pointer.userData.hitEntry      = null;
     pointer.userData.xrInputSource = null;
+    pointer.userData.prevBYPressed = false;
   }
-  interaction.type       = null;
-  interaction.controller = null;
 
   // Restore OrbitControls to the exact state they were in before XR started
   controls.reset();       // returns to saveState() snapshot
@@ -835,19 +941,20 @@ function onXRSessionEnd() {
   ambientLight.intensity = 0.6;
   gridHelper.visible = document.getElementById('toggle-grid').classList.contains('on');
   ground.visible = true;
+  dirLight.castShadow = true;
   mrShadowDisc.visible = false;
 
-  // Return model to scene root at original position
-  if (currentModel) {
-    vrRoot.remove(currentModel);
-    currentModel.position.set(0, 0, 0);
-    scene.add(currentModel);
+  // Return all models to scene root
+  for (const entry of models) {
+    const { mesh, pivot, root } = entry;
+    root.remove(mesh);
+    mesh.position.set(0, 0, 0);
+    scene.add(mesh);
     // Reset XR transforms for next session
-    vrRoot.scale.setScalar(LDU_TO_METERS);
-    vrRoot.rotation.set(0, 0, 0);
-    vrPivot.position.set(0, 0.9, -0.6);
-    fitCamera(currentModel);
+    root.scale.setScalar(LDU_TO_METERS);
+    root.rotation.set(0, 0, 0);
   }
+  if (models.length > 0) fitCamera();
 }
 
 renderer.xr.addEventListener('sessionstart', () => {
@@ -909,7 +1016,6 @@ styleXRButton(arButton, true);
 vrButton.insertAdjacentElement('afterend', arButton);
 
 // ─── LDraw & model state ──────────────────────────────────────────────────────
-let currentModel  = null;
 let edgesVisible  = true;
 
 // ─── UI helpers ───────────────────────────────────────────────────────────────
@@ -931,20 +1037,86 @@ function hideLoading() { loadingOverlay.classList.remove('visible'); }
 function showError(msg) { hideLoading(); errorText.textContent = msg; errorBanner.classList.add('visible'); }
 function setStatus(s)   { statusEl.textContent = s; }
 
-function clearModel() {
-  if (currentModel) {
-    scene.remove(currentModel);
-    vrRoot.remove(currentModel);
-    currentModel.traverse(o => {
-      if (o.geometry) o.geometry.dispose();
-      if (o.material) [].concat(o.material).forEach(m => m.dispose());
-    });
-    currentModel = null;
+// ── Scene model list ───────────────────────────────────────────────────────────
+const sceneCountEl    = document.getElementById('scene-count');
+const sceneModelListEl = document.getElementById('scene-model-list');
+
+function renderModelList() {
+  sceneCountEl.textContent = models.length === 0
+    ? 'No models loaded'
+    : `${models.length} / ${MAX_MODELS} model${models.length > 1 ? 's' : ''}`;
+
+  if (models.length === 0) {
+    sceneModelListEl.innerHTML = '<span class="model-list-empty">—</span>';
+    return;
+  }
+
+  sceneModelListEl.innerHTML = '';
+  for (const entry of models) {
+    const item = document.createElement('div');
+    item.className = 'model-list-item';
+
+    const nameEl = document.createElement('span');
+    nameEl.className = 'model-list-name';
+    nameEl.textContent = entry.name;
+    nameEl.title = entry.name;
+
+    const removeBtn = document.createElement('button');
+    removeBtn.className = 'model-list-remove';
+    removeBtn.textContent = '✕';
+    removeBtn.title = 'Remove from scene';
+    removeBtn.onclick = () => removeEntry(entry);
+
+    item.append(nameEl, removeBtn);
+    sceneModelListEl.appendChild(item);
   }
 }
 
-function fitCamera(model) {
-  const box    = new THREE.Box3().setFromObject(model);
+function removeEntry(entry) {
+  // Release any slot whose interaction targets this entry
+  for (const slot of slots) {
+    if (slot.grab.entry === entry || slot.rotate.entry === entry) {
+      endInteraction(slot);
+    }
+  }
+
+  const { mesh, pivot, root } = entry;
+  root.remove(mesh);
+  scene.remove(mesh);
+  scene.remove(pivot);
+  mesh.traverse(o => {
+    if (o.geometry) {
+      o.geometry.disposeBoundsTree?.();
+      o.geometry.dispose();
+    }
+    if (o.material) [].concat(o.material).forEach(m => m.dispose());
+  });
+
+  models.splice(models.indexOf(entry), 1);
+  renderModelList();
+
+  if (models.length === 0) {
+    dropZone.style.display = '';
+    setStatus('No model loaded');
+  } else {
+    fitCamera();
+  }
+}
+
+function clearAllModels() {
+  // Slice to avoid mutating while iterating
+  for (const entry of models.slice()) removeEntry(entry);
+}
+
+function fitCamera() {
+  if (models.length === 0) {
+    camera.position.set(0, 400, 1200);
+    controls.target.set(0, 0, 0);
+    controls.update();
+    return;
+  }
+  const box = new THREE.Box3();
+  for (const entry of models) box.expandByObject(entry.mesh);
   const size   = box.getSize(new THREE.Vector3());
   const centre = box.getCenter(new THREE.Vector3());
   const maxDim = Math.max(size.x, size.y, size.z);
@@ -957,16 +1129,30 @@ function fitCamera(model) {
 }
 
 function onModelLoaded(model, filename) {
-  clearModel();
-  dropZone.style.display = 'none';
-  errorBanner.classList.remove('visible');
+  if (models.length >= MAX_MODELS) {
+    showError(`Maximum ${MAX_MODELS} models in scene. Remove one first.`);
+    return;
+  }
 
+  errorBanner.classList.remove('visible');
   model.rotation.x = Math.PI; // LDraw Y-down → Y-up
-  model.traverse(o => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } });
+  model.traverse(o => {
+    if (o.isMesh) {
+      o.castShadow = true;
+      o.receiveShadow = true;
+      o.geometry.computeBoundsTree();   // BVH — O(log n) raycasts
+    } else if (o.isLineSegments) {
+      o.raycast = () => {};             // edges are visual only — never raycasted
+    }
+  });
 
   scene.add(model);
-  currentModel = model;
-  fitCamera(model);
+  const entry = createEntry(model, filename);
+  models.push(entry);
+
+  if (models.length === 1) dropZone.style.display = 'none';
+  fitCamera();
+  renderModelList();
 
   let meshes = 0, tris = 0;
   model.traverse(o => {
@@ -976,15 +1162,11 @@ function onModelLoaded(model, filename) {
       tris += idx ? idx.count / 3 : o.geometry.attributes.position.count / 3;
     }
   });
-  document.getElementById('info-file').textContent  = filename.slice(0, 18);
-  document.getElementById('info-parts').textContent = meshes.toLocaleString();
-  document.getElementById('info-tris').textContent  = Math.round(tris).toLocaleString();
 
-  edgesVisible = true;
-  document.getElementById('toggle-edges').classList.add('on');
   hideLoading();
-  setStatus('Loaded: ' + filename);
+  setStatus(`Loaded: ${filename} (${models.length}/${MAX_MODELS} in scene)`);
 }
+
 
 function makeLoader() {
   const l = new LDrawLoader();
@@ -1033,21 +1215,27 @@ window.loadFromURL = function() {
 
 window.resetView = function() {
   if (renderer.xr.isPresenting) {
-    vrRoot.scale.setScalar(LDU_TO_METERS);
-    vrRoot.rotation.set(0, 0, 0);
-    vrPivot.position.set(0, 0.9, -0.6);
-    mrShadowDisc.position.set(0, vrPivot.position.y - 0.88, -0.6);
+    let x = 0;
+    for (const entry of models) {
+      const { pivot, root } = entry;
+      root.scale.setScalar(LDU_TO_METERS);
+      root.rotation.set(0, 0, 0);
+      pivot.position.set(x, MODEL_PIVOT_Y, MODEL_PIVOT_Z);
+      x += MODEL_SPACING;
+    }
+    mrShadowDisc.position.set(0, MODEL_PIVOT_Y - 0.88, MODEL_PIVOT_Z);
     mrShadowDisc.scale.setScalar(1);
   } else {
-    if (currentModel) fitCamera(currentModel);
-    else { camera.position.set(0, 400, 1200); controls.target.set(0, 0, 0); controls.update(); }
+    fitCamera();
   }
 };
 
 window.toggleEdges = function() {
   edgesVisible = !edgesVisible;
   document.getElementById('toggle-edges').classList.toggle('on', edgesVisible);
-  currentModel?.traverse(o => { if (o.isLineSegments) o.visible = edgesVisible; });
+  for (const entry of models) {
+    entry.mesh.traverse(o => { if (o.isLineSegments) o.visible = edgesVisible; });
+  }
 };
 
 window.toggleGrid = function() {
@@ -1084,14 +1272,15 @@ dropZone.addEventListener('click', () => document.getElementById('file-input').c
 
 // ─── Double-click to focus (browser only) ────────────────────────────────────
 renderer.domElement.addEventListener('dblclick', e => {
-  if (!currentModel || renderer.xr.isPresenting) return;
+  if (models.length === 0 || renderer.xr.isPresenting) return;
   const rect = renderer.domElement.getBoundingClientRect();
   const raycaster = new THREE.Raycaster();
   raycaster.setFromCamera(
     new THREE.Vector2(((e.clientX - rect.left) / rect.width) * 2 - 1, -((e.clientY - rect.top) / rect.height) * 2 + 1),
     camera
   );
-  const hits = raycaster.intersectObject(currentModel, true);
+  const meshes = models.map(e => e.mesh);
+  const hits = raycaster.intersectObjects(meshes, true);
   if (hits.length) { controls.target.copy(hits[0].point); controls.update(); }
 });
 
