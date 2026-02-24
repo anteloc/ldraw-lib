@@ -277,7 +277,6 @@
     <button class="btn" id="btn-demo">Load Demo</button>
     <button class="btn" id="btn-browse">Browse Models</button>
     <button class="btn" id="btn-reset-view">Reset View</button>
-    <button class="btn primary" id="btn-open-file">Open File</button>
     <input type="file" id="file-input" accept=".ldr,.mpd,.dat">
     <!-- VR and MR buttons are injected here by JS after checking support -->
   </div>
@@ -324,9 +323,11 @@
       </div>
     </div>
     <div class="sidebar-section">
-      <div class="sidebar-title">Load URL</div>
+      <div class="sidebar-title">Load</div>
       <input type="text" class="url-input" id="url-input" placeholder="https://…/model.mpd">
-      <button class="btn" id="btn-load-url" style="width:100%;margin-top:2px">Load</button>
+      <button class="btn" id="btn-load-url" style="width:100%;margin-top:2px">Load from URL</button>
+      <div style="border-top:1px solid var(--border);margin:10px 0"></div>
+      <button class="btn primary" id="btn-open-file" style="width:100%">Open File…</button>
     </div>
     <div class="sidebar-section">
       <div class="sidebar-title">Browser Controls</div>
@@ -428,6 +429,7 @@ const RAYCAST_IDLE_INTERVAL = 3;
 
 // Browser interaction constants
 const NUDGE_STEP = 100;   // LDU — about 4 cm at 1:1 scale
+const GRID_HALF  = 2000;  // LDU — half the grid width; models are clamped to ±this
 
 // Model browser
 const MAX_RESULTS = 50;
@@ -785,12 +787,20 @@ function startDrag(entry, clientX, clientY) {
   _dragOffset.set(entry.mesh.position.x - _planeHit.x, 0, entry.mesh.position.z - _planeHit.z);
 }
 
+// Clamp a mesh's X/Z position to the grid boundary so it can't be dragged
+// or nudged off the visible floor into unreachable space.
+function clampToFloor(mesh) {
+  mesh.position.x = THREE.MathUtils.clamp(mesh.position.x, -GRID_HALF, GRID_HALF);
+  mesh.position.z = THREE.MathUtils.clamp(mesh.position.z, -GRID_HALF, GRID_HALF);
+}
+
 function moveDrag(clientX, clientY) {
   if (!_dragActive || !_dragEntry) return;
   setRayFromClient(clientX, clientY);
   if (_browserRay.ray.intersectPlane(_dragPlane, _planeHit)) {
     _dragEntry.mesh.position.x = _planeHit.x + _dragOffset.x;
     _dragEntry.mesh.position.z = _planeHit.z + _dragOffset.z;
+    clampToFloor(_dragEntry.mesh);
   }
 }
 
@@ -1709,7 +1719,7 @@ document.addEventListener('keydown', e => {
     case 'ArrowDown':  selectedEntry.mesh.position.z += NUDGE_STEP; break;
     default: moved = false;
   }
-  if (moved) e.preventDefault();
+  if (moved) { clampToFloor(selectedEntry.mesh); e.preventDefault(); }
 });
 
 </script>
