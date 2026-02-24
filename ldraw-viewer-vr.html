@@ -222,6 +222,221 @@
     font-family: 'Space Mono', monospace; font-size: 11px; color: var(--muted);
   }
 
+  /* ─── More… sentinel row ────────────────────────────────────────────────────── */
+  .mb-more-row {
+    display: flex; align-items: center; gap: 10px;
+    padding: 11px 12px;
+    border-radius: 4px;
+    border: 1px solid rgba(255,204,0,.2);
+    background: rgba(255,204,0,.04);
+    cursor: pointer;
+    transition: all .12s;
+    margin-top: 6px;
+  }
+  .mb-more-row:hover, .mb-more-row.focused {
+    border-color: var(--accent);
+    background: rgba(255,204,0,.1);
+  }
+  .mb-more-icon {
+    font-size: 16px; color: var(--accent); flex-shrink: 0; line-height: 1;
+  }
+  .mb-more-label {
+    font-family: 'Space Mono', monospace; font-size: 11px;
+    color: var(--accent); letter-spacing: .04em;
+  }
+
+  /* ─── Gallery overlay ───────────────────────────────────────────────────────── */
+  #model-gallery {
+    display: none;
+    position: fixed; inset: 0; z-index: 110;
+    background: rgba(8,8,10,.92);
+    backdrop-filter: blur(8px);
+    flex-direction: column;
+  }
+  #model-gallery.open { display: flex; }
+
+  .gallery-topbar {
+    display: flex; align-items: center; gap: 16px;
+    padding: 14px 24px;
+    border-bottom: 1px solid var(--border);
+    background: var(--panel);
+    flex-shrink: 0;
+  }
+  .gallery-topbar-title {
+    font-size: 10px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: .15em; color: var(--muted); white-space: nowrap;
+  }
+  .gallery-search-wrap {
+    flex: 1; position: relative; max-width: 480px;
+  }
+  .gallery-search {
+    width: 100%;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 9px 14px 9px 36px;
+    color: var(--text);
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    outline: none;
+    transition: border-color .15s;
+  }
+  .gallery-search:focus { border-color: var(--accent); }
+  .gallery-search::placeholder { color: var(--muted); }
+  .gallery-search-icon {
+    position: absolute; left: 13px; top: 50%; transform: translateY(-50%);
+    color: var(--muted); font-size: 14px; pointer-events: none;
+  }
+  .gallery-status {
+    font-family: 'Space Mono', monospace; font-size: 10px;
+    color: var(--muted); white-space: nowrap; flex-shrink: 0;
+  }
+  .gallery-close {
+    background: none; border: none; color: var(--muted);
+    cursor: pointer; font-size: 18px; line-height: 1; padding: 4px;
+    transition: color .15s; flex-shrink: 0;
+  }
+  .gallery-close:hover { color: var(--text); }
+
+  .gallery-body {
+    flex: 1; display: flex; overflow: hidden;
+  }
+
+  .gallery-sidebar {
+    width: 180px; flex-shrink: 0;
+    background: var(--panel);
+    border-right: 1px solid var(--border);
+    overflow-y: auto;
+    padding: 16px 14px;
+    display: flex; flex-direction: column; gap: 20px;
+  }
+  .gallery-sidebar::-webkit-scrollbar { width: 3px; }
+  .gallery-sidebar::-webkit-scrollbar-track { background: transparent; }
+  .gallery-sidebar::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+  .gallery-filter-title {
+    font-size: 9px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: .15em; color: var(--muted); margin-bottom: 8px;
+  }
+  .gallery-filter-item {
+    display: flex; align-items: center; gap: 8px;
+    padding: 4px 0; cursor: pointer;
+  }
+  .gallery-filter-item input[type=checkbox] {
+    accent-color: var(--accent); width: 13px; height: 13px; cursor: pointer; flex-shrink: 0;
+  }
+  .gallery-filter-label {
+    font-family: 'Space Mono', monospace; font-size: 10px;
+    color: var(--text); white-space: nowrap; overflow: hidden;
+    text-overflow: ellipsis; flex: 1;
+  }
+  .gallery-filter-count {
+    font-family: 'Space Mono', monospace; font-size: 9px; color: var(--muted); flex-shrink: 0;
+  }
+
+  .gallery-sort-item {
+    display: flex; align-items: center; gap: 8px;
+    padding: 4px 0; cursor: pointer;
+  }
+  .gallery-sort-item input[type=radio] {
+    accent-color: var(--accent); width: 13px; height: 13px; cursor: pointer; flex-shrink: 0;
+  }
+  .gallery-sort-label {
+    font-family: 'Space Mono', monospace; font-size: 10px; color: var(--text);
+  }
+
+  .gallery-main {
+    flex: 1; overflow-y: auto; padding: 20px 24px;
+    display: flex; flex-direction: column; gap: 20px;
+  }
+  .gallery-main::-webkit-scrollbar { width: 4px; }
+  .gallery-main::-webkit-scrollbar-track { background: transparent; }
+  .gallery-main::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    gap: 12px;
+  }
+
+  .gallery-card {
+    width: 200px; height: 220px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    display: flex; flex-direction: column;
+    cursor: pointer; overflow: hidden;
+    transition: border-color .15s, box-shadow .15s, transform .15s;
+    position: relative;
+  }
+  .gallery-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 4px 20px rgba(255,204,0,.12);
+    transform: translateY(-2px);
+  }
+  .gallery-card:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(255,204,0,.3);
+  }
+
+  .gallery-card-thumb-wrap {
+    width: 200px; height: 160px; flex-shrink: 0;
+    background: var(--bg);
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+  }
+  .gallery-card-thumb {
+    width: 100%; height: 100%; object-fit: contain;
+    opacity: 0; transition: opacity .2s;
+  }
+  .gallery-card-thumb.loaded { opacity: 1; }
+
+  /* Brick placeholder — shown while thumb is loading or on error */
+  .gallery-card-placeholder {
+    width: 44px; height: 32px;
+    background: var(--border); border-radius: 2px; position: relative;
+    flex-shrink: 0;
+  }
+  .gallery-card-placeholder::before,
+  .gallery-card-placeholder::after {
+    content: ''; position: absolute; top: -11px;
+    width: 13px; height: 13px; background: var(--border); border-radius: 50%;
+  }
+  .gallery-card-placeholder::before { left: 6px; }
+  .gallery-card-placeholder::after  { right: 6px; }
+
+  .gallery-card-info {
+    flex: 1; padding: 8px 10px 10px;
+    display: flex; flex-direction: column; gap: 3px; overflow: hidden;
+  }
+  .gallery-card-name {
+    font-family: 'Space Mono', monospace; font-size: 10px; font-weight: 700;
+    color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    line-height: 1.3;
+  }
+  .gallery-card-file {
+    font-family: 'Space Mono', monospace; font-size: 9px; color: var(--muted);
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+
+  .gallery-load-more-wrap {
+    display: flex; justify-content: center; padding-bottom: 8px;
+  }
+  .gallery-load-more {
+    font-family: 'Space Mono', monospace; font-size: 11px;
+    padding: 10px 32px; border-radius: 4px;
+    border: 1px solid var(--border); background: transparent;
+    color: var(--text); cursor: pointer; text-transform: uppercase; letter-spacing: .08em;
+    transition: all .15s;
+  }
+  .gallery-load-more:hover { border-color: var(--accent); color: var(--accent); }
+
+  .gallery-empty {
+    grid-column: 1/-1; text-align: center; padding: 48px 20px;
+    font-family: 'Space Mono', monospace; font-size: 12px; color: var(--muted); line-height: 2;
+  }
+
   /* ─── Scene model list ───────────────────────────────────────────────────── */
   .model-list-item {
     display: flex; align-items: center; justify-content: space-between;
@@ -433,8 +648,11 @@ const RAYCAST_IDLE_INTERVAL = 3;
 const NUDGE_STEP = 100;   // LDU — about 4 cm at 1:1 scale
 const GRID_HALF  = 2000;  // LDU — half the grid width; models are clamped to ±this
 
-// Model browser
-const MAX_RESULTS = 50;
+// Model browser / gallery
+const MB_LIST_MAX       = 10;   // max items shown in the inline list before "More…"
+const GALLERY_PAGE_SIZE = 48;
+const GALLERY_MIN_CHARS = 3;
+const THUMB_BASE        = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/thumbnails/`;
 
 // Scene background colour — saved here so onXRSessionEnd can restore it
 const BROWSER_BG = new THREE.Color(0x0e0e10);
@@ -1686,14 +1904,27 @@ async function fetchModelList() {
       .split('\n')
       .filter(line => line.trim())
       .map(line => {
-        const { name, search_key } = JSON.parse(line);
-        return { name, search_key, url: RAW_BASE + encodeURIComponent(name) };
+        const rec = JSON.parse(line);
+        // Support both old format (search_key) and new (description + categories + keywords)
+        const description = rec.description ?? rec.search_key ?? rec.name;
+        const categories  = rec.categories?.length ? rec.categories : ['Other'];
+        const keywords    = rec.keywords ?? [];
+        return {
+          name:        rec.name,
+          description,
+          categories,
+          keywords,
+          url:         RAW_BASE + encodeURIComponent(rec.name),
+          thumb:       THUMB_BASE + encodeURIComponent(rec.name.replace(/\.[^.]+$/, '.png')),
+        };
       });
 
     mbFuse = new Fuse(mbModels, {
       keys: [
-        { name: 'search_key', weight: 2 },  // human label — higher weight
-        { name: 'name',       weight: 1 },  // filename — fallback
+        { name: 'description', weight: 3 },
+        { name: 'categories',  weight: 2 },
+        { name: 'keywords',    weight: 1.5 },
+        { name: 'name',        weight: 1 },
       ],
       threshold:          0.35,
       distance:           200,
@@ -1767,7 +1998,7 @@ function highlightField(text, matches, key) {
   return html;
 }
 
-function renderResults(results) {
+function renderResults(results, allResults = null) {
   if (results.length === 0) {
     const q = mbSearchEl.value.trim();
     mbResultsEl.innerHTML = q.length >= 2
@@ -1777,11 +2008,11 @@ function renderResults(results) {
   }
 
   mbResultsEl.innerHTML = results.map((r, idx) => {
-    const { name, search_key, url } = r.item;
-    const labelHtml    = highlightField(search_key, r.matches, 'search_key');
-    const filenameHtml = highlightField(name,       r.matches, 'name');
+    const { name, description, url } = r.item;
+    const labelHtml    = highlightField(description, r.matches, 'description');
+    const filenameHtml = highlightField(name,        r.matches, 'name');
     return (
-      '<div class="mb-result" data-idx="' + idx + '" data-url="' + escHtml(url) + '" data-name="' + escHtml(search_key || name) + '">' +
+      '<div class="mb-result" data-idx="' + idx + '" data-url="' + escHtml(url) + '" data-name="' + escHtml(description || name) + '">' +
         '<div class="mb-result-label">' +
           '<span class="mb-result-name">'     + labelHtml    + '</span>' +
           '<span class="mb-result-filename">' + filenameHtml + '</span>' +
@@ -1791,19 +2022,263 @@ function renderResults(results) {
     );
   }).join('');
 
+  // "More…" sentinel row
+  if (allResults) {
+    const sentinel = document.createElement('div');
+    sentinel.className  = 'mb-more-row';
+    sentinel.dataset.idx = results.length;  // keyboard nav index
+    sentinel.innerHTML  =
+      '<span class="mb-more-icon">⊞</span>' +
+      '<span class="mb-more-label">Browse all ' + allResults.length + ' results in gallery…</span>';
+    sentinel.addEventListener('click', () => openGallery(allResults, mbSearchEl.value.trim()));
+    mbResultsEl.appendChild(sentinel);
+  }
+
   mbResultsEl.querySelectorAll('.mb-result').forEach(el => {
     el.addEventListener('click', () => loadFromBrowser(el.dataset.url, el.dataset.name));
     el.addEventListener('mouseenter', () => {
       mbFocused = parseInt(el.dataset.idx);
-      updateFocus(mbResultsEl.querySelectorAll('.mb-result'));
+      updateFocus(mbResultsEl.querySelectorAll('.mb-result, .mb-more-row'));
     });
   });
+
+  // Hover on sentinel also updates focus
+  const sentinel = mbResultsEl.querySelector('.mb-more-row');
+  if (sentinel) {
+    sentinel.addEventListener('mouseenter', () => {
+      mbFocused = parseInt(sentinel.dataset.idx);
+      updateFocus(mbResultsEl.querySelectorAll('.mb-result, .mb-more-row'));
+    });
+  }
 }
 
 function updateFocus(items) {
   items.forEach((el, i) => el.classList.toggle('focused', i === mbFocused));
   if (items[mbFocused]) items[mbFocused].scrollIntoView({ block: 'nearest' });
 }
+
+// Keyboard nav helper — resolves all focusable items in the list (results + optional sentinel)
+function mbFocusableItems() {
+  return mbResultsEl.querySelectorAll('.mb-result, .mb-more-row');
+}
+
+
+// ─── §10b  Gallery ────────────────────────────────────────────────────────────
+//
+// Opened via the "More…" sentinel in the search list.
+// Shows a 4-column card grid with lazy thumbnails, category filters, and sort.
+// A new search inside the gallery re-runs Fuse from scratch (≥3 chars required).
+// Closing goes straight back to the main viewer (search overlay stays closed).
+
+const galleryOverlay    = document.getElementById('model-gallery');
+const galleryGridEl     = document.getElementById('gallery-grid');
+const galleryStatusEl   = document.getElementById('gallery-status');
+const galleryFiltersEl  = document.getElementById('gallery-filters');
+const galleryLoadMoreEl = document.getElementById('gallery-load-more-wrap');
+const gallerySearchEl   = document.getElementById('gallery-search-input');
+
+// ── State ──────────────────────────────────────────────────────────────────────
+let _gallerySourceResults = [];   // full Fuse results as passed into openGallery
+let _galleryOriginalResults = []; // snapshot from openGallery — never mutated, used to reset on search clear
+let _galleryFiltered      = [];   // after category filter + sort
+let _galleryPage          = 0;
+let _galleryObserver      = null; // IntersectionObserver for lazy thumb loading
+let _galleryActiveCategories = new Set(); // empty = show all
+
+// ── Open / close ───────────────────────────────────────────────────────────────
+
+function openGallery(results, query) {
+  _gallerySourceResults  = results;
+  _galleryOriginalResults = results;
+  _galleryActiveCategories = new Set();   // reset to "show all"
+
+  gallerySearchEl.value = query || '';
+  closeModelBrowser();
+  galleryOverlay.classList.add('open');
+
+  _buildCategoryFilters(results);
+  _applyGalleryFilters();
+  requestAnimationFrame(() => gallerySearchEl.focus());
+}
+
+function closeGallery() {
+  galleryOverlay.classList.remove('open');
+  _galleryObserver?.disconnect();
+  _galleryObserver = null;
+  galleryGridEl.innerHTML = '';
+  galleryLoadMoreEl.style.display = 'none';
+}
+
+// ── Category filters ───────────────────────────────────────────────────────────
+
+function _buildCategoryFilters(results) {
+  // Count occurrences of each category across the result set
+  const counts = new Map();
+  for (const r of results) {
+    for (const cat of (r.item.categories ?? ['Other'])) {
+      counts.set(cat, (counts.get(cat) ?? 0) + 1);
+    }
+  }
+
+  const sorted = [...counts.entries()].sort((a, b) => b[1] - a[1]);
+
+  galleryFiltersEl.innerHTML = sorted.map(([cat, n]) =>
+    `<label class="gallery-filter-item">` +
+      `<input type="checkbox" class="gallery-cat-cb" value="${escHtml(cat)}">` +
+      `<span class="gallery-filter-label">${escHtml(cat)}</span>` +
+      `<span class="gallery-filter-count">${n}</span>` +
+    `</label>`
+  ).join('');
+
+  galleryFiltersEl.querySelectorAll('.gallery-cat-cb').forEach(cb => {
+    cb.addEventListener('change', () => {
+      if (cb.checked) _galleryActiveCategories.add(cb.value);
+      else            _galleryActiveCategories.delete(cb.value);
+      _applyGalleryFilters();
+    });
+  });
+}
+
+// ── Filter + sort ──────────────────────────────────────────────────────────────
+
+function _applyGalleryFilters() {
+  let items = _gallerySourceResults;
+
+  // Category filter — union: show item if it has ANY checked category
+  if (_galleryActiveCategories.size > 0) {
+    items = items.filter(r =>
+      (r.item.categories ?? ['Other']).some(c => _galleryActiveCategories.has(c))
+    );
+  }
+
+  // Sort
+  const sortVal = document.querySelector('input[name="gallery-sort"]:checked')?.value ?? 'relevance';
+  if (sortVal === 'name') {
+    items = [...items].sort((a, b) =>
+      (a.item.description ?? a.item.name).localeCompare(b.item.description ?? b.item.name)
+    );
+  }
+  // 'relevance' keeps Fuse score order (already sorted by score ascending = best first)
+
+  _galleryFiltered = items;
+  _galleryPage     = 0;
+  galleryGridEl.innerHTML = '';
+  _galleryObserver?.disconnect();
+  _galleryObserver = new IntersectionObserver(_onThumbVisible, { rootMargin: '120px' });
+
+  _renderGalleryPage();
+  galleryStatusEl.textContent = _galleryFiltered.length + ' model' + (_galleryFiltered.length !== 1 ? 's' : '');
+}
+
+// ── Render a page of cards ─────────────────────────────────────────────────────
+
+function _renderGalleryPage() {
+  const start = _galleryPage * GALLERY_PAGE_SIZE;
+  const slice = _galleryFiltered.slice(start, start + GALLERY_PAGE_SIZE);
+
+  if (slice.length === 0 && _galleryPage === 0) {
+    galleryGridEl.innerHTML = '<div class="gallery-empty">No models match the current filters.</div>';
+    galleryLoadMoreEl.style.display = 'none';
+    return;
+  }
+
+  for (const r of slice) {
+    const { name, description, url, thumb } = r.item;
+    const card = document.createElement('div');
+    card.className  = 'gallery-card';
+    card.tabIndex   = 0;
+    card.dataset.url  = url;
+    card.dataset.name = description || name;
+    card.dataset.thumb = thumb;
+
+    card.innerHTML =
+      `<div class="gallery-card-thumb-wrap">` +
+        `<div class="gallery-card-placeholder"></div>` +
+      `</div>` +
+      `<div class="gallery-card-info">` +
+        `<div class="gallery-card-name">${escHtml(description || name)}</div>` +
+        `<div class="gallery-card-file">${escHtml(name)}</div>` +
+      `</div>`;
+
+    card.addEventListener('click',  () => { loadFromBrowser(card.dataset.url, card.dataset.name); closeGallery(); });
+    card.addEventListener('keydown', e => { if (e.key === 'Enter') card.click(); });
+    galleryGridEl.appendChild(card);
+    _galleryObserver.observe(card);
+  }
+
+  const hasMore = (start + GALLERY_PAGE_SIZE) < _galleryFiltered.length;
+  galleryLoadMoreEl.style.display = hasMore ? 'flex' : 'none';
+}
+
+// ── Lazy thumbnail loading via IntersectionObserver ───────────────────────────
+
+function _onThumbVisible(entries) {
+  for (const entry of entries) {
+    if (!entry.isIntersecting) continue;
+    const card = entry.target;
+    _galleryObserver.unobserve(card);
+
+    const wrap  = card.querySelector('.gallery-card-thumb-wrap');
+    const thumb = card.dataset.thumb;
+    if (!thumb) continue;
+
+    const img = document.createElement('img');
+    img.className = 'gallery-card-thumb';
+    img.alt       = card.dataset.name;
+    img.onload    = () => {
+      img.classList.add('loaded');
+      wrap.querySelector('.gallery-card-placeholder')?.remove();
+    };
+    img.onerror   = () => img.remove();   // keep placeholder on 404
+    img.src       = thumb;
+    wrap.appendChild(img);
+  }
+}
+
+// ── Gallery search ─────────────────────────────────────────────────────────────
+
+let _gallerySearchTimer = null;
+
+gallerySearchEl.addEventListener('input', () => {
+  clearTimeout(_gallerySearchTimer);
+  _gallerySearchTimer = setTimeout(() => {
+    const q = gallerySearchEl.value.trim();
+    if (q.length === 0 || q.length >= GALLERY_MIN_CHARS) {
+      _gallerySearch(q);
+    } else {
+      galleryStatusEl.textContent = (GALLERY_MIN_CHARS - q.length) + ' more char' + (GALLERY_MIN_CHARS - q.length !== 1 ? 's' : '') + ' needed…';
+    }
+  }, 200);
+});
+
+function _gallerySearch(query) {
+  if (!query) {
+    // Cleared: restore to the results that opened the gallery
+    _gallerySourceResults = _galleryOriginalResults;
+  } else {
+    if (!mbFuse) return;
+    _gallerySourceResults = mbFuse.search(query);
+  }
+  _galleryActiveCategories = new Set();
+  galleryFiltersEl.querySelectorAll('.gallery-cat-cb').forEach(cb => { cb.checked = false; });
+  _buildCategoryFilters(_gallerySourceResults);
+  _applyGalleryFilters();
+}
+
+// ── Event wiring ───────────────────────────────────────────────────────────────
+
+document.getElementById('btn-gallery-close').addEventListener('click', closeGallery);
+galleryOverlay.addEventListener('click', e => { if (e.target === galleryOverlay) closeGallery(); });
+document.getElementById('btn-gallery-load-more').addEventListener('click', () => {
+  _galleryPage++;
+  _renderGalleryPage();
+});
+document.querySelectorAll('input[name="gallery-sort"]').forEach(radio => {
+  radio.addEventListener('change', _applyGalleryFilters);
+});
+
+// Escape closes gallery too (added alongside existing model-browser Escape handler)
+// (handled in the existing keydown listener below — gallery check added there)
 
 
 // ─── §11  UI helpers + DOM references ────────────────────────────────────────
@@ -1886,14 +2361,14 @@ mbSearchEl.addEventListener('input', () => {
   if (!mbFuse) { mbStatusEl.textContent = 'Model list not ready yet'; return; }
 
   const all     = mbFuse.search(q);
-  const capped  = all.length > MAX_RESULTS;
-  const results = capped ? all.slice(0, MAX_RESULTS) : all;
+  const hasMore = all.length > MB_LIST_MAX;
+  const results = hasMore ? all.slice(0, MB_LIST_MAX) : all;
 
-  renderResults(results);
+  renderResults(results, hasMore ? all : null);
   mbStatusEl.textContent = all.length === 0
     ? 'No matches for "' + q + '"'
-    : capped
-      ? `Top ${MAX_RESULTS} of ${all.length} matches for "${q}"`
+    : hasMore
+      ? `Showing ${MB_LIST_MAX} of ${all.length} matches for "${q}"`
       : all.length + ' match' + (all.length !== 1 ? 'es' : '') + ' for "' + q + '"';
 });
 
@@ -1954,11 +2429,14 @@ renderer.domElement.addEventListener('contextmenu', e => e.preventDefault()); //
 // Keyboard — nudge selected model (browser) or navigate model browser (overlay)
 document.addEventListener('keydown', e => {
   // Model browser keyboard nav takes priority when open
+  if (e.key === 'Escape' && galleryOverlay.classList.contains('open')) {
+    closeGallery(); return;
+  }
   if (e.key === 'Escape' && mbOverlay.classList.contains('open')) {
     closeModelBrowser(); return;
   }
   if (mbOverlay.classList.contains('open')) {
-    const items = mbResultsEl.querySelectorAll('.mb-result');
+    const items = mbFocusableItems();
     if (!items.length) return;
     if (e.key === 'ArrowDown') {
       e.preventDefault();
@@ -1969,7 +2447,9 @@ document.addEventListener('keydown', e => {
       mbFocused = Math.max(mbFocused - 1, 0);
       updateFocus(items);
     } else if (e.key === 'Enter' && mbFocused >= 0 && items[mbFocused]) {
-      items[mbFocused].querySelector('.mb-load-btn').click();
+      const el = items[mbFocused];
+      if (el.classList.contains('mb-more-row')) el.click();
+      else el.querySelector('.mb-load-btn').click();
     }
     return;
   }
@@ -1977,6 +2457,7 @@ document.addEventListener('keydown', e => {
   // Arrow-key nudge for the selected model
   if (renderer.xr.isPresenting || !selectedEntry) return;
   if (document.activeElement?.tagName === 'INPUT') return;
+  if (galleryOverlay.classList.contains('open')) return;
   let moved = true;
   switch (e.key) {
     case 'ArrowLeft':  selectedEntry.mesh.position.x -= NUDGE_STEP; break;
@@ -2010,6 +2491,48 @@ document.addEventListener('keydown', e => {
     <div class="mb-status" id="mb-status">Loading model list…</div>
     <div class="mb-results" id="mb-results">
       <div class="mb-loading-indicator">Fetching model list from GitHub…</div>
+    </div>
+  </div>
+</div>
+<!-- ─── Gallery overlay ─────────────────────────────────────────────────────── -->
+<div id="model-gallery">
+  <div class="gallery-topbar">
+    <span class="gallery-topbar-title">Gallery</span>
+    <div class="gallery-search-wrap">
+      <span class="gallery-search-icon">⌕</span>
+      <input
+        type="text"
+        class="gallery-search"
+        id="gallery-search-input"
+        placeholder="Filter gallery (3+ chars)…"
+        autocomplete="off"
+        spellcheck="false"
+      >
+    </div>
+    <span class="gallery-status" id="gallery-status"></span>
+    <button class="gallery-close" id="btn-gallery-close" title="Close">✕</button>
+  </div>
+  <div class="gallery-body">
+    <div class="gallery-sidebar">
+      <div>
+        <div class="gallery-filter-title">Category</div>
+        <div id="gallery-filters"></div>
+      </div>
+      <div>
+        <div class="gallery-filter-title">Sort by</div>
+        <label class="gallery-sort-item">
+          <input type="radio" name="gallery-sort" value="relevance" checked> <span class="gallery-sort-label">Relevance</span>
+        </label>
+        <label class="gallery-sort-item">
+          <input type="radio" name="gallery-sort" value="name"> <span class="gallery-sort-label">Name A→Z</span>
+        </label>
+      </div>
+    </div>
+    <div class="gallery-main" id="gallery-main">
+      <div class="gallery-grid" id="gallery-grid"></div>
+      <div class="gallery-load-more-wrap" id="gallery-load-more-wrap" style="display:none">
+        <button class="gallery-load-more" id="btn-gallery-load-more">Load more</button>
+      </div>
     </div>
   </div>
 </div>
