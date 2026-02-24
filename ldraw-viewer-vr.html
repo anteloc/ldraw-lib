@@ -421,9 +421,9 @@ const LASER_RADIUS          = 0.003;  // metres — visible thickness in VR
 const COLOR_IDLE            = 0xffffff;
 const COLOR_HIT             = 0x44ff44;  // green — laser touching a model, interaction ready
 const COLOR_GRABBED         = 0xff2222;
-const ROTATE_SENSITIVITY    = 10.0;   // rotation speed multiplier
 const SCALE_SPEED           = 0.02;   // scale change per frame at full thumbstick deflection
 const PUSH_SPEED            = 0.04;   // metres per frame at full thumbstick deflection
+const TRACKBALL_SPEED       = 15.0;   // radians of rotation per metre of hand travel
 // Raycasting throttle: when no gesture is active, only raycast every N frames.
 // At 72fps, N=3 gives ~24 laser updates/sec — imperceptible for idle aiming.
 // Active gestures always raycast every frame for precision.
@@ -521,17 +521,58 @@ window.addEventListener('resize', resize);
 //   scene
 //     ├── (browser) entry.mesh   ← normal scale, LDU units
 //     └── entry.pivot            ← world position of model in XR
-//           └── entry.root       ← uniform scale (LDU→metres) + rotation
-//                 └── (XR) entry.mesh
-//
-// The pivot/root wrapper is always in the scene; the mesh is reparented
-// between scene root (browser) and root (XR) on session start/end.
+//           ├── entry.root       ← uniform scale (LDU→metres) + rotation
+//           │     └── (XR) entry.mesh
+//           └── entry.orb        ← trackball orb, shown during rotate gesture
+//                 ├── invisible sphere  (intercepts laser raycast)
+//                 └── three ring lines  (red=X, green=Y, blue=Z)
 
 const models = [];   // all currently loaded models, in load order
 const _meshList = []; // cached models.map(e => e.mesh) — updated on load/remove
 
 let edgesVisible  = true;
 let selectedEntry = null;   // model currently selected for keyboard nudge
+
+// ── Trackball orb ─────────────────────────────────────────────────────────────
+//
+// Built once per entry; sized and shown in startRotate, hidden in endInteraction.
+// The invisible sphere intercepts the laser so rotation works on the orb surface.
+// The three torus rings (RGB = XYZ) give the classic CAD trackball visual.
+
+function makeOrb(entry) {
+  const orb = new THREE.Group();
+  orb.visible = false;
+
+  // Invisible sphere — raycasted as if solid, but never rendered.
+  // Radius is set in startRotate once we know the model's bounding sphere.
+  const sphereGeo = new THREE.SphereGeometry(1, 32, 24);
+  const sphereMat = new THREE.MeshBasicMaterial({
+    transparent: true, opacity: 0, depthWrite: false, side: THREE.FrontSide,
+  });
+  const sphere = new THREE.Mesh(sphereGeo, sphereMat);
+  sphere.userData.orbEntry = entry;   // laser hit → look up entry
+  orb.add(sphere);
+
+  // Three ring lines — TorusGeometry, one per axis
+  const torusSeg = 128;   // smooth circle
+  const tubeR    = 0.012; // thin tube in metres (scaled with orb)
+  const rings = [
+    { color: 0xff2222, rx: 0,           ry: 0           },   // X-axis ring (lies in YZ plane)
+    { color: 0x22ff22, rx: Math.PI / 2, ry: 0           },   // Y-axis ring (lies in XZ plane)
+    { color: 0x2266ff, rx: 0,           ry: Math.PI / 2 },   // Z-axis ring (lies in XY plane)
+  ];
+
+  rings.forEach(({ color, rx, ry }) => {
+    const geo  = new THREE.TorusGeometry(1, tubeR, 12, torusSeg);
+    const mat  = new THREE.MeshBasicMaterial({ color, depthTest: false, transparent: true, opacity: 0.85 });
+    const mesh = new THREE.Mesh(geo, mat);
+    mesh.rotation.x = rx;
+    mesh.rotation.y = ry;
+    orb.add(mesh);
+  });
+
+  return { orb, sphere };
+}
 
 function createEntry(mesh, name) {
   // Place new XR pivot to the right of all existing ones
@@ -546,7 +587,15 @@ function createEntry(mesh, name) {
   root.scale.setScalar(LDU_TO_METERS);
   pivot.add(root);
 
-  return { mesh, pivot, root, name };
+  // Orb is parented to root — rigidly attached to the model, rotates with it.
+  // Sized in onXRSessionStart once the mesh is re-centred into root-local space.
+  const entry = { mesh, pivot, root, name, orb: null, orbSphere: null };
+  const { orb, sphere } = makeOrb(entry);
+  entry.orb       = orb;
+  entry.orbSphere = sphere;
+  root.add(orb);
+
+  return entry;
 }
 
 function fitCamera() {
@@ -598,11 +647,15 @@ function removeEntry(entry) {
   }
   if (selectedEntry === entry) selectedEntry = null;
 
-  const { mesh, pivot, root } = entry;
+  const { mesh, pivot, root, orb } = entry;
   root.remove(mesh);
   scene.remove(mesh);
   scene.remove(pivot);
   disposeMesh(mesh);
+  if (orb) orb.traverse(o => {
+    if (o.geometry) o.geometry.dispose();
+    if (o.material) o.material.dispose();
+  });
 
   models.splice(models.indexOf(entry), 1);
   _meshList.splice(_meshList.indexOf(entry.mesh), 1);
@@ -877,11 +930,9 @@ const _raycaster     = new THREE.Raycaster();
 _raycaster.firstHitOnly = true;   // BVH short-circuits after first hit — much faster
 const _rayOrigin     = new THREE.Vector3();
 const _rayDir        = new THREE.Vector3();
-const _fingerDelta   = new THREE.Vector3();
-const _oldArm        = new THREE.Vector3();
-const _newArm        = new THREE.Vector3();
-const _rotQuat       = new THREE.Quaternion();
 const _pushVec       = new THREE.Vector3();
+const _currentArm    = new THREE.Vector3();   // reused as hand-delta in applyRotate
+const _rotQuat       = new THREE.Quaternion();
 
 let _frameCount = 0;
 
@@ -934,13 +985,15 @@ function updateLaser(pointer) {
   if (!pointer.userData.rayDir) pointer.userData.rayDir = new THREE.Vector3();
   pointer.userData.rayDir.copy(_rayDir);
 
-  // Test all loaded meshes; pick the nearest hit across all of them
+  // Test all loaded models; prefer orb sphere when rotating (orb visible),
+  // otherwise test the mesh directly. Pick nearest hit across all entries.
   let nearestDist  = Infinity;
   let nearestPoint = null;
   let nearestEntry = null;
 
   for (const entry of models) {
-    const hits = _raycaster.intersectObject(entry.mesh, /* recursive */ true);
+    const target = (entry.orb?.visible) ? entry.orbSphere : entry.mesh;
+    const hits   = _raycaster.intersectObject(target, /* recursive */ true);
     if (hits.length > 0 && hits[0].distance < nearestDist) {
       nearestDist  = hits[0].distance;
       nearestPoint = hits[0].point;
@@ -967,9 +1020,8 @@ function makeSlot() {
       offsetQuat: new THREE.Quaternion(),
     },
     rotate: {
-      entry:           null,
-      touchPointLocal: new THREE.Vector3(),
-      prevFingerPos:   new THREE.Vector3(),
+      entry:   null,
+      prevPos: new THREE.Vector3(),   // controller world position last frame
     },
   };
 }
@@ -1004,10 +1056,9 @@ function startGrab(slot, pointer, hitPoint, hitEntry) {
 }
 
 function startRotate(slot, pointer, hitPoint, hitEntry) {
+  pointer.getWorldPosition(slot.rotate.prevPos);
   slot.rotate.entry = hitEntry;
-  hitEntry.root.worldToLocal(slot.rotate.touchPointLocal.copy(hitPoint));
-  pointer.getWorldPosition(slot.rotate.prevFingerPos);
-
+  if (hitEntry.orb) hitEntry.orb.visible = true;
   slot.type    = 'rotate';
   slot.pointer = pointer;
   setLaserColor(pointer, COLOR_GRABBED);
@@ -1016,6 +1067,7 @@ function startRotate(slot, pointer, hitPoint, hitEntry) {
 function endInteraction(slot) {
   if (!slot.type) return;
   if (slot.pointer) setLaserColor(slot.pointer, COLOR_IDLE);
+  if (slot.type === 'rotate' && slot.rotate.entry?.orb) slot.rotate.entry.orb.visible = false;
   slot.type         = null;
   slot.pointer      = null;
   slot.grab.entry   = null;
@@ -1040,33 +1092,30 @@ function applyGrab(slot) {
 }
 
 function applyRotate(slot) {
-  const ctrl = slot.pointer;
+  const { entry, prevPos } = slot.rotate;
+  const { pivot, root }    = entry;
 
-  // Finger lifted — ray no longer on this model, pause rotation
-  if (ctrl.userData.hitEntry !== slot.rotate.entry) {
-    ctrl.getWorldPosition(slot.rotate.prevFingerPos);
+  slot.pointer.getWorldPosition(_ctrlWorldPos);
+
+  // Delta of controller movement since last frame
+  _currentArm.subVectors(_ctrlWorldPos, prevPos);   // reusing _currentArm as delta
+  if (_currentArm.lengthSq() < 1e-10) {
+    prevPos.copy(_ctrlWorldPos);
     return;
   }
 
-  ctrl.getWorldPosition(_ctrlWorldPos);
-  _fingerDelta.subVectors(_ctrlWorldPos, slot.rotate.prevFingerPos);
+  // Trackball mapping (Three.js world: +X right, +Y up, +Z toward user):
+  //   hand moves right (+X) → rotate around −Y (model's right face swings away)
+  //   hand moves up    (+Y) → rotate around −X (model's top tips away from user)
+  //   hand moves fwd   (+Z) → rotate around +Z (arc / roll)
+  const dx = -_currentArm.x * TRACKBALL_SPEED;
+  const dy = _currentArm.y * TRACKBALL_SPEED;
+  const dz = _currentArm.z * TRACKBALL_SPEED;
 
-  if (_fingerDelta.lengthSq() > 0) {
-    const { root } = slot.rotate.entry;
+  _rotQuat.set(-dy / 2, -dx / 2, dz / 2, 1).normalize();
+  root.quaternion.premultiply(_rotQuat);
 
-    root.getWorldPosition(_newArm);                 // centroid
-    _oldArm.copy(slot.rotate.touchPointLocal)
-      .applyMatrix4(root.matrixWorld)
-      .sub(_newArm);                                // arm: centroid → touch point
-
-    _newArm.copy(_oldArm).addScaledVector(_fingerDelta, ROTATE_SENSITIVITY);
-    _newArm.setLength(_oldArm.length());
-
-    _rotQuat.setFromUnitVectors(_oldArm.normalize(), _newArm.normalize());
-    root.quaternion.premultiply(_rotQuat);
-  }
-
-  slot.rotate.prevFingerPos.copy(_ctrlWorldPos);
+  prevPos.copy(_ctrlWorldPos);
 }
 
 // Called every frame while XR is presenting
@@ -1157,142 +1206,158 @@ function updateXRControls() {
     }
   }
 
-  // 6. A/X button — toggle the mini-display on each controller independently.
-  //    Rising-edge so a single press toggles once.
-  for (const { pointer } of controllers) {
-    const source     = pointer.userData.xrInputSource;
-    const pressed    = source?.gamepad?.buttons[4]?.pressed ?? false;
-    const wasPressed = pointer.userData.prevAXPressed ?? false;
+  // 6. A/X button — toggle the mini-display; only one controller at a time.
+  //    Uses handedness (set on 'connected') to find the other controller,
+  //    since connection order does not reliably map to left/right.
+  for (let i = 0; i < controllers.length; i++) {
+    const { pointer } = controllers[i];
+    const source      = pointer.userData.xrInputSource;
+    const pressed     = source?.gamepad?.buttons[4]?.pressed ?? false;
+    const wasPressed  = pointer.userData.prevAXPressed ?? false;
     pointer.userData.prevAXPressed = pressed;
 
     if (pressed && !wasPressed && pointer.userData.miniDisplay) {
-      pointer.userData.miniDisplay.visible = !pointer.userData.miniDisplay.visible;
+      const myDisplay = pointer.userData.miniDisplay;
+
+      // Find other controller by opposite handedness
+      const otherHand    = pointer.userData.handedness === 'left' ? 'right' : 'left';
+      const otherPointer = controllers.find(c => c.pointer.userData.handedness === otherHand)?.pointer;
+      const otherDisplay = otherPointer?.userData.miniDisplay;
+
+      if (myDisplay.visible) {
+        myDisplay.visible = false;
+      } else {
+        if (otherDisplay) otherDisplay.visible = false;
+        myDisplay.visible = true;
+      }
     }
   }
 }
 
 // ── Mini-display ───────────────────────────────────────────────────────────────
 //
-// A rigid virtual screen attached to the controller grip by a short bar.
-// Parented to the grip space so it rotates 1:1 with hand/wrist movements —
-// like a wrist-mounted display or a physical add-on accessory.
-//
-// Toggle on/off with A (right hand) or X (left hand) — buttons[4].
-// Completely independent from laser state.
+// A rigid virtual screen attached to the controller grip.
+// Parented to grip space — rotates 1:1 with hand/wrist movements.
+// Toggle with A (right) / X (left) — buttons[4].
+// Only one controller shows the display at a time: pressing A/X while the
+// other hand's display is visible hides that one first.
+
+// SVG icon definitions — inline data URLs, drawn onto the canvas via drawImage.
+// Each is 44×44, coloured via `fill` in the SVG, rendered at ~32×32 on canvas.
+function _svgIcon(pathD, fill) {
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
+    <path d="${pathD}" fill="${fill}"/>
+  </svg>`;
+  const img = new Image();
+  img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+  return img;
+}
+
+const ICON_SIZE = 28;   // px on canvas
+
+// Trigger — index finger extended, curling toward a trigger
+// (simplified: a pointing hand silhouette)
+const _iconTrigger = _svgIcon(
+  'M22 4 C18 4 15 7 15 11 L15 24 C15 26 13 28 13 28 L13 36 C13 38 15 40 17 40 L30 40 C32 40 34 38 34 36 L34 26 C34 24 32 22 30 22 L28 22 L28 11 C28 7 25 4 22 4Z M18 22 L18 11 C18 9 20 8 22 8 C24 8 25 9 25 11 L25 22Z',
+  '#ffcc00'
+);
+
+// Grip — four fingers wrapped, squeeze gesture
+const _iconGrip = _svgIcon(
+  'M12 16 C12 12 15 10 18 10 C19 10 20 10.5 20 10.5 C20 10.5 21 8 23 8 C25 8 26 9.5 26 10.5 C26 10.5 27 9 29 9 C31 9 32 11 32 13 L32 14 C33 14 34 15 34 17 L34 28 C34 33 30 37 25 37 L22 37 C17 37 12 33 12 28Z M18 14 L18 22 M22 13 L22 22 M26 14 L26 22',
+  '#ffcc00'
+);
+
+// Stick ←→ — horizontal double-headed arrow
+const _iconStickH = _svgIcon(
+  'M8 22 L16 14 L16 19 L28 19 L28 14 L36 22 L28 30 L28 25 L16 25 L16 30Z',
+  '#44ff44'
+);
+
+// Stick ↑↓ — vertical double-headed arrow
+const _iconStickV = _svgIcon(
+  'M22 6 L30 14 L25 14 L25 30 L30 30 L22 38 L14 30 L19 30 L19 14 L14 14Z',
+  '#44ff44'
+);
 
 function makeMiniDisplay() {
   const group = new THREE.Group();
-  // Position is set in the 'connected' handler once handedness is known.
-  // Default hidden; starts at a neutral position until then.
   group.visible = false;
 
-  // ── Connecting bar — a single Line, hair-thin ─────────────────────────────
-  // Runs from group origin (grip attachment point) to the display centre.
-  // Actual end-point matches group.position so it appears to anchor the screen.
-  const barGeo = new THREE.BufferGeometry().setFromPoints([
-    new THREE.Vector3(0, 0, 0),
-    new THREE.Vector3(0, 0, 0),   // updated in positionForHand()
-  ]);
-  const barMat  = new THREE.LineBasicMaterial({ color: 0xaaaacc, depthTest: false });
-  const barLine = new THREE.Line(barGeo, barMat);
-  group.add(barLine);
-
-  // ── Thin rounded frame — drawn on the canvas, no BoxGeometry ─────────────
-  const W = 512, H = 300;
+  // ── Canvas ────────────────────────────────────────────────────────────────
+  const W = 512, H = 256;
   const canvas = document.createElement('canvas');
   canvas.width  = W;
   canvas.height = H;
   const ctx = canvas.getContext('2d');
 
-  // Rounded-rect frame (thin border, transparent fill area for the screen)
-  const r = 28;
-  ctx.clearRect(0, 0, W, H);
+  const texture = new THREE.CanvasTexture(canvas);
 
-  // Dark background
-  ctx.beginPath();
-  ctx.moveTo(r, 0); ctx.lineTo(W - r, 0);
-  ctx.quadraticCurveTo(W, 0, W, r);
-  ctx.lineTo(W, H - r); ctx.quadraticCurveTo(W, H, W - r, H);
-  ctx.lineTo(r, H);     ctx.quadraticCurveTo(0, H, 0, H - r);
-  ctx.lineTo(0, r);     ctx.quadraticCurveTo(0, 0, r, 0);
-  ctx.closePath();
-  ctx.fillStyle = '#0a0a14';
-  ctx.fill();
+  function drawPanel(icons) {
+    const r = 22;
+    ctx.clearRect(0, 0, W, H);
 
-  // Thin frame border
-  ctx.strokeStyle = 'rgba(170,170,204,0.55)';
-  ctx.lineWidth = 3;
-  ctx.stroke();
+    // Rounded background
+    ctx.beginPath();
+    ctx.moveTo(r, 0); ctx.lineTo(W - r, 0);
+    ctx.quadraticCurveTo(W, 0, W, r);
+    ctx.lineTo(W, H - r); ctx.quadraticCurveTo(W, H, W - r, H);
+    ctx.lineTo(r, H);     ctx.quadraticCurveTo(0, H, 0, H - r);
+    ctx.lineTo(0, r);     ctx.quadraticCurveTo(0, 0, r, 0);
+    ctx.closePath();
+    ctx.fillStyle = 'rgba(10, 10, 18, 0.88)';
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(255,255,255,0.18)';
+    ctx.lineWidth = 2;
+    ctx.stroke();
 
-  // Title bar
-  ctx.fillStyle = '#1a1a2e';
-  ctx.fillRect(r * 0.4, 3, W - r * 0.8, 40);
-  ctx.font = 'bold 20px monospace';
-  ctx.fillStyle = '#ffcc00';
-  ctx.textAlign = 'center';
-  ctx.textBaseline = 'middle';
-  ctx.fillText('CONTROLLER  HELP', W / 2, 23);
+    // Rows
+    const rows = [
+      { img: icons[0], label: 'Trigger',    desc: 'Rotate' },
+      { img: icons[1], label: 'Grip',       desc: 'Grab / Move' },
+      { img: icons[2], label: 'Stick ← →', desc: 'Scale' },
+      { img: icons[3], label: 'Stick ↑ ↓', desc: 'Push / Pull' },
+    ];
 
-  ctx.strokeStyle = 'rgba(255,255,255,0.10)';
-  ctx.lineWidth = 1;
-  ctx.beginPath(); ctx.moveTo(12, 43); ctx.lineTo(W - 12, 43); ctx.stroke();
+    const rowH = (H - 28) / rows.length;
+    rows.forEach((row, i) => {
+      const y = 20 + i * rowH + rowH * 0.5;
 
-  // Rows
-  const rows = [
-    { icon: '☞', color: '#ffcc00', label: 'Trigger',    desc: 'Rotate model' },
-    { icon: '✊', color: '#ffcc00', label: 'Grip',       desc: 'Grab & move' },
-    { icon: '↔', color: '#44ff44', label: 'Stick ← →', desc: 'Scale model' },
-    { icon: '↕', color: '#44ff44', label: 'Stick ↑ ↓', desc: 'Push / pull' },
-  ];
+      // SVG icon centred vertically in row
+      ctx.drawImage(row.img, 10, y - ICON_SIZE / 2, ICON_SIZE, ICON_SIZE);
 
-  const startY = 58;
-  const rowH   = (H - startY - 18) / rows.length;
+      ctx.font = 'bold 18px monospace';
+      ctx.fillStyle = '#ffffff';
+      ctx.textAlign = 'left';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(row.label, 50, y - 8);
 
-  rows.forEach((row, i) => {
-    const y = startY + i * rowH + rowH * 0.5;
-    if (i > 0) {
-      ctx.strokeStyle = 'rgba(255,255,255,0.06)';
-      ctx.lineWidth = 1;
-      ctx.beginPath(); ctx.moveTo(12, y - rowH * 0.5); ctx.lineTo(W - 12, y - rowH * 0.5); ctx.stroke();
-    }
-    ctx.font = 'bold 24px sans-serif';
-    ctx.fillStyle = row.color;
-    ctx.textAlign = 'center';
-    ctx.textBaseline = 'middle';
-    ctx.fillText(row.icon, 36, y);
+      ctx.font = '15px sans-serif';
+      ctx.fillStyle = 'rgba(255,255,255,0.6)';
+      ctx.fillText(row.desc, 50, y + 12);
+    });
 
-    ctx.font = 'bold 19px monospace';
-    ctx.fillStyle = '#e8e8ec';
-    ctx.textAlign = 'left';
-    ctx.fillText(row.label, 66, y - 9);
+    texture.needsUpdate = true;
+  }
 
-    ctx.font = '15px sans-serif';
-    ctx.fillStyle = 'rgba(200,200,220,0.6)';
-    ctx.fillText(row.desc, 66, y + 11);
+  // Load all four icons, draw once all are ready
+  const icons = [_iconTrigger, _iconGrip, _iconStickH, _iconStickV];
+  let loaded = 0;
+  icons.forEach(img => {
+    if (img.complete) { if (++loaded === 4) drawPanel(icons); }
+    else img.onload = () => { if (++loaded === 4) drawPanel(icons); };
   });
 
-  ctx.font = '12px monospace';
-  ctx.fillStyle = 'rgba(255,255,255,0.22)';
-  ctx.textAlign = 'center';
-  ctx.fillText('[A/X] toggle', W / 2, H - 10);
+  const mat    = new THREE.SpriteMaterial({ map: texture, transparent: true, depthTest: false });
+  const sprite = new THREE.Sprite(mat);
+  sprite.scale.set(0.22, 0.11, 1);
+  group.add(sprite);
 
-  const texture   = new THREE.CanvasTexture(canvas);
-  const screenGeo = new THREE.PlaneGeometry(0.130, 0.076);
-  const screenMat = new THREE.MeshBasicMaterial({ map: texture, transparent: true, depthTest: false });
-  const screen    = new THREE.Mesh(screenGeo, screenMat);
-  group.add(screen);
-
-  // ── Helper: set position/rotation and update bar endpoint for a given hand ─
+  // ── Position helper — called once from 'connected' event ─────────────────
   group.userData.positionForHand = (handedness) => {
-    // Place to the upper-outer side: right of left controller, left of right
-    const side = handedness === 'left' ? 1 : -1;   // +X = right, -X = left
+    const side = handedness === 'left' ? 1 : -1;
     group.position.set(side * 0.10, 0.07, 0.01);
     group.rotation.set(-Math.PI * 0.5, 0, side * Math.PI * 0.10);
-
-    // Update bar line: from grip origin (0,0,0) to display centre in local space
-    const pos = barGeo.attributes.position;
-    pos.setXYZ(1, group.position.x, group.position.y, group.position.z);
-    pos.needsUpdate = true;
   };
 
   return group;
@@ -1330,7 +1395,7 @@ for (let i = 0; i < controllers.length; i++) {
 
   pointer.addEventListener('connected', e => {
     pointer.userData.xrInputSource = e.data;
-    // Position the mini-display to the upper-outer side once we know the hand
+    pointer.userData.handedness    = e.data.handedness;   // 'left' | 'right'
     if (pointer.userData.miniDisplay?.userData.positionForHand) {
       pointer.userData.miniDisplay.userData.positionForHand(e.data.handedness);
     }
@@ -1421,6 +1486,16 @@ function onXRSessionStart(mode) {
     const box = new THREE.Box3().setFromObject(mesh);
     const centre = box.getCenter(new THREE.Vector3());
     mesh.position.sub(centre);
+
+    // Size the orb to wrap the re-centred mesh in root-local space.
+    // After re-centring, mesh bounding sphere centre ≈ root origin.
+    // Radius is in root-local units (LDU) — root.scale handles world conversion.
+    if (entry.orb && entry.orbSphere) {
+      const bs = new THREE.Box3().setFromObject(mesh).getBoundingSphere(new THREE.Sphere());
+      const r  = bs.radius * 1.05;   // 5% clearance so rings sit just outside
+      entry.orbSphere.scale.setScalar(r);
+      entry.orb.children.forEach((c, i) => { if (i > 0) c.scale.setScalar(r); });
+    }
   }
 
   // Place pivots using the XR reference space viewer pose so we get the actual
