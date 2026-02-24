@@ -419,9 +419,11 @@ const MODEL_PIVOT_Z = -0.6;   // metres in front of user
 const LASER_LENGTH          = 5;      // metres
 const LASER_RADIUS          = 0.003;  // metres — visible thickness in VR
 const COLOR_IDLE            = 0xffffff;
+const COLOR_HIT             = 0x44ff44;  // green — laser touching a model, interaction ready
 const COLOR_GRABBED         = 0xff2222;
 const ROTATE_SENSITIVITY    = 10.0;   // rotation speed multiplier
 const SCALE_SPEED           = 0.02;   // scale change per frame at full thumbstick deflection
+const PUSH_SPEED            = 0.04;   // metres per frame at full thumbstick deflection
 // Raycasting throttle: when no gesture is active, only raycast every N frames.
 // At 72fps, N=3 gives ~24 laser updates/sec — imperceptible for idle aiming.
 // Active gestures always raycast every frame for precision.
@@ -879,6 +881,7 @@ const _fingerDelta   = new THREE.Vector3();
 const _oldArm        = new THREE.Vector3();
 const _newArm        = new THREE.Vector3();
 const _rotQuat       = new THREE.Quaternion();
+const _pushVec       = new THREE.Vector3();
 
 let _frameCount = 0;
 
@@ -927,6 +930,9 @@ function updateLaser(pointer) {
   pointer.getWorldPosition(_rayOrigin);
   _rayDir.set(0, 0, -1).transformDirection(pointer.matrixWorld);
   _raycaster.set(_rayOrigin, _rayDir);
+  // Snapshot ray direction for push/pull — used by thumbstick Y in updateXRControls
+  if (!pointer.userData.rayDir) pointer.userData.rayDir = new THREE.Vector3();
+  pointer.userData.rayDir.copy(_rayDir);
 
   // Test all loaded meshes; pick the nearest hit across all of them
   let nearestDist  = Infinity;
@@ -1073,9 +1079,17 @@ function updateXRControls() {
   const doRaycast = anyActive || (_frameCount % RAYCAST_IDLE_INTERVAL === 0);
 
   if (doRaycast) {
-    for (const { pointer } of controllers) {
+    for (let i = 0; i < controllers.length; i++) {
+      const { pointer } = controllers[i];
       ({ hitPoint: pointer.userData.hitPoint,
          hitEntry: pointer.userData.hitEntry } = updateLaser(pointer));
+
+      // Update idle-state color: green when touching a model, white when not.
+      // Skip if this controller is mid-interaction — startGrab/startRotate own
+      // the color while active, and endInteraction restores it.
+      if (slots[i].type === null) {
+        setLaserColor(pointer, pointer.userData.hitEntry ? COLOR_HIT : COLOR_IDLE);
+      }
     }
   }
 
@@ -1093,11 +1107,12 @@ function updateXRControls() {
     const source = pointer.userData.xrInputSource;
     if (!source?.gamepad) continue;
 
-    const thumbY = source.gamepad.axes[3] ?? 0;
-    if (Math.abs(thumbY) <= 0.1) continue;
+    // axes[2] = thumbstick X: positive = right → scale up; negative = left → scale down
+    const thumbX = source.gamepad.axes[2] ?? 0;
+    if (Math.abs(thumbX) <= 0.1) continue;
 
     const newScale = THREE.MathUtils.clamp(
-      entry.root.scale.x * (1 + thumbY * SCALE_SPEED),
+      entry.root.scale.x * (1 + thumbX * SCALE_SPEED),
       LDU_TO_METERS * 0.05,
       LDU_TO_METERS * 30
     );
@@ -1105,7 +1120,29 @@ function updateXRControls() {
     mrShadowDisc.scale.setScalar(newScale / LDU_TO_METERS);
   }
 
-  // 4. B/Y button — remove the model the laser is currently hitting.
+  // 4. Thumbstick push/pull — move model along the laser ray when idle and hitting.
+  //    up (thumbY < 0) = push away;  down (thumbY > 0) = pull closer.
+  //    Only active when the laser is green (slot idle + hitEntry exists).
+  for (let i = 0; i < controllers.length; i++) {
+    const { pointer } = controllers[i];
+    if (slots[i].type !== null) continue;           // skip — mid-interaction
+
+    const entry = pointer.userData.hitEntry;
+    if (!entry) continue;                           // skip — laser not on a model
+
+    const source = pointer.userData.xrInputSource;
+    if (!source?.gamepad) continue;
+
+    // axes[3] = thumbstick Y: positive = down (pull), negative = up (push)
+    const thumbY = source.gamepad.axes[3] ?? 0;
+    if (Math.abs(thumbY) <= 0.1) continue;
+
+    // Translate pivot along ray direction — positive thumbY pulls (negate ray = toward user)
+    _pushVec.copy(pointer.userData.rayDir).multiplyScalar(-thumbY * PUSH_SPEED);
+    entry.pivot.position.add(_pushVec);
+  }
+
+  // 5. B/Y button — remove the model the laser is currently hitting.
   //    Rising-edge detection fires exactly once per press.
   for (const { pointer } of controllers) {
     const source     = pointer.userData.xrInputSource;
