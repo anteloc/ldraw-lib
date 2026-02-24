@@ -79,172 +79,6 @@
   /* MR shadow catcher — a subtle disc under the model in MR */
   /* (handled via Three.js object, no CSS needed) */
 
-  /* ─── Model Browser Overlay ─────────────────────────────────────────────── */
-  #model-browser {
-    display: none;
-    position: fixed; inset: 0; z-index: 100;
-    background: rgba(8,8,10,.85);
-    backdrop-filter: blur(6px);
-    align-items: flex-start; justify-content: center;
-    padding-top: 80px;
-  }
-  #model-browser.open { display: flex; }
-
-  .mb-panel {
-    background: var(--panel);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    width: 560px; max-width: 95vw;
-    max-height: 70vh;
-    display: flex; flex-direction: column;
-    box-shadow: 0 24px 64px rgba(0,0,0,.6);
-    overflow: hidden;
-  }
-
-  .mb-header {
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 16px 20px 12px;
-    border-bottom: 1px solid var(--border);
-    flex-shrink: 0;
-  }
-  .mb-title {
-    font-size: 11px; font-weight: 700; text-transform: uppercase;
-    letter-spacing: .15em; color: var(--muted);
-  }
-  .mb-close {
-    background: none; border: none; color: var(--muted);
-    cursor: pointer; font-size: 18px; line-height: 1; padding: 0;
-    transition: color .15s;
-  }
-  .mb-close:hover { color: var(--text); }
-
-  .mb-search-wrap {
-    padding: 14px 20px 10px;
-    flex-shrink: 0;
-    position: relative;
-  }
-  .mb-search {
-    width: 100%;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: 10px 14px 10px 36px;
-    color: var(--text);
-    font-family: 'Space Mono', monospace;
-    font-size: 12px;
-    outline: none;
-    transition: border-color .15s;
-  }
-  .mb-search:focus { border-color: var(--accent); }
-  .mb-search::placeholder { color: var(--muted); }
-  .mb-search-icon {
-    position: absolute; left: 33px; top: 50%; transform: translateY(-50%);
-    color: var(--muted); font-size: 14px; pointer-events: none;
-  }
-
-  .mb-status {
-    padding: 0 20px 8px;
-    font-family: 'Space Mono', monospace;
-    font-size: 10px;
-    color: var(--muted);
-    flex-shrink: 0;
-    min-height: 22px;
-  }
-
-  .mb-results {
-    flex: 1; overflow-y: auto;
-    padding: 0 12px 12px;
-  }
-  /* Custom scrollbar */
-  .mb-results::-webkit-scrollbar { width: 4px; }
-  .mb-results::-webkit-scrollbar-track { background: transparent; }
-  .mb-results::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
-
-  .mb-result {
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 10px 12px;
-    border-radius: 4px;
-    border: 1px solid transparent;
-    cursor: pointer;
-    transition: all .12s;
-    margin-bottom: 4px;
-    gap: 12px;
-  }
-  .mb-result:hover { background: rgba(255,255,255,.04); border-color: var(--border); }
-  .mb-result.focused { background: rgba(255,204,0,.07); border-color: rgba(255,204,0,.3); }
-
-  .mb-result-name {
-    font-family: 'Space Mono', monospace;
-    font-size: 11px;
-    color: var(--text);
-    line-height: 1.4;
-  }
-  .mb-result-filename {
-    font-family: 'Space Mono', monospace;
-    font-size: 9px;
-    color: var(--muted);
-    line-height: 1.3;
-  }
-  .mb-result-label {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
-    min-width: 0;
-    word-break: break-all;
-  }
-  /* Fuse.js highlight spans injected into name and filename */
-  .mb-result-name mark,
-  .mb-result-filename mark {
-    background: none;
-    color: var(--accent);
-    font-weight: 700;
-  }
-
-  .mb-load-btn {
-    font-family: 'Space Mono', monospace; font-size: 10px;
-    padding: 5px 10px; border-radius: 3px;
-    border: 1px solid var(--border); background: transparent;
-    color: var(--muted); cursor: pointer; white-space: nowrap;
-    transition: all .12s; flex-shrink: 0;
-  }
-  .mb-result:hover .mb-load-btn,
-  .mb-result.focused .mb-load-btn { border-color: var(--accent); color: var(--accent); }
-
-  .mb-empty {
-    text-align: center; padding: 32px 20px;
-    font-family: 'Space Mono', monospace; font-size: 11px; color: var(--muted);
-    line-height: 1.8;
-  }
-
-  .mb-loading-indicator {
-    text-align: center; padding: 24px;
-    font-family: 'Space Mono', monospace; font-size: 11px; color: var(--muted);
-  }
-
-  /* ─── More… sentinel row ────────────────────────────────────────────────────── */
-  .mb-more-row {
-    display: flex; align-items: center; gap: 10px;
-    padding: 11px 12px;
-    border-radius: 4px;
-    border: 1px solid rgba(255,204,0,.2);
-    background: rgba(255,204,0,.04);
-    cursor: pointer;
-    transition: all .12s;
-    margin-top: 6px;
-  }
-  .mb-more-row:hover, .mb-more-row.focused {
-    border-color: var(--accent);
-    background: rgba(255,204,0,.1);
-  }
-  .mb-more-icon {
-    font-size: 16px; color: var(--accent); flex-shrink: 0; line-height: 1;
-  }
-  .mb-more-label {
-    font-family: 'Space Mono', monospace; font-size: 11px;
-    color: var(--accent); letter-spacing: .04em;
-  }
-
   /* ─── Gallery overlay ───────────────────────────────────────────────────────── */
   #model-gallery {
     display: none;
@@ -355,12 +189,12 @@
 
   .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(4, 200px);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 12px;
   }
 
   .gallery-card {
-    width: 200px; height: 220px;
+    width: 100%; min-width: 0; height: 220px;
     background: var(--panel);
     border: 1px solid var(--border);
     border-radius: 6px;
@@ -381,7 +215,7 @@
   }
 
   .gallery-card-thumb-wrap {
-    width: 200px; height: 160px; flex-shrink: 0;
+    width: 100%; height: 140px; flex-shrink: 0;
     background: var(--bg);
     display: flex; align-items: center; justify-content: center;
     overflow: hidden;
@@ -407,8 +241,8 @@
   .gallery-card-placeholder::after  { right: 6px; }
 
   .gallery-card-info {
-    flex: 1; padding: 8px 10px 10px;
-    display: flex; flex-direction: column; gap: 3px; overflow: hidden;
+    flex: 1; padding: 6px 8px 8px;
+    display: flex; flex-direction: column; gap: 2px; overflow: hidden;
   }
   .gallery-card-name {
     font-family: 'Space Mono', monospace; font-size: 10px; font-weight: 700;
@@ -418,6 +252,17 @@
   .gallery-card-file {
     font-family: 'Space Mono', monospace; font-size: 9px; color: var(--muted);
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .gallery-card-cats,
+  .gallery-card-kwd {
+    font-family: 'Space Mono', monospace; font-size: 9px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    line-height: 1.3;
+  }
+  .gallery-card-cats { color: var(--muted); }
+  .gallery-card-kwd  { color: #4a8a6a; }   /* muted green — visually distinct from categories */
+  .gallery-card-field-label {
+    color: var(--muted); opacity: .6; margin-right: 2px;
   }
 
   .gallery-load-more-wrap {
@@ -649,9 +494,7 @@ const NUDGE_STEP = 100;   // LDU — about 4 cm at 1:1 scale
 const GRID_HALF  = 2000;  // LDU — half the grid width; models are clamped to ±this
 
 // Model browser / gallery
-const MB_LIST_MAX       = 10;   // max items shown in the inline list before "More…"
 const GALLERY_PAGE_SIZE = 48;
-const GALLERY_MIN_CHARS = 3;
 const THUMB_BASE        = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/thumbnails/`;
 
 // Scene background colour — saved here so onXRSessionEnd can restore it
@@ -1877,22 +1720,14 @@ renderer.setAnimationLoop((timestamp, frame) => {
 });
 
 
-// ─── §10  Model browser ───────────────────────────────────────────────────────
+// ─── §10  Model data ──────────────────────────────────────────────────────────
 //
-// The index is a JSONL file — one JSON object per line:
-//   {"name":"filename.mpd","search_key":"Human Readable Name"}
-//
-// Fuse.js searches both search_key (primary) and name (fallback).
-// Results are capped at MAX_RESULTS for rendering performance.
+// fetchModelList — fetches the JSONL index, parses new-format records
+// (description / categories / keywords) with graceful fallback for old ones.
+// Builds the Fuse instance used by the gallery search.
 
-let mbModels  = [];   // [{ name, search_key, url }]
-let mbFuse    = null; // Fuse instance, built after model list loads
-let mbFocused = -1;   // keyboard-nav index into current result list
-
-const mbOverlay   = document.getElementById('model-browser');
-const mbSearchEl  = document.getElementById('mb-search-input');
-const mbResultsEl = document.getElementById('mb-results');
-const mbStatusEl  = document.getElementById('mb-status');
+let mbModels = [];   // [{ name, description, categories, keywords, url, thumb }]
+let mbFuse   = null; // Fuse instance, built after model list loads
 
 async function fetchModelList() {
   try {
@@ -1904,63 +1739,45 @@ async function fetchModelList() {
       .split('\n')
       .filter(line => line.trim())
       .map(line => {
-        const rec = JSON.parse(line);
-        // Support both old format (search_key) and new (description + categories + keywords)
+        const rec         = JSON.parse(line);
         const description = rec.description ?? rec.search_key ?? rec.name;
         const categories  = rec.categories?.length ? rec.categories : ['Other'];
         const keywords    = rec.keywords ?? [];
         return {
-          name:        rec.name,
+          name: rec.name,
           description,
           categories,
           keywords,
-          url:         RAW_BASE + encodeURIComponent(rec.name),
-          thumb:       THUMB_BASE + encodeURIComponent(rec.name.replace(/\.[^.]+$/, '.png')),
+          url:   RAW_BASE   + encodeURIComponent(rec.name),
+          thumb: THUMB_BASE + encodeURIComponent(rec.name.replace(/\.[^.]+$/, '.png')),
         };
       });
 
     mbFuse = new Fuse(mbModels, {
       keys: [
-        { name: 'description', weight: 3 },
-        { name: 'categories',  weight: 2 },
+        { name: 'description', weight: 3   },
+        { name: 'categories',  weight: 2   },
         { name: 'keywords',    weight: 1.5 },
-        { name: 'name',        weight: 1 },
+        { name: 'name',        weight: 1   },
       ],
       threshold:          0.35,
       distance:           200,
-      minMatchCharLength: 2,
+      minMatchCharLength: 1,
       includeScore:       true,
       includeMatches:     true,
     });
 
-    mbStatusEl.textContent = mbModels.length + ' models available — type to search';
-    mbResultsEl.innerHTML  = '';
+    // If gallery is already open (user clicked Browse before index loaded), refresh it
+    if (galleryOverlay.classList.contains('open')) openGallery();
+
   } catch (err) {
-    mbStatusEl.textContent = 'Could not load model list — check internet connection';
-    mbResultsEl.innerHTML  = '<div class="mb-empty">Index unavailable.<br>Try the URL loader instead.</div>';
     console.warn('Model list fetch failed:', err);
   }
 }
 fetchModelList();
 
-function openModelBrowser() {
-  if (renderer.xr.isPresenting) return;
-  mbOverlay.classList.add('open');
-  mbSearchEl.value = '';
-  mbFocused = -1;
-  renderResults([]);
-  mbStatusEl.textContent = mbModels.length
-    ? mbModels.length + ' models available — type to search'
-    : 'Loading model list…';
-  requestAnimationFrame(() => mbSearchEl.focus());
-}
-
-function closeModelBrowser() {
-  mbOverlay.classList.remove('open');
-}
-
 function loadFromBrowser(url, name) {
-  closeModelBrowser();
+  closeGallery();
   showLoading('Loading model…', name);
   loadModelFromURL(url, name, 'Could not load model.');
 }
@@ -1975,7 +1792,7 @@ function escHtml(s) {
 
 function highlightField(text, matches, key) {
   if (!text) return '';
-  if (!matches || !matches.length) return escHtml(text);
+  if (!matches?.length) return escHtml(text);
 
   const marked = new Set();
   for (const m of matches) {
@@ -1985,12 +1802,11 @@ function highlightField(text, matches, key) {
       }
     }
   }
-
   if (marked.size === 0) return escHtml(text);
 
   let html = '', inMark = false;
   for (let i = 0; i < text.length; i++) {
-    if (marked.has(i)  && !inMark) { html += '<mark>'; inMark = true; }
+    if ( marked.has(i) && !inMark) { html += '<mark>'; inMark = true;  }
     if (!marked.has(i) &&  inMark) { html += '</mark>'; inMark = false; }
     html += escHtml(text[i]);
   }
@@ -1998,77 +1814,13 @@ function highlightField(text, matches, key) {
   return html;
 }
 
-function renderResults(results, allResults = null) {
-  if (results.length === 0) {
-    const q = mbSearchEl.value.trim();
-    mbResultsEl.innerHTML = q.length >= 2
-      ? '<div class="mb-empty">No matches for "<b>' + escHtml(q) + '</b>".<br>Try a set number, part of the name,<br>or a different spelling.</div>'
-      : '';
-    return;
-  }
-
-  mbResultsEl.innerHTML = results.map((r, idx) => {
-    const { name, description, url } = r.item;
-    const labelHtml    = highlightField(description, r.matches, 'description');
-    const filenameHtml = highlightField(name,        r.matches, 'name');
-    return (
-      '<div class="mb-result" data-idx="' + idx + '" data-url="' + escHtml(url) + '" data-name="' + escHtml(description || name) + '">' +
-        '<div class="mb-result-label">' +
-          '<span class="mb-result-name">'     + labelHtml    + '</span>' +
-          '<span class="mb-result-filename">' + filenameHtml + '</span>' +
-        '</div>' +
-        '<button class="mb-load-btn">Load</button>' +
-      '</div>'
-    );
-  }).join('');
-
-  // "More…" sentinel row
-  if (allResults) {
-    const sentinel = document.createElement('div');
-    sentinel.className  = 'mb-more-row';
-    sentinel.dataset.idx = results.length;  // keyboard nav index
-    sentinel.innerHTML  =
-      '<span class="mb-more-icon">⊞</span>' +
-      '<span class="mb-more-label">Browse all ' + allResults.length + ' results in gallery…</span>';
-    sentinel.addEventListener('click', () => openGallery(allResults, mbSearchEl.value.trim()));
-    mbResultsEl.appendChild(sentinel);
-  }
-
-  mbResultsEl.querySelectorAll('.mb-result').forEach(el => {
-    el.addEventListener('click', () => loadFromBrowser(el.dataset.url, el.dataset.name));
-    el.addEventListener('mouseenter', () => {
-      mbFocused = parseInt(el.dataset.idx);
-      updateFocus(mbResultsEl.querySelectorAll('.mb-result, .mb-more-row'));
-    });
-  });
-
-  // Hover on sentinel also updates focus
-  const sentinel = mbResultsEl.querySelector('.mb-more-row');
-  if (sentinel) {
-    sentinel.addEventListener('mouseenter', () => {
-      mbFocused = parseInt(sentinel.dataset.idx);
-      updateFocus(mbResultsEl.querySelectorAll('.mb-result, .mb-more-row'));
-    });
-  }
-}
-
-function updateFocus(items) {
-  items.forEach((el, i) => el.classList.toggle('focused', i === mbFocused));
-  if (items[mbFocused]) items[mbFocused].scrollIntoView({ block: 'nearest' });
-}
-
-// Keyboard nav helper — resolves all focusable items in the list (results + optional sentinel)
-function mbFocusableItems() {
-  return mbResultsEl.querySelectorAll('.mb-result, .mb-more-row');
-}
-
 
 // ─── §10b  Gallery ────────────────────────────────────────────────────────────
 //
-// Opened via the "More…" sentinel in the search list.
-// Shows a 4-column card grid with lazy thumbnails, category filters, and sort.
-// A new search inside the gallery re-runs Fuse from scratch (≥3 chars required).
-// Closing goes straight back to the main viewer (search overlay stays closed).
+// Single entry point: openGallery() — no arguments, always shows all models.
+// Gallery has its own fuzzy search (no minimum character requirement).
+// Category filter sidebar sorted alphabetically, first letter uppercased.
+// Cards are 200×220px, 4 columns, lazy thumbnails via IntersectionObserver.
 
 const galleryOverlay    = document.getElementById('model-gallery');
 const galleryGridEl     = document.getElementById('gallery-grid');
@@ -2078,25 +1830,42 @@ const galleryLoadMoreEl = document.getElementById('gallery-load-more-wrap');
 const gallerySearchEl   = document.getElementById('gallery-search-input');
 
 // ── State ──────────────────────────────────────────────────────────────────────
-let _gallerySourceResults = [];   // full Fuse results as passed into openGallery
-let _galleryOriginalResults = []; // snapshot from openGallery — never mutated, used to reset on search clear
-let _galleryFiltered      = [];   // after category filter + sort
-let _galleryPage          = 0;
-let _galleryObserver      = null; // IntersectionObserver for lazy thumb loading
-let _galleryActiveCategories = new Set(); // empty = show all
+let _gallerySourceResults    = [];  // current Fuse results (or wrapped full list)
+let _galleryFiltered         = [];  // after category filter + sort
+let _galleryPage             = 0;
+let _galleryObserver         = null;
+let _galleryActiveCategories = new Set();  // empty = show all
+
+// ── Helpers ────────────────────────────────────────────────────────────────────
+
+// Wrap plain model objects into Fuse-result shape so downstream code is uniform.
+function _wrapModels(models) {
+  return models.map(item => ({ item, score: 1, matches: [] }));
+}
+
+function _capFirst(s) {
+  return s ? s.charAt(0).toUpperCase() + s.slice(1) : s;
+}
 
 // ── Open / close ───────────────────────────────────────────────────────────────
 
-function openGallery(results, query) {
-  _gallerySourceResults  = results;
-  _galleryOriginalResults = results;
-  _galleryActiveCategories = new Set();   // reset to "show all"
-
-  gallerySearchEl.value = query || '';
-  closeModelBrowser();
+function openGallery() {
+  if (renderer.xr.isPresenting) return;
+  gallerySearchEl.value    = '';
+  _galleryActiveCategories = new Set();
   galleryOverlay.classList.add('open');
 
-  _buildCategoryFilters(results);
+  if (mbModels.length === 0) {
+    // Index not yet loaded — fetchModelList() will call openGallery() again when ready
+    galleryStatusEl.textContent     = 'Loading model list…';
+    galleryGridEl.innerHTML         = '<div class="gallery-empty">Fetching model index…</div>';
+    galleryFiltersEl.innerHTML      = '';
+    galleryLoadMoreEl.style.display = 'none';
+    return;
+  }
+
+  _gallerySourceResults = _wrapModels(mbModels);
+  _buildCategoryFilters(_gallerySourceResults);
   _applyGalleryFilters();
   requestAnimationFrame(() => gallerySearchEl.focus());
 }
@@ -2104,7 +1873,7 @@ function openGallery(results, query) {
 function closeGallery() {
   galleryOverlay.classList.remove('open');
   _galleryObserver?.disconnect();
-  _galleryObserver = null;
+  _galleryObserver        = null;
   galleryGridEl.innerHTML = '';
   galleryLoadMoreEl.style.display = 'none';
 }
@@ -2112,15 +1881,16 @@ function closeGallery() {
 // ── Category filters ───────────────────────────────────────────────────────────
 
 function _buildCategoryFilters(results) {
-  // Count occurrences of each category across the result set
   const counts = new Map();
   for (const r of results) {
     for (const cat of (r.item.categories ?? ['Other'])) {
-      counts.set(cat, (counts.get(cat) ?? 0) + 1);
+      const key = _capFirst(cat);
+      counts.set(key, (counts.get(key) ?? 0) + 1);
     }
   }
 
-  const sorted = [...counts.entries()].sort((a, b) => b[1] - a[1]);
+  // Alphabetical order
+  const sorted = [...counts.entries()].sort((a, b) => a[0].localeCompare(b[0]));
 
   galleryFiltersEl.innerHTML = sorted.map(([cat, n]) =>
     `<label class="gallery-filter-item">` +
@@ -2144,21 +1914,19 @@ function _buildCategoryFilters(results) {
 function _applyGalleryFilters() {
   let items = _gallerySourceResults;
 
-  // Category filter — union: show item if it has ANY checked category
   if (_galleryActiveCategories.size > 0) {
     items = items.filter(r =>
-      (r.item.categories ?? ['Other']).some(c => _galleryActiveCategories.has(c))
+      (r.item.categories ?? ['Other'])
+        .some(c => _galleryActiveCategories.has(_capFirst(c)))
     );
   }
 
-  // Sort
   const sortVal = document.querySelector('input[name="gallery-sort"]:checked')?.value ?? 'relevance';
   if (sortVal === 'name') {
     items = [...items].sort((a, b) =>
       (a.item.description ?? a.item.name).localeCompare(b.item.description ?? b.item.name)
     );
   }
-  // 'relevance' keeps Fuse score order (already sorted by score ascending = best first)
 
   _galleryFiltered = items;
   _galleryPage     = 0;
@@ -2167,7 +1935,9 @@ function _applyGalleryFilters() {
   _galleryObserver = new IntersectionObserver(_onThumbVisible, { rootMargin: '120px' });
 
   _renderGalleryPage();
-  galleryStatusEl.textContent = _galleryFiltered.length + ' model' + (_galleryFiltered.length !== 1 ? 's' : '');
+
+  const n = _galleryFiltered.length;
+  galleryStatusEl.textContent = n + ' model' + (n !== 1 ? 's' : '');
 }
 
 // ── Render a page of cards ─────────────────────────────────────────────────────
@@ -2177,19 +1947,31 @@ function _renderGalleryPage() {
   const slice = _galleryFiltered.slice(start, start + GALLERY_PAGE_SIZE);
 
   if (slice.length === 0 && _galleryPage === 0) {
-    galleryGridEl.innerHTML = '<div class="gallery-empty">No models match the current filters.</div>';
+    galleryGridEl.innerHTML         = '<div class="gallery-empty">No models match the current filters.</div>';
     galleryLoadMoreEl.style.display = 'none';
     return;
   }
 
   for (const r of slice) {
-    const { name, description, url, thumb } = r.item;
-    const card = document.createElement('div');
-    card.className  = 'gallery-card';
-    card.tabIndex   = 0;
-    card.dataset.url  = url;
-    card.dataset.name = description || name;
+    const { name, description, url, thumb, categories, keywords } = r.item;
+    const card       = document.createElement('div');
+    card.className   = 'gallery-card';
+    card.tabIndex    = 0;
+    card.dataset.url   = url;
+    card.dataset.name  = description || name;
     card.dataset.thumb = thumb;
+
+    const catsHtml = `<div class="gallery-card-cats">` +
+      `<span class="gallery-card-field-label">CAT</span>` +
+      escHtml((categories ?? ['Other']).join(', ')) +
+      `</div>`;
+
+    const kwdHtml = (keywords?.length)
+      ? `<div class="gallery-card-kwd">` +
+          `<span class="gallery-card-field-label">KWD</span>` +
+          escHtml(keywords.join(', ')) +
+        `</div>`
+      : '';
 
     card.innerHTML =
       `<div class="gallery-card-thumb-wrap">` +
@@ -2198,10 +1980,12 @@ function _renderGalleryPage() {
       `<div class="gallery-card-info">` +
         `<div class="gallery-card-name">${escHtml(description || name)}</div>` +
         `<div class="gallery-card-file">${escHtml(name)}</div>` +
+        catsHtml +
+        kwdHtml +
       `</div>`;
 
-    card.addEventListener('click',  () => { loadFromBrowser(card.dataset.url, card.dataset.name); closeGallery(); });
-    card.addEventListener('keydown', e => { if (e.key === 'Enter') card.click(); });
+    card.addEventListener('click',   () => loadFromBrowser(card.dataset.url, card.dataset.name));
+    card.addEventListener('keydown', e  => { if (e.key === 'Enter') card.click(); });
     galleryGridEl.appendChild(card);
     _galleryObserver.observe(card);
   }
@@ -2210,7 +1994,7 @@ function _renderGalleryPage() {
   galleryLoadMoreEl.style.display = hasMore ? 'flex' : 'none';
 }
 
-// ── Lazy thumbnail loading via IntersectionObserver ───────────────────────────
+// ── Lazy thumbnail loading ─────────────────────────────────────────────────────
 
 function _onThumbVisible(entries) {
   for (const entry of entries) {
@@ -2222,20 +2006,17 @@ function _onThumbVisible(entries) {
     const thumb = card.dataset.thumb;
     if (!thumb) continue;
 
-    const img = document.createElement('img');
+    const img     = document.createElement('img');
     img.className = 'gallery-card-thumb';
     img.alt       = card.dataset.name;
-    img.onload    = () => {
-      img.classList.add('loaded');
-      wrap.querySelector('.gallery-card-placeholder')?.remove();
-    };
-    img.onerror   = () => img.remove();   // keep placeholder on 404
+    img.onload    = () => { img.classList.add('loaded'); wrap.querySelector('.gallery-card-placeholder')?.remove(); };
+    img.onerror   = () => img.remove();
     img.src       = thumb;
     wrap.appendChild(img);
   }
 }
 
-// ── Gallery search ─────────────────────────────────────────────────────────────
+// ── Gallery search — no minimum character requirement ─────────────────────────
 
 let _gallerySearchTimer = null;
 
@@ -2243,27 +2024,25 @@ gallerySearchEl.addEventListener('input', () => {
   clearTimeout(_gallerySearchTimer);
   _gallerySearchTimer = setTimeout(() => {
     const q = gallerySearchEl.value.trim();
-    if (q.length === 0 || q.length >= GALLERY_MIN_CHARS) {
-      _gallerySearch(q);
+
+    if (!q) {
+      _gallerySourceResults = _wrapModels(mbModels);
     } else {
-      galleryStatusEl.textContent = (GALLERY_MIN_CHARS - q.length) + ' more char' + (GALLERY_MIN_CHARS - q.length !== 1 ? 's' : '') + ' needed…';
+      if (!mbFuse) return;
+      _gallerySourceResults = mbFuse.search(q);
     }
+
+    // Rebuild filters for new result set, preserving any checked categories that still apply
+    const prevActive = new Set(_galleryActiveCategories);
+    _buildCategoryFilters(_gallerySourceResults);
+    _galleryActiveCategories = new Set();
+    galleryFiltersEl.querySelectorAll('.gallery-cat-cb').forEach(cb => {
+      if (prevActive.has(cb.value)) { cb.checked = true; _galleryActiveCategories.add(cb.value); }
+    });
+
+    _applyGalleryFilters();
   }, 200);
 });
-
-function _gallerySearch(query) {
-  if (!query) {
-    // Cleared: restore to the results that opened the gallery
-    _gallerySourceResults = _galleryOriginalResults;
-  } else {
-    if (!mbFuse) return;
-    _gallerySourceResults = mbFuse.search(query);
-  }
-  _galleryActiveCategories = new Set();
-  galleryFiltersEl.querySelectorAll('.gallery-cat-cb').forEach(cb => { cb.checked = false; });
-  _buildCategoryFilters(_gallerySourceResults);
-  _applyGalleryFilters();
-}
 
 // ── Event wiring ───────────────────────────────────────────────────────────────
 
@@ -2272,13 +2051,11 @@ galleryOverlay.addEventListener('click', e => { if (e.target === galleryOverlay)
 document.getElementById('btn-gallery-load-more').addEventListener('click', () => {
   _galleryPage++;
   _renderGalleryPage();
+  document.getElementById('gallery-main').scrollBy({ top: 400, behavior: 'smooth' });
 });
 document.querySelectorAll('input[name="gallery-sort"]').forEach(radio => {
   radio.addEventListener('change', _applyGalleryFilters);
 });
-
-// Escape closes gallery too (added alongside existing model-browser Escape handler)
-// (handled in the existing keydown listener below — gallery check added there)
 
 
 // ─── §11  UI helpers + DOM references ────────────────────────────────────────
@@ -2312,7 +2089,7 @@ document.getElementById('btn-demo').addEventListener('click', () => {
   showLoading('Loading demo…', 'Fetching packed .mpd from GitHub');
   loadModelFromURL(DEMO_MODEL, 'car (demo)', 'Could not load demo — check your internet connection.');
 });
-document.getElementById('btn-browse').addEventListener('click', openModelBrowser);
+document.getElementById('btn-browse').addEventListener('click', openGallery);
 document.getElementById('btn-reset-view').addEventListener('click', resetView);
 document.getElementById('btn-open-file').addEventListener('click', () => document.getElementById('file-input').click());
 
@@ -2342,35 +2119,6 @@ sceneModelListEl.addEventListener('click', e => {
 
 // Error banner
 document.getElementById('btn-error-close').addEventListener('click', () => errorBanner.classList.remove('visible'));
-
-// Model browser overlay
-document.getElementById('btn-mb-close').addEventListener('click', closeModelBrowser);
-mbOverlay.addEventListener('click', e => { if (e.target === mbOverlay) closeModelBrowser(); });
-mbSearchEl.addEventListener('input', () => {
-  const q = mbSearchEl.value.trim();
-  mbFocused = -1;
-
-  if (q.length < 2) {
-    renderResults([]);
-    mbStatusEl.textContent = q.length === 0
-      ? (mbModels.length ? mbModels.length + ' models available — type to search' : 'Loading…')
-      : '1 more character needed…';
-    return;
-  }
-
-  if (!mbFuse) { mbStatusEl.textContent = 'Model list not ready yet'; return; }
-
-  const all     = mbFuse.search(q);
-  const hasMore = all.length > MB_LIST_MAX;
-  const results = hasMore ? all.slice(0, MB_LIST_MAX) : all;
-
-  renderResults(results, hasMore ? all : null);
-  mbStatusEl.textContent = all.length === 0
-    ? 'No matches for "' + q + '"'
-    : hasMore
-      ? `Showing ${MB_LIST_MAX} of ${all.length} matches for "${q}"`
-      : all.length + ' match' + (all.length !== 1 ? 'es' : '') + ' for "' + q + '"';
-});
 
 // Canvas — double-click to focus orbit target on clicked point
 renderer.domElement.addEventListener('dblclick', e => {
@@ -2432,32 +2180,10 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape' && galleryOverlay.classList.contains('open')) {
     closeGallery(); return;
   }
-  if (e.key === 'Escape' && mbOverlay.classList.contains('open')) {
-    closeModelBrowser(); return;
-  }
-  if (mbOverlay.classList.contains('open')) {
-    const items = mbFocusableItems();
-    if (!items.length) return;
-    if (e.key === 'ArrowDown') {
-      e.preventDefault();
-      mbFocused = Math.min(mbFocused + 1, items.length - 1);
-      updateFocus(items);
-    } else if (e.key === 'ArrowUp') {
-      e.preventDefault();
-      mbFocused = Math.max(mbFocused - 1, 0);
-      updateFocus(items);
-    } else if (e.key === 'Enter' && mbFocused >= 0 && items[mbFocused]) {
-      const el = items[mbFocused];
-      if (el.classList.contains('mb-more-row')) el.click();
-      else el.querySelector('.mb-load-btn').click();
-    }
-    return;
-  }
 
   // Arrow-key nudge for the selected model
   if (renderer.xr.isPresenting || !selectedEntry) return;
   if (document.activeElement?.tagName === 'INPUT') return;
-  if (galleryOverlay.classList.contains('open')) return;
   let moved = true;
   switch (e.key) {
     case 'ArrowLeft':  selectedEntry.mesh.position.x -= NUDGE_STEP; break;
@@ -2470,30 +2196,7 @@ document.addEventListener('keydown', e => {
 });
 
 </script>
-<!-- ─── Model Browser Overlay ─────────────────────────────────────────────── -->
-<div id="model-browser">
-  <div class="mb-panel">
-    <div class="mb-header">
-      <span class="mb-title">Browse Official Models</span>
-      <button class="mb-close" id="btn-mb-close" title="Close">✕</button>
-    </div>
-    <div class="mb-search-wrap">
-      <span class="mb-search-icon">⌕</span>
-      <input
-        type="text"
-        class="mb-search"
-        id="mb-search-input"
-        placeholder="Type 3+ characters to search… (e.g. 7140, AT-ST, xwing)"
-        autocomplete="off"
-        spellcheck="false"
-      >
-    </div>
-    <div class="mb-status" id="mb-status">Loading model list…</div>
-    <div class="mb-results" id="mb-results">
-      <div class="mb-loading-indicator">Fetching model list from GitHub…</div>
-    </div>
-  </div>
-</div>
+
 <!-- ─── Gallery overlay ─────────────────────────────────────────────────────── -->
 <div id="model-gallery">
   <div class="gallery-topbar">
