@@ -252,6 +252,18 @@
   #canvas-container.drag-ready  { cursor: grab; }
   #canvas-container.drag-active { cursor: grabbing; }
 
+  /* ─── XR buttons (VR + MR) injected by JS ───────────────────────────────── */
+  .btn.xr-btn, .btn.xr-btn-mr {
+    position: static !important;
+    width: auto !important; bottom: auto !important;
+    left: auto !important;  right: auto !important;
+  }
+  .btn.xr-btn    { border-color: var(--border);    color: var(--text); }
+  .btn.xr-btn-mr { border-color: var(--accent-mr); color: var(--accent-mr); }
+  .btn.xr-btn:hover    { border-color: var(--accent); color: var(--accent); background: var(--border); }
+  .btn.xr-btn-mr:hover { border-color: var(--accent-mr); color: #000; background: var(--accent-mr); }
+  .btn.xr-btn:disabled, .btn.xr-btn-mr:disabled { border-color: var(--border); color: var(--muted); cursor: not-allowed; }
+
 </style>
 </head>
 <body>
@@ -263,9 +275,9 @@
   </div>
   <div class="controls">
     <button class="btn" id="btn-demo">Load Demo</button>
-    <button class="btn" id="btn-browse" onclick="openModelBrowser()">Browse Models</button>
-    <button class="btn" onclick="resetView()">Reset View</button>
-    <button class="btn primary" onclick="document.getElementById('file-input').click()">Open File</button>
+    <button class="btn" id="btn-browse">Browse Models</button>
+    <button class="btn" id="btn-reset-view">Reset View</button>
+    <button class="btn primary" id="btn-open-file">Open File</button>
     <input type="file" id="file-input" accept=".ldr,.mpd,.dat">
     <!-- VR and MR buttons are injected here by JS after checking support -->
   </div>
@@ -288,7 +300,7 @@
     </div>
     <div class="error-banner" id="error-banner">
       <div class="error-banner-text" id="error-text"></div>
-      <button class="error-close" onclick="document.getElementById('error-banner').classList.remove('visible')">✕</button>
+      <button class="error-close" id="btn-error-close">✕</button>
     </div>
     <div id="mode-badge"></div>
     <div id="status">No model loaded</div>
@@ -304,17 +316,17 @@
       <div class="sidebar-title">Display</div>
       <div class="toggle-row">
         <span class="toggle-label">Edges</span>
-        <div class="toggle on" id="toggle-edges" onclick="toggleEdges()"></div>
+        <div class="toggle on" id="toggle-edges"></div>
       </div>
       <div class="toggle-row">
         <span class="toggle-label">Grid</span>
-        <div class="toggle on" id="toggle-grid" onclick="toggleGrid()"></div>
+        <div class="toggle on" id="toggle-grid"></div>
       </div>
     </div>
     <div class="sidebar-section">
       <div class="sidebar-title">Load URL</div>
       <input type="text" class="url-input" id="url-input" placeholder="https://…/model.mpd">
-      <button class="btn" style="width:100%;margin-top:2px" onclick="loadFromURL()">Load</button>
+      <button class="btn" id="btn-load-url" style="width:100%;margin-top:2px">Load</button>
     </div>
     <div class="sidebar-section">
       <div class="sidebar-title">Browser Controls</div>
@@ -371,11 +383,10 @@
 
 <script type="module">
 import * as THREE from 'three';
-import { OrbitControls }  from 'three/addons/controls/OrbitControls.js';
-import { LDrawLoader }    from 'three/addons/loaders/LDrawLoader.js';
-import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-import { VRButton }                from 'three/addons/webxr/VRButton.js';
-import { ARButton }                from 'three/addons/webxr/ARButton.js';
+import { OrbitControls }            from 'three/addons/controls/OrbitControls.js';
+import { LDrawLoader }              from 'three/addons/loaders/LDrawLoader.js';
+import { RoomEnvironment }          from 'three/addons/environments/RoomEnvironment.js';
+
 import { XRControllerModelFactory } from 'three/addons/webxr/XRControllerModelFactory.js';
 import { computeBoundsTree, disposeBoundsTree, acceleratedRaycast } from 'three-mesh-bvh';
 
@@ -385,16 +396,50 @@ THREE.BufferGeometry.prototype.computeBoundsTree  = computeBoundsTree;
 THREE.BufferGeometry.prototype.disposeBoundsTree  = disposeBoundsTree;
 THREE.Mesh.prototype.raycast                      = acceleratedRaycast;
 
-// ─── Models and parts URLs ────────────────────────────────────────────────────
-const BASE_REPO = 'anteloc/ldraw-lib';
-const REPO_BRANCH = 'master';
-const PARTS_CDN     = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/ldraw/`;
-const DEMO_MODEL    = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/models/8419-1.1.mpd`;
-const MODELS_INDEX  = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/models-index.jsonl`;
-const RAW_BASE      = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/models/`;
 
-// ─── Renderer ─────────────────────────────────────────────────────────────────
+// ─── §1  Config ───────────────────────────────────────────────────────────────
+
+const BASE_REPO   = 'anteloc/ldraw-lib';
+const REPO_BRANCH = 'master';
+const PARTS_CDN    = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/ldraw/`;
+const DEMO_MODEL   = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/models/8419-1.1.mpd`;
+const MODELS_INDEX = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/models-index.jsonl`;
+const RAW_BASE     = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/models/`;
+
+// XR scene hierarchy constants
+// LDU → metres: 1 LDU = 0.4 mm = 0.0004 m, ×2.5 = hand-held / table-top scale
+const LDU_TO_METERS = 0.0004 * 2.5;
+const MAX_MODELS    = 5;
+const MODEL_SPACING = 0.35;   // metres between model pivots in XR
+const MODEL_PIVOT_Y = 0.9;    // metres above floor
+const MODEL_PIVOT_Z = -0.6;   // metres in front of user
+
+// XR controller / laser constants
+const LASER_LENGTH          = 5;      // metres
+const LASER_RADIUS          = 0.003;  // metres — visible thickness in VR
+const COLOR_IDLE            = 0xffffff;
+const COLOR_GRABBED         = 0xff2222;
+const ROTATE_SENSITIVITY    = 10.0;   // rotation speed multiplier
+const SCALE_SPEED           = 0.02;   // scale change per frame at full thumbstick deflection
+// Raycasting throttle: when no gesture is active, only raycast every N frames.
+// At 72fps, N=3 gives ~24 laser updates/sec — imperceptible for idle aiming.
+// Active gestures always raycast every frame for precision.
+const RAYCAST_IDLE_INTERVAL = 3;
+
+// Browser interaction constants
+const NUDGE_STEP = 100;   // LDU — about 4 cm at 1:1 scale
+
+// Model browser
+const MAX_RESULTS = 50;
+
+// Scene background colour — saved here so onXRSessionEnd can restore it
+const BROWSER_BG = new THREE.Color(0x0e0e10);
+
+
+// ─── §2  Renderer + Scene ─────────────────────────────────────────────────────
+
 const container = document.getElementById('canvas-container');
+
 const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.shadowMap.enabled = true;
@@ -404,26 +449,18 @@ renderer.toneMappingExposure = 1.0;
 renderer.xr.enabled = true;
 container.appendChild(renderer.domElement);
 
-// ─── Scene ────────────────────────────────────────────────────────────────────
 const scene = new THREE.Scene();
-// Keep track of the "normal" browser background so we can restore it after MR
-const BROWSER_BG = new THREE.Color(0x0e0e10);
 scene.background = BROWSER_BG;
 
 const pmrem = new THREE.PMREMGenerator(renderer);
 scene.environment = pmrem.fromScene(new RoomEnvironment()).texture;
 
-// ─── Camera & browser controls ────────────────────────────────────────────────
-const camera = new THREE.PerspectiveCamera(45, 1, 0.01, 50000);
-camera.position.set(0, 400, 1200);
 
-const controls = new OrbitControls(camera, renderer.domElement);
-controls.enableDamping = true;
-controls.dampingFactor = 0.06;
+// ─── §3  Scene objects — lights, grid, ground, MR shadow disc ────────────────
 
-// ─── Lights ───────────────────────────────────────────────────────────────────
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
 scene.add(ambientLight);
+
 const dirLight = new THREE.DirectionalLight(0xffffff, 1.5);
 dirLight.position.set(500, 1000, 500);
 dirLight.castShadow = true;
@@ -431,7 +468,7 @@ dirLight.shadow.mapSize.set(1024, 1024);
 Object.assign(dirLight.shadow.camera, { near: 1, far: 10000, left: -2000, right: 2000, top: 2000, bottom: -2000 });
 scene.add(dirLight);
 
-// ─── Grid & shadow ground (browser / VR only, hidden in MR) ──────────────────
+// Grid & shadow ground — browser / VR only, hidden in MR
 const gridHelper = new THREE.GridHelper(4000, 50, 0x333344, 0x222230);
 scene.add(gridHelper);
 
@@ -443,23 +480,26 @@ ground.rotation.x = -Math.PI / 2;
 ground.receiveShadow = true;
 scene.add(ground);
 
-// ─── MR shadow disc ───────────────────────────────────────────────────────────
-// In MR we hide the opaque grid but show a subtle circular shadow beneath the
-// model so it feels anchored to the surface rather than floating in mid-air.
+// MR shadow disc — subtle circle anchoring the model to the real-world surface.
+// Replaces the grid in MR mode where an opaque floor plane is inappropriate.
 const mrShadowDisc = new THREE.Mesh(
   new THREE.CircleGeometry(0.18, 64),
-  new THREE.MeshBasicMaterial({
-    color: 0x000000,
-    transparent: true,
-    opacity: 0.25,
-    depthWrite: false,
-  })
+  new THREE.MeshBasicMaterial({ color: 0x000000, transparent: true, opacity: 0.25, depthWrite: false })
 );
 mrShadowDisc.rotation.x = -Math.PI / 2;
 mrShadowDisc.visible = false; // shown only in MR
 scene.add(mrShadowDisc);
 
-// ─── Resize ───────────────────────────────────────────────────────────────────
+
+// ─── §4  Camera + OrbitControls ───────────────────────────────────────────────
+
+const camera = new THREE.PerspectiveCamera(45, 1, 0.01, 50000);
+camera.position.set(0, 400, 1200);
+
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+controls.dampingFactor = 0.06;
+
 function resize() {
   const w = container.clientWidth, h = container.clientHeight;
   renderer.setSize(w, h);
@@ -469,7 +509,8 @@ function resize() {
 resize();
 window.addEventListener('resize', resize);
 
-// ─── XR scene-root hierarchy ──────────────────────────────────────────────────
+
+// ─── §5  Model registry ───────────────────────────────────────────────────────
 //
 // Each loaded model lives in a ModelEntry:
 //
@@ -479,27 +520,19 @@ window.addEventListener('resize', resize);
 //           └── entry.root       ← uniform scale (LDU→metres) + rotation
 //                 └── (XR) entry.mesh
 //
-// LDU → metres: 1 LDU = 0.4 mm = 0.0004 m, ×2.5 = hand-held / table-top scale
-const LDU_TO_METERS = 0.0004 * 2.5;
+// The pivot/root wrapper is always in the scene; the mesh is reparented
+// between scene root (browser) and root (XR) on session start/end.
 
-// ── ModelEntry — one per loaded model ─────────────────────────────────────────
-//
-//   { mesh, pivot, root, name }
-//
-const MAX_MODELS      = 5;
-const MODEL_SPACING   = 0.35;   // metres between model pivots in XR
-const MODEL_PIVOT_Y   = 0.9;    // metres above floor
-const MODEL_PIVOT_Z   = -0.6;   // metres in front of user
+const models = [];   // all currently loaded models, in load order
+const _meshList = []; // cached models.map(e => e.mesh) — updated on load/remove
 
-// All currently loaded models, in load order.
-const models = [];
+let edgesVisible  = true;
+let selectedEntry = null;   // model currently selected for keyboard nudge
 
 function createEntry(mesh, name) {
-  // Place new entry to the right of all existing ones
-  const pivotX = models.reduce(
-    (maxX, e) => Math.max(maxX, e.pivot.position.x),
-    0
-  ) + (models.length > 0 ? MODEL_SPACING : 0);
+  // Place new XR pivot to the right of all existing ones
+  const pivotX = models.reduce((maxX, e) => Math.max(maxX, e.pivot.position.x), 0)
+    + (models.length > 0 ? MODEL_SPACING : 0);
 
   const pivot = new THREE.Group();
   pivot.position.set(pivotX, MODEL_PIVOT_Y, MODEL_PIVOT_Z);
@@ -512,7 +545,296 @@ function createEntry(mesh, name) {
   return { mesh, pivot, root, name };
 }
 
-// ─── XR controllers ───────────────────────────────────────────────────────────
+function fitCamera() {
+  if (models.length === 0) {
+    camera.position.set(0, 400, 1200);
+    controls.target.set(0, 0, 0);
+    controls.update();
+    return;
+  }
+  const box = new THREE.Box3();
+  for (const entry of models) box.expandByObject(entry.mesh);
+  const size   = box.getSize(new THREE.Vector3());
+  const centre = box.getCenter(new THREE.Vector3());
+  const maxDim = Math.max(size.x, size.y, size.z);
+  const dist   = (maxDim / (2 * Math.tan(camera.fov * Math.PI / 360))) * 1.6;
+  controls.target.copy(centre);
+  camera.position.set(centre.x + dist * 0.3, centre.y + dist * 0.4, centre.z + dist);
+  controls.update();
+  gridHelper.position.y = box.min.y;
+  ground.position.y     = box.min.y;
+}
+
+function renderModelList() {
+  sceneCountEl.textContent = models.length === 0
+    ? 'No models loaded'
+    : `${models.length} / ${MAX_MODELS} model${models.length > 1 ? 's' : ''}`;
+
+  sceneModelListEl.innerHTML = models.length === 0
+    ? '<span class="model-list-empty">—</span>'
+    : models.map((entry, i) =>
+        `<div class="model-list-item${entry === selectedEntry ? ' selected' : ''}">` +
+          `<span class="model-list-name" title="${escHtml(entry.name)}">${escHtml(entry.name)}</span>` +
+          `<button class="model-list-remove" data-idx="${i}" title="Remove from scene">✕</button>` +
+        `</div>`
+      ).join('');
+}
+
+function disposeMesh(mesh) {
+  mesh.traverse(o => {
+    if (o.geometry) { o.geometry.disposeBoundsTree?.(); o.geometry.dispose(); }
+    if (o.material) (Array.isArray(o.material) ? o.material : [o.material]).forEach(m => m.dispose());
+  });
+}
+
+function removeEntry(entry) {
+  // Release any XR slot targeting this entry
+  for (const slot of slots) {
+    if (slot.grab.entry === entry || slot.rotate.entry === entry) endInteraction(slot);
+  }
+  if (selectedEntry === entry) selectedEntry = null;
+
+  const { mesh, pivot, root } = entry;
+  root.remove(mesh);
+  scene.remove(mesh);
+  scene.remove(pivot);
+  disposeMesh(mesh);
+
+  models.splice(models.indexOf(entry), 1);
+  _meshList.splice(_meshList.indexOf(entry.mesh), 1);
+  renderModelList();
+
+  if (models.length === 0) {
+    dropZone.style.display = '';
+    setStatus('No model loaded');
+  } else {
+    fitCamera();
+  }
+}
+
+function clearAllModels() {
+  for (const entry of models.slice()) removeEntry(entry); // slice — don't mutate while iterating
+}
+
+
+// ─── §6  Model loading ────────────────────────────────────────────────────────
+//
+// makeLDrawLoader — constructs and primes a loader in one await.
+//   preloadMaterials failure is swallowed; the loader still resolves
+//   colours correctly for packed .mpd files without it.
+//
+// loadModelFromURL  — resolves with the model group (throws on error).
+// loadModelFromText — synchronous: parse() returns the group directly.
+//
+// Both call onModelLoaded on success; errors are surfaced via showError.
+
+function onProgress(xhr) {
+  if (xhr.total) loadingSub.textContent = 'Downloading… ' + Math.round(xhr.loaded / xhr.total * 100) + '%';
+}
+
+async function makeLDrawLoader() {
+  const loader = new LDrawLoader();
+  loader.setPartsLibraryPath(PARTS_CDN);
+  await loader.preloadMaterials(PARTS_CDN + 'LDConfig.ldr').catch(() => {});
+  return loader;
+}
+
+async function loadModelFromURL(url, name, errorMsg) {
+  try {
+    const loader = await makeLDrawLoader();
+    const model  = await loader.loadAsync(url, onProgress);
+    onModelLoaded(model, name);
+  } catch (err) {
+    showError(errorMsg + '\n\n' + err);
+  }
+}
+
+async function loadModelFromText(text, name) {
+  try {
+    const loader = await makeLDrawLoader();
+    const model  = loader.parse(text);   // synchronous — returns group directly
+    onModelLoaded(model, name);
+  } catch (err) {
+    console.error(err);
+    showError('Parse error: ' + (err?.message || String(err)) +
+      '\n\nPacked .mpd files work best — all sub-parts are bundled inside.');
+  }
+}
+
+function onModelLoaded(model, filename) {
+  if (models.length >= MAX_MODELS) {
+    showError(`Maximum ${MAX_MODELS} models in scene. Remove one first.`);
+    return;
+  }
+
+  errorBanner.classList.remove('visible');
+  model.rotation.x = Math.PI; // LDraw Y-down → Y-up
+  model.traverse(o => {
+    if (o.isMesh) {
+      o.castShadow = true;
+      o.receiveShadow = true;
+      o.geometry.computeBoundsTree();   // BVH — O(log n) raycasts
+    } else if (o.isLineSegments) {
+      o.raycast = () => {};             // edges are visual only — never raycasted
+    }
+  });
+
+  scene.add(model);
+  const entry = createEntry(model, filename);
+  models.push(entry);
+  _meshList.push(model);
+
+  // In browser mode, separate models along X so they don't stack on top of each other.
+  // Compute the right edge of all existing models and place the new one just past it.
+  if (models.length > 1) {
+    const existingBox = new THREE.Box3();
+    for (const e of models.slice(0, -1)) existingBox.expandByObject(e.mesh);
+    const newBox  = new THREE.Box3().setFromObject(model);
+    const newSize = newBox.getSize(new THREE.Vector3());
+    const gap     = newSize.x * 0.2;   // 20% of own width as breathing room
+    model.position.x = existingBox.max.x + gap + newSize.x / 2 - newBox.getCenter(new THREE.Vector3()).x;
+  }
+
+  if (models.length === 1) dropZone.style.display = 'none';
+  fitCamera();
+  renderModelList();
+  hideLoading();
+  setStatus(`Loaded: ${filename} (${models.length}/${MAX_MODELS} in scene)`);
+}
+
+function loadFile(file) {
+  if (!file) return;
+  showLoading('Reading file…', file.name);
+  const reader = new FileReader();
+  reader.onload = e => {
+    showLoading('Parsing model…', 'Sub-parts resolved from LDraw CDN — needs internet');
+    loadModelFromText(e.target.result, file.name);
+  };
+  reader.onerror = () => showError('Could not read file.');
+  reader.readAsText(file);
+}
+
+function loadFromURL() {
+  const url = document.getElementById('url-input').value.trim();
+  if (!url) return;
+  showLoading('Fetching…', url);
+  loadModelFromURL(url, url.split('/').pop(), 'Could not load URL — CORS may be blocking it.\nTry downloading and opening locally.');
+}
+
+
+// ─── §7  Browser interaction — drag, select, focus, nudge ────────────────────
+//
+// Right-click drag on a model → move it in X/Z on its own ground plane.
+// Left-click on a model       → select it (arrow keys nudge it).
+// Right-click on empty space  → falls through to OrbitControls pan.
+// Quest 3 browser: click-and-hold (150 ms) triggers drag same as right-drag.
+
+// Reusable temporaries — never allocated per event
+const _browserRay = new THREE.Raycaster();
+const _dragPlane  = new THREE.Plane();
+const _dragOffset = new THREE.Vector3();
+const _planeHit   = new THREE.Vector3();
+const _ndcVec     = new THREE.Vector2();
+
+let _dragEntry      = null;   // entry currently being dragged
+let _dragActive     = false;
+let _holdTimer      = null;   // for Quest-style click-and-hold
+let _pointerDownPos = null;   // { x, y } at pointerdown
+
+// Sets _browserRay from a DOM client-space coordinate.
+// Centralises the NDC conversion used by raycast, drag-start, and drag-move.
+function setRayFromClient(clientX, clientY) {
+  const rect = renderer.domElement.getBoundingClientRect();
+  _ndcVec.set(
+    ((clientX - rect.left)  / rect.width)  * 2 - 1,
+    -((clientY - rect.top) / rect.height) * 2 + 1
+  );
+  _browserRay.setFromCamera(_ndcVec, camera);
+}
+
+function browserRaycast(clientX, clientY) {
+  setRayFromClient(clientX, clientY);
+  const hits = _browserRay.intersectObjects(_meshList, true);
+  return hits.length > 0 ? hits[0] : null;
+}
+
+function hitToEntry(hit) {
+  // Each entry's mesh is the root of the loaded model — if the hit object
+  // lives anywhere inside it, getObjectById will find it in one call.
+  return models.find(e => e.mesh.getObjectById(hit.object.id)) ?? null;
+}
+
+function selectEntry(entry) {
+  selectedEntry = entry;
+  renderModelList();
+}
+
+function startDrag(entry, clientX, clientY) {
+  _dragEntry  = entry;
+  _dragActive = true;
+  controls.enabled = false;
+  container.classList.add('drag-active');
+  container.classList.remove('drag-ready');
+
+  // Build a horizontal plane at the model's current Y
+  _dragPlane.set(new THREE.Vector3(0, 1, 0), -entry.mesh.position.y);
+
+  // Record offset from plane hit to model origin so it doesn't snap to cursor
+  setRayFromClient(clientX, clientY);
+  _browserRay.ray.intersectPlane(_dragPlane, _planeHit);
+  _dragOffset.set(entry.mesh.position.x - _planeHit.x, 0, entry.mesh.position.z - _planeHit.z);
+}
+
+function moveDrag(clientX, clientY) {
+  if (!_dragActive || !_dragEntry) return;
+  setRayFromClient(clientX, clientY);
+  if (_browserRay.ray.intersectPlane(_dragPlane, _planeHit)) {
+    _dragEntry.mesh.position.x = _planeHit.x + _dragOffset.x;
+    _dragEntry.mesh.position.z = _planeHit.z + _dragOffset.z;
+  }
+}
+
+function endDrag() {
+  if (_holdTimer) { clearTimeout(_holdTimer); _holdTimer = null; }
+  if (!_dragActive) return;
+  _dragActive = false;
+  _dragEntry  = null;
+  controls.enabled = true;
+  container.classList.remove('drag-active');
+}
+
+function resetView() {
+  if (renderer.xr.isPresenting) {
+    let x = 0;
+    for (const entry of models) {
+      entry.root.scale.setScalar(LDU_TO_METERS);
+      entry.root.rotation.set(0, 0, 0);
+      entry.pivot.position.set(x, MODEL_PIVOT_Y, MODEL_PIVOT_Z);
+      x += MODEL_SPACING;
+    }
+    mrShadowDisc.position.set(0, 0.02, MODEL_PIVOT_Z);
+    mrShadowDisc.scale.setScalar(1);
+  } else {
+    fitCamera();
+  }
+}
+
+function toggleEdges() {
+  edgesVisible = !edgesVisible;
+  document.getElementById('toggle-edges').classList.toggle('on', edgesVisible);
+  for (const entry of models) {
+    entry.mesh.traverse(o => { if (o.isLineSegments) o.visible = edgesVisible; });
+  }
+}
+
+function toggleGrid() {
+  const on = !gridHelper.visible;
+  gridHelper.visible = on;
+  document.getElementById('toggle-grid').classList.toggle('on', on);
+}
+
+
+// ─── §8  XR controllers — lasers, slots, per-frame interaction ────────────────
 //
 // Three.js exposes two separate tracked spaces per physical controller:
 //   getController(i)     → pointer / target-ray space  (laser origin)
@@ -522,27 +844,40 @@ function createEntry(mesh, name) {
 // grip space; the laser must be attached to the pointer space.
 // Both are added to the scene and their poses are updated automatically by the
 // XR runtime each frame — no manual position/quaternion sync needed.
+//
+// Each physical controller has its own independent interaction slot so both
+// hands can interact with different models simultaneously.
+//
+// slot.type      — null | 'grab' | 'rotate'
+// slot.grab      — grab state, valid while type === 'grab'
+// slot.rotate    — rotate state, valid while type === 'rotate'
+//
+// Cross-controller rule: two grabs on the *same* model are denied — they would
+// fight each other. Any other combination is allowed.
 
 const controllerModelFactory = new XRControllerModelFactory();
 
-// ── Laser constants ────────────────────────────────────────────────────────────
-const LASER_LENGTH        = 5;      // metres
-const LASER_RADIUS        = 0.003;  // metres — visible thickness in VR
-const COLOR_IDLE          = 0xffffff;
-const COLOR_GRABBED       = 0xff2222;
-const ROTATE_SENSITIVITY  = 10.0;   // rotation speed multiplier
-const SCALE_SPEED         = 0.02;   // scale change per frame at full thumbstick deflection
-// Raycasting throttle: when no gesture is active, only raycast every N frames.
-// At 72fps, N=3 gives ~24 laser updates/sec — imperceptible for idle aiming.
-// Active gestures always raycast every frame for precision.
-const RAYCAST_IDLE_INTERVAL = 3;
-let   _frameCount           = 0;
+// Reusable temporaries — never allocated per-frame
+const _ctrlWorldPos  = new THREE.Vector3();
+const _ctrlWorldQuat = new THREE.Quaternion();
+const _ctrlWorldQInv = new THREE.Quaternion();
+const _raycaster     = new THREE.Raycaster();
+_raycaster.firstHitOnly = true;   // BVH short-circuits after first hit — much faster
+const _rayOrigin     = new THREE.Vector3();
+const _rayDir        = new THREE.Vector3();
+const _fingerDelta   = new THREE.Vector3();
+const _oldArm        = new THREE.Vector3();
+const _newArm        = new THREE.Vector3();
+const _rotQuat       = new THREE.Quaternion();
 
-// ── Laser builder — returns a Group (cylinder beam + tip ring) ─────────────────
+let _frameCount = 0;
+
+// ── Laser — cylinder beam + tip ring ──────────────────────────────────────────
 //
 // A CylinderGeometry is used instead of Line because WebGL does not support
 // line widths > 1px on most drivers, making Line invisible at VR scale.
 // The cylinder is oriented along –Z (the pointer forward direction).
+
 function makeLaser() {
   const group = new THREE.Group();
 
@@ -563,60 +898,21 @@ function makeLaser() {
   return group;
 }
 
-// ── Set the laser color on a pointer controller ────────────────────────────────
 function setLaserColor(pointer, color) {
-  // laser group is the first (and only) child of the pointer space
-  pointer.children[0].traverse(child => {
-    if (child.material) child.material.color.setHex(color);
-  });
+  const laser = pointer.children[0];
+  laser.children[0].material.color.setHex(color);  // beam
+  laser.children[1].material.color.setHex(color);  // ring
 }
 
-// ── Build both controllers ─────────────────────────────────────────────────────
-function buildController(index) {
-  // Pointer space — laser lives here
-  const pointer = renderer.xr.getController(index);
-  pointer.add(makeLaser());
-  scene.add(pointer);
-
-  // Grip space — hardware model lives here
-  const grip = renderer.xr.getControllerGrip(index);
-  grip.add(controllerModelFactory.createControllerModel(grip));
-  scene.add(grip);
-
-  return { pointer, grip };
-}
-
-const controllers = [buildController(0), buildController(1)];
-
-// ── Reusable temporaries (never allocated per-frame) ──────────────────────────
-const _ctrlWorldPos  = new THREE.Vector3();
-const _ctrlWorldQuat = new THREE.Quaternion();
-const _ctrlWorldQInv = new THREE.Quaternion();
-const _raycaster     = new THREE.Raycaster();
-_raycaster.firstHitOnly = true;   // BVH short-circuits after first hit — much faster
-const _rayOrigin     = new THREE.Vector3();
-const _rayDir        = new THREE.Vector3();
-const _fingerDelta   = new THREE.Vector3();
-const _oldArm        = new THREE.Vector3();
-const _newArm        = new THREE.Vector3();
-const _rotQuat       = new THREE.Quaternion();
-
-// ── Laser shortening ───────────────────────────────────────────────────────────
-//
-// Called every frame for each controller. Casts a ray from the pointer against
-// the current model, then scales the beam and repositions the tip ring to the
-// hit point (or restores full length on a miss).
-// Returns the hit point in world space, or null if the ray missed.
-//
+// Called every frame for each controller. Casts a ray against all loaded
+// models, scales the beam and repositions the tip ring to the hit point
+// (or restores full length on a miss). Returns { hitPoint, hitEntry }.
 function updateLaser(pointer) {
   const beam = pointer.children[0].children[0];
   const ring = pointer.children[0].children[1];
+  const resetBeam = () => { beam.scale.z = 1; ring.position.z = -LASER_LENGTH; };
 
-  if (models.length === 0) {
-    beam.scale.z = 1;
-    ring.position.z = -LASER_LENGTH;
-    return { hitPoint: null, hitEntry: null };
-  }
+  if (models.length === 0) return resetBeam() || { hitPoint: null, hitEntry: null };
 
   pointer.getWorldPosition(_rayOrigin);
   _rayDir.set(0, 0, -1).transformDirection(pointer.matrixWorld);
@@ -636,30 +932,15 @@ function updateLaser(pointer) {
     }
   }
 
-  if (nearestEntry === null) {
-    beam.scale.z = 1;
-    ring.position.z = -LASER_LENGTH;
-    return { hitPoint: null, hitEntry: null };
-  }
+  if (nearestEntry === null) return resetBeam() || { hitPoint: null, hitEntry: null };
 
   beam.scale.z = nearestDist / LASER_LENGTH;
   ring.position.z = -nearestDist;
   return { hitPoint: nearestPoint, hitEntry: nearestEntry };
 }
 
-// ── Per-controller interaction slots ──────────────────────────────────────────
-//
-// Each physical controller has its own independent slot so both hands can
-// interact with different models simultaneously.
-//
-// slot.type      — null | 'grab' | 'rotate'
-// slot.grab      — grab state, valid while type === 'grab'
-// slot.rotate    — rotate state, valid while type === 'rotate'
-//
-// Cross-controller rule: two grabs on the *same* model are denied — they would
-// fight each other. Any other combination (grab A + rotate A, grab A + rotate B,
-// grab A + grab B) is allowed.
-//
+// ── Interaction slots ──────────────────────────────────────────────────────────
+
 function makeSlot() {
   return {
     type:    null,
@@ -679,9 +960,8 @@ function makeSlot() {
 
 const slots = [makeSlot(), makeSlot()];
 
-// ── Slot helpers ───────────────────────────────────────────────────────────────
 function otherSlot(slot) {
-  return slots[slots.indexOf(slot) === 0 ? 1 : 0];
+  return slots[1 - slots.indexOf(slot)];
 }
 
 function startGrab(slot, pointer, hitPoint, hitEntry) {
@@ -720,42 +1000,12 @@ function startRotate(slot, pointer, hitPoint, hitEntry) {
 function endInteraction(slot) {
   if (!slot.type) return;
   if (slot.pointer) setLaserColor(slot.pointer, COLOR_IDLE);
-  slot.type           = null;
-  slot.pointer        = null;
-  slot.grab.entry     = null;
-  slot.rotate.entry   = null;
+  slot.type         = null;
+  slot.pointer      = null;
+  slot.grab.entry   = null;
+  slot.rotate.entry = null;
 }
 
-// ── Wire interaction events on both controllers ────────────────────────────────
-for (let i = 0; i < controllers.length; i++) {
-  const { pointer } = controllers[i];
-  const slot = slots[i];
-
-  pointer.addEventListener('connected',    e => { pointer.userData.xrInputSource = e.data; });
-  pointer.addEventListener('disconnected', () => { pointer.userData.xrInputSource = null; });
-
-  pointer.addEventListener('squeezestart', () => {
-    if (slot.type) return;   // this controller is busy
-    const { hitPoint, hitEntry } = pointer.userData;
-    if (!hitEntry) return;
-    startGrab(slot, pointer, hitPoint, hitEntry);
-  });
-  pointer.addEventListener('squeezeend', () => {
-    if (slot.type === 'grab') endInteraction(slot);
-  });
-
-  pointer.addEventListener('selectstart', () => {
-    if (slot.type) return;   // this controller is busy
-    const { hitPoint, hitEntry } = pointer.userData;
-    if (!hitEntry) return;
-    startRotate(slot, pointer, hitPoint, hitEntry);
-  });
-  pointer.addEventListener('selectend', () => {
-    if (slot.type === 'rotate') endInteraction(slot);
-  });
-}
-
-// ── Apply one grab slot ────────────────────────────────────────────────────────
 function applyGrab(slot) {
   const { pivot, root } = slot.grab.entry;
   const ctrl = slot.pointer;
@@ -773,7 +1023,6 @@ function applyGrab(slot) {
   mrShadowDisc.position.z = pivot.position.z;
 }
 
-// ── Apply one rotate slot ──────────────────────────────────────────────────────
 function applyRotate(slot) {
   const ctrl = slot.pointer;
 
@@ -804,7 +1053,7 @@ function applyRotate(slot) {
   slot.rotate.prevFingerPos.copy(_ctrlWorldPos);
 }
 
-// ── Main XR update — called every frame while presenting ──────────────────────
+// Called every frame while XR is presenting
 function updateXRControls() {
   _frameCount++;
 
@@ -815,9 +1064,8 @@ function updateXRControls() {
 
   if (doRaycast) {
     for (const { pointer } of controllers) {
-      const result = updateLaser(pointer);
-      pointer.userData.hitPoint = result.hitPoint;
-      pointer.userData.hitEntry = result.hitEntry;
+      ({ hitPoint: pointer.userData.hitPoint,
+         hitEntry: pointer.userData.hitEntry } = updateLaser(pointer));
     }
   }
 
@@ -850,7 +1098,7 @@ function updateXRControls() {
   // 4. B/Y button — remove the model the laser is currently hitting.
   //    Rising-edge detection fires exactly once per press.
   for (const { pointer } of controllers) {
-    const source = pointer.userData.xrInputSource;
+    const source     = pointer.userData.xrInputSource;
     const pressed    = source?.gamepad?.buttons[5]?.pressed ?? false;
     const wasPressed = pointer.userData.prevBYPressed ?? false;
     pointer.userData.prevBYPressed = pressed;
@@ -862,25 +1110,65 @@ function updateXRControls() {
   }
 }
 
-// ─── Animation loop ───────────────────────────────────────────────────────────
-// IMPORTANT: controls.update() must NOT run while XR is presenting.
-// The XR runtime owns the camera pose during a session. If OrbitControls
-// also runs update() every frame — even with enabled=false, the damping
-// momentum still nudges camera.position — it fights the XR pose tracker
-// and produces the rapid head-movement jitter.
-renderer.setAnimationLoop((timestamp, frame) => {
-  if (renderer.xr.isPresenting && frame) {
-    updateXRControls();
-  } else {
-    controls.update(); // only touch the camera in browser mode
-  }
-  renderer.render(scene, camera);
-});
+// ── Build both controllers ─────────────────────────────────────────────────────
 
-// ─── Mode tracking ────────────────────────────────────────────────────────────
-// 'browser' | 'vr' | 'mr'
+function buildController(index) {
+  // Pointer space — laser lives here
+  const pointer = renderer.xr.getController(index);
+  pointer.add(makeLaser());
+  scene.add(pointer);
+
+  // Grip space — hardware model lives here
+  const grip = renderer.xr.getControllerGrip(index);
+  grip.add(controllerModelFactory.createControllerModel(grip));
+  scene.add(grip);
+
+  return { pointer, grip };
+}
+
+const controllers = [buildController(0), buildController(1)];
+
+// Wire gesture events on both controllers
+for (let i = 0; i < controllers.length; i++) {
+  const { pointer } = controllers[i];
+  const slot = slots[i];
+
+  pointer.addEventListener('connected',    e => { pointer.userData.xrInputSource = e.data; });
+  pointer.addEventListener('disconnected', () => { pointer.userData.xrInputSource = null; });
+
+  pointer.addEventListener('squeezestart', () => {
+    if (slot.type) return;
+    const { hitPoint, hitEntry } = pointer.userData;
+    if (!hitEntry) return;
+    startGrab(slot, pointer, hitPoint, hitEntry);
+  });
+  pointer.addEventListener('squeezeend', () => {
+    if (slot.type === 'grab') endInteraction(slot);
+  });
+
+  pointer.addEventListener('selectstart', () => {
+    if (slot.type) return;
+    const { hitPoint, hitEntry } = pointer.userData;
+    if (!hitEntry) return;
+    startRotate(slot, pointer, hitPoint, hitEntry);
+  });
+  pointer.addEventListener('selectend', () => {
+    if (slot.type === 'rotate') endInteraction(slot);
+  });
+}
+
+
+// ─── §9  XR session lifecycle — mode tracking, VR/MR buttons ─────────────────
+//
+// currentMode: 'browser' | 'vr' | 'mr'
+//
+// Both buttons manage their own session lifecycle manually so onXRSessionStart
+// can be called directly with the correct mode — no side-channel flag needed.
+
 let currentMode = 'browser';
-const modeBadge = document.getElementById('mode-badge');
+
+const modeBadge   = document.getElementById('mode-badge');
+const controlsBar = document.querySelector('.controls');
 
 function setMode(mode) {
   currentMode = mode;
@@ -889,7 +1177,6 @@ function setMode(mode) {
   if (mode === 'mr') { modeBadge.className = 'mr'; modeBadge.textContent = '● MR'; }
 }
 
-// ─── Shared XR session start / end logic ─────────────────────────────────────
 function onXRSessionStart(mode) {
   setMode(mode);
 
@@ -946,21 +1233,15 @@ function onXRSessionStart(mode) {
     const pose = frame.getViewerPose(refSpace);
     if (!pose) { requestAnimationFrame(placePivots); return; }
 
-    // Eye height in the reference space — subtract 0.3 m for a comfortable
-    // slightly-below-eye-level position
     // local-floor gives Y=0 at floor. Place models at comfortable table height.
-    const targetY = 0.9;
     let x = 0;
     for (const entry of models) {
-      entry.pivot.position.set(x, targetY, MODEL_PIVOT_Z);
+      entry.pivot.position.set(x, MODEL_PIVOT_Y, MODEL_PIVOT_Z);
       x += MODEL_SPACING;
     }
-    if (mode === 'mr') {
-      mrShadowDisc.position.set(0, 0.02, MODEL_PIVOT_Z);
-    }
+    if (mode === 'mr') mrShadowDisc.position.set(0, 0.02, MODEL_PIVOT_Z);
   };
   requestAnimationFrame(placePivots);
-
 }
 
 function onXRSessionEnd() {
@@ -1002,45 +1283,25 @@ function onXRSessionEnd() {
   if (models.length > 0) fitCamera();
 }
 
-renderer.xr.addEventListener('sessionstart', () => {
-  onXRSessionStart(_pendingXRMode || 'vr');
-  _pendingXRMode = null;
-});
 renderer.xr.addEventListener('sessionend', onXRSessionEnd);
 
-let _pendingXRMode = null;
+// ── Shared session-request options ────────────────────────────────────────────
+const XR_SESSION_OPTS = {
+  requiredFeatures: ['local-floor'],
+  optionalFeatures: ['bounded-floor', 'hand-tracking'],
+};
 
-// ─── VR Button ────────────────────────────────────────────────────────────────
-function styleXRButton(btn, isMR) {
-  Object.assign(btn.style, {
-    position: 'static', background: 'transparent',
-    fontFamily: "'Space Mono', monospace", fontSize: '11px',
-    padding: '7px 14px', borderRadius: '4px', cursor: 'pointer',
-    textTransform: 'uppercase', letterSpacing: '.08em', transition: 'all .15s',
-    width: 'auto', bottom: 'auto', left: 'auto', right: 'auto',
-    border: isMR ? '1px solid var(--accent-mr)' : '1px solid var(--border)',
-    color: isMR ? 'var(--accent-mr)' : 'var(--text)',
-  });
-  btn.onmouseenter = () => {
-    btn.style.background = isMR ? 'var(--accent-mr)' : 'var(--border)';
-    btn.style.color = isMR ? '#000' : 'var(--accent)';
-    if (!isMR) btn.style.borderColor = 'var(--accent)';
-  };
-  btn.onmouseleave = () => {
-    btn.style.background = 'transparent';
-    btn.style.color = isMR ? 'var(--accent-mr)' : 'var(--text)';
-    btn.style.borderColor = isMR ? 'var(--accent-mr)' : 'var(--border)';
-  };
+// ── VR button ─────────────────────────────────────────────────────────────────
+
+function makeXRButton(label, className) {
+  const btn = document.createElement('button');
+  btn.className = className;
+  btn.textContent = label;
+  btn.disabled = true;
+  return btn;
 }
 
-const controlsBar = document.querySelector('.controls');
-
-// Create VR button manually so we can request 'local-floor' reference space.
-// VRButton.createButton() doesn't accept session options, so we replicate its
-// logic — check support, request the session ourselves, wire the button state.
-const vrButton = document.createElement('button');
-vrButton.textContent = 'ENTER VR';
-vrButton.disabled = true;
+const vrButton = makeXRButton('ENTER VR', 'btn xr-btn');
 
 if (navigator.xr) {
   navigator.xr.isSessionSupported('immersive-vr').then(supported => {
@@ -1051,19 +1312,17 @@ if (navigator.xr) {
   let vrSession = null;
   vrButton.addEventListener('click', () => {
     if (vrSession === null) {
-      navigator.xr.requestSession('immersive-vr', {
-        requiredFeatures: ['local-floor'],
-        optionalFeatures: ['bounded-floor', 'hand-tracking'],
-      }).then(session => {
-        _pendingXRMode = 'vr';
-        renderer.xr.setSession(session);
-        vrSession = session;
-        vrButton.textContent = 'EXIT VR';
-        session.addEventListener('end', () => {
-          vrSession = null;
-          vrButton.textContent = 'ENTER VR';
-        });
-      }).catch(err => console.error('VR session request failed:', err));
+      navigator.xr.requestSession('immersive-vr', XR_SESSION_OPTS)
+        .then(session => {
+          renderer.xr.setSession(session);
+          onXRSessionStart('vr');
+          vrSession = session;
+          vrButton.textContent = 'EXIT VR';
+          session.addEventListener('end', () => {
+            vrSession = null;
+            vrButton.textContent = 'ENTER VR';
+          });
+        }).catch(err => console.error('VR session request failed:', err));
     } else {
       vrSession.end();
     }
@@ -1072,487 +1331,67 @@ if (navigator.xr) {
   vrButton.textContent = 'VR NOT SUPPORTED';
 }
 
-styleXRButton(vrButton, false);
 controlsBar.prepend(vrButton);
 
-// ARButton requires optionalFeatures for Quest 3 passthrough
-const arButton = ARButton.createButton(renderer, {
-  requiredFeatures: ['local-floor'],
-  optionalFeatures: ['bounded-floor', 'hand-tracking'],
-});
-arButton.addEventListener('click', () => { _pendingXRMode = 'mr'; }, true); // capture phase
-// Override the default label — ARButton says "START AR", we want "Enter MR"
-// We watch for the button to become enabled and relabel it
-const relabelAR = () => {
-  if (arButton.textContent.includes('AR') || arButton.textContent.includes('SUPPORTED')) {
-    arButton.textContent = arButton.disabled ? 'MR NOT SUPPORTED' : 'ENTER MR';
-  }
-};
-new MutationObserver(relabelAR).observe(arButton, { childList: true, characterData: true, subtree: true });
-relabelAR();
+// ── MR button ─────────────────────────────────────────────────────────────────
 
-styleXRButton(arButton, true);
-// Insert MR button right after VR button
-vrButton.insertAdjacentElement('afterend', arButton);
+const mrButton = makeXRButton('ENTER MR', 'btn xr-btn-mr');
 
-// ─── LDraw & model state ──────────────────────────────────────────────────────
-let edgesVisible  = true;
-let selectedEntry = null;   // model currently selected for keyboard nudge
+if (navigator.xr) {
+  navigator.xr.isSessionSupported('immersive-ar').then(supported => {
+    mrButton.disabled = !supported;
+    mrButton.textContent = supported ? 'ENTER MR' : 'MR NOT SUPPORTED';
+  }).catch(() => { mrButton.disabled = true; mrButton.textContent = 'MR NOT SUPPORTED'; });
 
-// ─── UI helpers ───────────────────────────────────────────────────────────────
-const dropZone       = document.getElementById('drop-zone');
-const loadingOverlay = document.getElementById('loading-overlay');
-const loadingMsg     = document.getElementById('loading-msg');
-const loadingSub     = document.getElementById('loading-sub');
-const statusEl       = document.getElementById('status');
-const errorBanner    = document.getElementById('error-banner');
-const errorText      = document.getElementById('error-text');
-
-function showLoading(msg, sub) {
-  loadingMsg.textContent = msg || 'Loading…';
-  loadingSub.textContent = sub || '';
-  loadingOverlay.classList.add('visible');
-  errorBanner.classList.remove('visible');
-}
-function hideLoading() { loadingOverlay.classList.remove('visible'); }
-function showError(msg) { hideLoading(); errorText.textContent = msg; errorBanner.classList.add('visible'); }
-function setStatus(s)   { statusEl.textContent = s; }
-
-// ── Scene model list ───────────────────────────────────────────────────────────
-const sceneCountEl    = document.getElementById('scene-count');
-const sceneModelListEl = document.getElementById('scene-model-list');
-
-function renderModelList() {
-  sceneCountEl.textContent = models.length === 0
-    ? 'No models loaded'
-    : `${models.length} / ${MAX_MODELS} model${models.length > 1 ? 's' : ''}`;
-
-  if (models.length === 0) {
-    sceneModelListEl.innerHTML = '<span class="model-list-empty">—</span>';
-    return;
-  }
-
-  sceneModelListEl.innerHTML = '';
-  for (const entry of models) {
-    const item = document.createElement('div');
-    item.className = 'model-list-item' + (entry === selectedEntry ? ' selected' : '');
-
-    const nameEl = document.createElement('span');
-    nameEl.className = 'model-list-name';
-    nameEl.textContent = entry.name;
-    nameEl.title = entry.name;
-
-    const removeBtn = document.createElement('button');
-    removeBtn.className = 'model-list-remove';
-    removeBtn.textContent = '✕';
-    removeBtn.title = 'Remove from scene';
-    removeBtn.onclick = () => removeEntry(entry);
-
-    item.append(nameEl, removeBtn);
-    sceneModelListEl.appendChild(item);
-  }
-}
-
-function removeEntry(entry) {
-  // Release any slot whose interaction targets this entry
-  for (const slot of slots) {
-    if (slot.grab.entry === entry || slot.rotate.entry === entry) {
-      endInteraction(slot);
+  let mrSession = null;
+  mrButton.addEventListener('click', () => {
+    if (mrSession === null) {
+      navigator.xr.requestSession('immersive-ar', XR_SESSION_OPTS)
+        .then(session => {
+          renderer.xr.setSession(session);
+          onXRSessionStart('mr');
+          mrSession = session;
+          mrButton.textContent = 'EXIT MR';
+          session.addEventListener('end', () => {
+            mrSession = null;
+            mrButton.textContent = 'ENTER MR';
+          });
+        }).catch(err => console.error('MR session request failed:', err));
+    } else {
+      mrSession.end();
     }
-  }
-  // Deselect if this was the selected model
-  if (selectedEntry === entry) selectedEntry = null;
-
-  const { mesh, pivot, root } = entry;
-  root.remove(mesh);
-  scene.remove(mesh);
-  scene.remove(pivot);
-  mesh.traverse(o => {
-    if (o.geometry) {
-      o.geometry.disposeBoundsTree?.();
-      o.geometry.dispose();
-    }
-    if (o.material) [].concat(o.material).forEach(m => m.dispose());
   });
+} else {
+  mrButton.textContent = 'MR NOT SUPPORTED';
+}
 
-  models.splice(models.indexOf(entry), 1);
-  renderModelList();
+vrButton.insertAdjacentElement('afterend', mrButton);
 
-  if (models.length === 0) {
-    dropZone.style.display = '';
-    setStatus('No model loaded');
+// ── Animation loop ────────────────────────────────────────────────────────────
+// IMPORTANT: controls.update() must NOT run while XR is presenting.
+// The XR runtime owns the camera pose during a session. If OrbitControls
+// also runs update() every frame — even with enabled=false, the damping
+// momentum still nudges camera.position — it fights the XR pose tracker
+// and produces the rapid head-movement jitter.
+renderer.setAnimationLoop((timestamp, frame) => {
+  if (renderer.xr.isPresenting && frame) {
+    updateXRControls();
   } else {
-    fitCamera();
+    controls.update(); // only touch the camera in browser mode
   }
-}
-
-function clearAllModels() {
-  // Slice to avoid mutating while iterating
-  for (const entry of models.slice()) removeEntry(entry);
-}
-
-function fitCamera() {
-  if (models.length === 0) {
-    camera.position.set(0, 400, 1200);
-    controls.target.set(0, 0, 0);
-    controls.update();
-    return;
-  }
-  const box = new THREE.Box3();
-  for (const entry of models) box.expandByObject(entry.mesh);
-  const size   = box.getSize(new THREE.Vector3());
-  const centre = box.getCenter(new THREE.Vector3());
-  const maxDim = Math.max(size.x, size.y, size.z);
-  const dist   = (maxDim / (2 * Math.tan(camera.fov * Math.PI / 360))) * 1.6;
-  controls.target.copy(centre);
-  camera.position.set(centre.x + dist * 0.3, centre.y + dist * 0.4, centre.z + dist);
-  controls.update();
-  gridHelper.position.y = box.min.y;
-  ground.position.y     = box.min.y;
-}
-
-function onModelLoaded(model, filename) {
-  if (models.length >= MAX_MODELS) {
-    showError(`Maximum ${MAX_MODELS} models in scene. Remove one first.`);
-    return;
-  }
-
-  errorBanner.classList.remove('visible');
-  model.rotation.x = Math.PI; // LDraw Y-down → Y-up
-  model.traverse(o => {
-    if (o.isMesh) {
-      o.castShadow = true;
-      o.receiveShadow = true;
-      o.geometry.computeBoundsTree();   // BVH — O(log n) raycasts
-    } else if (o.isLineSegments) {
-      o.raycast = () => {};             // edges are visual only — never raycasted
-    }
-  });
-
-  scene.add(model);
-  const entry = createEntry(model, filename);
-  models.push(entry);
-
-  // In browser mode, separate models along X so they don't stack on top of each other.
-  // Compute the right edge of all existing models and place the new one just past it.
-  if (models.length > 1) {
-    const existingBox = new THREE.Box3();
-    for (const e of models.slice(0, -1)) existingBox.expandByObject(e.mesh);
-    const newBox  = new THREE.Box3().setFromObject(model);
-    const newSize = newBox.getSize(new THREE.Vector3());
-    const gap     = newSize.x * 0.2;   // 20% of own width as breathing room
-    model.position.x = existingBox.max.x + gap + newSize.x / 2 - newBox.getCenter(new THREE.Vector3()).x;
-  }
-
-  if (models.length === 1) dropZone.style.display = 'none';
-  fitCamera();
-  renderModelList();
-
-  let meshes = 0, tris = 0;
-  model.traverse(o => {
-    if (o.isMesh) {
-      meshes++;
-      const idx = o.geometry.index;
-      tris += idx ? idx.count / 3 : o.geometry.attributes.position.count / 3;
-    }
-  });
-
-  hideLoading();
-  setStatus(`Loaded: ${filename} (${models.length}/${MAX_MODELS} in scene)`);
-}
-
-
-function makeLoader() {
-  const l = new LDrawLoader();
-  l.setPartsLibraryPath(PARTS_CDN);
-  return l;
-}
-
-function loadText(text, filename) {
-  showLoading('Parsing model…', 'Sub-parts resolved from LDraw CDN — needs internet');
-  const loader = makeLoader();
-  loader.preloadMaterials(PARTS_CDN + 'LDConfig.ldr')
-    .catch(() => {})
-    .then(() => loader.parse(text,
-      model => onModelLoaded(model, filename),
-      err => {
-        console.error(err);
-        showError('Parse error: ' + (err?.message || String(err)) +
-          '\n\nPacked .mpd files work best — all sub-parts are bundled inside.');
-      }
-    ));
-}
-
-// ─── Public API ───────────────────────────────────────────────────────────────
-window.loadFile = function(file) {
-  if (!file) return;
-  showLoading('Reading file…', file.name);
-  const reader = new FileReader();
-  reader.onload = e => loadText(e.target.result, file.name);
-  reader.onerror = () => showError('Could not read file.');
-  reader.readAsText(file);
-};
-
-window.loadFromURL = function() {
-  const url = document.getElementById('url-input').value.trim();
-  if (!url) return;
-  showLoading('Fetching…', url);
-  const loader = makeLoader();
-  loader.preloadMaterials(PARTS_CDN + 'LDConfig.ldr').catch(() => {}).then(() =>
-    loader.load(url,
-      model => onModelLoaded(model, url.split('/').pop()),
-      xhr => { if (xhr.total) loadingSub.textContent = 'Downloading… ' + Math.round(xhr.loaded / xhr.total * 100) + '%'; },
-      err => showError('Could not load URL — CORS may be blocking it.\nTry downloading and opening locally.\n\n' + err)
-    )
-  );
-};
-
-window.resetView = function() {
-  if (renderer.xr.isPresenting) {
-    const frame    = renderer.xr.getFrame();
-    const refSpace = renderer.xr.getReferenceSpace();
-    const pose     = (frame && refSpace) ? frame.getViewerPose(refSpace) : null;
-    const targetY  = 0.9;
-    let x = 0;
-    for (const entry of models) {
-      const { pivot, root } = entry;
-      root.scale.setScalar(LDU_TO_METERS);
-      root.rotation.set(0, 0, 0);
-      pivot.position.set(x, targetY, MODEL_PIVOT_Z);
-      x += MODEL_SPACING;
-    }
-    mrShadowDisc.position.set(0, 0.02, MODEL_PIVOT_Z);
-    mrShadowDisc.scale.setScalar(1);
-  } else {
-    fitCamera();
-  }
-};
-
-window.toggleEdges = function() {
-  edgesVisible = !edgesVisible;
-  document.getElementById('toggle-edges').classList.toggle('on', edgesVisible);
-  for (const entry of models) {
-    entry.mesh.traverse(o => { if (o.isLineSegments) o.visible = edgesVisible; });
-  }
-};
-
-window.toggleGrid = function() {
-  const on = !gridHelper.visible;
-  gridHelper.visible = on;
-  document.getElementById('toggle-grid').classList.toggle('on', on);
-};
-
-// ─── Demo model ───────────────────────────────────────────────────────────────
-document.getElementById('btn-demo').addEventListener('click', () => {
-  showLoading('Loading demo…', 'Fetching packed .mpd from GitHub');
-  const loader = makeLoader();
-  loader.preloadMaterials(PARTS_CDN + 'LDConfig.ldr').catch(() => {}).then(() =>
-    loader.load(DEMO_MODEL,
-      model => onModelLoaded(model, 'car (demo)'),
-      xhr => { if (xhr.total) loadingSub.textContent = 'Downloading… ' + Math.round(xhr.loaded / xhr.total * 100) + '%'; },
-      err => showError('Could not load demo — check your internet connection.\n' + err)
-    )
-  );
+  renderer.render(scene, camera);
 });
 
-// ─── File input & drag-drop ───────────────────────────────────────────────────
-document.getElementById('file-input').addEventListener('change', function() {
-  if (this.files[0]) window.loadFile(this.files[0]);
-  this.value = '';
-});
-container.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('dragging'); });
-container.addEventListener('dragleave', () => dropZone.classList.remove('dragging'));
-container.addEventListener('drop', e => {
-  e.preventDefault();
-  dropZone.classList.remove('dragging');
-  if (e.dataTransfer.files[0]) window.loadFile(e.dataTransfer.files[0]);
-});
-dropZone.addEventListener('click', () => document.getElementById('file-input').click());
 
-// ─── Double-click to focus (browser only) ────────────────────────────────────
-renderer.domElement.addEventListener('dblclick', e => {
-  if (models.length === 0 || renderer.xr.isPresenting) return;
-  const rect = renderer.domElement.getBoundingClientRect();
-  const raycaster = new THREE.Raycaster();
-  raycaster.setFromCamera(
-    new THREE.Vector2(((e.clientX - rect.left) / rect.width) * 2 - 1, -((e.clientY - rect.top) / rect.height) * 2 + 1),
-    camera
-  );
-  const meshes = models.map(e => e.mesh);
-  const hits = raycaster.intersectObjects(meshes, true);
-  if (hits.length) { controls.target.copy(hits[0].point); controls.update(); }
-});
-
-// ─── Browser model drag & selection ──────────────────────────────────────────
+// ─── §10  Model browser ───────────────────────────────────────────────────────
 //
-// Right-click drag on a model → move it in X/Z on its own ground plane.
-// Left-click on a model       → select it (arrow keys nudge it).
-// Right-click on empty space  → falls through to OrbitControls pan.
-// Quest 3 browser: click-and-hold (150 ms) triggers drag same as right-drag.
+// The index is a JSONL file — one JSON object per line:
+//   {"name":"filename.mpd","search_key":"Human Readable Name"}
 //
-const NUDGE_STEP    = 100;   // LDU — about 4 cm at 1:1 scale
-const _browserRay   = new THREE.Raycaster();
-const _dragPlane    = new THREE.Plane();
-const _dragOffset   = new THREE.Vector3();
-const _planeHit     = new THREE.Vector3();
-const _ndcVec       = new THREE.Vector2();
+// Fuse.js searches both search_key (primary) and name (fallback).
+// Results are capped at MAX_RESULTS for rendering performance.
 
-let _dragEntry      = null;   // entry currently being dragged
-let _dragActive     = false;
-let _holdTimer      = null;   // for Quest-style click-and-hold
-let _pointerDownPos = null;   // { x, y } at pointerdown
-
-function browserRaycast(clientX, clientY) {
-  const rect = renderer.domElement.getBoundingClientRect();
-  _ndcVec.set(
-    ((clientX - rect.left)  / rect.width)  * 2 - 1,
-    -((clientY - rect.top) / rect.height) * 2 + 1
-  );
-  _browserRay.setFromCamera(_ndcVec, camera);
-  const hits = _browserRay.intersectObjects(models.map(e => e.mesh), true);
-  return hits.length > 0 ? hits[0] : null;
-}
-
-function selectEntry(entry) {
-  selectedEntry = entry;
-  renderModelList();
-}
-
-function startDrag(entry, clientX, clientY) {
-  _dragEntry  = entry;
-  _dragActive = true;
-  controls.enabled = false;
-  container.classList.add('drag-active');
-  container.classList.remove('drag-ready');
-
-  // Build a horizontal plane at the model's current Y
-  _dragPlane.set(new THREE.Vector3(0, 1, 0), -entry.mesh.position.y);
-
-  // Record offset from plane hit to model origin so it doesn't snap to cursor
-  const rect = renderer.domElement.getBoundingClientRect();
-  _ndcVec.set(
-    ((clientX - rect.left) / rect.width) * 2 - 1,
-    -((clientY - rect.top) / rect.height) * 2 + 1
-  );
-  _browserRay.setFromCamera(_ndcVec, camera);
-  _browserRay.ray.intersectPlane(_dragPlane, _planeHit);
-  _dragOffset.set(
-    entry.mesh.position.x - _planeHit.x,
-    0,
-    entry.mesh.position.z - _planeHit.z
-  );
-}
-
-function moveDrag(clientX, clientY) {
-  if (!_dragActive || !_dragEntry) return;
-  const rect = renderer.domElement.getBoundingClientRect();
-  _ndcVec.set(
-    ((clientX - rect.left) / rect.width) * 2 - 1,
-    -((clientY - rect.top) / rect.height) * 2 + 1
-  );
-  _browserRay.setFromCamera(_ndcVec, camera);
-  if (_browserRay.ray.intersectPlane(_dragPlane, _planeHit)) {
-    _dragEntry.mesh.position.x = _planeHit.x + _dragOffset.x;
-    _dragEntry.mesh.position.z = _planeHit.z + _dragOffset.z;
-  }
-}
-
-function endDrag() {
-  if (_holdTimer) { clearTimeout(_holdTimer); _holdTimer = null; }
-  if (!_dragActive) return;
-  _dragActive = false;
-  _dragEntry  = null;
-  controls.enabled = true;
-  container.classList.remove('drag-active');
-}
-
-function hitToEntry(hit) {
-  // Walk up the hit object's ancestors to find which entry's mesh it belongs to
-  let obj = hit.object;
-  while (obj) {
-    const entry = models.find(e => e.mesh === obj);
-    if (entry) return entry;
-    obj = obj.parent;
-  }
-  return null;
-}
-
-// ── Pointer events (mouse + touch + Quest controller) ─────────────────────────
-renderer.domElement.addEventListener('pointerdown', e => {
-  if (renderer.xr.isPresenting || models.length === 0) return;
-  _pointerDownPos = { x: e.clientX, y: e.clientY };
-
-  const hit   = browserRaycast(e.clientX, e.clientY);
-  const entry = hit ? hitToEntry(hit) : null;
-
-  if (e.button === 2 && entry) {
-    // Right-click on model → immediate drag
-    e.preventDefault();
-    selectEntry(entry);
-    startDrag(entry, e.clientX, e.clientY);
-    return;
-  }
-
-  if (e.button === 0 && entry) {
-    // Left-click on model → select + arm hold-to-drag timer (Quest-style)
-    selectEntry(entry);
-    container.classList.add('drag-ready');
-    _holdTimer = setTimeout(() => {
-      if (_pointerDownPos) startDrag(entry, _pointerDownPos.x, _pointerDownPos.y);
-    }, 150);
-  }
-});
-
-renderer.domElement.addEventListener('pointermove', e => {
-  if (renderer.xr.isPresenting) return;
-  if (_dragActive) {
-    moveDrag(e.clientX, e.clientY);
-    return;
-  }
-  // Update drag-ready cursor when hovering over a model
-  if (!_dragActive && models.length > 0) {
-    const hit = browserRaycast(e.clientX, e.clientY);
-    container.classList.toggle('drag-ready', !!hit);
-  }
-});
-
-renderer.domElement.addEventListener('pointerup', e => {
-  if (renderer.xr.isPresenting) return;
-  if (_holdTimer) { clearTimeout(_holdTimer); _holdTimer = null; }
-  container.classList.remove('drag-ready');
-  _pointerDownPos = null;
-  if (_dragActive) { endDrag(); return; }
-  // Click on empty space → deselect
-  if (e.button === 0) {
-    const hit = browserRaycast(e.clientX, e.clientY);
-    if (!hit) { selectedEntry = null; renderModelList(); }
-  }
-});
-
-renderer.domElement.addEventListener('pointercancel', endDrag);
-
-// Suppress browser context menu so right-drag works uninterrupted
-renderer.domElement.addEventListener('contextmenu', e => e.preventDefault());
-
-// ── Keyboard nudge ────────────────────────────────────────────────────────────
-document.addEventListener('keydown', e => {
-  if (renderer.xr.isPresenting || !selectedEntry) return;
-  if (document.activeElement?.tagName === 'INPUT') return;
-  if (mbOverlay?.classList.contains('open')) return;   // model browser has its own arrow key nav
-  const step = NUDGE_STEP;
-  let moved = true;
-  switch (e.key) {
-    case 'ArrowLeft':  selectedEntry.mesh.position.x -= step; break;
-    case 'ArrowRight': selectedEntry.mesh.position.x += step; break;
-    case 'ArrowUp':    selectedEntry.mesh.position.z -= step; break;
-    case 'ArrowDown':  selectedEntry.mesh.position.z += step; break;
-    default: moved = false;
-  }
-  if (moved) e.preventDefault();
-});
-
-// ─── Model Browser ────────────────────────────────────────────────────────────
-let mbModels  = [];   // [{ name, url }]
+let mbModels  = [];   // [{ name, search_key, url }]
 let mbFuse    = null; // Fuse instance, built after model list loads
 let mbFocused = -1;   // keyboard-nav index into current result list
 
@@ -1560,16 +1399,6 @@ const mbOverlay   = document.getElementById('model-browser');
 const mbSearchEl  = document.getElementById('mb-search-input');
 const mbResultsEl = document.getElementById('mb-results');
 const mbStatusEl  = document.getElementById('mb-status');
-
-// ── Fetch model index once on page load ───────────────────────────────────────
-//
-// The index is a JSONL file — one JSON object per line:
-//   {"name":"filename.mpd","search_key":"Human Readable Name"}
-//
-// Fuse.js searches both search_key (primary) and name (fallback).
-// Results are capped at MAX_RESULTS for rendering performance.
-//
-const MAX_RESULTS = 50;
 
 async function fetchModelList() {
   try {
@@ -1590,11 +1419,11 @@ async function fetchModelList() {
         { name: 'search_key', weight: 2 },  // human label — higher weight
         { name: 'name',       weight: 1 },  // filename — fallback
       ],
-      threshold:        0.35,
-      distance:         200,
+      threshold:          0.35,
+      distance:           200,
       minMatchCharLength: 2,
-      includeScore:     true,
-      includeMatches:   true,
+      includeScore:       true,
+      includeMatches:     true,
     });
 
     mbStatusEl.textContent = mbModels.length + ' models available — type to search';
@@ -1607,8 +1436,7 @@ async function fetchModelList() {
 }
 fetchModelList();
 
-// ── Open / close ──────────────────────────────────────────────────────────────
-window.openModelBrowser = function() {
+function openModelBrowser() {
   if (renderer.xr.isPresenting) return;
   mbOverlay.classList.add('open');
   mbSearchEl.value = '';
@@ -1618,70 +1446,51 @@ window.openModelBrowser = function() {
     ? mbModels.length + ' models available — type to search'
     : 'Loading model list…';
   requestAnimationFrame(() => mbSearchEl.focus());
-};
-
-window.closeModelBrowser = function() {
-  mbOverlay.classList.remove('open');
-};
-
-// Close on backdrop click
-mbOverlay.addEventListener('click', e => { if (e.target === mbOverlay) closeModelBrowser(); });
-
-// Keyboard navigation
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape' && mbOverlay.classList.contains('open')) {
-    closeModelBrowser();
-    return;
-  }
-  if (!mbOverlay.classList.contains('open')) return;
-  const items = mbResultsEl.querySelectorAll('.mb-result');
-  if (!items.length) return;
-  if (e.key === 'ArrowDown') {
-    e.preventDefault();
-    mbFocused = Math.min(mbFocused + 1, items.length - 1);
-    updateFocus(items);
-  } else if (e.key === 'ArrowUp') {
-    e.preventDefault();
-    mbFocused = Math.max(mbFocused - 1, 0);
-    updateFocus(items);
-  } else if (e.key === 'Enter' && mbFocused >= 0 && items[mbFocused]) {
-    items[mbFocused].querySelector('.mb-load-btn').click();
-  }
-});
-
-function updateFocus(items) {
-  items.forEach((el, i) => el.classList.toggle('focused', i === mbFocused));
-  if (items[mbFocused]) items[mbFocused].scrollIntoView({ block: 'nearest' });
 }
 
-// ── Search input ──────────────────────────────────────────────────────────────
-mbSearchEl.addEventListener('input', () => {
-  const q = mbSearchEl.value.trim();
-  mbFocused = -1;
+function closeModelBrowser() {
+  mbOverlay.classList.remove('open');
+}
 
-  if (q.length < 2) {
-    renderResults([]);
-    mbStatusEl.textContent = q.length === 0
-      ? (mbModels.length ? mbModels.length + ' models available — type to search' : 'Loading…')
-      : '1 more character needed…';
-    return;
+function loadFromBrowser(url, name) {
+  closeModelBrowser();
+  showLoading('Loading model…', name);
+  loadModelFromURL(url, name, 'Could not load model.');
+}
+
+function escHtml(s) {
+  return String(s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function highlightField(text, matches, key) {
+  if (!text) return '';
+  if (!matches || !matches.length) return escHtml(text);
+
+  const marked = new Set();
+  for (const m of matches) {
+    if (m.key === key) {
+      for (const [start, end] of m.indices) {
+        for (let i = start; i <= end; i++) marked.add(i);
+      }
+    }
   }
 
-  if (!mbFuse) { mbStatusEl.textContent = 'Model list not ready yet'; return; }
+  if (marked.size === 0) return escHtml(text);
 
-  const all     = mbFuse.search(q);
-  const capped  = all.length > MAX_RESULTS;
-  const results = capped ? all.slice(0, MAX_RESULTS) : all;
+  let html = '', inMark = false;
+  for (let i = 0; i < text.length; i++) {
+    if (marked.has(i)  && !inMark) { html += '<mark>'; inMark = true; }
+    if (!marked.has(i) &&  inMark) { html += '</mark>'; inMark = false; }
+    html += escHtml(text[i]);
+  }
+  if (inMark) html += '</mark>';
+  return html;
+}
 
-  renderResults(results);
-  mbStatusEl.textContent = all.length === 0
-    ? 'No matches for "' + q + '"'
-    : capped
-      ? `Top ${MAX_RESULTS} of ${all.length} matches for "${q}"`
-      : all.length + ' match' + (all.length !== 1 ? 'es' : '') + ' for "' + q + '"';
-});
-
-// ── Render results list ───────────────────────────────────────────────────────
 function renderResults(results) {
   if (results.length === 0) {
     const q = mbSearchEl.value.trim();
@@ -1715,54 +1524,193 @@ function renderResults(results) {
   });
 }
 
-// ── Character-level highlight for a single field ──────────────────────────────
-function highlightField(text, matches, key) {
-  if (!text) return '';
-  if (!matches || !matches.length) return escHtml(text);
+function updateFocus(items) {
+  items.forEach((el, i) => el.classList.toggle('focused', i === mbFocused));
+  if (items[mbFocused]) items[mbFocused].scrollIntoView({ block: 'nearest' });
+}
 
-  const marked = new Set();
-  for (const m of matches) {
-    if (m.key === key) {
-      for (const [start, end] of m.indices) {
-        for (let i = start; i <= end; i++) marked.add(i);
-      }
+
+// ─── §11  UI helpers + DOM references ────────────────────────────────────────
+
+const dropZone         = document.getElementById('drop-zone');
+const loadingOverlay   = document.getElementById('loading-overlay');
+const loadingMsg       = document.getElementById('loading-msg');
+const loadingSub       = document.getElementById('loading-sub');
+const statusEl         = document.getElementById('status');
+const errorBanner      = document.getElementById('error-banner');
+const errorText        = document.getElementById('error-text');
+const sceneCountEl     = document.getElementById('scene-count');
+const sceneModelListEl = document.getElementById('scene-model-list');
+
+function showLoading(msg, sub) {
+  loadingMsg.textContent = msg || 'Loading…';
+  loadingSub.textContent = sub || '';
+  loadingOverlay.classList.add('visible');
+  errorBanner.classList.remove('visible');
+}
+function hideLoading() { loadingOverlay.classList.remove('visible'); }
+function showError(msg) { hideLoading(); errorText.textContent = msg; errorBanner.classList.add('visible'); }
+function setStatus(s)   { statusEl.textContent = s; }
+
+
+// ─── §12  UI event wiring ─────────────────────────────────────────────────────
+// All HTML→JS connections in one place; no onclick attributes in the markup.
+
+// Header buttons
+document.getElementById('btn-demo').addEventListener('click', () => {
+  showLoading('Loading demo…', 'Fetching packed .mpd from GitHub');
+  loadModelFromURL(DEMO_MODEL, 'car (demo)', 'Could not load demo — check your internet connection.');
+});
+document.getElementById('btn-browse').addEventListener('click', openModelBrowser);
+document.getElementById('btn-reset-view').addEventListener('click', resetView);
+document.getElementById('btn-open-file').addEventListener('click', () => document.getElementById('file-input').click());
+
+// File input & drag-drop
+document.getElementById('file-input').addEventListener('change', function() {
+  if (this.files[0]) loadFile(this.files[0]);
+  this.value = '';
+});
+container.addEventListener('dragover',  e => { e.preventDefault(); dropZone.classList.add('dragging'); });
+container.addEventListener('dragleave', () => dropZone.classList.remove('dragging'));
+container.addEventListener('drop', e => {
+  e.preventDefault();
+  dropZone.classList.remove('dragging');
+  if (e.dataTransfer.files[0]) loadFile(e.dataTransfer.files[0]);
+});
+dropZone.addEventListener('click', () => document.getElementById('file-input').click());
+
+// Sidebar controls
+document.getElementById('btn-load-url').addEventListener('click', loadFromURL);
+document.getElementById('toggle-edges').addEventListener('click', toggleEdges);
+document.getElementById('toggle-grid').addEventListener('click', toggleGrid);
+// Delegated remove — one listener handles all ✕ buttons in the scene model list
+sceneModelListEl.addEventListener('click', e => {
+  const btn = e.target.closest('.model-list-remove');
+  if (btn) removeEntry(models[+btn.dataset.idx]);
+});
+
+// Error banner
+document.getElementById('btn-error-close').addEventListener('click', () => errorBanner.classList.remove('visible'));
+
+// Model browser overlay
+document.getElementById('btn-mb-close').addEventListener('click', closeModelBrowser);
+mbOverlay.addEventListener('click', e => { if (e.target === mbOverlay) closeModelBrowser(); });
+mbSearchEl.addEventListener('input', () => {
+  const q = mbSearchEl.value.trim();
+  mbFocused = -1;
+
+  if (q.length < 2) {
+    renderResults([]);
+    mbStatusEl.textContent = q.length === 0
+      ? (mbModels.length ? mbModels.length + ' models available — type to search' : 'Loading…')
+      : '1 more character needed…';
+    return;
+  }
+
+  if (!mbFuse) { mbStatusEl.textContent = 'Model list not ready yet'; return; }
+
+  const all     = mbFuse.search(q);
+  const capped  = all.length > MAX_RESULTS;
+  const results = capped ? all.slice(0, MAX_RESULTS) : all;
+
+  renderResults(results);
+  mbStatusEl.textContent = all.length === 0
+    ? 'No matches for "' + q + '"'
+    : capped
+      ? `Top ${MAX_RESULTS} of ${all.length} matches for "${q}"`
+      : all.length + ' match' + (all.length !== 1 ? 'es' : '') + ' for "' + q + '"';
+});
+
+// Canvas — double-click to focus orbit target on clicked point
+renderer.domElement.addEventListener('dblclick', e => {
+  if (models.length === 0 || renderer.xr.isPresenting) return;
+  const hit = browserRaycast(e.clientX, e.clientY);
+  if (hit) { controls.target.copy(hit.point); controls.update(); }
+});
+
+// Canvas — pointer events for drag, select, deselect
+renderer.domElement.addEventListener('pointerdown', e => {
+  if (renderer.xr.isPresenting || models.length === 0) return;
+  _pointerDownPos = { x: e.clientX, y: e.clientY };
+
+  const hit   = browserRaycast(e.clientX, e.clientY);
+  const entry = hit ? hitToEntry(hit) : null;
+
+  if (e.button === 2 && entry) {
+    e.preventDefault();
+    selectEntry(entry);
+    startDrag(entry, e.clientX, e.clientY);
+    return;
+  }
+
+  if (e.button === 0 && entry) {
+    selectEntry(entry);
+    container.classList.add('drag-ready');
+    _holdTimer = setTimeout(() => {
+      if (_pointerDownPos) startDrag(entry, _pointerDownPos.x, _pointerDownPos.y);
+    }, 150);
+  }
+});
+
+renderer.domElement.addEventListener('pointermove', e => {
+  if (renderer.xr.isPresenting) return;
+  if (_dragActive) { moveDrag(e.clientX, e.clientY); return; }
+  if (models.length > 0) {
+    container.classList.toggle('drag-ready', !!browserRaycast(e.clientX, e.clientY));
+  }
+});
+
+renderer.domElement.addEventListener('pointerup', e => {
+  if (renderer.xr.isPresenting) return;
+  if (_holdTimer) { clearTimeout(_holdTimer); _holdTimer = null; }
+  container.classList.remove('drag-ready');
+  _pointerDownPos = null;
+  if (_dragActive) { endDrag(); return; }
+  if (e.button === 0) {
+    const hit = browserRaycast(e.clientX, e.clientY);
+    if (!hit) { selectedEntry = null; renderModelList(); }
+  }
+});
+
+renderer.domElement.addEventListener('pointercancel', endDrag);
+renderer.domElement.addEventListener('contextmenu', e => e.preventDefault()); // allow right-drag
+
+// Keyboard — nudge selected model (browser) or navigate model browser (overlay)
+document.addEventListener('keydown', e => {
+  // Model browser keyboard nav takes priority when open
+  if (e.key === 'Escape' && mbOverlay.classList.contains('open')) {
+    closeModelBrowser(); return;
+  }
+  if (mbOverlay.classList.contains('open')) {
+    const items = mbResultsEl.querySelectorAll('.mb-result');
+    if (!items.length) return;
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      mbFocused = Math.min(mbFocused + 1, items.length - 1);
+      updateFocus(items);
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      mbFocused = Math.max(mbFocused - 1, 0);
+      updateFocus(items);
+    } else if (e.key === 'Enter' && mbFocused >= 0 && items[mbFocused]) {
+      items[mbFocused].querySelector('.mb-load-btn').click();
     }
+    return;
   }
 
-  if (marked.size === 0) return escHtml(text);
-
-  let html = '', inMark = false;
-  for (let i = 0; i < text.length; i++) {
-    if (marked.has(i)  && !inMark) { html += '<mark>'; inMark = true; }
-    if (!marked.has(i) &&  inMark) { html += '</mark>'; inMark = false; }
-    html += escHtml(text[i]);
+  // Arrow-key nudge for the selected model
+  if (renderer.xr.isPresenting || !selectedEntry) return;
+  if (document.activeElement?.tagName === 'INPUT') return;
+  let moved = true;
+  switch (e.key) {
+    case 'ArrowLeft':  selectedEntry.mesh.position.x -= NUDGE_STEP; break;
+    case 'ArrowRight': selectedEntry.mesh.position.x += NUDGE_STEP; break;
+    case 'ArrowUp':    selectedEntry.mesh.position.z -= NUDGE_STEP; break;
+    case 'ArrowDown':  selectedEntry.mesh.position.z += NUDGE_STEP; break;
+    default: moved = false;
   }
-  if (inMark) html += '</mark>';
-  return html;
-}
-
-function escHtml(s) {
-  return String(s)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
-}
-
-// ── Load model chosen from browser ────────────────────────────────────────────
-function loadFromBrowser(url, name) {
-  closeModelBrowser();
-  showLoading('Loading model…', name);
-  const loader = makeLoader();
-  loader.preloadMaterials(PARTS_CDN + 'LDConfig.ldr').catch(() => {}).then(() =>
-    loader.load(
-      url,
-      model => onModelLoaded(model, name),
-      xhr  => { if (xhr.total) loadingSub.textContent = 'Downloading… ' + Math.round(xhr.loaded / xhr.total * 100) + '%'; },
-      err  => showError('Could not load model.\n\n' + err)
-    )
-  );
-}
+  if (moved) e.preventDefault();
+});
 
 </script>
 <!-- ─── Model Browser Overlay ─────────────────────────────────────────────── -->
@@ -1770,7 +1718,7 @@ function loadFromBrowser(url, name) {
   <div class="mb-panel">
     <div class="mb-header">
       <span class="mb-title">Browse Official Models</span>
-      <button class="mb-close" onclick="closeModelBrowser()" title="Close">✕</button>
+      <button class="mb-close" id="btn-mb-close" title="Close">✕</button>
     </div>
     <div class="mb-search-wrap">
       <span class="mb-search-icon">⌕</span>
