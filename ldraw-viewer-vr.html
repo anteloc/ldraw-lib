@@ -1539,7 +1539,9 @@ function updateXRControls() {
 
 // ── Canvas drawing helpers ─────────────────────────────────────────────────────
 
-const MENU_W = 512, MENU_H = 288;
+// 768×432 — 1.5× the old 512×288, same 16:9 ratio.
+// Higher pixel density makes text noticeably sharper at wrist distance in VR.
+const MENU_W = 768, MENU_H = 432;
 
 // ── Shared HUD palette — used by mini-display and XR gallery ─────────────────
 const HUD_BG       = 'rgba(10,10,18,0.92)';
@@ -1551,13 +1553,16 @@ const HUD_FOCUS_BG = 'rgba(255,204,0,0.18)';
 const HUD_SEP      = 'rgba(255,255,255,0.10)';
 const HUD_HOVER    = 'rgba(255,204,0,0.14)';
 const HUD_CAT_ON   = 'rgba(255,204,0,0.22)';
+// Subtle active-tab fill — slightly lighter than the panel background
+const HUD_TAB_ACTIVE_BG = 'rgba(255,255,255,0.06)';
 
 // Tab definitions — label and panel renderer
 const MENU_TABS = ['MODELS', 'HELP'];
 
-// TAB_W: width of the left tab sidebar
-const TAB_W = 96;
+// TAB_W: width of the left tab sidebar (wider than before for legibility)
+const TAB_W = 140;
 
+// Reusable rounded-rect path helper (used by menu and gallery)
 function _menuRoundRect(ctx, x, y, w, h, r) {
   ctx.beginPath();
   ctx.moveTo(x + r, y);
@@ -1568,8 +1573,30 @@ function _menuRoundRect(ctx, x, y, w, h, r) {
   ctx.closePath();
 }
 
+// Pill-shaped toggle drawn at (cx, cy) — cx/cy are the centre of the pill.
+// on=true → filled accent track + right knob; on=false → dim track + left knob.
+function _menuDrawToggle(ctx, cx, cy, on) {
+  const tw = 52, th = 28, r = th / 2;
+  const tx = cx - tw / 2, ty = cy - th / 2;
+
+  // Track
+  _menuRoundRect(ctx, tx, ty, tw, th, r);
+  ctx.fillStyle = on ? 'rgba(255,204,0,0.35)' : 'rgba(255,255,255,0.10)';
+  ctx.fill();
+  ctx.strokeStyle = on ? HUD_ACCENT : HUD_MUTED;
+  ctx.lineWidth = 1.5;
+  ctx.stroke();
+
+  // Knob
+  const knobX = on ? tx + tw - r : tx + r;
+  ctx.beginPath();
+  ctx.arc(knobX, cy, r - 4, 0, Math.PI * 2);
+  ctx.fillStyle = on ? HUD_ACCENT : HUD_MUTED;
+  ctx.fill();
+}
+
 function _menuBackground(ctx) {
-  _menuRoundRect(ctx, 0, 0, MENU_W, MENU_H, 18);
+  _menuRoundRect(ctx, 0, 0, MENU_W, MENU_H, 24);
   ctx.fillStyle = HUD_BG;
   ctx.fill();
   ctx.strokeStyle = HUD_BORDER;
@@ -1577,32 +1604,38 @@ function _menuBackground(ctx) {
   ctx.stroke();
   // Vertical divider between tab bar and panel
   ctx.beginPath();
-  ctx.moveTo(TAB_W, 8); ctx.lineTo(TAB_W, MENU_H - 8);
+  ctx.moveTo(TAB_W, 10); ctx.lineTo(TAB_W, MENU_H - 10);
   ctx.strokeStyle = HUD_SEP;
   ctx.lineWidth = 1;
   ctx.stroke();
 }
 
 function _menuDrawTabs(ctx, activeTab, focusCol, focusRow) {
-  const tabH  = MENU_H / MENU_TABS.length;
+  const tabH = MENU_H / MENU_TABS.length;
   MENU_TABS.forEach((label, i) => {
     const y         = i * tabH;
     const isActive  = i === activeTab;
     const isFocused = focusCol === 'tabs' && i === focusRow;
 
-    // Focus highlight
+    // Active tab: subtle fill so it reads as the "open" panel
+    if (isActive) {
+      ctx.fillStyle = HUD_TAB_ACTIVE_BG;
+      ctx.fillRect(2, y + 1, TAB_W - 3, tabH - 2);
+    }
+
+    // Focus highlight (controller cursor)
     if (isFocused) {
       ctx.fillStyle = HUD_FOCUS_BG;
       ctx.fillRect(2, y + 2, TAB_W - 4, tabH - 4);
     }
 
-    // Active tab indicator — left accent bar
+    // Active tab — left accent bar
     if (isActive) {
       ctx.fillStyle = HUD_ACCENT;
-      ctx.fillRect(2, y + tabH * 0.2, 3, tabH * 0.6);
+      ctx.fillRect(2, y + tabH * 0.2, 4, tabH * 0.6);
     }
 
-    ctx.font      = 'bold 18px monospace';
+    ctx.font      = 'bold 27px Arial, sans-serif';
     ctx.fillStyle = isActive ? HUD_ACCENT : (isFocused ? HUD_TEXT : HUD_MUTED);
     ctx.textAlign    = 'center';
     ctx.textBaseline = 'middle';
@@ -1612,52 +1645,62 @@ function _menuDrawTabs(ctx, activeTab, focusCol, focusRow) {
 
 // ── Panel renderers ────────────────────────────────────────────────────────────
 
-function _menuDrawHelp(ctx, focusCol) {
-  const x0 = TAB_W + 10;
+function _menuDrawHelp(ctx) {
+  const x0 = TAB_W + 16;
   const rows = [
-    { label: 'Trigger',       desc: 'Grab / move' },
-    { label: 'Trig + Stick↑↓', desc: 'Push / pull' },
-    { label: 'Trig + Stick←→', desc: 'Scale' },
-    { label: 'Grip',          desc: 'Grab / move' },
-    { label: 'Grip + Stick↑↓', desc: 'Rotate pitch' },
-    { label: 'Grip + Stick←→', desc: 'Rotate yaw' },
-    { label: 'B / Y',         desc: 'Remove model' },
-    { label: 'A / X',         desc: 'Toggle menu' },
+    { label: 'Trigger',        desc: 'Grab / move'      },
+    { label: 'Trig + Stick↑↓', desc: 'Push / pull'      },
+    { label: 'Trig + Stick←→', desc: 'Scale'            },
+    { label: 'Grip',           desc: 'Grab / rotate'    },
+    { label: 'Grip + Stick',   desc: 'Rotate yaw/pitch' },
+    { label: 'B / Y',          desc: 'Remove model'     },
+    { label: 'A / X',          desc: 'Toggle menu'      },
   ];
-  const rowH = (MENU_H - 20) / rows.length;
+  // Distribute rows evenly with top/bottom padding
+  const pad  = 20;
+  const rowH = (MENU_H - pad * 2) / rows.length;
   rows.forEach((row, i) => {
-    const y = 10 + i * rowH + rowH * 0.5;
-    ctx.font      = 'bold 15px monospace';
+    const y = pad + i * rowH + rowH / 2;
+
+    // Subtle separator between rows
+    if (i > 0) {
+      ctx.fillStyle = HUD_SEP;
+      ctx.fillRect(x0, pad + i * rowH, MENU_W - x0 - 16, 1);
+    }
+
+    ctx.font      = 'bold 22px Arial, sans-serif';
     ctx.fillStyle = HUD_TEXT;
     ctx.textAlign    = 'left';
     ctx.textBaseline = 'middle';
     ctx.fillText(row.label, x0, y);
 
-    ctx.font      = '13px monospace';
+    ctx.font      = '19px Arial, sans-serif';
     ctx.fillStyle = HUD_MUTED;
     ctx.textAlign = 'right';
-    ctx.fillText(row.desc, MENU_W - 12, y);
+    ctx.fillText(row.desc, MENU_W - 18, y);
   });
 }
 
 // Items in the MODELS panel — order maps directly to focusRow index
 const MODELS_PANEL_ITEMS = [
-  { id: 'edges',  label: 'EDGES'        },
-  { id: 'orb',    label: 'ORB'          },
-  { id: 'browse', label: 'BROWSE MODELS' },
+  { id: 'edges',  label: 'Edges',         hasToggle: true  },
+  { id: 'orb',    label: 'Rotation orb',  hasToggle: true  },
+  { id: 'browse', label: 'Browse models', hasToggle: false },
 ];
 
 function _menuDrawModels(ctx, focusCol, focusRow, edgesOn, orbOn) {
-  const x0   = TAB_W + 12;
-  const itemH = 56;
+  const x0    = TAB_W + 18;
+  const itemH = 80;   // 3 items × 80px = 240px, leaves room for hint in 432px canvas
   const items = MODELS_PANEL_ITEMS;
 
-  items.forEach(({ id, label }, i) => {
-    const y         = 16 + i * itemH;
+  items.forEach(({ id, label, hasToggle }, i) => {
+    const y         = 24 + i * itemH;
     const isFocused = focusCol === 'panel' && i === focusRow;
+    const midY      = y + itemH / 2;
 
+    // Focus highlight
     if (isFocused) {
-      _menuRoundRect(ctx, x0 - 4, y - 2, MENU_W - x0 - 4, itemH - 4, 6);
+      _menuRoundRect(ctx, x0 - 6, y + 4, MENU_W - x0 - 10, itemH - 8, 10);
       ctx.fillStyle = HUD_FOCUS_BG;
       ctx.fill();
       ctx.strokeStyle = HUD_ACCENT;
@@ -1665,34 +1708,36 @@ function _menuDrawModels(ctx, focusCol, focusRow, edgesOn, orbOn) {
       ctx.stroke();
     }
 
-    ctx.font      = 'bold 17px monospace';
+    // Row separator
+    if (i > 0) {
+      ctx.fillStyle = HUD_SEP;
+      ctx.fillRect(x0, y, MENU_W - x0 - 16, 1);
+    }
+
+    ctx.font      = 'bold 25px Arial, sans-serif';
     ctx.fillStyle = isFocused ? HUD_ACCENT : HUD_TEXT;
     ctx.textAlign    = 'left';
     ctx.textBaseline = 'middle';
-    ctx.fillText(label, x0 + 4, y + itemH * 0.35);
+    ctx.fillText(label, x0 + 8, midY);
 
-    ctx.textAlign = 'right';
-    if (id === 'edges') {
-      ctx.font      = '15px monospace';
-      ctx.fillStyle = edgesOn ? '#44ff88' : HUD_MUTED;
-      ctx.fillText(edgesOn ? 'ON' : 'OFF', MENU_W - 14, y + itemH * 0.35);
-    } else if (id === 'orb') {
-      ctx.font      = '15px monospace';
-      ctx.fillStyle = orbOn ? '#44ff88' : HUD_MUTED;
-      ctx.fillText(orbOn ? 'ON' : 'OFF', MENU_W - 14, y + itemH * 0.35);
+    // Right side: pill toggle for toggleable items, chevron for actions
+    if (hasToggle) {
+      const on = (id === 'edges') ? edgesOn : orbOn;
+      _menuDrawToggle(ctx, MENU_W - 46, midY, on);
     } else {
-      ctx.font      = '13px monospace';
+      ctx.font      = '22px Arial, sans-serif';
       ctx.fillStyle = HUD_MUTED;
-      ctx.fillText('▶', MENU_W - 14, y + itemH * 0.35);
+      ctx.textAlign = 'right';
+      ctx.fillText('›', MENU_W - 18, midY);
     }
   });
 
-  // Thumb-tip hint at the bottom
-  ctx.font      = '11px monospace';
+  // Navigation hint at the bottom
+  ctx.font      = '16px Arial, sans-serif';
   ctx.fillStyle = HUD_MUTED;
   ctx.textAlign    = 'center';
   ctx.textBaseline = 'bottom';
-  ctx.fillText('← back   ↑↓ move   trigger: confirm', TAB_W + (MENU_W - TAB_W) / 2, MENU_H - 6);
+  ctx.fillText('‹ back  ·  ↑↓ navigate  ·  trigger: select', TAB_W + (MENU_W - TAB_W) / 2, MENU_H - 10);
 }
 
 // ── Main draw entry point ──────────────────────────────────────────────────────
@@ -1703,7 +1748,7 @@ function _drawMenu(ctx, texture, state) {
   _menuDrawTabs(ctx, state.activeTab, state.focusCol, state.focusRow);
 
   if (state.activeTab === 0) _menuDrawModels(ctx, state.focusCol, state.focusRow, state.edgesOn, state.orbOn);
-  else                       _menuDrawHelp(ctx, state.focusCol);
+  else                       _menuDrawHelp(ctx);
 
   texture.needsUpdate = true;
 }
@@ -1721,26 +1766,25 @@ function makeMiniDisplay() {
   const texture = new THREE.CanvasTexture(canvas);
 
   // Menu state — lives on userData so updateXRControls can read/write it
-  group.userData.activeTab = 0;          // 0=MODELS, 1=HELP
-  group.userData.focusCol  = 'tabs';     // 'tabs' | 'panel'
+  group.userData.activeTab = 0;      // 0=MODELS, 1=HELP
+  group.userData.focusCol  = 'tabs'; // 'tabs' | 'panel'
   group.userData.focusRow  = 0;
   group.userData.menuMode  = false;
-  group.userData.edgesOn   = true;       // synced to global edgesVisible on open
-  group.userData.orbOn     = true;       // synced to global orbVisible on open
+  group.userData.edgesOn   = true;   // synced to global edgesVisible on open
+  group.userData.orbOn     = true;   // synced to global orbVisible on open
 
-  // Expose draw so controllers can trigger redraws
+  // Expose draw so updateXRControls can trigger redraws
   group.userData.draw = () => _drawMenu(ctx, texture, group.userData);
-
-  // Initial draw
   group.userData.draw();
 
-  const mat    = new THREE.SpriteMaterial({ map: texture, transparent: true, depthTest: false });
-  const sprite = new THREE.Sprite(mat);
-  // Slightly taller than before to accommodate the tabbed layout
-  sprite.scale.set(0.28, 0.16, 1);
-  group.add(sprite);
+  // Flat Mesh plane — stays anchored to the wrist unlike a billboarding Sprite.
+  // Physical size 0.32×0.18 m gives comfortable reading distance at arm's length.
+  const mat  = new THREE.MeshBasicMaterial({ map: texture, transparent: true, depthTest: false, side: THREE.DoubleSide });
+  const mesh = new THREE.Mesh(new THREE.PlaneGeometry(0.32, 0.18), mat);
+  group.add(mesh);
 
-  // Position helper — called once from 'connected' event
+  // Position helper — called once from 'connected' event.
+  // Tilts the panel to face the user when the hand is held naturally at waist height.
   group.userData.positionForHand = (handedness) => {
     const side = handedness === 'left' ? 1 : -1;
     group.position.set(side * 0.10, 0.07, 0.01);
