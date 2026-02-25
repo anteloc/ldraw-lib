@@ -659,6 +659,10 @@ function makeScaleLabel() {
   canvas.height = SCALE_LABEL_H;
   const ctx     = canvas.getContext('2d');
   const texture = new THREE.CanvasTexture(canvas);
+  texture.generateMipmaps = true;
+  texture.minFilter       = THREE.LinearMipmapLinearFilter;
+  texture.magFilter       = THREE.LinearFilter;
+  texture.anisotropy      = renderer.capabilities.getMaxAnisotropy();
 
   const mat    = new THREE.SpriteMaterial({
     map: texture, transparent: true, depthTest: false,
@@ -1764,6 +1768,10 @@ function makeMiniDisplay() {
   canvas.height = MENU_H;
   const ctx     = canvas.getContext('2d');
   const texture = new THREE.CanvasTexture(canvas);
+  texture.generateMipmaps = true;
+  texture.minFilter       = THREE.LinearMipmapLinearFilter;
+  texture.magFilter       = THREE.LinearFilter;
+  texture.anisotropy      = renderer.capabilities.getMaxAnisotropy();
 
   // Menu state — lives on userData so updateXRControls can read/write it
   group.userData.activeTab = 0;      // 0=MODELS, 1=HELP
@@ -1910,6 +1918,9 @@ const GAL_PAGE_SIZE = 8;
 const GAL_CAT_W     = 240;   // wider sidebar — room for longer category names
 const GAL_TOP_H     = 72;    // taller header — breathing room for title + close btn
 const GAL_NAV_H     = 72;    // taller nav bar — larger PREV/NEXT hit targets
+const GAL_SEARCH_H  = 60;    // search bar strip at top of body area
+const GAL_THUMB_W   = 76;    // thumbnail width drawn per row
+const GAL_THUMB_H   = 76;    // thumbnail height drawn per row
 
 // XR gallery uses shared HUD palette (slight opacity increase for world-space)
 const GAL_BG      = 'rgba(10,10,18,0.96)';
@@ -1930,6 +1941,11 @@ let _galPage       = 0;
 let _galCategories = new Set();
 let _galAllCats    = [];
 let _galHighlight  = -1;
+let _galSearchQuery  = '';    // current search string
+let _galSearchActive = false; // true while the Quest keyboard is open for this field
+let _galSearchInput  = null;  // hidden DOM <input> — populated in _makeGalleryPanel
+// Thumbnail image cache — keyed by URL, value is HTMLImageElement (may still be loading)
+const _galThumbCache = new Map();
 
 const _galRayOrigin = new THREE.Vector3();
 const _galRayDir    = new THREE.Vector3();
@@ -1941,6 +1957,10 @@ function _makeGalleryPanel() {
   canvas.height = GAL_H;
   _galCtx       = canvas.getContext('2d');
   _galTexture   = new THREE.CanvasTexture(canvas);
+  _galTexture.generateMipmaps = true;
+  _galTexture.minFilter       = THREE.LinearMipmapLinearFilter;
+  _galTexture.magFilter       = THREE.LinearFilter;
+  _galTexture.anisotropy      = renderer.capabilities.getMaxAnisotropy();
 
   const mat = new THREE.MeshBasicMaterial({
     map: _galTexture, transparent: true,
@@ -1950,17 +1970,56 @@ function _makeGalleryPanel() {
   _galPanel.visible      = false;
   _galPanel.renderOrder  = 999;
   scene.add(_galPanel);
+
+  // Hidden DOM input — receives Quest system keyboard text while the gallery is open.
+  // Positioned off-screen so it doesn't affect layout; focused/blurred to trigger the
+  // system keyboard overlay on Meta Quest Browser.
+  _galSearchInput = document.createElement('input');
+  _galSearchInput.type        = 'text';
+  _galSearchInput.autocomplete = 'off';
+  _galSearchInput.style.cssText = 'position:absolute;left:-9999px;top:0;width:1px;height:1px;opacity:0;';
+  document.body.appendChild(_galSearchInput);
+
+  _galSearchInput.addEventListener('input', () => {
+    _galSearchQuery = _galSearchInput.value;
+    _galPage        = 0;
+    _galHighlight   = -1;
+    _galDraw();
+  });
+
+  // Keyboard dismissed (blur) — mark inactive and redraw to remove cursor highlight
+  _galSearchInput.addEventListener('blur', () => {
+    _galSearchActive = false;
+    _galDraw();
+  });
 }
 _makeGalleryPanel();
+
+// Focus the hidden input to summon the Quest system keyboard.
+function _galFocusSearch() {
+  if (!_galSearchInput) return;
+  _galSearchActive = true;
+  _galSearchInput.focus();
+  _galDraw();
+}
+
+// Dismiss the keyboard.
+function _galBlurSearch() {
+  if (!_galSearchInput) return;
+  _galSearchInput.blur(); // triggers the blur event above
+}
 
 function openXRGallery(ctrl) {
   if (!renderer.xr.isPresenting) return;
   if (ctrl) _closeMenu(ctrl);
 
-  _galResults    = mbModels.slice();
-  _galPage       = 0;
-  _galCategories = new Set();
-  _galHighlight  = -1;
+  _galResults      = mbModels.slice();
+  _galPage         = 0;
+  _galCategories   = new Set();
+  _galHighlight    = -1;
+  _galSearchQuery  = '';
+  _galSearchActive = false;
+  if (_galSearchInput) _galSearchInput.value = '';
 
   _galAllCats = _buildCategoryCounts(_galResults);
 
@@ -1989,6 +2048,7 @@ function openXRGallery(ctrl) {
 }
 
 function closeXRGallery() {
+  _galBlurSearch();
   _galPanel.visible = false;
   _galResults       = [];
   _galHitRects      = [];
@@ -1997,8 +2057,16 @@ function closeXRGallery() {
 }
 
 function _galFilteredResults() {
-  if (_galCategories.size === 0) return _galResults;
-  return _galResults.filter(m =>
+  // Start from fuzzy-search results if a query is active, otherwise full list
+  let base;
+  if (_galSearchQuery && mbFuse) {
+    base = mbFuse.search(_galSearchQuery).map(r => r.item);
+  } else {
+    base = _galResults;
+  }
+  // Then apply category filter on top
+  if (_galCategories.size === 0) return base;
+  return base.filter(m =>
     (m.categories ?? ['Other']).some(c => _galCategories.has(_capFirst(c)))
   );
 }
@@ -2018,12 +2086,36 @@ function _galDrawBtn(ctx, label, x, y, w, h, disabled = false, color = GAL_TEXT,
   ctx.fillText(label, x + w / 2, y + h / 2);
 }
 
+// Load or return a cached thumbnail HTMLImageElement. Triggers a redraw on load.
+function _galLoadThumb(url) {
+  if (_galThumbCache.has(url)) return _galThumbCache.get(url);
+  const img = new Image();
+  img.crossOrigin = 'anonymous';
+  img.onload  = () => { if (_galPanel.visible) _galDraw(); };
+  img.onerror = () => { img._failed = true; };
+  img.src = url;
+  _galThumbCache.set(url, img);
+  return img;
+}
+
+// Checkerboard placeholder for rows whose thumbnail hasn't arrived yet.
+function _galDrawThumbPlaceholder(ctx, x, y, w, h) {
+  ctx.fillStyle = 'rgba(255,255,255,0.05)';
+  ctx.fillRect(x, y, w, h);
+  ctx.fillStyle = 'rgba(255,255,255,0.04)';
+  const bw = Math.floor(w / 3), bh = Math.floor(h / 3);
+  for (let row = 0; row < 3; row++)
+    for (let col = 0; col < 3; col++)
+      if ((row + col) % 2 === 0)
+        ctx.fillRect(x + col * bw + 1, y + row * bh + 1, bw - 2, bh - 2);
+}
+
 function _galDraw() {
-  const ctx      = _galCtx;
-  const filtered = _galFilteredResults();
-  const total    = filtered.length;
-  const maxPage  = Math.max(0, Math.ceil(total / GAL_PAGE_SIZE) - 1);
-  _galPage       = Math.min(_galPage, maxPage);
+  const ctx       = _galCtx;
+  const filtered  = _galFilteredResults();
+  const total     = filtered.length;
+  const maxPage   = Math.max(0, Math.ceil(total / GAL_PAGE_SIZE) - 1);
+  _galPage        = Math.min(_galPage, maxPage);
   const pageItems = filtered.slice(_galPage * GAL_PAGE_SIZE, (_galPage + 1) * GAL_PAGE_SIZE);
 
   _galHitRects = [];
@@ -2037,11 +2129,9 @@ function _galDraw() {
   ctx.strokeRect(1, 1, GAL_W - 2, GAL_H - 2);
 
   // ── Top bar ──────────────────────────────────────────────────────────────────
-  // Separator line
   ctx.fillStyle = GAL_SEP;
   ctx.fillRect(0, GAL_TOP_H, GAL_W, 1);
 
-  // Subtle gradient shadow under the top bar to lift it from the list
   const headerGrad = ctx.createLinearGradient(0, GAL_TOP_H, 0, GAL_TOP_H + 28);
   headerGrad.addColorStop(0, 'rgba(0,0,0,0.22)');
   headerGrad.addColorStop(1, 'rgba(0,0,0,0)');
@@ -2057,12 +2147,11 @@ function _galDraw() {
   ctx.font      = '18px Arial, sans-serif';
   ctx.fillStyle = GAL_MUTED;
   ctx.textAlign = 'right';
-  ctx.fillText(`${_galPage + 1} / ${maxPage + 1}  ·  ${total} models`, GAL_W - 200, GAL_TOP_H / 2);
+  ctx.fillText(`${_galPage + 1} / ${maxPage + 1}  \u00b7  ${total} models`, GAL_W - 200, GAL_TOP_H / 2);
 
-  // CLOSE button — rounded, red-tinted
   const cBW = 120, cBH = GAL_TOP_H - 20;
   const cBX = GAL_W - cBW - 16, cBY = 10;
-  _galDrawBtn(ctx, '✕  Close', cBX, cBY, cBW, cBH, false, '#ff6666', 'rgba(255,80,80,0.6)');
+  _galDrawBtn(ctx, '\u2715  Close', cBX, cBY, cBW, cBH, false, '#ff6666', 'rgba(255,80,80,0.6)');
   _galHitRects.push({ x: cBX, y: cBY, w: cBW, h: cBH, action: closeXRGallery });
 
   // ── Body layout ──────────────────────────────────────────────────────────────
@@ -2070,7 +2159,6 @@ function _galDraw() {
   const bodyH = GAL_H - GAL_TOP_H - GAL_NAV_H - 1;
 
   // ── Category sidebar ─────────────────────────────────────────────────────────
-  // Divider
   ctx.fillStyle = GAL_SEP;
   ctx.fillRect(GAL_CAT_W, bodyY, 1, bodyH);
 
@@ -2086,13 +2174,11 @@ function _galDraw() {
     const cy     = bodyY + 44 + i * catItemH;
     const active = _galCategories.has(cat.name);
 
-    // Active row fill
     if (active) {
       ctx.fillStyle = GAL_CAT_ON;
       ctx.fillRect(2, cy, GAL_CAT_W - 4, catItemH - 2);
     }
 
-    // Checkbox (18×18)
     const cbX = 10, cbY = cy + (catItemH - 18) / 2;
     _menuRoundRect(ctx, cbX, cbY, 18, 18, 4);
     ctx.strokeStyle = active ? GAL_ACCENT : GAL_MUTED;
@@ -2124,56 +2210,148 @@ function _galDraw() {
     });
   });
 
+  // ── Search bar ───────────────────────────────────────────────────────────────
+  const srchX = GAL_CAT_W + 12;
+  const srchY = bodyY + 8;
+  const srchW = GAL_W - GAL_CAT_W - 24;
+  const srchH = GAL_SEARCH_H - 16;
+
+  _menuRoundRect(ctx, srchX, srchY, srchW, srchH, 8);
+  ctx.fillStyle = _galSearchActive ? 'rgba(255,255,255,0.10)' : 'rgba(255,255,255,0.06)';
+  ctx.fill();
+  ctx.strokeStyle = _galSearchActive ? GAL_ACCENT : GAL_BORDER;
+  ctx.lineWidth   = _galSearchActive ? 2 : 1.5;
+  ctx.stroke();
+
+  ctx.font         = '20px Arial, sans-serif';
+  ctx.fillStyle    = GAL_MUTED;
+  ctx.textAlign    = 'left';
+  ctx.textBaseline = 'middle';
+  ctx.fillText('\uD83D\uDD0D', srchX + 12, srchY + srchH / 2);
+
+  const srchTextX = srchX + 44;
+  if (_galSearchQuery) {
+    ctx.font      = '20px Arial, sans-serif';
+    ctx.fillStyle = GAL_TEXT;
+    ctx.textAlign = 'left';
+    let q = _galSearchQuery;
+    if (q.length > 42) q = '\u2026' + q.slice(-40);
+    ctx.fillText(q, srchTextX, srchY + srchH / 2);
+    if (_galSearchActive) {
+      const metrics = ctx.measureText(q);
+      ctx.fillStyle = GAL_ACCENT;
+      ctx.fillRect(srchTextX + metrics.width + 3, srchY + 8, 2, srchH - 16);
+    }
+  } else {
+    ctx.font      = '18px Arial, sans-serif';
+    ctx.fillStyle = GAL_MUTED;
+    ctx.textAlign = 'left';
+    if (!_galSearchActive) ctx.fillText('Search models\u2026', srchTextX, srchY + srchH / 2);
+    if (_galSearchActive) {
+      ctx.fillStyle = GAL_ACCENT;
+      ctx.fillRect(srchTextX, srchY + 8, 2, srchH - 16);
+    }
+  }
+
+  // Clear (X) button — only when there's a query
+  if (_galSearchQuery) {
+    const clrW = 60, clrH = srchH - 8;
+    const clrX = srchX + srchW - clrW - 4, clrY = srchY + 4;
+    _menuRoundRect(ctx, clrX, clrY, clrW, clrH, 6);
+    ctx.fillStyle = 'rgba(255,255,255,0.08)';
+    ctx.fill();
+    ctx.font         = '16px Arial, sans-serif';
+    ctx.fillStyle    = GAL_MUTED;
+    ctx.textAlign    = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText('\u2715', clrX + clrW / 2, clrY + clrH / 2);
+    _galHitRects.push({ x: clrX, y: clrY, w: clrW, h: clrH,
+      action: () => {
+        _galSearchQuery = '';
+        if (_galSearchInput) _galSearchInput.value = '';
+        _galPage = 0; _galHighlight = -1;
+        _galBlurSearch();
+        _galDraw();
+      }
+    });
+  }
+
+  // Hit-rect for the search box (excluding clear button)
+  const srchHitW = _galSearchQuery ? srchW - 68 : srchW;
+  _galHitRects.push({ x: srchX, y: srchY, w: srchHitW, h: srchH,
+    action: () => _galFocusSearch()
+  });
+
+  // Thin separator below search bar
+  ctx.fillStyle = GAL_SEP;
+  ctx.fillRect(GAL_CAT_W + 1, bodyY + GAL_SEARCH_H, GAL_W - GAL_CAT_W - 2, 1);
+
   // ── Results list ─────────────────────────────────────────────────────────────
+  const listY = bodyY + GAL_SEARCH_H + 1;
+  const listH = bodyH - GAL_SEARCH_H - 1;
   const listX = GAL_CAT_W + 16;
   const listW = GAL_W - GAL_CAT_W - 24;
-  const rowH  = Math.floor(bodyH / GAL_PAGE_SIZE);
+  const rowH  = Math.floor(listH / GAL_PAGE_SIZE);
 
-  // Build set of currently-loaded model names for IN SCENE badge
+  const thumbPad   = Math.max(4, Math.floor((rowH - GAL_THUMB_H) / 2));
+  const textIndent = GAL_THUMB_W + 20;
+
   const loadedNames = new Set(models.map(e => e.name));
 
   pageItems.forEach((m, i) => {
-    const ry      = bodyY + i * rowH;
+    const ry      = listY + i * rowH;
     const isHover = i === _galHighlight;
 
-    // Hover: rounded highlight + left accent bar
     if (isHover) {
       _menuRoundRect(ctx, GAL_CAT_W + 4, ry + 2, listW - 4, rowH - 4, 8);
       ctx.fillStyle = GAL_HOVER;
       ctx.fill();
-      // Left accent bar
       ctx.fillStyle = GAL_ACCENT;
       ctx.fillRect(GAL_CAT_W + 4, ry + 6, 3, rowH - 12);
     }
 
-    // Row separator (skip first)
     if (i > 0) {
       ctx.fillStyle = GAL_SEP;
       ctx.fillRect(listX, ry, listW - 8, 1);
     }
 
-    // Model description (primary label)
+    // Thumbnail
+    const tx = listX + 4;
+    const ty = ry + thumbPad;
+    ctx.save();
+    ctx.beginPath();
+    _menuRoundRect(ctx, tx, ty, GAL_THUMB_W, GAL_THUMB_H, 6);
+    ctx.clip();
+    const img = m.thumb ? _galLoadThumb(m.thumb) : null;
+    if (img && img.complete && !img._failed && img.naturalWidth > 0) {
+      ctx.drawImage(img, tx, ty, GAL_THUMB_W, GAL_THUMB_H);
+    } else {
+      _galDrawThumbPlaceholder(ctx, tx, ty, GAL_THUMB_W, GAL_THUMB_H);
+    }
+    ctx.restore();
+
+    // Labels — offset right of thumbnail
+    const labelX = listX + textIndent + (isHover ? 8 : 0);
+
     let label = m.description || m.name;
-    if (label.length > 52) label = label.slice(0, 50) + '\u2026';
+    if (label.length > 46) label = label.slice(0, 45) + '\u2026';
     ctx.font         = 'bold 22px Arial, sans-serif';
     ctx.fillStyle    = isHover ? GAL_ACCENT : GAL_TEXT;
     ctx.textAlign    = 'left';
     ctx.textBaseline = 'middle';
-    ctx.fillText(label, listX + (isHover ? 14 : 6), ry + rowH * 0.36);
+    ctx.fillText(label, labelX, ry + rowH * 0.36);
 
-    // Filename (secondary label)
     ctx.font      = '16px Arial, sans-serif';
     ctx.fillStyle = GAL_MUTED;
-    ctx.fillText(m.displayName || m.name, listX + (isHover ? 14 : 6), ry + rowH * 0.68);
+    ctx.fillText(m.displayName || m.name, labelX, ry + rowH * 0.68);
 
     // IN SCENE badge
     const modelLabel = m.description || m.displayName || m.name;
     if (loadedNames.has(modelLabel)) {
-      const badgeText = '● IN SCENE';
       ctx.font      = 'bold 13px Arial, sans-serif';
       ctx.fillStyle = '#44ff88';
       ctx.textAlign = 'right';
-      ctx.fillText(badgeText, GAL_W - 20, ry + rowH * 0.36);
+      ctx.fillText('\u25cf IN SCENE', GAL_W - 20, ry + rowH * 0.36);
     }
 
     _galHitRects.push({ x: GAL_CAT_W + 2, y: ry, w: listW + 6, h: rowH - 1,
@@ -2186,7 +2364,10 @@ function _galDraw() {
     ctx.fillStyle    = GAL_MUTED;
     ctx.textAlign    = 'center';
     ctx.textBaseline = 'middle';
-    ctx.fillText('No models match the selected categories.', GAL_CAT_W + listW / 2, bodyY + bodyH / 2);
+    const emptyMsg = _galSearchQuery
+      ? `No results for "${_galSearchQuery}"`
+      : 'No models match the selected categories.';
+    ctx.fillText(emptyMsg, GAL_CAT_W + listW / 2, listY + listH / 2);
   }
 
   // ── Nav bar ──────────────────────────────────────────────────────────────────
@@ -2199,8 +2380,8 @@ function _galDraw() {
   const nextX = GAL_W - btnW - 24, nextY = navY + 10;
   const hasPrev = _galPage > 0, hasNext = _galPage < maxPage;
 
-  _galDrawBtn(ctx, '◀  Prev', prevX, prevY, btnW, btnH, !hasPrev);
-  _galDrawBtn(ctx, 'Next  ▶', nextX, nextY, btnW, btnH, !hasNext);
+  _galDrawBtn(ctx, '\u25c4  Prev', prevX, prevY, btnW, btnH, !hasPrev);
+  _galDrawBtn(ctx, 'Next  \u25ba', nextX, nextY, btnW, btnH, !hasNext);
 
   if (hasPrev) _galHitRects.push({ x: prevX, y: prevY, w: btnW, h: btnH,
     action: () => { _galPage--; _galHighlight = -1; _galDraw(); } });
