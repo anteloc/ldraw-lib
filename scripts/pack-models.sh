@@ -1,6 +1,16 @@
 #!/bin/bash
 set -euo pipefail
 
+function usage() {
+    echo "Usage: $0 <models_dir> <packed_models_dir> [models_index_file]"
+    echo "  models_dir: directory containing the original LDraw models (.ldr, .mpd, .dat)"
+    echo "  packed_models_dir: directory where the packed and zipped models will be saved"
+    echo "  models_index_file: (optional, ignored if not provided) path to the models index JSONL file to update with .zip extensions"
+    exit 1
+}
+
+[ "$#" -lt 2 ] && usage
+
 parent_dir="$(dirname "$0")/.."
 parent_dir="$(realpath "$parent_dir")"
 
@@ -8,11 +18,18 @@ ldraw_dir="$parent_dir/ldraw"
 
 models_dir="$1"
 packed_models_dir="$2"
+models_index_file="${3:-}"
 
 echo "Packing models from $models_dir into $packed_models_dir" >&2
 
 [ ! -d "$models_dir" ] && echo "[ERROR] Models directory does not exist: $models_dir" && exit 1
 [ ! -d "$packed_models_dir" ] && echo "[INFO] Creating packed models directory: $packed_models_dir" && mkdir -p "$packed_models_dir"
+
+if [ -f "$models_index_file" ]; then
+    models_index_file="$(realpath "$models_index_file")"
+else
+    echo "[INFO] No index file provided, skipping index update"
+fi
 
 models_dir="$(realpath "$models_dir")"
 # packDrawModel.mjs requires a relative path to the model file from $ldraw_dir
@@ -31,6 +48,17 @@ find "$models_dir" -type f -name '*_Packed.mpd'  -exec mv {} "$packed_models_dir
 
 cd "$packed_models_dir"
 
-for f in *_Packed.mpd; do 
-    mv "$f" "${f/_Packed.mpd/}"
+# fix the name and zip the packed models, then delete the original .mpd
+for f in *_Packed.mpd; do
+    renamed="${f/_Packed.mpd/}"
+    mv "$f" "$renamed"
+    # zip renamed and delete the original
+    zip -j "${renamed}.zip" "$renamed"
+    rm "$renamed"
 done
+
+# now, update the models index to append .zip to every "name" field
+if [ -f "$models_index_file" ]; then
+    tmp_file="$(mktemp)"
+    cat "$models_index_file" | jq -c '.name += ".zip"' > "$tmp_file" && mv "$tmp_file" "$models_index_file"
+fi
