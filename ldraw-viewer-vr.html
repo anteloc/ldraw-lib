@@ -649,6 +649,10 @@ const SCALE_LABEL_W        = 256;
 const SCALE_LABEL_H        = 80;
 const SCALE_LABEL_HIDE_MS  = 1200;   // ms after last scale change before hiding
 
+// Apparent height of the scale label as a fraction of viewport height.
+// 0.06 = ~6% of the screen height — readable but not obtrusive.
+const SCALE_LABEL_FRAC = 0.06;
+
 function makeScaleLabel() {
   const canvas  = document.createElement('canvas');
   canvas.width  = SCALE_LABEL_W;
@@ -660,9 +664,10 @@ function makeScaleLabel() {
     map: texture, transparent: true, depthTest: false,
   });
   const sprite = new THREE.Sprite(mat);
-  sprite.scale.set(0.22, 0.07, 1);   // world-space size in metres
-  sprite.renderOrder = 1001;
-  sprite.visible = false;
+  // Scale is set each frame by _updateScaleLabels() to maintain constant apparent size.
+  sprite.renderOrder   = 1001;
+  sprite.frustumCulled = false;
+  sprite.visible       = false;
   return { sprite, ctx, texture };
 }
 
@@ -783,7 +788,7 @@ function disposeMesh(mesh) {
 function removeEntry(entry) {
   // Release any XR slot targeting this entry
   for (const slot of slots) {
-    if (slot.grab.entry === entry || slot.rotate.entry === entry) endInteraction(slot);
+    if (slot.grab.entry === entry) endInteraction(slot);
   }
   if (selectedEntry === entry) selectedEntry = null;
 
@@ -1411,7 +1416,11 @@ function updateXRControls() {
     if (!trigHeld || gripHeld) continue;   // grip rotation takes priority
 
     const thumbX = source.gamepad.axes[2] ?? 0;
+    const thumbY3 = source.gamepad.axes[3] ?? 0;
+    // Dominant-axis gate: only scale when X deflection is larger than Y.
+    // Prevents accidental scaling while the user is pushing/pulling.
     if (Math.abs(thumbX) <= 0.1) continue;
+    if (Math.abs(thumbY3) > Math.abs(thumbX)) continue;
 
     const entry    = slot.grab.entry;
     const newScale = THREE.MathUtils.clamp(
@@ -1439,7 +1448,11 @@ function updateXRControls() {
     if (!trigHeld || gripHeld) continue;
 
     const thumbY = source.gamepad.axes[3] ?? 0;
+    const thumbX4 = source.gamepad.axes[2] ?? 0;
+    // Dominant-axis gate: only push/pull when Y deflection is larger than X.
+    // Prevents accidental distance change while the user is scaling.
     if (Math.abs(thumbY) <= 0.1) continue;
+    if (Math.abs(thumbX4) > Math.abs(thumbY)) continue;
 
     // Build push delta in controller-local space so it's orientation-independent.
     // offsetPos is stored in controller-local space; adding the ray-aligned delta
@@ -1616,12 +1629,12 @@ function updateXRControls() {
 // Layout (W=512, H=288):
 //   ┌──────────┬──────────────────────────────┐
 //   │ TAB BAR  │  TAB PANEL                   │
-//   │  HELP ◀  │  (content for active tab)    │
+//   │  MODELS◀ │  (content for active tab)    │
 //   │  MODELS  │                              │
 //   └──────────┴──────────────────────────────┘
 //
 // userData on the group:
-//   activeTab   0=HELP | 1=MODELS
+//   activeTab   0=MODELS | 1=HELP
 //   focusCol   'tabs' | 'panel'
 //   focusRow    index within current column
 //   menuMode    bool — thumbstick+trigger routed to menu when true
@@ -1653,7 +1666,7 @@ const MENU_FOCUS_BG = HUD_FOCUS_BG;
 const MENU_SEP      = HUD_SEP;
 
 // Tab definitions — label and panel renderer
-const MENU_TABS = ['HELP', 'MODELS'];
+const MENU_TABS = ['MODELS', 'HELP'];
 
 // TAB_W: width of the left tab sidebar
 const TAB_W = 96;
@@ -1802,8 +1815,8 @@ function _drawMenu(ctx, texture, state) {
   _menuBackground(ctx);
   _menuDrawTabs(ctx, state.activeTab, state.focusCol, state.focusRow);
 
-  if (state.activeTab === 0) _menuDrawHelp(ctx, state.focusCol);
-  else                       _menuDrawModels(ctx, state.focusCol, state.focusRow, state.edgesOn, state.orbOn);
+  if (state.activeTab === 0) _menuDrawModels(ctx, state.focusCol, state.focusRow, state.edgesOn, state.orbOn);
+  else                       _menuDrawHelp(ctx, state.focusCol);
 
   texture.needsUpdate = true;
 }
@@ -1821,7 +1834,7 @@ function makeMiniDisplay() {
   const texture = new THREE.CanvasTexture(canvas);
 
   // Menu state — lives on userData so updateXRControls can read/write it
-  group.userData.activeTab = 0;          // 0=HELP, 1=MODELS
+  group.userData.activeTab = 0;          // 0=MODELS, 1=HELP
   group.userData.focusCol  = 'tabs';     // 'tabs' | 'panel'
   group.userData.focusRow  = 0;
   group.userData.menuMode  = false;
@@ -2143,7 +2156,7 @@ function _galDraw() {
     ctx.fillText(m.displayName || m.name, listX, ry + rowH * 0.72);
 
     _galHitRects.push({ x: GAL_CAT_W + 2, y: ry, w: listW + 6, h: rowH - 1,
-      action: () => loadFromBrowser(m.url, m.description || m.displayName || m.name)
+      action: () => { closeXRGallery(); loadFromBrowser(m.url, m.description || m.displayName || m.name); }
     });
   });
 
@@ -2258,15 +2271,25 @@ function _setupEntryForXR(entry) {
     if (mesh.parent) mesh.parent.remove(mesh);
     root.add(mesh);
   }
-  // Re-centre mesh so rotation pivots around its geometric centre
-  const box    = new THREE.Box3().setFromObject(mesh);
-  const centre = box.getCenter(new THREE.Vector3());
-  mesh.position.sub(centre);
+  // Re-centre mesh so the orb and rotation pivot sit at the model's centroid.
+  // 1. Zero any browser-mode position offset so the box reflects geometry only.
+  mesh.position.set(0, 0, 0);
+  // 2. Box3 world centre now equals pivot.position + rootScale * geometryCentre_rootLocal.
+  const centreWorld = new THREE.Box3().setFromObject(mesh).getCenter(new THREE.Vector3());
+  const pivotWorld  = new THREE.Vector3();
+  entry.pivot.getWorldPosition(pivotWorld);
+  // 3. Convert to root-local space and negate to shift geometry to root origin.
+  const centreLocal = centreWorld.sub(pivotWorld).divideScalar(root.scale.x);
+  mesh.position.set(-centreLocal.x, -centreLocal.y, -centreLocal.z);
 
-  // Size the orb to tightly wrap the re-centred mesh
+  // Size the orb to tightly wrap the re-centred mesh.
+  // bs.radius is in world space (includes root.scale); divide back to root-local
+  // units so the orb children (parented to root) are sized correctly.
   if (entry.orb && entry.orbSphere) {
+    // After re-centring, mesh bounding sphere is centred at root origin.
+    // Its radius is in world space; divide by rootScale to get root-local units.
     const bs = new THREE.Box3().setFromObject(mesh).getBoundingSphere(new THREE.Sphere());
-    const r  = bs.radius * 1.05;
+    const r  = (bs.radius / root.scale.x) * 1.05;
     entry.orbSphere.scale.setScalar(r);
     entry.orb.children.forEach((c, i) => { if (i > 0) c.scale.setScalar(r); });
   }
@@ -2471,12 +2494,29 @@ vrButton.insertAdjacentElement('afterend', mrButton);
 // also runs update() every frame — even with enabled=false, the damping
 // momentum still nudges camera.position — it fights the XR pose tracker
 // and produces the rapid head-movement jitter.
+// Keep scale labels at constant apparent size regardless of camera distance.
+// Called every frame; only touches visible labels so cost is near-zero normally.
+const _labelWorldPos = new THREE.Vector3();
+function _updateScaleLabels() {
+  for (const entry of models) {
+    const sp = entry.scaleLabel?.sprite;
+    if (!sp?.visible) continue;
+    sp.getWorldPosition(_labelWorldPos);
+    const dist      = camera.position.distanceTo(_labelWorldPos);
+    const halfFovY  = (camera.fov * Math.PI / 180) / 2;
+    const worldH    = 2 * dist * Math.tan(halfFovY) * SCALE_LABEL_FRAC;
+    const aspect    = SCALE_LABEL_W / SCALE_LABEL_H;
+    sp.scale.set(worldH * aspect, worldH, 1);
+  }
+}
+
 renderer.setAnimationLoop((timestamp, frame) => {
   if (renderer.xr.isPresenting && frame) {
     updateXRControls();
   } else {
-    controls.update(); // only touch the camera in browser mode
+    controls.update();
   }
+  _updateScaleLabels();
   renderer.render(scene, camera);
 });
 
