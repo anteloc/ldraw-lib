@@ -712,8 +712,7 @@ function removeEntry(entry) {
   if (selectedEntry === entry) selectedEntry = null;
 
   const { mesh, pivot, root, orb } = entry;
-  root.remove(mesh);
-  scene.remove(mesh);
+  mesh.parent?.remove(mesh);   // works in both browser (scene) and XR (root)
   scene.remove(pivot);
   disposeMesh(mesh);
   if (orb) orb.traverse(o => {
@@ -739,6 +738,25 @@ function clearAllModels() {
 
 
 // ─── §6  Model loading ────────────────────────────────────────────────────────
+
+// Shared utilities used by both galleries
+function _capFirst(s) { return s ? s.charAt(0).toUpperCase() + s.slice(1) : s; }
+
+// Build [{name, count}] sorted alpha from a list of model objects (plain) or Fuse results
+function _buildCategoryCounts(items) {
+  const isWrapped = items[0]?.item !== undefined;
+  const counts = new Map();
+  for (const entry of items) {
+    const m = isWrapped ? entry.item : entry;
+    for (const c of (m.categories ?? ['Other'])) {
+      const k = _capFirst(c);
+      counts.set(k, (counts.get(k) ?? 0) + 1);
+    }
+  }
+  return [...counts.entries()]
+    .sort((a, b) => a[0].localeCompare(b[0]))
+    .map(([name, count]) => ({ name, count }));
+}
 //
 // makeLDrawLoader — constructs and primes a loader in one await.
 //   preloadMaterials failure is swallowed; the loader still resolves
@@ -851,21 +869,7 @@ function onModelLoaded(model, filename) {
     // re-parents it into root (inside the pivot hierarchy) at correct scale.
     _setupEntryForXR(entry);
 
-    // Place the new pivot using the current viewer pose (same polling pattern
-    // as onXRSessionStart — resets all pivot positions to a clean spread).
-    const placeNew = () => {
-      const frame    = renderer.xr.getFrame();
-      const refSpace = renderer.xr.getReferenceSpace();
-      if (!frame || !refSpace) { requestAnimationFrame(placeNew); return; }
-      const pose = frame.getViewerPose(refSpace);
-      if (!pose) { requestAnimationFrame(placeNew); return; }
-      let x = 0;
-      for (const e of models) {
-        e.pivot.position.set(x, MODEL_PIVOT_Y, MODEL_PIVOT_Z);
-        x += MODEL_SPACING;
-      }
-    };
-    requestAnimationFrame(placeNew);
+    _placeAllPivots();
   } else {
     fitCamera();
   }
@@ -1078,26 +1082,36 @@ function makeLaser() {
   ring.renderOrder = 1000;
   group.add(ring);
 
-  return group;
+  return { group, beam, ring };
 }
 
 function setLaserColor(pointer, color) {
-  const laser = pointer.children[0];
-  laser.children[0].material.color.setHex(color);  // beam
-  laser.children[1].material.color.setHex(color);  // ring
+  pointer.userData.laserBeam.material.color.setHex(color);
+  pointer.userData.laserRing.material.color.setHex(color);
 }
 
 function setLaserVisible(pointer, visible) {
-  const laser = pointer.children[0];
-  laser.visible = visible;
+  pointer.userData.laserBeam.parent.visible = visible;  // laser group
+}
+
+// Reset beam to full length (pointer not hitting anything)
+function resetLaser(pointer) {
+  pointer.userData.laserBeam.scale.z    = 1;
+  pointer.userData.laserRing.position.z = -LASER_LENGTH;
+}
+
+// Shorten beam and move ring tip to distance d along the ray
+function setLaserDist(pointer, d) {
+  pointer.userData.laserBeam.scale.z    = d / LASER_LENGTH;
+  pointer.userData.laserRing.position.z = -d;
 }
 
 // Called every frame for each controller. Casts a ray against all loaded
 // models, scales the beam and repositions the tip ring to the hit point
 // (or restores full length on a miss). Returns { hitPoint, hitEntry }.
 function updateLaser(pointer) {
-  const beam = pointer.children[0].children[0];
-  const ring = pointer.children[0].children[1];
+  const beam = pointer.userData.laserBeam;
+  const ring = pointer.userData.laserRing;
   const resetBeam = () => { beam.scale.z = 1; ring.position.z = -LASER_LENGTH; };
 
   if (models.length === 0) return resetBeam() || { hitPoint: null, hitEntry: null };
@@ -1153,7 +1167,7 @@ function makeSlot() {
 const slots = [makeSlot(), makeSlot()];
 
 function otherSlot(slot) {
-  return slots[1 - slots.indexOf(slot)];
+  return slot === slots[0] ? slots[1] : slots[0];
 }
 
 function startGrab(slot, pointer, hitPoint, hitEntry) {
@@ -1263,8 +1277,7 @@ function updateXRControls() {
   const doRaycast = anyActive || (_frameCount % RAYCAST_IDLE_INTERVAL === 0);
 
   if (doRaycast) {
-    for (let i = 0; i < controllers.length; i++) {
-      const { pointer } = controllers[i];
+    for (const { pointer } of controllers) {
       const inMenu = pointer.userData.miniDisplay?.userData.menuMode ?? false;
 
       if (inMenu) {
@@ -1276,28 +1289,24 @@ function updateXRControls() {
 
       setLaserVisible(pointer, true);
 
-      // Check gallery hit first — if panel is hit, suppress model raycast
-      const src        = pointer.userData.xrInputSource;
-      const trigNow    = src?.gamepad?.buttons[0]?.pressed ?? false;
-      const trigWas    = pointer.userData.galTrigWas ?? false;
+      const xrSrc   = pointer.userData.xrInputSource;
+      const trigNow = xrSrc?.gamepad?.buttons[0]?.pressed ?? false;
+      const trigWas = pointer.userData.galTrigWas ?? false;
       pointer.userData.galTrigWas = trigNow;
 
       const galHit = _galUpdateLaser(pointer, trigNow, trigWas);
       if (galHit) {
-        // Panel is in focus — show laser but don't hit models
         pointer.userData.hitPoint = null;
         pointer.userData.hitEntry = null;
         setLaserColor(pointer, COLOR_HIT);
         continue;
       }
 
-      // Gallery not hit — normal model raycast
       ({ hitPoint: pointer.userData.hitPoint,
          hitEntry: pointer.userData.hitEntry } = updateLaser(pointer));
 
-      if (slots[i].type === null) {
-        const isHit = !!pointer.userData.hitEntry;
-        setLaserColor(pointer, isHit ? COLOR_HIT : COLOR_IDLE);
+      if (pointer.userData.slot.type === null) {
+        setLaserColor(pointer, pointer.userData.hitEntry ? COLOR_HIT : COLOR_IDLE);
       }
     }
   }
@@ -1333,22 +1342,19 @@ function updateXRControls() {
 
   // 4. Thumbstick push/pull — move model along the laser ray when idle and hitting.
   //    Skipped when that controller is in menu mode.
-  for (let i = 0; i < controllers.length; i++) {
-    const { pointer } = controllers[i];
+  for (const { pointer } of controllers) {
     if (pointer.userData.miniDisplay?.userData.menuMode) continue;
-    if (slots[i].type !== null) continue;           // skip — mid-interaction
+    if (pointer.userData.slot.type !== null) continue;   // skip — mid-interaction
 
     const entry = pointer.userData.hitEntry;
-    if (!entry) continue;                           // skip — laser not on a model
+    if (!entry) continue;
 
     const source = pointer.userData.xrInputSource;
     if (!source?.gamepad) continue;
 
-    // axes[3] = thumbstick Y: positive = down (pull), negative = up (push)
     const thumbY = source.gamepad.axes[3] ?? 0;
     if (Math.abs(thumbY) <= 0.1) continue;
 
-    // Translate pivot along ray direction — positive thumbY pulls (negate ray = toward user)
     _pushVec.copy(pointer.userData.rayDir).multiplyScalar(-thumbY * PUSH_SPEED);
     entry.pivot.position.add(_pushVec);
   }
@@ -1368,10 +1374,7 @@ function updateXRControls() {
   }
 
   // 6. A/X button — toggle mini-display and menuMode for that controller.
-  //    _closeMenu restores the laser and clears menuMode; called on explicit
-  //    close and will also be called when the gallery opens (Stage 2).
-  for (let i = 0; i < controllers.length; i++) {
-    const { pointer } = controllers[i];
+  for (const { pointer } of controllers) {
     const source      = pointer.userData.xrInputSource;
     const pressed     = source?.gamepad?.buttons[4]?.pressed ?? false;
     const wasPressed  = pointer.userData.prevAXPressed ?? false;
@@ -1486,11 +1489,11 @@ function updateXRControls() {
       } else {
         // Confirm item in MODELS panel
         const item = MODELS_PANEL_ITEMS[st.focusRow];
-        if (item === 'EDGES') {
+        if (item.id === 'edges') {
           toggleEdges();
-          st.edgesOn = edgesVisible;   // sync display state
+          st.edgesOn = edgesVisible;
           changed = true;
-        } else if (item === 'BROWSE MODELS') {
+        } else if (item.id === 'browse') {
           openXRGallery(pointer);
         }
       }
@@ -1531,14 +1534,25 @@ function updateXRControls() {
 
 const MENU_W = 512, MENU_H = 288;
 
-// Palette — matches the app's CSS variables
-const MENU_BG       = 'rgba(10,10,18,0.92)';
-const MENU_BORDER   = 'rgba(255,255,255,0.18)';
-const MENU_ACCENT   = '#ffcc00';
-const MENU_TEXT     = '#e8e8ec';
-const MENU_MUTED    = '#6b6b78';
-const MENU_FOCUS_BG = 'rgba(255,204,0,0.18)';
-const MENU_SEP      = 'rgba(255,255,255,0.10)';
+// ── Shared HUD palette — used by mini-display and XR gallery ─────────────────
+const HUD_BG       = 'rgba(10,10,18,0.92)';   // menu slightly lighter than gallery
+const HUD_BORDER   = 'rgba(255,255,255,0.18)';
+const HUD_ACCENT   = '#ffcc00';
+const HUD_TEXT     = '#e8e8ec';
+const HUD_MUTED    = '#6b6b78';
+const HUD_FOCUS_BG = 'rgba(255,204,0,0.18)';
+const HUD_SEP      = 'rgba(255,255,255,0.10)';
+const HUD_HOVER    = 'rgba(255,204,0,0.14)';
+const HUD_CAT_ON   = 'rgba(255,204,0,0.22)';
+
+// Aliases kept for readability at each call site
+const MENU_BG       = HUD_BG;
+const MENU_BORDER   = HUD_BORDER;
+const MENU_ACCENT   = HUD_ACCENT;
+const MENU_TEXT     = HUD_TEXT;
+const MENU_MUTED    = HUD_MUTED;
+const MENU_FOCUS_BG = HUD_FOCUS_BG;
+const MENU_SEP      = HUD_SEP;
 
 // Tab definitions — label and panel renderer
 const MENU_TABS = ['HELP', 'MODELS'];
@@ -1626,19 +1640,21 @@ function _menuDrawHelp(ctx, focusCol) {
   });
 }
 
-// Items in the MODELS panel — order matters for focusRow mapping
-const MODELS_PANEL_ITEMS = ['EDGES', 'BROWSE MODELS'];
+// Items in the MODELS panel — order maps directly to focusRow index
+const MODELS_PANEL_ITEMS = [
+  { id: 'edges',  label: 'EDGES'        },
+  { id: 'browse', label: 'BROWSE MODELS' },
+];
 
 function _menuDrawModels(ctx, focusCol, focusRow, edgesOn) {
   const x0   = TAB_W + 12;
   const itemH = 56;
   const items = MODELS_PANEL_ITEMS;
 
-  items.forEach((label, i) => {
+  items.forEach(({ id, label }, i) => {
     const y         = 16 + i * itemH;
     const isFocused = focusCol === 'panel' && i === focusRow;
 
-    // Focus highlight
     if (isFocused) {
       _menuRoundRect(ctx, x0 - 4, y - 2, MENU_W - x0 - 4, itemH - 4, 6);
       ctx.fillStyle = MENU_FOCUS_BG;
@@ -1654,9 +1670,8 @@ function _menuDrawModels(ctx, focusCol, focusRow, edgesOn) {
     ctx.textBaseline = 'middle';
     ctx.fillText(label, x0 + 4, y + itemH * 0.35);
 
-    // Right-side state indicator
     ctx.textAlign = 'right';
-    if (label === 'EDGES') {
+    if (id === 'edges') {
       ctx.font      = '15px monospace';
       ctx.fillStyle = edgesOn ? '#44ff88' : MENU_MUTED;
       ctx.fillText(edgesOn ? 'ON' : 'OFF', MENU_W - 14, y + itemH * 0.35);
@@ -1734,7 +1749,10 @@ function makeMiniDisplay() {
 function buildController(index) {
   // Pointer space — laser lives here
   const pointer = renderer.xr.getController(index);
-  pointer.add(makeLaser());
+  const { group: laserGroup, beam: laserBeam, ring: laserRing } = makeLaser();
+  pointer.add(laserGroup);
+  pointer.userData.laserBeam = laserBeam;
+  pointer.userData.laserRing = laserRing;
   scene.add(pointer);
 
   // Grip space — hardware model + mini-display live here
@@ -1746,6 +1764,7 @@ function buildController(index) {
   grip.add(miniDisplay);
   pointer.userData.miniDisplay    = miniDisplay;
   pointer.userData.prevAXPressed  = false;   // rising-edge state for A/X toggle
+  pointer.userData.slot           = slots[index];  // direct ref — avoids index lookups
 
   scene.add(grip);
 
@@ -1820,14 +1839,15 @@ const GAL_CAT_W     = 200;
 const GAL_TOP_H     = 52;
 const GAL_NAV_H     = 56;
 
-const GAL_BG      = 'rgba(10,10,18,0.96)';
-const GAL_BORDER  = 'rgba(255,255,255,0.18)';
-const GAL_ACCENT  = '#ffcc00';
-const GAL_TEXT    = '#e8e8ec';
-const GAL_MUTED   = '#6b6b78';
-const GAL_HOVER   = 'rgba(255,204,0,0.14)';
-const GAL_SEP     = 'rgba(255,255,255,0.08)';
-const GAL_CAT_ON  = 'rgba(255,204,0,0.22)';
+// XR gallery uses shared HUD palette (slight opacity increase for world-space)
+const GAL_BG      = 'rgba(10,10,18,0.96)';   // slightly more opaque than HUD_BG
+const GAL_BORDER  = HUD_BORDER;
+const GAL_ACCENT  = HUD_ACCENT;
+const GAL_TEXT    = HUD_TEXT;
+const GAL_MUTED   = HUD_MUTED;
+const GAL_HOVER   = HUD_HOVER;
+const GAL_SEP     = 'rgba(255,255,255,0.08)'; // slightly less visible than HUD_SEP
+const GAL_CAT_ON  = HUD_CAT_ON;
 
 let _galPanel      = null;
 let _galTexture    = null;
@@ -1870,16 +1890,7 @@ function openXRGallery(pointer) {
   _galCategories = new Set();
   _galHighlight  = -1;
 
-  const counts = new Map();
-  for (const m of _galResults) {
-    for (const c of (m.categories ?? ['Other'])) {
-      const k = c.charAt(0).toUpperCase() + c.slice(1);
-      counts.set(k, (counts.get(k) ?? 0) + 1);
-    }
-  }
-  _galAllCats = [...counts.entries()]
-    .sort((a, b) => a[0].localeCompare(b[0]))
-    .map(([name, count]) => ({ name, count }));
+  _galAllCats = _buildCategoryCounts(_galResults);
 
   const frame    = renderer.xr.getFrame();
   const refSpace = renderer.xr.getReferenceSpace();
@@ -1919,10 +1930,7 @@ function closeXRGallery() {
 function _galFilteredResults() {
   if (_galCategories.size === 0) return _galResults;
   return _galResults.filter(m =>
-    (m.categories ?? ['Other']).some(c => {
-      const k = c.charAt(0).toUpperCase() + c.slice(1);
-      return _galCategories.has(k);
-    })
+    (m.categories ?? ['Other']).some(c => _galCategories.has(_capFirst(c)))
   );
 }
 
@@ -2080,19 +2088,13 @@ function _galUpdateLaser(pointer, triggerPressed, triggerWas) {
       _galDraw();
     }
     // Restore beam to full length so updateLaser or idle state looks correct
-    const beam = pointer.children[0].children[0];
-    const ring = pointer.children[0].children[1];
-    beam.scale.z    = 1;
-    ring.position.z = -LASER_LENGTH;
+    resetLaser(pointer);
     return false;
   }
 
   // Shorten the beam to stop at the panel surface, move ring to contact point
   const dist = hits[0].distance;
-  const beam = pointer.children[0].children[0];
-  const ring = pointer.children[0].children[1];
-  beam.scale.z    = dist / LASER_LENGTH;
-  ring.position.z = -dist;
+  setLaserDist(pointer, dist);
 
   const uv = hits[0].uv;
   const cx = uv.x * GAL_W;
@@ -2208,26 +2210,28 @@ function onXRSessionStart(mode) {
     _setupEntryForXR(entry);
   }
 
-  // Place pivots using the XR reference space viewer pose so we get the actual
-  // floor-relative eye height, then position models just below eye level.
-  // We poll every frame until the viewer pose is available (usually frame 1-2).
-  const placePivots = () => {
+  _placeAllPivots();
+}
+
+// Spread all loaded model pivots evenly in XR space.
+// Polls for the viewer pose (usually frame 1–2) so floor-relative Y is correct.
+// The optional mrMode flag positions the shadow disc when in MR.
+function _placeAllPivots(mrMode = (currentMode === 'mr')) {
+  const poll = () => {
     const frame    = renderer.xr.getFrame();
     const refSpace = renderer.xr.getReferenceSpace();
-    if (!frame || !refSpace) { requestAnimationFrame(placePivots); return; }
-
+    if (!frame || !refSpace) { requestAnimationFrame(poll); return; }
     const pose = frame.getViewerPose(refSpace);
-    if (!pose) { requestAnimationFrame(placePivots); return; }
+    if (!pose) { requestAnimationFrame(poll); return; }
 
-    // local-floor gives Y=0 at floor. Place models at comfortable table height.
     let x = 0;
     for (const entry of models) {
       entry.pivot.position.set(x, MODEL_PIVOT_Y, MODEL_PIVOT_Z);
       x += MODEL_SPACING;
     }
-    if (mode === 'mr') mrShadowDisc.position.set(0, 0.02, MODEL_PIVOT_Z);
+    if (mrMode) mrShadowDisc.position.set(0, 0.02, MODEL_PIVOT_Z);
   };
-  requestAnimationFrame(placePivots);
+  requestAnimationFrame(poll);
 }
 
 function onXRSessionEnd() {
@@ -2503,10 +2507,6 @@ function _wrapModels(models) {
   return models.map(item => ({ item, score: 1, matches: [] }));
 }
 
-function _capFirst(s) {
-  return s ? s.charAt(0).toUpperCase() + s.slice(1) : s;
-}
-
 // ── Open / close ───────────────────────────────────────────────────────────────
 
 function openGallery() {
@@ -2541,18 +2541,9 @@ function closeGallery() {
 // ── Category filters ───────────────────────────────────────────────────────────
 
 function _buildCategoryFilters(results) {
-  const counts = new Map();
-  for (const r of results) {
-    for (const cat of (r.item.categories ?? ['Other'])) {
-      const key = _capFirst(cat);
-      counts.set(key, (counts.get(key) ?? 0) + 1);
-    }
-  }
+  const sorted = _buildCategoryCounts(results);
 
-  // Alphabetical order
-  const sorted = [...counts.entries()].sort((a, b) => a[0].localeCompare(b[0]));
-
-  galleryFiltersEl.innerHTML = sorted.map(([cat, n]) =>
+  galleryFiltersEl.innerHTML = sorted.map(({ name: cat, count: n }) =>
     `<label class="gallery-filter-item">` +
       `<input type="checkbox" class="gallery-cat-cb" value="${escHtml(cat)}">` +
       `<span class="gallery-filter-label">${escHtml(cat)}</span>` +
