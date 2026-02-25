@@ -1170,43 +1170,44 @@ function makeLaser() {
   return { group, beam, ring };
 }
 
-function setLaserColor(pointer, color) {
-  pointer.userData.laserBeam.material.color.setHex(color);
-  pointer.userData.laserRing.material.color.setHex(color);
+function setLaserColor(ctrl, color) {
+  ctrl.laserBeam.material.color.setHex(color);
+  ctrl.laserRing.material.color.setHex(color);
 }
 
-function setLaserVisible(pointer, visible) {
-  pointer.userData.laserBeam.parent.visible = visible;  // laser group
+function setLaserVisible(ctrl, visible) {
+  ctrl.laserBeam.parent.visible = visible;  // laser group
 }
 
 // Reset beam to full length (pointer not hitting anything)
-function resetLaser(pointer) {
-  pointer.userData.laserBeam.scale.z    = 1;
-  pointer.userData.laserRing.position.z = -LASER_LENGTH;
+function resetLaser(ctrl) {
+  ctrl.laserBeam.scale.z    = 1;
+  ctrl.laserRing.position.z = -LASER_LENGTH;
 }
 
 // Shorten beam and move ring tip to distance d along the ray
-function setLaserDist(pointer, d) {
-  pointer.userData.laserBeam.scale.z    = d / LASER_LENGTH;
-  pointer.userData.laserRing.position.z = -d;
+function setLaserDist(ctrl, d) {
+  ctrl.laserBeam.scale.z    = d / LASER_LENGTH;
+  ctrl.laserRing.position.z = -d;
 }
 
 // Called every frame for each controller. Casts a ray against all loaded
 // models, scales the beam and repositions the tip ring to the hit point
-// (or restores full length on a miss). Returns { hitPoint, hitEntry }.
-function updateLaser(pointer) {
-  const beam = pointer.userData.laserBeam;
-  const ring = pointer.userData.laserRing;
-  const resetBeam = () => { beam.scale.z = 1; ring.position.z = -LASER_LENGTH; };
+// (or restores full length on a miss). Updates ctrl.hitPoint/hitEntry/rayDir.
+function updateLaser(ctrl) {
+  const { pointer } = ctrl;
 
-  if (models.length === 0) return resetBeam() || { hitPoint: null, hitEntry: null };
+  if (models.length === 0) {
+    resetLaser(ctrl);
+    ctrl.hitPoint = null;
+    ctrl.hitEntry = null;
+    return;
+  }
 
   pointer.getWorldPosition(_rayOrigin);
   _rayDir.set(0, 0, -1).transformDirection(pointer.matrixWorld);
   _raycaster.set(_rayOrigin, _rayDir);
-  // Snapshot ray direction for push/pull — used by thumbstick Y in updateXRControls
-  if (!pointer.userData.rayDir) pointer.userData.rayDir = new THREE.Vector3();
-  pointer.userData.rayDir.copy(_rayDir);
+  ctrl.rayDir.copy(_rayDir);
 
   // Test all loaded models; prefer orb sphere when rotating (orb visible),
   // otherwise test the mesh directly. Pick nearest hit across all entries.
@@ -1224,19 +1225,25 @@ function updateLaser(pointer) {
     }
   }
 
-  if (nearestEntry === null) return resetBeam() || { hitPoint: null, hitEntry: null };
+  if (nearestEntry === null) {
+    resetLaser(ctrl);
+    ctrl.hitPoint = null;
+    ctrl.hitEntry = null;
+    return;
+  }
 
-  beam.scale.z = nearestDist / LASER_LENGTH;
-  ring.position.z = -nearestDist;
-  return { hitPoint: nearestPoint, hitEntry: nearestEntry };
+  ctrl.laserBeam.scale.z    = nearestDist / LASER_LENGTH;
+  ctrl.laserRing.position.z = -nearestDist;
+  ctrl.hitPoint = nearestPoint;
+  ctrl.hitEntry = nearestEntry;
 }
 
 // ── Interaction slots ──────────────────────────────────────────────────────────
 
 function makeSlot() {
   return {
-    type:    null,   // null | 'grab'
-    pointer: null,
+    type: null,   // null | 'grab'
+    ctrl: null,
     grab: {
       entry:      null,
       offsetPos:  new THREE.Vector3(),
@@ -1251,14 +1258,14 @@ function otherSlot(slot) {
   return slot === slots[0] ? slots[1] : slots[0];
 }
 
-function startGrab(slot, pointer, hitPoint, hitEntry) {
+function startGrab(slot, ctrl, hitPoint, hitEntry) {
   // Deny if the other hand is already grabbing the same model
   const other = otherSlot(slot);
   if (other.type === 'grab' && other.grab.entry === hitEntry) return;
 
   const { pivot, root } = hitEntry;
-  pointer.getWorldPosition(_ctrlWorldPos);
-  pointer.getWorldQuaternion(_ctrlWorldQuat);
+  ctrl.pointer.getWorldPosition(_ctrlWorldPos);
+  ctrl.pointer.getWorldQuaternion(_ctrlWorldQuat);
   _ctrlWorldQInv.copy(_ctrlWorldQuat).invert();
 
   slot.grab.entry = hitEntry;
@@ -1270,24 +1277,24 @@ function startGrab(slot, pointer, hitPoint, hitEntry) {
     .multiplyQuaternions(_ctrlWorldQInv, root.getWorldQuaternion(new THREE.Quaternion()));
 
   slot.type    = 'grab';
-  slot.pointer = pointer;
-  setLaserColor(pointer, COLOR_GRABBED);
+  slot.ctrl    = ctrl;
+  setLaserColor(ctrl, COLOR_GRABBED);
 }
 
 function endInteraction(slot) {
   if (!slot.type) return;
-  if (slot.pointer) setLaserColor(slot.pointer, COLOR_IDLE);
+  if (slot.ctrl) setLaserColor(slot.ctrl, COLOR_IDLE);
   if (slot.grab.entry?.orb) slot.grab.entry.orb.visible = false;
   slot.type       = null;
-  slot.pointer    = null;
+  slot.ctrl       = null;
   slot.grab.entry = null;
 }
 
 function applyGrab(slot) {
   const { pivot, root } = slot.grab.entry;
-  const ctrl = slot.pointer;
-  ctrl.getWorldPosition(_ctrlWorldPos);
-  ctrl.getWorldQuaternion(_ctrlWorldQuat);
+  const ctrl = slot.ctrl;
+  ctrl.pointer.getWorldPosition(_ctrlWorldPos);
+  ctrl.pointer.getWorldQuaternion(_ctrlWorldQuat);
 
   pivot.position
     .copy(slot.grab.offsetPos)
@@ -1326,14 +1333,14 @@ function applyGripRotation(slot, thumbX, thumbY, dt) {
 }
 
 // Close the mini-display on a given controller and fully restore model interaction.
-// Called from: A/X toggle, and (Stage 2) when the XR gallery opens.
-function _closeMenu(pointer) {
-  const display = pointer.userData.miniDisplay;
+// Called from: A/X toggle, and when the XR gallery opens.
+function _closeMenu(ctrl) {
+  const display = ctrl.miniDisplay;
   if (!display) return;
   display.visible           = false;
   display.userData.menuMode = false;
   // Laser visibility is restored automatically next frame by the raycast block
-  // (setLaserVisible(pointer, true) runs when menuMode is false).
+  // (setLaserVisible(ctrl, true) runs when menuMode is false).
 }
 
 // Called every frame while XR is presenting
@@ -1348,282 +1355,163 @@ function updateXRControls() {
     _placeAllPivots();
   }
 
-  // 1. Update laser visuals — throttled when idle, every frame when active.
-  //    Active = at least one slot has an ongoing gesture.
   const anyActive = slots.some(s => s.type !== null);
   const doRaycast = anyActive || (_frameCount % RAYCAST_IDLE_INTERVAL === 0);
+  const dt        = 1 / 72;   // nominal frame time; good enough for rotation feel
+  const now       = performance.now();
 
-  if (doRaycast) {
-    for (const { pointer } of controllers) {
-      const inMenu = pointer.userData.miniDisplay?.userData.menuMode ?? false;
+  for (const ctrl of controllers) {
+    const { slot, miniDisplay, xrInputSource: src } = ctrl;
+    const gp      = src?.gamepad;
+    const inMenu  = miniDisplay.userData.menuMode;
 
+    // ── 1. Laser + raycast ──────────────────────────────────────────────────────
+    if (doRaycast) {
       if (inMenu) {
-        setLaserVisible(pointer, false);
-        pointer.userData.hitPoint = null;
-        pointer.userData.hitEntry = null;
-        continue;
-      }
-
-      setLaserVisible(pointer, true);
-
-      const xrSrc   = pointer.userData.xrInputSource;
-      const trigNow = xrSrc?.gamepad?.buttons[0]?.pressed ?? false;
-      const trigWas = pointer.userData.galTrigWas ?? false;
-      pointer.userData.galTrigWas = trigNow;
-
-      const galHit = _galUpdateLaser(pointer, trigNow, trigWas);
-      if (galHit) {
-        pointer.userData.hitPoint = null;
-        pointer.userData.hitEntry = null;
-        setLaserColor(pointer, COLOR_HIT);
-        continue;
-      }
-
-      ({ hitPoint: pointer.userData.hitPoint,
-         hitEntry: pointer.userData.hitEntry } = updateLaser(pointer));
-
-      if (pointer.userData.slot.type === null) {
-        setLaserColor(pointer, pointer.userData.hitEntry ? COLOR_HIT : COLOR_IDLE);
+        setLaserVisible(ctrl, false);
+        ctrl.hitPoint = null;
+        ctrl.hitEntry = null;
+      } else {
+        setLaserVisible(ctrl, true);
+        const trigNow      = gp?.buttons[0]?.pressed ?? false;
+        const galHit       = _galUpdateLaser(ctrl, trigNow, ctrl.galTrigWas);
+        ctrl.galTrigWas    = trigNow;
+        if (galHit) {
+          ctrl.hitPoint = null;
+          ctrl.hitEntry = null;
+          setLaserColor(ctrl, COLOR_HIT);
+        } else {
+          updateLaser(ctrl);
+          if (slot.type === null)
+            setLaserColor(ctrl, ctrl.hitEntry ? COLOR_HIT : COLOR_IDLE);
+        }
       }
     }
-  }
 
-  // 2. Apply grab for active slots.
-  //    Grip-held slots also apply viewer-aligned rotation from the thumbstick.
-  const dt = 1 / 72;   // nominal frame time; good enough for rotation feel
-  for (const { pointer } of controllers) {
-    const slot = pointer.userData.slot;
-    if (slot.type !== 'grab') continue;
-
-    const source  = pointer.userData.xrInputSource;
-    const gripNow = source?.gamepad?.buttons[1]?.pressed ?? false;
-
-    if (gripNow) {
-      // Grip held: move model with hand AND rotate from thumbstick
-      const thumbX = source.gamepad.axes[2] ?? 0;
-      const thumbY = source.gamepad.axes[3] ?? 0;
-      applyGripRotation(slot, thumbX, thumbY, dt);
-    } else {
-      // Trigger-only grab: pure position+orientation follow
-      applyGrab(slot);
+    // ── 2. Apply grab (move + optional grip-rotation) ───────────────────────────
+    if (slot.type === 'grab') {
+      const gripNow = gp?.buttons[1]?.pressed ?? false;
+      if (gripNow) {
+        applyGripRotation(slot, gp.axes[2] ?? 0, gp.axes[3] ?? 0, dt);
+      } else {
+        applyGrab(slot);
+      }
     }
-  }
 
-  // 3. Thumbstick scale — trigger held + thumbstick X while grabbing.
-  for (const { pointer } of controllers) {
-    if (pointer.userData.miniDisplay?.userData.menuMode) continue;
-    const slot   = pointer.userData.slot;
-    if (slot.type !== 'grab') continue;
+    // ── 3. Thumbstick scale + push/pull — trigger (not grip) held while grabbing.
+    //    Dominant-axis gate dispatches: |X| > |Y| → scale, |Y| > |X| → push/pull.
+    if (!inMenu && slot.type === 'grab' && gp) {
+      const trigHeld = gp.buttons[0]?.pressed ?? false;
+      const gripHeld = gp.buttons[1]?.pressed ?? false;
+      if (trigHeld && !gripHeld) {
+        const thumbX = gp.axes[2] ?? 0;
+        const thumbY = gp.axes[3] ?? 0;
+        const axX = Math.abs(thumbX), axY = Math.abs(thumbY);
 
-    const source  = pointer.userData.xrInputSource;
-    if (!source?.gamepad) continue;
-
-    // Only when trigger (not grip) is the active button
-    const trigHeld  = source.gamepad.buttons[0]?.pressed ?? false;
-    const gripHeld  = source.gamepad.buttons[1]?.pressed ?? false;
-    if (!trigHeld || gripHeld) continue;   // grip rotation takes priority
-
-    const thumbX = source.gamepad.axes[2] ?? 0;
-    const thumbY3 = source.gamepad.axes[3] ?? 0;
-    // Dominant-axis gate: only scale when X deflection is larger than Y.
-    // Prevents accidental scaling while the user is pushing/pulling.
-    if (Math.abs(thumbX) <= 0.1) continue;
-    if (Math.abs(thumbY3) > Math.abs(thumbX)) continue;
-
-    const entry    = slot.grab.entry;
-    const newScale = THREE.MathUtils.clamp(
-      entry.root.scale.x * (1 + thumbX * SCALE_SPEED),
-      LDU_TO_METERS * 0.05,
-      LDU_TO_METERS * 30
-    );
-    entry.root.scale.setScalar(newScale);
-    mrShadowDisc.scale.setScalar(newScale / LDU_TO_METERS);
-    showScaleLabel(entry, newScale);
-  }
-
-  // 4. Thumbstick push/pull — trigger held + thumbstick Y while grabbing.
-  //    Delta is baked into slot.grab.offsetPos so applyGrab carries it forward.
-  for (const { pointer } of controllers) {
-    if (pointer.userData.miniDisplay?.userData.menuMode) continue;
-    const slot   = pointer.userData.slot;
-    if (slot.type !== 'grab') continue;
-
-    const source   = pointer.userData.xrInputSource;
-    if (!source?.gamepad) continue;
-
-    const trigHeld = source.gamepad.buttons[0]?.pressed ?? false;
-    const gripHeld = source.gamepad.buttons[1]?.pressed ?? false;
-    if (!trigHeld || gripHeld) continue;
-
-    const thumbY = source.gamepad.axes[3] ?? 0;
-    const thumbX4 = source.gamepad.axes[2] ?? 0;
-    // Dominant-axis gate: only push/pull when Y deflection is larger than X.
-    // Prevents accidental distance change while the user is scaling.
-    if (Math.abs(thumbY) <= 0.1) continue;
-    if (Math.abs(thumbX4) > Math.abs(thumbY)) continue;
-
-    // Build push delta in controller-local space so it's orientation-independent.
-    // offsetPos is stored in controller-local space; adding the ray-aligned delta
-    // there means applyGrab will carry it forward correctly every frame.
-    pointer.getWorldQuaternion(_ctrlWorldQuat);
-    _ctrlWorldQInv.copy(_ctrlWorldQuat).invert();
-    _pushVec.copy(pointer.userData.rayDir)
-      .multiplyScalar(-thumbY * PUSH_SPEED)
-      .applyQuaternion(_ctrlWorldQInv);
-    slot.grab.offsetPos.add(_pushVec);
-  }
-
-  // 5. B/Y button — remove the model the laser is currently hitting.
-  //    Rising-edge detection fires exactly once per press.
-  for (const { pointer } of controllers) {
-    const source     = pointer.userData.xrInputSource;
-    const pressed    = source?.gamepad?.buttons[5]?.pressed ?? false;
-    const wasPressed = pointer.userData.prevBYPressed ?? false;
-    pointer.userData.prevBYPressed = pressed;
-
-    if (pressed && !wasPressed) {
-      const entry = pointer.userData.hitEntry;
-      if (entry) removeEntry(entry);
+        if (axX > 0.1 && axX > axY) {
+          // Scale
+          const entry    = slot.grab.entry;
+          const newScale = THREE.MathUtils.clamp(
+            entry.root.scale.x * (1 + thumbX * SCALE_SPEED),
+            LDU_TO_METERS * 0.05, LDU_TO_METERS * 30
+          );
+          entry.root.scale.setScalar(newScale);
+          mrShadowDisc.scale.setScalar(newScale / LDU_TO_METERS);
+          showScaleLabel(entry, newScale);
+        } else if (axY > 0.1 && axY > axX) {
+          // Push / pull — delta baked into offsetPos so applyGrab carries it forward
+          ctrl.pointer.getWorldQuaternion(_ctrlWorldQuat);
+          _ctrlWorldQInv.copy(_ctrlWorldQuat).invert();
+          _pushVec.copy(ctrl.rayDir)
+            .multiplyScalar(-thumbY * PUSH_SPEED)
+            .applyQuaternion(_ctrlWorldQInv);
+          slot.grab.offsetPos.add(_pushVec);
+        }
+      }
     }
-  }
 
-  // 6. A/X button — toggle mini-display and menuMode for that controller.
-  for (const { pointer } of controllers) {
-    const source      = pointer.userData.xrInputSource;
-    const pressed     = source?.gamepad?.buttons[4]?.pressed ?? false;
-    const wasPressed  = pointer.userData.prevAXPressed ?? false;
-    pointer.userData.prevAXPressed = pressed;
+    // ── 4. B/Y — remove the model the laser is currently hitting (rising edge) ──
+    const byNow    = gp?.buttons[5]?.pressed ?? false;
+    if (byNow && !ctrl.prevBY && ctrl.hitEntry) removeEntry(ctrl.hitEntry);
+    ctrl.prevBY = byNow;
 
-    if (!(pressed && !wasPressed)) continue;
-    const display = pointer.userData.miniDisplay;
-    if (!display) continue;
+    // ── 5. A/X — toggle mini-display (rising edge, mutual exclusion) ────────────
+    const axNow = gp?.buttons[4]?.pressed ?? false;
+    if (axNow && !ctrl.prevAX) {
+      if (miniDisplay.visible) {
+        _closeMenu(ctrl);
+      } else {
+        // Close the other controller's display first
+        const other = controllers.find(c => c !== ctrl);
+        if (other?.miniDisplay.visible) _closeMenu(other);
 
-    if (display.visible) {
-      _closeMenu(pointer);
-    } else {
-      // Close other controller's display first (mutual exclusion)
-      const otherHand    = pointer.userData.handedness === 'left' ? 'right' : 'left';
-      const otherPointer = controllers.find(c => c.pointer.userData.handedness === otherHand)?.pointer;
-      if (otherPointer?.userData.miniDisplay?.visible) _closeMenu(otherPointer);
-
-      // Open this display — sync edgesOn from global, reset focus to tab bar
-      display.userData.edgesOn  = edgesVisible;
-      display.userData.orbOn    = orbVisible;
-      display.userData.focusCol = 'tabs';
-      display.userData.focusRow = display.userData.activeTab;
-      display.userData.menuMode = true;
-      display.userData.draw();
-      display.visible = true;
-      // Laser is hidden by the raycast block above while menuMode is true
+        miniDisplay.userData.edgesOn  = edgesVisible;
+        miniDisplay.userData.orbOn    = orbVisible;
+        miniDisplay.userData.focusCol = 'tabs';
+        miniDisplay.userData.focusRow = miniDisplay.userData.activeTab;
+        miniDisplay.userData.menuMode = true;
+        miniDisplay.userData.draw();
+        miniDisplay.visible = true;
+      }
     }
-  }
+    ctrl.prevAX = axNow;
 
-  // 7. Menu navigation — only runs when a controller is in menu mode.
-  //
-  //    Thumbstick Y (axes[3]): up/down within current column.
-  //      Uses time-based repeat: fires once on deflection, then after
-  //      MENU_NAV_DELAY ms, then every MENU_NAV_REPEAT ms while held.
-  //    Thumbstick X (axes[2]): switch column (tabs ↔ panel), rising-edge only.
-  //    Trigger (buttons[0]):   confirm focused item, rising-edge.
-  //
-  //    All navigation is purely local to the display's userData — no globals
-  //    mutated except edgesVisible (via toggleEdges) on confirm.
+    // ── 6. Menu navigation (thumbstick + trigger) — only when menu is open ──────
+    if (!miniDisplay.visible || !inMenu || !gp) continue;
 
-  const now = performance.now();
-  for (const { pointer } of controllers) {
-    const display = pointer.userData.miniDisplay;
-    if (!display?.visible || !display.userData.menuMode) continue;
-
-    const source = pointer.userData.xrInputSource;
-    if (!source?.gamepad) continue;
-
-    const st      = display.userData;   // shorthand — same object throughout
+    const st      = miniDisplay.userData;
     let   changed = false;
 
-    // ── Thumbstick Y: up/down navigation ──────────────────────────────────────
-    const thumbY    = source.gamepad.axes[3] ?? 0;
-    const yDeflect  = Math.abs(thumbY) > 0.4;
-
+    // Thumbstick Y: up/down with time-based repeat
+    const thumbY   = gp.axes[3] ?? 0;
+    const yDeflect = Math.abs(thumbY) > 0.4;
     if (!yDeflect) {
-      // Stick released — reset repeat timer
-      pointer.userData.menuNavRepeatTime = 0;
-      pointer.userData.menuNavFired      = false;
+      ctrl.menuNavRepeatTime = 0;
+      ctrl.menuNavFired      = false;
     } else {
-      const repeatTime = pointer.userData.menuNavRepeatTime ?? 0;
-      const fired      = pointer.userData.menuNavFired      ?? false;
-      const delay      = fired ? MENU_NAV_REPEAT : MENU_NAV_DELAY;
-
-      if (now - repeatTime >= delay) {
-        pointer.userData.menuNavRepeatTime = now;
-        pointer.userData.menuNavFired      = true;
-
-        const dir      = thumbY > 0 ? 1 : -1;   // positive = down = next row
-        const rowCount = st.focusCol === 'tabs'
-          ? MENU_TABS.length
-          : MODELS_PANEL_ITEMS.length;
+      const delay = ctrl.menuNavFired ? MENU_NAV_REPEAT : MENU_NAV_DELAY;
+      if (now - ctrl.menuNavRepeatTime >= delay) {
+        ctrl.menuNavRepeatTime = now;
+        ctrl.menuNavFired      = true;
+        const dir      = thumbY > 0 ? 1 : -1;
+        const rowCount = st.focusCol === 'tabs' ? MENU_TABS.length : MODELS_PANEL_ITEMS.length;
         st.focusRow = (st.focusRow + dir + rowCount) % rowCount;
         changed = true;
       }
     }
 
-    // ── Thumbstick X: switch column, rising-edge ───────────────────────────────
-    const thumbX    = source.gamepad.axes[2] ?? 0;
-    const xPressed  = Math.abs(thumbX) > 0.6;
-    const xWas      = pointer.userData.menuNavXActive ?? false;
-    pointer.userData.menuNavXActive = xPressed;
-
-    if (xPressed && !xWas) {
-      if (thumbX > 0 && st.focusCol === 'tabs') {
-        // Right → enter panel (only meaningful for MODELS tab which has items)
-        if (st.activeTab === 0) {
-          st.focusCol = 'panel';
-          st.focusRow = 0;
-          changed = true;
-        }
+    // Thumbstick X: switch column, rising edge
+    const thumbX   = gp.axes[2] ?? 0;
+    const xPressed = Math.abs(thumbX) > 0.6;
+    if (xPressed && !ctrl.menuXActive) {
+      if (thumbX > 0 && st.focusCol === 'tabs' && st.activeTab === 0) {
+        st.focusCol = 'panel'; st.focusRow = 0; changed = true;
       } else if (thumbX < 0 && st.focusCol === 'panel') {
-        // Left → back to tabs
-        st.focusCol = 'tabs';
-        st.focusRow = st.activeTab;
-        changed = true;
+        st.focusCol = 'tabs'; st.focusRow = st.activeTab; changed = true;
       }
     }
+    ctrl.menuXActive = xPressed;
 
-    // ── Trigger: confirm, rising-edge ─────────────────────────────────────────
-    const trigPressed = source.gamepad.buttons[0]?.pressed ?? false;
-    const trigWas     = pointer.userData.menuNavTrigWas ?? false;
-    pointer.userData.menuNavTrigWas = trigPressed;
-
-    if (trigPressed && !trigWas) {
+    // Trigger: confirm, rising edge
+    const trigNow = gp.buttons[0]?.pressed ?? false;
+    if (trigNow && !ctrl.menuTrigWas) {
       if (st.focusCol === 'tabs') {
-        // Activate the focused tab
-        if (st.focusRow !== st.activeTab) {
-          st.activeTab = st.focusRow;
-          st.focusCol  = 'tabs';   // stay on tab bar after switching tabs
-          changed = true;
-        }
+        if (st.focusRow !== st.activeTab) { st.activeTab = st.focusRow; changed = true; }
       } else {
-        // Confirm item in MODELS panel
         const item = MODELS_PANEL_ITEMS[st.focusRow];
         if (item.id === 'edges') {
-          toggleEdges();
-          st.edgesOn = edgesVisible;
-          changed = true;
+          toggleEdges(); st.edgesOn = edgesVisible; changed = true;
         } else if (item.id === 'orb') {
-          orbVisible = !orbVisible;
-          st.orbOn   = orbVisible;
-          changed    = true;
+          orbVisible = !orbVisible; st.orbOn = orbVisible; changed = true;
         } else if (item.id === 'browse') {
-          openXRGallery(pointer);
+          openXRGallery(ctrl);
         }
       }
     }
+    ctrl.menuTrigWas = trigNow;
 
-    // ── When focus moves into tabs column, activating a tab is immediate ───────
-    // (Tab highlight + activeTab update happen together on up/down in tabs col)
-    if (changed && st.focusCol === 'tabs') {
-      st.activeTab = st.focusRow;
-    }
-
+    // Moving focus within tabs immediately activates that tab
+    if (changed && st.focusCol === 'tabs') st.activeTab = st.focusRow;
     if (changed) st.draw();
   }
 }
@@ -1654,7 +1542,7 @@ function updateXRControls() {
 const MENU_W = 512, MENU_H = 288;
 
 // ── Shared HUD palette — used by mini-display and XR gallery ─────────────────
-const HUD_BG       = 'rgba(10,10,18,0.92)';   // menu slightly lighter than gallery
+const HUD_BG       = 'rgba(10,10,18,0.92)';
 const HUD_BORDER   = 'rgba(255,255,255,0.18)';
 const HUD_ACCENT   = '#ffcc00';
 const HUD_TEXT     = '#e8e8ec';
@@ -1663,15 +1551,6 @@ const HUD_FOCUS_BG = 'rgba(255,204,0,0.18)';
 const HUD_SEP      = 'rgba(255,255,255,0.10)';
 const HUD_HOVER    = 'rgba(255,204,0,0.14)';
 const HUD_CAT_ON   = 'rgba(255,204,0,0.22)';
-
-// Aliases kept for readability at each call site
-const MENU_BG       = HUD_BG;
-const MENU_BORDER   = HUD_BORDER;
-const MENU_ACCENT   = HUD_ACCENT;
-const MENU_TEXT     = HUD_TEXT;
-const MENU_MUTED    = HUD_MUTED;
-const MENU_FOCUS_BG = HUD_FOCUS_BG;
-const MENU_SEP      = HUD_SEP;
 
 // Tab definitions — label and panel renderer
 const MENU_TABS = ['MODELS', 'HELP'];
@@ -1691,15 +1570,15 @@ function _menuRoundRect(ctx, x, y, w, h, r) {
 
 function _menuBackground(ctx) {
   _menuRoundRect(ctx, 0, 0, MENU_W, MENU_H, 18);
-  ctx.fillStyle = MENU_BG;
+  ctx.fillStyle = HUD_BG;
   ctx.fill();
-  ctx.strokeStyle = MENU_BORDER;
+  ctx.strokeStyle = HUD_BORDER;
   ctx.lineWidth = 2;
   ctx.stroke();
   // Vertical divider between tab bar and panel
   ctx.beginPath();
   ctx.moveTo(TAB_W, 8); ctx.lineTo(TAB_W, MENU_H - 8);
-  ctx.strokeStyle = MENU_SEP;
+  ctx.strokeStyle = HUD_SEP;
   ctx.lineWidth = 1;
   ctx.stroke();
 }
@@ -1713,18 +1592,18 @@ function _menuDrawTabs(ctx, activeTab, focusCol, focusRow) {
 
     // Focus highlight
     if (isFocused) {
-      ctx.fillStyle = MENU_FOCUS_BG;
+      ctx.fillStyle = HUD_FOCUS_BG;
       ctx.fillRect(2, y + 2, TAB_W - 4, tabH - 4);
     }
 
     // Active tab indicator — left accent bar
     if (isActive) {
-      ctx.fillStyle = MENU_ACCENT;
+      ctx.fillStyle = HUD_ACCENT;
       ctx.fillRect(2, y + tabH * 0.2, 3, tabH * 0.6);
     }
 
     ctx.font      = 'bold 18px monospace';
-    ctx.fillStyle = isActive ? MENU_ACCENT : (isFocused ? MENU_TEXT : MENU_MUTED);
+    ctx.fillStyle = isActive ? HUD_ACCENT : (isFocused ? HUD_TEXT : HUD_MUTED);
     ctx.textAlign    = 'center';
     ctx.textBaseline = 'middle';
     ctx.fillText(label, TAB_W / 2, y + tabH / 2);
@@ -1749,13 +1628,13 @@ function _menuDrawHelp(ctx, focusCol) {
   rows.forEach((row, i) => {
     const y = 10 + i * rowH + rowH * 0.5;
     ctx.font      = 'bold 15px monospace';
-    ctx.fillStyle = MENU_TEXT;
+    ctx.fillStyle = HUD_TEXT;
     ctx.textAlign    = 'left';
     ctx.textBaseline = 'middle';
     ctx.fillText(row.label, x0, y);
 
     ctx.font      = '13px monospace';
-    ctx.fillStyle = MENU_MUTED;
+    ctx.fillStyle = HUD_MUTED;
     ctx.textAlign = 'right';
     ctx.fillText(row.desc, MENU_W - 12, y);
   });
@@ -1779,15 +1658,15 @@ function _menuDrawModels(ctx, focusCol, focusRow, edgesOn, orbOn) {
 
     if (isFocused) {
       _menuRoundRect(ctx, x0 - 4, y - 2, MENU_W - x0 - 4, itemH - 4, 6);
-      ctx.fillStyle = MENU_FOCUS_BG;
+      ctx.fillStyle = HUD_FOCUS_BG;
       ctx.fill();
-      ctx.strokeStyle = MENU_ACCENT;
+      ctx.strokeStyle = HUD_ACCENT;
       ctx.lineWidth   = 1.5;
       ctx.stroke();
     }
 
     ctx.font      = 'bold 17px monospace';
-    ctx.fillStyle = isFocused ? MENU_ACCENT : MENU_TEXT;
+    ctx.fillStyle = isFocused ? HUD_ACCENT : HUD_TEXT;
     ctx.textAlign    = 'left';
     ctx.textBaseline = 'middle';
     ctx.fillText(label, x0 + 4, y + itemH * 0.35);
@@ -1795,22 +1674,22 @@ function _menuDrawModels(ctx, focusCol, focusRow, edgesOn, orbOn) {
     ctx.textAlign = 'right';
     if (id === 'edges') {
       ctx.font      = '15px monospace';
-      ctx.fillStyle = edgesOn ? '#44ff88' : MENU_MUTED;
+      ctx.fillStyle = edgesOn ? '#44ff88' : HUD_MUTED;
       ctx.fillText(edgesOn ? 'ON' : 'OFF', MENU_W - 14, y + itemH * 0.35);
     } else if (id === 'orb') {
       ctx.font      = '15px monospace';
-      ctx.fillStyle = orbOn ? '#44ff88' : MENU_MUTED;
+      ctx.fillStyle = orbOn ? '#44ff88' : HUD_MUTED;
       ctx.fillText(orbOn ? 'ON' : 'OFF', MENU_W - 14, y + itemH * 0.35);
     } else {
       ctx.font      = '13px monospace';
-      ctx.fillStyle = MENU_MUTED;
+      ctx.fillStyle = HUD_MUTED;
       ctx.fillText('▶', MENU_W - 14, y + itemH * 0.35);
     }
   });
 
   // Thumb-tip hint at the bottom
   ctx.font      = '11px monospace';
-  ctx.fillStyle = MENU_MUTED;
+  ctx.fillStyle = HUD_MUTED;
   ctx.textAlign    = 'center';
   ctx.textBaseline = 'bottom';
   ctx.fillText('← back   ↑↓ move   trigger: confirm', TAB_W + (MENU_W - TAB_W) / 2, MENU_H - 6);
@@ -1873,64 +1752,91 @@ function makeMiniDisplay() {
 
 // ── Build both controllers ─────────────────────────────────────────────────────
 
+// ── Controller state object ────────────────────────────────────────────────────
+//
+// All per-controller state lives here — no ad-hoc properties on pointer.userData.
+// pointer.userData retains only what Three.js internals require (none in our case).
+//
+//   pointer / grip     Three.js tracked-space objects (poses updated by XR runtime)
+//   laserBeam/Ring     mesh references for laser visuals
+//   miniDisplay        wrist-mounted HUD group
+//   slot               interaction slot (shared with slots[])
+//   xrInputSource      XRInputSource, set on 'connected', cleared on 'disconnected'
+//   handedness         'left' | 'right'
+//   hitPoint/Entry     last raycast result — written each frame, read by grab/remove
+//   rayDir             last ray direction — needed for push/pull offset math
+//   galHighlight       last hovered gallery row index (avoids unnecessary redraws)
+//   -- button edge-detection state (all initialised explicitly, no lazy ?? guards) --
+//   prevBY             B/Y button previous frame
+//   prevAX             A/X button previous frame
+//   galTrigWas         trigger state for gallery laser (previous frame)
+//   menuTrigWas        trigger state for menu confirm (previous frame)
+//   menuXActive        thumbstick-X deflection state for menu column switch
+//   menuNavRepeatTime  timestamp of last menu-nav repeat fire
+//   menuNavFired       whether the initial nav delay has elapsed
+
 function buildController(index) {
   // Pointer space — laser lives here
   const pointer = renderer.xr.getController(index);
   const { group: laserGroup, beam: laserBeam, ring: laserRing } = makeLaser();
   pointer.add(laserGroup);
-  pointer.userData.laserBeam = laserBeam;
-  pointer.userData.laserRing = laserRing;
   scene.add(pointer);
 
   // Grip space — hardware model + mini-display live here
   const grip = renderer.xr.getControllerGrip(index);
   grip.add(controllerModelFactory.createControllerModel(grip));
 
-  // Mini-display — rigid attachment, rotates 1:1 with the hand
   const miniDisplay = makeMiniDisplay();
   grip.add(miniDisplay);
-  pointer.userData.miniDisplay    = miniDisplay;
-  pointer.userData.prevAXPressed  = false;   // rising-edge state for A/X toggle
-  pointer.userData.slot           = slots[index];  // direct ref — avoids index lookups
-
   scene.add(grip);
 
-  return { pointer, grip };
-}
-
-const controllers = [buildController(0), buildController(1)];
-
-// Wire gesture events on both controllers
-for (let i = 0; i < controllers.length; i++) {
-  const { pointer } = controllers[i];
-  const slot = slots[i];
+  const ctrl = {
+    pointer, grip,
+    laserBeam, laserRing,
+    miniDisplay,
+    slot:           slots[index],
+    xrInputSource:  null,
+    handedness:     null,
+    hitPoint:       null,
+    hitEntry:       null,
+    rayDir:         new THREE.Vector3(),
+    galHighlight:   -1,
+    // button edge state — explicit, never lazy-defaulted
+    prevBY:              false,
+    prevAX:              false,
+    galTrigWas:          false,
+    menuTrigWas:         false,
+    menuXActive:         false,
+    menuNavRepeatTime:   0,
+    menuNavFired:        false,
+  };
 
   pointer.addEventListener('connected', e => {
-    pointer.userData.xrInputSource = e.data;
-    pointer.userData.handedness    = e.data.handedness;   // 'left' | 'right'
-    if (pointer.userData.miniDisplay?.userData.positionForHand) {
-      pointer.userData.miniDisplay.userData.positionForHand(e.data.handedness);
-    }
+    ctrl.xrInputSource = e.data;
+    ctrl.handedness    = e.data.handedness;
+    miniDisplay.userData.positionForHand?.(e.data.handedness);
   });
-  pointer.addEventListener('disconnected', () => { pointer.userData.xrInputSource = null; });
+  pointer.addEventListener('disconnected', () => { ctrl.xrInputSource = null; });
 
   // Both trigger (select) and grip (squeeze) start a grab.
   // The orb is shown immediately so grip-rotation has visual feedback from the start.
   function tryStartGrab() {
-    if (slot.type) return;
-    if (pointer.userData.miniDisplay?.userData.menuMode) return;
-    const { hitPoint, hitEntry } = pointer.userData;
-    if (!hitEntry) return;
-    startGrab(slot, pointer, hitPoint, hitEntry);
-    if (hitEntry.orb && orbVisible) hitEntry.orb.visible = true;
+    if (ctrl.slot.type) return;
+    if (miniDisplay.userData.menuMode) return;
+    if (!ctrl.hitEntry) return;
+    startGrab(ctrl.slot, ctrl, ctrl.hitPoint, ctrl.hitEntry);
+    if (ctrl.hitEntry.orb && orbVisible) ctrl.hitEntry.orb.visible = true;
   }
 
   pointer.addEventListener('squeezestart', tryStartGrab);
-  pointer.addEventListener('squeezeend',   () => { if (slot.type === 'grab') endInteraction(slot); });
+  pointer.addEventListener('squeezeend',   () => { if (ctrl.slot.type === 'grab') endInteraction(ctrl.slot); });
+  pointer.addEventListener('selectstart',  tryStartGrab);
+  pointer.addEventListener('selectend',    () => { if (ctrl.slot.type === 'grab') endInteraction(ctrl.slot); });
 
-  pointer.addEventListener('selectstart', tryStartGrab);
-  pointer.addEventListener('selectend',   () => { if (slot.type === 'grab') endInteraction(slot); });
+  return ctrl;
 }
+
+const controllers = [buildController(0), buildController(1)];
 
 
 // ─── §8b  XR Gallery panel ────────────────────────────────────────────────────
@@ -2003,9 +1909,9 @@ function _makeGalleryPanel() {
 }
 _makeGalleryPanel();
 
-function openXRGallery(pointer) {
+function openXRGallery(ctrl) {
   if (!renderer.xr.isPresenting) return;
-  if (pointer) _closeMenu(pointer);
+  if (ctrl) _closeMenu(ctrl);
 
   _galResults    = mbModels.slice();
   _galPage       = 0;
@@ -2043,10 +1949,7 @@ function closeXRGallery() {
   _galResults       = [];
   _galHitRects      = [];
   _galHighlight     = -1;
-  // Clear per-pointer highlight so stale state doesn't persist across opens
-  for (const { pointer } of controllers) {
-    pointer.userData.galHighlight = -1;
-  }
+  for (const ctrl of controllers) ctrl.galHighlight = -1;
 }
 
 function _galFilteredResults() {
@@ -2194,35 +2097,33 @@ function _galDraw() {
   _galTexture.needsUpdate = true;
 }
 
-function _galUpdateLaser(pointer, triggerPressed, triggerWas) {
+function _galUpdateLaser(ctrl, triggerPressed, triggerWas) {
   if (!_galPanel.visible) return false;
 
+  const { pointer } = ctrl;
   pointer.getWorldPosition(_galRayOrigin);
   _galRayDir.set(0, 0, -1).transformDirection(pointer.matrixWorld);
   _galRaycaster.set(_galRayOrigin, _galRayDir);
 
   const hits = _galRaycaster.intersectObject(_galPanel);
   if (hits.length === 0) {
-    // Only clear highlight if *this* pointer was the one that had it
-    if (pointer.userData.galHighlight !== undefined && pointer.userData.galHighlight !== -1) {
-      pointer.userData.galHighlight = -1;
+    if (ctrl.galHighlight !== -1) {
+      ctrl.galHighlight = -1;
       _galHighlight = -1;
       _galDraw();
     }
-    // Restore beam to full length so updateLaser or idle state looks correct
-    resetLaser(pointer);
+    resetLaser(ctrl);
     return false;
   }
 
   // Shorten the beam to stop at the panel surface, move ring to contact point
-  const dist = hits[0].distance;
-  setLaserDist(pointer, dist);
+  setLaserDist(ctrl, hits[0].distance);
 
   const uv = hits[0].uv;
   const cx = uv.x * GAL_W;
   const cy = (1 - uv.y) * GAL_H;
 
-  // Update hover highlight on result rows — stored per-pointer to avoid crosstalk
+  // Update hover highlight on result rows — stored per-ctrl to avoid crosstalk
   let newHighlight = -1;
   const bodyY = GAL_TOP_H + 1;
   const bodyH = GAL_H - GAL_TOP_H - GAL_NAV_H - 1;
@@ -2232,10 +2133,8 @@ function _galUpdateLaser(pointer, triggerPressed, triggerWas) {
     if (cx > GAL_CAT_W + 2 && cy >= ry && cy < ry + rowH - 1) { newHighlight = i; break; }
   }
 
-  const prevHighlight = pointer.userData.galHighlight ?? -1;
-  pointer.userData.galHighlight = newHighlight;
-
-  if (newHighlight !== prevHighlight) {
+  if (newHighlight !== ctrl.galHighlight) {
+    ctrl.galHighlight = newHighlight;
     _galHighlight = newHighlight;
     _galDraw();
   }
@@ -2378,14 +2277,14 @@ function onXRSessionEnd() {
   // Drop all active interactions, close any open menus/gallery, restore lasers
   for (const slot of slots) endInteraction(slot);
   closeXRGallery();
-  for (const { pointer } of controllers) {
-    _closeMenu(pointer);                           // clears menuMode, hides display
-    setLaserVisible(pointer, true);                // ensure laser is visible after session
-    setLaserColor(pointer, COLOR_IDLE);
-    pointer.userData.hitPoint      = null;
-    pointer.userData.hitEntry      = null;
-    pointer.userData.xrInputSource = null;
-    pointer.userData.prevBYPressed = false;
+  for (const ctrl of controllers) {
+    _closeMenu(ctrl);
+    setLaserVisible(ctrl, true);
+    setLaserColor(ctrl, COLOR_IDLE);
+    ctrl.hitPoint      = null;
+    ctrl.hitEntry      = null;
+    ctrl.xrInputSource = null;
+    ctrl.prevBY        = false;
   }
 
   // Restore OrbitControls to the exact state they were in before XR started
