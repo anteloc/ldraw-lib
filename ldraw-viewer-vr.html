@@ -434,7 +434,8 @@
   "imports": {
     "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
     "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/",
-    "three-mesh-bvh": "https://cdn.jsdelivr.net/npm/three-mesh-bvh@0.9.4/src/index.js"
+    "three-mesh-bvh": "https://cdn.jsdelivr.net/npm/three-mesh-bvh@0.9.4/src/index.js",
+    "fflate": "https://cdn.jsdelivr.net/npm/fflate@0.8.2/esm/browser.js"
   }
 }
 </script>
@@ -447,9 +448,9 @@ import * as THREE from 'three';
 import { OrbitControls }            from 'three/addons/controls/OrbitControls.js';
 import { LDrawLoader }              from 'three/addons/loaders/LDrawLoader.js';
 import { RoomEnvironment }          from 'three/addons/environments/RoomEnvironment.js';
-
 import { XRControllerModelFactory } from 'three/addons/webxr/XRControllerModelFactory.js';
 import { computeBoundsTree, disposeBoundsTree, acceleratedRaycast } from 'three-mesh-bvh';
+import { unzipSync }                from 'fflate';
 
 // Patch Three.js prototypes once — every Mesh and BufferGeometry in the scene
 // automatically gets BVH-accelerated raycasting after this point.
@@ -759,19 +760,46 @@ async function makeLDrawLoader() {
 
 async function loadModelFromURL(url, name, errorMsg) {
   try {
-    const loader = await makeLDrawLoader();
-    const model  = await loader.loadAsync(url, onProgress);
-    onModelLoaded(model, name);
+    if (url.endsWith('.zip')) {
+      // ── Zipped model: fetch as binary, decompress in-memory, parse as text ──
+      const resp   = await fetch(url);
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      const buffer = await resp.arrayBuffer();
+      const files  = unzipSync(new Uint8Array(buffer));
+      const entries = Object.keys(files);
+      if (entries.length === 0) throw new Error('Zip archive is empty');
+      // Take the first file — archives contain exactly one .mpd/.ldr
+      const text = new TextDecoder().decode(files[entries[0]]);
+      const displayName = name.replace(/\.zip$/i, '');
+      onModelLoaded(await _parseWithLoader(text), displayName);
+    } else {
+      const loader = await makeLDrawLoader();
+      const model  = await loader.loadAsync(url, onProgress);
+      onModelLoaded(model, name);
+    }
   } catch (err) {
     showError(errorMsg + '\n\n' + err);
   }
 }
 
+// Shared helper: build a loader and parse model text via a temporary Blob URL.
+// LDrawLoader.parse() expects callbacks and is not safely callable without them;
+// wrapping the text in a Blob and using loadAsync drives the full lifecycle correctly.
+// The object URL is revoked immediately after the load resolves to avoid memory leaks.
+async function _parseWithLoader(text) {
+  const loader = await makeLDrawLoader();
+  const blob   = new Blob([text], { type: 'text/plain' });
+  const url    = URL.createObjectURL(blob);
+  try {
+    return await loader.loadAsync(url, onProgress);
+  } finally {
+    URL.revokeObjectURL(url);
+  }
+}
+
 async function loadModelFromText(text, name) {
   try {
-    const loader = await makeLDrawLoader();
-    const model  = loader.parse(text);   // synchronous — returns group directly
-    onModelLoaded(model, name);
+    onModelLoaded(await _parseWithLoader(text), name);
   } catch (err) {
     console.error(err);
     showError('Parse error: ' + (err?.message || String(err)) +
@@ -1743,13 +1771,17 @@ async function fetchModelList() {
         const description = rec.description ?? rec.search_key ?? rec.name;
         const categories  = rec.categories?.length ? rec.categories : ['Other'];
         const keywords    = rec.keywords ?? [];
+        // Strip .zip suffix for display name and thumbnail — the zip contains
+        // a single file whose name is rec.name minus the .zip extension.
+        const baseName    = rec.name.replace(/\.zip$/i, '');
         return {
-          name: rec.name,
+          name:        rec.name,   // original index name (may end in .zip) — used for the fetch URL
+          displayName: baseName,   // .zip stripped — shown in UI and passed to onModelLoaded
           description,
           categories,
           keywords,
           url:   RAW_BASE   + encodeURIComponent(rec.name),
-          thumb: THUMB_BASE + encodeURIComponent(rec.name.replace(/\.[^.]+$/, '.png')),
+          thumb: THUMB_BASE + encodeURIComponent(baseName.replace(/\.[^.]+$/, '.png')),
         };
       });
 
@@ -1953,12 +1985,12 @@ function _renderGalleryPage() {
   }
 
   for (const r of slice) {
-    const { name, description, url, thumb, categories, keywords } = r.item;
+    const { name, displayName, description, url, thumb, categories, keywords } = r.item;
     const card       = document.createElement('div');
     card.className   = 'gallery-card';
     card.tabIndex    = 0;
     card.dataset.url   = url;
-    card.dataset.name  = description || name;
+    card.dataset.name  = description || displayName;
     card.dataset.thumb = thumb;
 
     const catsHtml = `<div class="gallery-card-cats">` +
@@ -1978,8 +2010,8 @@ function _renderGalleryPage() {
         `<div class="gallery-card-placeholder"></div>` +
       `</div>` +
       `<div class="gallery-card-info">` +
-        `<div class="gallery-card-name">${escHtml(description || name)}</div>` +
-        `<div class="gallery-card-file">${escHtml(name)}</div>` +
+        `<div class="gallery-card-name">${escHtml(description || displayName)}</div>` +
+        `<div class="gallery-card-file">${escHtml(displayName)}</div>` +
         catsHtml +
         kwdHtml +
       `</div>`;
