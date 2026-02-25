@@ -1904,21 +1904,21 @@ const controllers = [buildController(0), buildController(1)];
 //   Trigger press → hit-test against button/row hit-rects → action.
 //   No per-frame redraw — only on page change, filter change, or open.
 
-const GAL_W  = 1024, GAL_H  = 640;
+const GAL_W  = 1536, GAL_H  = 960;   // 1.5× resolution — ~43 px/cm at 0.9 m panel width
 const GAL_PW = 0.9,  GAL_PH = 0.56;
 const GAL_PAGE_SIZE = 8;
-const GAL_CAT_W     = 200;
-const GAL_TOP_H     = 52;
-const GAL_NAV_H     = 56;
+const GAL_CAT_W     = 240;   // wider sidebar — room for longer category names
+const GAL_TOP_H     = 72;    // taller header — breathing room for title + close btn
+const GAL_NAV_H     = 72;    // taller nav bar — larger PREV/NEXT hit targets
 
 // XR gallery uses shared HUD palette (slight opacity increase for world-space)
-const GAL_BG      = 'rgba(10,10,18,0.96)';   // slightly more opaque than HUD_BG
+const GAL_BG      = 'rgba(10,10,18,0.96)';
 const GAL_BORDER  = HUD_BORDER;
 const GAL_ACCENT  = HUD_ACCENT;
 const GAL_TEXT    = HUD_TEXT;
 const GAL_MUTED   = HUD_MUTED;
 const GAL_HOVER   = HUD_HOVER;
-const GAL_SEP     = 'rgba(255,255,255,0.08)'; // slightly less visible than HUD_SEP
+const GAL_SEP     = 'rgba(255,255,255,0.08)';
 const GAL_CAT_ON  = HUD_CAT_ON;
 
 let _galPanel      = null;
@@ -2003,11 +2003,15 @@ function _galFilteredResults() {
   );
 }
 
+// Rounded button — consistent with the menu's visual language.
 function _galDrawBtn(ctx, label, x, y, w, h, disabled = false, color = GAL_TEXT, borderColor = GAL_BORDER) {
-  ctx.strokeStyle = disabled ? GAL_MUTED : borderColor;
+  _menuRoundRect(ctx, x, y, w, h, 10);
+  ctx.fillStyle = disabled ? 'rgba(255,255,255,0.04)' : 'rgba(255,255,255,0.07)';
+  ctx.fill();
+  ctx.strokeStyle = disabled ? 'rgba(255,255,255,0.12)' : borderColor;
   ctx.lineWidth   = 1.5;
-  ctx.strokeRect(x, y, w, h);
-  ctx.font         = 'bold 15px monospace';
+  ctx.stroke();
+  ctx.font         = 'bold 20px Arial, sans-serif';
   ctx.fillStyle    = disabled ? GAL_MUTED : color;
   ctx.textAlign    = 'center';
   ctx.textBaseline = 'middle';
@@ -2024,6 +2028,7 @@ function _galDraw() {
 
   _galHitRects = [];
 
+  // ── Background + border ──────────────────────────────────────────────────────
   ctx.clearRect(0, 0, GAL_W, GAL_H);
   ctx.fillStyle = GAL_BG;
   ctx.fillRect(0, 0, GAL_W, GAL_H);
@@ -2031,54 +2036,85 @@ function _galDraw() {
   ctx.lineWidth   = 2;
   ctx.strokeRect(1, 1, GAL_W - 2, GAL_H - 2);
 
-  // Top bar
+  // ── Top bar ──────────────────────────────────────────────────────────────────
+  // Separator line
   ctx.fillStyle = GAL_SEP;
   ctx.fillRect(0, GAL_TOP_H, GAL_W, 1);
-  ctx.font = 'bold 22px monospace';
-  ctx.fillStyle = GAL_ACCENT;
-  ctx.textAlign = 'left';
+
+  // Subtle gradient shadow under the top bar to lift it from the list
+  const headerGrad = ctx.createLinearGradient(0, GAL_TOP_H, 0, GAL_TOP_H + 28);
+  headerGrad.addColorStop(0, 'rgba(0,0,0,0.22)');
+  headerGrad.addColorStop(1, 'rgba(0,0,0,0)');
+  ctx.fillStyle = headerGrad;
+  ctx.fillRect(0, GAL_TOP_H, GAL_W, 28);
+
+  ctx.font         = 'bold 28px Arial, sans-serif';
+  ctx.fillStyle    = GAL_ACCENT;
+  ctx.textAlign    = 'left';
   ctx.textBaseline = 'middle';
-  ctx.fillText('MODELS', 20, GAL_TOP_H / 2);
-  ctx.font = '16px monospace';
+  ctx.fillText('Browse Models', 24, GAL_TOP_H / 2);
+
+  ctx.font      = '18px Arial, sans-serif';
   ctx.fillStyle = GAL_MUTED;
   ctx.textAlign = 'right';
-  ctx.fillText(`p ${_galPage + 1} / ${maxPage + 1}  ·  ${total} models`, GAL_W - 120, GAL_TOP_H / 2);
+  ctx.fillText(`${_galPage + 1} / ${maxPage + 1}  ·  ${total} models`, GAL_W - 200, GAL_TOP_H / 2);
 
-  // CLOSE button
-  const cBX = GAL_W - 108, cBY = 8, cBW = 100, cBH = GAL_TOP_H - 16;
-  _galDrawBtn(ctx, 'CLOSE', cBX, cBY, cBW, cBH, false, '#ff4444', '#ff4444');
+  // CLOSE button — rounded, red-tinted
+  const cBW = 120, cBH = GAL_TOP_H - 20;
+  const cBX = GAL_W - cBW - 16, cBY = 10;
+  _galDrawBtn(ctx, '✕  Close', cBX, cBY, cBW, cBH, false, '#ff6666', 'rgba(255,80,80,0.6)');
   _galHitRects.push({ x: cBX, y: cBY, w: cBW, h: cBH, action: closeXRGallery });
 
-  // Category sidebar
+  // ── Body layout ──────────────────────────────────────────────────────────────
   const bodyY = GAL_TOP_H + 1;
   const bodyH = GAL_H - GAL_TOP_H - GAL_NAV_H - 1;
+
+  // ── Category sidebar ─────────────────────────────────────────────────────────
+  // Divider
   ctx.fillStyle = GAL_SEP;
   ctx.fillRect(GAL_CAT_W, bodyY, 1, bodyH);
-  ctx.font = 'bold 13px monospace';
-  ctx.fillStyle = GAL_MUTED;
-  ctx.textAlign = 'left';
-  ctx.textBaseline = 'top';
-  ctx.fillText('CATEGORIES', 10, bodyY + 8);
 
-  const catItemH   = 28;
-  const catsVisible = Math.floor((bodyH - 30) / catItemH);
+  ctx.font         = 'bold 16px Arial, sans-serif';
+  ctx.fillStyle    = GAL_MUTED;
+  ctx.textAlign    = 'left';
+  ctx.textBaseline = 'top';
+  ctx.fillText('CATEGORIES', 14, bodyY + 12);
+
+  const catItemH    = 38;
+  const catsVisible = Math.floor((bodyH - 44) / catItemH);
   _galAllCats.slice(0, catsVisible).forEach((cat, i) => {
-    const cy     = bodyY + 30 + i * catItemH;
+    const cy     = bodyY + 44 + i * catItemH;
     const active = _galCategories.has(cat.name);
-    if (active) { ctx.fillStyle = GAL_CAT_ON; ctx.fillRect(2, cy, GAL_CAT_W - 4, catItemH - 2); }
+
+    // Active row fill
+    if (active) {
+      ctx.fillStyle = GAL_CAT_ON;
+      ctx.fillRect(2, cy, GAL_CAT_W - 4, catItemH - 2);
+    }
+
+    // Checkbox (18×18)
+    const cbX = 10, cbY = cy + (catItemH - 18) / 2;
+    _menuRoundRect(ctx, cbX, cbY, 18, 18, 4);
     ctx.strokeStyle = active ? GAL_ACCENT : GAL_MUTED;
-    ctx.lineWidth = 1.5;
-    ctx.strokeRect(8, cy + 7, 14, 14);
-    if (active) { ctx.fillStyle = GAL_ACCENT; ctx.fillRect(10, cy + 9, 10, 10); }
-    ctx.font = '13px monospace';
-    ctx.fillStyle = active ? GAL_ACCENT : GAL_TEXT;
-    ctx.textAlign = 'left';
+    ctx.lineWidth   = 1.5;
+    ctx.stroke();
+    if (active) {
+      ctx.fillStyle = GAL_ACCENT;
+      _menuRoundRect(ctx, cbX + 3, cbY + 3, 12, 12, 2);
+      ctx.fill();
+    }
+
+    ctx.font         = '18px Arial, sans-serif';
+    ctx.fillStyle    = active ? GAL_ACCENT : GAL_TEXT;
+    ctx.textAlign    = 'left';
     ctx.textBaseline = 'middle';
-    ctx.fillText(cat.name, 28, cy + catItemH / 2);
-    ctx.font = '11px monospace';
+    ctx.fillText(cat.name, 36, cy + catItemH / 2);
+
+    ctx.font      = '14px Arial, sans-serif';
     ctx.fillStyle = GAL_MUTED;
     ctx.textAlign = 'right';
-    ctx.fillText(cat.count, GAL_CAT_W - 8, cy + catItemH / 2);
+    ctx.fillText(cat.count, GAL_CAT_W - 10, cy + catItemH / 2);
+
     _galHitRects.push({ x: 2, y: cy, w: GAL_CAT_W - 4, h: catItemH - 2,
       action: () => {
         if (_galCategories.has(cat.name)) _galCategories.delete(cat.name);
@@ -2088,27 +2124,57 @@ function _galDraw() {
     });
   });
 
-  // Results list
-  const listX = GAL_CAT_W + 12;
-  const listW = GAL_W - GAL_CAT_W - 20;
+  // ── Results list ─────────────────────────────────────────────────────────────
+  const listX = GAL_CAT_W + 16;
+  const listW = GAL_W - GAL_CAT_W - 24;
   const rowH  = Math.floor(bodyH / GAL_PAGE_SIZE);
+
+  // Build set of currently-loaded model names for IN SCENE badge
+  const loadedNames = new Set(models.map(e => e.name));
 
   pageItems.forEach((m, i) => {
     const ry      = bodyY + i * rowH;
     const isHover = i === _galHighlight;
-    if (isHover) { ctx.fillStyle = GAL_HOVER; ctx.fillRect(GAL_CAT_W + 2, ry, listW + 6, rowH - 1); }
-    if (i > 0)   { ctx.fillStyle = GAL_SEP;   ctx.fillRect(listX, ry, listW, 1); }
 
+    // Hover: rounded highlight + left accent bar
+    if (isHover) {
+      _menuRoundRect(ctx, GAL_CAT_W + 4, ry + 2, listW - 4, rowH - 4, 8);
+      ctx.fillStyle = GAL_HOVER;
+      ctx.fill();
+      // Left accent bar
+      ctx.fillStyle = GAL_ACCENT;
+      ctx.fillRect(GAL_CAT_W + 4, ry + 6, 3, rowH - 12);
+    }
+
+    // Row separator (skip first)
+    if (i > 0) {
+      ctx.fillStyle = GAL_SEP;
+      ctx.fillRect(listX, ry, listW - 8, 1);
+    }
+
+    // Model description (primary label)
     let label = m.description || m.name;
-    if (label.length > 44) label = label.slice(0, 42) + '\u2026';
-    ctx.font = 'bold 16px monospace';
-    ctx.fillStyle = isHover ? GAL_ACCENT : GAL_TEXT;
-    ctx.textAlign = 'left';
+    if (label.length > 52) label = label.slice(0, 50) + '\u2026';
+    ctx.font         = 'bold 22px Arial, sans-serif';
+    ctx.fillStyle    = isHover ? GAL_ACCENT : GAL_TEXT;
+    ctx.textAlign    = 'left';
     ctx.textBaseline = 'middle';
-    ctx.fillText(label, listX, ry + rowH * 0.38);
-    ctx.font = '12px monospace';
+    ctx.fillText(label, listX + (isHover ? 14 : 6), ry + rowH * 0.36);
+
+    // Filename (secondary label)
+    ctx.font      = '16px Arial, sans-serif';
     ctx.fillStyle = GAL_MUTED;
-    ctx.fillText(m.displayName || m.name, listX, ry + rowH * 0.72);
+    ctx.fillText(m.displayName || m.name, listX + (isHover ? 14 : 6), ry + rowH * 0.68);
+
+    // IN SCENE badge
+    const modelLabel = m.description || m.displayName || m.name;
+    if (loadedNames.has(modelLabel)) {
+      const badgeText = '● IN SCENE';
+      ctx.font      = 'bold 13px Arial, sans-serif';
+      ctx.fillStyle = '#44ff88';
+      ctx.textAlign = 'right';
+      ctx.fillText(badgeText, GAL_W - 20, ry + rowH * 0.36);
+    }
 
     _galHitRects.push({ x: GAL_CAT_W + 2, y: ry, w: listW + 6, h: rowH - 1,
       action: () => { closeXRGallery(); loadFromBrowser(m.url, m.description || m.displayName || m.name); }
@@ -2116,23 +2182,26 @@ function _galDraw() {
   });
 
   if (pageItems.length === 0) {
-    ctx.font = '16px monospace';
-    ctx.fillStyle = GAL_MUTED;
-    ctx.textAlign = 'center';
+    ctx.font         = '20px Arial, sans-serif';
+    ctx.fillStyle    = GAL_MUTED;
+    ctx.textAlign    = 'center';
     ctx.textBaseline = 'middle';
     ctx.fillText('No models match the selected categories.', GAL_CAT_W + listW / 2, bodyY + bodyH / 2);
   }
 
-  // Nav bar
+  // ── Nav bar ──────────────────────────────────────────────────────────────────
   const navY = GAL_H - GAL_NAV_H;
   ctx.fillStyle = GAL_SEP;
   ctx.fillRect(0, navY, GAL_W, 1);
-  const btnW = 160, btnH = GAL_NAV_H - 16;
-  const prevX = GAL_CAT_W + 20, prevY = navY + 8;
-  const nextX = GAL_W - btnW - 20, nextY = navY + 8;
+
+  const btnW = 200, btnH = GAL_NAV_H - 20;
+  const prevX = GAL_CAT_W + 24, prevY = navY + 10;
+  const nextX = GAL_W - btnW - 24, nextY = navY + 10;
   const hasPrev = _galPage > 0, hasNext = _galPage < maxPage;
-  _galDrawBtn(ctx, '\u25c4  PREV', prevX, prevY, btnW, btnH, !hasPrev);
-  _galDrawBtn(ctx, 'NEXT  \u25ba', nextX, nextY, btnW, btnH, !hasNext);
+
+  _galDrawBtn(ctx, '◀  Prev', prevX, prevY, btnW, btnH, !hasPrev);
+  _galDrawBtn(ctx, 'Next  ▶', nextX, nextY, btnW, btnH, !hasNext);
+
   if (hasPrev) _galHitRects.push({ x: prevX, y: prevY, w: btnW, h: btnH,
     action: () => { _galPage--; _galHighlight = -1; _galDraw(); } });
   if (hasNext) _galHitRects.push({ x: nextX, y: nextY, w: btnW, h: btnH,
