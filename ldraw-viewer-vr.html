@@ -955,7 +955,7 @@ function onModelLoaded(model, filename) {
     // re-parents it into root (inside the pivot hierarchy) at correct scale.
     _setupEntryForXR(entry);
 
-    _placeAllPivots();
+    requestPivotPlacement();
   } else {
     fitCamera();
   }
@@ -1313,7 +1313,7 @@ function applyGripRotation(slot, thumbX, thumbY, dt) {
   const angle = ROTATE_SPEED * dt;
 
   if (Math.abs(thumbX) > 0.1) {
-    _rotQuat.setFromAxisAngle(_yawAxis, -thumbX * angle);
+    _rotQuat.setFromAxisAngle(_yawAxis, thumbX * angle);
     slot.grab.offsetQuat.premultiply(_rotQuat);
   }
 
@@ -1339,6 +1339,14 @@ function _closeMenu(pointer) {
 // Called every frame while XR is presenting
 function updateXRControls() {
   _frameCount++;
+
+  // Deferred pivot placement — requested by onXRSessionStart / onModelLoaded.
+  // Runs here because this is the only place guaranteed to execute inside the
+  // XR animation loop, where renderer.xr.getFrame() is valid.
+  if (_pendingPivotPlacement) {
+    _pendingPivotPlacement = false;
+    _placeAllPivots();
+  }
 
   // 1. Update laser visuals — throttled when idle, every frame when active.
   //    Active = at least one slot has an ongoing gesture.
@@ -1567,7 +1575,7 @@ function updateXRControls() {
     if (xPressed && !xWas) {
       if (thumbX > 0 && st.focusCol === 'tabs') {
         // Right → enter panel (only meaningful for MODELS tab which has items)
-        if (st.activeTab === 1) {
+        if (st.activeTab === 0) {
           st.focusCol = 'panel';
           st.focusRow = 0;
           changed = true;
@@ -2274,6 +2282,11 @@ function _setupEntryForXR(entry) {
   // Re-centre mesh so the orb and rotation pivot sit at the model's centroid.
   // 1. Zero any browser-mode position offset so the box reflects geometry only.
   mesh.position.set(0, 0, 0);
+  // Force-update world matrices from pivot downward before computing bounds.
+  // Three.js defers matrix updates to the render loop; when a mesh has just
+  // been reparented (scene.add → root.add), matrixWorld is still stale from
+  // the previous parent, causing Box3.setFromObject to return garbage bounds.
+  entry.pivot.updateWorldMatrix(true, true);
   // 2. Box3 world centre now equals pivot.position + rootScale * geometryCentre_rootLocal.
   const centreWorld = new THREE.Box3().setFromObject(mesh).getCenter(new THREE.Vector3());
   const pivotWorld  = new THREE.Vector3();
@@ -2334,28 +2347,29 @@ function onXRSessionStart(mode) {
     _setupEntryForXR(entry);
   }
 
-  _placeAllPivots();
+  requestPivotPlacement();
 }
 
 // Spread all loaded model pivots evenly in XR space.
-// Polls for the viewer pose (usually frame 1–2) so floor-relative Y is correct.
-// The optional mrMode flag positions the shadow disc when in MR.
-function _placeAllPivots(mrMode = (currentMode === 'mr')) {
-  const poll = () => {
-    const frame    = renderer.xr.getFrame();
-    const refSpace = renderer.xr.getReferenceSpace();
-    if (!frame || !refSpace) { requestAnimationFrame(poll); return; }
-    const pose = frame.getViewerPose(refSpace);
-    if (!pose) { requestAnimationFrame(poll); return; }
+// Must be called from within the XR animation loop (updateXRControls) where
+// renderer.xr.getFrame() is guaranteed to return a valid XRFrame.
+// Call requestPivotPlacement() from outside the loop — it sets a flag that
+// updateXRControls picks up on the very next XR frame.
 
-    let x = 0;
-    for (const entry of models) {
-      entry.pivot.position.set(x, MODEL_PIVOT_Y, MODEL_PIVOT_Z);
-      x += MODEL_SPACING;
-    }
-    if (mrMode) mrShadowDisc.position.set(0, 0.02, MODEL_PIVOT_Z);
-  };
-  requestAnimationFrame(poll);
+let _pendingPivotPlacement = false;
+
+function requestPivotPlacement() {
+  _pendingPivotPlacement = true;
+}
+
+function _placeAllPivots() {
+  const mrMode = (currentMode === 'mr');
+  let x = 0;
+  for (const entry of models) {
+    entry.pivot.position.set(x, MODEL_PIVOT_Y, MODEL_PIVOT_Z);
+    x += MODEL_SPACING;
+  }
+  if (mrMode) mrShadowDisc.position.set(0, 0.02, MODEL_PIVOT_Z);
 }
 
 function onXRSessionEnd() {
