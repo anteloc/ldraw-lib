@@ -492,6 +492,10 @@ const RAYCAST_IDLE_INTERVAL = 3;
 const NUDGE_STEP = 100;   // LDU — about 4 cm at 1:1 scale
 const GRID_HALF  = 2000;  // LDU — half the grid width; models are clamped to ±this
 
+// XR menu navigation timing (milliseconds)
+const MENU_NAV_DELAY  = 400;  // initial hold before repeat starts
+const MENU_NAV_REPEAT = 150;  // repeat interval while thumbstick held
+
 // Model browser / gallery
 const GALLERY_PAGE_SIZE = 48;
 const THUMB_BASE        = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/thumbnails/`;
@@ -840,7 +844,32 @@ function onModelLoaded(model, filename) {
   }
 
   if (models.length === 1) dropZone.style.display = 'none';
-  fitCamera();
+
+  if (renderer.xr.isPresenting) {
+    // XR is active — move mesh into the entry's root, re-centre, size orb.
+    // The mesh was added to scene by createEntry above; _setupEntryForXR
+    // re-parents it into root (inside the pivot hierarchy) at correct scale.
+    _setupEntryForXR(entry);
+
+    // Place the new pivot using the current viewer pose (same polling pattern
+    // as onXRSessionStart — resets all pivot positions to a clean spread).
+    const placeNew = () => {
+      const frame    = renderer.xr.getFrame();
+      const refSpace = renderer.xr.getReferenceSpace();
+      if (!frame || !refSpace) { requestAnimationFrame(placeNew); return; }
+      const pose = frame.getViewerPose(refSpace);
+      if (!pose) { requestAnimationFrame(placeNew); return; }
+      let x = 0;
+      for (const e of models) {
+        e.pivot.position.set(x, MODEL_PIVOT_Y, MODEL_PIVOT_Z);
+        x += MODEL_SPACING;
+      }
+    };
+    requestAnimationFrame(placeNew);
+  } else {
+    fitCamera();
+  }
+
   renderModelList();
   hideLoading();
   setStatus(`Loaded: ${filename} (${models.length}/${MAX_MODELS} in scene)`);
@@ -1033,17 +1062,20 @@ function makeLaser() {
   const group = new THREE.Group();
 
   // Beam — thin cylinder from origin to LASER_LENGTH along –Z
-  const beamMat = new THREE.MeshBasicMaterial({ color: COLOR_IDLE, transparent: true, opacity: 0.6 });
+  const beamMat = new THREE.MeshBasicMaterial({ color: COLOR_IDLE, transparent: true, opacity: 0.6,
+    depthTest: false });
   const beam = new THREE.Mesh(new THREE.CylinderGeometry(LASER_RADIUS, LASER_RADIUS, LASER_LENGTH, 8), beamMat);
-  // CylinderGeometry stands along Y; rotate and translate so it lies along –Z
-  beam.rotation.x = Math.PI / 2;
-  beam.position.z = -LASER_LENGTH / 2;
+  beam.rotation.x   = Math.PI / 2;
+  beam.position.z   = -LASER_LENGTH / 2;
+  beam.renderOrder  = 1000;   // renders after gallery panel (renderOrder 999)
   group.add(beam);
 
   // Tip ring — faces along the ray axis (perpendicular to –Z)
-  const ringMat = new THREE.MeshBasicMaterial({ color: COLOR_IDLE, side: THREE.DoubleSide, transparent: true, opacity: 0.9 });
+  const ringMat = new THREE.MeshBasicMaterial({ color: COLOR_IDLE, side: THREE.DoubleSide,
+    transparent: true, opacity: 0.9, depthTest: false });
   const ring = new THREE.Mesh(new THREE.RingGeometry(0.006, 0.012, 32), ringMat);
-  ring.position.z = -LASER_LENGTH;
+  ring.position.z  = -LASER_LENGTH;
+  ring.renderOrder = 1000;
   group.add(ring);
 
   return group;
@@ -1053,6 +1085,11 @@ function setLaserColor(pointer, color) {
   const laser = pointer.children[0];
   laser.children[0].material.color.setHex(color);  // beam
   laser.children[1].material.color.setHex(color);  // ring
+}
+
+function setLaserVisible(pointer, visible) {
+  const laser = pointer.children[0];
+  laser.visible = visible;
 }
 
 // Called every frame for each controller. Casts a ray against all loaded
@@ -1205,6 +1242,17 @@ function applyRotate(slot) {
   prevPos.copy(_ctrlWorldPos);
 }
 
+// Close the mini-display on a given controller and fully restore model interaction.
+// Called from: A/X toggle, and (Stage 2) when the XR gallery opens.
+function _closeMenu(pointer) {
+  const display = pointer.userData.miniDisplay;
+  if (!display) return;
+  display.visible           = false;
+  display.userData.menuMode = false;
+  // Laser visibility is restored automatically next frame by the raycast block
+  // (setLaserVisible(pointer, true) runs when menuMode is false).
+}
+
 // Called every frame while XR is presenting
 function updateXRControls() {
   _frameCount++;
@@ -1217,12 +1265,36 @@ function updateXRControls() {
   if (doRaycast) {
     for (let i = 0; i < controllers.length; i++) {
       const { pointer } = controllers[i];
+      const inMenu = pointer.userData.miniDisplay?.userData.menuMode ?? false;
+
+      if (inMenu) {
+        setLaserVisible(pointer, false);
+        pointer.userData.hitPoint = null;
+        pointer.userData.hitEntry = null;
+        continue;
+      }
+
+      setLaserVisible(pointer, true);
+
+      // Check gallery hit first — if panel is hit, suppress model raycast
+      const src        = pointer.userData.xrInputSource;
+      const trigNow    = src?.gamepad?.buttons[0]?.pressed ?? false;
+      const trigWas    = pointer.userData.galTrigWas ?? false;
+      pointer.userData.galTrigWas = trigNow;
+
+      const galHit = _galUpdateLaser(pointer, trigNow, trigWas);
+      if (galHit) {
+        // Panel is in focus — show laser but don't hit models
+        pointer.userData.hitPoint = null;
+        pointer.userData.hitEntry = null;
+        setLaserColor(pointer, COLOR_HIT);
+        continue;
+      }
+
+      // Gallery not hit — normal model raycast
       ({ hitPoint: pointer.userData.hitPoint,
          hitEntry: pointer.userData.hitEntry } = updateLaser(pointer));
 
-      // Update idle-state color: green when touching a model, white when not.
-      // Skip if this controller is mid-interaction — startGrab/startRotate own
-      // the color while active, and endInteraction restores it.
       if (slots[i].type === null) {
         const isHit = !!pointer.userData.hitEntry;
         setLaserColor(pointer, isHit ? COLOR_HIT : COLOR_IDLE);
@@ -1236,8 +1308,10 @@ function updateXRControls() {
     if (slot.type === 'rotate') applyRotate(slot);
   }
 
-  // 3. Thumbstick scaling — active on any controller whose laser hits a model
+  // 3. Thumbstick scaling — active on any controller whose laser hits a model.
+  //    Skipped when that controller is in menu mode.
   for (const { pointer } of controllers) {
+    if (pointer.userData.miniDisplay?.userData.menuMode) continue;
     const entry = pointer.userData.hitEntry;
     if (!entry) continue;
 
@@ -1258,10 +1332,10 @@ function updateXRControls() {
   }
 
   // 4. Thumbstick push/pull — move model along the laser ray when idle and hitting.
-  //    up (thumbY < 0) = push away;  down (thumbY > 0) = pull closer.
-  //    Only active when the laser is green (slot idle + hitEntry exists).
+  //    Skipped when that controller is in menu mode.
   for (let i = 0; i < controllers.length; i++) {
     const { pointer } = controllers[i];
+    if (pointer.userData.miniDisplay?.userData.menuMode) continue;
     if (slots[i].type !== null) continue;           // skip — mid-interaction
 
     const entry = pointer.userData.hitEntry;
@@ -1293,9 +1367,9 @@ function updateXRControls() {
     }
   }
 
-  // 6. A/X button — toggle the mini-display; only one controller at a time.
-  //    Uses handedness (set on 'connected') to find the other controller,
-  //    since connection order does not reliably map to left/right.
+  // 6. A/X button — toggle mini-display and menuMode for that controller.
+  //    _closeMenu restores the laser and clears menuMode; called on explicit
+  //    close and will also be called when the gallery opens (Stage 2).
   for (let i = 0; i < controllers.length; i++) {
     const { pointer } = controllers[i];
     const source      = pointer.userData.xrInputSource;
@@ -1303,144 +1377,349 @@ function updateXRControls() {
     const wasPressed  = pointer.userData.prevAXPressed ?? false;
     pointer.userData.prevAXPressed = pressed;
 
-    if (pressed && !wasPressed && pointer.userData.miniDisplay) {
-      const myDisplay = pointer.userData.miniDisplay;
+    if (!(pressed && !wasPressed)) continue;
+    const display = pointer.userData.miniDisplay;
+    if (!display) continue;
 
-      // Find other controller by opposite handedness
+    if (display.visible) {
+      _closeMenu(pointer);
+    } else {
+      // Close other controller's display first (mutual exclusion)
       const otherHand    = pointer.userData.handedness === 'left' ? 'right' : 'left';
       const otherPointer = controllers.find(c => c.pointer.userData.handedness === otherHand)?.pointer;
-      const otherDisplay = otherPointer?.userData.miniDisplay;
+      if (otherPointer?.userData.miniDisplay?.visible) _closeMenu(otherPointer);
 
-      if (myDisplay.visible) {
-        myDisplay.visible = false;
-      } else {
-        if (otherDisplay) otherDisplay.visible = false;
-        myDisplay.visible = true;
+      // Open this display — sync edgesOn from global, reset focus to tab bar
+      display.userData.edgesOn  = edgesVisible;
+      display.userData.focusCol = 'tabs';
+      display.userData.focusRow = display.userData.activeTab;
+      display.userData.menuMode = true;
+      display.userData.draw();
+      display.visible = true;
+      // Laser is hidden by the raycast block above while menuMode is true
+    }
+  }
+
+  // 7. Menu navigation — only runs when a controller is in menu mode.
+  //
+  //    Thumbstick Y (axes[3]): up/down within current column.
+  //      Uses time-based repeat: fires once on deflection, then after
+  //      MENU_NAV_DELAY ms, then every MENU_NAV_REPEAT ms while held.
+  //    Thumbstick X (axes[2]): switch column (tabs ↔ panel), rising-edge only.
+  //    Trigger (buttons[0]):   confirm focused item, rising-edge.
+  //
+  //    All navigation is purely local to the display's userData — no globals
+  //    mutated except edgesVisible (via toggleEdges) on confirm.
+
+  const now = performance.now();
+  for (const { pointer } of controllers) {
+    const display = pointer.userData.miniDisplay;
+    if (!display?.visible || !display.userData.menuMode) continue;
+
+    const source = pointer.userData.xrInputSource;
+    if (!source?.gamepad) continue;
+
+    const st      = display.userData;   // shorthand — same object throughout
+    let   changed = false;
+
+    // ── Thumbstick Y: up/down navigation ──────────────────────────────────────
+    const thumbY    = source.gamepad.axes[3] ?? 0;
+    const yDeflect  = Math.abs(thumbY) > 0.4;
+
+    if (!yDeflect) {
+      // Stick released — reset repeat timer
+      pointer.userData.menuNavRepeatTime = 0;
+      pointer.userData.menuNavFired      = false;
+    } else {
+      const repeatTime = pointer.userData.menuNavRepeatTime ?? 0;
+      const fired      = pointer.userData.menuNavFired      ?? false;
+      const delay      = fired ? MENU_NAV_REPEAT : MENU_NAV_DELAY;
+
+      if (now - repeatTime >= delay) {
+        pointer.userData.menuNavRepeatTime = now;
+        pointer.userData.menuNavFired      = true;
+
+        const dir      = thumbY > 0 ? 1 : -1;   // positive = down = next row
+        const rowCount = st.focusCol === 'tabs'
+          ? MENU_TABS.length
+          : MODELS_PANEL_ITEMS.length;
+        st.focusRow = (st.focusRow + dir + rowCount) % rowCount;
+        changed = true;
       }
     }
+
+    // ── Thumbstick X: switch column, rising-edge ───────────────────────────────
+    const thumbX    = source.gamepad.axes[2] ?? 0;
+    const xPressed  = Math.abs(thumbX) > 0.6;
+    const xWas      = pointer.userData.menuNavXActive ?? false;
+    pointer.userData.menuNavXActive = xPressed;
+
+    if (xPressed && !xWas) {
+      if (thumbX > 0 && st.focusCol === 'tabs') {
+        // Right → enter panel (only meaningful for MODELS tab which has items)
+        if (st.activeTab === 1) {
+          st.focusCol = 'panel';
+          st.focusRow = 0;
+          changed = true;
+        }
+      } else if (thumbX < 0 && st.focusCol === 'panel') {
+        // Left → back to tabs
+        st.focusCol = 'tabs';
+        st.focusRow = st.activeTab;
+        changed = true;
+      }
+    }
+
+    // ── Trigger: confirm, rising-edge ─────────────────────────────────────────
+    const trigPressed = source.gamepad.buttons[0]?.pressed ?? false;
+    const trigWas     = pointer.userData.menuNavTrigWas ?? false;
+    pointer.userData.menuNavTrigWas = trigPressed;
+
+    if (trigPressed && !trigWas) {
+      if (st.focusCol === 'tabs') {
+        // Activate the focused tab
+        if (st.focusRow !== st.activeTab) {
+          st.activeTab = st.focusRow;
+          st.focusCol  = 'tabs';   // stay on tab bar after switching tabs
+          changed = true;
+        }
+      } else {
+        // Confirm item in MODELS panel
+        const item = MODELS_PANEL_ITEMS[st.focusRow];
+        if (item === 'EDGES') {
+          toggleEdges();
+          st.edgesOn = edgesVisible;   // sync display state
+          changed = true;
+        } else if (item === 'BROWSE MODELS') {
+          openXRGallery(pointer);
+        }
+      }
+    }
+
+    // ── When focus moves into tabs column, activating a tab is immediate ───────
+    // (Tab highlight + activeTab update happen together on up/down in tabs col)
+    if (changed && st.focusCol === 'tabs') {
+      st.activeTab = st.focusRow;
+    }
+
+    if (changed) st.draw();
   }
 }
 
-// ── Mini-display ───────────────────────────────────────────────────────────────
+// ── Mini-display ─────────────────────────────────────────────────────────────
 //
-// A rigid virtual screen attached to the controller grip.
-// Parented to grip space — rotates 1:1 with hand/wrist movements.
-// Toggle with A (right) / X (left) — buttons[4].
-// Only one controller shows the display at a time: pressing A/X while the
-// other hand's display is visible hides that one first.
+// A tabbed control panel attached to the controller grip (wrist-mounted).
+// Drawn entirely on a CanvasTexture — redrawn only on state change, zero
+// per-frame cost between interactions.
+//
+// Layout (W=512, H=288):
+//   ┌──────────┬──────────────────────────────┐
+//   │ TAB BAR  │  TAB PANEL                   │
+//   │  HELP ◀  │  (content for active tab)    │
+//   │  MODELS  │                              │
+//   └──────────┴──────────────────────────────┘
+//
+// userData on the group:
+//   activeTab   0=HELP | 1=MODELS
+//   focusCol   'tabs' | 'panel'
+//   focusRow    index within current column
+//   menuMode    bool — thumbstick+trigger routed to menu when true
+//   edgesOn     mirrors global edgesVisible
+//   draw()      call to redraw canvas after any state change
 
-// SVG icon definitions — inline data URLs, drawn onto the canvas via drawImage.
-// Each is 44×44, coloured via `fill` in the SVG, rendered at ~32×32 on canvas.
-function _svgIcon(pathD, fill) {
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
-    <path d="${pathD}" fill="${fill}"/>
-  </svg>`;
-  const img = new Image();
-  img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
-  return img;
+// ── Canvas drawing helpers ─────────────────────────────────────────────────────
+
+const MENU_W = 512, MENU_H = 288;
+
+// Palette — matches the app's CSS variables
+const MENU_BG       = 'rgba(10,10,18,0.92)';
+const MENU_BORDER   = 'rgba(255,255,255,0.18)';
+const MENU_ACCENT   = '#ffcc00';
+const MENU_TEXT     = '#e8e8ec';
+const MENU_MUTED    = '#6b6b78';
+const MENU_FOCUS_BG = 'rgba(255,204,0,0.18)';
+const MENU_SEP      = 'rgba(255,255,255,0.10)';
+
+// Tab definitions — label and panel renderer
+const MENU_TABS = ['HELP', 'MODELS'];
+
+// TAB_W: width of the left tab sidebar
+const TAB_W = 96;
+
+function _menuRoundRect(ctx, x, y, w, h, r) {
+  ctx.beginPath();
+  ctx.moveTo(x + r, y);
+  ctx.lineTo(x + w - r, y); ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+  ctx.lineTo(x + w, y + h - r); ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+  ctx.lineTo(x + r, y + h); ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+  ctx.lineTo(x, y + r); ctx.quadraticCurveTo(x, y, x + r, y);
+  ctx.closePath();
 }
 
-const ICON_SIZE = 28;   // px on canvas
+function _menuBackground(ctx) {
+  _menuRoundRect(ctx, 0, 0, MENU_W, MENU_H, 18);
+  ctx.fillStyle = MENU_BG;
+  ctx.fill();
+  ctx.strokeStyle = MENU_BORDER;
+  ctx.lineWidth = 2;
+  ctx.stroke();
+  // Vertical divider between tab bar and panel
+  ctx.beginPath();
+  ctx.moveTo(TAB_W, 8); ctx.lineTo(TAB_W, MENU_H - 8);
+  ctx.strokeStyle = MENU_SEP;
+  ctx.lineWidth = 1;
+  ctx.stroke();
+}
 
-// Trigger — index finger extended, curling toward a trigger
-// (simplified: a pointing hand silhouette)
-const _iconTrigger = _svgIcon(
-  'M22 4 C18 4 15 7 15 11 L15 24 C15 26 13 28 13 28 L13 36 C13 38 15 40 17 40 L30 40 C32 40 34 38 34 36 L34 26 C34 24 32 22 30 22 L28 22 L28 11 C28 7 25 4 22 4Z M18 22 L18 11 C18 9 20 8 22 8 C24 8 25 9 25 11 L25 22Z',
-  '#ffcc00'
-);
+function _menuDrawTabs(ctx, activeTab, focusCol, focusRow) {
+  const tabH  = MENU_H / MENU_TABS.length;
+  MENU_TABS.forEach((label, i) => {
+    const y         = i * tabH;
+    const isActive  = i === activeTab;
+    const isFocused = focusCol === 'tabs' && i === focusRow;
 
-// Grip — four fingers wrapped, squeeze gesture
-const _iconGrip = _svgIcon(
-  'M12 16 C12 12 15 10 18 10 C19 10 20 10.5 20 10.5 C20 10.5 21 8 23 8 C25 8 26 9.5 26 10.5 C26 10.5 27 9 29 9 C31 9 32 11 32 13 L32 14 C33 14 34 15 34 17 L34 28 C34 33 30 37 25 37 L22 37 C17 37 12 33 12 28Z M18 14 L18 22 M22 13 L22 22 M26 14 L26 22',
-  '#ffcc00'
-);
+    // Focus highlight
+    if (isFocused) {
+      ctx.fillStyle = MENU_FOCUS_BG;
+      ctx.fillRect(2, y + 2, TAB_W - 4, tabH - 4);
+    }
 
-// Stick ←→ — horizontal double-headed arrow
-const _iconStickH = _svgIcon(
-  'M8 22 L16 14 L16 19 L28 19 L28 14 L36 22 L28 30 L28 25 L16 25 L16 30Z',
-  '#44ff44'
-);
+    // Active tab indicator — left accent bar
+    if (isActive) {
+      ctx.fillStyle = MENU_ACCENT;
+      ctx.fillRect(2, y + tabH * 0.2, 3, tabH * 0.6);
+    }
 
-// Stick ↑↓ — vertical double-headed arrow
-const _iconStickV = _svgIcon(
-  'M22 6 L30 14 L25 14 L25 30 L30 30 L22 38 L14 30 L19 30 L19 14 L14 14Z',
-  '#44ff44'
-);
+    ctx.font      = 'bold 18px monospace';
+    ctx.fillStyle = isActive ? MENU_ACCENT : (isFocused ? MENU_TEXT : MENU_MUTED);
+    ctx.textAlign    = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(label, TAB_W / 2, y + tabH / 2);
+  });
+}
+
+// ── Panel renderers ────────────────────────────────────────────────────────────
+
+function _menuDrawHelp(ctx, focusCol) {
+  const x0 = TAB_W + 10;
+  const rows = [
+    { label: 'Trigger',    desc: 'Rotate model' },
+    { label: 'Grip',       desc: 'Grab / move' },
+    { label: 'Stick ←→',  desc: 'Scale' },
+    { label: 'Stick ↑↓',  desc: 'Push / pull' },
+    { label: 'B / Y',      desc: 'Remove model' },
+    { label: 'A / X',      desc: 'Toggle menu' },
+  ];
+  const rowH = (MENU_H - 20) / rows.length;
+  rows.forEach((row, i) => {
+    const y = 10 + i * rowH + rowH * 0.5;
+    ctx.font      = 'bold 15px monospace';
+    ctx.fillStyle = MENU_TEXT;
+    ctx.textAlign    = 'left';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(row.label, x0, y);
+
+    ctx.font      = '13px monospace';
+    ctx.fillStyle = MENU_MUTED;
+    ctx.textAlign = 'right';
+    ctx.fillText(row.desc, MENU_W - 12, y);
+  });
+}
+
+// Items in the MODELS panel — order matters for focusRow mapping
+const MODELS_PANEL_ITEMS = ['EDGES', 'BROWSE MODELS'];
+
+function _menuDrawModels(ctx, focusCol, focusRow, edgesOn) {
+  const x0   = TAB_W + 12;
+  const itemH = 56;
+  const items = MODELS_PANEL_ITEMS;
+
+  items.forEach((label, i) => {
+    const y         = 16 + i * itemH;
+    const isFocused = focusCol === 'panel' && i === focusRow;
+
+    // Focus highlight
+    if (isFocused) {
+      _menuRoundRect(ctx, x0 - 4, y - 2, MENU_W - x0 - 4, itemH - 4, 6);
+      ctx.fillStyle = MENU_FOCUS_BG;
+      ctx.fill();
+      ctx.strokeStyle = MENU_ACCENT;
+      ctx.lineWidth   = 1.5;
+      ctx.stroke();
+    }
+
+    ctx.font      = 'bold 17px monospace';
+    ctx.fillStyle = isFocused ? MENU_ACCENT : MENU_TEXT;
+    ctx.textAlign    = 'left';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(label, x0 + 4, y + itemH * 0.35);
+
+    // Right-side state indicator
+    ctx.textAlign = 'right';
+    if (label === 'EDGES') {
+      ctx.font      = '15px monospace';
+      ctx.fillStyle = edgesOn ? '#44ff88' : MENU_MUTED;
+      ctx.fillText(edgesOn ? 'ON' : 'OFF', MENU_W - 14, y + itemH * 0.35);
+    } else {
+      ctx.font      = '13px monospace';
+      ctx.fillStyle = MENU_MUTED;
+      ctx.fillText('▶', MENU_W - 14, y + itemH * 0.35);
+    }
+  });
+
+  // Thumb-tip hint at the bottom
+  ctx.font      = '11px monospace';
+  ctx.fillStyle = MENU_MUTED;
+  ctx.textAlign    = 'center';
+  ctx.textBaseline = 'bottom';
+  ctx.fillText('← back   ↑↓ move   trigger: confirm', TAB_W + (MENU_W - TAB_W) / 2, MENU_H - 6);
+}
+
+// ── Main draw entry point ──────────────────────────────────────────────────────
+
+function _drawMenu(ctx, texture, state) {
+  ctx.clearRect(0, 0, MENU_W, MENU_H);
+  _menuBackground(ctx);
+  _menuDrawTabs(ctx, state.activeTab, state.focusCol, state.focusRow);
+
+  if (state.activeTab === 0) _menuDrawHelp(ctx, state.focusCol);
+  else                       _menuDrawModels(ctx, state.focusCol, state.focusRow, state.edgesOn);
+
+  texture.needsUpdate = true;
+}
+
+// ── makeMiniDisplay ────────────────────────────────────────────────────────────
 
 function makeMiniDisplay() {
   const group = new THREE.Group();
   group.visible = false;
 
-  // ── Canvas ────────────────────────────────────────────────────────────────
-  const W = 512, H = 256;
-  const canvas = document.createElement('canvas');
-  canvas.width  = W;
-  canvas.height = H;
-  const ctx = canvas.getContext('2d');
-
+  const canvas  = document.createElement('canvas');
+  canvas.width  = MENU_W;
+  canvas.height = MENU_H;
+  const ctx     = canvas.getContext('2d');
   const texture = new THREE.CanvasTexture(canvas);
 
-  function drawPanel(icons) {
-    const r = 22;
-    ctx.clearRect(0, 0, W, H);
+  // Menu state — lives on userData so updateXRControls can read/write it
+  group.userData.activeTab = 0;          // 0=HELP, 1=MODELS
+  group.userData.focusCol  = 'tabs';     // 'tabs' | 'panel'
+  group.userData.focusRow  = 0;
+  group.userData.menuMode  = false;
+  group.userData.edgesOn   = true;       // synced to global edgesVisible on open
 
-    // Rounded background
-    ctx.beginPath();
-    ctx.moveTo(r, 0); ctx.lineTo(W - r, 0);
-    ctx.quadraticCurveTo(W, 0, W, r);
-    ctx.lineTo(W, H - r); ctx.quadraticCurveTo(W, H, W - r, H);
-    ctx.lineTo(r, H);     ctx.quadraticCurveTo(0, H, 0, H - r);
-    ctx.lineTo(0, r);     ctx.quadraticCurveTo(0, 0, r, 0);
-    ctx.closePath();
-    ctx.fillStyle = 'rgba(10, 10, 18, 0.88)';
-    ctx.fill();
-    ctx.strokeStyle = 'rgba(255,255,255,0.18)';
-    ctx.lineWidth = 2;
-    ctx.stroke();
+  // Expose draw so controllers can trigger redraws
+  group.userData.draw = () => _drawMenu(ctx, texture, group.userData);
 
-    // Rows
-    const rows = [
-      { img: icons[0], label: 'Trigger',    desc: 'Rotate' },
-      { img: icons[1], label: 'Grip',       desc: 'Grab / Move' },
-      { img: icons[2], label: 'Stick ← →', desc: 'Scale' },
-      { img: icons[3], label: 'Stick ↑ ↓', desc: 'Push / Pull' },
-    ];
-
-    const rowH = (H - 28) / rows.length;
-    rows.forEach((row, i) => {
-      const y = 20 + i * rowH + rowH * 0.5;
-
-      // SVG icon centred vertically in row
-      ctx.drawImage(row.img, 10, y - ICON_SIZE / 2, ICON_SIZE, ICON_SIZE);
-
-      ctx.font = 'bold 18px monospace';
-      ctx.fillStyle = '#ffffff';
-      ctx.textAlign = 'left';
-      ctx.textBaseline = 'middle';
-      ctx.fillText(row.label, 50, y - 8);
-
-      ctx.font = '15px sans-serif';
-      ctx.fillStyle = 'rgba(255,255,255,0.6)';
-      ctx.fillText(row.desc, 50, y + 12);
-    });
-
-    texture.needsUpdate = true;
-  }
-
-  // Load all four icons, draw once all are ready
-  const icons = [_iconTrigger, _iconGrip, _iconStickH, _iconStickV];
-  let loaded = 0;
-  icons.forEach(img => {
-    if (img.complete) { if (++loaded === 4) drawPanel(icons); }
-    else img.onload = () => { if (++loaded === 4) drawPanel(icons); };
-  });
+  // Initial draw
+  group.userData.draw();
 
   const mat    = new THREE.SpriteMaterial({ map: texture, transparent: true, depthTest: false });
   const sprite = new THREE.Sprite(mat);
-  sprite.scale.set(0.22, 0.11, 1);
+  // Slightly taller than before to accommodate the tabbed layout
+  sprite.scale.set(0.28, 0.16, 1);
   group.add(sprite);
 
-  // ── Position helper — called once from 'connected' event ─────────────────
+  // Position helper — called once from 'connected' event
   group.userData.positionForHand = (handedness) => {
     const side = handedness === 'left' ? 1 : -1;
     group.position.set(side * 0.10, 0.07, 0.01);
@@ -1491,8 +1770,9 @@ for (let i = 0; i < controllers.length; i++) {
 
   pointer.addEventListener('squeezestart', () => {
     if (slot.type) return;
+    if (pointer.userData.miniDisplay?.userData.menuMode) return;
     const { hitPoint, hitEntry } = pointer.userData;
-    if (!hitEntry) return;
+    if (!hitEntry) return;   // also covers gallery-hit case (hitEntry nulled above)
     startGrab(slot, pointer, hitPoint, hitEntry);
   });
   pointer.addEventListener('squeezeend', () => {
@@ -1501,8 +1781,9 @@ for (let i = 0; i < controllers.length; i++) {
 
   pointer.addEventListener('selectstart', () => {
     if (slot.type) return;
+    if (pointer.userData.miniDisplay?.userData.menuMode) return;
     const { hitPoint, hitEntry } = pointer.userData;
-    if (!hitEntry) return;
+    if (!hitEntry) return;   // also covers gallery-hit case
     startRotate(slot, pointer, hitPoint, hitEntry);
   });
   pointer.addEventListener('selectend', () => {
@@ -1510,6 +1791,340 @@ for (let i = 0; i < controllers.length; i++) {
   });
 }
 
+
+// ─── §8b  XR Gallery panel ────────────────────────────────────────────────────
+//
+// A world-space CanvasTexture plane that floats in front of the user.
+// Opened by: BROWSE MODELS in the mini-display menu.
+// Closed by: "CLOSE" button on the panel, or session end.
+//
+// Layout (GAL_W × GAL_H canvas, maps to GAL_PW × GAL_PH metres):
+//   ┌──────────────────────────────────────────────────────────┐
+//   │  [TITLE]                              [CLOSE] [p N/M]   │  topbar
+//   ├────────────────┬─────────────────────────────────────────┤
+//   │  CATEGORIES    │  result rows (GAL_PAGE_SIZE per page)   │
+//   │  □ City        │  Name — filename                        │
+//   └────────────────┴─────────────────────────────────────────┘
+//   ┌──────────────────────────────────────────────────────────┐
+//   │          [◀ PREV]              [NEXT ▶]                  │  nav bar
+//   └──────────────────────────────────────────────────────────┘
+//
+// Interaction: laser raycast against the panel plane.
+//   Trigger press → hit-test against button/row hit-rects → action.
+//   No per-frame redraw — only on page change, filter change, or open.
+
+const GAL_W  = 1024, GAL_H  = 640;
+const GAL_PW = 0.9,  GAL_PH = 0.56;
+const GAL_PAGE_SIZE = 8;
+const GAL_CAT_W     = 200;
+const GAL_TOP_H     = 52;
+const GAL_NAV_H     = 56;
+
+const GAL_BG      = 'rgba(10,10,18,0.96)';
+const GAL_BORDER  = 'rgba(255,255,255,0.18)';
+const GAL_ACCENT  = '#ffcc00';
+const GAL_TEXT    = '#e8e8ec';
+const GAL_MUTED   = '#6b6b78';
+const GAL_HOVER   = 'rgba(255,204,0,0.14)';
+const GAL_SEP     = 'rgba(255,255,255,0.08)';
+const GAL_CAT_ON  = 'rgba(255,204,0,0.22)';
+
+let _galPanel      = null;
+let _galTexture    = null;
+let _galCtx        = null;
+let _galHitRects   = [];
+let _galResults    = [];
+let _galPage       = 0;
+let _galCategories = new Set();
+let _galAllCats    = [];
+let _galHighlight  = -1;
+
+const _galRayOrigin = new THREE.Vector3();
+const _galRayDir    = new THREE.Vector3();
+const _galRaycaster = new THREE.Raycaster();
+
+function _makeGalleryPanel() {
+  const canvas  = document.createElement('canvas');
+  canvas.width  = GAL_W;
+  canvas.height = GAL_H;
+  _galCtx       = canvas.getContext('2d');
+  _galTexture   = new THREE.CanvasTexture(canvas);
+
+  const mat = new THREE.MeshBasicMaterial({
+    map: _galTexture, transparent: true,
+    side: THREE.DoubleSide, depthTest: false,
+  });
+  _galPanel              = new THREE.Mesh(new THREE.PlaneGeometry(GAL_PW, GAL_PH), mat);
+  _galPanel.visible      = false;
+  _galPanel.renderOrder  = 999;
+  scene.add(_galPanel);
+}
+_makeGalleryPanel();
+
+function openXRGallery(pointer) {
+  if (!renderer.xr.isPresenting) return;
+  if (pointer) _closeMenu(pointer);
+
+  _galResults    = mbModels.slice();
+  _galPage       = 0;
+  _galCategories = new Set();
+  _galHighlight  = -1;
+
+  const counts = new Map();
+  for (const m of _galResults) {
+    for (const c of (m.categories ?? ['Other'])) {
+      const k = c.charAt(0).toUpperCase() + c.slice(1);
+      counts.set(k, (counts.get(k) ?? 0) + 1);
+    }
+  }
+  _galAllCats = [...counts.entries()]
+    .sort((a, b) => a[0].localeCompare(b[0]))
+    .map(([name, count]) => ({ name, count }));
+
+  const frame    = renderer.xr.getFrame();
+  const refSpace = renderer.xr.getReferenceSpace();
+  if (frame && refSpace) {
+    const pose = frame.getViewerPose(refSpace);
+    if (pose) {
+      const h   = pose.transform;
+      const fwd = new THREE.Vector3(0, 0, -1).applyQuaternion(
+        new THREE.Quaternion(h.orientation.x, h.orientation.y, h.orientation.z, h.orientation.w)
+      );
+      fwd.y = 0;
+      fwd.normalize();
+      _galPanel.position.set(
+        h.position.x + fwd.x * 1.2,
+        h.position.y,
+        h.position.z + fwd.z * 1.2
+      );
+      _galPanel.lookAt(h.position.x, _galPanel.position.y, h.position.z);
+    }
+  }
+
+  _galDraw();
+  _galPanel.visible = true;
+}
+
+function closeXRGallery() {
+  _galPanel.visible = false;
+  _galResults       = [];
+  _galHitRects      = [];
+  _galHighlight     = -1;
+  // Clear per-pointer highlight so stale state doesn't persist across opens
+  for (const { pointer } of controllers) {
+    pointer.userData.galHighlight = -1;
+  }
+}
+
+function _galFilteredResults() {
+  if (_galCategories.size === 0) return _galResults;
+  return _galResults.filter(m =>
+    (m.categories ?? ['Other']).some(c => {
+      const k = c.charAt(0).toUpperCase() + c.slice(1);
+      return _galCategories.has(k);
+    })
+  );
+}
+
+function _galDrawBtn(ctx, label, x, y, w, h, disabled = false, color = GAL_TEXT, borderColor = GAL_BORDER) {
+  ctx.strokeStyle = disabled ? GAL_MUTED : borderColor;
+  ctx.lineWidth   = 1.5;
+  ctx.strokeRect(x, y, w, h);
+  ctx.font         = 'bold 15px monospace';
+  ctx.fillStyle    = disabled ? GAL_MUTED : color;
+  ctx.textAlign    = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText(label, x + w / 2, y + h / 2);
+}
+
+function _galDraw() {
+  const ctx      = _galCtx;
+  const filtered = _galFilteredResults();
+  const total    = filtered.length;
+  const maxPage  = Math.max(0, Math.ceil(total / GAL_PAGE_SIZE) - 1);
+  _galPage       = Math.min(_galPage, maxPage);
+  const pageItems = filtered.slice(_galPage * GAL_PAGE_SIZE, (_galPage + 1) * GAL_PAGE_SIZE);
+
+  _galHitRects = [];
+
+  ctx.clearRect(0, 0, GAL_W, GAL_H);
+  ctx.fillStyle = GAL_BG;
+  ctx.fillRect(0, 0, GAL_W, GAL_H);
+  ctx.strokeStyle = GAL_BORDER;
+  ctx.lineWidth   = 2;
+  ctx.strokeRect(1, 1, GAL_W - 2, GAL_H - 2);
+
+  // Top bar
+  ctx.fillStyle = GAL_SEP;
+  ctx.fillRect(0, GAL_TOP_H, GAL_W, 1);
+  ctx.font = 'bold 22px monospace';
+  ctx.fillStyle = GAL_ACCENT;
+  ctx.textAlign = 'left';
+  ctx.textBaseline = 'middle';
+  ctx.fillText('MODELS', 20, GAL_TOP_H / 2);
+  ctx.font = '16px monospace';
+  ctx.fillStyle = GAL_MUTED;
+  ctx.textAlign = 'right';
+  ctx.fillText(`p ${_galPage + 1} / ${maxPage + 1}  ·  ${total} models`, GAL_W - 120, GAL_TOP_H / 2);
+
+  // CLOSE button
+  const cBX = GAL_W - 108, cBY = 8, cBW = 100, cBH = GAL_TOP_H - 16;
+  _galDrawBtn(ctx, 'CLOSE', cBX, cBY, cBW, cBH, false, '#ff4444', '#ff4444');
+  _galHitRects.push({ x: cBX, y: cBY, w: cBW, h: cBH, action: closeXRGallery });
+
+  // Category sidebar
+  const bodyY = GAL_TOP_H + 1;
+  const bodyH = GAL_H - GAL_TOP_H - GAL_NAV_H - 1;
+  ctx.fillStyle = GAL_SEP;
+  ctx.fillRect(GAL_CAT_W, bodyY, 1, bodyH);
+  ctx.font = 'bold 13px monospace';
+  ctx.fillStyle = GAL_MUTED;
+  ctx.textAlign = 'left';
+  ctx.textBaseline = 'top';
+  ctx.fillText('CATEGORIES', 10, bodyY + 8);
+
+  const catItemH   = 28;
+  const catsVisible = Math.floor((bodyH - 30) / catItemH);
+  _galAllCats.slice(0, catsVisible).forEach((cat, i) => {
+    const cy     = bodyY + 30 + i * catItemH;
+    const active = _galCategories.has(cat.name);
+    if (active) { ctx.fillStyle = GAL_CAT_ON; ctx.fillRect(2, cy, GAL_CAT_W - 4, catItemH - 2); }
+    ctx.strokeStyle = active ? GAL_ACCENT : GAL_MUTED;
+    ctx.lineWidth = 1.5;
+    ctx.strokeRect(8, cy + 7, 14, 14);
+    if (active) { ctx.fillStyle = GAL_ACCENT; ctx.fillRect(10, cy + 9, 10, 10); }
+    ctx.font = '13px monospace';
+    ctx.fillStyle = active ? GAL_ACCENT : GAL_TEXT;
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(cat.name, 28, cy + catItemH / 2);
+    ctx.font = '11px monospace';
+    ctx.fillStyle = GAL_MUTED;
+    ctx.textAlign = 'right';
+    ctx.fillText(cat.count, GAL_CAT_W - 8, cy + catItemH / 2);
+    _galHitRects.push({ x: 2, y: cy, w: GAL_CAT_W - 4, h: catItemH - 2,
+      action: () => {
+        if (_galCategories.has(cat.name)) _galCategories.delete(cat.name);
+        else                               _galCategories.add(cat.name);
+        _galPage = 0; _galDraw();
+      }
+    });
+  });
+
+  // Results list
+  const listX = GAL_CAT_W + 12;
+  const listW = GAL_W - GAL_CAT_W - 20;
+  const rowH  = Math.floor(bodyH / GAL_PAGE_SIZE);
+
+  pageItems.forEach((m, i) => {
+    const ry      = bodyY + i * rowH;
+    const isHover = i === _galHighlight;
+    if (isHover) { ctx.fillStyle = GAL_HOVER; ctx.fillRect(GAL_CAT_W + 2, ry, listW + 6, rowH - 1); }
+    if (i > 0)   { ctx.fillStyle = GAL_SEP;   ctx.fillRect(listX, ry, listW, 1); }
+
+    let label = m.description || m.name;
+    if (label.length > 44) label = label.slice(0, 42) + '\u2026';
+    ctx.font = 'bold 16px monospace';
+    ctx.fillStyle = isHover ? GAL_ACCENT : GAL_TEXT;
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(label, listX, ry + rowH * 0.38);
+    ctx.font = '12px monospace';
+    ctx.fillStyle = GAL_MUTED;
+    ctx.fillText(m.displayName || m.name, listX, ry + rowH * 0.72);
+
+    _galHitRects.push({ x: GAL_CAT_W + 2, y: ry, w: listW + 6, h: rowH - 1,
+      action: () => loadFromBrowser(m.url, m.description || m.displayName || m.name)
+    });
+  });
+
+  if (pageItems.length === 0) {
+    ctx.font = '16px monospace';
+    ctx.fillStyle = GAL_MUTED;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText('No models match the selected categories.', GAL_CAT_W + listW / 2, bodyY + bodyH / 2);
+  }
+
+  // Nav bar
+  const navY = GAL_H - GAL_NAV_H;
+  ctx.fillStyle = GAL_SEP;
+  ctx.fillRect(0, navY, GAL_W, 1);
+  const btnW = 160, btnH = GAL_NAV_H - 16;
+  const prevX = GAL_CAT_W + 20, prevY = navY + 8;
+  const nextX = GAL_W - btnW - 20, nextY = navY + 8;
+  const hasPrev = _galPage > 0, hasNext = _galPage < maxPage;
+  _galDrawBtn(ctx, '\u25c4  PREV', prevX, prevY, btnW, btnH, !hasPrev);
+  _galDrawBtn(ctx, 'NEXT  \u25ba', nextX, nextY, btnW, btnH, !hasNext);
+  if (hasPrev) _galHitRects.push({ x: prevX, y: prevY, w: btnW, h: btnH,
+    action: () => { _galPage--; _galHighlight = -1; _galDraw(); } });
+  if (hasNext) _galHitRects.push({ x: nextX, y: nextY, w: btnW, h: btnH,
+    action: () => { _galPage++; _galHighlight = -1; _galDraw(); } });
+
+  _galTexture.needsUpdate = true;
+}
+
+function _galUpdateLaser(pointer, triggerPressed, triggerWas) {
+  if (!_galPanel.visible) return false;
+
+  pointer.getWorldPosition(_galRayOrigin);
+  _galRayDir.set(0, 0, -1).transformDirection(pointer.matrixWorld);
+  _galRaycaster.set(_galRayOrigin, _galRayDir);
+
+  const hits = _galRaycaster.intersectObject(_galPanel);
+  if (hits.length === 0) {
+    // Only clear highlight if *this* pointer was the one that had it
+    if (pointer.userData.galHighlight !== undefined && pointer.userData.galHighlight !== -1) {
+      pointer.userData.galHighlight = -1;
+      _galHighlight = -1;
+      _galDraw();
+    }
+    // Restore beam to full length so updateLaser or idle state looks correct
+    const beam = pointer.children[0].children[0];
+    const ring = pointer.children[0].children[1];
+    beam.scale.z    = 1;
+    ring.position.z = -LASER_LENGTH;
+    return false;
+  }
+
+  // Shorten the beam to stop at the panel surface, move ring to contact point
+  const dist = hits[0].distance;
+  const beam = pointer.children[0].children[0];
+  const ring = pointer.children[0].children[1];
+  beam.scale.z    = dist / LASER_LENGTH;
+  ring.position.z = -dist;
+
+  const uv = hits[0].uv;
+  const cx = uv.x * GAL_W;
+  const cy = (1 - uv.y) * GAL_H;
+
+  // Update hover highlight on result rows — stored per-pointer to avoid crosstalk
+  let newHighlight = -1;
+  const bodyY = GAL_TOP_H + 1;
+  const bodyH = GAL_H - GAL_TOP_H - GAL_NAV_H - 1;
+  const rowH  = Math.floor(bodyH / GAL_PAGE_SIZE);
+  for (let i = 0; i < GAL_PAGE_SIZE; i++) {
+    const ry = bodyY + i * rowH;
+    if (cx > GAL_CAT_W + 2 && cy >= ry && cy < ry + rowH - 1) { newHighlight = i; break; }
+  }
+
+  const prevHighlight = pointer.userData.galHighlight ?? -1;
+  pointer.userData.galHighlight = newHighlight;
+
+  if (newHighlight !== prevHighlight) {
+    _galHighlight = newHighlight;
+    _galDraw();
+  }
+
+  if (triggerPressed && !triggerWas) {
+    for (const r of _galHitRects) {
+      if (cx >= r.x && cx <= r.x + r.w && cy >= r.y && cy <= r.y + r.h) {
+        r.action(); break;
+      }
+    }
+  }
+  return true;
+}
 
 // ─── §9  XR session lifecycle — mode tracking, VR/MR buttons ─────────────────
 //
@@ -1528,6 +2143,30 @@ function setMode(mode) {
   modeBadge.className = '';
   if (mode === 'vr') { modeBadge.className = 'vr'; modeBadge.textContent = '● VR'; }
   if (mode === 'mr') { modeBadge.className = 'mr'; modeBadge.textContent = '● MR'; }
+}
+
+// Move a model entry into the XR root hierarchy and size its orb.
+// Called by onXRSessionStart for pre-existing models, and by onModelLoaded
+// for models loaded while XR is already presenting.
+function _setupEntryForXR(entry) {
+  const { mesh, root } = entry;
+  // Move mesh from scene root into the entry's root group (inside pivot)
+  if (mesh.parent !== root) {
+    if (mesh.parent) mesh.parent.remove(mesh);
+    root.add(mesh);
+  }
+  // Re-centre mesh so rotation pivots around its geometric centre
+  const box    = new THREE.Box3().setFromObject(mesh);
+  const centre = box.getCenter(new THREE.Vector3());
+  mesh.position.sub(centre);
+
+  // Size the orb to tightly wrap the re-centred mesh
+  if (entry.orb && entry.orbSphere) {
+    const bs = new THREE.Box3().setFromObject(mesh).getBoundingSphere(new THREE.Sphere());
+    const r  = bs.radius * 1.05;
+    entry.orbSphere.scale.setScalar(r);
+    entry.orb.children.forEach((c, i) => { if (i > 0) c.scale.setScalar(r); });
+  }
 }
 
 function onXRSessionStart(mode) {
@@ -1566,23 +2205,7 @@ function onXRSessionStart(mode) {
   }
 
   for (const entry of models) {
-    const { mesh, pivot, root } = entry;
-    scene.remove(mesh);
-    root.add(mesh);
-    // Re-centre so rotation pivots around model centre
-    const box = new THREE.Box3().setFromObject(mesh);
-    const centre = box.getCenter(new THREE.Vector3());
-    mesh.position.sub(centre);
-
-    // Size the orb to wrap the re-centred mesh in root-local space.
-    // After re-centring, mesh bounding sphere centre ≈ root origin.
-    // Radius is in root-local units (LDU) — root.scale handles world conversion.
-    if (entry.orb && entry.orbSphere) {
-      const bs = new THREE.Box3().setFromObject(mesh).getBoundingSphere(new THREE.Sphere());
-      const r  = bs.radius * 1.05;   // 5% clearance so rings sit just outside
-      entry.orbSphere.scale.setScalar(r);
-      entry.orb.children.forEach((c, i) => { if (i > 0) c.scale.setScalar(r); });
-    }
+    _setupEntryForXR(entry);
   }
 
   // Place pivots using the XR reference space viewer pose so we get the actual
@@ -1610,9 +2233,12 @@ function onXRSessionStart(mode) {
 function onXRSessionEnd() {
   setMode('browser');
 
-  // Drop all active interactions and reset laser colors
+  // Drop all active interactions, close any open menus/gallery, restore lasers
   for (const slot of slots) endInteraction(slot);
+  closeXRGallery();
   for (const { pointer } of controllers) {
+    _closeMenu(pointer);                           // clears menuMode, hides display
+    setLaserVisible(pointer, true);                // ensure laser is visible after session
     setLaserColor(pointer, COLOR_IDLE);
     pointer.userData.hitPoint      = null;
     pointer.userData.hitEntry      = null;
