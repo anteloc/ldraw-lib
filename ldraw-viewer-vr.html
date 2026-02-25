@@ -22,6 +22,10 @@
   .controls { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
   .btn { font-family: 'Space Mono', monospace; font-size: 11px; padding: 7px 14px; border-radius: 4px; border: 1px solid var(--border); background: transparent; color: var(--text); cursor: pointer; text-transform: uppercase; letter-spacing: .08em; transition: all .15s; white-space: nowrap; }
   .btn:hover { border-color: var(--accent); color: var(--accent); }
+  /* Destructive / exit actions — red idle, red-fill on hover */
+  .btn.btn-danger          { border-color: #ff4444; color: #ff4444; background: transparent; }
+  .btn.btn-danger:hover    { border-color: #ff4444; color: var(--bg); background: #ff4444; }
+  .btn.btn-danger:disabled { border-color: var(--border); color: var(--muted); background: transparent; cursor: not-allowed; }
   .btn.primary { background: var(--accent); color: #000; border-color: var(--accent); font-weight: 700; }
   .btn.primary:hover { background: #ffd633; }
   /* MR button gets a cyan accent */
@@ -125,12 +129,6 @@
     font-family: 'Space Mono', monospace; font-size: 10px;
     color: var(--muted); white-space: nowrap; flex-shrink: 0;
   }
-  .gallery-close {
-    background: none; border: none; color: var(--muted);
-    cursor: pointer; font-size: 18px; line-height: 1; padding: 4px;
-    transition: color .15s; flex-shrink: 0;
-  }
-  .gallery-close:hover { color: var(--text); }
 
   .gallery-body {
     flex: 1; display: flex; overflow: hidden;
@@ -318,7 +316,7 @@
     width: auto !important; bottom: auto !important;
     left: auto !important;  right: auto !important;
   }
-  .btn.xr-btn    { border-color: var(--border);    color: var(--text); }
+  .btn.xr-btn    { border-color: var(--border); color: var(--text); }
   .btn.xr-btn-mr { border-color: var(--accent-mr); color: var(--accent-mr); }
   .btn.xr-btn:hover    { border-color: var(--accent); color: var(--accent); background: var(--border); }
   .btn.xr-btn-mr:hover { border-color: var(--accent-mr); color: #000; background: var(--accent-mr); }
@@ -1683,9 +1681,11 @@ if (navigator.xr) {
           onXRSessionStart('vr');
           vrSession = session;
           vrButton.textContent = 'EXIT VR';
+          vrButton.classList.add('btn-danger');
           session.addEventListener('end', () => {
             vrSession = null;
             vrButton.textContent = 'ENTER VR';
+            vrButton.classList.remove('btn-danger');
           });
         }).catch(err => console.error('VR session request failed:', err));
     } else {
@@ -1717,9 +1717,11 @@ if (navigator.xr) {
           onXRSessionStart('mr');
           mrSession = session;
           mrButton.textContent = 'EXIT MR';
+          mrButton.classList.add('btn-danger');
           session.addEventListener('end', () => {
             mrSession = null;
             mrButton.textContent = 'ENTER MR';
+            mrButton.classList.remove('btn-danger');
           });
         }).catch(err => console.error('MR session request failed:', err));
     } else {
@@ -2245,7 +2247,7 @@ document.addEventListener('keydown', e => {
       >
     </div>
     <span class="gallery-status" id="gallery-status"></span>
-    <button class="gallery-close" id="btn-gallery-close" title="Close">✕</button>
+    <button class="btn btn-danger" id="btn-gallery-close" title="Close gallery">Close</button>
   </div>
   <div class="gallery-body">
     <div class="gallery-sidebar">
