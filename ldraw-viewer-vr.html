@@ -595,6 +595,7 @@ const models = [];   // all currently loaded models, in load order
 const _meshList = []; // cached models.map(e => e.mesh) — updated on load/remove
 
 let edgesVisible  = true;
+let orbVisible    = true;   // whether the trackball orb shows during grab
 let selectedEntry = null;   // model currently selected for keyboard nudge
 
 // ── Trackball orb ─────────────────────────────────────────────────────────────
@@ -638,6 +639,75 @@ function makeOrb(entry) {
   return { orb, sphere };
 }
 
+// ── Scale label — floating percentage tag shown while resizing ───────────────
+//
+// One label per model entry. Parented to the pivot so it floats above the
+// model at a fixed world-space offset. Redrawn only when the scale value
+// changes; hidden automatically after SCALE_LABEL_HIDE_MS of no change.
+
+const SCALE_LABEL_W        = 256;
+const SCALE_LABEL_H        = 80;
+const SCALE_LABEL_HIDE_MS  = 1200;   // ms after last scale change before hiding
+
+function makeScaleLabel() {
+  const canvas  = document.createElement('canvas');
+  canvas.width  = SCALE_LABEL_W;
+  canvas.height = SCALE_LABEL_H;
+  const ctx     = canvas.getContext('2d');
+  const texture = new THREE.CanvasTexture(canvas);
+
+  const mat    = new THREE.SpriteMaterial({
+    map: texture, transparent: true, depthTest: false,
+  });
+  const sprite = new THREE.Sprite(mat);
+  sprite.scale.set(0.22, 0.07, 1);   // world-space size in metres
+  sprite.renderOrder = 1001;
+  sprite.visible = false;
+  return { sprite, ctx, texture };
+}
+
+function _drawScaleLabel(entry, pct) {
+  const { ctx, texture } = entry.scaleLabel;
+  ctx.clearRect(0, 0, SCALE_LABEL_W, SCALE_LABEL_H);
+
+  // Pill background
+  const r = SCALE_LABEL_H / 2;
+  ctx.beginPath();
+  ctx.moveTo(r, 0);
+  ctx.lineTo(SCALE_LABEL_W - r, 0);
+  ctx.quadraticCurveTo(SCALE_LABEL_W, 0, SCALE_LABEL_W, r);
+  ctx.quadraticCurveTo(SCALE_LABEL_W, SCALE_LABEL_H, SCALE_LABEL_W - r, SCALE_LABEL_H);
+  ctx.lineTo(r, SCALE_LABEL_H);
+  ctx.quadraticCurveTo(0, SCALE_LABEL_H, 0, r);
+  ctx.quadraticCurveTo(0, 0, r, 0);
+  ctx.closePath();
+  ctx.fillStyle = 'rgba(10,10,18,0.88)';
+  ctx.fill();
+  ctx.strokeStyle = HUD_ACCENT;
+  ctx.lineWidth = 3;
+  ctx.stroke();
+
+  ctx.font         = 'bold 38px monospace';
+  ctx.fillStyle    = HUD_ACCENT;
+  ctx.textAlign    = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText(pct + '%', SCALE_LABEL_W / 2, SCALE_LABEL_H / 2);
+
+  texture.needsUpdate = true;
+}
+
+function showScaleLabel(entry, newScale) {
+  const pct = Math.round(newScale / LDU_TO_METERS * 100);
+  _drawScaleLabel(entry, pct);
+  entry.scaleLabel.sprite.visible = true;
+
+  // Reset hide timer
+  clearTimeout(entry.scaleLabel.hideTimer);
+  entry.scaleLabel.hideTimer = setTimeout(() => {
+    entry.scaleLabel.sprite.visible = false;
+  }, SCALE_LABEL_HIDE_MS);
+}
+
 function createEntry(mesh, name) {
   // Place new XR pivot to the right of all existing ones
   const pivotX = models.reduce((maxX, e) => Math.max(maxX, e.pivot.position.x), 0)
@@ -653,11 +723,17 @@ function createEntry(mesh, name) {
 
   // Orb is parented to root — rigidly attached to the model, rotates with it.
   // Sized in onXRSessionStart once the mesh is re-centred into root-local space.
-  const entry = { mesh, pivot, root, name, orb: null, orbSphere: null };
+  const entry = { mesh, pivot, root, name, orb: null, orbSphere: null, scaleLabel: null };
   const { orb, sphere } = makeOrb(entry);
-  entry.orb       = orb;
-  entry.orbSphere = sphere;
+  entry.orb        = orb;
+  entry.orbSphere  = sphere;
   root.add(orb);
+
+  // Scale label — floats above the model; parented to pivot so it moves with it
+  const scaleLabel = makeScaleLabel();
+  scaleLabel.sprite.position.set(0, 0.18, 0);   // 18 cm above pivot centre
+  pivot.add(scaleLabel.sprite);
+  entry.scaleLabel = scaleLabel;
 
   return entry;
 }
@@ -711,14 +787,19 @@ function removeEntry(entry) {
   }
   if (selectedEntry === entry) selectedEntry = null;
 
-  const { mesh, pivot, root, orb } = entry;
-  mesh.parent?.remove(mesh);   // works in both browser (scene) and XR (root)
+  const { mesh, pivot, root, orb, scaleLabel } = entry;
+  mesh.parent?.remove(mesh);
   scene.remove(pivot);
   disposeMesh(mesh);
   if (orb) orb.traverse(o => {
     if (o.geometry) o.geometry.dispose();
     if (o.material) o.material.dispose();
   });
+  if (scaleLabel) {
+    clearTimeout(scaleLabel.hideTimer);
+    scaleLabel.texture?.dispose();
+    scaleLabel.sprite.material?.dispose();
+  }
 
   models.splice(models.indexOf(entry), 1);
   _meshList.splice(_meshList.indexOf(entry.mesh), 1);
@@ -1340,6 +1421,7 @@ function updateXRControls() {
     );
     entry.root.scale.setScalar(newScale);
     mrShadowDisc.scale.setScalar(newScale / LDU_TO_METERS);
+    showScaleLabel(entry, newScale);
   }
 
   // 4. Thumbstick push/pull — trigger held + thumbstick Y while grabbing.
@@ -1405,6 +1487,7 @@ function updateXRControls() {
 
       // Open this display — sync edgesOn from global, reset focus to tab bar
       display.userData.edgesOn  = edgesVisible;
+      display.userData.orbOn    = orbVisible;
       display.userData.focusCol = 'tabs';
       display.userData.focusRow = display.userData.activeTab;
       display.userData.menuMode = true;
@@ -1504,6 +1587,10 @@ function updateXRControls() {
           toggleEdges();
           st.edgesOn = edgesVisible;
           changed = true;
+        } else if (item.id === 'orb') {
+          orbVisible = !orbVisible;
+          st.orbOn   = orbVisible;
+          changed    = true;
         } else if (item.id === 'browse') {
           openXRGallery(pointer);
         }
@@ -1656,10 +1743,11 @@ function _menuDrawHelp(ctx, focusCol) {
 // Items in the MODELS panel — order maps directly to focusRow index
 const MODELS_PANEL_ITEMS = [
   { id: 'edges',  label: 'EDGES'        },
+  { id: 'orb',    label: 'ORB'          },
   { id: 'browse', label: 'BROWSE MODELS' },
 ];
 
-function _menuDrawModels(ctx, focusCol, focusRow, edgesOn) {
+function _menuDrawModels(ctx, focusCol, focusRow, edgesOn, orbOn) {
   const x0   = TAB_W + 12;
   const itemH = 56;
   const items = MODELS_PANEL_ITEMS;
@@ -1688,6 +1776,10 @@ function _menuDrawModels(ctx, focusCol, focusRow, edgesOn) {
       ctx.font      = '15px monospace';
       ctx.fillStyle = edgesOn ? '#44ff88' : MENU_MUTED;
       ctx.fillText(edgesOn ? 'ON' : 'OFF', MENU_W - 14, y + itemH * 0.35);
+    } else if (id === 'orb') {
+      ctx.font      = '15px monospace';
+      ctx.fillStyle = orbOn ? '#44ff88' : MENU_MUTED;
+      ctx.fillText(orbOn ? 'ON' : 'OFF', MENU_W - 14, y + itemH * 0.35);
     } else {
       ctx.font      = '13px monospace';
       ctx.fillStyle = MENU_MUTED;
@@ -1711,7 +1803,7 @@ function _drawMenu(ctx, texture, state) {
   _menuDrawTabs(ctx, state.activeTab, state.focusCol, state.focusRow);
 
   if (state.activeTab === 0) _menuDrawHelp(ctx, state.focusCol);
-  else                       _menuDrawModels(ctx, state.focusCol, state.focusRow, state.edgesOn);
+  else                       _menuDrawModels(ctx, state.focusCol, state.focusRow, state.edgesOn, state.orbOn);
 
   texture.needsUpdate = true;
 }
@@ -1734,6 +1826,7 @@ function makeMiniDisplay() {
   group.userData.focusRow  = 0;
   group.userData.menuMode  = false;
   group.userData.edgesOn   = true;       // synced to global edgesVisible on open
+  group.userData.orbOn     = true;       // synced to global orbVisible on open
 
   // Expose draw so controllers can trigger redraws
   group.userData.draw = () => _drawMenu(ctx, texture, group.userData);
@@ -1808,7 +1901,7 @@ for (let i = 0; i < controllers.length; i++) {
     const { hitPoint, hitEntry } = pointer.userData;
     if (!hitEntry) return;
     startGrab(slot, pointer, hitPoint, hitEntry);
-    if (hitEntry.orb) hitEntry.orb.visible = true;   // show orb for rotation feedback
+    if (hitEntry.orb && orbVisible) hitEntry.orb.visible = true;
   }
 
   pointer.addEventListener('squeezestart', tryStartGrab);
