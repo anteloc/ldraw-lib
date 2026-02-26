@@ -665,7 +665,11 @@ scene.add(mrShadowDisc);
 
 // ─── §4  Camera + OrbitControls ───────────────────────────────────────────────
 
-const camera = new THREE.PerspectiveCamera(45, 1, 0.01, 50000);
+const camera = new THREE.PerspectiveCamera(45, 1, 1, 50000);
+// Near-plane values differ between browser (LDU units) and XR (metres).
+// Switching on session start/end keeps depth precision optimal in both spaces.
+const CAMERA_NEAR_BROWSER = 1;      // 1 LDU ≈ 0.4 mm — tight for browser depth precision
+const CAMERA_NEAR_XR      = 0.01;   // 1 cm  — keeps controllers/menu visible at arm's reach
 camera.position.set(0, 400, 1200);
 
 const controls = new OrbitControls(camera, renderer.domElement);
@@ -2801,6 +2805,11 @@ function _setupEntryForXR(entry) {
 function onXRSessionStart(mode) {
   setMode(mode);
 
+  // Switch near plane to metres — XR reference space is in real-world metres,
+  // so the browser value (1 LDU) would clip everything within ~1 m of the headset.
+  camera.near = CAMERA_NEAR_XR;
+  camera.updateProjectionMatrix();
+
   // Check whether dom-overlay is actually active in this session.
   // renderer.xr.getSession() is valid from this point onward.
   const session = renderer.xr.getSession();
@@ -2895,6 +2904,8 @@ function onXRSessionEnd() {
   controls.enabled = true;
 
   // Restore browser visuals
+  camera.near = CAMERA_NEAR_BROWSER;
+  camera.updateProjectionMatrix();
   scene.background = BROWSER_BG;
   renderer.setClearColor(0x000000, 1);
   ambientLight.intensity = 0.6;
@@ -3522,7 +3533,10 @@ loadModelFromURL(DEMO_MODEL, 'Fire Truck (demo)', 'Could not load demo — check
 
   function dismissModal() {
     backdrop.classList.add('closing');
-    backdrop.addEventListener('animationend', () => backdrop.remove(), { once: true });
+    // Remove after the CSS fade-out duration (250 ms) — don't rely on
+    // animationend, which can silently fail when the animation hasn't
+    // started yet or the element is partially obscured.
+    setTimeout(() => backdrop.remove(), 300);
   }
 
   document.getElementById('wm-continue').addEventListener('click', dismissModal);
