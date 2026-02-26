@@ -495,7 +495,7 @@ const NUDGE_STEP = 100;   // LDU — about 4 cm at 1:1 scale
 const GRID_HALF  = 2000;  // LDU — half the grid width; models are clamped to ±this
 
 // XR menu navigation timing (milliseconds)
-const MENU_NAV_DELAY  = 400;  // initial hold before repeat starts
+const MENU_NAV_DELAY  = 600;  // initial hold before repeat starts
 const MENU_NAV_REPEAT = 150;  // repeat interval while thumbstick held
 
 // Model browser / gallery
@@ -1490,7 +1490,7 @@ function updateXRControls() {
 
     // Thumbstick Y: up/down with time-based repeat
     const thumbY   = gp.axes[3] ?? 0;
-    const yDeflect = Math.abs(thumbY) > 0.4;
+    const yDeflect = Math.abs(thumbY) > 0.7;
     if (!yDeflect) {
       ctrl.menuNavRepeatTime = 0;
       ctrl.menuNavFired      = false;
@@ -1508,7 +1508,7 @@ function updateXRControls() {
 
     // Thumbstick X: switch column, rising edge
     const thumbX   = gp.axes[2] ?? 0;
-    const xPressed = Math.abs(thumbX) > 0.6;
+    const xPressed = Math.abs(thumbX) > 0.8;
     if (xPressed && !ctrl.menuXActive) {
       if (thumbX > 0 && st.focusCol === 'tabs' && st.activeTab === 0) {
         st.focusCol = 'panel'; st.focusRow = 0; changed = true;
