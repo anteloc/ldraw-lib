@@ -1155,6 +1155,7 @@ let _frameCount = 0;
 
 function makeLaser() {
   const group = new THREE.Group();
+  group.renderOrder = 1002;   // group-level sort key — ensures laser renders above gallery (999/1000)
 
   // Beam — thin cylinder from origin to LASER_LENGTH along –Z
   const beamMat = new THREE.MeshBasicMaterial({ color: COLOR_IDLE, transparent: true, opacity: 0.6,

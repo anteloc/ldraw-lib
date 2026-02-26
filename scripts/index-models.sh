@@ -122,7 +122,7 @@ find "$models_dir" -type f \( -iname "*.ldr" -o -iname "*.mpd" -o -iname "*.dat"
 
     # output one json object per file, then combine them into a json array at the end
     printf '{"name":%s,"description":%s,"keywords":%s,"categories":%s}\n' "$json_name" "$json_description" "$json_keywords" "$json_categories"
-    
+
 done > "$tmp_idx"
 
 # now, replace the existing index with the new one
