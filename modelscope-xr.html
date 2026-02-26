@@ -2048,9 +2048,9 @@ const GAL_PW = 1.30, GAL_PH = 0.81;  // physical panel size in metres (larger fo
 const GAL_PAGE_SIZE = 9;              // 3 × 3 card grid
 
 // Layout pixel values (canvas coords, 1920×1200)
-const GAL_TOP_H    = 80;
-const GAL_NAV_H    = 80;
-const GAL_SEARCH_H = 64;
+const GAL_TOP_H    = 120;
+const GAL_NAV_H    = 100;
+const GAL_SEARCH_H = 110;
 const GAL_COLS     = 3;
 const GAL_ROWS     = 3;
 // Thumb size: fills most of card height, sized in _galDraw (derived, not fixed)
@@ -2248,14 +2248,14 @@ function _makeGalleryPanel() {
 
   // ── Troika text nodes ────────────────────────────────────────────────────────
   // Static / semi-static nodes
-  _makeTxt('title',      { fontSize: 0.020, bold: true,  color: TC_ACCENT, anchorX: 'left'  });
-  _makeTxt('pagination', { fontSize: 0.014, color: TC_MUTED, anchorX: 'right' });
+  _makeTxt('title',      { fontSize: 0.040, bold: true,  color: TC_ACCENT, anchorX: 'left'  });
+  _makeTxt('pagination', { fontSize: 0.028, color: TC_MUTED, anchorX: 'right' });
 
-  _makeTxt('searchHint', { fontSize: 0.015, color: TC_MUTED, anchorX: 'left' });
-  _makeTxt('searchQuery',{ fontSize: 0.015, color: TC_TEXT,  anchorX: 'left' });
-  _makeTxt('prevBtn',    { fontSize: 0.016, bold: true,  anchorX: 'center' });
-  _makeTxt('nextBtn',    { fontSize: 0.016, bold: true,  anchorX: 'center' });
-  _makeTxt('emptyMsg',   { fontSize: 0.016, color: TC_MUTED, anchorX: 'center' });
+  _makeTxt('searchHint', { fontSize: 0.030, color: TC_MUTED, anchorX: 'left' });
+  _makeTxt('searchQuery',{ fontSize: 0.030, color: TC_TEXT,  anchorX: 'left' });
+  _makeTxt('prevBtn',    { fontSize: 0.030, bold: true,  anchorX: 'center' });
+  _makeTxt('nextBtn',    { fontSize: 0.030, bold: true,  anchorX: 'center' });
+  _makeTxt('emptyMsg',   { fontSize: 0.030, color: TC_MUTED, anchorX: 'center' });
 
   // Per-result cards (9 slots — 3×3 grid)
   for (let i = 0; i < GAL_PAGE_SIZE; i++) {
@@ -2398,7 +2398,7 @@ function _galDrawChrome(pageItems, filtered) {
     const srchTextX = srchX + 44;
     ctx.fillStyle = GAL_ACCENT;
     if (_galSearchQuery) {
-      ctx.font = '22px Arial, sans-serif';
+      ctx.font = '44px Arial, sans-serif';
       const m = ctx.measureText(_galSearchQuery.length > 42 ? '…' + _galSearchQuery.slice(-40) : _galSearchQuery);
       ctx.fillRect(srchTextX + m.width + 3, srchY + 8, 2, srchH - 16);
     } else {
@@ -2408,16 +2408,16 @@ function _galDrawChrome(pageItems, filtered) {
 
   // Clear button chrome
   if (_galSearchQuery) {
-    const clrW = 60, clrH = srchH - 8;
+    const clrW = 100, clrH = srchH - 8;
     const clrX = srchX + srchW - clrW - 4, clrY = srchY + 4;
     _menuRoundRect(ctx, clrX, clrY, clrW, clrH, 6);
     ctx.fillStyle = 'rgba(255,255,255,0.08)'; ctx.fill();
   }
 
   // Search icon
-  ctx.font = '22px Arial, sans-serif'; ctx.fillStyle = GAL_MUTED;
+  ctx.font = '44px Arial, sans-serif'; ctx.fillStyle = GAL_MUTED;
   ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
-  ctx.fillText('\uD83D\uDD0D', srchX + 12, srchY + srchH / 2);
+  ctx.fillText('\uD83D\uDD0D', srchX + 16, srchY + srchH / 2);
 
   // Separator below search
   ctx.fillStyle = GAL_SEP; ctx.fillRect(0, bodyY + GAL_SEARCH_H, GAL_W, 1);
@@ -2451,7 +2451,7 @@ function _galDrawChrome(pageItems, filtered) {
   // Nav bar separator + buttons
   const navY = GAL_H - GAL_NAV_H;
   ctx.fillStyle = GAL_SEP; ctx.fillRect(0, navY, GAL_W, 1);
-  const btnW = 220, btnH = GAL_NAV_H - 20;
+  const btnW = 280, btnH = GAL_NAV_H - 20;
   const prevX = 24, prevY = navY + 10;
   const nextX = GAL_W - btnW - 24, nextY = navY + 10;
   [[prevX, prevY, hasPrev], [nextX, nextY, hasNext]].forEach(([bx, by, enabled]) => {
@@ -2492,14 +2492,14 @@ function _galDraw() {
   const bodyH  = GAL_H - GAL_TOP_H - GAL_NAV_H - 1;
   const srchX  = 12, srchY = bodyY + 8;
   const srchW  = GAL_W - 24, srchH = GAL_SEARCH_H - 16;
-  const srchTextX = srchX + 44;
+  const srchTextX = srchX + 72;
 
   if (_galSearchQuery) {
     let q = _galSearchQuery;
     if (q.length > 42) q = '…' + q.slice(-40);
     _setTxt('searchQuery', q, srchTextX, srchY + srchH / 2, { color: TC_TEXT });
     _hideTxt('searchHint');
-    const clrW = 60, clrH = srchH - 8;
+    const clrW = 100, clrH = srchH - 8;
     const clrX = srchX + srchW - clrW - 4, clrY = srchY + 4;
     _galHitRects.push({ x: clrX, y: clrY, w: clrW, h: clrH,
       action: () => {
@@ -2517,7 +2517,7 @@ function _galDraw() {
       _hideTxt('searchHint');
     }
   }
-  const srchHitW = _galSearchQuery ? srchW - 68 : srchW;
+  const srchHitW = _galSearchQuery ? srchW - 112 : srchW;
   _galHitRects.push({ x: srchX, y: srchY, w: srchHitW, h: srchH, action: () => _galFocusSearch() });
 
   // ── 3×3 card grid — full width ───────────────────────────────────────────────
@@ -2584,7 +2584,7 @@ function _galDraw() {
 
   // ── Nav bar ───────────────────────────────────────────────────────────────────
   const navY = GAL_H - GAL_NAV_H;
-  const btnW = 220, btnH = GAL_NAV_H - 20;
+  const btnW = 280, btnH = GAL_NAV_H - 20;
   const prevX = 24, prevY = navY + 10;
   const nextX = GAL_W - btnW - 24, nextY = navY + 10;
   const hasPrev2 = _galPage > 0, hasNext2 = _galPage < maxPage;
