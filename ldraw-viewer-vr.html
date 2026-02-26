@@ -597,7 +597,7 @@ const models = [];   // all currently loaded models, in load order
 const _meshList = []; // cached models.map(e => e.mesh) — updated on load/remove
 
 let edgesVisible  = true;
-let orbVisible    = true;   // whether the trackball orb shows during grab
+let orbVisible    = false;  // whether the trackball orb shows during grab
 let selectedEntry = null;   // model currently selected for keyboard nudge
 
 // ── Trackball orb ─────────────────────────────────────────────────────────────
@@ -1362,6 +1362,25 @@ function updateXRControls() {
     _placeAllPivots();
   }
 
+  // Deferred menu open — auto-show on the left controller when entering XR.
+  // Runs here (not in onXRSessionStart) because xrInputSource / handedness are
+  // only populated after the 'connected' event, which fires inside the XR loop.
+  if (_pendingMenuOpen) {
+    const leftCtrl = controllers.find(c => c.handedness === 'left') ?? controllers[1];
+    if (leftCtrl.handedness !== null || _frameCount > 10) {
+      // Controller identity confirmed (or enough frames elapsed — open anyway)
+      _pendingMenuOpen = false;
+      const { miniDisplay } = leftCtrl;
+      miniDisplay.userData.edgesOn  = edgesVisible;
+      miniDisplay.userData.orbOn    = orbVisible;
+      miniDisplay.userData.focusCol = 'tabs';
+      miniDisplay.userData.focusRow = miniDisplay.userData.activeTab;
+      miniDisplay.userData.menuMode = true;
+      miniDisplay.userData.draw();
+      miniDisplay.visible = true;
+    }
+  }
+
   const anyActive = slots.some(s => s.type !== null);
   const doRaycast = anyActive || (_frameCount % RAYCAST_IDLE_INTERVAL === 0);
   const dt        = 1 / 72;   // nominal frame time; good enough for rotation feel
@@ -1694,9 +1713,9 @@ function _menuDrawHelp(ctx) {
 
 // Items in the MODELS panel — order maps directly to focusRow index
 const MODELS_PANEL_ITEMS = [
+  { id: 'browse', label: 'Browse models', hasToggle: false },
   { id: 'edges',  label: 'Edges',         hasToggle: true  },
   { id: 'orb',    label: 'Rotation orb',  hasToggle: true  },
-  { id: 'browse', label: 'Browse models', hasToggle: false },
 ];
 
 function _menuDrawModels(ctx, focusCol, focusRow, edgesOn, orbOn) {
@@ -1786,7 +1805,7 @@ function makeMiniDisplay() {
   group.userData.focusRow  = 0;
   group.userData.menuMode  = false;
   group.userData.edgesOn   = true;   // synced to global edgesVisible on open
-  group.userData.orbOn     = true;   // synced to global orbVisible on open
+  group.userData.orbOn     = false;  // synced to global orbVisible on open
 
   // Expose draw so updateXRControls can trigger redraws
   group.userData.draw = () => _drawMenu(ctx, texture, group.userData);
@@ -2113,7 +2132,7 @@ function _makeGalleryPanel() {
   // Static / semi-static nodes
   _makeTxt('title',      { fontSize: 0.020, bold: true,  color: TC_ACCENT, anchorX: 'left'  });
   _makeTxt('pagination', { fontSize: 0.014, color: TC_MUTED, anchorX: 'right' });
-  _makeTxt('close',      { fontSize: 0.015, bold: true,  color: TC_RED,    anchorX: 'center' });
+
   _makeTxt('catHeader',  { fontSize: 0.012, bold: true,  color: TC_MUTED,  anchorX: 'left'  });
   _makeTxt('searchHint', { fontSize: 0.015, color: TC_MUTED, anchorX: 'left' });
   _makeTxt('searchQuery',{ fontSize: 0.015, color: TC_TEXT,  anchorX: 'left' });
@@ -2264,13 +2283,6 @@ function _galDrawChrome(pageItems, filtered) {
   hg.addColorStop(0, 'rgba(0,0,0,0.22)'); hg.addColorStop(1, 'rgba(0,0,0,0)');
   ctx.fillStyle = hg; ctx.fillRect(0, GAL_TOP_H, GAL_W, 28);
 
-  // Close button chrome
-  const cBW = 120, cBH = GAL_TOP_H - 20;
-  const cBX = GAL_W - cBW - 16, cBY = 10;
-  _menuRoundRect(ctx, cBX, cBY, cBW, cBH, 10);
-  ctx.fillStyle = 'rgba(255,80,80,0.15)'; ctx.fill();
-  ctx.strokeStyle = 'rgba(255,80,80,0.6)'; ctx.lineWidth = 1.5; ctx.stroke();
-
   // Body layout
   const bodyY = GAL_TOP_H + 1;
   const bodyH = GAL_H - GAL_TOP_H - GAL_NAV_H - 1;
@@ -2403,12 +2415,6 @@ function _galDraw() {
     GAL_TOP_H / 2,
     { anchorX: 'right' }
   );
-  // Close button text — centred in the button chrome
-  const cBW = 120, cBH = GAL_TOP_H - 20;
-  const cBX = GAL_W - cBW - 16, cBY = 10;
-  _setTxt('close', '✕  Close', cBX + cBW / 2, cBY + cBH / 2, { anchorX: 'center', color: TC_RED });
-  _galHitRects.push({ x: cBX, y: cBY, w: cBW, h: cBH, action: closeXRGallery });
-
   // ── Category sidebar ─────────────────────────────────────────────────────────
   const bodyY = GAL_TOP_H + 1;
   const bodyH = GAL_H - GAL_TOP_H - GAL_NAV_H - 1;
@@ -2702,6 +2708,7 @@ function onXRSessionStart(mode) {
   }
 
   requestPivotPlacement();
+  requestMenuOpen();
 }
 
 // Spread all loaded model pivots evenly in XR space.
@@ -2711,9 +2718,14 @@ function onXRSessionStart(mode) {
 // updateXRControls picks up on the very next XR frame.
 
 let _pendingPivotPlacement = false;
+let _pendingMenuOpen       = false;  // auto-open menu on first XR frame
 
 function requestPivotPlacement() {
   _pendingPivotPlacement = true;
+}
+
+function requestMenuOpen() {
+  _pendingMenuOpen = true;
 }
 
 function _placeAllPivots() {
