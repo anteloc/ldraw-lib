@@ -1162,7 +1162,7 @@ function makeLaser() {
   const beam = new THREE.Mesh(new THREE.CylinderGeometry(LASER_RADIUS, LASER_RADIUS, LASER_LENGTH, 8), beamMat);
   beam.rotation.x   = Math.PI / 2;
   beam.position.z   = -LASER_LENGTH / 2;
-  beam.renderOrder  = 1000;   // renders after gallery panel (renderOrder 999)
+  beam.renderOrder  = 1002;   // must exceed gallery bg (999) and troika text (1000)
   group.add(beam);
 
   // Tip ring — faces along the ray axis (perpendicular to –Z)
@@ -1170,7 +1170,7 @@ function makeLaser() {
     transparent: true, opacity: 0.9, depthTest: false });
   const ring = new THREE.Mesh(new THREE.RingGeometry(0.006, 0.012, 32), ringMat);
   ring.position.z  = -LASER_LENGTH;
-  ring.renderOrder = 1000;
+  ring.renderOrder = 1002;
   group.add(ring);
 
   return { group, beam, ring };
@@ -1510,6 +1510,10 @@ function updateXRControls() {
         } else if (item.id === 'orb') {
           orbVisible = !orbVisible; st.orbOn = orbVisible; changed = true;
         } else if (item.id === 'browse') {
+          // Mark galTrigWas=true on this controller so the gallery's first
+          // laser update sees trigger as "held, not newly pressed" — prevents
+          // the same trigger press from immediately selecting the first model.
+          ctrl.galTrigWas = true;
           openXRGallery(ctrl);
         }
       }
@@ -2560,6 +2564,8 @@ function _galUpdateLaser(ctrl, triggerPressed, triggerWas) {
     if (ctrl.galHighlight !== -1) {
       ctrl.galHighlight = -1; _galHighlight = -1; _galDraw();
     }
+    // Trigger press outside the panel → close gallery
+    if (triggerPressed && !triggerWas) closeXRGallery();
     resetLaser(ctrl); return false;
   }
 
