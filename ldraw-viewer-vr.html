@@ -438,7 +438,6 @@
     <h1>LDraw <span>Viewer</span> <span style="font-size:11px;opacity:.4;color:var(--text)">v5</span></h1>
   </div>
   <div class="controls">
-    <button class="btn" id="btn-demo">Load Demo</button>
     <button class="btn" id="btn-browse">Browse Models</button>
     <button class="btn" id="btn-reset-view">Reset View</button>
     <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="anteloc" data-color="#FFDD00" data-emoji="☕" data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff"></script>
@@ -567,7 +566,7 @@ THREE.Mesh.prototype.raycast                      = acceleratedRaycast;
 const BASE_REPO   = 'anteloc/ldraw-lib';
 const REPO_BRANCH = 'master';
 const PARTS_CDN    = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/ldraw/`;
-const DEMO_MODEL   = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/models-packed/8419-1.mpd`;
+const DEMO_MODEL   = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/models-packed/42040-1.mpd.zip`;
 const MODELS_INDEX = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/models-index.jsonl`;
 const RAW_BASE     = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/models-packed/`;
 
@@ -3404,10 +3403,6 @@ function setStatus(s)   { statusEl.textContent = s; }
 // All HTML→JS connections in one place; no onclick attributes in the markup.
 
 // Header buttons
-document.getElementById('btn-demo').addEventListener('click', () => {
-  showLoading('Loading demo…', 'Fetching packed .mpd from GitHub');
-  loadModelFromURL(DEMO_MODEL, 'car (demo)', 'Could not load demo — check your internet connection.');
-});
 document.getElementById('btn-browse').addEventListener('click', openGallery);
 document.getElementById('btn-reset-view').addEventListener('click', resetView);
 document.getElementById('btn-open-file').addEventListener('click', () => document.getElementById('file-input').click());
@@ -3515,6 +3510,11 @@ document.addEventListener('keydown', e => {
 });
 
 
+
+// ─── Auto-load demo on page load ─────────────────────────────────────────────
+// Fires immediately so the model is rendering behind the welcome modal.
+showLoading('Loading demo…', 'Fetching packed .mpd from GitHub');
+loadModelFromURL(DEMO_MODEL, 'Fire Truck (demo)', 'Could not load demo — check your internet connection.');
 
 // ─── Welcome modal ────────────────────────────────────────────────────────────
 (function () {
