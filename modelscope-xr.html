@@ -569,6 +569,8 @@ const PARTS_CDN    = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRAN
 const DEMO_MODEL   = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/models-packed/42040-1.mpd.zip`;
 const MODELS_INDEX = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/models-index.jsonl`;
 const RAW_BASE     = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/models-packed/`;
+const DEMO_VIDEO   = 'https://youtu.be/IhGm3KRSl7s';
+// const DEMO_VIDEO   = 'https://anteloc.github.io/assets/demo.mp4';
 
 // XR scene hierarchy constants
 // LDU → metres: 1 LDU = 0.4 mm = 0.0004 m, ×2.5 = hand-held / table-top scale
@@ -3460,7 +3462,7 @@ loadModelFromURL(DEMO_MODEL, 'Fire Truck (demo)', 'Could not load demo — check
   document.getElementById('wm-continue').addEventListener('click', dismissModal);
   document.getElementById('wm-close').addEventListener('click', dismissModal);
   document.getElementById('wm-watch').addEventListener('click', () => {
-    window.open('https://anteloc.github.io/assets/demo.mp4', '_blank', 'noopener');
+    window.open(DEMO_VIDEO, '_blank', 'noopener');
   });
 
   // Also dismiss on backdrop click (outside the modal box)
