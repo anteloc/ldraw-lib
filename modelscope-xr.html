@@ -2048,12 +2048,17 @@ const GAL_PW = 1.30, GAL_PH = 0.81;  // physical panel size in metres (larger fo
 const GAL_PAGE_SIZE = 9;              // 3 × 3 card grid
 
 // Layout pixel values (canvas coords, 1920×1200)
-const GAL_CAT_W    = 260;
 const GAL_TOP_H    = 80;
 const GAL_NAV_H    = 80;
 const GAL_SEARCH_H = 64;
-const GAL_COLS     = 3;               // grid columns
-const GAL_ROWS     = 3;               // grid rows
+const GAL_COLS     = 3;
+const GAL_ROWS     = 3;
+// Category combo — drawn in the top bar
+const GAL_COMBO_X  = 340;   // left edge of combo pill in top bar
+const GAL_COMBO_W  = 380;   // width of combo pill
+const GAL_COMBO_H  = 48;    // height of combo pill
+const GAL_COMBO_Y  = (GAL_TOP_H - GAL_COMBO_H) / 2;  // vertically centred in top bar
+const GAL_COMBO_ITEM_H = 52; // height of each dropdown item row
 // Thumb size: fills most of card height, sized in _galDraw (derived, not fixed)
 
 // Colours
@@ -2094,7 +2099,8 @@ let _galCtx      = null;
 let _galHitRects   = [];
 let _galResults    = [];
 let _galPage       = 0;
-let _galCategories = new Set();
+let _galActiveCategory = '';   // '' = All; otherwise a _capFirst'd category name
+let _galComboOpen  = false;    // whether the category dropdown is expanded
 let _galAllCats    = [];
 let _galHighlight  = -1;
 let _galSearchQuery  = '';
@@ -2254,17 +2260,16 @@ function _makeGalleryPanel() {
   _makeTxt('title',      { fontSize: 0.020, bold: true,  color: TC_ACCENT, anchorX: 'left'  });
   _makeTxt('pagination', { fontSize: 0.014, color: TC_MUTED, anchorX: 'right' });
 
-  _makeTxt('catHeader',  { fontSize: 0.012, bold: true,  color: TC_MUTED,  anchorX: 'left'  });
+  _makeTxt('comboLabel', { fontSize: 0.015, anchorX: 'left' });
   _makeTxt('searchHint', { fontSize: 0.015, color: TC_MUTED, anchorX: 'left' });
   _makeTxt('searchQuery',{ fontSize: 0.015, color: TC_TEXT,  anchorX: 'left' });
   _makeTxt('prevBtn',    { fontSize: 0.016, bold: true,  anchorX: 'center' });
   _makeTxt('nextBtn',    { fontSize: 0.016, bold: true,  anchorX: 'center' });
   _makeTxt('emptyMsg',   { fontSize: 0.016, color: TC_MUTED, anchorX: 'center' });
 
-  // Per-category rows (up to 12 visible)
-  for (let i = 0; i < 12; i++) {
-    _makeTxt(`catName_${i}`, { fontSize: 0.014, anchorX: 'left' });
-    _makeTxt(`catCount_${i}`,{ fontSize: 0.012, color: TC_MUTED, anchorX: 'right' });
+  // Dropdown items — up to 20 categories + "All"
+  for (let i = 0; i < 21; i++) {
+    _makeTxt(`ddItem_${i}`, { fontSize: 0.014, anchorX: 'left' });
   }
 
   // Per-result cards (9 slots — 3×3 grid)
@@ -2324,12 +2329,13 @@ function openXRGallery(ctrl) {
     return;
   }
 
-  _galResults      = mbModels.slice();
-  _galPage         = 0;
-  _galCategories   = new Set();
-  _galHighlight    = -1;
-  _galSearchQuery  = '';
-  _galSearchActive = false;
+  _galResults        = mbModels.slice();
+  _galPage           = 0;
+  _galActiveCategory = '';
+  _galComboOpen      = false;
+  _galHighlight      = -1;
+  _galSearchQuery    = '';
+  _galSearchActive   = false;
   if (_galSearchInput) _galSearchInput.value = '';
 
   _galAllCats = _buildCategoryCounts(_galResults);
@@ -2360,10 +2366,11 @@ function openXRGallery(ctrl) {
 function closeXRGallery() {
   if (_xrDomOverlayActive) { closeGallery(); return; }
   _galBlurSearch();
-  _galGroup.visible = false;
-  _galResults       = [];
-  _galHitRects      = [];
-  _galHighlight     = -1;
+  _galGroup.visible  = false;
+  _galComboOpen      = false;
+  _galResults        = [];
+  _galHitRects       = [];
+  _galHighlight      = -1;
   for (const ctrl of controllers) ctrl.galHighlight = -1;
 }
 
@@ -2374,10 +2381,8 @@ function _galFilteredResults() {
   } else {
     base = _galResults;
   }
-  if (_galCategories.size === 0) return base;
-  return base.filter(m =>
-    (m.categories ?? ['Other']).some(c => _galCategories.has(_capFirst(c)))
-  );
+  if (!_galActiveCategory) return base;
+  return base.filter(m => _capFirst(m.category ?? 'Other') === _galActiveCategory);
 }
 
 // ── Canvas chrome draw (backgrounds, separators, checkboxes, card placeholders) ──
@@ -2402,35 +2407,43 @@ function _galDrawChrome(pageItems, filtered) {
   hg.addColorStop(0, 'rgba(0,0,0,0.22)'); hg.addColorStop(1, 'rgba(0,0,0,0)');
   ctx.fillStyle = hg; ctx.fillRect(0, GAL_TOP_H, GAL_W, 32);
 
-  // Body layout
+  // Body layout — full width, no sidebar
   const bodyY = GAL_TOP_H + 1;
   const bodyH = GAL_H - GAL_TOP_H - GAL_NAV_H - 1;
 
-  // Category sidebar divider
-  ctx.fillStyle = GAL_SEP; ctx.fillRect(GAL_CAT_W, bodyY, 1, bodyH);
+  // ── Category combo pill (top bar) ─────────────────────────────────────────────
+  const isActive = !!_galActiveCategory;
+  _menuRoundRect(ctx, GAL_COMBO_X, GAL_COMBO_Y, GAL_COMBO_W, GAL_COMBO_H, 8);
+  ctx.fillStyle = isActive ? 'rgba(255,204,0,0.18)' : 'rgba(255,255,255,0.07)'; ctx.fill();
+  ctx.strokeStyle = isActive ? GAL_ACCENT : GAL_BORDER;
+  ctx.lineWidth = isActive ? 2 : 1.5; ctx.stroke();
+  // Chevron ▾
+  ctx.font = '22px Arial, sans-serif'; ctx.fillStyle = isActive ? GAL_ACCENT : GAL_MUTED;
+  ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
+  ctx.fillText(_galComboOpen ? '▴' : '▾', GAL_COMBO_X + GAL_COMBO_W - 14, GAL_COMBO_Y + GAL_COMBO_H / 2);
 
-  // Category checkboxes
-  const catItemH    = 42;
-  const catsVisible = Math.floor((bodyH - 50) / catItemH);
-  _galAllCats.slice(0, catsVisible).forEach((cat, i) => {
-    const cy     = bodyY + 50 + i * catItemH;
-    const active = _galCategories.has(cat.name);
-    if (active) {
-      ctx.fillStyle = GAL_CAT_ON;
-      ctx.fillRect(2, cy, GAL_CAT_W - 4, catItemH - 2);
-    }
-    const cbX = 10, cbY = cy + (catItemH - 18) / 2;
-    _menuRoundRect(ctx, cbX, cbY, 18, 18, 4);
-    ctx.strokeStyle = active ? GAL_ACCENT : GAL_MUTED; ctx.lineWidth = 1.5; ctx.stroke();
-    if (active) {
-      ctx.fillStyle = GAL_ACCENT;
-      _menuRoundRect(ctx, cbX + 3, cbY + 3, 12, 12, 2); ctx.fill();
-    }
-  });
+  // ── Dropdown list (when open) ─────────────────────────────────────────────────
+  if (_galComboOpen) {
+    const items = ['All', ..._galAllCats.map(c => c.name)];
+    const ddX = GAL_COMBO_X, ddW = GAL_COMBO_W;
+    const ddY = GAL_TOP_H + 4;
+    const ddH = items.length * GAL_COMBO_ITEM_H + 8;
+    _menuRoundRect(ctx, ddX, ddY, ddW, ddH, 8);
+    ctx.fillStyle = 'rgba(14,14,22,0.98)'; ctx.fill();
+    ctx.strokeStyle = GAL_ACCENT; ctx.lineWidth = 1.5; ctx.stroke();
+    items.forEach((name, i) => {
+      const iy = ddY + 4 + i * GAL_COMBO_ITEM_H;
+      const sel = (name === 'All' && !_galActiveCategory) || name === _galActiveCategory;
+      if (sel) {
+        _menuRoundRect(ctx, ddX + 4, iy + 2, ddW - 8, GAL_COMBO_ITEM_H - 4, 6);
+        ctx.fillStyle = 'rgba(255,204,0,0.18)'; ctx.fill();
+      }
+    });
+  }
 
-  // Search bar chrome
-  const srchX = GAL_CAT_W + 12, srchY = bodyY + 8;
-  const srchW = GAL_W - GAL_CAT_W - 24, srchH = GAL_SEARCH_H - 16;
+  // Search bar chrome — full width
+  const srchX = 12, srchY = bodyY + 8;
+  const srchW = GAL_W - 24, srchH = GAL_SEARCH_H - 16;
   _menuRoundRect(ctx, srchX, srchY, srchW, srchH, 8);
   ctx.fillStyle = _galSearchActive ? 'rgba(255,255,255,0.10)' : 'rgba(255,255,255,0.06)'; ctx.fill();
   ctx.strokeStyle = _galSearchActive ? GAL_ACCENT : GAL_BORDER;
@@ -2463,30 +2476,26 @@ function _galDrawChrome(pageItems, filtered) {
   ctx.fillText('\uD83D\uDD0D', srchX + 12, srchY + srchH / 2);
 
   // Separator below search
-  ctx.fillStyle = GAL_SEP; ctx.fillRect(GAL_CAT_W + 1, bodyY + GAL_SEARCH_H, GAL_W - GAL_CAT_W - 2, 1);
+  ctx.fillStyle = GAL_SEP; ctx.fillRect(0, bodyY + GAL_SEARCH_H, GAL_W, 1);
 
-  // ── 3×3 card grid chrome ────────────────────────────────────────────────────
+  // ── 3×3 card grid chrome — full width ────────────────────────────────────────
   const gridY   = bodyY + GAL_SEARCH_H + 1;
   const gridH   = bodyH - GAL_SEARCH_H - 1;
-  const gridX   = GAL_CAT_W + 12;
-  const gridW   = GAL_W - GAL_CAT_W - 20;
+  const gridX   = 12;
+  const gridW   = GAL_W - 20;
   const cardW   = Math.floor(gridW / GAL_COLS);
   const cardH   = Math.floor(gridH / GAL_ROWS);
-  const thumbH  = Math.floor(cardH * 0.62);   // thumbnail occupies top 62% of card
-  const thumbW  = thumbH;                      // square thumb
-  const thumbX0 = Math.floor((cardW - thumbW) / 2);  // centred horizontally
+  const thumbH  = Math.floor(cardH * 0.62);
+  const thumbW  = thumbH;
+  const thumbX0 = Math.floor((cardW - thumbW) / 2);
 
   pageItems.forEach((m, i) => {
     const col = i % GAL_COLS, row = Math.floor(i / GAL_COLS);
     const cx  = gridX + col * cardW, cy = gridY + row * cardH;
-
-    // Card background + hover highlight
     const isHover = i === _galHighlight;
     _menuRoundRect(ctx, cx + 4, cy + 4, cardW - 8, cardH - 8, 10);
     ctx.fillStyle = isHover ? GAL_HOVER : 'rgba(255,255,255,0.03)'; ctx.fill();
     ctx.strokeStyle = isHover ? GAL_ACCENT : GAL_BORDER; ctx.lineWidth = isHover ? 1.5 : 1; ctx.stroke();
-
-    // Thumbnail placeholder + accent border
     const tx = cx + thumbX0, ty = cy + 8;
     ctx.fillStyle = 'rgba(255,255,255,0.05)';
     ctx.fillRect(tx, ty, thumbW, thumbH);
@@ -2495,13 +2504,11 @@ function _galDrawChrome(pageItems, filtered) {
     ctx.strokeRect(tx + 0.5, ty + 0.5, thumbW - 1, thumbH - 1);
   });
 
-  // Nav bar separator
+  // Nav bar separator + buttons
   const navY = GAL_H - GAL_NAV_H;
   ctx.fillStyle = GAL_SEP; ctx.fillRect(0, navY, GAL_W, 1);
-
-  // Nav button chrome
   const btnW = 220, btnH = GAL_NAV_H - 20;
-  const prevX = GAL_CAT_W + 24, prevY = navY + 10;
+  const prevX = 24, prevY = navY + 10;
   const nextX = GAL_W - btnW - 24, nextY = navY + 10;
   [[prevX, prevY, hasPrev], [nextX, nextY, hasNext]].forEach(([bx, by, enabled]) => {
     _menuRoundRect(ctx, bx, by, btnW, btnH, 10);
@@ -2533,39 +2540,50 @@ function _galDraw() {
   _setTxt('title', 'Browse Models', 24, GAL_TOP_H / 2);
   _setTxt('pagination',
     `${_galPage + 1} / ${maxPage + 1}  ·  ${total} models`,
-    GAL_W - 16,   // right-aligned, anchorX='right'
-    GAL_TOP_H / 2,
-    { anchorX: 'right' }
+    GAL_W - 16, GAL_TOP_H / 2, { anchorX: 'right' }
   );
-  // ── Category sidebar ─────────────────────────────────────────────────────────
-  const bodyY = GAL_TOP_H + 1;
-  const bodyH = GAL_H - GAL_TOP_H - GAL_NAV_H - 1;
-  _setTxt('catHeader', 'CATEGORIES', 14, bodyY + 12, { anchorX: 'left', anchorY: 'top' });
 
-  const catItemH    = 38;
-  const catsVisible = Math.floor((bodyH - 44) / catItemH);
-  for (let i = 0; i < 12; i++) {
-    if (i < Math.min(_galAllCats.length, catsVisible)) {
-      const cat    = _galAllCats[i];
-      const cy     = bodyY + 44 + i * catItemH;
-      const active = _galCategories.has(cat.name);
-      _setTxt(`catName_${i}`,  cat.name,        36, cy + catItemH / 2, { color: active ? TC_ACCENT : TC_TEXT });
-      _setTxt(`catCount_${i}`, String(cat.count), GAL_CAT_W - 10, cy + catItemH / 2, { anchorX: 'right', color: TC_MUTED });
-      _galHitRects.push({ x: 2, y: cy, w: GAL_CAT_W - 4, h: catItemH - 2,
+  // ── Category combo label ──────────────────────────────────────────────────────
+  const comboLabelX = GAL_COMBO_X + 14;
+  const comboLabelY = GAL_TOP_H / 2;
+  const comboText   = _galActiveCategory ? _galActiveCategory : 'All categories';
+  _setTxt('comboLabel', comboText, comboLabelX, comboLabelY,
+          { color: _galActiveCategory ? TC_ACCENT : TC_MUTED });
+  // Combo hit rect (open/close toggle)
+  _galHitRects.push({ x: GAL_COMBO_X, y: GAL_COMBO_Y, w: GAL_COMBO_W, h: GAL_COMBO_H,
+    action: () => { _galComboOpen = !_galComboOpen; _galDraw(); }
+  });
+
+  // ── Dropdown items (when open) ────────────────────────────────────────────────
+  const ddItems = ['All', ..._galAllCats.map(c => c.name)];
+  if (_galComboOpen) {
+    const ddX = GAL_COMBO_X, ddW = GAL_COMBO_W;
+    const ddY = GAL_TOP_H + 4;
+    ddItems.forEach((name, i) => {
+      const iy  = ddY + 4 + i * GAL_COMBO_ITEM_H;
+      const sel = (name === 'All' && !_galActiveCategory) || name === _galActiveCategory;
+      _setTxt(`ddItem_${i}`, name, ddX + 16, iy + GAL_COMBO_ITEM_H / 2,
+              { color: sel ? TC_ACCENT : TC_TEXT });
+      _galHitRects.push({ x: ddX, y: iy, w: ddW, h: GAL_COMBO_ITEM_H,
         action: () => {
-          if (_galCategories.has(cat.name)) _galCategories.delete(cat.name);
-          else _galCategories.add(cat.name);
-          _galPage = 0; _galDraw();
+          _galActiveCategory = (name === 'All') ? '' : name;
+          _galComboOpen = false;
+          _galPage = 0; _galHighlight = -1;
+          _galDraw();
         }
       });
-    } else {
-      _hideTxt(`catName_${i}`); _hideTxt(`catCount_${i}`);
-    }
+    });
+    // Hide unused dd slots
+    for (let i = ddItems.length; i < 21; i++) _hideTxt(`ddItem_${i}`);
+  } else {
+    for (let i = 0; i < 21; i++) _hideTxt(`ddItem_${i}`);
   }
 
-  // ── Search ───────────────────────────────────────────────────────────────────
-  const srchX = GAL_CAT_W + 12, srchY = bodyY + 8;
-  const srchW = GAL_W - GAL_CAT_W - 24, srchH = GAL_SEARCH_H - 16;
+  // ── Search ────────────────────────────────────────────────────────────────────
+  const bodyY  = GAL_TOP_H + 1;
+  const bodyH  = GAL_H - GAL_TOP_H - GAL_NAV_H - 1;
+  const srchX  = 12, srchY = bodyY + 8;
+  const srchW  = GAL_W - 24, srchH = GAL_SEARCH_H - 16;
   const srchTextX = srchX + 44;
 
   if (_galSearchQuery) {
@@ -2573,7 +2591,6 @@ function _galDraw() {
     if (q.length > 42) q = '…' + q.slice(-40);
     _setTxt('searchQuery', q, srchTextX, srchY + srchH / 2, { color: TC_TEXT });
     _hideTxt('searchHint');
-
     const clrW = 60, clrH = srchH - 8;
     const clrX = srchX + srchW - clrW - 4, clrY = srchY + 4;
     _galHitRects.push({ x: clrX, y: clrY, w: clrW, h: clrH,
@@ -2595,11 +2612,11 @@ function _galDraw() {
   const srchHitW = _galSearchQuery ? srchW - 68 : srchW;
   _galHitRects.push({ x: srchX, y: srchY, w: srchHitW, h: srchH, action: () => _galFocusSearch() });
 
-  // ── 3×3 card grid — text labels + thumbnail meshes ─────────────────────────
+  // ── 3×3 card grid — full width ───────────────────────────────────────────────
   const gridY  = bodyY + GAL_SEARCH_H + 1;
   const gridH  = bodyH - GAL_SEARCH_H - 1;
-  const gridX  = GAL_CAT_W + 12;
-  const gridW  = GAL_W - GAL_CAT_W - 20;
+  const gridX  = 12;
+  const gridW  = GAL_W - 20;
   const cardW  = Math.floor(gridW / GAL_COLS);
   const cardH  = Math.floor(gridH / GAL_ROWS);
   const thumbH = Math.floor(cardH * 0.62);
@@ -2613,23 +2630,18 @@ function _galDraw() {
       const col     = i % GAL_COLS, row = Math.floor(i / GAL_COLS);
       const cx      = gridX + col * cardW, cy = gridY + row * cardH;
       const isHover = i === _galHighlight;
-
-      // Card centre X for centred text
       const cardCX  = cx + cardW / 2;
 
-      // Main label — centred below thumbnail
       let label = m.description || m.name;
       if (label.length > 22) label = label.slice(0, 21) + '…';
       _setTxt(`rowMain_${i}`, label, cardCX, cy + thumbH + 20 + (cardH - thumbH) * 0.30,
               { color: isHover ? TC_ACCENT : TC_TEXT, bold: true, anchorX: 'center' });
 
-      // Sub label (filename)
       let sub = m.displayName || m.name;
       if (sub.length > 22) sub = sub.slice(0, 21) + '…';
       _setTxt(`rowSub_${i}`, sub, cardCX, cy + thumbH + 20 + (cardH - thumbH) * 0.68,
               { color: TC_MUTED, anchorX: 'center' });
 
-      // IN SCENE badge — shown in place of sub label
       const modelLabel = m.description || m.displayName || m.name;
       if (loadedNames.has(modelLabel)) {
         _setTxt(`rowBadge_${i}`, '● IN SCENE', cardCX, cy + thumbH + 20 + (cardH - thumbH) * 0.68,
@@ -2638,15 +2650,12 @@ function _galDraw() {
         _hideTxt(`rowBadge_${i}`);
       }
 
-      // Thumbnail mesh — world-space, sized to thumbW/H in canvas coords
       const thumbCX = cx + thumbX0 + thumbW / 2;
       const thumbCY = cy + 8 + thumbH / 2;
-      // Convert canvas slot size to world metres for _galSetThumb
       const thumbWm = (thumbW / GAL_W) * GAL_PW;
       const thumbHm = (thumbH / GAL_H) * GAL_PH;
       _galSetThumb(i, m.thumb || null, thumbCX, thumbCY, thumbWm, thumbHm);
 
-      // Hit rect covers the entire card
       _galHitRects.push({ x: cx + 4, y: cy + 4, w: cardW - 8, h: cardH - 8,
         action: () => { closeXRGallery(); loadFromBrowser(m.url, m.description || m.displayName || m.name); }
       });
@@ -2661,28 +2670,29 @@ function _galDraw() {
   if (pageItems.length === 0) {
     const emptyMsg = _galSearchQuery
       ? `No results for "${_galSearchQuery}"`
-      : 'No models match the selected categories.';
-    _setTxt('emptyMsg', emptyMsg, GAL_CAT_W + (GAL_W - GAL_CAT_W) / 2, gridY + gridH / 2,
-            { anchorX: 'center', color: TC_MUTED });
+      : _galActiveCategory
+        ? `No models in "${_galActiveCategory}"`
+        : 'No models found.';
+    _setTxt('emptyMsg', emptyMsg, GAL_W / 2, gridY + gridH / 2, { anchorX: 'center', color: TC_MUTED });
   } else {
     _hideTxt('emptyMsg');
   }
 
-  // ── Nav bar ──────────────────────────────────────────────────────────────────
+  // ── Nav bar ───────────────────────────────────────────────────────────────────
   const navY = GAL_H - GAL_NAV_H;
   const btnW = 220, btnH = GAL_NAV_H - 20;
-  const prevX = GAL_CAT_W + 24, prevY = navY + 10;
+  const prevX = 24, prevY = navY + 10;
   const nextX = GAL_W - btnW - 24, nextY = navY + 10;
-  const hasPrev = _galPage > 0, hasNext = _galPage < maxPage;
+  const hasPrev2 = _galPage > 0, hasNext2 = _galPage < maxPage;
 
   _setTxt('prevBtn', '◄  Prev', prevX + btnW / 2, prevY + btnH / 2,
-          { color: hasPrev ? TC_TEXT : TC_MUTED, anchorX: 'center' });
+          { color: hasPrev2 ? TC_TEXT : TC_MUTED, anchorX: 'center' });
   _setTxt('nextBtn', 'Next  ►', nextX + btnW / 2, nextY + btnH / 2,
-          { color: hasNext ? TC_TEXT : TC_MUTED, anchorX: 'center' });
+          { color: hasNext2 ? TC_TEXT : TC_MUTED, anchorX: 'center' });
 
-  if (hasPrev) _galHitRects.push({ x: prevX, y: prevY, w: btnW, h: btnH,
+  if (hasPrev2) _galHitRects.push({ x: prevX, y: prevY, w: btnW, h: btnH,
     action: () => { _galPage--; _galHighlight = -1; _galDraw(); } });
-  if (hasNext) _galHitRects.push({ x: nextX, y: nextY, w: btnW, h: btnH,
+  if (hasNext2) _galHitRects.push({ x: nextX, y: nextY, w: btnW, h: btnH,
     action: () => { _galPage++; _galHighlight = -1; _galDraw(); } });
 }
 
@@ -2712,16 +2722,28 @@ function _galUpdateLaser(ctrl, triggerPressed, triggerWas) {
   const cx = uv.x * GAL_W;
   const cy = (1 - uv.y) * GAL_H;
 
+  // Close combo if open and laser lands outside the dropdown area
+  if (_galComboOpen) {
+    const ddY = GAL_TOP_H + 4;
+    const ddH = (1 + _galAllCats.length) * GAL_COMBO_ITEM_H + 8;
+    const outside = !(cx >= GAL_COMBO_X && cx <= GAL_COMBO_X + GAL_COMBO_W
+                      && cy >= GAL_COMBO_Y && cy <= ddY + ddH);
+    if (outside && triggerPressed && !triggerWas) {
+      _galComboOpen = false; _galDraw();
+      return true;
+    }
+  }
+
   let newHighlight = -1;
   const bodyY  = GAL_TOP_H + 1;
   const bodyH  = GAL_H - GAL_TOP_H - GAL_NAV_H - 1;
   const gridY  = bodyY + GAL_SEARCH_H + 1;
   const gridH  = bodyH - GAL_SEARCH_H - 1;
-  const gridX  = GAL_CAT_W + 12;
-  const gridW  = GAL_W - GAL_CAT_W - 20;
+  const gridX  = 12;
+  const gridW  = GAL_W - 20;
   const cardW  = Math.floor(gridW / GAL_COLS);
   const cardH  = Math.floor(gridH / GAL_ROWS);
-  if (cx > GAL_CAT_W + 2 && cy >= gridY && cy < gridY + gridH) {
+  if (cy >= gridY && cy < gridY + gridH && cx >= gridX) {
     const col = Math.floor((cx - gridX) / cardW);
     const row = Math.floor((cy - gridY) / cardH);
     if (col >= 0 && col < GAL_COLS && row >= 0 && row < GAL_ROWS) {
