@@ -87,8 +87,8 @@
   #model-gallery {
     display: none;
     position: fixed; inset: 0; z-index: 110;
-    background: rgba(8,8,10,.92);
-    backdrop-filter: blur(8px);
+    background: rgba(8,8,10,.96);
+    /* backdrop-filter omitted — interferes with WebXR dom-overlay compositing */
     flex-direction: column;
   }
   #model-gallery.open { display: flex; }
@@ -433,7 +433,8 @@
     "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
     "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/",
     "three-mesh-bvh": "https://cdn.jsdelivr.net/npm/three-mesh-bvh@0.9.4/src/index.js",
-    "fflate": "https://cdn.jsdelivr.net/npm/fflate@0.8.2/esm/browser.js"
+    "fflate": "https://cdn.jsdelivr.net/npm/fflate@0.8.2/esm/browser.js",
+    "troika-three-text": "https://esm.sh/troika-three-text@0.52.4?deps=three@0.169.0"
   }
 }
 </script>
@@ -448,6 +449,7 @@ import { LDrawLoader }              from 'three/addons/loaders/LDrawLoader.js';
 import { RoomEnvironment }          from 'three/addons/environments/RoomEnvironment.js';
 import { XRControllerModelFactory } from 'three/addons/webxr/XRControllerModelFactory.js';
 import { computeBoundsTree, disposeBoundsTree, acceleratedRaycast } from 'three-mesh-bvh';
+import { Text as TroikaText, preloadFont } from 'troika-three-text';
 import { unzipSync }                from 'fflate';
 
 // Patch Three.js prototypes once — every Mesh and BufferGeometry in the scene
@@ -1897,32 +1899,35 @@ const controllers = [buildController(0), buildController(1)];
 // Opened by: BROWSE MODELS in the mini-display menu.
 // Closed by: "CLOSE" button on the panel, or session end.
 //
-// Layout (GAL_W × GAL_H canvas, maps to GAL_PW × GAL_PH metres):
-//   ┌──────────────────────────────────────────────────────────┐
-//   │  [TITLE]                              [CLOSE] [p N/M]   │  topbar
-//   ├────────────────┬─────────────────────────────────────────┤
-//   │  CATEGORIES    │  result rows (GAL_PAGE_SIZE per page)   │
-//   │  □ City        │  Name — filename                        │
-//   └────────────────┴─────────────────────────────────────────┘
-//   ┌──────────────────────────────────────────────────────────┐
-//   │          [◀ PREV]              [NEXT ▶]                  │  nav bar
-//   └──────────────────────────────────────────────────────────┘
+// ─── §8  XR Gallery — troika-three-text + per-mesh thumbnails ────────────────
 //
-// Interaction: laser raycast against the panel plane.
-//   Trigger press → hit-test against button/row hit-rects → action.
-//   No per-frame redraw — only on page change, filter change, or open.
+// Architecture:
+//   _galGroup  — THREE.Group containing everything; positioned/rotated as a unit
+//   _galBgPlane — canvas-textured PlaneGeometry for non-text chrome (bg, borders,
+//                 row separators, checkboxes, hover highlight, thumbnail placeholder)
+//   _galTexts  — pool of TroikaText objects (title, pagination, category labels,
+//                row labels ×2 per slot, nav buttons, search hint/query, IN SCENE)
+//   _galThumbMeshes — 8 PlaneGeometry meshes, one per row slot, with TextureLoader
+//                     textures swapped on page change
+//
+// Raycasting: unchanged — _galUpdateLaser hits _galBgPlane via UV, same hit-rect
+//             system as before (hit-rects are in canvas-pixel coordinates).
 
-const GAL_W  = 1536, GAL_H  = 960;   // 1.5× resolution — ~43 px/cm at 0.9 m panel width
-const GAL_PW = 0.9,  GAL_PH = 0.56;
+// ── Constants ──────────────────────────────────────────────────────────────────
+
+const GAL_W  = 1536, GAL_H  = 960;   // canvas for chrome only — text is geometry
+const GAL_PW = 0.9,  GAL_PH = 0.56;  // physical panel size in metres
 const GAL_PAGE_SIZE = 8;
-const GAL_CAT_W     = 240;   // wider sidebar — room for longer category names
-const GAL_TOP_H     = 72;    // taller header — breathing room for title + close btn
-const GAL_NAV_H     = 72;    // taller nav bar — larger PREV/NEXT hit targets
-const GAL_SEARCH_H  = 60;    // search bar strip at top of body area
-const GAL_THUMB_W   = 76;    // thumbnail width drawn per row
-const GAL_THUMB_H   = 76;    // thumbnail height drawn per row
 
-// XR gallery uses shared HUD palette (slight opacity increase for world-space)
+// Layout pixel values (canvas coords, 1536×960)
+const GAL_CAT_W    = 240;
+const GAL_TOP_H    = 72;
+const GAL_NAV_H    = 72;
+const GAL_SEARCH_H = 60;
+const GAL_THUMB_W  = 76;
+const GAL_THUMB_H  = 76;
+
+// Colours
 const GAL_BG      = 'rgba(10,10,18,0.96)';
 const GAL_BORDER  = HUD_BORDER;
 const GAL_ACCENT  = HUD_ACCENT;
@@ -1932,50 +1937,206 @@ const GAL_HOVER   = HUD_HOVER;
 const GAL_SEP     = 'rgba(255,255,255,0.08)';
 const GAL_CAT_ON  = HUD_CAT_ON;
 
-let _galPanel      = null;
-let _galTexture    = null;
-let _galCtx        = null;
+// Convert a CSS colour string like 'rgba(r,g,b,a)' or '#rrggbb' to a hex number
+// for troika's `color` property.
+function _cssToHex(css) {
+  // fast path for #rrggbb / #rgb
+  if (css.startsWith('#')) return parseInt(css.slice(1).replace(/^(.)(.)(.)$/, '$1$1$2$2$3$3'), 16);
+  // rgba(...) / rgb(...)
+  const m = css.match(/[\d.]+/g);
+  if (!m) return 0xffffff;
+  const r = Math.round(parseFloat(m[0])), g = Math.round(parseFloat(m[1])), b = Math.round(parseFloat(m[2]));
+  return (r << 16) | (g << 8) | b;
+}
+// Pre-compute colours troika will use
+const TC_ACCENT = _cssToHex(GAL_ACCENT);  // e.g. 0x00d4ff
+const TC_TEXT   = _cssToHex(GAL_TEXT);    // e.g. 0xffffff or near
+const TC_MUTED  = _cssToHex(GAL_MUTED);
+const TC_RED    = 0xff6666;
+const TC_GREEN  = 0x44ff88;
+
+// ── State ──────────────────────────────────────────────────────────────────────
+
+let _galGroup    = null;   // THREE.Group — the whole panel
+let _galBgPlane  = null;   // THREE.Mesh  — canvas chrome background
+let _galTexture  = null;   // THREE.CanvasTexture on the bg plane
+let _galCtx      = null;
+
 let _galHitRects   = [];
 let _galResults    = [];
 let _galPage       = 0;
 let _galCategories = new Set();
 let _galAllCats    = [];
 let _galHighlight  = -1;
-let _galSearchQuery  = '';    // current search string
-let _galSearchActive = false; // true while the Quest keyboard is open for this field
-let _galSearchInput  = null;  // hidden DOM <input> — populated in _makeGalleryPanel
-// Thumbnail image cache — keyed by URL, value is HTMLImageElement (may still be loading)
-const _galThumbCache = new Map();
+let _galSearchQuery  = '';
+let _galSearchActive = false;
+let _galSearchInput  = null;
+
+const _galThumbCache = new Map();   // url → { tex: THREE.Texture|null, loaded: bool }
 
 const _galRayOrigin = new THREE.Vector3();
 const _galRayDir    = new THREE.Vector3();
 const _galRaycaster = new THREE.Raycaster();
 
+// ── Troika text pool ───────────────────────────────────────────────────────────
+// Created once in _makeGalleryPanel, updated in _galDraw.
+// Naming convention: _t_<role>[_<index>]
+const _galTroikaPool = {};   // name → TroikaText
+
+function _makeTxt(name, opts = {}) {
+  const t = new TroikaText();
+  if (opts.font) t.font = opts.font;                  // omit → troika default (Roboto)
+  t.fontSize    = opts.fontSize    ?? 0.018;
+  t.color       = opts.color       ?? TC_TEXT;
+  t.anchorX     = opts.anchorX     ?? 'left';
+  t.anchorY     = opts.anchorY     ?? 'middle';
+  t.maxWidth    = opts.maxWidth    ?? undefined;
+  t.overflowWrap = 'break-word';
+  t.depthOffset = -1;                                 // render on top of bg plane
+  t.renderOrder = 1000;
+  if (opts.bold) t.fontWeight = 'bold';
+  _galTroikaPool[name] = t;
+  _galGroup.add(t);
+  return t;
+}
+
+function _setTxt(name, text, x, y, opts = {}) {
+  const t = _galTroikaPool[name];
+  if (!t) return;
+  t.text     = String(text);
+  t.color    = opts.color    ?? t.color;
+  t.fontSize = opts.fontSize ?? t.fontSize;
+  t.anchorX  = opts.anchorX  ?? t.anchorX;
+  t.anchorY  = opts.anchorY  ?? t.anchorY;
+  if (opts.bold !== undefined) t.fontWeight = opts.bold ? 'bold' : 'normal';
+  // Convert canvas pixel coords → metres relative to panel centre
+  // Panel is GAL_PW × GAL_PH with origin at centre.
+  // Canvas: x=0 left, y=0 top; Three.js plane: x=-PW/2 left, y=PH/2 top
+  t.position.x = (x / GAL_W) * GAL_PW - GAL_PW / 2;
+  t.position.y = GAL_PH / 2 - (y / GAL_H) * GAL_PH;
+  t.position.z = 0.001;
+  t.visible    = true;
+  t.sync();
+}
+
+function _hideTxt(name) {
+  const t = _galTroikaPool[name];
+  if (t) t.visible = false;
+}
+
+// ── Thumbnail meshes ───────────────────────────────────────────────────────────
+
+const _galThumbMeshes = [];   // length = GAL_PAGE_SIZE
+const _galThumbLoader = new THREE.TextureLoader();
+
+function _makeThumbMesh() {
+  const geo  = new THREE.PlaneGeometry(1, 1);  // size set per-use
+  const mat  = new THREE.MeshBasicMaterial({ transparent: true, depthTest: false });
+  const mesh = new THREE.Mesh(geo, mat);
+  mesh.renderOrder = 1000;
+  mesh.visible = false;
+  _galGroup.add(mesh);
+  return mesh;
+}
+
+// Load a thumbnail into a thumb mesh slot. Returns immediately; updates mesh async.
+function _galSetThumb(slotIndex, url, cx, cy, w, h) {
+  const mesh = _galThumbMeshes[slotIndex];
+  if (!mesh) return;
+
+  // Position and size in world space
+  const wx = (cx / GAL_W) * GAL_PW - GAL_PW / 2;
+  const wy = GAL_PH / 2 - (cy / GAL_H) * GAL_PH;
+  const ww = (w / GAL_W) * GAL_PW;
+  const wh = (h / GAL_H) * GAL_PH;
+
+  mesh.position.set(wx, wy, 0.001);
+  mesh.scale.set(ww, wh, 1);
+  mesh.visible = false;   // show once texture is ready
+
+  if (!url) return;
+
+  const cached = _galThumbCache.get(url);
+  if (cached) {
+    mesh.material.map = cached;
+    mesh.material.needsUpdate = true;
+    mesh.visible = true;
+    return;
+  }
+
+  _galThumbLoader.load(
+    url,
+    tex => {
+      tex.colorSpace = THREE.SRGBColorSpace;
+      _galThumbCache.set(url, tex);
+      if (mesh.visible !== undefined) {   // still in use
+        mesh.material.map = tex;
+        mesh.material.needsUpdate = true;
+        mesh.visible = true;
+      }
+    },
+    undefined,
+    () => { /* error — keep placeholder on bg canvas */ }
+  );
+}
+
+// ── Panel construction ─────────────────────────────────────────────────────────
+
 function _makeGalleryPanel() {
+  _galGroup = new THREE.Group();
+  _galGroup.renderOrder = 999;
+  scene.add(_galGroup);
+
+  // ── Background canvas (non-text chrome only) ─────────────────────────────────
   const canvas  = document.createElement('canvas');
   canvas.width  = GAL_W;
   canvas.height = GAL_H;
   _galCtx       = canvas.getContext('2d');
   _galTexture   = new THREE.CanvasTexture(canvas);
-  _galTexture.generateMipmaps = true;
-  _galTexture.minFilter       = THREE.LinearMipmapLinearFilter;
-  _galTexture.magFilter       = THREE.LinearFilter;
-  _galTexture.anisotropy      = renderer.capabilities.getMaxAnisotropy();
+  _galTexture.generateMipmaps  = true;
+  _galTexture.minFilter        = THREE.LinearMipmapLinearFilter;
+  _galTexture.magFilter        = THREE.LinearFilter;
+  _galTexture.anisotropy       = renderer.capabilities.getMaxAnisotropy();
 
-  const mat = new THREE.MeshBasicMaterial({
-    map: _galTexture, transparent: true,
-    side: THREE.DoubleSide, depthTest: false,
-  });
-  _galPanel              = new THREE.Mesh(new THREE.PlaneGeometry(GAL_PW, GAL_PH), mat);
-  _galPanel.visible      = false;
-  _galPanel.renderOrder  = 999;
-  scene.add(_galPanel);
+  const mat  = new THREE.MeshBasicMaterial({ map: _galTexture, transparent: true,
+                                              side: THREE.DoubleSide, depthTest: false });
+  _galBgPlane             = new THREE.Mesh(new THREE.PlaneGeometry(GAL_PW, GAL_PH), mat);
+  _galBgPlane.renderOrder = 999;
+  _galGroup.add(_galBgPlane);
 
-  // Hidden DOM input — receives Quest system keyboard text while the gallery is open.
-  // Positioned off-screen so it doesn't affect layout; focused/blurred to trigger the
-  // system keyboard overlay on Meta Quest Browser.
+  // ── Troika text nodes ────────────────────────────────────────────────────────
+  // Static / semi-static nodes
+  _makeTxt('title',      { fontSize: 0.020, bold: true,  color: TC_ACCENT, anchorX: 'left'  });
+  _makeTxt('pagination', { fontSize: 0.014, color: TC_MUTED, anchorX: 'right' });
+  _makeTxt('close',      { fontSize: 0.015, bold: true,  color: TC_RED,    anchorX: 'center' });
+  _makeTxt('catHeader',  { fontSize: 0.012, bold: true,  color: TC_MUTED,  anchorX: 'left'  });
+  _makeTxt('searchHint', { fontSize: 0.015, color: TC_MUTED, anchorX: 'left' });
+  _makeTxt('searchQuery',{ fontSize: 0.015, color: TC_TEXT,  anchorX: 'left' });
+  _makeTxt('prevBtn',    { fontSize: 0.016, bold: true,  anchorX: 'center' });
+  _makeTxt('nextBtn',    { fontSize: 0.016, bold: true,  anchorX: 'center' });
+  _makeTxt('emptyMsg',   { fontSize: 0.016, color: TC_MUTED, anchorX: 'center' });
+
+  // Per-category rows (up to 12 visible)
+  for (let i = 0; i < 12; i++) {
+    _makeTxt(`catName_${i}`, { fontSize: 0.014, anchorX: 'left' });
+    _makeTxt(`catCount_${i}`,{ fontSize: 0.012, color: TC_MUTED, anchorX: 'right' });
+  }
+
+  // Per-result rows (8 slots)
+  for (let i = 0; i < GAL_PAGE_SIZE; i++) {
+    _makeTxt(`rowMain_${i}`,  { fontSize: 0.016, bold: true,  anchorX: 'left', maxWidth: GAL_PW * 0.55 });
+    _makeTxt(`rowSub_${i}`,   { fontSize: 0.013, color: TC_MUTED, anchorX: 'left', maxWidth: GAL_PW * 0.55 });
+    _makeTxt(`rowBadge_${i}`, { fontSize: 0.011, bold: true,  color: TC_GREEN, anchorX: 'right' });
+  }
+
+  // ── Thumbnail meshes ─────────────────────────────────────────────────────────
+  for (let i = 0; i < GAL_PAGE_SIZE; i++) {
+    _galThumbMeshes.push(_makeThumbMesh());
+  }
+
+  // ── Hidden search input ──────────────────────────────────────────────────────
   _galSearchInput = document.createElement('input');
-  _galSearchInput.type        = 'text';
+  _galSearchInput.type         = 'text';
   _galSearchInput.autocomplete = 'off';
   _galSearchInput.style.cssText = 'position:absolute;left:-9999px;top:0;width:1px;height:1px;opacity:0;';
   document.body.appendChild(_galSearchInput);
@@ -1986,32 +2147,37 @@ function _makeGalleryPanel() {
     _galHighlight   = -1;
     _galDraw();
   });
-
-  // Keyboard dismissed (blur) — mark inactive and redraw to remove cursor highlight
   _galSearchInput.addEventListener('blur', () => {
     _galSearchActive = false;
     _galDraw();
   });
+
+  // Preload default font so first open has no pop-in delay
+  preloadFont({}, () => {});
+
+  _galGroup.visible = false;
 }
 _makeGalleryPanel();
 
-// Focus the hidden input to summon the Quest system keyboard.
 function _galFocusSearch() {
   if (!_galSearchInput) return;
   _galSearchActive = true;
   _galSearchInput.focus();
   _galDraw();
 }
-
-// Dismiss the keyboard.
 function _galBlurSearch() {
   if (!_galSearchInput) return;
-  _galSearchInput.blur(); // triggers the blur event above
+  _galSearchInput.blur();
 }
 
 function openXRGallery(ctrl) {
   if (!renderer.xr.isPresenting) return;
   if (ctrl) _closeMenu(ctrl);
+
+  if (_xrDomOverlayActive) {
+    openGallery();
+    return;
+  }
 
   _galResults      = mbModels.slice();
   _galPage         = 0;
@@ -2032,24 +2198,24 @@ function openXRGallery(ctrl) {
       const fwd = new THREE.Vector3(0, 0, -1).applyQuaternion(
         new THREE.Quaternion(h.orientation.x, h.orientation.y, h.orientation.z, h.orientation.w)
       );
-      fwd.y = 0;
-      fwd.normalize();
-      _galPanel.position.set(
+      fwd.y = 0; fwd.normalize();
+      _galGroup.position.set(
         h.position.x + fwd.x * 1.2,
         h.position.y,
         h.position.z + fwd.z * 1.2
       );
-      _galPanel.lookAt(h.position.x, _galPanel.position.y, h.position.z);
+      _galGroup.lookAt(h.position.x, _galGroup.position.y, h.position.z);
     }
   }
 
   _galDraw();
-  _galPanel.visible = true;
+  _galGroup.visible = true;
 }
 
 function closeXRGallery() {
+  if (_xrDomOverlayActive) { closeGallery(); return; }
   _galBlurSearch();
-  _galPanel.visible = false;
+  _galGroup.visible = false;
   _galResults       = [];
   _galHitRects      = [];
   _galHighlight     = -1;
@@ -2057,61 +2223,158 @@ function closeXRGallery() {
 }
 
 function _galFilteredResults() {
-  // Start from fuzzy-search results if a query is active, otherwise full list
   let base;
   if (_galSearchQuery && mbFuse) {
     base = mbFuse.search(_galSearchQuery).map(r => r.item);
   } else {
     base = _galResults;
   }
-  // Then apply category filter on top
   if (_galCategories.size === 0) return base;
   return base.filter(m =>
     (m.categories ?? ['Other']).some(c => _galCategories.has(_capFirst(c)))
   );
 }
 
-// Rounded button — consistent with the menu's visual language.
-function _galDrawBtn(ctx, label, x, y, w, h, disabled = false, color = GAL_TEXT, borderColor = GAL_BORDER) {
-  _menuRoundRect(ctx, x, y, w, h, 10);
-  ctx.fillStyle = disabled ? 'rgba(255,255,255,0.04)' : 'rgba(255,255,255,0.07)';
-  ctx.fill();
-  ctx.strokeStyle = disabled ? 'rgba(255,255,255,0.12)' : borderColor;
-  ctx.lineWidth   = 1.5;
-  ctx.stroke();
-  ctx.font         = 'bold 20px Arial, sans-serif';
-  ctx.fillStyle    = disabled ? GAL_MUTED : color;
-  ctx.textAlign    = 'center';
-  ctx.textBaseline = 'middle';
-  ctx.fillText(label, x + w / 2, y + h / 2);
+// ── Canvas chrome draw (backgrounds, separators, checkboxes, hover) ────────────
+function _galDrawChrome(pageItems, filtered) {
+  const ctx      = _galCtx;
+  const total    = filtered.length;
+  const maxPage  = Math.max(0, Math.ceil(total / GAL_PAGE_SIZE) - 1);
+  const hasPrev  = _galPage > 0;
+  const hasNext  = _galPage < maxPage;
+
+  ctx.clearRect(0, 0, GAL_W, GAL_H);
+  ctx.fillStyle = GAL_BG;
+  ctx.fillRect(0, 0, GAL_W, GAL_H);
+
+  // Outer border
+  ctx.strokeStyle = GAL_BORDER;
+  ctx.lineWidth   = 2;
+  ctx.strokeRect(1, 1, GAL_W - 2, GAL_H - 2);
+
+  // Top bar separator + subtle gradient
+  ctx.fillStyle = GAL_SEP;
+  ctx.fillRect(0, GAL_TOP_H, GAL_W, 1);
+  const hg = ctx.createLinearGradient(0, GAL_TOP_H, 0, GAL_TOP_H + 28);
+  hg.addColorStop(0, 'rgba(0,0,0,0.22)'); hg.addColorStop(1, 'rgba(0,0,0,0)');
+  ctx.fillStyle = hg; ctx.fillRect(0, GAL_TOP_H, GAL_W, 28);
+
+  // Close button chrome
+  const cBW = 120, cBH = GAL_TOP_H - 20;
+  const cBX = GAL_W - cBW - 16, cBY = 10;
+  _menuRoundRect(ctx, cBX, cBY, cBW, cBH, 10);
+  ctx.fillStyle = 'rgba(255,80,80,0.15)'; ctx.fill();
+  ctx.strokeStyle = 'rgba(255,80,80,0.6)'; ctx.lineWidth = 1.5; ctx.stroke();
+
+  // Body layout
+  const bodyY = GAL_TOP_H + 1;
+  const bodyH = GAL_H - GAL_TOP_H - GAL_NAV_H - 1;
+
+  // Category sidebar divider
+  ctx.fillStyle = GAL_SEP; ctx.fillRect(GAL_CAT_W, bodyY, 1, bodyH);
+
+  // Category checkboxes
+  const catItemH    = 38;
+  const catsVisible = Math.floor((bodyH - 44) / catItemH);
+  _galAllCats.slice(0, catsVisible).forEach((cat, i) => {
+    const cy     = bodyY + 44 + i * catItemH;
+    const active = _galCategories.has(cat.name);
+    if (active) {
+      ctx.fillStyle = GAL_CAT_ON;
+      ctx.fillRect(2, cy, GAL_CAT_W - 4, catItemH - 2);
+    }
+    const cbX = 10, cbY = cy + (catItemH - 18) / 2;
+    _menuRoundRect(ctx, cbX, cbY, 18, 18, 4);
+    ctx.strokeStyle = active ? GAL_ACCENT : GAL_MUTED; ctx.lineWidth = 1.5; ctx.stroke();
+    if (active) {
+      ctx.fillStyle = GAL_ACCENT;
+      _menuRoundRect(ctx, cbX + 3, cbY + 3, 12, 12, 2); ctx.fill();
+    }
+  });
+
+  // Search bar chrome
+  const srchX = GAL_CAT_W + 12;
+  const srchY = bodyY + 8;
+  const srchW = GAL_W - GAL_CAT_W - 24;
+  const srchH = GAL_SEARCH_H - 16;
+  _menuRoundRect(ctx, srchX, srchY, srchW, srchH, 8);
+  ctx.fillStyle = _galSearchActive ? 'rgba(255,255,255,0.10)' : 'rgba(255,255,255,0.06)'; ctx.fill();
+  ctx.strokeStyle = _galSearchActive ? GAL_ACCENT : GAL_BORDER;
+  ctx.lineWidth   = _galSearchActive ? 2 : 1.5; ctx.stroke();
+
+  // Search cursor (canvas drawn — appears in same frame)
+  if (_galSearchActive) {
+    const srchTextX = srchX + 44;
+    ctx.fillStyle = GAL_ACCENT;
+    if (_galSearchQuery) {
+      ctx.font = '20px Arial, sans-serif';
+      const m = ctx.measureText(_galSearchQuery.length > 42 ? '…' + _galSearchQuery.slice(-40) : _galSearchQuery);
+      ctx.fillRect(srchTextX + m.width + 3, srchY + 8, 2, srchH - 16);
+    } else {
+      ctx.fillRect(srchTextX, srchY + 8, 2, srchH - 16);
+    }
+  }
+
+  // Clear button chrome
+  if (_galSearchQuery) {
+    const clrW = 60, clrH = srchH - 8;
+    const clrX = srchX + srchW - clrW - 4, clrY = srchY + 4;
+    _menuRoundRect(ctx, clrX, clrY, clrW, clrH, 6);
+    ctx.fillStyle = 'rgba(255,255,255,0.08)'; ctx.fill();
+  }
+
+  // Search icon (canvas — emoji renders fine here)
+  ctx.font = '20px Arial, sans-serif'; ctx.fillStyle = GAL_MUTED;
+  ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
+  ctx.fillText('\uD83D\uDD0D', srchX + 12, srchY + srchH / 2);
+
+  // Separator below search
+  ctx.fillStyle = GAL_SEP; ctx.fillRect(GAL_CAT_W + 1, bodyY + GAL_SEARCH_H, GAL_W - GAL_CAT_W - 2, 1);
+
+  // Results list
+  const listY = bodyY + GAL_SEARCH_H + 1;
+  const listH = bodyH - GAL_SEARCH_H - 1;
+  const listX = GAL_CAT_W + 16;
+  const listW = GAL_W - GAL_CAT_W - 24;
+  const rowH  = Math.floor(listH / GAL_PAGE_SIZE);
+
+  pageItems.forEach((m, i) => {
+    const ry = listY + i * rowH;
+    if (i === _galHighlight) {
+      _menuRoundRect(ctx, GAL_CAT_W + 4, ry + 2, listW - 4, rowH - 4, 8);
+      ctx.fillStyle = GAL_HOVER; ctx.fill();
+      ctx.fillStyle = GAL_ACCENT; ctx.fillRect(GAL_CAT_W + 4, ry + 6, 3, rowH - 12);
+    }
+    if (i > 0) { ctx.fillStyle = GAL_SEP; ctx.fillRect(listX, ry, listW - 8, 1); }
+
+    // Thumbnail placeholder (shown until texture loads)
+    const tx = listX + 4;
+    const ty = ry + Math.max(4, Math.floor((rowH - GAL_THUMB_H) / 2));
+    ctx.fillStyle = 'rgba(255,255,255,0.05)'; ctx.fillRect(tx, ty, GAL_THUMB_W, GAL_THUMB_H);
+  });
+
+  // Nav bar separator
+  const navY = GAL_H - GAL_NAV_H;
+  ctx.fillStyle = GAL_SEP; ctx.fillRect(0, navY, GAL_W, 1);
+
+  // Nav button chrome
+  const btnW = 200, btnH = GAL_NAV_H - 20;
+  const prevX = GAL_CAT_W + 24, prevY = navY + 10;
+  const nextX = GAL_W - btnW - 24, nextY = navY + 10;
+  [
+    [prevX, prevY, hasPrev],
+    [nextX, nextY, hasNext],
+  ].forEach(([bx, by, enabled]) => {
+    _menuRoundRect(ctx, bx, by, btnW, btnH, 10);
+    ctx.fillStyle = enabled ? 'rgba(255,255,255,0.07)' : 'rgba(255,255,255,0.03)'; ctx.fill();
+    ctx.strokeStyle = enabled ? GAL_BORDER : 'rgba(255,255,255,0.12)'; ctx.lineWidth = 1.5; ctx.stroke();
+  });
+
+  _galTexture.needsUpdate = true;
 }
 
-// Load or return a cached thumbnail HTMLImageElement. Triggers a redraw on load.
-function _galLoadThumb(url) {
-  if (_galThumbCache.has(url)) return _galThumbCache.get(url);
-  const img = new Image();
-  img.crossOrigin = 'anonymous';
-  img.onload  = () => { if (_galPanel.visible) _galDraw(); };
-  img.onerror = () => { img._failed = true; };
-  img.src = url;
-  _galThumbCache.set(url, img);
-  return img;
-}
-
-// Checkerboard placeholder for rows whose thumbnail hasn't arrived yet.
-function _galDrawThumbPlaceholder(ctx, x, y, w, h) {
-  ctx.fillStyle = 'rgba(255,255,255,0.05)';
-  ctx.fillRect(x, y, w, h);
-  ctx.fillStyle = 'rgba(255,255,255,0.04)';
-  const bw = Math.floor(w / 3), bh = Math.floor(h / 3);
-  for (let row = 0; row < 3; row++)
-    for (let col = 0; col < 3; col++)
-      if ((row + col) % 2 === 0)
-        ctx.fillRect(x + col * bw + 1, y + row * bh + 1, bw - 2, bh - 2);
-}
-
+// ── Main draw — updates troika text nodes + thumbnail meshes ───────────────────
 function _galDraw() {
-  const ctx       = _galCtx;
   const filtered  = _galFilteredResults();
   const total     = filtered.length;
   const maxPage   = Math.max(0, Math.ceil(total / GAL_PAGE_SIZE) - 1);
@@ -2119,172 +2382,85 @@ function _galDraw() {
   const pageItems = filtered.slice(_galPage * GAL_PAGE_SIZE, (_galPage + 1) * GAL_PAGE_SIZE);
 
   _galHitRects = [];
+  _galDrawChrome(pageItems, filtered);
 
-  // ── Background + border ──────────────────────────────────────────────────────
-  ctx.clearRect(0, 0, GAL_W, GAL_H);
-  ctx.fillStyle = GAL_BG;
-  ctx.fillRect(0, 0, GAL_W, GAL_H);
-  ctx.strokeStyle = GAL_BORDER;
-  ctx.lineWidth   = 2;
-  ctx.strokeRect(1, 1, GAL_W - 2, GAL_H - 2);
+  // Coordinate helpers
+  // Canvas coords → world X: (cx/GAL_W)*GAL_PW - GAL_PW/2
+  // Canvas coords → world Y: GAL_PH/2 - (cy/GAL_H)*GAL_PH
+  const cx2w = cx => (cx / GAL_W) * GAL_PW - GAL_PW / 2;
+  const cy2w = cy => GAL_PH / 2 - (cy / GAL_H) * GAL_PH;
 
-  // ── Top bar ──────────────────────────────────────────────────────────────────
-  ctx.fillStyle = GAL_SEP;
-  ctx.fillRect(0, GAL_TOP_H, GAL_W, 1);
-
-  const headerGrad = ctx.createLinearGradient(0, GAL_TOP_H, 0, GAL_TOP_H + 28);
-  headerGrad.addColorStop(0, 'rgba(0,0,0,0.22)');
-  headerGrad.addColorStop(1, 'rgba(0,0,0,0)');
-  ctx.fillStyle = headerGrad;
-  ctx.fillRect(0, GAL_TOP_H, GAL_W, 28);
-
-  ctx.font         = 'bold 28px Arial, sans-serif';
-  ctx.fillStyle    = GAL_ACCENT;
-  ctx.textAlign    = 'left';
-  ctx.textBaseline = 'middle';
-  ctx.fillText('Browse Models', 24, GAL_TOP_H / 2);
-
-  ctx.font      = '18px Arial, sans-serif';
-  ctx.fillStyle = GAL_MUTED;
-  ctx.textAlign = 'right';
-  ctx.fillText(`${_galPage + 1} / ${maxPage + 1}  \u00b7  ${total} models`, GAL_W - 200, GAL_TOP_H / 2);
-
+  // ── Top bar text ─────────────────────────────────────────────────────────────
+  _setTxt('title', 'Browse Models', 24, GAL_TOP_H / 2);
+  _setTxt('pagination',
+    `${_galPage + 1} / ${maxPage + 1}  ·  ${total} models`,
+    GAL_W - 16,   // right-aligned, anchorX='right'
+    GAL_TOP_H / 2,
+    { anchorX: 'right' }
+  );
+  // Close button text — centred in the button chrome
   const cBW = 120, cBH = GAL_TOP_H - 20;
   const cBX = GAL_W - cBW - 16, cBY = 10;
-  _galDrawBtn(ctx, '\u2715  Close', cBX, cBY, cBW, cBH, false, '#ff6666', 'rgba(255,80,80,0.6)');
+  _setTxt('close', '✕  Close', cBX + cBW / 2, cBY + cBH / 2, { anchorX: 'center', color: TC_RED });
   _galHitRects.push({ x: cBX, y: cBY, w: cBW, h: cBH, action: closeXRGallery });
 
-  // ── Body layout ──────────────────────────────────────────────────────────────
+  // ── Category sidebar ─────────────────────────────────────────────────────────
   const bodyY = GAL_TOP_H + 1;
   const bodyH = GAL_H - GAL_TOP_H - GAL_NAV_H - 1;
-
-  // ── Category sidebar ─────────────────────────────────────────────────────────
-  ctx.fillStyle = GAL_SEP;
-  ctx.fillRect(GAL_CAT_W, bodyY, 1, bodyH);
-
-  ctx.font         = 'bold 16px Arial, sans-serif';
-  ctx.fillStyle    = GAL_MUTED;
-  ctx.textAlign    = 'left';
-  ctx.textBaseline = 'top';
-  ctx.fillText('CATEGORIES', 14, bodyY + 12);
+  _setTxt('catHeader', 'CATEGORIES', 14, bodyY + 12, { anchorX: 'left', anchorY: 'top' });
 
   const catItemH    = 38;
   const catsVisible = Math.floor((bodyH - 44) / catItemH);
-  _galAllCats.slice(0, catsVisible).forEach((cat, i) => {
-    const cy     = bodyY + 44 + i * catItemH;
-    const active = _galCategories.has(cat.name);
-
-    if (active) {
-      ctx.fillStyle = GAL_CAT_ON;
-      ctx.fillRect(2, cy, GAL_CAT_W - 4, catItemH - 2);
-    }
-
-    const cbX = 10, cbY = cy + (catItemH - 18) / 2;
-    _menuRoundRect(ctx, cbX, cbY, 18, 18, 4);
-    ctx.strokeStyle = active ? GAL_ACCENT : GAL_MUTED;
-    ctx.lineWidth   = 1.5;
-    ctx.stroke();
-    if (active) {
-      ctx.fillStyle = GAL_ACCENT;
-      _menuRoundRect(ctx, cbX + 3, cbY + 3, 12, 12, 2);
-      ctx.fill();
-    }
-
-    ctx.font         = '18px Arial, sans-serif';
-    ctx.fillStyle    = active ? GAL_ACCENT : GAL_TEXT;
-    ctx.textAlign    = 'left';
-    ctx.textBaseline = 'middle';
-    ctx.fillText(cat.name, 36, cy + catItemH / 2);
-
-    ctx.font      = '14px Arial, sans-serif';
-    ctx.fillStyle = GAL_MUTED;
-    ctx.textAlign = 'right';
-    ctx.fillText(cat.count, GAL_CAT_W - 10, cy + catItemH / 2);
-
-    _galHitRects.push({ x: 2, y: cy, w: GAL_CAT_W - 4, h: catItemH - 2,
-      action: () => {
-        if (_galCategories.has(cat.name)) _galCategories.delete(cat.name);
-        else                               _galCategories.add(cat.name);
-        _galPage = 0; _galDraw();
-      }
-    });
-  });
-
-  // ── Search bar ───────────────────────────────────────────────────────────────
-  const srchX = GAL_CAT_W + 12;
-  const srchY = bodyY + 8;
-  const srchW = GAL_W - GAL_CAT_W - 24;
-  const srchH = GAL_SEARCH_H - 16;
-
-  _menuRoundRect(ctx, srchX, srchY, srchW, srchH, 8);
-  ctx.fillStyle = _galSearchActive ? 'rgba(255,255,255,0.10)' : 'rgba(255,255,255,0.06)';
-  ctx.fill();
-  ctx.strokeStyle = _galSearchActive ? GAL_ACCENT : GAL_BORDER;
-  ctx.lineWidth   = _galSearchActive ? 2 : 1.5;
-  ctx.stroke();
-
-  ctx.font         = '20px Arial, sans-serif';
-  ctx.fillStyle    = GAL_MUTED;
-  ctx.textAlign    = 'left';
-  ctx.textBaseline = 'middle';
-  ctx.fillText('\uD83D\uDD0D', srchX + 12, srchY + srchH / 2);
-
-  const srchTextX = srchX + 44;
-  if (_galSearchQuery) {
-    ctx.font      = '20px Arial, sans-serif';
-    ctx.fillStyle = GAL_TEXT;
-    ctx.textAlign = 'left';
-    let q = _galSearchQuery;
-    if (q.length > 42) q = '\u2026' + q.slice(-40);
-    ctx.fillText(q, srchTextX, srchY + srchH / 2);
-    if (_galSearchActive) {
-      const metrics = ctx.measureText(q);
-      ctx.fillStyle = GAL_ACCENT;
-      ctx.fillRect(srchTextX + metrics.width + 3, srchY + 8, 2, srchH - 16);
-    }
-  } else {
-    ctx.font      = '18px Arial, sans-serif';
-    ctx.fillStyle = GAL_MUTED;
-    ctx.textAlign = 'left';
-    if (!_galSearchActive) ctx.fillText('Search models\u2026', srchTextX, srchY + srchH / 2);
-    if (_galSearchActive) {
-      ctx.fillStyle = GAL_ACCENT;
-      ctx.fillRect(srchTextX, srchY + 8, 2, srchH - 16);
+  for (let i = 0; i < 12; i++) {
+    if (i < Math.min(_galAllCats.length, catsVisible)) {
+      const cat    = _galAllCats[i];
+      const cy     = bodyY + 44 + i * catItemH;
+      const active = _galCategories.has(cat.name);
+      _setTxt(`catName_${i}`,  cat.name,        36, cy + catItemH / 2, { color: active ? TC_ACCENT : TC_TEXT });
+      _setTxt(`catCount_${i}`, String(cat.count), GAL_CAT_W - 10, cy + catItemH / 2, { anchorX: 'right', color: TC_MUTED });
+      _galHitRects.push({ x: 2, y: cy, w: GAL_CAT_W - 4, h: catItemH - 2,
+        action: () => {
+          if (_galCategories.has(cat.name)) _galCategories.delete(cat.name);
+          else _galCategories.add(cat.name);
+          _galPage = 0; _galDraw();
+        }
+      });
+    } else {
+      _hideTxt(`catName_${i}`); _hideTxt(`catCount_${i}`);
     }
   }
 
-  // Clear (X) button — only when there's a query
+  // ── Search ───────────────────────────────────────────────────────────────────
+  const srchX = GAL_CAT_W + 12, srchY = bodyY + 8;
+  const srchW = GAL_W - GAL_CAT_W - 24, srchH = GAL_SEARCH_H - 16;
+  const srchTextX = srchX + 44;
+
   if (_galSearchQuery) {
+    let q = _galSearchQuery;
+    if (q.length > 42) q = '…' + q.slice(-40);
+    _setTxt('searchQuery', q, srchTextX, srchY + srchH / 2, { color: TC_TEXT });
+    _hideTxt('searchHint');
+
     const clrW = 60, clrH = srchH - 8;
     const clrX = srchX + srchW - clrW - 4, clrY = srchY + 4;
-    _menuRoundRect(ctx, clrX, clrY, clrW, clrH, 6);
-    ctx.fillStyle = 'rgba(255,255,255,0.08)';
-    ctx.fill();
-    ctx.font         = '16px Arial, sans-serif';
-    ctx.fillStyle    = GAL_MUTED;
-    ctx.textAlign    = 'center';
-    ctx.textBaseline = 'middle';
-    ctx.fillText('\u2715', clrX + clrW / 2, clrY + clrH / 2);
     _galHitRects.push({ x: clrX, y: clrY, w: clrW, h: clrH,
       action: () => {
         _galSearchQuery = '';
         if (_galSearchInput) _galSearchInput.value = '';
         _galPage = 0; _galHighlight = -1;
-        _galBlurSearch();
-        _galDraw();
+        _galBlurSearch(); _galDraw();
       }
     });
+  } else {
+    _hideTxt('searchQuery');
+    if (!_galSearchActive) {
+      _setTxt('searchHint', 'Search models…', srchTextX, srchY + srchH / 2, { color: TC_MUTED });
+    } else {
+      _hideTxt('searchHint');
+    }
   }
-
-  // Hit-rect for the search box (excluding clear button)
   const srchHitW = _galSearchQuery ? srchW - 68 : srchW;
-  _galHitRects.push({ x: srchX, y: srchY, w: srchHitW, h: srchH,
-    action: () => _galFocusSearch()
-  });
-
-  // Thin separator below search bar
-  ctx.fillStyle = GAL_SEP;
-  ctx.fillRect(GAL_CAT_W + 1, bodyY + GAL_SEARCH_H, GAL_W - GAL_CAT_W - 2, 1);
+  _galHitRects.push({ x: srchX, y: srchY, w: srchHitW, h: srchH, action: () => _galFocusSearch() });
 
   // ── Results list ─────────────────────────────────────────────────────────────
   const listY = bodyY + GAL_SEARCH_H + 1;
@@ -2292,152 +2468,125 @@ function _galDraw() {
   const listX = GAL_CAT_W + 16;
   const listW = GAL_W - GAL_CAT_W - 24;
   const rowH  = Math.floor(listH / GAL_PAGE_SIZE);
-
-  const thumbPad   = Math.max(4, Math.floor((rowH - GAL_THUMB_H) / 2));
+  const thumbPad  = Math.max(4, Math.floor((rowH - GAL_THUMB_H) / 2));
   const textIndent = GAL_THUMB_W + 20;
-
   const loadedNames = new Set(models.map(e => e.name));
 
-  pageItems.forEach((m, i) => {
-    const ry      = listY + i * rowH;
-    const isHover = i === _galHighlight;
+  for (let i = 0; i < GAL_PAGE_SIZE; i++) {
+    if (i < pageItems.length) {
+      const m        = pageItems[i];
+      const ry       = listY + i * rowH;
+      const isHover  = i === _galHighlight;
+      const labelX   = listX + textIndent + (isHover ? 8 : 0);
 
-    if (isHover) {
-      _menuRoundRect(ctx, GAL_CAT_W + 4, ry + 2, listW - 4, rowH - 4, 8);
-      ctx.fillStyle = GAL_HOVER;
-      ctx.fill();
-      ctx.fillStyle = GAL_ACCENT;
-      ctx.fillRect(GAL_CAT_W + 4, ry + 6, 3, rowH - 12);
-    }
+      // Main label
+      let label = m.description || m.name;
+      if (label.length > 46) label = label.slice(0, 45) + '…';
+      _setTxt(`rowMain_${i}`, label, labelX, ry + rowH * 0.36,
+              { color: isHover ? TC_ACCENT : TC_TEXT, bold: true });
 
-    if (i > 0) {
-      ctx.fillStyle = GAL_SEP;
-      ctx.fillRect(listX, ry, listW - 8, 1);
-    }
+      // Sub label
+      _setTxt(`rowSub_${i}`, m.displayName || m.name, labelX, ry + rowH * 0.68,
+              { color: TC_MUTED });
 
-    // Thumbnail
-    const tx = listX + 4;
-    const ty = ry + thumbPad;
-    ctx.save();
-    ctx.beginPath();
-    _menuRoundRect(ctx, tx, ty, GAL_THUMB_W, GAL_THUMB_H, 6);
-    ctx.clip();
-    const img = m.thumb ? _galLoadThumb(m.thumb) : null;
-    if (img && img.complete && !img._failed && img.naturalWidth > 0) {
-      ctx.drawImage(img, tx, ty, GAL_THUMB_W, GAL_THUMB_H);
+      // IN SCENE badge
+      const modelLabel = m.description || m.displayName || m.name;
+      if (loadedNames.has(modelLabel)) {
+        _setTxt(`rowBadge_${i}`, '● IN SCENE', GAL_W - 16, ry + rowH * 0.36,
+                { color: TC_GREEN, anchorX: 'right' });
+      } else {
+        _hideTxt(`rowBadge_${i}`);
+      }
+
+      // Thumbnail mesh
+      const tx = listX + 4;
+      const ty = ry + thumbPad;
+      // Centre coordinates for the mesh
+      const thumbCX = tx + GAL_THUMB_W / 2;
+      const thumbCY = ty + GAL_THUMB_H / 2;
+      _galSetThumb(i, m.thumb || null, thumbCX, thumbCY, GAL_THUMB_W, GAL_THUMB_H);
+
+      _galHitRects.push({ x: GAL_CAT_W + 2, y: ry, w: listW + 6, h: rowH - 1,
+        action: () => { closeXRGallery(); loadFromBrowser(m.url, m.description || m.displayName || m.name); }
+      });
     } else {
-      _galDrawThumbPlaceholder(ctx, tx, ty, GAL_THUMB_W, GAL_THUMB_H);
+      _hideTxt(`rowMain_${i}`); _hideTxt(`rowSub_${i}`); _hideTxt(`rowBadge_${i}`);
+      const mesh = _galThumbMeshes[i];
+      if (mesh) mesh.visible = false;
     }
-    ctx.restore();
+  }
 
-    // Labels — offset right of thumbnail
-    const labelX = listX + textIndent + (isHover ? 8 : 0);
-
-    let label = m.description || m.name;
-    if (label.length > 46) label = label.slice(0, 45) + '\u2026';
-    ctx.font         = 'bold 22px Arial, sans-serif';
-    ctx.fillStyle    = isHover ? GAL_ACCENT : GAL_TEXT;
-    ctx.textAlign    = 'left';
-    ctx.textBaseline = 'middle';
-    ctx.fillText(label, labelX, ry + rowH * 0.36);
-
-    ctx.font      = '16px Arial, sans-serif';
-    ctx.fillStyle = GAL_MUTED;
-    ctx.fillText(m.displayName || m.name, labelX, ry + rowH * 0.68);
-
-    // IN SCENE badge
-    const modelLabel = m.description || m.displayName || m.name;
-    if (loadedNames.has(modelLabel)) {
-      ctx.font      = 'bold 13px Arial, sans-serif';
-      ctx.fillStyle = '#44ff88';
-      ctx.textAlign = 'right';
-      ctx.fillText('\u25cf IN SCENE', GAL_W - 20, ry + rowH * 0.36);
-    }
-
-    _galHitRects.push({ x: GAL_CAT_W + 2, y: ry, w: listW + 6, h: rowH - 1,
-      action: () => { closeXRGallery(); loadFromBrowser(m.url, m.description || m.displayName || m.name); }
-    });
-  });
-
+  // Empty state
   if (pageItems.length === 0) {
-    ctx.font         = '20px Arial, sans-serif';
-    ctx.fillStyle    = GAL_MUTED;
-    ctx.textAlign    = 'center';
-    ctx.textBaseline = 'middle';
     const emptyMsg = _galSearchQuery
       ? `No results for "${_galSearchQuery}"`
       : 'No models match the selected categories.';
-    ctx.fillText(emptyMsg, GAL_CAT_W + listW / 2, listY + listH / 2);
+    _setTxt('emptyMsg', emptyMsg, GAL_CAT_W + (GAL_W - GAL_CAT_W) / 2, listY + listH / 2,
+            { anchorX: 'center', color: TC_MUTED });
+  } else {
+    _hideTxt('emptyMsg');
   }
 
   // ── Nav bar ──────────────────────────────────────────────────────────────────
   const navY = GAL_H - GAL_NAV_H;
-  ctx.fillStyle = GAL_SEP;
-  ctx.fillRect(0, navY, GAL_W, 1);
-
   const btnW = 200, btnH = GAL_NAV_H - 20;
   const prevX = GAL_CAT_W + 24, prevY = navY + 10;
   const nextX = GAL_W - btnW - 24, nextY = navY + 10;
   const hasPrev = _galPage > 0, hasNext = _galPage < maxPage;
 
-  _galDrawBtn(ctx, '\u25c4  Prev', prevX, prevY, btnW, btnH, !hasPrev);
-  _galDrawBtn(ctx, 'Next  \u25ba', nextX, nextY, btnW, btnH, !hasNext);
+  _setTxt('prevBtn', '◄  Prev', prevX + btnW / 2, prevY + btnH / 2,
+          { color: hasPrev ? TC_TEXT : TC_MUTED, anchorX: 'center' });
+  _setTxt('nextBtn', 'Next  ►', nextX + btnW / 2, nextY + btnH / 2,
+          { color: hasNext ? TC_TEXT : TC_MUTED, anchorX: 'center' });
 
   if (hasPrev) _galHitRects.push({ x: prevX, y: prevY, w: btnW, h: btnH,
     action: () => { _galPage--; _galHighlight = -1; _galDraw(); } });
   if (hasNext) _galHitRects.push({ x: nextX, y: nextY, w: btnW, h: btnH,
     action: () => { _galPage++; _galHighlight = -1; _galDraw(); } });
-
-  _galTexture.needsUpdate = true;
 }
 
+// ── Laser raycasting — unchanged logic, _galBgPlane is the hit target ──────────
 function _galUpdateLaser(ctrl, triggerPressed, triggerWas) {
-  if (!_galPanel.visible) return false;
+  if (_xrDomOverlayActive) return false;
+  if (!_galGroup.visible) return false;
 
   const { pointer } = ctrl;
   pointer.getWorldPosition(_galRayOrigin);
   _galRayDir.set(0, 0, -1).transformDirection(pointer.matrixWorld);
   _galRaycaster.set(_galRayOrigin, _galRayDir);
 
-  const hits = _galRaycaster.intersectObject(_galPanel);
+  const hits = _galRaycaster.intersectObject(_galBgPlane);
   if (hits.length === 0) {
     if (ctrl.galHighlight !== -1) {
-      ctrl.galHighlight = -1;
-      _galHighlight = -1;
-      _galDraw();
+      ctrl.galHighlight = -1; _galHighlight = -1; _galDraw();
     }
-    resetLaser(ctrl);
-    return false;
+    resetLaser(ctrl); return false;
   }
 
-  // Shorten the beam to stop at the panel surface, move ring to contact point
   setLaserDist(ctrl, hits[0].distance);
 
   const uv = hits[0].uv;
   const cx = uv.x * GAL_W;
   const cy = (1 - uv.y) * GAL_H;
 
-  // Update hover highlight on result rows — stored per-ctrl to avoid crosstalk
   let newHighlight = -1;
   const bodyY = GAL_TOP_H + 1;
   const bodyH = GAL_H - GAL_TOP_H - GAL_NAV_H - 1;
-  const rowH  = Math.floor(bodyH / GAL_PAGE_SIZE);
+  const listY = bodyY + GAL_SEARCH_H + 1;
+  const listH = bodyH - GAL_SEARCH_H - 1;
+  const rowH  = Math.floor(listH / GAL_PAGE_SIZE);
   for (let i = 0; i < GAL_PAGE_SIZE; i++) {
-    const ry = bodyY + i * rowH;
+    const ry = listY + i * rowH;
     if (cx > GAL_CAT_W + 2 && cy >= ry && cy < ry + rowH - 1) { newHighlight = i; break; }
   }
 
   if (newHighlight !== ctrl.galHighlight) {
-    ctrl.galHighlight = newHighlight;
-    _galHighlight = newHighlight;
-    _galDraw();
+    ctrl.galHighlight = newHighlight; _galHighlight = newHighlight; _galDraw();
   }
 
   if (triggerPressed && !triggerWas) {
     for (const r of _galHitRects) {
-      if (cx >= r.x && cx <= r.x + r.w && cy >= r.y && cy <= r.y + r.h) {
-        r.action(); break;
-      }
+      if (cx >= r.x && cx <= r.x + r.w && cy >= r.y && cy <= r.y + r.h) { r.action(); break; }
     }
   }
   return true;
@@ -2504,6 +2653,11 @@ function _setupEntryForXR(entry) {
 function onXRSessionStart(mode) {
   setMode(mode);
 
+  // Check whether dom-overlay is actually active in this session.
+  // renderer.xr.getSession() is valid from this point onward.
+  const session = renderer.xr.getSession();
+  _xrDomOverlayActive = !!(session?.enabledFeatures?.includes('dom-overlay'));
+
   // ── Flush OrbitControls damping before handing camera to XR ──────────────
   // Even with controls.enabled = false, controls.update() with dampingFactor
   // > 0 keeps applying residual momentum to camera.position every frame.
@@ -2567,6 +2721,7 @@ function _placeAllPivots() {
 
 function onXRSessionEnd() {
   setMode('browser');
+  _xrDomOverlayActive = false;
 
   // Drop all active interactions, close any open menus/gallery, restore lasers
   for (const slot of slots) endInteraction(slot);
@@ -2610,10 +2765,20 @@ function onXRSessionEnd() {
 renderer.xr.addEventListener('sessionend', onXRSessionEnd);
 
 // ── Shared session-request options ────────────────────────────────────────────
-const XR_SESSION_OPTS = {
-  requiredFeatures: ['local-floor'],
-  optionalFeatures: ['bounded-floor', 'hand-tracking'],
-};
+// dom-overlay lets the existing HTML gallery render at native display resolution
+// inside XR — pixel-perfect text and thumbnails, no canvas texture involved.
+// Built lazily so getElementById runs after the DOM element exists.
+function makeXRSessionOpts() {
+  const overlayRoot = document.getElementById('model-gallery');
+  return {
+    requiredFeatures: ['local-floor'],
+    optionalFeatures: ['bounded-floor', 'hand-tracking', 'dom-overlay'],
+    domOverlay: { root: overlayRoot },
+  };
+}
+
+// True while a session has confirmed dom-overlay is active.
+let _xrDomOverlayActive = false;
 
 // ── VR button ─────────────────────────────────────────────────────────────────
 
@@ -2636,7 +2801,7 @@ if (navigator.xr) {
   let vrSession = null;
   vrButton.addEventListener('click', () => {
     if (vrSession === null) {
-      navigator.xr.requestSession('immersive-vr', XR_SESSION_OPTS)
+      navigator.xr.requestSession('immersive-vr', makeXRSessionOpts())
         .then(session => {
           renderer.xr.setSession(session);
           onXRSessionStart('vr');
@@ -2672,7 +2837,7 @@ if (navigator.xr) {
   let mrSession = null;
   mrButton.addEventListener('click', () => {
     if (mrSession === null) {
-      navigator.xr.requestSession('immersive-ar', XR_SESSION_OPTS)
+      navigator.xr.requestSession('immersive-ar', makeXRSessionOpts())
         .then(session => {
           renderer.xr.setSession(session);
           onXRSessionStart('mr');
