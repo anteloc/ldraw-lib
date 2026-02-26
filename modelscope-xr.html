@@ -2053,12 +2053,6 @@ const GAL_NAV_H    = 80;
 const GAL_SEARCH_H = 64;
 const GAL_COLS     = 3;
 const GAL_ROWS     = 3;
-// Category combo — drawn in the top bar
-const GAL_COMBO_X  = 340;   // left edge of combo pill in top bar
-const GAL_COMBO_W  = 380;   // width of combo pill
-const GAL_COMBO_H  = 48;    // height of combo pill
-const GAL_COMBO_Y  = (GAL_TOP_H - GAL_COMBO_H) / 2;  // vertically centred in top bar
-const GAL_COMBO_ITEM_H = 52; // height of each dropdown item row
 // Thumb size: fills most of card height, sized in _galDraw (derived, not fixed)
 
 // Colours
@@ -2099,9 +2093,6 @@ let _galCtx      = null;
 let _galHitRects   = [];
 let _galResults    = [];
 let _galPage       = 0;
-let _galActiveCategory = '';   // '' = All; otherwise a _capFirst'd category name
-let _galComboOpen  = false;    // whether the category dropdown is expanded
-let _galAllCats    = [];
 let _galHighlight  = -1;
 let _galSearchQuery  = '';
 let _galSearchActive = false;
@@ -2260,17 +2251,11 @@ function _makeGalleryPanel() {
   _makeTxt('title',      { fontSize: 0.020, bold: true,  color: TC_ACCENT, anchorX: 'left'  });
   _makeTxt('pagination', { fontSize: 0.014, color: TC_MUTED, anchorX: 'right' });
 
-  _makeTxt('comboLabel', { fontSize: 0.015, anchorX: 'left' });
   _makeTxt('searchHint', { fontSize: 0.015, color: TC_MUTED, anchorX: 'left' });
   _makeTxt('searchQuery',{ fontSize: 0.015, color: TC_TEXT,  anchorX: 'left' });
   _makeTxt('prevBtn',    { fontSize: 0.016, bold: true,  anchorX: 'center' });
   _makeTxt('nextBtn',    { fontSize: 0.016, bold: true,  anchorX: 'center' });
   _makeTxt('emptyMsg',   { fontSize: 0.016, color: TC_MUTED, anchorX: 'center' });
-
-  // Dropdown items — up to 20 categories + "All"
-  for (let i = 0; i < 21; i++) {
-    _makeTxt(`ddItem_${i}`, { fontSize: 0.014, anchorX: 'left' });
-  }
 
   // Per-result cards (9 slots — 3×3 grid)
   for (let i = 0; i < GAL_PAGE_SIZE; i++) {
@@ -2331,14 +2316,10 @@ function openXRGallery(ctrl) {
 
   _galResults        = mbModels.slice();
   _galPage           = 0;
-  _galActiveCategory = '';
-  _galComboOpen      = false;
   _galHighlight      = -1;
   _galSearchQuery    = '';
   _galSearchActive   = false;
   if (_galSearchInput) _galSearchInput.value = '';
-
-  _galAllCats = _buildCategoryCounts(_galResults);
 
   const frame    = renderer.xr.getFrame();
   const refSpace = renderer.xr.getReferenceSpace();
@@ -2367,7 +2348,6 @@ function closeXRGallery() {
   if (_xrDomOverlayActive) { closeGallery(); return; }
   _galBlurSearch();
   _galGroup.visible  = false;
-  _galComboOpen      = false;
   _galResults        = [];
   _galHitRects       = [];
   _galHighlight      = -1;
@@ -2375,14 +2355,8 @@ function closeXRGallery() {
 }
 
 function _galFilteredResults() {
-  let base;
-  if (_galSearchQuery && mbFuse) {
-    base = mbFuse.search(_galSearchQuery).map(r => r.item);
-  } else {
-    base = _galResults;
-  }
-  if (!_galActiveCategory) return base;
-  return base.filter(m => _capFirst(m.category ?? 'Other') === _galActiveCategory);
+  if (_galSearchQuery && mbFuse) return mbFuse.search(_galSearchQuery).map(r => r.item);
+  return _galResults;
 }
 
 // ── Canvas chrome draw (backgrounds, separators, checkboxes, card placeholders) ──
@@ -2407,39 +2381,9 @@ function _galDrawChrome(pageItems, filtered) {
   hg.addColorStop(0, 'rgba(0,0,0,0.22)'); hg.addColorStop(1, 'rgba(0,0,0,0)');
   ctx.fillStyle = hg; ctx.fillRect(0, GAL_TOP_H, GAL_W, 32);
 
-  // Body layout — full width, no sidebar
+  // Body layout — full width
   const bodyY = GAL_TOP_H + 1;
   const bodyH = GAL_H - GAL_TOP_H - GAL_NAV_H - 1;
-
-  // ── Category combo pill (top bar) ─────────────────────────────────────────────
-  const isActive = !!_galActiveCategory;
-  _menuRoundRect(ctx, GAL_COMBO_X, GAL_COMBO_Y, GAL_COMBO_W, GAL_COMBO_H, 8);
-  ctx.fillStyle = isActive ? 'rgba(255,204,0,0.18)' : 'rgba(255,255,255,0.07)'; ctx.fill();
-  ctx.strokeStyle = isActive ? GAL_ACCENT : GAL_BORDER;
-  ctx.lineWidth = isActive ? 2 : 1.5; ctx.stroke();
-  // Chevron ▾
-  ctx.font = '22px Arial, sans-serif'; ctx.fillStyle = isActive ? GAL_ACCENT : GAL_MUTED;
-  ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
-  ctx.fillText(_galComboOpen ? '▴' : '▾', GAL_COMBO_X + GAL_COMBO_W - 14, GAL_COMBO_Y + GAL_COMBO_H / 2);
-
-  // ── Dropdown list (when open) ─────────────────────────────────────────────────
-  if (_galComboOpen) {
-    const items = ['All', ..._galAllCats.map(c => c.name)];
-    const ddX = GAL_COMBO_X, ddW = GAL_COMBO_W;
-    const ddY = GAL_TOP_H + 4;
-    const ddH = items.length * GAL_COMBO_ITEM_H + 8;
-    _menuRoundRect(ctx, ddX, ddY, ddW, ddH, 8);
-    ctx.fillStyle = 'rgba(14,14,22,0.98)'; ctx.fill();
-    ctx.strokeStyle = GAL_ACCENT; ctx.lineWidth = 1.5; ctx.stroke();
-    items.forEach((name, i) => {
-      const iy = ddY + 4 + i * GAL_COMBO_ITEM_H;
-      const sel = (name === 'All' && !_galActiveCategory) || name === _galActiveCategory;
-      if (sel) {
-        _menuRoundRect(ctx, ddX + 4, iy + 2, ddW - 8, GAL_COMBO_ITEM_H - 4, 6);
-        ctx.fillStyle = 'rgba(255,204,0,0.18)'; ctx.fill();
-      }
-    });
-  }
 
   // Search bar chrome — full width
   const srchX = 12, srchY = bodyY + 8;
@@ -2543,42 +2487,6 @@ function _galDraw() {
     GAL_W - 16, GAL_TOP_H / 2, { anchorX: 'right' }
   );
 
-  // ── Category combo label ──────────────────────────────────────────────────────
-  const comboLabelX = GAL_COMBO_X + 14;
-  const comboLabelY = GAL_TOP_H / 2;
-  const comboText   = _galActiveCategory ? _galActiveCategory : 'All categories';
-  _setTxt('comboLabel', comboText, comboLabelX, comboLabelY,
-          { color: _galActiveCategory ? TC_ACCENT : TC_MUTED });
-  // Combo hit rect (open/close toggle)
-  _galHitRects.push({ x: GAL_COMBO_X, y: GAL_COMBO_Y, w: GAL_COMBO_W, h: GAL_COMBO_H,
-    action: () => { _galComboOpen = !_galComboOpen; _galDraw(); }
-  });
-
-  // ── Dropdown items (when open) ────────────────────────────────────────────────
-  const ddItems = ['All', ..._galAllCats.map(c => c.name)];
-  if (_galComboOpen) {
-    const ddX = GAL_COMBO_X, ddW = GAL_COMBO_W;
-    const ddY = GAL_TOP_H + 4;
-    ddItems.forEach((name, i) => {
-      const iy  = ddY + 4 + i * GAL_COMBO_ITEM_H;
-      const sel = (name === 'All' && !_galActiveCategory) || name === _galActiveCategory;
-      _setTxt(`ddItem_${i}`, name, ddX + 16, iy + GAL_COMBO_ITEM_H / 2,
-              { color: sel ? TC_ACCENT : TC_TEXT });
-      _galHitRects.push({ x: ddX, y: iy, w: ddW, h: GAL_COMBO_ITEM_H,
-        action: () => {
-          _galActiveCategory = (name === 'All') ? '' : name;
-          _galComboOpen = false;
-          _galPage = 0; _galHighlight = -1;
-          _galDraw();
-        }
-      });
-    });
-    // Hide unused dd slots
-    for (let i = ddItems.length; i < 21; i++) _hideTxt(`ddItem_${i}`);
-  } else {
-    for (let i = 0; i < 21; i++) _hideTxt(`ddItem_${i}`);
-  }
-
   // ── Search ────────────────────────────────────────────────────────────────────
   const bodyY  = GAL_TOP_H + 1;
   const bodyH  = GAL_H - GAL_TOP_H - GAL_NAV_H - 1;
@@ -2668,11 +2576,7 @@ function _galDraw() {
 
   // Empty state
   if (pageItems.length === 0) {
-    const emptyMsg = _galSearchQuery
-      ? `No results for "${_galSearchQuery}"`
-      : _galActiveCategory
-        ? `No models in "${_galActiveCategory}"`
-        : 'No models found.';
+    const emptyMsg = _galSearchQuery ? `No results for "${_galSearchQuery}"` : 'No models found.';
     _setTxt('emptyMsg', emptyMsg, GAL_W / 2, gridY + gridH / 2, { anchorX: 'center', color: TC_MUTED });
   } else {
     _hideTxt('emptyMsg');
@@ -2721,18 +2625,6 @@ function _galUpdateLaser(ctrl, triggerPressed, triggerWas) {
   const uv = hits[0].uv;
   const cx = uv.x * GAL_W;
   const cy = (1 - uv.y) * GAL_H;
-
-  // Close combo if open and laser lands outside the dropdown area
-  if (_galComboOpen) {
-    const ddY = GAL_TOP_H + 4;
-    const ddH = (1 + _galAllCats.length) * GAL_COMBO_ITEM_H + 8;
-    const outside = !(cx >= GAL_COMBO_X && cx <= GAL_COMBO_X + GAL_COMBO_W
-                      && cy >= GAL_COMBO_Y && cy <= ddY + ddH);
-    if (outside && triggerPressed && !triggerWas) {
-      _galComboOpen = false; _galDraw();
-      return true;
-    }
-  }
 
   let newHighlight = -1;
   const bodyY  = GAL_TOP_H + 1;
