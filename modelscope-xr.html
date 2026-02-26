@@ -946,10 +946,8 @@ function _buildCategoryCounts(items) {
   const counts = new Map();
   for (const entry of items) {
     const m = isWrapped ? entry.item : entry;
-    for (const c of (m.categories ?? ['Other'])) {
-      const k = _capFirst(c);
+    const k = _capFirst(m.category ?? 'Other');
       counts.set(k, (counts.get(k) ?? 0) + 1);
-    }
   }
   return [...counts.entries()]
     .sort((a, b) => a[0].localeCompare(b[0]))
@@ -3079,7 +3077,7 @@ async function fetchModelList() {
       .map(line => {
         const rec         = JSON.parse(line);
         const description = rec.description ?? rec.search_key ?? rec.name;
-        const categories  = rec.categories?.length ? rec.categories : ['Other'];
+        const category    = _capFirst(rec.category ?? 'Other');
         const keywords    = rec.keywords ?? [];
         // Strip .zip suffix for display name and thumbnail — the zip contains
         // a single file whose name is rec.name minus the .zip extension.
@@ -3088,7 +3086,7 @@ async function fetchModelList() {
           name:        rec.name,   // original index name (may end in .zip) — used for the fetch URL
           displayName: baseName,   // .zip stripped — shown in UI and passed to onModelLoaded
           description,
-          categories,
+          category,
           keywords,
           url:   RAW_BASE   + encodeURIComponent(rec.name),
           thumb: THUMB_BASE + encodeURIComponent(baseName.replace(/\.[^.]+$/, '.png')),
@@ -3098,7 +3096,7 @@ async function fetchModelList() {
     mbFuse = new Fuse(mbModels, {
       keys: [
         { name: 'description', weight: 3   },
-        { name: 'categories',  weight: 2   },
+        { name: 'category',    weight: 2   },
         { name: 'keywords',    weight: 1.5 },
         { name: 'name',        weight: 1   },
       ],
@@ -3245,8 +3243,7 @@ function _applyGalleryFilters() {
 
   if (_galleryActiveCategories.size > 0) {
     items = items.filter(r =>
-      (r.item.categories ?? ['Other'])
-        .some(c => _galleryActiveCategories.has(_capFirst(c)))
+        _galleryActiveCategories.has(_capFirst(r.item.category ?? 'Other'))
     );
   }
 
@@ -3282,7 +3279,7 @@ function _renderGalleryPage() {
   }
 
   for (const r of slice) {
-    const { name, displayName, description, url, thumb, categories, keywords } = r.item;
+    const { name, displayName, description, url, thumb, category, keywords } = r.item;
     const card       = document.createElement('div');
     card.className   = 'gallery-card';
     card.tabIndex    = 0;
@@ -3292,7 +3289,7 @@ function _renderGalleryPage() {
 
     const catsHtml = `<div class="gallery-card-cats">` +
       `<span class="gallery-card-field-label">CAT</span>` +
-      escHtml((categories ?? ['Other']).join(', ')) +
+      escHtml(category ?? 'Other') +
       `</div>`;
 
     const kwdHtml = (keywords?.length)
