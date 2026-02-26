@@ -608,60 +608,9 @@ const THUMB_BASE        = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO
 const BROWSER_BG = new THREE.Color(0x0e0e10);
 
 
-// ─── §1b  DOM references ──────────────────────────────────────────────────────
-// All element lookups in one place — keeps the rest of the code free of
-// getElementById / querySelector noise and makes renaming trivial.
-
-// Canvas / render target
-const container          = document.getElementById('canvas-container');
-
-// Drop zone + loading overlay
-const dropZoneEl         = document.getElementById('drop-zone');
-const loadingOverlayEl   = document.getElementById('loading-overlay');
-const loadingMsgEl       = document.getElementById('loading-msg');
-const loadingSubEl       = document.getElementById('loading-sub');
-
-// Status + error banner
-const statusEl           = document.getElementById('status');
-const errorBannerEl      = document.getElementById('error-banner');
-const errorTextEl        = document.getElementById('error-text');
-const btnErrorCloseEl    = document.getElementById('btn-error-close');
-
-// Header controls bar (XR buttons are injected into this)
-const controlsBar        = document.querySelector('.controls');
-
-// Header action buttons
-const btnBrowseEl        = document.getElementById('btn-browse');
-const btnResetViewEl     = document.getElementById('btn-reset-view');
-const btnOpenFileEl      = document.getElementById('btn-open-file');
-const fileInputEl        = document.getElementById('file-input');
-
-// Sidebar controls
-const btnLoadUrlEl       = document.getElementById('btn-load-url');
-const urlInputEl         = document.getElementById('url-input');
-const toggleEdgesEl      = document.getElementById('toggle-edges');
-const toggleGridEl       = document.getElementById('toggle-grid');
-
-// Scene model list (sidebar)
-const sceneCountEl       = document.getElementById('scene-count');
-const sceneModelListEl   = document.getElementById('scene-model-list');
-
-// Mode badge (shown in VR/MR)
-const modeBadgeEl        = document.getElementById('mode-badge');
-
-// Browser gallery overlay
-const galleryOverlayEl   = document.getElementById('model-gallery');
-const galleryGridEl      = document.getElementById('gallery-grid');
-const galleryStatusEl    = document.getElementById('gallery-status');
-const galleryFiltersEl   = document.getElementById('gallery-filters');
-const galleryLoadMoreEl  = document.getElementById('gallery-load-more-wrap');
-const galleryMainEl      = document.getElementById('gallery-main');
-const gallerySearchEl    = document.getElementById('gallery-search-input');
-const btnGalleryCloseEl  = document.getElementById('btn-gallery-close');
-const btnGalleryLoadMoreEl = document.getElementById('btn-gallery-load-more');
-
-
 // ─── §2  Renderer + Scene ─────────────────────────────────────────────────────
+
+const container = document.getElementById('canvas-container');
 
 const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 renderer.setPixelRatio(window.devicePixelRatio);
@@ -974,7 +923,7 @@ function removeEntry(entry) {
   renderModelList();
 
   if (models.length === 0) {
-    dropZoneEl.style.display = '';
+    dropZone.style.display = '';
     setStatus('No model loaded');
   } else {
     fitCamera();
@@ -1015,7 +964,7 @@ function _buildCategoryCounts(items) {
 // Both call onModelLoaded on success; errors are surfaced via showError.
 
 function onProgress(xhr) {
-  if (xhr.total) loadingSubEl.textContent = 'Downloading… ' + Math.round(xhr.loaded / xhr.total * 100) + '%';
+  if (xhr.total) loadingSub.textContent = 'Downloading… ' + Math.round(xhr.loaded / xhr.total * 100) + '%';
 }
 
 async function makeLDrawLoader() {
@@ -1080,7 +1029,7 @@ function onModelLoaded(model, filename) {
     return;
   }
 
-  errorBannerEl.classList.remove('visible');
+  errorBanner.classList.remove('visible');
   model.rotation.x = Math.PI; // LDraw Y-down → Y-up
   model.traverse(o => {
     if (o.isMesh) {
@@ -1108,7 +1057,7 @@ function onModelLoaded(model, filename) {
     model.position.x = existingBox.max.x + gap + newSize.x / 2 - newBox.getCenter(new THREE.Vector3()).x;
   }
 
-  if (models.length === 1) dropZoneEl.style.display = 'none';
+  if (models.length === 1) dropZone.style.display = 'none';
 
   if (renderer.xr.isPresenting) {
     // XR is active — move mesh into the entry's root, re-centre, size orb.
@@ -1139,7 +1088,7 @@ function loadFile(file) {
 }
 
 function loadFromURL() {
-  const url = urlInputEl.value.trim();
+  const url = document.getElementById('url-input').value.trim();
   if (!url) return;
   showLoading('Fetching…', url);
   loadModelFromURL(url, url.split('/').pop(), 'Could not load URL — CORS may be blocking it.\nTry downloading and opening locally.');
@@ -1253,7 +1202,7 @@ function resetView() {
 
 function toggleEdges() {
   edgesVisible = !edgesVisible;
-  toggleEdgesEl.classList.toggle('on', edgesVisible);
+  document.getElementById('toggle-edges').classList.toggle('on', edgesVisible);
   for (const entry of models) {
     entry.mesh.traverse(o => { if (o.isLineSegments) o.visible = edgesVisible; });
   }
@@ -1262,7 +1211,7 @@ function toggleEdges() {
 function toggleGrid() {
   const on = !gridHelper.visible;
   gridHelper.visible = on;
-  toggleGridEl.classList.toggle('on', on);
+  document.getElementById('toggle-grid').classList.toggle('on', on);
 }
 
 
@@ -2723,11 +2672,14 @@ function _galUpdateLaser(ctrl, triggerPressed, triggerWas) {
 
 let currentMode = 'browser';
 
+const modeBadge   = document.getElementById('mode-badge');
+const controlsBar = document.querySelector('.controls');
+
 function setMode(mode) {
   currentMode = mode;
-  modeBadgeEl.className = '';
-  if (mode === 'vr') { modeBadgeEl.className = 'vr'; modeBadgeEl.textContent = '● VR'; }
-  if (mode === 'mr') { modeBadgeEl.className = 'mr'; modeBadgeEl.textContent = '● MR'; }
+  modeBadge.className = '';
+  if (mode === 'vr') { modeBadge.className = 'vr'; modeBadge.textContent = '● VR'; }
+  if (mode === 'mr') { modeBadge.className = 'mr'; modeBadge.textContent = '● MR'; }
 }
 
 // Move a model entry into the XR root hierarchy and size its orb.
@@ -2876,7 +2828,7 @@ function onXRSessionEnd() {
   scene.background = BROWSER_BG;
   renderer.setClearColor(0x000000, 1);
   ambientLight.intensity = 0.6;
-  gridHelper.visible = toggleGridEl.classList.contains('on');
+  gridHelper.visible = document.getElementById('toggle-grid').classList.contains('on');
   ground.visible = true;
   dirLight.castShadow = true;
   mrShadowDisc.visible = false;
@@ -2901,10 +2853,11 @@ renderer.xr.addEventListener('sessionend', onXRSessionEnd);
 // inside XR — pixel-perfect text and thumbnails, no canvas texture involved.
 // Built lazily so getElementById runs after the DOM element exists.
 function makeXRSessionOpts() {
+  const overlayRoot = document.getElementById('model-gallery');
   return {
     requiredFeatures: ['local-floor'],
     optionalFeatures: ['bounded-floor', 'hand-tracking', 'dom-overlay'],
-    domOverlay: { root: galleryOverlayEl },
+    domOverlay: { root: overlayRoot },
   };
 }
 
@@ -3076,7 +3029,7 @@ async function fetchModelList() {
     });
 
     // If gallery is already open (user clicked Browse before index loaded), refresh it
-    if (galleryOverlayEl.classList.contains('open')) openGallery();
+    if (galleryOverlay.classList.contains('open')) openGallery();
 
   } catch (err) {
     console.warn('Model list fetch failed:', err);
@@ -3130,6 +3083,13 @@ function highlightField(text, matches, key) {
 // Category filter sidebar sorted alphabetically, first letter uppercased.
 // Cards are 200×220px, 4 columns, lazy thumbnails via IntersectionObserver.
 
+const galleryOverlay    = document.getElementById('model-gallery');
+const galleryGridEl     = document.getElementById('gallery-grid');
+const galleryStatusEl   = document.getElementById('gallery-status');
+const galleryFiltersEl  = document.getElementById('gallery-filters');
+const galleryLoadMoreEl = document.getElementById('gallery-load-more-wrap');
+const gallerySearchEl   = document.getElementById('gallery-search-input');
+
 // ── State ──────────────────────────────────────────────────────────────────────
 let _gallerySourceResults    = [];  // current Fuse results (or wrapped full list)
 let _galleryFiltered         = [];  // after category filter + sort
@@ -3150,7 +3110,7 @@ function openGallery() {
   if (renderer.xr.isPresenting) return;
   gallerySearchEl.value    = '';
   _galleryActiveCategories = new Set();
-  galleryOverlayEl.classList.add('open');
+  galleryOverlay.classList.add('open');
 
   if (mbModels.length === 0) {
     // Index not yet loaded — fetchModelList() will call openGallery() again when ready
@@ -3168,7 +3128,7 @@ function openGallery() {
 }
 
 function closeGallery() {
-  galleryOverlayEl.classList.remove('open');
+  galleryOverlay.classList.remove('open');
   _galleryObserver?.disconnect();
   _galleryObserver        = null;
   galleryGridEl.innerHTML = '';
@@ -3333,28 +3293,38 @@ gallerySearchEl.addEventListener('input', () => {
 
 // ── Event wiring ───────────────────────────────────────────────────────────────
 
-btnGalleryCloseEl.addEventListener('click', closeGallery);
-galleryOverlayEl.addEventListener('click', e => { if (e.target === galleryOverlayEl) closeGallery(); });
-btnGalleryLoadMoreEl.addEventListener('click', () => {
+document.getElementById('btn-gallery-close').addEventListener('click', closeGallery);
+galleryOverlay.addEventListener('click', e => { if (e.target === galleryOverlay) closeGallery(); });
+document.getElementById('btn-gallery-load-more').addEventListener('click', () => {
   _galleryPage++;
   _renderGalleryPage();
-  galleryMainEl.scrollBy({ top: 400, behavior: 'smooth' });
+  document.getElementById('gallery-main').scrollBy({ top: 400, behavior: 'smooth' });
 });
 document.querySelectorAll('input[name="gallery-sort"]').forEach(radio => {
   radio.addEventListener('change', _applyGalleryFilters);
 });
 
 
-// ─── §11  UI helpers ─────────────────────────────────────────────────────────
+// ─── §11  UI helpers + DOM references ────────────────────────────────────────
+
+const dropZone         = document.getElementById('drop-zone');
+const loadingOverlay   = document.getElementById('loading-overlay');
+const loadingMsg       = document.getElementById('loading-msg');
+const loadingSub       = document.getElementById('loading-sub');
+const statusEl         = document.getElementById('status');
+const errorBanner      = document.getElementById('error-banner');
+const errorText        = document.getElementById('error-text');
+const sceneCountEl     = document.getElementById('scene-count');
+const sceneModelListEl = document.getElementById('scene-model-list');
 
 function showLoading(msg, sub) {
-  loadingMsgEl.textContent = msg || 'Loading…';
-  loadingSubEl.textContent = sub || '';
-  loadingOverlayEl.classList.add('visible');
-  errorBannerEl.classList.remove('visible');
+  loadingMsg.textContent = msg || 'Loading…';
+  loadingSub.textContent = sub || '';
+  loadingOverlay.classList.add('visible');
+  errorBanner.classList.remove('visible');
 }
-function hideLoading() { loadingOverlayEl.classList.remove('visible'); }
-function showError(msg) { hideLoading(); errorTextEl.textContent = msg; errorBannerEl.classList.add('visible'); }
+function hideLoading() { loadingOverlay.classList.remove('visible'); }
+function showError(msg) { hideLoading(); errorText.textContent = msg; errorBanner.classList.add('visible'); }
 function setStatus(s)   { statusEl.textContent = s; }
 
 
@@ -3362,28 +3332,28 @@ function setStatus(s)   { statusEl.textContent = s; }
 // All HTML→JS connections in one place; no onclick attributes in the markup.
 
 // Header buttons
-btnBrowseEl.addEventListener('click', openGallery);
-btnResetViewEl.addEventListener('click', resetView);
-btnOpenFileEl.addEventListener('click', () => fileInputEl.click());
+document.getElementById('btn-browse').addEventListener('click', openGallery);
+document.getElementById('btn-reset-view').addEventListener('click', resetView);
+document.getElementById('btn-open-file').addEventListener('click', () => document.getElementById('file-input').click());
 
 // File input & drag-drop
-fileInputEl.addEventListener('change', function() {
+document.getElementById('file-input').addEventListener('change', function() {
   if (this.files[0]) loadFile(this.files[0]);
   this.value = '';
 });
-container.addEventListener('dragover',  e => { e.preventDefault(); dropZoneEl.classList.add('dragging'); });
-container.addEventListener('dragleave', () => dropZoneEl.classList.remove('dragging'));
+container.addEventListener('dragover',  e => { e.preventDefault(); dropZone.classList.add('dragging'); });
+container.addEventListener('dragleave', () => dropZone.classList.remove('dragging'));
 container.addEventListener('drop', e => {
   e.preventDefault();
-  dropZoneEl.classList.remove('dragging');
+  dropZone.classList.remove('dragging');
   if (e.dataTransfer.files[0]) loadFile(e.dataTransfer.files[0]);
 });
-dropZoneEl.addEventListener('click', () => fileInputEl.click());
+dropZone.addEventListener('click', () => document.getElementById('file-input').click());
 
 // Sidebar controls
-btnLoadUrlEl.addEventListener('click', loadFromURL);
-toggleEdgesEl.addEventListener('click', toggleEdges);
-toggleGridEl.addEventListener('click', toggleGrid);
+document.getElementById('btn-load-url').addEventListener('click', loadFromURL);
+document.getElementById('toggle-edges').addEventListener('click', toggleEdges);
+document.getElementById('toggle-grid').addEventListener('click', toggleGrid);
 // Delegated remove — one listener handles all ✕ buttons in the scene model list
 sceneModelListEl.addEventListener('click', e => {
   const btn = e.target.closest('.model-list-remove');
@@ -3391,7 +3361,7 @@ sceneModelListEl.addEventListener('click', e => {
 });
 
 // Error banner
-btnErrorCloseEl.addEventListener('click', () => errorBannerEl.classList.remove('visible'));
+document.getElementById('btn-error-close').addEventListener('click', () => errorBanner.classList.remove('visible'));
 
 // Canvas — double-click to focus orbit target on clicked point
 renderer.domElement.addEventListener('dblclick', e => {
@@ -3450,7 +3420,7 @@ renderer.domElement.addEventListener('contextmenu', e => e.preventDefault()); //
 // Keyboard — nudge selected model (browser) or navigate model browser (overlay)
 document.addEventListener('keydown', e => {
   // Model browser keyboard nav takes priority when open
-  if (e.key === 'Escape' && galleryOverlayEl.classList.contains('open')) {
+  if (e.key === 'Escape' && galleryOverlay.classList.contains('open')) {
     closeGallery(); return;
   }
 

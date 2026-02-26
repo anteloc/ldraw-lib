@@ -8,7 +8,7 @@ We will gradually introduce changes in order to add, remove or improve features,
 1. Performant: required for efficient rendering of 3D and VR/MR models
 2. Simple: key for adding future features, we need something we can understand easily
 3. Idiomatic: expressive acording to JavaScript good style ("taste")
-4. Annotated in a specific way for making it easier for you to follow
+4. Annotated in the best way for you to follow
 
 Before starting modifying the code, do the following:
 
