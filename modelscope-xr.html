@@ -548,6 +548,7 @@
 import * as THREE from 'three';
 import { OrbitControls }            from 'three/addons/controls/OrbitControls.js';
 import { LDrawLoader }              from 'three/addons/loaders/LDrawLoader.js';
+import { LDrawUtils }               from 'three/addons/utils/LDrawUtils.js';
 import { RoomEnvironment }          from 'three/addons/environments/RoomEnvironment.js';
 import { XRControllerModelFactory } from 'three/addons/webxr/XRControllerModelFactory.js';
 import { computeBoundsTree, disposeBoundsTree, acceleratedRaycast } from 'three-mesh-bvh';
@@ -614,7 +615,7 @@ const BROWSER_BG = new THREE.Color(0x0e0e10);
 
 const container = document.getElementById('canvas-container');
 
-const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: 'high-performance' });
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFShadowMap;    // PCFSoft is overkill; PCF is a good balance
@@ -1031,6 +1032,8 @@ function onModelLoaded(model, filename) {
     return;
   }
 
+  model = LDrawUtils.mergeObject(model); // flatten the hierarchy to one level of meshes for raycasting
+
   errorBanner.classList.remove('visible');
   model.rotation.x = Math.PI; // LDraw Y-down → Y-up
   model.traverse(o => {
@@ -1042,6 +1045,8 @@ function onModelLoaded(model, filename) {
       o.raycast = () => {};             // edges are visual only — never raycasted
     }
   });
+
+
 
   scene.add(model);
   const entry = createEntry(model, filename);
