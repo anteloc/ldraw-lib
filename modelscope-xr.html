@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LDraw Model Viewer v5</title>
+<title>ModelScope XR v0.9</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap');
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -610,6 +610,28 @@ const THUMB_BASE        = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO
 // Scene background colour — saved here so onXRSessionEnd can restore it
 const BROWSER_BG = new THREE.Color(0x0e0e10);
 
+// Light intensities — two sets so toggling edges feels perceptually neutral.
+// Edges act like dark grout between tiles; without them surfaces read ~25% brighter,
+// so we compensate by dimming lights when edges are hidden.
+const LIGHTS_EDGES_ON  = { ambient: 0.6, dir: 1.5, envIntensity: 1.0 };
+const LIGHTS_EDGES_OFF = { ambient: 0.45, dir: 1.1, envIntensity: 0.1 };
+
+
+// MR boosts ambient to compensate for bright passthrough background.
+// Keep the same ratio between edges-on and edges-off.
+const LIGHTS_MR_EDGES_ON  = { ambient: 1.2, dir: 1.5, envIntensity: 1.0 };
+const LIGHTS_MR_EDGES_OFF = { ambient: 0.9, dir: 1.1, envIntensity: 0.1 };
+
+function applyLightIntensities() {
+  const mr     = (currentMode === 'mr');
+  const on     = edgesVisible;
+  const preset = mr
+    ? (on ? LIGHTS_MR_EDGES_ON  : LIGHTS_MR_EDGES_OFF)
+    : (on ? LIGHTS_EDGES_ON     : LIGHTS_EDGES_OFF);
+  ambientLight.intensity = preset.ambient;
+  dirLight.intensity     = preset.dir;
+  scene.environmentIntensity = preset.envIntensity;
+}
 
 // ─── §2  Renderer + Scene ─────────────────────────────────────────────────────
 
@@ -1222,6 +1244,7 @@ function toggleEdges() {
   for (const entry of models) {
     entry.mesh.traverse(o => { if (o.isLineSegments) o.visible = edgesVisible; });
   }
+  applyLightIntensities();
   invalidate();
 }
 
@@ -2773,8 +2796,6 @@ function onXRSessionStart(mode) {
     // Transparent background → passthrough shows through
     scene.background = null;
     renderer.setClearColor(0x000000, 0);
-    // Boost ambient slightly so model isn't too dark against bright room
-    ambientLight.intensity = 1.2;
     mrShadowDisc.visible = true;
   } else {
     // VR: solid opaque black — gives the XR compositor a proper opaque layer.
@@ -2782,9 +2803,9 @@ function onXRSessionStart(mode) {
     // content, contributing to silhouette-edge flicker.
     scene.background = new THREE.Color(0x000000);
     renderer.setClearColor(0x000000, 1);
-    ambientLight.intensity = 0.6;
     mrShadowDisc.visible = false;
   }
+  applyLightIntensities();
 
   for (const entry of models) {
     _setupEntryForXR(entry);
@@ -2847,7 +2868,7 @@ function onXRSessionEnd() {
   camera.updateProjectionMatrix();
   scene.background = BROWSER_BG;
   renderer.setClearColor(0x000000, 1);
-  ambientLight.intensity = 0.6;
+  applyLightIntensities();
   gridHelper.visible = document.getElementById('toggle-grid').classList.contains('on');
   ground.visible = true;
   dirLight.castShadow = true;
