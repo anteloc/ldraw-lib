@@ -996,13 +996,25 @@ function _buildCategoryCounts(items) {
     .sort((a, b) => a[0].localeCompare(b[0]))
     .map(([name, count]) => ({ name, count }));
 }
+
+function loadModelFromURL(url) {
+  if (!url) return;
+  const name = url.split('/').pop();
+  showLoading('Fetching…', url);
+  if (isGLB(url)) {
+    loadGLBFromURL(url, name);
+  } else {
+    loadMPDFromURL(url, name, 'Could not load URL — CORS may be blocking it.\nTry downloading and opening locally.');
+  }
+}
+
 //
 // makeLDrawLoader — constructs and primes a loader in one await.
 //   preloadMaterials failure is swallowed; the loader still resolves
 //   colours correctly for packed .mpd files without it.
 //
-// loadModelFromURL  — resolves with the model group (throws on error).
-// loadModelFromText — synchronous: parse() returns the group directly.
+// loadMPDFromURL  — resolves with the model group (throws on error).
+// loadMPDModelFromText — synchronous: parse() returns the group directly.
 //
 // Both call onModelLoaded on success; errors are surfaced via showError.
 
@@ -1017,7 +1029,7 @@ async function makeLDrawLoader() {
   return loader;
 }
 
-async function loadModelFromURL(url, name, errorMsg) {
+async function loadMPDFromURL(url, name, errorMsg) {
   try {
     if (url.endsWith('.zip')) {
       // ── Zipped model: fetch as binary, decompress in-memory, parse as text ──
@@ -1056,7 +1068,7 @@ async function _parseWithLoader(text) {
   }
 }
 
-async function loadModelFromText(text, name) {
+async function loadMPDModelFromText(text, name) {
   try {
     onModelLoaded(await _parseWithLoader(text), name);
   } catch (err) {
@@ -1145,7 +1157,7 @@ function loadFile(file) {
   const reader = new FileReader();
   reader.onload = e => {
     showLoading('Parsing model…', 'Sub-parts resolved from LDraw CDN — needs internet');
-    loadModelFromText(e.target.result, file.name);
+    loadMPDModelFromText(e.target.result, file.name);
   };
   reader.onerror = () => showError('Could not read file.');
   reader.readAsText(file);
@@ -1153,14 +1165,7 @@ function loadFile(file) {
 
 function loadFromURL() {
   const url = document.getElementById('url-input').value.trim();
-  if (!url) return;
-  const name = url.split('/').pop();
-  showLoading('Fetching…', url);
-  if (isGLB(url)) {
-    loadGLBFromURL(url, name);
-  } else {
-    loadModelFromURL(url, name, 'Could not load URL — CORS may be blocking it.\nTry downloading and opening locally.');
-  }
+  loadModelFromURL(url);
 }
 
 // ── GLB loading ───────────────────────────────────────────────────────────────
@@ -3182,7 +3187,7 @@ fetchModelList();
 function loadFromBrowser(url, name) {
   closeGallery();
   showLoading('Loading model…', name);
-  loadModelFromURL(url, name, 'Could not load model.');
+  loadMPDFromURL(url, name, 'Could not load model.');
 }
 
 function escHtml(s) {
@@ -3590,7 +3595,7 @@ document.addEventListener('keydown', e => {
 // ─── Auto-load demo on page load ─────────────────────────────────────────────
 // Fires immediately so the model is rendering behind the welcome modal.
 showLoading('Loading demo…', 'Fetching packed .mpd from GitHub');
-loadModelFromURL(DEMO_MODEL, 'Fire Truck (demo)', 'Could not load demo — check your internet connection.');
+loadModelFromURL(DEMO_MODEL);
 
 // ─── Welcome modal ────────────────────────────────────────────────────────────
 (function () {
