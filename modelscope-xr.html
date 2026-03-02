@@ -714,6 +714,8 @@ const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 controls.dampingFactor = 0.06;
 controls.addEventListener('change', invalidate);
+controls.addEventListener('start', () => { _orbitActive = true;  _hoverPending = false; container.classList.remove('drag-ready'); });
+controls.addEventListener('end',   () => { _orbitActive = false; });
 
 function resize() {
   const w = container.clientWidth, h = container.clientHeight;
@@ -1203,6 +1205,7 @@ async function loadGLBFromFile(file) {
 
 // Reusable temporaries — never allocated per event
 const _browserRay = new THREE.Raycaster();
+_browserRay.firstHitOnly = true;   // BVH short-circuits after first hit
 const _dragPlane  = new THREE.Plane();
 const _dragOffset = new THREE.Vector3();
 const _planeHit   = new THREE.Vector3();
@@ -1210,6 +1213,10 @@ const _ndcVec     = new THREE.Vector2();
 
 let _dragEntry      = null;   // entry currently being dragged
 let _dragActive     = false;
+let _orbitActive    = false;  // true while OrbitControls is rotating/panning/zooming
+let _hoverPending   = false;  // a pointermove arrived; process hover in next frame
+let _hoverClientX   = 0;
+let _hoverClientY   = 0;
 let _holdTimer      = null;   // for Quest-style click-and-hold
 let _pointerDownPos = null;   // { x, y } at pointerdown
 
@@ -3088,6 +3095,11 @@ renderer.setAnimationLoop((timestamp, frame) => {
     // controls.update() applies damping momentum and fires 'change' if the
     // camera actually moved — which sets _needsRender via the listener above.
     controls.update();
+    // D: process at most one hover raycast per frame (deferred from pointermove)
+    if (_hoverPending) {
+      _hoverPending = false;
+      container.classList.toggle('drag-ready', !!browserRaycast(_hoverClientX, _hoverClientY));
+    }
     if (_needsRender) {
       _updateScaleLabels();
       renderer.render(scene, camera);
@@ -3527,9 +3539,10 @@ renderer.domElement.addEventListener('pointerdown', e => {
 renderer.domElement.addEventListener('pointermove', e => {
   if (renderer.xr.isPresenting) return;
   if (_dragActive) { moveDrag(e.clientX, e.clientY); return; }
-  if (models.length > 0) {
-    container.classList.toggle('drag-ready', !!browserRaycast(e.clientX, e.clientY));
-  }
+  if (_orbitActive || models.length === 0) return;   // B: skip during orbit; D: defer to frame
+  _hoverPending = true;
+  _hoverClientX = e.clientX;
+  _hoverClientY = e.clientY;
 });
 
 renderer.domElement.addEventListener('pointerup', e => {
