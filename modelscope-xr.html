@@ -441,7 +441,7 @@
     <button class="btn" id="btn-browse">Browse Models</button>
     <button class="btn" id="btn-reset-view">Reset View</button>
     <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="anteloc" data-color="#FFDD00" data-emoji="☕" data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff"></script>
-    <input type="file" id="file-input" accept=".ldr,.mpd,.dat">
+    <input type="file" id="file-input" accept=".ldr,.mpd,.dat,.glb">
     <!-- VR and MR buttons are injected here by JS after checking support -->
   </div>
 </header>
@@ -452,7 +452,7 @@
       <div class="drop-icon"><div class="drop-zone-brick"></div></div>
       <div class="drop-text">
         <h2>Drop LDraw File</h2>
-        <p>.ldr &nbsp;·&nbsp; .mpd &nbsp;·&nbsp; .dat</p>
+        <p>.ldr &nbsp;·&nbsp; .mpd &nbsp;·&nbsp; .dat &nbsp;·&nbsp; .glb</p>
         <p style="margin-top:10px;font-size:10px;opacity:.6">Packed .mpd files work best<br>sub-parts are self-contained</p>
       </div>
     </div>
@@ -488,7 +488,7 @@
     </div>
     <div class="sidebar-section">
       <div class="sidebar-title">Load</div>
-      <input type="text" class="url-input" id="url-input" placeholder="https://…/model.mpd">
+      <input type="text" class="url-input" id="url-input" placeholder="https://…/model.mpd or .glb">
       <button class="btn" id="btn-load-url" style="width:100%;margin-top:2px">Load from URL</button>
       <div style="border-top:1px solid var(--border);margin:10px 0"></div>
       <button class="btn primary" id="btn-open-file" style="width:100%">Open File…</button>
@@ -523,7 +523,8 @@
       <div class="sidebar-title">File Format Tips</div>
       <div class="hint">
         Packed .mpd files load<br>fully self-contained.<br><br>
-        Plain .ldr files need<br>sub-parts fetched from<br>the LDraw CDN — requires<br>internet access.
+        Plain .ldr files need<br>sub-parts fetched from<br>the LDraw CDN — requires<br>internet access.<br><br>
+        .glb files load as-is.<br>Draco-compressed GLB<br>is not supported.
       </div>
     </div>
   </div>
@@ -551,6 +552,7 @@ import { LDrawLoader }              from 'three/addons/loaders/LDrawLoader.js';
 import { LDrawUtils }               from 'three/addons/utils/LDrawUtils.js';
 import { RoomEnvironment }          from 'three/addons/environments/RoomEnvironment.js';
 import { XRControllerModelFactory } from 'three/addons/webxr/XRControllerModelFactory.js';
+import { GLTFLoader }               from 'three/addons/loaders/GLTFLoader.js';
 import { computeBoundsTree, disposeBoundsTree, acceleratedRaycast } from 'three-mesh-bvh';
 import { Text as TroikaText, preloadFont } from 'troika-three-text';
 import { unzipSync }                from 'fflate';
@@ -595,9 +597,9 @@ const ROTATE_SPEED          = 1.5;    // radians/sec at full thumbstick deflecti
 // Active gestures always raycast every frame for precision.
 const RAYCAST_IDLE_INTERVAL = 3;
 
-// Browser interaction constants
-const NUDGE_STEP = 100;   // LDU — about 4 cm at 1:1 scale
-const GRID_HALF  = 2000;  // LDU — half the grid width; models are clamped to ±this
+// Browser interaction constants — world space is metres in browser mode
+const NUDGE_STEP = 0.04;  // metres (4 cm)
+const GRID_HALF  = 2.0;   // metres — half the grid width; models are clamped to ±this
 
 // XR menu navigation timing (milliseconds)
 const MENU_NAV_DELAY  = 600;  // initial hold before repeat starts
@@ -633,6 +635,11 @@ function applyLightIntensities() {
   scene.environmentIntensity = preset.envIntensity;
 }
 
+// ─── §1b  Format detection ────────────────────────────────────────────────────
+
+function isGLB(name) { return /\.glb$/i.test(name); }
+
+
 // ─── §2  Renderer + Scene ─────────────────────────────────────────────────────
 
 const container = document.getElementById('canvas-container');
@@ -663,18 +670,18 @@ const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
 scene.add(ambientLight);
 
 const dirLight = new THREE.DirectionalLight(0xffffff, 1.5);
-dirLight.position.set(500, 1000, 500);
+dirLight.position.set(0.5, 1, 0.5);   // metre-scale scene
 dirLight.castShadow = true;
 dirLight.shadow.mapSize.set(1024, 1024);
-Object.assign(dirLight.shadow.camera, { near: 1, far: 10000, left: -2000, right: 2000, top: 2000, bottom: -2000 });
+Object.assign(dirLight.shadow.camera, { near: 0.001, far: 10, left: -2, right: 2, top: 2, bottom: -2 });
 scene.add(dirLight);
 
 // Grid & shadow ground — browser / VR only, hidden in MR
-const gridHelper = new THREE.GridHelper(4000, 50, 0x333344, 0x222230);
+const gridHelper = new THREE.GridHelper(4, 50, 0x333344, 0x222230);  // 4 m, 8 cm cells
 scene.add(gridHelper);
 
 const ground = new THREE.Mesh(
-  new THREE.PlaneGeometry(10000, 10000),
+  new THREE.PlaneGeometry(20, 20),   // 20 m shadow catcher
   new THREE.ShadowMaterial({ opacity: 0.2 })
 );
 ground.rotation.x = -Math.PI / 2;
@@ -694,12 +701,12 @@ scene.add(mrShadowDisc);
 
 // ─── §4  Camera + OrbitControls ───────────────────────────────────────────────
 
-const camera = new THREE.PerspectiveCamera(45, 1, 1, 50000);
-// Near-plane values differ between browser (LDU units) and XR (metres).
-// Switching on session start/end keeps depth precision optimal in both spaces.
-const CAMERA_NEAR_BROWSER = 1;      // 1 LDU ≈ 0.4 mm — tight for browser depth precision
-const CAMERA_NEAR_XR      = 0.01;   // 1 cm  — keeps controllers/menu visible at arm's reach
-camera.position.set(0, 400, 1200);
+const camera = new THREE.PerspectiveCamera(45, 1, 0.001, 100);
+// Near-plane values — browser and XR are both in metres now.
+// Browser near is tighter (1 mm) so close-up inspection stays crisp.
+const CAMERA_NEAR_BROWSER = 0.001;  // 1 mm — tight for metre-scale browser depth precision
+const CAMERA_NEAR_XR      = 0.01;   // 1 cm — keeps controllers/menu visible at arm's reach
+camera.position.set(0, 0.5, 1.5);  // reasonable starting point; fitCamera() overrides on load
 
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
@@ -845,7 +852,7 @@ function _drawScaleLabel(entry, pct) {
 }
 
 function showScaleLabel(entry, newScale) {
-  const pct = Math.round(newScale / LDU_TO_METERS * 100);
+  const pct = Math.round(newScale / entry.xrScale * 100);
   _drawScaleLabel(entry, pct);
   entry.scaleLabel.sprite.visible = true;
 
@@ -857,7 +864,7 @@ function showScaleLabel(entry, newScale) {
   }, SCALE_LABEL_HIDE_MS);
 }
 
-function createEntry(mesh, name) {
+function createEntry(mesh, name, xrScale = LDU_TO_METERS) {
   // Place new XR pivot to the right of all existing ones
   const pivotX = models.reduce((maxX, e) => Math.max(maxX, e.pivot.position.x), 0)
     + (models.length > 0 ? MODEL_SPACING : 0);
@@ -867,12 +874,12 @@ function createEntry(mesh, name) {
   scene.add(pivot);
 
   const root = new THREE.Group();
-  root.scale.setScalar(LDU_TO_METERS);
+  root.scale.setScalar(xrScale);
   pivot.add(root);
 
   // Orb is parented to root — rigidly attached to the model, rotates with it.
   // Sized in onXRSessionStart once the mesh is re-centred into root-local space.
-  const entry = { mesh, pivot, root, name, orb: null, orbSphere: null, scaleLabel: null };
+  const entry = { mesh, pivot, root, name, xrScale, orb: null, orbSphere: null, scaleLabel: null };
   const { orb, sphere } = makeOrb(entry);
   entry.orb        = orb;
   entry.orbSphere  = sphere;
@@ -889,7 +896,7 @@ function createEntry(mesh, name) {
 
 function fitCamera() {
   if (models.length === 0) {
-    camera.position.set(0, 400, 1200);
+    camera.position.set(0, 0.5, 1.5);
     controls.target.set(0, 0, 0);
     controls.update();
     return;
@@ -1055,35 +1062,46 @@ async function loadModelFromText(text, name) {
   }
 }
 
-function onModelLoaded(model, filename) {
+// isLDraw=true  → apply mergeObject, Y-flip, disable edge raycasts, LDU_TO_METERS XR scale
+// isLDraw=false → GLB path: skip those steps, use scale 1.0 (GLB is already Y-up, in metres)
+function onModelLoaded(model, filename, { isLDraw = true } = {}) {
   if (models.length >= MAX_MODELS) {
     showError(`Maximum ${MAX_MODELS} models in scene. Remove one first.`);
     return;
   }
 
-  model = LDrawUtils.mergeObject(model); // flatten the hierarchy to one level of meshes for raycasting
+  if (isLDraw) {
+    model = LDrawUtils.mergeObject(model); // flatten hierarchy for raycasting
+    model.rotation.x = Math.PI;           // LDraw Y-down → Three.js Y-up
+  }
 
   errorBanner.classList.remove('visible');
-  model.rotation.x = Math.PI; // LDraw Y-down → Y-up
   model.traverse(o => {
     if (o.isMesh) {
       o.castShadow = true;
       o.receiveShadow = true;
       o.geometry.computeBoundsTree();   // BVH — O(log n) raycasts
-    } else if (o.isLineSegments) {
+    } else if (isLDraw && o.isLineSegments) {
       o.raycast = () => {};             // edges are visual only — never raycasted
     }
   });
 
-
+  const xrScale = isLDraw ? LDU_TO_METERS : 1.0;
 
   scene.add(model);
-  const entry = createEntry(model, filename);
+  const entry = createEntry(model, filename, xrScale);
   models.push(entry);
   _meshList.push(model);
 
+  // Scale the mesh to metres for browser display.
+  // XR uses root.scale (entry.xrScale) instead, so this is reset in _setupEntryForXR
+  // and restored in onXRSessionEnd.
+  if (!renderer.xr.isPresenting) {
+    model.scale.setScalar(entry.xrScale);
+  }
+
   // In browser mode, separate models along X so they don't stack on top of each other.
-  // Compute the right edge of all existing models and place the new one just past it.
+  // Bounding boxes are now in metres (mesh already scaled above).
   if (models.length > 1) {
     const existingBox = new THREE.Box3();
     for (const e of models.slice(0, -1)) existingBox.expandByObject(e.mesh);
@@ -1114,6 +1132,11 @@ function onModelLoaded(model, filename) {
 
 function loadFile(file) {
   if (!file) return;
+  if (isGLB(file.name)) {
+    showLoading('Reading GLB…', file.name);
+    loadGLBFromFile(file);
+    return;
+  }
   showLoading('Reading file…', file.name);
   const reader = new FileReader();
   reader.onload = e => {
@@ -1127,8 +1150,45 @@ function loadFile(file) {
 function loadFromURL() {
   const url = document.getElementById('url-input').value.trim();
   if (!url) return;
+  const name = url.split('/').pop();
   showLoading('Fetching…', url);
-  loadModelFromURL(url, url.split('/').pop(), 'Could not load URL — CORS may be blocking it.\nTry downloading and opening locally.');
+  if (isGLB(url)) {
+    loadGLBFromURL(url, name);
+  } else {
+    loadModelFromURL(url, name, 'Could not load URL — CORS may be blocking it.\nTry downloading and opening locally.');
+  }
+}
+
+// ── GLB loading ───────────────────────────────────────────────────────────────
+//
+// GLB is already Y-up and in metres — no Y-flip, no LDU scaling, no edge suppression.
+// Both functions converge on onModelLoaded with { isLDraw: false }.
+
+async function loadGLBFromURL(url, name) {
+  try {
+    const loader = new GLTFLoader();
+    const gltf   = await loader.loadAsync(url, onProgress);
+    onModelLoaded(gltf.scene, name, { isLDraw: false });
+  } catch (err) {
+    showError('Could not load GLB — CORS may be blocking it.\nTry downloading and opening locally.\n\n' + err);
+  }
+}
+
+async function loadGLBFromFile(file) {
+  try {
+    const buffer = await file.arrayBuffer();
+    const blob   = new Blob([buffer], { type: 'model/gltf-binary' });
+    const url    = URL.createObjectURL(blob);
+    const loader = new GLTFLoader();
+    try {
+      const gltf = await loader.loadAsync(url, onProgress);
+      onModelLoaded(gltf.scene, file.name, { isLDraw: false });
+    } finally {
+      URL.revokeObjectURL(url);
+    }
+  } catch (err) {
+    showError('Parse error: ' + (err?.message || String(err)));
+  }
 }
 
 
@@ -1226,7 +1286,7 @@ function resetView() {
   if (renderer.xr.isPresenting) {
     let x = 0;
     for (const entry of models) {
-      entry.root.scale.setScalar(LDU_TO_METERS);
+      entry.root.scale.setScalar(entry.xrScale);
       entry.root.rotation.set(0, 0, 0);
       entry.pivot.position.set(x, MODEL_PIVOT_Y, MODEL_PIVOT_Z);
       x += MODEL_SPACING;
@@ -1584,7 +1644,7 @@ function updateXRControls() {
           const entry    = slot.grab.entry;
           const newScale = THREE.MathUtils.clamp(
             entry.root.scale.x * (1 + thumbX * SCALE_SPEED),
-            LDU_TO_METERS * 0.05, LDU_TO_METERS * 30
+            entry.xrScale * 0.05, entry.xrScale * 30
           );
           entry.root.scale.setScalar(newScale);
           mrShadowDisc.scale.setScalar(newScale / LDU_TO_METERS);
@@ -2728,6 +2788,9 @@ function setMode(mode) {
 // for models loaded while XR is already presenting.
 function _setupEntryForXR(entry) {
   const { mesh, root } = entry;
+  // Reset the browser-mode scale so geometry is in native units (LDU / metres as authored).
+  // root.scale (entry.xrScale) takes over from here.
+  mesh.scale.setScalar(1);
   // Move mesh from scene root into the entry's root group (inside pivot)
   if (mesh.parent !== root) {
     if (mesh.parent) mesh.parent.remove(mesh);
@@ -2879,9 +2942,10 @@ function onXRSessionEnd() {
     const { mesh, pivot, root } = entry;
     root.remove(mesh);
     mesh.position.set(0, 0, 0);
+    mesh.scale.setScalar(entry.xrScale);  // restore browser-mode metre scale
     scene.add(mesh);
     // Reset XR transforms for next session
-    root.scale.setScalar(LDU_TO_METERS);
+    root.scale.setScalar(entry.xrScale);
     root.rotation.set(0, 0, 0);
   }
   if (models.length > 0) fitCamera();
