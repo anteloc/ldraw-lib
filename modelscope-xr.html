@@ -2750,6 +2750,8 @@ function onXRSessionStart(mode) {
   // Check whether dom-overlay is actually active in this session.
   // renderer.xr.getSession() is valid from this point onward.
   const session = renderer.xr.getSession();
+  renderer.xr.setFoveation(1.0);
+
   _xrDomOverlayActive = !!(session?.enabledFeatures?.includes('dom-overlay'));
 
   // ── Flush OrbitControls damping before handing camera to XR ──────────────
@@ -2874,7 +2876,12 @@ function makeXRSessionOpts() {
   const overlayRoot = document.getElementById('model-gallery');
   return {
     requiredFeatures: ['local-floor'],
-    optionalFeatures: ['bounded-floor', 'hand-tracking', 'dom-overlay'],
+    optionalFeatures: [
+      'bounded-floor', 
+      'hand-tracking', 
+      'dom-overlay',
+      'foveation-level' // request foveated rendering, free on Quest hardware
+    ],
     domOverlay: { root: overlayRoot },
   };
 }
