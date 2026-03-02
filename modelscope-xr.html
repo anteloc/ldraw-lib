@@ -569,15 +569,17 @@ THREE.Mesh.prototype.raycast                      = acceleratedRaycast;
 const BASE_REPO   = 'anteloc/ldraw-lib';
 const REPO_BRANCH = 'master';
 const PARTS_CDN    = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/ldraw/`;
-const DEMO_MODEL   = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/models-packed/42040-1.mpd.zip`;
+const DEMO_MODEL   = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/models-glb/f1-car.glb`;
+// https://raw.githubusercontent.com/anteloc/ldraw-lib/master/models-glb/f1-car.glb
+// const DEMO_MODEL   = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/models-packed/42040-1.mpd.zip`;
 const MODELS_INDEX = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/models-index.jsonl`;
 const RAW_BASE     = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/models-packed/`;
 const DEMO_VIDEO   = 'https://youtu.be/IhGm3KRSl7s';
 // const DEMO_VIDEO   = 'https://anteloc.github.io/assets/demo.mp4';
 
 // XR scene hierarchy constants
-// LDU → metres: 1 LDU = 0.4 mm = 0.0004 m, ×2.5 = hand-held / table-top scale
-const LDU_TO_METERS = 0.0004 * 2.5;
+// LDU → metres: 1 LDU = 0.4 mm = 0.0004 m
+const LDU_TO_METERS = 0.0004;
 const MAX_MODELS    = 5;
 const MODEL_SPACING = 0.35;   // metres between model pivots in XR
 const MODEL_PIVOT_Y = 0.9;    // metres above floor
