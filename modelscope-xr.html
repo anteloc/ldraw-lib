@@ -488,7 +488,7 @@
     </div>
     <div class="sidebar-section">
       <div class="sidebar-title">Load</div>
-      <input type="text" class="url-input" id="url-input" placeholder="https://…/model.mpd or .glb">
+      <input type="text" class="url-input" id="url-input" placeholder="https://…/model.mpd or .glb" value="https://192.168.1.16:8443/f1-car-test.glb">
       <button class="btn" id="btn-load-url" style="width:100%;margin-top:2px">Load from URL</button>
       <div style="border-top:1px solid var(--border);margin:10px 0"></div>
       <button class="btn primary" id="btn-open-file" style="width:100%">Open File…</button>
@@ -524,7 +524,7 @@
       <div class="hint">
         Packed .mpd files load<br>fully self-contained.<br><br>
         Plain .ldr files need<br>sub-parts fetched from<br>the LDraw CDN — requires<br>internet access.<br><br>
-        .glb files load as-is.<br>Draco-compressed GLB<br>is not supported.
+        .glb files load as-is.<br>Meshopt-compressed GLB<br>is supported.
       </div>
     </div>
   </div>
@@ -553,6 +553,7 @@ import { LDrawUtils }               from 'three/addons/utils/LDrawUtils.js';
 import { RoomEnvironment }          from 'three/addons/environments/RoomEnvironment.js';
 import { XRControllerModelFactory } from 'three/addons/webxr/XRControllerModelFactory.js';
 import { GLTFLoader }               from 'three/addons/loaders/GLTFLoader.js';
+import { MeshoptDecoder }           from 'three/addons/libs/meshopt_decoder.module.js';
 import { computeBoundsTree, disposeBoundsTree, acceleratedRaycast } from 'three-mesh-bvh';
 import { Text as TroikaText, preloadFont } from 'troika-three-text';
 import { unzipSync }                from 'fflate';
@@ -640,6 +641,81 @@ function applyLightIntensities() {
 // ─── §1b  Format detection ────────────────────────────────────────────────────
 
 function isGLB(name) { return /\.glb$/i.test(name); }
+
+// Convert shared-geometry meshes into InstancedMesh to slash draw calls.
+// The GLB converter's dedup() step ensures many mesh nodes share the same
+// BufferGeometry + Material.  InstancedMesh renders all instances in ONE
+// draw call without modifying geometry data (no winding / normal issues).
+function instanceGLBScene(gltfScene) {
+  gltfScene.updateMatrixWorld(true);
+
+  const rootInv = new THREE.Matrix4().copy(gltfScene.matrixWorld).invert();
+  const groups  = new Map();   // "geoId|matId" → { geometry, material, pos[], neg[] }
+  const passthrough = [];      // meshes we cannot safely instance
+
+  gltfScene.traverse(o => {
+    if (!o.isMesh) return;
+    const rel = new THREE.Matrix4().multiplyMatrices(rootInv, o.matrixWorld);
+
+    // Skinned/morph/multi-material meshes are not safe to batch this way.
+    if (o.isSkinnedMesh || o.morphTargetInfluences || Array.isArray(o.material)) {
+      passthrough.push({ geometry: o.geometry, material: o.material, matrix: rel });
+      return;
+    }
+
+    const key = o.geometry.id + '|' + o.material.id;
+    if (!groups.has(key)) {
+      groups.set(key, { geometry: o.geometry, material: o.material, pos: [], neg: [] });
+    }
+    // Negative determinant means mirrored transform. Mixing mirrored and
+    // non-mirrored transforms in one material causes front-face winding issues.
+    if (rel.determinant() < 0) groups.get(key).neg.push(rel);
+    else groups.get(key).pos.push(rel);
+  });
+
+  // Replace the deep hierarchy with flat instanced meshes
+  while (gltfScene.children.length) gltfScene.remove(gltfScene.children[0]);
+
+  for (const { geometry, material, pos, neg } of groups.values()) {
+    const matrices = pos;
+    if (matrices.length === 1) {
+      const mesh = new THREE.Mesh(geometry, material);
+      mesh.matrixAutoUpdate = false;
+      mesh.matrix.copy(matrices[0]);
+      mesh.matrixWorldNeedsUpdate = true;
+      gltfScene.add(mesh);
+    } else {
+      const im = new THREE.InstancedMesh(geometry, material, matrices.length);
+      for (let i = 0; i < matrices.length; i++) im.setMatrixAt(i, matrices[i]);
+      im.instanceMatrix.needsUpdate = true;
+      im.computeBoundingSphere();
+      gltfScene.add(im);
+    }
+
+    if (neg.length > 0) {
+      // Negative-determinant (mirrored) transforms cannot be safely rendered
+      // with InstancedMesh + FrontSide because front-face winding is fixed per draw.
+      // Keep them as individual meshes so Three.js can set frontFace per object.
+      for (const matrix of neg) {
+        const mesh = new THREE.Mesh(geometry, material);
+        mesh.matrixAutoUpdate = false;
+        mesh.matrix.copy(matrix);
+        mesh.matrixWorldNeedsUpdate = true;
+        gltfScene.add(mesh);
+      }
+    }
+  }
+
+  for (const { geometry, material, matrix } of passthrough) {
+    const mesh = new THREE.Mesh(geometry, material);
+    mesh.matrixAutoUpdate = false;
+    mesh.matrix.copy(matrix);
+    mesh.matrixWorldNeedsUpdate = true;
+    gltfScene.add(mesh);
+  }
+
+  return gltfScene;
+}
 
 
 // ─── §2  Renderer + Scene ─────────────────────────────────────────────────────
@@ -747,6 +823,14 @@ const _meshList = []; // cached models.map(e => e.mesh) — updated on load/remo
 let edgesVisible  = true;
 let orbVisible    = false;  // whether the trackball orb shows during grab
 let selectedEntry = null;   // model currently selected for keyboard nudge
+
+// Shadows are expensive: each frame with dirLight.castShadow=true adds a FULL
+// recursive traversal of the entire scene graph (WebGLShadowMap.renderObject).
+// Only enable when at least one LDraw model needs shadows.
+function updateShadows() {
+  if (renderer.xr.isPresenting) return;   // XR manages shadows separately
+  dirLight.castShadow = models.some(e => e.isLDraw);
+}
 
 // ── Trackball orb ─────────────────────────────────────────────────────────────
 //
@@ -963,6 +1047,7 @@ function removeEntry(entry) {
 
   models.splice(models.indexOf(entry), 1);
   _meshList.splice(_meshList.indexOf(entry.mesh), 1);
+  updateShadows();
   renderModelList();
 
   if (models.length === 0) {
@@ -1089,14 +1174,18 @@ function onModelLoaded(model, filename, { isLDraw = true } = {}) {
   if (isLDraw) {
     model = LDrawUtils.mergeObject(model); // flatten hierarchy for raycasting
     model.rotation.x = Math.PI;           // LDraw Y-down → Three.js Y-up
+  } else {
+    model = instanceGLBScene(model);       // reduce draw calls via InstancedMesh
   }
 
   errorBanner.classList.remove('visible');
   model.traverse(o => {
-    if (o.isMesh) {
-      o.castShadow = true;
-      o.receiveShadow = true;
-      o.geometry.computeBoundsTree();   // BVH — O(log n) raycasts
+    if (o.isMesh || o.isInstancedMesh) {
+      if (isLDraw) {
+        o.castShadow = true;
+        o.receiveShadow = true;
+      }
+      if (o.isMesh) o.geometry.computeBoundsTree();   // BVH — O(log n) raycasts
     } else if (isLDraw && o.isLineSegments) {
       o.raycast = () => {};             // edges are visual only — never raycasted
     }
@@ -1106,7 +1195,9 @@ function onModelLoaded(model, filename, { isLDraw = true } = {}) {
 
   scene.add(model);
   const entry = createEntry(model, filename, xrScale);
+  entry.isLDraw = isLDraw;
   models.push(entry);
+  updateShadows();
   _meshList.push(model);
 
   // Scale the mesh to metres for browser display.
@@ -1173,10 +1264,13 @@ function loadFromURL() {
 // GLB is already Y-up and in metres — no Y-flip, no LDU scaling, no edge suppression.
 // Both functions converge on onModelLoaded with { isLDraw: false }.
 
+function makeGLTFLoader() {
+  return new GLTFLoader().setMeshoptDecoder(MeshoptDecoder);
+}
+
 async function loadGLBFromURL(url, name) {
   try {
-    const loader = new GLTFLoader();
-    const gltf   = await loader.loadAsync(url, onProgress);
+    const gltf = await makeGLTFLoader().loadAsync(url, onProgress);
     onModelLoaded(gltf.scene, name, { isLDraw: false });
   } catch (err) {
     showError('Could not load GLB — CORS may be blocking it.\nTry downloading and opening locally.\n\n' + err);
@@ -1188,9 +1282,8 @@ async function loadGLBFromFile(file) {
     const buffer = await file.arrayBuffer();
     const blob   = new Blob([buffer], { type: 'model/gltf-binary' });
     const url    = URL.createObjectURL(blob);
-    const loader = new GLTFLoader();
     try {
-      const gltf = await loader.loadAsync(url, onProgress);
+      const gltf = await makeGLTFLoader().loadAsync(url, onProgress);
       onModelLoaded(gltf.scene, file.name, { isLDraw: false });
     } finally {
       URL.revokeObjectURL(url);
@@ -2948,7 +3041,7 @@ function onXRSessionEnd() {
   applyLightIntensities();
   gridHelper.visible = document.getElementById('toggle-grid').classList.contains('on');
   ground.visible = true;
-  dirLight.castShadow = true;
+  updateShadows();   // re-enable shadows only if LDraw models are in the scene
   mrShadowDisc.visible = false;
 
   // Return all models to scene root
@@ -3090,12 +3183,36 @@ function _updateScaleLabels() {
   }
 }
 
+// ── Performance diagnostics (remove after debugging) ──────────────────────────
+let _diagFrames = 0, _diagStart = performance.now(), _diagRenderMs = 0;
+function _logDiag() {
+  const elapsed = performance.now() - _diagStart;
+  if (elapsed < 2000) return;
+  const fps = (_diagFrames / elapsed * 1000).toFixed(1);
+  const avg = _diagFrames > 0 ? (_diagRenderMs / _diagFrames).toFixed(2) : '—';
+  const info = renderer.info.render;
+  let meshCount = 0, triCount = 0;
+  scene.traverse(o => { if (o.isMesh) meshCount++; });
+  console.log(
+    `[PERF] ${fps} fps | ${avg} ms/render | ` +
+    `calls=${info.calls} tris=${info.triangles} | ` +
+    `meshes=${meshCount} | shadow=${dirLight.castShadow} | ` +
+    `programs=${renderer.info.programs?.length ?? '?'}`
+  );
+  _diagFrames = 0; _diagRenderMs = 0; _diagStart = performance.now();
+}
+// ──────────────────────────────────────────────────────────────────────────────
+
 renderer.setAnimationLoop((timestamp, frame) => {
   if (renderer.xr.isPresenting && frame) {
     // XR runtime requires a render call every frame regardless of scene changes.
     updateXRControls();
     _updateScaleLabels();
+    const t0 = performance.now();
     renderer.render(scene, camera);
+    _diagRenderMs += performance.now() - t0;
+    _diagFrames++;
+    _logDiag();
   } else {
     // controls.update() applies damping momentum and fires 'change' if the
     // camera actually moved — which sets _needsRender via the listener above.
@@ -3107,9 +3224,13 @@ renderer.setAnimationLoop((timestamp, frame) => {
     }
     if (_needsRender) {
       _updateScaleLabels();
+      const t0 = performance.now();
       renderer.render(scene, camera);
+      _diagRenderMs += performance.now() - t0;
+      _diagFrames++;
       _needsRender = false;
     }
+    _logDiag();
   }
 });
 
