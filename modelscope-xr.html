@@ -553,6 +553,7 @@ import { LDrawUtils }               from 'three/addons/utils/LDrawUtils.js';
 import { RoomEnvironment }          from 'three/addons/environments/RoomEnvironment.js';
 import { XRControllerModelFactory } from 'three/addons/webxr/XRControllerModelFactory.js';
 import { GLTFLoader }               from 'three/addons/loaders/GLTFLoader.js';
+import { DRACOLoader }              from 'three/addons/loaders/DRACOLoader.js';
 import { MeshoptDecoder }           from 'three/addons/libs/meshopt_decoder.module.js';
 import { computeBoundsTree, disposeBoundsTree, acceleratedRaycast } from 'three-mesh-bvh';
 import { Text as TroikaText, preloadFont } from 'troika-three-text';
@@ -571,8 +572,6 @@ const BASE_REPO   = 'anteloc/ldraw-lib';
 const REPO_BRANCH = 'master';
 const PARTS_CDN    = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/ldraw/`;
 const DEMO_MODEL   = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/models-glb/42000-1.glb`;
-// https://raw.githubusercontent.com/anteloc/ldraw-lib/master/models-glb/f1-car.glb
-// const DEMO_MODEL   = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/models-packed/42040-1.mpd.zip`;
 const MODELS_INDEX = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/models-index.jsonl`;
 const RAW_BASE     = `https://raw.githubusercontent.com/${BASE_REPO}/${REPO_BRANCH}/models-packed/`;
 const DEMO_VIDEO   = 'https://youtu.be/IhGm3KRSl7s';
@@ -1315,8 +1314,13 @@ function loadFromURL() {
 // GLB is already Y-up and in metres — no Y-flip, no LDU scaling, no edge suppression.
 // Both functions converge on onModelLoaded with { isLDraw: false }.
 
+const _dracoLoader = new DRACOLoader()
+  .setDecoderPath('https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/libs/draco/');
+
 function makeGLTFLoader() {
-  return new GLTFLoader().setMeshoptDecoder(MeshoptDecoder);
+  return new GLTFLoader()
+    .setDRACOLoader(_dracoLoader)
+    .setMeshoptDecoder(MeshoptDecoder);
 }
 
 async function loadGLBFromURL(url, name) {
