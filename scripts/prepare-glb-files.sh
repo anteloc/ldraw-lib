@@ -25,19 +25,14 @@ fi
 
 cd "$parent_dir"
 
-# FIXME these won't work with GitHub, zip files are too big, and GitHub has a 100MB limit for files in the repository.
-# However, best would be to have a zip with all the thumbnails, in order to avoid too many github API requests
-# given that anonymous users are limited to 60 requests per hour, just picking a model by means of pagination would
-# deplete the budget of requests very quickly
-# Potential solution: use GitHub LFS, large files can be downloaded from raw urls too, but it could deplete LFS download budget! 
+# Use GitHub LFS, large files can be downloaded from raw urls too, but it could deplete LFS download budget! 
+[ -f 'thumbnails.zip' ] && echo "Deleting thumbnails.zip archive..." && rm 'thumbnails.zip'
+[ -f 'thumbnails-small.zip' ] && echo "Deleting thumbnails-small.zip archive..." && rm 'thumbnails-small.zip'
 
-# [ -f 'thumbnails.zip' ] && echo "Deleting thumbnails.zip archive..." && rm 'thumbnails.zip'
-# [ -f 'thumbnails-small.zip' ] && echo "Deleting thumbnails-small.zip archive..." && rm 'thumbnails-small.zip'
-
-# # zip the thumbnails directory, if it exists, into a zip file with only a thumbnails/ prefix, and delete the original directory
-# echo "Zipping thumbnails directories into thumbnails.zip and thumbnails-small.zip ..."
-# zip -r 'thumbnails.zip' 'thumbnails'
-# zip -r 'thumbnails-small.zip' 'thumbnails-small'
+# zip the thumbnails directory, if it exists, into a zip file with only a thumbnails/ prefix, and delete the original directory
+echo "Zipping thumbnails directories into thumbnails.zip and thumbnails-small.zip ..."
+zip -r 'thumbnails.zip' 'thumbnails'
+zip -r 'thumbnails-small.zip' 'thumbnails-small'
 
 # create a temp file to store the names of the .glb model files, but replacing extension with .mpd.zip
 tmp_file=$(mktemp)
