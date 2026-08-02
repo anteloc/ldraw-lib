@@ -15,6 +15,26 @@ function usage() {
     exit 1
 }
 
+function add_glb_size() {
+    # make this input pipeable, so it can be used as a filter to add the glb_size to each line of a jsonl file
+    cat | while IFS= read -r json_line; do
+        add_glb_size_to_json "$json_line"
+    done
+}
+
+function add_glb_size_to_json() {
+    local json_line="$1"
+    local model_name=$(echo "$json_line" | jq -r '.name')
+    local glb_file="$parent_dir/models-glb/${model_name%.mpd.zip}.glb"
+    if [ -f "$glb_file" ]; then
+        local glb_size=$(stat -f%z "$glb_file")
+        local glb_size_kb=$((glb_size / 1024))
+        echo "$json_line" | jq -c --arg size_kb "$glb_size_kb" '. + {glb_size_kb: ($size_kb | tonumber)}'
+    else
+        echo "$json_line" | jq -c '. + {glb_size_kb: null}'
+    fi
+}
+
 # At least the --run option is required, in order to avoid accidental execution of the script.
 run_flag="${1:-}"
 
@@ -40,6 +60,9 @@ tmp_file=$(mktemp)
 ls -1 models-glb | sed 's/\.glb/.mpd.zip/g' > "$tmp_file"
 
 # grep the models-index.jsonl file, filtering by exact matches on the tmp_file
-grep -F -f "$tmp_file" 'models-index.jsonl' > 'models-glb-index.jsonl'
+grep -F -f "$tmp_file" 'models-index.jsonl' | add_glb_size > 'models-glb-index.jsonl'
+
 
 rm "$tmp_file"
+
+echo "GLB required files prepared. Models index file created at: models-glb-index.jsonl"
