@@ -75,7 +75,9 @@ for d in ./minifig-props/*.dat; do
     
     glb_file="./minifig-props-glb/${prop_name}.glb"
 
-    mpd2glb.sh -l ldraw -c meshopt -o "$glb_file" "$d" 2>/dev/null
+    # map default color 16 to dark grey, if not then the default color after conversion would be bright yellow, which doesn't look good on the Quest 3
+    mpd2glb.sh -l ldraw --map-color 16,Pearl_Dark_Grey -c meshopt -o "$glb_file" "$d" 2>/dev/null
+    
 
     if [ -f "$glb_file" ]; then
         glb_size=$(stat -f%z "$glb_file")
