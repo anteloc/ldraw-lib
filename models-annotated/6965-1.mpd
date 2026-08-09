@@ -21,19 +21,19 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Brick  1 x  1 with Studs on Four Sides
+0 // Brick  1 x  1 with Studs on Four Sides (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 4733.dat
-0 // Tile  1 x  1 with SW Hatch Pattern
+0 // Tile  1 x  1 with SW Hatch Pattern (sand_blue)
 1 379 -0 -8 0 1 0 0 0 1 0 0 0 1 3070bps3.dat
 0 STEP
-0 // Dish  2 x  2 Inverted
+0 // Dish  2 x  2 Inverted (sand_blue)
 1 379 0 10 18 1 0 0 0 0 1 0 -1 0 4740.dat
-0 // Dish  2 x  2 Inverted
+0 // Dish  2 x  2 Inverted (trans_clear)
 1 47 0 10 -18 -1 0 0 0 0 1 0 1 0 4740.dat
 0 STEP
-0 // Plate  1 x  2 with Vertical Bar on Long Side and Long Arm
+0 // Plate  1 x  2 with Vertical Bar on Long Side and Long Arm (black)
 1 0 24 10 22 0 1 0 -1 0 0 0 0 1 4623.dat
-0 // Plate  1 x  2 with Vertical Bar on Long Side and Long Arm
+0 // Plate  1 x  2 with Vertical Bar on Long Side and Long Arm (black)
 1 0 -24 10 22 0 -1 0 1 0 0 0 0 1 4623.dat
 0 
 0
@@ -45,35 +45,35 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Slope Brick 45  4 x  2 Double Inverted with Open Centre
+0 // Slope Brick 45  4 x  2 Double Inverted with Open Centre (black)
 1 0 0 0 0 0 0 1 0 1 0 -1 0 0 4871.dat
-0 // Cone  1 x  1
+0 // Cone  1 x  1 (black)
 1 0 -10 -8 10 0 0 1 0 1 0 -1 0 0 4589.dat
-0 // Cone  1 x  1
+0 // Cone  1 x  1 (black)
 1 0 10 -8 10 0 0 1 0 1 0 -1 0 0 4589.dat
 0 STEP
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (black)
 1 0 -10 8 -10 -1 0 0 0 1 0 0 0 -1 2555.dat
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (black)
 1 0 10 8 -10 -1 0 0 0 1 0 0 0 -1 2555.dat
 0 STEP
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (black)
 1 0 -30 -8 0 0 0 -1 0 1 0 1 0 0 3069b.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (black)
 1 0 30 -8 0 0 0 -1 0 1 0 1 0 0 3069b.dat
-0 // Bar  4L Lightsaber Blade
+0 // Bar  4L Lightsaber Blade (dark_bluish_grey)
 1 72 -10 2 0 -0.707107 0 -0.707107 0.707107 0 -0.707107 0 -1 0 30374.dat
-0 // Bar  4L Lightsaber Blade
+0 // Bar  4L Lightsaber Blade (dark_bluish_grey)
 1 72 10 2 0 0.707107 0 -0.707107 0.707107 0 0.707107 0 -1 0 30374.dat
 0 STEP
-0 // Wing  2 x  4 Right
+0 // Wing  2 x  4 Right (black)
 1 0 -26.97 4.828 -60 0.707107 -0.707107 0 0.707107 0.707107 0 0 0 1 41769.dat
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (black)
 1 0 -14.243 6.242 -30 0.707107 -0.707107 0 0.707107 0.707107 0 0 0 1 2555.dat
 0 STEP
-0 // Wing  2 x  4 Left
+0 // Wing  2 x  4 Left (black)
 1 0 26.97 4.828 -60 0.707107 0.707107 0 -0.707107 0.707107 0 0 0 1 41770.dat
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (black)
 1 0 14.243 6.242 -30 0.707107 0.707107 0 -0.707107 0.707107 0 0 0 1 2555.dat
 0 
 0

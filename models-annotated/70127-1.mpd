@@ -5,41 +5,41 @@
 0 !LDRAW_ORG Model 
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (light_bluish_grey)
 1 71 0 0 0 0 0 -1 0 1 0 1 0 0 3021.dat
-0 // ~Slope Brick 45  2 x  2 Inverted without Inner Stopper Ring (Obsolete)
+0 // ~Slope Brick 45  2 x  2 Inverted without Inner Stopper Ring (Obsolete) (white)
 1 15 0 -24 -20 1 0 0 0 1 0 0 0 1 3660.dat
-0 // Slope Brick Curved  6 x  1 Inverted
+0 // Slope Brick Curved  6 x  1 Inverted (white)
 1 15 10 -24 10 -1 0 0 0 1 0 0 0 -1 42023.dat
-0 // Slope Brick Curved  6 x  1 Inverted
+0 // Slope Brick Curved  6 x  1 Inverted (white)
 1 15 -10 -24 10 -1 0 0 0 1 0 0 0 -1 42023.dat
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (white)
 1 15 0 -32 10 0 0 1 0 1 0 -1 0 0 3795.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (white)
 1 15 0 -40 -30 0 0 1 0 1 0 -1 0 0 3022.dat
-0 // Plate  1 x  2 with Ball Joint-8 on Side
+0 // Plate  1 x  2 with Ball Joint-8 on Side (dark_bluish_grey)
 1 72 -10 -32 90 0 0 1 0 1 0 -1 0 0 14417.dat
-0 // Plate  1 x  2 with Ball Joint-8 on Side
+0 // Plate  1 x  2 with Ball Joint-8 on Side (dark_bluish_grey)
 1 72 10 -32 90 0 0 -1 0 1 0 1 0 0 14417.dat
-0 // Plate  1 x  2 with Ball Joint-8 on Side
+0 // Plate  1 x  2 with Ball Joint-8 on Side (dark_bluish_grey)
 1 72 10 -48 -30 0 0 -1 0 1 0 1 0 0 14417.dat
-0 // Plate  1 x  2 with Ball Joint-8 on Side
+0 // Plate  1 x  2 with Ball Joint-8 on Side (dark_bluish_grey)
 1 72 -10 -48 -30 0 0 1 0 1 0 -1 0 0 14417.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (white)
 1 15 0 -40 70 0 0 1 0 1 0 -1 0 0 3022.dat
-0 // Plate  1 x  2 with Handle
+0 // Plate  1 x  2 with Handle (white)
 1 15 0 -40 100 -1 0 0 0 1 0 0 0 -1 2540.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (white)
 1 15 0 -56 -20 -1 0 0 0 1 0 0 0 -1 3023.dat
-0 // Slope Brick Curved  2 x  3 x 0.667 with Fin and 2 Top Studs
+0 // Slope Brick Curved  2 x  3 x 0.667 with Fin and 2 Top Studs (white)
 1 15 0 -56 60 -1 0 0 0 1 0 0 0 -1 47456.dat
-0 // Plate  1 x  2 with Ball Joint-8 on Side
+0 // Plate  1 x  2 with Ball Joint-8 on Side (dark_bluish_grey)
 1 72 0 -56 -40 1 0 0 0 1 0 0 0 1 14417.dat
-0 // Bracket  5 x  2 x  1.333 with Understud in Centre
+0 // Bracket  5 x  2 x  1.333 with Understud in Centre (white)
 1 15 0 -64 0 -1 0 0 0 1 0 0 0 -1 11215.dat
-0 // Bar Tube with Clip
+0 // Bar Tube with Clip (white)
 1 15 0 -38 120 0 0 1 0.924 -0.383 0 0.383 0.924 0 11090.dat
-0 // Claw Flexible  4L with Bar  0.5L
+0 // Claw Flexible  4L with Bar  0.5L (white)
 1 15 -1 -49.48 147.716 1 0 0 0 0.383 0.924 0 -0.924 0.383 11089.dat
 1 16 48.808 -35.443 87.383 0.143 0.172 0.975 0.63 0.744 -0.223 -0.764 0.646 -0.002 70127 - leg-rl.ldr
 1 16 -49.791 -29.323 94.751 0.226 0.275 -0.935 -0.588 0.804 0.095 0.777 0.528 0.343 70127 - leg-rr.ldr
@@ -83,42 +83,42 @@
 
 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat
 0 BFC INVERTNEXT
-0 // Box with  4 Faces without  4 Adjacent Edges
+0 // Box with  4 Faces without  4 Adjacent Edges (main_colour)
 1 16 0 8 0 16 0 0 0 -4 0 0 0 6 box4-4a.dat
 4 16 -20 8 10 -16 8 6 -16 8 -6 -20 8 -10
 4 16 20 8 -10 16 8 -6 16 8 6 20 8 10
 4 16 20 8 10 16 8 6 -16 8 6 -20 8 10
 
 0 BFC INVERTNEXT
-0 // Box with  4 Faces without  4 Adjacent Edges
+0 // Box with  4 Faces without  4 Adjacent Edges (main_colour)
 1 16 3.25 8 -8 -1.75 0 0 0 -4 0 0 0 -1 box4-4a.dat
 0 BFC INVERTNEXT
-0 // Box with  4 Faces without  4 Adjacent Edges
+0 // Box with  4 Faces without  4 Adjacent Edges (main_colour)
 1 16 -3.25 8 -8 -1.75 0 0 0 -4 0 0 0 -1 box4-4a.dat
-0 // Disc Negative 0.25
+0 // Disc Negative 0.25 (main_colour)
 1 16 6 4 -7 -1 0 0 0 -4 0 0 0 1 1-4ndis.dat
-0 // Disc Negative 0.25
+0 // Disc Negative 0.25 (main_colour)
 1 16 -6 4 -7 0 0 1 0 -4 0 1 0 0 1-4ndis.dat
-0 // Disc Negative 0.5
+0 // Disc Negative 0.5 (main_colour)
 1 16 0 4 -7 1.5 0 0 0 -4 0 0 0 1 2-4ndis.dat
 4 16 5 4 -7 1.5 4 -7 1.5 4 -6 5 4 -6
 4 16 -1.5 4 -7 -5 4 -7 -5 4 -6 -1.5 4 -6
 
-0 // Cylinder Open 0.25
+0 // Cylinder Open 0.25 (main_colour)
 1 16 -6 8 -7 1 0 0 0 -4 0 0 0 1 1-4cylo.dat
-0 // Cylinder Open 0.25
+0 // Cylinder Open 0.25 (main_colour)
 1 16 6 8 -7 0 0 -1 0 -4 0 1 0 0 1-4cylo.dat
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 -6 8 -7 1 0 0 0 -1 0 0 0 1 1-4chrd.dat
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 6 8 -7 0 0 -1 0 -1 0 1 0 0 1-4chrd.dat
-0 // Cylinder Open 0.5
+0 // Cylinder Open 0.5 (main_colour)
 1 16 0 8 -7 1.5 0 0 0 -4 0 0 0 1 2-4cylo.dat
-0 // Chord 0.5
+0 // Chord 0.5 (main_colour)
 1 16 0 8 -7 1.5 0 0 0 -1 0 0 0 1 2-4chrd.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 -11 6 -6 0 0 -5 2 0 0 0 -2 0 rect3.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 11 6 -6 0 0 5 -2 0 0 0 -2 0 rect3.dat
 
 4 16 16 8 -6 20 8 -10 10 8 -10 6 8 -6
@@ -128,11 +128,11 @@
 4 16 -1.5 8 -7 1.5 8 -7 1.5 8 -9 -1.5 8 -9
 4 16 -5 8 -9 5 8 -9 10 8 -10 -10 8 -10
 
-0 // Box with  4 Faces without  4 Adjacent Edges
+0 // Box with  4 Faces without  4 Adjacent Edges (main_colour)
 1 16 0 8 0 20 0 0 0 -8 0 0 0 10 box4-4a.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 15 4 -10 0 0 5 4 0 0 0 2 0 rect3.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 -15 4 -10 0 0 -5 -4 0 0 0 2 0 rect3.dat
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug2-1x2.dat
 
@@ -169,9 +169,9 @@
 1 16 0 17 0 -7.39104 0 -3.06147 0 6.4 0 3.06147 0 -7.39104 t08o6250.dat
 1 16 0 4 0 7.39104 0 3.06147 0 -6.4 0 3.06147 0 -7.39104 t08o6250.dat
 1 16 0 4 0 -7.39104 0 -3.06147 0 -6.4 0 3.06147 0 -7.39104 t08o6250.dat
-0 // Cylinder 0.125
+0 // Cylinder 0.125 (main_colour)
 1 16 0 4 0 12.0104 0 4.97488 0 13 0 4.97488 0 -12.0104 1-8cyli.dat
-0 // Cylinder 0.125
+0 // Cylinder 0.125 (main_colour)
 1 16 0 4 0 -12.0104 0 -4.97488 0 13 0 4.97488 0 -12.0104 1-8cyli.dat
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\70127 - 3626cpaps01.dat
 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\70127 - 3626cpaps01.dat
@@ -191,7 +191,7 @@
 
 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat
 0 BFC INVERTNEXT
-0 // Box with 3 Faces without 2 Parallel Edges
+0 // Box with 3 Faces without 2 Parallel Edges (main_colour)
 1 16 16 6 0 0 -32 0 2 0 0 0 0 6 box3u2p.dat
 
 4 16 19 4 6 19 4 -6 -16 4 -6 -16 4 6
@@ -202,17 +202,17 @@
 4 16 -20 8 10 -16 8 6 -16 8 -6 -20 8 -10
 
 0 BFC INVERTNEXT
-0 // Box with 3 Faces without 4 Adjacent Edges
+0 // Box with 3 Faces without 4 Adjacent Edges (main_colour)
 1 16 17 6 -3.25 0 2 0 2 0 0 0 0 1.75 box3u4a.dat
 0 BFC INVERTNEXT
-0 // Box with 3 Faces without 4 Adjacent Edges
+0 // Box with 3 Faces without 4 Adjacent Edges (main_colour)
 1 16 17 6 3.25 0 2 0 2 0 0 0 0 1.75 box3u4a.dat
 
-0 // Cylinder Closed 0.25
+0 // Cylinder Closed 0.25 (main_colour)
 1 16 17 8 -6 0 0 -1 0 -4 0 1 0 0 1-4cylc.dat
-0 // Cylinder Closed 0.25
+0 // Cylinder Closed 0.25 (main_colour)
 1 16 17 8 6 -1 0 0 0 -4 0 0 0 -1 1-4cylc.dat
-0 // Cylinder Closed 0.5
+0 // Cylinder Closed 0.5 (main_colour)
 1 16 17 8 0 0 0 -1 0 -4 0 1.5 0 0 2-4cylc.dat
 
 3 16 19 8 1.5 19 8 5 20 8 10
@@ -222,7 +222,7 @@
 4 16 17 8 -1.5 17 8 1.5 19 8 1.5 19 8 -1.5
 4 16 17 8 5 17 8 6 20 8 10 19 8 5
 
-0 // Box with  4 Faces without  4 Adjacent Edges
+0 // Box with  4 Faces without  4 Adjacent Edges (main_colour)
 1 16 0 8 0 0 0 -20 0 -8 0 10 0 0 box4-4a.dat
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug2-1x2.dat
 
@@ -665,17 +665,17 @@
 
 0 // Top surface
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.5
+0 // Cylinder Open 0.5 (main_colour)
 1 16 0 -7.75 0 4.8 0 0 0 1.4 0 0 0 4.8 2-4cylo.dat
-0 // Disc Negative 0.5
+0 // Disc Negative 0.5 (main_colour)
 1 16 0 -7.75 0 4.8 0 0 0 1 0 0 0 4.8 2-4ndis.dat
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 7.4 -7.75 -2 -2.6 0 0 0 8 0 0 0 -3 2-4edge.dat
-0 // Chord 0.5
+0 // Chord 0.5 (main_colour)
 1 16 7.4 -7.75 -2 -2.6 0 0 0 1 0 0 0 -3 2-4chrd.dat
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 -7.4 -7.75 -2 -2.6 0 0 0 1 0 0 0 -3 2-4edge.dat
-0 // Chord 0.5
+0 // Chord 0.5 (main_colour)
 1 16 -7.4 -7.75 -2 -2.6 0 0 0 1 0 0 0 -3 2-4chrd.dat
 4 16 4.8 -7.75 -2 10 -7.75 -2 10 -7.75 9 4.8 -7.75 4.8
 4 16 -4.8 -7.75 4.8 -10 -7.75 9 -10 -7.75 -2 -4.8 -7.75 -2
@@ -684,17 +684,17 @@
 
 0 // Bottom surface
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.5
+0 // Cylinder Open 0.5 (main_colour)
 1 16 0 7.75 0 -4.8 0 0 0 -1.4 0 0 0 4.8 2-4cylo.dat
-0 // Disc Negative 0.5
+0 // Disc Negative 0.5 (main_colour)
 1 16 0 7.75 0 -4.8 0 0 0 -1 0 0 0 4.8 2-4ndis.dat
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 -7.4 7.75 -2 2.6 0 0 0 -8 0 0 0 -3 2-4edge.dat
-0 // Chord 0.5
+0 // Chord 0.5 (main_colour)
 1 16 -7.4 7.75 -2 2.6 0 0 0 -1 0 0 0 -3 2-4chrd.dat
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 7.4 7.75 -2 2.6 0 0 0 -1 0 0 0 -3 2-4edge.dat
-0 // Chord 0.5
+0 // Chord 0.5 (main_colour)
 1 16 7.4 7.75 -2 2.6 0 0 0 -1 0 0 0 -3 2-4chrd.dat
 4 16 -4.8 7.75 -2 -10 7.75 -2 -10 7.75 9 -4.8 7.75 4.8
 4 16 4.8 7.75 4.8 10 7.75 9 10 7.75 -2 4.8 7.75 -2
@@ -702,29 +702,29 @@
 4 16 -4.8 7.75 4.8 -10 7.75 9 10 7.75 9 0 7.75 4.8
 
 0 // Sides
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 10 0 3.5 0 -1 0 0 0 -7.75 5.5 0 0 rect2p.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 -10 0 3.5 0 1 0 0 0 7.75 5.5 0 0 rect2p.dat
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 10 0 -2 0 1 0 7.75 0 0 0 0 -3 2-4edge.dat
-0 // Disc 0.5
+0 // Disc 0.5 (main_colour)
 1 16 10 0 -2 0 -1 0 -7.75 0 0 0 0 -3 2-4disc.dat
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 -10 0 -2 0 -1 0 -7.75 0 0 0 0 -3 2-4edge.dat
-0 // Disc 0.5
+0 // Disc 0.5 (main_colour)
 1 16 -10 0 -2 0 1 0 7.75 0 0 0 0 -3 2-4disc.dat
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 7.4 0 -5 0 0 2.6 7.75 0 0 0 1 0 2-4edge.dat
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 -7.4 0 -5 0 0 -2.6 -7.75 0 0 0 1 0 2-4edge.dat
-0 // Sphere 0.175 x  1.1414 Cut Off
+0 // Sphere 0.175 x  1.1414 Cut Off (main_colour)
 1 16 7.4 0 -2 0 0 2.6 0 7.75 0 -3 0 0 1-8sphc.dat
-0 // Sphere 0.175 x  1.1414 Cut Off
+0 // Sphere 0.175 x  1.1414 Cut Off (main_colour)
 1 16 7.4 0 -2 0 0 2.6 0 -7.75 0 -3 0 0 1-8sphc.dat
-0 // Sphere 0.175 x  1.1414 Cut Off
+0 // Sphere 0.175 x  1.1414 Cut Off (main_colour)
 1 16 -7.4 0 -2 0 0 -2.6 0 -7.75 0 -3 0 0 1-8sphc.dat
-0 // Sphere 0.175 x  1.1414 Cut Off
+0 // Sphere 0.175 x  1.1414 Cut Off (main_colour)
 1 16 -7.4 0 -2 0 0 -2.6 0 7.75 0 -3 0 0 1-8sphc.dat
 
 0 // backside
@@ -880,13 +880,13 @@
 2 24 -16 0 -6 -16 0 6
 2 24 16 -3.4 -6 16 -10.6 6
 2 24 -16 -3.4 -6 -16 -10.6 6
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 0 -5.3 6 -16 0 0 0 0 5.3 0 1 0 rect.dat
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 0 -1.7 -6 0 0 -16 1.7 0 0 0 -1 0 rect.dat
 4 16 16 -10.6 6 16 0 6 16 0 -6 16 -3.4 -6
 4 16 -16 -10.6 6 -16 -3.4 -6 -16 0 -6 -16 0 6
-0 // Box with 4 Faces (2 Parallel Pairs) and All Edges
+0 // Box with 4 Faces (2 Parallel Pairs) and All Edges (main_colour)
 1 16 0 -1 0 0 0 19 0 1 0 -9 0 0 box4.dat
 4 16 16 0 -6 16 0 6 19 0 9 19 0 -9
 4 16 -16 0 6 -16 0 -6 -19 0 -9 -19 0 9
@@ -898,18 +898,18 @@
 4 16 -20 -1 10 -19 -1 9 -19 -1 -9 -20 -1 -10
 4 16 20 -1 10 19 -1 9 -19 -1 9 -20 -1 10
 4 16 -20 -1 -10 -19 -1 -9 19 -1 -9 20 -1 -10
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 0 -2.5 -10 -20 0 0 0 0 1.5 0 1 0 rect.dat
 2 24 20 -4 -10 20 -16 10
 2 24 -20 -16 10 -20 -4 -10
 4 16 -20 -16 10 -20 -1 10 -20 -1 -10 -20 -4 -10
 4 16 20 -16 10 20 -4 -10 20 -1 -10 20 -1 10
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 0 -8.5 10 0 0 -20 7.5 0 0 0 -1 0 rect.dat
 
-0 // Circle 1.0
+0 // Circle 1.0 (main_colour)
 1 16 0 -7 0 0 0 -4 2.4 -1 0 -4 0 0 4-4edge.dat
-0 // Cylinder Sloped 1.0
+0 // Cylinder Sloped 1.0 (main_colour)
 1 16 0 -4.6 0 0 0 -4 0 -2.4 0 -4 0 0 4-4cyls.dat
 1 16 0 -4.6 0 1 0 0 0 -1.15 0 0 0 1 stud3a.dat
 0 LDCad info for "~Slope Brick 31  1 x  2 x  0.667 without Top Surface"
@@ -1625,15 +1625,15 @@
 0 !LDRAW_ORG Model 
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Plate  1 x  2 with Ball Joint-8 on Side
+0 // Plate  1 x  2 with Ball Joint-8 on Side (dark_bluish_grey)
 1 72 0 0 0 -1 0 0 0 1 0 0 0 -1 14417.dat
-0 // Plate  1 x  2 with 3 Teeth In-line
+0 // Plate  1 x  2 with 3 Teeth In-line (tan)
 1 19 0 8 -20 1 0 0 0 1 0 0 0 1 15208.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (white)
 1 15 0 16 -10 0 0 -1 0 1 0 1 0 0 3022.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (white)
 1 15 0 8 0 -1 0 0 0 1 0 0 0 -1 3023.dat
-0 // Slope Brick Curved  2 x  2 x  0.667
+0 // Slope Brick Curved  2 x  2 x  0.667 (white)
 1 15 0 8 -10 1 0 0 0 1 0 0 0 1 15068.dat
 0 FILE 70127 - leg-fl.ldr
 0 leg-fl
@@ -1642,29 +1642,29 @@
 0 !LDRAW_ORG Model 
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Plate  1 x  2 with Socket Joint-8 with Friction Centre
+0 // Plate  1 x  2 with Socket Joint-8 with Friction Centre (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 70127 - 14704.dat
-0 // Plate  1 x  3
+0 // Plate  1 x  3 (white)
 1 15 70 48 0 1 0 0 0 1 0 0 0 1 3623.dat
-0 // Plate  1 x  2 with Socket Joint-8 with Friction
+0 // Plate  1 x  2 with Socket Joint-8 with Friction (light_bluish_grey)
 1 71 80 40 0 1 0 0 0 1 0 0 0 1 70127 - 14418.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (white)
 1 15 40 40 0 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Plate  1 x  3
+0 // Plate  1 x  3 (white)
 1 15 70 32 0 -1 0 0 0 1 0 0 0 -1 3623.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (white)
 1 15 50 8 0 0 0 -1 0 1 0 1 0 0 3040b.dat
-0 // Slope Brick 33  3 x  1 Inverted with Notch and Thick Front
+0 // Slope Brick 33  3 x  1 Inverted with Notch and Thick Front (white)
 1 15 30 16 0 0 0 1 0 1 0 -1 0 0 4287.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (white)
 1 15 20 8 0 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Plate  1 x  1 with Tooth In-line
+0 // Plate  1 x  1 with Tooth In-line (pearl_silver)
 1 179 -10 8 0 0 0 1 0 1 0 -1 0 0 49668.dat
-0 // Plate  1 x  1 with Tooth In-line
+0 // Plate  1 x  1 with Tooth In-line (pearl_silver)
 1 179 -10 -8 0 0 0 1 0 1 0 -1 0 0 49668.dat
-0 // Tile  1 x  1 Round with Groove
+0 // Tile  1 x  1 Round with Groove (pearl_silver)
 1 179 -10 -16 0 0 0 1 0 1 0 -1 0 0 98138.dat
-0 // Slope Brick Curved  3 x  1
+0 // Slope Brick Curved  3 x  1 (white)
 1 15 30 -16 0 0 0 -1 0 1 0 1 0 0 50950.dat
 0 FILE 70127 - leg-rl.ldr
 0 leg-rl
@@ -1673,21 +1673,21 @@
 0 !LDRAW_ORG Model 
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Plate  1 x  2 with Socket Joint-8 with Friction Centre
+0 // Plate  1 x  2 with Socket Joint-8 with Friction Centre (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 70127 - 14704.dat
-0 // Plate  1 x  3
+0 // Plate  1 x  3 (white)
 1 15 50 48 0 -1 0 0 0 1 0 0 0 -1 3623.dat
-0 // Plate  1 x  1 with Tooth In-line
+0 // Plate  1 x  1 with Tooth In-line (pearl_silver)
 1 179 30 40 0 -1 0 0 0 1 0 0 0 -1 49668.dat
-0 // Plate  1 x  2 with Socket Joint-8 with Friction
+0 // Plate  1 x  2 with Socket Joint-8 with Friction (light_bluish_grey)
 1 71 60 40 0 1 0 0 0 1 0 0 0 1 70127 - 14418.dat
-0 // Plate  1 x  3
+0 // Plate  1 x  3 (white)
 1 15 50 32 0 -1 0 0 0 1 0 0 0 -1 3623.dat
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (white)
 1 15 10 0 0 0 0 -1 0 1 0 1 0 0 6091.dat
-0 // Arch  1 x  3 x  2 with Curved Top
+0 // Arch  1 x  3 x  2 with Curved Top (white)
 1 15 10 -16 0 0 0 -1 0 1 0 1 0 0 6005.dat
-0 // Slope Brick Curved  2 x  1
+0 // Slope Brick Curved  2 x  1 (white)
 1 15 0 0 0 0 0 1 0 1 0 -1 0 0 11477.dat
 0 FILE 70127 - leg-fr.ldr
 0 leg-fr
@@ -1696,29 +1696,29 @@
 0 !LDRAW_ORG Model 
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Plate  1 x  2 with Socket Joint-8 with Friction Centre
+0 // Plate  1 x  2 with Socket Joint-8 with Friction Centre (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 70127 - 14704.dat
-0 // Plate  1 x  3
+0 // Plate  1 x  3 (white)
 1 15 -70 48 0 1 0 0 0 1 0 0 0 1 3623.dat
-0 // Plate  1 x  2 with Socket Joint-8 with Friction
+0 // Plate  1 x  2 with Socket Joint-8 with Friction (light_bluish_grey)
 1 71 -80 40 0 -1 0 0 0 1 0 0 0 -1 70127 - 14418.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (white)
 1 15 -40 40 0 -1 0 0 0 1 0 0 0 -1 3023.dat
-0 // Plate  1 x  3
+0 // Plate  1 x  3 (white)
 1 15 -70 32 0 1 0 0 0 1 0 0 0 1 3623.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (white)
 1 15 -50 8 0 0 0 1 0 1 0 -1 0 0 3040b.dat
-0 // Slope Brick 33  3 x  1 Inverted with Notch and Thick Front
+0 // Slope Brick 33  3 x  1 Inverted with Notch and Thick Front (white)
 1 15 -30 16 0 0 0 -1 0 1 0 1 0 0 4287.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (white)
 1 15 -20 8 0 -1 0 0 0 1 0 0 0 -1 3023.dat
-0 // Plate  1 x  1 with Tooth In-line
+0 // Plate  1 x  1 with Tooth In-line (pearl_silver)
 1 179 10 8 0 0 0 -1 0 1 0 1 0 0 49668.dat
-0 // Plate  1 x  1 with Tooth In-line
+0 // Plate  1 x  1 with Tooth In-line (pearl_silver)
 1 179 10 -8 0 0 0 -1 0 1 0 1 0 0 49668.dat
-0 // Tile  1 x  1 Round with Groove
+0 // Tile  1 x  1 Round with Groove (pearl_silver)
 1 179 10 -16 0 0 0 -1 0 1 0 1 0 0 98138.dat
-0 // Slope Brick Curved  3 x  1
+0 // Slope Brick Curved  3 x  1 (white)
 1 15 -30 -16 0 0 0 1 0 1 0 -1 0 0 50950.dat
 0 FILE 70127 - leg-rr.ldr
 0 leg-rr
@@ -1727,21 +1727,21 @@
 0 !LDRAW_ORG Model 
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Plate  1 x  2 with Socket Joint-8 with Friction Centre
+0 // Plate  1 x  2 with Socket Joint-8 with Friction Centre (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 70127 - 14704.dat
-0 // Plate  1 x  3
+0 // Plate  1 x  3 (white)
 1 15 -50 48 0 1 0 0 0 1 0 0 0 1 3623.dat
-0 // Plate  1 x  1 with Tooth In-line
+0 // Plate  1 x  1 with Tooth In-line (pearl_silver)
 1 179 -30 40 0 -1 0 0 0 1 0 0 0 -1 49668.dat
-0 // Plate  1 x  2 with Socket Joint-8 with Friction
+0 // Plate  1 x  2 with Socket Joint-8 with Friction (light_bluish_grey)
 1 71 -60 40 0 -1 0 0 0 1 0 0 0 -1 70127 - 14418.dat
-0 // Plate  1 x  3
+0 // Plate  1 x  3 (white)
 1 15 -50 32 0 1 0 0 0 1 0 0 0 1 3623.dat
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (white)
 1 15 -10 0 0 0 0 1 0 1 0 -1 0 0 6091.dat
-0 // Arch  1 x  3 x  2 with Curved Top
+0 // Arch  1 x  3 x  2 with Curved Top (white)
 1 15 -10 -16 0 0 0 1 0 1 0 -1 0 0 6005.dat
-0 // Slope Brick Curved  2 x  1
+0 // Slope Brick Curved  2 x  1 (white)
 1 15 0 0 0 0 0 -1 0 1 0 1 0 0 11477.dat
 0 FILE 70127 - head.ldr
 0 head
@@ -1750,49 +1750,49 @@
 0 !LDRAW_ORG Model 
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Plate  1 x  2 with Socket Joint-8 with Friction Centre
+0 // Plate  1 x  2 with Socket Joint-8 with Friction Centre (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 70127 - 14704.dat
-0 // Bracket  1 x  2 -  1 x  2 Up
+0 // Bracket  1 x  2 -  1 x  2 Up (light_bluish_grey)
 1 71 -10 24 10 0 0 1 0 1 0 -1 0 0 99780.dat
-0 // Bracket  1 x  2 -  1 x  2 Up
+0 // Bracket  1 x  2 -  1 x  2 Up (light_bluish_grey)
 1 71 10 24 10 0 0 -1 0 1 0 1 0 0 99780.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (white)
 1 15 0 16 0 -1 0 0 0 1 0 0 0 -1 3023.dat
-0 // Plate  1 x  2 with Handle
+0 // Plate  1 x  2 with Handle (white)
 1 15 0 16 20 -1 0 0 0 1 0 0 0 -1 2540.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (white)
 1 15 0 8 10 -1 0 0 0 1 0 0 0 -1 3022.dat
-0 // Bracket  1 x  2 -  1 x  2 Up
+0 // Bracket  1 x  2 -  1 x  2 Up (light_bluish_grey)
 1 71 0 0 20 -1 0 0 0 1 0 0 0 -1 99780.dat
-0 // Bracket  1 x  2 -  1 x  2 Down
+0 // Bracket  1 x  2 -  1 x  2 Down (white)
 1 15 10 -8 10 0 0 -1 0 1 0 1 0 0 99781.dat
-0 // Bracket  1 x  2 -  1 x  2 Down
+0 // Bracket  1 x  2 -  1 x  2 Down (white)
 1 15 -10 -8 10 0 0 1 0 1 0 -1 0 0 99781.dat
-0 // Plate  1 x  1 with Clip Horizontal (Thick C-Clip)
+0 // Plate  1 x  1 with Clip Horizontal (Thick C-Clip) (light_bluish_grey)
 1 71 0 20 60 -1 0 0 0 -1 0 0 0 1 61252.dat
-0 // Slope Brick 31  1 x  1 x  0.667
+0 // Slope Brick 31  1 x  1 x  0.667 (white)
 1 15 0 20 60 -1 0 0 0 -1 0 0 0 1 54200.dat
-0 // Slope Brick 31  1 x  2 x  0.667
+0 // Slope Brick 31  1 x  2 x  0.667 (white)
 1 15 -24 12 0 0 1 0 1 0 0 0 0 -1 70127 - 85984.dat
-0 // Slope Brick 31  1 x  2 x  0.667
+0 // Slope Brick 31  1 x  2 x  0.667 (white)
 1 15 24 12 0 0 -1 0 -1 0 0 0 0 -1 70127 - 85984.dat
-0 // Plate  1 x  1 with Clip Light Type 2
+0 // Plate  1 x  1 with Clip Light Type 2 (white)
 1 15 -10 -16 0 1 0 0 0 1 0 0 0 1 4081b.dat
-0 // Plate  1 x  1 with Clip Light Type 2
+0 // Plate  1 x  1 with Clip Light Type 2 (white)
 1 15 10 -16 0 1 0 0 0 1 0 0 0 1 4081b.dat
-0 // Brick  1 x  2 with Grille
+0 // Brick  1 x  2 with Grille (white)
 1 15 0 -2 58 1 0 0 0 0 1 0 -1 0 2877.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (light_bluish_grey)
 1 71 -22 -14 -20 0 1 0 0 0 1 1 0 0 6141.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (light_bluish_grey)
 1 71 22 -14 -20 0 -1 0 0 0 1 -1 0 0 6141.dat
-0 // Slope Brick Curved  2 x  1
+0 // Slope Brick Curved  2 x  1 (white)
 1 15 14 -22.661 -25.009 0 -1 0 0.501 0 0.866 -0.866 0 0.501 11477.dat
-0 // Slope Brick Curved  2 x  1
+0 // Slope Brick Curved  2 x  1 (white)
 1 15 -14 -22.661 -25.009 0 1 0 -0.501 0 0.866 0.866 0 0.501 11477.dat
-0 // Slope Brick Curved  2 x  2 x  0.667 with Wolf Armour and Eyes Pattern
+0 // Slope Brick Curved  2 x  2 x  0.667 with Wolf Armour and Eyes Pattern (white)
 1 15 0 -8 10 -1 0 0 0 1 0 0 0 -1 15068p01.dat
-0 // Slope Brick 45  1 x  2 Triple
+0 // Slope Brick 45  1 x  2 Triple (black)
 1 0 0 -2 82 -1 0 0 0 0 -1 0 -1 0 3048b.dat
 0 FILE 70127 - driver.ldr
 0 driver
@@ -1801,33 +1801,33 @@
 0 !LDRAW_ORG Model 
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // ~Minifig Leg Right with Dark Red Loincloth, White Claws and Fur Tail Pattern (Obsolete)
+0 // ~Minifig Leg Right with Dark Red Loincloth, White Claws and Fur Tail Pattern (Obsolete) (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 0 1 0 -1 0 3816paw.dat
-0 // Minifig Mask Wolf with Fangs, Scars and White Ears Pattern
+0 // Minifig Mask Wolf with Fangs, Scars and White Ears Pattern (light_bluish_grey)
 1 71 0 -71 1.207 1 0 0 0 1 0.017 0 -0.017 1 11233p01.dat
-0 // Minifig Head Wolf with Yellow Eyes, Black Scars, Fangs, Closed / Open Mouth 2-Sided Pattern
+0 // Minifig Head Wolf with Yellow Eyes, Black Scars, Fangs, Closed / Open Mouth 2-Sided Pattern (light_bluish_grey)
 1 71 0 -71 1.207 1 0 0 0 1 0.017 0 -0.017 1 70127 - 3626cpap.dat
-0 // Minifig Torso with Armour Vest, Silver Wolf Head and Blue Round Jewel Pattern
+0 // Minifig Torso with Armour Vest, Silver Wolf Head and Blue Round Jewel Pattern (dark_red)
 1 320 0 -44 0.748 1 0 0 0 1 0.017 0 -0.017 1 973paw.dat
-0 // Minifig Armour Shoulder Pads with 1 Stud on Front, 2 Studs on Back
+0 // Minifig Armour Shoulder Pads with 1 Stud on Front, 2 Studs on Back (pearl_gold)
 1 297 0 -44 0.748 1 0 0 0 1 0.017 0 -0.017 1 11097.dat
-0 // Tile  1 x  1 Round with Groove
+0 // Tile  1 x  1 Round with Groove (trans_medium_blue)
 1 41 -0.006 -34.357 -20.422 1 0 0 0 0.017 -1 0 1 0.017 98138.dat
-0 // ~Minifig Hips with Dark Grey Belt with Silver Buckle and Rivets Pattern (Obsolete)
+0 // ~Minifig Hips with Dark Grey Belt with Silver Buckle and Rivets Pattern (Obsolete) (dark_red)
 1 320 0 -12 0.204 1 0 0 0 1 0.017 0 -0.017 1 3815paw.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (light_bluish_grey)
 1 71 -15.551 -35 0.595 0.985 -0.112 -0.128 0.17 0.633 0.754 -0.003 -0.766 0.643 3818.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (light_bluish_grey)
 1 71 15.552 -35 0.595 0.985 0.08 0.15 -0.17 0.447 0.877 0.003 -0.891 0.454 3819.dat
-0 // Minifig Hand
+0 // Minifig Hand (white)
 1 15 -21.325 -31.351 -20.211 0.976 0.212 -0.011 -0.21 0.973 0.086 0.03 -0.082 0.996 3820.dat
-0 // Minifig Hand
+0 // Minifig Hand (white)
 1 15 20.496 -36.087 -20.703 0.998 -0.029 0.05 0.012 0.951 0.305 -0.057 -0.304 0.951 3820.dat
-0 // Minifig Shield Oval
+0 // Minifig Shield Oval (trans_medium_blue)
 1 41 23.956 -40.366 -30.58 -0.015 -0.176 -0.984 0.997 -0.058 -0.005 -0.057 -0.982 0.177 92747.dat
-0 // Minifig Lightsaber Hilt with Slight Sloping Fingers with Bottom Ring
+0 // Minifig Lightsaber Hilt with Slight Sloping Fingers with Bottom Ring (pearl_gold)
 1 297 -25.219 -51.291 -33.234 0.976 0.202 -0.064 -0.21 0.963 -0.16 0.03 0.17 0.985 577b.dat
-0 // Minifig Sword Double Blade Serrated with Bar Holder
+0 // Minifig Sword Double Blade Serrated with Bar Holder (trans_medium_blue)
 1 41 -25.219 -51.291 -33.234 0.976 0.202 -0.064 -0.21 0.963 -0.16 0.03 0.17 0.985 13549.dat
-0 // ~Minifig Leg Left with Dark Red Loincloth and White Claws Pattern (Obsolete)
+0 // ~Minifig Leg Left with Dark Red Loincloth and White Claws Pattern (Obsolete) (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 0 1 0 -1 0 3817paw.dat

@@ -9,90 +9,90 @@
 
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Plate  4 x  4
+0 // Plate  4 x  4 (light_grey)
 1 7 0 0 0 0 0 -1 0 1 0 1 0 0 3031.dat
 0 STEP
-0 // Brick  1 x  2 with Grille
+0 // Brick  1 x  2 with Grille (dark_grey)
 1 8 0 -24 -30 -1 0 0 0 1 0 0 0 -1 2877.dat
-0 // Brick  1 x  2 with Grille
+0 // Brick  1 x  2 with Grille (dark_grey)
 1 8 0 -24 30 1 0 0 0 1 0 0 0 1 2877.dat
 0 STEP
 1 14 64 -14 0 0 0 1 0 1 0 -1 0 0 7106 - Droid Escape - subModel-1.ldr
 1 14 -64 -14 0 0 0 -1 0 1 0 1 0 0 7106 - Droid Escape - subModel-1.ldr
 0 STEP
-0 // Slope Brick 45  2 x  2 Inverted Double Convex
+0 // Slope Brick 45  2 x  2 Inverted Double Convex (white)
 1 15 30 -24 30 0 0 -1 0 1 0 1 0 0 3676.dat
-0 // Slope Brick 45  2 x  2 Inverted Double Convex
+0 // Slope Brick 45  2 x  2 Inverted Double Convex (white)
 1 15 30 -24 -30 1 0 0 0 1 0 0 0 1 3676.dat
-0 // Slope Brick 45  2 x  2 Inverted Double Convex
+0 // Slope Brick 45  2 x  2 Inverted Double Convex (white)
 1 15 -30 -24 -30 0 0 1 0 1 0 -1 0 0 3676.dat
-0 // Slope Brick 45  2 x  2 Inverted Double Convex
+0 // Slope Brick 45  2 x  2 Inverted Double Convex (white)
 1 15 -30 -24 30 -1 0 0 0 1 0 0 0 -1 3676.dat
 0 STEP
-0 // Plate  4 x  4 with Corner Round
+0 // Plate  4 x  4 with Corner Round (light_grey)
 1 7 -40 -32 -40 0 0 1 0 1 0 -1 0 0 30565.dat
 0 STEP
-0 // Plate  4 x  4 with Corner Round
+0 // Plate  4 x  4 with Corner Round (light_grey)
 1 7 40 -32 -40 1 0 0 0 1 0 0 0 1 30565.dat
-0 // Plate  4 x  4 with Corner Round
+0 // Plate  4 x  4 with Corner Round (light_grey)
 1 7 40 -32 40 0 0 -1 0 1 0 1 0 0 30565.dat
-0 // Plate  4 x  4 with Corner Round
+0 // Plate  4 x  4 with Corner Round (light_grey)
 1 7 -40 -32 40 -1 0 0 0 1 0 0 0 -1 30565.dat
 0 STEP
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (blue)
 1 1 0 -40 0 -1 0 0 0 1 0 0 0 -1 3068b.dat
 0 STEP
-0 // Panel  4 x  4 x  6 Corner Round
+0 // Panel  4 x  4 x  6 Corner Round (light_grey)
 1 7 0 -176 0 0 0 1 0 1 0 -1 0 0 30562.dat
-0 // Panel  4 x  4 x  6 Corner Round with SW Escape Pod Pattern
+0 // Panel  4 x  4 x  6 Corner Round with SW Escape Pod Pattern (white)
 1 15 0 -176 0 1 0 0 0 1 0 0 0 1 7106 - Droid Escape - 30562ps1.dat
 0 STEP
-0 // Panel  4 x  4 x  6 Corner Round with SW Escape Pod Pattern
+0 // Panel  4 x  4 x  6 Corner Round with SW Escape Pod Pattern (white)
 1 15 0 -176 0 -1 0 0 0 1 0 0 0 -1 7106 - Droid Escape - 30562ps1.dat
-0 // Panel  4 x  4 x  6 Corner Round
+0 // Panel  4 x  4 x  6 Corner Round (light_grey)
 1 7 0 -176 0 0 0 -1 0 1 0 1 0 0 30562.dat
 0 STEP
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (yellow)
 1 14 0 -184 -70 -1 0 0 0 1 0 0 0 -1 3069b.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (yellow)
 1 14 0 -184 70 -1 0 0 0 1 0 0 0 -1 3069b.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (yellow)
 1 14 -70 -184 0 0 0 -1 0 1 0 1 0 0 3069b.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (yellow)
 1 14 70 -184 0 0 0 -1 0 1 0 1 0 0 3069b.dat
 0 STEP
-0 // Plate  6 x  6
+0 // Plate  6 x  6 (light_grey)
 1 7 0 -184 0 0 0 -1 0 1 0 1 0 0 7106 - Droid Escape - 3958.dat
 0 STEP
 1 15 0 -208 0 0 0 1 0 -1 0 1 0 0 7106 - Droid Escape - subModel-2.ldr
 0 STEP
-0 // ~Minifig Hips (Obsolete)
+0 // ~Minifig Hips (Obsolete) (pearl_light_gold)
 1 142 140 16 30 1 0 0 0 1 0 0 0 1 3815.dat
-0 // ~Minifig Leg Left (Obsolete)
+0 // ~Minifig Leg Left (Obsolete) (pearl_light_gold)
 1 142 140 28 30 1 0 0 0 1 0 0 0 1 3817.dat
-0 // ~Minifig Leg Right (Obsolete)
+0 // ~Minifig Leg Right (Obsolete) (pearl_light_gold)
 1 142 140 28 30 1 0 0 0 1 0 0 0 1 3816.dat
-0 // Cone  4 x  4 x  2 with Axlehole
+0 // Cone  4 x  4 x  2 with Axlehole (dark_grey)
 1 8 0 8 0 1 0 0 0 1 0 0 0 1 3943b.dat
-0 // Minifig Torso with SW Protocol Droid Pattern
+0 // Minifig Torso with SW Protocol Droid Pattern (pearl_light_gold)
 1 142 140 -16 30 1 0 0 0 1 0 0 0 1 973psr.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (pearl_light_gold)
 1 142 155.552 -7 30 0.985 0.17 0 -0.17 0.985 0 0 0 1 3819.dat
-0 // Minifig Hand
+0 // Minifig Hand (pearl_light_gold)
 1 142 163.688 10.76 20.116 0.985 0.12 -0.12 -0.17 0.697 -0.697 0 0.707 0.707 3820.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (pearl_light_gold)
 1 142 124.448 -7 30 0.985 -0.17 0 0.17 0.985 0 0 0 1 3818.dat
-0 // Minifig Hand
+0 // Minifig Hand (pearl_light_gold)
 1 142 116.312 10.76 20.116 0.985 -0.12 0.12 0.17 0.697 -0.697 0 0.707 0.707 3820.dat
-0 // Minifig Head Protocol Droid with Bright Light Yellow Eyes Pattern
+0 // Minifig Head Protocol Droid with Bright Light Yellow Eyes Pattern (pearl_light_gold)
 1 142 140 -16 30 1 0 0 0 1 0 0 0 1 30480ps0.dat
-0 // Minifig Robot Leg  1 x  2 x  2.333 with Pin
+0 // Minifig Robot Leg  1 x  2 x  2.333 with Pin (white)
 1 15 228 10 90 0.259 0 -0.966 0 1 0 0.966 0 0.259 30362a.dat
-0 // Cylinder  2 x  2 x  2 Robot Body w. SW Blue/Grey R2 Pattern
+0 // Cylinder  2 x  2 x  2 Robot Body w. SW Blue/Grey R2 Pattern (white)
 1 15 247.319 10 84.824 0.966 0 0.259 0 1 0 -0.259 0 0.966 30361aps1.dat
-0 // Minifig Robot Leg  1 x  2 x  2.333 with Pin
+0 // Minifig Robot Leg  1 x  2 x  2.333 with Pin (white)
 1 15 266.637 10 79.647 -0.259 0 0.966 0 1 0 -0.966 0 -0.259 30362a.dat
-0 // Cylinder  2 x  2 with Dome Top with SW Blue/Silver R2 Pattern
+0 // Cylinder  2 x  2 with Dome Top with SW Blue/Silver R2 Pattern (white)
 1 15 247.319 -24 84.824 0.966 0 0.259 0 1 0 -0.259 0 0.966 30367aps1.dat
 
 
@@ -105,12 +105,12 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Cone  1 x  1
+0 // Cone  1 x  1 (dark_grey)
 1 8 0 7 -1.876 1 0 0 0 0.5 -0.866 0 0.866 0.5 4589.dat
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (white)
 1 15 0 3 -8.804 0 0 -1 -0.866 0.5 0 0.5 0.866 0 2555.dat
 0 STEP
-0 // Brick  1 x  2 with Handle
+0 // Brick  1 x  2 with Handle (yellow)
 1 14 0 -10 -34 -1 0 0 0 1 0 0 0 -1 30236.dat
 
 
@@ -121,27 +121,27 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Dish  8 x  8 Inverted with Solid Studs
+0 // Dish  8 x  8 Inverted with Solid Studs (light_grey)
 1 7 0 0 0 1 0 0 0 -1 0 0 0 -1 3961.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (red)
 1 4 0 -8 0 1 0 0 0 -1 0 0 0 -1 3022.dat
-0 // Plate  2 x  2 Round with Axlehole
+0 // Plate  2 x  2 Round with Axlehole (blue)
 1 1 0 -16 0 1 0 0 0 -1 0 0 0 -1 4032a.dat
 0 STEP
-0 // Plate  1 x  2 with Handle
+0 // Plate  1 x  2 with Handle (dark_grey)
 1 8 -10 8 0 0 0 1 0 -1 0 1 0 0 2540.dat
-0 // Plate  1 x  2 with Handle
+0 // Plate  1 x  2 with Handle (dark_grey)
 1 8 10 8 0 0 0 -1 0 -1 0 -1 0 0 2540.dat
 0 STEP
-0 // Plate  2 x  2 Round with Axlehole
+0 // Plate  2 x  2 Round with Axlehole (light_grey)
 1 7 0 16 0 0 0 -1 0 -1 0 -1 0 0 4032a.dat
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (white)
 1 15 -35.196 9 0 -0.5 -0.866 0 -0.866 0.5 0 0 0 -1 2555.dat
-0 // Cone  1 x  1
+0 // Cone  1 x  1 (dark_grey)
 1 8 -42.124 13 0 -0.5 -0.866 0 -0.866 0.5 0 0 0 -1 4589.dat
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (white)
 1 15 35.196 9 0 0.5 0.866 0 -0.866 0.5 0 0 0 1 2555.dat
-0 // Cone  1 x  1
+0 // Cone  1 x  1 (dark_grey)
 1 8 42.124 13 0 0.5 0.866 0 -0.866 0.5 0 0 0 1 4589.dat
 
 
@@ -192,13 +192,13 @@
 
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug-6x6.dat
 0 BFC INVERTNEXT
-0 // Box with 5 Faces and All Edges
+0 // Box with 5 Faces and All Edges (main_colour)
 1 16 0 8 0 56 0 0 0 -4 0 0 0 56 box5.dat
 4 16 60 8 60 56 8 56 -56 8 56 -60 8 60
 4 16 -60 8 60 -56 8 56 -56 8 -56 -60 8 -60
 4 16 -60 8 -60 -56 8 -56 56 8 -56 60 8 -60
 4 16 60 8 -60 56 8 -56 56 8 56 60 8 60
-0 // Box with 5 Faces and All Edges
+0 // Box with 5 Faces and All Edges (main_colour)
 1 16 0 8 0 60 0 0 0 -8 0 0 0 60 box5.dat
 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stug4-5x5.dat
 0 LDCad info for "Plate  6 x  6"

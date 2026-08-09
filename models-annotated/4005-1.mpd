@@ -17,131 +17,131 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !HISTORY 2018-01-08 [bercik] OMR version by Robert Paciorek [bercik] with perrmision of juraj3579
 
-0 // ~Boat Section Bow  6 x  8 x  3.333 Hull
+0 // ~Boat Section Bow  6 x  8 x  3.333 Hull (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 997.dat
-0 // ~Boat Section Bow  6 x  8 x  3.333 Deck
+0 // ~Boat Section Bow  6 x  8 x  3.333 Deck (light_grey)
 1 7 0 0 0 1 0 0 0 1 0 0 0 1 998.dat
-0 // ~Boat Section Middle  6 x  8 x  3.333 Hull
+0 // ~Boat Section Middle  6 x  8 x  3.333 Hull (black)
 1 0 0 0 130 1 0 0 0 1 0 0 0 1 185.dat
-0 // ~Boat Section Middle  6 x  8 x  3.333 Deck
+0 // ~Boat Section Middle  6 x  8 x  3.333 Deck (light_grey)
 1 7 0 0 130 1 0 0 0 1 0 0 0 1 186.dat
-0 // ~Boat Section Stern  6 x  8 x  3.333 (Needs Work)
+0 // ~Boat Section Stern  6 x  8 x  3.333 (Needs Work) (black)
 1 0 0 0 290 1 0 0 0 1 0 0 0 1 164.dat
-0 // ~Deck for Boat Section Stern  6 x  8 x  3.333
+0 // ~Deck for Boat Section Stern  6 x  8 x  3.333 (light_grey)
 1 7 0 0 290 1 0 0 0 1 0 0 0 1 181.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (main_colour)
 1 16 0 -8 0 -1 0 0 0 1 0 0 0 -1 3710.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (main_colour)
 1 16 30 -8 50 0 0 1 0 1 0 -1 0 0 3710.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (main_colour)
 1 16 -30 -8 50 0 0 1 0 1 0 -1 0 0 3710.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (main_colour)
 1 16 0 -8 80 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (main_colour)
 1 16 0 -24 110 1 0 0 0 1 0 0 0 1 3003.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (main_colour)
 1 16 30 -24 150 0 0 -1 0 1 0 1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (main_colour)
 1 16 -30 -24 150 0 0 -1 0 1 0 1 0 0 3004.dat
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (main_colour)
 1 16 0 -32 80 -1 0 0 0 1 0 0 0 -1 3010.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (main_colour)
 1 16 0 -32 10 -1 0 0 0 1 0 0 0 -1 3001.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (main_colour)
 1 16 0 -32 110 -1 0 0 0 1 0 0 0 -1 3022.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (main_colour)
 1 16 0 -48 150 -1 0 0 0 1 0 0 0 -1 3001.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (main_colour)
 1 16 0 -40 100 0 0 1 0 1 0 -1 0 0 3021.dat
-0 // ~Car Steering Wheel Stand
+0 // ~Car Steering Wheel Stand (main_colour)
 1 16 0 -40 20 1 0 0 0 1 0 0 0 1 3829a.dat
-0 // ~Car Steering Wheel
+0 // ~Car Steering Wheel (black)
 1 0 0 -66.32 19.76 0 0 1 -0.8 0.6 0 -0.6 -0.8 0 3828.dat
-0 // Hose Reel  2 x  4 x  2 Holder with Solid Studs
+0 // Hose Reel  2 x  4 x  2 Holder with Solid Studs (main_colour)
 1 16 0 -48 190 -1 0 0 0 1 0 0 0 -1 4209.dat
-0 // Hose Reel  2 x  4 x  2 Drum
+0 // Hose Reel  2 x  4 x  2 Drum (black)
 1 0 -2 -26 200 -1 0 0 0 1 0 0 0 -1 4208.dat
-0 // Plate  1 x  1 with Clip Vertical (Thick U-Clip)
+0 // Plate  1 x  1 with Clip Vertical (Thick U-Clip) (main_colour)
 1 16 30 -40 80 0 0 -1 0 1 0 1 0 0 4085c.dat
-0 // Plate  1 x  1 with Clip Vertical (Thick U-Clip)
+0 // Plate  1 x  1 with Clip Vertical (Thick U-Clip) (main_colour)
 1 16 -30 -40 80 0 0 1 0 1 0 -1 0 0 4085c.dat
-0 // Plate  1 x  2 with Ladder
+0 // Plate  1 x  2 with Ladder (black)
 1 0 -10 -48 110 0 0 1 0 1 0 -1 0 0 4175.dat
-0 // Plate  1 x  2 with Ladder
+0 // Plate  1 x  2 with Ladder (black)
 1 0 10 -48 110 0 0 -1 0 1 0 1 0 0 4175.dat
-0 // Plate  1 x  2 with Ladder
+0 // Plate  1 x  2 with Ladder (light_grey)
 1 7 30 -56 170 0 0 -1 0 1 0 1 0 0 4175.dat
-0 // Plate  1 x  2 with Ladder
+0 // Plate  1 x  2 with Ladder (light_grey)
 1 7 -30 -56 170 0 0 1 0 1 0 -1 0 0 4175.dat
-0 // Slope Brick 45  2 x  1 without Centre Stud
+0 // Slope Brick 45  2 x  1 without Centre Stud (main_colour)
 1 16 30 -56 0 -1 0 0 0 1 0 0 0 -1 3040a.dat
-0 // Slope Brick 45  2 x  1 without Centre Stud
+0 // Slope Brick 45  2 x  1 without Centre Stud (main_colour)
 1 16 -30 -56 0 -1 0 0 0 1 0 0 0 -1 3040a.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (main_colour)
 1 16 0 -48 80 -1 0 0 0 1 0 0 0 -1 3710.dat
-0 // Minifig Radio with Short Handle
+0 // Minifig Radio with Short Handle (black)
 1 0 -50 -34 80 0 0 1 0 1 0 -1 0 0 3962a.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (main_colour)
 1 16 30 -56 110 0 0 1 0 1 0 -1 0 0 3710.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (main_colour)
 1 16 -30 -56 110 0 0 1 0 1 0 -1 0 0 3710.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (main_colour)
 1 16 0 -56 200 1 0 0 0 1 0 0 0 1 3710.dat
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (main_colour)
 1 16 0 -56 130 0 0 -1 0 1 0 1 0 0 3795.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (main_colour)
 1 16 0 -56 0 -1 0 0 0 1 0 0 0 -1 3004.dat
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (main_colour)
 1 16 0 -80 80 -1 0 0 0 1 0 0 0 -1 3010.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (main_colour)
 1 16 -30 -80 100 -1 0 0 0 1 0 0 0 -1 3005.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (red)
 1 4 0 -64 120 0 0 1 0 1 0 -1 0 0 3021.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (main_colour)
 1 16 30 -80 100 -1 0 0 0 1 0 0 0 -1 3005.dat
-0 // Slope Brick 45  2 x  1 without Centre Stud
+0 // Slope Brick 45  2 x  1 without Centre Stud (main_colour)
 1 16 -30 -104 80 -1 0 0 0 1 0 0 0 -1 3040a.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 0 -88 100 -1 0 0 0 1 0 0 0 -1 3004.dat
-0 // Slope Brick 45  2 x  1 without Centre Stud
+0 // Slope Brick 45  2 x  1 without Centre Stud (main_colour)
 1 16 30 -104 80 -1 0 0 0 1 0 0 0 -1 3040a.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (main_colour)
 1 16 0 -104 80 -1 0 0 0 1 0 0 0 -1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 0 -112 100 -1 0 0 0 1 0 0 0 -1 3004.dat
-0 // Slope Brick 75  2 x  2 x  3 with Hollow Studs
+0 // Slope Brick 75  2 x  2 x  3 with Hollow Studs (red)
 1 4 0 -136 120 -1 0 0 0 1 0 0 0 -1 3684a.dat
-0 // Hinge Plate  1 x  4 with Car Roof Holder
+0 // Hinge Plate  1 x  4 with Car Roof Holder (main_colour)
 1 16 0 -112 80 1 0 0 0 1 0 0 0 1 4315.dat
-0 // Hinge Car Roof  4 x  4
+0 // Hinge Car Roof  4 x  4 (main_colour)
 1 16 0 -112 30 1 0 0 0 1 0 0 0 1 4213.dat
-0 // Windscreen  2 x  4 x  2 Inverted
+0 // Windscreen  2 x  4 x  2 Inverted (trans_clear)
 1 47 0 -104 -20 1 0 0 0 1 0 0 0 1 4284.dat
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (red)
 1 4 0 -136 90 1 0 0 0 1 0 0 0 1 3003.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (main_colour)
 1 16 0 -112 -20 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (trans_red)
 1 36 30 -112 -20 1 0 0 0 1 0 0 0 1 3024.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (trans_green)
 1 34 -30 -112 -20 1 0 0 0 1 0 0 0 1 3024.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (black)
 1 0 0 -144 100 0 0 -1 0 1 0 1 0 0 3021.dat
-0 // Boat Mast  2 x  2
+0 // Boat Mast  2 x  2 (main_colour)
 1 16 0 -120 10 1 0 0 0 1 0 0 0 1 4289.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_yellow)
 1 46 0 -192 20 1 0 0 0 1 0 0 0 1 6141.dat
-0 // Bar  1 x  4 x  2 with Studs
+0 // Bar  1 x  4 x  2 with Studs (yellow)
 1 14 0 -104 200 1 0 0 0 1 0 0 0 1 4083.dat
-0 // Bar  1 x  4 x  2 with Studs
+0 // Bar  1 x  4 x  2 with Studs (yellow)
 1 14 0 -48 320 1 0 0 0 1 0 0 0 1 4083.dat
-0 // Minifig Tool Spanner/Screwdriver
+0 // Minifig Tool Spanner/Screwdriver (black)
 1 0 50 -50 80 1 0 0 0 1 0 0 0 1 4006.dat
-0 // Plate  1 x  2 with Crane Hook Left
+0 // Plate  1 x  2 with Crane Hook Left (red)
 1 4 5 -44 284 0 -1 0 0 0 -1 1 0 0 3127a.dat
-0 // Minifig Loudhailer
+0 // Minifig Loudhailer (black)
 1 0 30 -22 -20 -1 0 0 0 0 -1 0 -1 0 4349.dat
-0 // Minifig Loudhailer
+0 // Minifig Loudhailer (black)
 1 0 -30 -22 -20 -1 0 0 0 0 -1 0 -1 0 4349.dat
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4005 - rope.ldr
 
@@ -153,25 +153,25 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !HISTORY 2018-01-08 [bercik] OMR version by Robert Paciorek [bercik] with perrmision of juraj3579
 
-0 // ~Minifig Hips (Obsolete)
+0 // ~Minifig Hips (Obsolete) (black)
 1 0 0 40 0 1 0 0 0 1 0 0 0 1 3815.dat
-0 // ~Minifig Leg Right (Obsolete)
+0 // ~Minifig Leg Right (Obsolete) (black)
 1 0 0 52 0 1 0 0 0 1 0 0 0 1 3816.dat
-0 // ~Minifig Leg Left (Obsolete)
+0 // ~Minifig Leg Left (Obsolete) (black)
 1 0 0 52 0 1 0 0 0 1 0 0 0 1 3817.dat
-0 // Minifig Torso
+0 // Minifig Torso (blue)
 1 1 0 8 0 1 0 0 0 1 0 0 0 1 973.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (blue)
 1 1 15.6 17 0 1 0.174 0 -0.174 1 0 0 0 1 3819.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (blue)
 1 1 -15.6 17 0 1 -0.174 0 0.174 1 0 0 0 1 3818.dat
-0 // Minifig Hand
+0 // Minifig Hand (yellow)
 1 14 -23.806 34.709 -9.899 1 -0.123 0.123 0.174 0.696 -0.696 0 0.707 0.707 3820.dat
-0 // Minifig Hand
+0 // Minifig Hand (yellow)
 1 14 23.807 34.709 -9.899 1 -0.123 -0.123 0 0.718 -0.696 0.174 0.685 0.707 3820.dat
-0 // Minifig Head with Standard Grin Pattern (Blocked Hollow Stud)
+0 // Minifig Head with Standard Grin Pattern (Blocked Hollow Stud) (yellow)
 1 14 0 -16 0 1 0 0 0 1 0 0 0 1 3626bp01.dat
-0 // Minifig Police Hat
+0 // Minifig Police Hat (black)
 1 0 0 -16 0 1 0 0 0 1 0 0 0 1 3624.dat
 
 0 FILE 4005 - LS60.dat

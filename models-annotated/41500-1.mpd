@@ -19,29 +19,29 @@
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (red)
 1 4 0 0 0 -1 0 0 0 1 0 0 0 -1 3022.dat
-0 // Plate  1 x  2 with Socket Joint-8 with Friction Centre
+0 // Plate  1 x  2 with Socket Joint-8 with Friction Centre (light_bluish_grey)
 1 71 -10 -8 0 0 0 1 0 1 0 -1 0 0 41500 - 14704.dat
-0 // Plate  1 x  2 with Socket Joint-8 with Friction Centre
+0 // Plate  1 x  2 with Socket Joint-8 with Friction Centre (light_bluish_grey)
 1 71 10 -8 0 0 0 -1 0 1 0 1 0 0 41500 - 14704.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (dark_red)
 1 320 0 -16 10 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (dark_red)
 1 320 0 -32 -10 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Slope Brick 45  2 x  2
+0 // Slope Brick 45  2 x  2 (red)
 1 4 0 -40 10 -1 0 0 0 1 0 0 0 -1 3039.dat
-0 // Bracket  1 x  2 -  2 x  2 Down
+0 // Bracket  1 x  2 -  2 x  2 Down (black)
 1 0 0 -40 -10 1 0 0 0 1 0 0 0 1 44728.dat
-0 // Plate  1 x  2 with Handle
+0 // Plate  1 x  2 with Handle (black)
 1 0 10 -48 0 0 0 -1 0 1 0 1 0 0 2540.dat
-0 // Plate  1 x  2 with Handle
+0 // Plate  1 x  2 with Handle (black)
 1 0 -10 -48 0 0 0 1 0 1 0 -1 0 0 2540.dat
-0 // Slope Brick 45  1 x  2 Triple
+0 // Slope Brick 45  1 x  2 Triple (red)
 1 4 0 -72 10 -1 0 0 0 1 0 0 0 -1 3048b.dat
-0 // Slope Brick Rounded  2 x  2 x  0.667
+0 // Slope Brick Rounded  2 x  2 x  0.667 (red)
 1 4 0 -10 -40 -1 0 0 0 0 1 0 1 0 41855.dat
-0 // Hinge  1 x  2 Base
+0 // Hinge  1 x  2 Base (red)
 1 4 0 -72 -10 1 0 0 0 1 0 0 0 1 3937.dat
 
 0 FILE 41500 - Leg Left.ldr
@@ -50,13 +50,13 @@
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Technic Brick  1 x  2 with Axlehole with Open Sides and Stud Blocker
+0 // Technic Brick  1 x  2 with Axlehole with Open Sides and Stud Blocker (red)
 1 4 0 0 0 1 0 0 0 0 -1 0 1 0 32064a.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (dark_red)
 1 320 0 0 -8 1 0 0 0 0 -1 0 1 0 3023.dat
-0 // Tile  1 x  2 with  2 Teeth Vertical
+0 // Tile  1 x  2 with  2 Teeth Vertical (white)
 1 15 0 0 -16 -1 0 0 0 0 1 0 1 0 15209.dat
-0 // Technic Axle Towball
+0 // Technic Axle Towball (light_bluish_grey)
 1 71 0 -10 10 0 0 1 1 0 0 0 1 0 2736.dat
 
 0 FILE 41500 - Leg Right.ldr
@@ -65,13 +65,13 @@
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Technic Brick  1 x  2 with Axlehole with Open Sides and Stud Blocker
+0 // Technic Brick  1 x  2 with Axlehole with Open Sides and Stud Blocker (red)
 1 4 0 0 0 1 0 0 0 0 -1 0 1 0 32064a.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (dark_red)
 1 320 0 0 -8 1 0 0 0 0 -1 0 1 0 3023.dat
-0 // Tile  1 x  2 with  2 Teeth Vertical
+0 // Tile  1 x  2 with  2 Teeth Vertical (white)
 1 15 0 0 -16 1 0 0 0 0 -1 0 1 0 15209.dat
-0 // Technic Axle Towball
+0 // Technic Axle Towball (light_bluish_grey)
 1 71 0 -10 10 0 0 1 1 0 0 0 1 0 2736.dat
 
 0 FILE 41500 - Arm Left.ldr
@@ -80,11 +80,11 @@
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  1 x  2 with Clip Horizontal on End (Thick C-Clip)
+0 // Plate  1 x  2 with Clip Horizontal on End (Thick C-Clip) (red)
 1 4 0 0 0 -1 0 0 0 1 0 0 0 -1 63868.dat
-0 // Plate  1 x  1 with Clip Horizontal (Thick U-Clip)
+0 // Plate  1 x  1 with Clip Horizontal (Thick U-Clip) (red)
 1 4 10 -8 0 0 0 -1 0 1 0 1 0 0 6019.dat
-0 // Slope Brick 31  1 x  1 x  0.667
+0 // Slope Brick 31  1 x  1 x  0.667 (dark_red)
 1 320 -10 0 0 0 0 1 0 1 0 -1 0 0 54200.dat
 
 0 FILE 41500 - Arm Right.ldr
@@ -93,11 +93,11 @@
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  1 x  2 with Clip Horizontal on End (Thick C-Clip)
+0 // Plate  1 x  2 with Clip Horizontal on End (Thick C-Clip) (red)
 1 4 0 0 0 1 0 0 0 1 0 0 0 1 63868.dat
-0 // Plate  1 x  1 with Clip Horizontal (Thick U-Clip)
+0 // Plate  1 x  1 with Clip Horizontal (Thick U-Clip) (red)
 1 4 -10 -8 0 0 0 1 0 1 0 -1 0 0 6019.dat
-0 // Slope Brick 31  1 x  1 x  0.667
+0 // Slope Brick 31  1 x  1 x  0.667 (dark_red)
 1 320 10 0 0 0 0 -1 0 1 0 1 0 0 54200.dat
 
 0 FILE 41500 - Head.ldr
@@ -106,69 +106,69 @@
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (red)
 1 4 0 0 0 0 0 -1 0 1 0 1 0 0 3021.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (dark_red)
 1 320 0 -8 0 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Bracket  1 x  2 -  2 x  2 Up
+0 // Bracket  1 x  2 -  2 x  2 Up (red)
 1 4 0 -8 -20 1 0 0 0 1 0 0 0 1 99207.dat
-0 // Brick  1 x  2 with Two Studs on One Side
+0 // Brick  1 x  2 with Two Studs on One Side (red)
 1 4 0 -24 20 -1 0 0 0 1 0 0 0 -1 11211.dat
-0 // Bracket  1 x  2 -  1 x  4 with Rounded Corners
+0 // Bracket  1 x  2 -  1 x  4 with Rounded Corners (red)
 1 4 -10 -16 -10 0 0 1 0 1 0 -1 0 0 2436b.dat
-0 // Bracket  1 x  2 -  1 x  4 with Rounded Corners
+0 // Bracket  1 x  2 -  1 x  4 with Rounded Corners (red)
 1 4 10 -16 -10 0 0 -1 0 1 0 1 0 0 2436b.dat
-0 // Plate  1 x  2 with Groove with 1 Centre Stud
+0 // Plate  1 x  2 with Groove with 1 Centre Stud (red)
 1 4 -32 -6 -30 0 1 0 0 0 1 1 0 0 3794b.dat
-0 // Plate  1 x  2 with Groove with 1 Centre Stud
+0 // Plate  1 x  2 with Groove with 1 Centre Stud (red)
 1 4 32 -6 -30 0 -1 0 0 0 1 -1 0 0 3794b.dat
-0 // Technic Ball Joint with Axlehole Blind with Black Eye with Pupil Top Left Pattern
+0 // Technic Ball Joint with Axlehole Blind with Black Eye with Pupil Top Left Pattern (white)
 1 15 41.25 -6 -30 0 -1 0 1 0 0 0 0 1 32474p01.dat
-0 // Technic Ball Joint with Axlehole Blind with Black Eye with Pupil Top Left Pattern
+0 // Technic Ball Joint with Axlehole Blind with Black Eye with Pupil Top Left Pattern (white)
 1 15 -41.25 -6 -30 0 1 0 -1 0 0 0 0 1 32474p01.dat
-0 // Wing  2 x  4
+0 // Wing  2 x  4 (dark_red)
 1 320 0 -24 -10 1 0 0 0 1 0 0 0 1 51739.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (red)
 1 4 0 -32 -10 1 0 0 0 1 0 0 0 1 3022.dat
-0 // Plate  1 x  1 with Clip Horizontal (Thick U-Clip)
+0 // Plate  1 x  1 with Clip Horizontal (Thick U-Clip) (red)
 1 4 -10 -32 20 0 0 1 0 1 0 -1 0 0 6019.dat
-0 // Plate  1 x  1 with Clip Horizontal (Thick U-Clip)
+0 // Plate  1 x  1 with Clip Horizontal (Thick U-Clip) (red)
 1 4 10 -32 20 0 0 -1 0 1 0 1 0 0 6019.dat
-0 // Plate  1 x  2 with Groove with 1 Centre Stud
+0 // Plate  1 x  2 with Groove with 1 Centre Stud (red)
 1 4 0 -40 -20 1 0 0 0 1 0 0 0 1 3794b.dat
-0 // Plate  1 x  2 with Groove with 1 Centre Stud
+0 // Plate  1 x  2 with Groove with 1 Centre Stud (red)
 1 4 0 -40 0 1 0 0 0 1 0 0 0 1 3794b.dat
-0 // Plate  1 x  2 with Groove with 1 Centre Stud
+0 // Plate  1 x  2 with Groove with 1 Centre Stud (red)
 1 4 0 -40 20 1 0 0 0 1 0 0 0 1 3794b.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (dark_red)
 1 320 0 -48 10 0 0 1 0 1 0 -1 0 0 3023.dat
-0 // Slope Brick Curved  4 x  1 Double
+0 // Slope Brick Curved  4 x  1 Double (dark_red)
 1 320 0 -40 10 -1 0 0 0 1 0 0 0 -1 93273.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (dark_red)
 1 320 -32 -6 30 0 1 0 0 0 -1 -1 0 0 3023.dat
-0 // Slope Brick Curved  4 x  1 Double
+0 // Slope Brick Curved  4 x  1 Double (dark_red)
 1 320 -24 -6 30 0 1 0 1 0 0 0 0 -1 93273.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (dark_red)
 1 320 32 -6 30 0 -1 0 0 0 1 -1 0 0 3023.dat
-0 // Slope Brick Curved  4 x  1 Double
+0 // Slope Brick Curved  4 x  1 Double (dark_red)
 1 320 24 -6 30 0 -1 0 -1 0 0 0 0 -1 93273.dat
-0 // Minifig Flame  7 L with Bar  0.8 with Marbled Trans Yellow Flame Tip Pattern
+0 // Minifig Flame  7 L with Bar  0.8 with Marbled Trans Yellow Flame Tip Pattern (dark_red)
 1 320 10 -14 34 0 0 -1 1 0 0 0 -1 0 85959p02.dat
-0 // Minifig Flame  7 L with Bar  0.8 with Marbled Trans Yellow Flame Tip Pattern
+0 // Minifig Flame  7 L with Bar  0.8 with Marbled Trans Yellow Flame Tip Pattern (dark_red)
 1 320 -10 -14 34 0 0 -1 1 0 0 0 -1 0 85959p02.dat
-0 // Minifig Flame with Rim
+0 // Minifig Flame with Rim (trans_neon_orange)
 1 38 -30 -30 26 0 -1 0 1 0 0 0 0 1 6126b.dat
-0 // Minifig Flame with Rim
+0 // Minifig Flame with Rim (trans_neon_orange)
 1 38 30 -30 26 0 -1 0 1 0 0 0 0 1 6126b.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (red)
 1 4 0 -20 -42 1 0 0 0 0 -1 0 1 0 3022.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (dark_red)
 1 320 0 -10 -50 -1 0 0 0 0 1 0 1 0 3023.dat
-0 // Slope Brick 45  1 x  2 Triple
+0 // Slope Brick 45  1 x  2 Triple (red)
 1 4 0 -30 -66 -1 0 0 0 0 1 0 1 0 3048b.dat
-0 // Slope Brick 45  1 x  2 Double / Inverted
+0 // Slope Brick 45  1 x  2 Double / Inverted (red)
 1 4 0 -10 -74 1 0 0 0 0 -1 0 1 0 3049b.dat
-0 // Hinge  2 x  2 Top
+0 // Hinge  2 x  2 Top (black)
 1 0 0 8 -20 1 0 0 0 1 0 0 0 1 6134.dat
 
 0 FILE 41500 - 14704.dat
@@ -185,42 +185,42 @@
 
 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat
 0 BFC INVERTNEXT
-0 // Box with  4 Faces without  4 Adjacent Edges
+0 // Box with  4 Faces without  4 Adjacent Edges (main_colour)
 1 16 0 8 0 16 0 0 0 -4 0 0 0 6 box4-4a.dat
 4 16 -20 8 10 -16 8 6 -16 8 -6 -20 8 -10
 4 16 20 8 -10 16 8 -6 16 8 6 20 8 10
 4 16 20 8 10 16 8 6 -16 8 6 -20 8 10
 
 0 BFC INVERTNEXT
-0 // Box with  4 Faces without  4 Adjacent Edges
+0 // Box with  4 Faces without  4 Adjacent Edges (main_colour)
 1 16 3.25 8 -8 -1.75 0 0 0 -4 0 0 0 -1 box4-4a.dat
 0 BFC INVERTNEXT
-0 // Box with  4 Faces without  4 Adjacent Edges
+0 // Box with  4 Faces without  4 Adjacent Edges (main_colour)
 1 16 -3.25 8 -8 -1.75 0 0 0 -4 0 0 0 -1 box4-4a.dat
-0 // Disc Negative 0.25
+0 // Disc Negative 0.25 (main_colour)
 1 16 6 4 -7 -1 0 0 0 -4 0 0 0 1 1-4ndis.dat
-0 // Disc Negative 0.25
+0 // Disc Negative 0.25 (main_colour)
 1 16 -6 4 -7 0 0 1 0 -4 0 1 0 0 1-4ndis.dat
-0 // Disc Negative 0.5
+0 // Disc Negative 0.5 (main_colour)
 1 16 0 4 -7 1.5 0 0 0 -4 0 0 0 1 2-4ndis.dat
 4 16 5 4 -7 1.5 4 -7 1.5 4 -6 5 4 -6
 4 16 -1.5 4 -7 -5 4 -7 -5 4 -6 -1.5 4 -6
 
-0 // Cylinder Open 0.25
+0 // Cylinder Open 0.25 (main_colour)
 1 16 -6 8 -7 1 0 0 0 -4 0 0 0 1 1-4cylo.dat
-0 // Cylinder Open 0.25
+0 // Cylinder Open 0.25 (main_colour)
 1 16 6 8 -7 0 0 -1 0 -4 0 1 0 0 1-4cylo.dat
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 -6 8 -7 1 0 0 0 -1 0 0 0 1 1-4chrd.dat
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 6 8 -7 0 0 -1 0 -1 0 1 0 0 1-4chrd.dat
-0 // Cylinder Open 0.5
+0 // Cylinder Open 0.5 (main_colour)
 1 16 0 8 -7 1.5 0 0 0 -4 0 0 0 1 2-4cylo.dat
-0 // Chord 0.5
+0 // Chord 0.5 (main_colour)
 1 16 0 8 -7 1.5 0 0 0 -1 0 0 0 1 2-4chrd.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 -11 6 -6 0 0 -5 2 0 0 0 -2 0 rect3.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 11 6 -6 0 0 5 -2 0 0 0 -2 0 rect3.dat
 
 4 16 16 8 -6 20 8 -10 10 8 -10 6 8 -6
@@ -230,11 +230,11 @@
 4 16 -1.5 8 -7 1.5 8 -7 1.5 8 -9 -1.5 8 -9
 4 16 -5 8 -9 5 8 -9 10 8 -10 -10 8 -10
 
-0 // Box with  4 Faces without  4 Adjacent Edges
+0 // Box with  4 Faces without  4 Adjacent Edges (main_colour)
 1 16 0 8 0 20 0 0 0 -8 0 0 0 10 box4-4a.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 15 4 -10 0 0 5 4 0 0 0 2 0 rect3.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 -15 4 -10 0 0 -5 -4 0 0 0 2 0 rect3.dat
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug2-1x2.dat
 
@@ -680,17 +680,17 @@
 
 0 // Top surface
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.5
+0 // Cylinder Open 0.5 (main_colour)
 1 16 0 -7.75 0 4.8 0 0 0 1.4 0 0 0 4.8 2-4cylo.dat
-0 // Disc Negative 0.5
+0 // Disc Negative 0.5 (main_colour)
 1 16 0 -7.75 0 4.8 0 0 0 1 0 0 0 4.8 2-4ndis.dat
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 7.4 -7.75 -2 -2.6 0 0 0 8 0 0 0 -3 2-4edge.dat
-0 // Chord 0.5
+0 // Chord 0.5 (main_colour)
 1 16 7.4 -7.75 -2 -2.6 0 0 0 1 0 0 0 -3 2-4chrd.dat
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 -7.4 -7.75 -2 -2.6 0 0 0 1 0 0 0 -3 2-4edge.dat
-0 // Chord 0.5
+0 // Chord 0.5 (main_colour)
 1 16 -7.4 -7.75 -2 -2.6 0 0 0 1 0 0 0 -3 2-4chrd.dat
 4 16 4.8 -7.75 -2 10 -7.75 -2 10 -7.75 9 4.8 -7.75 4.8
 4 16 -4.8 -7.75 4.8 -10 -7.75 9 -10 -7.75 -2 -4.8 -7.75 -2
@@ -699,17 +699,17 @@
 
 0 // Bottom surface
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.5
+0 // Cylinder Open 0.5 (main_colour)
 1 16 0 7.75 0 -4.8 0 0 0 -1.4 0 0 0 4.8 2-4cylo.dat
-0 // Disc Negative 0.5
+0 // Disc Negative 0.5 (main_colour)
 1 16 0 7.75 0 -4.8 0 0 0 -1 0 0 0 4.8 2-4ndis.dat
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 -7.4 7.75 -2 2.6 0 0 0 -8 0 0 0 -3 2-4edge.dat
-0 // Chord 0.5
+0 // Chord 0.5 (main_colour)
 1 16 -7.4 7.75 -2 2.6 0 0 0 -1 0 0 0 -3 2-4chrd.dat
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 7.4 7.75 -2 2.6 0 0 0 -1 0 0 0 -3 2-4edge.dat
-0 // Chord 0.5
+0 // Chord 0.5 (main_colour)
 1 16 7.4 7.75 -2 2.6 0 0 0 -1 0 0 0 -3 2-4chrd.dat
 4 16 -4.8 7.75 -2 -10 7.75 -2 -10 7.75 9 -4.8 7.75 4.8
 4 16 4.8 7.75 4.8 10 7.75 9 10 7.75 -2 4.8 7.75 -2
@@ -717,29 +717,29 @@
 4 16 -4.8 7.75 4.8 -10 7.75 9 10 7.75 9 0 7.75 4.8
 
 0 // Sides
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 10 0 3.5 0 -1 0 0 0 -7.75 5.5 0 0 rect2p.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 -10 0 3.5 0 1 0 0 0 7.75 5.5 0 0 rect2p.dat
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 10 0 -2 0 1 0 7.75 0 0 0 0 -3 2-4edge.dat
-0 // Disc 0.5
+0 // Disc 0.5 (main_colour)
 1 16 10 0 -2 0 -1 0 -7.75 0 0 0 0 -3 2-4disc.dat
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 -10 0 -2 0 -1 0 -7.75 0 0 0 0 -3 2-4edge.dat
-0 // Disc 0.5
+0 // Disc 0.5 (main_colour)
 1 16 -10 0 -2 0 1 0 7.75 0 0 0 0 -3 2-4disc.dat
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 7.4 0 -5 0 0 2.6 7.75 0 0 0 1 0 2-4edge.dat
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 -7.4 0 -5 0 0 -2.6 -7.75 0 0 0 1 0 2-4edge.dat
-0 // Sphere 0.175 x  1.1414 Cut Off
+0 // Sphere 0.175 x  1.1414 Cut Off (main_colour)
 1 16 7.4 0 -2 0 0 2.6 0 7.75 0 -3 0 0 1-8sphc.dat
-0 // Sphere 0.175 x  1.1414 Cut Off
+0 // Sphere 0.175 x  1.1414 Cut Off (main_colour)
 1 16 7.4 0 -2 0 0 2.6 0 -7.75 0 -3 0 0 1-8sphc.dat
-0 // Sphere 0.175 x  1.1414 Cut Off
+0 // Sphere 0.175 x  1.1414 Cut Off (main_colour)
 1 16 -7.4 0 -2 0 0 -2.6 0 -7.75 0 -3 0 0 1-8sphc.dat
-0 // Sphere 0.175 x  1.1414 Cut Off
+0 // Sphere 0.175 x  1.1414 Cut Off (main_colour)
 1 16 -7.4 0 -2 0 0 -2.6 0 7.75 0 -3 0 0 1-8sphc.dat
 
 0 // backside

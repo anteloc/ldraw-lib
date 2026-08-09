@@ -26,32 +26,32 @@
 0 ROTATION CENTER 0 -160 -220 1 "New Custom" 
 0 ROTATION CENTER 0 -356 -128 1 "New Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam 15
+0 // Technic Beam 15 (light_bluish_grey)
 1 71 0 0 0 0 -1 0 1 0 0 0 0 1 32278.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 0 -80 -1 0 0 0 -1 0 0 0 1 2780.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 0 0 -40 -1 0 0 0 -1 0 0 0 1 6558.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 0 0 -1 0 0 0 -1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 0 40 -1 0 0 0 -1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 0 80 -1 0 0 0 -1 0 0 0 1 2780.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 0 0 100 1 0 0 0 -1 0 0 0 -1 32054.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 0 0 140 1 0 0 0 -1 0 0 0 -1 32054.dat
 0 STEP
-0 // Technic Beam  3 x  5 Bent 90
+0 // Technic Beam  3 x  5 Bent 90 (light_bluish_grey)
 1 71 20 -80 0 0 -1 0 0 0 1 -1 0 0 32526.dat
-0 // Technic Beam  3 x  5 Bent 90
+0 // Technic Beam  3 x  5 Bent 90 (light_bluish_grey)
 1 71 20 -80 80 0 -1 0 0 0 1 -1 0 0 32526.dat
 0 STEP
 1 71 0 -40 0 1 0 0 0 1 0 0 0 1 8274 - m-1a.ldr
 0 STEP
 1 71 50 -40 -120 0 0 1 -1 0 0 0 -1 0 8274 - m-1b.ldr
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 -30 -40 -120 0 0 1 -1 0 0 0 -1 0 6538b.dat
 0 STEP
 1 71 35 -80 40 1 0 0 0 -1 0 0 0 -1 8274 - m-1c.ldr
@@ -60,7 +60,7 @@
 1 71 60 0 -120 -1 0 0 0 1 0 0 0 -1 8274 - m-1e.ldr
 0 STEP
 1 71 120 0 0 1 0 0 0 1 0 0 0 1 8274 - m-1f.ldr
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 150 -40 -120 0 0 1 -1 0 0 0 -1 0 6538b.dat
 0 STEP
 1 71 15 -40 -280 1 0 0 0 1 0 0 0 1 8274 - m-1g.ldr
@@ -75,9 +75,9 @@
 1 71 -40 20 -125 0 0 -1 0 1 0 1 0 0 8274 - m-1k.ldr
 1 71 160 20 -115 0 0 1 0 1 0 -1 0 0 8274 - m-1k.ldr
 0 STEP
-0 // Technic Beam  9
+0 // Technic Beam  9 (light_bluish_grey)
 1 71 60 20 -100 0 0 1 -1 0 0 0 -1 0 40490.dat
-0 // Technic Beam  9
+0 // Technic Beam  9 (light_bluish_grey)
 1 71 60 20 -140 0 0 1 -1 0 0 0 -1 0 40490.dat
 0 STEP
 0 ROTSTEP END
@@ -85,11 +85,11 @@
 0 STEP
 1 71 40 20 380 1 0 0 0 1 0 0 0 1 8274 - m-1m.ldr
 0 STEP
-0 // Technic Beam 15
+0 // Technic Beam 15 (lime)
 1 27 -20 -140 -40 0 -1 0 0 0 1 -1 0 0 32278.dat
-0 // Technic Beam 15
+0 // Technic Beam 15 (lime)
 1 27 -20 -140 -80 0 -1 0 0 0 1 -1 0 0 32278.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 -20 -280 -80 1 0 0 0 0 1 0 -1 0 6558.dat
 0 STEP
 1 0 60 -280 -40 1 0 0 0 1 0 0 0 1 8274 - m-1n.ldr
@@ -97,13 +97,13 @@
 0 STEP
 1 0 60 -220 -80 1 0 0 0 0 -1 0 1 0 8274 - m-1p.ldr
 0 STEP
-0 // Technic Beam 15
+0 // Technic Beam 15 (lime)
 1 27 140 -140 -40 0 -1 0 0 0 1 -1 0 0 32278.dat
-0 // Technic Beam 15
+0 // Technic Beam 15 (lime)
 1 27 140 -140 -80 0 -1 0 0 0 1 -1 0 0 32278.dat
 1 27 160 -180 -60 1 0 0 0 1 0 0 0 1 8274 - m-1q.ldr
 0 STEP
-0 // Technic Beam 13
+0 // Technic Beam 13 (light_bluish_grey)
 1 71 60 -200 -60 0 0 1 0 1 0 -1 0 0 41239.dat
 1 71 20 -320 -20 1 0 0 0 1 0 0 0 1 8274 - m-1r.ldr
 0 STEP
@@ -117,7 +117,7 @@
 0 STEP
 1 71 40 -240 220 1 0 0 0 1 0 0 0 1 8274 - m-1w.ldr
 0 STEP
-0 // Technic Beam 15
+0 // Technic Beam 15 (dark_bluish_grey)
 1 72 40 -240 120 0 0 1 -1 0 0 0 -1 0 32278.dat
 0 STEP
 1 72 0 -320 40 0 0 -1 0 1 0 1 0 0 8274 - m-1x.ldr
@@ -136,16 +136,16 @@
 1 0 140 -160 540 1 0 0 0 1 0 0 0 1 8274 - m-1e'.ldr
 0 STEP
 1 0 140 -280 540 1 0 0 0 1 0 0 0 1 8274 - m-1f'.ldr
-0 // Technic Beam 13
+0 // Technic Beam 13 (dark_bluish_grey)
 1 72 140 -280 240 0 -1 0 1 0 0 0 0 1 41239.dat
-0 // Plate  4 x  6
+0 // Plate  4 x  6 (light_bluish_grey)
 1 71 60 -200 558 1 0 0 0 0 1 0 -1 0 3032.dat
 0 STEP
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (black)
 1 0 100 -180 566 1 0 0 0 0 1 0 -1 0 3068b.dat
 1 0 160 -118.4 368.8 1 0 0 0 -0.96 0.28 0 -0.28 -0.96 8274 - m-1g'.ldr
 0 STEP
-0 // Technic Panel Fairing #20
+0 // Technic Panel Fairing #20 (lime)
 1 27 160 -188 250 -1 0 0 0 -1 0 0 0 1 44350.dat
 1 27 60 -240 220 1 0 0 0 1 0 0 0 1 8274 - m-1h'.ldr
 1 27 160 -80 420 0 0 -1 0 1 0 1 0 0 8274 - m-1i'.ldr
@@ -179,7 +179,7 @@
 1 0 -50 -4 50 0 -1 0 0 0 1 -1 0 0 8274 - m-1v'.ldr
 0 STEP
 1 0 -20 -356 -128 -1 0 0 0 0.8 -0.6 0 -0.6 -0.8 8274 - m-1w'.ldr
-0 // Technic Beam 11
+0 // Technic Beam 11 (lime)
 1 27 -40 -280 20 0 -1 0 1 0 0 0 0 1 32525.dat
 0 STEP
 1 0 -98 -180 -220 -1 0 0 0 1 0 0 0 -1 8274 - m-1x'.ldr
@@ -429,7 +429,7 @@
 1 0 -40 -17.6 23.2 -1 0 0 0 -0.96 -0.28 0 -0.28 0.96 8274 - m-1y'.ldr
 0 STEP
 1 0 -40 -80 420 -1 0 0 0 1 0 0 0 -1 8274 - m-1z'.ldr
-0 // Technic Panel Fairing #21
+0 // Technic Panel Fairing #21 (lime)
 1 27 -40 -188 250 -1 0 0 0 -1 0 0 0 1 44351.dat
 0 STEP
 0 ROTSTEP END
@@ -440,31 +440,31 @@
 0 STEP
 1 0 240 -160 -260 -1 0 0 0 0 -1 0 -1 0 8274 - m-1c''.ldr
 0 STEP
-0 // Antenna  8H Whip
+0 // Antenna  8H Whip (dark_bluish_grey)
 1 72 -40 -358.4 -101.2 -1 0 0 0 0.799999 -0.600001 0 -0.600001 -0.799999 2569.dat
-0 // Wheel Rim 20 x 30 with  6 Dual Spokes and External Ribs
+0 // Wheel Rim 20 x 30 with  6 Dual Spokes and External Ribs (light_bluish_grey)
 1 71 200 0 320 0 0 1 0 1 0 -1 0 0 56145.dat
-0 // Tyre 26/ 52 x 30 Off Road
+0 // Tyre 26/ 52 x 30 Off Road (rubber_black)
 1 256 200 0 320 0 0 1 0 1 0 -1 0 0 55976.dat
-0 // Wheel Rim 20 x 30 with  6 Dual Spokes and External Ribs
+0 // Wheel Rim 20 x 30 with  6 Dual Spokes and External Ribs (light_bluish_grey)
 1 71 -80 0 320 0 0 -1 0 1 0 1 0 0 56145.dat
-0 // Tyre 26/ 52 x 30 Off Road
+0 // Tyre 26/ 52 x 30 Off Road (rubber_black)
 1 256 -80 0 320 0 0 -1 0 1 0 1 0 0 55976.dat
-0 // Wheel Rim 26 x 43 with 6 Spokes and 3 Pegholes
+0 // Wheel Rim 26 x 43 with 6 Spokes and 3 Pegholes (light_bluish_grey)
 1 71 220 -40 -120 0 0 -1 0 1 0 1 0 0 41896.dat
-0 // Tyre 38/ 50 x 43 Off Road
+0 // Tyre 38/ 50 x 43 Off Road (rubber_black)
 1 256 220 -40 -120 0 0 1 0 1 0 -1 0 0 45982.dat
-0 // Wheel Rim 26 x 43 with 6 Spokes and 3 Pegholes
+0 // Wheel Rim 26 x 43 with 6 Spokes and 3 Pegholes (light_bluish_grey)
 1 71 -100 -40 -120 0 0 1 0 1 0 -1 0 0 41896.dat
-0 // Tyre 38/ 50 x 43 Off Road
+0 // Tyre 38/ 50 x 43 Off Road (rubber_black)
 1 256 -100 -40 -120 0 0 -1 0 1 0 1 0 0 45982.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 250 -40 -120 0 0 -1 1 0 0 0 -1 0 3713.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 210 0 320 0 0 -1 1 0 0 0 -1 0 3713.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 -90 0 320 0 0 1 1 0 0 0 1 0 3713.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 -130 -40 -120 0 0 1 1 0 0 0 1 0 3713.dat
 0 STEP
 1 71 60 0 -440 1 0 0 0 -1 0 0 0 -1 8274 - m-1d''.ldr
@@ -479,16 +479,16 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam 15
+0 // Technic Beam 15 (light_bluish_grey)
 1 71 0 0 0 0 -1 0 1 0 0 0 0 1 32278.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 0 -80 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 0 0 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 0 80 1 0 0 0 1 0 0 0 1 2780.dat
 0 STEP
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 0 0 140 1 0 0 0 0 1 0 -1 0 32054.dat
 1 0 0 0 100 1 0 0 0 1 0 0 0 1 8274 - m-1aa.ldr
 0
@@ -502,9 +502,9 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 0 0 0 1 0 0 0 0 1 0 -1 0 32054.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -30 0 0 1 0 0 0 0 1 0 -1 0 43093.dat
 0
 
@@ -518,22 +518,22 @@
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
 0 ROTSTEP 0 90 0 ABS
-0 // Technic Gear 12 Tooth Bevel
+0 // Technic Gear 12 Tooth Bevel (light_bluish_grey)
 1 71 0 17 0 1 0 0 0 0 -1 0 1 0 6589.dat
-0 // Technic Differential with Gear 16 Tooth and 24 Tooth
+0 // Technic Differential with Gear 16 Tooth and 24 Tooth (dark_bluish_grey)
 1 72 0 0 0 -1 0 0 0 1 0 0 0 -1 6573.dat
 0 STEP
-0 // Technic Gear 12 Tooth Bevel
+0 // Technic Gear 12 Tooth Bevel (light_bluish_grey)
 1 71 0 0 -17 0 1 0 -1 0 0 0 0 1 6589.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 0 0 -40 0 1 0 0 0 1 1 0 0 3705.dat
 0 STEP
-0 // Technic Gear 12 Tooth Bevel
+0 // Technic Gear 12 Tooth Bevel (light_bluish_grey)
 1 71 0 0 17 0 -1 0 -1 0 0 0 0 -1 6589.dat
-0 // Technic Axle  5
+0 // Technic Axle  5 (light_bluish_grey)
 1 71 0 0 50 0 0 -1 0 1 0 1 0 0 32073.dat
 0 STEP
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 0 0 50 -1 0 0 0 1 0 0 0 -1 3713.dat
 0
 
@@ -546,35 +546,35 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle
+0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle (red)
 1 4 0 0 0 0 -1 0 0 0 -1 1 0 0 2905.dat
-0 // Technic Axle  5
+0 // Technic Axle  5 (light_bluish_grey)
 1 71 25 0 40 1 0 0 0 0 -1 0 1 0 32073.dat
-0 // Technic Axle  5
+0 // Technic Axle  5 (light_bluish_grey)
 1 71 25 0 -40 1 0 0 0 0 -1 0 1 0 32073.dat
 0 STEP
-0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
+0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced (light_bluish_grey)
 1 71 10 0 -40 0 0 1 1 0 0 0 1 0 32123b.dat
-0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
+0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced (light_bluish_grey)
 1 71 10 0 40 0 0 1 1 0 0 0 1 0 32123b.dat
 0 STEP
 1 71 25 20 10 1 0 0 0 1 0 0 0 1 8274 - m-1ca.ldr
-0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle
+0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle (red)
 1 4 50 0 0 0 -1 0 0 0 -1 1 0 0 2905.dat
 0 STEP
 0 ROTSTEP 0 180 0 REL
-0 // Technic Beam  2 x  4 Liftarm Bent 90
+0 // Technic Beam  2 x  4 Liftarm Bent 90 (dark_bluish_grey)
 1 72 -15 -20 0 0 1 0 0 0 1 1 0 0 32140.dat
-0 // Technic Beam  2 x  4 Liftarm Bent 90
+0 // Technic Beam  2 x  4 Liftarm Bent 90 (dark_bluish_grey)
 1 72 65 -20 0 0 1 0 0 0 1 1 0 0 32140.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 75 40 20 1 0 0 0 0 -1 0 1 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -25 40 20 1 0 0 0 0 -1 0 1 0 2780.dat
 0 STEP
-0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
+0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced (light_bluish_grey)
 1 71 40 0 -40 0 0 1 1 0 0 0 1 0 32123b.dat
-0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
+0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced (light_bluish_grey)
 1 71 40 0 40 0 0 1 1 0 0 0 1 0 32123b.dat
 0 STEP
 1 71 25 -20 0 -1 0 0 0 0 1 0 1 0 8274 - m-1cb.ldr
@@ -589,22 +589,22 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle  6
+0 // Technic Axle  6 (black)
 1 0 0 0 0 0 0 1 0 1 0 -1 0 0 3706.dat
-0 // Technic Gear  4 Knob
+0 // Technic Gear  4 Knob (yellow)
 1 14 0 0 50 -1 0 0 0 1 0 0 0 -1 32072.dat
 0 STEP
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 0 -20 30 -1 0 0 0 1 0 0 0 -1 6536.dat
-0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
+0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced (light_bluish_grey)
 1 71 0 0 15 -1 0 0 0 1 0 0 0 -1 32123b.dat
 0 STEP
-0 // Technic Worm Gear 2L
+0 // Technic Worm Gear 2L (black)
 1 0 0 0 -10 -1 0 0 0 1 0 0 0 -1 4716.dat
-0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
+0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced (light_bluish_grey)
 1 71 0 0 -35 -1 0 0 0 1 0 0 0 -1 32123b.dat
 0 STEP
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 0 -20 -50 -1 0 0 0 1 0 0 0 -1 6536.dat
 0
 
@@ -617,14 +617,14 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle  5
+0 // Technic Axle  5 (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 32073.dat
-0 // Technic Gear 24 Tooth with Single Axle Hole
+0 // Technic Gear 24 Tooth with Single Axle Hole (light_bluish_grey)
 1 71 0 0 0 0 0 1 -1 0 0 0 -1 0 3648b.dat
 0 STEP
-0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
+0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced (light_bluish_grey)
 1 71 15 0 0 0 0 1 -1 0 0 0 -1 0 32123b.dat
-0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
+0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced (light_bluish_grey)
 1 71 -15 0 0 0 0 1 -1 0 0 0 -1 0 32123b.dat
 0 
 0
@@ -638,16 +638,16 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Angle Connector #2 (180 degree)
+0 // Technic Angle Connector #2 (180 degree) (light_bluish_grey)
 1 71 0 0 0 0 0 1 1 0 0 0 1 0 32034.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (red)
 1 4 30 0 0 -1 0 0 0 0 1 0 1 0 32062.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (red)
 1 4 -30 0 0 -1 0 0 0 0 1 0 1 0 32062.dat
 0 STEP
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 60 0 0 1 0 0 0 0 -1 0 1 0 32054.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 -60 0 0 -1 0 0 0 0 1 0 1 0 32054.dat
 0
 
@@ -660,16 +660,16 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Angle Connector #2 (180 degree)
+0 // Technic Angle Connector #2 (180 degree) (light_bluish_grey)
 1 71 0 0 0 0 0 -1 0 -1 0 -1 0 0 32034.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 40 0 0 -1 0 0 0 -1 0 0 0 1 4519.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 -40 0 0 -1 0 0 0 -1 0 0 0 1 4519.dat
 0 STEP
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 40 0 0 0 0 -1 -1 0 0 0 1 0 3713.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 -40 0 0 0 0 1 -1 0 0 0 -1 0 3713.dat
 0
 
@@ -682,26 +682,26 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam 15
+0 // Technic Beam 15 (light_bluish_grey)
 1 71 0 0 0 0 -1 0 1 0 0 0 0 1 32278.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 0 -80 -1 0 0 0 -1 0 0 0 1 2780.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 0 0 -40 1 0 0 0 -1 0 0 0 -1 6558.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 0 0 -1 0 0 0 -1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 0 40 -1 0 0 0 -1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 0 80 -1 0 0 0 -1 0 0 0 1 2780.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 0 0 100 -1 0 0 0 -1 0 0 0 1 32054.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 0 0 140 -1 0 0 0 -1 0 0 0 1 32054.dat
 0 STEP
-0 // Technic Beam  3 x  5 Bent 90
+0 // Technic Beam  3 x  5 Bent 90 (light_bluish_grey)
 1 71 -20 -80 0 0 -1 0 0 0 1 -1 0 0 32526.dat
-0 // Technic Beam  3 x  5 Bent 90
+0 // Technic Beam  3 x  5 Bent 90 (light_bluish_grey)
 1 71 -20 -80 80 0 -1 0 0 0 1 -1 0 0 32526.dat
 0 STEP
 1 71 0 -40 0 1 0 0 0 1 0 0 0 1 8274 - m-1fa.ldr
@@ -716,16 +716,16 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam 15
+0 // Technic Beam 15 (light_bluish_grey)
 1 71 0 0 0 0 -1 0 1 0 0 0 0 1 32278.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 0 -80 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 0 0 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 0 80 1 0 0 0 1 0 0 0 1 2780.dat
 0 STEP
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 0 0 140 -1 0 0 0 0 -1 0 -1 0 32054.dat
 1 0 0 0 100 1 0 0 0 1 0 0 0 1 8274 - m-1faa.ldr
 0
@@ -739,9 +739,9 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 0 0 0 -1 0 0 0 0 1 0 1 0 32054.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 30 0 0 -1 0 0 0 0 1 0 1 0 43093.dat
 0
 
@@ -754,19 +754,19 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (dark_bluish_grey)
 1 72 0 0 0 0 -1 0 1 0 0 0 0 1 6632.dat
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (dark_bluish_grey)
 1 72 10 0 0 0 -1 0 1 0 0 0 0 1 6632.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 15 0 0 -1 0 0 0 0 1 0 1 0 43093.dat
 0 STEP
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 -15 0 20 -1 0 0 0 1 0 0 0 -1 6558.dat
 0 STEP
-0 // Technic Beam  3 x  5 Bent 90
+0 // Technic Beam  3 x  5 Bent 90 (light_bluish_grey)
 1 71 25 -80 0 0 -1 0 0 0 1 -1 0 0 32526.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 15 -80 0 -1 0 0 0 0 -1 0 -1 0 2780.dat
 0 STEP
 1 0 0 0 -50 1 0 0 0 1 0 0 0 1 8274 - m-1ga.ldr
@@ -774,39 +774,39 @@
 1 0 45 0 -60 1 0 0 0 1 0 0 0 1 8274 - m-1gb.ldr
 0 STEP
 1 0 45 0 -60 1 0 0 0 1 0 0 0 1 8274 - m-1gc.ldr
-0 // Technic Universal Joint 4L End with Bush End
+0 // Technic Universal Joint 4L End with Bush End (light_bluish_grey)
 1 71 45 0 -40 -1 0 0 0 1 0 0 0 -1 3712.dat
-0 // Technic Universal Joint 4L End with Bush End
+0 // Technic Universal Joint 4L End with Bush End (light_bluish_grey)
 1 71 45 0 20 0 -1 0 1 0 0 0 0 1 3712.dat
-0 // Technic Universal Joint Centre Type 2
+0 // Technic Universal Joint Centre Type 2 (light_bluish_grey)
 1 71 45 0 -10 -1 0 0 0 1 0 0 0 -1 3326b.dat
 0 STEP
 1 71 45 0 40 -1 0 0 0 1 0 0 0 -1 8274 - m-1gd.ldr
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 45 0 50 0 0 -1 0 1 0 1 0 0 3705.dat
 0 STEP
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 45 0 60 0 -1 0 -1 0 0 0 0 -1 3713.dat
-0 // Technic Gear  4 Knob
+0 // Technic Gear  4 Knob (yellow)
 1 14 45 0 80 0 -1 0 -1 0 0 0 0 -1 32072.dat
 1 14 45 -20 0 1 0 0 0 -1 0 0 0 -1 8274 - m-1ge.ldr
 0 STEP
 1 14 80 0 -50 1 0 0 0 1 0 0 0 1 8274 - m-1gf.ldr
 0 STEP
-0 // Technic Beam  2 x  4 Liftarm Bent 90
+0 // Technic Beam  2 x  4 Liftarm Bent 90 (dark_bluish_grey)
 1 72 85 -20 0 0 -1 0 0 0 -1 1 0 0 32140.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 95 -80 20 1 0 0 0 0 -1 0 1 0 2780.dat
-0 // Technic Beam  2 x  4 Liftarm Bent 90
+0 // Technic Beam  2 x  4 Liftarm Bent 90 (dark_bluish_grey)
 1 72 5 -20 0 0 -1 0 0 0 -1 1 0 0 32140.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -5 -80 20 1 0 0 0 0 -1 0 1 0 2780.dat
 0 STEP
-0 // Technic Beam  3 x  5 Bent 90
+0 // Technic Beam  3 x  5 Bent 90 (light_bluish_grey)
 1 71 105 0 100 0 -1 0 -1 0 0 0 0 -1 32526.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 115 0 60 1 0 0 0 -1 0 0 0 -1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 115 0 80 1 0 0 0 -1 0 0 0 -1 2780.dat
 0 STEP
 0 ROTSTEP 0 90 0 REL
@@ -817,7 +817,7 @@
 1 0 -35 -20 20 0 0 -1 0 1 0 1 0 0 8274 - m-1gi.ldr
 1 0 125 -20 20 0 0 -1 0 1 0 1 0 0 8274 - m-1gi.ldr
 0 STEP
-0 // Technic Beam  9
+0 // Technic Beam  9 (light_bluish_grey)
 1 71 45 -20 40 0 0 -1 1 0 0 0 -1 0 40490.dat
 0 STEP
 0 ROTSTEP END
@@ -834,14 +834,14 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  4 x  0.5 Liftarm
+0 // Technic Beam  4 x  0.5 Liftarm (dark_bluish_grey)
 1 72 0 0 0 0 -1 0 1 0 0 0 0 1 32449.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 5 0 10 1 0 0 0 0 1 0 -1 0 32054.dat
 0 STEP
-0 // Technic Beam  4 x  0.5 Liftarm
+0 // Technic Beam  4 x  0.5 Liftarm (dark_bluish_grey)
 1 72 10 0 0 0 -1 0 1 0 0 0 0 1 32449.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 15 0 30 -1 0 0 0 0 1 0 1 0 43093.dat
 0
 
@@ -854,11 +854,11 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Angle Connector #2 (180 degree)
+0 // Technic Angle Connector #2 (180 degree) (light_bluish_grey)
 1 71 0 0 0 0 0 1 0 -1 0 1 0 0 32034.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 30 0 0 -1 0 0 0 0 1 0 1 0 43093.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -30 0 0 1 0 0 0 0 1 0 -1 0 43093.dat
 0
 
@@ -871,9 +871,9 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 0 0 0 0 0 -1 0 1 0 1 0 0 4519.dat
-0 // Technic Gear  4 Knob
+0 // Technic Gear  4 Knob (yellow)
 1 14 0 0 -20 1 0 0 0 1 0 0 0 1 32072.dat
 0
 
@@ -886,11 +886,11 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Angle Connector #2 (180 degree)
+0 // Technic Angle Connector #2 (180 degree) (light_bluish_grey)
 1 71 0 0 0 0 0 1 0 -1 0 1 0 0 32034.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 40 0 0 1 0 0 0 -1 0 0 0 -1 4519.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 -40 0 0 1 0 0 0 -1 0 0 0 -1 4519.dat
 0
 
@@ -904,9 +904,9 @@
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
 0 ROTSTEP 0 0 0 ABS
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 0 0 0 0 0 1 -1 0 0 0 -1 0 3713.dat
-0 // Technic Axle  5
+0 // Technic Axle  5 (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 32073.dat
 0
 
@@ -919,21 +919,21 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  4 x  0.5 Liftarm
+0 // Technic Beam  4 x  0.5 Liftarm (dark_bluish_grey)
 1 72 0 0 0 0 -1 0 1 0 0 0 0 1 32449.dat
-0 // Technic Beam  4 x  0.5 Liftarm
+0 // Technic Beam  4 x  0.5 Liftarm (dark_bluish_grey)
 1 72 10 0 0 0 -1 0 1 0 0 0 0 1 32449.dat
 0 STEP
-0 // Technic Beam  3 x  5 Bent 90
+0 // Technic Beam  3 x  5 Bent 90 (light_bluish_grey)
 1 71 -15 -80 50 0 -1 0 0 0 1 -1 0 0 32526.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 5 0 10 -1 0 0 0 0 1 0 1 0 32054.dat
 0 STEP
 1 1 0 0 50 1 0 0 0 1 0 0 0 1 8274 - m-1gfa.ldr
 0 STEP
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 25 0 70 1 0 0 0 1 0 0 0 1 6558.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -5 -80 50 1 0 0 0 0 1 0 -1 0 2780.dat
 0
 
@@ -946,11 +946,11 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (dark_bluish_grey)
 1 72 0 0 0 0 -1 0 1 0 0 0 0 1 6632.dat
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (dark_bluish_grey)
 1 72 10 0 0 0 -1 0 1 0 0 0 0 1 6632.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -5 0 0 1 0 0 0 0 1 0 -1 0 43093.dat
 0
 
@@ -963,18 +963,18 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 0 0 -40 0 0 1 0 1 0 -1 0 0 3705.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 6538b.dat
-0 // Technic Axle  5
+0 // Technic Axle  5 (light_bluish_grey)
 1 71 0 0 50 0 0 1 0 1 0 -1 0 0 32073.dat
 0 STEP
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 0 0 -30 0 1 0 1 0 0 0 0 -1 3713.dat
-0 // Technic Gear  4 Knob
+0 // Technic Gear  4 Knob (yellow)
 1 14 0 0 30 0 1 0 1 0 0 0 0 -1 32072.dat
-0 // Technic Gear 24 Tooth with Single Axle Hole
+0 // Technic Gear 24 Tooth with Single Axle Hole (light_bluish_grey)
 1 71 0 0 50 -1 0 0 0 1 0 0 0 -1 3648b.dat
 0
 
@@ -987,18 +987,18 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  3 x  5 Bent 90
+0 // Technic Beam  3 x  5 Bent 90 (light_bluish_grey)
 1 71 0 0 0 0 0 1 1 0 0 0 1 0 32526.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 0 0 -10 0 0 -1 0 -1 0 -1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 20 0 -10 0 0 -1 0 -1 0 -1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 80 0 -10 0 0 -1 0 -1 0 -1 0 0 2780.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 80 40 0 0 1 0 0 0 -1 -1 0 0 32054.dat
 0 STEP
-0 // Technic Beam  3 x  5 Bent 90
+0 // Technic Beam  3 x  5 Bent 90 (light_bluish_grey)
 1 71 40 0 -20 0 0 -1 -1 0 0 0 1 0 32526.dat
 0
 
@@ -1011,9 +1011,9 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 6536.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 10 0 0 -1 0 0 0 1 0 0 0 -1 43093.dat
 0
 
@@ -1026,9 +1026,9 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (red)
 1 4 0 0 0 1 0 0 0 1 0 0 0 1 32062.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 -10 0 0 0 0 1 -1 0 0 0 -1 0 3713.dat
 0
 
@@ -1041,14 +1041,14 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 0 0 0 0 -0.707107 -0.707107 0 0.707107 -0.707107 1 0 0 3705.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 0 0 40 0.707107 -0.707107 0 0.707107 0.707107 0 0 0 1 6538b.dat
 0 STEP
-0 // Technic Gear  4 Knob
+0 // Technic Gear  4 Knob (yellow)
 1 14 0 0 10 0.707107 -0.707107 0 0.707107 0.707107 0 0 0 1 32072.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 0 0 -10 -0.707107 -0.707107 0 -0.707107 0.707107 0 0 0 -1 3713.dat
 0
 
@@ -1061,11 +1061,11 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  3 x  5 Bent 90
+0 // Technic Beam  3 x  5 Bent 90 (light_bluish_grey)
 1 71 0 0 0 0 -1 0 1 0 0 0 0 1 32526.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 0 80 -1 0 0 0 -1 0 0 0 1 2780.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 0 40 80 -1 0 0 0 0 1 0 1 0 32054.dat
 0
 
@@ -1078,11 +1078,11 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam 15
+0 // Technic Beam 15 (light_bluish_grey)
 1 71 0 0 0 0 -1 0 1 0 0 0 0 1 32278.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -10 0 100 -1 0 0 0 0 1 0 1 0 43093.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -10 0 0 -1 0 0 0 0 1 0 1 0 43093.dat
 0
 
@@ -1095,33 +1095,33 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (light_bluish_grey)
 1 71 0 0 0 0 1 0 0 0 -1 -1 0 0 32056.dat
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (light_bluish_grey)
 1 71 10 0 0 0 1 0 0 0 -1 -1 0 0 32056.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 5 0 -20 1 0 0 0 0 -1 0 1 0 6558.dat
 0 STEP
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 5 -40 0 1 0 0 0 0 -1 0 1 0 4519.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 5 0 -40 1 0 0 0 0 -1 0 1 0 4519.dat
 0 STEP
-0 // Technic Beam  2 x  0.5 Liftarm
+0 // Technic Beam  2 x  0.5 Liftarm (red)
 1 4 -10 -40 0 0 -1 0 1 0 0 0 0 1 41677.dat
-0 // Technic Beam  2 x  0.5 Liftarm
+0 // Technic Beam  2 x  0.5 Liftarm (red)
 1 4 -20 -40 0 0 -1 0 1 0 0 0 0 1 41677.dat
 0 STEP
 1 4 5 -40 20 1 0 0 0 1 0 0 0 1 8274 - m-1ka.ldr
 0 STEP
-0 // Technic Beam  2 x  0.5 Liftarm
+0 // Technic Beam  2 x  0.5 Liftarm (red)
 1 4 30 -40 0 0 -1 0 1 0 0 0 0 1 41677.dat
-0 // Technic Beam  2 x  0.5 Liftarm
+0 // Technic Beam  2 x  0.5 Liftarm (red)
 1 4 20 -40 0 0 -1 0 1 0 0 0 0 1 41677.dat
 0 STEP
-0 // Technic Axle  5.5 with Stop Type 1
+0 // Technic Axle  5.5 with Stop Type 1 (dark_bluish_grey)
 1 72 5 -60 47 0 1 0 0 0 1 1 0 0 32209.dat
-0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
+0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced (light_bluish_grey)
 1 71 5 -60 35 0 1 0 1 0 0 0 0 -1 32123b.dat
 0
 
@@ -1134,9 +1134,9 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 4519.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 -1 0 0 0 -1 6536.dat
 0
 
@@ -1149,9 +1149,9 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle  7
+0 // Technic Axle  7 (light_bluish_grey)
 1 71 0 0 0 0 -0.707107 0.707107 1 0 0 0 0.707107 0.707107 44294.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 0 -70 0 -0.707107 0.707107 0 0 0 1 0.707107 0.707107 0 6538b.dat
 0
 
@@ -1164,136 +1164,136 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  5
+0 // Technic Beam  5 (lime)
 1 27 0 0 0 0 -1 0 1 0 0 0 0 1 32316.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 20 0 -20 1 0 0 0 0 -1 0 1 0 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 20 0 20 1 0 0 0 0 -1 0 1 0 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 20 0 40 1 0 0 0 0 -1 0 1 0 6558.dat
 0 STEP
-0 // Technic Cross Block 1 x 3 (Axle/Pin/Pin)
+0 // Technic Cross Block 1 x 3 (Axle/Pin/Pin) (black)
 1 0 20 0 40 0 0 -1 1 0 0 0 -1 0 42003.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (red)
 1 4 20 -10 60 0 0 -1 1 0 0 0 -1 0 32062.dat
 0 STEP
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (light_bluish_grey)
 1 71 15 0 -40 0 1 0 -1 0 0 0 0 1 32056.dat
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (light_bluish_grey)
 1 71 25 0 -40 0 1 0 -1 0 0 0 0 1 32056.dat
 0 STEP
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 20 -40 -40 1 0 0 0 1 0 0 0 1 4519.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 20 0 -40 1 0 0 0 1 0 0 0 1 4519.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 20 0 0 1 0 0 0 1 0 0 0 1 4519.dat
 0 STEP
-0 // Technic Beam  5
+0 // Technic Beam  5 (lime)
 1 27 40 0 0 0 -1 0 1 0 0 0 0 1 32316.dat
 0 STEP
 1 27 -5 -20 -40 1 0 0 0 1 0 0 0 1 8274 - m-1ma.ldr
 0 STEP
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (light_bluish_grey)
 1 71 45 -20 -40 0 -1 0 -1 0 0 0 0 -1 32056.dat
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (light_bluish_grey)
 1 71 35 -20 -40 0 -1 0 -1 0 0 0 0 -1 32056.dat
 0 STEP
-0 // Technic Beam 13
+0 // Technic Beam 13 (light_bluish_grey)
 1 71 -20 -20 -160 0 -1 0 -1 0 0 0 0 -1 41239.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 -20 -60 -40 1 0 0 0 0 1 0 -1 0 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 60 -60 -40 1 0 0 0 0 1 0 -1 0 6536.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 50 -20 -40 -1 0 0 0 0 1 0 1 0 43093.dat
 0 STEP
-0 // Technic Beam 13
+0 // Technic Beam 13 (light_bluish_grey)
 1 71 60 -20 -160 0 -1 0 -1 0 0 0 0 -1 41239.dat
 1 71 20 -20 -260 -1 0 0 0 -1 0 0 0 1 8274 - m-1mb.ldr
 0 STEP
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 60 -60 -60 0 0 1 1 0 0 0 1 0 32054.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 -20 -60 -60 0 0 1 1 0 0 0 1 0 32054.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 60 -20 -140 -1 0 0 0 0 1 0 1 0 32054.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 70 -20 -220 -1 0 0 0 1 0 0 0 -1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 70 -20 -180 -1 0 0 0 1 0 0 0 -1 2780.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 -20 -20 -140 1 0 0 0 0 1 0 -1 0 32054.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -30 -20 -220 -1 0 0 0 1 0 0 0 -1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -30 -20 -180 -1 0 0 0 1 0 0 0 -1 2780.dat
 0 STEP
 1 0 20 -40 -60 1 0 0 0 1 0 0 0 1 8274 - m-1mc.ldr
 0 STEP
 0 ROTSTEP 0 0 180 REL
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 20 -20 -60 0 0 1 -1 0 0 0 -1 0 6558.dat
-0 // Technic Beam  9
+0 // Technic Beam  9 (light_bluish_grey)
 1 71 20 0 -60 0 0 1 0 -1 0 1 0 0 40490.dat
 0 STEP
 0 ROTSTEP END
 1 71 0 -100 -120 1 0 0 0 1 0 0 0 1 8274 - m-1md.ldr
 0 STEP
 0 ROTSTEP 0 270 0 REL
-0 // Technic Axle  7
+0 // Technic Axle  7 (light_bluish_grey)
 1 71 20 -160 -160 0 -0.707107 -0.707107 1 0 0 0 -0.707107 0.707107 44294.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 20 -230 -160 -0.707107 -0.707107 0 0 0 -1 0.707107 -0.707107 0 6538b.dat
 0 STEP
 0 ROTSTEP 0 180 0 REL
-0 // Technic Beam 15
+0 // Technic Beam 15 (lime)
 1 27 -40 -160 -180 0 -1 0 0 0 -1 1 0 0 32278.dat
-0 // Technic Beam 15
+0 // Technic Beam 15 (lime)
 1 27 -40 -160 -220 0 -1 0 0 0 -1 1 0 0 32278.dat
 0 STEP
 1 27 -60 -80 -200 -1 0 0 0 1 0 0 0 -1 8274 - m-1me.ldr
 0 STEP
 0 STEP
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -50 -300 -180 -1 0 0 0 1 0 0 0 -1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -50 -300 -220 -1 0 0 0 1 0 0 0 -1 2780.dat
 1 0 -60 -280 -200 -1 0 0 0 1 0 0 0 -1 8274 - m-1mf.ldr
 0 STEP
 1 0 20 -340 -260 -1 0 0 0 -0.8 0.6 0 0.6 0.8 8274 - m-1mg.ldr
 0 STEP
-0 // Technic Beam 15
+0 // Technic Beam 15 (lime)
 1 27 80 -160 -180 0 -1 0 0 0 -1 1 0 0 32278.dat
-0 // Technic Cross Block 1 x 3 (Axle/Pin/Pin)
+0 // Technic Cross Block 1 x 3 (Axle/Pin/Pin) (black)
 1 0 -60 -240 -180 -1 0 0 0 -1 0 0 0 1 42003.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 -80 -220 -180 -1 0 0 0 0 -1 0 -1 0 6536.dat
 0 STEP
 0 ROTSTEP END
 1 71 20 -200 -240 -1 0 0 0 0 1 0 1 0 8274 - m-1mh.ldr
 0 STEP
-0 // Technic Beam 15
+0 // Technic Beam 15 (lime)
 1 27 80 -160 -220 0 -1 0 0 0 -1 1 0 0 32278.dat
-0 // Technic Cross Block 1 x 3 (Axle/Pin/Pin)
+0 // Technic Cross Block 1 x 3 (Axle/Pin/Pin) (black)
 1 0 100 -240 -180 -1 0 0 0 -1 0 0 0 1 42003.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 120 -220 -180 -1 0 0 0 0 -1 0 -1 0 6536.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (red)
 1 4 -70 -180 -220 0 0 1 0 -1 0 1 0 0 6538b.dat
 0 STEP
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 90 -300 -180 -1 0 0 0 1 0 0 0 -1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 90 -300 -220 -1 0 0 0 1 0 0 0 -1 2780.dat
 1 0 100 -280 -200 1 0 0 0 1 0 0 0 1 8274 - m-1mi.ldr
 0 STEP
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 100 -80 -220 0 0 1 0 1 0 -1 0 0 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 100 -80 -180 0 0 1 0 1 0 -1 0 0 6536.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 100 -80 -200 0 0 1 0 1 0 -1 0 0 4519.dat
 0
 
@@ -1306,21 +1306,21 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (light_bluish_grey)
 1 71 0 0 0 0 -1 0 -1 0 0 0 0 -1 32056.dat
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (light_bluish_grey)
 1 71 10 0 0 0 -1 0 -1 0 0 0 0 -1 32056.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -5 0 0 1 0 0 0 0 -1 0 1 0 43093.dat
 0 STEP
-0 // Technic Axle  5
+0 // Technic Axle  5 (light_bluish_grey)
 1 71 25 0 -40 1 0 0 0 0 -1 0 1 0 32073.dat
-0 // Technic Axle  7
+0 // Technic Axle  7 (light_bluish_grey)
 1 71 25 -40 0 1 0 0 0 0 -1 0 1 0 44294.dat
 0 STEP
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 25 0 -40 1 0 0 0 0 -1 0 1 0 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 25 -40 0 1 0 0 0 -1 0 0 0 -1 6536.dat
 0
 
@@ -1333,11 +1333,11 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Angle Connector #2 (180 degree)
+0 // Technic Angle Connector #2 (180 degree) (light_bluish_grey)
 1 71 0 0 0 0 0 1 1 0 0 0 1 0 32034.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 30 0 0 -1 0 0 0 0 1 0 1 0 43093.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -30 0 0 1 0 0 0 0 1 0 -1 0 43093.dat
 0
 
@@ -1352,7 +1352,7 @@
 0 ROTATION CONFIG 0 0
 1 71 -80 20 -20 -1 0 0 0 -1 0 0 0 1 8274 - m-1mca.ldr
 1 71 80 20 -20 1 0 0 0 1 0 0 0 1 8274 - m-1mca.ldr
-0 // Technic Beam  9
+0 // Technic Beam  9 (light_bluish_grey)
 1 71 0 0 0 0 0 1 0 1 0 -1 0 0 40490.dat
 1 71 0 0 -40 -1 0 0 0 1 0 0 0 -1 8274 - m-1mcb.ldr
 0
@@ -1366,16 +1366,16 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle  5.5 with Stop Type 1
+0 // Technic Axle  5.5 with Stop Type 1 (dark_bluish_grey)
 1 72 27 0 20 1 0 0 0 1 0 0 0 1 32209.dat
-0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
+0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced (light_bluish_grey)
 1 71 15 0 20 0 0 1 0 1 0 -1 0 0 32123b.dat
-0 // Technic Cross Block 1 x 3 (Pin/Pin/Pin) with 4 Pins
+0 // Technic Cross Block 1 x 3 (Pin/Pin/Pin) with 4 Pins (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 0 1 0 -1 0 48989.dat
 0 STEP
-0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
+0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced (light_bluish_grey)
 1 71 25 0 20 0 0 1 0 1 0 -1 0 0 32123b.dat
-0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
+0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced (light_bluish_grey)
 1 71 35 0 20 0 0 1 0 1 0 -1 0 0 32123b.dat
 0
 
@@ -1388,22 +1388,22 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  9
+0 // Technic Beam  9 (light_bluish_grey)
 1 71 0 0 0 0 0 1 0 1 0 -1 0 0 40490.dat
-0 // Technic Pin  1/2
+0 // Technic Pin  1/2 (light_bluish_grey)
 1 71 -40 -10 0 0 0 1 -1 0 0 0 -1 0 4274.dat
-0 // Technic Pin  1/2
+0 // Technic Pin  1/2 (light_bluish_grey)
 1 71 -20 -10 0 0 0 1 -1 0 0 0 -1 0 4274.dat
-0 // Technic Pin  1/2
+0 // Technic Pin  1/2 (light_bluish_grey)
 1 71 20 -10 0 0 0 1 -1 0 0 0 -1 0 4274.dat
-0 // Technic Pin  1/2
+0 // Technic Pin  1/2 (light_bluish_grey)
 1 71 40 -10 0 0 0 1 -1 0 0 0 -1 0 4274.dat
 0 STEP
-0 // Plate  1 x  2 without Groove with 1 Centre Stud
+0 // Plate  1 x  2 without Groove with 1 Centre Stud (black)
 1 0 -30 -18 0 1 0 0 0 1 0 0 0 1 3794a.dat
-0 // Plate  1 x  2 without Groove with 1 Centre Stud
+0 // Plate  1 x  2 without Groove with 1 Centre Stud (black)
 1 0 30 -18 0 1 0 0 0 1 0 0 0 1 3794a.dat
-0 // Technic Gear Rack  1 x  4
+0 // Technic Gear Rack  1 x  4 (light_bluish_grey)
 1 71 0 -26 0 1 0 0 0 1 0 0 0 1 3743.dat
 0
 
@@ -1416,48 +1416,48 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  3 x  5 Bent 90
+0 // Technic Beam  3 x  5 Bent 90 (light_bluish_grey)
 1 71 0 0 0 0 -1 0 0 0 1 -1 0 0 32526.dat
-0 // Technic Cross Block 1 x 3 (Pin/Pin/Pin) with 4 Pins
+0 // Technic Cross Block 1 x 3 (Pin/Pin/Pin) with 4 Pins (light_bluish_grey)
 1 71 20 40 0 0 0 -1 0 -1 0 -1 0 0 48989.dat
-0 // Technic Cross Block 1 x 3 (Pin/Pin/Pin) with 4 Pins
+0 // Technic Cross Block 1 x 3 (Pin/Pin/Pin) with 4 Pins (light_bluish_grey)
 1 71 20 80 -20 0 0 -1 -1 0 0 0 1 0 48989.dat
 0 STEP
-0 // Technic Beam  3 x  5 Bent 90
+0 // Technic Beam  3 x  5 Bent 90 (light_bluish_grey)
 1 71 40 0 0 0 -1 0 0 0 1 -1 0 0 32526.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 50 40 0 -1 0 0 0 1 0 0 0 -1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 40 0 -1 0 0 0 1 0 0 0 -1 2780.dat
 0 STEP
-0 // Technic Beam  9
+0 // Technic Beam  9 (light_bluish_grey)
 1 71 -20 40 -80 0 -1 0 -1 0 0 0 0 -1 40490.dat
 0 STEP
 1 71 20 40 -140 -1 0 0 0 -1 0 0 0 1 8274 - m-1mda.ldr
 0 STEP
-0 // Technic Beam  9
+0 // Technic Beam  9 (light_bluish_grey)
 1 71 60 40 -80 0 -1 0 -1 0 0 0 0 -1 40490.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 80 40 -100 1 0 0 0 0 -1 0 1 0 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 80 40 -60 1 0 0 0 0 -1 0 1 0 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 -40 40 -60 -1 0 0 0 0 -1 0 -1 0 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 -40 40 -100 -1 0 0 0 0 -1 0 -1 0 6558.dat
 0 STEP
 1 0 20 10 -40 -1 0 0 0 0 -1 0 -1 0 8274 - m-1mdb.ldr
 0 STEP
-0 // Technic Axle  6
+0 // Technic Axle  6 (black)
 1 0 20 20 30 0 -1 0 0 0 -1 1 0 0 3706.dat
-0 // Technic Gear  4 Knob
+0 // Technic Gear  4 Knob (yellow)
 1 14 20 20 -20 0 -1 0 1 0 0 0 0 1 32072.dat
 0 STEP
-0 // Technic Gear  8 Tooth
+0 // Technic Gear  8 Tooth (light_bluish_grey)
 1 71 20 20 20 0 -1 0 1 0 0 0 0 1 3647.dat
-0 // Technic Gear  8 Tooth
+0 // Technic Gear  8 Tooth (light_bluish_grey)
 1 71 20 20 40 0 -1 0 1 0 0 0 0 1 3647.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 20 20 60 -1 0 0 0 1 0 0 0 -1 3713.dat
 0
 
@@ -1470,11 +1470,11 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Angle Connector #2 (180 degree)
+0 // Technic Angle Connector #2 (180 degree) (light_bluish_grey)
 1 71 0 0 0 0 0 1 1 0 0 0 1 0 32034.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 30 0 0 -1 0 0 0 0 -1 0 -1 0 43093.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -30 0 0 1 0 0 0 0 -1 0 1 0 43093.dat
 0
 
@@ -1487,14 +1487,14 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 0 0 0 0.707107 -0.707107 0 0.707107 0.707107 0 0 0 1 6538b.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 0 0 -40 0 -0.707107 0.707107 0 0.707107 0.707107 -1 0 0 3705.dat
 0 STEP
-0 // Technic Gear  4 Knob
+0 // Technic Gear  4 Knob (yellow)
 1 14 0 0 -30 -0.707107 -0.707107 0 -0.707107 0.707107 0 0 0 -1 32072.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 0 0 -50 -0.707107 -0.707107 0 0.707107 -0.707107 0 0 0 1 3713.dat
 0
 
@@ -1507,14 +1507,14 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 0 0 0 0 0 1 0 1 0 -1 0 0 4519.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 0 0 20 0 0 1 0 1 0 -1 0 0 6536.dat
 0 STEP
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 0 0 -20 0 0 1 0 1 0 -1 0 0 6536.dat
-0 // Technic Beam  9
+0 // Technic Beam  9 (red)
 1 4 -80 0 0 0 0 1 1 0 0 0 1 0 40490.dat
 0
 
@@ -1527,9 +1527,9 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Cross Block 1 x 3 (Axle/Pin/Axle)
+0 // Technic Cross Block 1 x 3 (Axle/Pin/Axle) (light_bluish_grey)
 1 71 0 0 0 -1 0 0 0 0 1 0 1 0 32184.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -10 0 20 1 0 0 0 0 1 0 -1 0 43093.dat
 0
 
@@ -1542,21 +1542,21 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Angle Connector #2 (180 degree)
+0 // Technic Angle Connector #2 (180 degree) (light_bluish_grey)
 1 71 0 0 0 0 0 1 0 1 0 -1 0 0 32034.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 50 0 0 -1 0 0 0 1 0 0 0 -1 3705.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 -50 0 0 -1 0 0 0 1 0 0 0 -1 3705.dat
 0 STEP
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (black)
 1 0 -40 0 0 0 1 0 -1 0 0 0 0 1 6629.dat
 0 STEP
 1 0 0 -48 136 -1 0 0 0 0 -1 0 -1 0 8274 - m-1mga.ldr
 0 STEP
 1 0 0 0 100 -1 0 0 0 0 -1 0 -1 0 8274 - m-1mgb.ldr
 0 STEP
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (black)
 1 0 40 0 0 0 1 0 -1 0 0 0 0 1 6629.dat
 0
 
@@ -1569,11 +1569,11 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Angle Connector #2 (180 degree)
+0 // Technic Angle Connector #2 (180 degree) (light_bluish_grey)
 1 71 0 0 0 0 0 1 -0.799999 0.600001 0 -0.600001 -0.799999 0 32034.dat
-0 // Technic Axle  5
+0 // Technic Axle  5 (light_bluish_grey)
 1 71 60 0 0 1 0 0 0 0.600001 0.799999 0 -0.799999 0.600001 32073.dat
-0 // Technic Axle  5
+0 // Technic Axle  5 (light_bluish_grey)
 1 71 -60 0 0 1 0 0 0 0.600001 0.799999 0 -0.799999 0.600001 32073.dat
 0
 
@@ -1586,11 +1586,11 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Angle Connector #2 (180 degree)
+0 // Technic Angle Connector #2 (180 degree) (light_bluish_grey)
 1 71 0 0 0 0 0 1 -0.799999 0.600001 0 -0.600001 -0.799999 0 32034.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 50 0 0 1 0 0 0 0.600001 0.799999 0 -0.799999 0.600001 3705.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 -50 0 0 1 0 0 0 0.600001 0.799999 0 -0.799999 0.600001 3705.dat
 0
 
@@ -1603,69 +1603,69 @@
 
 0 ROTATION CENTER 0 -20 10 1 "Custom" 
 0 ROTATION CONFIG 1 0
-0 // Technic Axle  7
+0 // Technic Axle  7 (light_bluish_grey)
 1 71 40 0 0 0 0 1 0 1 0 -1 0 0 44294.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 40 0 60 0 0 1 0 1 0 -1 0 0 6536.dat
-0 // Technic Axle  7
+0 // Technic Axle  7 (light_bluish_grey)
 1 71 -40 0 0 0 0 1 0 1 0 -1 0 0 44294.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 -40 0 60 0 0 1 0 1 0 -1 0 0 6536.dat
 0 STEP
-0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle
+0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle (red)
 1 4 0 0 45 -1 0 0 0 0 -1 0 -1 0 2905.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 50 20 60 -1 0 0 0 0 -1 0 -1 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -50 20 60 -1 0 0 0 0 -1 0 -1 0 2780.dat
 0 STEP
-0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
+0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced (light_bluish_grey)
 1 71 40 0 35 -1 0 0 0 -1 0 0 0 1 32123b.dat
-0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
+0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced (light_bluish_grey)
 1 71 -40 0 35 -1 0 0 0 -1 0 0 0 1 32123b.dat
 0 STEP
 1 71 20 20 20 1 0 0 0 1 0 0 0 1 8274 - m-1mha.ldr
 0 STEP
-0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
+0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced (light_bluish_grey)
 1 71 40 0 5 -1 0 0 0 -1 0 0 0 1 32123b.dat
-0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
+0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced (light_bluish_grey)
 1 71 -40 0 5 -1 0 0 0 -1 0 0 0 1 32123b.dat
 0 STEP
 1 71 0 -20 10 -0.366 -0.931 0 0.931 -0.366 0 0 0 1 8274 - m-1mhb.ldr
 0 STEP
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 40 0 -20 0 0 1 0 1 0 -1 0 0 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 -40 0 -20 0 0 1 0 1 0 -1 0 0 6536.dat
-0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle
+0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle (red)
 1 4 0 0 -5 -1 0 0 0 0 -1 0 -1 0 2905.dat
 0 STEP
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 50 20 -20 -1 0 0 0 0 -1 0 -1 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -50 20 -20 -1 0 0 0 0 -1 0 -1 0 2780.dat
-0 // Technic Beam  2 x  4 Liftarm Bent 90
+0 // Technic Beam  2 x  4 Liftarm Bent 90 (dark_bluish_grey)
 1 72 0 -20 -20 -0.365841 0 -0.930677 0.930677 0 -0.365841 0 -1 0 32140.dat
 0 STEP
-0 // Technic Pin
+0 // Technic Pin (light_bluish_grey)
 1 71 -55.841 -41.95 -30 0 -0.365841 -0.930677 0 0.930677 -0.365841 1 0 0 3673.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -63.157 -23.337 -30 0 0.930677 0.365841 0 0.365841 -0.930677 -1 0 0 43093.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 40 0 -40 1 0 0 0 1 0 0 0 1 3713.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 -40 0 -40 1 0 0 0 1 0 0 0 1 3713.dat
 0 STEP
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 -63.157 -23.337 -40 0.365841 0.930677 0 -0.930677 0.365841 0 0 0 1 3713.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 40 0 -60 0 1 0 0 0 -1 -1 0 0 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 -40 0 -60 0 -1 0 0 0 -1 1 0 0 6536.dat
 0 STEP
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -60 -10 -60 0 0 -1 1 0 0 0 -1 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 60 -10 -60 0 0 -1 1 0 0 0 -1 0 2780.dat
 0
 
@@ -1678,19 +1678,19 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle  7
+0 // Technic Axle  7 (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 44294.dat
-0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
+0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced (light_bluish_grey)
 1 71 -45 0 0 0 0 1 0 1 0 -1 0 0 32123b.dat
 0 STEP
-0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
+0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced (light_bluish_grey)
 1 71 5 0 0 0 0 1 0 1 0 -1 0 0 32123b.dat
-0 // Technic Worm Gear 2L
+0 // Technic Worm Gear 2L (black)
 1 0 -20 0 0 0 0 1 1 0 0 0 1 0 4716.dat
 0 STEP
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 -60 -20 0 0 0 1 0 1 0 -1 0 0 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 20 -20 0 0 0 1 0 1 0 -1 0 0 6536.dat
 0 STEP
 0
@@ -1704,14 +1704,14 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 0 0 0 0 0 1 0 1 0 -1 0 0 3705.dat
-0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
+0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced (light_bluish_grey)
 1 71 0 0 25 1 0 0 0 1 0 0 0 1 32123b.dat
 0 STEP
-0 // Technic Gear 24 Tooth with Single Axle Hole
+0 // Technic Gear 24 Tooth with Single Axle Hole (light_bluish_grey)
 1 71 0 0 10 1 0 0 0 1 0 0 0 1 3648b.dat
-0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
+0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced (light_bluish_grey)
 1 71 0 0 -5 1 0 0 0 1 0 0 0 1 32123b.dat
 0
 
@@ -1724,9 +1724,9 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Cross Block 1 x 3 (Axle/Pin/Axle)
+0 // Technic Cross Block 1 x 3 (Axle/Pin/Axle) (light_bluish_grey)
 1 71 0 0 0 -1 0 0 0 0 1 0 1 0 32184.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -10 0 -20 1 0 0 0 0 1 0 -1 0 43093.dat
 0
 
@@ -1739,20 +1739,20 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Angle Connector #2 (180 degree)
+0 // Technic Angle Connector #2 (180 degree) (light_bluish_grey)
 1 71 0 0 0 0 0 -1 -1 0 0 0 1 0 32034.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (red)
 1 4 30 0 0 -1 0 0 0 1 0 0 0 -1 32062.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (red)
 1 4 -30 0 0 -1 0 0 0 1 0 0 0 -1 32062.dat
 0 STEP
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 50 0 0 0 0 -1 0 1 0 1 0 0 6538b.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 70 0 0 -1 0 0 0 1 0 0 0 -1 43093.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 -50 0 0 0 0 1 0 1 0 -1 0 0 6538b.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -70 0 0 1 0 0 0 1 0 0 0 1 43093.dat
 0
 
@@ -1765,13 +1765,13 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Cross Block 1 x 3 (Axle/Pin/Axle)
+0 // Technic Cross Block 1 x 3 (Axle/Pin/Axle) (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 0 1 0 -1 0 32184.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 0 -20 0 0 0 1 -1 0 0 0 -1 0 6558.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 10 0 20 -1 0 0 0 -1 0 0 0 1 43093.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 10 0 -20 -1 0 0 0 -1 0 0 0 1 43093.dat
 0
 
@@ -1784,30 +1784,30 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 4519.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 30 0 0 0 0 1 0 1 0 -1 0 0 6538b.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 -30 0 0 0 0 1 0 1 0 -1 0 0 6538b.dat
 0 STEP
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 60 0 0 -1 0 0 0 1 0 0 0 -1 4519.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 -60 0 0 -1 0 0 0 1 0 0 0 -1 4519.dat
 0 STEP
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (black)
 1 0 -60 0 0 0 1 0 -1 0 0 0 0 1 6629.dat
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (black)
 1 0 60 0 0 0 1 0 -1 0 0 0 0 1 6629.dat
 0 STEP
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 70 0 60 1 0 0 0 0 1 0 -1 0 2780.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 60 0 100 -1 0 0 0 0 1 0 1 0 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 -60 0 100 1 0 0 0 0 1 0 -1 0 6558.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 70 -48 136 -1 0 0 0 0.600001 0.799999 0 0.799999 -0.600001 43093.dat
 0
 
@@ -1820,13 +1820,13 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Cross Block 1 x 3 (Axle/Pin/Axle)
+0 // Technic Cross Block 1 x 3 (Axle/Pin/Axle) (light_bluish_grey)
 1 71 0 0 0 -1 0 0 0 0 1 0 1 0 32184.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 0 -20 0 0 0 -1 -1 0 0 0 1 0 6558.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -10 0 -20 1 0 0 0 -1 0 0 0 -1 43093.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -10 0 20 1 0 0 0 -1 0 0 0 -1 43093.dat
 0
 
@@ -1839,27 +1839,27 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  7
+0 // Technic Beam  7 (black)
 1 0 0 0 0 0 -1 0 1 0 0 0 0 1 32524.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 0 -40 -1 0 0 0 -1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 0 0 -1 0 0 0 -1 0 0 0 1 2780.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 10 0 20 1 0 0 0 -1 0 0 0 -1 43093.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 10 0 60 1 0 0 0 -1 0 0 0 -1 43093.dat
 0 STEP
-0 // Technic Beam  3
+0 // Technic Beam  3 (light_bluish_grey)
 1 71 20 0 -20 0 1 0 1 0 0 0 0 -1 32523.dat
-0 // Technic Angle Connector #2 (180 degree)
+0 // Technic Angle Connector #2 (180 degree) (light_bluish_grey)
 1 71 40 0 20 0 0 1 1 0 0 0 1 0 32034.dat
-0 // Technic Angle Connector #2 (180 degree)
+0 // Technic Angle Connector #2 (180 degree) (light_bluish_grey)
 1 71 40 0 60 0 0 1 1 0 0 0 1 0 32034.dat
 0 STEP
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 70 0 60 -1 0 0 0 -1 0 0 0 1 43093.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 70 0 20 -1 0 0 0 -1 0 0 0 1 43093.dat
 1 71 40 -20 60 1 0 0 0 1 0 0 0 1 8274 - m-1ra.ldr
 0 STEP
@@ -1875,9 +1875,9 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  3 x  0.5 Liftarm with Boss and Pin with Closed Central Axle Hole
+0 // Technic Beam  3 x  0.5 Liftarm with Boss and Pin with Closed Central Axle Hole (black)
 1 0 0 0 0 -1 0 0 0 1 0 0 0 -1 33299.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 0 10 0 0 -1 0 -1 0 0 0 0 -1 43093.dat
 0
 
@@ -1890,14 +1890,14 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 0 -40 -1 0 0 0 -1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 0 0 -1 0 0 0 -1 0 0 0 1 2780.dat
-0 // Technic Beam  3
+0 // Technic Beam  3 (light_bluish_grey)
 1 71 0 0 -20 0 1 0 1 0 0 0 0 -1 32523.dat
 0 STEP
-0 // Technic Beam  7
+0 // Technic Beam  7 (black)
 1 0 20 0 0 0 -1 0 1 0 0 0 0 1 32524.dat
 0
 
@@ -1910,11 +1910,11 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam 15
+0 // Technic Beam 15 (lime)
 1 27 0 0 0 1 0 0 0 1 0 0 0 1 32278.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 0 -10 -80 0 -1 0 1 0 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 0 10 120 0 -1 0 1 0 0 0 0 1 2780.dat
 0
 
@@ -1927,15 +1927,15 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam 15
+0 // Technic Beam 15 (lime)
 1 27 0 0 0 1 0 0 0 1 0 0 0 1 32278.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 0 -10 -80 0 -1 0 1 0 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 0 -10 -140 0 -1 0 1 0 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 0 -10 -100 0 -1 0 1 0 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 0 10 120 0 -1 0 1 0 0 0 0 1 2780.dat
 0
 
@@ -1948,31 +1948,31 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  5
+0 // Technic Beam  5 (lime)
 1 27 82.022 20 -38.461 -0.434491 0 0.900676 0 1 0 -0.900676 0 -0.434491 32316.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (tan)
 1 19 45.995 10 -21.081 0 -0.107799 0.994173 -1 0 0 0 -0.994173 -0.107799 43093.dat
 0 STEP
-0 // Technic Beam  4 x  0.5 Liftarm
+0 // Technic Beam  4 x  0.5 Liftarm (dark_bluish_grey)
 1 72 42.761 5 -50.906 -0.994173 0 -0.107799 0 1 0 0.107799 0 -0.994173 32449.dat
-0 // Technic Beam  4 x  0.5 Liftarm
+0 // Technic Beam  4 x  0.5 Liftarm (dark_bluish_grey)
 1 72 42.761 -5 -50.906 -0.994173 0 -0.107799 0 1 0 0.107799 0 -0.994173 32449.dat
 0 STEP
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 39.527 -10 -80.732 0 0.107799 0.994173 1 0 0 0 0.994173 -0.107799 43093.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 43.839 -10 -40.965 0 -0.730657 0.682744 1 0 0 0 0.682744 0.730657 2780.dat
 0 STEP
-0 // Technic Beam  4 x  4 Liftarm Bent 53.13
+0 // Technic Beam  4 x  4 Liftarm Bent 53.13 (light_bluish_grey)
 1 71 37.371 -20 -100.615 -0.994173 0 0.107799 0 -1 0 0.107799 0 0.994173 32348.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 0 -10 0 0 0.682744 -0.730657 -1 0 0 0 0.730657 0.682744 43093.dat
-0 // Technic Axle Towball
+0 // Technic Axle Towball (light_bluish_grey)
 1 71 37.371 -30 -100.615 0 -0.682744 -0.730657 1 0 0 0 -0.730657 0.682744 2736.dat
 0 STEP
-0 // Technic Beam 11
+0 // Technic Beam 11 (lime)
 1 27 0 0 0 -1 0 0 0 1 0 0 0 -1 32525.dat
-0 // Technic Steering Link  6L Type 2
+0 // Technic Steering Link  6L Type 2 (dark_bluish_grey)
 1 72 -40 -78.394 -152.472 0.605 -0.188 0.774 -0.182 0.914 0.364 -0.775 -0.361 0.519 32005.dat
 0
 
@@ -1985,9 +1985,9 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 0 0 0 0 -0.707107 0.707107 1 0 0 0 0.707107 0.707107 4519.dat
-0 // Technic Gear 20 Tooth Double Bevel
+0 // Technic Gear 20 Tooth Double Bevel (light_bluish_grey)
 1 71 0 -20 0 -0.707107 -0.707107 0 0 0 1 -0.707107 0.707107 0 32269.dat
 0
 
@@ -2000,31 +2000,31 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Cross Block 1 x 3 (Axle/Pin/Axle)
+0 // Technic Cross Block 1 x 3 (Axle/Pin/Axle) (light_bluish_grey)
 1 71 20 0 0 0 1 0 0 0 1 1 0 0 32184.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 0 0 10 0 -1 0 0 0 1 -1 0 0 43093.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 40 0 10 0 -1 0 0 0 1 -1 0 0 43093.dat
 0 STEP
-0 // Technic Beam 13
+0 // Technic Beam 13 (dark_bluish_grey)
 1 72 20 0 20 0 0 1 -1 0 0 0 -1 0 41239.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 100 0 0 0 -1 0 0 0 1 -1 0 0 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 -60 0 0 0 -1 0 0 0 1 -1 0 0 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 -80 0 20 0 1 0 0 0 1 1 0 0 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 120 0 20 0 1 0 0 0 1 1 0 0 6558.dat
 0 STEP
-0 // Technic Beam  3 x  5 Bent 90
+0 // Technic Beam  3 x  5 Bent 90 (light_bluish_grey)
 1 71 120 80 0 -1 0 0 0 0 -1 0 -1 0 32526.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 120 80 10 0 -1 0 0 0 -1 1 0 0 2780.dat
-0 // Technic Beam  3 x  5 Bent 90
+0 // Technic Beam  3 x  5 Bent 90 (light_bluish_grey)
 1 71 -80 80 0 1 0 0 0 0 -1 0 1 0 32526.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -80 80 10 0 1 0 0 0 -1 -1 0 0 2780.dat
 0 STEP
 1 0 -100 80 0 0 1 0 0 0 -1 -1 0 0 8274 - m-1wa.ldr
@@ -2040,34 +2040,34 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  9
+0 // Technic Beam  9 (light_bluish_grey)
 1 71 0 0 0 0 -1 0 1 0 0 0 0 1 40490.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 10 0 -80 1 0 0 0 1 0 0 0 1 43093.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 10 0 -40 1 0 0 0 1 0 0 0 1 43093.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 0 0 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 0 40 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 0 0 80 -1 0 0 0 1 0 0 0 -1 32054.dat
 0 STEP
-0 // Technic Beam  3
+0 // Technic Beam  3 (light_bluish_grey)
 1 71 20 0 20 0 -1 0 -1 0 0 0 0 -1 32523.dat
-0 // Technic Angle Connector #2 (180 degree)
+0 // Technic Angle Connector #2 (180 degree) (light_bluish_grey)
 1 71 40 0 -40 0 0 -1 -1 0 0 0 1 0 32034.dat
-0 // Technic Angle Connector #2 (180 degree)
+0 // Technic Angle Connector #2 (180 degree) (light_bluish_grey)
 1 71 40 0 -80 0 0 -1 -1 0 0 0 1 0 32034.dat
 0 STEP
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 40 0 80 -1 0 0 0 0 1 0 1 0 4519.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 40 -10 -80 0 0 -1 -1 0 0 0 1 0 43093.dat
 0 STEP
-0 // Technic Beam  3 x  0.5 Liftarm with Boss and Pin with Closed Central Axle Hole
+0 // Technic Beam  3 x  0.5 Liftarm with Boss and Pin with Closed Central Axle Hole (black)
 1 0 40 -20 -80 1 0 0 0 1 0 0 0 1 33299.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 80 0 80 1 0 0 0 1 0 0 0 1 32054.dat
 0 STEP
 1 0 60 0 0 1 0 0 0 1 0 0 0 1 8274 - m-1waa.ldr
@@ -2082,14 +2082,14 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  3
+0 // Technic Beam  3 (light_bluish_grey)
 1 71 0 0 20 0 -1 0 -1 0 0 0 0 -1 32523.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 0 0 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 0 40 1 0 0 0 1 0 0 0 1 2780.dat
 0 STEP
-0 // Technic Beam  9
+0 // Technic Beam  9 (light_bluish_grey)
 1 71 20 0 0 0 -1 0 1 0 0 0 0 1 40490.dat
 0
 
@@ -2102,16 +2102,16 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam 11
+0 // Technic Beam 11 (lime)
 1 27 -20 0 20 0 0 1 1 0 0 0 1 0 32525.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 0 0 10 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 60 0 10 0 0 1 0 1 0 -1 0 0 2780.dat
 0 STEP
-0 // Technic Beam  3 x  5 Bent 90
+0 // Technic Beam  3 x  5 Bent 90 (lime)
 1 27 0 0 0 0 0 1 1 0 0 0 1 0 32526.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 80 40 20 0 0 -1 0 1 0 1 0 0 6558.dat
 0
 
@@ -2124,16 +2124,16 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  3 x  5 Bent 90
+0 // Technic Beam  3 x  5 Bent 90 (lime)
 1 27 0 0 0 0 0 1 1 0 0 0 1 0 32526.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 80 40 -10 0 0 -1 0 1 0 1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 60 0 -10 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 0 0 -10 0 0 1 0 1 0 -1 0 0 2780.dat
 0 STEP
-0 // Technic Beam 11
+0 // Technic Beam 11 (lime)
 1 27 -20 0 -20 0 0 1 1 0 0 0 1 0 32525.dat
 0
 
@@ -2146,65 +2146,65 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (dark_bluish_grey)
 1 72 0 0 0 0 1 0 -1 0 0 0 0 1 32009.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 20 0 -160 -1 0 0 0 -1 0 0 0 1 4519.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 20 0 -120 1 0 0 0 0 -1 0 1 0 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 20 -60 0 1 0 0 0 0 -1 0 1 0 6558.dat
 0 STEP
-0 // Technic Beam  7
+0 // Technic Beam  7 (dark_bluish_grey)
 1 72 20 0 -180 0 1 0 1 0 0 0 0 -1 32524.dat
-0 // Technic Axle  5
+0 // Technic Axle  5 (light_bluish_grey)
 1 71 20 -80 0 -1 0 0 0 1 0 0 0 -1 32073.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 -20 -80 0 -1 0 0 0 -1 0 0 0 1 6536.dat
 0 STEP
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (dark_bluish_grey)
 1 72 40 0 0 0 1 0 -1 0 0 0 0 1 32009.dat
-0 // Technic Beam  7
+0 // Technic Beam  7 (dark_bluish_grey)
 1 72 20 -100 0 0 1 0 0 0 -1 -1 0 0 32524.dat
 0 STEP
 1 72 20 -160 0 1 0 0 0 0 -1 0 1 0 8274 - m-1za.ldr
 1 71 20 -40 0 1 0 0 0 1 0 0 0 1 8274 - m-1zb.ldr
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 50 -160 0 0 0 1 1 0 0 0 1 0 6538b.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 80 -40 0 1 0 0 0 1 0 0 0 1 32054.dat
 0 STEP
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 60 -80 0 -1 0 0 0 -1 0 0 0 1 6536.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 70 -160 0 -1 0 0 0 -1 0 0 0 1 43093.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -30 -160 0 1 0 0 0 -1 0 0 0 -1 43093.dat
 0 STEP
-0 // Technic Beam  7
+0 // Technic Beam  7 (dark_bluish_grey)
 1 72 80 -100 0 0 1 0 0 0 -1 -1 0 0 32524.dat
-0 // Technic Beam  7
+0 // Technic Beam  7 (dark_bluish_grey)
 1 72 -40 -100 0 0 1 0 0 0 -1 -1 0 0 32524.dat
-0 // Technic Axle  5
+0 // Technic Axle  5 (light_bluish_grey)
 1 71 20 0 -240 -1 0 0 0 0 -1 0 -1 0 32073.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 0 0 -240 0 0 1 0 -1 0 1 0 0 3713.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 40 0 -240 0 0 -1 0 -1 0 -1 0 0 3713.dat
 0 STEP
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 80 0 -240 1 0 0 0 1 0 0 0 1 32054.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 -40 0 -240 -1 0 0 0 1 0 0 0 -1 32054.dat
 0 STEP
 1 4 60 -60 -120 1 0 0 0 1 0 0 0 1 8274 - m-1zc.ldr
 0 STEP
 0 ROTSTEP 0 90 0 REL
-0 // Technic Pin  1/2
+0 // Technic Pin  1/2 (light_bluish_grey)
 1 71 -20 -100 10 0 0 -1 0 1 0 1 0 0 4274.dat
-0 // Technic Pin  1/2
+0 // Technic Pin  1/2 (light_bluish_grey)
 1 71 60 -100 10 0 0 -1 0 1 0 1 0 0 4274.dat
-0 // Technic Beam 13
+0 // Technic Beam 13 (dark_bluish_grey)
 1 72 100 0 -300 0 -1 0 1 0 0 0 0 1 41239.dat
 0 STEP
 0
@@ -2218,9 +2218,9 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 4519.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 -30 0 0 0 0 1 0 1 0 -1 0 0 6538b.dat
 0
 
@@ -2233,9 +2233,9 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle  5
+0 // Technic Axle  5 (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 32073.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 -60 0 0 -1 0 0 0 1 0 0 0 -1 32054.dat
 0
 
@@ -2248,18 +2248,18 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  7
+0 // Technic Beam  7 (dark_bluish_grey)
 1 72 0 0 0 0 -1 0 0 0 1 -1 0 0 32524.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 20 60 0 1 0 0 0 0 1 0 -1 0 6558.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 0 -60 0 1 0 0 0 -1 0 0 0 -1 32054.dat
 0 STEP
-0 // Technic Beam  7
+0 // Technic Beam  7 (dark_bluish_grey)
 1 72 20 60 -60 0 -1 0 -1 0 0 0 0 -1 32524.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 -40 -60 0 1 0 0 0 -1 0 0 0 -1 4519.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 30 60 -60 1 0 0 0 -1 0 0 0 -1 2780.dat
 0 STEP
 1 0 20 -180 0 1 0 0 0 1 0 0 0 1 8274 - m-1zca.ldr
@@ -2276,9 +2276,9 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (dark_bluish_grey)
 1 72 0 0 0 0 1 0 0 0 -1 -1 0 0 32009.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -10 160 0 1 0 0 0 1 0 0 0 1 43093.dat
 0
 
@@ -2291,11 +2291,11 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (dark_bluish_grey)
 1 72 0 0 0 0 1 0 -1 0 0 0 0 1 32009.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -10 -80 0 1 0 0 0 1 0 0 0 1 43093.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -10 0 -160 1 0 0 0 0 1 0 -1 0 43093.dat
 0
 
@@ -2308,16 +2308,16 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 4519.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 30 0 0 0 0 1 0 1 0 -1 0 0 6538b.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 -30 0 0 0 0 1 0 1 0 -1 0 0 6538b.dat
 0 STEP
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 70 0 0 -1 0 0 0 1 0 0 0 -1 3705.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 -70 0 0 -1 0 0 0 1 0 0 0 -1 3705.dat
 0
 
@@ -2330,9 +2330,9 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (dark_bluish_grey)
 1 72 0 0 0 0 1 0 -0.600001 0 0.799999 0.799999 0 0.600001 6629.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -10 0 0 1 0 0 0 -0.799999 0.600001 0 -0.600001 -0.799999 43093.dat
 0
 
@@ -2345,16 +2345,16 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (dark_bluish_grey)
 1 72 0 0 0 -1 0 0 0 0 1 0 1 0 32009.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 0 -160 10 0 -1 0 0 0 1 -1 0 0 43093.dat
 0 STEP
-0 // Technic Beam  7
+0 // Technic Beam  7 (dark_bluish_grey)
 1 72 0 -180 20 -1 0 0 0 0 1 0 1 0 32524.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 0 -120 20 0 0 -1 0 -1 0 -1 0 0 32054.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 0 -240 0 0 1 0 0 0 -1 -1 0 0 6558.dat
 0
 
@@ -2367,9 +2367,9 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  7
+0 // Technic Beam  7 (dark_bluish_grey)
 1 72 0 0 0 0 0 1 -1 0 0 0 -1 0 32524.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 0 0 -10 0 0 1 0 -1 0 1 0 0 2780.dat
 0
 
@@ -2382,9 +2382,9 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (dark_bluish_grey)
 1 72 0 0 0 0 -1 0 -0.600001 0 0.799999 -0.799999 0 -0.600001 6629.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -10 0 0 1 0 0 0 0.799999 0.600001 0 -0.600001 0.799999 43093.dat
 0
 
@@ -2397,11 +2397,11 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (dark_bluish_grey)
 1 72 0 0 0 0 -1 0 1 0 0 0 0 1 32009.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -10 80 0 1 0 0 0 1 0 0 0 1 43093.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -10 0 -160 1 0 0 0 0 1 0 -1 0 43093.dat
 0
 
@@ -2414,29 +2414,29 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  3 x  7 Liftarm Bent 53.13
+0 // Technic Beam  3 x  7 Liftarm Bent 53.13 (white)
 1 15 0 0 0 0 -1 0 -1 0 0 0 0 -1 32271.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -10 -32 -144 1 0 0 0 -0.600001 -0.799999 0 0.799999 -0.600001 43093.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -10 0 0 1 0 0 0 0 -1 0 1 0 43093.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 0 -40 -1 0 0 0 -1 0 0 0 1 2780.dat
 0 STEP
-0 // Technic Beam  9
+0 // Technic Beam  9 (light_bluish_grey)
 1 71 -20 0 40 0 1 0 -1 0 0 0 0 1 40490.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 0 20 -1 0 0 0 -1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 0 60 -1 0 0 0 -1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 0 80 -1 0 0 0 -1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 0 120 -1 0 0 0 -1 0 0 0 1 2780.dat
 0 STEP
-0 // Technic Beam  3
+0 // Technic Beam  3 (white)
 1 15 0 0 40 0 1 0 -1 0 0 0 0 1 32523.dat
-0 // Technic Beam 11
+0 // Technic Beam 11 (white)
 1 15 0 0 180 0 1 0 -1 0 0 0 0 1 32525.dat
 0
 
@@ -2449,14 +2449,14 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 0 0 0 0 -0.707107 0.707107 1 0 0 0 0.707107 0.707107 4519.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (red)
 1 4 0 -50 0 0 -0.707107 0.707107 1 0 0 0 0.707107 0.707107 32062.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 0 -30 0 -0.707107 -0.707107 0 0 0 1 -0.707107 0.707107 0 6538b.dat
 0 STEP
-0 // Technic Gear 20 Tooth Double Bevel
+0 // Technic Gear 20 Tooth Double Bevel (light_bluish_grey)
 1 71 0 -60 0 -0.707107 -0.707107 0 0 0 1 -0.707107 0.707107 0 32269.dat
 0
 
@@ -2469,16 +2469,16 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Cross Block 2 x 2 (Axle/Twin Pin)
+0 // Technic Cross Block 2 x 2 (Axle/Twin Pin) (black)
 1 0 0 0 0 0 0 1 0 1 0 -1 0 0 32291.dat
-0 // Technic Pin  1/2
+0 // Technic Pin  1/2 (light_bluish_grey)
 1 71 10 20 -10 1 0 0 0 0 1 0 -1 0 4274.dat
-0 // Technic Pin  1/2
+0 // Technic Pin  1/2 (light_bluish_grey)
 1 71 10 20 10 1 0 0 0 0 1 0 -1 0 4274.dat
 0 STEP
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_red)
 1 36 18 20 10 0 -1 0 -1 0 0 0 0 -1 6141.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_orange)
 1 57 18 20 -10 0 -1 0 -1 0 0 0 0 -1 6141.dat
 0
 
@@ -2491,28 +2491,28 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle  5
+0 // Technic Axle  5 (light_bluish_grey)
 1 71 0 0 0 0 0 -1 0 1 0 1 0 0 32073.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 0 0 50 -1 0 0 0 1 0 0 0 -1 6538b.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (red)
 1 4 0 0 70 0 0 1 0 1 0 -1 0 0 32062.dat
 0 STEP
-0 // Technic Angle Connector #3 (157.5 degree)
+0 // Technic Angle Connector #3 (157.5 degree) (light_bluish_grey)
 1 71 0 0 100 1 0 0 0 1 0 0 0 1 32016.dat
-0 // Technic Cross Block 1 x 3 (Axle/Pin/Pin)
+0 // Technic Cross Block 1 x 3 (Axle/Pin/Pin) (black)
 1 0 0 20 20 0 0 1 0 1 0 -1 0 0 42003.dat
 0 STEP
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 3713.dat
-0 // Technic Cross Block 1 x 3 (Axle/Pin/Pin)
+0 // Technic Cross Block 1 x 3 (Axle/Pin/Pin) (black)
 1 0 0 20 -20 0 0 1 0 1 0 -1 0 0 42003.dat
 0 STEP
-0 // Technic Angle Connector #5 (112.5 degree)
+0 // Technic Angle Connector #5 (112.5 degree) (light_bluish_grey)
 1 71 0 0 -60 1 0 0 0 -1 0 0 0 -1 32015.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 40 -20 1 0 0 0 -1 0 0 0 -1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 40 20 1 0 0 0 -1 0 0 0 -1 2780.dat
 0
 
@@ -2525,19 +2525,19 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG -3 0
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 0 0 0 0 0 -1 0 1 0 1 0 0 4519.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 0 0 20 0 -1 0 0 0 -1 1 0 0 6536.dat
 0 STEP
-0 // Technic Angle Connector #3 (157.5 degree)
+0 // Technic Angle Connector #3 (157.5 degree) (light_bluish_grey)
 1 71 0 0 0 0 1 0 0 0 -1 -1 0 0 32016.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 0 0 -20 0 -1 0 0 0 -1 1 0 0 6536.dat
 0 STEP
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 0 30 0 0 -1 0 -1 0 0 0 0 -1 43093.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -11.481 -27.716 0.001 0.382683 0 0.92388 0.92388 0 -0.382683 0 1 0 43093.dat
 0
 
@@ -2550,9 +2550,9 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (light_bluish_grey)
 1 71 0 0 0 0 1 0 1 0 0 0 0 -1 32009.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -10 80 0 1 0 0 0 0 -1 0 1 0 43093.dat
 0
 
@@ -2565,32 +2565,32 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 0 0 0 0 0 1 -0.258819 0.965926 0 -0.965926 -0.258819 0 6538b.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -20 0 0 1 0 0 0 -0.258819 0.965926 0 -0.965926 -0.258819 43093.dat
 0 STEP
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 30 0 0 1 0 0 0 -0.258819 0.965926 0 -0.965926 -0.258819 4519.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 30 0 0 1 0 0 0 -0.965926 -0.258819 0 0.258819 -0.965926 6536.dat
 0 STEP
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 60 0 0 0 0 -1 0.258819 0.965926 0 0.965926 -0.258819 0 6538b.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 80 0 0 -1 0 0 0 0.258819 0.965926 0 0.965926 -0.258819 43093.dat
 0 STEP
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 30 -21.907 -4.483 0 -1 0 -0.258819 0 0.965926 -0.965926 0 -0.258819 43093.dat
-0 // Technic Steering Wheel Small
+0 // Technic Steering Wheel Small (light_bluish_grey)
 1 71 30 -28.118 -27.665 0 0 -1 -0.965926 0.258819 0 0.258819 0.965926 0 2819.dat
 0 STEP
-0 // Technic Beam 11
+0 // Technic Beam 11 (dark_bluish_grey)
 1 72 -30 0 -20 0 -1 0 1 0 0 0 0 1 32525.dat
 0 STEP
 1 72 30 0 80 -1 0 0 0 1 0 0 0 -1 8274 - m-1m'a.ldr
 0 STEP
-0 // Technic Beam 11
+0 // Technic Beam 11 (dark_bluish_grey)
 1 72 90 0 -20 0 -1 0 1 0 0 0 0 1 32525.dat
 0
 
@@ -2603,12 +2603,12 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle  5
+0 // Technic Axle  5 (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 32073.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 -60 0 0 -1 0 0 0 1 0 0 0 -1 32054.dat
 0 STEP
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 60 0 0 1 0 0 0 1 0 0 0 1 32054.dat
 0
 
@@ -2621,28 +2621,28 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 4519.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 30 0 0 0 0 1 0 1 0 -1 0 0 6538b.dat
-0 // Technic Axle  5
+0 // Technic Axle  5 (light_bluish_grey)
 1 71 80 0 0 -1 0 0 0 1 0 0 0 -1 32073.dat
 0 STEP
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 60 0 0 -1 0 0 0 0 -1 0 -1 0 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 100 0 0 -1 0 0 0 0 -1 0 -1 0 6536.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 80 0 0 0 0 1 -1 0 0 0 -1 0 3713.dat
 0 STEP
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 160 0 0 1 0 0 0 1 0 0 0 1 4519.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 130 0 0 0 0 1 0 1 0 -1 0 0 6538b.dat
 0 STEP
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (light_bluish_grey)
 1 71 0 0 -160 0 1 0 1 0 0 0 0 -1 32009.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 10 80 -160 -1 0 0 0 0 -1 0 -1 0 43093.dat
 0 
 0
@@ -2656,11 +2656,11 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  2 x  0.5 Liftarm
+0 // Technic Beam  2 x  0.5 Liftarm (red)
 1 4 0 0 0 0 -1 0 1 0 0 0 0 1 41677.dat
-0 // Technic Beam  2 x  0.5 Liftarm
+0 // Technic Beam  2 x  0.5 Liftarm (red)
 1 4 -10 0 0 0 -1 0 1 0 0 0 0 1 41677.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 5 0 20 -1 0 0 0 -1 0 0 0 1 43093.dat
 0
 
@@ -2673,14 +2673,14 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Cross Block 1 x 3 (Axle/Pin/Axle)
+0 // Technic Cross Block 1 x 3 (Axle/Pin/Axle) (light_bluish_grey)
 1 71 0 0 0 0 0 1 1 0 0 0 1 0 32184.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 0 -10 20 0 0 1 1 0 0 0 1 0 43093.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 0 -10 -20 0 0 1 1 0 0 0 1 0 43093.dat
 0 STEP
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 0 0 -1 0 0 0 1 0 0 0 -1 2780.dat
 0
 
@@ -2693,20 +2693,20 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam 13
+0 // Technic Beam 13 (dark_bluish_grey)
 1 72 0 0 0 0 0 1 0 1 0 -1 0 0 41239.dat
-0 // Technic Pin  1/2
+0 // Technic Pin  1/2 (light_bluish_grey)
 1 71 -40 -10 0 0 -1 0 -1 0 0 0 0 -1 4274.dat
-0 // Technic Pin  1/2
+0 // Technic Pin  1/2 (light_bluish_grey)
 1 71 40 -10 0 0 -1 0 -1 0 0 0 0 -1 4274.dat
 0 STEP
-0 // Hinge Control Stick Base
+0 // Hinge Control Stick Base (light_bluish_grey)
 1 71 -40 -18 0 -1 0 0 0 1 0 0 0 -1 4592.dat
-0 // Hinge Control Stick
+0 // Hinge Control Stick (black)
 1 0 -40 -20 0 -1 0 0 0 1 0 0 0 -1 4593.dat
-0 // Hinge Control Stick Base
+0 // Hinge Control Stick Base (light_bluish_grey)
 1 71 40 -18 0 -1 0 0 0 1 0 0 0 -1 4592.dat
-0 // Hinge Control Stick
+0 // Hinge Control Stick (black)
 1 0 40 -20 0 -1 0 0 0 1 0 0 0 -1 4593.dat
 0
 
@@ -2719,47 +2719,47 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam 15
+0 // Technic Beam 15 (dark_bluish_grey)
 1 72 0 0 0 0 0 1 0 1 0 -1 0 0 32278.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -40 -10 0 0 -1 0 -1 0 0 0 0 -1 43093.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 40 -10 0 0 -1 0 -1 0 0 0 0 -1 43093.dat
 0 STEP
-0 // Technic Beam  2 x  0.5 Liftarm
+0 // Technic Beam  2 x  0.5 Liftarm (red)
 1 4 -40 -15 0 0 0 -1 0 -1 0 -1 0 0 41677.dat
-0 // Technic Beam  2 x  0.5 Liftarm
+0 // Technic Beam  2 x  0.5 Liftarm (red)
 1 4 -40 -25 0 0 0 -1 0 -1 0 -1 0 0 41677.dat
-0 // Technic Beam  2 x  0.5 Liftarm
+0 // Technic Beam  2 x  0.5 Liftarm (red)
 1 4 60 -15 0 0 0 -1 0 -1 0 -1 0 0 41677.dat
-0 // Technic Beam  2 x  0.5 Liftarm
+0 // Technic Beam  2 x  0.5 Liftarm (red)
 1 4 60 -25 0 0 0 -1 0 -1 0 -1 0 0 41677.dat
 0 STEP
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 -60 -30 0 0 0 -1 -1 0 0 0 1 0 3705.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 60 -30 0 0 0 -1 -1 0 0 0 1 0 3705.dat
 0 STEP
-0 // Technic Cross Block 2 x 2 Split (Axle/Twin Pin)
+0 // Technic Cross Block 2 x 2 Split (Axle/Twin Pin) (light_bluish_grey)
 1 71 60 -50 0 0 0 -1 -1 0 0 0 1 0 41678.dat
-0 // Technic Cross Block 2 x 2 Split (Axle/Twin Pin)
+0 // Technic Cross Block 2 x 2 Split (Axle/Twin Pin) (light_bluish_grey)
 1 71 -60 -50 0 0 0 1 -1 0 0 0 -1 0 41678.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 80 -60 10 0 1 0 0 0 1 1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 80 -40 10 0 1 0 0 0 1 1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -80 -60 10 0 1 0 0 0 1 1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -80 -40 10 0 1 0 0 0 1 1 0 0 2780.dat
 0 STEP
-0 // Technic Panel Fairing 6#
+0 // Technic Panel Fairing 6# (white)
 1 15 -80 -10 10 -1 0 0 0 1 0 0 0 -1 32528.dat
-0 // Technic Panel Fairing #5
+0 // Technic Panel Fairing #5 (white)
 1 15 80 -10 10 -1 0 0 0 1 0 0 0 -1 32527.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 20 0 0 0 1 0 1 0 0 0 0 -1 32054.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 -20 0 0 0 1 0 1 0 0 0 0 -1 32054.dat
 0 STEP
 1 4 0 -15 0 1 0 0 0 1 0 0 0 1 8274 - m-1r'a.ldr
@@ -2774,44 +2774,44 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  2 x  0.5 Liftarm
+0 // Technic Beam  2 x  0.5 Liftarm (red)
 1 4 0 0 0 1 0 0 0 1 0 0 0 1 41677.dat
-0 // Technic Beam  2 x  0.5 Liftarm
+0 // Technic Beam  2 x  0.5 Liftarm (red)
 1 4 0 -10 0 1 0 0 0 1 0 0 0 1 41677.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 0 -25 20 0 1 0 -1 0 0 0 0 1 4519.dat
 0 STEP
-0 // Technic Cross Block 1 x 3 (Axle/Pin/Pin)
+0 // Technic Cross Block 1 x 3 (Axle/Pin/Pin) (black)
 1 0 0 -25 0 0 0 1 -1 0 0 0 -1 0 42003.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 0 -45 20 0 0 1 -1 0 0 0 -1 0 6536.dat
 0 STEP
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 0 -25 -20 -1 0 0 0 1 0 0 0 -1 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 0 -25 0 -1 0 0 0 1 0 0 0 -1 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 0 -45 0 1 0 0 0 1 0 0 0 1 6558.dat
 0 STEP
-0 // Technic Beam  3
+0 // Technic Beam  3 (blue)
 1 1 -20 -25 -20 0 -1 0 1 0 0 0 0 1 32523.dat
-0 // Technic Beam  3
+0 // Technic Beam  3 (blue)
 1 1 -20 -64.696 3.472 0 -1 0 0.173648 0 -0.984808 0.984808 0 0.173648 32523.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 0 -84.393 6.946 1 0 0 0 1 0 0 0 1 6558.dat
 0 STEP
-0 // Technic Beam  2
+0 // Technic Beam  2 (light_bluish_grey)
 1 71 0 -94.389 6.945 0 -1 0 0 0 1 -1 0 0 43857.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 0 -25 -40 -1 0 0 0 0 1 0 1 0 4519.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 0 -25 -40 0 0 -1 1 0 0 0 -1 0 3713.dat
 0 STEP
-0 // Technic Beam  3
+0 // Technic Beam  3 (blue)
 1 1 20 -25 -20 0 -1 0 1 0 0 0 0 1 32523.dat
-0 // Technic Beam  3
+0 // Technic Beam  3 (blue)
 1 1 20 -64.696 3.472 0 -1 0 0.173648 0 -0.984808 0.984808 0 0.173648 32523.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 0 5 0 0 1 0 -1 0 0 0 0 1 43093.dat
 0
 
@@ -2824,48 +2824,48 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  9
+0 // Technic Beam  9 (white)
 1 15 0 0 0 0 -1 0 1 0 0 0 0 1 40490.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 10 0 -80 1 0 0 0 1 0 0 0 1 43093.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 10 0 -60 1 0 0 0 1 0 0 0 1 43093.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 10 0 40 1 0 0 0 1 0 0 0 1 43093.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 0 0 -40 1 0 0 0 0 1 0 -1 0 32054.dat
 0 STEP
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 30 0 -80 0 0 -1 1 0 0 0 -1 0 6538b.dat
-0 // Technic Angle Connector #2 (180 degree)
+0 // Technic Angle Connector #2 (180 degree) (light_bluish_grey)
 1 71 40 0 40 0 0 1 1 0 0 0 1 0 32034.dat
 0 STEP
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 80 0 40 -1 0 0 0 1 0 0 0 -1 4519.dat
-0 // Technic Axle  5
+0 // Technic Axle  5 (light_bluish_grey)
 1 71 80 0 -80 -1 0 0 0 1 0 0 0 -1 32073.dat
 0 STEP
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 60 0 -80 0 0 -1 1 0 0 0 -1 0 3713.dat
-0 // Technic Beam  7
+0 // Technic Beam  7 (white)
 1 15 80 0 -20 0 -1 0 1 0 0 0 0 1 32524.dat
 0 STEP
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 100 0 -80 0 0 1 1 0 0 0 1 0 3713.dat
-0 // Technic Angle Connector #2 (180 degree)
+0 // Technic Angle Connector #2 (180 degree) (light_bluish_grey)
 1 71 120 0 40 0 0 1 1 0 0 0 1 0 32034.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 130 0 -80 0 0 -1 1 0 0 0 -1 0 6538b.dat
 0 STEP
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 150 0 -80 -1 0 0 0 0 1 0 1 0 43093.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 150 0 40 -1 0 0 0 0 1 0 1 0 43093.dat
 0 STEP
 1 1 160 0 0 1 0 0 0 1 0 0 0 1 8274 - m-1s'a.ldr
-0 // Technic Pin  1/2
+0 // Technic Pin  1/2 (light_bluish_grey)
 1 71 120 -10 40 0 1 0 -1 0 0 0 0 1 4274.dat
-0 // Technic Pin  1/2
+0 // Technic Pin  1/2 (light_bluish_grey)
 1 71 40 -10 40 0 1 0 -1 0 0 0 0 1 4274.dat
 1 71 40 -18 40 1 0 0 0 1 0 0 0 1 8274 - m-1s'b.ldr
 1 71 120 -18 40 1 0 0 0 1 0 0 0 1 8274 - m-1s'b.ldr
@@ -2883,11 +2883,11 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  9
+0 // Technic Beam  9 (white)
 1 15 0 0 0 0 -1 0 1 0 0 0 0 1 40490.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -10 0 -60 -1 0 0 0 0 1 0 1 0 43093.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 0 0 -40 -1 0 0 0 0 1 0 1 0 32054.dat
 0
 
@@ -2900,11 +2900,11 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_orange)
 1 57 0 0 0 1 0 0 0 1 0 0 0 1 6141.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_orange)
 1 57 0 -8 0 1 0 0 0 1 0 0 0 1 6141.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_orange)
 1 57 0 -16 0 1 0 0 0 1 0 0 0 1 6141.dat
 0
 
@@ -2917,14 +2917,14 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Cross Block 2 x 2 (Axle/Twin Pin)
+0 // Technic Cross Block 2 x 2 (Axle/Twin Pin) (black)
 1 0 0 0 0 1 0 0 0 -1 0 0 0 -1 32291.dat
-0 // Technic Pin  1/2
+0 // Technic Pin  1/2 (light_bluish_grey)
 1 71 -10 -20 -10 0 1 0 0 0 -1 -1 0 0 4274.dat
-0 // Technic Pin  1/2
+0 // Technic Pin  1/2 (light_bluish_grey)
 1 71 10 -20 -10 0 1 0 0 0 -1 -1 0 0 4274.dat
 0 STEP
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (trans_clear)
 1 47 0 -20 -18 1 0 0 0 0 -1 0 1 0 3023.dat
 0
 
@@ -2937,35 +2937,35 @@
 
 0 ROTATION CENTER 0 48 -196 1 "Custom" 
 0 ROTATION CONFIG 1 0
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 0 0 0 0 0 1 0.799999 0.600001 0 -0.600001 0.799999 0 6538b.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (red)
 1 4 20 0 0 -1 0 0 0 0.600001 0.799999 0 0.799999 -0.600001 32062.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (red)
 1 4 -20 0 0 -1 0 0 0 0.600001 0.799999 0 0.799999 -0.600001 32062.dat
 0 STEP
-0 // Technic Beam  4 x  4 Liftarm Bent 53.13
+0 // Technic Beam  4 x  4 Liftarm Bent 53.13 (light_bluish_grey)
 1 71 -30 0 0 0 -1 0 -0.600001 0 0.799999 -0.799999 0 -0.600001 32348.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -40 48 -96 1 0 0 0 0 1 0 -1 0 43093.dat
 0 STEP
 1 1 0 48 -56 1 0 0 0 1 0 0 0 1 8274 - m-1t'a.ldr
 0 STEP
 1 1 0 48 -76 1 0 0 0 1 0 0 0 1 8274 - m-1t'b.ldr
 0 STEP
-0 // Technic Beam  4 x  4 Liftarm Bent 53.13
+0 // Technic Beam  4 x  4 Liftarm Bent 53.13 (light_bluish_grey)
 1 71 30 0 0 0 -1 0 -0.600001 0 0.799999 -0.799999 0 -0.600001 32348.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 40 48 -96 -1 0 0 0 0 1 0 1 0 43093.dat
 0 STEP
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (light_bluish_grey)
 1 71 -50 48 -236 0 -1 0 -1 0 0 0 0 -1 32009.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -40 48 -136 -1 0 0 0 1 0 0 0 -1 2780.dat
 0 STEP
-0 // Technic Brick  1 x  2 with Holes
+0 // Technic Brick  1 x  2 with Holes (black)
 1 0 -30 58 -146 0 0 -1 0 -1 0 -1 0 0 32000.dat
-0 // Technic Beam  3 x  0.5 Liftarm with Boss and Pin with Closed Central Axle Hole
+0 // Technic Beam  3 x  0.5 Liftarm with Boss and Pin with Closed Central Axle Hole (black)
 1 0 -70 48 -156 0 1 0 -1 0 0 0 0 1 33299.dat
 0 STEP
 1 0 0 48 -156 1 0 0 0 1 0 0 0 1 8274 - m-1t'c.ldr
@@ -2976,7 +2976,7 @@
 0 STEP
 0 ROTSTEP 270 0 270 REL
 1 0 -20 12.645 -231.355 0 0 1 0.707 0.707 0 -0.707 0.707 0 8274 - m-1t'f.ldr
-0 // Plate  4 x  4 with 4 Studs on One Edge
+0 // Plate  4 x  4 with 4 Studs on One Edge (white)
 1 15 0 66 -146 -1 0 0 0 -1 0 0 0 1 6179.dat
 0
 
@@ -2989,19 +2989,19 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3705.dat
-0 // Technic Beam  4 x  0.5 Liftarm with Boss
+0 // Technic Beam  4 x  0.5 Liftarm with Boss (light_bluish_grey)
 1 71 -10 0 0 0 -1 0 0 0 -1 1 0 0 2825.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (red)
 1 4 0 -60 0 1 0 0 0 0 -1 0 1 0 32062.dat
 0 STEP
-0 // Technic Cross Block 2 x 2 (Axle/Twin Pin)
+0 // Technic Cross Block 2 x 2 (Axle/Twin Pin) (black)
 1 0 0 -60 0 1 0 0 0 0 -1 0 1 0 32291.dat
-0 // Technic Beam  4 x  0.5 Liftarm with Boss
+0 // Technic Beam  4 x  0.5 Liftarm with Boss (light_bluish_grey)
 1 71 10 0 0 0 1 0 0 0 -1 -1 0 0 2825.dat
 0 STEP
-0 // Technic Pin  3L Double with Axlehole
+0 // Technic Pin  3L Double with Axlehole (black)
 1 0 0 -80 20 0 1 0 -1 0 0 0 0 1 32138.dat
 0
 
@@ -3014,11 +3014,11 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 0 0 0 0 0 -1 0 1 0 1 0 0 6538b.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 30 0 0 1 0 0 0 1 0 0 0 1 4519.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 -30 0 0 1 0 0 0 1 0 0 0 1 4519.dat
 0
 
@@ -3031,11 +3031,11 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 0 0 0 0 0 1 0 1 0 -1 0 0 6538b.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 30 0 0 -1 0 0 0 1 0 0 0 -1 4519.dat
-0 // Technic Axle  5
+0 // Technic Axle  5 (light_bluish_grey)
 1 71 -50 0 0 -1 0 0 0 1 0 0 0 -1 32073.dat
 0
 
@@ -3048,21 +3048,21 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 0 0 0 0 0 1 0 1 0 -1 0 0 6538b.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 30 0 0 1 0 0 0 1 0 0 0 1 4519.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 -30 0 0 1 0 0 0 1 0 0 0 1 4519.dat
 0 STEP
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 -30 0 0 1 0 0 0 1 0 0 0 1 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 30 0 0 1 0 0 0 1 0 0 0 1 6536.dat
 0 STEP
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -30 20 10 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 30 20 10 0 0 1 0 1 0 -1 0 0 2780.dat
 0
 
@@ -3075,12 +3075,12 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (light_bluish_grey)
 1 71 0 0 0 0 0 -1 -1 0 0 0 1 0 32009.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 100 0 10 0 0 1 0 1 0 -1 0 0 2780.dat
 0 STEP
-0 // Technic Brick  1 x  2 with Holes
+0 // Technic Brick  1 x  2 with Holes (black)
 1 0 90 10 20 1 0 0 0 -1 0 0 0 -1 32000.dat
 0
 
@@ -3093,11 +3093,11 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Panel Fairing #5
+0 // Technic Panel Fairing #5 (white)
 1 15 0 0 0 -1 0 0 0 -1 0 0 0 1 32527.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 0 50 -20 0 1 0 0 0 -1 -1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 0 30 -20 0 1 0 0 0 -1 -1 0 0 2780.dat
 0
 
@@ -3110,23 +3110,23 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (lime)
 1 27 0 0 0 -1 0 0 0 1 0 0 0 -1 32009.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -40 -10 0 0 -1 0 -1 0 0 0 0 -1 43093.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 0 -10 100 0 0 -1 -1 0 0 0 1 0 43093.dat
 0 STEP
-0 // Technic Connector (Axle/Bush) Type 1
+0 // Technic Connector (Axle/Bush) Type 1 (light_bluish_grey)
 1 71 -40 -20 0 -1 0 0 0 0 1 0 1 0 32039.dat
-0 // Technic Connector (Axle/Bush) Type 1
+0 // Technic Connector (Axle/Bush) Type 1 (light_bluish_grey)
 1 71 0 -20 100 0 -1 0 0 0 1 -1 0 0 32039.dat
 0 STEP
-0 // Technic Connector (Axle/Bush) Type 1
+0 // Technic Connector (Axle/Bush) Type 1 (light_bluish_grey)
 1 71 0 -20 160 0 -1 0 0 0 1 -1 0 0 32039.dat
 1 71 0 20 180 1 0 0 0 1 0 0 0 1 8274 - m-1u'a.ldr
 0 STEP
-0 // Bar  4L Lightsaber Blade
+0 // Bar  4L Lightsaber Blade (black)
 1 0 0 -40 90 0 0 1 1 0 0 0 1 0 30374.dat
 0
 
@@ -3139,9 +3139,9 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Connector (Axle/Bush) Type 1
+0 // Technic Connector (Axle/Bush) Type 1 (light_bluish_grey)
 1 71 0 0 0 0 -1 0 1 0 0 0 0 1 32039.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 0 -20 -20 0 -1 0 1 0 0 0 0 1 4519.dat
 0
 
@@ -3154,25 +3154,25 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 0 0 0 0 0 1 0.799999 0.600001 0 -0.600001 0.799999 0 6538b.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (red)
 1 4 20 0 0 -1 0 0 0 0.600001 0.799999 0 0.799999 -0.600001 32062.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (red)
 1 4 -20 0 0 -1 0 0 0 0.600001 0.799999 0 0.799999 -0.600001 32062.dat
 0 STEP
-0 // Technic Beam  4 x  4 Liftarm Bent 53.13
+0 // Technic Beam  4 x  4 Liftarm Bent 53.13 (light_bluish_grey)
 1 71 -30 0 0 0 -1 0 -0.600001 0 0.799999 -0.799999 0 -0.600001 32348.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -40 48 -96 1 0 0 0 0 1 0 -1 0 43093.dat
 0 STEP
 1 1 0 48 -56 1 0 0 0 1 0 0 0 1 8274 - m-1v'a.ldr
 0 STEP
 1 1 0 48 -76 1 0 0 0 1 0 0 0 1 8274 - m-1v'b.ldr
 0 STEP
-0 // Technic Beam  4 x  4 Liftarm Bent 53.13
+0 // Technic Beam  4 x  4 Liftarm Bent 53.13 (light_bluish_grey)
 1 71 30 0 0 0 -1 0 -0.600001 0 0.799999 -0.799999 0 -0.600001 32348.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 40 48 -96 -1 0 0 0 0 1 0 1 0 43093.dat
 0 STEP
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 8274 - m-1v'c.ldr
@@ -3185,7 +3185,7 @@
 0 STEP
 0 ROTSTEP 270 0 270 REL
 1 0 20 12.645 -231.355 0 0 -1 -0.707 0.707 0 0.707 0.707 0 8274 - m-1v'g.ldr
-0 // Plate  4 x  4 with 4 Studs on One Edge
+0 // Plate  4 x  4 with 4 Studs on One Edge (white)
 1 15 0 66 -146 -1 0 0 0 -1 0 0 0 1 6179.dat
 0
 
@@ -3198,19 +3198,19 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3705.dat
-0 // Technic Beam  4 x  0.5 Liftarm with Boss
+0 // Technic Beam  4 x  0.5 Liftarm with Boss (light_bluish_grey)
 1 71 -10 0 0 0 -1 0 0 0 -1 1 0 0 2825.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (red)
 1 4 0 -60 0 1 0 0 0 0 -1 0 1 0 32062.dat
 0 STEP
-0 // Technic Cross Block 2 x 2 (Axle/Twin Pin)
+0 // Technic Cross Block 2 x 2 (Axle/Twin Pin) (black)
 1 0 0 -60 0 1 0 0 0 0 -1 0 1 0 32291.dat
-0 // Technic Beam  4 x  0.5 Liftarm with Boss
+0 // Technic Beam  4 x  0.5 Liftarm with Boss (light_bluish_grey)
 1 71 10 0 0 0 1 0 0 0 -1 -1 0 0 2825.dat
 0 STEP
-0 // Technic Pin  3L Double with Axlehole
+0 // Technic Pin  3L Double with Axlehole (black)
 1 0 0 -80 20 0 1 0 -1 0 0 0 0 1 32138.dat
 0
 
@@ -3223,11 +3223,11 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 0 0 0 0 0 -1 0 1 0 1 0 0 6538b.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 30 0 0 1 0 0 0 1 0 0 0 1 4519.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 -30 0 0 1 0 0 0 1 0 0 0 1 4519.dat
 0
 
@@ -3240,12 +3240,12 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (light_bluish_grey)
 1 71 -50 48 -236 0 -1 0 -1 0 0 0 0 -1 32009.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -40 48 -136 -1 0 0 0 1 0 0 0 -1 2780.dat
 0 STEP
-0 // Technic Brick  1 x  2 with Holes
+0 // Technic Brick  1 x  2 with Holes (black)
 1 0 -30 58 -146 0 0 -1 0 -1 0 -1 0 0 32000.dat
 0
 
@@ -3258,21 +3258,21 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 0 0 0 0 0 1 0 1 0 -1 0 0 6538b.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 30 0 0 1 0 0 0 1 0 0 0 1 4519.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 -30 0 0 1 0 0 0 1 0 0 0 1 4519.dat
 0 STEP
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 -30 0 0 1 0 0 0 1 0 0 0 1 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 30 0 0 1 0 0 0 1 0 0 0 1 6536.dat
 0 STEP
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -30 20 10 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 30 20 10 0 0 1 0 1 0 -1 0 0 2780.dat
 0
 
@@ -3285,11 +3285,11 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 0 0 0 0 0 -1 0 1 0 1 0 0 6538b.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 -30 0 0 1 0 0 0 1 0 0 0 1 4519.dat
-0 // Technic Axle  5
+0 // Technic Axle  5 (light_bluish_grey)
 1 71 50 0 0 1 0 0 0 1 0 0 0 1 32073.dat
 0
 
@@ -3302,14 +3302,14 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -60 48 -136 -1 0 0 0 1 0 0 0 -1 2780.dat
-0 // Technic Brick  1 x  2 with Holes
+0 // Technic Brick  1 x  2 with Holes (black)
 1 0 -70 58 -146 0 0 -1 0 -1 0 -1 0 0 32000.dat
 0 STEP
-0 // Technic Beam  3 x  0.5 Liftarm with Boss and Pin with Closed Central Axle Hole
+0 // Technic Beam  3 x  0.5 Liftarm with Boss and Pin with Closed Central Axle Hole (black)
 1 0 -30 48 -156 0 -1 0 1 0 0 0 0 1 33299.dat
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (light_bluish_grey)
 1 71 -50 48 -236 0 -1 0 -1 0 0 0 0 -1 32009.dat
 0
 
@@ -3323,11 +3323,11 @@
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
 0 ROTSTEP 0 180 270 REL
-0 // Technic Panel Fairing 6#
+0 // Technic Panel Fairing 6# (white)
 1 15 0 0 0 -1 0 0 0 -1 0 0 0 1 32528.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 0 50 -20 0 1 0 0 0 -1 -1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 0 30 -20 0 1 0 0 0 -1 -1 0 0 2780.dat
 0
 
@@ -3340,12 +3340,12 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 4519.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 20 0 0 1 0 0 0 0 1 0 -1 0 6536.dat
 0 STEP
-0 // Technic Pin  1/2
+0 // Technic Pin  1/2 (light_bluish_grey)
 1 71 20 -10 -20 0 0 -1 -1 0 0 0 1 0 4274.dat
 0
 
@@ -3358,14 +3358,14 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Connector (Axle/Bush) Type 1
+0 // Technic Connector (Axle/Bush) Type 1 (light_bluish_grey)
 1 71 0 20 -180 0 1 0 1 0 0 0 0 -1 32039.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 0 0 -160 0 1 0 1 0 0 0 0 -1 4519.dat
 0 STEP
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (lime)
 1 27 0 0 0 -1 0 0 0 -1 0 0 0 1 32009.dat
-0 // Technic Connector (Axle/Bush) Type 1
+0 // Technic Connector (Axle/Bush) Type 1 (light_bluish_grey)
 1 71 0 -20 -160 0 1 0 0 0 1 1 0 0 32039.dat
 0 
 0 
@@ -3381,29 +3381,29 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  3 x  7 Liftarm Bent 53.13
+0 // Technic Beam  3 x  7 Liftarm Bent 53.13 (white)
 1 15 0 0 360 0 1 0 -1 0 0 0 0 1 32271.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -10 -32 504 1 0 0 0 -0.600001 0.799999 0 -0.799999 -0.600001 43093.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -10 0 360 1 0 0 0 0 -1 0 1 0 43093.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 0 400 1 0 0 0 -1 0 0 0 -1 2780.dat
 0 STEP
-0 // Technic Beam  9
+0 // Technic Beam  9 (light_bluish_grey)
 1 71 -20 0 320 0 -1 0 -1 0 0 0 0 -1 40490.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 0 340 1 0 0 0 -1 0 0 0 -1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 0 300 1 0 0 0 -1 0 0 0 -1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 0 280 1 0 0 0 -1 0 0 0 -1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 0 240 1 0 0 0 -1 0 0 0 -1 2780.dat
 0 STEP
-0 // Technic Beam  3
+0 // Technic Beam  3 (white)
 1 15 0 0 320 0 -1 0 -1 0 0 0 0 -1 32523.dat
-0 // Technic Beam 11
+0 // Technic Beam 11 (white)
 1 15 0 0 180 0 -1 0 -1 0 0 0 0 -1 32525.dat
 0
 
@@ -3416,16 +3416,16 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Cross Block 2 x 2 (Axle/Twin Pin)
+0 // Technic Cross Block 2 x 2 (Axle/Twin Pin) (black)
 1 0 0 0 0 -1 0 0 0 1 0 0 0 -1 32291.dat
-0 // Technic Pin  1/2
+0 // Technic Pin  1/2 (light_bluish_grey)
 1 71 -10 20 -10 0 -1 0 0 0 1 -1 0 0 4274.dat
-0 // Technic Pin  1/2
+0 // Technic Pin  1/2 (light_bluish_grey)
 1 71 10 20 -10 0 -1 0 0 0 1 -1 0 0 4274.dat
 0 STEP
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_red)
 1 36 -10 20 -18 0 0 -1 -1 0 0 0 1 0 6141.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_orange)
 1 57 10 20 -18 0 0 -1 -1 0 0 0 1 0 6141.dat
 0
 
@@ -3438,21 +3438,21 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG -3 0
-0 // Technic Angle Connector #6 (90 degree)
+0 // Technic Angle Connector #6 (90 degree) (black)
 1 0 0 0 0 0 -1 0 -1 0 0 0 0 -1 32014.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 0 0 30 0 -1 0 0 0 1 -1 0 0 43093.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (red)
 1 4 30 0 0 -1 0 0 0 0 1 0 1 0 32062.dat
 0 STEP
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_orange)
 1 57 0 -10 0 -1 0 0 0 -1 0 0 0 1 6141.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_orange)
 1 57 0 10 0 1 0 0 0 1 0 0 0 1 6141.dat
-0 // Plate  2 x  2 with Hole and Split Underside Ribs
+0 // Plate  2 x  2 with Hole and Split Underside Ribs (black)
 1 0 2.588 -9.655 50 0 -0.258819 0.965926 0 0.965926 0.258819 -1 0 0 2444.dat
 0 STEP
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (black)
 1 0 4.659 -17.386 50 0 -0.258819 0.965926 0 0.965926 0.258819 -1 0 0 3068b.dat
 0
 
@@ -3465,21 +3465,21 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG -3 0
-0 // Technic Angle Connector #6 (90 degree)
+0 // Technic Angle Connector #6 (90 degree) (black)
 1 0 0 0 0 0 -1 0 -1 0 0 0 0 -1 32014.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 0 0 30 0 -1 0 0 0 1 -1 0 0 43093.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (red)
 1 4 30 0 0 -1 0 0 0 0 1 0 1 0 32062.dat
 0 STEP
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_orange)
 1 57 0 -10 0 -1 0 0 0 -1 0 0 0 1 6141.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_orange)
 1 57 0 10 0 1 0 0 0 1 0 0 0 1 6141.dat
-0 // Plate  2 x  2 with Hole and Split Underside Ribs
+0 // Plate  2 x  2 with Hole and Split Underside Ribs (black)
 1 0 2.588 9.655 50 0 -0.258819 -0.965926 0 -0.965926 0.258819 -1 0 0 2444.dat
 0 STEP
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (black)
 1 0 4.659 17.386 49.999 0 -0.258819 -0.965926 0 -0.965926 0.258819 -1 0 0 3068b.dat
 0
 
@@ -3492,39 +3492,39 @@
 
 0 ROTATION CENTER 10 0 140 1 "Custom" 
 0 ROTATION CONFIG 1 0
-0 // Technic Beam 15
+0 // Technic Beam 15 (white)
 1 15 0 0 0 0 -1 0 1 0 0 0 0 1 32278.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 0 -140 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 0 -120 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 0 -100 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 0 120 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 0 60 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 0 80 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin
+0 // Technic Pin (light_bluish_grey)
 1 71 10 0 140 1 0 0 0 1 0 0 0 1 3673.dat
 0 STEP
-0 // Technic Beam 15
+0 // Technic Beam 15 (white)
 1 15 20 0 -260 0 -1 0 1 0 0 0 0 1 32278.dat
-0 // Technic Beam  9
+0 // Technic Beam  9 (white)
 1 15 20 0 -20 0 -1 0 1 0 0 0 0 1 40490.dat
-0 // Technic Beam  3
+0 // Technic Beam  3 (white)
 1 15 20 0 100 0 -1 0 1 0 0 0 0 1 32523.dat
 0 STEP
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 0 -200 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 0 -300 1 0 0 0 1 0 0 0 1 2780.dat
 0 STEP
 1 0 0 0 -200 0 0 1 0 -1 0 1 0 0 8274 - m-1b''a.ldr
 0 STEP
 1 0 0 27.716 128.519 1 0 0 0 0.924 0.383 0 -0.383 0.924 8274 - m-1b''b.ldr
-0 // Technic Pin Towball with Friction
+0 // Technic Pin Towball with Friction (black)
 1 0 0 -30 -340 0 1 0 1 0 0 0 0 -1 6628.dat
 0
 
@@ -3537,19 +3537,19 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Cross Block 1 x 3 (Axle/Pin/Axle)
+0 // Technic Cross Block 1 x 3 (Axle/Pin/Axle) (light_bluish_grey)
 1 71 0 0 0 0 -1 0 1 0 0 0 0 1 32184.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -20 10 0 0 1 0 -1 0 0 0 0 1 43093.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 20 10 0 0 1 0 -1 0 0 0 0 1 43093.dat
 0 STEP
-0 // Technic Beam 15
+0 // Technic Beam 15 (white)
 1 15 -60 20 0 0 0 -1 0 1 0 1 0 0 32278.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -80 10 0 0 1 0 -1 0 0 0 0 1 43093.dat
 0 STEP
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 -80 0 0 0 -1 0 -1 0 0 0 0 -1 6536.dat
 0 STEP
 0
@@ -3563,14 +3563,14 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  2
+0 // Technic Beam  2 (black)
 1 0 0 0 0 0 -1 0 0 0 1 -1 0 0 43857.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 -10 0 -1 0 0 0 1 0 0 0 -1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 10 0 -1 0 0 0 1 0 0 0 -1 2780.dat
 0 STEP
-0 // Technic Beam  3
+0 // Technic Beam  3 (black)
 1 0 20 -10 0 0 -1 0 0 0 -1 1 0 0 32523.dat
 0
 
@@ -3583,33 +3583,33 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (dark_bluish_grey)
 1 72 0 0 0 0 1 0 -1 0 0 0 0 1 32009.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 10 0 -40 1 0 0 0 0 1 0 -1 0 43093.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 10 0 -80 1 0 0 0 0 1 0 -1 0 43093.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 10 0 -120 1 0 0 0 0 1 0 -1 0 43093.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (red)
 1 4 10 0 -160 1 0 0 0 0 1 0 -1 0 32062.dat
 0 STEP
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 30 0 -160 0 0 -1 0 -1 0 -1 0 0 6538b.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 30 0 -120 0 0 -1 0 -1 0 -1 0 0 6538b.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 30 0 -80 0 0 -1 0 -1 0 -1 0 0 6538b.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 30 0 -40 0 0 -1 0 -1 0 -1 0 0 6538b.dat
 0 STEP
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (red)
 1 4 50 0 -160 1 0 0 0 0 1 0 -1 0 32062.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 50 0 -120 -1 0 0 0 0 1 0 1 0 43093.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 50 0 -80 -1 0 0 0 0 1 0 1 0 43093.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 50 0 -40 -1 0 0 0 0 1 0 1 0 43093.dat
 0 STEP
 1 1 30 -60 0 1 0 0 0 1 0 0 0 1 8274 - m-1c''a.ldr
@@ -3624,22 +3624,22 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 -10 0 0 1 0 0 0 -1 0 0 0 -1 6536.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 0 0 0 1 0 0 0 -1 0 0 0 -1 3705.dat
 0 STEP
-0 // Technic Beam  2 x  0.5 Liftarm
+0 // Technic Beam  2 x  0.5 Liftarm (red)
 1 4 5 0 0 0 1 0 0 0 -1 -1 0 0 41677.dat
-0 // Technic Beam  2 x  0.5 Liftarm
+0 // Technic Beam  2 x  0.5 Liftarm (red)
 1 4 15 0 0 0 1 0 0 0 -1 -1 0 0 41677.dat
 0 STEP
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (red)
 1 4 20 -20 0 1 0 0 0 0 -1 0 1 0 32062.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 -20 10 0 0 1 0 1 0 -1 0 0 2780.dat
 0 STEP
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (dark_bluish_grey)
 1 72 30 60 0 0 1 0 -1 0 0 0 0 1 32009.dat
 0
 
@@ -3652,30 +3652,30 @@
 
 0 ROTATION CENTER 0 40 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  2 x  4 Liftarm Bent 90
+0 // Technic Beam  2 x  4 Liftarm Bent 90 (dark_bluish_grey)
 1 72 -20 0 0 0 -1 0 0 0 1 -1 0 0 32140.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 0 60 0 1 0 0 0 -1 0 0 0 -1 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 0 60 -20 1 0 0 0 -1 0 0 0 -1 6558.dat
 0 STEP
-0 // Technic Beam  2 x  4 Liftarm Bent 90
+0 // Technic Beam  2 x  4 Liftarm Bent 90 (dark_bluish_grey)
 1 72 0 60 -60 0 1 0 -1 0 0 0 0 1 32140.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 4519.dat
 0 STEP
-0 // Technic Beam  4 x  0.5 Liftarm
+0 // Technic Beam  4 x  0.5 Liftarm (dark_bluish_grey)
 1 72 -5 0 30 0 -1 0 1 0 0 0 0 1 32449.dat
-0 // Technic Beam  4 x  0.5 Liftarm
+0 // Technic Beam  4 x  0.5 Liftarm (dark_bluish_grey)
 1 72 5 0 30 0 -1 0 1 0 0 0 0 1 32449.dat
 0 STEP
 1 72 -25 60 -60 1 0 0 0 1 0 0 0 1 8274 - m-1d''a.ldr
-0 // Technic Beam  2 x  4 Liftarm Bent 90
+0 // Technic Beam  2 x  4 Liftarm Bent 90 (dark_bluish_grey)
 1 72 20 0 0 0 -1 0 0 0 1 -1 0 0 32140.dat
 0 STEP
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (light_bluish_grey)
 1 71 -35 60 -60 0 -1 0 -1 0 0 0 0 -1 32056.dat
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (light_bluish_grey)
 1 71 -45 60 -60 0 -1 0 -1 0 0 0 0 -1 32056.dat
 0 STEP
 1 71 -90 0 -60 1 0 0 0 1 0 0 0 1 8274 - m-1d''b.ldr
@@ -3684,57 +3684,57 @@
 0 STEP
 1 71 0 60 -100 1 0 0 0 1 0 0 0 1 8274 - m-1d''d.ldr
 0 STEP
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 -20 60 -100 0 0 -1 1 0 0 0 -1 0 3713.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 0 60 -100 0 0 -1 1 0 0 0 -1 0 3713.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 20 60 -100 0 0 -1 1 0 0 0 -1 0 3713.dat
 0 STEP
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (light_bluish_grey)
 1 71 35 60 -60 0 1 0 0 0 -1 -1 0 0 32056.dat
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (light_bluish_grey)
 1 71 45 60 -60 0 1 0 0 0 -1 -1 0 0 32056.dat
 0 STEP
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (light_bluish_grey)
 1 71 55 20 -100 0 1 0 1 0 0 0 0 -1 32056.dat
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (light_bluish_grey)
 1 71 65 20 -100 0 1 0 1 0 0 0 0 -1 32056.dat
 0 STEP
 1 71 55 0 -60 1 0 0 0 1 0 0 0 1 8274 - m-1d''e.ldr
 1 71 75 40 -140 1 0 0 0 -1 0 0 0 -1 8274 - m-1d''e.ldr
 1 71 -75 40 -140 -1 0 0 0 -1 0 0 0 1 8274 - m-1d''e.ldr
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 70 40 -60 0 0 1 0 -1 0 1 0 0 6538b.dat
 0 STEP
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 80 0 -60 0 0 -1 0 -1 0 -1 0 0 3713.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 110 0 -60 0 0 -1 0 -1 0 -1 0 0 6538b.dat
 0 STEP
 0 ROTSTEP 180 0 0 REL
 1 71 50 60 -60 1 0 0 0 -1 0 0 0 -1 8274 - m-1d''f.ldr
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 -60 60 -60 1 0 0 0 1 0 0 0 1 6536.dat
 0 STEP
 1 71 0 40 0 1 0 0 0 -1 0 0 0 -1 8274 - m-1d''g.ldr
 0 STEP
-0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
+0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced (light_bluish_grey)
 1 71 35 40 0 0 0 1 0 1 0 -1 0 0 32123b.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (red)
 1 4 70 40 0 0 0 1 0 1 0 -1 0 0 6538b.dat
-0 // Technic Rotor  3 Blade x 0.5 Liftarm
+0 // Technic Rotor  3 Blade x 0.5 Liftarm (pearl_light_grey)
 1 135 45 40 0 0 -1 0 0 0 1 -1 0 0 44374.dat
 0 STEP
 1 71 0 0 60 1 0 0 0 -1 0 0 0 -1 8274 - m-1d''h.ldr
 0 STEP
-0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity
+0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity (pearl_light_grey)
 1 135 20 0 60 0 1 0 1 0 0 0 0 -1 41669.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 50 0 60 0 0 -1 1 0 0 0 -1 0 6538b.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 60 80 -80 0 1 0 0 0 -1 -1 0 0 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 -60 80 -80 0 1 0 0 0 -1 -1 0 0 6558.dat
 0 STEP
 1 0 210 0 -60 1 0 0 0 0 -1 0 1 0 8274 - m-1d''i.ldr
@@ -3768,7 +3768,7 @@
 0 ROTSTEP 180 0 0 REL
 1 4 160 80 -80 1 0 0 0 -1 0 0 0 -1 8274 - m-1d''u.ldr
 1 4 -160 80 -80 -1 0 0 0 1 0 0 0 -1 8274 - m-1d''u.ldr
-0 // Technic Beam 11
+0 // Technic Beam 11 (red)
 1 4 0 80 -100 0 0 -1 1 0 0 0 -1 0 32525.dat
 0
 
@@ -3781,13 +3781,13 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  2 x  0.5 Liftarm
+0 // Technic Beam  2 x  0.5 Liftarm (red)
 1 4 0 0 0 0 -1 0 1 0 0 0 0 1 41677.dat
-0 // Technic Beam  2 x  0.5 Liftarm
+0 // Technic Beam  2 x  0.5 Liftarm (red)
 1 4 10 0 0 0 -1 0 1 0 0 0 0 1 41677.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 15 0 20 -1 0 0 0 0 1 0 1 0 43093.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 -5 0 0 -1 0 0 0 0 1 0 1 0 3705.dat
 0
 
@@ -3800,27 +3800,27 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 0 0 0 0 0 1 0 1 0 -1 0 0 6538b.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 30 0 0 -1 0 0 0 1 0 0 0 -1 4519.dat
 0 STEP
-0 // Technic Beam  2 x  0.5 Liftarm
+0 // Technic Beam  2 x  0.5 Liftarm (red)
 1 4 25 20 0 0 -1 0 0 0 -1 1 0 0 41677.dat
-0 // Technic Beam  2 x  0.5 Liftarm
+0 // Technic Beam  2 x  0.5 Liftarm (red)
 1 4 35 20 0 0 -1 0 0 0 -1 1 0 0 41677.dat
 0 STEP
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 60 0 0 0 0 1 0 1 0 -1 0 0 6538b.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (red)
 1 4 40 20 0 -1 0 0 0 1 0 0 0 -1 32062.dat
 0 STEP
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 90 0 0 -1 0 0 0 1 0 0 0 -1 4519.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 120 0 0 0 0 1 0 1 0 -1 0 0 6538b.dat
 0 STEP
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 160 0 0 -1 0 0 0 1 0 0 0 -1 3705.dat
 0
 
@@ -3833,14 +3833,14 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3705.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 -40 0 0 0 0 1 0 1 0 -1 0 0 6538b.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (tan)
 1 19 -60 0 0 1 0 0 0 1 0 0 0 1 3749.dat
 0 STEP
-0 // Technic Gear  4 Knob
+0 // Technic Gear  4 Knob (yellow)
 1 14 -10 0 0 0 0 1 0 1 0 -1 0 0 32072.dat
 0
 
@@ -3853,12 +3853,12 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle  7
+0 // Technic Axle  7 (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 44294.dat
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (light_bluish_grey)
 1 71 -65 -40 0 0 1 0 1 0 0 0 0 -1 32056.dat
 0 STEP
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (light_bluish_grey)
 1 71 -55 -40 0 0 1 0 1 0 0 0 0 -1 32056.dat
 0
 
@@ -3871,11 +3871,11 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  2 x  0.5 Liftarm
+0 // Technic Beam  2 x  0.5 Liftarm (red)
 1 4 0 0 0 0 -1 0 0 0 1 -1 0 0 41677.dat
-0 // Technic Beam  2 x  0.5 Liftarm
+0 // Technic Beam  2 x  0.5 Liftarm (red)
 1 4 10 0 0 0 -1 0 0 0 1 -1 0 0 41677.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (red)
 1 4 -5 20 0 -1 0 0 0 0 1 0 1 0 32062.dat
 0
 
@@ -3888,9 +3888,9 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (red)
 1 4 0 0 0 1 0 0 0 1 0 0 0 1 32062.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 10 0 0 1 0 0 0 -1 0 0 0 -1 6536.dat
 0
 
@@ -3903,14 +3903,14 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle  7
+0 // Technic Axle  7 (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 44294.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (red)
 1 4 -70 0 0 0 0 -1 0 1 0 1 0 0 6538b.dat
 0 STEP
-0 // Technic Rotor  3 Blade x 0.5 Liftarm
+0 // Technic Rotor  3 Blade x 0.5 Liftarm (pearl_light_grey)
 1 135 -45 0 0 0 -1 0 0 0 -1 1 0 0 44374.dat
-0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
+0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced (light_bluish_grey)
 1 71 -35 0 0 0 0 1 0 -1 0 1 0 0 32123b.dat
 0
 
@@ -3923,12 +3923,12 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle  5
+0 // Technic Axle  5 (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 32073.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 -50 0 0 0 0 1 0 1 0 -1 0 0 6538b.dat
 0 STEP
-0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity
+0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity (pearl_light_grey)
 1 135 -20 0 0 0 -1 0 1 0 0 0 0 1 41669.dat
 0
 
@@ -3941,11 +3941,11 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle 10
+0 // Technic Axle 10 (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3737.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 100 0 0 0 0 1 0 1 0 -1 0 0 6538b.dat
-0 // Technic Axle  8
+0 // Technic Axle  8 (black)
 1 0 180 0 0 -1 0 0 0 1 0 0 0 -1 3707.dat
 0
 
@@ -3958,26 +3958,26 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle 12
+0 // Technic Axle 12 (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3708.dat
-0 // Technic Axle  8
+0 // Technic Axle  8 (black)
 1 0 200 0 0 1 0 0 0 1 0 0 0 1 3707.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 120 0 0 0 0 1 0 1 0 -1 0 0 6538b.dat
 0 STEP
-0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity
+0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity (pearl_light_grey)
 1 135 90 0 0 0 1 0 -1 0 0 0 0 1 41669.dat
-0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity
+0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity (pearl_light_grey)
 1 135 150 0 0 0 -1 0 1 0 0 0 0 1 41669.dat
-0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity
+0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity (pearl_light_grey)
 1 135 30 0 0 0 -1 0 1 0 0 0 0 1 41669.dat
-0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity
+0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity (pearl_light_grey)
 1 135 -30 0 0 0 1 0 -1 0 0 0 0 1 41669.dat
-0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity
+0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity (pearl_light_grey)
 1 135 -90 0 0 0 -1 0 1 0 0 0 0 1 41669.dat
-0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity
+0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity (pearl_light_grey)
 1 135 200 0 0 0 1 0 -1 0 0 0 0 1 41669.dat
-0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity
+0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity (pearl_light_grey)
 1 135 250 0 0 0 -1 0 1 0 0 0 0 1 41669.dat
 0
 
@@ -3990,21 +3990,21 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle 12
+0 // Technic Axle 12 (black)
 1 0 -20 0 0 1 0 0 0 1 0 0 0 1 3708.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (red)
 1 4 100 0 0 0 0 1 0 1 0 -1 0 0 6538b.dat
-0 // Technic Axle  8
+0 // Technic Axle  8 (black)
 1 0 180 0 0 -1 0 0 0 1 0 0 0 -1 3707.dat
 0 STEP
-0 // Technic Rotor  3 Blade x 0.5 Liftarm
+0 // Technic Rotor  3 Blade x 0.5 Liftarm (pearl_light_grey)
 1 135 190 0 0 0 -1 0 0 0 -1 1 0 0 44374.dat
-0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
+0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced (pearl_light_grey)
 1 135 200 0 0 0 0 1 1 0 0 0 1 0 32123b.dat
 0 STEP
-0 // Technic Gear 24 Tooth with Single Axle Hole
+0 // Technic Gear 24 Tooth with Single Axle Hole (pearl_light_grey)
 1 135 215 0 0 0 0 1 1 0 0 0 1 0 3648b.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (pearl_light_grey)
 1 135 230 0 0 0 0 -1 0 -1 0 -1 0 0 3713.dat
 0
 
@@ -4017,13 +4017,13 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle 12
+0 // Technic Axle 12 (black)
 1 0 -20 0 0 1 0 0 0 1 0 0 0 1 3708.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 100 0 0 0 0 1 0 1 0 -1 0 0 6538b.dat
-0 // Technic Gear 24 Tooth with Single Axle Hole
+0 // Technic Gear 24 Tooth with Single Axle Hole (pearl_light_grey)
 1 135 215 0 0 0 0 1 1 0 0 0 1 0 3648b.dat
-0 // Technic Axle  8
+0 // Technic Axle  8 (black)
 1 0 180 0 0 -1 0 0 0 1 0 0 0 -1 3707.dat
 0
 
@@ -4036,32 +4036,32 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  4 x  0.5 Liftarm
+0 // Technic Beam  4 x  0.5 Liftarm (dark_bluish_grey)
 1 72 0 0 0 0 -1 0 0 0 1 -1 0 0 32449.dat
-0 // Technic Beam  4 x  0.5 Liftarm
+0 // Technic Beam  4 x  0.5 Liftarm (dark_bluish_grey)
 1 72 10 0 0 0 -1 0 0 0 1 -1 0 0 32449.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -5 -30 0 1 0 0 0 -1 0 0 0 -1 43093.dat
 0 STEP
-0 // Technic Beam  5 x  7 x  0.5 Liftarm Bent 90 Quarter Ellipse
+0 // Technic Beam  5 x  7 x  0.5 Liftarm Bent 90 Quarter Ellipse (dark_bluish_grey)
 1 72 -10 30 0 0 -1 0 -1 0 0 0 0 -1 32251.dat
-0 // Technic Beam  5 x  7 x  0.5 Liftarm Bent 90 Quarter Ellipse
+0 // Technic Beam  5 x  7 x  0.5 Liftarm Bent 90 Quarter Ellipse (dark_bluish_grey)
 1 72 -20 30 0 0 -1 0 -1 0 0 0 0 -1 32251.dat
 0 STEP
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 -15 -50 0 1 0 0 0 -1 0 0 0 -1 4519.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 5 10 0 -1 0 0 0 -1 0 0 0 1 32054.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (red)
 1 4 35 10 0 -1 0 0 0 -1 0 0 0 1 32062.dat
 0 STEP
-0 // Technic Connector (Axle/Bush) Type 1
+0 // Technic Connector (Axle/Bush) Type 1 (light_bluish_grey)
 1 71 5 -50 20 -1 0 0 0 -1 0 0 0 1 32039.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 5 -50 30 0 1 0 0 0 -1 -1 0 0 43093.dat
-0 // Technic Connector (Axle/Bush) Type 1
+0 // Technic Connector (Axle/Bush) Type 1 (light_bluish_grey)
 1 71 -35 -50 20 -1 0 0 0 -1 0 0 0 1 32039.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -35 -50 30 0 1 0 0 0 -1 -1 0 0 43093.dat
 0
 
@@ -4074,24 +4074,24 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 0 0 0 0 0 -1 0 1 0 1 0 0 3705.dat
-0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
+0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced (light_bluish_grey)
 1 71 0 0 35 1 0 0 0 1 0 0 0 1 32123b.dat
 0 STEP
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 0 0 20 1 0 0 0 1 0 0 0 1 3713.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_bluish_grey)
 1 71 0 20 0 1 0 0 0 -1 0 0 0 -1 6536.dat
 0 STEP
-0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
+0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced (light_bluish_grey)
 1 71 0 0 -35 -1 0 0 0 1 0 0 0 -1 32123b.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 0 0 -20 1 0 0 0 1 0 0 0 1 3713.dat
 0 STEP
-0 // Tyre  4/ 80 x  8 Single Smooth Type 2
+0 // Tyre  4/ 80 x  8 Single Smooth Type 2 (rubber_black)
 1 256 0 0 -35 0 0 1 0 1 0 -1 0 0 59895.dat
-0 // Tyre  4/ 80 x  8 Single Smooth Type 2
+0 // Tyre  4/ 80 x  8 Single Smooth Type 2 (rubber_black)
 1 256 0 0 35 0 0 1 0 1 0 -1 0 0 59895.dat
 0
 
@@ -4104,14 +4104,14 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle
+0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle (red)
 1 4 0 0 0 0 -1 0 0 0 -1 1 0 0 2905.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -5 0 40 1 0 0 0 0 -1 0 1 0 43093.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -5 0 -40 1 0 0 0 0 -1 0 1 0 43093.dat
 0 STEP
-0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle
+0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle (red)
 1 4 10 0 0 0 -1 0 0 0 -1 1 0 0 2905.dat
 0
 
@@ -4124,26 +4124,26 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle 12
+0 // Technic Axle 12 (black)
 1 0 0 0 0 1 0 0 0 -1 0 0 0 -1 3708.dat
-0 // Technic Axle  8
+0 // Technic Axle  8 (black)
 1 0 200 0 0 1 0 0 0 -1 0 0 0 -1 3707.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 120 0 0 0 0 1 0 -1 0 1 0 0 6538b.dat
 0 STEP
-0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity
+0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity (pearl_light_grey)
 1 135 90 0 0 0 1 0 1 0 0 0 0 -1 41669.dat
-0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity
+0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity (pearl_light_grey)
 1 135 150 0 0 0 -1 0 -1 0 0 0 0 -1 41669.dat
-0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity
+0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity (pearl_light_grey)
 1 135 30 0 0 0 -1 0 -1 0 0 0 0 -1 41669.dat
-0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity
+0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity (pearl_light_grey)
 1 135 -30 0 0 0 1 0 1 0 0 0 0 -1 41669.dat
-0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity
+0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity (pearl_light_grey)
 1 135 -90 0 0 0 -1 0 -1 0 0 0 0 -1 41669.dat
-0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity
+0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity (pearl_light_grey)
 1 135 200 0 0 0 1 0 1 0 0 0 0 -1 41669.dat
-0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity
+0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity (pearl_light_grey)
 1 135 250 0 0 0 -1 0 -1 0 0 0 0 -1 41669.dat
 0
 
@@ -4156,11 +4156,11 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle 10
+0 // Technic Axle 10 (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3737.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_bluish_grey)
 1 71 100 0 0 0 0 1 0 1 0 -1 0 0 6538b.dat
-0 // Technic Axle  8
+0 // Technic Axle  8 (black)
 1 0 180 0 0 -1 0 0 0 1 0 0 0 -1 3707.dat
 0
 
@@ -4173,21 +4173,21 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Axle 12
+0 // Technic Axle 12 (black)
 1 0 -440 0 0 1 0 0 0 1 0 0 0 1 3708.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (red)
 1 4 -320 0 0 0 0 1 0 1 0 -1 0 0 6538b.dat
-0 // Technic Axle  8
+0 // Technic Axle  8 (black)
 1 0 -240 0 0 -1 0 0 0 1 0 0 0 -1 3707.dat
 0 STEP
-0 // Technic Rotor  3 Blade x 0.5 Liftarm
+0 // Technic Rotor  3 Blade x 0.5 Liftarm (pearl_light_grey)
 1 135 -230 0 0 0 -1 0 0 0 -1 1 0 0 44374.dat
-0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
+0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced (pearl_light_grey)
 1 135 -220 0 0 0 0 1 1 0 0 0 1 0 32123b.dat
 0 STEP
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (pearl_light_grey)
 1 135 -190 0 0 0 0 -1 0 -1 0 -1 0 0 3713.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (pearl_light_grey)
 1 135 -210 0 0 0 0 1 0 -1 0 1 0 0 3713.dat
 0
 
@@ -4200,20 +4200,20 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  5 x  7 x  0.5 Liftarm Bent 90 Quarter Ellipse
+0 // Technic Beam  5 x  7 x  0.5 Liftarm Bent 90 Quarter Ellipse (dark_bluish_grey)
 1 72 -60 30 60 0 1 0 -1 0 0 0 0 1 32251.dat
-0 // Technic Beam  5 x  7 x  0.5 Liftarm Bent 90 Quarter Ellipse
+0 // Technic Beam  5 x  7 x  0.5 Liftarm Bent 90 Quarter Ellipse (dark_bluish_grey)
 1 72 -50 30 60 0 1 0 -1 0 0 0 0 1 32251.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 -55 -50 60 -1 0 0 0 -1 0 0 0 1 4519.dat
 0 STEP
-0 // Technic Connector (Axle/Bush) Type 1
+0 // Technic Connector (Axle/Bush) Type 1 (light_bluish_grey)
 1 71 -75 -50 40 1 0 0 0 -1 0 0 0 -1 32039.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -75 -50 30 0 -1 0 0 0 -1 1 0 0 43093.dat
-0 // Technic Connector (Axle/Bush) Type 1
+0 // Technic Connector (Axle/Bush) Type 1 (light_bluish_grey)
 1 71 -35 -50 40 1 0 0 0 -1 0 0 0 -1 32039.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -35 -50 30 0 -1 0 0 0 -1 1 0 0 43093.dat
 0
 
@@ -4226,19 +4226,19 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle
+0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle (red)
 1 4 0 0 0 0 -1 0 0 0 -1 1 0 0 2905.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -5 0 40 1 0 0 0 0 -1 0 1 0 43093.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -5 0 -40 1 0 0 0 0 -1 0 1 0 43093.dat
 0 STEP
-0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle
+0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle (red)
 1 4 10 0 0 0 -1 0 0 0 -1 1 0 0 2905.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 15 -20 0 1 0 0 0 1 0 0 0 1 2780.dat
 0 STEP
-0 // Technic Cross Block 2 x 2 Bent 90 (Pin/Pin/Pin)
+0 // Technic Cross Block 2 x 2 Bent 90 (Pin/Pin/Pin) (black)
 1 0 25 -40 0 1 0 0 0 0 -1 0 1 0 44809.dat
 0
 
@@ -4251,16 +4251,16 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom" 
 0 ROTATION CONFIG 0 0
-0 // Technic Beam 11
+0 // Technic Beam 11 (red)
 1 4 0 0 0 0 0 -1 1 0 0 0 -1 0 32525.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -60 0 10 0 0 -1 0 -1 0 -1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 60 0 10 0 0 -1 0 -1 0 -1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 100 0 10 0 0 -1 0 -1 0 -1 0 0 2780.dat
 0 STEP
-0 // Technic Beam 13
+0 // Technic Beam 13 (red)
 1 4 180 0 20 0 0 -1 -1 0 0 0 1 0 41239.dat
 0 
 0
@@ -4281,7 +4281,7 @@
 
 0 !HISTORY 2007-02-20 [Holly-Wood] Initial version
 
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 0 0 0 4.904 0 0.975 0 1 0 -0.975 0 4.904 2-4edge.dat
 2 24 -4.904 0 0.975 -4.904 0 -0.976
 2 24 -4.904 0 -0.976 -4.157 0 -2.778
@@ -4298,9 +4298,9 @@
 2 24 0.976 0 -7 0 -20 -7
 2 24 0.975 0 -4.904 0 -20 0
 2 24 0 -20 0 0 -20 -7
-0 // Disc 1.0
+0 // Disc 1.0 (main_colour)
 1 16 0 0 0 4.90393 0 0.975452 0 -1 0 -0.975452 0 4.90393 4-4disc.dat
-0 // Cone  0 x 1.0
+0 // Cone  0 x 1.0 (main_colour)
 1 16 0 0 0 -4.90393 0 0.975452 0 -20 0 0.975452 0 4.90393 4-4con0.dat
 4 16 0.975 0 -4.904 -0.976 0 -4.904 -0.976 0 -7 0.975 0 -7
 4 16 0 -20 0 0.975 0 -4.904 0.975 0 -7 0 -20 -7
@@ -4323,18 +4323,18 @@
 0 !HISTORY 2007-04-03 [Holly-Wood] Fixed header, minor fixes
 0 !HISTORY 2013-06-27 [MMR1988] Corrected BFC CERTIFY INVERTNEXT statement
 
-0 // Cylinder 1.0
+0 // Cylinder 1.0 (main_colour)
 1 16 0 0 0 4 0 0 0 1 0 0 0 4 4-4cyli.dat
 0 BFC INVERTNEXT
-0 // Cylinder 1.0
+0 // Cylinder 1.0 (main_colour)
 1 16 0 0 0 2 0 0 0 1 0 0 0 2 4-4cyli.dat
-0 // Circle 1.0
+0 // Circle 1.0 (main_colour)
 1 16 0 0 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
-0 // Circle 1.0
+0 // Circle 1.0 (main_colour)
 1 16 0 0 0 2 0 0 0 1 0 0 0 2 4-4edge.dat
-0 // Ring  1 x 1.0
+0 // Ring  1 x 1.0 (main_colour)
 1 16 0 0 0 2 0 0 0 1 0 0 0 2 4-4ring1.dat
-0 // Ring  1 x 1.0
+0 // Ring  1 x 1.0 (main_colour)
 1 16 0 1 0 2 0 0 0 -1 0 0 0 -2 4-4ring1.dat
 
 
@@ -4354,14 +4354,14 @@
 0 !HISTORY 2007-04-03 [Holly-Wood] Fixed header, some minor fixes
 0 !HISTORY 2013-06-27 [MMR1988] Corrected BFC CERTIFY INVERTNEXT statement
 
-0 // Cylinder 1.0
+0 // Cylinder 1.0 (main_colour)
 1 16 0 0 0 4 0 0 0 1 0 0 0 4 4-4cyli.dat
 0 BFC INVERTNEXT
-0 // Cylinder 1.0
+0 // Cylinder 1.0 (main_colour)
 1 16 0 0 0 2 0 0 0 1 0 0 0 2 4-4cyli.dat
-0 // Ring  1 x 1.0
+0 // Ring  1 x 1.0 (main_colour)
 1 16 0 0 0 2 0 0 0 1 0 0 0 2 4-4ring1.dat
-0 // Ring  1 x 1.0
+0 // Ring  1 x 1.0 (main_colour)
 1 16 0 1 0 2 0 0 0 -1 0 0 0 2 4-4ring1.dat
 
 

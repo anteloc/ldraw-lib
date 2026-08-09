@@ -10,97 +10,97 @@
 0 !HISTORY 2016-02-16 [legolijntje] Inlined (unofficial) LSynth parts
 0 !HISTORY 2020-03-03 [OrionP] Replaced LSynth parts with LDCad Flex Objects. Corrected colors
 
-0 // Plate  4 x 12
+0 // Plate  4 x 12 (light_bluish_grey)
 1 71 80 -8 0 0 0 1 0 1 0 -1 0 0 3029.dat
-0 // Plate  2 x 14
+0 // Plate  2 x 14 (black)
 1 0 120 0 0 0 0 1 0 1 0 -1 0 0 91988.dat
-0 // Plate  2 x 10
+0 // Plate  2 x 10 (black)
 1 0 0 0 -120 -1 0 0 0 1 0 0 0 -1 3832.dat
-0 // Plate  2 x 10
+0 // Plate  2 x 10 (black)
 1 0 0 0 0 -1 0 0 0 1 0 0 0 -1 3832.dat
-0 // Plate  2 x 10
+0 // Plate  2 x 10 (black)
 1 0 0 0 120 -1 0 0 0 1 0 0 0 -1 3832.dat
-0 // Plate  4 x 12
+0 // Plate  4 x 12 (light_bluish_grey)
 1 71 0 -8 0 0 0 -1 0 1 0 1 0 0 3029.dat
-0 // Plate  4 x 12
+0 // Plate  4 x 12 (light_bluish_grey)
 1 71 -80 -8 0 0 0 -1 0 1 0 1 0 0 3029.dat
-0 // Plate  2 x 14
+0 // Plate  2 x 14 (black)
 1 0 -120 0 0 0 0 -1 0 1 0 1 0 0 91988.dat
-0 // Tile  1 x  6
+0 // Tile  1 x  6 (black)
 1 0 -130 -8 -60 0 0 -1 0 1 0 1 0 0 6636.dat
-0 // Tile  1 x  6
+0 // Tile  1 x  6 (black)
 1 0 -130 -8 60 0 0 -1 0 1 0 1 0 0 6636.dat
-0 // Tile  1 x  6
+0 // Tile  1 x  6 (black)
 1 0 130 -8 60 0 0 -1 0 1 0 1 0 0 6636.dat
-0 // Tile  1 x  6
+0 // Tile  1 x  6 (black)
 1 0 130 -8 -60 0 0 -1 0 1 0 1 0 0 6636.dat
-0 // Tile  1 x  3
+0 // Tile  1 x  3 (black)
 1 0 110 -8 130 1 0 0 0 1 0 0 0 1 63864.dat
-0 // Tile  1 x  3
+0 // Tile  1 x  3 (black)
 1 0 -110 -8 130 1 0 0 0 1 0 0 0 1 63864.dat
-0 // Tile  1 x  3
+0 // Tile  1 x  3 (black)
 1 0 110 -8 -130 1 0 0 0 1 0 0 0 1 63864.dat
-0 // Tile  1 x  3
+0 // Tile  1 x  3 (black)
 1 0 -110 -8 -130 1 0 0 0 1 0 0 0 1 63864.dat
-0 // Tile  1 x  8
+0 // Tile  1 x  8 (black)
 1 0 0 -8 130 1 0 0 0 1 0 0 0 1 4162.dat
-0 // Tile  1 x  8 with "The Eiffel Tower" Pattern
+0 // Tile  1 x  8 with "The Eiffel Tower" Pattern (black)
 1 0 0 -8 -130 1 0 0 0 1 0 0 0 1 4162p0s.dat
-0 // Turntable  2 x  2 Plate Base
+0 // Turntable  2 x  2 Plate Base (black)
 1 0 -100 -16 100 1 0 0 0 1 0 0 0 1 3680.dat
-0 // Turntable  2 x  2 Plate Base
+0 // Turntable  2 x  2 Plate Base (black)
 1 0 100 -16 100 1 0 0 0 1 0 0 0 1 3680.dat
-0 // Turntable  2 x  2 Plate Base
+0 // Turntable  2 x  2 Plate Base (black)
 1 0 -100 -16 -100 1 0 0 0 1 0 0 0 1 3680.dat
-0 // Turntable  2 x  2 Plate Base
+0 // Turntable  2 x  2 Plate Base (black)
 1 0 100 -16 -100 1 0 0 0 1 0 0 0 1 3680.dat
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (dark_green)
 1 288 60 -16 100 1 0 0 0 1 0 0 0 1 3068b.dat
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (dark_green)
 1 288 100 -16 60 1 0 0 0 1 0 0 0 1 3068b.dat
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (dark_green)
 1 288 60 -16 60 1 0 0 0 1 0 0 0 1 3068b.dat
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (dark_green)
 1 288 -60 -16 100 1 0 0 0 1 0 0 0 1 3068b.dat
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (dark_green)
 1 288 -60 -16 60 1 0 0 0 1 0 0 0 1 3068b.dat
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (dark_green)
 1 288 -100 -16 60 1 0 0 0 1 0 0 0 1 3068b.dat
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (dark_green)
 1 288 100 -16 -60 1 0 0 0 1 0 0 0 1 3068b.dat
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (dark_green)
 1 288 60 -16 -60 1 0 0 0 1 0 0 0 1 3068b.dat
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (dark_green)
 1 288 60 -16 -100 1 0 0 0 1 0 0 0 1 3068b.dat
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (dark_green)
 1 288 -60 -16 -100 1 0 0 0 1 0 0 0 1 3068b.dat
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (dark_green)
 1 288 -60 -16 -60 1 0 0 0 1 0 0 0 1 3068b.dat
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (dark_green)
 1 288 -100 -16 -60 1 0 0 0 1 0 0 0 1 3068b.dat
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (dark_bluish_grey)
 1 72 20 -16 20 1 0 0 0 1 0 0 0 1 3068b.dat
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (dark_bluish_grey)
 1 72 20 -16 -20 1 0 0 0 1 0 0 0 1 3068b.dat
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (dark_bluish_grey)
 1 72 -20 -16 20 1 0 0 0 1 0 0 0 1 3068b.dat
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (dark_bluish_grey)
 1 72 -20 -16 -20 1 0 0 0 1 0 0 0 1 3068b.dat
-0 // Tile  2 x  4
+0 // Tile  2 x  4 (dark_bluish_grey)
 1 72 0 -16 60 1 0 0 0 1 0 0 0 1 87079.dat
-0 // Tile  2 x  4
+0 // Tile  2 x  4 (dark_bluish_grey)
 1 72 0 -16 100 1 0 0 0 1 0 0 0 1 87079.dat
-0 // Tile  2 x  4
+0 // Tile  2 x  4 (dark_bluish_grey)
 1 72 0 -16 -60 1 0 0 0 1 0 0 0 1 87079.dat
-0 // Tile  2 x  4
+0 // Tile  2 x  4 (dark_bluish_grey)
 1 72 0 -16 -100 1 0 0 0 1 0 0 0 1 87079.dat
-0 // Tile  2 x  4
+0 // Tile  2 x  4 (dark_bluish_grey)
 1 72 -60 -16 0 0 0 -1 0 1 0 1 0 0 87079.dat
-0 // Tile  2 x  4
+0 // Tile  2 x  4 (dark_bluish_grey)
 1 72 -100 -16 0 0 0 -1 0 1 0 1 0 0 87079.dat
-0 // Tile  2 x  4
+0 // Tile  2 x  4 (dark_bluish_grey)
 1 72 60 -16 0 0 0 -1 0 1 0 1 0 0 87079.dat
-0 // Tile  2 x  4
+0 // Tile  2 x  4 (dark_bluish_grey)
 1 72 100 -16 0 0 0 -1 0 1 0 1 0 0 87079.dat
 1 0 -100 -16 100 0.707 0 -0.707 0 1 0 0.707 0 0.707 21019 - 1.ldr
 1 0 100 -16 100 0.707 0 0.707 0 1 0 -0.707 0 0.707 21019 - 1.ldr
@@ -121,13 +121,13 @@
 
 0 !THEME Architecture
 
-0 // Turntable  2 x  2 Plate Top
+0 // Turntable  2 x  2 Plate Top (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 3679.dat
-0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud
+0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud (light_bluish_grey)
 1 71 0 -8 10 1 0 0 0 1 0 0 0 1 15573.dat
-0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud
+0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud (light_bluish_grey)
 1 71 0 -8 -10 1 0 0 0 1 0 0 0 1 15573.dat
-0 // Plate  1 x  2 with Single Clip on Top
+0 // Plate  1 x  2 with Single Clip on Top (light_bluish_grey)
 1 71 0 -16 0 0 0 -1 0 1 0 1 0 0 92280.dat
 1 0 0 -22 10 -1 0 0 0 0.6018 -0.7986 0 -0.7986 -0.6018 21019 - 3.ldr
 
@@ -142,47 +142,47 @@
 
 0 !THEME Architecture
 
-0 // Plate  6 x  6
+0 // Plate  6 x  6 (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 3958.dat
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (light_bluish_grey)
 1 71 0 -8 0 1 0 0 0 1 0 0 0 1 3795.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (dark_bluish_grey)
 1 72 10 -8 30 1 0 0 0 1 0 0 0 1 2420.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (dark_bluish_grey)
 1 72 -10 -8 30 0 0 -1 0 1 0 1 0 0 2420.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (dark_bluish_grey)
 1 72 -10 -8 -30 -1 0 0 0 1 0 0 0 -1 2420.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (dark_bluish_grey)
 1 72 10 -8 -30 0 0 1 0 1 0 -1 0 0 2420.dat
-0 // Plate  2 x  2 Round with Axlehole
+0 // Plate  2 x  2 Round with Axlehole (dark_bluish_grey)
 1 72 0 -16 0 0 0 1 0 1 0 -1 0 0 4032a.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (light_bluish_grey)
 1 71 0 -16 40 0 0 1 0 1 0 -1 0 0 3022.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (light_bluish_grey)
 1 71 0 -16 -40 0 0 1 0 1 0 -1 0 0 3022.dat
 1 0 50 -8 -50 0.7071 0 -0.7071 0 1 0 0.7071 0 0.7071 21019 - 2 - 1.ldr
 1 0 50 -8 50 -0.7071 0 -0.7071 0 1 0 0.7071 0 -0.7071 21019 - 2 - 1.ldr
 1 0 -50 -8 -50 0.7071 0 0.7071 0 1 0 -0.7071 0 0.7071 21019 - 2 - 1.ldr
 1 0 -50 -8 50 -0.7071 0 0.7071 0 1 0 -0.7071 0 -0.7071 21019 - 2 - 1.ldr
-0 // Plate  8 x  8 with Grille and Hole
+0 // Plate  8 x  8 with Grille and Hole (dark_bluish_grey)
 1 72 0 -24 0 1 0 0 0 1 0 0 0 1 4151b.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (dark_bluish_grey)
 1 72 30 -16 10 1 0 0 0 1 0 0 0 1 2420.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (dark_bluish_grey)
 1 72 30 -16 -10 0 0 1 0 1 0 -1 0 0 2420.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (dark_bluish_grey)
 1 72 -30 -16 -10 -1 0 0 0 1 0 0 0 -1 2420.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (dark_bluish_grey)
 1 72 -30 -16 10 0 0 -1 0 1 0 1 0 0 2420.dat
-0 // Plate  2 x  2 Round with Axlehole
+0 // Plate  2 x  2 Round with Axlehole (dark_bluish_grey)
 1 72 0 -32 0 1 0 0 0 1 0 0 0 1 4032a.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (light_bluish_grey)
 1 71 0 -32 -70 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (light_bluish_grey)
 1 71 0 -32 70 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (light_bluish_grey)
 1 71 -70 -32 0 0 0 -1 0 1 0 1 0 0 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (light_bluish_grey)
 1 71 70 -32 0 0 0 -1 0 1 0 1 0 0 3023.dat
 1 0 70 -32 -40 0 0 -1 0 1 0 1 0 0 21019 - 2 - 2.ldr
 1 0 70 -32 40 0 0 -1 0 1 0 1 0 0 21019 - 2 - 2.ldr
@@ -192,21 +192,21 @@
 1 0 40 -32 -70 1 0 0 0 1 0 0 0 1 21019 - 2 - 2.ldr
 1 0 40 -32 70 -1 0 0 0 1 0 0 0 -1 21019 - 2 - 2.ldr
 1 0 -40 -32 70 -1 0 0 0 1 0 0 0 -1 21019 - 2 - 2.ldr
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (light_bluish_grey)
 1 71 70 -32 70 -1 0 0 0 1 0 0 0 -1 3024.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (light_bluish_grey)
 1 71 70 -32 -70 -1 0 0 0 1 0 0 0 -1 3024.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (light_bluish_grey)
 1 71 -70 -32 -70 -1 0 0 0 1 0 0 0 -1 3024.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (light_bluish_grey)
 1 71 -70 -32 70 -1 0 0 0 1 0 0 0 -1 3024.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (light_bluish_grey)
 1 71 0 -40 -70 -1 0 0 0 1 0 0 0 -1 2431.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (light_bluish_grey)
 1 71 0 -40 70 -1 0 0 0 1 0 0 0 -1 2431.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (light_bluish_grey)
 1 71 -70 -40 0 0 0 1 0 1 0 -1 0 0 2431.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (light_bluish_grey)
 1 71 70 -40 0 0 0 1 0 1 0 -1 0 0 2431.dat
 1 0 70 -40 -70 0.7071 0 0.7071 0 1 0 -0.7071 0 0.7071 21019 - 2 - 3.ldr
 1 0 70 -40 70 0.7071 0 -0.7071 0 1 0 0.7071 0 0.7071 21019 - 2 - 3.ldr
@@ -218,15 +218,15 @@
 1 0 30 -120 -30 0.7071 0 -0.7071 0 1 0 0.7071 0 0.7071 21019 - 2 - 1.ldr
 1 0 -30 -120 -30 0.7071 0 0.7071 0 1 0 -0.7071 0 0.7071 21019 - 2 - 1.ldr
 1 0 30 -120 30 -0.7071 0 -0.7071 0 1 0 0.7071 0 -0.7071 21019 - 2 - 1.ldr
-0 // Plate  6 x  6
+0 // Plate  6 x  6 (light_bluish_grey)
 1 71 0 -136 0 1 0 0 0 1 0 0 0 1 3958.dat
-0 // Plate  2 x  2 with Groove with 1 Centre Stud
+0 // Plate  2 x  2 with Groove with 1 Centre Stud (light_bluish_grey)
 1 71 20 -144 -20 1 0 0 0 1 0 0 0 1 87580.dat
-0 // Plate  2 x  2 with Groove with 1 Centre Stud
+0 // Plate  2 x  2 with Groove with 1 Centre Stud (light_bluish_grey)
 1 71 20 -144 20 1 0 0 0 1 0 0 0 1 87580.dat
-0 // Plate  2 x  2 with Groove with 1 Centre Stud
+0 // Plate  2 x  2 with Groove with 1 Centre Stud (light_bluish_grey)
 1 71 -20 -144 -20 1 0 0 0 1 0 0 0 1 87580.dat
-0 // Plate  2 x  2 with Groove with 1 Centre Stud
+0 // Plate  2 x  2 with Groove with 1 Centre Stud (light_bluish_grey)
 1 71 -20 -144 20 1 0 0 0 1 0 0 0 1 87580.dat
 1 0 40 -144 50 0 0 -1 0 1 0 1 0 0 21019 - 2 - 6.ldr
 1 0 -50 -144 40 -1 0 0 0 1 0 0 0 -1 21019 - 2 - 6.ldr
@@ -236,13 +236,13 @@
 1 0 20 -144 -50 1 0 0 0 1 0 0 0 1 21019 - 2 - 2.ldr
 1 0 50 -144 20 0 0 -1 0 1 0 1 0 0 21019 - 2 - 2.ldr
 1 0 -20 -144 50 -1 0 0 0 1 0 0 0 -1 21019 - 2 - 2.ldr
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (light_bluish_grey)
 1 71 0 -152 50 -1 0 0 0 1 0 0 0 -1 2431.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (light_bluish_grey)
 1 71 0 -152 -50 -1 0 0 0 1 0 0 0 -1 2431.dat
-0 // Tile  1 x  6
+0 // Tile  1 x  6 (light_bluish_grey)
 1 71 -50 -152 0 0 0 -1 0 1 0 1 0 0 6636.dat
-0 // Tile  1 x  6
+0 // Tile  1 x  6 (light_bluish_grey)
 1 71 50 -152 0 0 0 -1 0 1 0 1 0 0 6636.dat
 1 0 0 -152 0 -1 0 0 0 1 0 0 0 -1 21019 - 2 - 7.ldr
 
@@ -257,9 +257,9 @@
 
 0 !THEME Architecture
 
-0 // Plate  1 x  1 with Clip Horizontal (Thick C-Clip)
+0 // Plate  1 x  1 with Clip Horizontal (Thick C-Clip) (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 61252.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (light_bluish_grey)
 1 71 0 -8 0 1 0 0 0 1 0 0 0 1 3024.dat
 
 
@@ -274,11 +274,11 @@
 
 0 !THEME Architecture
 
-0 // =Bracket  1 x  2 -  1 x  4 with Rounded Corners
+0 // =Bracket  1 x  2 -  1 x  4 with Rounded Corners (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 10201.dat
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (metallic_dark_grey)
 1 87 -20 10 -22 1 0 0 0 0 -1 0 1 0 2412b.dat
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (metallic_dark_grey)
 1 87 20 10 -22 1 0 0 0 0 -1 0 1 0 2412b.dat
 
 
@@ -293,7 +293,7 @@
 
 0 !THEME Architecture
 
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 2555.dat
 1 0 0 -6 0 0.3665 -0.9304 0 0.9304 0.3665 0 0 0 1 21019 - 2 - 3 - 1.ldr
 
@@ -309,11 +309,11 @@
 
 0 !THEME Architecture
 
-0 // Technic Axle Joiner Inline Smooth
+0 // Technic Axle Joiner Inline Smooth (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 59443.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (red)
 1 4 0 0 -20 0 0 -1 0 1 0 1 0 0 32062.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (red)
 1 4 0 0 20 0 0 -1 0 1 0 1 0 0 32062.dat
 
 
@@ -328,15 +328,15 @@
 
 0 !THEME Architecture
 
-0 // Brick  2 x  2 Round Reinforced
+0 // Brick  2 x  2 Round Reinforced (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 6143.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (light_bluish_grey)
 1 71 0 -8 0 1 0 0 0 1 0 0 0 1 3022.dat
-0 // Plate  4 x  4
+0 // Plate  4 x  4 (light_bluish_grey)
 1 71 0 -16 0 1 0 0 0 1 0 0 0 1 3031.dat
-0 // Plate  2 x  2 Round with Axlehole
+0 // Plate  2 x  2 Round with Axlehole (dark_bluish_grey)
 1 72 0 -24 0 1 0 0 0 1 0 0 0 1 4032a.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (light_bluish_grey)
 1 71 0 -32 0 1 0 0 0 1 0 0 0 1 3022.dat
 
 
@@ -351,17 +351,17 @@
 
 0 !THEME Architecture
 
-0 // Plate  1 x  2 with Handle on End
+0 // Plate  1 x  2 with Handle on End (light_bluish_grey)
 1 71 -30 -2 0 1 0 0 0 1 0 0 0 1 60478.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (light_bluish_grey)
 1 71 -20 6 0 1 0 0 0 1 0 0 0 1 3024.dat
-0 // Plate  1 x  2 with Handle on End
+0 // Plate  1 x  2 with Handle on End (light_bluish_grey)
 1 71 -50 6 0 -1 0 0 0 1 0 0 0 -1 60478.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (light_bluish_grey)
 1 71 -30 14 0 -1 0 0 0 1 0 0 0 -1 3023.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (light_bluish_grey)
 1 71 -60 -2 0 -1 0 0 0 1 0 0 0 -1 3024.dat
-0 // Tile  1 x  3
+0 // Tile  1 x  3 (light_bluish_grey)
 1 71 -40 -10 0 -1 0 0 0 1 0 0 0 -1 63864.dat
 
 
@@ -375,7 +375,7 @@
 
 0 !THEME Architecture
 
-0 // Plate  1 x  1 with Clip Horizontal (Thick C-Clip)
+0 // Plate  1 x  1 with Clip Horizontal (Thick C-Clip) (light_bluish_grey)
 1 71 0 -2 20 1 0 0 0 1 0 0 0 1 61252.dat
 
 
@@ -389,9 +389,9 @@
 
 0 !THEME Architecture
 
-0 // Bracket  1 x  2 -  1 x  2 Down
+0 // Bracket  1 x  2 -  1 x  2 Down (light_bluish_grey)
 1 71 0 0 0 0 0 -1 0 1 0 1 0 0 99781.dat
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (metallic_dark_grey)
 1 87 22 10 0 0 -1 0 0 0 -1 1 0 0 2412b.dat
 
 
@@ -406,29 +406,29 @@
 
 0 !THEME Architecture
 
-0 // Plate  1 x  3
+0 // Plate  1 x  3 (light_bluish_grey)
 1 71 0 14 60 0 0 1 0 1 0 -1 0 0 3623.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (light_bluish_grey)
 1 71 0 6 70 0 0 1 0 1 0 -1 0 0 3023.dat
-0 // Bracket  1 x  2 -  1 x  2 Up
+0 // Bracket  1 x  2 -  1 x  2 Up (light_bluish_grey)
 1 71 0 6 30 0 0 -1 0 1 0 1 0 0 99780.dat
-0 // Plate  1 x  2 with Handle on End
+0 // Plate  1 x  2 with Handle on End (light_bluish_grey)
 1 71 0 -2 70 0 0 -1 0 1 0 1 0 0 60478.dat
-0 // Plate  1 x  2 with Handle on End
+0 // Plate  1 x  2 with Handle on End (light_bluish_grey)
 1 71 0 -2 30 0 0 1 0 1 0 -1 0 0 60478.dat
-0 // Bracket  1 x  2 -  1 x  2 Down
+0 // Bracket  1 x  2 -  1 x  2 Down (light_bluish_grey)
 1 71 0 -10 30 0 0 1 0 1 0 -1 0 0 99781.dat
-0 // Tile  1 x  1 with Groove
+0 // Tile  1 x  1 with Groove (light_bluish_grey)
 1 71 22 4 40 0 -1 0 0 0 1 -1 0 0 3070b.dat
-0 // Tile  1 x  1 with Groove
+0 // Tile  1 x  1 with Groove (light_bluish_grey)
 1 71 -22 0 40 0 1 0 0 0 -1 -1 0 0 3070b.dat
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (light_bluish_grey)
 1 71 -22 0 20 0 1 0 1 0 0 0 0 -1 2555.dat
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (light_bluish_grey)
 1 71 22 4 20 0 -1 0 1 0 0 0 0 1 2555.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (light_bluish_grey)
 1 71 0 -10 70 0 0 -1 0 1 0 1 0 0 3023.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (light_bluish_grey)
 1 71 0 -18 50 0 0 -1 0 1 0 1 0 0 2431.dat
 
 
@@ -442,27 +442,27 @@
 
 0 !THEME Architecture
 
-0 // Plate  4 x  4
+0 // Plate  4 x  4 (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 3031.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (light_bluish_grey)
 1 71 0 -8 0 1 0 0 0 1 0 0 0 1 3022.dat
-0 // Plate  2 x  2 Round with Axlehole
+0 // Plate  2 x  2 Round with Axlehole (dark_bluish_grey)
 1 72 0 -16 0 1 0 0 0 1 0 0 0 1 4032a.dat
 1 0 30 -8 -30 0.7071 0 0.7071 0 1 0 -0.7071 0 0.7071 21019 - 2 - 7 - 1.ldr
 1 0 30 -8 30 0.7071 0 -0.7071 0 1 0 0.7071 0 0.7071 21019 - 2 - 7 - 1.ldr
 1 0 -30 -8 30 -0.7071 0 -0.7071 0 1 0 0.7071 0 -0.7071 21019 - 2 - 7 - 1.ldr
 1 0 -30 -8 -30 -0.7071 0 0.7071 0 1 0 -0.7071 0 -0.7071 21019 - 2 - 7 - 1.ldr
-0 // Plate  4 x  4 Round with  2 x  2 Round Hole
+0 // Plate  4 x  4 Round with  2 x  2 Round Hole (light_bluish_grey)
 1 71 0 -16 0 -1 0 0 0 1 0 0 0 -1 11833.dat
-0 // Technic Plate  2 x  4 with Holes
+0 // Technic Plate  2 x  4 with Holes (light_bluish_grey)
 1 71 0 -24 0 0 0 -1 0 1 0 1 0 0 3709b.dat
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (metallic_dark_grey)
 1 87 30 -24 0 0 0 -1 0 1 0 1 0 0 2412b.dat
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (metallic_dark_grey)
 1 87 -30 -24 0 0 0 -1 0 1 0 1 0 0 2412b.dat
-0 // Technic Axle  7
+0 // Technic Axle  7 (light_bluish_grey)
 1 71 0 -78 0 0 0 -1 -1 0 0 0 1 0 44294.dat
-0 // Cone  1 x  1 with Stop
+0 // Cone  1 x  1 with Stop (light_bluish_grey)
 1 71 0 -156 0 0 0 -1 0 1 0 1 0 0 59900.dat
 1 0 0 -180 0 0.7071 0 -0.7071 0 1 0 0.7071 0 0.7071 21019 - 2 - 7 - 3.ldr
 
@@ -477,7 +477,7 @@
 
 0 !THEME Architecture
 
-0 // Plate  1 x  2 with Single Clip on Top
+0 // Plate  1 x  2 with Single Clip on Top (light_bluish_grey)
 1 71 10 0 0 1 0 0 0 1 0 0 0 1 92280.dat
 1 0 20 -6 0 0 -0.9763 -0.2164 0 0.2164 -0.9763 1 0 0 21019 - 2 - 7 - 2.ldr
 
@@ -492,15 +492,15 @@
 
 0 !THEME Architecture
 
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (light_bluish_grey)
 1 71 0 6 70 0 0 -1 0 1 0 1 0 0 3666.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (light_bluish_grey)
 1 71 0 -2 70 0 0 -1 0 1 0 1 0 0 3023.dat
-0 // Plate  1 x  2 with Handle on End
+0 // Plate  1 x  2 with Handle on End (light_bluish_grey)
 1 71 0 -2 110 0 0 -1 0 1 0 1 0 0 60478.dat
-0 // Plate  1 x  2 with Handle on End
+0 // Plate  1 x  2 with Handle on End (light_bluish_grey)
 1 71 0 -2 30 0 0 1 0 1 0 -1 0 0 60478.dat
-0 // Tile  1 x  6
+0 // Tile  1 x  6 (light_bluish_grey)
 1 71 0 -10 70 0 0 1 0 1 0 -1 0 0 6636.dat
 
 
@@ -514,23 +514,23 @@
 
 0 !THEME Architecture
 
-0 // Brick  1 x  1 with Studs on Four Sides
+0 // Brick  1 x  1 with Studs on Four Sides (dark_bluish_grey)
 1 72 0 0 0 1 0 0 0 1 0 0 0 1 4733.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (light_bluish_grey)
 1 71 18 10 0 0 -1 0 1 0 0 0 0 1 3024.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (light_bluish_grey)
 1 71 -18 10 0 0 1 0 -1 0 0 0 0 1 3024.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (light_bluish_grey)
 1 71 0 10 -18 0 0 1 1 0 0 0 1 0 3024.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (light_bluish_grey)
 1 71 0 10 18 0 0 1 -1 0 0 0 -1 0 3024.dat
-0 // Plate  1 x  1 with Clip Horizontal (Thick C-Clip)
+0 // Plate  1 x  1 with Clip Horizontal (Thick C-Clip) (light_bluish_grey)
 1 71 -34 10 0 0 1 0 0 0 -1 -1 0 0 61252.dat
-0 // Plate  1 x  1 with Clip Horizontal (Thick C-Clip)
+0 // Plate  1 x  1 with Clip Horizontal (Thick C-Clip) (light_bluish_grey)
 1 71 34 10 0 0 -1 0 0 0 -1 1 0 0 61252.dat
-0 // Plate  1 x  1 with Clip Horizontal (Thick C-Clip)
+0 // Plate  1 x  1 with Clip Horizontal (Thick C-Clip) (light_bluish_grey)
 1 71 0 10 34 -1 0 0 0 0 -1 0 -1 0 61252.dat
-0 // Plate  1 x  1 with Clip Horizontal (Thick C-Clip)
+0 // Plate  1 x  1 with Clip Horizontal (Thick C-Clip) (light_bluish_grey)
 1 71 0 10 -34 1 0 0 0 0 -1 0 1 0 61252.dat
 1 0 0 10 -26 -1 0 0 0 0 1 0 1 0 21019 - 2 - 7 - 3 - 1.ldr
 1 0 0 10 26 1 0 0 0 0 1 0 -1 0 21019 - 2 - 7 - 3 - 1.ldr
@@ -549,7 +549,7 @@
 
 0 !THEME Architecture
 
-0 // Plate  1 x  1 with Clip Horizontal (Thick C-Clip)
+0 // Plate  1 x  1 with Clip Horizontal (Thick C-Clip) (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 61252.dat
 1 71 0 2 -20 0 0 1 0.0436 0.999 0 -0.999 0.0436 0 21019 - 2 - 7 - 3 - 2.ldr
 
@@ -565,13 +565,13 @@
 
 0 !THEME Architecture
 
-0 // Plate  1 x  2 with Handle on End
+0 // Plate  1 x  2 with Handle on End (light_bluish_grey)
 1 71 30 -2 0 -1 0 0 0 1 0 0 0 -1 60478.dat
-0 // Tile  1 x  8
+0 // Tile  1 x  8 (light_bluish_grey)
 1 71 90 -10 0 1 0 0 0 1 0 0 0 1 4162.dat
-0 // Plate  1 x  2 with Handle on End
+0 // Plate  1 x  2 with Handle on End (light_bluish_grey)
 1 71 150 -2 0 1 0 0 0 1 0 0 0 1 60478.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (light_bluish_grey)
 1 71 90 -2 0 1 0 0 0 1 0 0 0 1 3710.dat
 
 
@@ -585,23 +585,23 @@
 
 0 !THEME Architecture
 
-0 // Brick  1 x  1 with Studs on Four Sides
+0 // Brick  1 x  1 with Studs on Four Sides (dark_bluish_grey)
 1 72 0 0 0 1 0 0 0 1 0 0 0 1 4733.dat
-0 // Plate  1 x  1 with Clip Horizontal (Thick C-Clip)
+0 // Plate  1 x  1 with Clip Horizontal (Thick C-Clip) (light_bluish_grey)
 1 71 0 10 -18 1 0 0 0 0 -1 0 1 0 61252.dat
-0 // Plate  1 x  1 with Clip Horizontal (Thick C-Clip)
+0 // Plate  1 x  1 with Clip Horizontal (Thick C-Clip) (light_bluish_grey)
 1 71 0 10 18 -1 0 0 0 0 -1 0 -1 0 61252.dat
-0 // Plate  1 x  1 with Clip Horizontal (Thick C-Clip)
+0 // Plate  1 x  1 with Clip Horizontal (Thick C-Clip) (light_bluish_grey)
 1 71 -18 10 0 0 1 0 0 0 -1 -1 0 0 61252.dat
-0 // Plate  1 x  1 with Clip Horizontal (Thick C-Clip)
+0 // Plate  1 x  1 with Clip Horizontal (Thick C-Clip) (light_bluish_grey)
 1 71 18 10 0 0 -1 0 0 0 -1 1 0 0 61252.dat
-0 // =Slope Brick 31  1 x  1 x  0.667
+0 // =Slope Brick 31  1 x  1 x  0.667 (light_bluish_grey)
 1 71 -18 10 0 0 1 0 0 0 -1 -1 0 0 50746.dat
-0 // =Slope Brick 31  1 x  1 x  0.667
+0 // =Slope Brick 31  1 x  1 x  0.667 (light_bluish_grey)
 1 71 18 10 0 0 -1 0 0 0 -1 1 0 0 50746.dat
-0 // =Slope Brick 31  1 x  1 x  0.667
+0 // =Slope Brick 31  1 x  1 x  0.667 (light_bluish_grey)
 1 71 0 10 18 -1 0 0 0 0 -1 0 -1 0 50746.dat
-0 // =Slope Brick 31  1 x  1 x  0.667
+0 // =Slope Brick 31  1 x  1 x  0.667 (light_bluish_grey)
 1 71 0 10 -18 1 0 0 0 0 -1 0 1 0 50746.dat
 
 
@@ -615,11 +615,11 @@
 
 0 !THEME Architecture
 
-0 // Plate  2 x  2 with Rod Frame Octagonal
+0 // Plate  2 x  2 with Rod Frame Octagonal (pearl_silver)
 1 179 0 0 0 1 0 0 0 1 0 0 0 1 30033.dat
-0 // Cylinder  2 x  2 with Dome Top with Axle Hole and Blocked Stud
+0 // Cylinder  2 x  2 with Dome Top with Axle Hole and Blocked Stud (light_bluish_grey)
 1 71 0 -24 0 1 0 0 0 1 0 0 0 1 30367b.dat
-0 // Bar  4L Lightsaber Blade
+0 // Bar  4L Lightsaber Blade (light_bluish_grey)
 1 71 0 -80 0 1 0 0 0 1 0 0 0 1 30374.dat
 
 

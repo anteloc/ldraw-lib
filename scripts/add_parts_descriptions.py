@@ -11,6 +11,7 @@ import sys
 
 
 PARTS_DESCRIPTIONS={}
+COLOURS_DESCRIPTIONS={}
 
 def cache_parts_descriptions_tsv(tsv_file_path):
     global PARTS_DESCRIPTIONS
@@ -21,19 +22,31 @@ def cache_parts_descriptions_tsv(tsv_file_path):
                 part_name, description =  parts[0].lower(), parts[1]
                 PARTS_DESCRIPTIONS[part_name] = description
 
+def cache_colours_descriptions(ldconfig_file_path):
+    global COLOURS_DESCRIPTIONS
+    with open(ldconfig_file_path, 'r') as f:
+        for line in f:
+            if line.startswith('0 !COLOUR'):
+                parts = line.strip().split()
+                if len(parts) >= 3:
+                    colour_name, colour_code = parts[2].lower(), parts[4]
+                    COLOURS_DESCRIPTIONS[colour_code] = colour_name
+
 def desc_line_for(ldraw_file_line):
     global PARTS_DESCRIPTIONS
     line_items = ldraw_file_line.strip().split()
 
-    if len(line_items) < 2:
+    if len(line_items) < 3:
         return None
 
     line_type = line_items[0]
+    colour_code = line_items[1]
     part_name = line_items[-1].lower()
 
     if line_type == '1' and part_name in PARTS_DESCRIPTIONS:
         description = PARTS_DESCRIPTIONS[part_name]
-        return f"0 // {description}\n"
+        colour_description = COLOURS_DESCRIPTIONS.get(colour_code, colour_code)
+        return f"0 // {description} ({colour_description})\n"
     
     return None
 
@@ -63,15 +76,19 @@ def process_ldraw_directory(ldraw_dir_path, output_dir_path):
 
 def main():
     if len(sys.argv) < 3:
-        print("Usage: add_parts_descriptions.py <parts_descriptions_tsv_file> <ldraw_file | ldraw_files_dir> <ldraw_file_with_descriptions | ldraw_files_with_descriptions_dir>")
+        print("Usage: add_parts_descriptions.py <ldraw_file | ldraw_files_dir> <ldraw_file_with_descriptions | ldraw_files_with_descriptions_dir>")
         print("If the input is a directory, all LDraw files in that directory will be processed.")
         print("If the input is a directory, the output must be an existing directory, or one will be created, and the processed files will be saved there with the same names as the input files.")
         print("If the input is a directory and the output is a file, an error will be raised.")
         sys.exit(1)
 
-    tsv_file_path = sys.argv[1]
-    ldraw_src_path = sys.argv[2]
-    output_dest_path = sys.argv[3]
+    ldraw_src_path = sys.argv[1]
+    output_dest_path = sys.argv[2]
+
+    # TSV must reside in the upper directory relative to the script
+    tsv_file_path = os.path.join(os.path.dirname(__file__), "..", "part-descriptions-full.tsv")
+    # LDConfig file must reside in the ldraw/ directory, one level up from the script directory
+    ldconfig_file_path = os.path.join(os.path.dirname(__file__), "..", "ldraw", "LDConfig.ldr")
 
     if not os.path.isfile(tsv_file_path):
         print(f"Error: File '{tsv_file_path}' does not exist.")
@@ -82,8 +99,9 @@ def main():
         sys.exit(1)
 
     # Print status messages to stderr to avoid interfering with the output file
-    print(f"Loading parts descriptions from '{tsv_file_path}'...", file=sys.stderr)
+    print(f"Loading parts descriptions from '{tsv_file_path}' and colours from '{ldconfig_file_path}'...", file=sys.stderr)
     cache_parts_descriptions_tsv(tsv_file_path)
+    cache_colours_descriptions(ldconfig_file_path)
     
     # Determine the output file or directory path
     input_is_directory = os.path.isdir(ldraw_src_path)

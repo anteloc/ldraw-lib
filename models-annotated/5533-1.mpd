@@ -9,360 +9,360 @@
 0 Name: Red Fury.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  4 x 10
+0 // Plate  4 x 10 (light_grey)
 1 7 0 0 0 0 0 -1 0 1 0 1 0 0 3030.dat
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (blue)
 1 1 0 -8 90 1 0 0 0 1 0 0 0 1 28653.dat
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (blue)
 1 1 0 -8 30 1 0 0 0 1 0 0 0 1 28653.dat
 0 STEP
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (black)
 1 0 40 -8 -20 1 0 0 0 1 0 0 0 1 3022.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (black)
 1 0 -40 -8 -20 1 0 0 0 1 0 0 0 1 3022.dat
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (black)
 1 0 30 -8 60 0 0 -1 0 1 0 1 0 0 3666.dat
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (black)
 1 0 -30 -8 60 0 0 -1 0 1 0 1 0 0 3666.dat
 0 STEP
-0 // Plate  1 x 10
+0 // Plate  1 x 10 (light_grey)
 1 7 50 0 -100 0 0 -1 0 1 0 1 0 0 4477.dat
-0 // Plate  1 x 10
+0 // Plate  1 x 10 (light_grey)
 1 7 -50 0 -100 0 0 -1 0 1 0 1 0 0 4477.dat
 0 STEP
-0 // Plate  4 x  8
+0 // Plate  4 x  8 (light_grey)
 1 7 0 0 -180 0 0 -1 0 1 0 1 0 0 3035.dat
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (black)
 1 0 0 -8 -60 1 0 0 0 1 0 0 0 1 3795.dat
 0 STEP
-0 // Plate  2 x 12
+0 // Plate  2 x 12 (light_grey)
 1 7 0 0 -380 0 0 -1 0 1 0 1 0 0 2445.dat
-0 // Plate  2 x  8
+0 // Plate  2 x  8 (black)
 1 0 0 -8 -100 1 0 0 0 1 0 0 0 1 3034.dat
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (red)
 1 4 0 -8 -130 1 0 0 0 1 0 0 0 1 3460.dat
 0 STEP
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (red)
 1 4 0 -8 -240 0 0 -1 0 1 0 1 0 0 3795.dat
-0 // Plate  2 x  8
+0 // Plate  2 x  8 (light_grey)
 1 7 0 0 -580 0 0 -1 0 1 0 1 0 0 3034.dat
-0 // Wing  4 x  8 Right
+0 // Wing  4 x  8 Right (black)
 1 0 -60 -8 -220 1 0 0 0 1 0 0 0 1 3934.dat
-0 // Wing  4 x  8 Left
+0 // Wing  4 x  8 Left (black)
 1 0 60 -8 -220 1 0 0 0 1 0 0 0 1 3933.dat
 0 STEP
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (black)
 1 0 0 -8 -620 1 0 0 0 1 0 0 0 1 3020.dat
-0 // Plate  2 x 10
+0 // Plate  2 x 10 (black)
 1 0 0 -8 -480 0 0 -1 0 1 0 1 0 0 3832.dat
 0 STEP
-0 // Technic Brick  1 x  6 x  1.667 Wing Back
+0 // Technic Brick  1 x  6 x  1.667 Wing Back (red)
 1 4 -10 -32 -640 0 0 1 0 1 0 -1 0 0 2744.dat
-0 // Technic Brick  1 x  6 x  1.667 Wing Back
+0 // Technic Brick  1 x  6 x  1.667 Wing Back (red)
 1 4 10 -32 -640 0 0 1 0 1 0 -1 0 0 2744.dat
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (black)
 1 0 10 -32 -540 0 0 1 0 1 0 -1 0 0 4865a.dat
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (black)
 1 0 10 -32 -480 0 0 1 0 1 0 -1 0 0 4865a.dat
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (black)
 1 0 10 -32 -420 0 0 1 0 1 0 -1 0 0 4865a.dat
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (black)
 1 0 -10 -32 -420 0 0 -1 0 1 0 1 0 0 4865a.dat
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (black)
 1 0 -10 -32 -480 0 0 -1 0 1 0 1 0 0 4865a.dat
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (black)
 1 0 -10 -32 -540 0 0 -1 0 1 0 1 0 0 4865a.dat
 0 STEP
 1 7 0 -32 -640 1 0 0 0 1 0 0 0 1 5533 - Red Fury 01.ldr
-0 // Slope Brick 45  4 x  4 Double Inverted with Open Centre
+0 // Slope Brick 45  4 x  4 Double Inverted with Open Centre (black)
 1 0 0 -24 -340 0 0 1 0 1 0 -1 0 0 4854.dat
 0 STEP
 1 7 0 -32 -50 1 0 0 0 1 0 0 0 1 5533 - Red Fury 03.ldr
 0 STEP
 1 0 -30 -32 -80 1 0 0 0 1 0 0 0 1 5533 - Red Fury 04.ldr
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (black)
 1 0 -30 -32 -340 0 0 -1 0 1 0 1 0 0 28653.dat
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (black)
 1 0 30 -32 -340 0 0 -1 0 1 0 1 0 0 28653.dat
-0 // Plate  1 x  1 with Clip Vertical (Thick U-Clip)
+0 // Plate  1 x  1 with Clip Vertical (Thick U-Clip) (light_grey)
 1 7 30 -32 -310 0 0 -1 0 1 0 1 0 0 4085c.dat
-0 // Plate  1 x  1 with Clip Vertical (Thick U-Clip)
+0 // Plate  1 x  1 with Clip Vertical (Thick U-Clip) (light_grey)
 1 7 -30 -32 -310 0 0 1 0 1 0 -1 0 0 4085c.dat
-0 // Tile  1 x  1 with Groove
+0 // Tile  1 x  1 with Groove (black)
 1 0 -30 -32 -370 0 0 -1 0 1 0 1 0 0 3070b.dat
-0 // Tile  1 x  1 with Groove
+0 // Tile  1 x  1 with Groove (black)
 1 0 30 -32 -370 0 0 -1 0 1 0 1 0 0 3070b.dat
 0 STEP
 1 4 30 -32 -80 1 0 0 0 1 0 0 0 1 5533 - Red Fury 05.ldr
-0 // Wing  3 x  4 with  1 x  2 Cutout without Stud Notches
+0 // Wing  3 x  4 with  1 x  2 Cutout without Stud Notches (white)
 1 15 0 -40 -400 1 0 0 0 1 0 0 0 1 4859.dat
-0 // Wing  3 x  4 with  1 x  2 Cutout without Stud Notches
+0 // Wing  3 x  4 with  1 x  2 Cutout without Stud Notches (white)
 1 15 0 -40 -560 -1 0 0 0 1 0 0 0 -1 4859.dat
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (white)
 1 15 0 -40 -480 0 0 -1 0 1 0 1 0 0 3795.dat
 0 STEP
-0 // Slope Brick 45  2 x  2 Inverted with Flat Bottom Pin with Inner Stopper Ring
+0 // Slope Brick 45  2 x  2 Inverted with Flat Bottom Pin with Inner Stopper Ring (blue)
 1 1 30 -32 100 0 0 -1 0 1 0 1 0 0 3660b.dat
-0 // Slope Brick 45  2 x  2 Inverted with Flat Bottom Pin with Inner Stopper Ring
+0 // Slope Brick 45  2 x  2 Inverted with Flat Bottom Pin with Inner Stopper Ring (blue)
 1 1 -30 -32 100 0 0 1 0 1 0 -1 0 0 3660b.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (blue)
 1 1 50 -32 -130 0 0 -1 0 1 0 1 0 0 3622.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (blue)
 1 1 -50 -32 -130 0 0 -1 0 1 0 1 0 0 3622.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 60 -32 -170 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 -60 -32 -170 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Wedge  3 x  2 Left
+0 // Wedge  3 x  2 Left (black)
 1 0 40 -32 -270 1 0 0 0 1 0 0 0 1 6565.dat
-0 // Wedge  3 x  2 Left
+0 // Wedge  3 x  2 Left (black)
 1 0 60 -32 -210 1 0 0 0 1 0 0 0 1 6565.dat
-0 // Wedge  3 x  2 Right
+0 // Wedge  3 x  2 Right (black)
 1 0 -60 -32 -210 1 0 0 0 1 0 0 0 1 6564.dat
-0 // Wedge  3 x  2 Right
+0 // Wedge  3 x  2 Right (black)
 1 0 -40 -32 -270 1 0 0 0 1 0 0 0 1 6564.dat
 0 STEP
-0 // Plate  2 x  8
+0 // Plate  2 x  8 (light_grey)
 1 7 0 -40 80 0 0 -1 0 1 0 1 0 0 3034.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (white)
 1 15 -30 -40 -300 0 0 -1 0 1 0 1 0 0 3710.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (white)
 1 15 30 -40 -300 0 0 -1 0 1 0 1 0 0 3710.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (white)
 1 15 0 -40 -350 1 0 0 0 1 0 0 0 1 3710.dat
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (light_grey)
 1 7 70 -32 -110 0 0 1 0 1 0 -1 0 0 6541.dat
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (light_grey)
 1 7 70 -32 -150 0 0 1 0 1 0 -1 0 0 6541.dat
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (light_grey)
 1 7 -70 -32 -110 0 0 1 0 1 0 -1 0 0 6541.dat
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (light_grey)
 1 7 -70 -32 -150 0 0 1 0 1 0 -1 0 0 6541.dat
-0 // Wedge  3 x  2 Right
+0 // Wedge  3 x  2 Right (black)
 1 0 60 -32 -70 -1 0 0 0 1 0 0 0 -1 6564.dat
-0 // Wedge  3 x  2 Left
+0 // Wedge  3 x  2 Left (black)
 1 0 -60 -32 -70 -1 0 0 0 1 0 0 0 -1 6565.dat
 0 STEP
-0 // Plate  1 x  3
+0 // Plate  1 x  3 (red)
 1 4 -30 -40 -10 0 0 -1 0 1 0 1 0 0 3623.dat
-0 // Plate  1 x  3
+0 // Plate  1 x  3 (red)
 1 4 30 -40 -10 0 0 -1 0 1 0 1 0 0 3623.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (light_grey)
 1 7 0 -40 -50 1 0 0 0 1 0 0 0 1 3710.dat
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (yellow)
 1 14 0 -40 -100 1 0 0 0 1 0 0 0 1 3020.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (black)
 1 0 0 -48 150 0 0 -1 0 1 0 1 0 0 3021.dat
-0 // Plate  1 x  3
+0 // Plate  1 x  3 (white)
 1 15 80 -22 -130 0 1 0 0 0 1 1 0 0 3623.dat
-0 // Plate  1 x  3
+0 // Plate  1 x  3 (white)
 1 15 -80 -22 -130 0 -1 0 0 0 -1 1 0 0 3623.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (white)
 1 15 -30 -40 -250 1 0 0 0 1 0 0 0 1 2420.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (white)
 1 15 30 -40 -250 0 0 -1 0 1 0 1 0 0 2420.dat
 0 STEP
-0 // Plate  3 x  3 without Corner
+0 // Plate  3 x  3 without Corner (white)
 1 15 50 -40 -190 1 0 0 0 1 0 0 0 1 2450.dat
-0 // Plate  3 x  3 without Corner
+0 // Plate  3 x  3 without Corner (white)
 1 15 -50 -40 -190 0 0 1 0 1 0 -1 0 0 2450.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (white)
 1 15 -50 -40 -110 0 0 -1 0 1 0 1 0 0 2420.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (white)
 1 15 50 -40 -110 1 0 0 0 1 0 0 0 1 2420.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (white)
 1 15 -60 -40 -140 1 0 0 0 1 0 0 0 1 3022.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (white)
 1 15 60 -40 -140 1 0 0 0 1 0 0 0 1 3022.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (white)
 1 15 -50 -40 -70 1 0 0 0 1 0 0 0 1 3024.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (white)
 1 15 50 -40 -70 1 0 0 0 1 0 0 0 1 3024.dat
-0 // Technic Brick  1 x  6 with Holes
+0 // Technic Brick  1 x  6 with Holes (red)
 1 4 -10 -72 180 0 0 1 0 1 0 -1 0 0 3894.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 -30 -62 220 -1 0 0 0 1 0 0 0 -1 6558.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -20 -62 140 -1 0 0 0 1 0 0 0 -1 2780.dat
 0 STEP
 1 0 -30 -42 150 1 0 0 0 0 1 0 -1 0 5533 - Red Fury 06.ldr
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (red)
 1 4 10 -48 10 1 0 0 0 1 0 0 0 1 2420.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (red)
 1 4 -10 -48 10 0 0 -1 0 1 0 1 0 0 2420.dat
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (red)
 1 4 0 -48 -500 0 0 -1 0 1 0 1 0 0 3795.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (red)
 1 4 -10 -48 -600 0 0 -1 0 1 0 1 0 0 2431.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (red)
 1 4 10 -48 -600 0 0 -1 0 1 0 1 0 0 2431.dat
 0 STEP
-0 // Wing  3 x  4 with  1 x  2 Cutout without Stud Notches
+0 // Wing  3 x  4 with  1 x  2 Cutout without Stud Notches (red)
 1 4 0 -48 -420 1 0 0 0 1 0 0 0 1 4859.dat
-0 // Plate  1 x  3
+0 // Plate  1 x  3 (red)
 1 4 -30 -48 -350 0 0 -1 0 1 0 1 0 0 3623.dat
-0 // Plate  1 x  3
+0 // Plate  1 x  3 (red)
 1 4 30 -48 -350 0 0 -1 0 1 0 1 0 0 3623.dat
 1 0 0 -48 -20 1 0 0 0 1 0 0 0 1 5533 - Red Fury 08.ldr
 1 0 10 -72 180 1 0 0 0 1 0 0 0 1 5533 - Red Fury 09.ldr
 0 STEP
 1 0 30 -42 150 1 0 0 0 0 1 0 -1 0 5533 - Red Fury 10.ldr
-0 // Plate  2 x  8
+0 // Plate  2 x  8 (yellow)
 1 14 0 -48 -320 0 0 -1 0 1 0 1 0 0 3034.dat
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (red)
 1 4 0 -48 -220 1 0 0 0 1 0 0 0 1 3020.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (black)
 1 0 0 -48 -190 1 0 0 0 1 0 0 0 1 3710.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (red)
 1 4 30 -72 -10 -1 0 0 0 1 0 0 0 -1 3040b.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (red)
 1 4 -30 -72 -10 -1 0 0 0 1 0 0 0 -1 3040b.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (red)
 1 4 -30 -72 -30 -1 0 0 0 1 0 0 0 -1 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (red)
 1 4 30 -72 -30 -1 0 0 0 1 0 0 0 -1 3005.dat
 0 STEP
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (red)
 1 4 -10 -56 -460 0 0 -1 0 1 0 1 0 0 2431.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (red)
 1 4 10 -56 -460 0 0 -1 0 1 0 1 0 0 2431.dat
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (red)
 1 4 0 -56 -360 0 0 -1 0 1 0 1 0 0 3795.dat
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (red)
 1 4 30 -56 -340 0 0 -1 0 1 0 1 0 0 28653.dat
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (red)
 1 4 -30 -56 -340 0 0 -1 0 1 0 1 0 0 28653.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (blue)
 1 1 0 -56 -230 0 0 -1 0 1 0 1 0 0 3021.dat
-0 // Brick  1 x  6
+0 // Brick  1 x  6 (red)
 1 4 50 -64 -120 0 0 -1 0 1 0 1 0 0 3009.dat
-0 // Brick  1 x  6
+0 // Brick  1 x  6 (red)
 1 4 -50 -64 -120 0 0 -1 0 1 0 1 0 0 3009.dat
-0 // Technic Plate  2 x  4 with Holes
+0 // Technic Plate  2 x  4 with Holes (red)
 1 4 0 -80 -20 1 0 0 0 1 0 0 0 1 3709b.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (light_grey)
 1 7 0 -12 174 1 0 0 0 0 1 0 -1 0 3710.dat
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (light_grey)
 1 7 0 -80 180 0 0 -1 0 1 0 1 0 0 3795.dat
 0 STEP
-0 // Slope Brick 33  3 x  2
+0 // Slope Brick 33  3 x  2 (red)
 1 4 0 -104 170 -1 0 0 0 1 0 0 0 -1 3298.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (red)
 1 4 -10 -104 140 0 0 -1 0 1 0 1 0 0 3700.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (red)
 1 4 10 -104 140 0 0 -1 0 1 0 1 0 0 3700.dat
-0 // Plate  1 x  1 with Clip Vertical (Thick U-Clip)
+0 // Plate  1 x  1 with Clip Vertical (Thick U-Clip) (light_grey)
 1 7 30 -88 -10 0 0 -1 0 1 0 1 0 0 4085c.dat
-0 // Plate  1 x  1 with Clip Vertical (Thick U-Clip)
+0 // Plate  1 x  1 with Clip Vertical (Thick U-Clip) (light_grey)
 1 7 -30 -88 -10 0 0 1 0 1 0 -1 0 0 4085c.dat
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_grey)
 1 7 0 -89 -20 0 -1 0 0 0 1 -1 0 0 32123a.dat
-0 // Technic Wedge Belt Wheel - Not Reinforced
+0 // Technic Wedge Belt Wheel - Not Reinforced (light_grey)
 1 7 -85 -62 180 0 0 -1 0 -1 0 -1 0 0 4185a.dat
-0 // Technic Wedge Belt Wheel - Not Reinforced
+0 // Technic Wedge Belt Wheel - Not Reinforced (light_grey)
 1 7 85 -62 180 0 0 -1 0 -1 0 -1 0 0 4185a.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (red)
 1 4 0 -64 -350 0 0 -1 0 1 0 1 0 0 3021.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (yellow)
 1 14 0 -64 -220 0 0 -1 0 1 0 1 0 0 3022.dat
 1 7 0 -72 -190 1 0 0 0 1 0 0 0 1 5533 - Red Fury 12.ldr
 0 STEP
-0 // Antenna  4H with Rounded Top
+0 // Antenna  4H with Rounded Top (light_grey)
 1 7 50 -16 -10 1 0 0 0 1 0 0 0 1 3957a.dat
-0 // Antenna  4H with Rounded Top
+0 // Antenna  4H with Rounded Top (light_grey)
 1 7 -50 -16 -10 1 0 0 0 1 0 0 0 1 3957a.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 20 -94 140 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -20 -94 140 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Brick  2 x  4 x  1.333 with Curved Top
+0 // Brick  2 x  4 x  1.333 with Curved Top (red)
 1 4 10 -72 -280 0 0 -1 0 1 0 1 0 0 6081.dat
-0 // Brick  2 x  4 x  1.333 with Curved Top
+0 // Brick  2 x  4 x  1.333 with Curved Top (red)
 1 4 -10 -72 -280 0 0 1 0 1 0 -1 0 0 6081.dat
 1 14 0 -48 -100 1 0 0 0 1 0 0 0 1 5533 - Red Fury 13.ldr
 0 STEP
-0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring (black)
 1 0 -30 -104 -30 1 0 0 0 1 0 0 0 1 3665a.dat
-0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring (black)
 1 0 30 -104 -30 1 0 0 0 1 0 0 0 1 3665a.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (red)
 1 4 0 -112 150 0 0 -1 0 1 0 1 0 0 3021.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (red)
 1 4 0 -72 -260 0 0 -1 0 1 0 1 0 0 3022.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (red)
 1 4 -10 -72 -320 0 0 -1 0 1 0 1 0 0 2431.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (red)
 1 4 10 -72 -320 0 0 -1 0 1 0 1 0 0 2431.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (red)
 1 4 50 -88 -70 1 0 0 0 1 0 0 0 1 3040b.dat
-0 // Slope Brick 33  3 x  1
+0 // Slope Brick 33  3 x  1 (red)
 1 4 50 -88 -150 -1 0 0 0 1 0 0 0 -1 4286.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (red)
 1 4 -50 -88 -70 1 0 0 0 1 0 0 0 1 3040b.dat
-0 // Slope Brick 33  3 x  1
+0 // Slope Brick 33  3 x  1 (red)
 1 4 -50 -88 -150 -1 0 0 0 1 0 0 0 -1 4286.dat
 0 STEP
-0 // Minifig Loudhailer
+0 // Minifig Loudhailer (light_grey)
 1 7 50 -40 -310 1 0 0 0 1 0 0 0 1 4349.dat
-0 // Minifig Loudhailer
+0 // Minifig Loudhailer (light_grey)
 1 7 -50 -40 -310 1 0 0 0 1 0 0 0 1 4349.dat
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (red)
 1 4 10 -80 -230 0 0 -1 0 1 0 1 0 0 6091.dat
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (red)
 1 4 10 -80 -210 0 0 -1 0 1 0 1 0 0 6091.dat
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (red)
 1 4 -10 -80 -230 0 0 1 0 1 0 -1 0 0 6091.dat
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (red)
 1 4 -10 -80 -210 0 0 1 0 1 0 -1 0 0 6091.dat
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (red)
 1 4 30 -120 -30 -1 0 0 0 1 0 0 0 -1 6091.dat
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (red)
 1 4 -30 -120 -30 -1 0 0 0 1 0 0 0 -1 6091.dat
 0 STEP
-0 // Arch  1 x  3 x  2 with Curved Top
+0 // Arch  1 x  3 x  2 with Curved Top (red)
 1 4 10 -88 -190 0 0 -1 0 1 0 1 0 0 6005.dat
-0 // Arch  1 x  3 x  2 with Curved Top
+0 // Arch  1 x  3 x  2 with Curved Top (red)
 1 4 -10 -88 -190 0 0 1 0 1 0 -1 0 0 6005.dat
-0 // Slope Brick 75  2 x  1 x  3 Inverted
+0 // Slope Brick 75  2 x  1 x  3 Inverted (white)
 1 15 50 -104 -50 -1 0 0 0 1 0 0 0 -1 2449.dat
-0 // Slope Brick 75  2 x  1 x  3 Inverted
+0 // Slope Brick 75  2 x  1 x  3 Inverted (white)
 1 15 -50 -104 -50 -1 0 0 0 1 0 0 0 -1 2449.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 0 -104 -20 0 -1 0 0 0 1 -1 0 0 3713.dat
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_grey)
 1 7 0 -119 -20 0 -1 0 0 0 1 -1 0 0 32123a.dat
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (black)
 1 0 0 -80 -210 -1 0 0 0 1 0 0 0 -1 28653.dat
 0 STEP
 1 7 0 -40 80 1 0 0 0 1 0 0 0 1 5533 - Red Fury 14.ldr
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (red)
 1 4 0 -80 -240 1 0 0 0 1 0 0 0 1 3068b.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (red)
 1 4 50 -112 -30 1 0 0 0 1 0 0 0 1 6141.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (red)
 1 4 -50 -112 -30 1 0 0 0 1 0 0 0 1 6141.dat
 0 STEP
 1 0 0 -88 -190 1 0 0 0 1 0 0 0 1 5533 - Red Fury 17.ldr
-0 // Slope Brick 75  2 x  2 x  3 with Hollow Studs
+0 // Slope Brick 75  2 x  2 x  3 with Hollow Studs (red)
 1 4 0 -184 130 -1 0 0 0 1 0 0 0 -1 3684a.dat
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (red)
 1 4 -50 -120 -50 1 0 0 0 1 0 0 0 1 6091.dat
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (red)
 1 4 50 -120 -50 1 0 0 0 1 0 0 0 1 6091.dat
 0 STEP
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (red)
 1 4 30 -96 -170 0 0 -1 0 1 0 1 0 0 6091.dat
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (red)
 1 4 -30 -96 -170 0 0 1 0 1 0 -1 0 0 6091.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (red)
 1 4 -50 -120 -30 0 0 1 0 1 0 -1 0 0 2420.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (red)
 1 4 50 -120 -30 -1 0 0 0 1 0 0 0 -1 2420.dat
 1 4 0 -152 110 1 0 0 0 1 0 0 0 1 5533 - Red Fury 18.ldr
 0 STEP
 1 0 0 -136 -50 1 0 0 0 1 0 0 0 1 5533 - Red Fury 20.ldr
 1 0 0 -192 110 1 0 0 0 1 0 0 0 1 5533 - Red Fury 19.ldr
-0 // Windscreen  3 x  4 x  1.333
+0 // Windscreen  3 x  4 x  1.333 (trans_light_blue)
 1 43 0 -120 -170 1 0 0 0 1 0 0 0 1 2437.dat
 0 STEP
 1 15 0 -321.56831 217.85042 1 0 0 0 0.96657 -0.25641 0 0.25641 0.96657 5533 - Red Fury 21.ldr
@@ -375,345 +375,345 @@
 1 256 -126 -62 180 0 0 1 -0.70711 0.70711 0 -0.70711 -0.70711 0 5533 - Red Fury 27.ldr
 1 256 136 -12 -80 0 1 0 -1 0 0 0 0 1 5533 - Red Fury 26L.ldr
 1 256 -136 -12 -80 0 -1 0 1 0 0 0 0 1 5533 - Red Fury 26R.ldr
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 136 -62 180 0 0 -1 0 1 0 1 0 0 3713.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 -136 -62 180 0 0 1 0 1 0 -1 0 0 3713.dat
 0 FILE 5533 - Red Fury 01.ldr
 0 Red Fury 01
 0 Name: Red Fury 01.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Technic Brick  1 x  4 x  1.667 Wing Front
+0 // Technic Brick  1 x  4 x  1.667 Wing Front (white)
 1 15 -30 0 0 0 0 1 0 1 0 -1 0 0 2743.dat
-0 // Technic Brick  1 x  4 x  1.667 Wing Front
+0 // Technic Brick  1 x  4 x  1.667 Wing Front (white)
 1 15 30 0 0 0 0 1 0 1 0 -1 0 0 2743.dat
 0 STEP
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (white)
 1 15 0 -8 20 -1 0 0 0 1 0 0 0 -1 3020.dat
 0 STEP
-0 // Technic Steering Arm with Connectors
+0 // Technic Steering Arm with Connectors (black)
 1 0 40 10 10 0 -1 0 -1 0 0 0 0 -1 32069.dat
-0 // Technic Steering Arm with Connectors
+0 // Technic Steering Arm with Connectors (black)
 1 0 -40 10 10 0 1 0 1 0 0 0 0 -1 32069.dat
 0 STEP
 1 7 70 20 30 1 0 0 0 -1 0 0 0 -1 5533 - Red Fury 02.ldr
 1 7 -70 20 30 1 0 0 0 -1 0 0 0 -1 5533 - Red Fury 02.ldr
 0 STEP
-0 // Technic Gear Rack  1 x  8 with Holes
+0 // Technic Gear Rack  1 x  8 with Holes (light_grey)
 1 7 0 22 50 1 0 0 0 1 0 0 0 1 6630.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 80 10 10 1 0 0 0 -1 0 0 0 -1 3749.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 -80 10 10 -1 0 0 0 -1 0 0 0 1 3749.dat
 0 FILE 5533 - Red Fury 02.ldr
 0 Red Fury 02
 0 Name: Red Fury 02.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Technic Cross Block 1 x 3 (Axle/None/Pin)
+0 // Technic Cross Block 1 x 3 (Axle/None/Pin) (light_grey)
 1 7 0 0 0 1 0 0 0 1 0 0 0 1 32068.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 0 0 -20 0 -1 0 1 0 0 0 0 1 3749.dat
 0 FILE 5533 - Red Fury 03.ldr
 0 Red Fury 03
 0 Name: Red Fury 03.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Technic Axle  6
+0 // Technic Axle  6 (black)
 1 0 0 10 -10 0 0 1 0 1 0 -1 0 0 3706.dat
-0 // Technic Axle Joiner
+0 // Technic Axle Joiner (light_grey)
 1 7 0 10 -70 -1 0 0 0 1 0 0 0 -1 6538a.dat
-0 // Technic Axle 12
+0 // Technic Axle 12 (black)
 1 0 0 10 -190 0 0 -1 0 1 0 1 0 0 3708.dat
 0 STEP
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (yellow)
 1 14 0 0 0 1 0 0 0 1 0 0 0 1 3700.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (yellow)
 1 14 0 0 -200 1 0 0 0 1 0 0 0 1 3700.dat
-0 // Technic Axle Joiner
+0 // Technic Axle Joiner (light_grey)
 1 7 0 10 -310 -1 0 0 0 1 0 0 0 -1 6538a.dat
-0 // Technic Gear 12 Tooth Bevel
+0 // Technic Gear 12 Tooth Bevel (light_grey)
 1 7 0 10 13 1 0 0 0 1 0 0 0 1 6589.dat
 0 STEP
-0 // Technic Axle 12
+0 // Technic Axle 12 (black)
 1 0 0 10 -430 0 0 -1 0 1 0 1 0 0 3708.dat
 0 STEP
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (black)
 1 0 0 0 -340 1 0 0 0 1 0 0 0 1 3700.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (black)
 1 0 0 0 -400 1 0 0 0 1 0 0 0 1 3700.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (black)
 1 0 0 0 -460 1 0 0 0 1 0 0 0 1 3700.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (black)
 1 0 0 0 -520 1 0 0 0 1 0 0 0 1 3700.dat
 0 STEP
-0 // Technic Gear  8 Tooth
+0 // Technic Gear  8 Tooth (light_grey)
 1 7 0 10 -540 1 0 0 0 1 0 0 0 1 3647.dat
 0 FILE 5533 - Red Fury 04.ldr
 0 Red Fury 04
 0 Name: Red Fury 04.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Technic Brick  1 x 16 with Holes
+0 // Technic Brick  1 x 16 with Holes (red)
 1 4 0 0 0 0 0 1 0 1 0 -1 0 0 3703.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 10 140 -1 0 0 0 1 0 0 0 -1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 10 100 -1 0 0 0 1 0 0 0 -1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 10 220 -1 0 0 0 1 0 0 0 -1 2780.dat
-0 // Technic Brick  1 x  8 with Holes
+0 // Technic Brick  1 x  8 with Holes (blue)
 1 1 20 0 160 0 0 1 0 1 0 -1 0 0 3702.dat
 0 FILE 5533 - Red Fury 05.ldr
 0 Red Fury 05
 0 Name: Red Fury 05.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Technic Brick  1 x 16 with Holes
+0 // Technic Brick  1 x 16 with Holes (red)
 1 4 0 0 0 0 0 1 0 1 0 -1 0 0 3703.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 10 140 -1 0 0 0 1 0 0 0 -1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 10 100 -1 0 0 0 1 0 0 0 -1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 10 220 -1 0 0 0 1 0 0 0 -1 2780.dat
-0 // Technic Brick  1 x  8 with Holes
+0 // Technic Brick  1 x  8 with Holes (blue)
 1 1 -20 0 160 0 0 1 0 1 0 -1 0 0 3702.dat
 0 FILE 5533 - Red Fury 06.ldr
 0 Red Fury 06
 0 Name: Red Fury 06.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Technic Brick  1 x  4 with Holes
+0 // Technic Brick  1 x  4 with Holes (blue)
 1 1 0 0 0 0 0 -1 0 1 0 1 0 0 3701.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (light_grey)
 1 7 0 -8 0 0 0 -1 0 1 0 1 0 0 3710.dat
 0 STEP
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (black)
 1 0 -20 -16 -20 1 0 0 0 1 0 0 0 1 3021.dat
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (black)
 1 0 0 -16 20 0 0 1 0 1 0 -1 0 0 28653.dat
 0 STEP
 1 7 -40 -40 -20 1 0 0 0 1 0 0 0 1 5533 - Red Fury 07.ldr
 0 STEP
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (black)
 1 0 -20 -48 -20 1 0 0 0 1 0 0 0 1 3021.dat
 0 STEP
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (red)
 1 4 0 -56 -20 0 0 1 0 1 0 -1 0 0 28653.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (light_grey)
 1 7 0 -80 -20 0 0 1 0 1 0 -1 0 0 3700.dat
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (black)
 1 0 0 -88 -20 0 0 1 0 1 0 -1 0 0 2412b.dat
 0 FILE 5533 - Red Fury 07.ldr
 0 Red Fury 07
 0 Name: Red Fury 07.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Technic Axle  8
+0 // Technic Axle  8 (black)
 1 0 -10 10 0 -1 0 0 0 1 0 0 0 -1 3707.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 20 10 0 0 0 1 0 1 0 -1 0 0 3713.dat
 0 STEP
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (black)
 1 0 0 0 0 0 0 1 0 1 0 -1 0 0 3700.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (red)
 1 4 40 0 0 0 0 1 0 1 0 -1 0 0 3700.dat
 0 FILE 5533 - Red Fury 08.ldr
 0 Red Fury 08
 0 Name: Red Fury 08.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Technic Axle  6
+0 // Technic Axle  6 (black)
 1 0 0 -40 0 0 -1 0 1 0 0 0 0 1 3706.dat
-0 // Technic Gear 12 Tooth Bevel
+0 // Technic Gear 12 Tooth Bevel (light_grey)
 1 7 0 11 0 1 0 0 0 0 1 0 -1 0 6589.dat
 0 STEP
-0 // Technic Plate  2 x  4 with Holes
+0 // Technic Plate  2 x  4 with Holes (red)
 1 4 0 0 0 1 0 0 0 1 0 0 0 1 3709b.dat
 0 FILE 5533 - Red Fury 09.ldr
 0 Red Fury 09
 0 Name: Red Fury 09.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Technic Brick  1 x  6 with Holes
+0 // Technic Brick  1 x  6 with Holes (red)
 1 4 0 0 0 0 0 1 0 1 0 -1 0 0 3894.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 10 -40 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 20 10 40 1 0 0 0 1 0 0 0 1 6558.dat
 0 FILE 5533 - Red Fury 10.ldr
 0 Red Fury 10
 0 Name: Red Fury 10.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Technic Brick  1 x  4 with Holes
+0 // Technic Brick  1 x  4 with Holes (blue)
 1 1 0 0 0 0 0 -1 0 1 0 1 0 0 3701.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (light_grey)
 1 7 0 -8 0 0 0 -1 0 1 0 1 0 0 3710.dat
 0 STEP
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (black)
 1 0 20 -16 -20 1 0 0 0 1 0 0 0 1 3021.dat
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (black)
 1 0 0 -16 20 0 0 1 0 1 0 -1 0 0 28653.dat
 0 STEP
 1 7 40 -40 -20 1 0 0 0 1 0 0 0 1 5533 - Red Fury 11.ldr
 0 STEP
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (black)
 1 0 20 -48 -20 1 0 0 0 1 0 0 0 1 3021.dat
 0 STEP
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (red)
 1 4 0 -56 -20 0 0 1 0 1 0 -1 0 0 28653.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (light_grey)
 1 7 0 -80 -20 0 0 1 0 1 0 -1 0 0 3700.dat
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (black)
 1 0 0 -88 -20 0 0 1 0 1 0 -1 0 0 2412b.dat
 0 FILE 5533 - Red Fury 11.ldr
 0 Red Fury 11
 0 Name: Red Fury 11.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Technic Axle  8
+0 // Technic Axle  8 (black)
 1 0 10 10 0 1 0 0 0 1 0 0 0 1 3707.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 -20 10 0 0 0 -1 0 1 0 1 0 0 3713.dat
 0 STEP
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (black)
 1 0 0 0 0 0 0 -1 0 1 0 1 0 0 3700.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (red)
 1 4 -40 0 0 0 0 -1 0 1 0 1 0 0 3700.dat
 0 FILE 5533 - Red Fury 12.ldr
 0 Red Fury 12
 0 Name: Red Fury 12.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3700.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 0 10 10 0 0 -1 0 1 0 1 0 0 3749.dat
 0 STEP
-0 // Technic Steering Wheel Small
+0 // Technic Steering Wheel Small (light_grey)
 1 7 0 10 34 1 0 0 0 0 1 0 -1 0 2819.dat
 0 FILE 5533 - Red Fury 13.ldr
 0 Red Fury 13
 0 Name: Red Fury 13.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (yellow)
 1 14 0 -55.12719 40.95332 -1 0 0 0 0.11634 0.99321 0 0.99321 -0.11634 28653.dat
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (yellow)
 1 14 0 -25.33091 37.46308 -1 0 0 0 0.11634 0.99321 0 0.99321 -0.11634 3020.dat
 0 STEP
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (yellow)
 1 14 -10 -26.26164 29.5174 0 0 1 0.99321 0.11634 0 -0.11634 0.99321 0 2431.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (yellow)
 1 14 10 -26.26164 29.5174 0 0 1 0.99321 0.11634 0 -0.11634 0.99321 0 2431.dat
 0 STEP
-0 // Hinge Plate  1 x  2 with 2 Fingers and Hollow Studs
+0 // Hinge Plate  1 x  2 with 2 Fingers and Hollow Studs (yellow)
 1 14 -30 0 0 0 0 -1 0 1 0 1 0 0 4276b.dat
-0 // Hinge Plate  1 x  2 with 2 Fingers and Hollow Studs
+0 // Hinge Plate  1 x  2 with 2 Fingers and Hollow Studs (yellow)
 1 14 30 0 0 0 0 -1 0 1 0 1 0 0 4276b.dat
-0 // Hinge Plate  1 x  2 with 3 Fingers and Hollow Studs
+0 // Hinge Plate  1 x  2 with 3 Fingers and Hollow Studs (yellow)
 1 14 -30 -26.26164 29.5174 0 0 1 0.99321 0.11634 0 -0.11634 0.99321 0 4275b.dat
-0 // Hinge Plate  1 x  2 with 3 Fingers and Hollow Studs
+0 // Hinge Plate  1 x  2 with 3 Fingers and Hollow Studs (yellow)
 1 14 30 -26.26164 29.5174 0 0 1 0.99321 0.11634 0 -0.11634 0.99321 0 4275b.dat
 0 FILE 5533 - Red Fury 14.ldr
 0 Red Fury 14
 0 Name: Red Fury 14.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (blue)
 1 1 -40 0 0 0 0 1 0 1 0 -1 0 0 3020.dat
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (blue)
 1 1 40 0 0 0 0 1 0 1 0 -1 0 0 3020.dat
 0 STEP
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (blue)
 1 1 0 -8 30 -1 0 0 0 1 0 0 0 -1 3666.dat
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (blue)
 1 1 0 -8 -30 -1 0 0 0 1 0 0 0 -1 3666.dat
 0 STEP
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (black)
 1 0 0 -16 30 -1 0 0 0 1 0 0 0 -1 3710.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (light_grey)
 1 7 -40 -8 0 -1 0 0 0 1 0 0 0 -1 3022.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (light_grey)
 1 7 40 -8 0 -1 0 0 0 1 0 0 0 -1 3022.dat
 0 STEP
-0 // Hinge  1 x  2 Base
+0 // Hinge  1 x  2 Base (blue)
 1 1 30 -32 0 0 0 -1 0 1 0 1 0 0 3937.dat
-0 // Hinge  1 x  2 Base
+0 // Hinge  1 x  2 Base (blue)
 1 1 -30 -32 0 0 0 1 0 1 0 -1 0 0 3937.dat
-0 // Hinge  2 x  2 Top
+0 // Hinge  2 x  2 Top (red)
 1 4 36.119 -29.90935 0 0 -0.6119 0.79094 0 0.79094 0.6119 -1 0 0 6134.dat
-0 // Hinge  2 x  2 Top
+0 // Hinge  2 x  2 Top (red)
 1 4 -36.119 -29.90935 0 0 0.6119 -0.79094 0 0.79094 0.6119 1 0 0 6134.dat
 0 STEP
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (black)
 1 0 10 -40 30 0 0 -1 0 1 0 1 0 0 3040b.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (black)
 1 0 -10 -40 30 0 0 1 0 1 0 -1 0 0 3040b.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (black)
 1 0 0 -32 -30 -1 0 0 0 1 0 0 0 -1 3700.dat
 0 STEP
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (light_grey)
 1 7 56.8329 -23.99884 10 -0.79094 -0.6119 0 -0.6119 0.79094 0 0 0 -1 2555.dat
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (light_grey)
 1 7 56.8329 -23.99884 -10 -0.79094 -0.6119 0 -0.6119 0.79094 0 0 0 -1 2555.dat
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (light_grey)
 1 7 -56.8329 -23.99884 10 -0.79094 0.6119 0 0.6119 0.79094 0 0 0 -1 2555.dat
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (light_grey)
 1 7 -56.8329 -23.99884 -10 -0.79094 0.6119 0 0.6119 0.79094 0 0 0 -1 2555.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 0 -22 -40 0 0 1 0 1 0 -1 0 0 3749.dat
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (light_grey)
 1 7 0 -40 -30 -1 0 0 0 1 0 0 0 -1 28653.dat
 0 STEP
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (blue)
 1 1 0 -48 0 0 0 1 0 1 0 -1 0 0 3020.dat
-0 // Antenna  4H with Rounded Top
+0 // Antenna  4H with Rounded Top (blue)
 1 1 60.5043 -28.74445 -32 0.6119 0 0.79094 -0.79094 0 0.6119 0 -1 0 3957a.dat
-0 // Antenna  4H with Rounded Top
+0 // Antenna  4H with Rounded Top (blue)
 1 1 -60.5043 -28.74445 -32 -0.6119 0 0.79094 -0.79094 0 -0.6119 0 -1 0 3957a.dat
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_grey)
 1 7 0 -22 -45 0 -1 0 -1 0 0 0 0 -1 32123a.dat
 0 STEP
-0 // Plate  1 x  2 without Groove with 1 Centre Stud
+0 // Plate  1 x  2 without Groove with 1 Centre Stud (blue)
 1 1 0 -56 30 -1 0 0 0 1 0 0 0 -1 3794a.dat
-0 // Plate  1 x  2 without Groove with 1 Centre Stud
+0 // Plate  1 x  2 without Groove with 1 Centre Stud (blue)
 1 1 0 -56 -30 -1 0 0 0 1 0 0 0 -1 3794a.dat
 1 7 41.0142 -36.23683 0 -0.79094 -0.6119 0 -0.6119 0.79094 0 0 0 -1 5533 - Red Fury 15.ldr
 1 7 -41.0142 -36.23683 0 -0.79094 0.6119 0 0.6119 0.79094 0 0 0 -1 5533 - Red Fury 15.ldr
 0 STEP
-0 // Hinge  1 x  2 Base
+0 // Hinge  1 x  2 Base (blue)
 1 1 10 -72 0 0 0 -1 0 1 0 1 0 0 3937.dat
-0 // Hinge  1 x  2 Base
+0 // Hinge  1 x  2 Base (blue)
 1 1 -10 -72 0 0 0 1 0 1 0 -1 0 0 3937.dat
-0 // Hinge  2 x  2 Top
+0 // Hinge  2 x  2 Top (red)
 1 4 17.07107 -69.07107 0 0 -0.70711 0.70711 0 0.70711 0.70711 -1 0 0 6134.dat
-0 // Hinge  2 x  2 Top
+0 // Hinge  2 x  2 Top (red)
 1 4 -17.07107 -69.07107 0 0 0.70711 -0.70711 0 0.70711 0.70711 1 0 0 6134.dat
 0 STEP
-0 // =Brick  1 x  1 Round with Hollow Stud
+0 // =Brick  1 x  1 Round with Hollow Stud (blue)
 1 1 0 -80 30 0 0 -1 0 1 0 1 0 0 30068.dat
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (black)
 1 0 0 -80 -30 1 0 0 0 1 0 0 0 1 6541.dat
 0 STEP
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (blue)
 1 1 29.79899 -67.65685 0 0 -0.70711 0.70711 0 0.70711 0.70711 -1 0 0 3020.dat
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (blue)
 1 1 -29.79899 -67.65685 0 0 0.70711 0.70711 0 0.70711 -0.70711 -1 0 0 3020.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (light_grey)
 1 7 0 -88 0 0 0 1 0 1 0 -1 0 0 3710.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 0 -70 -40 0 0 1 0 1 0 -1 0 0 3749.dat
 0 STEP
 1 7 28.38478 -80.38478 0 -0.70711 -0.70711 0 -0.70711 0.70711 0 0 0 -1 5533 - Red Fury 16.ldr
 1 7 -28.38478 -80.38478 0 -0.70711 0.70711 0 0.70711 0.70711 0 0 0 -1 5533 - Red Fury 16.ldr
-0 // Technic Wedge Belt Wheel - Not Reinforced
+0 // Technic Wedge Belt Wheel - Not Reinforced (light_grey)
 1 7 0 -70 -45 -1 0 0 0 1 0 0 0 -1 4185a.dat
 0 STEP
-0 // Technic Gear 12 Tooth Bevel
+0 // Technic Gear 12 Tooth Bevel (light_grey)
 1 7 0 -70 -53 -1 0 0 0 1 0 0 0 -1 6589.dat
 1 256 0 -70 -45 1 0 0 0 1 0 0 0 1 5533 - RubberBandSquare.ldr
 0 FILE 5533 - Red Fury 15.ldr
@@ -721,92 +721,92 @@
 0 Name: Red Fury 15.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (light_grey)
 1 7 0 0 0 0 0 1 0 1 0 -1 0 0 3710.dat
 0 STEP
-0 // Minifig Goblet
+0 // Minifig Goblet (light_grey)
 1 7 0 -40 30 0 0 1 0 1 0 -1 0 0 2343.dat
-0 // Minifig Goblet
+0 // Minifig Goblet (light_grey)
 1 7 0 -40 10 0 0 1 0 1 0 -1 0 0 2343.dat
-0 // Minifig Goblet
+0 // Minifig Goblet (light_grey)
 1 7 0 -40 -10 0 0 1 0 1 0 -1 0 0 2343.dat
-0 // Minifig Goblet
+0 // Minifig Goblet (light_grey)
 1 7 0 -40 -30 0 0 1 0 1 0 -1 0 0 2343.dat
 0 FILE 5533 - Red Fury 16.ldr
 0 Red Fury 16
 0 Name: Red Fury 16.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (light_grey)
 1 7 0 0 0 0 0 1 0 1 0 -1 0 0 3710.dat
 0 STEP
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (black)
 1 0 0 -8 30 0 0 1 0 1 0 -1 0 0 6141.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (black)
 1 0 0 -8 10 0 0 1 0 1 0 -1 0 0 6141.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (black)
 1 0 0 -8 -10 0 0 1 0 1 0 -1 0 0 6141.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (black)
 1 0 0 -8 -30 0 0 1 0 1 0 -1 0 0 6141.dat
 0 STEP
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (light_grey)
 1 7 0 -16 20 0 0 1 0 1 0 -1 0 0 2412b.dat
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (light_grey)
 1 7 0 -16 -20 0 0 1 0 1 0 -1 0 0 2412b.dat
 0 FILE 5533 - Red Fury 17.ldr
 0 Red Fury 17
 0 Name: Red Fury 17.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (red)
 1 4 0 0 0 0 0 1 0 1 0 -1 0 0 3021.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (black)
 1 0 0 -8 20 -1 0 0 0 1 0 0 0 -1 3069b.dat
 0 FILE 5533 - Red Fury 18.ldr
 0 Red Fury 18
 0 Name: Red Fury 18.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // =Brick  1 x  1 Round with Hollow Stud
+0 // =Brick  1 x  1 Round with Hollow Stud (red)
 1 4 0 0 0 1 0 0 0 1 0 0 0 1 30068.dat
-0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring (red)
 1 4 0 -24 0 1 0 0 0 1 0 0 0 1 3665a.dat
-0 // Plate  1 x  2 without Groove with 1 Centre Stud
+0 // Plate  1 x  2 without Groove with 1 Centre Stud (red)
 1 4 0 -32 -10 0 0 1 0 1 0 -1 0 0 3794a.dat
 0 FILE 5533 - Red Fury 19.ldr
 0 Red Fury 19
 0 Name: Red Fury 19.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (red)
 1 4 0 0 0 0 0 1 0 1 0 -1 0 0 3021.dat
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (red)
 1 4 0 -8 0 -1 0 0 0 1 0 0 0 -1 28653.dat
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (red)
 1 4 0 -16 0 -1 0 0 0 1 0 0 0 -1 28653.dat
 0 STEP
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (red)
 1 4 10 -32 0 -1 0 0 0 1 0 0 0 -1 6091.dat
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (red)
 1 4 -10 -32 0 -1 0 0 0 1 0 0 0 -1 6091.dat
 0 STEP
-0 // Panel  1 x  1 x  1 Corner with Rounded Corners
+0 // Panel  1 x  1 x  1 Corner with Rounded Corners (red)
 1 4 10 -24 -20 0 0 1 0 1 0 -1 0 0 6231.dat
-0 // Panel  1 x  1 x  1 Corner with Rounded Corners
+0 // Panel  1 x  1 x  1 Corner with Rounded Corners (red)
 1 4 -10 -24 -20 1 0 0 0 1 0 0 0 1 6231.dat
 0 STEP
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (red)
 1 4 0 -32 -10 1 0 0 0 1 0 0 0 1 3068b.dat
 0 FILE 5533 - Red Fury 20.ldr
 0 Red Fury 20
 0 Name: Red Fury 20.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (black)
 1 0 -10 0 0 0 0 1 0 1 0 -1 0 0 6091.dat
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (black)
 1 0 10 0 0 0 0 -1 0 1 0 1 0 0 6091.dat
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 2412b.dat
 0 FILE 5533 - RubberBandSquare.ldr
 0 RubberBandSquare
@@ -1400,49 +1400,49 @@
 0 Name: Red Fury 21.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  6 x 12 with 22 Studs on Three Edges
+0 // Plate  6 x 12 with 22 Studs on Three Edges (red)
 1 4 0 0 0 1 0 0 0 1 0 0 0 1 6178.dat
 0 STEP
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (red)
 1 4 0 -8 60 1 0 0 0 1 0 0 0 1 3795.dat
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (red)
 1 4 80 -8 50 1 0 0 0 1 0 0 0 1 28653.dat
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (red)
 1 4 -80 -8 50 1 0 0 0 1 0 0 0 1 28653.dat
 0 STEP
-0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring (white)
 1 15 -110 -24 50 -1 0 0 0 1 0 0 0 -1 3665a.dat
-0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring (white)
 1 15 110 -24 50 -1 0 0 0 1 0 0 0 -1 3665a.dat
-0 // Plate  2 x 10
+0 // Plate  2 x 10 (white)
 1 15 0 -16 60 1 0 0 0 1 0 0 0 1 3832.dat
 0 STEP
-0 // Slope Brick 33  3 x  1
+0 // Slope Brick 33  3 x  1 (white)
 1 15 -110 -24 -10 1 0 0 0 1 0 0 0 1 4286.dat
-0 // Slope Brick 33  3 x  1
+0 // Slope Brick 33  3 x  1 (white)
 1 15 110 -24 -10 1 0 0 0 1 0 0 0 1 4286.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (white)
 1 15 -110 -24 20 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (white)
 1 15 110 -24 20 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Plate  1 x 10
+0 // Plate  1 x 10 (white)
 1 15 0 -24 70 1 0 0 0 1 0 0 0 1 4477.dat
 0 STEP
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (white)
 1 15 -80 -32 70 1 0 0 0 1 0 0 0 1 2431.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (white)
 1 15 80 -32 70 1 0 0 0 1 0 0 0 1 2431.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (white)
 1 15 -110 -32 20 0 0 1 0 1 0 -1 0 0 2431.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (white)
 1 15 110 -32 20 0 0 1 0 1 0 -1 0 0 2431.dat
 0 STEP
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (red)
 1 4 0 0 70 1 0 0 0 1 0 0 0 1 28653.dat
 0 STEP
-0 // Slope Brick 45  2 x  2 Inverted with Flat Bottom Pin with Inner Stopper Ring
+0 // Slope Brick 45  2 x  2 Inverted with Flat Bottom Pin with Inner Stopper Ring (red)
 1 4 0 8 50 -1 0 0 0 1 0 0 0 -1 3660b.dat
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (red)
 1 4 0 8 20 -1 0 0 0 1 0 0 0 -1 3003.dat
 0 STEP
 1 0 10 8 -10 0 0 -1 0 1 0 1 0 0 5533 - Red Fury 22.ldr
@@ -1450,11 +1450,11 @@
 1 0 -30 8 50 0 0 1 0 1 0 -1 0 0 5533 - Red Fury 22.ldr
 1 0 -10 8 -10 0 0 1 0 1 0 -1 0 0 5533 - Red Fury 22.ldr
 0 STEP
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (black)
 1 0 0 32 0 0 0 -1 0 1 0 1 0 0 3022.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (black)
 1 0 -10 32 50 -1 0 0 0 1 0 0 0 -1 2420.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (black)
 1 0 10 32 50 0 0 1 0 1 0 -1 0 0 2420.dat
 0 STEP
 1 0 -50 251.44123 -64.4779 1 0 0 0 0.4403 -0.89785 0 0.89785 0.4403 5533 - Red Fury 23.ldr
@@ -1463,119 +1463,119 @@
 1 0 30 18 -10 1 0 0 0 -0.56181 0.82727 0 -0.82727 -0.56181 5533 - Red Fury 24.ldr
 1 0 -30 18 -10 1 0 0 0 -0.56181 0.82727 0 -0.82727 -0.56181 5533 - Red Fury 24.ldr
 0 STEP
-0 // Plate  1 x  2 with Handle
+0 // Plate  1 x  2 with Handle (white)
 1 15 -20 -32 70 -1 0 0 0 1 0 0 0 -1 2540.dat
-0 // Plate  1 x  2 with Handle
+0 // Plate  1 x  2 with Handle (white)
 1 15 20 -32 70 -1 0 0 0 1 0 0 0 -1 2540.dat
 0 FILE 5533 - Red Fury 22.ldr
 0 Red Fury 22
 0 Name: Red Fury 22.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (red)
 1 4 0 0 0 1 0 0 0 1 0 0 0 1 6541.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 0 10 -10 0 0 1 0 1 0 -1 0 0 2780.dat
 0 FILE 5533 - Red Fury 23.ldr
 0 Red Fury 23
 0 Name: Red Fury 23.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Technic Angle Connector #1
+0 // Technic Angle Connector #1 (light_grey)
 1 7 0 0 0 -1 0 0 0 1 0 0 0 -1 32013.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 0 0 50 0 0 -1 0 1 0 1 0 0 3705.dat
-0 // Technic Axle Joiner
+0 // Technic Axle Joiner (light_grey)
 1 7 0 0 90 1 0 0 0 1 0 0 0 1 6538a.dat
 0 STEP
-0 // Technic Axle  8
+0 // Technic Axle  8 (black)
 1 0 0 0 170 0 0 -1 0 1 0 1 0 0 3707.dat
 0 STEP
-0 // Technic Rotor  2 Blade with 4 Studs
+0 // Technic Rotor  2 Blade with 4 Studs (black)
 1 0 0 0 118 1 0 0 0 0 1 0 -1 0 32124.dat
 0 STEP
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 0 0 130.5 1 0 0 0 1 0 0 0 1 3713.dat
 0 STEP
-0 // Technic Angle Connector #1
+0 // Technic Angle Connector #1 (light_grey)
 1 7 0 0 260 1 0 0 0 1 0 0 0 1 32013.dat
-0 // Minifig Backpack Openable Closed
+0 // Minifig Backpack Openable Closed (brown)
 1 6 0 0 118 1 0 0 0 0 1 0 -1 0 30158c01.dat
 0 FILE 5533 - Red Fury 24.ldr
 0 Red Fury 24
 0 Name: Red Fury 24.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Technic Angle Connector #1
+0 // Technic Angle Connector #1 (light_grey)
 1 7 0 0 0 1 0 0 0 -1 0 0 0 -1 32013.dat
-0 // Technic Axle 10
+0 // Technic Axle 10 (black)
 1 0 0 0 110 0 0 -1 0 -1 0 -1 0 0 3737.dat
-0 // Technic Angle Connector #1
+0 // Technic Angle Connector #1 (light_grey)
 1 7 0 0 220 -1 0 0 0 -1 0 0 0 1 32013.dat
 0 FILE 5533 - Red Fury 25.ldr
 0 Red Fury 25
 0 Name: Red Fury 25.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Brick  2 x  2 Round without Reinforcement
+0 // Brick  2 x  2 Round without Reinforcement (light_grey)
 1 7 0 0 0 1 0 0 0 1 0 0 0 1 3941.dat
-0 // Tile  2 x  2 Round with Cross Underside Stud
+0 // Tile  2 x  2 Round with Cross Underside Stud (black)
 1 0 0 -8 0 1 0 0 0 1 0 0 0 1 4150.dat
 0 FILE 5533 - Red Fury 26R.ldr
 0 Red Fury 26R
 0 Name: Red Fury 26R.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3022.dat
 0 STEP
-0 // Arch  1 x  3 x  2 with Curved Top
+0 // Arch  1 x  3 x  2 with Curved Top (black)
 1 0 -10 -48 -50 -1 0 0 0 1 0 0 0 -1 6005.dat
-0 // Arch  1 x  3 x  2 with Curved Top
+0 // Arch  1 x  3 x  2 with Curved Top (black)
 1 0 10 -48 -50 -1 0 0 0 1 0 0 0 -1 6005.dat
 0 STEP
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (black)
 1 0 0 -48 -60 -1 0 0 0 1 0 0 0 -1 3022.dat
 0 STEP
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (black)
 1 0 0 -40 -70 -1 0 0 0 1 0 0 0 -1 28653.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (red)
 1 4 10 -56 -60 0 0 -1 0 1 0 1 0 0 3069b.dat
 0 FILE 5533 - Red Fury 26L.ldr
 0 Red Fury 26L
 0 Name: Red Fury 26L.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3022.dat
 0 STEP
-0 // Arch  1 x  3 x  2 with Curved Top
+0 // Arch  1 x  3 x  2 with Curved Top (black)
 1 0 -10 -48 -50 -1 0 0 0 1 0 0 0 -1 6005.dat
-0 // Arch  1 x  3 x  2 with Curved Top
+0 // Arch  1 x  3 x  2 with Curved Top (black)
 1 0 10 -48 -50 -1 0 0 0 1 0 0 0 -1 6005.dat
 0 STEP
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (black)
 1 0 0 -48 -60 -1 0 0 0 1 0 0 0 -1 3022.dat
 0 STEP
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (black)
 1 0 0 -40 -70 -1 0 0 0 1 0 0 0 -1 28653.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (red)
 1 4 -10 -56 -60 0 0 -1 0 1 0 1 0 0 3069b.dat
 0 FILE 5533 - Red Fury 27.ldr
 0 Red Fury 27
 0 Name: Red Fury 27.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Wheel Rim 32 x 56 with Peghole and 6 Spokes with Pegholes
+0 // Wheel Rim 32 x 56 with Peghole and 6 Spokes with Pegholes (white)
 1 15 0 0 0 1 0 0 0 1 0 0 0 1 2998.dat
-0 // Tyre 34/ 38 x 56 ZR
+0 // Tyre 34/ 38 x 56 ZR (rubber_black)
 1 256 0 0 0 1 0 0 0 1 0 0 0 1 2997.dat
 0 FILE 5533 - Red Fury 28.ldr
 0 Red Fury 28
 0 Name: Red Fury 28.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Wheel 12 x 20 with Technic Axle Hole and 6 Pegholes
+0 // Wheel 12 x 20 with Technic Axle Hole and 6 Pegholes (white)
 1 15 0 0 0 1 0 0 0 1 0 0 0 1 2994.dat
-0 // Tyre 14/ 36 x 20 VR
+0 // Tyre 14/ 36 x 20 VR (rubber_black)
 1 256 0 0 0 1 0 0 0 1 0 0 0 1 6578.dat

@@ -18,37 +18,37 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Brick  2 x  2 Round without Reinforcement
+0 // Brick  2 x  2 Round without Reinforcement (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 3941.dat
 0 STEP
-0 // Plate  3 x  3
+0 // Plate  3 x  3 (light_bluish_grey)
 1 71 0 -8 0 1 0 0 0 1 0 0 0 1 11212.dat
 0 STEP
-0 // Plate  1 x  1 with Tooth Perpendicular
+0 // Plate  1 x  1 with Tooth Perpendicular (white)
 1 15 -20 -16 -20 1 0 0 0 1 0 0 0 1 15070.dat
-0 // Plate  1 x  1 with Tooth Perpendicular
+0 // Plate  1 x  1 with Tooth Perpendicular (white)
 1 15 20 -16 -20 0 0 -1 0 1 0 1 0 0 15070.dat
-0 // Plate  1 x  1 with Tooth Perpendicular
+0 // Plate  1 x  1 with Tooth Perpendicular (white)
 1 15 20 -16 20 -1 0 0 0 1 0 0 0 -1 15070.dat
-0 // Plate  1 x  1 with Tooth Perpendicular
+0 // Plate  1 x  1 with Tooth Perpendicular (white)
 1 15 -20 -16 20 0 0 1 0 1 0 -1 0 0 15070.dat
 0 STEP
-0 // Plate  1 x  1 with Clip Vertical (Thick C-Clip)
+0 // Plate  1 x  1 with Clip Vertical (Thick C-Clip) (white)
 1 15 -20 -16 0 0 0 1 0 1 0 -1 0 0 60897.dat
-0 // Plate  1 x  1 with Clip Vertical (Thick C-Clip)
+0 // Plate  1 x  1 with Clip Vertical (Thick C-Clip) (white)
 1 15 0 -16 -20 1 0 0 0 1 0 0 0 1 60897.dat
-0 // Plate  1 x  1 with Clip Vertical (Thick C-Clip)
+0 // Plate  1 x  1 with Clip Vertical (Thick C-Clip) (white)
 1 15 20 -16 0 0 0 -1 0 1 0 1 0 0 60897.dat
-0 // Plate  1 x  1 with Clip Vertical (Thick C-Clip)
+0 // Plate  1 x  1 with Clip Vertical (Thick C-Clip) (white)
 1 15 0 -16 20 -1 0 0 0 1 0 0 0 -1 60897.dat
 0 STEP
-0 // Animal Horn Spiral
+0 // Animal Horn Spiral (white)
 1 15 0 -8 -40 0 -1 0 -1 0 0 0 0 -1 89522.dat
-0 // Animal Horn Spiral
+0 // Animal Horn Spiral (white)
 1 15 40 -8 0 0 -1 0 -1 0 0 0 0 -1 89522.dat
-0 // Animal Horn Spiral
+0 // Animal Horn Spiral (white)
 1 15 0 -8 40 0 -1 0 -1 0 0 0 0 -1 89522.dat
-0 // Animal Horn Spiral
+0 // Animal Horn Spiral (white)
 1 15 -40 -8 0 0 -1 0 -1 0 0 0 0 -1 89522.dat
 0 STEP
 
@@ -60,39 +60,39 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Plate  4 x  4 Round with Hole and Snapstud
+0 // Plate  4 x  4 Round with Hole and Snapstud (white)
 1 15 0 0 0 1 0 0 0 1 0 0 0 1 60474.dat
 0 STEP
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_clear)
 1 47 -20 -8 0 1 0 0 0 1 0 0 0 1 6141.dat
-0 // Slope Brick 50  1 x  1 x  0.667 Quadruple
+0 // Slope Brick 50  1 x  1 x  0.667 Quadruple (trans_clear)
 1 47 -20 -8 0 1 0 0 0 1 0 0 0 1 22388.dat
 0 STEP
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_clear)
 1 47 20 -8 0 1 0 0 0 1 0 0 0 1 6141.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_clear)
 1 47 20 -16 0 1 0 0 0 1 0 0 0 1 6141.dat
 0 STEP
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (trans_clear)
 1 47 0 -24 -20 1 0 0 0 1 0 0 0 1 3062b.dat
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (trans_clear)
 1 47 0 -24 0 1 0 0 0 1 0 0 0 1 3062b.dat
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (trans_clear)
 1 47 0 -24 20 1 0 0 0 1 0 0 0 1 3062b.dat
 0 STEP
-0 // Slope Brick 50  1 x  1 x  0.667 Quadruple
+0 // Slope Brick 50  1 x  1 x  0.667 Quadruple (trans_clear)
 1 47 0 -24 -20 1 0 0 0 1 0 0 0 1 22388.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_clear)
 1 47 0 -32 20 1 0 0 0 1 0 0 0 1 6141.dat
 0 STEP
-0 // Slope Brick 50  1 x  1 x  0.667 Quadruple
+0 // Slope Brick 50  1 x  1 x  0.667 Quadruple (trans_clear)
 1 47 20 -16 0 1 0 0 0 1 0 0 0 1 22388.dat
-0 // Slope Brick 50  1 x  1 x  0.667 Quadruple
+0 // Slope Brick 50  1 x  1 x  0.667 Quadruple (trans_clear)
 1 47 0 -32 20 1 0 0 0 1 0 0 0 1 22388.dat
 0 STEP
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (trans_clear)
 1 47 0 -48 0 1 0 0 0 1 0 0 0 1 3062b.dat
-0 // Slope Brick 50  1 x  1 x  0.667 Quadruple
+0 // Slope Brick 50  1 x  1 x  0.667 Quadruple (trans_clear)
 1 47 0 -48 0 1 0 0 0 1 0 0 0 1 22388.dat
 
 
@@ -125,16 +125,16 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Plate  4 x  4 Round with Hole and Snapstud
+0 // Plate  4 x  4 Round with Hole and Snapstud (white)
 1 15 0 0 0 1 0 0 0 1 0 0 0 1 60474.dat
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (trans_clear)
 1 47 0 -24 0 1 0 0 0 1 0 0 0 1 3062b.dat
 0 STEP
-0 // Slope Brick 50  1 x  1 x  0.667 Quadruple
+0 // Slope Brick 50  1 x  1 x  0.667 Quadruple (trans_clear)
 1 47 0 -24 0 1 0 0 0 1 0 0 0 1 22388.dat
-0 // Minifig Goblet
+0 // Minifig Goblet (trans_clear)
 1 47 -10 -40 -30 1 0 0 0 1 0 0 0 1 2343.dat
-0 // Minifig Goblet
+0 // Minifig Goblet (trans_clear)
 1 47 10 -40 30 1 0 0 0 1 0 0 0 1 2343.dat
 
 
@@ -145,259 +145,259 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (dark_bluish_grey)
 1 72 0 0 0 1 0 0 0 1 0 0 0 1 3020.dat
 0 STEP
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (tan)
 1 19 20 -24 0 0 0 -1 0 1 0 1 0 0 3001.dat
 0 STEP
-0 // Plate  1 x  4 with Plate  1 x  4 at 45 Degrees
+0 // Plate  1 x  4 with Plate  1 x  4 at 45 Degrees (dark_bluish_grey)
 1 72 40 0 40 1 0 0 0 1 0 0 0 1 15706.dat
-0 // Plate  1 x  4 with Plate  1 x  4 at 45 Degrees
+0 // Plate  1 x  4 with Plate  1 x  4 at 45 Degrees (dark_bluish_grey)
 1 72 40 0 -40 0.707 0 -0.707 0 1 0 0.707 0 0.707 15706.dat
 0 STEP
-0 // Technic Brick  1 x  2 with Holes
+0 // Technic Brick  1 x  2 with Holes (light_bluish_grey)
 1 71 32.928 -24 61.214 -0.707 0 -0.707 0 1 0 0.707 0 -0.707 32000.dat
-0 // Technic Brick  1 x  2 with Holes
+0 // Technic Brick  1 x  2 with Holes (light_bluish_grey)
 1 71 32.929 -24 -61.213 -0.707 0 0.707 0 1 0 -0.707 0 -0.707 32000.dat
-0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud
+0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud (reddish_brown)
 1 70 10 -32 0 0 0 -1 0 1 0 1 0 0 15573.dat
 0 STEP
-0 // Brick  1 x  2 x  2 without Understud
+0 // Brick  1 x  2 x  2 without Understud (tan)
 1 19 32.928 -72 61.214 -0.707 0 -0.707 0 1 0 0.707 0 -0.707 3245c.dat
-0 // Brick  1 x  2 x  2 without Understud
+0 // Brick  1 x  2 x  2 without Understud (tan)
 1 19 32.929 -72 -61.213 -0.707 0 0.707 0 1 0 -0.707 0 -0.707 3245c.dat
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (tan)
 1 19 30 -48 -30 0 0 -1 0 1 0 1 0 0 2357.dat
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (tan)
 1 19 30 -48 30 -1 0 0 0 1 0 0 0 -1 2357.dat
 0 STEP
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (tan)
 1 19 30 -72 30 -1 0 0 0 1 0 0 0 -1 2357.dat
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (tan)
 1 19 30 -72 -30 0 0 -1 0 1 0 1 0 0 2357.dat
 0 STEP
-0 // Brick  1 x  2 with Embossed Bricks
+0 // Brick  1 x  2 with Embossed Bricks (medium_nougat)
 1 84 30 -96 0 0 0 -1 0 1 0 1 0 0 98283.dat
-0 // Hinge Brick  1 x  4 Base
+0 // Hinge Brick  1 x  4 Base (light_bluish_grey)
 1 71 39.999 -96 40.001 0.707 0 0.707 0 1 0 -0.707 0 0.707 3831.dat
-0 // Hinge Brick  1 x  4 Top
+0 // Hinge Brick  1 x  4 Top (light_bluish_grey)
 1 71 39.999 -96 40.001 -1 0 0 0 1 0 0 0 -1 3830.dat
-0 // Hinge Brick  1 x  4 Base
+0 // Hinge Brick  1 x  4 Base (light_bluish_grey)
 1 71 40 -96 -40 1 0 0 0 1 0 0 0 1 3831.dat
-0 // Hinge Brick  1 x  4 Top
+0 // Hinge Brick  1 x  4 Top (light_bluish_grey)
 1 71 40 -96 -40 -0.707 0 0.707 0 1 0 -0.707 0 -0.707 3830.dat
 0 STEP
-0 // Cone  1 x  1 with Stop
+0 // Cone  1 x  1 with Stop (pearl_gold)
 1 297 10 -56 0 0 0 -1 0 1 0 1 0 0 59900.dat
-0 // Minifig Flame with Rim
+0 // Minifig Flame with Rim (trans_orange)
 1 57 10 -62 0 0 -1 0 0 0 -1 1 0 0 6126b.dat
 0 STEP
-0 // Brick  1 x  2 with Embossed Bricks
+0 // Brick  1 x  2 with Embossed Bricks (medium_nougat)
 1 84 32.928 -120 61.214 -0.707 0 -0.707 0 1 0 0.707 0 -0.707 98283.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (dark_tan)
 1 28 19.999 -120 30.001 -1 0 0 0 1 0 0 0 -1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (dark_tan)
 1 28 20 -120 -30 -1 0 0 0 1 0 0 0 -1 30136.dat
-0 // Brick  1 x  2 with Embossed Bricks
+0 // Brick  1 x  2 with Embossed Bricks (medium_nougat)
 1 84 32.929 -120 -61.213 0.707 0 -0.707 0 1 0 0.707 0 0.707 98283.dat
 0 STEP
-0 // Technic Brick  1 x  2 with Holes
+0 // Technic Brick  1 x  2 with Holes (light_bluish_grey)
 1 71 32.928 -144 61.214 -0.707 0 -0.707 0 1 0 0.707 0 -0.707 32000.dat
-0 // Technic Brick  1 x  2 with Holes
+0 // Technic Brick  1 x  2 with Holes (light_bluish_grey)
 1 71 32.929 -144 -61.213 -0.707 0 0.707 0 1 0 -0.707 0 -0.707 32000.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 29.999 -144 30.001 -1 0 0 0 1 0 0 0 -1 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 30 -144 -30 -1 0 0 0 1 0 0 0 -1 3005.dat
-0 // Window  1 x  2 x  2 without Sill
+0 // Window  1 x  2 x  2 without Sill (reddish_brown)
 1 70 30 -144 0 0 0 -1 0 1 0 1 0 0 60592.dat
-0 // Window  1 x  2 x  2 Pane Lattice Diamond
+0 // Window  1 x  2 x  2 Pane Lattice Diamond (black)
 1 0 30 -144 0 0 0 -1 0 1 0 1 0 0 38320.dat
 0 STEP
-0 // Arch  1 x  4
+0 // Arch  1 x  4 (tan)
 1 19 9.999 -144 0.001 0 0 -1 0 1 0 1 0 0 3659.dat
 0 STEP
-0 // Hinge Plate  1 x  4 Base
+0 // Hinge Plate  1 x  4 Base (tan)
 1 19 39.999 -152 40.001 0.707 0 0.707 0 1 0 -0.707 0 0.707 2429.dat
-0 // Hinge Plate  1 x  4 Top
+0 // Hinge Plate  1 x  4 Top (tan)
 1 19 39.999 -152 40.001 -1 0 0 0 1 0 0 0 -1 2430.dat
-0 // Hinge Plate  1 x  4 Base
+0 // Hinge Plate  1 x  4 Base (tan)
 1 19 39.999 -152 -39.999 1 0 0 0 1 0 0 0 1 2429.dat
-0 // Hinge Plate  1 x  4 Top
+0 // Hinge Plate  1 x  4 Top (tan)
 1 19 39.999 -152 -39.999 -0.707 0 0.707 0 1 0 -0.707 0 -0.707 2430.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (dark_tan)
 1 28 19.999 -152 0.001 1 0 0 0 1 0 0 0 1 3022.dat
 0 STEP
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (tan)
 1 19 29.999 -176 30.001 -1 0 0 0 1 0 0 0 -1 2357.dat
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (tan)
 1 19 29.999 -176 -29.999 0 0 -1 0 1 0 1 0 0 2357.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 39.999 -176 54.143 -0.707 0 -0.707 0 1 0 0.707 0 -0.707 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 39.999 -176 -54.141 -0.707 0 0.707 0 1 0 -0.707 0 -0.707 3005.dat
 0 STEP
-0 // Arch  1 x  3 x  2 Ogee
+0 // Arch  1 x  3 x  2 Ogee (white)
 1 15 25.857 -200 68.285 0.707 0 -0.707 0 1 0 0.707 0 0.707 88292.dat
-0 // Arch  1 x  3 x  2 Ogee
+0 // Arch  1 x  3 x  2 Ogee (white)
 1 15 25.857 -200 -68.284 -0.707 0 -0.707 0 1 0 0.707 0 -0.707 88292.dat
 0 STEP
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 25.857 -200 68.285 -0.707 0 -0.707 0 1 0 0.707 0 -0.707 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 25.857 -200 -68.284 -0.707 0 0.707 0 1 0 -0.707 0 -0.707 3005.dat
-0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring (tan)
 1 19 39.999 -200 54.143 0.707 0 -0.707 0 1 0 0.707 0 0.707 3665a.dat
-0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring (tan)
 1 19 39.999 -200 -54.141 -0.707 0 -0.707 0 1 0 0.707 0 -0.707 3665a.dat
 0 STEP
-0 // ~Slope Brick 45  2 x  2 Inverted without Inner Stopper Ring (Obsolete)
+0 // ~Slope Brick 45  2 x  2 Inverted without Inner Stopper Ring (Obsolete) (tan)
 1 19 29.999 -200 0.001 0 0 -1 0 1 0 1 0 0 3660.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 29.999 -200 30.001 -1 0 0 0 1 0 0 0 -1 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 29.999 -200 -29.999 -1 0 0 0 1 0 0 0 -1 3005.dat
-0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring (tan)
 1 19 9.999 -200 30.001 0 0 1 0 1 0 -1 0 0 3665a.dat
-0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring (tan)
 1 19 9.999 -200 -29.999 0 0 1 0 1 0 -1 0 0 3665a.dat
 0 STEP
-0 // Plate  4 x  4 with 4 Studs on One Edge
+0 // Plate  4 x  4 with 4 Studs on One Edge (white)
 1 15 -40 -8 0 0 0 1 0 1 0 -1 0 0 6179.dat
 0 STEP
-0 // Plate 10 x 10 Octagonal with Hole and Snapstud
+0 // Plate 10 x 10 Octagonal with Hole and Snapstud (light_bluish_grey)
 1 71 -140 0 0 0 0 1 0 1 0 -1 0 0 89523.dat
 0 STEP
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (white)
 1 15 -140 -8 90 1 0 0 0 1 0 0 0 1 2431.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (white)
 1 15 -140 -8 -90 1 0 0 0 1 0 0 0 1 2431.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (white)
 1 15 -230 -8 0 0 0 -1 0 1 0 1 0 0 2431.dat
-0 // Turntable Flat Base  2 x  2
+0 // Turntable Flat Base  2 x  2 (white)
 1 15 -140 -8 0 0 0 -1 0 1 0 1 0 0 27448.dat
 0 STEP
-0 // Plate 10 x 10 Octagonal with Hole and Snapstud
+0 // Plate 10 x 10 Octagonal with Hole and Snapstud (light_bluish_grey)
 1 71 -140 -16 0 0 0 1 0 1 0 -1 0 0 89523.dat
-0 // Turntable Flat Base  2 x  2
+0 // Turntable Flat Base  2 x  2 (white)
 1 15 -60 -24 0 0 0 -1 0 1 0 1 0 0 27448.dat
-0 // Turntable Flat Base  2 x  2
+0 // Turntable Flat Base  2 x  2 (white)
 1 15 -140 -24 80 0 0 -1 0 1 0 1 0 0 27448.dat
-0 // Turntable Flat Base  2 x  2
+0 // Turntable Flat Base  2 x  2 (white)
 1 15 -220 -24 0 0 0 -1 0 1 0 1 0 0 27448.dat
-0 // Turntable Flat Base  2 x  2
+0 // Turntable Flat Base  2 x  2 (white)
 1 15 -140 -24 -80 0 0 -1 0 1 0 1 0 0 27448.dat
 0 STEP
-0 // Turntable Flat Base  2 x  2
+0 // Turntable Flat Base  2 x  2 (white)
 1 15 -140 -24 0 0 0 -1 0 1 0 1 0 0 27448.dat
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (white)
 1 15 -100 -24 0 0 0 -1 0 1 0 1 0 0 3068b.dat
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (white)
 1 15 -140 -24 -40 0 0 -1 0 1 0 1 0 0 3068b.dat
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (white)
 1 15 -180 -24 0 0 0 -1 0 1 0 1 0 0 3068b.dat
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (white)
 1 15 -140 -24 40 0 0 -1 0 1 0 1 0 0 3068b.dat
 0 STEP
-0 // Plate Gear 10 Tooth  4 x  4
+0 // Plate Gear 10 Tooth  4 x  4 (medium_azure)
 1 322 -140 -32 0 1 0 0 0 1 0 0 0 1 35443.dat
-0 // Support  2 x  2 x  2 Round with Open Hole and Stud Holders
+0 // Support  2 x  2 x  2 Round with Open Hole and Stud Holders (dark_bluish_grey)
 1 72 -140 -80 0 0 0 -1 0 1 0 1 0 0 3940.dat
-0 // Brick  2 x  2 Round without Reinforcement
+0 // Brick  2 x  2 Round without Reinforcement (trans_clear)
 1 47 -140 -104 0 0 0 -1 0 1 0 1 0 0 3941.dat
-0 // Brick  2 x  2 Round without Reinforcement
+0 // Brick  2 x  2 Round without Reinforcement (trans_clear)
 1 47 -140 -128 0 0 0 -1 0 1 0 1 0 0 3941.dat
-0 // Brick  2 x  2 Round without Reinforcement
+0 // Brick  2 x  2 Round without Reinforcement (trans_clear)
 1 47 -140 -152 0 0 0 -1 0 1 0 1 0 0 3941.dat
 0 STEP
-0 // Plate Gear  6 Tooth  2 x  2
+0 // Plate Gear  6 Tooth  2 x  2 (medium_azure)
 1 322 -140 -32 80 0 0 -1 0 1 0 1 0 0 35442.dat
-0 // Plate Gear  6 Tooth  2 x  2
+0 // Plate Gear  6 Tooth  2 x  2 (medium_azure)
 1 322 -220 -32 0 0 0 -1 0 1 0 1 0 0 35442.dat
-0 // Plate Gear  6 Tooth  2 x  2
+0 // Plate Gear  6 Tooth  2 x  2 (medium_azure)
 1 322 -140 -32 -80 0 0 -1 0 1 0 1 0 0 35442.dat
-0 // Plate Gear  6 Tooth  2 x  2
+0 // Plate Gear  6 Tooth  2 x  2 (medium_azure)
 1 322 -60 -32 0 0 0 -1 0 1 0 1 0 0 35442.dat
-0 // Plate  4 x  4 Round with Hole and Snapstud
+0 // Plate  4 x  4 Round with Hole and Snapstud (white)
 1 15 -140 -40 80 0 0 -1 0 1 0 1 0 0 60474.dat
-0 // Plate  4 x  4 Round with Hole and Snapstud
+0 // Plate  4 x  4 Round with Hole and Snapstud (white)
 1 15 -220 -40 0 0 0 -1 0 1 0 1 0 0 60474.dat
-0 // Plate  4 x  4 Round with Hole and Snapstud
+0 // Plate  4 x  4 Round with Hole and Snapstud (white)
 1 15 -140 -40 -80 0 0 -1 0 1 0 1 0 0 60474.dat
-0 // Plate  4 x  4 Round with Hole and Snapstud
+0 // Plate  4 x  4 Round with Hole and Snapstud (white)
 1 15 -60 -40 0 0 0 -1 0 1 0 1 0 0 60474.dat
 0 STEP
-0 // Arch  1 x  8 x  2 Raised
+0 // Arch  1 x  8 x  2 Raised (white)
 1 15 -60 -200 10 -1 0 0 0 1 0 0 0 -1 16577.dat
-0 // Arch  1 x  8 x  2 Raised
+0 // Arch  1 x  8 x  2 Raised (white)
 1 15 -60 -200 -10 -1 0 0 0 1 0 0 0 -1 16577.dat
 0 STEP
-0 // Brick  1 x  2 without Centre Stud
+0 // Brick  1 x  2 without Centre Stud (trans_clear)
 1 47 -150 -176 0 0 0 1 0 1 0 -1 0 0 3065.dat
-0 // Brick  1 x  2 without Centre Stud
+0 // Brick  1 x  2 without Centre Stud (trans_clear)
 1 47 -150 -200 0 0 0 1 0 1 0 -1 0 0 3065.dat
 0 STEP
-0 // Plate  2 x 10
+0 // Plate  2 x 10 (dark_bluish_grey)
 1 72 -60 -208 0 1 0 0 0 1 0 0 0 1 3832.dat
 0 STEP
-0 // Plate  1 x  4 with Plate  1 x  4 at 45 Degrees
+0 // Plate  1 x  4 with Plate  1 x  4 at 45 Degrees (dark_bluish_grey)
 1 72 39.999 -208 -39.999 0.707 0 -0.707 0 1 0 0.707 0 0.707 15706.dat
-0 // Plate  1 x  1 with Clip Vertical (Thick C-Clip)
+0 // Plate  1 x  1 with Clip Vertical (Thick C-Clip) (white)
 1 15 -2.427 -216 -96.568 0.707 0 0.707 0 1 0 -0.707 0 0.707 60897.dat
-0 // Slope Brick Curved  2 x  1
+0 // Slope Brick Curved  2 x  1 (white)
 1 15 4.644 -208 -89.497 -0.707 0 -0.707 0 1 0 0.707 0 -0.707 11477.dat
 0 STEP
-0 // Plate  1 x  4 with Plate  1 x  4 at 45 Degrees
+0 // Plate  1 x  4 with Plate  1 x  4 at 45 Degrees (dark_bluish_grey)
 1 72 39.999 -208 40.001 1 0 0 0 1 0 0 0 1 15706.dat
-0 // Plate  1 x  1 with Clip Vertical (Thick C-Clip)
+0 // Plate  1 x  1 with Clip Vertical (Thick C-Clip) (white)
 1 15 -2.428 -216 96.57 -0.707 0 0.707 0 1 0 -0.707 0 -0.707 60897.dat
-0 // Slope Brick Curved  2 x  1
+0 // Slope Brick Curved  2 x  1 (white)
 1 15 4.643 -208 89.499 0.707 0 -0.707 0 1 0 0.707 0 0.707 11477.dat
 0 STEP
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 54.141 -224 40.001 -0.707 0 -0.707 0 1 0 0.707 0 -0.707 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 54.141 -224 -39.999 -0.707 0 0.707 0 1 0 -0.707 0 -0.707 3005.dat
-0 // Brick  1 x  2 with Embossed Bricks
+0 // Brick  1 x  2 with Embossed Bricks (medium_nougat)
 1 84 49.999 -224 0.001 0 0 -1 0 1 0 1 0 0 98283.dat
 0 STEP
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (white)
 1 15 -20.001 -216 20.001 1 0 0 0 1 0 0 0 1 3068b.dat
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (white)
 1 15 -20.002 -216 -19.999 1 0 0 0 1 0 0 0 1 3068b.dat
-0 // Slope Brick 31  1 x  2 x  0.667
+0 // Slope Brick 31  1 x  2 x  0.667 (tan)
 1 19 49.999 -224 0.001 0 0 1 0 1 0 -1 0 0 85984.dat
 0 STEP
-0 // Plate  1 x  1 with Tooth Perpendicular
+0 // Plate  1 x  1 with Tooth Perpendicular (white)
 1 15 -110 -216 -10 1 0 0 0 1 0 0 0 1 15070.dat
-0 // Plate  1 x  1 with Tooth Perpendicular
+0 // Plate  1 x  1 with Tooth Perpendicular (white)
 1 15 -110 -216 10 -1 0 0 0 1 0 0 0 -1 15070.dat
-0 // Plate  1 x  1 with Clip Vertical (Thick C-Clip)
+0 // Plate  1 x  1 with Clip Vertical (Thick C-Clip) (white)
 1 15 -130 -216 10 -1 0 0 0 1 0 0 0 -1 60897.dat
-0 // Plate  1 x  1 with Clip Vertical (Thick C-Clip)
+0 // Plate  1 x  1 with Clip Vertical (Thick C-Clip) (white)
 1 15 -130 -216 -10 1 0 0 0 1 0 0 0 1 60897.dat
-0 // Plate  1 x  1 with Clip Vertical (Thick C-Clip)
+0 // Plate  1 x  1 with Clip Vertical (Thick C-Clip) (white)
 1 15 -150 -216 -10 0 0 1 0 1 0 -1 0 0 60897.dat
-0 // Plate  1 x  1 with Tooth Perpendicular
+0 // Plate  1 x  1 with Tooth Perpendicular (white)
 1 15 -150 -216 10 0 0 1 0 1 0 -1 0 0 15070.dat
 0 STEP
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (white)
 1 15 -140 -224 0 1 0 0 0 1 0 0 0 1 3068b.dat
-0 // Slope Brick Curved  2 x  1
+0 // Slope Brick Curved  2 x  1 (white)
 1 15 -100 -208 -10 0 0 -1 0 1 0 1 0 0 11477.dat
-0 // Slope Brick Curved  2 x  1
+0 // Slope Brick Curved  2 x  1 (white)
 1 15 -100 -208 10 0 0 -1 0 1 0 1 0 0 11477.dat
 0 STEP
-0 // Spike  2.4L with  4 Fins with Bar  0.4L
+0 // Spike  2.4L with  4 Fins with Bar  0.4L (white)
 1 15 -130 -208 30 1 0 0 0 -1 0 0 0 -1 24482.dat
-0 // Spike  2.4L with  4 Fins with Bar  0.4L
+0 // Spike  2.4L with  4 Fins with Bar  0.4L (white)
 1 15 -170 -208 -10 1 0 0 0 -1 0 0 0 -1 24482.dat
-0 // Spike  2.4L with  4 Fins with Bar  0.4L
+0 // Spike  2.4L with  4 Fins with Bar  0.4L (white)
 1 15 -130 -208 -30 1 0 0 0 -1 0 0 0 -1 24482.dat
-0 // Spike  2.4L with  4 Fins with Bar  0.4L
+0 // Spike  2.4L with  4 Fins with Bar  0.4L (white)
 1 15 -16.569 -208 -110.71 1 0 0 0 -1 0 0 0 -1 24482.dat
-0 // Spike  2.4L with  4 Fins with Bar  0.4L
+0 // Spike  2.4L with  4 Fins with Bar  0.4L (white)
 1 15 -16.57 -208 110.712 1 0 0 0 -1 0 0 0 -1 24482.dat
 0 STEP
 
@@ -409,322 +409,322 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Plate  6 x 10
+0 // Plate  6 x 10 (dark_bluish_grey)
 1 72 0 0 0 1 0 0 0 1 0 0 0 1 3033.dat
-0 // Plate  2 x  2 with 2 Studs on One Edge
+0 // Plate  2 x  2 with 2 Studs on One Edge (white)
 1 15 0 -8 40 -1 0 0 0 1 0 0 0 -1 33909.dat
 0 STEP
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (white)
 1 15 -30 -24 40 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (white)
 1 15 30 -24 40 0 0 1 0 1 0 -1 0 0 3004.dat
 0 STEP
-0 // Tile  1 x  1 Corner Round
+0 // Tile  1 x  1 Corner Round (medium_azure)
 1 322 -50 -8 30 -1 0 0 0 1 0 0 0 -1 25269.dat
-0 // Tile  1 x  1 Corner Round
+0 // Tile  1 x  1 Corner Round (medium_azure)
 1 322 50 -8 30 0 0 -1 0 1 0 1 0 0 25269.dat
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (medium_azure)
 1 322 -40 -8 0 0 0 -1 0 1 0 1 0 0 3068b.dat
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (medium_azure)
 1 322 0 -8 0 0 0 -1 0 1 0 1 0 0 3068b.dat
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (medium_azure)
 1 322 40 -8 0 0 0 -1 0 1 0 1 0 0 3068b.dat
 0 STEP
-0 // Brick  2 x  2 Corner Round w Stud Notch and Reinforced Underside
+0 // Brick  2 x  2 Corner Round w Stud Notch and Reinforced Underside (white)
 1 15 50 -24 30 0 0 -1 0 1 0 1 0 0 85080.dat
-0 // Brick  2 x  2 Corner Round w Stud Notch and Reinforced Underside
+0 // Brick  2 x  2 Corner Round w Stud Notch and Reinforced Underside (white)
 1 15 -50 -24 30 -1 0 0 0 1 0 0 0 -1 85080.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (white)
 1 15 -70 -24 0 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (white)
 1 15 70 -24 0 0 0 1 0 1 0 -1 0 0 3004.dat
 0 STEP
-0 // Hinge Brick  1 x  4 Top
+0 // Hinge Brick  1 x  4 Top (light_bluish_grey)
 1 71 100 -24 -20 -1 0 0 0 1 0 0 0 -1 3830.dat
-0 // Hinge Brick  1 x  4 Base
+0 // Hinge Brick  1 x  4 Base (light_bluish_grey)
 1 71 100 -24 -20 -0.707 0 0.707 0 1 0 -0.707 0 -0.707 3831.dat
-0 // Plate  4 x  4 without Corner
+0 // Plate  4 x  4 without Corner (dark_bluish_grey)
 1 72 114.142 0 22.426 -0.707 0 0.707 0 1 0 -0.707 0 -0.707 30503.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 142.426 -24 8.284 -0.707 0 0.707 0 1 0 -0.707 0 -0.707 3005.dat
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (light_bluish_grey)
 1 71 156.569 -24 22.426 0.707 0 0.707 0 1 0 -0.707 0 0.707 6541.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 163.64 -14 29.497 0.707 0 -0.707 0 1 0 0.707 0 0.707 43093.dat
 0 STEP
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (light_bluish_grey)
 1 71 -90 -24 -30 0 0 1 0 1 0 -1 0 0 6541.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -100 -14 -30 -1 0 0 0 1 0 0 0 -1 43093.dat
-0 // Slope Brick 31  1 x  1 x  0.667
+0 // Slope Brick 31  1 x  1 x  0.667 (light_bluish_grey)
 1 71 -90 0 -50 0 0 1 0 1 0 -1 0 0 54200.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (light_bluish_grey)
 1 71 -70 -24 -30 1 0 0 0 1 0 0 0 1 3040b.dat
 0 STEP
-0 // Brick  1 x  2 x  2 without Understud
+0 // Brick  1 x  2 x  2 without Understud (tan)
 1 19 -80 -72 -30 1 0 0 0 1 0 0 0 1 3245c.dat
-0 // Brick  1 x  2 x  2 without Understud
+0 // Brick  1 x  2 x  2 without Understud (tan)
 1 19 80 -72 -30 1 0 0 0 1 0 0 0 1 3245c.dat
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (dark_tan)
 1 28 135.355 -48 1.213 0.707 0 -0.707 0 1 0 0.707 0 0.707 3010.dat
 0 STEP
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (dark_tan)
 1 28 135.355 -72 1.213 0.707 0 -0.707 0 1 0 0.707 0 0.707 3010.dat
-0 // Brick  1 x  2 x  2 without Understud
+0 // Brick  1 x  2 x  2 without Understud (tan)
 1 19 -80 -120 -30 1 0 0 0 1 0 0 0 1 3245c.dat
 0 STEP
-0 // Hinge Brick  1 x  4 Top
+0 // Hinge Brick  1 x  4 Top (light_bluish_grey)
 1 71 100 -96 -20 -1 0 0 0 1 0 0 0 -1 3830.dat
-0 // Hinge Brick  1 x  4 Base
+0 // Hinge Brick  1 x  4 Base (light_bluish_grey)
 1 71 100 -96 -20 -0.707 0 0.707 0 1 0 -0.707 0 -0.707 3831.dat
-0 // Brick  1 x  2 with Embossed Bricks
+0 // Brick  1 x  2 with Embossed Bricks (medium_nougat)
 1 84 149.497 -96 15.355 0.707 0 -0.707 0 1 0 0.707 0 0.707 98283.dat
 0 STEP
-0 // ~Slope Brick 45  2 x  2 Inverted without Inner Stopper Ring (Obsolete)
+0 // ~Slope Brick 45  2 x  2 Inverted without Inner Stopper Ring (Obsolete) (tan)
 1 19 80 -120 -30 -1 0 0 0 1 0 0 0 -1 3660.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 114.142 -120 -20 -0.707 0 0.707 0 1 0 -0.707 0 -0.707 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 156.569 -120 22.426 -0.707 0 0.707 0 1 0 -0.707 0 -0.707 3005.dat
-0 // Window  1 x  2 x  2 without Sill
+0 // Window  1 x  2 x  2 without Sill (reddish_brown)
 1 70 135.355 -144 1.213 0.707 0 -0.707 0 1 0 0.707 0 0.707 60592.dat
-0 // Window  1 x  2 x  2 Pane Lattice Diamond
+0 // Window  1 x  2 x  2 Pane Lattice Diamond (black)
 1 0 135.355 -144 1.213 0.707 0 -0.707 0 1 0 0.707 0 0.707 38320.dat
 0 STEP
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (light_bluish_grey)
 1 71 -90 -144 -30 0 0 1 0 1 0 -1 0 0 6541.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -100 -134 -30 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring (tan)
 1 19 -70 -144 -30 -1 0 0 0 1 0 0 0 -1 3665a.dat
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (tan)
 1 19 70 -144 -30 1 0 0 0 1 0 0 0 1 2357.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 114.142 -144 -20 -0.707 0 0.707 0 1 0 -0.707 0 -0.707 3005.dat
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (light_bluish_grey)
 1 71 156.569 -144 22.426 0.707 0 0.707 0 1 0 -0.707 0 0.707 6541.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 163.64 -134 29.497 0.707 0 -0.707 0 1 0 0.707 0 0.707 2780.dat
 0 STEP
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (white)
 1 15 0 -24 -30 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Plate  1 x  1 with Clip Vertical (Thick C-Clip)
+0 // Plate  1 x  1 with Clip Vertical (Thick C-Clip) (white)
 1 15 -10 -32 -30 -1 0 0 0 1 0 0 0 -1 60897.dat
-0 // Plate  1 x  1 with Clip Vertical (Thick C-Clip)
+0 // Plate  1 x  1 with Clip Vertical (Thick C-Clip) (white)
 1 15 10 -32 -30 -1 0 0 0 1 0 0 0 -1 60897.dat
-0 // Bar  4L Lightsaber Blade
+0 // Bar  4L Lightsaber Blade (trans_light_blue)
 1 43 -10 -88 -10 -1 0 0 0 1 0 0 0 -1 30374.dat
-0 // Bar  4L Lightsaber Blade
+0 // Bar  4L Lightsaber Blade (trans_light_blue)
 1 43 10 -88 -10 -1 0 0 0 1 0 0 0 -1 30374.dat
-0 // Minifig Telescope
+0 // Minifig Telescope (pearl_gold)
 1 297 -10 -72 -30 -1 0 0 0 1 0 0 0 -1 64644.dat
-0 // Minifig Telescope
+0 // Minifig Telescope (pearl_gold)
 1 297 10 -72 -30 -1 0 0 0 1 0 0 0 -1 64644.dat
-0 // Tap  1 x  1 without Hole in Spout
+0 // Tap  1 x  1 without Hole in Spout (pearl_gold)
 1 297 -10 -96 -30 1 0 0 0 1 0 0 0 1 4599b.dat
-0 // Tap  1 x  1 without Hole in Spout
+0 // Tap  1 x  1 without Hole in Spout (pearl_gold)
 1 297 10 -96 -30 1 0 0 0 1 0 0 0 1 4599b.dat
 0 STEP
-0 // Cylinder Half  3 x  6 x  6 with  1 x  2 Cutout
+0 // Cylinder Half  3 x  6 x  6 with  1 x  2 Cutout (tan)
 1 19 0 -144 -20 1 0 0 0 1 0 0 0 1 87926.dat
 0 STEP
-0 // Plate  2 x  6 with Two Rounded Corners
+0 // Plate  2 x  6 with Two Rounded Corners (light_bluish_grey)
 1 71 0 0 -80 1 0 0 0 1 0 0 0 1 18980.dat
 0 STEP
-0 // Plate  1 x  1 Round with  3 Leaves
+0 // Plate  1 x  1 Round with  3 Leaves (bright_green)
 1 10 90 -8 -50 1 0 0 0 1 0 0 0 1 32607.dat
-0 // Plate  1 x  1 Round with  3 Leaves
+0 // Plate  1 x  1 Round with  3 Leaves (bright_green)
 1 10 -30 -8 -90 -0.259 0 0.966 0 1 0 -0.966 0 -0.259 32607.dat
 0 STEP
-0 // Slope Brick 31  1 x  1 x  0.667
+0 // Slope Brick 31  1 x  1 x  0.667 (light_bluish_grey)
 1 71 -30 -8 -90 1 0 0 0 1 0 0 0 1 54200.dat
-0 // Slope Brick 31  1 x  1 x  0.667
+0 // Slope Brick 31  1 x  1 x  0.667 (light_bluish_grey)
 1 71 90 -8 -50 1 0 0 0 1 0 0 0 1 54200.dat
 0 STEP
-0 // Brick  1 x  1 x  5 with Solid Stud
+0 // Brick  1 x  1 x  5 with Solid Stud (tan)
 1 19 90 -120 50 1 0 0 0 1 0 0 0 1 2453b.dat
 0 STEP
-0 // Arch  1 x  4
+0 // Arch  1 x  4 (tan)
 1 19 90 -144 20 0 0 -1 0 1 0 1 0 0 3659.dat
 0 STEP
-0 // Door  1 x  4 x  6 Frame
+0 // Door  1 x  4 x  6 Frame (tan)
 1 19 -90 -144 20 0 0 -1 0 1 0 1 0 0 60596.dat
-0 // Glass for Window  1 x  4 x  6
+0 // Glass for Window  1 x  4 x  6 (trans_clear)
 1 47 -95 -140 20.5 0 0 -1 0 1 0 1 0 0 57895.dat
 0 STEP
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (dark_tan)
 1 28 135.355 -168 1.213 0.707 0 -0.707 0 1 0 0.707 0 0.707 3010.dat
-0 // Plate  4 x  8 Round Semicircle
+0 // Plate  4 x  8 Round Semicircle (tan)
 1 19 0 -152 -60 1 0 0 0 1 0 0 0 1 22888.dat
 0 STEP
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (tan)
 1 19 90 -168 -10 -1 0 0 0 1 0 0 0 -1 2357.dat
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (tan)
 1 19 -90 -168 -10 0 0 1 0 1 0 -1 0 0 2357.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (dark_tan)
 1 28 0 -176 -30 1 0 0 0 1 0 0 0 1 30136.dat
 0 STEP
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (dark_tan)
 1 28 -90 -168 20 0 0 -1 0 1 0 1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (dark_tan)
 1 28 90 -168 20 0 0 -1 0 1 0 1 0 0 30136.dat
-0 // Brick  1 x 10
+0 // Brick  1 x 10 (tan)
 1 19 0 -168 50 -1 0 0 0 1 0 0 0 -1 6111.dat
 0 STEP
-0 // Plate  4 x  8
+0 // Plate  4 x  8 (dark_tan)
 1 28 0 -176 20 -1 0 0 0 1 0 0 0 -1 3035.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (dark_bluish_grey)
 1 72 -90 -176 20 0 0 1 0 1 0 -1 0 0 3710.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (dark_tan)
 1 28 -90 -176 -30 0 0 1 0 1 0 -1 0 0 3024.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (dark_tan)
 1 28 90 -176 -30 0 0 1 0 1 0 -1 0 0 3024.dat
-0 // Plate  1 x  4 with Plate  1 x  4 at 45 Degrees
+0 // Plate  1 x  4 with Plate  1 x  4 at 45 Degrees (dark_bluish_grey)
 1 72 100 -176 -20 0 0 1 0 1 0 -1 0 0 15706.dat
 0 STEP
-0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring (tan)
 1 19 -90 -200 -30 1 0 0 0 1 0 0 0 1 3665a.dat
-0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring (tan)
 1 19 90 -200 -30 1 0 0 0 1 0 0 0 1 3665a.dat
-0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring (tan)
 1 19 114.143 -200 -19.999 0.707 0 -0.707 0 1 0 0.707 0 0.707 3665a.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 128.285 -200 -5.857 -0.707 0 0.707 0 1 0 -0.707 0 -0.707 3005.dat
-0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring (tan)
 1 19 142.427 -200 8.285 0.707 0 -0.707 0 1 0 0.707 0 0.707 3665a.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 156.569 -200 22.427 -0.707 0 0.707 0 1 0 -0.707 0 -0.707 3005.dat
 0 STEP
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (medium_nougat)
 1 84 90 -184 40 0 0 1 0 1 0 -1 0 0 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (medium_nougat)
 1 84 -90 -184 40 0 0 1 0 1 0 -1 0 0 3023.dat
-0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud
+0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud (reddish_brown)
 1 70 70 -184 0 0 0 1 0 1 0 -1 0 0 15573.dat
-0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud
+0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud (reddish_brown)
 1 70 -70 -184 0 0 0 1 0 1 0 -1 0 0 15573.dat
-0 // Plate  1 x  2 with Single Clip on Top
+0 // Plate  1 x  2 with Single Clip on Top (black)
 1 0 10 -184 -20 0 0 1 0 1 0 -1 0 0 92280.dat
-0 // Plate  1 x  2 with Single Clip on Top
+0 // Plate  1 x  2 with Single Clip on Top (black)
 1 0 -10 -184 -20 0 0 1 0 1 0 -1 0 0 92280.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (black)
 1 0 0 -184 10 1 0 0 0 1 0 0 0 1 3069b.dat
 0 STEP
-0 // Plate  2 x  2 with Groove with 1 Centre Stud
+0 // Plate  2 x  2 with Groove with 1 Centre Stud (light_bluish_grey)
 1 71 60 -184 40 -1 0 0 0 1 0 0 0 -1 87580.dat
-0 // Tile  1 x  1 Round with Pin and Pin Hole
+0 // Tile  1 x  1 Round with Pin and Pin Hole (light_bluish_grey)
 1 71 60 -192 40 -1 0 0 0 -1 0 0 0 1 20482.dat
 0 STEP
-0 // Hinge Plate  1 x  4 Base
+0 // Hinge Plate  1 x  4 Base (dark_bluish_grey)
 1 72 80 -192 20 0 0 1 0 1 0 -1 0 0 2429.dat
-0 // Hinge Plate  1 x  4 Top
+0 // Hinge Plate  1 x  4 Top (dark_bluish_grey)
 1 72 80 -192 20 -0.707 0 0.707 0 1 0 -0.707 0 -0.707 2430.dat
-0 // Hinge Plate  1 x  4 Base
+0 // Hinge Plate  1 x  4 Base (dark_bluish_grey)
 1 72 -80 -192 20 -0.707 0 -0.707 0 1 0 0.707 0 -0.707 2429.dat
-0 // Hinge Plate  1 x  4 Top
+0 // Hinge Plate  1 x  4 Top (dark_bluish_grey)
 1 72 -80 -192 20 0 0 -1 0 1 0 1 0 0 2430.dat
 0 STEP
-0 // Slope Brick 75  2 x  1 x  3 with Hollow Stud
+0 // Slope Brick 75  2 x  1 x  3 with Hollow Stud (dark_bluish_grey)
 1 72 90 -272 -30 1 0 0 0 1 0 0 0 1 4460b.dat
-0 // Slope Brick 75  2 x  1 x  3 with Hollow Stud
+0 // Slope Brick 75  2 x  1 x  3 with Hollow Stud (dark_bluish_grey)
 1 72 -90 -272 -30 1 0 0 0 1 0 0 0 1 4460b.dat
-0 // Slope Brick 75  2 x  2 x  3 with Solid Studs
+0 // Slope Brick 75  2 x  2 x  3 with Solid Studs (dark_bluish_grey)
 1 72 121.214 -272 -12.928 0.707 0 -0.707 0 1 0 0.707 0 0.707 3684c.dat
-0 // Slope Brick 75  2 x  2 x  3 with Solid Studs
+0 // Slope Brick 75  2 x  2 x  3 with Solid Studs (dark_bluish_grey)
 1 72 149.498 -272 15.356 0.707 0 -0.707 0 1 0 0.707 0 0.707 3684c.dat
 0 STEP
-0 // Panel  4 x  4 x  6 Corner Round
+0 // Panel  4 x  4 x  6 Corner Round (tan)
 1 19 0 -296 -20 1 0 0 0 1 0 0 0 1 30562.dat
 0 STEP
-0 // Panel  4 x  4 x  6 Corner Round
+0 // Panel  4 x  4 x  6 Corner Round (tan)
 1 19 0 -296 -20 0 0 1 0 1 0 -1 0 0 30562.dat
 0 STEP
-0 // Plate  1 x  2 with Handle on End
+0 // Plate  1 x  2 with Handle on End (reddish_brown)
 1 70 10 -220 -28 0 0 -1 1 0 0 0 -1 0 60478.dat
-0 // Plate  1 x  2 with Handle on End
+0 // Plate  1 x  2 with Handle on End (reddish_brown)
 1 70 -10 -220 -28 0 0 -1 1 0 0 0 -1 0 60478.dat
-0 // Tile  3 x  2 with Angled End
+0 // Tile  3 x  2 with Angled End (reddish_brown)
 1 70 0 -230 -20 1 0 0 0 0 1 0 -1 0 22385.dat
 0 STEP
-0 // Panel  1 x  2 x  3 Reinforced with Hollow Studs
+0 // Panel  1 x  2 x  3 Reinforced with Hollow Studs (black)
 1 0 90 -264 40 0 0 1 0 1 0 -1 0 0 87544.dat
-0 // Panel  1 x  2 x  3 Reinforced with Hollow Studs
+0 // Panel  1 x  2 x  3 Reinforced with Hollow Studs (black)
 1 0 72.929 -264 -1.213 -0.707 0 0.707 0 1 0 -0.707 0 -0.707 87544.dat
-0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud
+0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud (reddish_brown)
 1 70 72.929 -272 -1.213 -0.707 0 0.707 0 1 0 -0.707 0 -0.707 15573.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (medium_nougat)
 1 84 90 -272 40 0 0 1 0 1 0 -1 0 0 3023.dat
 0 STEP
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (dark_bluish_grey)
 1 72 135.356 -280 1.214 0.707 0 -0.707 0 1 0 0.707 0 0.707 3710.dat
-0 // Cylinder  2 x  2 with Dome Top with Axle Hole and Hollow Stud
+0 // Cylinder  2 x  2 with Dome Top with Axle Hole and Hollow Stud (light_bluish_grey)
 1 71 60 -200 40 -1 0 0 0 -1 0 0 0 1 30367c.dat
-0 // Dish  2 x  2 with Rim
+0 // Dish  2 x  2 with Rim (trans_clear)
 1 47 60 -224 40 -1 0 0 0 -1 0 0 0 1 2654a.dat
 0 STEP
-0 // Panel  1 x  2 x  3 Reinforced with Hollow Studs
+0 // Panel  1 x  2 x  3 Reinforced with Hollow Studs (black)
 1 0 -90 -264 40 0 0 -1 0 1 0 1 0 0 87544.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (medium_nougat)
 1 84 -90 -272 40 0 0 1 0 1 0 -1 0 0 3023.dat
-0 // Panel  1 x  2 x  3 Reinforced with Hollow Studs
+0 // Panel  1 x  2 x  3 Reinforced with Hollow Studs (black)
 1 0 -72.929 -264 -1.213 -0.707 0 -0.707 0 1 0 0.707 0 -0.707 87544.dat
-0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud
+0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud (reddish_brown)
 1 70 -72.929 -272 -1.213 -0.707 0 -0.707 0 1 0 0.707 0 -0.707 15573.dat
 0 STEP
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (reddish_brown)
 1 70 0 -200 40 -1 0 0 0 1 0 0 0 -1 3001.dat
-0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud
+0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud (reddish_brown)
 1 70 30 -208 40 0 0 1 0 1 0 -1 0 0 15573.dat
-0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud
+0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud (reddish_brown)
 1 70 10 -208 40 0 0 1 0 1 0 -1 0 0 15573.dat
-0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud
+0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud (reddish_brown)
 1 70 -10 -208 40 0 0 1 0 1 0 -1 0 0 15573.dat
-0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud
+0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud (reddish_brown)
 1 70 -30 -208 40 0 0 1 0 1 0 -1 0 0 15573.dat
-0 // Tile  1 x  1 Round with Pin and Pin Hole
+0 // Tile  1 x  1 Round with Pin and Pin Hole (pearl_gold)
 1 297 30 -216 40 0 0 1 0 1 0 -1 0 0 20482.dat
-0 // Tile  1 x  1 Round with Pin and Pin Hole
+0 // Tile  1 x  1 Round with Pin and Pin Hole (pearl_gold)
 1 297 -30 -216 40 0 0 1 0 1 0 -1 0 0 20482.dat
-0 // Slope Brick 45  1 x  1 Double
+0 // Slope Brick 45  1 x  1 Double (tan)
 1 19 10 -208 40 1 0 0 0 1 0 0 0 1 35464.dat
-0 // Minifig Plume Small
+0 // Minifig Plume Small (white)
 1 15 30 -224 40 -0.866 0 -0.5 0 1 0 0.5 0 -0.866 87693.dat
-0 // Cone  1 x  1 with Stop
+0 // Cone  1 x  1 with Stop (pearl_gold)
 1 297 -30 -220 40 -1 0 0 0 -1 0 0 0 1 59900.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_yellow)
 1 46 -30 -244 40 -1 0 0 0 -1 0 0 0 1 6141.dat
 0 STEP
-0 // Slope Brick 18  4 x  1
+0 // Slope Brick 18  4 x  1 (dark_bluish_grey)
 1 72 90 -296 -30 -1 0 0 0 1 0 0 0 -1 60477.dat
-0 // Slope Brick 18  4 x  1
+0 // Slope Brick 18  4 x  1 (dark_bluish_grey)
 1 72 -90 -296 -30 -1 0 0 0 1 0 0 0 -1 60477.dat
 0 STEP
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (dark_tan)
 1 28 0 -304 -90 -1 0 0 0 1 0 0 0 -1 3023.dat
-0 // Slope Plate 45  2 x  1
+0 // Slope Plate 45  2 x  1 (dark_bluish_grey)
 1 72 -80 -304 -30 0 0 1 0 1 0 -1 0 0 15672.dat
-0 // Slope Plate 45  2 x  1
+0 // Slope Plate 45  2 x  1 (dark_bluish_grey)
 1 72 80 -304 -30 0 0 -1 0 1 0 1 0 0 15672.dat
 0 STEP
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (dark_tan)
 1 28 0 -304 -60 -1 0 0 0 1 0 0 0 -1 3795.dat
-0 // Cone  1 x  1 with Stop
+0 // Cone  1 x  1 with Stop (pearl_gold)
 1 297 30 -328 -50 -1 0 0 0 1 0 0 0 -1 59900.dat
-0 // Brick  1 x  2 with Clip Vertical (Thick C-Clip)
+0 // Brick  1 x  2 with Clip Vertical (Thick C-Clip) (light_bluish_grey)
 1 71 0 -328 -50 -1 0 0 0 1 0 0 0 -1 95820.dat
-0 // Cone  1 x  1 with Stop
+0 // Cone  1 x  1 with Stop (pearl_gold)
 1 297 -30 -328 -50 -1 0 0 0 1 0 0 0 -1 59900.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (reddish_brown)
 1 70 0 -336 -50 -1 0 0 0 1 0 0 0 -1 2431.dat
-0 // Minifig Sword Greatsword
+0 // Minifig Sword Greatsword (pearl_silver)
 1 179 0 -312 -30 0 0 1 0 1 0 -1 0 0 59.dat
 0 STEP
-0 // Cone  8 x  4 x  6 Half
+0 // Cone  8 x  4 x  6 Half (dark_bluish_grey)
 1 72 0 -448 -20 1 0 0 0 1 0 0 0 1 48310.dat
 0 STEP
-0 // Cone  4 x  2 x  4 Half with Roof Tiles
+0 // Cone  4 x  2 x  4 Half with Roof Tiles (dark_bluish_grey)
 1 72 0 -544 -20 1 0 0 0 1 0 0 0 1 35563.dat
-0 // Minifig Ski Pole
+0 // Minifig Ski Pole (sand_green)
 1 378 0 -544 -30 0 0 -1 0 -1 0 -1 0 0 90540.dat
 
 
@@ -747,821 +747,821 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Plate  6 x 10
+0 // Plate  6 x 10 (dark_tan)
 1 28 0 0 0 1 0 0 0 1 0 0 0 1 3033.dat
-0 // Slope Brick 31  1 x  1 x  0.667
+0 // Slope Brick 31  1 x  1 x  0.667 (light_bluish_grey)
 1 71 90 0 -50 1 0 0 0 1 0 0 0 1 54200.dat
 0 STEP
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (light_bluish_grey)
 1 71 90 -24 50 0 0 -1 0 1 0 1 0 0 6541.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 100 -14 50 1 0 0 0 1 0 0 0 1 43093.dat
-0 // Slope Brick 31  1 x  1 x  0.667
+0 // Slope Brick 31  1 x  1 x  0.667 (light_bluish_grey)
 1 71 90 0 30 0 0 -1 0 1 0 1 0 0 54200.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 70 -24 50 0 0 -1 0 1 0 1 0 0 3005.dat
-0 // Tile  2 x  4
+0 // Tile  2 x  4 (light_bluish_grey)
 1 71 -100 -8 40 -1 0 0 0 1 0 0 0 -1 87079.dat
 0 STEP
-0 // Plate  6 x 10
+0 // Plate  6 x 10 (dark_tan)
 1 28 -200 0 0 1 0 0 0 1 0 0 0 1 3033.dat
 0 STEP
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 -270 -24 50 0 0 -1 0 1 0 1 0 0 3005.dat
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (light_bluish_grey)
 1 71 -290 -24 50 0 0 -1 0 1 0 1 0 0 6541.dat
-0 // Slope Brick 31  1 x  1 x  0.667
+0 // Slope Brick 31  1 x  1 x  0.667 (light_bluish_grey)
 1 71 -290 0 30 0 0 1 0 1 0 -1 0 0 54200.dat
 0 STEP
-0 // Tile  2 x  4
+0 // Tile  2 x  4 (light_bluish_grey)
 1 71 -100 -8 -60 -1 0 0 0 1 0 0 0 -1 87079.dat
-0 // Plate  2 x  2 with Groove with 1 Centre Stud
+0 // Plate  2 x  2 with Groove with 1 Centre Stud (light_bluish_grey)
 1 71 20 -8 20 -1 0 0 0 1 0 0 0 -1 87580.dat
-0 // Plate  2 x  2 with Groove with 1 Centre Stud
+0 // Plate  2 x  2 with Groove with 1 Centre Stud (light_bluish_grey)
 1 71 -20 -8 20 -1 0 0 0 1 0 0 0 -1 87580.dat
-0 // Plate  2 x  2 with Groove with 1 Centre Stud
+0 // Plate  2 x  2 with Groove with 1 Centre Stud (light_bluish_grey)
 1 71 -200 -8 20 -1 0 0 0 1 0 0 0 -1 87580.dat
 0 STEP
-0 // Brick  1 x  2 x  2 without Understud
+0 // Brick  1 x  2 x  2 without Understud (tan)
 1 19 -280 -72 50 -1 0 0 0 1 0 0 0 -1 3245c.dat
-0 // Brick  1 x  2 x  2 without Understud
+0 // Brick  1 x  2 x  2 without Understud (tan)
 1 19 80 -72 50 -1 0 0 0 1 0 0 0 -1 3245c.dat
 0 STEP
-0 // Panel  1 x  4 x  3 Reinforced
+0 // Panel  1 x  4 x  3 Reinforced (tan)
 1 19 -270 -72 0 0 0 -1 0 1 0 1 0 0 60581.dat
-0 // Panel  1 x  4 x  3 Reinforced
+0 // Panel  1 x  4 x  3 Reinforced (tan)
 1 19 70 -72 0 0 0 1 0 1 0 -1 0 0 60581.dat
 0 STEP
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (tan)
 1 19 -260 -24 -60 1 0 0 0 1 0 0 0 1 3001.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (dark_tan)
 1 28 -260 0 -70 1 0 0 0 1 0 0 0 1 3710.dat
 0 STEP
-0 // Plate  6 x 12
+0 // Plate  6 x 12 (dark_bluish_grey)
 1 72 -100 0 -120 1 0 0 0 1 0 0 0 1 3028.dat
 0 STEP
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (dark_tan)
 1 28 40 -24 -50 1 0 0 0 1 0 0 0 1 3010.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (light_bluish_grey)
 1 71 10 -24 -70 1 0 0 0 1 0 0 0 1 3040b.dat
-0 // Plate  1 x  1 Round with  3 Leaves
+0 // Plate  1 x  1 Round with  3 Leaves (bright_green)
 1 10 10 -8 -130 0.707 0 -0.707 0 1 0 0.707 0 0.707 32607.dat
 0 STEP
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 -210 -24 -50 0 0 -1 0 1 0 1 0 0 3005.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (tan)
 1 19 -190 -24 -70 0 0 -1 0 1 0 1 0 0 3622.dat
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (tan)
 1 19 -160 -24 -60 0 0 -1 0 1 0 1 0 0 3003.dat
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (tan)
 1 19 -40 -24 -60 0 0 -1 0 1 0 1 0 0 3003.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (tan)
 1 19 -10 -24 -70 0 0 -1 0 1 0 1 0 0 3622.dat
 0 STEP
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 -10 -24 -130 0 0 -1 0 1 0 1 0 0 3005.dat
-0 // Slope Brick 31  1 x  1 x  0.667
+0 // Slope Brick 31  1 x  1 x  0.667 (light_bluish_grey)
 1 71 10 -8 -130 0 0 -1 0 1 0 1 0 0 54200.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (light_bluish_grey)
 1 71 -190 -24 -130 0 0 1 0 1 0 -1 0 0 3040b.dat
 0 STEP
-0 // Brick  2 x  2 Round without Reinforcement
+0 // Brick  2 x  2 Round without Reinforcement (tan)
 1 19 -200 -24 -160 0 0 1 0 1 0 -1 0 0 3941.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (light_bluish_grey)
 1 71 -150 -24 -150 1 0 0 0 1 0 0 0 1 3040b.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 -50 -24 -150 0 0 -1 0 1 0 1 0 0 3005.dat
-0 // Plate  1 x  1 Round with  3 Leaves
+0 // Plate  1 x  1 Round with  3 Leaves (bright_green)
 1 10 -50 -8 -170 0.707 0 0.707 0 1 0 -0.707 0 0.707 32607.dat
-0 // Slope Brick 31  1 x  1 x  0.667
+0 // Slope Brick 31  1 x  1 x  0.667 (light_bluish_grey)
 1 71 -50 -8 -170 1 0 0 0 1 0 0 0 1 54200.dat
-0 // Brick  2 x  2 Round without Reinforcement
+0 // Brick  2 x  2 Round without Reinforcement (tan)
 1 19 0 -24 -160 0 0 1 0 1 0 -1 0 0 3941.dat
 0 STEP
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (dark_tan)
 1 28 -180 -48 -50 1 0 0 0 1 0 0 0 1 3010.dat
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (dark_tan)
 1 28 -20 -48 -50 1 0 0 0 1 0 0 0 1 3010.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (tan)
 1 19 50 -48 -50 -1 0 0 0 1 0 0 0 -1 3622.dat
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (tan)
 1 19 -270 -48 -70 1 0 0 0 1 0 0 0 1 2357.dat
-0 // Slope Brick 31  1 x  1 x  0.667
+0 // Slope Brick 31  1 x  1 x  0.667 (light_bluish_grey)
 1 71 10 -24 -70 0 0 -1 0 1 0 1 0 0 54200.dat
 0 STEP
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (tan)
 1 19 -30 -48 -70 -1 0 0 0 1 0 0 0 -1 3622.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (tan)
 1 19 -170 -48 -70 -1 0 0 0 1 0 0 0 -1 3622.dat
-0 // Brick  1 x  1 with Scroll with Open Stud
+0 // Brick  1 x  1 with Scroll with Open Stud (tan)
 1 19 -10 -48 -90 1 0 0 0 1 0 0 0 1 75948 - 20310.dat
-0 // Brick  1 x  1 with Scroll with Open Stud
+0 // Brick  1 x  1 with Scroll with Open Stud (tan)
 1 19 -190 -48 -90 1 0 0 0 1 0 0 0 1 75948 - 20310.dat
 0 STEP
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 -190 -48 -130 0 0 -1 0 1 0 1 0 0 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 -10 -48 -130 0 0 -1 0 1 0 1 0 0 3005.dat
-0 // Brick  1 x  1 with Scroll with Open Stud
+0 // Brick  1 x  1 with Scroll with Open Stud (tan)
 1 19 -50 -48 -150 0 0 -1 0 1 0 1 0 0 75948 - 20310.dat
-0 // Brick  1 x  1 with Scroll with Open Stud
+0 // Brick  1 x  1 with Scroll with Open Stud (tan)
 1 19 -150 -48 -150 0 0 1 0 1 0 -1 0 0 75948 - 20310.dat
 0 STEP
-0 // Brick  2 x  2 Round without Reinforcement
+0 // Brick  2 x  2 Round without Reinforcement (tan)
 1 19 0 -48 -160 0 0 1 0 1 0 -1 0 0 3941.dat
-0 // Brick  2 x  2 Round without Reinforcement
+0 // Brick  2 x  2 Round without Reinforcement (tan)
 1 19 -200 -48 -160 0 0 1 0 1 0 -1 0 0 3941.dat
 0 STEP
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (tan)
 1 19 -270 -72 -70 1 0 0 0 1 0 0 0 1 2357.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 -210 -72 -50 0 0 -1 0 1 0 1 0 0 3005.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (tan)
 1 19 -190 -72 -70 0 0 -1 0 1 0 1 0 0 3622.dat
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (tan)
 1 19 -160 -72 -60 0 0 -1 0 1 0 1 0 0 3003.dat
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (tan)
 1 19 -40 -72 -60 0 0 -1 0 1 0 1 0 0 3003.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (tan)
 1 19 -10 -72 -70 0 0 -1 0 1 0 1 0 0 3622.dat
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (dark_tan)
 1 28 40 -72 -50 1 0 0 0 1 0 0 0 1 3010.dat
 0 STEP
-0 // Tile  1 x  1 Corner Round
+0 // Tile  1 x  1 Corner Round (dark_bluish_grey)
 1 72 10 -56 -150 0 0 -1 0 1 0 1 0 0 25269.dat
-0 // Tile  1 x  1 Corner Round
+0 // Tile  1 x  1 Corner Round (dark_bluish_grey)
 1 72 10 -56 -170 1 0 0 0 1 0 0 0 1 25269.dat
-0 // Tile  1 x  1 Corner Round
+0 // Tile  1 x  1 Corner Round (dark_bluish_grey)
 1 72 -10 -56 -170 0 0 1 0 1 0 -1 0 0 25269.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (dark_bluish_grey)
 1 72 -10 -56 -120 0 0 1 0 1 0 -1 0 0 3069b.dat
-0 // Tile  1 x  3
+0 // Tile  1 x  3 (dark_bluish_grey)
 1 72 -30 -56 -150 1 0 0 0 1 0 0 0 1 63864.dat
-0 // Tile  1 x  3
+0 // Tile  1 x  3 (dark_bluish_grey)
 1 72 -170 -56 -150 1 0 0 0 1 0 0 0 1 63864.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (dark_bluish_grey)
 1 72 -190 -56 -120 0 0 1 0 1 0 -1 0 0 3069b.dat
-0 // Tile  1 x  1 Corner Round
+0 // Tile  1 x  1 Corner Round (dark_bluish_grey)
 1 72 -210 -56 -150 -1 0 0 0 1 0 0 0 -1 25269.dat
-0 // Tile  1 x  1 Corner Round
+0 // Tile  1 x  1 Corner Round (dark_bluish_grey)
 1 72 -210 -56 -170 0 0 1 0 1 0 -1 0 0 25269.dat
-0 // Tile  1 x  1 Corner Round
+0 // Tile  1 x  1 Corner Round (dark_bluish_grey)
 1 72 -190 -56 -170 1 0 0 0 1 0 0 0 1 25269.dat
 0 STEP
-0 // Brick  1 x  6
+0 // Brick  1 x  6 (tan)
 1 19 70 -96 0 0 0 1 0 1 0 -1 0 0 3009.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 90 -96 50 0 0 -1 0 1 0 1 0 0 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 50 -96 -50 0 0 -1 0 1 0 1 0 0 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 -290 -96 50 0 0 -1 0 1 0 1 0 0 3005.dat
-0 // Brick  1 x  6
+0 // Brick  1 x  6 (tan)
 1 19 -270 -96 0 0 0 1 0 1 0 -1 0 0 3009.dat
-0 // Brick  1 x  2 with Embossed Bricks
+0 // Brick  1 x  2 with Embossed Bricks (medium_nougat)
 1 84 -260 -96 -70 1 0 0 0 1 0 0 0 1 98283.dat
 0 STEP
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (tan)
 1 19 -190 -96 -50 -1 0 0 0 1 0 0 0 -1 3622.dat
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (tan)
 1 19 -190 -96 -70 0 0 1 0 1 0 -1 0 0 2357.dat
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (dark_tan)
 1 28 0 -96 -50 1 0 0 0 1 0 0 0 1 3010.dat
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (tan)
 1 19 -10 -96 -70 -1 0 0 0 1 0 0 0 -1 2357.dat
 0 STEP
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (tan)
 1 19 70 -120 50 0 0 1 0 1 0 -1 0 0 2357.dat
-0 // Brick  1 x  2 with Embossed Bricks
+0 // Brick  1 x  2 with Embossed Bricks (medium_nougat)
 1 84 70 -144 40 0 0 -1 0 1 0 1 0 0 98283.dat
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (light_bluish_grey)
 1 71 90 -144 50 0 0 -1 0 1 0 1 0 0 6541.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 100 -134 50 -1 0 0 0 1 0 0 0 -1 2780.dat
 0 STEP
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (tan)
 1 19 -270 -120 50 -1 0 0 0 1 0 0 0 -1 2357.dat
-0 // Brick  1 x  2 with Embossed Bricks
+0 // Brick  1 x  2 with Embossed Bricks (medium_nougat)
 1 84 -270 -144 40 0 0 1 0 1 0 -1 0 0 98283.dat
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (light_bluish_grey)
 1 71 -290 -144 50 0 0 -1 0 1 0 1 0 0 6541.dat
 0 STEP
-0 // Window  1 x  2 x  2 without Sill
+0 // Window  1 x  2 x  2 without Sill (reddish_brown)
 1 70 -270 -144 0 0 0 1 0 1 0 -1 0 0 60592.dat
-0 // Window  1 x  2 x  2 Pane Lattice Diamond
+0 // Window  1 x  2 x  2 Pane Lattice Diamond (black)
 1 0 -270 -144 0 0 0 1 0 1 0 -1 0 0 38320.dat
-0 // Brick  1 x  2 x  2 without Understud
+0 // Brick  1 x  2 x  2 without Understud (tan)
 1 19 -270 -144 -40 0 0 1 0 1 0 -1 0 0 3245c.dat
-0 // Window  1 x  2 x  2 without Sill
+0 // Window  1 x  2 x  2 without Sill (reddish_brown)
 1 70 70 -144 0 0 0 -1 0 1 0 1 0 0 60592.dat
-0 // Window  1 x  2 x  2 Pane Lattice Diamond
+0 // Window  1 x  2 x  2 Pane Lattice Diamond (black)
 1 0 70 -144 0 0 0 -1 0 1 0 1 0 0 38320.dat
-0 // Brick  1 x  2 x  2 without Understud
+0 // Brick  1 x  2 x  2 without Understud (tan)
 1 19 70 -144 -40 0 0 1 0 1 0 -1 0 0 3245c.dat
 0 STEP
-0 // Window  1 x  2 x  2.667 with Rounded Top
+0 // Window  1 x  2 x  2.667 with Rounded Top (reddish_brown)
 1 70 -260 -160 -70 1 0 0 0 1 0 0 0 1 30044.dat
-0 // Window  1 x  2 x  2.667 with Rounded Top
+0 // Window  1 x  2 x  2.667 with Rounded Top (reddish_brown)
 1 70 40 -160 -50 1 0 0 0 1 0 0 0 1 30044.dat
-0 // Window  1 x  2 x  2.667 Pane Lattice Diamond with Rounded Top
+0 // Window  1 x  2 x  2.667 Pane Lattice Diamond with Rounded Top (black)
 1 0 -260 -137 -74 1 0 0 0 1 0 0 0 1 30046.dat
-0 // Window  1 x  2 x  2.667 Pane Lattice Diamond with Rounded Top
+0 // Window  1 x  2 x  2.667 Pane Lattice Diamond with Rounded Top (black)
 1 0 40 -137 -54 1 0 0 0 1 0 0 0 1 30046.dat
 0 STEP
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 -210 -120 -50 0 0 -1 0 1 0 1 0 0 3005.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (tan)
 1 19 -190 -120 -70 0 0 -1 0 1 0 1 0 0 3622.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (dark_tan)
 1 28 -170 -120 -60 0 0 -1 0 1 0 1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (dark_tan)
 1 28 -30 -120 -60 0 0 -1 0 1 0 1 0 0 30136.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (tan)
 1 19 -10 -120 -70 0 0 -1 0 1 0 1 0 0 3622.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 10 -120 -50 0 0 -1 0 1 0 1 0 0 3005.dat
 0 STEP
-0 // Arch  1 x  3 x  3 Pointed
+0 // Arch  1 x  3 x  3 Pointed (tan)
 1 19 -50 -144 -50 0 0 -1 0 1 0 1 0 0 13965.dat
-0 // Arch  1 x  3 x  3 Pointed
+0 // Arch  1 x  3 x  3 Pointed (tan)
 1 19 -50 -144 -70 0 0 -1 0 1 0 1 0 0 13965.dat
-0 // Arch  1 x  3 x  3 Pointed
+0 // Arch  1 x  3 x  3 Pointed (tan)
 1 19 -150 -144 -50 0 0 1 0 1 0 -1 0 0 13965.dat
-0 // Arch  1 x  3 x  3 Pointed
+0 // Arch  1 x  3 x  3 Pointed (tan)
 1 19 -150 -144 -70 0 0 1 0 1 0 -1 0 0 13965.dat
 0 STEP
-0 // Brick  1 x  2 x  5 with Blocked Open Studs and Symmetric Inner Ridges
+0 // Brick  1 x  2 x  5 with Blocked Open Studs and Symmetric Inner Ridges (tan)
 1 19 -290 -144 -60 0 0 1 0 1 0 -1 0 0 75948 - 2454b.dat
-0 // Brick  1 x  2 x  5 with Blocked Open Studs and Symmetric Inner Ridges
+0 // Brick  1 x  2 x  5 with Blocked Open Studs and Symmetric Inner Ridges (tan)
 1 19 -230 -144 -60 0 0 1 0 1 0 -1 0 0 75948 - 2454b.dat
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (dark_tan)
 1 28 -180 -144 -50 1 0 0 0 1 0 0 0 1 3010.dat
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (dark_tan)
 1 28 -20 -144 -50 1 0 0 0 1 0 0 0 1 3010.dat
 0 STEP
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (tan)
 1 19 -170 -144 -70 -1 0 0 0 1 0 0 0 -1 3622.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (tan)
 1 19 -30 -144 -70 -1 0 0 0 1 0 0 0 -1 3622.dat
-0 // Brick  1 x  1 with Scroll with Open Stud
+0 // Brick  1 x  1 with Scroll with Open Stud (tan)
 1 19 -10 -144 -90 0 0 1 0 1 0 -1 0 0 75948 - 20310.dat
-0 // Brick  1 x  1 with Scroll with Open Stud
+0 // Brick  1 x  1 with Scroll with Open Stud (tan)
 1 19 -190 -144 -90 0 0 -1 0 1 0 1 0 0 75948 - 20310.dat
 0 STEP
-0 // Brick  1 x  1 with Scroll with Open Stud
+0 // Brick  1 x  1 with Scroll with Open Stud (tan)
 1 19 70 -168 50 0 0 1 0 1 0 -1 0 0 75948 - 20310.dat
-0 // Brick  1 x  1 with Scroll with Open Stud
+0 // Brick  1 x  1 with Scroll with Open Stud (tan)
 1 19 -270 -168 50 0 0 -1 0 1 0 1 0 0 75948 - 20310.dat
-0 // Brick  2 x  2 Facet
+0 // Brick  2 x  2 Facet (light_bluish_grey)
 1 71 -280 -168 40 0 0 1 0 1 0 -1 0 0 87620.dat
-0 // Brick  2 x  2 Facet
+0 // Brick  2 x  2 Facet (light_bluish_grey)
 1 71 80 -168 40 1 0 0 0 1 0 0 0 1 87620.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (tan)
 1 19 -270 -168 -10 0 0 -1 0 1 0 1 0 0 3622.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (tan)
 1 19 70 -168 -10 0 0 -1 0 1 0 1 0 0 3622.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (dark_tan)
 1 28 -280 -168 -50 -1 0 0 0 1 0 0 0 -1 30136.dat
 0 STEP
-0 // Arch  1 x  4
+0 // Arch  1 x  4 (tan)
 1 19 -260 -168 -70 -1 0 0 0 1 0 0 0 -1 3659.dat
-0 // Brick  1 x  6
+0 // Brick  1 x  6 (tan)
 1 19 -180 -168 -50 -1 0 0 0 1 0 0 0 -1 3009.dat
-0 // Arch  1 x  4
+0 // Arch  1 x  4 (tan)
 1 19 40 -168 -50 -1 0 0 0 1 0 0 0 -1 3659.dat
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (dark_tan)
 1 28 -40 -168 -50 1 0 0 0 1 0 0 0 1 3010.dat
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (tan)
 1 19 -100 -168 -60 0 0 -1 0 1 0 1 0 0 3003.dat
 0 STEP
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (tan)
 1 19 -190 -168 -70 0 0 1 0 1 0 -1 0 0 2357.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (tan)
 1 19 -70 -168 -70 0 0 -1 0 1 0 1 0 0 3040b.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (tan)
 1 19 -130 -168 -70 0 0 1 0 1 0 -1 0 0 3040b.dat
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (tan)
 1 19 -10 -168 -70 -1 0 0 0 1 0 0 0 -1 2357.dat
 0 STEP
-0 // Plate  1 x  1 Round with Open Stud
+0 // Plate  1 x  1 Round with Open Stud (dark_bluish_grey)
 1 72 -170 -152 -90 -1 0 0 0 1 0 0 0 -1 85861.dat
-0 // Plate  1 x  1 Round with Open Stud
+0 // Plate  1 x  1 Round with Open Stud (dark_bluish_grey)
 1 72 -30 -152 -90 -1 0 0 0 1 0 0 0 -1 85861.dat
-0 // Animal Horn Spiral
+0 // Animal Horn Spiral (pearl_silver)
 1 179 -170 -156 -90 0 0 1 1 0 0 0 1 0 89522.dat
-0 // Animal Horn Spiral
+0 // Animal Horn Spiral (pearl_silver)
 1 179 -30 -156 -90 0 0 1 1 0 0 0 1 0 89522.dat
 0 STEP
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (dark_tan)
 1 28 90 -176 50 0 0 1 0 1 0 -1 0 0 3024.dat
-0 // Brick  1 x  6
+0 // Brick  1 x  6 (tan)
 1 19 70 -192 0 0 0 1 0 1 0 -1 0 0 3009.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (tan)
 1 19 30 -192 -50 -1 0 0 0 1 0 0 0 -1 3622.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 -210 -192 -50 0 0 -1 0 1 0 1 0 0 3005.dat
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (tan)
 1 19 -230 -192 -70 0 0 -1 0 1 0 1 0 0 2357.dat
-0 // Brick  1 x  6
+0 // Brick  1 x  6 (tan)
 1 19 -270 -192 0 0 0 1 0 1 0 -1 0 0 3009.dat
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (tan)
 1 19 -290 -192 -70 1 0 0 0 1 0 0 0 1 2357.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (dark_tan)
 1 28 -290 -176 50 0 0 1 0 1 0 -1 0 0 3024.dat
 0 STEP
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (tan)
 1 19 -180 -192 -60 0 0 -1 0 1 0 1 0 0 3003.dat
-0 // Brick  1 x  6
+0 // Brick  1 x  6 (tan)
 1 19 -100 -192 -50 1 0 0 0 1 0 0 0 1 3009.dat
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (tan)
 1 19 -20 -192 -60 0 0 -1 0 1 0 1 0 0 3003.dat
 0 STEP
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (tan)
 1 19 -110 -192 -70 0 0 1 0 1 0 -1 0 0 3040b.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (tan)
 1 19 -90 -192 -70 0 0 -1 0 1 0 1 0 0 3040b.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 -190 -192 -90 0 0 -1 0 1 0 1 0 0 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 -10 -192 -90 0 0 -1 0 1 0 1 0 0 3005.dat
 0 STEP
-0 // Cone  2 x  2 Truncated
+0 // Cone  2 x  2 Truncated (dark_tan)
 1 28 -200 -32 20 0 0 -1 0 1 0 1 0 0 98100.dat
-0 // Minifig Goblet
+0 // Minifig Goblet (pearl_gold)
 1 297 -200 -72 20 0 0 -1 0 1 0 1 0 0 2343.dat
-0 // Minifig Flame with Rim
+0 // Minifig Flame with Rim (trans_light_blue)
 1 43 -200 -82 20 1 0 0 0 0 -1 0 1 0 6126b.dat
-0 // Plate  1 x  1 Round with Open Stud
+0 // Plate  1 x  1 Round with Open Stud (trans_light_blue)
 1 43 -200 -76 20 0 0 -1 0 1 0 1 0 0 85861.dat
 0 STEP
-0 // Container Treasure Chest with Slots
+0 // Container Treasure Chest with Slots (reddish_brown)
 1 70 0 -40 20 -1 0 0 0 1 0 0 0 -1 4738a.dat
-0 // Container Treasure Chest with Slots Lid
+0 // Container Treasure Chest with Slots Lid (reddish_brown)
 1 70 0 -56 20 -1 0 0 0 1 0 0 0 -1 4739.dat
 0 STEP
-0 // Brick  1 x 16
+0 // Brick  1 x 16 (tan)
 1 19 -100 -192 50 -1 0 0 0 1 0 0 0 -1 2465.dat
-0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring (tan)
 1 19 90 -200 50 1 0 0 0 1 0 0 0 1 3665a.dat
-0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring (tan)
 1 19 -290 -200 50 1 0 0 0 1 0 0 0 1 3665a.dat
 0 STEP
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (dark_tan)
 1 28 -290 -200 -50 0 0 1 0 1 0 -1 0 0 3024.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (dark_tan)
 1 28 -260 -200 -70 1 0 0 0 1 0 0 0 1 3710.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (dark_tan)
 1 28 -190 -200 -70 0 0 1 0 1 0 -1 0 0 2420.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (dark_tan)
 1 28 -10 -200 -70 -1 0 0 0 1 0 0 0 -1 2420.dat
-0 // Slope Brick 45  2 x  1 Double with Bottom Stud Holder
+0 // Slope Brick 45  2 x  1 Double with Bottom Stud Holder (dark_bluish_grey)
 1 72 -100 -216 -70 0 0 1 0 1 0 -1 0 0 3044c.dat
 0 STEP
-0 // Plate  4 x  6
+0 // Plate  4 x  6 (dark_tan)
 1 28 -240 -200 0 0 0 1 0 1 0 -1 0 0 3032.dat
-0 // Plate  4 x  6
+0 // Plate  4 x  6 (dark_tan)
 1 28 -160 -200 0 0 0 1 0 1 0 -1 0 0 3032.dat
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (dark_tan)
 1 28 -100 -200 0 0 0 1 0 1 0 -1 0 0 3795.dat
-0 // Plate  4 x  6
+0 // Plate  4 x  6 (dark_tan)
 1 28 -40 -200 0 0 0 1 0 1 0 -1 0 0 3032.dat
-0 // Plate  4 x  6
+0 // Plate  4 x  6 (dark_tan)
 1 28 40 -200 0 0 0 1 0 1 0 -1 0 0 3032.dat
 0 STEP
-0 // Brick  1 x  2 x  2 without Understud
+0 // Brick  1 x  2 x  2 without Understud (tan)
 1 19 -290 -248 -60 0 0 1 0 1 0 -1 0 0 3245c.dat
-0 // Window  1 x  2 x  2 without Sill
+0 // Window  1 x  2 x  2 without Sill (reddish_brown)
 1 70 -260 -248 -70 1 0 0 0 1 0 0 0 1 60592.dat
-0 // Window  1 x  2 x  2 Pane Lattice Diamond
+0 // Window  1 x  2 x  2 Pane Lattice Diamond (black)
 1 0 -260 -248 -70 1 0 0 0 1 0 0 0 1 38320.dat
 0 STEP
-0 // Brick  1 x  2 x  2 without Understud
+0 // Brick  1 x  2 x  2 without Understud (tan)
 1 19 -270 -248 -40 0 0 1 0 1 0 -1 0 0 3245c.dat
-0 // Brick  1 x  2 x  2 without Understud
+0 // Brick  1 x  2 x  2 without Understud (tan)
 1 19 -230 -248 -60 0 0 1 0 1 0 -1 0 0 3245c.dat
-0 // Window  1 x  2 x  2.667 with Rounded Top
+0 // Window  1 x  2 x  2.667 with Rounded Top (reddish_brown)
 1 70 -270 -264 0 0 0 1 0 1 0 -1 0 0 30044.dat
-0 // Window  1 x  2 x  2.667 Pane Lattice Diamond with Rounded Top
+0 // Window  1 x  2 x  2.667 Pane Lattice Diamond with Rounded Top (black)
 1 0 -274 -241 0 0 0 1 0 1 0 -1 0 0 30046.dat
-0 // Brick  1 x  2 x  2 without Understud
+0 // Brick  1 x  2 x  2 without Understud (tan)
 1 19 -270 -248 40 0 0 1 0 1 0 -1 0 0 3245c.dat
 0 STEP
-0 // Slope Brick 75  2 x  1 x  3 with Hollow Stud
+0 // Slope Brick 75  2 x  1 x  3 with Hollow Stud (tan)
 1 19 -250 -320 -70 0 0 -1 0 1 0 1 0 0 4460b.dat
-0 // Slope Brick 75  2 x  2 x  3 with Solid Studs
+0 // Slope Brick 75  2 x  2 x  3 with Solid Studs (tan)
 1 19 -270 -320 -60 0 0 1 0 1 0 -1 0 0 3684c.dat
-0 // Slope Brick 75  2 x  1 x  3 with Hollow Stud
+0 // Slope Brick 75  2 x  1 x  3 with Hollow Stud (dark_bluish_grey)
 1 72 -290 -272 50 1 0 0 0 1 0 0 0 1 4460b.dat
-0 // Arch  1 x  4
+0 // Arch  1 x  4 (tan)
 1 19 -270 -272 0 0 0 -1 0 1 0 1 0 0 3659.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 -270 -272 50 0 0 -1 0 1 0 1 0 0 3005.dat
 0 STEP
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (dark_tan)
 1 28 -270 -296 0 0 0 -1 0 1 0 1 0 0 3010.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (dark_bluish_grey)
 1 72 -270 -296 50 0 0 1 0 1 0 -1 0 0 3040b.dat
 0 STEP
-0 // Slope Brick 45  2 x  1 Double with Bottom Stud Holder
+0 // Slope Brick 45  2 x  1 Double with Bottom Stud Holder (dark_bluish_grey)
 1 72 -260 -344 -70 0 0 1 0 1 0 -1 0 0 3044c.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 -270 -320 -30 0 0 -1 0 1 0 1 0 0 3005.dat
-0 // Brick  1 x  1 x  3
+0 // Brick  1 x  1 x  3 (tan)
 1 19 -230 -320 -50 0 0 -1 0 1 0 1 0 0 14716.dat
 0 STEP
-0 // Brick  1 x  2 with Embossed Bricks
+0 // Brick  1 x  2 with Embossed Bricks (medium_nougat)
 1 84 -270 -344 -40 0 0 1 0 1 0 -1 0 0 98283.dat
-0 // Window  1 x  2 x  2.667 with Rounded Top
+0 // Window  1 x  2 x  2.667 with Rounded Top (reddish_brown)
 1 70 -270 -360 0 0 0 1 0 1 0 -1 0 0 30044.dat
-0 // Window  1 x  2 x  2.667 Pane Lattice Diamond with Rounded Top
+0 // Window  1 x  2 x  2.667 Pane Lattice Diamond with Rounded Top (black)
 1 0 -274 -337 0 0 0 1 0 1 0 -1 0 0 30046.dat
-0 // Brick  1 x  2 x  2 without Understud
+0 // Brick  1 x  2 x  2 without Understud (tan)
 1 19 -270 -344 40 0 0 1 0 1 0 -1 0 0 3245c.dat
 0 STEP
-0 // ~Brick  1 x  2 x  5 (Obsolete)
+0 // ~Brick  1 x  2 x  5 (Obsolete) (tan)
 1 19 -190 -320 -80 0 0 -1 0 1 0 1 0 0 2454.dat
-0 // ~Brick  1 x  2 x  5 (Obsolete)
+0 // ~Brick  1 x  2 x  5 (Obsolete) (tan)
 1 19 -200 -320 -50 1 0 0 0 1 0 0 0 1 2454.dat
-0 // ~Brick  1 x  2 x  5 (Obsolete)
+0 // ~Brick  1 x  2 x  5 (Obsolete) (tan)
 1 19 -170 -320 -60 0 0 -1 0 1 0 1 0 0 2454.dat
 0 STEP
-0 // Brick  1 x  1 x  3
+0 // Brick  1 x  1 x  3 (tan)
 1 19 -150 -272 -50 0 0 -1 0 1 0 1 0 0 14716.dat
-0 // Brick  1 x  1 with Half Arch on Two Adjacent Sides
+0 // Brick  1 x  1 with Half Arch on Two Adjacent Sides (tan)
 1 19 -150 -296 -50 1 0 0 0 1 0 0 0 1 38585.dat
-0 // Arch  1 x  3 x  2 Ogee
+0 // Arch  1 x  3 x  2 Ogee (tan)
 1 19 -150 -344 -50 0 0 1 0 1 0 -1 0 0 88292.dat
 0 STEP
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (tan)
 1 19 -190 -344 -70 0 0 1 0 1 0 -1 0 0 2357.dat
-0 // Brick  1 x  2 with Embossed Bricks
+0 // Brick  1 x  2 with Embossed Bricks (medium_nougat)
 1 84 -160 -344 -50 1 0 0 0 1 0 0 0 1 98283.dat
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (dark_tan)
 1 28 -220 -344 -50 -1 0 0 0 1 0 0 0 -1 3010.dat
 0 STEP
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (dark_brown)
 1 308 -250 -224 -30 0 0 1 0 1 0 -1 0 0 3062b.dat
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (dark_brown)
 1 308 -150 -224 -30 0 0 1 0 1 0 -1 0 0 3062b.dat
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (dark_tan)
 1 28 -200 -232 -30 1 0 0 0 1 0 0 0 1 3666.dat
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (trans_green)
 1 34 -250 -256 -30 1 0 0 0 1 0 0 0 1 3062b.dat
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (trans_neon_green)
 1 42 -190 -256 -30 1 0 0 0 1 0 0 0 1 3062b.dat
-0 // Cone  1 x  1 with Stop
+0 // Cone  1 x  1 with Stop (trans_purple)
 1 52 -170 -256 -30 1 0 0 0 1 0 0 0 1 59900.dat
-0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud
+0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud (reddish_brown)
 1 70 -220 -240 -30 1 0 0 0 1 0 0 0 1 15573.dat
-0 // Tile  1 x  1 Round with Groove
+0 // Tile  1 x  1 Round with Groove (light_bluish_grey)
 1 71 -250 -264 -30 1 0 0 0 1 0 0 0 1 98138.dat
-0 // Tile  1 x  1 Round with Groove
+0 // Tile  1 x  1 Round with Groove (light_bluish_grey)
 1 71 -190 -264 -30 1 0 0 0 1 0 0 0 1 98138.dat
-0 // Rock  1 x  1 Gem Facetted
+0 // Rock  1 x  1 Gem Facetted (trans_purple)
 1 52 -170 -260 -30 1 0 0 0 1 0 0 0 1 30153.dat
-0 // Plate  1 x  1 Round with Bar
+0 // Plate  1 x  1 Round with Bar (black)
 1 0 -220 -270 -32 0 0 1 1 0 0 0 1 0 32828.dat
-0 // Dish  2 x  2 with Rim
+0 // Dish  2 x  2 with Rim (trans_clear)
 1 47 -220 -284.142 -24 0.707 0 0.707 0.707 0 -0.707 0 1 0 2654a.dat
 0 STEP
-0 // Window  1 x  2 x  2 without Sill
+0 // Window  1 x  2 x  2 without Sill (black)
 1 0 -120 -248 -30 1 0 0 0 1 0 0 0 1 60592.dat
-0 // Window  1 x  2 x  2 Pane Lattice Diamond
+0 // Window  1 x  2 x  2 Pane Lattice Diamond (black)
 1 0 -120 -248 -30 1 0 0 0 1 0 0 0 1 38320.dat
-0 // Window  1 x  2 x  2 without Sill
+0 // Window  1 x  2 x  2 without Sill (black)
 1 0 -120 -296 -30 1 0 0 0 1 0 0 0 1 60592.dat
-0 // Window  1 x  2 x  2 Pane Lattice Diamond
+0 // Window  1 x  2 x  2 Pane Lattice Diamond (black)
 1 0 -120 -296 -30 1 0 0 0 1 0 0 0 1 38320.dat
-0 // Window  1 x  2 x  2 without Sill
+0 // Window  1 x  2 x  2 without Sill (black)
 1 0 -120 -344 -30 1 0 0 0 1 0 0 0 1 60592.dat
-0 // Window  1 x  2 x  2 Pane Lattice Diamond
+0 // Window  1 x  2 x  2 Pane Lattice Diamond (black)
 1 0 -120 -344 -30 1 0 0 0 1 0 0 0 1 38320.dat
-0 // Window  1 x  2 x  2 without Sill
+0 // Window  1 x  2 x  2 without Sill (black)
 1 0 -80 -248 -30 1 0 0 0 1 0 0 0 1 60592.dat
-0 // Window  1 x  2 x  2 Pane Lattice Diamond
+0 // Window  1 x  2 x  2 Pane Lattice Diamond (black)
 1 0 -80 -248 -30 1 0 0 0 1 0 0 0 1 38320.dat
-0 // Window  1 x  2 x  2 without Sill
+0 // Window  1 x  2 x  2 without Sill (black)
 1 0 -80 -296 -30 1 0 0 0 1 0 0 0 1 60592.dat
-0 // Window  1 x  2 x  2 Pane Lattice Diamond
+0 // Window  1 x  2 x  2 Pane Lattice Diamond (black)
 1 0 -80 -296 -30 1 0 0 0 1 0 0 0 1 38320.dat
-0 // Window  1 x  2 x  2 without Sill
+0 // Window  1 x  2 x  2 without Sill (black)
 1 0 -80 -344 -30 1 0 0 0 1 0 0 0 1 60592.dat
-0 // Window  1 x  2 x  2 Pane Lattice Diamond
+0 // Window  1 x  2 x  2 Pane Lattice Diamond (black)
 1 0 -80 -344 -30 1 0 0 0 1 0 0 0 1 38320.dat
-0 // Minifig Seat  2 x  2
+0 // Minifig Seat  2 x  2 (reddish_brown)
 1 70 -220 -216 20 0 0 -1 0 1 0 1 0 0 4079.dat
-0 // Plate  2 x  2 Round with Axlehole
+0 // Plate  2 x  2 Round with Axlehole (dark_brown)
 1 308 -220 -208 20 0 0 -1 0 1 0 1 0 0 4032a.dat
 0 STEP
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (dark_brown)
 1 308 -160 -224 -10 -1 0 0 0 1 0 0 0 -1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (dark_brown)
 1 308 -160 -224 50 -1 0 0 0 1 0 0 0 -1 30136.dat
-0 // Plate  1 x  4 with Two Studs
+0 // Plate  1 x  4 with Two Studs (reddish_brown)
 1 70 -170 -232 20 0 0 1 0 1 0 -1 0 0 92593.dat
-0 // Plate  1 x  4 with Two Studs
+0 // Plate  1 x  4 with Two Studs (reddish_brown)
 1 70 -150 -232 20 0 0 1 0 1 0 -1 0 0 92593.dat
-0 // Tile  1 x  1 Round with Pin and Pin Hole
+0 // Tile  1 x  1 Round with Pin and Pin Hole (black)
 1 0 -150 -240 50 0 0 1 0 1 0 -1 0 0 20482.dat
-0 // Minifig Plume Small
+0 // Minifig Plume Small (white)
 1 15 -150 -248 50 -0.707 0 -0.707 0 1 0 0.707 0 -0.707 87693.dat
 0 STEP
-0 // Brick  1 x  1 x  3
+0 // Brick  1 x  1 x  3 (tan)
 1 19 -50 -272 -50 0 0 -1 0 1 0 1 0 0 14716.dat
-0 // Brick  1 x  1 with Half Arch on Two Adjacent Sides
+0 // Brick  1 x  1 with Half Arch on Two Adjacent Sides (tan)
 1 19 -50 -296 -50 0 0 1 0 1 0 -1 0 0 38585.dat
-0 // Arch  1 x  3 x  2 Ogee
+0 // Arch  1 x  3 x  2 Ogee (tan)
 1 19 -50 -344 -50 0 0 -1 0 1 0 1 0 0 88292.dat
 0 STEP
-0 // ~Brick  1 x  2 x  5 (Obsolete)
+0 // ~Brick  1 x  2 x  5 (Obsolete) (tan)
 1 19 -30 -320 -60 0 0 -1 0 1 0 1 0 0 2454.dat
-0 // ~Brick  1 x  2 x  5 (Obsolete)
+0 // ~Brick  1 x  2 x  5 (Obsolete) (tan)
 1 19 -10 -320 -80 0 0 -1 0 1 0 1 0 0 2454.dat
 0 STEP
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (tan)
 1 19 -10 -344 -70 -1 0 0 0 1 0 0 0 -1 2357.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (dark_tan)
 1 28 -40 -344 -50 -1 0 0 0 1 0 0 0 -1 30136.dat
 0 STEP
-0 // Brick  1 x  2 x  2 without Understud
+0 // Brick  1 x  2 x  2 without Understud (tan)
 1 19 0 -248 -50 1 0 0 0 1 0 0 0 1 3245c.dat
-0 // Window  1 x  2 x  2.667 with Rounded Top
+0 // Window  1 x  2 x  2.667 with Rounded Top (reddish_brown)
 1 70 40 -264 -50 1 0 0 0 1 0 0 0 1 30044.dat
-0 // Window  1 x  2 x  2.667 Pane Lattice Diamond with Rounded Top
+0 // Window  1 x  2 x  2.667 Pane Lattice Diamond with Rounded Top (black)
 1 0 40 -241 -54 1 0 0 0 1 0 0 0 1 30046.dat
-0 // Brick  1 x  2 x  2 without Understud
+0 // Brick  1 x  2 x  2 without Understud (tan)
 1 19 70 -248 -40 0 0 -1 0 1 0 1 0 0 3245c.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (light_bluish_grey)
 1 71 30 -208 -10 0 0 -1 0 1 0 1 0 0 3024.dat
-0 // Tile  2 x  2 Corner
+0 // Tile  2 x  2 Corner (light_bluish_grey)
 1 71 10 -208 -30 1 0 0 0 1 0 0 0 1 14719.dat
 0 STEP
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 -10 -272 -50 0 0 -1 0 1 0 1 0 0 3005.dat
-0 // Arch  1 x  4
+0 // Arch  1 x  4 (tan)
 1 19 40 -272 -50 -1 0 0 0 1 0 0 0 -1 3659.dat
 0 STEP
-0 // Panel  1 x  2 x  3 Reinforced with Hollow Studs
+0 // Panel  1 x  2 x  3 Reinforced with Hollow Studs (black)
 1 0 22.929 -280 -17.071 0.707 0 -0.707 0 1 0 0.707 0 0.707 87544.dat
-0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud
+0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud (reddish_brown)
 1 70 22.929 -288 -17.071 0.707 0 -0.707 0 1 0 0.707 0 0.707 15573.dat
 0 STEP
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (dark_brown)
 1 308 -30 -224 10 0 0 1 0 1 0 -1 0 0 3062b.dat
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (dark_brown)
 1 308 -70 -224 10 0 0 1 0 1 0 -1 0 0 3062b.dat
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (dark_brown)
 1 308 -70 -224 50 0 0 1 0 1 0 -1 0 0 3062b.dat
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (dark_brown)
 1 308 -30 -224 50 0 0 1 0 1 0 -1 0 0 3062b.dat
-0 // Plate  3 x  3
+0 // Plate  3 x  3 (black)
 1 0 -50 -232 30 0 0 1 0 1 0 -1 0 0 11212.dat
-0 // Tile  1 x  1 Round with Pin and Pin Hole
+0 // Tile  1 x  1 Round with Pin and Pin Hole (black)
 1 0 -30 -240 10 0 0 1 0 1 0 -1 0 0 20482.dat
-0 // Cone  1 x  1 with Stop
+0 // Cone  1 x  1 with Stop (black)
 1 0 -30 -244 10 0 0 1 0 -1 0 1 0 0 59900.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_yellow)
 1 46 -30 -268 10 0 0 1 0 -1 0 1 0 0 6141.dat
-0 // Dish  2 x  2 with Rim
+0 // Dish  2 x  2 with Rim (black)
 1 0 -30 -276 10 0 0 1 0 -1 0 1 0 0 2654a.dat
-0 // Plate  2 x  2 Round with Axlehole
+0 // Plate  2 x  2 Round with Axlehole (dark_brown)
 1 308 -60 -240 40 0 0 -1 0 1 0 1 0 0 4032a.dat
-0 // Cylinder  2 x  2 x  1.667 with Dome Top and Hollow Stud
+0 // Cylinder  2 x  2 x  1.667 with Dome Top and Hollow Stud (trans_clear)
 1 47 -60 -280 40 0 0 1 0 1 0 -1 0 0 30151b.dat
 0 STEP
-0 // Window  1 x  2 x  2.667 with Rounded Top
+0 // Window  1 x  2 x  2.667 with Rounded Top (reddish_brown)
 1 70 70 -264 0 0 0 -1 0 1 0 1 0 0 30044.dat
-0 // Window  1 x  2 x  2.667 Pane Lattice Diamond with Rounded Top
+0 // Window  1 x  2 x  2.667 Pane Lattice Diamond with Rounded Top (black)
 1 0 74 -241 0 0 0 -1 0 1 0 1 0 0 30046.dat
-0 // Brick  1 x  2 x  2 without Understud
+0 // Brick  1 x  2 x  2 without Understud (tan)
 1 19 70 -248 40 0 0 -1 0 1 0 1 0 0 3245c.dat
 0 STEP
-0 // Arch  1 x  4
+0 // Arch  1 x  4 (tan)
 1 19 70 -272 0 0 0 1 0 1 0 -1 0 0 3659.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 70 -272 50 0 0 -1 0 1 0 1 0 0 3005.dat
-0 // Slope Brick 75  2 x  1 x  3 with Hollow Stud
+0 // Slope Brick 75  2 x  1 x  3 with Hollow Stud (dark_bluish_grey)
 1 72 90 -272 50 1 0 0 0 1 0 0 0 1 4460b.dat
 0 STEP
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (tan)
 1 19 10 -296 -50 1 0 0 0 1 0 0 0 1 3622.dat
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (tan)
 1 19 70 -296 -50 0 0 -1 0 1 0 1 0 0 2357.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (tan)
 1 19 70 -296 10 0 0 -1 0 1 0 1 0 0 3622.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (dark_bluish_grey)
 1 72 70 -296 50 0 0 -1 0 1 0 1 0 0 3040b.dat
 0 STEP
-0 // Brick  1 x  2 x  2 without Understud
+0 // Brick  1 x  2 x  2 without Understud (tan)
 1 19 0 -344 -50 1 0 0 0 1 0 0 0 1 3245c.dat
-0 // Window  1 x  2 x  2.667 with Rounded Top
+0 // Window  1 x  2 x  2.667 with Rounded Top (reddish_brown)
 1 70 40 -360 -50 1 0 0 0 1 0 0 0 1 30044.dat
-0 // Window  1 x  2 x  2.667 Pane Lattice Diamond with Rounded Top
+0 // Window  1 x  2 x  2.667 Pane Lattice Diamond with Rounded Top (black)
 1 0 40 -337 -54 1 0 0 0 1 0 0 0 1 30046.dat
-0 // Brick  1 x  2 x  2 without Understud
+0 // Brick  1 x  2 x  2 without Understud (tan)
 1 19 70 -344 -40 0 0 -1 0 1 0 1 0 0 3245c.dat
 0 STEP
-0 // Window  1 x  2 x  2.667 with Rounded Top
+0 // Window  1 x  2 x  2.667 with Rounded Top (reddish_brown)
 1 70 70 -360 0 0 0 -1 0 1 0 1 0 0 30044.dat
-0 // Window  1 x  2 x  2.667 Pane Lattice Diamond with Rounded Top
+0 // Window  1 x  2 x  2.667 Pane Lattice Diamond with Rounded Top (black)
 1 0 74 -337 0 0 0 -1 0 1 0 1 0 0 30046.dat
-0 // Brick  1 x  2 x  2 without Understud
+0 // Brick  1 x  2 x  2 without Understud (tan)
 1 19 70 -344 40 0 0 -1 0 1 0 1 0 0 3245c.dat
 0 STEP
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (dark_tan)
 1 28 -240 -368 -50 -1 0 0 0 1 0 0 0 -1 3010.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (tan)
 1 19 -190 -368 -70 0 0 -1 0 1 0 1 0 0 3622.dat
-0 // Arch  1 x  4
+0 // Arch  1 x  4 (tan)
 1 19 -270 -368 0 0 0 -1 0 1 0 1 0 0 3659.dat
-0 // Brick  1 x  1 with Scroll with Open Stud
+0 // Brick  1 x  1 with Scroll with Open Stud (tan)
 1 19 -270 -368 50 0 0 -1 0 1 0 1 0 0 75948 - 20310.dat
 0 STEP
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (dark_tan)
 1 28 -170 -368 -60 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (tan)
 1 19 -130 -368 -50 0 0 -1 0 1 0 1 0 0 2357.dat
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (tan)
 1 19 -100 -368 -40 0 0 -1 0 1 0 1 0 0 3003.dat
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (tan)
 1 19 -70 -368 -50 1 0 0 0 1 0 0 0 1 2357.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (dark_tan)
 1 28 -30 -368 -60 0 0 1 0 1 0 -1 0 0 30136.dat
 0 STEP
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (tan)
 1 19 -10 -368 -70 0 0 -1 0 1 0 1 0 0 3622.dat
-0 // Arch  1 x  4
+0 // Arch  1 x  4 (tan)
 1 19 40 -368 -50 -1 0 0 0 1 0 0 0 -1 3659.dat
-0 // Arch  1 x  4
+0 // Arch  1 x  4 (tan)
 1 19 70 -368 0 0 0 1 0 1 0 -1 0 0 3659.dat
-0 // Brick  1 x  1 with Scroll with Open Stud
+0 // Brick  1 x  1 with Scroll with Open Stud (tan)
 1 19 70 -368 50 0 0 1 0 1 0 -1 0 0 75948 - 20310.dat
 0 STEP
-0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring (tan)
 1 19 -270 -392 -50 1 0 0 0 1 0 0 0 1 3665a.dat
-0 // Brick  2 x  2 Facet
+0 // Brick  2 x  2 Facet (light_bluish_grey)
 1 71 -260 -392 -40 0 0 -1 0 1 0 1 0 0 87620.dat
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (dark_tan)
 1 28 -270 -392 20 0 0 -1 0 1 0 1 0 0 3010.dat
-0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring (tan)
 1 19 -230 -392 -50 1 0 0 0 1 0 0 0 1 3665a.dat
 0 STEP
-0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring (tan)
 1 19 -190 -392 -90 0 0 1 0 1 0 -1 0 0 3665a.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (dark_tan)
 1 28 -200 -400 -90 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring (tan)
 1 19 -10 -392 -90 0 0 -1 0 1 0 1 0 0 3665a.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (dark_tan)
 1 28 0 -400 -90 -1 0 0 0 1 0 0 0 -1 3023.dat
 0 STEP
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (tan)
 1 19 -190 -392 -50 -1 0 0 0 1 0 0 0 -1 2357.dat
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (tan)
 1 19 -170 -392 -50 0 0 1 0 1 0 -1 0 0 2357.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (tan)
 1 19 -100 -392 -40 1 0 0 0 1 0 0 0 1 3001.dat
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (tan)
 1 19 -30 -392 -50 -1 0 0 0 1 0 0 0 -1 2357.dat
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (tan)
 1 19 -10 -392 -50 0 0 1 0 1 0 -1 0 0 2357.dat
 0 STEP
-0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring (tan)
 1 19 30 -392 -50 1 0 0 0 1 0 0 0 1 3665a.dat
-0 // Brick  2 x  2 Facet
+0 // Brick  2 x  2 Facet (light_bluish_grey)
 1 71 60 -392 -40 -1 0 0 0 1 0 0 0 -1 87620.dat
-0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring (tan)
 1 19 70 -392 -50 1 0 0 0 1 0 0 0 1 3665a.dat
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (dark_tan)
 1 28 70 -392 20 0 0 -1 0 1 0 1 0 0 3010.dat
 0 STEP
-0 // Brick  1 x 16
+0 // Brick  1 x 16 (tan)
 1 19 -100 -392 50 -1 0 0 0 1 0 0 0 -1 2465.dat
 0 STEP
-0 // Plate  4 x  6
+0 // Plate  4 x  6 (dark_tan)
 1 28 40 -400 0 0 0 1 0 1 0 -1 0 0 3032.dat
-0 // Plate  4 x  6
+0 // Plate  4 x  6 (dark_tan)
 1 28 -40 -400 0 0 0 1 0 1 0 -1 0 0 3032.dat
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (dark_tan)
 1 28 -100 -400 0 0 0 1 0 1 0 -1 0 0 3795.dat
-0 // Plate  4 x  6
+0 // Plate  4 x  6 (dark_tan)
 1 28 -160 -400 0 0 0 1 0 1 0 -1 0 0 3032.dat
-0 // Plate  4 x  6
+0 // Plate  4 x  6 (dark_tan)
 1 28 -240 -400 0 0 0 1 0 1 0 -1 0 0 3032.dat
 0 STEP
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (dark_tan)
 1 28 -220 -400 -70 -1 0 0 0 1 0 0 0 -1 3666.dat
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (dark_tan)
 1 28 20 -400 -70 -1 0 0 0 1 0 0 0 -1 3666.dat
 0 STEP
-0 // Minifig Book Base with Two Studs
+0 // Minifig Book Base with Two Studs (reddish_brown)
 1 70 -160 -236 4 0 -1 0 -1 0 0 0 0 -1 24324.dat
-0 // Tile  1 x  2 with "Wingardium Leviosa", Wand, Feather and Text Pattern
+0 // Tile  1 x  2 with "Wingardium Leviosa", Wand, Feather and Text Pattern (tan)
 1 19 -160 -244 20 1 0 0 0 1 0 0 0 1 3069bph2.dat
-0 // Minifig Book Cover
+0 // Minifig Book Cover (reddish_brown)
 1 70 -160 -247 34 0 -1 0 -1 0 0 0 0 -1 24093.dat
 0 STEP
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (tan)
 1 19 -240 -424 -60 1 0 0 0 1 0 0 0 1 3001.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 -270 -424 -30 0 0 -1 0 1 0 1 0 0 3005.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (tan)
 1 19 -190 -424 -70 0 0 -1 0 1 0 1 0 0 3622.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (dark_tan)
 1 28 -170 -424 -60 0 0 1 0 1 0 -1 0 0 30136.dat
 0 STEP
-0 // Window  1 x  2 x  2.667 with Rounded Top
+0 // Window  1 x  2 x  2.667 with Rounded Top (reddish_brown)
 1 70 -270 -464 0 0 0 1 0 1 0 -1 0 0 30044.dat
-0 // Window  1 x  2 x  2.667 Pane Lattice Diamond with Rounded Top
+0 // Window  1 x  2 x  2.667 Pane Lattice Diamond with Rounded Top (black)
 1 0 -274 -441 0 0 0 1 0 1 0 -1 0 0 30046.dat
-0 // Brick  1 x  2 x  2 without Understud
+0 // Brick  1 x  2 x  2 without Understud (tan)
 1 19 -270 -448 40 0 0 1 0 1 0 -1 0 0 3245c.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (tan)
 1 19 -270 -448 -50 0 0 -1 0 1 0 1 0 0 3622.dat
 0 STEP
 1 28 -100 -424 -50 1 0 0 0 1 0 0 0 1 75948 - Clock.ldr
 0 STEP
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (dark_tan)
 1 28 -30 -424 -60 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (tan)
 1 19 -10 -424 -70 0 0 -1 0 1 0 1 0 0 3622.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (tan)
 1 19 40 -424 -60 1 0 0 0 1 0 0 0 1 3001.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 70 -424 -30 0 0 -1 0 1 0 1 0 0 3005.dat
 0 STEP
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (dark_tan)
 1 28 -220 -432 -60 -1 0 0 0 1 0 0 0 -1 3020.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (dark_tan)
 1 28 -170 -432 -50 0 0 1 0 1 0 -1 0 0 2420.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (tan)
 1 19 -100 -432 -50 1 0 0 0 1 0 0 0 1 3710.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (dark_tan)
 1 28 -30 -432 -50 -1 0 0 0 1 0 0 0 -1 2420.dat
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (dark_tan)
 1 28 20 -432 -60 -1 0 0 0 1 0 0 0 -1 3020.dat
 0 STEP
-0 // Plate  1 x  2 with Single Clip on Top
+0 // Plate  1 x  2 with Single Clip on Top (light_bluish_grey)
 1 71 -250 -440 -60 0 0 1 0 1 0 -1 0 0 92280.dat
-0 // Panel  1 x  2 x  1 with Rounded Corners
+0 // Panel  1 x  2 x  1 with Rounded Corners (dark_tan)
 1 28 -220 -456 -70 -1 0 0 0 1 0 0 0 -1 4865b.dat
-0 // Plate  1 x  2 with Single Clip on Top
+0 // Plate  1 x  2 with Single Clip on Top (light_bluish_grey)
 1 71 -190 -440 -60 0 0 1 0 1 0 -1 0 0 92280.dat
-0 // Plate  1 x  2 with Single Clip on Top
+0 // Plate  1 x  2 with Single Clip on Top (light_bluish_grey)
 1 71 -10 -440 -60 0 0 1 0 1 0 -1 0 0 92280.dat
-0 // Panel  1 x  2 x  1 with Rounded Corners
+0 // Panel  1 x  2 x  1 with Rounded Corners (dark_tan)
 1 28 20 -456 -70 -1 0 0 0 1 0 0 0 -1 4865b.dat
-0 // Plate  1 x  2 with Single Clip on Top
+0 // Plate  1 x  2 with Single Clip on Top (light_bluish_grey)
 1 71 50 -440 -60 0 0 1 0 1 0 -1 0 0 92280.dat
 0 STEP
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (dark_tan)
 1 28 -170 -456 -60 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  6
+0 // Brick  1 x  6 (tan)
 1 19 -100 -456 -50 1 0 0 0 1 0 0 0 1 3009.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (dark_tan)
 1 28 -30 -456 -60 0 0 1 0 1 0 -1 0 0 30136.dat
 0 STEP
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (tan)
 1 19 -140 -464 -50 1 0 0 0 1 0 0 0 1 3710.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (tan)
 1 19 -60 -464 -50 1 0 0 0 1 0 0 0 1 3710.dat
 0 STEP
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (tan)
 1 19 -150 -488 -50 0 0 1 0 1 0 -1 0 0 3040b.dat
-0 // Brick  1 x  1 with Studs on Two Opposite Sides
+0 // Brick  1 x  1 with Studs on Two Opposite Sides (tan)
 1 19 -130 -488 -50 1 0 0 0 1 0 0 0 1 47905.dat
-0 // Brick  1 x  2 with Embossed Bricks
+0 // Brick  1 x  2 with Embossed Bricks (medium_nougat)
 1 84 -100 -488 -50 1 0 0 0 1 0 0 0 1 98283.dat
 0 STEP
-0 // Brick  1 x  1 with Studs on Two Opposite Sides
+0 // Brick  1 x  1 with Studs on Two Opposite Sides (tan)
 1 19 -70 -488 -50 1 0 0 0 1 0 0 0 1 47905.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (tan)
 1 19 -50 -488 -50 0 0 -1 0 1 0 1 0 0 3040b.dat
-0 // Cone  1 x  1 with Stop
+0 // Cone  1 x  1 with Stop (pearl_gold)
 1 297 -70 -478 -84 -1 0 0 0 0 1 0 1 0 59900.dat
-0 // Bar  1.5L with Clip with Truncated Sides and Hole in Shaft
+0 // Bar  1.5L with Clip with Truncated Sides and Hole in Shaft (black)
 1 0 -70 -478 -98 0 0 1 1 0 0 0 1 0 48729b.dat
 0 STEP
-0 // Arch  1 x  8 x  2 Raised
+0 // Arch  1 x  8 x  2 Raised (tan)
 1 19 -100 -504 -70 1 0 0 0 1 0 0 0 1 16577.dat
 0 STEP
-0 // Slope Plate 45  2 x  1
+0 // Slope Plate 45  2 x  1 (dark_tan)
 1 28 -160 -512 -70 0 0 1 0 1 0 -1 0 0 15672.dat
-0 // Brick  2 x  4 x  1.333 with Curved Top
+0 // Brick  2 x  4 x  1.333 with Curved Top (light_bluish_grey)
 1 71 -100 -520 -70 -1 0 0 0 1 0 0 0 -1 6081.dat
-0 // Slope Plate 45  2 x  1
+0 // Slope Plate 45  2 x  1 (dark_tan)
 1 28 -40 -512 -70 0 0 -1 0 1 0 1 0 0 15672.dat
 0 STEP
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (dark_tan)
 1 28 -100 -520 -70 -1 0 0 0 1 0 0 0 -1 3666.dat
 0 STEP
-0 // Bar  3L
+0 // Bar  3L (white)
 1 15 -70 -478 0 0 0 1 -1 0 0 0 -1 0 87994.dat
-0 // Bar  3L
+0 // Bar  3L (white)
 1 15 -130 -478 0 0 0 1 -1 0 0 0 -1 0 87994.dat
-0 // Tile  2 x  3 with Clips Horizontal (Thick C-Clips)
+0 // Tile  2 x  3 with Clips Horizontal (Thick C-Clips) (bright_light_blue)
 1 212 -68 -438 -16 0 -1 0 0 0 -1 1 0 0 30350b.dat
-0 // Tile  2 x  3 with Clips Horizontal (Thick C-Clips)
+0 // Tile  2 x  3 with Clips Horizontal (Thick C-Clips) (bright_light_blue)
 1 212 -132 -438 -16 0 1 0 0 0 -1 -1 0 0 30350b.dat
 0 STEP
 1 28 30 -424 -20 1 0 0 0 1 0 0 0 1 75948 - Bed.ldr
@@ -1570,197 +1570,197 @@
 1 297 -20 -432 -20 -1 0 0 0 1 0 0 0 -1 75948 - Bedside Table.ldr
 1 297 -180 -432 -20 -1 0 0 0 1 0 0 0 -1 75948 - Bedside Table.ldr
 0 STEP
-0 // Technic Brick  1 x  4 with Holes
+0 // Technic Brick  1 x  4 with Holes (tan)
 1 19 -100 -424 50 -1 0 0 0 1 0 0 0 -1 3701.dat
-0 // Plate  1 x  4 with Two Studs
+0 // Plate  1 x  4 with Two Studs (reddish_brown)
 1 70 -100 -432 50 -1 0 0 0 1 0 0 0 -1 92593.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -120 -414 60 0 -0.383 -0.924 0 0.924 -0.383 1 0 0 43093.dat
-0 // Technic Gear  8 Tooth Reinforced
+0 // Technic Gear  8 Tooth Reinforced (dark_bluish_grey)
 1 72 -120 -414 70 -0.924 -0.383 0 -0.383 0.924 0 0 0 -1 10928.dat
 0 STEP
-0 // Technic Axle  6
+0 // Technic Axle  6 (black)
 1 0 -100 -414 40 0 0 -1 0 1 0 1 0 0 3706.dat
-0 // Technic Gear  8 Tooth Reinforced
+0 // Technic Gear  8 Tooth Reinforced (dark_bluish_grey)
 1 72 -100 -414 70 -1 0 0 0 1 0 0 0 -1 10928.dat
-0 // Technic Beam  3 x  0.5 Liftarm with Boss and Pin with Closed Central Axle Hole
+0 // Technic Beam  3 x  0.5 Liftarm with Boss and Pin with Closed Central Axle Hole (black)
 1 0 -100 -414 90 0 0 1 1 0 0 0 1 0 75948 - 33299a.dat
-0 // Technic Beam  1
+0 // Technic Beam  1 (light_bluish_grey)
 1 71 -60 -414 110 0 0 1 1 0 0 0 1 0 18654.dat
 0 STEP
-0 // Window  1 x  2 x  2.667 with Rounded Top
+0 // Window  1 x  2 x  2.667 with Rounded Top (reddish_brown)
 1 70 70 -464 0 0 0 -1 0 1 0 1 0 0 30044.dat
-0 // Window  1 x  2 x  2.667 Pane Lattice Diamond with Rounded Top
+0 // Window  1 x  2 x  2.667 Pane Lattice Diamond with Rounded Top (black)
 1 0 74 -441 0 0 0 -1 0 1 0 1 0 0 30046.dat
-0 // Brick  1 x  2 x  2 without Understud
+0 // Brick  1 x  2 x  2 without Understud (tan)
 1 19 70 -448 40 0 0 -1 0 1 0 1 0 0 3245c.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (tan)
 1 19 70 -448 -50 0 0 -1 0 1 0 1 0 0 3622.dat
 0 STEP
-0 // Brick  1 x  2 with Embossed Bricks
+0 // Brick  1 x  2 with Embossed Bricks (medium_nougat)
 1 84 -270 -472 -60 0 0 1 0 1 0 -1 0 0 98283.dat
-0 // Arch  1 x  4
+0 // Arch  1 x  4 (tan)
 1 19 -270 -472 0 0 0 -1 0 1 0 1 0 0 3659.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 -270 -472 50 0 0 -1 0 1 0 1 0 0 3005.dat
 0 STEP
-0 // Brick  1 x  2 with Embossed Bricks
+0 // Brick  1 x  2 with Embossed Bricks (tan)
 1 19 70 -472 -60 0 0 -1 0 1 0 1 0 0 98283.dat
-0 // Arch  1 x  4
+0 // Arch  1 x  4 (tan)
 1 19 70 -472 0 0 0 -1 0 1 0 1 0 0 3659.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 70 -472 50 0 0 -1 0 1 0 1 0 0 3005.dat
 0 STEP
-0 // Brick  1 x  2 with Embossed Bricks
+0 // Brick  1 x  2 with Embossed Bricks (medium_nougat)
 1 84 70 -496 20 0 0 -1 0 1 0 1 0 0 98283.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (tan)
 1 19 70 -496 -30 0 0 -1 0 1 0 1 0 0 3622.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (tan)
 1 19 -270 -496 -30 0 0 -1 0 1 0 1 0 0 3622.dat
-0 // Brick  1 x  2 with Embossed Bricks
+0 // Brick  1 x  2 with Embossed Bricks (tan)
 1 19 -270 -496 20 0 0 1 0 1 0 -1 0 0 98283.dat
 0 STEP
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (dark_tan)
 1 28 70 -520 0 0 0 -1 0 1 0 1 0 0 3010.dat
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (dark_tan)
 1 28 -270 -520 0 0 0 -1 0 1 0 1 0 0 3010.dat
 0 STEP
-0 // Arch  1 x  5 x  4
+0 // Arch  1 x  5 x  4 (tan)
 1 19 70 -568 50 0 0 -1 0 1 0 1 0 0 2339.dat
-0 // Arch  1 x  5 x  4
+0 // Arch  1 x  5 x  4 (tan)
 1 19 -270 -568 50 0 0 1 0 1 0 -1 0 0 2339.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (medium_nougat)
 1 84 0 -568 50 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (medium_nougat)
 1 84 -200 -568 50 1 0 0 0 1 0 0 0 1 3023.dat
 0 STEP
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (dark_tan)
 1 28 70 -544 20 0 0 -1 0 1 0 1 0 0 3010.dat
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (dark_tan)
 1 28 -270 -544 20 0 0 -1 0 1 0 1 0 0 3010.dat
 0 STEP
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 -270 -568 10 0 0 -1 0 1 0 1 0 0 3005.dat
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (tan)
 1 19 -270 -568 50 0 0 1 0 1 0 -1 0 0 2357.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (medium_nougat)
 1 84 70 -568 10 0 0 -1 0 1 0 1 0 0 3005.dat
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (tan)
 1 19 70 -568 50 -1 0 0 0 1 0 0 0 -1 2357.dat
 0 STEP
-0 // Brick  1 x 16
+0 // Brick  1 x 16 (tan)
 1 19 -100 -592 50 -1 0 0 0 1 0 0 0 -1 2465.dat
-0 // Brick  1 x  2 with Embossed Bricks
+0 // Brick  1 x  2 with Embossed Bricks (medium_nougat)
 1 84 70 -592 40 0 0 -1 0 1 0 1 0 0 98283.dat
-0 // Brick  1 x  2 with Embossed Bricks
+0 // Brick  1 x  2 with Embossed Bricks (tan)
 1 19 -270 -592 40 0 0 1 0 1 0 -1 0 0 98283.dat
 0 STEP
-0 // Tile  1 x  6
+0 // Tile  1 x  6 (dark_bluish_grey)
 1 72 -220 -600 50 1 0 0 0 1 0 0 0 1 6636.dat
-0 // Tile  1 x  6
+0 // Tile  1 x  6 (dark_bluish_grey)
 1 72 20 -600 50 1 0 0 0 1 0 0 0 1 6636.dat
 0 STEP
 1 72 -220 -446 -70 0 0 1 0.788 0.616 0 -0.616 0.788 0 75948 - Roof Left.ldr
 1 15 20 -446 -70 0 0 1 0.788 0.616 0 -0.616 0.788 0 75948 - Roof Right.ldr
 0 STEP
-0 // Arch  1 x  5 x  4
+0 // Arch  1 x  5 x  4 (tan)
 1 19 -190 -520 -90 0 0 1 0 1 0 -1 0 0 2339.dat
-0 // Arch  1 x  5 x  4
+0 // Arch  1 x  5 x  4 (tan)
 1 19 -10 -520 -90 0 0 -1 0 1 0 1 0 0 2339.dat
-0 // Brick  1 x  1 x  3
+0 // Brick  1 x  1 x  3 (tan)
 1 19 -210 -472 -90 0 0 -1 0 1 0 1 0 0 14716.dat
-0 // Brick  1 x  1 x  3
+0 // Brick  1 x  1 x  3 (tan)
 1 19 10 -472 -90 0 0 -1 0 1 0 1 0 0 14716.dat
 0 STEP
-0 // Brick  1 x  2 with Embossed Bricks
+0 // Brick  1 x  2 with Embossed Bricks (medium_nougat)
 1 84 -200 -496 -90 1 0 0 0 1 0 0 0 1 98283.dat
-0 // Brick  1 x  2 with Embossed Bricks
+0 // Brick  1 x  2 with Embossed Bricks (medium_nougat)
 1 84 0 -496 -90 1 0 0 0 1 0 0 0 1 98283.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (tan)
 1 19 -100 -520 -90 1 0 0 0 1 0 0 0 1 3710.dat
 0 STEP
-0 // Slope Brick 45  2 x  2
+0 // Slope Brick 45  2 x  2 (tan)
 1 19 -140 -544 -90 -1 0 0 0 1 0 0 0 -1 3039.dat
-0 // Slope Brick 45  2 x  2
+0 // Slope Brick 45  2 x  2 (tan)
 1 19 -60 -544 -90 -1 0 0 0 1 0 0 0 -1 3039.dat
-0 // Slope Brick 65  2 x  1 x  2 with Symmetric Stud Holder
+0 // Slope Brick 65  2 x  1 x  2 with Symmetric Stud Holder (tan)
 1 19 -170 -544 -90 0 0 1 0 1 0 -1 0 0 60481.dat
-0 // Slope Brick 65  2 x  1 x  2 with Symmetric Stud Holder
+0 // Slope Brick 65  2 x  1 x  2 with Symmetric Stud Holder (tan)
 1 19 -30 -544 -90 0 0 -1 0 1 0 1 0 0 60481.dat
 0 STEP
-0 // Panel  1 x  2 x  1 with Rounded Corners
+0 // Panel  1 x  2 x  1 with Rounded Corners (dark_tan)
 1 28 -100 -544 -90 -1 0 0 0 1 0 0 0 -1 4865b.dat
-0 // Minifig Shield Round Bowed with Mercedes-Benz Logo Pattern
+0 // Minifig Shield Round Bowed with Mercedes-Benz Logo Pattern (dark_tan)
 1 28 -70 -478 -102 1 0 0 0 1 0 0 0 1 75902p04.dat
 0 STEP
-0 // Brick  1 x  1 x  1.667 with Studs on 1 Side
+0 // Brick  1 x  1 x  1.667 with Studs on 1 Side (tan)
 1 19 -70 -584 -90 0 0 1 0 1 0 -1 0 0 32952.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (trans_brown)
 1 40 -88 -564 -90 0 1 0 -1 0 0 0 0 1 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (medium_nougat)
 1 84 -96 -564 -90 0 1 0 -1 0 0 0 0 1 3023.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (trans_brown)
 1 40 -104 -564 -90 0 1 0 -1 0 0 0 0 1 3069b.dat
 0 STEP
-0 // Brick  1 x  1 x  1.667 with Studs on 1 Side
+0 // Brick  1 x  1 x  1.667 with Studs on 1 Side (tan)
 1 19 -130 -584 -90 0 0 -1 0 1 0 1 0 0 32952.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (trans_brown)
 1 40 -112 -564 -90 0 -1 0 -1 0 0 0 0 -1 3023.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (tan)
 1 19 -104 -564 -90 0 -1 0 -1 0 0 0 0 -1 3069b.dat
 0 STEP
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (tan)
 1 19 -100 -592 -90 1 0 0 0 1 0 0 0 1 3710.dat
-0 // Slope Brick 65  2 x  1 x  2 with Symmetric Stud Holder
+0 // Slope Brick 65  2 x  1 x  2 with Symmetric Stud Holder (tan)
 1 19 -150 -592 -90 0 0 1 0 1 0 -1 0 0 60481.dat
-0 // Slope Brick 65  2 x  1 x  2 with Symmetric Stud Holder
+0 // Slope Brick 65  2 x  1 x  2 with Symmetric Stud Holder (tan)
 1 19 -50 -592 -90 0 0 -1 0 1 0 1 0 0 60481.dat
 0 STEP
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (tan)
 1 19 -70 -616 50 0 0 -1 0 1 0 1 0 0 3040b.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (tan)
 1 19 -130 -616 50 0 0 1 0 1 0 -1 0 0 3040b.dat
-0 // Brick  2 x  8
+0 // Brick  2 x  8 (tan)
 1 19 -100 -616 -20 0 0 1 0 1 0 -1 0 0 3007.dat
 0 STEP
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (dark_tan)
 1 28 -100 -640 50 -1 0 0 0 1 0 0 0 -1 3010.dat
 0 STEP
 1 72 -100 -624 -20 0 0 1 0 1 0 -1 0 0 75948 - Roof Top.ldr
 1 15 -70 -630 -20 0 -0.906 -0.423 0 0.423 -0.906 1 0 0 75948 - Roof Top Right.ldr
 1 15 -130 -630 -20 0 0.906 0.423 0 0.423 -0.906 -1 0 0 75948 - Roof Top Left.ldr
 0 STEP
-0 // Cylinder  2 x  4 x  4
+0 // Cylinder  2 x  4 x  4 (tan)
 1 19 -100 -736 60 1 0 0 0 1 0 0 0 1 6259.dat
-0 // Slope Brick 65  2 x  2 x  2 with Centre Tube
+0 // Slope Brick 65  2 x  2 x  2 with Centre Tube (dark_bluish_grey)
 1 72 -100 -688 -70 -1 0 0 0 1 0 0 0 -1 3678b.dat
-0 // Slope Brick 65  2 x  1 x  2 with Symmetric Stud Holder
+0 // Slope Brick 65  2 x  1 x  2 with Symmetric Stud Holder (tan)
 1 19 -130 -640 -90 0 0 1 0 1 0 -1 0 0 60481.dat
-0 // Slope Brick 65  2 x  1 x  2 with Symmetric Stud Holder
+0 // Slope Brick 65  2 x  1 x  2 with Symmetric Stud Holder (tan)
 1 19 -70 -640 -90 0 0 -1 0 1 0 1 0 0 60481.dat
 0 STEP
-0 // ~Slope Brick 45  2 x  2 Inverted without Inner Stopper Ring (Obsolete)
+0 // ~Slope Brick 45  2 x  2 Inverted without Inner Stopper Ring (Obsolete) (tan)
 1 19 -100 -640 -90 1 0 0 0 1 0 0 0 1 3660.dat
-0 // Brick  1 x  2 x  2 without Understud
+0 // Brick  1 x  2 x  2 without Understud (tan)
 1 19 -100 -688 -110 1 0 0 0 1 0 0 0 1 3245c.dat
 0 STEP
-0 // Slope Brick 65  2 x  1 x  2 with Symmetric Stud Holder
+0 // Slope Brick 65  2 x  1 x  2 with Symmetric Stud Holder (tan)
 1 19 -110 -688 -90 0 0 1 0 1 0 -1 0 0 60481.dat
-0 // Slope Brick 65  2 x  1 x  2 with Symmetric Stud Holder
+0 // Slope Brick 65  2 x  1 x  2 with Symmetric Stud Holder (tan)
 1 19 -90 -688 -90 0 0 -1 0 1 0 1 0 0 60481.dat
 0 STEP
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (dark_bluish_grey)
 1 72 -100 -696 -90 0 0 -1 0 1 0 1 0 0 3021.dat
-0 // Brick  2 x  2 Round without Reinforcement
+0 // Brick  2 x  2 Round without Reinforcement (tan)
 1 19 -100 -720 -100 0 0 -1 0 1 0 1 0 0 3941.dat
-0 // Cone  2 x  2 x  2 with Hollow Stud Open
+0 // Cone  2 x  2 x  2 with Hollow Stud Open (dark_bluish_grey)
 1 72 -100 -768 -100 0 0 -1 0 1 0 1 0 0 3942c.dat
-0 // Minifig Ski Pole
+0 // Minifig Ski Pole (sand_green)
 1 378 -100 -758 -100 -1 0 0 0 -1 0 0 0 1 90540.dat
 0 STEP
-0 // Cone  4 x  2 x  4 Half with Roof Tiles
+0 // Cone  4 x  2 x  4 Half with Roof Tiles (dark_bluish_grey)
 1 72 -100 -832 60 1 0 0 0 1 0 0 0 1 35563.dat
-0 // Minifig Ski Pole
+0 // Minifig Ski Pole (sand_green)
 1 378 -100 -832 50 -1 0 0 0 -1 0 0 0 1 90540.dat
 
 
@@ -1771,29 +1771,29 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Technic Plate  2 x  6 with Holes
+0 // Technic Plate  2 x  6 with Holes (light_bluish_grey)
 1 71 0 10 -18 1 0 0 0 0 1 0 -1 0 32001.dat
 0 STEP
-0 // Tile  2 x  2 with Pin
+0 // Tile  2 x  2 with Pin (tan)
 1 19 40 10 -10 1 0 0 0 0 1 0 -1 0 2460.dat
-0 // Tile  2 x  2 Round with Hole
+0 // Tile  2 x  2 Round with Hole (dark_tan)
 1 28 0 10 -10 1 0 0 0 0 1 0 -1 0 15535.dat
-0 // Tile  2 x  2 with Pin
+0 // Tile  2 x  2 with Pin (tan)
 1 19 -40 10 -10 1 0 0 0 0 1 0 -1 0 2460.dat
 0 STEP
-0 // Technic Brick  1 x  6 with Holes
+0 // Technic Brick  1 x  6 with Holes (dark_bluish_grey)
 1 72 0 0 0 1 0 0 0 1 0 0 0 1 3894.dat
 0 STEP
 1 72 0 10 -26 1 0 0 0 0 1 0 -1 0 75948 - 44375bp04.dat
 0 STEP
-0 // Technic Axle  3 with Stud
+0 // Technic Axle  3 with Stud (dark_tan)
 1 28 0 10 -6 0 0 1 0 1 0 -1 0 0 6587.dat
-0 // Technic Axle Joiner Inline Smooth
+0 // Technic Axle Joiner Inline Smooth (reddish_brown)
 1 70 0 10 30 1 0 0 0 1 0 0 0 1 59443.dat
 0 STEP
-0 // Minifig Tool Box Wrench with 3-Rib Handle
+0 // Minifig Tool Box Wrench with 3-Rib Handle (black)
 1 0 0 40 -40 1 0 0 0 1 0 0 0 1 604552.dat
-0 // Minifig Tool Socket Wrench with Ratchet and 3-Rib Handle
+0 // Minifig Tool Socket Wrench with Ratchet and 3-Rib Handle (black)
 1 0 0 -30 -47 1 0 0 0 -1 0 0 0 -1 604615.dat
 
 
@@ -1804,38 +1804,38 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (sand_green)
 1 378 0 0 0 1 0 0 0 1 0 0 0 1 3021.dat
 0 STEP
-0 // Technic Rotor  2 Blade with 4 Studs
+0 // Technic Rotor  2 Blade with 4 Studs (white)
 1 15 -20 8 30 0 0 -1 0 1 0 1 0 0 32124.dat
-0 // Technic Rotor  2 Blade with 4 Studs
+0 // Technic Rotor  2 Blade with 4 Studs (white)
 1 15 20 8 30 0 0 -1 0 1 0 1 0 0 32124.dat
 0 STEP
-0 // Plate  3 x  3
+0 // Plate  3 x  3 (white)
 1 15 0 0 50 0 0 -1 0 1 0 1 0 0 11212.dat
 0 STEP
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (white)
 1 15 20 16 -10 0 0 -1 0 1 0 1 0 0 6141.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (white)
 1 15 -20 16 -10 0 0 -1 0 1 0 1 0 0 6141.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (white)
 1 15 -20 16 70 0 0 -1 0 1 0 1 0 0 6141.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (white)
 1 15 20 16 70 0 0 -1 0 1 0 1 0 0 6141.dat
 0 STEP
-0 // Plate  1 x  3 with  2 Studs Offset
+0 // Plate  1 x  3 with  2 Studs Offset (white)
 1 15 0 -8 -10 -1 0 0 0 1 0 0 0 -1 34103.dat
-0 // Tile  1 x  3
+0 // Tile  1 x  3 (sand_green)
 1 378 0 -8 10 -1 0 0 0 1 0 0 0 -1 63864.dat
-0 // Tile  1 x  3
+0 // Tile  1 x  3 (sand_green)
 1 378 0 -8 30 -1 0 0 0 1 0 0 0 -1 63864.dat
-0 // Tile  1 x  3
+0 // Tile  1 x  3 (sand_green)
 1 378 0 -8 50 -1 0 0 0 1 0 0 0 -1 63864.dat
-0 // Plate  1 x  3 with  2 Studs Offset
+0 // Plate  1 x  3 with  2 Studs Offset (white)
 1 15 0 -8 70 -1 0 0 0 1 0 0 0 -1 34103.dat
 0 STEP
-0 // Slope Brick 31  1 x  2 x  0.667
+0 // Slope Brick 31  1 x  2 x  0.667 (white)
 1 15 0 -8 -10 -1 0 0 0 1 0 0 0 -1 85984.dat
 
 
@@ -1846,28 +1846,28 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Brick  1 x  1 with Headlight
+0 // Brick  1 x  1 with Headlight (white)
 1 15 -10 0 0 1 0 0 0 1 0 0 0 1 4070.dat
-0 // Brick  1 x  1 with Headlight
+0 // Brick  1 x  1 with Headlight (white)
 1 15 10 0 0 1 0 0 0 1 0 0 0 1 4070.dat
 0 STEP
-0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud
+0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud (white)
 1 15 0 -8 0 1 0 0 0 1 0 0 0 1 15573.dat
 0 STEP
-0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud
+0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud (white)
 1 15 0 10 -14 1 0 0 0 0 -1 0 1 0 15573.dat
 0 STEP
-0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud
+0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud (white)
 1 15 -10 24 0 0 0 -1 0 1 0 1 0 0 15573.dat
-0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud
+0 // Plate  1 x  2 with Groove with 1 Centre Stud, without Understud (white)
 1 15 10 24 0 0 0 -1 0 1 0 1 0 0 15573.dat
 0 STEP
-0 // Tap  1 x  1 without Hole in Spout
+0 // Tap  1 x  1 without Hole in Spout (pearl_gold)
 1 297 0 -32 0 1 0 0 0 1 0 0 0 1 4599b.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_yellow)
 1 46 0 -40 0 1 0 0 0 1 0 0 0 1 6141.dat
 0 STEP
-0 // Minifig Hat Fez
+0 // Minifig Hat Fez (pearl_gold)
 1 297 0 -56 0 1 0 0 0 1 0 0 0 1 85975.dat
 
 
@@ -1878,24 +1878,24 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Plate  4 x  8
+0 // Plate  4 x  8 (dark_bluish_grey)
 1 72 -90 -10 0 1 0 0 0 1 0 0 0 1 3035.dat
 0 STEP
-0 // Plate  1 x  3
+0 // Plate  1 x  3 (dark_bluish_grey)
 1 72 -160 -2 -10 0 0 1 0 1 0 -1 0 0 3623.dat
 0 STEP
-0 // Wing  2 x  4 Left
+0 // Wing  2 x  4 Left (dark_bluish_grey)
 1 72 -130 -2 40 0 0 -1 0 1 0 1 0 0 41770.dat
-0 // Plate  1 x  2 with Handle on End
+0 // Plate  1 x  2 with Handle on End (medium_nougat)
 1 84 -30 -2 -30 1 0 0 0 1 0 0 0 1 60478.dat
-0 // Plate  1 x  2 with Handle on End
+0 // Plate  1 x  2 with Handle on End (medium_nougat)
 1 84 -30 -2 30 1 0 0 0 1 0 0 0 1 60478.dat
 0 STEP
-0 // Slope Brick 45  1 x  1 Double
+0 // Slope Brick 45  1 x  1 Double (tan)
 1 19 -140 -10 -10 0 0 1 0 1 0 -1 0 0 35464.dat
-0 // Slope Brick 45  1 x  1 Double
+0 // Slope Brick 45  1 x  1 Double (tan)
 1 19 -100 -10 -10 0 0 1 0 1 0 -1 0 0 35464.dat
-0 // Slope Brick 45  1 x  1 Double
+0 // Slope Brick 45  1 x  1 Double (tan)
 1 19 -60 -10 -10 0 0 1 0 1 0 -1 0 0 35464.dat
 
 
@@ -1906,24 +1906,24 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Plate  4 x  8
+0 // Plate  4 x  8 (dark_bluish_grey)
 1 72 -90 -10 0 1 0 0 0 1 0 0 0 1 3035.dat
 0 STEP
-0 // Plate  1 x  3
+0 // Plate  1 x  3 (dark_bluish_grey)
 1 72 -160 -2 10 0 0 1 0 1 0 -1 0 0 3623.dat
 0 STEP
-0 // Wing  2 x  4 Right
+0 // Wing  2 x  4 Right (dark_bluish_grey)
 1 72 -130 -2 -40 0 0 -1 0 1 0 1 0 0 41769.dat
-0 // Plate  1 x  2 with Handle on End
+0 // Plate  1 x  2 with Handle on End (medium_nougat)
 1 84 -30 -2 -30 1 0 0 0 1 0 0 0 1 60478.dat
-0 // Plate  1 x  2 with Handle on End
+0 // Plate  1 x  2 with Handle on End (medium_nougat)
 1 84 -30 -2 30 1 0 0 0 1 0 0 0 1 60478.dat
 0 STEP
-0 // Slope Brick 45  1 x  1 Double
+0 // Slope Brick 45  1 x  1 Double (tan)
 1 19 -140 -10 10 0 0 1 0 1 0 -1 0 0 35464.dat
-0 // Slope Brick 45  1 x  1 Double
+0 // Slope Brick 45  1 x  1 Double (tan)
 1 19 -100 -10 10 0 0 1 0 1 0 -1 0 0 35464.dat
-0 // Slope Brick 45  1 x  1 Double
+0 // Slope Brick 45  1 x  1 Double (tan)
 1 19 -60 -10 10 0 0 1 0 1 0 -1 0 0 35464.dat
 
 
@@ -1934,28 +1934,28 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (dark_bluish_grey)
 1 72 0 0 0 1 0 0 0 1 0 0 0 1 3795.dat
-0 // Plate  1 x  2 with Handles on Opposite Ends
+0 // Plate  1 x  2 with Handles on Opposite Ends (black)
 1 0 -50 -8 0 0 0 -1 0 1 0 1 0 0 18649.dat
-0 // Plate  1 x  2 with Handles on Opposite Ends
+0 // Plate  1 x  2 with Handles on Opposite Ends (black)
 1 0 50 -8 0 0 0 -1 0 1 0 1 0 0 18649.dat
 0 STEP
-0 // Bracket  1 x  2 -  1 x  4 with Rounded Bottom Corners
+0 // Bracket  1 x  2 -  1 x  4 with Rounded Bottom Corners (black)
 1 0 0 -8 10 -1 0 0 0 1 0 0 0 -1 75948 - 28802.dat
-0 // Bracket  1 x  2 -  1 x  4 with Rounded Bottom Corners
+0 // Bracket  1 x  2 -  1 x  4 with Rounded Bottom Corners (black)
 1 0 0 -8 -10 1 0 0 0 1 0 0 0 1 75948 - 28802.dat
 0 STEP
-0 // Slope Brick 31  1 x  2 x  0.667
+0 // Slope Brick 31  1 x  2 x  0.667 (dark_bluish_grey)
 1 72 -20 2 -24 -1 0 0 0 0 1 0 1 0 85984.dat
-0 // Slope Brick 31  1 x  2 x  0.667
+0 // Slope Brick 31  1 x  2 x  0.667 (dark_bluish_grey)
 1 72 20 2 -24 -1 0 0 0 0 1 0 1 0 85984.dat
-0 // Slope Brick 31  1 x  2 x  0.667
+0 // Slope Brick 31  1 x  2 x  0.667 (dark_bluish_grey)
 1 72 20 2 24 1 0 0 0 0 1 0 -1 0 85984.dat
-0 // Slope Brick 31  1 x  2 x  0.667
+0 // Slope Brick 31  1 x  2 x  0.667 (dark_bluish_grey)
 1 72 -20 2 24 1 0 0 0 0 1 0 -1 0 85984.dat
 0 STEP
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (dark_bluish_grey)
 1 72 0 -16 0 1 0 0 0 1 0 0 0 1 3795.dat
 
 
@@ -1966,18 +1966,18 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Plate  2 x  2 without Corner
+0 // Plate  2 x  2 without Corner (sand_green)
 1 378 -40 -2 -130 1 0 0 0 1 0 0 0 1 26601.dat
 0 STEP
-0 // Slope Brick Curved  2 x  1 with Cutout Left
+0 // Slope Brick Curved  2 x  1 with Cutout Left (dark_bluish_grey)
 1 72 -50 6 -150 1 0 0 0 1 0 0 0 1 29120.dat
 0 STEP
-0 // Plate  6 x  6 without Corner
+0 // Plate  6 x  6 without Corner (dark_bluish_grey)
 1 72 0 -10 -70 1 0 0 0 1 0 0 0 1 6106.dat
 0 STEP
-0 // Plate  1 x  2 with Clip Horizontal on End (Thick C-Clip)
+0 // Plate  1 x  2 with Clip Horizontal on End (Thick C-Clip) (dark_bluish_grey)
 1 72 50 -2 -30 0 0 -1 0 1 0 1 0 0 63868.dat
-0 // Plate  1 x  2 with Clip Horizontal on End (Thick C-Clip)
+0 // Plate  1 x  2 with Clip Horizontal on End (Thick C-Clip) (dark_bluish_grey)
 1 72 -50 -2 -30 0 0 -1 0 1 0 1 0 0 63868.dat
 
 
@@ -1988,18 +1988,18 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Plate  2 x  2 without Corner
+0 // Plate  2 x  2 without Corner (sand_green)
 1 378 40 -2 -130 0 0 1 0 1 0 -1 0 0 26601.dat
 0 STEP
-0 // Slope Brick Curved  2 x  1 with Cutout Right
+0 // Slope Brick Curved  2 x  1 with Cutout Right (dark_bluish_grey)
 1 72 50 6 -150 1 0 0 0 1 0 0 0 1 29119.dat
 0 STEP
-0 // Plate  6 x  6 without Corner
+0 // Plate  6 x  6 without Corner (dark_bluish_grey)
 1 72 0 -10 -70 0 0 1 0 1 0 -1 0 0 6106.dat
 0 STEP
-0 // Plate  1 x  2 with Clip Horizontal on End (Thick C-Clip)
+0 // Plate  1 x  2 with Clip Horizontal on End (Thick C-Clip) (dark_bluish_grey)
 1 72 50 -2 -30 0 0 -1 0 1 0 1 0 0 63868.dat
-0 // Plate  1 x  2 with Clip Horizontal on End (Thick C-Clip)
+0 // Plate  1 x  2 with Clip Horizontal on End (Thick C-Clip) (dark_bluish_grey)
 1 72 -50 -2 -30 0 0 -1 0 1 0 1 0 0 63868.dat
 
 
@@ -2010,34 +2010,34 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Plate  4 x  4 Round with Hole and Snapstud
+0 // Plate  4 x  4 Round with Hole and Snapstud (white)
 1 15 0 0 0 1 0 0 0 1 0 0 0 1 60474.dat
 0 STEP
-0 // Brick  2 x  2 Round with Grille
+0 // Brick  2 x  2 Round with Grille (reddish_brown)
 1 70 0 -24 0 1 0 0 0 1 0 0 0 1 92947.dat
-0 // Plate  2 x  2 Round with  1 Centre Stud
+0 // Plate  2 x  2 Round with  1 Centre Stud (reddish_brown)
 1 70 0 -32 0 1 0 0 0 1 0 0 0 1 18674.dat
 0 STEP
-0 // Bar  4L Lightsaber Blade
+0 // Bar  4L Lightsaber Blade (white)
 1 15 0 -94 0 1 0 0 0 1 0 0 0 1 30374.dat
 0 STEP
-0 // Plate  1 x  1 Round with Open Stud
+0 // Plate  1 x  1 Round with Open Stud (pearl_gold)
 1 297 0 -40 0 1 0 0 0 1 0 0 0 1 85861.dat
-0 // Plate  1 x  1 Round with Open Stud
+0 // Plate  1 x  1 Round with Open Stud (pearl_gold)
 1 297 0 -48 0 1 0 0 0 1 0 0 0 1 85861.dat
-0 // Brick  1 x  1 with Studs on Four Sides
+0 // Brick  1 x  1 with Studs on Four Sides (reddish_brown)
 1 70 0 -72 0 1 0 0 0 1 0 0 0 1 4733.dat
-0 // Plate  1 x  1 Round with Open Stud
+0 // Plate  1 x  1 Round with Open Stud (pearl_gold)
 1 297 0 -80 0 1 0 0 0 1 0 0 0 1 85861.dat
-0 // Plate  1 x  1 Round with Open Stud
+0 // Plate  1 x  1 Round with Open Stud (pearl_gold)
 1 297 0 -88 0 1 0 0 0 1 0 0 0 1 85861.dat
-0 // Brick  1 x  1 with Studs on Four Sides
+0 // Brick  1 x  1 with Studs on Four Sides (reddish_brown)
 1 70 0 -112 0 1 0 0 0 1 0 0 0 1 4733.dat
-0 // Plate  1 x  1 Round with Open Stud
+0 // Plate  1 x  1 Round with Open Stud (pearl_gold)
 1 297 0 -120 0 1 0 0 0 1 0 0 0 1 85861.dat
-0 // Plate  1 x  1 Round with Open Stud
+0 // Plate  1 x  1 Round with Open Stud (pearl_gold)
 1 297 0 -128 0 1 0 0 0 1 0 0 0 1 85861.dat
-0 // Brick  1 x  1 with Studs on Four Sides
+0 // Brick  1 x  1 with Studs on Four Sides (reddish_brown)
 1 70 0 -152 0 1 0 0 0 1 0 0 0 1 4733.dat
 0 STEP
 1 297 18 -92 20 0 -1 0 0 0 1 -1 0 0 75948 - Tree Side.ldr
@@ -2045,12 +2045,12 @@
 1 297 -18 -92 -20 0 1 0 0 0 1 1 0 0 75948 - Tree Side.ldr
 1 297 20 -92 -18 -1 0 0 0 0 1 0 1 0 75948 - Tree Side.ldr
 0 STEP
-0 // Cone  2 x  2 x  2 with Hollow Stud Open
+0 // Cone  2 x  2 x  2 with Hollow Stud Open (white)
 1 15 0 -200 0 1 0 0 0 1 0 0 0 1 3942c.dat
 0 STEP
-0 // Plate  1 x  1 Round with Bar
+0 // Plate  1 x  1 Round with Bar (light_bluish_grey)
 1 71 2 -232 0 0 -1 0 1 0 0 0 0 1 32828.dat
-0 // Plate  1 x  1 Round with Five-Pointed Star Top and Pin Hole
+0 // Plate  1 x  1 Round with Five-Pointed Star Top and Pin Hole (pearl_gold)
 1 297 2 -232 0 0 -1 0 0 0 -1 1 0 0 11609.dat
 
 
@@ -2061,25 +2061,25 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Wing  3 x  6 Right
+0 // Wing  3 x  6 Right (dark_green)
 1 288 0 0 0 1 0 0 0 1 0 0 0 1 54383.dat
 0 STEP
-0 // Wing  2 x  4 Right
+0 // Wing  2 x  4 Right (white)
 1 15 10 -8 20 1 0 0 0 1 0 0 0 1 41769.dat
-0 // Slope Brick 31  1 x  1 x  0.667
+0 // Slope Brick 31  1 x  1 x  0.667 (white)
 1 15 20 0 -30 1 0 0 0 1 0 0 0 1 54200.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_clear)
 1 47 20 -8 -50 1 0 0 0 1 0 0 0 1 6141.dat
 0 STEP
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_clear)
 1 47 20 -16 -10 1 0 0 0 1 0 0 0 1 6141.dat
-0 // Slope Brick 31  1 x  1 x  0.667
+0 // Slope Brick 31  1 x  1 x  0.667 (white)
 1 15 20 -8 10 1 0 0 0 1 0 0 0 1 54200.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (dark_green)
 1 288 20 -16 40 0 0 -1 0 1 0 1 0 0 3023.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_clear)
 1 47 20 -24 30 1 0 0 0 1 0 0 0 1 6141.dat
-0 // Slope Brick 31  1 x  1 x  0.667
+0 // Slope Brick 31  1 x  1 x  0.667 (white)
 1 15 20 -16 50 1 0 0 0 1 0 0 0 1 54200.dat
 
 
@@ -2097,10 +2097,10 @@
 4 16 10 24 -10 6 24 -6 6 24 6 10 24 10
 4 16 10 24 10 6 24 6 -6 24 6 -10 24 10
 0 BFC INVERTNEXT
-0 // Box with 5 Faces and All Edges
+0 // Box with 5 Faces and All Edges (main_colour)
 1 16 0 24 0 0 0 -6 0 -20 0 6 0 0 box5.dat
 
-0 // Box with 3 Faces without 2 Parallel Edges
+0 // Box with 3 Faces without 2 Parallel Edges (main_colour)
 1 16 0 12 -10 0 0 -10 12 0 0 0 20 0 box3u2p.dat
 2 24 -10 24 -10 10 24 -10
 4 16 10 0 -10 6.5 0 -10 6.5 10 -10 10 24 -10
@@ -2113,9 +2113,9 @@
 
 4 16 -6.5 10 -10 -6.5 0 -10 -10 0 -10 -10 24 -10
 
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 0 7 -10 3.5 0 0 0 0 -3 0 1 0 rect3.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 0 5.81427 -12.95347 0 0 3.5 1.81427 0 0 -2.95347 -1 0 rect2p.dat
 
 2 24 6.5 0 -10 10 0 -10
@@ -2126,42 +2126,42 @@
 4 16 -6.5 0 -10 6.5 0 -10 10 0 10 -10 0 10
 3 16 -10 0 10 -10 0 -10 -6.5 0 -10
 3 16 6.5 0 -10 10 0 -10 10 0 10
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 0 0 -11.75 0 0 -6.5 0 1 0 1.75 0 0 rect2p.dat
-0 // ~Ring 12 x 1.0 (Obsolete)
+0 // ~Ring 12 x 1.0 (Obsolete) (main_colour)
 1 16 0 0 -20 0 0 -0.5 0 1 0 0.5 0 0 4-4rin12.dat
-0 // Disc Negative 0.5
+0 // Disc Negative 0.5 (main_colour)
 1 16 0 0 -20 -6.5 0 0 0 1 0 0 0 6.5 2-4ndis.dat
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 0 0 -20 -6.5 0 0 0 1 0 0 0 -6.5 2-4edge.dat
-0 // Cylinder Sloped 0.25 Convex
+0 // Cylinder Sloped 0.25 Convex (main_colour)
 1 16 0 0 -20 0 0 -6.5 0 3 0 6.5 0 0 1-4cyls2.dat
-0 // Cylinder Sloped 0.25 Convex
+0 // Cylinder Sloped 0.25 Convex (main_colour)
 1 16 0 0 -20 0 0 6.5 0 3 0 6.5 0 0 1-4cyls2.dat
 2 24 6.5 0 -13.5 6.5 0 -20
 2 24 -6.5 0 -13.5 -6.5 0 -20
 
 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 stud.dat
-0 // Circle 1.0
+0 // Circle 1.0 (main_colour)
 1 16 0 0 -20 0 0 4 0 1 0 4 0 0 4-4edge.dat
-0 // Circle 1.0
+0 // Circle 1.0 (main_colour)
 1 16 0 0 -20 0 0 6 0 1 0 6 0 0 4-4edge.dat
 1 16 0 0 -20 0 0 1 0 1 0 1 0 0 stud2a.dat
 
 0 BFC INVERTNEXT
-0 // Cylinder Open 1.0
+0 // Cylinder Open 1.0 (main_colour)
 1 16 0 0 -20 0 0 -3.5 0 5 0 3.5 0 0 4-4cylo.dat
-0 // Ring  7 x 1.0
+0 // Ring  7 x 1.0 (main_colour)
 1 16 0 0 -20 0 0 -0.5 0 1 0 0.5 0 0 4-4ring7.dat
-0 // Disc 1.0
+0 // Disc 1.0 (main_colour)
 1 16 0 5 -20 0 0 -4 0 1 0 4 0 0 4-4disc.dat
 
 0 // Center Part
-0 // Cylinder Open 1.0
+0 // Cylinder Open 1.0 (main_colour)
 1 16 -10 8.95 -21.3 0 20 0 0 0 2.4 2.4 0 0 4-4cylo.dat
-0 // Disc 1.0
+0 // Disc 1.0 (main_colour)
 1 16 -10 8.95 -21.3 0 1 0 0 0 2.4 2.4 0 0 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (main_colour)
 1 16 10 8.95 -21.3 0 -1 0 0 0 2.4 2.4 0 0 4-4disc.dat
 
 2 24 0 1.716737 -26.5 0.5 1.650303 -26.400576
@@ -2225,19 +2225,19 @@
 0 !HISTORY 2013-06-03 [PTadmin] Renamed from 33299
 
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 75948 - s\75948 - 33299s01.dat
-0 // Technic Axle Hole Reduced Closed
+0 // Technic Axle Hole Reduced Closed (main_colour)
 1 16 0 0 20 -1 0 0 0 10 0 0 0 -1 axl2hole.dat
-0 // Technic Axle Hole Reduced Closed
+0 // Technic Axle Hole Reduced Closed (main_colour)
 1 16 0 -10 0 -1 0 0 0 20 0 0 0 -1 axl2hole.dat
-0 // Technic Peg Hole Negative without Top Surface Extensions
+0 // Technic Peg Hole Negative without Top Surface Extensions (main_colour)
 1 16 0 0 30 -1 0 0 0 8 0 0 0 -1 npeghole.dat
-0 // Ring  2 x 1.0
+0 // Ring  2 x 1.0 (main_colour)
 1 16 0 0 20 -3 0 0 0 1 0 0 0 -3 4-4ring2.dat
-0 // Ring  2 x 1.0
+0 // Ring  2 x 1.0 (main_colour)
 1 16 0 10 20 -3 0 0 0 -1 0 0 0 -3 4-4ring2.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 0 10 20 -9 0 0 0 -1 0 0 0 -9 4-4ndis.dat
-0 // Disc Negative 0.5
+0 // Disc Negative 0.5 (main_colour)
 1 16 0 10 40 -8 0 0 0 -1 0 0 0 -8 2-4ndis.dat
 4 16 9 10 32 9 10 29 -9 10 29 -9 10 32
 4 16 8 10 36.661999 9 10 35.661999 9 10 32 8 10 32
@@ -3286,32 +3286,32 @@
 0 BFC CERTIFY CCW
 
 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat
-0 // Box with 4 Faces without 1 Edge
+0 // Box with 4 Faces without 1 Edge (main_colour)
 1 16 10 4 -8 2 0 0 0 4 0 0 0 2 box4-1.dat
-0 // Box with 4 Faces without 1 Edge
+0 // Box with 4 Faces without 1 Edge (main_colour)
 1 16 -10 4 -8 2 0 0 0 4 0 0 0 2 box4-1.dat
 0 BFC INVERTNEXT
-0 // Box with 5 Faces without 1 Edge
+0 // Box with 5 Faces without 1 Edge (main_colour)
 1 16 0 8 -2 16 0 0 0 -4 0 0 0 8 box5-1.dat
-0 // Box with  4 Faces without  4 Adjacent Edges
+0 // Box with  4 Faces without  4 Adjacent Edges (main_colour)
 1 16 0 8 0 20 0 0 0 -8 0 0 0 10 box4-4a.dat
-0 // Box with  3 Faces without  5 Edges
+0 // Box with  3 Faces without  5 Edges (main_colour)
 1 16 0 9 -10 0 0 -40 9 0 0 0 -4 0 box3u5p.dat
 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 stug-2x1.dat
 1 16 0 10 -14 0 0 1 1 0 0 0 1 0 stug2-4x1.dat
-0 // Cylinder Open 0.25
+0 // Cylinder Open 0.25 (main_colour)
 1 16 -38 18 -10 0 0 -2 2 0 0 0 -4 0 1-4cylo.dat
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 -38 18 -10 0 0 -2 2 0 0 0 -4 0 1-4chrd.dat
-0 // Cylinder Open 0.25
+0 // Cylinder Open 0.25 (main_colour)
 1 16 38 18 -10 0 0 2 2 0 0 0 -4 0 1-4cylo.dat
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 38 18 -10 0 0 2 2 0 0 0 -4 0 1-4chrd.dat
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 -38 18 -14 -2 0 0 0 0 2 0 1 0 1-4chrd.dat
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 38 18 -14 2 0 0 0 0 2 0 1 0 1-4chrd.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 0 20 -12 -38 0 0 0 -1 0 0 0 2 rect2p.dat
 4 16 -40 18 -14 -38 20 -14 38 20 -14 40 18 -14
 4 16 20 8 10 20 8 -10 16 8 -10 16 8 6
@@ -3641,12 +3641,12 @@
 3 16 6.5 3.77433 -9.36563 6.5 0 -10 6.7 3.31 -11.7
 3 16 6.5 0 -10 6.5 3.77433 -9.36563 6.5 0 -3.5
 4 16 6.5 3.77433 -9.36563 6.5 10 -5.90693 6.5 10 0 6.5 0 -3.5
-0 // Disc Negative 0.25
+0 // Disc Negative 0.25 (main_colour)
 1 16 6.5 15.90693 -5.90693 0 -1 0 0 0 -5.90693 5.90693 0 0 1-4ndis.dat
-0 // Disc Negative 0.25
+0 // Disc Negative 0.25 (main_colour)
 1 16 3.5 15.90693 -5.90693 0 1 0 0 0 -5.90693 5.90693 0 0 1-4ndis.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.25
+0 // Cylinder Open 0.25 (main_colour)
 1 16 6.5 15.90693 -5.90693 0 -3 0 0 0 -5.90693 5.90693 0 0 1-4cylo.dat
 2 24 6.5 10 0 6.5 15.90693 0
 2 24 3.5 10 0 3.5 15.90693 0
@@ -3773,7 +3773,7 @@
 4 16 10 4 -4 6 4 -6 4.5 4 -4.5 6 4 -4
 4 16 4.5 4 -4.5 -4.5 4 -4.5 -6 4 -4 6 4 -4
 4 16 4.5 4 -4.5 3 4 -6 -3 4 -6 -4.5 4 -4.5
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 0 62 -6 -3 0 0 0 0 58 0 -1 0 rect2p.dat
 4 16 14 4 4 10 4 4 6 4 6 16 4 6
 4 16 10 4 4 6 4 4 4.5 4 4.5 6 4 6
@@ -3781,15 +3781,15 @@
 4 16 -4.5 4 4.5 -6 4 4 -10 4 4 -6 4 6
 4 16 -4.5 4 4.5 4.5 4 4.5 6 4 4 -6 4 4
 4 16 -3 4 6 3 4 6 4.5 4 4.5 -4.5 4 4.5
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 0 62 6 -3 0 0 0 0 -58 0 1 0 rect2p.dat
-0 // Disc 1.0
+0 // Disc 1.0 (main_colour)
 1 16 -10 4 0 4 0 0 0 -1 0 0 0 4 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (main_colour)
 1 16 10 4 0 4 0 0 0 -1 0 0 0 4 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (main_colour)
 1 16 10 0 0 6 0 0 0 1 0 0 0 6 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (main_colour)
 1 16 -10 0 0 6 0 0 0 1 0 0 0 6 4-4disc.dat
 
 
@@ -3803,36 +3803,36 @@
 0 BFC CERTIFY CCW
 
 0 BFC INVERTNEXT
-0 // Box with 3 Faces without 2 Parallel Edges
+0 // Box with 3 Faces without 2 Parallel Edges (main_colour)
 1 16 6 62 0 0 10 0 58 0 0 0 0 6 box3u2p.dat
 0 BFC INVERTNEXT
-0 // Box with 3 Faces without 2 Parallel Edges
+0 // Box with 3 Faces without 2 Parallel Edges (main_colour)
 1 16 -6 62 0 0 -10 0 58 0 0 0 0 6 box3u2p.dat
-0 // Box with 3 Faces without 2 Parallel Edges
+0 // Box with 3 Faces without 2 Parallel Edges (main_colour)
 1 16 0 60 -10 0 0 20 60 0 0 0 20 0 box3u2p.dat
 
 2 24 20 0 -10 -20 0 -10
 2 24 20 120 -10 -20 120 -10
 
-0 // Circle 1.0
+0 // Circle 1.0 (main_colour)
 1 16 10 0 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-0 // Circle 1.0
+0 // Circle 1.0 (main_colour)
 1 16 -10 0 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
 4 16 16 120 6 -16 120 6 -20 120 10 20 120 10
 4 16 -16 120 6 -16 120 -6 -20 120 -10 -20 120 10
 4 16 -16 120 -6 16 120 -6 20 120 -10 -20 120 -10
 4 16 16 120 -6 16 120 6 20 120 10 20 120 -10
 
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 10 4 0 4 0 0 0 -1 0 0 0 4 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -10 4 0 4 0 0 0 -1 0 0 0 4 4-4ndis.dat
 4 16 -14 4 4 -14 4 -4 -16 4 -6 -16 4 6
 4 16 14 4 -4 14 4 4 16 4 6 16 4 -6
 4 16 -6 4 -4 -6 4 4 6 4 4 6 4 -4
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 10 0 0 6 0 0 0 1 0 0 0 6 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -10 0 0 6 0 0 0 1 0 0 0 6 4-4ndis.dat
 4 16 -16 0 6 16 0 6 20 0 10 -20 0 10
 4 16 -16 0 -6 -16 0 6 -20 0 10 -20 0 -10
@@ -4038,84 +4038,84 @@
 
 2 24 -6 0 36.661999 -6 10 36.661999
 2 24 6 10 36.661999 6 0 36.661999
-0 // Cylinder Open 0.25
+0 // Cylinder Open 0.25 (main_colour)
 1 16 0 0 20 -6.36 0 6.36 0 8 0 -6.36 0 -6.36 1-4cylo.dat
-0 // Circle 0.25
+0 // Circle 0.25 (main_colour)
 1 16 0 8 0 -6.36 0 6.36 0 1 0 6.36 0 6.36 1-4edge.dat
-0 // Cylinder 0.25
+0 // Cylinder 0.25 (main_colour)
 1 16 0 0 0 -6.36 0 6.36 0 8 0 6.36 0 6.36 1-4cyli.dat
 4 16 -6.36 8 13.64 -6.36 8 6.36 -3.442 8 8.31 -3.442 8 11.69
 4 16 -3.442 8 11.69 -3.442 8 8.31 0 8 8.9943 0 8 11.0057
 4 16 0 8 11.0057 0 8 8.9943 3.442 8 8.31 3.442 8 11.69
 4 16 3.442 8 11.69 3.442 8 8.31 6.36 8 6.36 6.36 8 13.64
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 -6.36 4 10 0 -1 0 4 0 0 0 0 -3.64 rect.dat
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 6.36 4 10 0 1 0 4 0 0 0 0 -3.64 rect.dat
 4 16 -9 0 9 -6.36 0 6.36 -6.36 0 13.64 -9 0 11
-0 // Disc Negative 0.125
+0 // Disc Negative 0.125 (main_colour)
 1 16 0 0 20 -9 0 0 0 1 0 0 0 -9 1-8ndis.dat
-0 // Disc Negative 0.125
+0 // Disc Negative 0.125 (main_colour)
 1 16 0 0 0 -9 0 0 0 1 0 0 0 9 1-8ndis.dat
 4 16 9 0 11 6.36 0 13.64 6.36 0 6.36 9 0 9
-0 // Disc Negative 0.125
+0 // Disc Negative 0.125 (main_colour)
 1 16 0 0 0 9 0 0 0 1 0 0 0 9 1-8ndis.dat
-0 // Disc Negative 0.125
+0 // Disc Negative 0.125 (main_colour)
 1 16 0 0 20 9 0 0 0 1 0 0 0 -9 1-8ndis.dat
-0 // Cylinder 0.5
+0 // Cylinder 0.5 (main_colour)
 1 16 0 0 0 -9 0 0 0 10 0 0 0 -9 2-4cyli.dat
-0 // Ring  2 x 1.0
+0 // Ring  2 x 1.0 (main_colour)
 1 16 0 10 0 -3 0 0 0 -1 0 0 0 -3 4-4ring2.dat
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 0 10 0 -9 0 0 0 1 0 0 0 -9 2-4edge.dat
-0 // Ring  8 x 0.25
+0 // Ring  8 x 0.25 (main_colour)
 1 16 0 0 40 -0.70711 0 0.70711 0 1 0 -0.70711 0 -0.70711 1-4ring8.dat
-0 // Ring  7 x 0.25
+0 // Ring  7 x 0.25 (main_colour)
 1 16 0 0 40 -0.70711 0 0.70711 0 1 0 -0.70711 0 -0.70711 1-4ring7.dat
-0 // Technic Pin 1.0 with Base Collar
+0 // Technic Pin 1.0 with Base Collar (main_colour)
 1 16 0 10 40 0 0 -1 0 -1 0 -1 0 0 connect.dat
 4 16 -6.36 0 33.639999 -9 0 35.661999 -9 0 20 -6.36 0 26.360001
 4 16 9 0 35.661999 6.36 0 33.639999 6.36 0 26.360001 9 0 20
-0 // Disc Negative 0.5
+0 // Disc Negative 0.5 (main_colour)
 1 16 0 10 0 9 0 0 0 -1 0 0 0 9 2-4ndis.dat
-0 // Cylinder 0.5
+0 // Cylinder 0.5 (main_colour)
 1 16 0 0 40 8 0 0 0 10 0 0 0 8 2-4cyli.dat
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 0 0 40 8 0 0 0 1 0 0 0 8 2-4edge.dat
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 0 0 40 6 0 0 0 1 0 0 0 6 2-4edge.dat
-0 // Circle 1.0
+0 // Circle 1.0 (main_colour)
 1 16 0 10 40 4 0 0 0 1 0 0 0 4 4-4edge.dat
 0 BFC INVERTNEXT
-0 // Cylinder 0.5
+0 // Cylinder 0.5 (main_colour)
 1 16 0 0 40 6 0 0 0 10 0 0 0 6 2-4cyli.dat
-0 // Ring  3 x 0.5
+0 // Ring  3 x 0.5 (main_colour)
 1 16 0 0 40 2 0 0 0 1 0 0 0 2 2-4ring3.dat
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 0 10 40 -8 0 0 0 1 0 0 0 -8 2-4edge.dat
-0 // Ring  2 x 1.0
+0 // Ring  2 x 1.0 (main_colour)
 1 16 0 10 40 -2 0 0 0 1 0 0 0 -2 4-4ring2.dat
-0 // Ring  6 x 1.0
+0 // Ring  6 x 1.0 (main_colour)
 1 16 0 10 40 -1 0 0 0 1 0 0 0 -1 4-4ring6.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 -6 5 38.331 0 -1 0 0 0 5 -1.669 0 0 rect2p.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 6 5 38.331 0 1 0 0 0 -5 -1.669 0 0 rect2p.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 8 5 38.331 0 -1 0 -5 0 0 0 0 -1.669 rect3.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 -8 5 38.331 0 1 0 5 0 0 0 0 -1.669 rect3.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.25
+0 // Cylinder Open 0.25 (main_colour)
 1 16 0 0 40 -4.94975 0 4.94975 0 10 0 -4.94975 0 -4.94975 1-4cylo.dat
 
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 -9 5 17.831 0 1 0 -5 0 0 0 0 17.831 rect3.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 9 5 17.831 0 -1 0 5 0 0 0 0 17.831 rect3.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 -8.5 5 36.162 -0.5 1 0 0 0 -5 -0.5 0 0 rect2p.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 8.5 5 36.162 0.5 -1 0 0 0 5 -0.5 0 0 rect2p.dat
 4 16 6 0 36.661999 8 0 36.661999 8 0 40 6 0 40
 4 16 -8 0 36.661999 -6 0 36.661999 -6 0 40 -8 0 40
@@ -4125,7 +4125,7 @@
 3 16 4.9498 0 35.050098 6.36 0 33.639999 6 0 36.661999
 2 24 4.9498 0 35.050098 6 0 36.661999
 2 24 -4.9498 0 35.050098 -6 0 36.661999
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 0 10 40 6 0 0 0 1 0 0 0 6 2-4edge.dat
 2 24 4.9498 10 35.050098 6 10 36.661999
 2 24 -4.9498 10 35.050098 -6 10 36.661999

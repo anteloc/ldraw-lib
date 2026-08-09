@@ -25,210 +25,210 @@
 0 !LDCAD GROUP_DEF [topLevel=true] [LID=12] [GID=I5ySPEaBe4M] [name=Group 13] [center=0 0 0]
 0 !LDCAD GROUP_DEF [topLevel=true] [LID=13] [GID=K6GxSP5NRz9] [name=Group 14] [center=0 0 0]
 
-0 // Technic Beam  9
+0 // Technic Beam  9 (black)
 1 0 0 0 0 0 -1 0 1 0 0 0 0 1 40490.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (blue)
 1 1 20 0 -80 1 0 0 0 1 0 0 0 1 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (blue)
 1 1 20 0 -20 1 0 0 0 -1 0 0 0 -1 6558.dat
 0 STEP
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 0 0 1 0 0 0 -1 0 0 0 -1 2780.dat
-0 // Technic Pin Long without Friction with Single Slot
+0 // Technic Pin Long without Friction with Single Slot (tan)
 1 19 -20 0 -60 -1 0 0 0 -1 0 0 0 1 32556.dat
-0 // Technic Pin Long without Friction with Single Slot
+0 // Technic Pin Long without Friction with Single Slot (tan)
 1 19 -20 0 80 -1 0 0 0 -1 0 0 0 1 32556.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=0] [nrs=5]
-0 // Technic Beam  2 Liftarm
+0 // Technic Beam  2 Liftarm (orange)
 1 25 20 -20 -20 0 -1 0 0 0 1 -1 0 0 60483.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=-1]
-0 // Technic Beam 13
+0 // Technic Beam 13 (orange)
 1 25 0 -20 -20 0 -1 0 1 0 0 0 0 1 41239.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=3]
-0 // Technic Axle Pin Long with Friction with  2L Axle
+0 // Technic Axle Pin Long with Friction with  2L Axle (black)
 1 0 20 -20 -20 1 0 0 0 1 0 0 0 1 18651.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=2]
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (blue)
 1 1 20 -20 -60 1 0 0 0 1 0 0 0 1 6558.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=4]
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (blue)
 1 1 20 -20 100 1 0 0 0 1 0 0 0 1 6558.dat
 0 STEP
-0 // Technic Pin  3L Double with Axlehole
+0 // Technic Pin  3L Double with Axlehole (light_bluish_grey)
 1 71 20 -10 40 1 0 0 0 1 0 0 0 1 32138.dat
 0 STEP
-0 // Technic Pin  3L Double with Axlehole
+0 // Technic Pin  3L Double with Axlehole (light_bluish_grey)
 1 71 20 -10 60 1 0 0 0 1 0 0 0 1 32138.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (red)
 1 4 20 -10 50 0 0 1 0 1 0 -1 0 0 32062.dat
 0 STEP
 1 47 0 0 -120 1 0 0 0 1 0 0 0 1 42088 - Headlights.ldr
 0 STEP
 0 !LDCAD GROUP_NXT [ids=1] [nrs=2]
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (red)
 1 4 20 -30 -80 0 0 1 1 0 0 0 1 0 32062.dat
 0 !LDCAD GROUP_NXT [ids=1] [nrs=-1]
-0 // Technic Cross Block 2 x 2 Split (Axle/Twin Pin)
+0 // Technic Cross Block 2 x 2 Split (Axle/Twin Pin) (orange)
 1 25 20 -30 -80 0 -1 0 -1 0 0 0 0 -1 41678.dat
 0 !LDCAD GROUP_NXT [ids=1] [nrs=3]
-0 // Technic Cross Block 2 x 2 (Axle/Twin Pin)
+0 // Technic Cross Block 2 x 2 (Axle/Twin Pin) (black)
 1 0 20 -30 -80 0 0 -1 1 0 0 0 -1 0 32291.dat
 0 STEP
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (blue)
 1 1 20 -40 -100 -1 0 0 0 -1 0 0 0 1 6558.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=2] [nrs=3]
-0 // Slope Brick Curved  2 x  1
+0 // Slope Brick Curved  2 x  1 (blue)
 1 1 0 -69.495 -94.167 -1 0 0 0 0.259 0.966 0 0.966 -0.259 11477.dat
 0 !LDCAD GROUP_NXT [ids=2] [nrs=2]
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (blue)
 1 1 0 -69.495 -94.167 0 0 1 0.966 0.259 0 -0.259 0.966 0 3023.dat
 0 !LDCAD GROUP_NXT [ids=2] [nrs=-1]
-0 // Plate  1 x  2 with Offset Peghole on Underside
+0 // Plate  1 x  2 with Offset Peghole on Underside (light_bluish_grey)
 1 71 0 -52.247 -107.071 0 0 1 0.966 0.259 0 -0.259 0.966 0 18677.dat
 0 !LDCAD GROUP_NXT [ids=4] [nrs=-1]
-0 // Plate  1 x  2 with Offset Peghole on Underside
+0 // Plate  1 x  2 with Offset Peghole on Underside (light_bluish_grey)
 1 71 40 -52.247 -107.071 0 0 1 0.966 0.259 0 -0.259 0.966 0 18677.dat
 0 !LDCAD GROUP_NXT [ids=4] [nrs=2]
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (blue)
 1 1 40 -69.495 -94.167 0 0 1 0.966 0.259 0 -0.259 0.966 0 3023.dat
 0 !LDCAD GROUP_NXT [ids=4] [nrs=3]
-0 // Slope Brick Curved  2 x  1
+0 // Slope Brick Curved  2 x  1 (blue)
 1 1 40 -69.495 -94.167 -1 0 0 0 0.259 0.966 0 0.966 -0.259 11477.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=3] [nrs=-1]
-0 // Plate  1 x  3
+0 // Plate  1 x  3 (blue)
 1 1 20 -44.659 -117.387 1 0 0 0 0.259 -0.966 0 0.966 0.259 3623.dat
 0 !LDCAD GROUP_NXT [ids=3] [nrs=3]
-0 // Slope Brick 31  1 x  1 x  0.667
+0 // Slope Brick 31  1 x  1 x  0.667 (blue)
 1 1 20 -44.659 -117.387 1 0 0 0 0.259 -0.966 0 0.966 0.259 54200.dat
 0 !LDCAD GROUP_NXT [ids=3] [nrs=2]
-0 // Slope Brick 31  1 x  1 x  0.667
+0 // Slope Brick 31  1 x  1 x  0.667 (blue)
 1 1 0 -44.659 -117.387 1 0 0 0 0.259 -0.966 0 0.966 0.259 54200.dat
 0 !LDCAD GROUP_NXT [ids=3] [nrs=4]
-0 // Slope Brick 31  1 x  1 x  0.667
+0 // Slope Brick 31  1 x  1 x  0.667 (blue)
 1 1 40 -44.659 -117.387 1 0 0 0 0.259 -0.966 0 0.966 0.259 54200.dat
 0 STEP
 1 1 20 -16 -20 0 0 -1 0 1 0 1 0 0 42088 - Worm Gear.ldr
 0 STEP
-0 // Technic Beam  9
+0 // Technic Beam  9 (black)
 1 0 40 0 0 0 -1 0 1 0 0 0 0 1 40490.dat
-0 // Technic Pin Long without Friction with Single Slot
+0 // Technic Pin Long without Friction with Single Slot (tan)
 1 19 60 0 -60 1 0 0 0 1 0 0 0 1 32556.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 50 0 0 -1 0 0 0 1 0 0 0 -1 2780.dat
-0 // Technic Pin Long without Friction with Single Slot
+0 // Technic Pin Long without Friction with Single Slot (tan)
 1 19 60 0 80 1 0 0 0 1 0 0 0 1 32556.dat
 0 STEP
-0 // Technic Cross Block 2 x 2 Split (Axle/Twin Pin)
+0 // Technic Cross Block 2 x 2 Split (Axle/Twin Pin) (orange)
 1 25 20 -10 120 0 -1 0 1 0 0 0 0 1 41678.dat
 0 STEP
-0 // Technic Beam 13
+0 // Technic Beam 13 (orange)
 1 25 40 -20 -20 0 -1 0 1 0 0 0 0 1 41239.dat
 0 STEP
 1 57 20 -50 120 1 0 0 0 0 1 0 -1 0 42088 - Rear Lights.ldr
 0 STEP
 1 0 5 -81 -20 1 0 0 0 1 0 0 0 1 42088 - Winch.ldr
 0 STEP
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_bluish_grey)
 1 71 20 -136 -40 1 0 0 0 0 1 0 -1 0 32123a.dat
-0 // Technic Gear 12 Tooth Double Bevel
+0 // Technic Gear 12 Tooth Double Bevel (black)
 1 0 20 -151 -39 1 0 0 0 0 1 0 -1 0 32270.dat
 0 STEP
 1 25 20 -115.415 49.149 1 0 0 0 -0.819 0.574 0 -0.574 -0.819 42088 - Boom.ldr
 0 STEP
-0 // Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends
+0 // Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends (white)
 1 15 45 -103.943 32.766 0 -1 0 0.819 0 -0.574 0.574 0 0.819 11478.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=5] [nrs=-1]
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (white)
 1 15 60 -9.412 17.647 0 0 1 -0.882 0.471 0 -0.471 -0.882 0 6536.dat
 0 !LDCAD GROUP_NXT [ids=5] [nrs=2]
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 60 -35.882 3.529 0 0 1 -0.882 0.471 0 -0.471 -0.882 0 3705.dat
 0 !LDCAD GROUP_NXT [ids=5] [nrs=3]
-0 // Technic Angle Connector #1
+0 // Technic Angle Connector #1 (black)
 1 0 60 -80 -20 -1 0 0 0 0.471 -0.882 0 -0.882 -0.471 32013.dat
 0 !LDCAD GROUP_NXT [ids=12] [nrs=-1]
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (white)
 1 15 -20 -9.412 17.647 0 0 1 -0.882 0.471 0 -0.471 -0.882 0 6536.dat
 0 !LDCAD GROUP_NXT [ids=12] [nrs=2]
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 -20 -35.882 3.529 0 0 1 -0.882 0.471 0 -0.471 -0.882 0 3705.dat
 0 !LDCAD GROUP_NXT [ids=12] [nrs=3]
-0 // Technic Angle Connector #1
+0 // Technic Angle Connector #1 (black)
 1 0 -20 -80 -20 -1 0 0 0 0.471 -0.882 0 -0.882 -0.471 32013.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=6] [nrs=-1]
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (black)
 1 0 -25 -20 -140 0 -1 0 1 0 0 0 0 1 6632.dat
 0 !LDCAD GROUP_NXT [ids=6] [nrs=2]
-0 // Technic Axle  5
+0 // Technic Axle  5 (light_bluish_grey)
 1 71 20 -20 -140 -1 0 0 0 -1 0 0 0 1 32073.dat
 0 !LDCAD GROUP_NXT [ids=6] [nrs=3]
-0 // Technic Axle  5
+0 // Technic Axle  5 (light_bluish_grey)
 1 71 20 -20 -100 -1 0 0 0 -1 0 0 0 1 32073.dat
 0 !LDCAD GROUP_NXT [ids=6] [nrs=4]
-0 // Technic Beam  3 x  5 x  0.5 Liftarm Bent 90 Quarter Ellipse
+0 // Technic Beam  3 x  5 x  0.5 Liftarm Bent 90 Quarter Ellipse (black)
 1 0 -15 -20 -100 0 1 0 0 0 -1 -1 0 0 32250.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=7] [nrs=-1]
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 20 -100 -100 1 0 0 0 1 0 0 0 1 3705.dat
 0 !LDCAD GROUP_NXT [ids=7] [nrs=2]
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_bluish_grey)
 1 71 15 -100 -100 0 0 -1 0 1 0 1 0 0 32123a.dat
 0 !LDCAD GROUP_NXT [ids=7] [nrs=3]
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_bluish_grey)
 1 71 25 -100 -100 0 0 -1 0 1 0 1 0 0 32123a.dat
 0 !LDCAD GROUP_NXT [ids=7] [nrs=4]
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (white)
 1 15 0 -100 -100 1 0 0 0 0 1 0 -1 0 6536.dat
 0 !LDCAD GROUP_NXT [ids=7] [nrs=5]
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (white)
 1 15 40 -100 -100 1 0 0 0 0 1 0 -1 0 6536.dat
 0 !LDCAD GROUP_NXT [ids=7] [nrs=6]
-0 // Technic Pin  1/2
+0 // Technic Pin  1/2 (light_bluish_grey)
 1 71 0 -110 -120 0 1 0 -1 0 0 0 0 1 4274.dat
 0 !LDCAD GROUP_NXT [ids=7] [nrs=7]
-0 // Technic Pin  1/2
+0 // Technic Pin  1/2 (light_bluish_grey)
 1 71 40 -110 -120 0 1 0 -1 0 0 0 0 1 4274.dat
 0 !LDCAD GROUP_NXT [ids=7] [nrs=8]
-0 // Cylinder Domed  1 x  1 x  1.667 with Bar
+0 // Cylinder Domed  1 x  1 x  1.667 with Bar (trans_orange)
 1 57 0 -101 -120 1 0 0 0 1 0 0 0 1 58176.dat
 0 !LDCAD GROUP_NXT [ids=7] [nrs=9]
-0 // Cylinder Domed  1 x  1 x  1.667 with Bar
+0 // Cylinder Domed  1 x  1 x  1.667 with Bar (trans_orange)
 1 57 40 -101 -120 1 0 0 0 1 0 0 0 1 58176.dat
 0 STEP
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (black)
 1 0 65 -20 -140 0 -1 0 1 0 0 0 0 1 6632.dat
-0 // Technic Beam  3 x  5 x  0.5 Liftarm Bent 90 Quarter Ellipse
+0 // Technic Beam  3 x  5 x  0.5 Liftarm Bent 90 Quarter Ellipse (black)
 1 0 55 -20 -100 0 1 0 0 0 -1 -1 0 0 32250.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=8] [nrs=-1]
-0 // Tyre 14/ 25 x 17 Shallow Staggered Treads with Middle Band
+0 // Tyre 14/ 25 x 17 Shallow Staggered Treads with Middle Band (rubber_black)
 1 256 70 0 -60 0 0 -1 0 1 0 1 0 0 89201.dat
 0 !LDCAD GROUP_NXT [ids=8] [nrs=2]
-0 // Wheel Rim 14 x 18 with Holes on Both Sides (Needs Work)
+0 // Wheel Rim 14 x 18 with Holes on Both Sides (Needs Work) (black)
 1 0 70 0 -60 0 0 -1 0 1 0 1 0 0 55981.dat
 0 !LDCAD GROUP_NXT [ids=9] [nrs=-1]
-0 // Tyre 14/ 25 x 17 Shallow Staggered Treads with Middle Band
+0 // Tyre 14/ 25 x 17 Shallow Staggered Treads with Middle Band (rubber_black)
 1 256 70 0 80 0 0 -1 0 1 0 1 0 0 89201.dat
 0 !LDCAD GROUP_NXT [ids=9] [nrs=2]
-0 // Wheel Rim 14 x 18 with Holes on Both Sides (Needs Work)
+0 // Wheel Rim 14 x 18 with Holes on Both Sides (Needs Work) (black)
 1 0 70 0 80 0 0 -1 0 1 0 1 0 0 55981.dat
 0 !LDCAD GROUP_NXT [ids=11] [nrs=-1]
-0 // Wheel Rim 14 x 18 with Holes on Both Sides (Needs Work)
+0 // Wheel Rim 14 x 18 with Holes on Both Sides (Needs Work) (black)
 1 0 -30 0 -60 0 0 1 0 1 0 -1 0 0 55981.dat
 0 !LDCAD GROUP_NXT [ids=11] [nrs=2]
-0 // Tyre 14/ 25 x 17 Shallow Staggered Treads with Middle Band
+0 // Tyre 14/ 25 x 17 Shallow Staggered Treads with Middle Band (rubber_black)
 1 256 -30 0 -60 0 0 1 0 1 0 -1 0 0 89201.dat
 0 !LDCAD GROUP_NXT [ids=13] [nrs=-1]
-0 // Wheel Rim 14 x 18 with Holes on Both Sides (Needs Work)
+0 // Wheel Rim 14 x 18 with Holes on Both Sides (Needs Work) (black)
 1 0 -30 0 80 0 0 1 0 1 0 -1 0 0 55981.dat
 0 !LDCAD GROUP_NXT [ids=13] [nrs=2]
-0 // Tyre 14/ 25 x 17 Shallow Staggered Treads with Middle Band
+0 // Tyre 14/ 25 x 17 Shallow Staggered Treads with Middle Band (rubber_black)
 1 256 -30 0 80 0 0 1 0 1 0 -1 0 0 89201.dat
 
 
@@ -247,49 +247,49 @@
 0 !LDCAD GROUP_DEF [topLevel=true] [LID=0] [GID=GIDdydR7t8R] [name=Group 1] [center=0 0 0]
 0 !LDCAD GROUP_DEF [topLevel=true] [LID=1] [GID=CpoLbRwWLdl] [name=Group 2] [center=0 0 0]
 
-0 // Technic Angle Connector #1
+0 // Technic Angle Connector #1 (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 32013.dat
-0 // Technic Axle and Pin Connector Hub with 2 Axles at 90 Degrees
+0 // Technic Axle and Pin Connector Hub with 2 Axles at 90 Degrees (orange)
 1 25 0 0 -40 -1 0 0 0 1 0 0 0 -1 10197.dat
 0 STEP
-0 // Technic Pin Long with Pin Hole Type 1
+0 // Technic Pin Long with Pin Hole Type 1 (light_bluish_grey)
 1 71 20 0 0 1 0 0 0 0 -1 0 1 0 87082.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=0] [nrs=-1]
-0 // Technic Angle Connector #2 (180 degree)
+0 // Technic Angle Connector #2 (180 degree) (orange)
 1 25 20 0 40 1 0 0 0 1 0 0 0 1 32034.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=2]
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 20 0 10 0 0 -1 0 1 0 1 0 0 43093.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=3]
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 20 0 70 0 0 1 0 1 0 -1 0 0 43093.dat
 0 STEP
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (blue)
 1 1 20 0 -40 1 0 0 0 1 0 0 0 1 6558.dat
-0 // Technic Beam  2 x  4 Liftarm Bent 90
+0 // Technic Beam  2 x  4 Liftarm Bent 90 (orange)
 1 25 20 -60 -20 0 -1 0 0 0 1 -1 0 0 32140.dat
 0 STEP
-0 // Technic Angle Connector #1
+0 // Technic Angle Connector #1 (black)
 1 0 40 0 0 1 0 0 0 1 0 0 0 1 32013.dat
-0 // Technic Axle and Pin Connector Hub with 2 Axles at 90 Degrees
+0 // Technic Axle and Pin Connector Hub with 2 Axles at 90 Degrees (orange)
 1 25 40 0 -40 -1 0 0 0 1 0 0 0 -1 10197.dat
 0 STEP
-0 // Technic Cross Block 1 x 3 (Axle/Pin/Axle)
+0 // Technic Cross Block 1 x 3 (Axle/Pin/Axle) (black)
 1 0 20 -20 -40 0 -1 0 1 0 0 0 0 1 32184.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=1] [nrs=-1]
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 20 -60 -20 1 0 0 0 1 0 0 0 1 4519.dat
 0 !LDCAD GROUP_NXT [ids=1] [nrs=2]
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (white)
 1 15 0 -60 -20 1 0 0 0 1 0 0 0 1 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (white)
 1 15 40 -60 -20 1 0 0 0 1 0 0 0 1 6536.dat
 0 STEP
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_clear)
 1 47 40 -40 -33 1 0 0 0 0 -1 0 1 0 6141.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_clear)
 1 47 0 -40 -33 1 0 0 0 0 -1 0 1 0 6141.dat
 
 
@@ -308,56 +308,56 @@
 0 !LDCAD GROUP_DEF [topLevel=true] [LID=0] [GID=E1WyL9rd10e] [name=Group 1] [center=0 0 0]
 0 !LDCAD GROUP_DEF [topLevel=true] [LID=1] [GID=Cb1ezZSP0gR] [name=Group 2] [center=0 0 0]
 
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 0 -25 0 0 0 -1 0 1 0 1 0 0 4519.dat
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (black)
 1 0 0 -25 25 1 0 0 0 0 -1 0 1 0 32056.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 40 -25 0 0 0 -1 0 1 0 1 0 0 4519.dat
 0 STEP
-0 // Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends
+0 // Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends (white)
 1 15 0 -25 15 0 0 -1 -1 0 0 0 1 0 11478.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=0] [nrs=-1]
-0 // Technic Axle  8 with Stop
+0 // Technic Axle  8 with Stop (dark_bluish_grey)
 1 72 -19 -73 0 0 0 -1 1 0 0 0 -1 0 55013.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=2]
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_bluish_grey)
 1 71 -19 0 0 -1 0 0 0 0 -1 0 -1 0 32123a.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=6]
-0 // Technic Worm Gear 2L with Axle Hole Two-toothed Sliding
+0 // Technic Worm Gear 2L with Axle Hole Two-toothed Sliding (light_bluish_grey)
 1 71 -19 -65 0 -0.866 -0.5 0 0 0 -1 0.5 -0.866 0 42088 - 32905.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=4]
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (white)
 1 15 0 -25 0 0 -1 0 0 0 -1 1 0 0 6536.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=3]
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_bluish_grey)
 1 71 -19 -10 0 -1 0 0 0 0 -1 0 -1 0 32123a.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=5]
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_bluish_grey)
 1 71 -19 -40 0 1 0 0 0 0 1 0 -1 0 32123a.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=7]
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_bluish_grey)
 1 71 -19 -90 0 1 0 0 0 0 1 0 -1 0 32123a.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=1] [nrs=-1]
-0 // Technic Cross Block 1 x 3 (Axle/Pin/Axle)
+0 // Technic Cross Block 1 x 3 (Axle/Pin/Axle) (black)
 1 0 40 -5 0 0 0 -1 0 1 0 1 0 0 32184.dat
 0 !LDCAD GROUP_NXT [ids=1] [nrs=2]
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 40 15 0 0 0 -1 0 1 0 1 0 0 4519.dat
 0 STEP
-0 // Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends
+0 // Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends (white)
 1 15 0 -25 -15 0 0 -1 -1 0 0 0 1 0 11478.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (red)
 1 4 -40 -25 0 0 0 -1 0 1 0 1 0 0 32062.dat
 0 STEP
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (black)
 1 0 0 -25 -25 1 0 0 0 0 -1 0 1 0 32056.dat
 0 STEP
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 0 -64 -30 0 0 -1 0 1 0 1 0 0 43093.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 0 -64 30 0 0 -1 0 -1 0 -1 0 0 43093.dat
 
 
@@ -373,37 +373,37 @@
 0 !KEYWORDS Truck, Microscale, Construction
 0 !HISTORY 2019-12-14 [MonsieurPoulet] Initial creation
 
-0 // Technic Connector (Axle) with Axle 1.5
+0 // Technic Connector (Axle) with Axle 1.5 (black)
 1 0 0 0 0 1 0 0 0 0 -1 0 1 0 6553.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 0 0 0 1 0 0 0 0 -1 0 1 0 3705.dat
 0 STEP
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_bluish_grey)
 1 71 -15 0 0 0 0 -1 -1 0 0 0 1 0 32123a.dat
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_bluish_grey)
 1 71 15 0 0 0 0 -1 -1 0 0 0 1 0 32123a.dat
 0 STEP
-0 // Technic Cross Block 2 x 2 Split (Axle/Twin Pin)
+0 // Technic Cross Block 2 x 2 Split (Axle/Twin Pin) (orange)
 1 25 -40 0 0 1 0 0 0 1 0 0 0 1 41678.dat
-0 // Technic Cross Block 2 x 2 Split (Axle/Twin Pin)
+0 // Technic Cross Block 2 x 2 Split (Axle/Twin Pin) (orange)
 1 25 40 0 0 1 0 0 0 1 0 0 0 1 41678.dat
 0 STEP
-0 // Technic Pin  1/2
+0 // Technic Pin  1/2 (light_bluish_grey)
 1 71 30 -10 -20 0 1 0 -1 0 0 0 0 1 4274.dat
-0 // Technic Pin  1/2
+0 // Technic Pin  1/2 (light_bluish_grey)
 1 71 50 -10 -20 0 1 0 -1 0 0 0 0 1 4274.dat
-0 // Technic Pin  1/2
+0 // Technic Pin  1/2 (light_bluish_grey)
 1 71 -30 -10 -20 0 1 0 -1 0 0 0 0 1 4274.dat
-0 // Technic Pin  1/2
+0 // Technic Pin  1/2 (light_bluish_grey)
 1 71 -50 -10 -20 0 1 0 -1 0 0 0 0 1 4274.dat
 0 STEP
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_red)
 1 36 -30 -16 -20 1 0 0 0 1 0 0 0 1 6141.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_orange)
 1 57 -50 -16 -20 1 0 0 0 1 0 0 0 1 6141.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_red)
 1 36 30 -16 -20 1 0 0 0 1 0 0 0 1 6141.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_orange)
 1 57 50 -16 -20 1 0 0 0 1 0 0 0 1 6141.dat
 
 
@@ -421,22 +421,22 @@
 
 0 !LDCAD GROUP_DEF [topLevel=true] [LID=0] [GID=5rbpP8Tmva3] [name=Group 1] [center=0 0 0]
 
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 Quarter Circle
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 Quarter Circle (black)
 1 0 0 0 0 0 -1 0 0 0 -1 1 0 0 32249.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (red)
 1 4 15 -40 0 -1 0 0 0 -1 0 0 0 1 32062.dat
 0 STEP
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (white)
 1 15 15 -40 0 1 0 0 0 0 1 0 -1 0 6536.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=0] [nrs=2]
-0 // Technic Gear 24 Tooth with Single Axle Hole
+0 // Technic Gear 24 Tooth with Single Axle Hole (dark_bluish_grey)
 1 72 15 0 20 0 0 1 -0.819 0.574 0 -0.574 -0.819 0 3648b.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=-1]
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 15 0 20 1 0 0 0 0.574 0.819 0 -0.819 0.574 3705.dat
 0 STEP
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 Quarter Circle
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 Quarter Circle (black)
 1 0 30 0 0 0 -1 0 0 0 -1 1 0 0 32249.dat
 
 
@@ -455,40 +455,40 @@
 0 !LDCAD GROUP_DEF [topLevel=true] [LID=0] [GID=5cTZzdCWEuI] [name=Group 1] [center=0 0 0]
 0 !LDCAD GROUP_DEF [topLevel=true] [LID=1] [GID=GFgiJppHxVh] [name=Group 2] [center=0 0 0]
 
-0 // Technic Pin Long with Pin Hole Type 1
+0 // Technic Pin Long with Pin Hole Type 1 (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 0 -1 0 1 0 87082.dat
-0 // Technic Pin Long with Pin Hole Type 1
+0 // Technic Pin Long with Pin Hole Type 1 (light_bluish_grey)
 1 71 0 0 -20 0 -1 0 0 0 -1 1 0 0 87082.dat
 0 STEP
-0 // Technic Pin Joiner Round with Slot
+0 // Technic Pin Joiner Round with Slot (white)
 1 15 0 0 -50 0 0 1 0 1 0 -1 0 0 62462.dat
 0 STEP
-0 // Technic Beam  7 x  0.5
+0 // Technic Beam  7 x  0.5 (white)
 1 15 -15 0 -60 0 -1 0 1 0 0 0 0 1 32065.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=0] [nrs=2]
-0 // Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends
+0 // Technic Beam  5 x  0.5 Liftarm with Axle Holes at Both Ends (white)
 1 15 -25 0 20 0 -1 0 1 0 0 0 0 1 11478.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=-1]
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 0 0 -20 1 0 0 0 1 0 0 0 1 4519.dat
 0 STEP
-0 // Technic Pin Long without Friction with Single Slot
+0 // Technic Pin Long without Friction with Single Slot (tan)
 1 19 0 0 -120 1 0 0 0 1 0 0 0 1 32556.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (white)
 1 15 0 -19.319 -114.824 0 0 1 -0.259 0.966 0 -0.966 -0.259 0 6536.dat
 0 STEP
-0 // Technic Beam  7 x  0.5
+0 // Technic Beam  7 x  0.5 (white)
 1 15 15 0 -60 0 -1 0 1 0 0 0 0 1 32065.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=1] [nrs=-1]
-0 // Technic Axle and Pin Connector Hub with 2 Axles at 90 Degrees
+0 // Technic Axle and Pin Connector Hub with 2 Axles at 90 Degrees (orange)
 1 25 0 -52.779 -85.152 1 0 0 0 0.259 -0.966 0 0.966 0.259 10197.dat
 0 !LDCAD GROUP_NXT [ids=1] [nrs=2]
-0 // Technic Connector (Axle/Bush) Type 1
+0 // Technic Connector (Axle/Bush) Type 1 (light_bluish_grey)
 1 71 0 -33.461 -90.329 0 -1 0 0.259 0 -0.966 0.966 0 0.259 32039.dat
 0 !LDCAD GROUP_NXT [ids=1] [nrs=3]
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (red)
 1 4 0 -16.73 -105.164 0 -1 0 0.259 0 -0.966 0.966 0 0.259 32062.dat
 
 
@@ -503,16 +503,16 @@
 
 0 BFC CERTIFY CCW
 
-0 // Technic Axle Hole Two-toothed Sliding Side Edges
+0 // Technic Axle Hole Two-toothed Sliding Side Edges (main_colour)
 1 16 0 0 -20 0 0 -1 1 0 0 0 -1 0 42088 - axl4hol2.dat
-0 // Technic Axle Hole Two-toothed Sliding
+0 // Technic Axle Hole Two-toothed Sliding (main_colour)
 1 16 0 0 18.5 0 0 -1 1 0 0 0 -38.5 0 42088 - axl4hole.dat
-0 // Technic Axle Hole Two-toothed Sliding Tooth Outer Edges
+0 // Technic Axle Hole Two-toothed Sliding Tooth Outer Edges (main_colour)
 1 16 0 0 18.5 0 0 -1 1 0 0 0 -1 0 42088 - axl4hol3.dat
-0 // Circle 1.0
+0 // Circle 1.0 (main_colour)
 1 16 0 0 20 6 0 0 0 0 6 0 -6 0 4-4edge.dat
 0 BFC INVERTNEXT
-0 // Cylinder 1.0
+0 // Cylinder 1.0 (main_colour)
 1 16 0 0 20 6 0 0 0 0 6 0 -1.5 0 4-4cyli.dat
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\42088 - 4716s02.dat
 
@@ -531,9 +531,9 @@
 2 24 -2 0 5.602 0 0 6
 2 24 6 0 0 5.602 0 -2
 2 24 -6 0 0 -5.602 0 2
-0 // Circle 0.25
+0 // Circle 0.25 (main_colour)
 1 16 0 0 0 6 0 0 0 1 0 0 0 6 1-4edge.dat
-0 // Circle 0.25
+0 // Circle 0.25 (main_colour)
 1 16 0 0 0 -6 0 0 0 1 0 0 0 -6 1-4edge.dat
 
 
@@ -549,20 +549,20 @@
 
 5 24 -6 0 0 -6 1 0 -5.602 1 2 -5.543 1 -2.296
 0 BFC INVERTNEXT
-0 // Cylinder 0.25
+0 // Cylinder 0.25 (main_colour)
 1 16 0 0 0 0 0 6 0 1 0 6 0 0 1-4cyli.dat
 5 24 0 1 -6 0 0 -6 2 1 -5.602 -2.296 1 -5.543
 4 16 -6 1 0 -5.602 1 2 -5.602 0 2 -6 0 0
 5 24 6 0 0 6 1 0 5.602 1 -2 5.543 1 2.296
-0 // Technic Axle Hole Tooth
+0 // Technic Axle Hole Tooth (main_colour)
 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 axlehol6.dat
 5 24 0 1 6 0 0 6 -2 1 5.602 2.296 1 5.543
 0 BFC INVERTNEXT
-0 // Cylinder 0.25
+0 // Cylinder 0.25 (main_colour)
 1 16 0 0 0 0 0 -6 0 1 0 -6 0 0 1-4cyli.dat
 4 16 2 1 -5.602 0 1 -6 0 0 -6 2 0 -5.602
 4 16 6 1 0 5.602 1 -2 5.602 0 -2 6 0 0
-0 // Technic Axle Hole Tooth
+0 // Technic Axle Hole Tooth (main_colour)
 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 axlehol6.dat
 4 16 -2 1 5.602 0 1 6 0 0 6 -2 0 5.602
 
@@ -581,9 +581,9 @@
 2 24 -2.296 0 5.543 -2 0 5.602
 2 24 5.602 0 -2 5.543 0 -2.296
 2 24 2.296 0 -5.543 2 0 -5.602
-0 // Circle 0.125
+0 // Circle 0.125 (main_colour)
 1 16 0 0 0 -2.296 0 -5.543 0 1 0 5.543 0 -2.296 1-8edge.dat
-0 // Circle 0.125
+0 // Circle 0.125 (main_colour)
 1 16 0 0 0 2.296 0 5.543 0 1 0 -5.543 0 2.296 1-8edge.dat
 
 
@@ -696,11 +696,11 @@
 
 0 BFC CERTIFY CCW
 
-0 // Ring  6 x 0.25
+0 // Ring  6 x 0.25 (main_colour)
 1 16 0 0 0 0 0 -1 1 0 0 0 1 0 1-4ring6.dat
-0 // Disc Negative 0.75
+0 // Disc Negative 0.75 (main_colour)
 1 16 0 0 0 -6 0 0 0 0 -6 0 1 0 3-4ndis.dat
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 0 0 0 0 0 12.7 -12.7 0 0 0 1 0 1-4chrd.dat
 4 16 10.4168 4.3148 0 12.7 0 0 6 0 0 6 6 0
 4 16 3.2241 7.7837 0 6.9651 6.9651 0 10.4168 4.3148 0 6 6 0
@@ -746,21 +746,21 @@
 2 24 6.9651 6.9651 0 10.4168 4.3148 0
 2 24 0 7 0 3.2241 7.7837 0
 2 24 3.2241 7.7837 0 6.9651 6.9651 0
-0 // Circle 0.25
+0 // Circle 0.25 (main_colour)
 1 16 0 0 0 0 0 -7 7 0 0 0 1 0 1-4edge.dat
-0 // Cylinder Helical 0.25
+0 // Cylinder Helical 0.25 (main_colour)
 1 16 0 0 0 0 0 -7 7 0 0 0 2 0 1-4cylh.dat
-0 // Cylinder Helical Edge 0.25
+0 // Cylinder Helical Edge 0.25 (main_colour)
 1 16 0 0 0 0 0 -7 7 0 0 0 2 0 1-4edgh.dat
 2 24 -4.3148 -10.4168 0 0 -12.7 0
 2 24 -6.9651 -6.9651 0 -4.3148 -10.4168 0
 2 24 -7.7837 -3.2241 0 -6.9651 -6.9651 0
 2 24 -7 0 0 -7.7837 -3.2241 0
-0 // Circle 0.25
+0 // Circle 0.25 (main_colour)
 1 16 0 0 0 0 0 12.7 -12.7 0 0 0 1 0 1-4edge.dat
-0 // Cylinder Helical 0.25
+0 // Cylinder Helical 0.25 (main_colour)
 1 16 0 0 0 0 0 12.7 -12.7 0 0 0 2 0 1-4cylh.dat
-0 // Cylinder Helical Edge 0.25
+0 // Cylinder Helical Edge 0.25 (main_colour)
 1 16 0 0 0 0 0 12.7 -12.7 0 0 0 2 0 1-4edgh.dat
 
 
@@ -836,9 +836,9 @@
 0 BFC CERTIFY CCW
 
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 42088 - 1-4cylih.dat
-0 // Cylinder Helical Edge 0.25
+0 // Cylinder Helical Edge 0.25 (main_colour)
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 1-4edgh.dat
-0 // Cylinder Helical Edge 0.25
+0 // Cylinder Helical Edge 0.25 (main_colour)
 1 16 0 -1 0 1 0 0 0 1 0 0 0 1 1-4edgh.dat
 
 

@@ -5,53 +5,53 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (bright_light_orange)
 1 191 0 0 0 0 0 1 0 1 0 -1 0 0 3666.dat
-0 // Plate  3 x  3 with  2 x  2 Corner Round
+0 // Plate  3 x  3 with  2 x  2 Corner Round (bright_light_orange)
 1 191 20 0 10 1 0 0 0 1 0 0 0 1 30357.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (dark_red)
 1 320 10 -24 50 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (trans_orange)
 1 57 10 -8 10 1 0 0 0 1 0 0 0 1 3069b.dat
 0 STEP
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (trans_orange)
 1 57 40 -8 0 0 0 1 0 1 0 -1 0 0 3069b.dat
-0 // Plate  3 x  3 with  2 x  2 Corner Round
+0 // Plate  3 x  3 with  2 x  2 Corner Round (bright_light_orange)
 1 191 20 0 -10 0 0 1 0 1 0 -1 0 0 30357.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (dark_red)
 1 320 10 -24 -50 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_orange)
 1 57 60 -8 -10 1 0 0 0 1 0 0 0 1 6141.dat
 0 STEP
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (reddish_brown)
 1 70 10 -32 0 0 0 1 0 1 0 -1 0 0 3795.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (magenta)
 1 26 0 -40 0 0 0 1 0 1 0 -1 0 0 2431.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (magenta)
 1 26 20 -40 0 0 0 1 0 1 0 -1 0 0 2431.dat
-0 // Arch  1 x  3 x  3 Pointed
+0 // Arch  1 x  3 x  3 Pointed (reddish_brown)
 1 70 0 -104 -50 -1 0 0 0 1 0 0 0 -1 13965.dat
 0 STEP
-0 // Plant Leaves  4 x  3
+0 // Plant Leaves  4 x  3 (lavender)
 1 31 0 -112 -90 0.866 0 -0.5 0 1 0 0.5 0 0.866 2423.dat
-0 // Plate  1 x  1 Round with Tabs
+0 // Plate  1 x  1 Round with Tabs (dark_pink)
 1 5 30 -120 -141.962 0.866 0 -0.5 0 1 0 0.5 0 0.866 33291.dat
-0 // Plate  1 x  1 Round with Tabs
+0 // Plate  1 x  1 Round with Tabs (dark_pink)
 1 5 37.321 -120 -114.641 0.5 0 -0.866 0 1 0 0.866 0 0.5 33291.dat
-0 // Rock  1 x  1 Gem Facetted
+0 // Rock  1 x  1 Gem Facetted (trans_dark_pink)
 1 37 2.679 -116 -134.641 0.866 0 -0.5 0 1 0 0.5 0 0.866 30153.dat
-0 // Plate  1 x  1 Round with Tabs
+0 // Plate  1 x  1 Round with Tabs (dark_pink)
 1 5 20 -40 50 -0.707 0 0.707 0 1 0 -0.707 0 -0.707 33291.dat
 0 STEP
-0 // Tile  1 x  1 with Clip (Thick C-Clip)
+0 // Tile  1 x  1 with Clip (Thick C-Clip) (pearl_gold)
 1 297 20 -48 50 -0.871 -0.026 0.491 0.009 0.998 0.067 -0.492 0.063 -0.868 15712.dat
-0 // ~Bar  6L with Thick Stop (Obsolete)
+0 // ~Bar  6L with Thick Stop (Obsolete) (reddish_brown)
 1 70 36.368 -51.776 20.973 -0.25 0.491 -0.834 0.966 0.067 -0.25 -0.067 -0.868 -0.491 63965.dat
-0 // Cone  1 x  1 with Stop
+0 // Cone  1 x  1 with Stop (trans_red)
 1 36 48.655 -50.101 -0.734 0.25 -0.491 -0.834 -0.966 -0.067 -0.25 0.067 0.868 -0.491 59900.dat
-0 // Minifig Food Apple
+0 // Minifig Food Apple (red)
 1 4 62.275 -33.419 -32.338 -0.472 0.284 -0.834 0.784 0.569 -0.25 0.403 -0.772 -0.491 33051.dat
-0 // Minifig Cup
+0 // Minifig Cup (red)
 1 4 20 -64 -30 -0.87 0 0.492 0 1 0 -0.492 0 -0.87 3899.dat
 1 4 -20 8 70 0.866 0 -0.5 0 1 0 0.5 0 0.866 30259 - Azari.ldr
 0 FILE 30259 - Azari.ldr
@@ -61,17 +61,17 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Figure Friends Hips and Legs with Asymmetric Layered Skirt Short with Medium Orange Ruffle, Medium Nougat Legs and Ornamented Gold Sandals Pattern
+0 // Figure Friends Hips and Legs with Asymmetric Layered Skirt Short with Medium Orange Ruffle, Medium Nougat Legs and Ornamented Gold Sandals Pattern (magenta)
 1 26 0 0 0 1 0 0 0 1 0 0 0 1 30259 - 20380p01c01.dat
-0 // Figure Friends Girl Torso with Magenta and Bright Light Orange Strapless Top with Belt Pattern
+0 // Figure Friends Girl Torso with Magenta and Bright Light Orange Strapless Top with Belt Pattern (medium_nougat)
 1 84 0 -76.8 3.9 1 0 0 0 1 0 0 0 1 30259 - 92241p20.dat
-0 // Figure Friends Female Left Arm with Magenta Flame Tattoo Pattern
+0 // Figure Friends Female Left Arm with Magenta Flame Tattoo Pattern (medium_nougat)
 1 84 11 -76.8 3.9 1 0 0 0 0.087 0.996 0 -0.996 0.087 30259 - 92244p11.dat
-0 // Figure Friends Female Right Arm
+0 // Figure Friends Female Right Arm (medium_nougat)
 1 84 -11 -76.8 3.9 1 0 0 0 1 0 0 0 1 92245.dat
-0 // Figure Friends Female Head with Bright Light Orange Eyes, Open Mouth and Magenta Elves Tribal Pattern
+0 // Figure Friends Female Head with Bright Light Orange Eyes, Open Mouth and Magenta Elves Tribal Pattern (medium_nougat)
 1 84 0 -110 3.9 1 0 0 0 1 0 0 0 1 30259 - 92198p14.dat
-0 // Figure Elves Hair Long Wavy with Ears with Yellow Tips and Medium Nougat Ears Pattern
+0 // Figure Elves Hair Long Wavy with Ears with Yellow Tips and Medium Nougat Ears Pattern (dark_red)
 1 320 0 -110 0.9 1 0 0 0 1 0 0 0 1 30259 - 19204p01.dat
 0 FILE 30259 - 20380p01c01.dat
 0 20380p01c01
@@ -84,9 +84,9 @@
 
 0 !KEYWORDS Elves, Azari Firedancer, set 41074, set 41075, set 30259
 
-0 // Figure Friends Legs with Asymmetric Layered Skirt Short with Medium Orange Ruffle, Medium Nougat Legs and Ornamented Gold Sandals Pattern
+0 // Figure Friends Legs with Asymmetric Layered Skirt Short with Medium Orange Ruffle, Medium Nougat Legs and Ornamented Gold Sandals Pattern (main_colour)
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 30259 - 20380p01.dat
-0 // Figure Friends Hips
+0 // Figure Friends Hips (main_colour)
 1 16 0 -47.4 2.7 1 0 0 0 1 0 0 0 1 92248.dat
 0 FILE 30259 - 92241p20.dat
 0 92241p20
@@ -4383,7 +4383,7 @@
 
 0 BFC CERTIFY CCW
 
-0 // Circle 1.0
+0 // Circle 1.0 (main_colour)
 1 16 0 0 0 0 1 0 0 0 4 -4 0 0 30259 - 4-4edge.dat
 3 16 0.304 1.918 4.202 0 2.828 2.828 0 1.531 3.696
 3 16 0.304 1.918 4.202 0 1.531 3.696 0 0 4
@@ -5594,21 +5594,21 @@
 1 16 0 4 0 -3.06147 0 -7.39104 0 -6.4 0 7.39104 0 -3.06147 t04o6250.dat
 1 16 0 -4 0 0 0 -1 0 -1 0 -1 0 0 stud4od.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 1.0
+0 // Cylinder Open 1.0 (main_colour)
 1 16 0 -4 1 0 0 2 0 -6.4 0 2 0 0 4-4cylo.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 0 -4 1 0 0 2 0 -1 0 2 0 0 4-4ndis.dat
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 0 -4 0 4.24264 0 4.24264 0 -1 0 4.24264 0 -4.24264 1-4chrd.dat
 4 16 2 -4 3 -2 -4 3 -4.243 -4 4.243 4.243 -4 4.243
 4 16 2 -4 -1 2 -4 3 4.243 -4 4.243 4.243 -4 -4.243
 4 16 2 -4 -1 4.243 -4 -4.243 -4.243 -4 -4.243 -2 -4 -1
 4 16 -2 -4 3 -2 -4 -1 -4.243 -4 -4.243 -4.243 -4 4.243
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 0 -4 0 4.24264 0 -4.24264 0 -1 0 -4.24264 0 -4.24264 1-4chrd.dat
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 0 -4 0 -4.24264 0 -4.24264 0 -1 0 -4.24264 0 4.24264 1-4chrd.dat
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 0 -4 0 -4.24264 0 4.24264 0 -1 0 4.24264 0 4.24264 1-4chrd.dat
 3 16 -2.541 41.115002 17.913 -4.24 41.141998 16.686001 -5.446 41.610001 17.388
 3 16 15.081 28.829 10.551 15.844 29.656 10.969 16.820999 28.181 9.416

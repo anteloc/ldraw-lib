@@ -5,163 +5,163 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Boat Section Middle  6 x  8 x  3.333 with Light Grey Deck
+0 // Boat Section Middle  6 x  8 x  3.333 with Light Grey Deck (blue)
 1 1 0 0 0 1 0 0 0 1 0 0 0 1 185c01.dat
-0 // Boat Section Middle  6 x  8 x  3.333 with Light Grey Deck
+0 // Boat Section Middle  6 x  8 x  3.333 with Light Grey Deck (blue)
 1 1 0 0 -160 1 0 0 0 1 0 0 0 1 185c01.dat
-0 // Boat Section Middle  6 x  8 x  3.333 with Light Grey Deck
+0 // Boat Section Middle  6 x  8 x  3.333 with Light Grey Deck (blue)
 1 1 0 0 160 1 0 0 0 1 0 0 0 1 185c01.dat
-0 // Boat Section Bow  6 x  8 x  3.333 with Light Grey Deck
+0 // Boat Section Bow  6 x  8 x  3.333 with Light Grey Deck (blue)
 1 1 0 0 -310 1 0 0 0 1 0 0 0 1 997c01.dat
-0 // Boat Section Stern  6 x  6 x  3.333 with Light Grey Deck
+0 // Boat Section Stern  6 x  6 x  3.333 with Light Grey Deck (blue)
 1 1 0 0 300 1 0 0 0 1 0 0 0 1 164c01.dat
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (white)
 1 15 0 -24 -290 1 0 0 0 1 0 0 0 1 3010.dat
-0 // Slope Brick 45  2 x  4
+0 // Slope Brick 45  2 x  4 (white)
 1 15 0 -24 -310 1 0 0 0 1 0 0 0 1 3037.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (white)
 1 15 0 -24 260 0 0 -1 0 1 0 1 0 0 3001.dat
-0 // Brick  1 x  8
+0 // Brick  1 x  8 (white)
 1 15 50 -24 240 0 0 -1 0 1 0 1 0 0 3008.dat
-0 // Brick  1 x  8
+0 // Brick  1 x  8 (white)
 1 15 -50 -24 240 0 0 -1 0 1 0 1 0 0 3008.dat
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (white)
 1 15 0 -24 170 1 0 0 0 1 0 0 0 1 3010.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (light_grey)
 1 7 0 -8 -230 0 0 -1 0 1 0 1 0 0 3021.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (light_grey)
 1 7 0 -8 -170 0 0 -1 0 1 0 1 0 0 3021.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (light_grey)
 1 7 0 -8 -90 0 0 -1 0 1 0 1 0 0 3021.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (light_grey)
 1 7 0 -8 -30 0 0 -1 0 1 0 1 0 0 3021.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (light_grey)
 1 7 0 -8 50 0 0 -1 0 1 0 1 0 0 3021.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (light_grey)
 1 7 0 -8 110 0 0 -1 0 1 0 1 0 0 3021.dat
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (white)
 1 15 0 -32 -300 -1 0 0 0 1 0 0 0 -1 3020.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (white)
 1 15 0 -48 200 0 0 -1 0 1 0 1 0 0 3001.dat
-0 // Brick  2 x  3
+0 // Brick  2 x  3 (white)
 1 15 0 -48 270 0 0 -1 0 1 0 1 0 0 3002.dat
-0 // Slope Brick 45  2 x  1 without Centre Stud
+0 // Slope Brick 45  2 x  1 without Centre Stud (white)
 1 15 50 -48 290 -1 0 0 0 1 0 0 0 -1 3040a.dat
-0 // Slope Brick 45  2 x  1 without Centre Stud
+0 // Slope Brick 45  2 x  1 without Centre Stud (white)
 1 15 -50 -48 290 -1 0 0 0 1 0 0 0 -1 3040a.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (white)
 1 15 -50 -48 170 -1 0 0 0 1 0 0 0 -1 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (white)
 1 15 50 -48 170 -1 0 0 0 1 0 0 0 -1 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (white)
 1 15 50 -48 210 -1 0 0 0 1 0 0 0 -1 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (white)
 1 15 -50 -48 210 -1 0 0 0 1 0 0 0 -1 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (trans_clear)
 1 47 -30 -48 170 -1 0 0 0 1 0 0 0 -1 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (trans_clear)
 1 47 30 -48 170 -1 0 0 0 1 0 0 0 -1 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (trans_clear)
 1 47 50 -48 190 -1 0 0 0 1 0 0 0 -1 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (trans_clear)
 1 47 -50 -48 190 -1 0 0 0 1 0 0 0 -1 3005.dat
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (white)
 1 15 0 -56 180 -1 0 0 0 1 0 0 0 -1 3020.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (white)
 1 15 60 -56 190 0 0 1 0 1 0 -1 0 0 3021.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (white)
 1 15 -60 -56 190 0 0 1 0 1 0 -1 0 0 3021.dat
-0 // Plate  4 x  6
+0 // Plate  4 x  6 (white)
 1 15 0 -56 260 1 0 0 0 1 0 0 0 1 3032.dat
-0 // Slope Brick 45  2 x  1 without Centre Stud
+0 // Slope Brick 45  2 x  1 without Centre Stud (white)
 1 15 70 -80 190 -1 0 0 0 1 0 0 0 -1 3040a.dat
-0 // Slope Brick 45  2 x  1 without Centre Stud
+0 // Slope Brick 45  2 x  1 without Centre Stud (white)
 1 15 -70 -80 190 -1 0 0 0 1 0 0 0 -1 3040a.dat
-0 // Brick  2 x  3
+0 // Brick  2 x  3 (white)
 1 15 -30 -80 200 -1 0 0 0 1 0 0 0 -1 3002.dat
-0 // Brick  2 x  3
+0 // Brick  2 x  3 (white)
 1 15 30 -80 200 -1 0 0 0 1 0 0 0 -1 3002.dat
-0 // Brick  1 x  6
+0 // Brick  1 x  6 (white)
 1 15 0 -80 170 -1 0 0 0 1 0 0 0 -1 3009.dat
-0 // Slope Brick 45  2 x  4
+0 // Slope Brick 45  2 x  4 (white)
 1 15 -10 -80 260 0 0 1 0 1 0 -1 0 0 3037.dat
-0 // Slope Brick 45  2 x  4
+0 // Slope Brick 45  2 x  4 (white)
 1 15 10 -80 260 0 0 -1 0 1 0 1 0 0 3037.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (white)
 1 15 -70 -64 170 0 0 -1 0 1 0 1 0 0 3024.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (white)
 1 15 70 -64 170 0 0 -1 0 1 0 1 0 0 3024.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (red)
 1 4 70 -72 170 0 0 -1 0 1 0 1 0 0 3024.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (red)
 1 4 -70 -72 170 0 0 -1 0 1 0 1 0 0 3024.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (black)
 1 0 0 -104 240 0 0 -1 0 1 0 1 0 0 3001.dat
-0 // Brick  1 x  6
+0 // Brick  1 x  6 (trans_clear)
 1 47 0 -104 170 -1 0 0 0 1 0 0 0 -1 3009.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (trans_clear)
 1 47 50 -104 190 -1 0 0 0 1 0 0 0 -1 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (trans_clear)
 1 47 -50 -104 190 -1 0 0 0 1 0 0 0 -1 3005.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (white)
 1 15 40 -104 210 -1 0 0 0 1 0 0 0 -1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (white)
 1 15 -40 -104 210 -1 0 0 0 1 0 0 0 -1 3004.dat
-0 // Technic Bush with Three Flanges
+0 // Technic Bush with Three Flanges (red)
 1 4 0 -42 -300 -1 0 0 0 0 1 0 1 0 585.dat
-0 // Technic Axle  6
+0 // Technic Axle  6 (milky_white)
 1 79 0 -92 -300 0 0 1 1 0 0 0 1 0 3706.dat
-0 // Fence Lattice  1 x  4 x  1
+0 // Fence Lattice  1 x  4 x  1 (white)
 1 15 50 -80 260 0 0 -1 0 1 0 1 0 0 3633.dat
-0 // Fence Lattice  1 x  4 x  1
+0 // Fence Lattice  1 x  4 x  1 (white)
 1 15 -50 -80 260 0 0 1 0 1 0 -1 0 0 3633.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (white)
 1 15 0 -112 190 0 0 1 0 1 0 -1 0 0 3021.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (white)
 1 15 -40 -112 190 0 0 1 0 1 0 -1 0 0 3021.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (white)
 1 15 40 -112 190 0 0 1 0 1 0 -1 0 0 3021.dat
-0 // Brick  2 x  3
+0 // Brick  2 x  3 (red)
 1 4 0 -128 250 0 0 -1 0 1 0 1 0 0 3002.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (white)
 1 15 70 -80 170 0 0 -1 0 1 0 1 0 0 3024.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (white)
 1 15 -70 -80 170 0 0 -1 0 1 0 1 0 0 3024.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (yellow)
 1 14 0 -32 120 -1 0 0 0 1 0 0 0 -1 3001.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (yellow)
 1 14 0 -32 80 -1 0 0 0 1 0 0 0 -1 3001.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (yellow)
 1 14 0 -32 40 -1 0 0 0 1 0 0 0 -1 3001.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (yellow)
 1 14 0 -32 -20 -1 0 0 0 1 0 0 0 -1 3001.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (yellow)
 1 14 0 -32 -60 -1 0 0 0 1 0 0 0 -1 3001.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (yellow)
 1 14 0 -32 -100 -1 0 0 0 1 0 0 0 -1 3001.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (yellow)
 1 14 0 -32 -160 -1 0 0 0 1 0 0 0 -1 3001.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (yellow)
 1 14 0 -32 -200 -1 0 0 0 1 0 0 0 -1 3001.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (yellow)
 1 14 0 -32 -240 -1 0 0 0 1 0 0 0 -1 3001.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (yellow)
 1 14 0 -56 -240 -1 0 0 0 1 0 0 0 -1 3001.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (yellow)
 1 14 0 -56 120 -1 0 0 0 1 0 0 0 -1 3001.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (yellow)
 1 14 0 -56 80 -1 0 0 0 1 0 0 0 -1 3001.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (yellow)
 1 14 0 -56 40 -1 0 0 0 1 0 0 0 -1 3001.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (yellow)
 1 14 0 -56 -20 -1 0 0 0 1 0 0 0 -1 3001.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (yellow)
 1 14 0 -56 -60 -1 0 0 0 1 0 0 0 -1 3001.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (yellow)
 1 14 0 -56 -100 -1 0 0 0 1 0 0 0 -1 3001.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (yellow)
 1 14 0 -56 -160 -1 0 0 0 1 0 0 0 -1 3001.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (yellow)
 1 14 0 -56 -200 -1 0 0 0 1 0 0 0 -1 3001.dat
 1 4 0 80 -160 1 0 0 0 1 0 0 0 1 315 - x139a.dat
 1 4 0 80 0 1 0 0 0 1 0 0 0 1 315 - x139a.dat
@@ -197,19 +197,19 @@
 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\315 - x139s02.dat
 0 BFC INVERTNEXT
 1 16 0 -3 0 -0.95 0 0 0 1 0 0 0 0.8 s\315 - x139s02.dat
-0 // Ring  3 x 0.25
+0 // Ring  3 x 0.25 (main_colour)
 1 16 -10 0 -70 -2 0 0 0 1 0 0 0 -2 1-4ring3.dat
-0 // Ring  3 x 0.25
+0 // Ring  3 x 0.25 (main_colour)
 1 16 10 0 -70 0 0 2 0 1 0 -2 0 0 1-4ring3.dat
-0 // Ring  4 x 0.25
+0 // Ring  4 x 0.25 (main_colour)
 1 16 10 0 -70 0 0 2 0 1 0 -2 0 0 1-4ring4.dat
-0 // Ring  4 x 0.25
+0 // Ring  4 x 0.25 (main_colour)
 1 16 -10 0 -70 -2 0 0 0 1 0 0 0 -2 1-4ring4.dat
-0 // Circle 0.25
+0 // Circle 0.25 (main_colour)
 1 16 10 0 -70 0 0 10 0 1 0 -10 0 0 1-4edge.dat
-0 // Circle 0.25
+0 // Circle 0.25 (main_colour)
 1 16 10 0 -70 0 0 6 0 1 0 -6 0 0 1-4edge.dat
-0 // Circle 0.25
+0 // Circle 0.25 (main_colour)
 1 16 -10 0 -70 -6 0 0 0 1 0 0 0 -6 1-4edge.dat
 2 24 -20 0 -70 -20 0 -36
 2 24 -16 0 -36 -20 0 -36
@@ -231,26 +231,26 @@
 2 24 10 0 -80 -10 0 -80
 2 24 10 0 -76 -10 0 -76
 2 24 10 2 -76 -10 2 -76
-0 // Circle 0.25
+0 // Circle 0.25 (main_colour)
 1 16 -10 0 -70 -10 0 0 0 1 0 0 0 -10 1-4edge.dat
-0 // Cylinder 0.25
+0 // Cylinder 0.25 (main_colour)
 1 16 -10 0 -70 -10 0 0 0 5 0 0 0 -10 1-4cyli.dat
 0 BFC INVERTNEXT
-0 // Cylinder 0.25
+0 // Cylinder 0.25 (main_colour)
 1 16 -10 0 -70 -6 0 0 0 5 0 0 0 -6 1-4cyli.dat
-0 // Circle 0.25
+0 // Circle 0.25 (main_colour)
 1 16 10 5 -70 0 0 10 0 1 0 -10 0 0 1-4edge.dat
 2 24 -20 5 -70 -20 5 0
 2 24 20 5 -70 20 5 0
 2 24 16 2 -70 16 2 -36
 2 24 -16 2 -70 -16 2 -36
 2 24 10 5 -80 -10 5 -80
-0 // Circle 0.25
+0 // Circle 0.25 (main_colour)
 1 16 -10 5 -70 -10 0 0 0 1 0 0 0 -10 1-4edge.dat
-0 // Cylinder 0.25
+0 // Cylinder 0.25 (main_colour)
 1 16 10 0 -70 0 0 10 0 5 0 -10 0 0 1-4cyli.dat
 0 BFC INVERTNEXT
-0 // Cylinder 0.25
+0 // Cylinder 0.25 (main_colour)
 1 16 10 0 -70 0 0 6 0 5 0 -6 0 0 1-4cyli.dat
 2 24 20 0 -70 20 0 -36
 4 16 20 0 -70 20 5 -70 20 5 -36 20 0 -36
@@ -271,32 +271,32 @@
 2 24 -6 60 -40 -6 60 0
 2 24 -5 60 -40 -5 60 0
 2 24 5 60 -40 5 60 0
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 0 60 -40 -5 0 0 0 5 0 0 0 -5 2-4edge.dat
-0 // Cylinder 0.5
+0 // Cylinder 0.5 (main_colour)
 1 16 0 60 -40 -5 0 0 0 -5 0 0 0 -5 2-4cyli.dat
 4 16 5 60 0 5 60 -40 5 55 -40 5 55 0
 4 16 -5 60 -40 -5 60 0 -5 55 0 -5 55 -40
 2 24 16 2 -36 16 0 -36
-0 // Cylinder Sloped 1.0
+0 // Cylinder Sloped 1.0 (main_colour)
 1 16 10 2 -50 5.54328 0 -2.2961 0 12 0 -2.2961 0 -5.54328 4-4cyls.dat
-0 // Cylinder Sloped 1.0
+0 // Cylinder Sloped 1.0 (main_colour)
 1 16 10 2 -50 3.69552 0 -1.53073 0 11 0 -1.53073 0 -3.69552 4-4cyls.dat
-0 // Cylinder Sloped 1.0
+0 // Cylinder Sloped 1.0 (main_colour)
 1 16 -10 2 -50 -5.54328 0 -2.2961 0 12 0 -2.2961 0 5.54328 4-4cyls.dat
-0 // Cylinder Sloped 1.0
+0 // Cylinder Sloped 1.0 (main_colour)
 1 16 -10 2 -50 -3.69552 0 -1.53073 0 11 0 -1.53073 0 3.69552 4-4cyls.dat
 1 16 -10 2 -50 0 0 1 0 2.5 0 1 0 0 stud2a.dat
 1 16 10 2 -50 0 0 1 0 2.5 0 1 0 0 stud2a.dat
 1 16 10 2 -70 0 0 1 0 2.5 0 1 0 0 stud2a.dat
 1 16 -10 2 -70 0 0 1 0 2.5 0 1 0 0 stud2a.dat
-0 // Cylinder Sloped 1.0
+0 // Cylinder Sloped 1.0 (main_colour)
 1 16 -10 2 -70 -6 0 0 0 1.5 0 0 0 6 4-4cyls.dat
-0 // Cylinder Sloped 1.0
+0 // Cylinder Sloped 1.0 (main_colour)
 1 16 -10 2 -70 -4 0 0 0 1 0 0 0 4 4-4cyls.dat
-0 // Cylinder Sloped 1.0
+0 // Cylinder Sloped 1.0 (main_colour)
 1 16 10 2 -70 6 0 0 0 1.5 0 0 0 -6 4-4cyls.dat
-0 // Cylinder Sloped 1.0
+0 // Cylinder Sloped 1.0 (main_colour)
 1 16 10 2 -70 4 0 0 0 1 0 0 0 -4 4-4cyls.dat
 0 // intersection with studs
 2 24 -4 3.392 -70 -4.027 3.433 -69.866
@@ -489,9 +489,9 @@
 
 0 BFC CERTIFY CCW
 
-0 // Cylinder 1.0
+0 // Cylinder 1.0 (main_colour)
 1 16 0 0 -60 -20 0 0 0 0 20 0 60 0 4-4cyli.dat
-0 // Disc 1.0
+0 // Disc 1.0 (main_colour)
 1 16 0 0 0 20 0 0 0 0 20 0 -60 0 4-4disc.dat
 2 24 -20 0 0 -18.478 7.654 0
 2 24 -18.478 7.654 0 -14.142 14.142 0
@@ -509,18 +509,18 @@
 2 24 -7.654 -18.478 0 -14.142 -14.142 0
 2 24 -14.142 -14.142 0 -18.478 -7.654 0
 2 24 -18.478 -7.654 0 -20 0 0
-0 // Sphere 0.5
+0 // Sphere 0.5 (main_colour)
 1 16 0 0 -60 20 0 0 0 0 20 0 -20 0 4-8sphe.dat
 4 16 3 19 0 3 19 -27 3 25.106 -27 3 25.106 0
 4 16 3 25.106 0 -3 25.106 0 -3 19 0 3 19 0
 2 24 3 25.106 0 3 19.403 0
 2 24 -3 25.106 0 -3 19.403 0
 4 16 -3 25.106 0 -3 25.106 -27 -3 19 -27 -3 19 0
-0 // Cylinder 0.5
+0 // Cylinder 0.5 (main_colour)
 1 16 0 19 -27 -3 0 0 0 10 0 0 0 -3 2-4cyli.dat
-0 // Cylinder 1.0
+0 // Cylinder 1.0 (main_colour)
 1 16 0 29 -25 -5 0 0 0 0 5 0 25 0 4-4cyli.dat
-0 // Disc 1.0
+0 // Disc 1.0 (main_colour)
 1 16 0 29 0 5 0 0 0 0 5 0 -1 0 4-4disc.dat
 2 24 -5 29 0 -4.62 30.913 0
 2 24 -4.62 30.913 0 -3.536 32.536 0
@@ -536,7 +536,7 @@
 2 24 -3 25.106 0 -3.536 25.464 0
 2 24 -3.536 25.464 0 -4.62 27.087 0
 2 24 -4.62 27.087 0 -5 29 0
-0 // Sphere 0.5
+0 // Sphere 0.5 (main_colour)
 1 16 0 29 -25 5 0 0 0 0 5 0 -5 0 4-8sphe.dat
 2 24 -3 19.403 0 -3 19.403 -27
 2 24 -3 19.403 -27 -2.772 19.449 -28.148
@@ -583,10 +583,10 @@
 0 !HISTORY 2014-11-22 [MMR1988] reworked condlines, closed hairline gaps, flipped triangles
 
 0 BFC INVERTNEXT
-0 // Cylinder 0.25
+0 // Cylinder 0.25 (main_colour)
 1 16 20 60 0 -14 0 0 0 0 -55 0 -40 0 1-4cyli.dat
 0 BFC INVERTNEXT
-0 // Cylinder 0.25
+0 // Cylinder 0.25 (main_colour)
 1 16 -20 60 -40 14 0 0 0 0 -55 0 40 0 1-4cyli.dat
 
 4 16 -7.654 5 -76.956 -5.603 9.186 -64.934 0 9.186 -66.988 0 5 -80
@@ -620,7 +620,7 @@
 3 16 -6.527 38.951 -43.286 -7.0654 38.9515 -40 -6 60 -40
 3 16 -6 60 -40 -5.543 60 -42.296 -6.527 38.951 -43.286
 
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 -10 5 -70 -10 0 0 0 -1 0 0 0 -10 1-4chrd.dat
 3 16 -7.654 5 -76.956 0 5 -80 -10 5 -80
 4 16 -10 5 -80 -20 5 -70 -14.142 5 -68.284 -7.654 5 -76.956
@@ -658,14 +658,14 @@
 3 16 6 60 -40 7.0654 38.9515 -40 6.527 38.951 -43.286
 3 16 6.527 38.951 -43.286 5.543 60 -42.296 6 60 -40
 
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 10 5 -70 10 0 0 0 -1 0 0 0 -10 1-4chrd.dat
 3 16 7.654 5 -76.956 10 5 -80 0 5 -80
 4 16 10 5 -80 7.654 5 -76.956 14.142 5 -68.284 20 5 -70
 3 16 20 5 -40 20 5 -70 18.478 5 -55.308
 3 16 18.478 5 -55.308 20 5 -70 14.142 5 -68.284
 
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 0 60 -40 6 0 0 0 1 0 0 0 -6 2-4edge.dat
 
 0 // Added lines/Condlines

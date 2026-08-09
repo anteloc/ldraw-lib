@@ -6,39 +6,39 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
 0 !THEME Western / Indians
-0 // Slope Brick 45  2 x  2
+0 // Slope Brick 45  2 x  2 (blue)
 1 1 0 0 0 1 0 0 0 1 0 0 0 1 3039.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 0 -24 0 1 0 0 0 1 0 0 0 1 30136.dat
 0 STEP
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (yellow)
 1 14 0 -32 0 1 0 0 0 1 0 0 0 1 3023.dat
 0 STEP
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (red)
 1 4 -10 -48 0 0 0 1 0 1 0 -1 0 0 6091.dat
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (red)
 1 4 10 -48 0 0 0 -1 0 1 0 1 0 0 6091.dat
 0 STEP
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (white)
 1 15 0 -64 0 1 0 0 0 1 0 0 0 1 3004.dat
 0 STEP
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (yellow)
 1 14 0 -72 -10 1 0 0 0 1 0 0 0 1 3022.dat
 0 STEP
-0 // Brick  1 x  1 with Headlight
+0 // Brick  1 x  1 with Headlight (black)
 1 0 10 -96 0 1 0 0 0 1 0 0 0 1 4070.dat
-0 // Brick  1 x  1 with Headlight
+0 // Brick  1 x  1 with Headlight (black)
 1 0 -10 -96 0 1 0 0 0 1 0 0 0 1 4070.dat
 0 STEP
-0 // Plate  1 x  2 with Groove with 1 Centre Stud
+0 // Plate  1 x  2 with Groove with 1 Centre Stud (red)
 1 4 0 -104 0 1 0 0 0 1 0 0 0 1 3794b.dat
-0 // Cone  1 x  1
+0 // Cone  1 x  1 (blue)
 1 1 0 -128 0 1 0 0 0 1 0 0 0 1 4589.dat
 0 STEP
 1 1 -90 -48 -90 0.259 0 -0.966 0 1 0 0.966 0 0.259 2845 - Minifig.ldr
-0 // Minifig Bow with Arrow
+0 // Minifig Bow with Arrow (black)
 1 0 29 5 -12 -0.204 0.417 0.886 0.936 -0.182 0.301 0.286 0.891 -0.353 4499.dat
-0 // Minifig Arrow Quiver
+0 // Minifig Arrow Quiver (black)
 1 0 -68 15 -20 0.819 -0.541 -0.192 0.496 0.5 0.71 -0.288 -0.676 0.678 4498.dat
 
 
@@ -51,31 +51,31 @@
 
 0 !THEME Western / Indians
 
-0 // Minifig Headdress American Indian Buffalo Horned
+0 // Minifig Headdress American Indian Buffalo Horned (brown)
 1 6 0 -21.366 18.743 0.857 0 -0.515 0.142 0.961 0.236 0.495 -0.276 0.824 2845 - 30113.dat
-0 // Minifig Head with Light Turquoise and Orange Painted Face Pattern
+0 // Minifig Head with Light Turquoise and Orange Painted Face Pattern (yellow)
 1 14 0 -21.366 18.743 0.857 0 -0.515 0.142 0.961 0.236 0.495 -0.276 0.824 2845 - 3626bpw7.dat
-0 // Minifig Torso with White/Red Armour and White Belt Pattern
+0 // Minifig Torso with White/Red Armour and White Belt Pattern (brown)
 1 6 0 1.704 12.128 1 0 0 0 0.961 0.276 0 -0.276 0.961 973pwf.dat
-0 // ~Minifig Hips with Red/White Triangles Pattern (Obsolete)
+0 // ~Minifig Hips with Red/White Triangles Pattern (Obsolete) (tan)
 1 19 0 32.465 3.308 1 0 0 0 0.961 0.276 0 -0.276 0.961 3815pw1.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (brown)
 1 6 -15.552 10.356 9.647 0.985 -0.17 0 0.163 0.947 0.276 -0.047 -0.272 0.961 3818.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (brown)
 1 6 15.552 10.356 9.647 0.985 0.139 0.098 -0.064 -0.229 0.971 0.158 -0.963 -0.217 3819.dat
-0 // Minifig Hand
+0 // Minifig Hand (yellow)
 1 14 -23.863 24.425 -5.124 0.985 -0.12 0.12 0.163 0.864 -0.474 -0.047 0.488 0.871 3820.dat
-0 // Minifig Hand
+0 // Minifig Hand (yellow)
 1 14 22.28 -4.305 -5.36 0.985 0.167 -0.03 -0.064 0.524 0.849 0.158 -0.834 0.527 3820.dat
-0 // Minifig Shield Ovoid with American Indian Pattern
+0 // Minifig Shield Ovoid with American Indian Pattern (tan)
 1 19 -27.813 27.482 -13.511 0.063 -0.245 0.967 -0.728 0.65 0.212 -0.682 -0.718 -0.138 2586pw1.dat
-0 // ~Minifig Leg Right with Red/White Triangles, Fringe Pattern (Obsolete)
+0 // ~Minifig Leg Right with Red/White Triangles, Fringe Pattern (Obsolete) (tan)
 1 19 0 44 0 1 0 0 0 1 0 0 0 1 3816pw1.dat
-0 // ~Minifig Leg Left with Red/White Triangles Pattern (Obsolete)
+0 // ~Minifig Leg Left with Red/White Triangles Pattern (Obsolete) (tan)
 1 19 0 44 0 1 0 0 0 1 0 0 0 1 3817pw1.dat
-0 // Minifig Spear with Round End
+0 // Minifig Spear with Round End (black)
 1 0 14.28 -45.429 19.009 0.979 0.198 -0.045 -0.118 0.732 0.671 0.166 -0.652 0.74 4497.dat
-0 // Minifig Feathers with Clip and Black Tip Pattern
+0 // Minifig Feathers with Clip and Black Tip Pattern (white)
 1 15 19.234 -27.139 2.722 0.625 0.198 0.754 -0.606 0.731 0.31 -0.491 -0.651 0.578 30127p01.dat
 
 
@@ -4575,7 +4575,7 @@
 1 16 0 4 0 5.65685 0 5.65685 0 -6.4 0 5.65685 0 -5.65685 t04o6250.dat
 1 16 0 4 0 -5.65685 0 5.65685 0 -6.4 0 5.65685 0 5.65685 t04o6250.dat
 1 16 0 4 0 -5.65685 0 -5.65685 0 -6.4 0 -5.65685 0 5.65685 t04o6250.dat
-0 // Cylinder 0.625
+0 // Cylinder 0.625 (main_colour)
 1 16 0 4 0 12.0105 0 4.97489 0 13 0 -4.97489 0 12.0105 5-8cyli.dat
 1 16 0 17 0 7.39104 0 -3.06147 0 6.4 0 3.06147 0 7.39104 t04o6250.dat
 1 16 0 17 0 -3.06147 0 -7.39104 0 6.4 0 7.39104 0 -3.06147 t04o6250.dat

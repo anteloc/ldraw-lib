@@ -10,628 +10,628 @@
 0 Name: Tractor.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (blue)
 1 1 0 0 0 1 0 0 0 1 0 0 0 1 3020.dat
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (white)
 1 15 0 0 140 1 0 0 0 1 0 0 0 1 3795.dat
 0 STEP
-0 // Plate  2 x  8
+0 // Plate  2 x  8 (yellow)
 1 14 0 -8 60 0 0 1 0 1 0 -1 0 0 3034.dat
 0 STEP
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (red)
 1 4 -10 -16 -10 1 0 0 0 1 0 0 0 1 2420.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (red)
 1 4 10 -16 30 -1 0 0 0 1 0 0 0 -1 2420.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (light_grey)
 1 7 -40 -8 140 -1 0 0 0 1 0 0 0 -1 3022.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (light_grey)
 1 7 40 -8 140 -1 0 0 0 1 0 0 0 -1 3022.dat
-0 // Technic Brick  1 x 16 with Holes
+0 // Technic Brick  1 x 16 with Holes (red)
 1 4 -30 -24 -140 0 0 1 0 1 0 -1 0 0 3703.dat
-0 // Technic Brick  1 x 16 with Holes
+0 // Technic Brick  1 x 16 with Holes (red)
 1 4 30 -24 -140 0 0 1 0 1 0 -1 0 0 3703.dat
 0 STEP
-0 // Wing  3 x  4 with  1 x  2 Cutout without Stud Notches
+0 // Wing  3 x  4 with  1 x  2 Cutout without Stud Notches (white)
 1 15 -40 -16 140 1 0 0 0 1 0 0 0 1 4859.dat
-0 // Wing  3 x  4 with  1 x  2 Cutout without Stud Notches
+0 // Wing  3 x  4 with  1 x  2 Cutout without Stud Notches (white)
 1 15 40 -16 140 1 0 0 0 1 0 0 0 1 4859.dat
 0 STEP
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (black)
 1 0 0 -24 10 0 0 1 0 1 0 -1 0 0 3021.dat
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (black)
 1 0 -50 -24 140 0 0 1 0 1 0 -1 0 0 28653.dat
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (black)
 1 0 50 -24 140 0 0 1 0 1 0 -1 0 0 28653.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 40 -14 0 -1 0 0 0 1 0 0 0 -1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -40 -14 0 -1 0 0 0 1 0 0 0 -1 2780.dat
 1 4 0 0 -280 1 0 0 0 1 0 0 0 1 5533 - Tractor 01.ldr
 0 STEP
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (red)
 1 4 0 -32 -280 1 0 0 0 1 0 0 0 1 3020.dat
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (blue)
 1 1 -30 -32 0 0 0 1 0 1 0 -1 0 0 28653.dat
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (blue)
 1 1 30 -32 0 0 0 1 0 1 0 -1 0 0 28653.dat
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (white)
 1 15 0 -24 140 1 0 0 0 1 0 0 0 1 3020.dat
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (black)
 1 0 -30 -32 -240 0 0 1 0 1 0 -1 0 0 2412b.dat
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (black)
 1 0 30 -32 -240 0 0 1 0 1 0 -1 0 0 2412b.dat
 0 STEP
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (black)
 1 0 0 -32 -40 1 0 0 0 1 0 0 0 1 3795.dat
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (light_grey)
 1 7 0 -32 140 1 0 0 0 1 0 0 0 1 3795.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (light_grey)
 1 7 0 -32 30 -1 0 0 0 1 0 0 0 -1 3710.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (black)
 1 0 0 -32 -210 -1 0 0 0 1 0 0 0 -1 3710.dat
-0 // Technic Steering Arm with Connectors
+0 // Technic Steering Arm with Connectors (black)
 1 0 40 -14 -270 0 -1 0 -1 0 0 0 0 -1 32069.dat
-0 // Technic Steering Arm with Connectors
+0 // Technic Steering Arm with Connectors (black)
 1 0 -40 -14 -270 0 1 0 1 0 0 0 0 -1 32069.dat
 0 STEP
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (black)
 1 0 -30 -48 -80 0 0 1 0 1 0 -1 0 0 3700.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (black)
 1 0 -30 -48 -180 0 0 1 0 1 0 -1 0 0 3700.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (black)
 1 0 30 -48 -80 0 0 1 0 1 0 -1 0 0 3700.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (black)
 1 0 30 -48 -180 0 0 1 0 1 0 -1 0 0 3700.dat
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (red)
 1 4 0 -40 -30 1 0 0 0 1 0 0 0 1 28653.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (light_grey)
 1 7 0 -40 -210 1 0 0 0 1 0 0 0 1 3710.dat
 1 7 70 -24 -250 1 0 0 0 1 0 0 0 1 5533 - Tractor 02.ldr
 1 7 -70 -24 -250 1 0 0 0 1 0 0 0 1 5533 - Tractor 02.ldr
 0 STEP
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (black)
 1 0 -30 -48 -150 0 0 -1 0 1 0 1 0 0 3040b.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (black)
 1 0 30 -48 -150 0 0 1 0 1 0 -1 0 0 3040b.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 40 -38 -80 -1 0 0 0 1 0 0 0 -1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 40 -38 -180 -1 0 0 0 1 0 0 0 -1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -40 -38 -80 -1 0 0 0 1 0 0 0 -1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -40 -38 -180 -1 0 0 0 1 0 0 0 -1 2780.dat
-0 // Plate  1 x 10
+0 // Plate  1 x 10 (light_grey)
 1 7 -30 -40 40 0 0 1 0 1 0 -1 0 0 4477.dat
-0 // Plate  1 x 10
+0 // Plate  1 x 10 (light_grey)
 1 7 30 -40 40 0 0 1 0 1 0 -1 0 0 4477.dat
 0 STEP
-0 // Plate  2 x  8
+0 // Plate  2 x  8 (light_grey)
 1 7 0 -40 160 1 0 0 0 1 0 0 0 1 3034.dat
-0 // Technic Gear Rack  1 x  8 with Holes
+0 // Technic Gear Rack  1 x  8 with Holes (light_grey)
 1 7 0 -42 -230 1 0 0 0 1 0 0 0 1 6630.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (black)
 1 0 -30 -48 -210 1 0 0 0 1 0 0 0 1 6141.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (black)
 1 0 30 -48 -210 1 0 0 0 1 0 0 0 1 6141.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 80 -14 -270 1 0 0 0 1 0 0 0 1 3749.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 -80 -14 -270 -1 0 0 0 1 0 0 0 -1 3749.dat
 0 STEP
 1 7 0 -64 -30 1 0 0 0 1 0 0 0 1 5533 - Tractor 03.ldr
 0 STEP
-0 // Technic Brick  1 x  4 with Holes
+0 // Technic Brick  1 x  4 with Holes (blue)
 1 1 -30 -64 140 0 0 1 0 1 0 -1 0 0 3701.dat
-0 // Technic Brick  1 x  4 with Holes
+0 // Technic Brick  1 x  4 with Holes (blue)
 1 1 30 -64 140 0 0 1 0 1 0 -1 0 0 3701.dat
-0 // Technic Brick  1 x  6 with Holes
+0 // Technic Brick  1 x  6 with Holes (red)
 1 4 30 -64 40 0 0 1 0 1 0 -1 0 0 3894.dat
-0 // Technic Brick  1 x  6 with Holes
+0 // Technic Brick  1 x  6 with Holes (red)
 1 4 -30 -64 40 0 0 1 0 1 0 -1 0 0 3894.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (red)
 1 4 -30 -64 -30 1 0 0 0 1 0 0 0 1 3040b.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (red)
 1 4 30 -64 -30 1 0 0 0 1 0 0 0 1 3040b.dat
 0 STEP
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (black)
 1 0 0 -56 -270 1 0 0 0 1 0 0 0 1 4865a.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (black)
 1 0 0 -40 -290 1 0 0 0 1 0 0 0 1 3069b.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 40 -54 0 -1 0 0 0 1 0 0 0 -1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -40 -54 0 -1 0 0 0 1 0 0 0 -1 2780.dat
 1 7 -70 -64 160 1 0 0 0 1 0 0 0 1 5533 - Tractor 04.ldr
 1 7 70 -64 160 -1 0 0 0 1 0 0 0 -1 5533 - Tractor 04.ldr
 0 STEP
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (red)
 1 4 -20 -72 -10 0 0 -1 0 1 0 1 0 0 3021.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (red)
 1 4 20 -72 -10 0 0 -1 0 1 0 1 0 0 3021.dat
 1 0 60 -40 -40 1 0 0 0 1 0 0 0 1 5533 - Tractor 05.ldr
 1 0 -60 -40 -40 1 0 0 0 1 0 0 0 1 5533 - Tractor 05.ldr
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (blue)
 1 1 -30 -72 80 0 0 1 0 1 0 -1 0 0 3666.dat
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (blue)
 1 1 30 -72 80 0 0 1 0 1 0 -1 0 0 3666.dat
-0 // Plate  2 x  8
+0 // Plate  2 x  8 (light_grey)
 1 7 0 -72 160 1 0 0 0 1 0 0 0 1 3034.dat
 0 STEP
-0 // Brick  2 x  4 x  1.333 with Curved Top
+0 // Brick  2 x  4 x  1.333 with Curved Top (red)
 1 4 10 -80 -180 0 0 -1 0 1 0 1 0 0 6081.dat
-0 // Brick  2 x  4 x  1.333 with Curved Top
+0 // Brick  2 x  4 x  1.333 with Curved Top (red)
 1 4 -10 -80 -180 0 0 1 0 1 0 -1 0 0 6081.dat
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (red)
 1 4 10 -80 -70 0 0 -1 0 1 0 1 0 0 6091.dat
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (red)
 1 4 10 -80 -90 0 0 -1 0 1 0 1 0 0 6091.dat
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (red)
 1 4 -10 -80 -70 0 0 1 0 1 0 -1 0 0 6091.dat
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (red)
 1 4 -10 -80 -90 0 0 1 0 1 0 -1 0 0 6091.dat
 1 7 0 -80 200 1 0 0 0 1 0 0 0 1 5533 - Tractor 06.ldr
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (black)
 1 0 -40 -80 170 1 0 0 0 1 0 0 0 1 28653.dat
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (black)
 1 0 40 -80 170 1 0 0 0 1 0 0 0 1 28653.dat
 0 STEP
-0 // Technic Wedge Belt Wheel - Not Reinforced
+0 // Technic Wedge Belt Wheel - Not Reinforced (light_grey)
 1 7 85 -54 160 0 0 -1 0 1 0 1 0 0 4185a.dat
-0 // Technic Wedge Belt Wheel - Not Reinforced
+0 // Technic Wedge Belt Wheel - Not Reinforced (light_grey)
 1 7 -85 -54 160 0 0 -1 0 1 0 1 0 0 4185a.dat
-0 // Plate  2 x 10
+0 // Plate  2 x 10 (black)
 1 0 0 -80 -100 0 0 1 0 1 0 -1 0 0 3832.dat
-0 // Plate  4 x  8
+0 // Plate  4 x  8 (light_grey)
 1 7 0 -80 80 0 0 1 0 1 0 -1 0 0 3035.dat
-0 // Plate  1 x  2 with Handle
+0 // Plate  1 x  2 with Handle (white)
 1 15 0 -80 -210 1 0 0 0 1 0 0 0 1 2540.dat
 0 STEP
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (blue)
 1 1 -10 -104 150 0 0 1 0 1 0 -1 0 0 3622.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (blue)
 1 1 10 -104 150 0 0 1 0 1 0 -1 0 0 3622.dat
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (red)
 1 4 0 -88 -10 1 0 0 0 1 0 0 0 1 28653.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (light_grey)
 1 7 -10 -88 -180 0 0 1 0 1 0 -1 0 0 3710.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (light_grey)
 1 7 10 -88 -180 0 0 1 0 1 0 -1 0 0 3710.dat
 0 STEP
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (red)
 1 4 0 -104 -120 0 0 1 0 1 0 -1 0 0 3003.dat
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (black)
 1 0 -10 -104 -10 0 0 1 0 1 0 -1 0 0 6091.dat
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (black)
 1 0 10 -104 -10 0 0 -1 0 1 0 1 0 0 6091.dat
-0 // Technic Brick  1 x  8 with Holes
+0 // Technic Brick  1 x  8 with Holes (blue)
 1 1 30 -104 160 0 0 1 0 1 0 -1 0 0 3702.dat
-0 // Technic Brick  1 x  8 with Holes
+0 // Technic Brick  1 x  8 with Holes (blue)
 1 1 -30 -104 160 0 0 1 0 1 0 -1 0 0 3702.dat
 0 STEP
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (red)
 1 4 -20 -104 70 -1 0 0 0 1 0 0 0 -1 3700.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (red)
 1 4 20 -104 70 -1 0 0 0 1 0 0 0 -1 3700.dat
-0 // Wedge  3 x  2 Right
+0 // Wedge  3 x  2 Right (black)
 1 0 -20 -104 30 1 0 0 0 1 0 0 0 1 6564.dat
-0 // Wedge  3 x  2 Left
+0 // Wedge  3 x  2 Left (black)
 1 0 20 -104 30 1 0 0 0 1 0 0 0 1 6565.dat
-0 // Plate  1 x  2 without Groove with 1 Centre Stud
+0 // Plate  1 x  2 without Groove with 1 Centre Stud (blue)
 1 1 0 -96 -150 1 0 0 0 1 0 0 0 1 3794a.dat
-0 // Plate  1 x  2 without Groove with 1 Centre Stud
+0 // Plate  1 x  2 without Groove with 1 Centre Stud (blue)
 1 1 0 -96 -210 1 0 0 0 1 0 0 0 1 3794a.dat
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (light_grey)
 1 7 0 -112 -110 1 0 0 0 1 0 0 0 1 28653.dat
 0 STEP
 1 4 0 -112 240 1 0 0 0 1 0 0 0 1 5533 - Tractor 07.ldr
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 40 -94 220 -1 0 0 0 1 0 0 0 -1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -40 -94 220 -1 0 0 0 1 0 0 0 -1 2780.dat
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (blue)
 1 1 0 -112 120 -1 0 0 0 1 0 0 0 -1 3020.dat
-0 // Plate  2 x  8
+0 // Plate  2 x  8 (black)
 1 0 0 -112 80 -1 0 0 0 1 0 0 0 -1 3034.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (blue)
 1 1 0 -112 30 0 0 1 0 1 0 -1 0 0 3021.dat
-0 // Hinge  1 x  2 Base
+0 // Hinge  1 x  2 Base (blue)
 1 1 -10 -112 -180 0 0 1 0 1 0 -1 0 0 3937.dat
-0 // Hinge  1 x  2 Base
+0 // Hinge  1 x  2 Base (blue)
 1 1 10 -112 -180 0 0 -1 0 1 0 1 0 0 3937.dat
-0 // Hinge  2 x  2 Top
+0 // Hinge  2 x  2 Top (red)
 1 4 -17.07107 -109.07107 -180 0 0.70711 -0.70711 0 0.70711 0.70711 1 0 0 6134.dat
-0 // Hinge  2 x  2 Top
+0 // Hinge  2 x  2 Top (red)
 1 4 17.07107 -109.07107 -180 0 -0.70711 0.70711 0 0.70711 0.70711 -1 0 0 6134.dat
 0 STEP
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (red)
 1 4 -70 -120 70 1 0 0 0 1 0 0 0 1 2420.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (red)
 1 4 70 -120 70 0 0 -1 0 1 0 1 0 0 2420.dat
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (black)
 1 0 0 -136 10 1 0 0 0 1 0 0 0 1 4865a.dat
 1 0 50 -38 -180 1 0 0 0 1 0 0 0 1 5533 - Tractor 08.ldr
 1 0 50 -94 220 1 0 0 0 0.97815 0.20791 0 -0.20791 0.97815 5533 - Tractor 09.ldr
 1 0 -50 -94 220 1 0 0 0 0.97815 0.20791 0 -0.20791 0.97815 5533 - Tractor 09.ldr
 1 0 -50 -38 -180 1 0 0 0 1 0 0 0 1 5533 - Tractor 08.ldr
 0 STEP
-0 // Slope Brick 45  2 x  2 Inverted with Flat Bottom Pin with Inner Stopper Ring
+0 // Slope Brick 45  2 x  2 Inverted with Flat Bottom Pin with Inner Stopper Ring (blue)
 1 1 30 -128 200 0 0 -1 0 1 0 1 0 0 3660b.dat
-0 // Slope Brick 45  2 x  2 Inverted with Flat Bottom Pin with Inner Stopper Ring
+0 // Slope Brick 45  2 x  2 Inverted with Flat Bottom Pin with Inner Stopper Ring (blue)
 1 1 -30 -128 200 0 0 1 0 1 0 -1 0 0 3660b.dat
-0 // Wedge  3 x  2 Right
+0 // Wedge  3 x  2 Right (black)
 1 0 -20 -136 50 1 0 0 0 1 0 0 0 1 6564.dat
-0 // Wedge  3 x  2 Left
+0 // Wedge  3 x  2 Left (black)
 1 0 20 -136 50 1 0 0 0 1 0 0 0 1 6565.dat
 1 7 -29.79899 -107.65685 -180 0 0.70711 -0.70711 0 0.70711 0.70711 1 0 0 5533 - Tractor 10.ldr
 0 STEP
-0 // Hinge  1 x  2 Base
+0 // Hinge  1 x  2 Base (blue)
 1 1 0 -120 -10 1 0 0 0 1 0 0 0 1 3937.dat
-0 // Hinge  2 x  2 Top
+0 // Hinge  2 x  2 Top (red)
 1 4 0 -116.4019 -17.68216 -1 0 0 0 0.64019 0.76822 0 0.76822 -0.64019 6134.dat
-0 // Wedge  3 x  2 Left
+0 // Wedge  3 x  2 Left (black)
 1 0 -20 -136 110 -1 0 0 0 1 0 0 0 -1 6565.dat
-0 // Wedge  3 x  2 Right
+0 // Wedge  3 x  2 Right (black)
 1 0 20 -136 110 -1 0 0 0 1 0 0 0 -1 6564.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 40 -152 210 -1 0 0 0 1 0 0 0 -1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 -40 -152 210 -1 0 0 0 1 0 0 0 -1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (white)
 1 15 40 -152 190 -1 0 0 0 1 0 0 0 -1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (white)
 1 15 -40 -152 190 -1 0 0 0 1 0 0 0 -1 3004.dat
-0 // =Brick  1 x  1 Round with Hollow Stud
+0 // =Brick  1 x  1 Round with Hollow Stud (red)
 1 4 0 -120 -150 -1 0 0 0 1 0 0 0 -1 30068.dat
 1 7 0 -120 -210 1 0 0 0 1 0 0 0 1 5533 - Tractor 11.ldr
 0 STEP
 1 1 29.79899 -107.65685 -180 0 -0.70711 -0.70711 0 0.70711 -0.70711 1 0 0 5533 - Tractor 12.ldr
-0 // Slope Brick 75  2 x  1 x  3 Inverted
+0 // Slope Brick 75  2 x  1 x  3 Inverted (white)
 1 15 50 -152 170 0 0 -1 0 1 0 1 0 0 2449.dat
-0 // Slope Brick 75  2 x  1 x  3 Inverted
+0 // Slope Brick 75  2 x  1 x  3 Inverted (white)
 1 15 -50 -152 170 0 0 1 0 1 0 -1 0 0 2449.dat
-0 // Technic Plate  2 x  4 with Holes
+0 // Technic Plate  2 x  4 with Holes (red)
 1 4 0 -160 200 -1 0 0 0 1 0 0 0 -1 3709b.dat
-0 // Plate  1 x  1 with Clip Vertical (Thick U-Clip)
+0 // Plate  1 x  1 with Clip Vertical (Thick U-Clip) (light_grey)
 1 7 50 -160 210 0 0 -1 0 1 0 1 0 0 4085c.dat
-0 // Plate  1 x  1 with Clip Vertical (Thick U-Clip)
+0 // Plate  1 x  1 with Clip Vertical (Thick U-Clip) (light_grey)
 1 7 -50 -160 210 0 0 1 0 1 0 -1 0 0 4085c.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (red)
 1 4 0 -131.76647 -36.11936 -1 0 0 0 0.64019 0.76822 0 0.76822 -0.64019 3700.dat
-0 // Slope Brick 75  2 x  2 x  3 with Hollow Studs
+0 // Slope Brick 75  2 x  2 x  3 with Hollow Studs (red)
 1 4 0 -152 -90 -1 0 0 0 1 0 0 0 -1 3684a.dat
 0 STEP
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (red)
 1 4 0 -144 50 0 0 1 0 1 0 -1 0 0 3021.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (white)
 1 15 50 -160 170 1 0 0 0 1 0 0 0 1 2420.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (white)
 1 15 -50 -160 170 0 0 -1 0 1 0 1 0 0 2420.dat
-0 // Minifig Loudhailer
+0 // Minifig Loudhailer (light_grey)
 1 7 -10 -134 -110 0 -1 0 0 0 -1 1 0 0 4349.dat
-0 // Minifig Loudhailer
+0 // Minifig Loudhailer (light_grey)
 1 7 10 -134 -110 0 1 0 0 0 -1 -1 0 0 4349.dat
 1 7 0 -128 -180 1 0 0 0 1 0 0 0 1 5533 - Tractor 13.ldr
 0 STEP
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (red)
 1 4 0 -160 -100 1 0 0 0 1 0 0 0 1 3022.dat
 1 4 -70 -128 70 1 0 0 0 1 0 0 0 1 5533 - Tractor 14R.ldr
 1 4 70 -128 70 1 0 0 0 1 0 0 0 1 5533 - Tractor 14L.ldr
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (black)
 1 0 50 -168 200 1 0 0 0 1 0 0 0 1 3021.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (black)
 1 0 -50 -168 200 1 0 0 0 1 0 0 0 1 3021.dat
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (black)
 1 0 -60 -168 170 1 0 0 0 1 0 0 0 1 28653.dat
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (black)
 1 0 60 -168 170 1 0 0 0 1 0 0 0 1 28653.dat
 1 256 0 -158 -225 1 0 0 0 1 0 0 0 1 5533 - RubberBandSquare.ldr
 0 STEP
 1 4 0 -168 -110 1 0 0 0 1 0 0 0 1 5533 - Tractor 15.ldr
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (red)
 1 4 -80 -176 140 0 0 1 0 1 0 -1 0 0 3795.dat
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (red)
 1 4 80 -176 140 0 0 1 0 1 0 -1 0 0 3795.dat
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (black)
 1 0 0 -176 170 -1 0 0 0 1 0 0 0 -1 3666.dat
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_grey)
 1 7 0 -169 200 -1 0 0 0 0 -1 0 -1 0 32123a.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 0 -184 200 -1 0 0 0 0 -1 0 -1 0 3713.dat
 0 STEP
 1 0 0 -222 200 1 0 0 0 1 0 0 0 1 5533 - Tractor 17.ldr
 1 0 60 -54 46 0 0 -1 -1 0 0 0 1 0 5533 - Tractor 16.ldr
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (black)
 1 0 -60 -184 160 0 0 1 0 1 0 -1 0 0 3022.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (black)
 1 0 60 -184 160 0 0 1 0 1 0 -1 0 0 3022.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (red)
 1 4 -90 -184 140 0 0 1 0 1 0 -1 0 0 2431.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (red)
 1 4 90 -184 140 0 0 1 0 1 0 -1 0 0 2431.dat
 0 STEP
-0 // Slope Brick 33  3 x  1
+0 // Slope Brick 33  3 x  1 (red)
 1 4 -50 -208 150 0 0 1 0 1 0 -1 0 0 4286.dat
-0 // Slope Brick 33  3 x  1
+0 // Slope Brick 33  3 x  1 (red)
 1 4 50 -208 150 0 0 -1 0 1 0 1 0 0 4286.dat
 1 4 -60 -54 46 0 0 -1 -1 0 0 0 1 0 5533 - Tractor 18.ldr
 0 STEP
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (black)
 1 0 -50 -216 150 1 0 0 0 1 0 0 0 1 6141.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (black)
 1 0 50 -216 150 1 0 0 0 1 0 0 0 1 6141.dat
 1 0 0 -144 160 1 0 0 0 1 0 0 0 1 5533 - Tractor 19.ldr
 0 STEP
 1 0 0 -264 150 1 0 0 0 1 0 0 0 1 5533 - Tractor 22.ldr
 1 0 0 -164.4019 22.31784 1 0 0 0 0.64019 -0.76822 0 0.76822 0.64019 5533 - Tractor 20.ldr
 0 STEP
-0 // Wing  3 x  4 with  1 x  2 Cutout without Stud Notches
+0 // Wing  3 x  4 with  1 x  2 Cutout without Stud Notches (red)
 1 4 0 -177.20582 -8.66699 1 0 0 0 0.64019 -0.76822 0 0.76822 0.64019 4859.dat
 1 4 126 -54 160 0 0 -1 0.70711 0.70711 0 0.70711 -0.70711 0 5533 - Tractor 23.ldr
 1 4 -126 -54 160 0 0 1 -0.70711 0.70711 0 -0.70711 -0.70711 0 5533 - Tractor 23.ldr
 1 4 -100 -14 -270 0 0 1 0 1 0 -1 0 0 5533 - Tractor 24.ldr
 1 4 100 -14 -270 0 0 -1 0 1 0 1 0 0 5533 - Tractor 24.ldr
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 136 -54 160 0 0 -1 0 -1 0 -1 0 0 3713.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 -136 -54 160 0 0 1 0 1 0 -1 0 0 3713.dat
 0 FILE 5533 - Tractor 01.ldr
 0 Tractor 01
 0 Name: Tractor 01.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3020.dat
 0 STEP
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (red)
 1 4 0 -8 -10 1 0 0 0 1 0 0 0 1 28653.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (yellow)
 1 14 0 -24 10 1 0 0 0 1 0 0 0 1 3700.dat
 0 STEP
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (black)
 1 0 0 -16 -10 1 0 0 0 1 0 0 0 1 28653.dat
 0 STEP
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (red)
 1 4 -10 -32 -10 1 0 0 0 1 0 0 0 1 6091.dat
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (red)
 1 4 10 -32 -10 1 0 0 0 1 0 0 0 1 6091.dat
 0 FILE 5533 - Tractor 02.ldr
 0 Tractor 02
 0 Name: Tractor 02.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Technic Cross Block 1 x 3 (Axle/None/Pin)
+0 // Technic Cross Block 1 x 3 (Axle/None/Pin) (light_grey)
 1 7 0 0 0 -1 0 0 0 1 0 0 0 -1 32068.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 0 0 20 0 1 0 1 0 0 0 0 -1 3749.dat
 0 FILE 5533 - Tractor 03.ldr
 0 Tractor 03
 0 Name: Tractor 03.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Technic Axle 10
+0 // Technic Axle 10 (black)
 1 0 0 10 130 0 0 1 0 1 0 -1 0 0 3737.dat
-0 // Technic Axle 12
+0 // Technic Axle 12 (black)
 1 0 0 10 -90 0 0 1 0 1 0 -1 0 0 3708.dat
-0 // Technic Axle Joiner
+0 // Technic Axle Joiner (light_grey)
 1 7 0 10 30 -1 0 0 0 1 0 0 0 -1 6538a.dat
 0 STEP
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (yellow)
 1 14 0 0 200 1 0 0 0 1 0 0 0 1 3700.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3700.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (black)
 1 0 0 0 -180 1 0 0 0 1 0 0 0 1 3700.dat
 0 STEP
-0 // Technic Gear  8 Tooth
+0 // Technic Gear  8 Tooth (light_grey)
 1 7 0 10 -200 1 0 0 0 1 0 0 0 1 3647.dat
-0 // Technic Gear 12 Tooth Bevel
+0 // Technic Gear 12 Tooth Bevel (light_grey)
 1 7 0 10 213 1 0 0 0 1 0 0 0 1 6589.dat
 0 FILE 5533 - Tractor 04.ldr
 0 Tractor 04
 0 Name: Tractor 04.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Technic Axle  6
+0 // Technic Axle  6 (black)
 1 0 -10 10 0 -1 0 0 0 1 0 0 0 -1 3706.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 20 10 0 0 0 1 0 1 0 -1 0 0 3713.dat
 0 STEP
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (light_grey)
 1 7 0 0 0 0 0 1 0 1 0 -1 0 0 3700.dat
 0 FILE 5533 - Tractor 05.ldr
 0 Tractor 05
 0 Name: Tractor 05.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3022.dat
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (black)
 1 0 0 -24 10 1 0 0 0 1 0 0 0 1 4865a.dat
 0 FILE 5533 - Tractor 06.ldr
 0 Tractor 06
 0 Name: Tractor 06.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Technic Plate  2 x  4 with Holes
+0 // Technic Plate  2 x  4 with Holes (red)
 1 4 0 0 0 0 0 1 0 1 0 -1 0 0 3709b.dat
-0 // Slope Brick 45  2 x  2 Inverted with Flat Bottom Pin with Inner Stopper Ring
+0 // Slope Brick 45  2 x  2 Inverted with Flat Bottom Pin with Inner Stopper Ring (red)
 1 4 0 -24 30 -1 0 0 0 1 0 0 0 -1 3660b.dat
 0 STEP
-0 // Technic Axle  8
+0 // Technic Axle  8 (black)
 1 0 0 -62 0 0 -1 0 -1 0 0 0 0 -1 3707.dat
-0 // Technic Gear 12 Tooth Bevel
+0 // Technic Gear 12 Tooth Bevel (light_grey)
 1 7 0 11 0 0 -1 0 0 0 1 -1 0 0 6589.dat
 0 FILE 5533 - Tractor 07.ldr
 0 Tractor 07
 0 Name: Tractor 07.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (blue)
 1 1 0 0 0 1 0 0 0 1 0 0 0 1 3020.dat
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (red)
 1 4 0 -8 0 1 0 0 0 1 0 0 0 1 3068b.dat
 0 FILE 5533 - Tractor 08.ldr
 0 Tractor 08
 0 Name: Tractor 08.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Technic Angle Connector #1
+0 // Technic Angle Connector #1 (light_grey)
 1 7 0 0 0 1 0 0 0 -1 0 0 0 -1 32013.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 0 0 50 0 0 -1 0 -1 0 -1 0 0 3705.dat
-0 // Technic Angle Connector #1
+0 // Technic Angle Connector #1 (light_grey)
 1 7 0 0 100 -1 0 0 0 -1 0 0 0 1 32013.dat
 0 FILE 5533 - Tractor 09.ldr
 0 Tractor 09
 0 Name: Tractor 09.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Technic Angle Connector #1
+0 // Technic Angle Connector #1 (light_grey)
 1 7 0 0 0 1 0 0 0 -1 0 0 0 -1 32013.dat
-0 // Technic Axle  8
+0 // Technic Axle  8 (black)
 1 0 0 0 90 0 0 -1 0 -1 0 -1 0 0 3707.dat
-0 // Technic Angle Connector #1
+0 // Technic Angle Connector #1 (light_grey)
 1 7 0 0 180 0 1 0 -1 0 0 0 0 1 32013.dat
 0 FILE 5533 - Tractor 10.ldr
 0 Tractor 10
 0 Name: Tractor 10.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (blue)
 1 1 0 0 0 1 0 0 0 1 0 0 0 1 3020.dat
 0 STEP
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (black)
 1 0 0 -8 20 1 0 0 0 1 0 0 0 1 3022.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (black)
 1 0 30 -8 10 1 0 0 0 1 0 0 0 1 6141.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (black)
 1 0 -30 -8 10 1 0 0 0 1 0 0 0 1 6141.dat
 0 STEP
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (light_grey)
 1 7 -10 -16 30 0 0 1 0 1 0 -1 0 0 2555.dat
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (light_grey)
 1 7 10 -16 30 0 0 1 0 1 0 -1 0 0 2555.dat
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (light_grey)
 1 7 -20 -16 10 -1 0 0 0 1 0 0 0 -1 2412b.dat
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (light_grey)
 1 7 20 -16 10 -1 0 0 0 1 0 0 0 -1 2412b.dat
-0 // Antenna  4H with Rounded Top
+0 // Antenna  4H with Rounded Top (blue)
 1 1 -38 -22 30 0 -1 0 -1 0 0 0 0 -1 3957a.dat
 0 STEP
-0 // Minifig Goblet
+0 // Minifig Goblet (light_grey)
 1 7 -30 -40 -10 1 0 0 0 1 0 0 0 1 2343.dat
-0 // Minifig Goblet
+0 // Minifig Goblet (light_grey)
 1 7 -10 -40 -10 1 0 0 0 1 0 0 0 1 2343.dat
-0 // Minifig Goblet
+0 // Minifig Goblet (light_grey)
 1 7 10 -40 -10 1 0 0 0 1 0 0 0 1 2343.dat
-0 // Minifig Goblet
+0 // Minifig Goblet (light_grey)
 1 7 30 -40 -10 1 0 0 0 1 0 0 0 1 2343.dat
 0 FILE 5533 - Tractor 11.ldr
 0 Tractor 11
 0 Name: Tractor 11.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (red)
 1 4 0 0 0 1 0 0 0 1 0 0 0 1 6541.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 0 10 -10 0 0 1 0 1 0 -1 0 0 3749.dat
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_grey)
 1 7 0 10 -15 -1 0 0 0 1 0 0 0 -1 32123a.dat
 0 FILE 5533 - Tractor 12.ldr
 0 Tractor 12
 0 Name: Tractor 12.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (blue)
 1 1 0 0 0 -1 0 0 0 1 0 0 0 -1 3020.dat
 0 STEP
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (black)
 1 0 0 -8 -20 -1 0 0 0 1 0 0 0 -1 3022.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (black)
 1 0 -30 -8 -10 -1 0 0 0 1 0 0 0 -1 6141.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (black)
 1 0 30 -8 -10 -1 0 0 0 1 0 0 0 -1 6141.dat
 0 STEP
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (light_grey)
 1 7 10 -16 -30 0 0 -1 0 1 0 1 0 0 2555.dat
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (light_grey)
 1 7 -10 -16 -30 0 0 -1 0 1 0 1 0 0 2555.dat
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (light_grey)
 1 7 20 -16 -10 1 0 0 0 1 0 0 0 1 2412b.dat
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (light_grey)
 1 7 -20 -16 -10 1 0 0 0 1 0 0 0 1 2412b.dat
 0 STEP
-0 // Antenna  4H with Rounded Top
+0 // Antenna  4H with Rounded Top (blue)
 1 1 -38 -22 -30 0 -1 0 -1 0 0 0 0 -1 3957a.dat
-0 // Minifig Goblet
+0 // Minifig Goblet (light_grey)
 1 7 30 -40 10 -1 0 0 0 1 0 0 0 -1 2343.dat
-0 // Minifig Goblet
+0 // Minifig Goblet (light_grey)
 1 7 10 -40 10 -1 0 0 0 1 0 0 0 -1 2343.dat
-0 // Minifig Goblet
+0 // Minifig Goblet (light_grey)
 1 7 -10 -40 10 -1 0 0 0 1 0 0 0 -1 2343.dat
-0 // Minifig Goblet
+0 // Minifig Goblet (light_grey)
 1 7 -30 -40 10 -1 0 0 0 1 0 0 0 -1 2343.dat
 0 FILE 5533 - Tractor 13.ldr
 0 Tractor 13
 0 Name: Tractor 13.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (light_grey)
 1 7 0 0 0 0 0 -1 0 1 0 1 0 0 3710.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (light_grey)
 1 7 0 -8 0 0 0 -1 0 1 0 1 0 0 3710.dat
 0 STEP
-0 // Plate  1 x  3
+0 // Plate  1 x  3 (red)
 1 4 0 -16 -10 0 0 -1 0 1 0 1 0 0 3623.dat
 0 STEP
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (red)
 1 4 0 -40 -10 -1 0 0 0 1 0 0 0 -1 3040b.dat
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (red)
 1 4 0 -40 -30 -1 0 0 0 1 0 0 0 -1 6541.dat
 0 STEP
-0 // Plate  1 x  2 without Groove with 1 Centre Stud
+0 // Plate  1 x  2 without Groove with 1 Centre Stud (red)
 1 4 0 -48 -20 0 0 -1 0 1 0 1 0 0 3794a.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 0 -30 -40 0 0 1 0 1 0 -1 0 0 3749.dat
 0 STEP
-0 // Technic Wedge Belt Wheel - Not Reinforced
+0 // Technic Wedge Belt Wheel - Not Reinforced (light_grey)
 1 7 0 -30 -45 -1 0 0 0 1 0 0 0 -1 4185a.dat
-0 // Technic Gear 12 Tooth Bevel
+0 // Technic Gear 12 Tooth Bevel (light_grey)
 1 7 0 -30 -53 -1 0 0 0 1 0 0 0 -1 6589.dat
 0 FILE 5533 - Tractor 14R.ldr
 0 Tractor 14R
 0 Name: Tractor 14R.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  1 x  3
+0 // Plate  1 x  3 (red)
 1 4 0 0 0 0 0 -1 0 1 0 1 0 0 3623.dat
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (red)
 1 4 0 -8 10 0 0 -1 0 1 0 1 0 0 28653.dat
 0 STEP
-0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring (black)
 1 0 0 -32 20 0 0 1 0 1 0 -1 0 0 3665a.dat
 0 STEP
-0 // Arch  1 x  3 x  2 with Curved Top
+0 // Arch  1 x  3 x  2 with Curved Top (red)
 1 4 0 -48 20 1 0 0 0 1 0 0 0 1 6005.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (red)
 1 4 -20 -40 20 1 0 0 0 1 0 0 0 1 6141.dat
 0 FILE 5533 - Tractor 14L.ldr
 0 Tractor 14L
 0 Name: Tractor 14L.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  1 x  3
+0 // Plate  1 x  3 (red)
 1 4 0 0 0 0 0 -1 0 1 0 1 0 0 3623.dat
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (red)
 1 4 0 -8 10 0 0 -1 0 1 0 1 0 0 28653.dat
 0 STEP
-0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring (black)
 1 0 0 -32 20 0 0 -1 0 1 0 1 0 0 3665a.dat
 0 STEP
-0 // Arch  1 x  3 x  2 with Curved Top
+0 // Arch  1 x  3 x  2 with Curved Top (red)
 1 4 0 -48 20 1 0 0 0 1 0 0 0 1 6005.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (red)
 1 4 20 -40 20 1 0 0 0 1 0 0 0 1 6141.dat
 0 FILE 5533 - RubberBandSquare.ldr
 0 RubberBandSquare
@@ -1225,309 +1225,309 @@
 0 Name: Tractor 15.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (red)
 1 4 0 0 0 0 0 -1 0 1 0 1 0 0 3021.dat
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (red)
 1 4 0 -8 0 1 0 0 0 1 0 0 0 1 28653.dat
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (red)
 1 4 0 -16 0 1 0 0 0 1 0 0 0 1 28653.dat
 0 STEP
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (red)
 1 4 -10 -32 0 -1 0 0 0 1 0 0 0 -1 6091.dat
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (red)
 1 4 10 -32 0 -1 0 0 0 1 0 0 0 -1 6091.dat
 0 STEP
-0 // Panel  1 x  1 x  1 Corner with Rounded Corners
+0 // Panel  1 x  1 x  1 Corner with Rounded Corners (red)
 1 4 10 -24 -20 0 0 1 0 1 0 -1 0 0 6231.dat
-0 // Panel  1 x  1 x  1 Corner with Rounded Corners
+0 // Panel  1 x  1 x  1 Corner with Rounded Corners (red)
 1 4 -10 -24 -20 1 0 0 0 1 0 0 0 1 6231.dat
 0 STEP
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (red)
 1 4 0 -32 -10 0 0 1 0 1 0 -1 0 0 3068b.dat
 0 FILE 5533 - Tractor 16.ldr
 0 Tractor 16
 0 Name: Tractor 16.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (red)
 1 4 0 0 0 1 0 0 0 1 0 0 0 1 3795.dat
-0 // Brick  1 x  6
+0 // Brick  1 x  6 (red)
 1 4 0 -24 10 1 0 0 0 1 0 0 0 1 3009.dat
 0 STEP
 0 STEP
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (red)
 1 4 20 -8 -10 1 0 0 0 1 0 0 0 1 2431.dat
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (red)
 1 4 -40 -8 -10 1 0 0 0 1 0 0 0 1 28653.dat
 0 STEP
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (red)
 1 4 -50 -40 10 1 0 0 0 1 0 0 0 1 6091.dat
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (red)
 1 4 -30 -40 10 1 0 0 0 1 0 0 0 1 6091.dat
 0 STEP
-0 // Technic Brick  1 x  6 x  1.667 Wing Back
+0 // Technic Brick  1 x  6 x  1.667 Wing Back (red)
 1 4 -20 -56 10 1 0 0 0 1 0 0 0 1 2744.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (red)
 1 4 -40 -64 10 1 0 0 0 1 0 0 0 1 3069b.dat
 0 FILE 5533 - Tractor 17.ldr
 0 Tractor 17
 0 Name: Tractor 17.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Brick  2 x  2 Round without Reinforcement
+0 // Brick  2 x  2 Round without Reinforcement (light_grey)
 1 7 0 0 0 1 0 0 0 1 0 0 0 1 3941.dat
-0 // Tile  2 x  2 Round with Cross Underside Stud
+0 // Tile  2 x  2 Round with Cross Underside Stud (black)
 1 0 0 -8 0 1 0 0 0 1 0 0 0 1 4150.dat
 0 FILE 5533 - Tractor 18.ldr
 0 Tractor 18
 0 Name: Tractor 18.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (red)
 1 4 0 0 0 1 0 0 0 1 0 0 0 1 3795.dat
-0 // Brick  1 x  6
+0 // Brick  1 x  6 (red)
 1 4 0 -24 -10 1 0 0 0 1 0 0 0 1 3009.dat
 0 STEP
 0 STEP
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (red)
 1 4 20 -8 10 1 0 0 0 1 0 0 0 1 2431.dat
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (red)
 1 4 -40 -8 10 1 0 0 0 1 0 0 0 1 28653.dat
 0 STEP
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (red)
 1 4 -50 -40 -10 -1 0 0 0 1 0 0 0 -1 6091.dat
-0 // Brick  2 x  1 x  1.333 with Curved Top
+0 // Brick  2 x  1 x  1.333 with Curved Top (red)
 1 4 -30 -40 -10 -1 0 0 0 1 0 0 0 -1 6091.dat
 0 STEP
-0 // Technic Brick  1 x  6 x  1.667 Wing Back
+0 // Technic Brick  1 x  6 x  1.667 Wing Back (red)
 1 4 -20 -56 -10 1 0 0 0 1 0 0 0 1 2744.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (red)
 1 4 -40 -64 -10 1 0 0 0 1 0 0 0 1 3069b.dat
 0 FILE 5533 - Tractor 19.ldr
 0 Tractor 19
 0 Name: Tractor 19.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (white)
 1 15 0 -20.44243 -17.93158 1 0 0 0 0.42211 -0.90654 0 0.90654 0.42211 3710.dat
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (yellow)
 1 14 0 -47.63874 -5.26822 1 0 0 0 0.42211 -0.90654 0 0.90654 0.42211 3020.dat
 0 STEP
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (yellow)
 1 14 -10 -51.01563 -12.52057 0 0 1 0.90654 0.42211 0 -0.42211 0.90654 0 2431.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (yellow)
 1 14 10 -51.01563 -12.52057 0 0 1 0.90654 0.42211 0 -0.42211 0.90654 0 2431.dat
 0 STEP
-0 // Hinge Plate  1 x  2 with 3 Fingers and Hollow Studs
+0 // Hinge Plate  1 x  2 with 3 Fingers and Hollow Studs (yellow)
 1 14 30 -32.88476 -20.96281 0 0 1 0.90654 0.42211 0 -0.42211 0.90654 0 4275b.dat
-0 // Hinge Plate  1 x  2 with 3 Fingers and Hollow Studs
+0 // Hinge Plate  1 x  2 with 3 Fingers and Hollow Studs (yellow)
 1 14 -30 -32.88476 -20.96281 0 0 1 0.90654 0.42211 0 -0.42211 0.90654 0 4275b.dat
-0 // Hinge Plate  1 x  2 with 2 Fingers and Hollow Studs
+0 // Hinge Plate  1 x  2 with 2 Fingers and Hollow Studs (yellow)
 1 14 -30 -8 -60 0 0 -1 0 1 0 1 0 0 4276b.dat
-0 // Hinge Plate  1 x  2 with 2 Fingers and Hollow Studs
+0 // Hinge Plate  1 x  2 with 2 Fingers and Hollow Studs (yellow)
 1 14 30 -8 -60 0 0 -1 0 1 0 1 0 0 4276b.dat
 0 STEP
-0 // =Plate  1 x  2
+0 // =Plate  1 x  2 (yellow)
 1 14 0 -74.83505 7.39514 1 0 0 0 0.42211 -0.90654 0 0.90654 0.42211 28653.dat
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (yellow)
 1 14 0 0 -60 1 0 0 0 1 0 0 0 1 3020.dat
 0 STEP
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (yellow)
 1 14 0 -8 -60 1 0 0 0 1 0 0 0 1 3022.dat
 0 FILE 5533 - Tractor 20.ldr
 0 Tractor 20
 0 Name: Tractor 20.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Hinge  1 x  2 Base
+0 // Hinge  1 x  2 Base (blue)
 1 1 0 3.5981 7.68216 1 0 0 0 0.64019 0.76822 0 -0.76822 0.64019 3937.dat
-0 // Hinge  2 x  2 Top
+0 // Hinge  2 x  2 Top (red)
 1 4 0 0 0 -1 0 0 0 1 0 0 0 -1 6134.dat
 0 STEP
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (black)
 1 0 0 -24 0 -1 0 0 0 1 0 0 0 -1 3700.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (black)
 1 0 0 -24 -20 -1 0 0 0 1 0 0 0 -1 3700.dat
 1 7 0 -14 -28 1 0 0 0 1 0 0 0 1 5533 - Tractor 21.ldr
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_grey)
 1 7 0 -14 -35 1 0 0 0 1 0 0 0 1 32123a.dat
 0 FILE 5533 - Tractor 21.ldr
 0 Tractor 21
 0 Name: Tractor 21.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Technic Axle  8
+0 // Technic Axle  8 (black)
 1 0 0 0 0 0 0 -1 0 1 0 1 0 0 3707.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 0 0 48 -1 0 0 0 1 0 0 0 -1 3713.dat
-0 // Technic Steering Wheel Small
+0 // Technic Steering Wheel Small (light_grey)
 1 7 0 0 84 -1 0 0 0 0 -1 0 -1 0 2819.dat
 0 FILE 5533 - Tractor 22.ldr
 0 Tractor 22
 0 Name: Tractor 22.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Arch  1 x  3 x  2 with Curved Top
+0 // Arch  1 x  3 x  2 with Curved Top (black)
 1 0 10 0 0 0 0 -1 0 1 0 1 0 0 6005.dat
-0 // Arch  1 x  3 x  2 with Curved Top
+0 // Arch  1 x  3 x  2 with Curved Top (black)
 1 0 -10 0 0 0 0 1 0 1 0 -1 0 0 6005.dat
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (black)
 1 0 0 0 0 -1 0 0 0 1 0 0 0 -1 2412b.dat
 0 FILE 5533 - Tractor 23.ldr
 0 Tractor 23
 0 Name: Tractor 23.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Wheel Rim 32 x 56 with Peghole and 6 Spokes with Pegholes
+0 // Wheel Rim 32 x 56 with Peghole and 6 Spokes with Pegholes (white)
 1 15 0 0 0 1 0 0 0 1 0 0 0 1 2998.dat
-0 // Tyre 34/ 38 x 56 ZR
+0 // Tyre 34/ 38 x 56 ZR (rubber_black)
 1 256 0 0 0 1 0 0 0 1 0 0 0 1 2997.dat
 0 FILE 5533 - Tractor 24.ldr
 0 Tractor 24
 0 Name: Tractor 24.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Wheel 12 x 20 with Technic Axle Hole and 6 Pegholes
+0 // Wheel 12 x 20 with Technic Axle Hole and 6 Pegholes (white)
 1 15 0 0 0 1 0 0 0 1 0 0 0 1 2994.dat
-0 // Tyre 14/ 36 x 20 VR
+0 // Tyre 14/ 36 x 20 VR (rubber_black)
 1 256 0 0 0 1 0 0 0 1 0 0 0 1 6578.dat
 0 FILE 5533 - Trailer.ldr
 0 Trailer
 0 Name: Trailer.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Wing  4 x  8 Left
+0 // Wing  4 x  8 Left (black)
 1 0 120 0 0 1 0 0 0 1 0 0 0 1 3933.dat
-0 // Wing  4 x  8 Right
+0 // Wing  4 x  8 Right (black)
 1 0 -120 0 0 1 0 0 0 1 0 0 0 1 3934.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (black)
 1 0 -100 -8 50 0 0 1 0 1 0 -1 0 0 3021.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (black)
 1 0 100 -8 50 0 0 1 0 1 0 -1 0 0 3021.dat
 0 STEP
-0 // Plate  2 x 12
+0 // Plate  2 x 12 (light_grey)
 1 7 0 -8 0 -1 0 0 0 1 0 0 0 -1 2445.dat
 0 STEP
-0 // Plate  3 x  3 without Corner
+0 // Plate  3 x  3 without Corner (white)
 1 15 30 0 -10 1 0 0 0 1 0 0 0 1 2450.dat
-0 // Plate  3 x  3 without Corner
+0 // Plate  3 x  3 without Corner (white)
 1 15 -30 0 -10 0 0 1 0 1 0 -1 0 0 2450.dat
 0 STEP
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (white)
 1 15 -80 -16 0 0 0 1 0 1 0 -1 0 0 3022.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (white)
 1 15 80 -16 0 0 0 1 0 1 0 -1 0 0 3022.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (white)
 1 15 110 -16 20 0 0 1 0 1 0 -1 0 0 2431.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (white)
 1 15 -110 -16 20 0 0 1 0 1 0 -1 0 0 2431.dat
 0 STEP
-0 // Technic Brick  1 x  4 x  1.667 Wing Front
+0 // Technic Brick  1 x  4 x  1.667 Wing Front (white)
 1 15 -90 -24 -80 0 0 1 0 1 0 -1 0 0 2743.dat
-0 // Technic Brick  1 x  4 x  1.667 Wing Front
+0 // Technic Brick  1 x  4 x  1.667 Wing Front (white)
 1 15 90 -24 -80 0 0 1 0 1 0 -1 0 0 2743.dat
-0 // Slope Brick 45  4 x  4 Double Inverted with Open Centre
+0 // Slope Brick 45  4 x  4 Double Inverted with Open Centre (black)
 1 0 0 -32 0 -1 0 0 0 1 0 0 0 -1 4854.dat
 0 STEP
-0 // Slope Brick 33  3 x  1
+0 // Slope Brick 33  3 x  1 (white)
 1 15 -90 -32 30 -1 0 0 0 1 0 0 0 -1 4286.dat
-0 // Slope Brick 33  3 x  1
+0 // Slope Brick 33  3 x  1 (white)
 1 15 90 -32 30 -1 0 0 0 1 0 0 0 -1 4286.dat
-0 // Plate  1 x  3
+0 // Plate  1 x  3 (white)
 1 15 -90 -24 -10 0 0 1 0 1 0 -1 0 0 3623.dat
-0 // Plate  1 x  3
+0 // Plate  1 x  3 (white)
 1 15 90 -24 -10 0 0 1 0 1 0 -1 0 0 3623.dat
 0 STEP
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (white)
 1 15 -90 -32 -20 0 0 1 0 1 0 -1 0 0 3710.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (white)
 1 15 90 -32 -20 0 0 1 0 1 0 -1 0 0 3710.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (white)
 1 15 -90 -32 -70 0 0 1 0 1 0 -1 0 0 3024.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (white)
 1 15 90 -32 -70 0 0 1 0 1 0 -1 0 0 3024.dat
 0 STEP
-0 // Plate  6 x 12 with 22 Studs on Three Edges
+0 // Plate  6 x 12 with 22 Studs on Three Edges (red)
 1 4 0 -40 -20 -1 0 0 0 1 0 0 0 -1 6178.dat
 0 STEP
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (black)
 1 0 -50 -48 -70 -1 0 0 0 1 0 0 0 -1 2420.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (black)
 1 0 50 -48 -70 0 0 1 0 1 0 -1 0 0 2420.dat
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (red)
 1 4 -110 -64 -50 -1 0 0 0 1 0 0 0 -1 6541.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (red)
 1 4 -110 -64 10 -1 0 0 0 1 0 0 0 -1 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (red)
 1 4 110 -64 10 -1 0 0 0 1 0 0 0 -1 3005.dat
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (red)
 1 4 110 -64 -50 -1 0 0 0 1 0 0 0 -1 6541.dat
 0 STEP
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (light_grey)
 1 7 -50 -72 -70 0 0 -1 0 1 0 1 0 0 6541.dat
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (light_grey)
 1 7 50 -72 -70 0 0 -1 0 1 0 1 0 0 6541.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (red)
 1 4 -110 -72 -20 0 0 1 0 1 0 -1 0 0 2431.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (red)
 1 4 110 -72 -20 0 0 1 0 1 0 -1 0 0 2431.dat
 0 STEP
-0 // Arch  1 x  3 x  2 with Curved Top
+0 // Arch  1 x  3 x  2 with Curved Top (black)
 1 0 -50 -88 -70 0 0 1 0 1 0 -1 0 0 6005.dat
-0 // Arch  1 x  3 x  2 with Curved Top
+0 // Arch  1 x  3 x  2 with Curved Top (black)
 1 0 50 -88 -70 0 0 -1 0 1 0 1 0 0 6005.dat
 0 STEP
 1 0 0 -96 -70 1 0 0 0 1 0 0 0 1 5533 - Trailer 01.ldr
 0 STEP
 1 7 0 -94 -48 1 0 0 0 0 -1 0 1 0 5533 - Trailer 02.ldr
 0 STEP
-0 // Antenna  4H with Rounded Top
+0 // Antenna  4H with Rounded Top (light_grey)
 1 7 50 -56 -90 0 0 1 0 1 0 -1 0 0 3957a.dat
-0 // Antenna  4H with Rounded Top
+0 // Antenna  4H with Rounded Top (light_grey)
 1 7 -50 -56 -90 0 0 1 0 1 0 -1 0 0 3957a.dat
-0 // Technic Axle Joiner
+0 // Technic Axle Joiner (light_grey)
 1 7 50 -141 -90 0 -1 0 0 0 1 -1 0 0 6538a.dat
-0 // Technic Axle Joiner
+0 // Technic Axle Joiner (light_grey)
 1 7 -50 -141 -90 0 -1 0 0 0 1 -1 0 0 6538a.dat
 0 FILE 5533 - Trailer 01.ldr
 0 Trailer 01
 0 Name: Trailer 01.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3666.dat
-0 // Plate  1 x  1 with Clip Vertical (Thick U-Clip)
+0 // Plate  1 x  1 with Clip Vertical (Thick U-Clip) (light_grey)
 1 7 -50 8 0 1 0 0 0 1 0 0 0 1 4085c.dat
-0 // Plate  1 x  1 with Clip Vertical (Thick U-Clip)
+0 // Plate  1 x  1 with Clip Vertical (Thick U-Clip) (light_grey)
 1 7 50 8 0 1 0 0 0 1 0 0 0 1 4085c.dat
 0 STEP
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (black)
 1 0 0 -8 0 1 0 0 0 1 0 0 0 1 3710.dat
 0 FILE 5533 - Trailer 02.ldr
 0 Trailer 02
 0 Name: Trailer 02.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  2 x 10
+0 // Plate  2 x 10 (white)
 1 15 0 0 10 1 0 0 0 1 0 0 0 1 3832.dat
-0 // Plate  1 x 10
+0 // Plate  1 x 10 (white)
 1 15 0 0 -20 1 0 0 0 1 0 0 0 1 4477.dat
 0 STEP
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (white)
 1 15 -90 -8 -10 0 0 -1 0 1 0 1 0 0 2431.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (white)
 1 15 90 -8 -10 0 0 -1 0 1 0 1 0 0 2431.dat
 0 STEP
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (white)
 1 15 -30 -8 20 0 0 -1 0 1 0 1 0 0 2420.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (white)
 1 15 30 -8 20 1 0 0 0 1 0 0 0 1 2420.dat
-0 // Plate  1 x  2 with Handle
+0 // Plate  1 x  2 with Handle (white)
 1 15 0 -8 20 -1 0 0 0 1 0 0 0 -1 2540.dat
 0 STEP
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (light_grey)
 1 7 -30 -32 20 -1 0 0 0 1 0 0 0 -1 6541.dat
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (light_grey)
 1 7 30 -32 20 -1 0 0 0 1 0 0 0 -1 6541.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (light_grey)
 1 7 0 -40 20 1 0 0 0 1 0 0 0 1 3710.dat

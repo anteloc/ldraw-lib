@@ -6,288 +6,288 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
 0 !LDCAD GROUP_DEF [topLevel=true] [LID=0] [GID=Hy8VIUXpjIr] [name=Group 1] [center=0 0 0]
-0 // Technic Plate  1 x 10 with Holes
+0 // Technic Plate  1 x 10 with Holes (light_grey)
 1 7 0 0 0 1 0 0 0 1 0 0 0 1 2719.dat
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (light_grey)
 1 7 0 0 160 1 0 0 0 1 0 0 0 1 3666.dat
 0 STEP
-0 // Technic Brick  1 x 12 with Holes
+0 // Technic Brick  1 x 12 with Holes (light_grey)
 1 7 -50 -24 110 0 0 1 0 1 0 -1 0 0 3895.dat
-0 // Technic Brick  1 x 12 with Holes
+0 // Technic Brick  1 x 12 with Holes (light_grey)
 1 7 50 -24 110 0 0 1 0 1 0 -1 0 0 3895.dat
-0 // Technic Axle 12
+0 // Technic Axle 12 (black)
 1 0 0 -14 210 1 0 0 0 1 0 0 0 1 3708.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 -30 -14 210 0 0 1 0 1 0 -1 0 0 3713.dat
-0 // Technic Gear 16 Tooth
+0 // Technic Gear 16 Tooth (light_grey)
 1 7 -10 -14 210 0 0 1 0 1 0 -1 0 0 4019.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 30 -14 210 0 0 1 0 1 0 -1 0 0 3713.dat
-0 // Technic Bush  1/2 Type 1
+0 // Technic Bush  1/2 Type 1 (light_grey)
 1 7 2 -14 210 0 0 1 0 1 0 -1 0 0 4265a.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 60 -14 70 -1 0 0 0 1 0 0 0 -1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -60 -14 70 -1 0 0 0 1 0 0 0 -1 2780.dat
 0 STEP
-0 // Technic Steering Arm
+0 // Technic Steering Arm (light_grey)
 1 7 -90 -24 0 1 0 0 0 1 0 0 0 1 4261.dat
-0 // Technic Steering Arm
+0 // Technic Steering Arm (light_grey)
 1 7 90 -24 0 1 0 0 0 1 0 0 0 1 4261.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 -90 -26 40 0 0 -1 1 0 0 0 -1 0 3749.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 90 -26 40 0 0 -1 1 0 0 0 -1 0 3749.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 100 -14 0 1 0 0 0 0 -1 0 1 0 3749.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 -100 -14 0 -1 0 0 0 0 1 0 1 0 3749.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (light_grey)
 1 7 -50 -32 30 0 0 -1 0 1 0 1 0 0 3069b.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (light_grey)
 1 7 50 -32 30 0 0 -1 0 1 0 1 0 0 3069b.dat
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (yellow)
 1 14 0 -32 60 1 0 0 0 1 0 0 0 1 3666.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (light_grey)
 1 7 50 -32 210 0 0 -1 0 1 0 1 0 0 3710.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (light_grey)
 1 7 -50 -32 210 0 0 -1 0 1 0 1 0 0 3710.dat
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (light_grey)
 1 7 0 -32 160 1 0 0 0 1 0 0 0 1 3666.dat
 0 STEP
-0 // Technic Brick  1 x  6 with Holes
+0 // Technic Brick  1 x  6 with Holes (light_grey)
 1 7 0 -56 240 1 0 0 0 1 0 0 0 1 3894.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (light_grey)
 1 7 0 -56 160 1 0 0 0 1 0 0 0 1 3700.dat
-0 // Technic Axle  6
+0 // Technic Axle  6 (black)
 1 0 0 -46 210 0 0 1 0 1 0 -1 0 0 3706.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 0 -46 180 1 0 0 0 -1 0 0 0 -1 3713.dat
-0 // Technic Worm Gear 2L
+0 // Technic Worm Gear 2L (light_grey)
 1 7 0 -46 210 1 0 0 0 -1 0 0 0 -1 4716.dat
-0 // Technic Wedge Belt Wheel - Not Reinforced
+0 // Technic Wedge Belt Wheel - Not Reinforced (light_grey)
 1 7 0 -46 265 1 0 0 0 -1 0 0 0 -1 4185.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (yellow)
 1 14 0 -40 60 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (yellow)
 1 14 0 -48 60 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Technic Plate  1 x 10 with Holes
+0 // Technic Plate  1 x 10 with Holes (light_grey)
 1 7 0 -32 0 1 0 0 0 1 0 0 0 1 2719.dat
 0 STEP
-0 // Technic Plate  1 x 10 with Holes
+0 // Technic Plate  1 x 10 with Holes (light_grey)
 1 7 0 -40 40 1 0 0 0 1 0 0 0 1 2719.dat
-0 // Technic Gear Rack  1 x  4
+0 // Technic Gear Rack  1 x  4 (light_grey)
 1 7 0 -48 40 1 0 0 0 1 0 0 0 1 3743.dat
-0 // Technic Brick  1 x  4 with Holes
+0 // Technic Brick  1 x  4 with Holes (light_grey)
 1 7 50 -56 190 0 0 -1 0 1 0 1 0 0 3701.dat
-0 // Technic Brick  1 x  4 with Holes
+0 // Technic Brick  1 x  4 with Holes (light_grey)
 1 7 -50 -56 190 0 0 -1 0 1 0 1 0 0 3701.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (light_grey)
 1 7 0 -64 240 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (light_grey)
 1 7 -40 -40 0 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (light_grey)
 1 7 40 -40 0 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (light_grey)
 1 7 0 -48 0 1 0 0 0 1 0 0 0 1 3666.dat
 0 STEP
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (yellow)
 1 14 0 -72 60 1 0 0 0 1 0 0 0 1 3700.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (light_grey)
 1 7 40 -72 0 1 0 0 0 1 0 0 0 1 3700.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (light_grey)
 1 7 0 -72 0 1 0 0 0 1 0 0 0 1 3700.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (light_grey)
 1 7 -40 -72 0 1 0 0 0 1 0 0 0 1 3700.dat
-0 // Technic Axle  6
+0 // Technic Axle  6 (black)
 1 0 0 -62 35 0 0 1 0 1 0 -1 0 0 3706.dat
-0 // Technic Gear  8 Tooth
+0 // Technic Gear  8 Tooth (light_grey)
 1 7 0 -62 40 1 0 0 0 1 0 0 0 1 3647.dat
-0 // Technic Gear 14 Tooth Bevel
+0 // Technic Gear 14 Tooth Bevel (light_grey)
 1 7 0 -62 13 -1 0 0 0 1 0 0 0 -1 4143.dat
-0 // Technic Brick  1 x  6 with Holes
+0 // Technic Brick  1 x  6 with Holes (light_grey)
 1 7 0 -80 160 1 0 0 0 1 0 0 0 1 3894.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (light_grey)
 1 7 50 -80 220 -1 0 0 0 1 0 0 0 -1 3040b.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (light_grey)
 1 7 -50 -80 220 -1 0 0 0 1 0 0 0 -1 3040b.dat
 0 STEP
-0 // ~Electric Technic Motor  4.5V with Centre Pin Hole (Obsolete)
+0 // ~Electric Technic Motor  4.5V with Centre Pin Hole (Obsolete) (light_grey)
 1 7 0 -120 210 -1 0 0 0 1 0 0 0 -1 6216m.dat
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (yellow)
 1 14 0 -80 60 1 0 0 0 1 0 0 0 1 3666.dat
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (light_grey)
 1 7 0 -80 0 1 0 0 0 1 0 0 0 1 3666.dat
 0 STEP
-0 // Technic Brick  1 x 12 with Holes
+0 // Technic Brick  1 x 12 with Holes (yellow)
 1 14 -50 -104 110 0 0 1 0 1 0 -1 0 0 3895.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -60 -94 210 -1 0 0 0 1 0 0 0 -1 2780.dat
-0 // Technic Pin
+0 // Technic Pin (light_grey)
 1 7 -40 -94 150 -1 0 0 0 1 0 0 0 -1 3673.dat
-0 // Technic Pin
+0 // Technic Pin (light_grey)
 1 7 -40 -94 50 -1 0 0 0 1 0 0 0 -1 3673.dat
-0 // Technic Pin
+0 // Technic Pin (light_grey)
 1 7 -60 -94 30 -1 0 0 0 0.999 -0.035 0 -0.035 -0.999 3673.dat
-0 // Technic Brick  1 x  8 with Holes
+0 // Technic Brick  1 x  8 with Holes (yellow)
 1 14 -30 -104 90 0 0 1 0 1 0 -1 0 0 3702.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 60 -94 210 -1 0 0 0 1 0 0 0 -1 2780.dat
-0 // Technic Brick  1 x 12 with Holes
+0 // Technic Brick  1 x 12 with Holes (yellow)
 1 14 50 -104 110 0 0 1 0 1 0 -1 0 0 3895.dat
-0 // Technic Pin
+0 // Technic Pin (light_grey)
 1 7 40 -94 150 -1 0 0 0 1 0 0 0 -1 3673.dat
-0 // Technic Pin
+0 // Technic Pin (light_grey)
 1 7 40 -94 50 -1 0 0 0 1 0 0 0 -1 3673.dat
-0 // Technic Pin
+0 // Technic Pin (light_grey)
 1 7 60 -94 30 -1 0 0 0 0.999 -0.035 0 -0.035 -0.999 3673.dat
-0 // Technic Brick  1 x  8 with Holes
+0 // Technic Brick  1 x  8 with Holes (yellow)
 1 14 30 -104 90 0 0 1 0 1 0 -1 0 0 3702.dat
 0 STEP
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (light_grey)
 1 7 -30 -112 20 0 0 -1 0 1 0 1 0 0 2420.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (light_grey)
 1 7 30 -112 20 1 0 0 0 1 0 0 0 1 2420.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (light_grey)
 1 7 30 -112 160 -1 0 0 0 1 0 0 0 -1 2420.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (light_grey)
 1 7 -30 -112 160 0 0 1 0 1 0 -1 0 0 2420.dat
-0 // Technic Brick  1 x  6 with Holes
+0 // Technic Brick  1 x  6 with Holes (yellow)
 1 14 70 -54 220 0 0 -1 1 0 0 0 -1 0 3894.dat
-0 // Technic Brick  1 x  6 with Holes
+0 // Technic Brick  1 x  6 with Holes (yellow)
 1 14 -70 -54 220 0 0 -1 1 0 0 0 -1 0 3894.dat
 0 STEP
-0 // Technic Brick  1 x 12 with Holes
+0 // Technic Brick  1 x 12 with Holes (yellow)
 1 14 70 -114 80 0 0 -1 1 0 0 0 -1 0 3895.dat
-0 // Technic Brick  1 x 12 with Holes
+0 // Technic Brick  1 x 12 with Holes (yellow)
 1 14 -70 -114 80 0 0 -1 1 0 0 0 -1 0 3895.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -60 -214 70 -1 0 0 0 1 0 0 0 -1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -60 -174 70 -1 0 0 0 1 0 0 0 -1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 60 -214 70 -1 0 0 0 1 0 0 0 -1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 60 -174 70 -1 0 0 0 1 0 0 0 -1 2780.dat
-0 // Technic Axle 10
+0 // Technic Axle 10 (black)
 1 0 0 -168 30 0 0.985 -0.174 1 0 0 0 -0.174 -0.985 3737.dat
-0 // Technic Gear 14 Tooth Bevel
+0 // Technic Gear 14 Tooth Bevel (light_grey)
 1 7 0 -80 30 0.985 0.174 0 0 0 -1 -0.174 0.985 0 4143.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 0 -92 30 0.985 0.174 0 0 0 -1 -0.174 0.985 0 3713.dat
-0 // Technic Bush  1/2 Type 1
+0 // Technic Bush  1/2 Type 1 (light_grey)
 1 7 0 -107 30 0.985 0.174 0 0 0 -1 -0.174 0.985 0 4265a.dat
-0 // Technic Plate  2 x  4 with Holes
+0 // Technic Plate  2 x  4 with Holes (light_grey)
 1 7 0 -120 30 -1 0 0 0 1 0 0 0 -1 3709b.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 90 -14 210 0 0 1 0 1 0 -1 0 0 3713.dat
 0 STEP
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (yellow)
 1 14 50 -184 70 0 0 1 0 1 0 -1 0 0 3700.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (yellow)
 1 14 50 -192 70 0 0 1 0 1 0 -1 0 0 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (yellow)
 1 14 50 -200 70 0 0 1 0 1 0 -1 0 0 3023.dat
-0 // Technic Brick  1 x  4 with Holes
+0 // Technic Brick  1 x  4 with Holes (yellow)
 1 14 50 -224 50 0 0 1 0 1 0 -1 0 0 3701.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (yellow)
 1 14 -50 -184 70 0 0 1 0 1 0 -1 0 0 3700.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (yellow)
 1 14 -50 -200 70 0 0 1 0 1 0 -1 0 0 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (yellow)
 1 14 -50 -192 70 0 0 1 0 1 0 -1 0 0 3023.dat
-0 // Technic Brick  1 x  4 with Holes
+0 // Technic Brick  1 x  4 with Holes (yellow)
 1 14 -50 -224 50 0 0 1 0 1 0 -1 0 0 3701.dat
-0 // Technic Axle 12
+0 // Technic Axle 12 (black)
 1 0 0 -94 70 1 0 0 0 -0.174 -0.985 0 0.985 -0.174 3708.dat
 0 STEP
 1 7 0 -30.543 -138.882 -1 0 0 0 -0.906 -0.423 0 -0.423 0.906 8054 - Universal Building Set with 4.5v motor Model C Front.ldr
 0 STEP
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (yellow)
 1 14 0 -232 70 -1 0 0 0 1 0 0 0 -1 3795.dat
-0 // Technic Plate  2 x  8 with Holes
+0 // Technic Plate  2 x  8 with Holes (light_grey)
 1 7 0 -232 30 -1 0 0 0 1 0 0 0 -1 3738.dat
-0 // Hinge Plate  1 x  2 with 2 Fingers and Hollow Studs
+0 // Hinge Plate  1 x  2 with 2 Fingers and Hollow Studs (yellow)
 1 14 70 -240 30 0 0 1 0 1 0 -1 0 0 4276b.dat
-0 // Hinge Plate  1 x  2 with 3 Fingers and Hollow Studs
+0 // Hinge Plate  1 x  2 with 3 Fingers and Hollow Studs (yellow)
 1 14 70 -219.2 -24.91 0 0 -1 -0.669 0.743 0 0.743 0.669 0 4275b.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (yellow)
 1 14 70 -199.872 -34.42 0 0 -1 -0.669 0.743 0 0.743 0.669 0 3710.dat
-0 // Hinge Plate  1 x  2 with 2 Fingers and Hollow Studs
+0 // Hinge Plate  1 x  2 with 2 Fingers and Hollow Studs (yellow)
 1 14 70 -192.435 -54.636 0 0 1 0.669 0.743 0 -0.743 0.669 0 4276b.dat
-0 // Hinge Plate  1 x  2 with 3 Fingers and Hollow Studs
+0 // Hinge Plate  1 x  2 with 3 Fingers and Hollow Studs (yellow)
 1 14 70 -140.585 -70.827 0 0 -1 -0.966 -0.259 0 -0.259 0.966 0 4275b.dat
-0 // Hinge Plate  1 x  2 with 3 Fingers and Hollow Studs
+0 // Hinge Plate  1 x  2 with 3 Fingers and Hollow Studs (yellow)
 1 14 -70 -140.585 -70.827 0 0 -1 -0.966 -0.259 0 -0.259 0.966 0 4275b.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (yellow)
 1 14 -70 -199.813 -34.385 0 0 -1 -0.669 0.743 0 0.743 0.669 0 3710.dat
-0 // Hinge Plate  1 x  2 with 2 Fingers and Hollow Studs
+0 // Hinge Plate  1 x  2 with 2 Fingers and Hollow Studs (yellow)
 1 14 -70 -192.375 -54.601 0 0 1 0.669 0.743 0 -0.743 0.669 0 4276b.dat
-0 // Hinge Plate  1 x  2 with 3 Fingers and Hollow Studs
+0 // Hinge Plate  1 x  2 with 3 Fingers and Hollow Studs (yellow)
 1 14 -70 -219.14 -24.875 0 0 -1 -0.669 0.743 0 0.743 0.669 0 4275b.dat
-0 // Hinge Plate  1 x  2 with 2 Fingers and Hollow Studs
+0 // Hinge Plate  1 x  2 with 2 Fingers and Hollow Studs (yellow)
 1 14 -70 -240 30 0 0 1 0 1 0 -1 0 0 4276b.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 70 -94 170 0 0 1 -0.985 0.174 0 -0.174 -0.985 0 3713.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 -70 -94 170 0 0 1 -0.985 0.174 0 -0.174 -0.985 0 3713.dat
 0 STEP
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 70 -94 170 1 0 0 0 -0.174 -0.985 0 0.985 -0.174 4519.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 -70 -94 170 1 0 0 0 -0.174 -0.985 0 0.985 -0.174 4519.dat
-0 // Technic Brick  1 x 16 with Holes
+0 // Technic Brick  1 x 16 with Holes (yellow)
 1 14 90 -104 70 0 0 1 0 1 0 -1 0 0 3703.dat
-0 // Technic Brick  1 x 16 with Holes
+0 // Technic Brick  1 x 16 with Holes (yellow)
 1 14 -90 -104 70 0 0 1 0 1 0 -1 0 0 3703.dat
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (yellow)
 1 14 100 -80 210 0 0 1 0 1 0 -1 0 0 3795.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (yellow)
 1 14 90 -104 240 -1 0 0 0 1 0 0 0 -1 3040b.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (yellow)
 1 14 90 -128 220 -1 0 0 0 1 0 0 0 -1 3040b.dat
-0 // Technic Plate  2 x  4 with Holes
+0 // Technic Plate  2 x  4 with Holes (yellow)
 1 14 100 -80 -10 0 0 -1 0 1 0 1 0 0 3709b.dat
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (yellow)
 1 14 -100 -80 210 0 0 1 0 1 0 -1 0 0 3795.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (yellow)
 1 14 -90 -104 240 -1 0 0 0 1 0 0 0 -1 3040b.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (yellow)
 1 14 -90 -128 220 -1 0 0 0 1 0 0 0 -1 3040b.dat
-0 // Technic Plate  2 x  4 with Holes
+0 // Technic Plate  2 x  4 with Holes (yellow)
 1 14 -100 -80 -10 0 0 -1 0 1 0 1 0 0 3709b.dat
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (yellow)
 1 14 90 -136 150 0 0 -1 0 1 0 1 0 0 3460.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (yellow)
 1 14 90 -128 80 1 0 0 0 1 0 0 0 1 3040b.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (yellow)
 1 14 -90 -128 80 1 0 0 0 1 0 0 0 1 3040b.dat
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (yellow)
 1 14 -90 -136 150 0 0 -1 0 1 0 1 0 0 3460.dat
 0 STEP
-0 // Wheel Rim  8 x 17.5 with Axlehole
+0 // Wheel Rim  8 x 17.5 with Axlehole (yellow)
 1 14 0 -257 30 -0.985 -0.174 0 0 0 -1 0.174 -0.985 0 3482.dat
-0 // Tyre 12/ 50 x 16 Offset Tread
+0 // Tyre 12/ 50 x 16 Offset Tread (black)
 1 0 0 -257 30 -0.985 -0.174 0 0 0 -1 0.174 -0.985 0 2346.dat
-0 // Technic Bush  1/2 Type 1
+0 // Technic Bush  1/2 Type 1 (light_grey)
 1 7 107 -94 70 0 0 1 -0.985 0.174 0 -0.174 -0.985 0 4265a.dat
-0 // Technic Bush  1/2 Type 1
+0 // Technic Bush  1/2 Type 1 (light_grey)
 1 7 -107 -94 70 0 0 -1 -0.985 -0.174 0 -0.174 0.985 0 4265a.dat
-0 // Wheel Rim  8 x 17.5 with Axlehole
+0 // Wheel Rim  8 x 17.5 with Axlehole (yellow)
 1 14 110 -14 0 0 0 -1 -1 0 0 0 1 0 3482.dat
-0 // Tyre 12/ 50 x 16 Offset Tread
+0 // Tyre 12/ 50 x 16 Offset Tread (black)
 1 0 110 -14 0 0 0 -1 -1 0 0 0 1 0 2346.dat
-0 // Wheel Rim  8 x 17.5 with Axlehole
+0 // Wheel Rim  8 x 17.5 with Axlehole (yellow)
 1 14 110 -14 210 0 0 -1 -1 0 0 0 1 0 3482.dat
-0 // Tyre 12/ 50 x 16 Offset Tread
+0 // Tyre 12/ 50 x 16 Offset Tread (black)
 1 0 110 -14 210 0 0 -1 -1 0 0 0 1 0 2346.dat
-0 // Wheel Rim  8 x 17.5 with Axlehole
+0 // Wheel Rim  8 x 17.5 with Axlehole (yellow)
 1 14 -110 -14 210 0 0 1 -1 0 0 0 -1 0 3482.dat
-0 // Tyre 12/ 50 x 16 Offset Tread
+0 // Tyre 12/ 50 x 16 Offset Tread (black)
 1 0 -110 -14 210 0 0 1 -1 0 0 0 -1 0 2346.dat
-0 // Wheel Rim  8 x 17.5 with Axlehole
+0 // Wheel Rim  8 x 17.5 with Axlehole (black)
 1 0 -110 -14 0 0 0 1 -1 0 0 0 -1 0 3482.dat
-0 // Tyre 12/ 50 x 16 Offset Tread
+0 // Tyre 12/ 50 x 16 Offset Tread (black)
 1 0 -110 -14 0 0 0 1 -1 0 0 0 -1 0 2346.dat
 1 0 0 -46 265 1 0 0 0 -1 0 0 0 -1 8054 - Universal Building Set with 4.5v motor Model C rubberBandRound-1.ldr
 0 STEP
@@ -303,66 +303,66 @@
 
 0 !LDCAD GROUP_DEF [topLevel=false] [LID=0] [GID=Hy8VIUXpjIr]
 0 !LDCAD GROUP_NXT [ids=0] [nrs=-1]
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (yellow)
 1 14 0 64.188 111.778 1 0 0 0 -0.225 -0.974 0 0.974 -0.225 3795.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=0] [nrs=2]
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (yellow)
 1 14 0 79.331 90.642 1 0 0 0 -0.225 -0.974 0 0.974 -0.225 3700.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=3]
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (yellow)
 1 14 0 59.843 86.143 1 0 0 0 -0.225 -0.974 0 0.974 -0.225 3700.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=4]
-0 // Technic Brick  1 x  6 with Holes
+0 // Technic Brick  1 x  6 with Holes (yellow)
 1 14 -50 30.612 79.395 0 0 1 0.974 -0.225 0 0.225 0.974 0 3894.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=5]
-0 // Technic Brick  1 x  6 with Holes
+0 // Technic Brick  1 x  6 with Holes (yellow)
 1 14 50 30.612 79.395 0 0 1 0.974 -0.225 0 0.225 0.974 0 3894.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=6]
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 60 67.338 98.136 -1 0 0 0 -0.225 0.974 0 0.974 0.225 2780.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=7]
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -60 67.338 98.136 -1 0 0 0 -0.225 0.974 0 0.974 0.225 2780.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=14]
-0 // Technic Pin
+0 // Technic Pin (light_grey)
 1 7 -60 -10.612 80.14 -1 0 0 0 -0.225 0.974 0 0.974 0.225 3673.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=15]
-0 // Technic Pin
+0 // Technic Pin (light_grey)
 1 7 60 -10.612 80.14 -1 0 0 0 -0.225 0.974 0 0.974 0.225 3673.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=8]
-0 // Technic Brick  1 x  4 with Holes
+0 // Technic Brick  1 x  4 with Holes (yellow)
 1 14 70 50.1 83.894 0 0 1 0.974 -0.225 0 0.225 0.974 0 3701.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=9]
-0 // Technic Brick  1 x  4 with Holes
+0 // Technic Brick  1 x  4 with Holes (yellow)
 1 14 -70 50.1 83.894 0 0 1 0.974 -0.225 0 0.225 0.974 0 3701.dat
-0 // Technic Pin
+0 // Technic Pin (light_grey)
 1 7 75 28.401 89.246 -1 0 0 0 0.707 0.707 0 0.707 -0.707 3673.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=10]
-0 // Technic Pin
+0 // Technic Pin (light_grey)
 1 7 -80 28.363 89.138 -1 0 0 0 -0.225 0.974 0 0.974 0.225 3673.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=0] [nrs=11]
-0 // Technic Plate  2 x  4 with Holes
+0 // Technic Plate  2 x  4 with Holes (yellow)
 1 14 40 71.387 80.598 -1 0 0 0 -0.225 0.974 0 0.974 0.225 3709b.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=12]
-0 // Technic Plate  2 x  4 with Holes
+0 // Technic Plate  2 x  4 with Holes (yellow)
 1 14 -40 71.387 80.598 -1 0 0 0 -0.225 0.974 0 0.974 0.225 3709b.dat
 0 STEP
-0 // Technic Connector (Pin/Bush) with 2 Studs
+0 // Technic Connector (Pin/Bush) with 2 Studs (light_grey)
 1 7 70 -11.212 100.044 -1 0 0 0 -0.999 -0.035 0 -0.035 0.999 3651.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 70 -12.259 130.026 0 0 1 -0.035 -0.999 0 0.999 -0.035 0 3705.dat
-0 // Technic Connector (Pin/Bush) with 2 Studs
+0 // Technic Connector (Pin/Bush) with 2 Studs (light_grey)
 1 7 70 -13.306 160.007 1 0 0 0 -0.999 0.035 0 -0.035 -0.999 3651.dat
-0 // Technic Connector (Pin/Bush) with 2 Studs
+0 // Technic Connector (Pin/Bush) with 2 Studs (light_grey)
 1 7 -70 -13.306 160.007 1 0 0 0 -0.999 0.035 0 -0.035 -0.999 3651.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 -70 -12.259 130.026 0 0 1 -0.035 -0.999 0 0.999 -0.035 0 3705.dat
-0 // Technic Connector (Pin/Bush) with 2 Studs
+0 // Technic Connector (Pin/Bush) with 2 Studs (light_grey)
 1 7 -70 -11.212 100.044 -1 0 0 0 -0.999 -0.035 0 -0.035 0.999 3651.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=13]
-0 // Technic Plate  2 x  8 with Holes
+0 // Technic Plate  2 x  8 with Holes (light_grey)
 1 7 0 32.412 71.6 -1 0 0 0 -0.225 0.974 0 0.974 0.225 3738.dat
 
 

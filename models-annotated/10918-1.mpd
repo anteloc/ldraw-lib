@@ -15,30 +15,30 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Duplo Car Base  2 x  6 with Mudguards
+0 // Duplo Car Base  2 x  6 with Mudguards (white)
 1 15 0 0 0 0 0 -1 0 1 0 1 0 0 10918 - 11377.dat
-0 // Duplo Wheel 11 x 17 with Dark Azure Tyre 11 / 45 x 17 and Black Attached Axle
+0 // Duplo Wheel 11 x 17 with Dark Azure Tyre 11 / 45 x 17 and Black Attached Axle (white)
 1 15 44 14.5 60 0 0 -1 0 1 0 1 0 0 10918 - 12589c02.dat
-0 // Duplo Wheel 11 x 17 with Dark Azure Tyre 11 / 45 x 17 and Black Attached Axle
+0 // Duplo Wheel 11 x 17 with Dark Azure Tyre 11 / 45 x 17 and Black Attached Axle (white)
 1 15 44 14.5 -60 0 0 -1 0 1 0 1 0 0 10918 - 12589c02.dat
-0 // Duplo Wheel 11 x 17 with Dark Azure Tyre 11 / 45 x 17 and Black Attached Axle
+0 // Duplo Wheel 11 x 17 with Dark Azure Tyre 11 / 45 x 17 and Black Attached Axle (white)
 1 15 -44 14.5 60 0 0 1 0 1 0 -1 0 0 10918 - 12589c02.dat
-0 // Duplo Wheel 11 x 17 with Dark Azure Tyre 11 / 45 x 17 and Black Attached Axle
+0 // Duplo Wheel 11 x 17 with Dark Azure Tyre 11 / 45 x 17 and Black Attached Axle (white)
 1 15 -44 14.5 -60 0 0 1 0 1 0 -1 0 0 10918 - 12589c02.dat
 0 STEP
-0 // Duplo Brick  2 x  2
+0 // Duplo Brick  2 x  2 (dark_azure)
 1 321 0 -48 -80 0 0 -1 0 1 0 1 0 0 3437.dat
-0 // Duplo Plate  2 x  4
+0 // Duplo Plate  2 x  4 (dark_azure)
 1 321 0 -24 40 0 0 -1 0 1 0 1 0 0 40666.dat
 0 STEP
-0 // Duplo Brick  2 x  2 x  1.5 with Curved Front with Boy with Cap, Girl with Bow, and White Vehicle Windows Pattern
+0 // Duplo Brick  2 x  2 x  1.5 with Curved Front with Boy with Cap, Girl with Bow, and White Vehicle Windows Pattern (medium_azure)
 1 322 0 -120 -80 1 0 0 0 1 0 0 0 1 10918 - 11170p01.dat
-0 // Duplo Cone  2 x  2 x  2 Square Base with Bottom Tube
+0 // Duplo Cone  2 x  2 x  2 Square Base with Bottom Tube (medium_azure)
 1 322 0 -120 0 1 0 0 0 1 0 0 0 1 10918 - 16195.dat
-0 // Duplo Crane Base  2 x  2 with Hook Holder
+0 // Duplo Crane Base  2 x  2 with Hook Holder (dark_azure)
 1 321 0 -24 80 -1 0 0 0 1 0 0 0 -1 10918 - 15450.dat
 0 STEP
-0 // Duplo Hook with Thick Bracing
+0 // Duplo Hook with Thick Bracing (white)
 1 15 0 -123 160 -1 0 0 0 1 0 0 0 -1 10918 - 15449.dat
 
 
@@ -57,13 +57,13 @@
 0 !HISTORY 2021-02-09 [Philo] File preparation for LDraw Parts Tracker
 
 0 BFC INVERTNEXT
-0 // Box with 5 Faces and All Edges
+0 // Box with 5 Faces and All Edges (main_colour)
 1 16 0 24 0 0 0 36 0 -20 0 40 0 0 box5.dat
 1 16 0 4 0 -1 0 0 0 -5 0 0 0 1 stud8.dat
 
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\10918 - 11377s01.dat
 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\10918 - 11377s01.dat
-0 // Rectangle with 1 Edge
+0 // Rectangle with 1 Edge (main_colour)
 1 16 0 0 52 0 0 -15.9215 0 1 0 12 0 0 rect1.dat
 4 16 15.9215 0 64 13.5 24 64 -13.5 24 64 -15.9215 0 64
 4 16 -13.5 24 64 13.5 24 64 13 24 60 -13 24 60
@@ -71,58 +71,58 @@
 4 16 45.5 24 44 45.5 24 40 -45.5 24 40 -45.5 24 44
 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\10918 - 11377s01.dat
 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\10918 - 11377s01.dat
-0 // Rectangle with 1 Edge
+0 // Rectangle with 1 Edge (main_colour)
 1 16 0 0 -52 0 0 15.9215 0 1 0 -12 0 0 rect1.dat
 4 16 -13.5 24 -64 13.5 24 -64 15.9215 0 -64 -15.9215 0 -64
 4 16 13 24 -60 13.5 24 -64 -13.5 24 -64 -13 24 -60
 2 24 13.5 24 -64 -13.5 24 -64
 4 16 -45.5 24 -40 45.5 24 -40 45.5 24 -44 -45.5 24 -44
-0 // Rectangle with 1 Edge
+0 // Rectangle with 1 Edge (main_colour)
 1 16 37.5 24 0 1.5 0 0 0 -1 0 0 0 -40 rect1.dat
-0 // Rectangle with 1 Edge
+0 // Rectangle with 1 Edge (main_colour)
 1 16 44 4 0 -5 0 0 0 -1 0 0 0 40 rect1.dat
 4 16 71 4 12.5 71 4 -12.5 49 4 -12.5 49 4 12.5
 4 16 71 4 -40 71 4 40 106.5 4 40 106.5 4 -40
 4 16 106.5 4 -40 106.5 4 40 115.5 4 46 115.5 4 -46
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 115.5 14 0 0 1 0 0 0 10 46 0 0 rect2p.dat
-0 // Rectangle with 1 Edge
+0 // Rectangle with 1 Edge (main_colour)
 1 16 117.5 24 0 2 0 0 0 -1 0 0 0 -46 rect1.dat
-0 // Rectangle with 1 Edge
+0 // Rectangle with 1 Edge (main_colour)
 1 16 119.5 12 0 0 -1 0 -12 0 0 0 0 -46 rect1.dat
 4 16 104.078499 0 40 104.078499 0 -40 119.5 0 -46 119.5 0 46
 4 16 104.078499 0 -40 104.078499 0 40 15.9215 0 40 15.9215 0 -40
 0 BFC INVERTNEXT
-0 // Box with 5 Faces and All Edges
+0 // Box with 5 Faces and All Edges (main_colour)
 1 16 0 24 52 0 0 13 0 -20 0 8 0 0 box5.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 39 14 0 0 -1 0 10 0 0 0 0 40 rect2p.dat
-0 // Rectangle with 1 Edge
+0 // Rectangle with 1 Edge (main_colour)
 1 16 -37.5 24 0 -1.5 0 0 0 -1 0 0 0 40 rect1.dat
-0 // Rectangle with 1 Edge
+0 // Rectangle with 1 Edge (main_colour)
 1 16 -44 4 0 5 0 0 0 -1 0 0 0 -40 rect1.dat
 4 16 -71 4 -12.5 -71 4 12.5 -49 4 12.5 -49 4 -12.5
 4 16 -71 4 40 -71 4 -40 -106.5 4 -40 -106.5 4 40
 4 16 -106.5 4 40 -106.5 4 -40 -115.5 4 -46 -115.5 4 46
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 -115.5 14 0 0 -1 0 0 0 10 -46 0 0 rect2p.dat
-0 // Rectangle with 1 Edge
+0 // Rectangle with 1 Edge (main_colour)
 1 16 -117.5 24 0 -2 0 0 0 -1 0 0 0 46 rect1.dat
-0 // Rectangle with 1 Edge
+0 // Rectangle with 1 Edge (main_colour)
 1 16 -119.5 12 0 0 1 0 -12 0 0 0 0 46 rect1.dat
 4 16 -104.078499 0 -40 -104.078499 0 40 -119.5 0 46 -119.5 0 -46
 4 16 -104.078499 0 40 -104.078499 0 -40 -15.9215 0 -40 -15.9215 0 40
 0 BFC INVERTNEXT
-0 // Box with 5 Faces and All Edges
+0 // Box with 5 Faces and All Edges (main_colour)
 1 16 0 24 -52 0 0 -13 0 -20 0 -8 0 0 box5.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 -39 14 0 0 1 0 10 0 0 0 0 -40 rect2p.dat
 4 16 -15.9215 0 -40 15.9215 0 -40 15.9215 0 40 -15.9215 0 40
 1 16 0 0 20 1 0 0 0 2.75 0 0 0 1 stug7-1x6.dat
 1 16 0 0 -20 1 0 0 0 2.75 0 0 0 1 stug7-1x6.dat
-0 // Box with 3 Faces without 2 Parallel Edges
+0 // Box with 3 Faces without 2 Parallel Edges (main_colour)
 1 16 60 4 0 0 0 -1.5 0 4 0 6 0 0 box3u2p.dat
-0 // Box with 3 Faces without 2 Parallel Edges
+0 // Box with 3 Faces without 2 Parallel Edges (main_colour)
 1 16 -60 4 0 0 0 -1.5 0 4 0 6 0 0 box3u2p.dat
 
 0 FILE 10918 - 12589c02.dat
@@ -139,11 +139,11 @@
 0 !HISTORY 2020-12-12 {LEGO/Unity Microgame} Original part shape
 0 !HISTORY 2021-02-09 [Philo] File preparation for LDraw Parts Tracker
 
-0 // ~Duplo Wheel Rim 11 x 17
+0 // ~Duplo Wheel Rim 11 x 17 (main_colour)
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 10918 - 12589.dat
-0 // ~Duplo Tyre 11 / 45 x 17
+0 // ~Duplo Tyre 11 / 45 x 17 (dark_azure)
 1 321 0 0 0 1 0 0 0 1 0 0 0 1 10918 - 12590.dat
-0 // ~Duplo Axle for Wheel Rim 11 x 17
+0 // ~Duplo Axle for Wheel Rim 11 x 17 (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 10918 - 12588.dat
 
 0 FILE 10918 - 11170p01.dat
@@ -1558,9 +1558,9 @@
 0 !HISTORY 2020-12-12 {LEGO/Unity Microgame} Original part shape
 0 !HISTORY 2021-01-23 [Philo] File preparation for LDraw Parts Tracker
 
-0 // Rectangle Empty with 4 Edges
+0 // Rectangle Empty with 4 Edges (main_colour)
 1 16 0 0 0 40 0 0 0 1 0 0 0 40 recte4.dat
-0 // Rectangle Empty with 4 Edges
+0 // Rectangle Empty with 4 Edges (main_colour)
 1 16 0 0 0 36 0 0 0 1 0 0 0 36 recte4.dat
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\10918 - 15450s01.dat
 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\10918 - 15450s01.dat
@@ -1571,38 +1571,38 @@
 4 16 -40 0 -40 -36 0 -36 36 0 -36 40 0 -40
 4 16 -36 0 -36 -36 -20 -36 36 -20 -36 36 0 -36
 4 16 18.5 -79 -36 -18.5 -79 -36 -22.5 -91 -32 18.5 -91 -32
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 0 -91 -27.5 -22.5 0 0 0 -1 0 0 0 4.5 rect2p.dat
-0 // Rectangle with 1 Edge
+0 // Rectangle with 1 Edge (main_colour)
 1 16 0 -79.5 -23 0 0 22.5 11.5 0 0 0 1 0 rect1.dat
 4 16 18.5 -20 36 22.5 -26.793301 32 -22.5 -26.793301 32 -18.5 -20 36
-0 // Rectangle with 1 Edge
+0 // Rectangle with 1 Edge (main_colour)
 1 16 0 -10 36 0 0 -36 -10 0 0 0 1 0 rect1.dat
-0 // Rectangle with 1 Edge
+0 // Rectangle with 1 Edge (main_colour)
 1 16 0 -49.5 -36 0 0 18.5 -29.5 0 0 0 -1 0 rect1.dat
 3 16 -22.5 -68 -23 0 -68 -16 22.5 -68 -23
 4 16 -6.1232 -56.0345 14.7824 -22.5 -26.793301 32 22.5 -26.793301 32 6.1232 -56.0345 14.7824
 1 16 0 -4 0 -1 0 0 0 -1 0 0 0 1 stud8a.dat
 0 BFC INVERTNEXT
-0 // Cylinder 1.0
+0 // Cylinder 1.0 (main_colour)
 1 16 0 -72 0 14 0 0 0 68 0 0 0 14 4-4cyli.dat
-0 // Cylinder 1.0
+0 // Cylinder 1.0 (main_colour)
 1 16 0 -68 0 16 0 0 0 64 0 0 0 16 4-4cyli.dat
-0 // Circle 1.0
+0 // Circle 1.0 (main_colour)
 1 16 0 -72 0 14 0 0 0 1 0 0 0 14 4-4edge.dat
-0 // Duplo Snapping Ridge
+0 // Duplo Snapping Ridge (main_colour)
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 10918 - dsnapridge.dat
 4 16 40 -56.048302 -40 19.5 -56.420601 -40.928101 -19.5 -56.420601 -40.928101 -40 -56.048302 -40
-0 // Rectangle with 1 Edge
+0 // Rectangle with 1 Edge (main_colour)
 1 16 0 -28.02415 -40 0 0 -40 -28.02415 0 0 0 1 0 rect1.dat
-0 // Rectangle with 1 Edge
+0 // Rectangle with 1 Edge (main_colour)
 1 16 0 -57.02255 -40.9281 0 0 19.5 0.60195 0 0 0 1 0 rect1.dat
 4 16 -19.5 -77.372398 -40.928101 -19.5 -56.420601 -40.928101 19.5 -57.6245 -40.928101 19.5 -77.372398 -40.928101
 4 16 -19.5 -77.372398 -40.928101 19.5 -77.372398 -40.928101 16.5 -96 -34 -16.5 -96 -34
 2 24 -19.5 -77.372398 -40.928101 19.5 -77.372398 -40.928101
 2 24 16.5 -96 -34 -16.5 -96 -34
 4 16 -22.5 -72 -20 22.5 -72 -20 14 -72 -14 -14 -72 -14
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 0 -84 -20 -22.5 0 0 0 0 -12 0 -1 0 rect2p.dat
 4 16 16.5 -96 -34 22.5 -96 -20 -22.5 -96 -20 -16.5 -96 -34
 
@@ -1620,47 +1620,47 @@
 0 !HISTORY 2020-12-12 {LEGO/Unity Microgame} Original part shape
 0 !HISTORY 2021-01-22 [Philo] File preparation for LDraw Parts Tracker
 
-0 // Duplo Hinge Pin with Deep Recess and Reinforcements
+0 // Duplo Hinge Pin with Deep Recess and Reinforcements (main_colour)
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 10918 - dhingepin2.dat
-0 // Duplo Hinge Pin with Deep Recess and Reinforcements
+0 // Duplo Hinge Pin with Deep Recess and Reinforcements (main_colour)
 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 10918 - dhingepin2.dat
-0 // Cylinder Open 1.0
+0 // Cylinder Open 1.0 (main_colour)
 1 16 21 0 0 0 -42 0 19 0 0 0 0 19 4-4cylo.dat
-0 // Cylinder Open 0.5
+0 // Cylinder Open 0.5 (main_colour)
 1 16 -7.5 115 -19.3 0 15 0 0 0 -7.5 -7.5 0 0 2-4cylo.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.5
+0 // Cylinder Open 0.5 (main_colour)
 1 16 -7.5 115 -19.3 0 15 0 0 0 -3.75 -3.75 0 0 2-4cylo.dat
-0 // Ring  1 x 0.5
+0 // Ring  1 x 0.5 (main_colour)
 1 16 -7.5 115 -19.3 0 1 0 0 0 -3.75 -3.75 0 0 2-4ring1.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.625
+0 // Cylinder Open 0.625 (main_colour)
 1 16 -7.5 118 0 0 15 0 0 0 12 -12 0 0 5-8cylo.dat
-0 // Cylinder Open 0.625
+0 // Cylinder Open 0.625 (main_colour)
 1 16 -7.5 118 0 0 15 0 0 0 16 -16 0 0 5-8cylo.dat
-0 // Ring  3 x 0.625
+0 // Ring  3 x 0.625 (main_colour)
 1 16 -7.5 118 0 0 1 0 0 0 4 -4 0 0 5-8ring3.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.625
+0 // Cylinder Open 0.625 (main_colour)
 1 16 -7.5 119 0 0 15 0 0 0 23 -23 0 0 5-8cylo.dat
-0 // Cylinder Open 0.625
+0 // Cylinder Open 0.625 (main_colour)
 1 16 -7.5 119 0 0 15 0 0 0 26.83333 -26.83333 0 0 5-8cylo.dat
-0 // Ring  6 x 0.625
+0 // Ring  6 x 0.625 (main_colour)
 1 16 -7.5 119 0 0 1 0 0 0 3.83333 -3.83333 0 0 5-8ring6.dat
 
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.125
+0 // Cylinder Open 0.125 (main_colour)
 1 16 -7.5 83 19.5 0 15 0 0 0 12 -12 0 0 1-8cylo.dat
-0 // Cylinder Open 0.125
+0 // Cylinder Open 0.125 (main_colour)
 1 16 -7.5 83 19.5 0 15 0 0 0 16 -16 0 0 1-8cylo.dat
-0 // Ring  3 x 0.125
+0 // Ring  3 x 0.125 (main_colour)
 1 16 -7.5 83 19.5 0 1 0 0 0 4 -4 0 0 1-8ring3.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.125
+0 // Cylinder Open 0.125 (main_colour)
 1 16 -7.5 83 19.5 0 15 0 0 0 23 -23 0 0 1-8cylo.dat
-0 // Cylinder Open 0.125
+0 // Cylinder Open 0.125 (main_colour)
 1 16 -7.5 83 19.5 0 15 0 0 0 26.83333 -26.83333 0 0 1-8cylo.dat
-0 // Ring  6 x 0.125
+0 // Ring  6 x 0.125 (main_colour)
 1 16 -7.5 83 19.5 0 1 0 0 0 3.83333 -3.83333 0 0 1-8ring6.dat
 2 24 -7.5 115 -11.8 -7.5 118 -12
 2 24 -7.5 115 -15.55 -7.5 118 -16
@@ -1710,15 +1710,15 @@
 4 16 -7.5 119 -26.8333 7.5 119 -26.8333 7.5 115 -26.799999 -7.5 115 -26.799999
 5 24 -7.5 100.026199 18.9739 7.5 100.026199 18.9739 7.5 91.485199 11.0148 7.5 108.730904 24.7913
 5 24 7.5 101.9739 0.5262 -7.5 101.9739 0.5262 -7.5 93.269096 -5.2913 -7.5 109.514801 8.4852
-0 // Ring  1 x 0.5
+0 // Ring  1 x 0.5 (main_colour)
 1 16 7.5 115 -19.3 0 -1 0 0 0 -3.75 -3.75 0 0 2-4ring1.dat
-0 // Ring  3 x 0.625
+0 // Ring  3 x 0.625 (main_colour)
 1 16 7.5 118 0 0 -1 0 0 0 4 -4 0 0 5-8ring3.dat
-0 // Ring  6 x 0.625
+0 // Ring  6 x 0.625 (main_colour)
 1 16 7.5 119 0 0 -1 0 0 0 3.83333 -3.83333 0 0 5-8ring6.dat
-0 // Ring  3 x 0.125
+0 // Ring  3 x 0.125 (main_colour)
 1 16 7.5 83 19.5 0 -1 0 0 0 4 -4 0 0 1-8ring3.dat
-0 // Ring  6 x 0.125
+0 // Ring  6 x 0.125 (main_colour)
 1 16 7.5 83 19.5 0 -1 0 0 0 3.83333 -3.83333 0 0 1-8ring6.dat
 2 24 7.5 47 -7.3333 7.5 83 -7.3333
 2 24 7.5 83 -3.5 7.5 47 -3.5
@@ -1812,21 +1812,21 @@
 4 16 -9.1778 42.7719 -7.682 -7.5 47 -7.3333 7.5 47 -7.3333 9.1778 42.7719 -7.682
 4 16 -7.5 47 -3.5 -7.8062 46.2285 -1.6982 7.8062 46.2285 -1.6982 7.5 47 -3.5
 4 16 -7.5 83 -3.5 -7.5 47 -3.5 7.5 47 -3.5 7.5 83 -3.5
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 0 25.71275 -13 0 0 10 11.98725 0 0 0 1 0 rect.dat
 4 16 -10 40.700001 -9.0244 -9.1778 42.7719 -7.682 9.1778 42.7719 -7.682 10 40.700001 -9.0244
 4 16 -10 37.700001 -13 -10 40.700001 -9.0244 10 40.700001 -9.0244 10 37.700001 -13
 4 16 -9.2862 42.498798 0 -10 40.700001 -2.3838 10 40.700001 -2.3838 9.2862 42.498798 0
 4 16 -10 40.700001 2.3838 -9.2862 42.498798 0 9.2862 42.498798 0 10 40.700001 2.3838
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 0 26.0531 -9 0 0 10 -9.6543 0 0 0 -1 0 rect.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 0 38.2037 -5.6919 0 0 10 -2.4963 1 0 -3.3081 0 0 rect2p.dat
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 0 25.71275 13 0 0 10 -11.98725 0 0 0 -1 0 rect.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 0 38.2037 5.6919 10 0 0 0 1 -2.4963 0 0 3.3081 rect3.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 0 26.0531 9 10 0 0 0 0 -9.6543 0 1 0 rect3.dat
 4 16 -7.5 47 7.5 -9.1778 42.7719 7.682 9.1778 42.7719 7.682 7.5 47 7.5
 4 16 -10 40.700001 9.0244 -10 37.700001 13 10 37.700001 13 10 40.700001 9.0244
@@ -1836,15 +1836,15 @@
 5 24 -7.5 47 -7.3333 7.5 47 -7.3333 -7.5 83 -7.3333 -9.1778 42.7719 -7.682
 5 24 -9.1778 42.7719 -7.682 9.1778 42.7719 -7.682 -7.5 47 -7.3333 -10 40.700001 -9.0244
 5 24 -10 40.700001 -9.0244 10 40.700001 -9.0244 -9.1778 42.7719 -7.682 -10 37.700001 -13
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 3 115 -19.3 0 -1 0 0 0 -3.75 -3.75 0 0 2-4edge.dat
-0 // Circle 0.625
+0 // Circle 0.625 (main_colour)
 1 16 3 118 0 0 1 0 0 0 16 -16 0 0 5-8edge.dat
-0 // Circle 0.625
+0 // Circle 0.625 (main_colour)
 1 16 3 119 0 0 -1 0 0 0 23 -23 0 0 5-8edge.dat
-0 // Circle 0.125
+0 // Circle 0.125 (main_colour)
 1 16 3 83 19.5 0 1 0 0 0 16 -16 0 0 1-8edge.dat
-0 // Circle 0.125
+0 // Circle 0.125 (main_colour)
 1 16 3 83 19.5 0 -1 0 0 0 23 -23 0 0 1-8edge.dat
 2 24 3 115 -15.55 3 118 -16
 2 24 3 115 -23.049999 3 119 -23
@@ -1858,15 +1858,15 @@
 2 24 3 35.707401 9 3 42.498798 0
 2 24 3 47 3.5 3 46.2285 1.6982
 2 24 3 47.509899 0 3 46.2285 1.6982
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 -3 115 -19.3 0 -1 0 0 0 -3.75 -3.75 0 0 2-4edge.dat
-0 // Circle 0.625
+0 // Circle 0.625 (main_colour)
 1 16 -3 118 0 0 1 0 0 0 16 -16 0 0 5-8edge.dat
-0 // Circle 0.625
+0 // Circle 0.625 (main_colour)
 1 16 -3 119 0 0 -1 0 0 0 23 -23 0 0 5-8edge.dat
-0 // Circle 0.125
+0 // Circle 0.125 (main_colour)
 1 16 -3 83 19.5 0 1 0 0 0 16 -16 0 0 1-8edge.dat
-0 // Circle 0.125
+0 // Circle 0.125 (main_colour)
 1 16 -3 83 19.5 0 -1 0 0 0 23 -23 0 0 1-8edge.dat
 2 24 -3 115 -15.55 -3 118 -16
 2 24 -3 115 -23.049999 -3 119 -23
@@ -1880,7 +1880,7 @@
 2 24 -3 35.707401 9 -3 42.498798 0
 2 24 -3 47 3.5 -3 46.2285 1.6982
 2 24 -3 47.509899 0 -3 46.2285 1.6982
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 3 26.0531 0 0 -1 0 9.6543 0 0 0 0 9 rect2p.dat
 3 16 3 42.498798 0 3 35.707401 9 3 35.707401 -9
 4 16 3 88 6 3 44 5 3 44 -4 3 93 -4
@@ -1890,11 +1890,11 @@
 4 16 3 138 -17 3 144 3 3 132 0 3 126 -11
 4 16 3 122 -25 3 138 -17 3 126 -11 3 115 -14
 4 16 3 110 -23 3 122 -25 3 115 -14 3 110 -16
-0 // Circle 0.125
+0 // Circle 0.125 (main_colour)
 1 16 3 0 0 0 -1 0 17.55371 0 7.27099 -7.27099 0 17.55371 1-8edge.dat
 2 24 3 16.3988 -9 3 17.553699 -7.271
 2 24 3 16.3988 9 3 17.553499 7.2709
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 -3 26.0531 0 0 1 0 -9.6543 0 0 0 0 9 rect2p.dat
 3 16 -3 35.707401 9 -3 42.498798 0 -3 35.707401 -9
 4 16 -3 44 -4 -3 44 5 -3 88 6 -3 93 -4
@@ -1904,7 +1904,7 @@
 4 16 -3 132 0 -3 144 3 -3 138 -17 -3 126 -11
 4 16 -3 126 -11 -3 138 -17 -3 122 -25 -3 115 -14
 4 16 -3 115 -14 -3 122 -25 -3 110 -23 -3 110 -16
-0 // Circle 0.125
+0 // Circle 0.125 (main_colour)
 1 16 -3 0 0 0 1 0 17.55371 0 7.27099 -7.27099 0 17.55371 1-8edge.dat
 2 24 -3 16.3988 -9 -3 17.553699 -7.271
 2 24 -3 16.3988 9 -3 17.553499 7.2709
@@ -1932,9 +1932,9 @@
 1 16 60 14.5 64 0 0 -37.2 -37.2 0 0 0 20 0 48\10918 - tm04o2500.dat
 0 BFC INVERTNEXT
 1 16 60 14.5 65 0 0 -37.2 -37.2 0 0 0 4 0 48\1-4cylo.dat
-0 // Cylinder 0.1875
+0 // Cylinder 0.1875 (main_colour)
 1 16 22.8 14.5 64 -9.3 0 0 0 9.5 0 0 0 5 3-16cyli.dat
-0 // Circle 0.1875
+0 // Circle 0.1875 (main_colour)
 1 16 22.8 24 64 -9.3 0 0 0 1 0 0 0 5 3-16edge.dat
 5 24 22.799999 17.9 65 22.799999 17.9 69 22.799999 14.5 65 22 21.6 65
 5 24 22 21.6 65 22 21.6 68.900002 22.799999 17.9 65 20.799999 23.200001 65
@@ -1960,12 +1960,12 @@
 2 24 13.5 14.5 64 13.5 24 64
 2 24 15.0847 2.4658 64 15.9215 0 64
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.25
+0 // Cylinder Open 0.25 (main_colour)
 1 16 60 14.5 65 0 0 -42 -42 0 0 0 -21 0 1-4cylo.dat
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 60 14.5 44 0 0 -42 -42 0 0 0 -1 0 1-4chrd.dat
 2 24 17 24 65 19.2409 24 65
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 17.5 19.25 54.5 0 -1 -0.5 0 0 4.75 -10.5 0 0 rect3.dat
 1 16 60 14.5 65 0 0 -5.31429 -5.31429 0 0 0 1 0 48\1-4ring7.dat
 4 16 22.799999 14.5 65 17.485701 14.5 65 17 24 65 19.2409 24 65
@@ -1983,9 +1983,9 @@
 1 16 60 14.5 64 0 0 37.2 -37.2 0 0 0 20 0 48\10918 - tm04o2500.dat
 0 BFC INVERTNEXT
 1 16 60 14.5 65 0 0 37.2 -37.2 0 0 0 4 0 48\1-4cylo.dat
-0 // Cylinder 0.1875
+0 // Cylinder 0.1875 (main_colour)
 1 16 97.2 14.5 64 9.3 0 0 0 9.5 0 0 0 5 3-16cyli.dat
-0 // Circle 0.1875
+0 // Circle 0.1875 (main_colour)
 1 16 97.2 24 64 9.3 0 0 0 1 0 0 0 5 3-16edge.dat
 5 24 97.199997 17.9 65 97.199997 17.9 69 97.199997 14.5 65 98 21.6 65
 5 24 98 21.6 65 98 21.6 68.900002 97.199997 17.9 65 99.199997 23.200001 65
@@ -2011,12 +2011,12 @@
 2 24 106.5 14.5 64 106.5 24 64
 2 24 104.915298 2.4658 64 104.078499 0 64
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.25
+0 // Cylinder Open 0.25 (main_colour)
 1 16 60 14.5 65 0 0 42 -42 0 0 0 -21 0 1-4cylo.dat
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 60 14.5 44 0 0 42 -42 0 0 0 -1 0 1-4chrd.dat
 2 24 103 24 65 100.759102 24 65
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 102.5 19.25 54.5 0 1 0.5 0 0 4.75 10.5 0 0 rect3.dat
 1 16 60 14.5 65 0 0 5.31429 -5.31429 0 0 0 1 0 48\1-4ring7.dat
 4 16 103 24 65 102.514297 14.5 65 97.199997 14.5 65 100.759102 24 65
@@ -2030,16 +2030,16 @@
 2 24 15.9215 0 40 104.078499 0 40
 4 16 102.961403 -3.2956 40 17.0387 -3.2956 40 15.9215 0 40 104.078499 0 40
 3 16 102.961403 -3.2956 40 60 -32 40 17.0387 -3.2956 40
-0 // Cylinder Open 0.25
+0 // Cylinder Open 0.25 (main_colour)
 1 16 106.5 0 46 13 0 0 0 24 0 0 0 18 1-4cylo.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.25
+0 // Cylinder Open 0.25 (main_colour)
 1 16 106.5 4 46 9 0 0 0 20 0 0 0 14 1-4cylo.dat
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 106.5 0 46 13 0 0 0 1 0 0 0 18 1-4chrd.dat
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 106.5 24 46 13 0 0 0 -1 0 0 0 18 1-8chrd.dat
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 106.5 24 46 0 0 13 0 -1 0 18 0 0 1-8chrd.dat
 2 24 106.5 0 64 104.078499 0 64
 3 16 104.078499 0 64 106.5 0 64 106.5 24 64
@@ -2048,9 +2048,9 @@
 4 16 119.5 24 46 115.5 24 46 114.815102 24 51.3578 115.692299 24 58.727798
 3 16 114.815102 24 51.3578 112.863899 24 55.899399 115.692299 24 58.727798
 3 16 115.692299 24 58.727798 112.863899 24 55.899399 109.944298 24 58.934601
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 106.5 4 46 9 0 0 0 -1 0 0 0 14 1-4chrd.dat
-0 // Chord 0.1875
+0 // Chord 0.1875 (main_colour)
 1 16 22.8 24 64 -9.3 0 0 0 -1 0 0 0 5 3-16chrd.dat
 3 16 103 24 65 100.759102 24 65 100.759102 24 68.619499
 4 16 103 24 65 100.759102 24 68.619499 106.5 24 64 106.5 24 60
@@ -2059,24 +2059,24 @@
 4 16 106.5 24 40 106.5 4 40 71 4 40 74.5 24 40
 4 16 106.5 24 40 74.5 24 40 74.5 24 44 103 24 44
 4 16 106.5 24 60 106.5 24 40 103 24 44 103 24 65
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 106.5 14 50 0 -1 0 0 0 -10 10 0 0 rect.dat
 3 16 115.5 4 46 106.5 4 40 106.5 4 60
 2 24 21.5 4 32 21.5 4 40
 2 24 18.5 4 40 18.5 4 32
 2 24 18.5 4 40 18.5 23 40
 2 24 21.5 4 40 21.5 23 40
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 20 23 38.5 -1.5 0 0 0 -1 0 0 0 1.5 rect.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 20 20 34.5 1.5 0 0 0 0 -3 0 1 -2.5 rect3.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 20 10.5 32 1.5 0 0 0 0 -6.5 0 1 0 rect3.dat
 4 16 21.5 4 40 21.5 4 32 21.5 23 37 21.5 23 40
 3 16 21.5 4 32 21.5 17 32 21.5 23 37
 4 16 18.5 4 32 18.5 4 40 18.5 23 37 18.5 17 32
 3 16 18.5 4 40 18.5 23 40 18.5 23 37
-0 // Box with 4 Faces without 1 Edge
+0 // Box with 4 Faces without 1 Edge (main_colour)
 1 16 34 4 20 0 0 -2 0 19 0 -1.5 0 0 box4-1.dat
 2 24 39 4 40 49 4 40
 2 24 45.5 24 40 39 24 40
@@ -2084,7 +2084,7 @@
 3 16 19.2409 24 65 17 24 65 19.2409 24 68.619499
 4 16 13.5 24 64 19.2409 24 68.619499 17 24 65 13 24 60
 4 16 13 24 44 13 24 60 17 24 65 17 24 44
-0 // Chord 0.1875
+0 // Chord 0.1875 (main_colour)
 1 16 97.2 24 64 9.3 0 0 0 -1 0 0 0 5 3-16chrd.dat
 5 24 22.799999 14.5 69 20.799999 23.200001 68.800003 22 21.6 68.900002 19.2409 24 68.619499
 5 24 22 21.6 68.900002 22.799999 14.5 69 22.799999 17.9 69 20.799999 23.200001 68.800003
@@ -2103,36 +2103,36 @@
 0 !HISTORY 2020-12-12 {LEGO/Unity Microgame} Original part shape
 0 !HISTORY 2021-02-09 [Philo] File preparation for LDraw Parts Tracker
 
-0 // Cylinder Open 0.5
+0 // Cylinder Open 0.5 (main_colour)
 1 16 60 14.5 36 11 0 0 0 0 11 0 -27.5 0 2-4cylo.dat
 0 BFC INVERTNEXT
-0 // Cone  7 x 1.0
+0 // Cone  7 x 1.0 (main_colour)
 1 16 60 14.5 12 0 0 1 1 0 0 0 -2 0 4-4con7.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 1.0
+0 // Cylinder Open 1.0 (main_colour)
 1 16 60 14.5 10 0 0 7 7 0 0 0 -1.5 0 4-4cylo.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 60 14.5 8.5 0 0 7 7 0 0 0 1 0 4-4ndis.dat
-0 // Circle 0.3125
+0 // Circle 0.3125 (main_colour)
 1 16 60 14.5 40 0 0 9.6 9.6 0 0 0 1 0 5-16edge.dat
-0 // Disc Negative 0.3125
+0 // Disc Negative 0.3125 (main_colour)
 1 16 60 14.5 40 0 0 9.6 9.6 0 0 0 -1 0 5-16ndis.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.3125
+0 // Cylinder Open 0.3125 (main_colour)
 1 16 60 14.5 36 0 0 8 8 0 0 0 -24 0 5-16cylo.dat
 0 BFC INVERTNEXT
-0 // Cone  5 x 0.3125
+0 // Cone  5 x 0.3125 (main_colour)
 1 16 60 14.5 40 0 0 1.6 1.6 0 0 0 -4 0 10918 - 5-16con5.dat
 2 24 69 8 40 67.862999 9.3201 40
 2 24 69 8 12 66.800201 10.5541 12
 4 16 69 8 40 67.862999 9.3201 40 66.800201 10.5541 12 69 8 12
 2 24 66.800201 10.5541 36 67.862999 9.3201 40
-0 // Cylinder Open 0.125
+0 // Cylinder Open 0.125 (main_colour)
 1 16 60 14.5 40 0 0 17.5 17.5 0 0 0 -4 0 1-8cylo.dat
 2 24 74.5 24 36 74.5 24 40
 3 16 66.800201 10.5541 36 66.800201 10.5541 12 67.862999 9.3201 40
 4 16 67.862999 9.3201 40 68.8694 10.8261 40 67.391197 11.4384 36 66.800201 10.5541 36
-0 // Rectangle with 2 Adjacent Edges
+0 // Rectangle with 2 Adjacent Edges (main_colour)
 1 16 67.0957 10.99625 24 -0.2955 1 0 -0.44215 0 0 0 0 12 rect2a.dat
 2 24 68.8694 10.8261 40 67.862999 9.3201 40
 3 16 69 8 40 69.599998 4.9 40 68.8694 10.8261 40
@@ -2141,13 +2141,13 @@
 2 24 74.5 24 36 72.374298 26.8743 36
 4 16 72.374298 26.8743 40 74.5 24 40 74.5 24 36 72.374298 26.8743 36
 5 24 72.374298 26.8743 40 72.374298 26.8743 36 74.5 24 36 66.697304 30.668301 36
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 60 14.5 40 0 0 17.5 17.5 0 0 0 -1 0 1-8chrd.dat
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 60 14.5 36 0 0 17.5 17.5 0 0 0 1 0 1-8chrd.dat
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 60 14.5 8.5 0 0 11 11 0 0 0 1 0 1-8chrd.dat
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 60 14.5 8.5 11 0 0 0 0 11 0 1 0 1-8chrd.dat
 4 16 60 21.5 8.5 60 25.5 8.5 67.778099 22.278099 8.5 67 21.5 8.5
 4 16 67 21.5 8.5 67.778099 22.278099 8.5 71 14.5 8.5 67 7.5 8.5
@@ -2155,43 +2155,43 @@
 4 16 74.5 24 40 72.374298 26.8743 40 69.599998 24.1 40 69.599998 4.9 40
 4 16 70.162903 18.7097 36 60 25.5 36 60 32 36 72.374298 26.8743 36
 3 16 67 7.5 8.5 71 14.5 8.5 71 4 8.5
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 71 9.25 22.25 0 -1 0 0 0 -5.25 13.75 0 0 rect3.dat
 4 16 74.5 24 36 71 4 36 70.162903 18.7097 36 72.374298 26.8743 36
-0 // Circle 0.1875
+0 // Circle 0.1875 (main_colour)
 1 16 60 14.5 12 0 0 8 -8 0 0 0 1 0 3-16edge.dat
-0 // Disc Negative 0.1875
+0 // Disc Negative 0.1875 (main_colour)
 1 16 60 14.5 12 0 0 8 -8 0 0 0 -1 0 3-16ndis.dat
 4 16 69 8 12 67.391197 11.4384 12 68 6.5 12 69 4 12
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 69 6 26 0 1 0 -2 0 0 0 0 14 rect.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 65.5 4 26 0 0 -3.5 0 -1 0 -14 0 0 rect3.dat
-0 // Rectangle with 1 Edge
+0 // Rectangle with 1 Edge (main_colour)
 1 16 65 5.25 12 -3.5 0 0.5 0 0 -1.25 0 -1 0 rect1.dat
-0 // Rectangle with 2 Adjacent Edges
+0 // Rectangle with 2 Adjacent Edges (main_colour)
 1 16 61.5 5.25 26 -0.5 -1 0 1.25 0 0 0 0 14 rect2a.dat
 3 16 69 4 40 69.599998 4.9 40 69 8 40
-0 // Circle 0.3125
+0 // Circle 0.3125 (main_colour)
 1 16 60 14.5 40 0 0 -9.6 9.6 0 0 0 1 0 5-16edge.dat
-0 // Disc Negative 0.3125
+0 // Disc Negative 0.3125 (main_colour)
 1 16 60 14.5 40 0 0 -9.6 9.6 0 0 0 -1 0 5-16ndis.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.3125
+0 // Cylinder Open 0.3125 (main_colour)
 1 16 60 14.5 36 0 0 -8 8 0 0 0 -24 0 5-16cylo.dat
 0 BFC INVERTNEXT
-0 // Cone  5 x 0.3125
+0 // Cone  5 x 0.3125 (main_colour)
 1 16 60 14.5 40 0 0 -1.6 1.6 0 0 0 -4 0 10918 - 5-16con5.dat
 2 24 51 8 40 52.137001 9.3201 40
 2 24 51 8 12 53.199799 10.5541 12
 4 16 53.199799 10.5541 12 52.137001 9.3201 40 51 8 40 51 8 12
 2 24 53.199799 10.5541 36 52.137001 9.3201 40
-0 // Cylinder Open 0.125
+0 // Cylinder Open 0.125 (main_colour)
 1 16 60 14.5 40 0 0 -17.5 17.5 0 0 0 -4 0 1-8cylo.dat
 2 24 45.5 24 36 45.5 24 40
 3 16 53.199799 10.5541 12 53.199799 10.5541 36 52.137001 9.3201 40
 4 16 52.608799 11.4384 36 51.1306 10.8261 40 52.137001 9.3201 40 53.199799 10.5541 36
-0 // Rectangle with 2 Adjacent Edges
+0 // Rectangle with 2 Adjacent Edges (main_colour)
 1 16 52.9043 10.99625 24 0 -1 0.2955 0 0 -0.44215 12 0 0 rect2a.dat
 2 24 51.1306 10.8261 40 52.137001 9.3201 40
 3 16 50.400002 4.9 40 51 8 40 51.1306 10.8261 40
@@ -2200,13 +2200,13 @@
 2 24 45.5 24 36 47.625801 26.8743 36
 4 16 45.5 24 36 45.5 24 40 47.625801 26.8743 40 47.625801 26.8743 36
 5 24 47.625801 26.8743 40 47.625801 26.8743 36 45.5 24 36 53.302799 30.668301 36
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 60 14.5 40 0 0 -17.5 17.5 0 0 0 -1 0 1-8chrd.dat
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 60 14.5 36 0 0 -17.5 17.5 0 0 0 1 0 1-8chrd.dat
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 60 14.5 8.5 0 0 -11 11 0 0 0 1 0 1-8chrd.dat
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 60 14.5 8.5 -11 0 0 0 0 11 0 1 0 1-8chrd.dat
 4 16 52.221901 22.278099 8.5 60 25.5 8.5 60 21.5 8.5 53 21.5 8.5
 4 16 49 14.5 8.5 52.221901 22.278099 8.5 53 21.5 8.5 53 7.5 8.5
@@ -2214,35 +2214,35 @@
 4 16 50.400002 24.1 40 47.625801 26.8743 40 45.5 24 40 50.400002 4.9 40
 4 16 60 32 36 60 25.5 36 49.837101 18.7097 36 47.625801 26.8743 36
 3 16 49 14.5 8.5 53 7.5 8.5 49 4 8.5
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 49 9.25 22.25 0 1 0 0 0 -5.25 -13.75 0 0 rect3.dat
 4 16 49.837101 18.7097 36 49 4 36 45.5 24 36 47.625801 26.8743 36
-0 // Circle 0.1875
+0 // Circle 0.1875 (main_colour)
 1 16 60 14.5 12 0 0 -8 -8 0 0 0 1 0 3-16edge.dat
-0 // Disc Negative 0.1875
+0 // Disc Negative 0.1875 (main_colour)
 1 16 60 14.5 12 0 0 -8 -8 0 0 0 -1 0 3-16ndis.dat
 4 16 52 6.5 12 52.608799 11.4384 12 51 8 12 51 4 12
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 51 6 26 0 -1 0 0 0 2 -14 0 0 rect.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 54.5 4 26 0 0 3.5 0 -1 0 14 0 0 rect3.dat
-0 // Rectangle with 1 Edge
+0 // Rectangle with 1 Edge (main_colour)
 1 16 55 5.25 12 3.5 0 0.5 0 0 1.25 0 -1 0 rect1.dat
-0 // Rectangle with 2 Adjacent Edges
+0 // Rectangle with 2 Adjacent Edges (main_colour)
 1 16 58.5 5.25 26 0 1 0.5 0 0 1.25 14 0 0 rect2a.dat
 3 16 50.400002 4.9 40 51 4 40 51 8 40
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 60 6.5 26 -1 0 0 0 -1 0 0 0 14 rect2p.dat
 4 16 62 4 40 61 6.5 40 59 6.5 40 58 4 40
 4 16 71 4 8.5 49 4 8.5 53 7.5 8.5 67 7.5 8.5
 2 24 49 4 8.5 71 4 8.5
-0 // Cylinder Open 0.125
+0 // Cylinder Open 0.125 (main_colour)
 1 16 60 -1.5 5 0 0 12 12 0 0 0 -3 0 1-8cylo.dat
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 60 -1.5 5 0 0 12 12 0 0 0 -1 0 1-8chrd.dat
-0 // Cylinder Open 0.125
+0 // Cylinder Open 0.125 (main_colour)
 1 16 60 -1.5 5 0 0 -12 12 0 0 0 -3 0 1-8cylo.dat
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 60 -1.5 5 0 0 -12 12 0 0 0 -1 0 1-8chrd.dat
 2 24 70.5 4 5 70.5 4 2
 2 24 70.5 4 2 68.485199 6.9852 2
@@ -2257,14 +2257,14 @@
 2 24 49.5 4 5 70.5 4 5
 4 16 51.514801 6.9852 5 49.5 4 5 70.5 4 5 68.485199 6.9852 5
 3 16 60 10.5 5 51.514801 6.9852 5 68.485199 6.9852 5
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 60 -1.5 2 0 0 12 12 0 0 0 1 0 1-8chrd.dat
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 60 -1.5 2 0 0 -12 12 0 0 0 1 0 1-8chrd.dat
 2 24 49.5 4 2 70.5 4 2
 4 16 70.5 4 2 49.5 4 2 51.514801 6.9852 2 68.485199 6.9852 2
 3 16 51.514801 6.9852 2 60 10.5 2 68.485199 6.9852 2
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 60 27.54735 29.618 -1.5 0 0 0 -1 2.34565 0 0 6.382 rect3.dat
 2 24 60 25.5 24.047501 61.5 25.2017 23.236
 2 24 60 25.5 24.047501 58.5 25.2017 23.236
@@ -2496,64 +2496,64 @@
 0 BFC INVERTNEXT
 1 16 0 0 -26.8 0 0 18.375 18.375 0 0 0 -1.2 0 48\4-4cylc.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 1.0
+0 // Cylinder Open 1.0 (main_colour)
 1 16 0 0 -26.8 0 0 5 5 0 0 0 -1.2 0 4-4cylo.dat
-0 // Ring  2 x 1.0
+0 // Ring  2 x 1.0 (main_colour)
 1 16 0 0 -28 0 0 2.5 2.5 0 0 0 1 0 4-4ring2.dat
-0 // Cone 10 x 1.0
+0 // Cone 10 x 1.0 (main_colour)
 1 16 0 0 -26.8 0 0 0.75 0.75 0 0 0 -1.2 0 4-4con10.dat
-0 // Circle 1.0
+0 // Circle 1.0 (main_colour)
 1 16 0 0 -26.8 0 0 8.25 8.25 0 0 0 -1 0 4-4edge.dat
-0 // Circle 1.0
+0 // Circle 1.0 (main_colour)
 1 16 0 0 -28 0 0 7.5 7.5 0 0 0 -1 0 4-4edge.dat
-0 // Bump 1.0 x 0.5
+0 // Bump 1.0 x 0.5 (main_colour)
 1 16 13 0 -26.8 0 0 3 3 0 0 0 2.4 0 bump5000.dat
-0 // Bump 1.0 x 0.5
+0 // Bump 1.0 x 0.5 (main_colour)
 1 16 6.5 11.2583 -26.8 -2.59808 0 1.5 1.5 0 2.59808 0 2.4 0 bump5000.dat
-0 // Bump 1.0 x 0.5
+0 // Bump 1.0 x 0.5 (main_colour)
 1 16 -6.5 11.2583 -26.8 -2.59808 0 -1.5 -1.5 0 2.59808 0 2.4 0 bump5000.dat
-0 // Bump 1.0 x 0.5
+0 // Bump 1.0 x 0.5 (main_colour)
 1 16 -13 0 -26.8 0 0 -3 -3 0 0 0 2.4 0 bump5000.dat
-0 // Bump 1.0 x 0.5
+0 // Bump 1.0 x 0.5 (main_colour)
 1 16 -6.5 -11.2583 -26.8 2.59808 0 -1.5 -1.5 0 -2.59808 0 2.4 0 bump5000.dat
-0 // Bump 1.0 x 0.5
+0 // Bump 1.0 x 0.5 (main_colour)
 1 16 6.5 -11.2583 -26.8 2.59808 0 1.5 1.5 0 -2.59808 0 2.4 0 bump5000.dat
-0 // Cylinder Open 1.0
+0 // Cylinder Open 1.0 (main_colour)
 1 16 0 0 -24 0 0 20 20 0 0 0 18.5 0 4-4cylo.dat
-0 // Cone  9 x 1.0
+0 // Cone  9 x 1.0 (main_colour)
 1 16 0 0 -5.5 0 0 2 2 0 0 0 2 0 4-4con9.dat
-0 // Circle 1.0
+0 // Circle 1.0 (main_colour)
 1 16 0 0 -3.5 0 0 18 18 0 0 0 1 0 4-4edge.dat
-0 // Circle 1.0
+0 // Circle 1.0 (main_colour)
 1 16 0 0 -3.5 2.73126 0 13.73099 13.73099 0 -2.73126 0 1 0 4-4edge.dat
-0 // Circle 1.0
+0 // Circle 1.0 (main_colour)
 1 16 0 0 0 2.63372 0 13.2406 13.2406 0 -2.63372 0 1 0 4-4edge.dat
-0 // Cone 27 x 0.25
+0 // Cone 27 x 0.25 (main_colour)
 1 16 0 0 -3.5 0.09755 0 0.49039 0.49039 0 -0.09755 0 3.5 0 1-4con27.dat
-0 // Cone 27 x 0.25
+0 // Cone 27 x 0.25 (main_colour)
 1 16 0 0 -3.5 0.09755 0 -0.49039 0.49039 0 0.09755 0 3.5 0 1-4con27.dat
-0 // Cone 27 x 0.25
+0 // Cone 27 x 0.25 (main_colour)
 1 16 0 0 -3.5 -0.09755 0 0.49039 -0.49039 0 -0.09755 0 3.5 0 1-4con27.dat
-0 // Cone 27 x 0.25
+0 // Cone 27 x 0.25 (main_colour)
 1 16 0 0 -3.5 -0.09755 0 -0.49039 -0.49039 0 0.09755 0 3.5 0 1-4con27.dat
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 0 0 0 11.22484 0 7.5002 7.5002 0 -11.22484 0 -1 0 1-4chrd.dat
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 0 0 0 7.5002 0 -11.22484 -11.22484 0 -7.5002 0 -1 0 1-8chrd.dat
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 0 0 0 11.22484 0 -7.5002 7.5002 0 11.22484 0 -1 0 1-8chrd.dat
-0 // Disc Negative 0.4375
+0 // Disc Negative 0.4375 (main_colour)
 1 16 0 0 0 1.56072 0 7.84628 7.84628 0 -1.56072 0 -1 0 7-16ndis.dat
 4 16 9.407 6.2856 0 6.2856 -9.407 0 7.5001 -11.2247 0 11.2247 7.5001 0
 4 16 2.6337 13.2405 0 1.5607 11.6 0 9.407 6.2856 0 11.2247 7.5001 0
 3 16 1.5607 7.8463 0 9.407 6.2856 0 1.5607 11.6 0
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 0 0 0 -11.22484 0 -7.5002 -7.5002 0 11.22484 0 -1 0 1-4chrd.dat
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 0 0 0 -7.5002 0 11.22484 11.22484 0 7.5002 0 -1 0 1-8chrd.dat
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 0 0 0 -11.22484 0 7.5002 -7.5002 0 -11.22484 0 -1 0 1-8chrd.dat
-0 // Disc Negative 0.4375
+0 // Disc Negative 0.4375 (main_colour)
 1 16 0 0 0 -1.56072 0 -7.84628 -7.84628 0 1.56072 0 -1 0 7-16ndis.dat
 4 16 -9.407 -6.2856 0 -6.2856 9.407 0 -7.5001 11.2247 0 -11.2247 -7.5001 0
 4 16 -2.6337 -13.2405 0 -1.5607 -11.6 0 -9.407 -6.2856 0 -11.2247 -7.5001 0
@@ -2564,19 +2564,19 @@
 3 16 1.5607 -11.6 0 -1.5607 -11.6 0 -2.6337 -13.2405 0
 3 16 1.5607 -11.6 0 -2.6337 -13.2405 0 7.5002 -11.2248 0
 4 16 6.2856 -9.407 0 1.5608 -7.8465 0 1.5607 -11.6 0 7.5002 -11.2248 0
-0 // Ring  3 x 1.0
+0 // Ring  3 x 1.0 (main_colour)
 1 16 0 0 -3.5 0 0 4.5 4.5 0 0 0 -1 0 4-4ring3.dat
 0 BFC INVERTNEXT
-0 // Cone  6 x 0.25
+0 // Cone  6 x 0.25 (main_colour)
 1 16 0 0 -14 -0.22296 0 -1.1209 -1.1209 0 0.22296 0 -2.5 0 1-4con6.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.4375
+0 // Cylinder Open 0.4375 (main_colour)
 1 16 0 0 -16.5 -1.33776 0 -6.72538 -6.72538 0 1.33776 0 -3 0 7-16cylo.dat
 0 BFC INVERTNEXT
-0 // Cone  6 x 0.1875
+0 // Cone  6 x 0.1875 (main_colour)
 1 16 0 0 -14 -1.1209 0 0.22296 0.22296 0 1.1209 0 -2.5 0 3-16con6.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.4375
+0 // Cylinder Open 0.4375 (main_colour)
 1 16 0 0 0 -1.56072 0 -7.84628 -7.84628 0 1.56072 0 -14 0 7-16cylo.dat
 2 24 -1.5607 -7.8463 -14 -1.5607 -7.8463 0
 2 24 -1.3378 -6.7254 -16.5 -1.5607 -7.8463 -14
@@ -2606,19 +2606,19 @@
 2 24 1.3378 -11.6 -19.5 1.3378 -11.6 -16.5
 2 24 1.3378 -11.6 -19.5 -1.3378 -11.6 -19.5
 4 16 1.5607 -11.6 -14 1.3378 -11.6 -19.5 -1.3378 -11.6 -19.5 -1.5607 -11.6 -14
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 0 -11.6 -7 -1.5607 0 0 0 -1 0 0 0 7 rect3.dat
 0 BFC INVERTNEXT
-0 // Cone  6 x 0.25
+0 // Cone  6 x 0.25 (main_colour)
 1 16 0 0 -14 0.22296 0 1.1209 1.1209 0 -0.22296 0 -2.5 0 1-4con6.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.4375
+0 // Cylinder Open 0.4375 (main_colour)
 1 16 0 0 -16.5 1.33776 0 6.72538 6.72538 0 -1.33776 0 -3 0 7-16cylo.dat
 0 BFC INVERTNEXT
-0 // Cone  6 x 0.1875
+0 // Cone  6 x 0.1875 (main_colour)
 1 16 0 0 -14 1.1209 0 -0.22296 -0.22296 0 -1.1209 0 -2.5 0 3-16con6.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.4375
+0 // Cylinder Open 0.4375 (main_colour)
 1 16 0 0 0 1.56072 0 7.84628 7.84628 0 -1.56072 0 -14 0 7-16cylo.dat
 2 24 1.5607 7.8463 -14 1.5607 7.8463 0
 2 24 1.3378 6.7254 -16.5 1.5607 7.8463 -14
@@ -2646,7 +2646,7 @@
 2 24 -1.3378 11.6 -19.5 -1.3378 11.6 -16.5
 2 24 -1.3378 11.6 -19.5 1.3378 11.6 -19.5
 4 16 -1.5607 11.6 -14 -1.3378 11.6 -19.5 1.3378 11.6 -19.5 1.5607 11.6 -14
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 0 11.6 -7 1.5607 0 0 0 1 0 0 0 7 rect3.dat
 
 0 FILE 10918 - 12590.dat
@@ -2688,24 +2688,24 @@
 1 16 0 0 0 0.86603 0.5 0 -0.5 0.86603 0 0 0 1 s\10918 - 12590s01.dat
 1 16 0 0 0 0.96593 0.25882 0 -0.25882 0.96593 0 0 0 1 s\10918 - 12590s01.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 1.0
+0 // Cylinder Open 1.0 (main_colour)
 1 16 0 0 -24 0 0 20 20 0 0 0 20.5 0 4-4cylo.dat
-0 // Ring  5 x 1.0
+0 // Ring  5 x 1.0 (main_colour)
 1 16 0 0 -3.5 0 0 4 4 0 0 0 -1 0 4-4ring5.dat
-0 // Circle 1.0
+0 // Circle 1.0 (main_colour)
 1 16 0 0 -3.5 0 0 24 24 0 0 0 1 0 4-4edge.dat
-0 // Cone 12 x 1.0
+0 // Cone 12 x 1.0 (main_colour)
 1 16 0 0 -26 0 0 2 2 0 0 0 22.5 0 4-4con12.dat
-0 // Circle 1.0
+0 // Circle 1.0 (main_colour)
 1 16 0 0 -26 0 0 26 26 0 0 0 1 0 4-4edge.dat
-0 // ~Ring 10 x 1.0 (Obsolete)
+0 // ~Ring 10 x 1.0 (Obsolete) (main_colour)
 1 16 0 0 -26 0 0 2.6 2.6 0 0 0 -1 0 4-4rin10.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 1.0
+0 // Cylinder Open 1.0 (main_colour)
 1 16 0 0 -26 0 0 28.6 28.6 0 0 0 22.2 0 4-4cylo.dat
 1 16 0 0 -3.8 0 0 1.90667 1.90667 0 0 0 -1 0 48\4-4rin15.dat
 1 16 0 0 -3.8 0 0 28.6 28.6 0 0 0 -1 0 48\4-4aring.dat
-0 // ~Ring 12 x 1.0 (Obsolete)
+0 // ~Ring 12 x 1.0 (Obsolete) (main_colour)
 1 16 0 0 -24 0 0 1.66667 1.66667 0 0 0 1 0 4-4rin12.dat
 
 0 FILE s\10918 - 12590s01.dat
@@ -2897,65 +2897,65 @@
 0 !HISTORY 2020-12-12 {LEGO/Unity Microgame} Original part shape
 0 !HISTORY 2021-02-09 [Philo] File preparation for LDraw Parts Tracker
 
-0 // Cylinder Open 1.0
+0 // Cylinder Open 1.0 (main_colour)
 1 16 0 0 26 8 0 0 0 0 8 0 -40 0 4-4cylo.dat
-0 // Cone  6 x 1.0
+0 // Cone  6 x 1.0 (main_colour)
 1 16 0 0 -14 0 0 1.14286 1.14286 0 0 0 -2.5 0 4-4con6.dat
-0 // Cylinder Open 1.0
+0 // Cylinder Open 1.0 (main_colour)
 1 16 0 0 -16.5 0 0 6.85714 6.85714 0 0 0 -3 0 4-4cylo.dat
-0 // Cylinder Open 1.0
+0 // Cylinder Open 1.0 (main_colour)
 1 16 0 0 -19.5 8 0 0 0 0 8 0 -2 0 4-4cylo.dat
-0 // Cone  6 x 1.0
+0 // Cone  6 x 1.0 (main_colour)
 1 16 0 0 -21.5 0 0 1.14286 1.14286 0 0 0 -1.5 0 4-4con6.dat
 0 BFC INVERTNEXT
-0 // Cylinder Closed 1.0
+0 // Cylinder Closed 1.0 (main_colour)
 1 16 0 0 3 4 0 0 0 0 4 0 -26 0 4-4cylc.dat
-0 // Circle 1.0
+0 // Circle 1.0 (main_colour)
 1 16 0 0 -23 0 0 6.85714 6.85714 0 0 0 -1 0 4-4edge.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 0 0 -23 -2.82843 0 2.82843 2.82843 0 2.82843 0 1 0 4-4ndis.dat
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 0 0 -23 0 0 6.85714 6.85714 0 0 0 1 0 1-4chrd.dat
 4 16 5.6569 0 -23 0 5.6569 -23 0 6.8571 -23 6.8571 0 -23
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 0 0 -23 -6.85714 0 0 0 0 6.85714 0 1 0 1-4chrd.dat
 4 16 0 5.6569 -23 -5.6569 0 -23 -6.8571 0 -23 0 6.8571 -23
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 0 0 -23 0 0 -6.85714 -6.85714 0 0 0 1 0 1-4chrd.dat
 4 16 -5.6569 0 -23 0 -5.6569 -23 0 -6.8571 -23 -6.8571 0 -23
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 0 0 -23 6.85714 0 0 0 0 -6.85714 0 1 0 1-4chrd.dat
 4 16 0 -5.6569 -23 5.6569 0 -23 6.8571 0 -23 0 -6.8571 -23
-0 // Cone  6 x 1.0
+0 // Cone  6 x 1.0 (main_colour)
 1 16 0 0 26 0 0 1.14286 1.14286 0 0 0 2.5 0 4-4con6.dat
-0 // Cylinder Open 1.0
+0 // Cylinder Open 1.0 (main_colour)
 1 16 0 0 28.5 0 0 6.85714 6.85714 0 0 0 3 0 4-4cylo.dat
-0 // Cylinder Open 1.0
+0 // Cylinder Open 1.0 (main_colour)
 1 16 0 0 31.5 8 0 0 0 0 8 0 2 0 4-4cylo.dat
-0 // Cone  6 x 1.0
+0 // Cone  6 x 1.0 (main_colour)
 1 16 0 0 33.5 0 0 1.14286 1.14286 0 0 0 1.5 0 4-4con6.dat
 0 BFC INVERTNEXT
-0 // Cylinder Closed 1.0
+0 // Cylinder Closed 1.0 (main_colour)
 1 16 0 0 9 4 0 0 0 0 4 0 26 0 4-4cylc.dat
-0 // Circle 1.0
+0 // Circle 1.0 (main_colour)
 1 16 0 0 35 0 0 6.85714 6.85714 0 0 0 1 0 4-4edge.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 0 0 35 -2.82843 0 2.82843 2.82843 0 2.82843 0 -1 0 4-4ndis.dat
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 0 0 35 0 0 6.85714 6.85714 0 0 0 -1 0 1-4chrd.dat
 4 16 0 6.8571 35 0 5.6569 35 5.6569 0 35 6.8571 0 35
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 0 0 35 -6.85714 0 0 0 0 6.85714 0 -1 0 1-4chrd.dat
 4 16 -6.8571 0 35 -5.6569 0 35 0 5.6569 35 0 6.8571 35
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 0 0 35 0 0 -6.85714 -6.85714 0 0 0 -1 0 1-4chrd.dat
 4 16 0 -6.8571 35 0 -5.6569 35 -5.6569 0 35 -6.8571 0 35
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 0 0 35 6.85714 0 0 0 0 -6.85714 0 -1 0 1-4chrd.dat
 4 16 6.8571 0 35 5.6569 0 35 0 -5.6569 35 0 -6.8571 35
-0 // Ring  6 x 1.0
+0 // Ring  6 x 1.0 (main_colour)
 1 16 0 0 -19.5 0 0 1.14286 1.14286 0 0 0 -1 0 4-4ring6.dat
-0 // Ring  6 x 1.0
+0 // Ring  6 x 1.0 (main_colour)
 1 16 0 0 31.5 0 0 1.14286 1.14286 0 0 0 1 0 4-4ring6.dat
 
 0 FILE s\10918 - 11170s01.dat
@@ -2971,9 +2971,9 @@
 0 !HISTORY 2021-01-05 [Philo] File preparation for LDraw Parts Tracker
 
 1 16 0 0 20 1 0 0 0 2.75 0 0 0 1 10918 - stug7-1x2.dat
-0 // Rectangle Empty with 3 Edges
+0 // Rectangle Empty with 3 Edges (main_colour)
 1 16 0 72 0 40 0 0 0 1 0 0 0 -40 recte3.dat
-0 // Box with 2 Faces without 5 Edges
+0 // Box with 2 Faces without 5 Edges (main_colour)
 1 16 0 36 20 40 0 0 0 -36 0 0 0 20 box2-5.dat
 1 16 40 69.28 40 0 -1 0 0 0 -80 -80 0 0 48\1-24chrd.dat
 1 16 40 69.28 40 0 -1 0 -20.70552 0 -77.27407 -77.27407 0 20.70552 48\1-24chrd.dat
@@ -2987,24 +2987,24 @@
 1 16 -40 69.28 40 0 1 0 -20.70552 0 -77.27407 -77.27407 0 20.70552 48\1-24chrd.dat
 1 16 -40 69.28 40 0 1 0 -40 0 -69.28203 -69.28203 0 40 48\1-24chrd.dat
 1 16 -40 69.28 40 0 1 0 -56.56854 0 -56.56854 -56.56854 0 56.56854 48\1-24chrd.dat
-0 // Rectangle Empty with 4 Edges
+0 // Rectangle Empty with 4 Edges (main_colour)
 1 16 0 72 0 36 0 0 0 1 0 0 0 36 recte4.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.125
+0 // Cylinder Open 0.125 (main_colour)
 1 16 36 62 94 0 -72 0 0 0 -82 -130 0 0 1-8cylo.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 0 67 -36 0 0 36 -5 0 0 0 -1 0 rect2p.dat
 4 16 -40 72 -40 -36 72 -36 36 72 -36 40 72 -40
 4 16 -40 72 40 -36 72 36 -36 72 -36 -40 72 -40
 4 16 40 72 40 36 72 36 -36 72 36 -40 72 40
 4 16 40 72 -40 36 72 -36 36 72 36 40 72 40
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 0 4.0178 19.0385 36 0 0 0 -1 0 0 0 -16.9615 rect.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 0 38.0089 36 0 0 -36 -33.9911 0 0 0 1 0 rect2p.dat
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 36 62 94 0 1 0 0 0 -82 -130 0 0 1-8chrd.dat
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 -36 62 94 0 -1 0 0 0 -82 -130 0 0 1-8chrd.dat
 4 16 36 72 -36 36 62 -36 36 4.0178 2.077 36 72 36
 3 16 36 4.0178 2.077 36 4.0178 36 36 72 36
@@ -3012,27 +3012,27 @@
 3 16 -36 4.0178 36 -36 4.0178 2.077 -36 72 36
 1 16 0 19 0 1 0 0 0 -12.25 0 0 0 1 stud8a.dat
 0 BFC INVERTNEXT
-0 // Cylinder 0.5
+0 // Cylinder 0.5 (main_colour)
 1 16 0 19 0 14 0 0 0 -15 0 0 0 14 2-4cyli.dat
-0 // Cylinder 0.5
+0 // Cylinder 0.5 (main_colour)
 1 16 0 19 0 16 0 0 0 -15 0 0 0 16 2-4cyli.dat
 0 BFC INVERTNEXT
-0 // Cylinder Sloped 0.25
+0 // Cylinder Sloped 0.25 (main_colour)
 1 16 0 19 0 0 0 -14 0 -15 0 -14 0 0 1-4cyls.dat
 0 BFC INVERTNEXT
-0 // Cylinder Sloped 0.25
+0 // Cylinder Sloped 0.25 (main_colour)
 1 16 0 19 0 0 0 14 0 -15 0 -14 0 0 1-4cyls.dat
-0 // Cylinder Sloped 0.25
+0 // Cylinder Sloped 0.25 (main_colour)
 1 16 0 19 0 0 0 -16 0 -15 0 -16 0 0 1-4cyls.dat
-0 // Cylinder Sloped 0.25
+0 // Cylinder Sloped 0.25 (main_colour)
 1 16 0 19 0 0 0 16 0 -15 0 -16 0 0 1-4cyls.dat
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 0 5.9781 0 14 0 0 0 -1 13.2136 0 0 -14 2-4edge.dat
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 0 5.9781 0 16 0 0 0 -1 15.1012 0 0 -16 2-4edge.dat
-0 // Circle 0.375
+0 // Circle 0.375 (main_colour)
 1 16 0 4.0178 0 12.93431 0 -5.35757 0 -1 0 5.35757 0 12.93431 3-8edge.dat
-0 // Circle 0.375
+0 // Circle 0.375 (main_colour)
 1 16 0 4.0178 0 14.78207 0 -6.12293 0 -1 0 6.12293 0 14.78207 3-8edge.dat
 2 24 15.587 4.0178 2.077 16 5.9781 0
 2 24 -15.587 4.0178 2.077 -16 5.9781 0
@@ -3042,35 +3042,35 @@
 2 24 -14.7824 4.0178 6.1232 -15.587 4.0178 2.077
 2 24 12.9346 4.0178 5.3578 13.587 4.0178 2.077
 2 24 -12.9346 4.0178 5.3578 -13.587 4.0178 2.077
-0 // Box with 4 Faces without 1 Edge
+0 // Box with 4 Faces without 1 Edge (main_colour)
 1 16 20 37.5178 36 1.5 0 0 0 0 33.5 0 -4 0 box4-1.dat
-0 // Box with 4 Faces without 1 Edge
+0 // Box with 4 Faces without 1 Edge (main_colour)
 1 16 -20 37.5178 36 1.5 0 0 0 0 33.5 0 -4 0 box4-1.dat
-0 // Box with 4 Faces without 1 Edge
+0 // Box with 4 Faces without 1 Edge (main_colour)
 1 16 36 37.5178 20 0 -4 0 0 0 33.5 -1.5 0 0 box4-1.dat
-0 // Box with  4 Faces without  4 Adjacent Edges
+0 // Box with  4 Faces without  4 Adjacent Edges (main_colour)
 1 16 36 47 -20 0 -4 0 0 0 24 -1.5 0 0 box4-4a.dat
 2 24 36 26.270399 -21.5 32 26.270399 -21.5
 2 24 32 23.4389 -18.5 36 23.4389 -18.5
 2 24 32 26.270399 -21.5 32 23.4389 -18.5
-0 // Box with 4 Faces without 1 Edge
+0 // Box with 4 Faces without 1 Edge (main_colour)
 1 16 -36 37.5178 20 0 4 0 0 0 33.5 -1.5 0 0 box4-1.dat
-0 // Box with  4 Faces without  4 Adjacent Edges
+0 // Box with  4 Faces without  4 Adjacent Edges (main_colour)
 1 16 -36 47 -20 0 4 0 0 0 24 -1.5 0 0 box4-4a.dat
 2 24 -36 26.270399 -21.5 -32 26.270399 -21.5
 2 24 -32 23.4389 -18.5 -36 23.4389 -18.5
 2 24 -32 26.270399 -21.5 -32 23.4389 -18.5
-0 // Box with  4 Faces without  4 Adjacent Edges
+0 // Box with  4 Faces without  4 Adjacent Edges (main_colour)
 1 16 20 60 -36 1.5 0 0 0 0 11 0 4 0 box4-4a.dat
 2 24 18.5 49.311699 -32 21.5 49.311699 -32
 2 24 21.5 49.311699 -32 21.5 62 -36
 2 24 18.5 49.311699 -32 18.5 62 -36
-0 // Box with  4 Faces without  4 Adjacent Edges
+0 // Box with  4 Faces without  4 Adjacent Edges (main_colour)
 1 16 -20 60 -36 1.5 0 0 0 0 11 0 4 0 box4-4a.dat
 2 24 -21.5 49.311699 -32 -18.5 49.311699 -32
 2 24 -18.5 49.311699 -32 -18.5 62 -36
 2 24 -21.5 49.311699 -32 -21.5 62 -36
-0 // Box with  3 Faces without  5 Edges
+0 // Box with  3 Faces without  5 Edges (main_colour)
 1 16 0 4.0178 25.8 0 0 1.5 0 40 0 -10.2 0 0 box3u5p.dat
 2 24 -1.5 44.017799 15.7017 0 44.017799 16
 2 24 -1.5 44.017799 15.7017 -1.5 4.0178 15.7017
@@ -3100,25 +3100,25 @@
 
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\10918 - 47408s01.dat
 1 16 0 4 0 -1 0 0 0 -23 0 0 0 1 stud8.dat
-0 // Box with  4 Faces without  4 Adjacent Edges
+0 // Box with  4 Faces without  4 Adjacent Edges (main_colour)
 1 16 0 4 13 1.5 0 0 0 91 0 0 0 -1 box4-4a.dat
 2 24 -1.5 95 13.7017 0 95 14
 2 24 0 95 14 1.5 95 13.7017
 2 24 1.5 95 13.7017 1.5 4 13.7017
 2 24 -1.5 4 13.7017 -1.5 95 13.7017
-0 // Box with  4 Faces without  4 Adjacent Edges
+0 // Box with  4 Faces without  4 Adjacent Edges (main_colour)
 1 16 13 4 0 0 0 -1 0 91 0 -1.5 0 0 box4-4a.dat
 2 24 13.7017 95 1.5 14 95 0
 2 24 14 95 0 13.7017 95 -1.5
 2 24 13.7017 95 -1.5 13.7017 4 -1.5
 2 24 13.7017 4 1.5 13.7017 95 1.5
-0 // Box with  4 Faces without  4 Adjacent Edges
+0 // Box with  4 Faces without  4 Adjacent Edges (main_colour)
 1 16 0 4 -13 -1.5 0 0 0 91 0 0 0 1 box4-4a.dat
 2 24 1.5 95 -13.7017 0 95 -14
 2 24 0 95 -14 -1.5 95 -13.7017
 2 24 -1.5 95 -13.7017 -1.5 4 -13.7017
 2 24 1.5 4 -13.7017 1.5 95 -13.7017
-0 // Box with  4 Faces without  4 Adjacent Edges
+0 // Box with  4 Faces without  4 Adjacent Edges (main_colour)
 1 16 -13 4 0 0 0 1 0 91 0 1.5 0 0 box4-4a.dat
 2 24 -13.7017 95 -1.5 -14 95 0
 2 24 -14 95 0 -13.7017 95 1.5
@@ -3187,74 +3187,74 @@
 0 BFC CERTIFY CCW
 
 1 16 0 0 0 1 0 0 0 2.75 0 0 0 1 stud7.dat
-0 // Cylinder Open 0.25
+0 // Cylinder Open 0.25 (main_colour)
 1 16 20 96 20 20 0 0 0 -24 0 0 0 20 1-4cylo.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 0 84 40 20 0 0 0 0 12 0 -1 0 rect2p.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.25
+0 // Cylinder Open 0.25 (main_colour)
 1 16 20 96 20 16 0 0 0 -20 0 0 0 16 1-4cylo.dat
-0 // Ring  4 x 0.25
+0 // Ring  4 x 0.25 (main_colour)
 1 16 20 96 20 4 0 0 0 -1 0 0 0 4 1-4ring4.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 0 86 36 -20 0 0 0 0 10 0 1 0 rect2p.dat
 4 16 20 96 40 20 96 36 -20 96 36 -20 96 40
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 20 72 20 20 0 0 0 1 0 0 0 20 1-4chrd.dat
 1 16 0 0 0 20 0 0 0 1 0 0 0 20 48\4-4edge.dat
 1 16 0 72 0 36 0 0 0 1 0 0 0 36 48\4-4edge.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 1.0
+0 // Cylinder Open 1.0 (main_colour)
 1 16 0 0 0 6 0 0 0 4 0 0 0 6 4-4cylo.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 0 0 0 6 0 0 0 1 0 0 0 6 4-4ndis.dat
 1 16 0 0 0 14.14214 0 -14.14214 0 1 0 14.14214 0 14.14214 48\1-4chrd.dat
 4 16 -6 0 6 6 0 6 14.142 0 14.142 -14.1421 0 14.1421
-0 // Cylinder Open 0.25
+0 // Cylinder Open 0.25 (main_colour)
 1 16 20 96 -20 0 0 20 0 -24 0 -20 0 0 1-4cylo.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 40 84 0 0 -1 0 0 0 12 -20 0 0 rect2p.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.25
+0 // Cylinder Open 0.25 (main_colour)
 1 16 20 96 -20 0 0 16 0 -20 0 -16 0 0 1-4cylo.dat
-0 // Ring  4 x 0.25
+0 // Ring  4 x 0.25 (main_colour)
 1 16 20 96 -20 0 0 4 0 -1 0 -4 0 0 1-4ring4.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 36 86 0 0 1 0 0 0 10 20 0 0 rect2p.dat
 4 16 40 96 -20 36 96 -20 36 96 20 40 96 20
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 20 72 -20 0 0 20 0 1 0 -20 0 0 1-4chrd.dat
 1 16 0 0 0 14.14214 0 14.14214 0 1 0 -14.14214 0 14.14214 48\1-4chrd.dat
 4 16 6 0 6 6 0 -6 14.142 0 -14.142 14.1421 0 14.1421
-0 // Cylinder Open 0.25
+0 // Cylinder Open 0.25 (main_colour)
 1 16 -20 96 -20 -20 0 0 0 -24 0 0 0 -20 1-4cylo.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 0 84 -40 -20 0 0 0 0 12 0 1 0 rect2p.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.25
+0 // Cylinder Open 0.25 (main_colour)
 1 16 -20 96 -20 -16 0 0 0 -20 0 0 0 -16 1-4cylo.dat
-0 // Ring  4 x 0.25
+0 // Ring  4 x 0.25 (main_colour)
 1 16 -20 96 -20 -4 0 0 0 -1 0 0 0 -4 1-4ring4.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 0 86 -36 20 0 0 0 0 10 0 -1 0 rect2p.dat
 4 16 -20 96 -40 -20 96 -36 20 96 -36 20 96 -40
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 -20 72 -20 -20 0 0 0 1 0 0 0 -20 1-4chrd.dat
 1 16 0 0 0 -14.14214 0 14.14214 0 1 0 -14.14214 0 -14.14214 48\1-4chrd.dat
 4 16 6 0 -6 -6 0 -6 -14.142 0 -14.142 14.1421 0 -14.1421
-0 // Cylinder Open 0.25
+0 // Cylinder Open 0.25 (main_colour)
 1 16 -20 96 20 0 0 -20 0 -24 0 20 0 0 1-4cylo.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 -40 84 0 0 1 0 0 0 12 20 0 0 rect2p.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.25
+0 // Cylinder Open 0.25 (main_colour)
 1 16 -20 96 20 0 0 -16 0 -20 0 16 0 0 1-4cylo.dat
-0 // Ring  4 x 0.25
+0 // Ring  4 x 0.25 (main_colour)
 1 16 -20 96 20 0 0 -4 0 -1 0 4 0 0 1-4ring4.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 -36 86 0 0 -1 0 0 0 10 -20 0 0 rect2p.dat
 4 16 -40 96 20 -36 96 20 -36 96 -20 -40 96 -20
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 -20 72 20 0 0 -20 0 1 0 20 0 0 1-4chrd.dat
 1 16 0 0 0 -14.14214 0 -14.14214 0 1 0 14.14214 0 -14.14214 48\1-4chrd.dat
 4 16 -6 0 -6 -6 0 6 -14.142 0 14.142 -14.1421 0 -14.1421
@@ -3272,7 +3272,7 @@
 4 16 40 72 -20 40 72 20 33.260399 72 13.7772 33.260399 72 -13.7772
 4 16 20 72 -40 40 72 -20 33.260399 72 -13.7772 13.7772 72 -33.260399
 4 16 32 76 -32 32 76 32 36.782398 76 25.123199 36.782398 76 -25.123199
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 0 4 0 6 0 0 0 -1 0 0 0 6 4-4ndis.dat
 1 16 0 4 0 16 0 0 0 -1 0 0 0 16 48\4-4edge.dat
 1 16 0 4 0 11.31371 0 -11.31371 0 -1 0 11.31371 0 11.31371 48\1-4chrd.dat
@@ -3285,49 +3285,49 @@
 4 16 11.3137 4 -11.3137 6 4 -6 6 4 6 11.3136 4 11.3136
 0 BFC INVERTNEXT
 1 16 0 76 0 16 0 0 0 -72 0 0 0 16 48\4-4con1.dat
-0 // Box with  4 Faces without  4 Adjacent Edges
+0 // Box with  4 Faces without  4 Adjacent Edges (main_colour)
 1 16 -20 76 34 1.5 0 0 0 19 0 0 0 -2 box4-4a.dat
 2 24 -21.5 95 35.701698 -20 95 36
 2 24 -20 95 36 -18.5 95 36
 2 24 -21.5 95 35.701698 -21.5 76 35.701698
 2 24 -18.5 95 36 -18.5 76 36
-0 // Box with  4 Faces without  4 Adjacent Edges
+0 // Box with  4 Faces without  4 Adjacent Edges (main_colour)
 1 16 20 76 34 -1.5 0 0 0 19 0 0 0 -2 box4-4a.dat
 2 24 21.5 95 35.701698 20 95 36
 2 24 20 95 36 18.5 95 36
 2 24 21.5 95 35.701698 21.5 76 35.701698
 2 24 18.5 95 36 18.5 76 36
-0 // Box with  4 Faces without  4 Adjacent Edges
+0 // Box with  4 Faces without  4 Adjacent Edges (main_colour)
 1 16 34 76 20 0 0 -2 0 19 0 -1.5 0 0 box4-4a.dat
 2 24 35.701698 95 21.5 36 95 20
 2 24 36 95 20 36 95 18.5
 2 24 35.701698 95 21.5 35.701698 76 21.5
 2 24 36 95 18.5 36 76 18.5
-0 // Box with  4 Faces without  4 Adjacent Edges
+0 // Box with  4 Faces without  4 Adjacent Edges (main_colour)
 1 16 34 76 -20 0 0 -2 0 19 0 1.5 0 0 box4-4a.dat
 2 24 35.701698 95 -21.5 36 95 -20
 2 24 36 95 -20 36 95 -18.5
 2 24 35.701698 95 -21.5 35.701698 76 -21.5
 2 24 36 95 -18.5 36 76 -18.5
-0 // Box with  4 Faces without  4 Adjacent Edges
+0 // Box with  4 Faces without  4 Adjacent Edges (main_colour)
 1 16 20 76 -34 -1.5 0 0 0 19 0 0 0 2 box4-4a.dat
 2 24 21.5 95 -35.701698 20 95 -36
 2 24 20 95 -36 18.5 95 -36
 2 24 21.5 95 -35.701698 21.5 76 -35.701698
 2 24 18.5 95 -36 18.5 76 -36
-0 // Box with  4 Faces without  4 Adjacent Edges
+0 // Box with  4 Faces without  4 Adjacent Edges (main_colour)
 1 16 -20 76 -34 1.5 0 0 0 19 0 0 0 2 box4-4a.dat
 2 24 -21.5 95 -35.701698 -20 95 -36
 2 24 -20 95 -36 -18.5 95 -36
 2 24 -21.5 95 -35.701698 -21.5 76 -35.701698
 2 24 -18.5 95 -36 -18.5 76 -36
-0 // Box with  4 Faces without  4 Adjacent Edges
+0 // Box with  4 Faces without  4 Adjacent Edges (main_colour)
 1 16 -34 76 -20 0 0 2 0 19 0 1.5 0 0 box4-4a.dat
 2 24 -35.701698 95 -21.5 -36 95 -20
 2 24 -36 95 -20 -36 95 -18.5
 2 24 -35.701698 95 -21.5 -35.701698 76 -21.5
 2 24 -36 95 -18.5 -36 76 -18.5
-0 // Box with  4 Faces without  4 Adjacent Edges
+0 // Box with  4 Faces without  4 Adjacent Edges (main_colour)
 1 16 -34 76 20 0 0 2 0 19 0 -1.5 0 0 box4-4a.dat
 2 24 -35.701698 95 21.5 -36 95 20
 2 24 -36 95 20 -36 95 18.5
@@ -3346,20 +3346,20 @@
 0 !HISTORY 2020-12-12 {LEGO/Unity Microgame} Original part shape
 0 !HISTORY 2021-01-23 [Philo] File preparation for LDraw Parts Tracker
 
-0 // Duplo Hinge Socket
+0 // Duplo Hinge Socket (main_colour)
 1 16 0 -100 -80 1 0 0 0 1 0 0 0 1 10918 - dhingesocket.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.5
+0 // Cylinder Open 0.5 (main_colour)
 1 16 40 -100 -80 0 -13.5 0 0 0 15.2 -15.2 0 0 2-4cylo.dat
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 26.5 -100 -80 0 -1 0 15.2 0 0 0 0 15.2 1-4chrd.dat
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 26.5 -100 -80 0 -1 0 15.2 0 0 0 0 -15.2 1-4chrd.dat
-0 // Ring  4 x 0.125
+0 // Ring  4 x 0.125 (main_colour)
 1 16 40 -100 -80 0 -1 0 0 0 -3.8 3.8 0 0 1-8ring4.dat
-0 // Cylinder Open 0.125
+0 // Cylinder Open 0.125 (main_colour)
 1 16 22.5 -100 -80 0 17.5 0 0 0 -19 19 0 0 1-8cylo.dat
-0 // Disc Negative Tangent 0.25
+0 // Disc Negative Tangent 0.25 (main_colour)
 1 16 40 -100 -80 0 -1 0 15.2 0 0 0 0 15.2 1-4tang.dat
 2 24 40 0 -40 40 -56.048302 -40
 2 24 40 -68.250999 -70.411003 40 -72 -76.226997
@@ -3369,13 +3369,13 @@
 2 24 40 -73.018997 -68.807999 40 -32.9118 30.195299
 2 24 40 -56.048302 -40 40 -68.250999 -70.411003
 2 24 40 -24.701 40 40 0 40
-0 // Cylinder Open 0.0625
+0 // Cylinder Open 0.0625 (main_colour)
 1 16 40 -100 -80 0 -13.5 0 19 0 0 0 0 -19 1-16cylo.dat
-0 // Ring  4 x 0.375
+0 // Ring  4 x 0.375 (main_colour)
 1 16 40 -100 -80 0 -1 0 3.8 0 0 0 0 -3.8 3-8ring4.dat
-0 // Cylinder Open 0.125
+0 // Cylinder Open 0.125 (main_colour)
 1 16 22.5 -100 -80 0 17.5 0 0 0 -19 -19 0 0 1-8cylo.dat
-0 // Cylinder Open 0.1875
+0 // Cylinder Open 0.1875 (main_colour)
 1 16 22.5 -100 -80 0 17.5 0 0 0 19 -19 0 0 3-16cylo.dat
 4 16 40 -100 -61 40 -100 -64.800003 40 -96.9767 -64.800003 40 -96 -61
 4 16 40 -96 -61 40 -96.9767 -64.800003 40 -94.182999 -65.956703 40 -91 -63.456902
@@ -3401,11 +3401,11 @@
 3 16 40 -52.4133 18.7836 40 -46.069801 22.4956 40 -24.701 40
 3 16 40 -24.701 40 40 -46.069801 22.4956 40 -32.9118 30.195299
 3 16 40 -24.701 40 40 -32.9118 30.195299 40 -26.355 34
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 25 -57.5 -35.591 0 0 1.5 -33.5 0 0 0 -1 -0.5 rect.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 23.5 -57.5 -34.091 0 -1 0 33.5 0 0 0 0 1 rect3.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 25 -57.5 -32.591 0 0 1.5 33.5 0 0 0 1 0.5 rect3.dat
 2 24 23.5 -73.348099 -33.091 26.5 -72.944504 -32.091
 2 24 26.5 -74.558701 -36.091 23.5 -74.155197 -35.091
@@ -3420,30 +3420,30 @@
 2 24 23.5 -54.078499 -35.091 26.5 -54.479698 -36.091
 2 24 23.5 -53.276001 -33.091 23.5 -54.078499 -35.091
 2 24 26.5 -77.875 -76.466003 26.5 -73.018997 -68.807999
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 33.25 -64.7695 -24.351 0 0 6.75 18.6997 -1 0 46.8466 0 0 rect3.dat
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 33.25 -88.8975 -64.93415 0 0 6.75 -2.1025 0 0 1.47725 -1 0 rect.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 33.25 -82.4061 -73.8318 6.75 0 0 0 -1 1.0631 0 0 -2.6342 rect3.dat
 4 16 26.5 -32.9118 30.195299 26.5 -73.018997 -68.807999 40 -73.018997 -68.807999 40 -32.9118 30.195299
-0 // Rectangle with 2 Adjacent Edges
+0 // Rectangle with 2 Adjacent Edges (main_colour)
 1 16 33.25 -91 -33.6897 0 0 6.75 0 -1 0 29.7672 0 0 rect2a.dat
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 33.25 -25.1775 34 0 0 6.75 1.1775 0 0 0 1 0 rect.dat
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 33.25 -39.23985 -36.091 0 0 6.75 -15.23985 0 0 0 -1 0 rect.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 33.25 -71.70665 7.43055 -6.75 0 0 0 0 19.29335 0 1 11.35305 rect3.dat
-0 // Rectangle with 1 Edge
+0 // Rectangle with 1 Edge (main_colour)
 1 16 33.25 -40.41735 -1.0455 6.75 0 0 0 -1 -14.06235 0 0 -35.0455 rect1.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 33.25 -39.4908 26.34545 -6.75 0 0 0 0 6.579 0 1 3.84985 rect3.dat
-0 // Rectangle with 1 Edge
+0 // Rectangle with 1 Edge (main_colour)
 1 16 33.25 -69.60415 -23.8139 6.75 0 0 0 1 17.19085 0 0 42.5975 rect1.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 33.25 -79.609 -76.466 6.75 0 0 0 0 1.734 0 -1 0 rect3.dat
-0 // Rectangle with 1 Edge
+0 // Rectangle with 1 Edge (main_colour)
 1 16 33.25 -24 -1.0455 6.75 0 0 0 1 0 0 0 35.0455 rect1.dat
 4 16 40 -73.018997 -68.807999 26.5 -73.018997 -68.807999 26.5 -77.875 -76.466003 40 -77.875 -76.466003
 5 24 26.5 -73.018997 -68.807999 40 -73.018997 -68.807999 26.5 -32.9118 30.195299 26.5 -77.875 -76.466003
@@ -3469,20 +3469,20 @@
 4 16 26.5 -73.018997 -68.807999 26.5 -59.764999 -36.091 26.5 -69.455704 -36.091 26.5 -83.4692 -71.197601
 4 16 26.5 -73.018997 -68.807999 26.5 -83.4692 -71.197601 26.5 -81.343002 -76.466003 26.5 -77.875 -76.466003
 2 24 22.5 -72 9.3962 22.5 -19.701 40
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 31.25 -60.3505 19.139 -8.75 0 0 0 0 -35.6495 0 -1 -20.861 rect.dat
 2 24 22.5 -24.701 40 22.5 -19.701 40
 4 16 22.5 -19.701 40 22.5 -24.701 40 40 -24.701 40 40 0 40
 4 16 22.5 -24.701 40 22.5 -19.701 40 22.5 -72 9.3962 22.5 -96 -1.722
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 31.25 -98 -61 8.75 0 0 0 0 2 0 -1 0 rect3.dat
 2 24 22.5 -96 -20 22.5 -96 -1.722
 2 24 22.5 -96 -40 22.5 -96 -61
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 22.5 -100 -80 0 1 0 0 0 -19 19 0 0 1-8chrd.dat
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 22.5 -100 -80 0 1 0 0 0 -19 -19 0 0 1-8chrd.dat
-0 // Chord 0.1875
+0 // Chord 0.1875 (main_colour)
 1 16 22.5 -100 -80 0 1 0 0 0 19 -19 0 0 3-16chrd.dat
 4 16 22.5 -82.4459 -87.271301 22.5 -100 -99 22.5 -113.434898 -93.434898 22.5 -94.133301 -85.866699
 4 16 22.5 -94.133301 -74.133301 22.5 -113.434898 -66.565102 22.5 -100 -61 22.5 -96 -61
@@ -3499,31 +3499,31 @@
 3 16 16.5 -96 -34 22.5 -96 -34 22.5 -96 -20
 3 16 22.5 -96 -34 22.5 -96 -40 40 -96 -61
 3 16 40 -96 -61 22.5 -96 -40 22.5 -96 -61
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 20.5 -13.89665 32 -2 0 0 0 0 12.89665 0 1 0 rect.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 20.5 -1 34 -2 0 0 0 -1 0 0 0 2 rect3.dat
-0 // Box with 4 Faces without 1 Edge
+0 // Box with 4 Faces without 1 Edge (main_colour)
 1 16 36 -10.5 -20 0 -4 0 0 0 9.5 -1.5 0 0 box4-1.dat
 4 16 36 0 -36 36 0 36 40 0 40 40 0 -40
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 36 -10 0 0 1 0 0 0 -10 -36 0 0 rect3.dat
-0 // Rectangle with 2 Adjacent Edges
+0 // Rectangle with 2 Adjacent Edges (main_colour)
 1 16 29.25 -20 0 0 0 -6.75 0 -1 0 -36 0 0 rect2a.dat
 2 24 22.5 -68 -23 22.5 -68 7.7369
 2 24 22.5 -68 -23 22.5 -91 -23
 2 24 22.5 -91 -32 22.5 -91 -23
 2 24 22.5 -68 7.7369 22.5 -26.793301 32
-0 // Rectangle with 2 Adjacent Edges
+0 // Rectangle with 2 Adjacent Edges (main_colour)
 1 16 22.5 -10.5 34 0 -1 0 0 0 -9.5 2 0 0 rect2a.dat
 4 16 18.5 -20 36 18.5 -1 36 18.5 -1 32 18.5 -26.793301 32
 2 24 18.5 -26.793301 32 18.5 -20 36
 2 24 18.5 -20 36 18.5 -1 36
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 20.5 -46 -32 2 0 0 0 0 45 0 -1 0 rect3.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 20.5 -1 -34 2 0 0 0 -1 0 0 0 -2 rect3.dat
-0 // Rectangle with 2 Adjacent Edges
+0 // Rectangle with 2 Adjacent Edges (main_colour)
 1 16 22.5 -10.5 -34 0 -1 0 -9.5 0 0 0 0 -2 rect2a.dat
 4 16 18.5 -1 -32 18.5 -1 -36 18.5 -79 -36 18.5 -91 -32
 2 24 18.5 -91 -32 18.5 -79 -36
@@ -3531,21 +3531,21 @@
 4 16 22.5 -91 -32 22.5 -91 -23 22.5 -68 -23 22.5 -20 -32
 4 16 22.5 -20 -32 22.5 -68 -23 22.5 -68 7.7369 22.5 -26.793301 32
 3 16 22.5 -26.793301 32 22.5 -20 32 22.5 -20 -32
-0 // Disc Negative 0.25
+0 // Disc Negative 0.25 (main_colour)
 1 16 0 -72 0 14 0 0 0 1 0 0 0 -14 1-4ndis.dat
-0 // Disc Negative 0.125
+0 // Disc Negative 0.125 (main_colour)
 1 16 0 -72 0 9.89949 0 9.89949 0 1 0 9.89949 0 -9.89949 1-8ndis.dat
-0 // Ring  3 x 0.125
+0 // Ring  3 x 0.125 (main_colour)
 1 16 0 -72 0 0 0 4.66667 0 1 0 4.66667 0 0 1-8ring3.dat
-0 // Circle 0.125
+0 // Circle 0.125 (main_colour)
 1 16 0 -72 0 0 0 18.66667 0 1 0 18.66667 0 0 1-8edge.dat
-0 // Circle 0.1875
+0 // Circle 0.1875 (main_colour)
 1 16 0 -81.1398 0 0 0 16 27.1732 1 0 16 0 0 3-16edge.dat
-0 // Circle 0.125
+0 // Circle 0.125 (main_colour)
 1 16 0 -88.0573 0 0 0 18.66667 31.9 1 0 18.66667 0 0 1-8edge.dat
-0 // Cylinder 0.125
+0 // Cylinder 0.125 (main_colour)
 1 16 0 -72 0 0 0 18.66667 0 10 0 18.66667 0 0 1-8cyli.dat
-0 // Cylinder Sloped 0.125 Convex
+0 // Cylinder Sloped 0.125 Convex (main_colour)
 1 16 0 -62 0 13.19933 0 13.19933 0 10 0 -13.19933 0 13.19933 1-8cyls2.dat
 2 24 22.5 -72 9.3962 15.7408 -72 9.3962
 4 16 22.5 -72 9.3962 22.5 -19.701 40 0 -56.158001 18.6665 15.7408 -72 9.3962
@@ -3558,9 +3558,9 @@
 4 16 13.9999 -72 0 14 -72 -14 22.5 -72 -20 19.799 -72 0
 3 16 22.5 -72 9.3962 15.7408 -72 9.3962 19.799 -72 0
 3 16 22.5 -72 9.3962 19.799 -72 0 22.5 -72 -20
-0 // Box with 4 Faces without 1 Edge
+0 // Box with 4 Faces without 1 Edge (main_colour)
 1 16 36 -10.5 20 0 -4 0 0 0 9.5 1.5 0 0 box4-1.dat
-0 // Circle 0.375
+0 // Circle 0.375 (main_colour)
 1 16 0 -68 0 0 0 16 0 64 0 -16 0 0 3-8edge.dat
 3 16 11.3136 -68 11.3136 22.5 -68 7.7369 16 -68 0
 4 16 16 -68 0 22.5 -68 7.7369 22.5 -68 -23 11.3136 -68 -11.3136
@@ -3568,49 +3568,49 @@
 2 24 22.5 -68 7.7369 13.7039 -68 7.7369
 4 16 22.5 -68 7.7369 13.7039 -68 7.7369 6.1232 -56.0345 14.7824 22.5 -26.793301 32
 0 BFC INVERTNEXT
-0 // Cylinder 0.25
+0 // Cylinder 0.25 (main_colour)
 1 16 19.5 -77.3724 -43.9281 3 0 0 0 19.7479 0 0 0 3 1-4cyli.dat
 0 BFC INVERTNEXT
-0 // Cone  1 x 0.25
+0 // Cone  1 x 0.25 (main_colour)
 1 16 16.5 -96 -40 3 3 0 0 18.6276 0 0 -3.9281 3 1-4con1.dat
-0 // Disc Negative 0.25
+0 // Disc Negative 0.25 (main_colour)
 1 16 16.5 -96 -40 6 0 0 0 1 0 0 0 6 1-4ndis.dat
 0 BFC INVERTNEXT
-0 // Cylinder Sloped 0.25 Convex
+0 // Cylinder Sloped 0.25 Convex (main_colour)
 1 16 19.5 -57.6244 -43.9281 0 0 3 0 1.2038 0 -3 0 0 1-4cyls2.dat
-0 // Disc Negative 0.25
+0 // Disc Negative 0.25 (main_colour)
 1 16 19.5 -57.6244 -43.9281 0 0 3 1.2038 -1 0 3 0 0 1-4ndis.dat
-0 // Circle 0.25
+0 // Circle 0.25 (main_colour)
 1 16 16.5 -96 -40 6 0 0 0 1 0 0 0 6 1-4edge.dat
-0 // Circle 0.25
+0 // Circle 0.25 (main_colour)
 1 16 19.5 -57.6244 -43.9281 0 0 3 1.2038 1 0 3 0 0 1-4edge.dat
-0 // Circle 0.25
+0 // Circle 0.25 (main_colour)
 1 16 19.5 -77.3724 -43.9281 3 0 0 0 1 0 0 0 3 1-4edge.dat
 3 16 22.5 -56.420601 -40.928101 19.5 -56.420601 -40.928101 40 -56.048302 -40
 2 24 22.5 -82 -78.5 22.5 -72 -78.5
 4 16 20.5 -80 -78.5 22.5 -82 -78.5 22.5 -72 -78.5 20.5 -72 -78.5
 2 24 22.5 -82 -81.5 22.5 -72 -81.5
 4 16 22.5 -72 -81.5 22.5 -82 -81.5 20.5 -80 -81.5 20.5 -72 -81.5
-0 // Cylinder Open 0.25
+0 // Cylinder Open 0.25 (main_colour)
 1 16 22.5 -76 -83.3 0 4 0 4 0 0 0 0 -4 1-4cylo.dat
 2 24 22.5 -72 -83.300003 22.5 -72 -81.5
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 21.5 -72 -80 0 0 -1 0 -1 0 -1.5 0 0 rect3.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 20.5 -76 -80 0 1 0 0 0 -4 -1.5 0 0 rect3.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 21.5 -81 -80 0 1 1 0 0 -1 -1.5 0 0 rect3.dat
 2 24 22.5 -72 -78.5 22.5 -72 -76.226997
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 24.5 -79.22295 -87.28565 2 0 0 0 0 -3.22295 0 1 0.01435 rect3.dat
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 22.5 -76 -83.3 0 4 0 4 0 0 0 0 -4 1-4chrd.dat
-0 // Chord 0.25
+0 // Chord 0.25 (main_colour)
 1 16 26.5 -76 -83.3 0 -4 0 4 0 0 0 0 -4 1-4chrd.dat
 4 16 40 -72 -80 40 -72 -76.226997 40 -73.018997 -68.807999 40 -77.875 -76.466003
 2 24 40 -72 -76.226997 22.5 -72 -76.226997
 2 24 26.5 -72 -83.300003 26.5 -72 -80
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 33.25 -76.5 -80 0 0 -6.75 -4.5 0 0 0 1 0 rect.dat
 4 16 22.5 -72 -76.226997 40 -72 -76.226997 40 -72 -80 26.5 -72 -80
 4 16 26.5 -72 -80 26.5 -72 -83.300003 22.5 -72 -83.300003 22.5 -72 -81.5
@@ -3637,27 +3637,27 @@
 
 0 // Fits parts with dhinge primitives
 0 BFC INVERTNEXT
-0 // Cylinder Open 1.0
+0 // Cylinder Open 1.0 (main_colour)
 1 16 24.1 0 0 0 3.9 0 4.4 0 0 0 0 4.4 4-4cylo.dat
-0 // Disc Negative 0.5
+0 // Disc Negative 0.5 (main_colour)
 1 16 28 0 0 0 -1 0 0 0 -4.4 4.4 0 0 2-4ndis.dat
-0 // Ring  3 x 0.5
+0 // Ring  3 x 0.5 (main_colour)
 1 16 28 0 0 0 -1 0 0 0 1.46667 1.46667 0 0 2-4ring3.dat
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 28 0 0 0 -1 0 0 0 5.86667 5.86667 0 0 2-4edge.dat
-0 // Cone  3 x 0.5
+0 // Cone  3 x 0.5 (main_colour)
 1 16 26.5 0 0 0 1.5 0 0 0 1.95556 1.95556 0 0 2-4con3.dat
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 26.5 0 0 0 -1 0 0 0 7.82222 7.82222 0 0 2-4edge.dat
 0 BFC INVERTNEXT
-0 // Cone  3 x 0.5
+0 // Cone  3 x 0.5 (main_colour)
 1 16 22.5 0 0 0 1.6 0 0 0 1.46667 -1.46667 0 0 2-4con3.dat
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 22.5 0 0 0 -1 0 0 0 5.86667 5.86667 0 0 2-4edge.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.125
+0 // Cylinder Open 0.125 (main_colour)
 1 16 40 0 0 0 -13.5 0 0 0 -15.2 15.2 0 0 1-8cylo.dat
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 26.5 0 0 0 -1 0 0 0 -15.2 15.2 0 0 1-8chrd.dat
 2 24 26.5 -8.2635 -7.8222 28 -7.6362 -5.8667
 4 16 28 -7.6362 -5.8667 26.5 -8.2635 -7.8222 26.5 0 -7.8222 28 0 -5.8667
@@ -3699,9 +3699,9 @@
 2 24 40 -14.0433 5.817 40 -10.7479 10.7479
 4 16 26.5 -10.7479 10.7479 26.5 -8.2635 7.8222 26.5 5.5311 5.5311 26.5 0 15.2
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.125
+0 // Cylinder Open 0.125 (main_colour)
 1 16 40 0 0 0 -13.5 0 0 0 -15.2 -15.2 0 0 1-8cylo.dat
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 26.5 0 0 0 -1 0 0 0 -15.2 -15.2 0 0 1-8chrd.dat
 4 16 35 -15.2 0 40 -15.2 0 40 -14.0433 -5.817 33.455502 -14.0433 -5.817
 4 16 33.455502 -14.0433 -5.817 40 -14.0433 -5.817 40 -10.7479 -10.7479 26.5 -10.7479 -10.7479
@@ -3735,7 +3735,7 @@
 5 24 29.6639 -17.5541 7.2713 24.1 -8.8854 4.4 24.1 -7.2109 1.506 23.224501 -8.7192 5.2026
 5 24 31.576401 -18.160101 4.2236 24.1 -7.2109 1.506 24.1 -6.8769 0 24.1 -8.8854 4.4
 5 24 29.6639 -17.5541 7.2713 40 -17.5541 7.2713 31.576401 -18.160101 4.2236 26.603901 -16.2195 9.2683
-0 // Disc Negative 0.5
+0 // Disc Negative 0.5 (main_colour)
 1 16 24.1 0 0 0 1 0 0 0 -4.4 4.4 0 0 2-4ndis.dat
 2 24 24.1 -7.2109 -1.506 24.1 -8.8854 -4.4
 2 24 29.6639 -17.5541 -7.2713 31.576401 -18.160101 -4.2236
@@ -3776,7 +3776,7 @@
 4 16 24.1 -4.4 0 24.1 -4.4 -4.4 24.1 -8.8854 -4.4 24.1 -7.2109 -1.506
 3 16 23.224501 -8.7192 -5.2026 24.1 -8.8854 -4.4 24.1 0 -4.4
 3 16 24.1 -7.2109 -1.506 24.1 -6.8769 0 24.1 -4.4 0
-0 // Disc Negative 0.5
+0 // Disc Negative 0.5 (main_colour)
 1 16 22.5 0 0 0 1 0 0 0 5.86667 5.86667 0 0 2-4ndis.dat
 4 16 22.5 0 5.8667 22.5 -15.3098 10.6295 22.5 -13.4349 13.4349 22.5 5.8667 5.8667
 3 16 22.5 -15.3098 10.6295 22.5 0 5.8667 22.5 -9.0937 5.8667
@@ -3806,26 +3806,26 @@
 
 0 // Fits dsnappin primitive (pin for turntables)
 0 // To be placed in duplo tubes (stud8) at the same height as part base.
-0 // Circle 0.125
+0 // Circle 0.125 (main_colour)
 1 16 0 -13.5 0 12.93431 0 -5.35757 0 -1 0 5.35757 0 12.93431 1-8edge.dat
-0 // Circle 0.125
+0 // Circle 0.125 (main_colour)
 1 16 0 -10.5 0 12.93431 0 -5.35757 0 -1 0 5.35757 0 12.93431 1-8edge.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.1875
+0 // Cylinder Open 0.1875 (main_colour)
 1 16 0 -13.5 0 10.78864 0 -2.14599 0 3 0 2.14599 0 10.78864 3-16cylo.dat
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 12.181 -12 2.146 0 0 1.39235 1.5 0 0 0 1 0 rect.dat
 2 24 13.5733 -13.5 2.146 12.9343 -13.5 5.3576
 2 24 13.5733 -10.5 2.146 12.9343 -10.5 5.3576
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 2.146 -12 12.181 0 1 0 0 0 -1.5 -1.39235 0 0 rect.dat
 2 24 2.146 -13.5 13.5733 5.3576 -13.5 12.9343
 2 24 2.146 -10.5 13.5733 5.3576 -10.5 12.9343
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 0 -13.5 0 12.93431 0 -5.35757 0 1 0 5.35757 0 12.93431 1-8chrd.dat
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 0 -10.5 0 12.93431 0 -5.35757 0 -1 0 5.35757 0 12.93431 1-8chrd.dat
-0 // Disc Negative Tangent 0.1875
+0 // Disc Negative Tangent 0.1875 (main_colour)
 1 16 0 -13.5 0 10.78864 0 -2.14599 0 1 0 2.14599 0 10.78864 10918 - 3-16tang.dat
 4 16 2.146 -13.5 13.5733 2.146 -13.5 10.7886 4.2924 -13.5 10.3623 5.3575 -13.5 12.9342
 4 16 5.3575 -13.5 12.9342 6.1112 -13.5 9.1461 7.9309 -13.5 7.9311 12.9343 -13.5 5.3576
@@ -3839,28 +3839,28 @@
 3 16 10.3618 -10.5 4.2919 9.1464 -10.5 6.1115 12.9343 -10.5 5.3576
 3 16 12.9343 -10.5 5.3576 9.1464 -10.5 6.1115 7.9309 -10.5 7.9311
 3 16 6.1112 -10.5 9.1461 4.2924 -10.5 10.3623 5.3575 -10.5 12.9342
-0 // Disc Negative Tangent 0.1875
+0 // Disc Negative Tangent 0.1875 (main_colour)
 1 16 0 -10.5 0 10.78864 0 -2.14599 0 -1 0 2.14599 0 10.78864 10918 - 3-16tang.dat
-0 // Circle 0.125
+0 // Circle 0.125 (main_colour)
 1 16 0 -13.5 0 5.35757 0 12.93431 0 -1 0 -12.93431 0 5.35757 1-8edge.dat
-0 // Circle 0.125
+0 // Circle 0.125 (main_colour)
 1 16 0 -10.5 0 5.35757 0 12.93431 0 -1 0 -12.93431 0 5.35757 1-8edge.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.1875
+0 // Cylinder Open 0.1875 (main_colour)
 1 16 0 -13.5 0 2.14599 0 10.78864 0 3 0 -10.78864 0 2.14599 3-16cylo.dat
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 2.146 -12 -12.181 0 1 0 1.5 0 0 0 0 -1.39235 rect.dat
 2 24 2.146 -13.5 -13.5733 5.3576 -13.5 -12.9343
 2 24 2.146 -10.5 -13.5733 5.3576 -10.5 -12.9343
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 12.181 -12 -2.146 -1.39235 0 0 0 0 -1.5 0 -1 0 rect.dat
 2 24 13.5733 -13.5 -2.146 12.9343 -13.5 -5.3576
 2 24 13.5733 -10.5 -2.146 12.9343 -10.5 -5.3576
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 0 -13.5 0 5.35757 0 12.93431 0 1 0 -12.93431 0 5.35757 1-8chrd.dat
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 0 -10.5 0 5.35757 0 12.93431 0 -1 0 -12.93431 0 5.35757 1-8chrd.dat
-0 // Disc Negative Tangent 0.1875
+0 // Disc Negative Tangent 0.1875 (main_colour)
 1 16 0 -13.5 0 2.14599 0 10.78864 0 1 0 -10.78864 0 2.14599 10918 - 3-16tang.dat
 4 16 13.5733 -13.5 -2.146 10.7886 -13.5 -2.146 10.3623 -13.5 -4.2924 12.9342 -13.5 -5.3575
 4 16 12.9342 -13.5 -5.3575 9.1461 -13.5 -6.1112 7.9311 -13.5 -7.9309 5.3576 -13.5 -12.9343
@@ -3874,28 +3874,28 @@
 3 16 4.2919 -10.5 -10.3618 6.1115 -10.5 -9.1464 5.3576 -10.5 -12.9343
 3 16 5.3576 -10.5 -12.9343 6.1115 -10.5 -9.1464 7.9311 -10.5 -7.9309
 3 16 9.1461 -10.5 -6.1112 10.3623 -10.5 -4.2924 12.9342 -10.5 -5.3575
-0 // Disc Negative Tangent 0.1875
+0 // Disc Negative Tangent 0.1875 (main_colour)
 1 16 0 -10.5 0 2.14599 0 10.78864 0 -1 0 -10.78864 0 2.14599 10918 - 3-16tang.dat
-0 // Circle 0.125
+0 // Circle 0.125 (main_colour)
 1 16 0 -13.5 0 -12.93431 0 5.35757 0 -1 0 -5.35757 0 -12.93431 1-8edge.dat
-0 // Circle 0.125
+0 // Circle 0.125 (main_colour)
 1 16 0 -10.5 0 -12.93431 0 5.35757 0 -1 0 -5.35757 0 -12.93431 1-8edge.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.1875
+0 // Cylinder Open 0.1875 (main_colour)
 1 16 0 -13.5 0 -10.78864 0 2.14599 0 3 0 -2.14599 0 -10.78864 3-16cylo.dat
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 -12.181 -12 -2.146 0 0 -1.39235 1.5 0 0 0 -1 0 rect.dat
 2 24 -13.5733 -13.5 -2.146 -12.9343 -13.5 -5.3576
 2 24 -13.5733 -10.5 -2.146 -12.9343 -10.5 -5.3576
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 -2.146 -12 -12.181 0 -1 0 0 0 -1.5 1.39235 0 0 rect.dat
 2 24 -2.146 -13.5 -13.5733 -5.3576 -13.5 -12.9343
 2 24 -2.146 -10.5 -13.5733 -5.3576 -10.5 -12.9343
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 0 -13.5 0 -12.93431 0 5.35757 0 1 0 -5.35757 0 -12.93431 1-8chrd.dat
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 0 -10.5 0 -12.93431 0 5.35757 0 -1 0 -5.35757 0 -12.93431 1-8chrd.dat
-0 // Disc Negative Tangent 0.1875
+0 // Disc Negative Tangent 0.1875 (main_colour)
 1 16 0 -13.5 0 -10.78864 0 2.14599 0 1 0 -2.14599 0 -10.78864 10918 - 3-16tang.dat
 4 16 -2.146 -13.5 -13.5733 -2.146 -13.5 -10.7886 -4.2924 -13.5 -10.3623 -5.3575 -13.5 -12.9342
 4 16 -5.3575 -13.5 -12.9342 -6.1112 -13.5 -9.1461 -7.9309 -13.5 -7.9311 -12.9343 -13.5 -5.3576
@@ -3909,28 +3909,28 @@
 3 16 -10.3618 -10.5 -4.2919 -9.1464 -10.5 -6.1115 -12.9343 -10.5 -5.3576
 3 16 -12.9343 -10.5 -5.3576 -9.1464 -10.5 -6.1115 -7.9309 -10.5 -7.9311
 3 16 -6.1112 -10.5 -9.1461 -4.2924 -10.5 -10.3623 -5.3575 -10.5 -12.9342
-0 // Disc Negative Tangent 0.1875
+0 // Disc Negative Tangent 0.1875 (main_colour)
 1 16 0 -10.5 0 -10.78864 0 2.14599 0 -1 0 -2.14599 0 -10.78864 10918 - 3-16tang.dat
-0 // Circle 0.125
+0 // Circle 0.125 (main_colour)
 1 16 0 -13.5 0 -5.35757 0 -12.93431 0 -1 0 12.93431 0 -5.35757 1-8edge.dat
-0 // Circle 0.125
+0 // Circle 0.125 (main_colour)
 1 16 0 -10.5 0 -5.35757 0 -12.93431 0 -1 0 12.93431 0 -5.35757 1-8edge.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 0.1875
+0 // Cylinder Open 0.1875 (main_colour)
 1 16 0 -13.5 0 -2.14599 0 -10.78864 0 3 0 10.78864 0 -2.14599 3-16cylo.dat
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 -2.146 -12 12.181 0 -1 0 1.5 0 0 0 0 1.39235 rect.dat
 2 24 -2.146 -13.5 13.5733 -5.3576 -13.5 12.9343
 2 24 -2.146 -10.5 13.5733 -5.3576 -10.5 12.9343
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 -12.181 -12 2.146 1.39235 0 0 0 0 -1.5 0 1 0 rect.dat
 2 24 -13.5733 -13.5 2.146 -12.9343 -13.5 5.3576
 2 24 -13.5733 -10.5 2.146 -12.9343 -10.5 5.3576
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 0 -13.5 0 -5.35757 0 -12.93431 0 1 0 12.93431 0 -5.35757 1-8chrd.dat
-0 // Chord 0.125
+0 // Chord 0.125 (main_colour)
 1 16 0 -10.5 0 -5.35757 0 -12.93431 0 -1 0 12.93431 0 -5.35757 1-8chrd.dat
-0 // Disc Negative Tangent 0.1875
+0 // Disc Negative Tangent 0.1875 (main_colour)
 1 16 0 -13.5 0 -2.14599 0 -10.78864 0 1 0 10.78864 0 -2.14599 10918 - 3-16tang.dat
 4 16 -13.5733 -13.5 2.146 -10.7886 -13.5 2.146 -10.3623 -13.5 4.2924 -12.9342 -13.5 5.3575
 4 16 -12.9342 -13.5 5.3575 -9.1461 -13.5 6.1112 -7.9311 -13.5 7.9309 -5.3576 -13.5 12.9343
@@ -3944,7 +3944,7 @@
 3 16 -4.2919 -10.5 10.3618 -6.1115 -10.5 9.1464 -5.3576 -10.5 12.9343
 3 16 -5.3576 -10.5 12.9343 -6.1115 -10.5 9.1464 -7.9311 -10.5 7.9309
 3 16 -9.1461 -10.5 6.1112 -10.3623 -10.5 4.2924 -12.9342 -10.5 5.3575
-0 // Disc Negative Tangent 0.1875
+0 // Disc Negative Tangent 0.1875 (main_colour)
 1 16 0 -10.5 0 -2.14599 0 -10.78864 0 -1 0 10.78864 0 -2.14599 10918 - 3-16tang.dat
 
 0 FILE 10918 - 3-16tang.dat
@@ -3969,16 +3969,16 @@
 
 0 BFC CERTIFY CCW
 
-0 // Sphere 0.5
+0 // Sphere 0.5 (main_colour)
 1 16 20 0 0 0 6 0 6 0 0 0 0 6 4-8sphe.dat
-0 // Cylinder 1.0
+0 // Cylinder 1.0 (main_colour)
 1 16 3 0 0 0 17 0 -6 0 0 0 0 6 4-4cyli.dat
 0 BFC INVERTNEXT
-0 // Cylinder Closed 1.0
+0 // Cylinder Closed 1.0 (main_colour)
 1 16 3 0 0 0 18 0 15.2 0 0 0 0 15.2 4-4cylc.dat
-0 // Ring  4 x 1.0
+0 // Ring  4 x 1.0 (main_colour)
 1 16 21 0 0 0 -1 0 0 0 3.8 3.8 0 0 4-4ring4.dat
-0 // Circle 1.0
+0 // Circle 1.0 (main_colour)
 1 16 3 0 0 0 1 0 -6 0 0 0 0 6 4-4edge.dat
 
 0 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 m15449.dat
@@ -3998,7 +3998,7 @@
 2 24 18.1001 -1.5 14.9017 18.199699 0 15.2
 2 24 18.199699 0 15.2 18.1001 1.5 14.9017
 3 16 18.1001 -1.5 14.9017 18.1001 1.5 14.9017 18.199699 0 15.2
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 3 0 10.3017 0 -1 0 0 0 -1.5 4.6 0 0 rect2p.dat
 4 16 16.898001 -1.5 9.299 16.898001 -1.5 11.299 3 -1.5 14.9017 3 -1.5 5.7017
 3 16 16.898001 -1.5 11.299 18.1001 -1.5 14.9017 3 -1.5 14.9017
@@ -4026,7 +4026,7 @@
 2 24 18.1001 -14.9017 -1.5 18.199699 -15.2 0
 2 24 18.199699 -15.2 0 18.1001 -14.9017 1.5
 3 16 18.1001 -14.9017 -1.5 18.1001 -14.9017 1.5 18.199699 -15.2 0
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 3 -10.3017 0 0 -1 0 -4.6 0 0 0 0 -1.5 rect2p.dat
 4 16 16.898001 -9.299 -1.5 16.898001 -11.299 -1.5 3 -14.9017 -1.5 3 -5.7017 -1.5
 3 16 16.898001 -11.299 -1.5 18.1001 -14.9017 -1.5 3 -14.9017 -1.5
@@ -4054,7 +4054,7 @@
 2 24 18.1001 1.5 -14.9017 18.199699 0 -15.2
 2 24 18.199699 0 -15.2 18.1001 -1.5 -14.9017
 3 16 18.1001 1.5 -14.9017 18.1001 -1.5 -14.9017 18.199699 0 -15.2
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 3 0 -10.3017 0 -1 0 0 0 1.5 -4.6 0 0 rect2p.dat
 4 16 16.898001 1.5 -9.299 16.898001 1.5 -11.299 3 1.5 -14.9017 3 1.5 -5.7017
 3 16 16.898001 1.5 -11.299 18.1001 1.5 -14.9017 3 1.5 -14.9017
@@ -4082,7 +4082,7 @@
 2 24 18.1001 14.9017 1.5 18.199699 15.2 0
 2 24 18.199699 15.2 0 18.1001 14.9017 -1.5
 3 16 18.1001 14.9017 1.5 18.1001 14.9017 -1.5 18.199699 15.2 0
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 3 10.3017 0 0 -1 0 4.6 0 0 0 0 1.5 rect2p.dat
 4 16 16.898001 9.299 1.5 16.898001 11.299 1.5 3 14.9017 1.5 3 5.7017 1.5
 3 16 16.898001 11.299 1.5 18.1001 14.9017 1.5 3 14.9017 1.5

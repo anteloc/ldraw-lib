@@ -9,15 +9,15 @@
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 165-1 - Building.ldr
 1 0 -60 -56 -280 1 0 0 0 1 0 0 0 1 165-1 - Crane base.ldr
 1 0 -60 -328 -60 1 0 0 0 1 0 0 0 1 165-1 - Crane head.ldr
-0 // Plate  3 x  2 with Hole
+0 // Plate  3 x  2 with Hole (light_grey)
 1 7 -60 -280 -94 -1 0 0 0 0 1 0 1 0 3176.dat
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (yellow)
 1 14 20 -104 140 1 0 0 0 1 0 0 0 1 3003.dat
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (yellow)
 1 14 20 -128 140 1 0 0 0 1 0 0 0 1 3003.dat
-0 // Sticker  2.3 x  1.9 with Light Grey "TRANSPORT" on Crate on Yellow Background
+0 // Sticker  2.3 x  1.9 with Light Grey "TRANSPORT" on Crate on Yellow Background (white)
 1 15 20 -104 120 1 0 0 0 0 -1 0 1 0 165-1 - 004760b.dat
-0 // Sticker  2.3 x  1.9 with Light Grey "TRANSPORT" on Crate on Yellow Background
+0 // Sticker  2.3 x  1.9 with Light Grey "TRANSPORT" on Crate on Yellow Background (white)
 1 15 20 -104 160 -1 0 0 0 0 -1 0 -1 0 165-1 - 004760b.dat
 1 15 80 -120 146 1 0 0 0 1 0 0 0 1 165-1 - Minifig 1.ldr
 1 15 200 -40 150 1 0 0 0 1 0 0 0 1 165-1 - Minifig 2.ldr
@@ -35,394 +35,394 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 ROTATION CENTER 0 0 0 1 "Custom"
 0 ROTATION CONFIG 0 0
-0 // Baseplate 32 x 32
+0 // Baseplate 32 x 32 (light_grey)
 1 7 0 0 0 1 0 0 0 1 0 0 0 1 3811.dat
 0 STEP
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 -210 -24 280 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 -210 -24 160 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 -110 -24 280 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 -110 -24 160 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 -10 -24 280 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 -10 -24 160 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 90 -24 280 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 90 -24 160 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (blue)
 1 1 -220 -24 -250 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (blue)
 1 1 -220 -24 -310 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (blue)
 1 1 100 -24 -250 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (blue)
 1 1 100 -24 -310 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (black)
 1 0 250 -8 280 0 0 1 0 1 0 -1 0 0 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (black)
 1 0 250 -8 240 0 0 1 0 1 0 -1 0 0 3023.dat
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (black)
 1 0 180 -8 310 1 0 0 0 1 0 0 0 1 3460.dat
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (black)
 1 0 180 -8 210 1 0 0 0 1 0 0 0 1 3460.dat
-0 // Plate  2 x  8
+0 // Plate  2 x  8 (white)
 1 15 -320 -8 -140 0 0 1 0 1 0 -1 0 0 3034.dat
-0 // Plate  2 x  8
+0 // Plate  2 x  8 (white)
 1 15 -320 -8 20 0 0 1 0 1 0 -1 0 0 3034.dat
-0 // Plate  2 x  8
+0 // Plate  2 x  8 (white)
 1 15 0 -8 20 0 0 1 0 1 0 -1 0 0 3034.dat
-0 // Plate  2 x  8
+0 // Plate  2 x  8 (white)
 1 15 0 -8 -140 0 0 1 0 1 0 -1 0 0 3034.dat
-0 // Plate  2 x  8
+0 // Plate  2 x  8 (white)
 1 15 320 -8 20 0 0 1 0 1 0 -1 0 0 3034.dat
-0 // Plate  2 x  8
+0 // Plate  2 x  8 (white)
 1 15 320 -8 -140 0 0 1 0 1 0 -1 0 0 3034.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 120 -32 310 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 120 -32 210 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Train Track Rail Straight Tapered
+0 // Train Track Rail Straight Tapered (blue)
 1 1 -60 -16 -270 1 0 0 0 1 0 0 0 1 3228a.dat
-0 // Train Track Rail Straight Tapered
+0 // Train Track Rail Straight Tapered (blue)
 1 1 -60 -16 -290 1 0 0 0 1 0 0 0 1 3228a.dat
 0 STEP
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 240 -32 310 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 240 -32 210 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 -210 -48 280 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 -210 -48 160 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 -110 -48 280 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 -110 -48 160 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 -10 -48 280 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 -10 -48 160 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 90 -48 280 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 90 -48 160 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (blue)
 1 1 -220 -48 -250 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (blue)
 1 1 -220 -48 -310 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (blue)
 1 1 100 -48 -250 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (blue)
 1 1 100 -48 -310 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 120 -56 310 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 120 -56 210 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 120 -80 210 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 120 -80 310 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (red)
 1 4 250 -32 260 0 0 1 0 1 0 -1 0 0 3010.dat
-0 // Brick  1 x  8
+0 // Brick  1 x  8 (black)
 1 0 90 -72 220 0 0 1 0 1 0 -1 0 0 3008.dat
-0 // Brick  1 x  8
+0 // Brick  1 x  8 (black)
 1 0 -10 -72 220 0 0 1 0 1 0 -1 0 0 3008.dat
-0 // Brick  1 x  8
+0 // Brick  1 x  8 (black)
 1 0 -110 -72 220 0 0 1 0 1 0 -1 0 0 3008.dat
-0 // Brick  1 x  8
+0 // Brick  1 x  8 (black)
 1 0 -210 -72 220 0 0 1 0 1 0 -1 0 0 3008.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (blue)
 1 1 -230 -56 -280 0 0 1 0 1 0 -1 0 0 3710.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (blue)
 1 1 110 -56 -280 0 0 1 0 1 0 -1 0 0 3710.dat
-0 // Train Track Rail Straight Tapered
+0 // Train Track Rail Straight Tapered (blue)
 1 1 -160 -24 70 1 0 0 0 1 0 0 0 1 3228a.dat
-0 // Train Track Rail Straight Tapered
+0 // Train Track Rail Straight Tapered (blue)
 1 1 160 -24 70 1 0 0 0 1 0 0 0 1 3228a.dat
-0 // Train Track Rail Straight Tapered
+0 // Train Track Rail Straight Tapered (blue)
 1 1 -160 -24 -30 1 0 0 0 1 0 0 0 1 3228a.dat
-0 // Train Track Rail Straight Tapered
+0 // Train Track Rail Straight Tapered (blue)
 1 1 160 -24 -30 1 0 0 0 1 0 0 0 1 3228a.dat
-0 // Train Track Rail Straight Tapered
+0 // Train Track Rail Straight Tapered (blue)
 1 1 -160 -24 -90 1 0 0 0 1 0 0 0 1 3228a.dat
-0 // Train Track Rail Straight Tapered
+0 // Train Track Rail Straight Tapered (blue)
 1 1 -160 -24 -190 1 0 0 0 1 0 0 0 1 3228a.dat
-0 // Train Track Rail Straight Tapered
+0 // Train Track Rail Straight Tapered (blue)
 1 1 160 -24 -90 1 0 0 0 1 0 0 0 1 3228a.dat
-0 // Train Track Rail Straight Tapered
+0 // Train Track Rail Straight Tapered (blue)
 1 1 160 -24 -190 1 0 0 0 1 0 0 0 1 3228a.dat
-0 // Train Track Rail Straight Tapered
+0 // Train Track Rail Straight Tapered (blue)
 1 1 -60 -64 -250 1 0 0 0 1 0 0 0 1 3228a.dat
-0 // Train Track Rail Straight Tapered
+0 // Train Track Rail Straight Tapered (blue)
 1 1 -60 -64 -310 1 0 0 0 1 0 0 0 1 3228a.dat
 0 STEP
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (red)
 1 4 230 -56 310 1 0 0 0 1 0 0 0 1 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (red)
 1 4 230 -56 210 1 0 0 0 1 0 0 0 1 3005.dat
-0 // Brick  1 x  6
+0 // Brick  1 x  6 (red)
 1 4 250 -56 260 0 0 1 0 1 0 -1 0 0 3009.dat
-0 // Plate  4 x  8
+0 // Plate  4 x  8 (light_grey)
 1 7 -140 -80 280 1 0 0 0 1 0 0 0 1 3035.dat
-0 // Plate  4 x  8
+0 // Plate  4 x  8 (light_grey)
 1 7 20 -80 280 1 0 0 0 1 0 0 0 1 3035.dat
-0 // Plate  6 x 16
+0 // Plate  6 x 16 (light_grey)
 1 7 -60 -80 180 1 0 0 0 1 0 0 0 1 3027.dat
 0 STEP
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 240 -80 310 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 240 -80 210 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 -60 -104 310 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 -60 -104 210 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  6
+0 // Brick  1 x  6 (red)
 1 4 -210 -104 260 0 0 1 0 1 0 -1 0 0 3009.dat
 0 STEP
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 240 -104 310 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 240 -104 210 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (red)
 1 4 110 -104 310 1 0 0 0 1 0 0 0 1 3622.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (red)
 1 4 110 -104 210 1 0 0 0 1 0 0 0 1 3622.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (red)
 1 4 110 -128 210 1 0 0 0 1 0 0 0 1 3622.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (red)
 1 4 110 -128 310 1 0 0 0 1 0 0 0 1 3622.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 240 -128 310 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 240 -128 210 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 -60 -128 310 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 -60 -128 210 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  6
+0 // Brick  1 x  6 (red)
 1 4 -210 -128 260 0 0 1 0 1 0 -1 0 0 3009.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (red)
 1 4 -210 -152 230 1 0 0 0 1 0 0 0 1 3005.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 -210 -152 300 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 -60 -152 310 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Door  1 x  4 x  5 with 4 Panes and Reinforced Hinge
+0 // Door  1 x  4 x  5 with 4 Panes and Reinforced Hinge (white)
 1 15 150 -128 310 0 0 1 0 1 0 -1 0 0 3861.dat
-0 // Window  1 x  4 x  3
+0 // Window  1 x  4 x  3 (white)
 1 15 250 -128 260 0 0 -1 0 1 0 1 0 0 3853.dat
-0 // Window  1 x  2 x  3 Pane
+0 // Window  1 x  2 x  3 Pane (white)
 1 15 255 -124 295 1 0 0 0 1 0 0 0 1 3854.dat
-0 // Window  1 x  2 x  3 Pane
+0 // Window  1 x  2 x  3 Pane (white)
 1 15 255 -124 225 -1 0 0 0 1 0 0 0 -1 3854.dat
 0 STEP
-0 // Door  1 x  4 x  5 with 4 Panes and Reinforced Hinge
+0 // Door  1 x  4 x  5 with 4 Panes and Reinforced Hinge (white)
 1 15 210 -124 210 0 0 -1 0 1 0 1 0 0 3861.dat
-0 // Brick  1 x  6
+0 // Brick  1 x  6 (red)
 1 4 250 -152 260 0 0 1 0 1 0 -1 0 0 3009.dat
-0 // Brick  1 x  6
+0 // Brick  1 x  6 (red)
 1 4 110 -152 260 0 0 1 0 1 0 -1 0 0 3009.dat
-0 // Brick  1 x  6
+0 // Brick  1 x  6 (red)
 1 4 180 -152 310 1 0 0 0 1 0 0 0 1 3009.dat
-0 // Brick  1 x  6
+0 // Brick  1 x  6 (red)
 1 4 180 -152 210 1 0 0 0 1 0 0 0 1 3009.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (red)
 1 4 90 -152 310 1 0 0 0 1 0 0 0 1 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (red)
 1 4 -210 -176 230 1 0 0 0 1 0 0 0 1 3005.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 -210 -176 300 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 -60 -176 310 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  1 x  2 with Shutter Holder
+0 // Brick  1 x  1 x  2 with Shutter Holder (red)
 1 4 -210 -176 210 1 0 0 0 1 0 0 0 1 3581.dat
-0 // Brick  1 x  1 x  2 with Shutter Holder
+0 // Brick  1 x  1 x  2 with Shutter Holder (red)
 1 4 -70 -176 210 1 0 0 0 1 0 0 0 1 3581.dat
-0 // Brick  1 x  1 x  2 with Shutter Holder
+0 // Brick  1 x  1 x  2 with Shutter Holder (red)
 1 4 -50 -176 210 1 0 0 0 1 0 0 0 1 3581.dat
 0 STEP
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (red)
 1 4 110 -176 310 1 0 0 0 1 0 0 0 1 3622.dat
-0 // Brick  1 x  6
+0 // Brick  1 x  6 (red)
 1 4 200 -176 310 1 0 0 0 1 0 0 0 1 3009.dat
-0 // Brick  1 x  1 x  2 with Shutter Holder
+0 // Brick  1 x  1 x  2 with Shutter Holder (red)
 1 4 90 -176 210 1 0 0 0 1 0 0 0 1 3581.dat
-0 // Plate  4 x  8
+0 // Plate  4 x  8 (red)
 1 4 180 -160 260 1 0 0 0 1 0 0 0 1 3035.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (red)
 1 4 250 -168 260 0 0 1 0 1 0 -1 0 0 3710.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (red)
 1 4 250 -176 260 0 0 1 0 1 0 -1 0 0 3710.dat
 0 STEP
-0 // Brick  1 x  8
+0 // Brick  1 x  8 (red)
 1 4 180 -176 210 1 0 0 0 1 0 0 0 1 3008.dat
-0 // Brick  1 x  8
+0 // Brick  1 x  8 (red)
 1 4 160 -200 210 1 0 0 0 1 0 0 0 1 3008.dat
-0 // Brick  1 x  8
+0 // Brick  1 x  8 (red)
 1 4 160 -200 310 1 0 0 0 1 0 0 0 1 3008.dat
-0 // Brick  1 x  6
+0 // Brick  1 x  6 (red)
 1 4 250 -200 260 0 0 1 0 1 0 -1 0 0 3009.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 -210 -200 300 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 -210 -200 220 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 -60 -200 310 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 -60 -200 210 1 0 0 0 1 0 0 0 1 3004.dat
 0 STEP
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 100 -224 310 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 100 -224 210 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 -60 -224 310 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 -60 -224 210 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 -210 -224 300 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (red)
 1 4 -210 -224 220 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (red)
 1 4 110 -248 310 1 0 0 0 1 0 0 0 1 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (red)
 1 4 110 -248 210 1 0 0 0 1 0 0 0 1 3005.dat
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (red)
 1 4 -210 -248 260 0 0 1 0 1 0 -1 0 0 3010.dat
-0 // Brick  1 x  8
+0 // Brick  1 x  8 (red)
 1 4 -140 -248 310 1 0 0 0 1 0 0 0 1 3008.dat
-0 // Brick  1 x  8
+0 // Brick  1 x  8 (red)
 1 4 20 -248 310 1 0 0 0 1 0 0 0 1 3008.dat
-0 // Brick  1 x  8
+0 // Brick  1 x  8 (red)
 1 4 -140 -248 210 1 0 0 0 1 0 0 0 1 3008.dat
-0 // Brick  1 x  8
+0 // Brick  1 x  8 (red)
 1 4 20 -248 210 1 0 0 0 1 0 0 0 1 3008.dat
-0 // Brick  1 x  6
+0 // Brick  1 x  6 (red)
 1 4 110 -272 260 0 0 1 0 1 0 -1 0 0 3009.dat
-0 // Window  1 x  6 x  3 Panorama with Hollow Studs, Holes (Complete)
+0 // Window  1 x  6 x  3 Panorama with Hollow Studs, Holes (Complete) (white)
 1 15 250 -272 260 0 0 -1 0 1 0 1 0 0 604bc01.dat
-0 // Window  1 x  6 x  3 Panorama with Hollow Studs, Holes (Complete)
+0 // Window  1 x  6 x  3 Panorama with Hollow Studs, Holes (Complete) (white)
 1 15 180 -272 210 1 0 0 0 1 0 0 0 1 604bc01.dat
-0 // Window  1 x  6 x  3 Panorama with Hollow Studs, Holes (Complete)
+0 // Window  1 x  6 x  3 Panorama with Hollow Studs, Holes (Complete) (white)
 1 15 180 -272 310 -1 0 0 0 1 0 0 0 -1 604bc01.dat
-0 // Door  1 x  4 x  6 Grooved
+0 // Door  1 x  4 x  6 Grooved (white)
 1 15 -210 -224 196 0 0 1 0 1 0 -1 0 0 3644.dat
-0 // Door  1 x  4 x  6 Grooved
+0 // Door  1 x  4 x  6 Grooved (white)
 1 15 -50 -224 196 0 0 1 0 1 0 -1 0 0 3644.dat
-0 // Door  1 x  4 x  6 Grooved
+0 // Door  1 x  4 x  6 Grooved (white)
 1 15 -70 -224 196 0 0 -1 0 1 0 1 0 0 3644.dat
-0 // Door  1 x  4 x  6 Grooved
+0 // Door  1 x  4 x  6 Grooved (white)
 1 15 90 -224 196 0 0 -1 0 1 0 1 0 0 3644.dat
 0 STEP
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (red)
 1 4 110 -296 260 0 0 1 0 1 0 -1 0 0 3010.dat
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (red)
 1 4 250 -296 260 0 0 1 0 1 0 -1 0 0 3010.dat
-0 // Brick  1 x  8
+0 // Brick  1 x  8 (red)
 1 4 180 -296 310 1 0 0 0 1 0 0 0 1 3008.dat
-0 // Brick  1 x  8
+0 // Brick  1 x  8 (red)
 1 4 180 -296 210 1 0 0 0 1 0 0 0 1 3008.dat
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (yellow)
 1 14 -180 -104 160 1 0 0 0 1 0 0 0 1 3003.dat
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (yellow)
 1 14 -120 -104 140 1 0 0 0 1 0 0 0 1 3003.dat
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (yellow)
 1 14 -80 -104 160 1 0 0 0 1 0 0 0 1 3003.dat
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (yellow)
 1 14 -20 -104 140 1 0 0 0 1 0 0 0 1 3003.dat
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (light_grey)
 1 7 90 -256 260 0 0 1 0 1 0 -1 0 0 3460.dat
-0 // Plate  4 x  8
+0 // Plate  4 x  8 (light_grey)
 1 7 40 -256 260 0 0 1 0 1 0 -1 0 0 3035.dat
-0 // Plate  4 x  8
+0 // Plate  4 x  8 (light_grey)
 1 7 -40 -256 260 0 0 1 0 1 0 -1 0 0 3035.dat
-0 // Plate  4 x  8
+0 // Plate  4 x  8 (light_grey)
 1 7 -120 -256 260 0 0 1 0 1 0 -1 0 0 3035.dat
-0 // Plate  4 x  8
+0 // Plate  4 x  8 (light_grey)
 1 7 -200 -256 260 0 0 1 0 1 0 -1 0 0 3035.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (black)
 1 0 90 -264 280 0 0 1 0 1 0 -1 0 0 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (black)
 1 0 60 -264 210 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (black)
 1 0 -60 -264 210 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (black)
 1 0 -180 -264 210 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (black)
 1 0 -210 -264 280 0 0 1 0 1 0 -1 0 0 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (black)
 1 0 -210 -272 280 0 0 1 0 1 0 -1 0 0 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (black)
 1 0 90 -272 280 0 0 1 0 1 0 -1 0 0 3023.dat
 0 STEP
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (light_grey)
 1 7 170 -304 260 0 0 1 0 1 0 -1 0 0 3460.dat
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (light_grey)
 1 7 190 -304 260 0 0 1 0 1 0 -1 0 0 3460.dat
-0 // Plate  4 x  8
+0 // Plate  4 x  8 (light_grey)
 1 7 240 -304 260 0 0 1 0 1 0 -1 0 0 3035.dat
-0 // Brick  1 x  8
+0 // Brick  1 x  8 (yellow)
 1 14 -140 -288 210 1 0 0 0 1 0 0 0 1 3008.dat
-0 // Brick  1 x  8
+0 // Brick  1 x  8 (yellow)
 1 14 20 -288 210 1 0 0 0 1 0 0 0 1 3008.dat
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (yellow)
 1 14 -180 -128 160 1 0 0 0 1 0 0 0 1 3003.dat
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (yellow)
 1 14 -120 -128 140 1 0 0 0 1 0 0 0 1 3003.dat
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (yellow)
 1 14 -80 -128 160 1 0 0 0 1 0 0 0 1 3003.dat
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (yellow)
 1 14 -20 -128 140 1 0 0 0 1 0 0 0 1 3003.dat
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (yellow)
 1 14 -100 -152 160 1 0 0 0 1 0 0 0 1 3003.dat
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (yellow)
 1 14 -100 -176 160 1 0 0 0 1 0 0 0 1 3003.dat
 0 STEP
-0 // Plate  4 x  8
+0 // Plate  4 x  8 (light_grey)
 1 7 120 -304 260 0 0 1 0 1 0 -1 0 0 3035.dat
-0 // Antenna  5H with Side Spokes
+0 // Antenna  5H with Side Spokes (milky_white)
 1 79 130 -328 290 1 0 0 0 1 0 0 0 1 3144.dat
-0 // Train Track Rail Straight Tapered
+0 // Train Track Rail Straight Tapered (blue)
 1 1 -60 -288 290 1 0 0 0 1 0 0 0 1 3228a.dat
-0 // Train Track Rail Straight Tapered
+0 // Train Track Rail Straight Tapered (blue)
 1 1 -60 -288 270 1 0 0 0 1 0 0 0 1 3228a.dat
 
-0 // Sticker  1.1 x 15.9 with Black "GÜTERBAHNHOF" on Yellow Background
+0 // Sticker  1.1 x 15.9 with Black "GÜTERBAHNHOF" on Yellow Background (white)
 1 15 -60 -276 200 1 0 0 0 0 -1 0 1 0 165-1 - 004760a.dat
-0 // Sticker  1.1 x  1.1 with Black "1" on White Background
+0 // Sticker  1.1 x  1.1 with Black "1" on White Background (white)
 1 15 -170 -200 193 1 0 0 0 0 -1 0 1 0 004589e.dat
-0 // Sticker  1.1 x  1.1 with Black "2" on White Background
+0 // Sticker  1.1 x  1.1 with Black "2" on White Background (white)
 1 15 -110 -200 193 1 0 0 0 0 -1 0 1 0 004589f.dat
-0 // Sticker  1.1 x  1.1 with Black "1" on White Background
+0 // Sticker  1.1 x  1.1 with Black "1" on White Background (white)
 1 15 -10 -200 193 1 0 0 0 0 -1 0 1 0 004589e.dat
-0 // Sticker  1.1 x  1.1 with Black "2" on White Background
+0 // Sticker  1.1 x  1.1 with Black "2" on White Background (white)
 1 15 50 -200 193 1 0 0 0 0 -1 0 1 0 004589f.dat
-0 // Sticker  2.3 x  1.9 with Light Grey "TRANSPORT" on Crate on Yellow Background
+0 // Sticker  2.3 x  1.9 with Light Grey "TRANSPORT" on Crate on Yellow Background (white)
 1 15 -180 -104 140 1 0 0 0 0 -1 0 1 0 165-1 - 004760b.dat
-0 // Sticker  2.3 x  1.9 with Light Grey "TRANSPORT" on Crate on Yellow Background
+0 // Sticker  2.3 x  1.9 with Light Grey "TRANSPORT" on Crate on Yellow Background (white)
 1 15 -120 -104 120 1 0 0 0 0 -1 0 1 0 165-1 - 004760b.dat
-0 // Sticker  2.3 x  1.9 with Light Grey "TRANSPORT" on Crate on Yellow Background
+0 // Sticker  2.3 x  1.9 with Light Grey "TRANSPORT" on Crate on Yellow Background (white)
 1 15 -20 -104 120 1 0 0 0 0 -1 0 1 0 165-1 - 004760b.dat
-0 // Sticker  2.3 x  1.9 with Light Grey "TRANSPORT" on Crate on Yellow Background
+0 // Sticker  2.3 x  1.9 with Light Grey "TRANSPORT" on Crate on Yellow Background (white)
 1 15 -80 -104 140 1 0 0 0 0 -1 0 1 0 165-1 - 004760b.dat
-0 // Sticker  2.3 x  1.9 with Light Grey "TRANSPORT" on Crate on Yellow Background
+0 // Sticker  2.3 x  1.9 with Light Grey "TRANSPORT" on Crate on Yellow Background (white)
 1 15 -100 -152 140 1 0 0 0 0 -1 0 1 0 165-1 - 004760b.dat
-0 // Sticker  2.3 x  1.9 with Light Grey "TRANSPORT" on Crate on Yellow Background
+0 // Sticker  2.3 x  1.9 with Light Grey "TRANSPORT" on Crate on Yellow Background (white)
 1 15 -100 -152 180 -1 0 0 0 0 -1 0 -1 0 165-1 - 004760b.dat
-0 // Sticker  2.3 x  1.9 with Light Grey "TRANSPORT" on Crate on Yellow Background
+0 // Sticker  2.3 x  1.9 with Light Grey "TRANSPORT" on Crate on Yellow Background (white)
 1 15 -80 -104 180 -1 0 0 0 0 -1 0 -1 0 165-1 - 004760b.dat
-0 // Sticker  2.3 x  1.9 with Light Grey "TRANSPORT" on Crate on Yellow Background
+0 // Sticker  2.3 x  1.9 with Light Grey "TRANSPORT" on Crate on Yellow Background (white)
 1 15 -180 -104 180 -1 0 0 0 0 -1 0 -1 0 165-1 - 004760b.dat
-0 // Sticker  2.3 x  1.9 with Light Grey "TRANSPORT" on Crate on Yellow Background
+0 // Sticker  2.3 x  1.9 with Light Grey "TRANSPORT" on Crate on Yellow Background (white)
 1 15 -120 -104 160 -1 0 0 0 0 -1 0 -1 0 165-1 - 004760b.dat
-0 // Sticker  2.3 x  1.9 with Light Grey "TRANSPORT" on Crate on Yellow Background
+0 // Sticker  2.3 x  1.9 with Light Grey "TRANSPORT" on Crate on Yellow Background (white)
 1 15 -20 -104 160 -1 0 0 0 0 -1 0 -1 0 165-1 - 004760b.dat
 
 
@@ -439,132 +439,132 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 ROTATION CENTER 0 0 0 1 "Custom"
 0 ROTATION CONFIG 0 0
-0 // Plate  2 x  8
+0 // Plate  2 x  8 (blue)
 1 1 0 0 0 1 0 0 0 1 0 0 0 1 3034.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (blue)
 1 1 -30 -24 0 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (blue)
 1 1 30 -24 0 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Slope Brick 45  2 x  2
+0 // Slope Brick 45  2 x  2 (blue)
 1 1 -50 -24 0 0 0 1 0 1 0 -1 0 0 3039.dat
-0 // Slope Brick 45  2 x  2
+0 // Slope Brick 45  2 x  2 (blue)
 1 1 50 -24 0 0 0 -1 0 1 0 1 0 0 3039.dat
-0 // Slope Brick 45  2 x  2
+0 // Slope Brick 45  2 x  2 (blue)
 1 1 30 -48 0 0 0 -1 0 1 0 1 0 0 3039.dat
-0 // Slope Brick 45  2 x  2
+0 // Slope Brick 45  2 x  2 (blue)
 1 1 -30 -48 0 0 0 1 0 1 0 -1 0 0 3039.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (blue)
 1 1 0 -72 0 1 0 0 0 1 0 0 0 1 3001.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (blue)
 1 1 -30 -96 0 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (blue)
 1 1 30 -96 0 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (blue)
 1 1 30 -120 0 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (blue)
 1 1 -30 -120 0 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (blue)
 1 1 0 -144 0 1 0 0 0 1 0 0 0 1 3001.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (blue)
 1 1 -30 -168 0 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (blue)
 1 1 30 -168 0 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (blue)
 1 1 30 -192 0 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (blue)
 1 1 -30 -192 0 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (blue)
 1 1 0 -216 0 1 0 0 0 1 0 0 0 1 3001.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (blue)
 1 1 0 8 0 1 0 0 0 1 0 0 0 1 3001.dat
-0 // Plate  2 x  2 with 2 Wheel Clips Perpendicular
+0 // Plate  2 x  2 with 2 Wheel Clips Perpendicular (blue)
 1 1 -60 8 0 0 0 1 0 1 0 -1 0 0 8.dat
-0 // Plate  2 x  2 with 2 Wheel Clips Perpendicular
+0 // Plate  2 x  2 with 2 Wheel Clips Perpendicular (blue)
 1 1 60 8 0 0 0 1 0 1 0 -1 0 0 8.dat
-0 // Wheel Centre with Stub Axles
+0 // Wheel Centre with Stub Axles (red)
 1 4 -60 30 0 0 0 1 0 1 0 -1 0 0 3464.dat
-0 // Wheel Centre with Stub Axles
+0 // Wheel Centre with Stub Axles (red)
 1 4 60 30 0 0 0 1 0 1 0 -1 0 0 3464.dat
-0 // Tyre  4/ 80 x  8 Single Smooth Type 1
+0 // Tyre  4/ 80 x  8 Single Smooth Type 1 (rubber_black)
 1 256 -60 30 0 0 0 1 0 1 0 -1 0 0 3139.dat
-0 // Tyre  4/ 80 x  8 Single Smooth Type 1
+0 // Tyre  4/ 80 x  8 Single Smooth Type 1 (rubber_black)
 1 256 60 30 0 0 0 1 0 1 0 -1 0 0 3139.dat
 0 STEP
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (blue)
 1 1 30 -296 0 0 0 1 0 1 0 -1 0 0 3710.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (blue)
 1 1 -30 -296 0 0 0 1 0 1 0 -1 0 0 3710.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (blue)
 1 1 30 -296 560 0 0 1 0 1 0 -1 0 0 3710.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (blue)
 1 1 -30 -296 560 0 0 1 0 1 0 -1 0 0 3710.dat
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (blue)
 1 1 -30 -296 120 0 0 1 0 1 0 -1 0 0 3460.dat
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (blue)
 1 1 30 -296 120 0 0 1 0 1 0 -1 0 0 3460.dat
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (blue)
 1 1 -30 -296 280 0 0 1 0 1 0 -1 0 0 3460.dat
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (blue)
 1 1 30 -296 280 0 0 1 0 1 0 -1 0 0 3460.dat
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (blue)
 1 1 -30 -296 440 0 0 1 0 1 0 -1 0 0 3460.dat
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (blue)
 1 1 30 -296 440 0 0 1 0 1 0 -1 0 0 3460.dat
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (blue)
 1 1 -30 -304 520 0 0 1 0 1 0 -1 0 0 3460.dat
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (blue)
 1 1 30 -304 520 0 0 1 0 1 0 -1 0 0 3460.dat
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (blue)
 1 1 -30 -304 360 0 0 1 0 1 0 -1 0 0 3460.dat
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (blue)
 1 1 30 -304 360 0 0 1 0 1 0 -1 0 0 3460.dat
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (blue)
 1 1 -30 -304 200 0 0 1 0 1 0 -1 0 0 3460.dat
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (blue)
 1 1 30 -304 200 0 0 1 0 1 0 -1 0 0 3460.dat
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (blue)
 1 1 -30 -304 40 0 0 1 0 1 0 -1 0 0 3460.dat
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (blue)
 1 1 30 -304 40 0 0 1 0 1 0 -1 0 0 3460.dat
-0 // Train Track Rail Straight Tapered
+0 // Train Track Rail Straight Tapered (blue)
 1 1 -30 -320 120 0 0 1 0 1 0 -1 0 0 3228a.dat
-0 // Train Track Rail Straight Tapered
+0 // Train Track Rail Straight Tapered (blue)
 1 1 30 -320 120 0 0 1 0 1 0 -1 0 0 3228a.dat
-0 // Train Track Rail Straight Tapered
+0 // Train Track Rail Straight Tapered (blue)
 1 1 -30 -320 440 0 0 1 0 1 0 -1 0 0 3228a.dat
-0 // Train Track Rail Straight Tapered
+0 // Train Track Rail Straight Tapered (blue)
 1 1 30 -320 440 0 0 1 0 1 0 -1 0 0 3228a.dat
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (blue)
 1 1 0 -288 10 1 0 0 0 1 0 0 0 1 3010.dat
-0 // Brick  1 x  6
+0 // Brick  1 x  6 (blue)
 1 1 0 -288 550 1 0 0 0 1 0 0 0 1 3009.dat
-0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring (blue)
 1 1 30 -288 570 -1 0 0 0 1 0 0 0 -1 3665a.dat
-0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring (blue)
 1 1 -30 -288 570 -1 0 0 0 1 0 0 0 -1 3665a.dat
-0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring (blue)
 1 1 -30 -288 -10 1 0 0 0 1 0 0 0 1 3665a.dat
-0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring (blue)
 1 1 30 -288 -10 1 0 0 0 1 0 0 0 1 3665a.dat
-0 // Plate  2 x  2 with 2 Wheel Clips Perpendicular
+0 // Plate  2 x  2 with 2 Wheel Clips Perpendicular (blue)
 1 1 -40 -264 560 0 0 1 0 1 0 -1 0 0 8.dat
-0 // Plate  2 x  2 with 2 Wheel Clips Perpendicular
+0 // Plate  2 x  2 with 2 Wheel Clips Perpendicular (blue)
 1 1 40 -264 560 0 0 1 0 1 0 -1 0 0 8.dat
-0 // Wheel Centre with Stub Axles
+0 // Wheel Centre with Stub Axles (red)
 1 4 -40 -242 560 0 0 1 0 1 0 -1 0 0 3464.dat
-0 // Wheel Centre with Stub Axles
+0 // Wheel Centre with Stub Axles (red)
 1 4 40 -242 560 0 0 1 0 1 0 -1 0 0 3464.dat
-0 // Tyre  4/ 80 x  8 Single Smooth Type 1
+0 // Tyre  4/ 80 x  8 Single Smooth Type 1 (rubber_black)
 1 256 -40 -242 560 0 0 1 0 1 0 -1 0 0 3139.dat
-0 // Tyre  4/ 80 x  8 Single Smooth Type 1
+0 // Tyre  4/ 80 x  8 Single Smooth Type 1 (rubber_black)
 1 256 40 -242 560 0 0 1 0 1 0 -1 0 0 3139.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (blue)
 1 1 -30 -264 0 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (blue)
 1 1 30 -264 0 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (blue)
 1 1 30 -240 0 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (blue)
 1 1 -30 -240 0 0 0 1 0 1 0 -1 0 0 3004.dat
 
 
@@ -579,17 +579,17 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 ROTATION CENTER 0 0 0 1 "Custom"
 0 ROTATION CONFIG 0 0
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (yellow)
 1 14 0 0 0 1 0 0 0 1 0 0 0 1 3020.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (yellow)
 1 14 -30 -8 0 0 0 1 0 1 0 -1 0 0 3069b.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (yellow)
 1 14 30 -8 0 0 0 1 0 1 0 -1 0 0 3069b.dat
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (yellow)
 1 14 0 -24 0 1 0 0 0 1 0 0 0 1 3003.dat
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (yellow)
 1 14 0 -48 0 1 0 0 0 1 0 0 0 1 3003.dat
-0 // Winch  2 x  4 x  2 with Light Grey Drum
+0 // Winch  2 x  4 x  2 with Light Grey Drum (yellow)
 1 14 0 -96 0 1 0 0 0 1 0 0 0 1 73037.dat
 
 
@@ -604,25 +604,25 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 ROTATION CENTER 0 0 0 1 "Custom"
 0 ROTATION CONFIG 0 0
-0 // Minifig Police Hat
+0 // Minifig Police Hat (black)
 1 0 0 -56 0 1 0 0 0 1 0 0 0 1 3624.dat
-0 // Minifig Head with Standard Grin Pattern (Blocked Hollow Stud)
+0 // Minifig Head with Standard Grin Pattern (Blocked Hollow Stud) (yellow)
 1 14 0 -56 0 1 0 0 0 1 0 0 0 1 3626bp01.dat
-0 // Minifig Torso
+0 // Minifig Torso (red)
 1 4 0 -32 0 1 0 0 0 1 0 0 0 1 973.dat
-0 // ~Minifig Hips (Obsolete)
+0 // ~Minifig Hips (Obsolete) (blue)
 1 1 0 0 0 1 0 0 0 1 0 0 0 1 3815.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (red)
 1 4 -15.552 -23 0 0.985 0 -0.17 0.17 0 0.985 0 -1 0 3818.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (red)
 1 4 15.552 -23 0 0.985 0.17 0 -0.17 0.985 0 0 0 1 3819.dat
-0 // Minifig Hand
+0 // Minifig Hand (yellow)
 1 14 -18.9194 -34.05 -18.761 0.985 -0.12019 -0.12019 0.17 0.696395 0.696395 0 -0.707 0.707 3820.dat
-0 // Minifig Hand
+0 // Minifig Hand (yellow)
 1 14 23.863 -5.404 -10.321 0.985 0.12019 -0.12019 -0.17 0.696395 -0.696395 0 0.707 0.707 3820.dat
-0 // ~Minifig Leg Right (Obsolete)
+0 // ~Minifig Leg Right (Obsolete) (blue)
 1 1 0 12 0 1 0 0 0 1 0 0 0 1 3816.dat
-0 // ~Minifig Leg Left (Obsolete)
+0 // ~Minifig Leg Left (Obsolete) (blue)
 1 1 0 12 0 1 0 0 0 1 0 0 0 1 3817.dat
 
 
@@ -637,25 +637,25 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 ROTATION CENTER 0 0 0 1 "Custom"
 0 ROTATION CONFIG 0 0
-0 // Minifig Police Hat
+0 // Minifig Police Hat (blue)
 1 1 0 -56 0 1 0 0 0 1 0 0 0 1 3624.dat
-0 // Minifig Head with Standard Grin Pattern (Blocked Hollow Stud)
+0 // Minifig Head with Standard Grin Pattern (Blocked Hollow Stud) (yellow)
 1 14 0 -56 0 1 0 0 0 1 0 0 0 1 3626bp01.dat
-0 // Minifig Torso
+0 // Minifig Torso (white)
 1 15 0 -32 0 1 0 0 0 1 0 0 0 1 973.dat
-0 // ~Minifig Hips (Obsolete)
+0 // ~Minifig Hips (Obsolete) (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3815.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (white)
 1 15 -15.552 -23 0 0.985 -0.17 0 0.17 0.985 0 0 0 1 3818.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (white)
 1 15 15.552 -23 0 0.985 0.17 0 -0.17 0.985 0 0 0 1 3819.dat
-0 // Minifig Hand
+0 // Minifig Hand (yellow)
 1 14 -23.863 -5.4044 -10.321 0.985 -0.12019 0.12019 0.17 0.696395 -0.696395 0 0.707 0.707 3820.dat
-0 // Minifig Hand
+0 // Minifig Hand (yellow)
 1 14 23.863 -5.4044 -10.321 0.985 0.12019 -0.12019 -0.17 0.696395 -0.696395 0 0.707 0.707 3820.dat
-0 // ~Minifig Leg Right (Obsolete)
+0 // ~Minifig Leg Right (Obsolete) (black)
 1 0 0 12 0 1 0 0 0 1 0 0 0 1 3816.dat
-0 // ~Minifig Leg Left (Obsolete)
+0 // ~Minifig Leg Left (Obsolete) (black)
 1 0 0 12 0 1 0 0 0 1 0 0 0 1 3817.dat
 
 
@@ -677,7 +677,7 @@
 
 0 !KEYWORDS Set 165-1, Cargo Station
 
-0 // Box with 5 Faces without Any Edges
+0 // Box with 5 Faces without Any Edges (main_colour)
 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 23 box5-12.dat
 1 71 0 -0.25 0 1 0 0 0 1 0 0 0 1 s\165-1 - 3068bp09s01.dat
 1 14 0 -0.25 0 1 0 0 0 1 0 0 0 1 s\165-1 - 3068bp09s02.dat
@@ -700,7 +700,7 @@
 
 0 !KEYWORDS Set 165-1, Cargo Station
 
-0 // Box with 5 Faces without Any Edges
+0 // Box with 5 Faces without Any Edges (main_colour)
 1 16 0 -0.25 0 159 0 0 0 0.25 0 0 0 11 box5-12.dat
 4 0 -69.12 -0.25 -5.18 -69.75 -0.25 -4.14 -71.34 -0.25 -4.92 -70.44 -0.25 -6.28
 4 0 -69.75 -0.25 -4.14 -70.13 -0.25 -2.86 -71.87 -0.25 -3.3 -71.34 -0.25 -4.92

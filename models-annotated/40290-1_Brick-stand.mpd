@@ -19,13 +19,13 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Plate  4 x  4
+0 // Plate  4 x  4 (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3031.dat
 0 STEP
-0 // Hinge  1 x  2 Base
+0 // Hinge  1 x  2 Base (black)
 1 0 0 -24 10 1 0 0 0 1 0 0 0 1 3937.dat
 0 STEP
-0 // Slope Brick 31  1 x  2 x  0.667
+0 // Slope Brick 31  1 x  2 x  0.667 (black)
 1 0 0 0 -10 1 0 0 0 1 0 0 0 1 85984.dat
 
 
@@ -35,12 +35,12 @@
 0 Author: Willy Tschager [Holly-Wood]
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Hinge  2 x  2 Top
+0 // Hinge  2 x  2 Top (black)
 1 0 0 0 0 -1 0 0 0 1 0 0 0 -1 6134.dat
 0 STEP
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (red)
 1 4 0 -24 10 0 0 -1 0 1 0 1 0 0 3001.dat
-0 // Tile  2 x  4 with "60 years" Pattern
+0 // Tile  2 x  4 with "60 years" Pattern (white)
 1 15 0 -32 10 0 0 1 0 1 0 -1 0 0 40290 - 87079p0e.dat
 
 

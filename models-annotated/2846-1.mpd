@@ -7,29 +7,29 @@
 
 0 !THEME Western / Indians
 
-0 // Plate  2 x  8
+0 // Plate  2 x  8 (black)
 1 0 0 0 0 0 0 1 0 1 0 -1 0 0 3034.dat
 0 STEP
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (light_grey)
 1 7 0 -8 -10 -1 0 0 0 1 0 0 0 -1 3023.dat
-0 // Plate  1 x  1 with Clip Horizontal (Thick C-Clip)
+0 // Plate  1 x  1 with Clip Horizontal (Thick C-Clip) (light_grey)
 1 7 10 -8 10 0 0 -1 0 1 0 1 0 0 61252.dat
-0 // Plate  1 x  1 with Clip Horizontal (Thick C-Clip)
+0 // Plate  1 x  1 with Clip Horizontal (Thick C-Clip) (light_grey)
 1 7 -10 -8 10 0 0 1 0 1 0 -1 0 0 61252.dat
 0 STEP
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (red)
 1 4 0 -16 0 0 0 1 0 1 0 -1 0 0 3022.dat
 0 STEP
-0 // Brick  2 x  3 with Curved Top
+0 // Brick  2 x  3 with Curved Top (red)
 1 4 0 -24 -40 0 0 1 0 1 0 -1 0 0 6215.dat
-0 // Brick  2 x  3 with Curved Top
+0 // Brick  2 x  3 with Curved Top (red)
 1 4 0 -24 40 0 0 -1 0 1 0 1 0 0 6215.dat
 0 STEP
-0 // Plant Leaves  4 x  3
+0 // Plant Leaves  4 x  3 (green)
 1 2 -10 -32 50 -0.866 0 0.5 0 1 0 -0.5 0 -0.866 2423.dat
-0 // Minifig Spear with Round End
+0 // Minifig Spear with Round End (brown)
 1 6 30 -6 -20 0 0 1 1 0 0 0 1 0 4497.dat
-0 // Minifig Tool Handaxe
+0 // Minifig Tool Handaxe (black)
 1 0 -30 -6 3 -0.866 0 0.5 0.5 0 0.866 0 1 0 3835.dat
 1 6 0 -69 8 1 0 0 0 1 0 0 0 1 2846 - Minifig.ldr
 
@@ -43,33 +43,33 @@
 
 0 !THEME Western / Indians
 
-0 // Minifig Hair Long with Headband
+0 // Minifig Hair Long with Headband (black)
 1 0 0 -24 0 1 0 0 0 1 0 0 0 1 30114.dat
-0 // Minifig Feathers with Pin and Black Tip on Both Sides Pattern
+0 // Minifig Feathers with Pin and Black Tip on Both Sides Pattern (white)
 1 15 0 -20.17 17.76 1 0 0 0 1 0 0 0 1 30126p01.dat
-0 // Minifig Head with Orange Painted Face Pattern
+0 // Minifig Head with Orange Painted Face Pattern (yellow)
 1 14 0 -24 0 1 0 0 0 1 0 0 0 1 2846 - 3626bpw4.dat
-0 // Minifig Torso with White/Blue Triangles, Red/White Amulet Pattern
+0 // Minifig Torso with White/Blue Triangles, Red/White Amulet Pattern (tan)
 1 19 0 0 0 1 0 0 0 1 0 0 0 1 973pwb.dat
-0 // ~Minifig Hips (Obsolete)
+0 // ~Minifig Hips (Obsolete) (blue)
 1 1 0 32 0 1 0 0 0 1 0 0 0 1 3815.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (tan)
 1 19 -15.552 9 0 0.985 -0.17 0 0.153 0.885 0.438 -0.075 -0.432 0.899 3818.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (tan)
 1 19 15.552 9 0 0.985 0.139 0.098 -0.147 0.986 0.08 -0.085 -0.093 0.992 3819.dat
-0 // Minifig Hand
+0 // Minifig Hand (yellow)
 1 14 -23.863 20.29 -16.99 0.947 -0.289 0.137 0.318 0.895 -0.31 -0.033 0.338 0.94 3820.dat
-0 // Minifig Hand
+0 // Minifig Hand (yellow)
 1 14 22.28 25.902 -12.43 0.93 0.365 0.011 -0.263 0.69 -0.673 -0.254 0.624 0.739 3820.dat
-0 // ~Minifig Leg Right with Blue/White Triangles, Fringe Pattern (Obsolete)
+0 // ~Minifig Leg Right with Blue/White Triangles, Fringe Pattern (Obsolete) (tan)
 1 19 0 44 0 1 0 0 0 0 1 0 -1 0 3816pw2.dat
-0 // ~Minifig Leg Left with Blue/White Triangles, Fringe Pattern (Obsolete)
+0 // ~Minifig Leg Left with Blue/White Triangles, Fringe Pattern (Obsolete) (tan)
 1 19 0 44 0 1 0 0 0 0 1 0 -1 0 3817pw2.dat
-0 // Minifig Tool Oar
+0 // Minifig Tool Oar (brown)
 1 6 13.336 20.104 -39.219 0.094 0.356 0.928 0.815 0.506 -0.277 -0.57 0.782 -0.244 2542.dat
-0 // Minifig Bow with Arrow
+0 // Minifig Bow with Arrow (black)
 1 0 -25.288 24.799 -25.858 0.97 -0.24 -0.04 0.174 0.797 -0.577 0.17 0.554 0.815 4499.dat
-0 // Minifig Arrow Quiver
+0 // Minifig Arrow Quiver (black)
 1 0 0 0 0 -1 0 0 0 1 0 0 0 -1 4498.dat
 
 
@@ -539,7 +539,7 @@
 1 16 0 4 0 0 0 8 0 -6.4 0 8 0 0 t04o6250.dat
 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 8 t04o6250.dat
 1 16 0 4 0 0 0 -8 0 -6.4 0 -8 0 0 t04o6250.dat
-0 // Cylinder 0.625
+0 // Cylinder 0.625 (main_colour)
 1 16 0 4 0 12.0105 0 4.97489 0 13 0 -4.97489 0 12.0105 5-8cyli.dat
 1 16 0 17 0 3.0615 0 7.391 0 6.4 0 -7.391 0 3.0615 t16o6250.dat
 1 16 0 17 0 8 0 0 0 6.4 0 0 0 8 t04o6250.dat

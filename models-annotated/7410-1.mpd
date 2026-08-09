@@ -9,11 +9,11 @@
 1 8 130 -32 -120 -0.966 0 0.259 0 1 0 -0.259 0 -0.966 7410 - gator.ldr
 1 8 -110 -8 -20 1 0 0 0 1 0 0 0 1 7410 - idol.ldr
 1 8 -97.765 -8 -161.022 0.966 0 -0.259 0 1 0 0.259 0 0.966 7410 - crate.ldr
-0 // Animal Snake
+0 // Animal Snake (red)
 1 4 -70 0 -230 -0.259 0 -0.966 0 1 0 0.966 0 -0.259 30115.dat
-0 // Minifig Chain End for Chain  6L and 17L
+0 // Minifig Chain End for Chain  6L and 17L (dark_grey)
 1 8 0 -24 -70 -1 0 0 0 1 0 0 0 -1 208.dat
-0 // Minifig Chain End for Chain  6L and 17L
+0 // Minifig Chain End for Chain  6L and 17L (dark_grey)
 1 8 -90 -56 -190 -0.966 0 0.259 0 1 0 -0.259 0 -0.966 208.dat
 1 8 -80 -54.5 -186.548 0 0 1 1 0 0 0 1 0 7410 - minifigChain-1.ldr
 1 8 50 -56 71 1 0 0 0 1 0 0 0 1 7410 - johnny.ldr
@@ -23,23 +23,23 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 Name: 7410 - johnny.ldr
 0 !LDRAW_ORG Model
-0 // Minifig Torso with Safari Shirt, Gun, Red Bandana & White Chest Pattern
+0 // Minifig Torso with Safari Shirt, Gun, Red Bandana & White Chest Pattern (green)
 1 2 0 -32 0 1 0 0 0 1 0 0 0 1 7410 - 973pax.dat
-0 // ~Minifig Hips and Legs with Buttoned Pockets Pattern (Obsolete)
+0 // ~Minifig Hips and Legs with Buttoned Pockets Pattern (Obsolete) (tan)
 1 19 0 0 0 1 0 0 0 1 0 0 0 1 3815ca3.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (tan)
 1 19 15.552 -23 0 0.985 0.17 0 -0.17 0.985 0 0 0 1 3819.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (tan)
 1 19 -15.552 -23 0 0.985 -0.17 0 0.17 0.985 0 0 0 1 3818.dat
-0 // Minifig Hand
+0 // Minifig Hand (yellow)
 1 14 -23.688 -5.24 -9.884 0.985 -0.12 0.12 0.17 0.697 -0.697 0 0.707 0.707 3820.dat
-0 // Minifig Hand
+0 // Minifig Hand (yellow)
 1 14 23.688 -5.24 -9.884 0.985 0.12 -0.12 -0.17 0.697 -0.697 0 0.707 0.707 3820.dat
-0 // Minifig Head with Smirk, Black Moustache and Cleft Chin Pattern
+0 // Minifig Head with Smirk, Black Moustache and Cleft Chin Pattern (yellow)
 1 14 0 -56 0 0.828 0 -0.56 0 1 0 0.56 0 0.828 7410 - 3626bpap.dat
-0 // Minifig Hat Wide Brim Flat
+0 // Minifig Hat Wide Brim Flat (brown)
 1 6 0 -56 0 0.828 0 -0.56 0 1 0 0.56 0 0.828 30167.dat
-0 // Minifig Gun Revolver
+0 // Minifig Gun Revolver (dark_grey)
 1 8 24.475 -0.667 -20.476 0.838 0.086 -0.539 -0.504 0.5 -0.704 0.209 0.862 0.462 30132.dat
 
 0 FILE 7410 - gator.ldr
@@ -47,11 +47,11 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 Name: 7410 - gator.ldr
 0 !LDRAW_ORG Model
-0 // Animal Crocodile Body
+0 // Animal Crocodile Body (green)
 1 2 0 0 0 1 0 0 0 1 0 0 0 1 6026.dat
-0 // Animal Dragon Head
+0 // Animal Dragon Head (green)
 1 2 0 14 -40 1 0 0 0 0.954 0.301 0 -0.301 0.954 6027.dat
-0 // Animal Dragon Tail
+0 // Animal Dragon Tail (green)
 1 2 0 5 55 1 0 0 0 1 0 0 0 1 6028.dat
 
 0 FILE 7410 - idol.ldr
@@ -59,55 +59,55 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 Name: 7410 - idol.ldr
 0 !LDRAW_ORG Model
-0 // Plate  4 x  4
+0 // Plate  4 x  4 (green)
 1 2 0 0 0 1 0 0 0 1 0 0 0 1 3031.dat
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (light_grey)
 1 7 -30 -24 0 0 0 -1 0 1 0 1 0 0 4865a.dat
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (light_grey)
 1 7 0 -24 10 1 0 0 0 1 0 0 0 1 4865a.dat
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (light_grey)
 1 7 0 -24 -10 -1 0 0 0 1 0 0 0 -1 4865a.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (white)
 1 15 10 -24 -30 -1 0 0 0 1 0 0 0 -1 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (white)
 1 15 10 -24 30 -1 0 0 0 1 0 0 0 -1 3005.dat
 0 STEP
-0 // Hinge  1 x  2 Base
+0 // Hinge  1 x  2 Base (white)
 1 15 30 -24 0 0 0 -1 0 1 0 1 0 0 3937.dat
-0 // Hinge  1 x  2 Top
+0 // Hinge  1 x  2 Top (light_grey)
 1 7 30 -24 0 0 0 -1 0 1 0 1 0 0 3938.dat
-0 // Rock  1 x  1 Gem Facetted
+0 // Rock  1 x  1 Gem Facetted (trans_dark_blue)
 1 33 -27 -14 0 -0.515 -0.81 -0.279 0 0.326 -0.946 0.857 -0.487 -0.168 30153.dat
-0 // Rock  1 x  1 Gem Facetted
+0 // Rock  1 x  1 Gem Facetted (trans_yellow)
 1 46 -3 -14 4 0.5 -0.819 -0.282 0 0.326 -0.946 0.866 0.473 0.163 30153.dat
 0 STEP
-0 // Brick  1 x  1 x  6 Round with Square Base
+0 // Brick  1 x  1 x  6 Round with Square Base (dark_orange)
 1 484 -30 -144 -30 1 0 0 0 1 0 0 0 1 43888.dat
-0 // Brick  1 x  1 x  6 Round with Square Base
+0 // Brick  1 x  1 x  6 Round with Square Base (dark_orange)
 1 484 -30 -144 30 1 0 0 0 1 0 0 0 1 43888.dat
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (dark_grey)
 1 8 0 -32 0 1 0 0 0 1 0 0 0 1 3020.dat
-0 // Plate  1 x  2 without Groove with 1 Centre Stud
+0 // Plate  1 x  2 without Groove with 1 Centre Stud (black)
 1 0 10 -40 0 0 0 1 0 1 0 -1 0 0 3794a.dat
-0 // Brick  1 x  1 with Studs on Four Sides
+0 // Brick  1 x  1 with Studs on Four Sides (white)
 1 15 10 -64 0 0 0 1 0 1 0 -1 0 0 4733.dat
-0 // Arch  1 x  4
+0 // Arch  1 x  4 (white)
 1 15 -30 -168 0 0 0 1 0 1 0 -1 0 0 3659.dat
 0 STEP
-0 // Rock  1 x  1 Gem Facetted
+0 // Rock  1 x  1 Gem Facetted (trans_red)
 1 36 25 -54 0 0 -1 0 0.089 0 -0.996 0.996 0 0.089 30153.dat
-0 // Animal Tail
+0 // Animal Tail (dark_blue)
 1 272 10 -54 -14 0.956 0.292 0 0.292 -0.956 0 0 0 -1 43892.dat
-0 // Animal Tail
+0 // Animal Tail (dark_blue)
 1 272 10 -54 14 -0.956 0.292 0 -0.292 -0.956 0 0 0 1 43892.dat
-0 // Minifig Head with Evil Skeleton Skull Pattern
+0 // Minifig Head with Evil Skeleton Skull Pattern (white)
 1 15 10 -88 0 0 0 -1 0 1 0 1 0 0 3626bpa8.dat
 0 STEP
-0 // Minifig Headdress with Hooked Beak and Feathers
+0 // Minifig Headdress with Hooked Beak and Feathers (yellow)
 1 14 10 -88 0 0 0 -1 0 1 0 1 0 0 7410 - 30276.dat
-0 // Plant Brick  1 x  1 Round with 3 Bamboo Leaves
+0 // Plant Brick  1 x  1 Round with 3 Bamboo Leaves (green)
 1 2 -30 -192 30 0 0 -1 0 1 0 1 0 0 30176.dat
-0 // Plant Brick  1 x  1 Round with 3 Bamboo Leaves
+0 // Plant Brick  1 x  1 Round with 3 Bamboo Leaves (green)
 1 2 -30 -192 -30 0 0 1 0 1 0 -1 0 0 30176.dat
 
 0 FILE 7410 - boat.ldr
@@ -115,60 +115,60 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 Name: 7410 - boat.ldr
 0 !LDRAW_ORG Model
-0 // Boat  5 x 14 x  2 with Front Side Bar Holders
+0 // Boat  5 x 14 x  2 with Front Side Bar Holders (light_grey)
 1 7 0 0 0 1 0 0 0 1 0 0 0 1 7410 - 2551.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (black)
 1 0 0 -24 20 1 0 0 0 1 0 0 0 1 3001.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 0 -24 -10 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (brown)
 1 6 20 -48 30 1 0 0 0 1 0 0 0 1 3700.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (brown)
 1 6 -20 -48 30 1 0 0 0 1 0 0 0 1 3700.dat
-0 // Technic Pin  1/2
+0 // Technic Pin  1/2 (light_grey)
 1 7 20 -38 40 0 0 -1 0 1 0 1 0 0 4274.dat
-0 // Technic Pin  1/2
+0 // Technic Pin  1/2 (light_grey)
 1 7 -20 -38 40 0 0 -1 0 1 0 1 0 0 4274.dat
-0 // Tap  1 x  1 with Hole in Spout
+0 // Tap  1 x  1 with Hole in Spout (light_grey)
 1 7 -20 -38 64 1 0 0 0 0 1 0 -1 0 4599a.dat
-0 // Car Steering Wheel 2L
+0 // Car Steering Wheel 2L (black)
 1 0 20 -38 48 1 0 0 0 0 1 0 -1 0 30663.dat
 0 STEP
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 0 -48 -10 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (black)
 1 0 0 -48 10 1 0 0 0 1 0 0 0 1 3010.dat
-0 // Plate  1 x  1 with Clip Light Type 2
+0 // Plate  1 x  1 with Clip Light Type 2 (dark_grey)
 1 8 -30 -56 10 1 0 0 0 1 0 0 0 1 4081b.dat
-0 // Plate  1 x  1 with Clip Light Type 2
+0 // Plate  1 x  1 with Clip Light Type 2 (dark_grey)
 1 8 30 -56 10 1 0 0 0 1 0 0 0 1 4081b.dat
-0 // Window  1 x  2 x  2 Plane
+0 // Window  1 x  2 x  2 Plane (brown)
 1 6 -20 -96 30 1 0 0 0 1 0 0 0 1 2377.dat
-0 // Window  1 x  2 x  2 Plane
+0 // Window  1 x  2 x  2 Plane (brown)
 1 6 20 -96 30 1 0 0 0 1 0 0 0 1 2377.dat
-0 // Tile  1 x  1 with White and Red Dial, Black Needle and 4 Black Screw Heads Pattern
+0 // Tile  1 x  1 with White and Red Dial, Black Needle and 4 Black Screw Heads Pattern (light_grey)
 1 7 42 -54 -10 0 -1 0 0 0 -1 1 0 0 3070bp07.dat
-0 // Hinge Control Stick Base
+0 // Hinge Control Stick Base (light_grey)
 1 7 -42 -54 -10 0 1 0 0 0 -1 -1 0 0 4592.dat
-0 // Hinge Control Stick
+0 // Hinge Control Stick (black)
 1 0 -42 -54 -10 0 0.391 0.921 0 0.921 -0.391 -1 0 0 4593.dat
 0 STEP
-0 // Brick  2 x  2 Round without Reinforcement
+0 // Brick  2 x  2 Round without Reinforcement (black)
 1 0 -0.001 -72.003 0 0 0 1 0 1 0 -1 0 0 3941.dat
-0 // Brick  2 x  2 Round without Reinforcement
+0 // Brick  2 x  2 Round without Reinforcement (black)
 1 0 -0.001 -96.006 0 0 0 1 0 1 0 -1 0 0 3941.dat
-0 // Brick  2 x  2 Round without Reinforcement
+0 // Brick  2 x  2 Round without Reinforcement (black)
 1 0 -0.001 -120.009 0 0 0 1 0 1 0 -1 0 0 3941.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (light_grey)
 1 7 0 -128.009 0 0 0 1 0 1 0 -1 0 0 6141.dat
-0 // Dish  2 x  2 Inverted
+0 // Dish  2 x  2 Inverted (black)
 1 0 0 -136.01 0 0 0 1 0 1 0 -1 0 0 4740.dat
 0 STEP
-0 // Minifig Loudhailer
+0 // Minifig Loudhailer (light_grey)
 1 7 30 -78.003 10 -1 0 0 0 0 -1 0 -1 0 4349.dat
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (light_grey)
 1 7 30 -120.008 10 0 0 1 0 1 0 -1 0 0 3062b.dat
-0 // Minifig Flame with Pegs
+0 // Minifig Flame with Pegs (trans_neon_orange)
 1 38 30 -128.009 10 0 1 0 0 0 -1 -1 0 0 6126a.dat
 0 STEP
 
@@ -177,19 +177,19 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 Name: 7410 - crate.ldr
 0 !LDRAW_ORG Model
-0 // Container Adventurers Chest
+0 // Container Adventurers Chest (brown)
 1 6 0 0 0 1 0 0 0 1 0 0 0 1 30150.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (brown)
 1 6 0 -40 -20 1 0 0 0 1 0 0 0 1 3021.dat
-0 // Tile  1 x  2 with Dynamite Pattern
+0 // Tile  1 x  2 with Dynamite Pattern (light_grey)
 1 7 -20 -48 -20 0 0 1 0 1 0 -1 0 0 3069bp03.dat
-0 // Tile  1 x  2 with Dynamite Pattern
+0 // Tile  1 x  2 with Dynamite Pattern (light_grey)
 1 7 20 -48 -20 0 0 1 0 1 0 -1 0 0 3069bp03.dat
-0 // Minifig Gun Rifle
+0 // Minifig Gun Rifle (dark_grey)
 1 8 -22 -41 44 0.961 -0.17 -0.217 0 0.788 -0.616 0.276 0.592 0.757 30141.dat
-0 // Minifig Pickaxe
+0 // Minifig Pickaxe (dark_grey)
 1 8 -3 -33 32 1 0 0 0 0.777 0.629 0 -0.629 0.777 3841.dat
-0 // Minifig Shovel
+0 // Minifig Shovel (dark_grey)
 1 8 16 -34 31 0.214 -0.629 0.747 0.173 0.777 0.605 -0.961 0 0.276 3837.dat
 
 0 FILE 7410 - minifigChain-1.ldr
@@ -221,39 +221,39 @@
 0 BFC CERTIFY CCW
 
 0 //Segments
-0 // Minifig Chain Link for Chain  6L and 17L
+0 // Minifig Chain Link for Chain  6L and 17L (main_colour)
 1 16 1.334071 -21.096496 -5.726211 0.843906 -0.533628 -0.055347 0.536476 0.838598 0.094588 -0.004061 -0.109515 0.993977 209.dat
-0 // Minifig Chain Link for Chain  6L and 17L
+0 // Minifig Chain Link for Chain  6L and 17L (main_colour)
 1 16 14.261408 -38.025998 1.206594 -0.226423 0.592434 0.773146 0.456591 -0.63659 0.621512 0.860382 0.493737 -0.126361 209.dat
-0 // Minifig Chain Link for Chain  6L and 17L
+0 // Minifig Chain Link for Chain  6L and 17L (main_colour)
 1 16 16.699341 -39.580408 4.555816 0.81346 -0.442248 -0.377757 0.442518 0.049118 0.895413 -0.37744 -0.895547 0.235658 209.dat
-0 // Minifig Chain Link for Chain  6L and 17L
+0 // Minifig Chain Link for Chain  6L and 17L (main_colour)
 1 16 24.199829 -36.004194 25.036997 -0.280518 0.220588 0.934158 0.913894 0.358914 0.189681 -0.293441 0.90693 -0.302276 209.dat
-0 // Minifig Chain Link for Chain  6L and 17L
+0 // Minifig Chain Link for Chain  6L and 17L (main_colour)
 1 16 25.009059 -33.816165 29.371624 0.97984 -0.107548 -0.168366 0.088152 -0.523529 0.847435 -0.179285 -0.845193 -0.503494 209.dat
-0 // Minifig Chain Link for Chain  6L and 17L
+0 // Minifig Chain Link for Chain  6L and 17L (main_colour)
 1 16 26.769802 -20.758066 48.15494 -0.093481 0.045683 0.994572 0.789085 0.612557 0.046031 -0.607129 0.789105 -0.09331 209.dat
-0 // Minifig Chain Link for Chain  6L and 17L
+0 // Minifig Chain Link for Chain  6L and 17L (main_colour)
 1 16 26.8708 -17.521815 51.947683 0.999335 0.00517 -0.036107 0.029889 -0.683471 0.729365 -0.020907 -0.729959 -0.683171 209.dat
-0 // Minifig Chain Link for Chain  6L and 17L
+0 // Minifig Chain Link for Chain  6L and 17L (main_colour)
 1 16 23.351596 -1.841095 68.013073 -0.002951 -0.300853 0.953666 0.699596 0.68081 0.21694 -0.714532 0.667821 0.208467 209.dat
-0 // Minifig Chain Link for Chain  6L and 17L
+0 // Minifig Chain Link for Chain  6L and 17L (main_colour)
 1 16 21.290664 1.409476 71.016767 0.846055 0.532611 -0.02273 0.420173 -0.639992 0.643323 0.328094 -0.553837 -0.765257 209.dat
-0 // Minifig Chain Link for Chain  6L and 17L
+0 // Minifig Chain Link for Chain  6L and 17L (main_colour)
 1 16 8.22523 16.391913 82.438901 -0.030674 -0.604419 0.796076 0.532915 0.663916 0.524611 -0.845612 0.440333 0.301739 209.dat
-0 // Minifig Chain Link for Chain  6L and 17L
+0 // Minifig Chain Link for Chain  6L and 17L (main_colour)
 1 16 5.349774 19.978284 84.331764 0.836138 0.548192 -0.018971 0.515373 -0.7733 0.369322 0.187789 -0.318581 -0.929108 209.dat
-0 // Minifig Chain Link for Chain  6L and 17L
+0 // Minifig Chain Link for Chain  6L and 17L (main_colour)
 1 16 -4.242145 39.733346 89.626852 0.001211 -0.28765 0.957735 0.149551 0.947017 0.284242 -0.988753 0.142885 0.044165 209.dat
-0 // Minifig Chain Link for Chain  6L and 17L
+0 // Minifig Chain Link for Chain  6L and 17L (main_colour)
 1 16 -4.542251 44.443639 89.849195 0.988311 -0.15238 -0.004616 -0.15243 -0.987233 -0.046221 0.002486 0.046384 -0.998921 209.dat
-0 // Minifig Chain Link for Chain  6L and 17L
+0 // Minifig Chain Link for Chain  6L and 17L (main_colour)
 1 16 2.49352 65.761342 87.708534 -0.041113 0.460939 0.886479 -0.136752 0.876284 -0.46198 -0.989752 -0.140221 0.027008 209.dat
-0 // Minifig Chain Link for Chain  6L and 17L
+0 // Minifig Chain Link for Chain  6L and 17L (main_colour)
 1 16 5.152682 69.850601 86.913425 0.788972 -0.609431 -0.078212 -0.613026 -0.772168 -0.1672 0.041504 0.179862 -0.982816 209.dat
-0 // Minifig Chain Link for Chain  6L and 17L
+0 // Minifig Chain Link for Chain  6L and 17L (main_colour)
 1 16 19.957453 86.885917 82.672333 -0.099355 0.678488 0.727862 -0.166364 0.709858 -0.684415 -0.981046 -0.18909 0.042348 209.dat
-0 // Minifig Chain Link for Chain  6L and 17L
+0 // Minifig Chain Link for Chain  6L and 17L (main_colour)
 1 16 23.34751 90.456498 81.818287 0.729956 -0.678085 -0.085821 -0.683012 -0.71895 -0.128864 0.02568 0.152682 -0.987942 209.dat
 0 FILE 7410 - 973pax.dat
 0 Minifig Torso with Safari Shirt, Gun, Red Bandana & White Chest Pattern
@@ -273,21 +273,21 @@
 4 16 19 29 10 19 32 10 -19 32 10 -19 29 10
 4 16 -14.345 2 10 14.345 2 10 19 29 10 -19 29 10
 4 16 -14.345 2 10 -12 0 10 12 0 10 14.345 2 10
-0 // Cylinder 0.25
+0 // Cylinder 0.25 (white)
 1 15 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 0.5 17.75 -10 0.75 0 0 0 0 0.75 0 1 0 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 0.55 22.49 -10 0.75 0 0 0 0 0.75 0 1 0 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 0.64 26.92 -10 0.75 0 0 0 0 0.75 0 1 0 4-4disc.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 0.64 26.92 -10 0.75 0 0 0 0 0.75 0 1 0 4-4ndis.dat
-0 // Disc Negative 0.75
+0 // Disc Negative 0.75 (main_colour)
 1 16 0.55 22.49 -10 0 0 -0.75 0.75 0 0 0 1 0 3-4ndis.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 -10.25 12.5 -10 0.75 0 0 0 0 0.75 0 1 0 4-4disc.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -10.25 12.5 -10 0.75 0 0 0 0 0.75 0 1 0 4-4ndis.dat
 4 0 -2.75 28.5 -10 -2.75 30.75 -10 1.5 30.75 -10 1.5 28.5 -10
 4 14 1.5 28.5 -10 2.5 28 -10 -3.76 28 -10 -2.75 28.5 -10
@@ -800,7 +800,7 @@
 0 !KEYWORDS Sideburns, Johnny Thunder, Adventurers, Orient Expedition
 
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
-0 // Cylinder 0.625
+0 // Cylinder 0.625 (main_colour)
 1 16 0 4 0 12.01043 0 4.97488 0 13 0 -4.97488 0 12.01043 5-8cyli.dat
 1 16 0 4 0 3.06147 0 7.39104 0 -6.4 0 7.39104 0 -3.06147 t04o6250.dat
 1 16 0 4 0 -7.39104 0 3.06147 0 -6.4 0 3.06147 0 7.39104 t04o6250.dat
@@ -1382,9 +1382,9 @@
 
 4 16 16.610001 12.25 -100.300003 -16.610001 12.25 -100.300003 -20 10.373 -100.300003 -20 0 -100.300003
 4 16 20 0 -100.300003 20 10.373 -100.300003 16.610001 12.25 -100.300003 -20 0 -100.300003
-0 // Rectangle with 1 Edge
+0 // Rectangle with 1 Edge (main_colour)
 1 16 0 0 -80.2 0 0 -20 0 1 0 -20.1 0 0 rect1.dat
-0 // Rectangle with 1 Edge
+0 // Rectangle with 1 Edge (main_colour)
 1 16 0 0 19.825 0 0 40.23 0 1 0 79.925 0 0 rect1.dat
 2 24 -16.610001 12.25 -100.300003 16.610001 12.25 -100.300003
 3 16 -5.69 12.25 -103.699997 -11.26 12.25 -102.300003 -16.610001 12.25 -100.300003
@@ -1393,31 +1393,31 @@
 1 16 20 3.75 20 0 0 -1 0 -3.0625 0 1 0 0 stug4-1x7.dat
 1 16 -20 3.75 20 0 0 -1 0 -3.0625 0 1 0 0 stug4-1x7.dat
 1 16 0 3.75 0 0 0 -1 0 -3.0625 0 1 0 0 stug4-1x9.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 0 3.75 21.6 0 0 36.25 0 -1 0 -77.9 0 0 rect2p.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 0 3.75 -76.25 -16.25 0 0 0 -1 0 0 0 -19.95 rect3.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 36.25 9.875 21.6 0 1 0 0 0 6.125 -77.9 0 0 rect3.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 26.25 9.875 -56.3 0 0 -10 -6.125 0 0 0 -1 0 rect3.dat
-0 // Rectangle with 2 Adjacent Edges
+0 // Rectangle with 2 Adjacent Edges (main_colour)
 1 16 16.25 9.875 -76.25 0 1 0 0 0 6.125 -19.95 0 0 rect2a.dat
-0 // Rectangle with 2 Adjacent Edges
+0 // Rectangle with 2 Adjacent Edges (main_colour)
 1 16 0 9.875 -96.2 -16.25 0 0 0 0 6.125 0 -1 0 rect2a.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 -36.25 9.875 21.6 0 -1 0 0 0 6.125 77.9 0 0 rect3.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 -26.25 9.875 -56.3 0 0 10 6.125 0 0 0 -1 0 rect3.dat
-0 // Rectangle with 1 Edge
+0 // Rectangle with 1 Edge (main_colour)
 1 16 -16.25 9.875 -76.25 0 -1 0 6.125 0 0 0 0 -19.95 rect1.dat
-0 // Box with 3 Faces without 2 Parallel Edges
+0 // Box with 3 Faces without 2 Parallel Edges (main_colour)
 1 16 30 9.85 99.5 0 0 -1.5 6.125 0 0 0 -3.25 0 box3u2p.dat
-0 // Box with 3 Faces without 2 Parallel Edges
+0 // Box with 3 Faces without 2 Parallel Edges (main_colour)
 1 16 10 9.85 99.5 0 0 -1.5 6.125 0 0 0 -3.25 0 box3u2p.dat
-0 // Box with 3 Faces without 2 Parallel Edges
+0 // Box with 3 Faces without 2 Parallel Edges (main_colour)
 1 16 -10 9.85 99.5 0 0 -1.5 6.125 0 0 0 -3.25 0 box3u2p.dat
-0 // Box with 3 Faces without 2 Parallel Edges
+0 // Box with 3 Faces without 2 Parallel Edges (main_colour)
 1 16 -30 9.85 99.5 0 0 -1.5 6.125 0 0 0 -3.25 0 box3u2p.dat
 2 24 15.32 16 -102.699997 21.57 16 -99.900002
 2 24 8.69 16 -104.599998 15.32 16 -102.699997
@@ -1510,7 +1510,7 @@
 1 16 0 0 -20 0 0 -1 0 1 0 1 0 0 stug-4x4.dat
 1 16 0 0 -80 0 0 -1 0 1 0 1 0 0 stug-2x2.dat
 1 16 0 -40 -150 0 0 -1 0 1 0 1 0 0 stud2a.dat
-0 // Circle 1.0
+0 // Circle 1.0 (main_colour)
 1 16 0 -40 -150 0 0 6 0 1 0 6 0 0 4-4edge.dat
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\7410 - 2551s01.dat
 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\7410 - 2551s01.dat
@@ -1538,15 +1538,15 @@
 5 24 0 -28.870001 102.739998 0 -28.48 101.790001 -10.4 -28.190001 101.769997 10.41 -28.58 102.720001
 5 24 0 -27.860001 100.949997 0 -27.040001 100.309998 -10.36 -26.74 100.32 10.38 -27.559999 100.949997
 5 24 0 -27.040001 100.309998 0 -26.059999 99.891998 -10.36 -26.74 100.32 10.36 -26.74 100.32
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 33.875 9.875 99.5 2.375 0 0 0 0 6.125 0 1 0 rect2p.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 20 9.875 99.5 -8.5 0 0 0 0 -6.125 0 1 0 rect2p.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 0 9.875 99.5 -8.5 0 0 0 0 -6.125 0 1 0 rect2p.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 -33.875 9.875 99.5 -2.375 0 0 0 0 -6.125 0 1 0 rect2p.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 -20 9.875 99.5 8.5 0 0 0 0 6.125 0 1 0 rect2p.dat
 
 0 FILE s\7410 - 2551s01.dat
@@ -2033,7 +2033,7 @@
 4 16 -40.18 -24.51 -78.099998 -41.549999 -23.370001 -69.099998 -39.77 0 -67.699997 -38.527 0 -75.300003
 3 16 -40.16 0 -60.099998 -42.009998 -22.41 -60 -42.02 -20.4 -22.9
 4 16 -42.02 -20.35 -16.299999 -40.23 0 -16.299999 -40.16 0 -60.099998 -42.02 -20.4 -22.9
-0 // Rectangle with 2 Adjacent Edges
+0 // Rectangle with 2 Adjacent Edges (main_colour)
 1 16 -41.125 -10.175 41.725 0 -1 0.895 0 0 10.175 58.025 0 0 rect2a.dat
 3 16 -16.610001 12.25 -100.300003 -11.26 12.25 -102.300003 -13.66 0 -113.199997
 3 16 -13.66 0 -113.199997 -19.76 0 -108.400002 -16.610001 12.25 -100.300003
@@ -2282,7 +2282,7 @@
 2 24 -38.650002 12.25 -67.599998 -39.146999 12.25 -60.099998
 2 24 -39.146999 12.25 -60.099998 -20 12.25 -60.099998
 2 24 -37.124001 12.25 -74.800003 -38.650002 12.25 -67.599998
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 -22.002 0 -70.25 2.002 0 0 0 1 0 0 0 -1.25 rect2p.dat
 3 16 -24.004 0 -71.5 -26.136 0 -71.300003 -26 0 -70.300003
 2 24 -26 0 -70.300003 -26.136 0 -71.300003
@@ -2355,7 +2355,7 @@
 2 24 -33.863998 0 -71.300003 -34 0 -70.300003
 2 24 -36.125 0 -70.300003 -35.917 0 -71.800003
 4 16 -24.695 12.225 -67.199997 -24.004 12.25 -69 -24.004 0 -69 -24.695 0 -67.199997
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 -22.002 6.125 -69 -2.002 0 0 0 0 6.125 0 -1 0 rect3.dat
 4 16 -26.136 0 -69.199997 -26 0 -70.300003 -26 12.2 -70.300003 -26.136 12.2 -69.199997
 4 16 -33.863998 0 -71.300003 -34 0 -70.300003 -34 12.2 -70.300003 -33.863998 12.2 -71.300003
@@ -2381,7 +2381,7 @@
 4 16 -28.966 0 -66.400002 -28 0 -66.800003 -28 12.2 -66.800003 -28.966 12.2 -66.400002
 4 16 -27.172001 0 -67.400002 -26.535999 0 -68.300003 -26.535999 12.2 -68.300003 -27.172001 12.2 -67.400002
 4 16 -26.535999 0 -68.300003 -26.136 0 -69.199997 -26.136 12.2 -69.199997 -26.535999 12.2 -68.300003
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 -22.002 6.125 -71.5 2.002 0 0 0 0 6.125 0 1 0 rect3.dat
 4 16 -35.917 12.225 -71.800003 -36.125 12.225 -70.300003 -36.125 0 -70.300003 -35.917 0 -71.800003
 4 16 -28.416 12.225 -76.199997 -30 12.225 -76.400002 -30 0 -76.400002 -28.416 0 -76.199997
@@ -2406,7 +2406,7 @@
 4 16 -25.669001 12.225 -65.900002 -24.695 12.225 -67.199997 -24.695 0 -67.199997 -25.669001 0 -65.900002
 4 16 -39.146999 12.25 -60.099998 -40.16 0 -60.099998 -20 0 -60.099998 -20 12.25 -60.099998
 2 24 -40.16 0 -60.099998 -39.146999 12.25 -60.099998
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 -20 6.125 -64.55 0 1 0 6.125 0 0 0 0 4.45 rect3.dat
 3 16 -20 12.25 -71.5 -20 0 -71.5 -20 0 -100.300003
 2 24 -20 0 -71.5 -20 0 -100.300003
@@ -2422,7 +2422,7 @@
 2 24 -40.16 0 -60.099998 -20 0 -60.099998
 4 16 -50 -20 2.5 -50 -34 -1.25 -50 -34 -4.25 -50 -20 -4.25
 2 24 -50 -34 -1.25 -50 -20 2.5
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 -46 -34 -2.75 4 0 0 0 1 0 0 0 -1.5 rect.dat
 3 16 -42.23 -21.33 2.14 -42.02 -20.35 2.41 -42 -34 -1.25
 2 24 -42 -34 -1.25 -42.02 -20.35 2.41
@@ -2525,7 +2525,7 @@
 2 24 -50 -34 -16.299999 -50 -20 -16.299999
 4 16 -50 -20 -16.299999 -50 -34 -16.299999 -50 -34 -19.299999 -50 -20 -23
 2 24 -50 -20 -23 -50 -34 -19.299999
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 -46 -34 -17.8 4 0 0 0 1 0 0 0 -1.5 rect.dat
 3 16 -49.869999 -21.040001 -22.700001 -50 -20 -23 -50 -34 -19.299999
 2 24 -50 -20 -23 -49.869999 -21.040001 -22.700001
@@ -3005,9 +3005,9 @@
 4 16 -43.580002 7.551 -38.099998 -44.580002 7.551 -39.099998 -44.549999 6.121 -61.099998 -43.549999 6.121 -60.099998
 4 16 -43.549999 8.045 98.75 -44.549999 8.045 98.75 -44.580002 7.551 -39.099998 -43.580002 7.551 -38.099998
 4 16 -43.369999 8.045 100.040001 -44.369999 8.045 100.040001 -44.549999 8.045 98.75 -43.549999 8.045 98.75
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 -43.615 8.045 100.64 -0.255 0 0.5 0 -1 0 -0.6 0 0 rect2p.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 -42.96 8.045 101.755 -0.4 0 0.5 0 -1 0 -0.515 0 0 rect2p.dat
 3 16 -42.060001 8.045 102.269997 -43.060001 8.045 102.269997 -41.02 8.045 103.07
 2 24 -43.259998 5.26 -68.5 -43.549999 6.121 -60.099998
@@ -3112,11 +3112,11 @@
 4 16 -44.619999 -4.5 -38.099998 -45.619999 -4.5 -39.099998 -45.669998 -6.03 -61.299999 -44.669998 -6.03 -60.299999
 4 16 -44.599998 -3.99 -16.299999 -45.599998 -3.99 -17.299999 -45.619999 -4.5 -39.099998 -44.619999 -4.5 -38.099998
 4 16 -44.599998 -3.99 98.75 -45.599998 -3.99 98.75 -45.599998 -3.99 -17.299999 -44.599998 -3.99 -16.299999
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 -45.01 -3.99 99.395 -0.09 0 0.5 0 -1 0 -0.645 0 0 rect2p.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 -44.665 -3.99 100.64 -0.255 0 0.5 0 -1 0 -0.6 0 0 rect2p.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 -44.01 -3.99 101.755 -0.4 0 0.5 0 -1 0 -0.515 0 0 rect2p.dat
 3 16 -42.080002 -3.99 103.07 -44.110001 -3.99 102.269997 -43.110001 -3.99 102.269997
 2 24 -1.87 -5.62 -130.600006 -1.87 -5.62 -129.600006
@@ -4756,22 +4756,22 @@
 0 !HISTORY 2016-11-21 [Philo] File preparation for LDraw Parts Tracker
 
 1 16 0 -4 0 -1 0 0 0 -1 0 0 0 1 stud4a.dat
-0 // Cylinder Closed 1.0
+0 // Cylinder Closed 1.0 (main_colour)
 1 16 30 15.5 8.7 4 0 0 0 -14.7 0 0 0 4 4-4cylc.dat
-0 // Cone  2 x 1.0
+0 // Cone  2 x 1.0 (main_colour)
 1 16 30 0.8 8.7 1.33333 0 0 0 -2.7 0 0 0 1.33333 4-4con2.dat
-0 // Cone  0 x 1.0
+0 // Cone  0 x 1.0 (main_colour)
 1 16 30 -1.9 8.7 2.66667 0 0 0 -4 0 0 0 2.66667 4-4con0.dat
 0 BFC INVERTNEXT
-0 // Cylinder 0.5
+0 // Cylinder 0.5 (main_colour)
 1 16 0 -4 0 0 0 6 0 -7 0 -6 0 0 2-4cyli.dat
-0 // Circle 0.5
+0 // Circle 0.5 (main_colour)
 1 16 0 -11 0 0 0 6 0 -1 0 -6 0 0 2-4edge.dat
-0 // Chord 0.5
+0 // Chord 0.5 (main_colour)
 1 16 0 -11 0 0 0 6 0 -1 0 -6 0 0 2-4chrd.dat
-0 // Cylinder 0.25
+0 // Cylinder 0.25 (main_colour)
 1 16 0 -4 0 0 0 8 0 -7 0 8 0 0 1-4cyli.dat
-0 // Circle 0.25
+0 // Circle 0.25 (main_colour)
 1 16 0 -11 0 0 0 8 0 -1 0 8 0 0 1-4edge.dat
 3 16 20.313999 1.315 0.627 19.615999 2.936 -0.019 22.174999 2.203 2.412
 3 16 22.174999 2.203 2.412 19.615999 2.936 -0.019 23.702999 2.936 3.617

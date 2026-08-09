@@ -11,13 +11,13 @@
 1 6 -480 0 0 0 0 1 0 1 0 -1 0 0 6769 - West.ldr
 1 6 0 0 460 -1 0 0 0 1 0 0 0 -1 6769 - North.ldr
 1 6 480 0 0 0 0 -1 0 1 0 1 0 0 6769 - Est.ldr
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -320 -48 -310 -1 0 0 0 1 0 0 0 -1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 320 -48 -310 -1 0 0 0 1 0 0 0 -1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 320 -48 310 -1 0 0 0 1 0 0 0 -1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -320 -48 310 -1 0 0 0 1 0 0 0 -1 30136.dat
 1 15 -390 -400 50 0.707 0 -0.707 0 1 0 0.707 0 0.707 6769 - Flag.ldr
 1 0 -588.326 -37 -515.232 0.588 0 -0.809 0 1 0 0.809 0 0.588 6769 - Cart.ldr
@@ -45,289 +45,289 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Baseplate 16 x 32 with Square Corners
+0 // Baseplate 16 x 32 with Square Corners (tan)
 1 19 0 0 0 1 0 0 0 1 0 0 0 1 3857.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -310 -24 140 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -310 -24 20 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -210 -24 20 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 210 -24 20 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 310 -24 140 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 310 -24 20 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (light_grey)
 1 7 -210 -24 150 1 0 0 0 1 0 0 0 1 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (light_grey)
 1 7 210 -24 150 1 0 0 0 1 0 0 0 1 3005.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (light_grey)
 1 7 -120 -24 50 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (light_grey)
 1 7 120 -24 50 1 0 0 0 1 0 0 0 1 3004.dat
 0 STEP
-0 // Brick  1 x  1 x  5 with Hollow Stud
+0 // Brick  1 x  1 x  5 with Hollow Stud (black)
 1 0 -210 -144 150 1 0 0 0 1 0 0 0 1 2453.dat
-0 // Brick  1 x  1 x  5 with Hollow Stud
+0 // Brick  1 x  1 x  5 with Hollow Stud (black)
 1 0 210 -144 150 1 0 0 0 1 0 0 0 1 2453.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (light_grey)
 1 7 -110 -24 30 1 0 0 0 1 0 0 0 1 3040b.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (light_grey)
 1 7 110 -24 30 1 0 0 0 1 0 0 0 1 3040b.dat
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (light_grey)
 1 7 -120 -48 50 1 0 0 0 1 0 0 0 1 4865a.dat
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (light_grey)
 1 7 120 -48 50 1 0 0 0 1 0 0 0 1 4865a.dat
 0 STEP
-0 // Panel  2 x  6 x  6 Log Wall
+0 // Panel  2 x  6 x  6 Log Wall (brown)
 1 6 -300 -144 80 0 0 1 0 1 0 -1 0 0 30140.dat
-0 // Panel  2 x  6 x  6 Log Wall
+0 // Panel  2 x  6 x  6 Log Wall (brown)
 1 6 300 -144 80 0 0 -1 0 1 0 1 0 0 30140.dat
-0 // ~Brick  1 x  2 x  5 (Obsolete)
+0 // ~Brick  1 x  2 x  5 (Obsolete) (black)
 1 0 -140 -120 70 1 0 0 0 1 0 0 0 1 2454.dat
-0 // ~Brick  1 x  2 x  5 (Obsolete)
+0 // ~Brick  1 x  2 x  5 (Obsolete) (black)
 1 0 140 -120 70 1 0 0 0 1 0 0 0 1 2454.dat
 0 STEP
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (white)
 1 15 -140 -128 70 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (white)
 1 15 140 -128 70 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Slope Brick 75  2 x  1 x  3 with Open Stud
+0 // Slope Brick 75  2 x  1 x  3 with Open Stud (light_grey)
 1 7 -90 -72 30 1 0 0 0 1 0 0 0 1 4460a.dat
-0 // Slope Brick 75  2 x  1 x  3 with Open Stud
+0 // Slope Brick 75  2 x  1 x  3 with Open Stud (light_grey)
 1 7 90 -72 30 1 0 0 0 1 0 0 0 1 4460a.dat
 1 16 -80 -42 56 1 0 0 0 1 0 0 0 1 6769 - Bar.ldr
 0 STEP
-0 // Brick  1 x  1 x  2 with Shutter Holder
+0 // Brick  1 x  1 x  2 with Shutter Holder (brown)
 1 6 -90 -120 30 -1 0 0 0 1 0 0 0 -1 3581.dat
-0 // Brick  1 x  1 x  2 with Shutter Holder
+0 // Brick  1 x  1 x  2 with Shutter Holder (brown)
 1 6 90 -120 30 -1 0 0 0 1 0 0 0 -1 3581.dat
-0 // Door  1 x  5 x 10 with 1/4 Circle Top
+0 // Door  1 x  5 x 10 with 1/4 Circle Top (black)
 1 0 -90 -120 44 0 0 1 0 1 0 -1 0 0 2400.dat
-0 // Door  1 x  5 x 10 with 1/4 Circle Top
+0 // Door  1 x  5 x 10 with 1/4 Circle Top (black)
 1 0 90 -120 44 0 0 -1 0 1 0 1 0 0 2400.dat
 1 16 -140 -136 70 1 0 0 0 1 0 0 0 1 6769 - South - Ladder.ldr
 1 16 140 -136 70 1 0 0 0 1 0 0 0 1 6769 - South - Ladder.ldr
 0 STEP
-0 // Panel  2 x  6 x  6 Log Wall
+0 // Panel  2 x  6 x  6 Log Wall (brown)
 1 6 -260 -144 20 1 0 0 0 1 0 0 0 1 30140.dat
-0 // Panel  2 x  6 x  6 Log Wall
+0 // Panel  2 x  6 x  6 Log Wall (brown)
 1 6 260 -144 20 1 0 0 0 1 0 0 0 1 30140.dat
-0 // Panel  2 x  6 x  6 Log Wall
+0 // Panel  2 x  6 x  6 Log Wall (brown)
 1 6 160 -144 40 1 0 0 0 1 0 0 0 1 30140.dat
-0 // Panel  2 x  6 x  6 Log Wall
+0 // Panel  2 x  6 x  6 Log Wall (brown)
 1 6 -160 -144 40 1 0 0 0 1 0 0 0 1 30140.dat
 0 STEP
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -310 -144 140 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -310 -144 20 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -210 -144 20 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -100 -144 30 -1 0 0 0 1 0 0 0 -1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 100 -144 30 -1 0 0 0 1 0 0 0 -1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 210 -144 20 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 310 -144 140 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 310 -144 20 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (black)
 1 0 160 -144 60 1 0 0 0 1 0 0 0 1 3795.dat
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (black)
 1 0 -160 -144 60 1 0 0 0 1 0 0 0 1 3795.dat
 0 STEP
-0 // Plate  6 x  8
+0 // Plate  6 x  8 (black)
 1 0 -260 -152 80 0 0 1 0 1 0 -1 0 0 3036.dat
-0 // Plate  6 x  8
+0 // Plate  6 x  8 (black)
 1 0 260 -152 80 0 0 1 0 1 0 -1 0 0 3036.dat
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (black)
 1 0 -140 -152 30 1 0 0 0 1 0 0 0 1 3666.dat
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (black)
 1 0 140 -152 30 1 0 0 0 1 0 0 0 1 3666.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (brown)
 1 6 -310 -176 150 1 0 0 0 1 0 0 0 1 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (brown)
 1 6 310 -176 150 1 0 0 0 1 0 0 0 1 3005.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 -140 -168 70 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 140 -168 70 1 0 0 0 1 0 0 0 1 3004.dat
 0 STEP
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -310 -176 60 0 0 1 0 1 0 -1 0 0 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -240 -176 10 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 240 -176 10 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 310 -176 60 0 0 -1 0 1 0 1 0 0 30137.dat
 0 STEP
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -310 -176 120 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -300 -176 10 -1 0 0 0 1 0 0 0 -1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -200 -176 30 -1 0 0 0 1 0 0 0 -1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 200 -176 30 -1 0 0 0 1 0 0 0 -1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 300 -176 10 -1 0 0 0 1 0 0 0 -1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 310 -176 120 0 0 -1 0 1 0 1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 90 -176 20 0 0 -1 0 1 0 1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -90 -176 20 0 0 -1 0 1 0 1 0 0 30136.dat
 0 STEP
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -310 -200 120 0 0 1 0 1 0 -1 0 0 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -310 -200 40 0 0 1 0 1 0 -1 0 0 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -260 -200 10 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 260 -200 10 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 310 -200 40 0 0 -1 0 1 0 1 0 0 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 310 -200 120 0 0 -1 0 1 0 1 0 0 30137.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -210 -200 20 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 210 -200 20 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // ~Brick  1 x  2 x  5 (Obsolete)
+0 // ~Brick  1 x  2 x  5 (Obsolete) (black)
 1 0 -140 -288 70 1 0 0 0 1 0 0 0 1 2454.dat
-0 // ~Brick  1 x  2 x  5 (Obsolete)
+0 // ~Brick  1 x  2 x  5 (Obsolete) (black)
 1 0 140 -288 70 1 0 0 0 1 0 0 0 1 2454.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -300 -224 10 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 220 -224 10 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 300 -224 10 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Panel  2 x  6 x  6 Log Wall
+0 // Panel  2 x  6 x  6 Log Wall (brown)
 1 6 -140 -296 40 1 0 0 0 1 0 0 0 1 30140.dat
-0 // Panel  2 x  6 x  6 Log Wall
+0 // Panel  2 x  6 x  6 Log Wall (brown)
 1 6 140 -296 40 1 0 0 0 1 0 0 0 1 30140.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -220 -224 10 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -310 -224 80 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 310 -224 80 0 0 1 0 1 0 -1 0 0 30136.dat
 0 STEP
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -90 -296 20 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -190 -296 20 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 90 -296 20 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 190 -296 20 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (black)
 1 0 -140 -296 60 1 0 0 0 1 0 0 0 1 3020.dat
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (black)
 1 0 140 -296 60 1 0 0 0 1 0 0 0 1 3020.dat
-0 // Animal Bird Parrot
+0 // Animal Bird Parrot (red)
 1 4 90 -176 10 0 0 1 0 1 0 -1 0 0 2546.dat
-0 // Animal Bird Parrot
+0 // Animal Bird Parrot (red)
 1 4 -90 -176 10 0 0 -1 0 1 0 1 0 0 2546.dat
 0 STEP
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (black)
 1 0 -180 -304 40 0 0 1 0 1 0 -1 0 0 3020.dat
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (black)
 1 0 180 -304 40 0 0 1 0 1 0 -1 0 0 3020.dat
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (black)
 1 0 120 -304 60 -1 0 0 0 1 0 0 0 -1 3020.dat
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (black)
 1 0 -120 -304 60 -1 0 0 0 1 0 0 0 -1 3020.dat
-0 // Plate  2 x 16
+0 // Plate  2 x 16 (black)
 1 0 0 -304 20 1 0 0 0 1 0 0 0 1 4282.dat
 0 STEP
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -190 -328 40 0 0 1 0 1 0 -1 0 0 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 190 -328 40 0 0 1 0 1 0 -1 0 0 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 90 -328 40 0 0 1 0 1 0 -1 0 0 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -90 -328 40 0 0 1 0 1 0 -1 0 0 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -140 -328 10 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 140 -328 10 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -190 -352 40 0 0 1 0 1 0 -1 0 0 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 190 -352 40 0 0 1 0 1 0 -1 0 0 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 90 -352 40 0 0 1 0 1 0 -1 0 0 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -90 -352 40 0 0 1 0 1 0 -1 0 0 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -140 -352 10 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 140 -352 10 -1 0 0 0 1 0 0 0 -1 30137.dat
 1 6 0 -328 32 1 0 0 0 1 0 0 0 1 6769 - South - Legoredo Sign.ldr
 0 STEP
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (black)
 1 0 -180 -360 10 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (black)
 1 0 180 -360 10 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (black)
 1 0 190 -360 60 0 0 1 0 1 0 -1 0 0 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (black)
 1 0 90 -360 60 0 0 1 0 1 0 -1 0 0 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (black)
 1 0 -90 -360 60 0 0 1 0 1 0 -1 0 0 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (black)
 1 0 -190 -360 60 0 0 1 0 1 0 -1 0 0 3023.dat
-0 // Plate  2 x 16
+0 // Plate  2 x 16 (black)
 1 0 0 -360 20 1 0 0 0 1 0 0 0 1 4282.dat
 0 STEP
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -180 -384 10 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -100 -384 10 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 100 -384 10 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 180 -384 10 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 190 -384 60 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 90 -384 60 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -90 -384 60 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -190 -384 60 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -180 -408 10 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -100 -408 10 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 100 -408 10 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 180 -408 10 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 190 -408 60 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 90 -408 60 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -90 -408 60 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -190 -408 60 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Cone  2 x  2 x  1.667 Octagonal
+0 // Cone  2 x  2 x  1.667 Octagonal (black)
 1 0 0 -400 20 1 0 0 0 1 0 0 0 1 6039.dat
 0 STEP
-0 // Barrel  4 x  4 x  3.5
+0 // Barrel  4 x  4 x  3.5 (brown)
 1 6 -240 -42 -80 0.966 0.259 0 0 0 -1 -0.259 0.966 0 30139.dat
-0 // Barrel  4 x  4 x  3.5
+0 // Barrel  4 x  4 x  3.5 (brown)
 1 6 240 -4 -80 1 0 0 0 1 0 0 0 1 30139.dat
 1 16 -190 -416 40 1 0 0 0 1 0 0 0 1 6769 - South - Roof Support.ldr
 1 16 -90 -416 40 1 0 0 0 1 0 0 0 1 6769 - South - Roof Support.ldr
@@ -338,16 +338,16 @@
 1 16 -140 -416 10 1 0 0 0 1 0 0 0 1 6769 - South - Roof.ldr
 1 16 140 -416 10 1 0 0 0 1 0 0 0 1 6769 - South - Roof.ldr
 0 STEP
-0 // ~Plant Bush (Obsolete)
+0 // ~Plant Bush (Obsolete) (green)
 1 2 -140 0 -60 1 0 0 0 1 0 0 0 1 6064.dat
-0 // ~Plant Bush (Obsolete)
+0 // ~Plant Bush (Obsolete) (green)
 1 2 140 0 -80 1 0 0 0 1 0 0 0 1 6064.dat
 
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (light_grey)
 1 7 -270 -20 -160 0.966 0.259 0 0 0 -1 -0.259 0.966 0 3062b.dat
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (light_grey)
 1 7 -244 -39 -158 0.962 -0.242 0.129 0.266 0.937 -0.224 -0.067 0.25 0.966 3062b.dat
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (light_grey)
 1 7 -263 -39 -165 0.961 -0.259 0.098 0.079 -0.084 -0.993 0.265 0.962 -0.061 3062b.dat
 
 
@@ -360,9 +360,9 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Plate  1 x  2 with Handle
+0 // Plate  1 x  2 with Handle (black)
 1 0 0 0 0 -1 0 0 0 1 0 0 0 -1 2540.dat
-0 // Bar  7 x  3 with Double Clips
+0 // Bar  7 x  3 with Double Clips (black)
 1 0 0 2 20 1 0 0 0 0.438 0.899 0 -0.899 0.438 6020.dat
 
 
@@ -375,11 +375,11 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Brick  1 x  6
+0 // Brick  1 x  6 (blue)
 1 1 0 0 0 1 0 0 0 1 0 0 0 1 3009.dat
-0 // Brick  1 x  6
+0 // Brick  1 x  6 (blue)
 1 1 0 -24 0 1 0 0 0 1 0 0 0 1 3009.dat
-0 // Sticker  2.3 x  5.9 with "Fort Legoredo" Sign
+0 // Sticker  2.3 x  5.9 with "Fort Legoredo" Sign (brown)
 1 6 0 0 -10 1 0 0 0 0 -1 0 1 0 4106332b.dat
 
 
@@ -392,17 +392,17 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Hinge Tile  1 x  4
+0 // Hinge Tile  1 x  4 (black)
 1 0 0 0 0 -1 0 0 0 1 0 0 0 -1 4625.dat
-0 // Hinge Car Roof  4 x  4
+0 // Hinge Car Roof  4 x  4 (black)
 1 0 0 -22.933 25.359 -1 0 0 0 0.906 0.423 0 0.423 -0.906 4213.dat
-0 // Plate  6 x  8
+0 // Plate  6 x  8 (red)
 1 4 0 -30.183 21.978 1 0 0 0 0.906 -0.423 0 0.423 0.906 3036.dat
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (black)
 1 0 0 -40.459 6.153 0 0 1 0.423 0.906 0 -0.906 0.423 0 2555.dat
-0 // Plate  1 x  2 without Groove with 1 Centre Stud
+0 // Plate  1 x  2 without Groove with 1 Centre Stud (red)
 1 4 0 -33.208 9.535 1 0 0 0 0.906 -0.423 0 0.423 0.906 3794a.dat
-0 // Animal Cattlehorns
+0 // Animal Cattlehorns (white)
 1 15 0 -47.709 2.773 1 0 0 0 0.906 -0.423 0 0.423 0.906 87695.dat
 
 
@@ -415,9 +415,9 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (black)
 1 0 0 0 0 0 0 1 0 1 0 -1 0 0 3710.dat
-0 // Slope Brick 33  3 x  1
+0 // Slope Brick 33  3 x  1 (black)
 1 0 0 -24 30 1 0 0 0 1 0 0 0 1 4286.dat
 
 
@@ -430,202 +430,202 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Baseplate 16 x 32 with Square Corners
+0 // Baseplate 16 x 32 with Square Corners (tan)
 1 19 0 0 0 1 0 0 0 1 0 0 0 1 3857.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -310 -24 140 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -310 -24 20 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 310 -24 140 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 310 -24 20 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (light_grey)
 1 7 -200 -24 110 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (light_grey)
 1 7 -100 -24 110 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (light_grey)
 1 7 220 -24 30 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (light_grey)
 1 7 -20 -24 30 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (light_grey)
 1 7 210 -24 150 1 0 0 0 1 0 0 0 1 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (light_grey)
 1 7 -10 -24 110 1 0 0 0 1 0 0 0 1 3005.dat
 0 STEP
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (light_grey)
 1 7 -190 -24 10 -1 0 0 0 1 0 0 0 -1 2357.dat
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (light_grey)
 1 7 -20 -48 30 1 0 0 0 1 0 0 0 1 4865a.dat
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (light_grey)
 1 7 220 -48 30 1 0 0 0 1 0 0 0 1 4865a.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (light_grey)
 1 7 210 -24 10 1 0 0 0 1 0 0 0 1 3040b.dat
-0 // Brick  1 x  1 x  5 with Hollow Stud
+0 // Brick  1 x  1 x  5 with Hollow Stud (black)
 1 0 -10 -144 110 1 0 0 0 1 0 0 0 1 2453.dat
-0 // Brick  1 x  1 x  5 with Hollow Stud
+0 // Brick  1 x  1 x  5 with Hollow Stud (black)
 1 0 210 -144 150 1 0 0 0 1 0 0 0 1 2453.dat
-0 // ~Brick  1 x  2 x  5 (Obsolete)
+0 // ~Brick  1 x  2 x  5 (Obsolete) (black)
 1 0 -200 -144 110 1 0 0 0 1 0 0 0 1 2454.dat
 0 STEP
-0 // Slope Brick 75  2 x  1 x  3 with Open Stud
+0 // Slope Brick 75  2 x  1 x  3 with Open Stud (light_grey)
 1 7 10 -72 10 1 0 0 0 1 0 0 0 1 4460a.dat
-0 // Slope Brick 75  2 x  1 x  3 with Open Stud
+0 // Slope Brick 75  2 x  1 x  3 with Open Stud (light_grey)
 1 7 190 -72 10 1 0 0 0 1 0 0 0 1 4460a.dat
 0 STEP
-0 // Panel  2 x  6 x  6 Log Wall
+0 // Panel  2 x  6 x  6 Log Wall (brown)
 1 6 -300 -144 80 0 0 1 0 1 0 -1 0 0 30140.dat
-0 // Panel  2 x  6 x  6 Log Wall
+0 // Panel  2 x  6 x  6 Log Wall (brown)
 1 6 300 -144 80 0 0 -1 0 1 0 1 0 0 30140.dat
-0 // Brick  1 x  1 x  2 with Shutter Holder
+0 // Brick  1 x  1 x  2 with Shutter Holder (brown)
 1 6 10 -120 10 -1 0 0 0 1 0 0 0 -1 3581.dat
-0 // Brick  1 x  1 x  2 with Shutter Holder
+0 // Brick  1 x  1 x  2 with Shutter Holder (brown)
 1 6 190 -120 10 -1 0 0 0 1 0 0 0 -1 3581.dat
-0 // Door  1 x  5 x 10 with 1/4 Circle Top
+0 // Door  1 x  5 x 10 with 1/4 Circle Top (black)
 1 0 10 -120 24 0.966 0 0.259 0 1 0 -0.259 0 0.966 2400.dat
-0 // Door  1 x  5 x 10 with 1/4 Circle Top
+0 // Door  1 x  5 x 10 with 1/4 Circle Top (black)
 1 0 190 -120 24 0.966 0 -0.259 0 1 0 0.259 0 0.966 2400.dat
 0 STEP
-0 // Panel  2 x  6 x  6 Log Wall
+0 // Panel  2 x  6 x  6 Log Wall (brown)
 1 6 -260 -144 20 1 0 0 0 1 0 0 0 1 30140.dat
-0 // Panel  2 x  6 x  6 Log Wall
+0 // Panel  2 x  6 x  6 Log Wall (brown)
 1 6 260 -144 20 1 0 0 0 1 0 0 0 1 30140.dat
-0 // Panel  4 x 10 x  6 Rock Rectangular
+0 // Panel  4 x 10 x  6 Rock Rectangular (light_grey)
 1 7 -100 -144 -20 1 0 0 0 1 0 0 0 1 6082.dat
 0 STEP
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -310 -144 140 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -310 -144 20 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 310 -144 140 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 310 -144 20 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -200 -144 10 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 0 -144 10 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 200 -144 10 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (black)
 1 0 -70 -120 -50 1 0 0 0 1 0 0 0 1 3005.dat
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (light_grey)
 1 7 -150 -24 -80 0 0 1 0 1 0 -1 0 0 4865a.dat
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (light_grey)
 1 7 -170 -24 -80 0 0 -1 0 1 0 1 0 0 4865a.dat
 0 STEP
-0 // Plate  6 x  8
+0 // Plate  6 x  8 (black)
 1 0 -260 -152 80 0 0 1 0 1 0 -1 0 0 3036.dat
-0 // Plate  6 x  8
+0 // Plate  6 x  8 (black)
 1 0 260 -152 80 0 0 1 0 1 0 -1 0 0 3036.dat
-0 // Plate  2 x  8
+0 // Plate  2 x  8 (black)
 1 0 -100 -152 -20 1 0 0 0 1 0 0 0 1 3034.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (light_grey)
 1 7 -160 -24 -110 1 0 0 0 1 0 0 0 1 3004.dat
 0 STEP
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (brown)
 1 6 -310 -176 150 1 0 0 0 1 0 0 0 1 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (brown)
 1 6 310 -176 150 1 0 0 0 1 0 0 0 1 3005.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (black)
 1 0 10 -152 10 1 0 0 0 1 0 0 0 1 3024.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (black)
 1 0 190 -152 10 1 0 0 0 1 0 0 0 1 3024.dat
-0 // Plate  6 x 10
+0 // Plate  6 x 10 (black)
 1 0 -100 -152 60 1 0 0 0 1 0 0 0 1 3033.dat
 0 STEP
-0 // Brick  2 x  3
+0 // Brick  2 x  3 (light_grey)
 1 7 -160 -48 -70 0 0 1 0 1 0 -1 0 0 3002.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -310 -176 120 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 310 -176 120 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 10 -176 0 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -50 -176 0 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -20 -176 10 -1 0 0 0 1 0 0 0 -1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 220 -176 10 -1 0 0 0 1 0 0 0 -1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -150 -176 0 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 190 -176 0 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Plate  1 x  2 with Handle
+0 // Plate  1 x  2 with Handle (black)
 1 0 -100 -160 110 -1 0 0 0 1 0 0 0 -1 2540.dat
-0 // Bar  7 x  3 with Double Clips
+0 // Bar  7 x  3 with Double Clips (black)
 1 0 -100 -158 130 1 0 0 0 0 1 0 -1 0 6020.dat
-0 // Minifig Coin with "30" Sans-serif Type
+0 // Minifig Coin with "30" Sans-serif Type (chrome_gold)
 1 334 -154 -11 -70 0 0 1 0 1 0 -1 0 0 70501c.dat
-0 // Minifig Coin with "10" Sans-serif Type
+0 // Minifig Coin with "10" Sans-serif Type (chrome_gold)
 1 334 -165 -11 -88 0 0 1 0 1 0 -1 0 0 70501a.dat
 0 STEP
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (brown)
 1 6 -150 -174 90 1 0 0 0 1 0 0 0 1 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (brown)
 1 6 -50 -174 90 1 0 0 0 1 0 0 0 1 3005.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -310 -174 60 0 0 1 0 1 0 -1 0 0 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -280 -174 10 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -200 -174 10 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 280 -174 10 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 310 -174 60 0 0 -1 0 1 0 1 0 0 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 310 -198 120 0 0 1 0 1 0 -1 0 0 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 310 -198 40 0 0 1 0 1 0 -1 0 0 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 220 -198 10 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -20 -198 10 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -180 -198 10 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -260 -198 10 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -310 -198 40 0 0 -1 0 1 0 1 0 0 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -310 -198 120 0 0 -1 0 1 0 1 0 0 30137.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 280 -198 10 1 0 0 0 1 0 0 0 1 30136.dat
 0 STEP
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -310 -222 80 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -300 -222 10 -1 0 0 0 1 0 0 0 -1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -220 -222 10 -1 0 0 0 1 0 0 0 -1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -20 -222 10 -1 0 0 0 1 0 0 0 -1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 220 -222 10 -1 0 0 0 1 0 0 0 -1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 300 -222 10 -1 0 0 0 1 0 0 0 -1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 310 -222 80 0 0 -1 0 1 0 1 0 0 30136.dat
-0 // Animal Bird Parrot
+0 // Animal Bird Parrot (red)
 1 4 190 -176 -10 0 0 1 0 1 0 -1 0 0 2546.dat
-0 // Animal Bird Parrot
+0 // Animal Bird Parrot (red)
 1 4 10 -176 -10 0 0 -1 0 1 0 1 0 0 2546.dat
 0 STEP
-0 // ~Plant Bush (Obsolete)
+0 // ~Plant Bush (Obsolete) (green)
 1 2 -160 -48 -80 1 0 0 0 1 0 0 0 1 6064.dat
-0 // Panel  2 x  6 x  6 Log Wall
+0 // Panel  2 x  6 x  6 Log Wall (brown)
 1 6 -100 -296 0 1 0 0 0 1 0 0 0 1 30140.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -150 -296 0 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -50 -296 0 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Panel  2 x  6 x  6 Log Wall
+0 // Panel  2 x  6 x  6 Log Wall (brown)
 1 6 -100 -296 80 -1 0 0 0 1 0 0 0 -1 30140.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -50 -296 80 0 0 -1 0 1 0 1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -150 -296 80 0 0 -1 0 1 0 1 0 0 30136.dat
 0 STEP
 1 16 -100 -304 40 1 0 0 0 1 0 0 0 1 6769 - West - Tower.ldr
@@ -640,13 +640,13 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (light_grey)
 1 7 0 0 0 1 0 0 0 1 0 0 0 1 3005.dat
-0 // Brick  1 x  1 with Headlight
+0 // Brick  1 x  1 with Headlight (light_grey)
 1 7 0 -24 0 -1 0 0 0 1 0 0 0 -1 4070.dat
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (black)
 1 0 0 -14 14 1 0 0 0 0 1 0 -1 0 2555.dat
-0 // Minifig Flame with Pegs
+0 // Minifig Flame with Pegs (trans_orange)
 1 57 0 -22 20 1 0 0 0 0 -1 0 1 0 6126a.dat
 
 
@@ -659,51 +659,51 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Plate  6 x  6
+0 // Plate  6 x  6 (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3958.dat
 0 STEP
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -50 -24 40 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 50 -24 40 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -50 -24 -20 0 0 1 0 1 0 -1 0 0 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 50 -24 -20 0 0 1 0 1 0 -1 0 0 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 0 -24 -50 -1 0 0 0 1 0 0 0 -1 30137.dat
 0 STEP
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -20 -48 -50 1 0 0 0 1 0 0 0 1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -50 -48 0 0 0 1 0 1 0 -1 0 0 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 50 -48 0 0 0 1 0 1 0 -1 0 0 30137.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 40 -48 -50 1 0 0 0 1 0 0 0 1 30136.dat
 0 STEP
-0 // Brick  1 x  1 with Headlight
+0 // Brick  1 x  1 with Headlight (black)
 1 0 -50 -48 50 -1 0 0 0 1 0 0 0 -1 4070.dat
-0 // Brick  1 x  1 with Headlight
+0 // Brick  1 x  1 with Headlight (black)
 1 0 50 -48 50 -1 0 0 0 1 0 0 0 -1 4070.dat
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (black)
 1 0 -50 -39 64 1 0 0 0 0 1 0 -1 0 2555.dat
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (black)
 1 0 50 -39 64 1 0 0 0 0 1 0 -1 0 2555.dat
-0 // Minifig Flame with Pegs
+0 // Minifig Flame with Pegs (trans_orange)
 1 57 50 -46 70 1 0 0 0 0 -1 0 1 0 6126a.dat
-0 // Minifig Flame with Pegs
+0 // Minifig Flame with Pegs (trans_orange)
 1 57 -50 -46 70 1 0 0 0 0 -1 0 1 0 6126a.dat
 0 STEP
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -50 -72 40 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 50 -72 40 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 50 -72 -40 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -50 -72 -40 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 0 -72 -50 -1 0 0 0 1 0 0 0 -1 30136.dat
 
 
@@ -716,333 +716,333 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Baseplate 16 x 32 with Square Corners
+0 // Baseplate 16 x 32 with Square Corners (tan)
 1 19 0 0 0 1 0 0 0 1 0 0 0 1 3857.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -280 -24 150 1 0 0 0 1 0 0 0 1 30137.dat
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (light_grey)
 1 7 -110 -24 110 1 0 0 0 1 0 0 0 1 2357.dat
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (light_grey)
 1 7 70 -24 110 0 0 -1 0 1 0 1 0 0 2357.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (brown)
 1 6 90 -24 -30 1 0 0 0 1 0 0 0 1 3005.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (light_grey)
 1 7 200 -24 0 0 0 1 0 1 0 -1 0 0 3001.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 310 -24 0 0 0 1 0 1 0 -1 0 0 30137.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 310 -24 140 0 0 1 0 1 0 -1 0 0 30136.dat
 0 STEP
-0 // Fence Spindled  1 x  4 x  2
+0 // Fence Spindled  1 x  4 x  2 (black)
 1 0 -110 -48 40 0 0 1 0 1 0 -1 0 0 30055.dat
-0 // Fence Spindled  1 x  4 x  2
+0 // Fence Spindled  1 x  4 x  2 (black)
 1 0 70 -48 40 0 0 1 0 1 0 -1 0 0 30055.dat
-0 // Tile  1 x  6
+0 // Tile  1 x  6 (black)
 1 0 260 -32 10 1 0 0 0 1 0 0 0 1 6636.dat
-0 // Tile  1 x  6
+0 // Tile  1 x  6 (black)
 1 0 260 -32 -10 1 0 0 0 1 0 0 0 1 6636.dat
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (light_grey)
 1 7 190 -48 30 0 0 1 0 1 0 -1 0 0 2357.dat
-0 // Panel  1 x  1 x  1 Corner with Rounded Corners
+0 // Panel  1 x  1 x  1 Corner with Rounded Corners (black)
 1 0 -110 -48 130 1 0 0 0 1 0 0 0 1 6231.dat
-0 // Panel  1 x  1 x  1 Corner with Rounded Corners
+0 // Panel  1 x  1 x  1 Corner with Rounded Corners (black)
 1 0 70 -48 130 0 0 1 0 1 0 -1 0 0 6231.dat
 0 STEP
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (light_grey)
 1 7 -100 -48 110 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (light_grey)
 1 7 60 -48 110 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -280 -48 150 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -280 -72 150 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -280 -96 150 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -280 -120 150 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Slope Brick 75  2 x  2 x  3 with Hollow Studs
+0 // Slope Brick 75  2 x  2 x  3 with Hollow Studs (light_grey)
 1 7 60 -72 -30 1 0 0 0 1 0 0 0 1 3684.dat
-0 // Slope Brick 75  2 x  2 x  3 with Hollow Studs
+0 // Slope Brick 75  2 x  2 x  3 with Hollow Studs (light_grey)
 1 7 -100 -72 -30 1 0 0 0 1 0 0 0 1 3684.dat
-0 // Slope Brick 75  2 x  2 x  3 with Hollow Studs
+0 // Slope Brick 75  2 x  2 x  3 with Hollow Studs (light_grey)
 1 7 -220 -72 -30 1 0 0 0 1 0 0 0 1 3684.dat
 0 STEP
-0 // Fence Spindled  1 x  4 x  2
+0 // Fence Spindled  1 x  4 x  2 (black)
 1 0 -160 -48 -30 -1 0 0 0 1 0 0 0 -1 30055.dat
-0 // Brick  1 x  1 x  2 with Shutter Holder
+0 // Brick  1 x  1 x  2 with Shutter Holder (light_grey)
 1 7 -90 -96 110 -1 0 0 0 1 0 0 0 -1 3581.dat
-0 // Brick  1 x  1 x  2 with Shutter Holder
+0 // Brick  1 x  1 x  2 with Shutter Holder (light_grey)
 1 7 50 -96 110 -1 0 0 0 1 0 0 0 -1 3581.dat
-0 // Staircase  7 x  4 x  6 Open
+0 // Staircase  7 x  4 x  6 Open (black)
 1 0 200 -144 120 0 0 1 0 1 0 -1 0 0 30134.dat
-0 // Panel  2 x  6 x  6 Log Wall
+0 // Panel  2 x  6 x  6 Log Wall (brown)
 1 6 300 -144 80 0 0 -1 0 1 0 1 0 0 30140.dat
 0 STEP
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -280 -144 150 1 0 0 0 1 0 0 0 1 30137.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (red)
 1 4 280 -144 90 0 0 1 0 1 0 -1 0 0 3021.dat
 1 16 -110 -72 110 1 0 0 0 1 0 0 0 1 6769 - West - Torch.ldr
 1 16 70 -72 110 1 0 0 0 1 0 0 0 1 6769 - West - Torch.ldr
 1 4 260 -40 0 1 0 0 0 1 0 0 0 1 6769 - North - Treasure.ldr
 0 STEP
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (light_grey)
 1 7 60 -96 -30 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (light_grey)
 1 7 -100 -96 -30 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (light_grey)
 1 7 -220 -96 -30 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Fence Spindled  1 x  4 x  2
+0 // Fence Spindled  1 x  4 x  2 (black)
 1 0 -160 -96 -30 -1 0 0 0 1 0 0 0 -1 30055.dat
-0 // Fence Spindled  1 x  4 x  2
+0 // Fence Spindled  1 x  4 x  2 (black)
 1 0 -110 -96 40 0 0 -1 0 1 0 1 0 0 30055.dat
-0 // Fence Spindled  1 x  4 x  2
+0 // Fence Spindled  1 x  4 x  2 (black)
 1 0 70 -96 40 0 0 -1 0 1 0 1 0 0 30055.dat
-0 // Panel  2 x  6 x  6 Log Wall
+0 // Panel  2 x  6 x  6 Log Wall (brown)
 1 6 260 -144 -20 1 0 0 0 1 0 0 0 1 30140.dat
-0 // Panel  2 x  6 x  6 Log Wall
+0 // Panel  2 x  6 x  6 Log Wall (brown)
 1 6 140 -144 -20 1 0 0 0 1 0 0 0 1 30140.dat
 0 STEP
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 200 -144 -30 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 310 -144 140 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 310 -144 0 0 0 1 0 1 0 -1 0 0 30137.dat
-0 // Brick  2 x  8
+0 // Brick  2 x  8 (light_grey)
 1 7 60 -120 40 0 0 1 0 1 0 -1 0 0 3007.dat
-0 // Brick  2 x  8
+0 // Brick  2 x  8 (light_grey)
 1 7 -100 -120 40 0 0 1 0 1 0 -1 0 0 3007.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (light_grey)
 1 7 -220 -120 -30 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Door  2 x  6 x  7 Frame
+0 // Door  2 x  6 x  7 Frame (light_grey)
 1 7 -180 -168 140 -1 0 0 0 1 0 0 0 -1 4071.dat
-0 // Door  6 x  7 Barred
+0 // Door  6 x  7 Barred (black)
 1 0 -230 -84 155 0 0 -1 0 1 0 1 0 0 4611.dat
 0 STEP
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (black)
 1 0 -230 -144 -30 1 0 0 0 1 0 0 0 1 3005.dat
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (black)
 1 0 60 -144 -30 1 0 0 0 1 0 0 0 1 3010.dat
-0 // Brick  1 x  8
+0 // Brick  1 x  8 (black)
 1 0 -140 -144 -30 1 0 0 0 1 0 0 0 1 3008.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (light_grey)
 1 7 80 -144 70 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Door  1 x  4 x  6 Grooved
+0 // Door  1 x  4 x  6 Grooved (black)
 1 0 50 -144 123 0 0 -1 0 1 0 1 0 0 3644.dat
-0 // Door  1 x  4 x  6 Grooved
+0 // Door  1 x  4 x  6 Grooved (black)
 1 0 -90 -144 123 0 0 1 0 1 0 -1 0 0 3644.dat
-0 // Plate  4 x  4
+0 // Plate  4 x  4 (black)
 1 0 280 -152 120 1 0 0 0 1 0 0 0 1 3031.dat
 0 STEP
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (light_grey)
 1 7 50 -144 110 1 0 0 0 1 0 0 0 1 3622.dat
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (light_grey)
 1 7 -100 -144 110 1 0 0 0 1 0 0 0 1 3010.dat
-0 // Turntable  2 x  2 Plate Top
+0 // Turntable  2 x  2 Plate Top (light_grey)
 1 7 -100 -128 40 1 0 0 0 1 0 0 0 1 3679.dat
-0 // Panel  4 x 10 x  6 Rock Rectangular
+0 // Panel  4 x 10 x  6 Rock Rectangular (light_grey)
 1 7 -280 -144 40 0 0 1 0 1 0 -1 0 0 6082.dat
 1 16 -100 -128 40 1 0 0 0 1 0 0 0 1 6769 - North - Trapdoor Mecanism.ldr
 0 STEP
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (light_grey)
 1 7 -280 -144 130 1 0 0 0 1 0 0 0 1 3010.dat
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (red)
 1 4 -270 -144 40 0 0 1 0 1 0 -1 0 0 3666.dat
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (red)
 1 4 -240 -144 40 0 0 1 0 1 0 -1 0 0 3795.dat
-0 // Plate  2 x  8
+0 // Plate  2 x  8 (black)
 1 0 60 -152 40 0 0 1 0 1 0 -1 0 0 3034.dat
 0 STEP
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (black)
 1 0 -100 -152 90 0 0 1 0 1 0 -1 0 0 3021.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (black)
 1 0 -100 -152 -10 0 0 1 0 1 0 -1 0 0 3021.dat
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (light_grey)
 1 7 -260 -152 40 0 0 1 0 1 0 -1 0 0 3020.dat
-0 // Brick  2 x  3
+0 // Brick  2 x  3 (light_grey)
 1 7 -260 -168 130 0 0 1 0 1 0 -1 0 0 3002.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -300 -168 150 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (brown)
 1 6 310 -176 150 1 0 0 0 1 0 0 0 1 3005.dat
-0 // Plate  6 x 12
+0 // Plate  6 x 12 (black)
 1 0 200 -152 20 1 0 0 0 1 0 0 0 1 3028.dat
 0 STEP
 1 16 -180 -152 40 1 0 0 0 1 0 0 0 1 6769 - North - Trapdoor Left.ldr
 1 16 -20 -152 40 1 0 0 0 1 0 0 0 1 6769 - North - Trapdoor Right.ldr
-0 // Fence Spindled  1 x  4 x  2
+0 // Fence Spindled  1 x  4 x  2 (light_grey)
 1 7 120 -200 70 1 0 0 0 1 0 0 0 1 30055.dat
-0 // Fence Spindled  1 x  4 x  2
+0 // Fence Spindled  1 x  4 x  2 (light_grey)
 1 7 200 -200 70 1 0 0 0 1 0 0 0 1 30055.dat
 0 STEP
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 310 -176 100 0 0 1 0 1 0 -1 0 0 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 310 -176 20 0 0 1 0 1 0 -1 0 0 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 280 -176 -30 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 200 -176 -30 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 120 -176 -30 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 40 -176 -30 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -40 -176 -30 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -120 -176 -30 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -200 -176 -30 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 20 -176 110 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -60 -176 110 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -140 -176 110 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -200 -176 110 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (light_grey)
 1 7 -100 -168 40 1 0 0 0 1 0 0 0 1 3022.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (light_grey)
 1 7 -240 -160 70 1 0 0 0 1 0 0 0 1 3069b.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (light_grey)
 1 7 -240 -160 10 1 0 0 0 1 0 0 0 1 3069b.dat
 0 STEP
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (light_grey)
 1 7 -230 -176 100 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Plate  2 x 10
+0 // Plate  2 x 10 (black)
 1 0 -220 -176 140 1 0 0 0 1 0 0 0 1 3832.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 310 -200 120 0 0 1 0 1 0 -1 0 0 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 310 -200 40 0 0 1 0 1 0 -1 0 0 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 260 -200 -30 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 180 -200 -30 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 60 -200 -30 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 40 -200 110 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 40 -224 110 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 40 -248 110 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Minifig Goblet
+0 // Minifig Goblet (trans_clear)
 1 47 -110 -208 50 1 0 0 0 1 0 0 0 1 2343.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (light_grey)
 1 7 -230 -176 -10 1 0 0 0 1 0 0 0 1 3005.dat
-0 // Tile  1 x  2 with Playing Cards Pattern
+0 // Tile  1 x  2 with Playing Cards Pattern (white)
 1 15 -93.422 -176 20.429 -0.358 0 0.934 0 1 0 -0.934 0 -0.358 3069bpw1.dat
 0 STEP
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 120 -200 -30 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 310 -200 -20 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 50 -176 80 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 50 -200 80 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 50 -224 80 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 50 -248 80 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -100 -200 110 1 0 0 0 1 0 0 0 1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -100 -224 110 1 0 0 0 1 0 0 0 1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -100 -248 110 1 0 0 0 1 0 0 0 1 30137.dat
 0 STEP
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (light_grey)
 1 7 -230 -200 100 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (light_grey)
 1 7 -230 -224 100 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (light_grey)
 1 7 -230 -248 100 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (light_grey)
 1 7 -230 -200 -20 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (light_grey)
 1 7 -230 -224 -20 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (light_grey)
 1 7 -230 -248 -20 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 40 -224 -30 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 140 -224 -30 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 220 -224 -30 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 300 -224 -30 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 310 -224 0 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 310 -224 80 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Door  1 x  4 x  5 with 4 Panes and Reinforced Hinge
+0 // Door  1 x  4 x  5 with 4 Panes and Reinforced Hinge (light_grey)
 1 7 50 -272 50 -0.927 0 0.375 0 1 0 -0.375 0 -0.927 3861.dat
 1 16 -180 -248 110 1 0 0 0 1 0 0 0 1 6769 - North - Window.ldr
 1 16 -20 -248 110 1 0 0 0 1 0 0 0 1 6769 - North - Window.ldr
 0 STEP
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (light_grey)
 1 7 -230 -272 -30 1 0 0 0 1 0 0 0 1 3005.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (light_grey)
 1 7 -210 -272 110 1 0 0 0 1 0 0 0 1 3622.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -140 -272 110 1 0 0 0 1 0 0 0 1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -60 -272 110 1 0 0 0 1 0 0 0 1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 20 -272 110 1 0 0 0 1 0 0 0 1 30137.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 50 -272 80 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 40 -248 -30 -1 0 0 0 1 0 0 0 -1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 40 -272 -30 -1 0 0 0 1 0 0 0 -1 30136.dat
-0 // Arch  1 x  6
+0 // Arch  1 x  6 (light_grey)
 1 7 -230 -272 40 0 0 1 0 1 0 -1 0 0 3455.dat
 1 16 -260 -168 40 1 0 0 0 1 0 0 0 1 6769 - North - Fireplace.ldr
 0 STEP
-0 // Panel  3 x  8 x  7 Rock Triangular
+0 // Panel  3 x  8 x  7 Rock Triangular (light_grey)
 1 7 -270 -312 40 0 0 1 0 1 0 -1 0 0 6083.dat
-0 // Plate  1 x  1 with Clip Vertical (Thick U-Clip)
+0 // Plate  1 x  1 with Clip Vertical (Thick U-Clip) (black)
 1 0 -290 -176 110 0 0 1 0 1 0 -1 0 0 4085c.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (black)
 1 0 -60 -280 110 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Plate  1 x  3
+0 // Plate  1 x  3 (black)
 1 0 -110 -280 110 1 0 0 0 1 0 0 0 1 3623.dat
 1 16 -230 -304 -20 1 0 0 0 1 0 0 0 1 6769 - North - Roof Support.ldr
 1 16 50 -304 -20 1 0 0 0 1 0 0 0 1 6769 - North - Roof Support.ldr
 0 STEP
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -310 -200 140 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -290 -200 120 0 0 1 0 1 0 -1 0 0 30136.dat
 1 16 -180 -280 110 1 0 0 0 1 0 0 0 1 6769 - North - Roof.ldr
 0 STEP
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (black)
 1 0 -150 -323.036 55.865 1 0 0 0 0.984808 0.173648 0 -0.173648 0.984808 6141.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (black)
 1 0 -10 -323.036 55.865 1 0 0 0 0.984808 0.173648 0 -0.173648 0.984808 6141.dat
-0 // Brick  1 x  8
+0 // Brick  1 x  8 (blue)
 1 1 -80 -346.67 60.032 1 0 0 0 0.984808 0.173648 0 -0.173648 0.984808 3008.dat
-0 // Sticker  1.1 x  8.0 with "Headquarters" Sign
+0 // Sticker  1.1 x  8.0 with "Headquarters" Sign (blue)
 1 1 -80 -333.67 68.032 -1 0 0 0 -0.174 -0.985 0 -0.985 0.174 4106332c.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (light_grey)
 1 7 -270 -312 40 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Slope Brick 75  2 x  2 x  3 with Hollow Studs
+0 // Slope Brick 75  2 x  2 x  3 with Hollow Studs (light_grey)
 1 7 -270 -384 40 0 0 -1 0 1 0 1 0 0 3684.dat
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (light_grey)
 1 7 -270 -408 50 1 0 0 0 1 0 0 0 1 3062b.dat
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (light_grey)
 1 7 -270 -408 30 1 0 0 0 1 0 0 0 1 3062b.dat
-0 // Minifig Gun Rifle
+0 // Minifig Gun Rifle (light_grey)
 1 7 -320 -224 110 0 -1 0 0 0 -1 1 0 0 30141.dat
 0 STEP
-0 // Minifig Gun Rifle
+0 // Minifig Gun Rifle (light_grey)
 1 7 -170 -30 177 0 0.966 -0.259 -0.259 0.25 0.933 0.966 0.067 0.25 30141.dat
-0 // Minifig Gun Rifle
+0 // Minifig Gun Rifle (light_grey)
 1 7 -198 -30 177 0.25 0.95 -0.185 -0.242 0.247 0.938 0.937 -0.19 0.292 30141.dat
 
 1 0 -20 -40 134 1 0 0 0 0 1 0 -1 0 6769 - North - Bar.ldr
@@ -1056,27 +1056,27 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3795.dat
 0 STEP
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (blue)
 1 1 -20 -24 10 1 0 0 0 1 0 0 0 1 4865a.dat
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (blue)
 1 1 20 -24 10 1 0 0 0 1 0 0 0 1 4865a.dat
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (blue)
 1 1 20 -24 -10 -1 0 0 0 1 0 0 0 -1 4865a.dat
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (blue)
 1 1 -20 -24 -10 -1 0 0 0 1 0 0 0 -1 4865a.dat
-0 // Panel  1 x  1 x  1 Corner with Rounded Corners
+0 // Panel  1 x  1 x  1 Corner with Rounded Corners (black)
 1 0 -50 -24 10 1 0 0 0 1 0 0 0 1 6231.dat
-0 // Panel  1 x  1 x  1 Corner with Rounded Corners
+0 // Panel  1 x  1 x  1 Corner with Rounded Corners (black)
 1 0 50 -24 10 0 0 1 0 1 0 -1 0 0 6231.dat
-0 // Panel  1 x  1 x  1 Corner with Rounded Corners
+0 // Panel  1 x  1 x  1 Corner with Rounded Corners (black)
 1 0 50 -24 -10 -1 0 0 0 1 0 0 0 -1 6231.dat
-0 // Panel  1 x  1 x  1 Corner with Rounded Corners
+0 // Panel  1 x  1 x  1 Corner with Rounded Corners (black)
 1 0 -50 -24 -10 0 0 -1 0 1 0 1 0 0 6231.dat
 0 STEP
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (black)
 1 0 0 -32 0 1 0 0 0 1 0 0 0 1 3795.dat
 
 
@@ -1089,13 +1089,13 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Plate  1 x  2 with Vertical Bar on Long Side and Long Arm
+0 // Plate  1 x  2 with Vertical Bar on Long Side and Long Arm (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 4623.dat
-0 // Hinge Plate  1 x  2 with 2 Fingers and Hollow Studs
+0 // Hinge Plate  1 x  2 with 2 Fingers and Hollow Studs (black)
 1 0 60 0 0 1 0 0 0 1 0 0 0 1 4276b.dat
-0 // Hinge Plate  1 x  2 with 3 Fingers and Hollow Studs
+0 // Hinge Plate  1 x  2 with 3 Fingers and Hollow Studs (black)
 1 0 -60 0 0 -1 0 0 0 1 0 0 0 -1 4275b.dat
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (black)
 1 0 0 -8 0 1 0 0 0 1 0 0 0 1 3460.dat
 
 
@@ -1108,21 +1108,21 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Turntable  2 x  2 Plate Base
+0 // Turntable  2 x  2 Plate Base (red)
 1 4 0 0 0 1 0 0 0 1 0 0 0 1 3680.dat
 0 STEP
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (red)
 1 4 20 -8 10 1 0 0 0 1 0 0 0 1 3710.dat
-0 // Plate  1 x  3
+0 // Plate  1 x  3 (red)
 1 4 -10 -8 -30 0 0 1 0 1 0 -1 0 0 3623.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (red)
 1 4 10 -8 -10 1 0 0 0 1 0 0 0 1 3024.dat
 0 STEP
-0 // Brick  2 x  2 Round without Reinforcement
+0 // Brick  2 x  2 Round without Reinforcement (brown)
 1 6 0 -32 0 1 0 0 0 1 0 0 0 1 3941.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (light_grey)
 1 7 40 -16 10 1 0 0 0 1 0 0 0 1 3069b.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (light_grey)
 1 7 -10 -16 -40 0 0 1 0 1 0 -1 0 0 3069b.dat
 
 
@@ -1135,17 +1135,17 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Plate  6 x  8 Trap Door Frame
+0 // Plate  6 x  8 Trap Door Frame (black)
 1 0 0 0 0 0 0 1 0 1 0 -1 0 0 30041.dat
-0 // Plate  4 x  5 Trap Door
+0 // Plate  4 x  5 Trap Door (black)
 1 0 0 10 50 0 0 1 0 1 0 -1 0 0 30042.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (red)
 1 4 20 -8 -10 1 0 0 0 1 0 0 0 1 3069b.dat
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (red)
 1 4 20 -24 10 1 0 0 0 1 0 0 0 1 4865a.dat
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (red)
 1 4 20 -24 -30 -1 0 0 0 1 0 0 0 -1 4865a.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (red)
 1 4 -10 -24 -10 0 0 1 0 1 0 -1 0 0 3622.dat
 
 
@@ -1159,17 +1159,17 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Plate  6 x  8 Trap Door Frame
+0 // Plate  6 x  8 Trap Door Frame (black)
 1 0 0 0 0 0 0 1 0 1 0 -1 0 0 30041.dat
-0 // Plate  4 x  5 Trap Door
+0 // Plate  4 x  5 Trap Door (black)
 1 0 0 10 50 0 0 1 0 1 0 -1 0 0 30042.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (red)
 1 4 -20 -8 -10 -1 0 0 0 1 0 0 0 -1 3069b.dat
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (red)
 1 4 -20 -24 -30 -1 0 0 0 1 0 0 0 -1 4865a.dat
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (red)
 1 4 -20 -24 10 1 0 0 0 1 0 0 0 1 4865a.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (red)
 1 4 10 -24 -10 0 0 -1 0 1 0 1 0 0 3622.dat
 
 
@@ -1182,37 +1182,37 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (black)
 1 0 0 0 0 0 0 1 0 1 0 -1 0 0 3020.dat
 0 STEP
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (light_grey)
 1 7 -10 -24 0 0 0 -1 0 1 0 1 0 0 4865a.dat
 0 STEP
-0 // Brick  1 x  1 with Headlight
+0 // Brick  1 x  1 with Headlight (black)
 1 0 10 -24 -10 0 0 -1 0 1 0 1 0 0 4070.dat
-0 // Brick  1 x  1 with Headlight
+0 // Brick  1 x  1 with Headlight (black)
 1 0 10 -24 10 0 0 -1 0 1 0 1 0 0 4070.dat
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (black)
 1 0 24 -14 -10 0 -1 0 0 0 1 -1 0 0 2555.dat
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (black)
 1 0 24 -14 10 0 -1 0 0 0 1 -1 0 0 2555.dat
-0 // Minifig Flame with Pegs
+0 // Minifig Flame with Pegs (trans_orange)
 1 57 30 -22 10 0 1 0 0 0 -1 -1 0 0 6126a.dat
-0 // Minifig Flame with Pegs
+0 // Minifig Flame with Pegs (trans_orange)
 1 57 30 -22 -10 0 1 0 0 0 -1 -1 0 0 6126a.dat
 0 STEP
-0 // Minifig Coin with "10" Gothic Type
+0 // Minifig Coin with "10" Gothic Type (chrome_gold)
 1 334 -10 -18 8 0.259 -0.966 0 0.966 0.259 0 0 0 1 96907.dat
-0 // Minifig Coin with "10" Gothic Type
+0 // Minifig Coin with "10" Gothic Type (chrome_gold)
 1 334 -7 -18 -6 0.24 -0.896 0.375 0.966 0.259 0 -0.097 0.362 0.927 96907.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (black)
 1 0 10 -24 -30 1 0 0 0 1 0 0 0 1 3622.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (black)
 1 0 10 -24 30 1 0 0 0 1 0 0 0 1 3622.dat
 0 STEP
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (black)
 1 0 10 -48 30 -1 0 0 0 1 0 0 0 -1 2357.dat
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (black)
 1 0 10 -48 -30 0 0 -1 0 1 0 1 0 0 2357.dat
 0 STEP
 
@@ -1226,15 +1226,15 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Window  1 x  4 x  3
+0 // Window  1 x  4 x  3 (brown)
 1 6 0 0 0 -1 0 0 0 1 0 0 0 -1 3853.dat
-0 // Window  1 x  2 x  3 Shutter
+0 // Window  1 x  2 x  3 Shutter (light_grey)
 1 7 -41 0 14 -0.695 0 0.719 0 1 0 -0.719 0 -0.695 3856.dat
-0 // Window  1 x  2 x  3 Pane
+0 // Window  1 x  2 x  3 Pane (blue)
 1 1 -34 4 4 -0.423 0 -0.906 0 1 0 0.906 0 -0.423 3854.dat
-0 // Window  1 x  2 x  3 Pane
+0 // Window  1 x  2 x  3 Pane (blue)
 1 1 34 4 4 0 0 1 0 1 0 -1 0 0 3854.dat
-0 // Window  1 x  2 x  3 Shutter
+0 // Window  1 x  2 x  3 Shutter (light_grey)
 1 7 41 0 14 -0.309 0 -0.951 0 1 0 0.951 0 -0.309 3856.dat
 
 
@@ -1247,11 +1247,11 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 0 0 0 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Slope Brick 33  3 x  1
+0 // Slope Brick 33  3 x  1 (black)
 1 0 0 0 30 -1 0 0 0 1 0 0 0 -1 4286.dat
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (black)
 1 0 0 24 60 0 0 1 0 1 0 -1 0 0 3460.dat
 
 
@@ -1264,28 +1264,28 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Plate  6 x 16
+0 // Plate  6 x 16 (red)
 1 4 100 -22.069 -27.369 1 0 0 0 0.985 0.174 0 -0.174 0.985 3027.dat
 0 STEP
-0 // Plate  6 x 16
+0 // Plate  6 x 16 (red)
 1 4 100 -43.839 -104.764 1 0 0 0 0.985 0.174 0 -0.174 0.985 3027.dat
 0 STEP
-0 // Plate  1 x 10
+0 // Plate  1 x 10 (red)
 1 4 250 -21.137 -68.151 0 0 1 -0.174 0.985 0 -0.985 -0.174 0 4477.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (red)
 1 4 250 -39.434 -125.85 0 0 1 -0.174 0.985 0 -0.985 -0.174 0 3710.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (black)
 1 0 0 -22.873 -77.999 1 0 0 0 0.985 0.174 0 -0.174 0.985 3710.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (black)
 1 0 180 -22.873 -77.999 1 0 0 0 0.985 0.174 0 -0.174 0.985 3710.dat
 0 STEP
-0 // Hinge Car Roof  4 x  4
+0 // Hinge Car Roof  4 x  4 (black)
 1 0 0 -14.19 -28.758 1 0 0 0 0.985 0.174 0 -0.174 0.985 4213.dat
-0 // Hinge Car Roof  4 x  4
+0 // Hinge Car Roof  4 x  4 (black)
 1 0 180 -14.19 -28.758 1 0 0 0 0.985 0.174 0 -0.174 0.985 4213.dat
-0 // Hinge Tile  1 x  4
+0 // Hinge Tile  1 x  4 (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 4625.dat
-0 // Hinge Tile  1 x  4
+0 // Hinge Tile  1 x  4 (black)
 1 0 180 0 0 1 0 0 0 1 0 0 0 1 4625.dat
 0 STEP
 
@@ -1299,159 +1299,159 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Baseplate 16 x 32 with Square Corners
+0 // Baseplate 16 x 32 with Square Corners (tan)
 1 19 0 0 0 1 0 0 0 1 0 0 0 1 3857.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -310 -24 140 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 310 -24 140 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -300 -24 30 -1 0 0 0 1 0 0 0 -1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 300 -24 30 -1 0 0 0 1 0 0 0 -1 30136.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -160 -24 30 1 0 0 0 1 0 0 0 1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 0 -24 30 1 0 0 0 1 0 0 0 1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 160 -24 30 1 0 0 0 1 0 0 0 1 30137.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (light_grey)
 1 7 -80 -24 90 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (light_grey)
 1 7 80 -24 90 1 0 0 0 1 0 0 0 1 3004.dat
 0 STEP
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -160 -48 30 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 0 -48 30 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 160 -48 30 1 0 0 0 1 0 0 0 1 30136.dat
-0 // ~Brick  1 x  2 x  5 (Obsolete)
+0 // ~Brick  1 x  2 x  5 (Obsolete) (black)
 1 0 -80 -144 90 1 0 0 0 1 0 0 0 1 2454.dat
-0 // ~Brick  1 x  2 x  5 (Obsolete)
+0 // ~Brick  1 x  2 x  5 (Obsolete) (black)
 1 0 80 -144 90 1 0 0 0 1 0 0 0 1 2454.dat
 0 STEP
-0 // Panel  2 x  6 x  6 Log Wall
+0 // Panel  2 x  6 x  6 Log Wall (brown)
 1 6 -240 -144 40 1 0 0 0 1 0 0 0 1 30140.dat
-0 // Panel  2 x  6 x  6 Log Wall
+0 // Panel  2 x  6 x  6 Log Wall (brown)
 1 6 -80 -144 40 1 0 0 0 1 0 0 0 1 30140.dat
-0 // Panel  2 x  6 x  6 Log Wall
+0 // Panel  2 x  6 x  6 Log Wall (brown)
 1 6 80 -144 40 1 0 0 0 1 0 0 0 1 30140.dat
-0 // Panel  2 x  6 x  6 Log Wall
+0 // Panel  2 x  6 x  6 Log Wall (brown)
 1 6 240 -144 40 1 0 0 0 1 0 0 0 1 30140.dat
-0 // Panel  2 x  6 x  6 Log Wall
+0 // Panel  2 x  6 x  6 Log Wall (brown)
 1 6 -300 -144 80 0 0 1 0 1 0 -1 0 0 30140.dat
-0 // Panel  2 x  6 x  6 Log Wall
+0 // Panel  2 x  6 x  6 Log Wall (brown)
 1 6 300 -144 80 0 0 -1 0 1 0 1 0 0 30140.dat
 0 STEP
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -300 -144 30 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 300 -144 30 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 310 -144 140 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -310 -144 140 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -160 -144 30 1 0 0 0 1 0 0 0 1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 0 -144 30 1 0 0 0 1 0 0 0 1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 160 -144 30 1 0 0 0 1 0 0 0 1 30137.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (black)
 1 0 290 -144 100 0 0 1 0 1 0 -1 0 0 3023.dat
-0 // Plate  1 x  2 with Handle
+0 // Plate  1 x  2 with Handle (black)
 1 0 -290 -144 120 0 0 -1 0 1 0 1 0 0 2540.dat
-0 // Bar  7 x  3 with Double Clips
+0 // Bar  7 x  3 with Double Clips (black)
 1 0 -270 -142 120 0 -0.956 0.292 0 0.292 0.956 -1 0 0 6020.dat
 0 STEP
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (black)
 1 0 -300 -150 130 0 0 1 0 1 0 -1 0 0 3021.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (black)
 1 0 300 -150 130 0 0 1 0 1 0 -1 0 0 3021.dat
-0 // Plate  4 x 12
+0 // Plate  4 x 12 (black)
 1 0 -200 -150 60 1 0 0 0 1 0 0 0 1 3029.dat
-0 // Plate  4 x 12
+0 // Plate  4 x 12 (black)
 1 0 200 -150 60 1 0 0 0 1 0 0 0 1 3029.dat
-0 // Plate  4 x  8
+0 // Plate  4 x  8 (black)
 1 0 0 -150 60 1 0 0 0 1 0 0 0 1 3035.dat
 0 STEP
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -310 -174 100 0 0 1 0 1 0 -1 0 0 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 310 -174 100 0 0 1 0 1 0 -1 0 0 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 260 -174 30 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 180 -174 30 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 100 -174 30 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 20 -174 30 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -60 -174 30 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -140 -174 30 -1 0 0 0 1 0 0 0 -1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -220 -174 30 -1 0 0 0 1 0 0 0 -1 30137.dat
 0 STEP
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -280 -174 30 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -310 -174 40 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 310 -174 40 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (brown)
 1 6 -310 -174 150 1 0 0 0 1 0 0 0 1 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (brown)
 1 6 310 -174 150 1 0 0 0 1 0 0 0 1 3005.dat
 0 STEP
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -310 -198 60 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 310 -198 60 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -310 -198 120 0 0 1 0 1 0 -1 0 0 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 310 -198 120 0 0 1 0 1 0 -1 0 0 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -280 -198 30 1 0 0 0 1 0 0 0 1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -200 -198 30 1 0 0 0 1 0 0 0 1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -120 -198 30 1 0 0 0 1 0 0 0 1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -40 -198 30 1 0 0 0 1 0 0 0 1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 40 -198 30 1 0 0 0 1 0 0 0 1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 120 -198 30 1 0 0 0 1 0 0 0 1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 200 -198 30 1 0 0 0 1 0 0 0 1 30137.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 280 -198 30 1 0 0 0 1 0 0 0 1 30137.dat
 0 STEP
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -240 -222 30 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -160 -222 30 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -80 -222 30 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 0 -222 30 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 80 -222 30 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 160 -222 30 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 240 -222 30 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 310 -222 80 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -310 -222 80 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // ~Plant Bush (Obsolete)
+0 // ~Plant Bush (Obsolete) (green)
 1 2 -260 0 -100 1 0 0 0 1 0 0 0 1 6064.dat
-0 // ~Plant Bush (Obsolete)
+0 // ~Plant Bush (Obsolete) (green)
 1 2 260 0 -60 1 0 0 0 1 0 0 0 1 6064.dat
 
 
@@ -1466,13 +1466,13 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Hinge Plate  1 x  2 with 2 Fingers and Hollow Studs
+0 // Hinge Plate  1 x  2 with 2 Fingers and Hollow Studs (black)
 1 0 0 0 0 -1 0 0 0 0 -1 0 -1 0 4276b.dat
-0 // Hinge Plate  1 x  2 with 2 Fingers and Hollow Studs
+0 // Hinge Plate  1 x  2 with 2 Fingers and Hollow Studs (black)
 1 0 160 0 0 1 0 0 0 0 1 0 -1 0 4276b.dat
-0 // Plate  1 x 10
+0 // Plate  1 x 10 (black)
 1 0 80 0 8 1 0 0 0 0 1 0 -1 0 4477.dat
-0 // Plate  1 x  2 with Vertical Bar on Long Side and Long Arm
+0 // Plate  1 x  2 with Vertical Bar on Long Side and Long Arm (black)
 1 0 80 0 0 1 0 0 0 0 1 0 -1 0 4623.dat
 
 
@@ -1487,11 +1487,11 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Flag on Flagpole Type 5
+0 // Flag on Flagpole Type 5 (white)
 1 15 0 0 0 1 0 0 0 1 0 0 0 1 3596.dat
-0 // Sticker  2.4 x  3 with Cavalry Logo
+0 // Sticker  2.4 x  3 with Cavalry Logo (white)
 1 15 2 -132 34 0 -1 0 0 0 -1 1 0 0 4106332a.dat
-0 // Sticker  2.4 x  3 with Cavalry Logo
+0 // Sticker  2.4 x  3 with Cavalry Logo (white)
 1 15 -2 -132 34 0 1 0 0 0 -1 -1 0 0 4106332a.dat
 
 
@@ -1506,26 +1506,26 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3020.dat
 0 STEP
-0 // Plate  2 x  2 with 2 Wheel Pins Extended without Wishbones
+0 // Plate  2 x  2 with 2 Wheel Pins Extended without Wishbones (black)
 1 0 -20 -16 0 0 0 1 0 1 0 -1 0 0 6157.dat
-0 // Plate  3 x  2 with Hole
+0 // Plate  3 x  2 with Hole (black)
 1 0 40 -8 0 0 0 -1 0 1 0 1 0 0 3176.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (brown)
 1 6 10 -8 0 0 0 -1 0 1 0 1 0 0 3023.dat
 0 STEP
-0 // Minifig Cannon  2 x  4 Base
+0 // Minifig Cannon  2 x  4 Base (brown)
 1 6 0 -16 0 0 0 1 0 1 0 -1 0 0 2527.dat
-0 // Minifig Cannon Shooting (Complete)
+0 // Minifig Cannon Shooting (Complete) (light_grey)
 1 7 -30 -44 0 0 -0.259 0.966 0 0.966 0.259 -1 0 0 2533c01.dat
 0 STEP
-0 // Wheel  2.8 x 27 with  8 Spokes
+0 // Wheel  2.8 x 27 with  8 Spokes (black)
 1 0 -20 -11 38 -1 0 0 0 1 0 0 0 -1 2470.dat
-0 // Wheel  2.8 x 27 with  8 Spokes
+0 // Wheel  2.8 x 27 with  8 Spokes (black)
 1 0 -20 -11 -38 1 0 0 0 1 0 0 0 1 2470.dat
-0 // Minifig Gun Rifle
+0 // Minifig Gun Rifle (light_grey)
 1 7 20 -58 31 0 1 0 0 0 -1 -1 0 0 30141.dat
 
 
@@ -1540,32 +1540,32 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (black)
 1 0 0 0 0 0 0 1 0 1 0 -1 0 0 3020.dat
 0 STEP
-0 // Plate  1 x  4 with 2 Wheel Pins
+0 // Plate  1 x  4 with 2 Wheel Pins (black)
 1 0 0 -8 10 -1 0 0 0 1 0 0 0 -1 2926.dat
-0 // Plate  1 x  2 with Vertical Bar on Long Side and Long Arm
+0 // Plate  1 x  2 with Vertical Bar on Long Side and Long Arm (black)
 1 0 0 -8 30 -1 0 0 0 1 0 0 0 -1 4623.dat
 0 STEP
-0 // Plate  2 x  2 with Angled Bars and Attached  1 x  2 Plate
+0 // Plate  2 x  2 with Angled Bars and Attached  1 x  2 Plate (black)
 1 0 0 -24 -80 -1 0 0 0 1 0 0 0 -1 2397.dat
 0 STEP
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (black)
 1 0 0 -16 0 0 0 1 0 1 0 -1 0 0 3020.dat
 0 STEP
-0 // Animal Horse (Complete) with Brown/White Tack Pattern
+0 // Animal Horse (Complete) with Brown/White Tack Pattern (black)
 1 0 0 -16 -130 1 0 0 0 1 0 0 0 1 4493c01.dat
-0 // Wheel  2.8 x 34 with  8 Spokes with Round Hole for Wheel Holding Pin
+0 // Wheel  2.8 x 34 with  8 Spokes with Round Hole for Wheel Holding Pin (black)
 1 0 50 -3 10 0 0 -1 0 1 0 1 0 0 4489a.dat
-0 // Wheel  2.8 x 34 with  8 Spokes with Round Hole for Wheel Holding Pin
+0 // Wheel  2.8 x 34 with  8 Spokes with Round Hole for Wheel Holding Pin (black)
 1 0 -50 -3 10 0 0 1 0 1 0 -1 0 0 4489a.dat
 0 STEP
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (light_grey)
 1 7 -10 -40 30 1 0 0 0 1 0 0 0 1 3062b.dat
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (light_grey)
 1 7 10 -40 30 1 0 0 0 1 0 0 0 1 3062b.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 0 -48 -130 1 0 0 0 1 0 0 0 1 3004.dat
 
 
@@ -1578,31 +1578,31 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Minifig Hat Cowboy
+0 // Minifig Hat Cowboy (brown)
 1 6 0 -17.363 28.5 1 0 0 0 0.866 0.5 0 -0.5 0.866 3629.dat
-0 // Minifig Head with Thick Angry Moustache, Stubble and Long Hair Pattern
+0 // Minifig Head with Thick Angry Moustache, Stubble and Long Hair Pattern (yellow)
 1 14 0 -16.497 28 1 0 0 0 0.866 0.5 0 -0.5 0.866 6769 - 3626bpw1.dat
-0 // Minifig Bandana
+0 // Minifig Bandana (black)
 1 0 0 4.287 16 -1 0 0 0 0.866 -0.5 0 -0.5 -0.866 30133.dat
-0 // Minifig Torso with Jacket over Blue Undershirt with Green Bow and Gun in Belt Pattern
+0 // Minifig Torso with Jacket over Blue Undershirt with Green Bow and Gun in Belt Pattern (black)
 1 0 0 4.287 16 1 0 0 0 0.866 0.5 0 -0.5 0.866 973pw5.dat
-0 // ~Minifig Hips (Obsolete)
+0 // ~Minifig Hips (Obsolete) (black)
 1 0 0 32 0 1 0 0 0 0.866 0.5 0 -0.5 0.866 3815.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (black)
 1 0 -15.552 12.081 11.5 0.985 -0.154 -0.072 0.009 -0.375 0.927 -0.17 -0.914 -0.368 3818.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (black)
 1 0 15.552 12.081 11.5 0.985 0.154 0.072 -0.134 0.443 0.886 0.105 -0.883 0.458 3819.dat
-0 // Minifig Hand
+0 // Minifig Hand (black)
 1 0 -22.823 -4.572 -0.956 0.985 -0.16 0.058 0.009 0.39 0.921 -0.17 -0.906 0.386 3820.dat
-0 // Minifig Hand
+0 // Minifig Hand (black)
 1 0 22.823 10.557 -9.241 0.985 0.16 -0.058 -0.134 0.94 0.313 0.105 -0.3 0.948 3820.dat
-0 // Minifig Gun Revolver
+0 // Minifig Gun Revolver (light_grey)
 1 7 -22.924 -14.661 -2.069 0.985 -0.141 0.095 0.009 0.601 0.799 -0.17 -0.786 0.593 30132.dat
-0 // Minifig Gun Revolver
+0 // Minifig Gun Revolver (light_grey)
 1 7 22.924 4.777 -17.585 0.985 0.141 -0.095 -0.134 0.987 0.076 0.105 -0.062 0.992 30132.dat
-0 // ~Minifig Leg Right (Obsolete)
+0 // ~Minifig Leg Right (Obsolete) (black)
 1 0 0 44 0 1 0 0 0 1 0 0 0 1 3816.dat
-0 // ~Minifig Leg Left (Obsolete)
+0 // ~Minifig Leg Left (Obsolete) (black)
 1 0 0 42.392 -6 1 0 0 0 -0.139 0.99 0 -0.99 -0.139 3817.dat
 
 0 FILE 6769 - Bandit2.ldr
@@ -1614,27 +1614,27 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Minifig Hat Cowboy
+0 // Minifig Hat Cowboy (brown)
 1 6 0 -25 0 0.934 0 -0.358 0 1 0 0.358 0 0.934 3629.dat
-0 // Minifig Head with Angry Moustache and Teeth Pattern
+0 // Minifig Head with Angry Moustache and Teeth Pattern (yellow)
 1 14 0 -24 0 -0.358 0 -0.934 0 1 0 0.934 0 -0.358 6769 - 3626bpw2.dat
-0 // Minifig Bandana
+0 // Minifig Bandana (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 30133.dat
-0 // Minifig Torso with White Braces and Cartridge Belt Pattern
+0 // Minifig Torso with White Braces and Cartridge Belt Pattern (red)
 1 4 0 0 0 1 0 0 0 1 0 0 0 1 973pw6.dat
-0 // ~Minifig Hips (Obsolete)
+0 // ~Minifig Hips (Obsolete) (light_grey)
 1 7 0 32 0 1 0 0 0 1 0 0 0 1 3815.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (red)
 1 4 -15.552 9 0 0.985 -0.092 -0.143 0.17 0.537 0.826 0 -0.839 0.545 3818.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (red)
 1 4 15.552 9 0 0.984 0.029 -0.167 -0.17 0.171 -0.97 0 0.984 0.173 3819.dat
-0 // Minifig Hand
+0 // Minifig Hand (yellow)
 1 14 -20.939 9.655 -21.35 0.985 -0.167 -0.036 0.17 0.963 0.205 0 -0.207 0.978 3820.dat
-0 // Minifig Hand
+0 // Minifig Hand (yellow)
 1 14 22.95 21.338 16.673 0.984 -0.097 -0.139 -0.17 -0.565 -0.807 0 0.818 -0.573 3820.dat
-0 // ~Minifig Leg Right (Obsolete)
+0 // ~Minifig Leg Right (Obsolete) (light_grey)
 1 7 0 44 0 1 0 0 0 0.559 -0.829 0 0.829 0.559 3816.dat
-0 // ~Minifig Leg Left (Obsolete)
+0 // ~Minifig Leg Left (Obsolete) (light_grey)
 1 7 0 44 0 1 0 0 0 0.966 -0.259 0 0.259 0.966 3817.dat
 
 0 FILE 6769 - Bandit3.ldr
@@ -1646,29 +1646,29 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Minifig Top Hat
+0 // Minifig Top Hat (black)
 1 0 0 -21.623 -21.322 -0.998 0 0.07 0.022 0.951 0.308 -0.066 0.309 -0.949 3878.dat
-0 // Minifig Head with Angry Moustache, White Teeth and Gold Tooth Pattern
+0 // Minifig Head with Angry Moustache, White Teeth and Gold Tooth Pattern (yellow)
 1 14 0 -20.672 -21.013 0.07 0 0.998 0.308 0.951 -0.022 -0.949 0.309 0.066 6769 - 3626bpw0.dat
-0 // Minifig Torso with Card, Suit, Vest, and Gold Fob Pattern
+0 // Minifig Torso with Card, Suit, Vest, and Gold Fob Pattern (green)
 1 2 0 2.154 -13.597 1 0 0 0 0.951 -0.309 0 0.309 0.951 973pw8.dat
-0 // ~Minifig Hips (Obsolete)
+0 // ~Minifig Hips (Obsolete) (dark_grey)
 1 8 0 32.587 -3.708 1 0 0 0 0.951 -0.309 0 0.309 0.951 3815.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (green)
 1 2 -15.552 10.713 -10.816 0.985 -0.154 -0.072 0.162 0.98 0.116 0.053 -0.126 0.99 3818.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (green)
 1 2 15.552 10.713 -10.816 0.996 0.009 0.079 -0.065 0.662 0.747 -0.045 -0.749 0.66 3819.dat
-0 // Minifig Hand
+0 // Minifig Hand (black)
 1 0 -22.823 27.056 -23.678 0.985 -0.16 0.058 0.162 0.774 -0.611 0.053 0.611 0.79 3820.dat
-0 // Minifig Hand
+0 // Minifig Hand (black)
 1 0 20.094 15.079 -31.927 0.877 -0.477 -0.043 0.477 0.879 -0.032 0.054 0.008 0.999 3820.dat
-0 // Minifig Gun Revolver
+0 // Minifig Gun Revolver (light_grey)
 1 7 -22.924 30.741 -33.135 0.985 -0.141 0.095 0.162 0.603 -0.78 0.053 0.784 0.618 30132.dat
-0 // Tile  1 x  2 with Dynamite Pattern
+0 // Tile  1 x  2 with Dynamite Pattern (light_grey)
 1 7 14.762 14.085 -60.341 -0.16 0.889 0.428 0.143 0.451 -0.882 -0.977 -0.08 -0.199 3069bp03.dat
-0 // ~Minifig Leg Right (Obsolete)
+0 // ~Minifig Leg Right (Obsolete) (dark_grey)
 1 8 0 44 0 1 0 0 0 0.5 0.866 0 -0.866 0.5 3816.dat
-0 // ~Minifig Leg Left (Obsolete)
+0 // ~Minifig Leg Left (Obsolete) (dark_grey)
 1 8 0 44 0 1 0 0 0 0.407 -0.914 0 0.914 0.407 3817.dat
 
 0 FILE 6769 - Cavalry Colonel.ldr
@@ -1680,27 +1680,27 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Minifig Hat Cowboy with Cavalry Logo Pattern
+0 // Minifig Hat Cowboy with Cavalry Logo Pattern (blue)
 1 1 0 -25 0 0.707 0 -0.707 0 1 0 0.707 0 0.707 3629pw1.dat
-0 // Minifig Head with Moustache Curly and Spiky Beard under Mouth Pattern
+0 // Minifig Head with Moustache Curly and Spiky Beard under Mouth Pattern (yellow)
 1 14 0 -24 0 0.707 0 -0.707 0 1 0 0.707 0 0.707 6769 - 3626bp45.dat
-0 // Minifig Torso with US Cavalry General Pattern
+0 // Minifig Torso with US Cavalry General Pattern (blue)
 1 1 0 0 0 1 0 0 0 1 0 0 0 1 973pw1.dat
-0 // ~Minifig Hips (Obsolete)
+0 // ~Minifig Hips (Obsolete) (black)
 1 0 0 32 0 1 0 0 0 1 0 0 0 1 3815.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (blue)
 1 1 -15.552 9 0 0.975 0.008 -0.216 0.192 0.424 0.884 0.099 -0.904 0.413 3818.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (blue)
 1 1 15.552 9 0 0.996 0.042 0.068 -0.076 0.746 0.66 -0.023 -0.663 0.748 3819.dat
-0 // Minifig Hand
+0 // Minifig Hand (white)
 1 15 -18.232 6.83 -21.743 0.975 -0.147 -0.159 0.192 0.925 0.325 0.099 -0.347 0.931 3820.dat
-0 // Minifig Hand
+0 // Minifig Hand (white)
 1 15 20.82 15.793 -20.283 0.881 -0.466 -0.075 0.452 0.879 -0.151 0.137 0.1 0.985 3820.dat
-0 // ~Minifig Leg Right (Obsolete)
+0 // ~Minifig Leg Right (Obsolete) (black)
 1 0 0 44 0 1 0 0 0 1 0 0 0 1 3816.dat
-0 // ~Minifig Leg Left (Obsolete)
+0 // ~Minifig Leg Left (Obsolete) (black)
 1 0 0 44 0 1 0 0 0 1 0 0 0 1 3817.dat
-0 // Minifig Sword Cutlass
+0 // Minifig Sword Cutlass (light_grey)
 1 7 -16.273 1.384 -30.5 0.985 -0.173 0 0.171 0.978 0.117 -0.021 -0.115 0.993 2530.dat
 
 0 FILE 6769 - Cavalry Lieutenant with Bandana.ldr
@@ -1712,31 +1712,31 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Minifig Hat Cowboy
+0 // Minifig Hat Cowboy (blue)
 1 1 0 -24 0 0.927 0 0.375 0 1 0 -0.375 0 0.927 3629.dat
-0 // Minifig Head with Grin, Dark Grey Beard and Eyebrows Pattern
+0 // Minifig Head with Grin, Dark Grey Beard and Eyebrows Pattern (yellow)
 1 14 0 -24 0 0.927 0 0.375 0 1 0 -0.375 0 0.927 3626bp39.dat
-0 // Minifig Bandana
+0 // Minifig Bandana (white)
 1 15 0 0 0 1 0 0 0 1 0 0 0 1 30133.dat
-0 // Minifig Torso with US Cavalry Officer Pattern
+0 // Minifig Torso with US Cavalry Officer Pattern (blue)
 1 1 0 0 0 1 0 0 0 1 0 0 0 1 973pw2.dat
-0 // ~Minifig Hips (Obsolete)
+0 // ~Minifig Hips (Obsolete) (blue)
 1 1 0 32 0 1 0 0 0 1 0 0 0 1 3815.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (blue)
 1 1 -15.552 9 0 0.985 -0.072 -0.154 0.17 0.416 0.893 0 -0.906 0.423 3818.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (blue)
 1 1 15.552 9 0 0.985 0.154 0.072 -0.17 0.893 0.416 0 -0.423 0.906 3819.dat
-0 // Minifig Hand
+0 // Minifig Hand (white)
 1 15 -20.431 6.713 -21.359 0.715 -0.696 -0.059 0.67 0.661 0.337 -0.196 -0.28 0.94 3820.dat
-0 // Minifig Hand
+0 // Minifig Hand (white)
 1 15 22.823 20.568 -17.283 0.985 0.16 -0.058 -0.17 0.925 -0.337 0 0.342 0.94 3820.dat
-0 // Minifig Bugle
+0 // Minifig Bugle (chrome_gold)
 1 334 -19.218 2.958 -29.769 0.715 -0.689 0.112 0.67 0.722 0.167 -0.196 -0.044 0.979 71342.dat
-0 // Minifig Sword Cutlass
+0 // Minifig Sword Cutlass (light_grey)
 1 7 22.924 21.151 -27.416 0.985 0.141 -0.095 -0.17 0.816 -0.551 0 0.559 0.829 2530.dat
-0 // ~Minifig Leg Right (Obsolete)
+0 // ~Minifig Leg Right (Obsolete) (blue)
 1 1 0 44 0 1 0 0 0 1 0 0 0 1 3816.dat
-0 // ~Minifig Leg Left (Obsolete)
+0 // ~Minifig Leg Left (Obsolete) (blue)
 1 1 0 44 0 1 0 0 0 1 0 0 0 1 3817.dat
 
 
@@ -1751,27 +1751,27 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Minifig Hat Cowboy
+0 // Minifig Hat Cowboy (blue)
 1 1 0 -24 0 0.766 0 0.643 0 1 0 -0.643 0 0.766 3629.dat
-0 // Minifig Head with Grin, Dark Grey Beard and Eyebrows Pattern
+0 // Minifig Head with Grin, Dark Grey Beard and Eyebrows Pattern (yellow)
 1 14 0 -24 0 0.766 0 0.643 0 1 0 -0.643 0 0.766 3626bp39.dat
-0 // Minifig Torso with US Cavalry Officer Pattern
+0 // Minifig Torso with US Cavalry Officer Pattern (blue)
 1 1 0 0 0 1 0 0 0 1 0 0 0 1 973pw2.dat
-0 // ~Minifig Hips (Obsolete)
+0 // ~Minifig Hips (Obsolete) (blue)
 1 1 0 32 0 1 0 0 0 1 0 0 0 1 3815.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (blue)
 1 1 -15.552 9 0 0.985 -0.168 -0.029 0.17 0.97 0.171 0 -0.174 0.985 3818.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (blue)
 1 1 15.552 9 0 0.985 0.154 0.072 -0.17 0.893 0.416 0 -0.423 0.906 3819.dat
-0 // Minifig Hand
+0 // Minifig Hand (white)
 1 15 -23.507 24.546 -13.419 0.985 -0.139 0.097 0.17 0.806 -0.565 0 0.573 0.819 3820.dat
-0 // Minifig Hand
+0 // Minifig Hand (white)
 1 15 22.823 20.568 -17.283 0.985 0.16 -0.058 -0.17 0.925 -0.337 0 0.342 0.94 3820.dat
-0 // Minifig Gun Rifle
+0 // Minifig Gun Rifle (light_grey)
 1 7 23.51 19.464 -40.82 0.974 0.177 0.138 -0.222 0.662 0.716 0.035 -0.728 0.684 30141.dat
-0 // ~Minifig Leg Right (Obsolete)
+0 // ~Minifig Leg Right (Obsolete) (blue)
 1 1 0 44 0 1 0 0 0 1 0 0 0 1 3816.dat
-0 // ~Minifig Leg Left (Obsolete)
+0 // ~Minifig Leg Left (Obsolete) (blue)
 1 1 0 44 0 1 0 0 0 1 0 0 0 1 3817.dat
 
 
@@ -1786,31 +1786,31 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Minifig Hat Kepi
+0 // Minifig Hat Kepi (blue)
 1 1 0 -21.717 -17.341 1 0 0 0 0.966 -0.259 0 0.259 0.966 30135.dat
-0 // Minifig Head with Dark Orange Moustache, Beard and Messy Hair Pattern
+0 // Minifig Head with Dark Orange Moustache, Beard and Messy Hair Pattern (yellow)
 1 14 0 -21.717 -17.341 1 0 0 0 0.966 -0.259 0 0.259 0.966 3626bp42.dat
-0 // Minifig Bandana
+0 // Minifig Bandana (white)
 1 15 0 1.465 -11.129 1 0 0 0 0.966 -0.259 0 0.259 0.966 30133.dat
-0 // Minifig Torso with US Cavalry Officer Pattern
+0 // Minifig Torso with US Cavalry Officer Pattern (blue)
 1 1 0 1.465 -11.129 1 0 0 0 0.966 -0.259 0 0.259 0.966 973pw2.dat
-0 // ~Minifig Hips (Obsolete)
+0 // ~Minifig Hips (Obsolete) (blue)
 1 1 0 32.375 -2.847 1 0 0 0 0.966 -0.259 0 0.259 0.966 3815.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (blue)
 1 1 -15.552 10.159 -8.8 0.985 -0.098 -0.139 0.122 0.975 0.182 0.118 -0.197 0.973 3818.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (blue)
 1 1 15.552 10.159 -8.8 0.985 0.018 0.169 -0.164 0.357 0.919 -0.044 -0.934 0.355 3819.dat
-0 // Minifig Hand
+0 // Minifig Hand (white)
 1 15 -21.065 25.941 -23.145 0.985 -0.167 -0.03 0.122 0.818 -0.561 0.118 0.549 0.827 3820.dat
-0 // Minifig Hand
+0 // Minifig Hand (white)
 1 15 19.26 6.511 -30.2 0.985 0.132 0.107 -0.164 0.902 0.398 -0.044 -0.409 0.911 3820.dat
-0 // Minifig Sword Cutlass
+0 // Minifig Sword Cutlass (light_grey)
 1 7 17.836 0.02 -37.867 0.985 0.154 0.072 -0.164 0.971 0.167 -0.044 -0.176 0.983 2530.dat
-0 // ~Minifig Leg Right (Obsolete)
+0 // ~Minifig Leg Right (Obsolete) (blue)
 1 1 0 44 0 1 0 0 0 0.438 -0.899 0 0.899 0.438 3816.dat
-0 // ~Minifig Leg Left (Obsolete)
+0 // ~Minifig Leg Left (Obsolete) (blue)
 1 1 0 44 0 1 0 0 0 1 0 0 0 1 3817.dat
-0 // Minifig Gun Rifle
+0 // Minifig Gun Rifle (light_grey)
 1 7 -19 32.165 -44.545 0.988 -0.059 -0.145 0.113 0.91 0.399 0.109 -0.41 0.906 30141.dat
 
 
@@ -1825,29 +1825,29 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Minifig Hat Kepi
+0 // Minifig Hat Kepi (blue)
 1 1 0 -24 0 1 0 0 0 1 0 0 0 1 30135.dat
-0 // Minifig Head with Dark Orange Moustache, Beard and Messy Hair Pattern
+0 // Minifig Head with Dark Orange Moustache, Beard and Messy Hair Pattern (yellow)
 1 14 0 -24 0 1 0 0 0 1 0 0 0 1 3626bp42.dat
-0 // Minifig Bandana
+0 // Minifig Bandana (white)
 1 15 0 0 0 1 0 0 0 1 0 0 0 1 30133.dat
-0 // Minifig Torso with US Cavalry Officer Pattern
+0 // Minifig Torso with US Cavalry Officer Pattern (blue)
 1 1 0 0 0 1 0 0 0 1 0 0 0 1 973pw2.dat
-0 // ~Minifig Hips (Obsolete)
+0 // ~Minifig Hips (Obsolete) (blue)
 1 1 0 32 0 1 0 0 0 1 0 0 0 1 3815.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (blue)
 1 1 -15.552 9 0 0.981 -0.026 -0.19 0.125 0.838 0.53 0.146 -0.544 0.826 3818.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (blue)
 1 1 15.552 9 0 0.966 0.142 0.211 -0.226 0.103 0.968 0.117 -0.984 0.132 3819.dat
-0 // Minifig Hand
+0 // Minifig Hand (white)
 1 15 -19.161 18.599 -19.492 0.991 0.055 -0.117 -0.079 0.972 -0.218 0.101 0.226 0.969 3820.dat
-0 // Minifig Hand
+0 // Minifig Hand (white)
 1 15 21.087 -0.242 -19.212 0.966 0.25 0.047 -0.226 0.758 0.612 0.117 -0.602 0.789 3820.dat
-0 // ~Minifig Leg Right (Obsolete)
+0 // ~Minifig Leg Right (Obsolete) (blue)
 1 1 0 44 0 1 0 0 0 0 1 0 -1 0 3816.dat
-0 // ~Minifig Leg Left (Obsolete)
+0 // ~Minifig Leg Left (Obsolete) (blue)
 1 1 0 44 0 1 0 0 0 0 1 0 -1 0 3817.dat
-0 // Minifig Whip
+0 // Minifig Whip (black)
 1 0 -18.844 4.299 -37.843 -0.989 0.036 0.142 0.098 0.883 0.459 -0.108 0.468 -0.877 2488.dat
 
 
@@ -1862,27 +1862,27 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Minifig Hat Kepi
+0 // Minifig Hat Kepi (blue)
 1 1 0 -22.514 -14.138 1 0 0 0 0.978 -0.208 0 0.208 0.978 30135.dat
-0 // Minifig Head with Dark Orange Moustache, Beard and Messy Hair Pattern
+0 // Minifig Head with Dark Orange Moustache, Beard and Messy Hair Pattern (yellow)
 1 14 0 -22.514 -14.138 1 0 0 0 0.978 -0.208 0 0.208 0.978 3626bp42.dat
-0 // Minifig Torso with US Cavalry Soldier Pattern
+0 // Minifig Torso with US Cavalry Soldier Pattern (blue)
 1 1 0 0.962 -9.148 1 0 0 0 0.978 -0.208 0 0.208 0.978 973pw3.dat
-0 // ~Minifig Hips (Obsolete)
+0 // ~Minifig Hips (Obsolete) (blue)
 1 1 0 32.262 -2.495 1 0 0 0 0.978 -0.208 0 0.208 0.978 3815.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (blue)
 1 1 -15.552 9.765 -7.277 0.975 -0.026 -0.209 0.168 0.695 0.697 0.128 -0.717 0.684 3818.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (blue)
 1 1 15.552 9.765 -7.277 0.985 0.116 0.124 -0.166 0.81 0.562 -0.035 -0.576 0.817 3819.dat
-0 // Minifig Hand
+0 // Minifig Hand (white)
 1 15 -18.95 14.724 -28.443 0.899 -0.412 -0.131 0.417 0.907 0.002 0.117 -0.056 0.991 3820.dat
-0 // Minifig Hand
+0 // Minifig Hand (white)
 1 15 21.566 18.271 -26.689 0.985 0.17 0.006 -0.166 0.97 -0.175 -0.035 0.171 0.985 3820.dat
-0 // Minifig Gun Rifle
+0 // Minifig Gun Rifle (light_grey)
 1 7 -12.842 8.52 -49.05 0.96 0.026 -0.271 0.224 0.465 0.846 0.153 -0.853 0.454 30141.dat
-0 // ~Minifig Leg Right (Obsolete)
+0 // ~Minifig Leg Right (Obsolete) (blue)
 1 1 0 44 0 1 0 0 0 1 0 0 0 1 3816.dat
-0 // ~Minifig Leg Left (Obsolete)
+0 // ~Minifig Leg Left (Obsolete) (blue)
 1 1 0 44 0 1 0 0 0 1 0 0 0 1 3817.dat
 
 
@@ -1897,27 +1897,27 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Minifig Hat Cowboy
+0 // Minifig Hat Cowboy (white)
 1 15 0 -26 0 1 0 0 0 1 0 0 0 1 3629.dat
-0 // Minifig Head with Ice Planet Messy White Hair Pattern
+0 // Minifig Head with Ice Planet Messy White Hair Pattern (yellow)
 1 14 0 -24 0 1 0 0 0 1 0 0 0 1 3626bp62.dat
-0 // Minifig Torso with Red Undershirt and Fringe Pattern
+0 // Minifig Torso with Red Undershirt and Fringe Pattern (brown)
 1 6 0 0 0 1 0 0 0 1 0 0 0 1 973pw7.dat
-0 // ~Minifig Hips (Obsolete)
+0 // ~Minifig Hips (Obsolete) (blue)
 1 1 0 32 0 1 0 0 0 1 0 0 0 1 3815.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (red)
 1 4 -15.552 9 0 0.976 -0.182 0.117 0.192 0.481 -0.855 0.099 0.856 0.505 3818.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (red)
 1 4 15.552 9 0 0.996 -0.014 0.079 -0.076 0.113 0.99 -0.023 -0.992 0.113 3819.dat
-0 // Minifig Hand
+0 // Minifig Hand (yellow)
 1 14 -25.246 25.861 10.332 0.976 -0.046 0.211 0.192 -0.264 -0.945 0.099 0.962 -0.248 3820.dat
-0 // Minifig Hand
+0 // Minifig Hand (yellow)
 1 14 19.66 0.51 -19.899 0.87 -0.491 -0.025 0.424 0.723 0.545 -0.249 -0.485 0.837 3820.dat
-0 // ~Minifig Leg Right (Obsolete)
+0 // ~Minifig Leg Right (Obsolete) (blue)
 1 1 0 44 0 1 0 0 0 1 0 0 0 1 3816.dat
-0 // ~Minifig Leg Left (Obsolete)
+0 // ~Minifig Leg Left (Obsolete) (blue)
 1 1 0 44 0 0.981 -0.004 0.192 0.154 0.616 -0.772 -0.115 0.787 0.606 3817.dat
-0 // Minifig Gun Revolver
+0 // Minifig Gun Revolver (light_grey)
 1 7 22.001 -8.403 -26.873 0.87 -0.482 0.098 0.424 0.836 0.347 -0.249 -0.26 0.932 30132.dat
 
 
@@ -1932,15 +1932,15 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Animal Horse  (Complete) with Brown/Black Tack Pattern
+0 // Animal Horse  (Complete) with Brown/Black Tack Pattern (white)
 1 15 0 0 0 1 0 0 0 1 0 0 0 1 4493c02.dat
-0 // Animal Horse Saddle with Two Clips
+0 // Animal Horse Saddle with Two Clips (brown)
 1 6 0 -8 0 1 0 0 0 1 0 0 0 1 4491b.dat
-0 // Minifig Gun Rifle
+0 // Minifig Gun Rifle (light_grey)
 1 7 31 -42 27.5 1 0 0 0 0 -1 0 1 0 30141.dat
-0 // Bar  6.6L with Stop
+0 // Bar  6.6L with Stop (white)
 1 15 -31 -22 17.5 1 0 0 0 1 0 0 0 1 4095.dat
-0 // Flag  2 x  2 with Cavalry Logo Pattern
+0 // Flag  2 x  2 with Cavalry Logo Pattern (white)
 1 15 -31 -142 17.5 1 0 0 0 1 0 0 0 1 2335pw1.dat
 
 
@@ -1955,11 +1955,11 @@
 0 !THEME Western / Cowboys
 0 !HISTORY 2016-03-14 [Holly-Wood] Creation
 
-0 // Animal Horse  (Complete) with Red Tack and Black Mane Pattern
+0 // Animal Horse  (Complete) with Red Tack and Black Mane Pattern (brown)
 1 6 0 0 0 1 0 0 0 1 0 0 0 1 4493c04.dat
-0 // Animal Horse Saddle with Two Clips
+0 // Animal Horse Saddle with Two Clips (black)
 1 0 0 -8 0 1 0 0 0 1 0 0 0 1 4491b.dat
-0 // Minifig Gun Rifle
+0 // Minifig Gun Rifle (light_grey)
 1 7 31 -42 27.5 1 0 0 0 0 -1 0 1 0 30141.dat
 
 0 FILE 6769 - 3626bpw1.dat
@@ -3150,7 +3150,7 @@
 0 // Head
 1 16 0 4 0 0 0 8 0 -6.4 0 8 0 0 t04o6250.dat
 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 8 t04o6250.dat
-0 // Cylinder 0.5
+0 // Cylinder 0.5 (main_colour)
 1 16 0 4 0 13 0 0 0 13 0 0 0 13 2-4cyli.dat
 1 16 0 17 0 8 0 0 0 6.4 0 0 0 8 t04o6250.dat
 1 16 0 17 0 0 0 -8 0 6.4 0 8 0 0 t04o6250.dat
@@ -4023,7 +4023,7 @@
 0 // Head
 1 16 0 4 0 0 0 8 0 -6.4 0 8 0 0 t04o6250.dat
 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 8 t04o6250.dat
-0 // Cylinder 0.5
+0 // Cylinder 0.5 (main_colour)
 1 16 0 4 0 13 0 0 0 13 0 0 0 13 2-4cyli.dat
 1 16 0 17 0 8 0 0 0 6.4 0 0 0 8 t04o6250.dat
 1 16 0 17 0 0 0 -8 0 6.4 0 8 0 0 t04o6250.dat
@@ -4503,7 +4503,7 @@
 1 16 0 4 0 0 0 8 0 -6.4 0 8 0 0 t04o6250.dat
 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 8 t04o6250.dat
 1 16 0 4 0 0 0 -8 0 -6.4 0 -8 0 0 t04o6250.dat
-0 // Cylinder 0.75
+0 // Cylinder 0.75 (main_colour)
 1 16 0 4 0 9.1924 0 9.1924 0 13 0 -9.1924 0 9.1924 3-4cyli.dat
 1 16 0 17 0 3.0615 0 7.391 0 6.4 0 -7.391 0 3.0615 t16o6250.dat
 1 16 0 17 0 5.6569 0 5.6569 0 6.4 0 -5.6569 0 5.6569 t08o6250.dat
@@ -4556,13 +4556,13 @@
 4 16 2.25 11.25 -12.552 2.25 8.75 -12.552 0 8.75 -13 0 11.25 -13
 4 16 0 8.75 -13 -2.25 8.75 -12.552 -2.25 11.25 -12.552 0 11.25 -13
 4 16 -4.75 8.75 -12.055 -4.975 8.75 -12.01 -4.975 11.25 -12.01 -4.75 11.25 -12.055
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 3.5 10 -12.304 1.25 0.237 0 0 0 -1.25 0.244 0.9715 0 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -3.5 10 -12.304 1.25 -0.237 0 0 0 -1.25 -0.244 0.9715 0 4-4ndis.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 3.5 10 -12.304 1.25 0.237 0 0 0 -1.25 0.244 0.9715 0 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 -3.5 10 -12.304 1.25 -0.237 0 0 0 -1.25 -0.244 0.9715 0 4-4disc.dat
 
 0 // Mustache
@@ -4771,7 +4771,7 @@
 1 16 0 4 0 0 0 8 0 -6.4 0 8 0 0 t04o6250.dat
 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 8 t04o6250.dat
 1 16 0 4 0 0 0 -8 0 -6.4 0 -8 0 0 t04o6250.dat
-0 // Cylinder 0.75
+0 // Cylinder 0.75 (main_colour)
 1 16 0 4 0 9.1924 0 9.1924 0 13 0 -9.1924 0 9.1924 3-4cyli.dat
 1 16 0 17 0 3.0615 0 7.391 0 6.4 0 -7.391 0 3.0615 t16o6250.dat
 1 16 0 17 0 5.6569 0 5.6569 0 6.4 0 -5.6569 0 5.6569 t08o6250.dat

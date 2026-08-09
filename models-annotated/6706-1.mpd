@@ -16,7 +16,7 @@
 1 0 0 -136 0 1 0 0 0 1 0 0 0 1 6706 - Cavalry Colonel.ldr
 1 0 -110 -71 -100 0.906 0 -0.423 0 1 0 0.423 0 0.906 6706 - Cavalry Lieutenant with Bandana.ldr
 1 0 105 -69.5 85 1 0 0 0 1 0 0 0 1 6706 - Cavalry Soldier with Bandana.ldr
-0 // Plant Bush Base
+0 // Plant Bush Base (bright_green)
 1 10 -130 1 20 1 0 0 0 1 0 0 0 1 6065.dat
 
 
@@ -31,29 +31,29 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom"
 0 ROTATION CONFIG 0 0
-0 // Minifig Hat Cowboy with Cavalry Logo Pattern
+0 // Minifig Hat Cowboy with Cavalry Logo Pattern (blue)
 1 1 0 -24 0 1 0 0 0 1 0 0 0 1 3629pw1.dat
-0 // Minifig Head with Moustache Curly and Spiky Beard under Mouth Pattern
+0 // Minifig Head with Moustache Curly and Spiky Beard under Mouth Pattern (yellow)
 1 14 0 -24 0 1 0 0 0 1 0 0 0 1 6706 - 3626bp45.dat
-0 // Minifig Torso with US Cavalry General Pattern
+0 // Minifig Torso with US Cavalry General Pattern (blue)
 1 1 0 0 0 1 0 0 0 1 0 0 0 1 973pw1.dat
-0 // ~Minifig Hips (Obsolete)
+0 // ~Minifig Hips (Obsolete) (black)
 1 0 0 32 0 1 0 0 0 1 0 0 0 1 3815.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (blue)
 1 1 -15.552 9 0 0.985 -0.154072 -0.0718451 0.17 0.892713 0.416279 0 -0.422618 0.906308 3818.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (blue)
 1 1 15.552 9 0 0.985 0.159748 0.0581434 -0.17 0.925597 0.33689 0 -0.34202 0.939693 3819.dat
-0 // Minifig Hand
+0 // Minifig Hand (white)
 1 15 -22.823 20.5678 -17.2827 0.932897 0.354175 0.0581346 -0.315504 0.88647 -0.336839 -0.170984 0.296153 0.939551 3820.dat
-0 // Minifig Hand
+0 // Minifig Hand (white)
 1 15 23.0709 22.0041 -16.1152 0.985 0.154049 -0.0718343 -0.17 0.892578 -0.416216 0 0.422554 0.906171 3820.dat
-0 // Minifig Sword Cutlass
+0 // Minifig Sword Cutlass (light_grey)
 1 7 -24.0615 22.0426 -26.768 0.932897 0.357619 -0.0293198 -0.315504 0.778361 -0.541259 -0.170984 0.51464 0.839695 2530.dat
-0 // Minifig Gun Revolver
+0 // Minifig Gun Revolver (light_grey)
 1 7 23.3213 23.4548 -26.1583 0.985 0.132044 -0.106959 -0.17 0.765077 -0.619734 0 0.629171 0.776728 30132.dat
-0 // ~Minifig Leg Right (Obsolete)
+0 // ~Minifig Leg Right (Obsolete) (black)
 1 0 0 44 0 1 0 0 0 1 0 0 0 1 3816.dat
-0 // ~Minifig Leg Left (Obsolete)
+0 // ~Minifig Leg Left (Obsolete) (black)
 1 0 0 44 0 1 0 0 0 1 0 0 0 1 3817.dat
 
 0 FILE 6706 - Cavalry Lieutenant with Bandana.ldr
@@ -67,31 +67,31 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom"
 0 ROTATION CONFIG 0 0
-0 // Minifig Hat Cowboy
+0 // Minifig Hat Cowboy (blue)
 1 1 0 -27 0 1 0 0 0 1 0 0 0 1 3629.dat
-0 // Minifig Head with Grin, Dark Grey Beard and Eyebrows Pattern
+0 // Minifig Head with Grin, Dark Grey Beard and Eyebrows Pattern (yellow)
 1 14 0 -27 0 1 0 0 0 1 0 0 0 1 3626bp39.dat
-0 // Minifig Bandana
+0 // Minifig Bandana (white)
 1 15 0 0 0 1 0 0 0 1 0 0 0 1 30133.dat
-0 // Minifig Torso with US Cavalry Officer Pattern
+0 // Minifig Torso with US Cavalry Officer Pattern (blue)
 1 1 0 0 0 1 0 0 0 1 0 0 0 1 973pw2.dat
-0 // ~Minifig Hips (Obsolete)
+0 // ~Minifig Hips (Obsolete) (blue)
 1 1 0 32 0 1 0 0 0 1 0 0 0 1 3815.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (blue)
 1 1 -15.552 9 0 0.985 -0.0411267 -0.16495 0.17 0.238293 0.955741 0 -0.970296 0.241922 3818.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (blue)
 1 1 15.552 9 0 0.985 0.17 0 -0.17 0.985 0 0 0 1 3819.dat
-0 // Minifig Hand
+0 // Minifig Hand (white)
 1 15 -19.7431 2.72241 -20.7006 0.985 -0.145696 -0.0875433 0.17 0.844182 0.507236 0 -0.51496 0.857038 3820.dat
-0 // Minifig Hand
+0 // Minifig Hand (white)
 1 15 23.8634 26.5956 -10.321 0.985 0.12019 -0.12019 -0.17 0.696395 -0.696395 0 0.707 0.707 3820.dat
-0 // Minifig Bugle
+0 // Minifig Bugle (chrome_gold)
 1 334 -18.9552 -1.84271 -28.4139 0.877864 -0.162511 0.449495 0.00336097 0.941608 0.334179 -0.477974 -0.292108 0.827874 71342.dat
-0 // Minifig Gun Rifle
+0 // Minifig Gun Rifle (light_grey)
 1 7 24 37 -30.5 0.996195 -0.0225576 0.084186 0 0.965926 0.258819 -0.0871557 -0.257834 0.96225 30141.dat
-0 // ~Minifig Leg Right (Obsolete)
+0 // ~Minifig Leg Right (Obsolete) (blue)
 1 1 0 44 0 1 0 0 0 1 0 0 0 1 3816.dat
-0 // ~Minifig Leg Left (Obsolete)
+0 // ~Minifig Leg Left (Obsolete) (blue)
 1 1 0 44 0 1 0 0 0 0.642788 -0.766044 0 0.766044 0.642788 3817.dat
 
 
@@ -106,31 +106,31 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom"
 0 ROTATION CONFIG 0 0
-0 // Minifig Hat Kepi
+0 // Minifig Hat Kepi (blue)
 1 1 0 -27 0 1 0 0 0 1 0 0 0 1 30135.dat
-0 // Minifig Head with Dark Orange Moustache, Beard and Messy Hair Pattern
+0 // Minifig Head with Dark Orange Moustache, Beard and Messy Hair Pattern (yellow)
 1 14 0 -27 0 1 0 0 0 1 0 0 0 1 3626bp42.dat
-0 // Minifig Bandana
+0 // Minifig Bandana (white)
 1 15 0 0 0 1 0 0 0 1 0 0 0 1 30133.dat
-0 // Minifig Torso with US Cavalry Soldier Pattern
+0 // Minifig Torso with US Cavalry Soldier Pattern (blue)
 1 1 0 0 0 1 0 0 0 1 0 0 0 1 973pw3.dat
-0 // ~Minifig Hips (Obsolete)
+0 // ~Minifig Hips (Obsolete) (blue)
 1 1 0 32 0 1 0 0 0 1 0 0 0 1 3815.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (blue)
 1 1 -15.552 9 0 0.985 -0.109274 -0.130228 0.17 0.633146 0.754554 0 -0.766044 0.642788 3818.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (blue)
 1 1 15.552 9 0 0.985 0.17 0 -0.17 0.985 0 0 0 1 3819.dat
-0 // Minifig Hand
+0 // Minifig Hand (white)
 1 15 -21.38 12.2067 -21.006 0.999362 -0.0131549 -0.0148142 0.0144286 0.995618 0.0858354 0.0136321 -0.0860697 0.996044 3820.dat
-0 // Minifig Hand
+0 // Minifig Hand (white)
 1 15 23.8634 26.5956 -10.321 0.985 0.12019 -0.12019 -0.17 0.696395 -0.696395 0 0.707 0.707 3820.dat
-0 // Tile  1 x  2 with Dynamite Pattern
+0 // Tile  1 x  2 with Dynamite Pattern (white)
 1 15 29.65 37.76 -23.079 0.053 -0.983 -0.175 0.459 0.18 -0.87 0.887 -0.034 0.461 3069bp03.dat
-0 // Minifig Gun Rifle
+0 // Minifig Gun Rifle (light_grey)
 1 7 -20.616 3.542 -41.731 0.999 -0.016 -0.011 0.017 0.375 0.926 -0.011 -0.926 0.376 30141.dat
-0 // ~Minifig Leg Right (Obsolete)
+0 // ~Minifig Leg Right (Obsolete) (blue)
 1 1 0 44 0 1 0 0 0 0.75471 0.656059 0 -0.656059 0.75471 3816.dat
-0 // ~Minifig Leg Left (Obsolete)
+0 // ~Minifig Leg Left (Obsolete) (blue)
 1 1 0 44 0 1 0 0 0 0.62932 -0.777146 0 0.777146 0.62932 3817.dat
 
 
@@ -145,16 +145,16 @@
 
 0 ROTATION CENTER 0 0 0 1 "Custom"
 0 ROTATION CONFIG 0 0
-0 // Animal Horse (Complete) with Brown/White Tack Pattern
+0 // Animal Horse (Complete) with Brown/White Tack Pattern (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 4493c01.dat
-0 // Animal Horse Saddle with Two Clips
+0 // Animal Horse Saddle with Two Clips (brown)
 1 6 0 -8 0 1 0 0 0 1 0 0 0 1 4491b.dat
-0 // Minifig Gun Rifle
+0 // Minifig Gun Rifle (light_grey)
 1 7 31 -42 27.5 1 0 0 0 0 -1 0 1 0 30141.dat
 
-0 // Bar  6.6L with Stop
+0 // Bar  6.6L with Stop (white)
 1 15 -30 -120 18 1 0 0 0 -1 0 0 0 -1 4095.dat
-0 // Flag  2 x  2 with Cavalry Logo Pattern
+0 // Flag  2 x  2 with Cavalry Logo Pattern (white)
 1 15 -30 -88 18 -1 0 0 0 -1 0 0 0 1 2335pw1.dat
 
 0 FILE 6706 - 3626bp45.dat
@@ -184,13 +184,13 @@
 4 16 2.25 11.25 -12.552 2.25 8.75 -12.552 0 8.75 -13 0 11.25 -13
 4 16 0 8.75 -13 -2.25 8.75 -12.552 -2.25 11.25 -12.552 0 11.25 -13
 4 16 -4.75 8.75 -12.055 -4.975 8.75 -12.01 -4.975 11.25 -12.01 -4.75 11.25 -12.055
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 3.5 10 -12.304 1.25 0.237 0 0 0 -1.25 0.244 0.9715 0 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -3.5 10 -12.304 1.25 -0.237 0 0 0 -1.25 -0.244 0.9715 0 4-4ndis.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 3.5 10 -12.304 1.25 0.237 0 0 0 -1.25 0.244 0.9715 0 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 -3.5 10 -12.304 1.25 -0.237 0 0 0 -1.25 -0.244 0.9715 0 4-4disc.dat
 
 0 // Mustache
@@ -399,7 +399,7 @@
 1 16 0 4 0 0 0 8 0 -6.4 0 8 0 0 t04o6250.dat
 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 8 t04o6250.dat
 1 16 0 4 0 0 0 -8 0 -6.4 0 -8 0 0 t04o6250.dat
-0 // Cylinder 0.75
+0 // Cylinder 0.75 (main_colour)
 1 16 0 4 0 9.1924 0 9.1924 0 13 0 -9.1924 0 9.1924 3-4cyli.dat
 1 16 0 17 0 3.0615 0 7.391 0 6.4 0 -7.391 0 3.0615 t16o6250.dat
 1 16 0 17 0 5.6569 0 5.6569 0 6.4 0 -5.6569 0 5.6569 t08o6250.dat

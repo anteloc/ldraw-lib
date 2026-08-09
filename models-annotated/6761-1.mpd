@@ -5,339 +5,339 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !LDCAD GROUP_DEF [topLevel=true] [LID=0] [GID=6sIskoUgoEv] [name=Group 1] [center=0 0 0]
 0 !LDCAD GROUP_DEF [topLevel=true] [LID=1] [GID=LziTXr33ex] [name=Group 2] [center=0 0 0]
-0 // Baseplate 32 x 32 Road 7-Stud Curve with Rocks and Ruts Pattern
+0 // Baseplate 32 x 32 Road 7-Stud Curve with Rocks and Ruts Pattern (tan)
 1 19 -16.84 0.157 9.294 0 0 -1 0 1 0 1 0 0 6761 - 2359p04.dat
-0 // Brick  1 x  8
+0 // Brick  1 x  8 (light_grey)
 1 7 -310 -24 220 0 0 -1 0 1 0 1 0 0 3008.dat
-0 // Brick  1 x  8
+0 // Brick  1 x  8 (light_grey)
 1 7 -240 -24 130 1 0 0 0 1 0 0 0 1 3008.dat
-0 // Brick  1 x  8
+0 // Brick  1 x  8 (light_grey)
 1 7 -240 -24 310 1 0 0 0 1 0 0 0 1 3008.dat
 0 STEP
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (light_grey)
 1 7 -270 -24 250 1 0 0 0 1 0 0 0 1 3062b.dat
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (light_grey)
 1 7 -270 -24 230 1 0 0 0 1 0 0 0 1 3062b.dat
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (light_grey)
 1 7 -270 -24 210 1 0 0 0 1 0 0 0 1 3062b.dat
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (light_grey)
 1 7 -270 -48 210 1 0 0 0 1 0 0 0 1 3062b.dat
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (light_grey)
 1 7 -270 -48 230 1 0 0 0 1 0 0 0 1 3062b.dat
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (light_grey)
 1 7 -270 -48 250 1 0 0 0 1 0 0 0 1 3062b.dat
-0 // Brick  1 x  1 x  5 with Hollow Stud
+0 // Brick  1 x  1 x  5 with Hollow Stud (black)
 1 0 -270 -144 130 1 0 0 0 1 0 0 0 1 2453.dat
-0 // Brick  1 x  1 x  5 with Hollow Stud
+0 // Brick  1 x  1 x  5 with Hollow Stud (black)
 1 0 -270 -144 310 1 0 0 0 1 0 0 0 1 2453.dat
 0 STEP
-0 // Panel  4 x 10 x  6 Rock Rectangular
+0 // Panel  4 x 10 x  6 Rock Rectangular (light_grey)
 1 7 -160 -144 220 0 0 -1 0 1 0 1 0 0 6082.dat
 0 STEP
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 -180 -144 310 -1 0 0 0 1 0 0 0 -1 3004.dat
-0 // Slope Brick 75  2 x  1 x  3 with Open Stud
+0 // Slope Brick 75  2 x  1 x  3 with Open Stud (black)
 1 0 -130 -96 310 0 0 -1 0 1 0 1 0 0 4460a.dat
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (black)
 1 0 -100 -24 170 1 0 0 0 1 0 0 0 1 4865a.dat
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (black)
 1 0 -100 -24 150 -1 0 0 0 1 0 0 0 -1 4865a.dat
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (black)
 1 0 140 -24 280 -1 0 0 0 1 0 0 0 -1 3003.dat
 0 STEP
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 -130 -120 300 0 0 -1 0 1 0 1 0 0 3004.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (black)
 1 0 -130 -48 130 0 0 -1 0 1 0 1 0 0 3005.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (black)
 1 0 -70 -24 150 0 0 -1 0 1 0 1 0 0 3622.dat
-0 // Minifig Coin with "30" Sans-serif Type
+0 // Minifig Coin with "30" Sans-serif Type (chrome_gold)
 1 334 -108 -12 160 -1 0 0 0 1 0 0 0 -1 70501c.dat
-0 // Minifig Coin with "20" Sans-serif Type
+0 // Minifig Coin with "20" Sans-serif Type (tan)
 1 19 -98 -16 160 -0.914 -0.407 0 -0.407 0.914 0 0 0 -1 70501b.dat
-0 // =Tile  1 x  2 with Groove
+0 // =Tile  1 x  2 with Groove (black)
 1 0 -50 -8 100 0 0 1 0 1 0 -1 0 0 30070.dat
-0 // Tile  1 x  2 with Playing Cards Pattern
+0 // Tile  1 x  2 with Playing Cards Pattern (white)
 1 15 150 -32 280 0 0 1 0 1 0 -1 0 0 3069bpw1.dat
 0 STEP
-0 // Slope Brick 75  2 x  1 x  3 with Open Stud
+0 // Slope Brick 75  2 x  1 x  3 with Open Stud (black)
 1 0 -150 -120 130 0 0 -1 0 1 0 1 0 0 4460a.dat
-0 // Brick  2 x  3
+0 // Brick  2 x  3 (light_grey)
 1 7 -110 -48 160 -1 0 0 0 1 0 0 0 -1 3002.dat
-0 // Panel  4 x 10 x  6 Rock Rectangular
+0 // Panel  4 x 10 x  6 Rock Rectangular (light_grey)
 1 7 140 -144 260 1 0 0 0 1 0 0 0 1 6082.dat
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (black)
 1 0 -180 -144 220 0 0 -1 0 1 0 1 0 0 3795.dat
 0 STEP
 1 0 -200 -40 60 0 0 1 0 1 0 -1 0 0 6761 - Train track.ldr
 0 STEP
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 -180 -144 130 -1 0 0 0 1 0 0 0 -1 3004.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (black)
 1 0 70 -144 250 0 0 -1 0 1 0 1 0 0 3005.dat
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (light_grey)
 1 7 140 -144 280 -1 0 0 0 1 0 0 0 -1 3795.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 -310 -24 -20 0 0 -1 0 1 0 1 0 0 3004.dat
 0 STEP
-0 // Panel  4 x 10 x  6 Rock Rectangular
+0 // Panel  4 x 10 x  6 Rock Rectangular (light_grey)
 1 7 -220 -144 -40 1 0 0 0 1 0 0 0 1 6082.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -150 -144 140 0 0 1 0 1 0 -1 0 0 30136.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (black)
 1 0 100 -152 270 -1 0 0 0 1 0 0 0 -1 3710.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (black)
 1 0 200 -152 270 0 0 -1 0 1 0 1 0 0 3021.dat
 0 STEP
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (black)
 1 0 -170 -120 -70 1 0 0 0 1 0 0 0 1 3622.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (brown)
 1 6 -180 -128 -70 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (light_grey)
 1 7 -180 -136 -70 1 0 0 0 1 0 0 0 1 3069b.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (light_grey)
 1 7 -100 -24 -10 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Slope Brick 75  2 x  1 x  3 with Open Stud
+0 // Slope Brick 75  2 x  1 x  3 with Open Stud (black)
 1 0 -110 -96 -10 0 0 -1 0 1 0 1 0 0 4460a.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (black)
 1 0 -110 -120 -10 0 0 -1 0 1 0 1 0 0 3005.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (light_grey)
 1 7 -180 -8 -210 1 0 0 0 1 0 0 0 1 3710.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (light_grey)
 1 7 -180 -8 -190 1 0 0 0 1 0 0 0 1 3069b.dat
-0 // Brick  1 x  6
+0 // Brick  1 x  6 (black)
 1 0 -220 -168 310 1 0 0 0 1 0 0 0 1 3009.dat
-0 // Brick  2 x  6
+0 // Brick  2 x  6 (black)
 1 0 -220 -168 120 1 0 0 0 1 0 0 0 1 2456.dat
-0 // Plant Leaves  4 x  3
+0 // Plant Leaves  4 x  3 (green)
 1 2 70 -152 250 0.707 0 0.707 0 1 0 -0.707 0 0.707 2423.dat
 0 STEP
-0 // Slope Brick 75  2 x  1 x  3 with Open Stud
+0 // Slope Brick 75  2 x  1 x  3 with Open Stud (black)
 1 0 -310 -72 -290 1 0 0 0 1 0 0 0 1 4460a.dat
-0 // Slope Brick 75  2 x  1 x  3 with Open Stud
+0 // Slope Brick 75  2 x  1 x  3 with Open Stud (black)
 1 0 -310 -72 -230 -1 0 0 0 1 0 0 0 -1 4460a.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 -150 -144 -60 0 0 -1 0 1 0 1 0 0 3004.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -120 -144 -10 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  1 x  5 with Hollow Stud
+0 // Brick  1 x  1 x  5 with Hollow Stud (black)
 1 0 -270 -288 130 1 0 0 0 1 0 0 0 1 2453.dat
-0 // Brick  1 x  1 x  5 with Hollow Stud
+0 // Brick  1 x  1 x  5 with Hollow Stud (black)
 1 0 -270 -288 310 1 0 0 0 1 0 0 0 1 2453.dat
-0 // Plate  1 x  2 with Handle
+0 // Plate  1 x  2 with Handle (black)
 1 0 100 -152 250 1 0 0 0 1 0 0 0 1 2540.dat
-0 // Bar  7 x  3 with Double Clips
+0 // Bar  7 x  3 with Double Clips (black)
 1 0 100 -150 230 1 0 0 0 -0.148 0.989 0 -0.989 -0.148 6020.dat
 0 STEP
-0 // Brick  2 x  8
+0 // Brick  2 x  8 (light_grey)
 1 7 -220 -168 -20 1 0 0 0 1 0 0 0 1 3007.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (black)
 1 0 -270 -168 -50 1 0 0 0 1 0 0 0 1 3005.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (black)
 1 0 -180 -16 -210 1 0 0 0 1 0 0 0 1 3710.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (light_grey)
 1 7 -280 -24 -290 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (light_grey)
 1 7 -280 -24 -230 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (light_grey)
 1 7 -280 -48 -230 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (light_grey)
 1 7 -280 -48 -290 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  2 x  3
+0 // Brick  2 x  3 (light_grey)
 1 7 90 -176 260 1 0 0 0 1 0 0 0 1 3002.dat
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (black)
 1 0 -90 -72 150 0.707 0 0.707 0 1 0 -0.707 0 0.707 3062b.dat
-0 // Brick  1 x  1 with Headlight
+0 // Brick  1 x  1 with Headlight (black)
 1 0 -90 -96 150 0.707 0 -0.707 0 1 0 0.707 0 0.707 4070.dat
-0 // Tile  1 x  4 with "Keep Out" Sign Pattern
+0 // Tile  1 x  4 with "Keep Out" Sign Pattern (brown)
 1 6 -87.172 -86 133.029 0.707 -0.707 0 0 0 -1 0.707 0.707 0 2431pw0.dat
-0 // Minifig Head with Evil Skeleton Skull Pattern
+0 // Minifig Head with Evil Skeleton Skull Pattern (white)
 1 15 -90 -120 150 0.707 0 -0.707 0 1 0 0.707 0 0.707 3626bpa8.dat
-0 // Minifig Hat Cowboy
+0 // Minifig Hat Cowboy (brown)
 1 6 -90 -120 150 0.707 0 -0.707 0 1 0 0.707 0 0.707 3629.dat
-0 // Panel  4 x 10 x  6 Rock Rectangular
+0 // Panel  4 x 10 x  6 Rock Rectangular (light_grey)
 1 7 -160 -288 220 0 0 -1 0 1 0 1 0 0 6082.dat
 0 STEP
-0 // Brick  1 x  2 with Pin
+0 // Brick  1 x  2 with Pin (light_grey)
 1 7 -280 -72 -230 1 0 0 0 1 0 0 0 1 2458.dat
-0 // Brick  1 x  2 with Pin
+0 // Brick  1 x  2 with Pin (light_grey)
 1 7 -280 -72 -290 -1 0 0 0 1 0 0 0 -1 2458.dat
-0 // Plate  2 x  2 with Holes
+0 // Plate  2 x  2 with Holes (black)
 1 0 -280 -72 -260 0 0 -1 0 1 0 1 0 0 2817.dat
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (black)
 1 0 -150 -168 -50 -1 0 0 0 1 0 0 0 -1 2357.dat
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (black)
 1 0 -210 -168 -50 0 0 1 0 1 0 -1 0 0 2357.dat
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (light_grey)
 1 7 -260 -192 -10 -1 0 0 0 1 0 0 0 -1 3010.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -120 -168 -10 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 -180 -288 130 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 -180 -288 310 1 0 0 0 1 0 0 0 1 3004.dat
 0 STEP
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (light_grey)
 1 7 -310 -80 -230 0 0 1 0 1 0 -1 0 0 2420.dat
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (light_grey)
 1 7 -310 -80 -290 1 0 0 0 1 0 0 0 1 2420.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (black)
 1 0 -200 -192 -20 0 0 -1 0 1 0 1 0 0 3001.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (black)
 1 0 -160 -192 -20 0 0 -1 0 1 0 1 0 0 3001.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (black)
 1 0 -130 -192 -10 0 0 -1 0 1 0 1 0 0 3040b.dat
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (light_grey)
 1 7 -180 -192 110 -1 0 0 0 1 0 0 0 -1 3010.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (black)
 1 0 -130 -192 130 -1 0 0 0 1 0 0 0 -1 3040b.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (black)
 1 0 -150 -288 150 1 0 0 0 1 0 0 0 1 3005.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (black)
 1 0 -310 -88 -260 0 0 1 0 1 0 -1 0 0 3710.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (black)
 1 0 -140 -200 130 -1 0 0 0 1 0 0 0 -1 3023.dat
-0 // Plate  4 x  6
+0 // Plate  4 x  6 (black)
 1 0 -180 -200 60 0 0 1 0 1 0 -1 0 0 3032.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (black)
 1 0 -150 -296 160 0 0 1 0 1 0 -1 0 0 3023.dat
-0 // Slope Brick 75  2 x  1 x  3 with Open Stud
+0 // Slope Brick 75  2 x  1 x  3 with Open Stud (black)
 1 0 -130 -264 210 1 0 0 0 1 0 0 0 1 4460a.dat
 0 STEP
-0 // Plate  6 x 10
+0 // Plate  6 x 10 (light_grey)
 1 7 -220 -296 220 0 0 1 0 1 0 -1 0 0 3033.dat
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (black)
 1 0 -220 -200 -10 -1 0 0 0 1 0 0 0 -1 3460.dat
-0 // Plant Leaves  4 x  3
+0 // Plant Leaves  4 x  3 (green)
 1 2 -130 -200 -10 0.707 0 -0.707 0 1 0 0.707 0 0.707 2423.dat
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (black)
 1 0 -289.997 -96 -270 1 0 0 0 1 0 0 0 1 2357.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (light_grey)
 1 7 -309.998 -96 -260 0 0 1 0 1 0 -1 0 0 3069b.dat
-0 // Minifig Seat  2 x  2
+0 // Minifig Seat  2 x  2 (yellow)
 1 14 -199.998 -208 79.998 1 0 0 0 1 0 0 0 1 4079.dat
 0 STEP
-0 // Brick  1 x  1 with Headlight
+0 // Brick  1 x  1 with Headlight (black)
 1 0 -270 -96 -250 0 0 -1 0 1 0 1 0 0 4070.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -140 -224 -10 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -240 -224 -10 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -240 -248 -10 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -150 -224 40 0 0 1 0 1 0 -1 0 0 30137.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (light_grey)
 1 7 -150 -224 110 0 0 1 0 1 0 -1 0 0 3622.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 -270 -320 160 0 0 1 0 1 0 -1 0 0 3004.dat
-0 // Brick  2 x  3
+0 // Brick  2 x  3 (black)
 1 0 -260 -320 290 0 0 1 0 1 0 -1 0 0 3002.dat
-0 // Hinge  1 x  2 Base
+0 // Hinge  1 x  2 Base (black)
 1 0 -150 -312 240 0 0 -1 0 1 0 1 0 0 3937.dat
 0 !LDCAD GROUP_NXT [ids=1] [nrs=-1]
-0 // Hinge  1 x  2 Top
+0 // Hinge  1 x  2 Top (blue)
 1 1 -146.254 -311.272 240 0 -0.375 -0.927 0 0.927 -0.375 1 0 0 3938.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=1] [nrs=2]
-0 // Tile  2 x  2 with Pin
+0 // Tile  2 x  2 with Pin (light_grey)
 1 7 -133.985 -314.943 240 0 -0.375 -0.927 0 0.927 -0.375 1 0 0 2460.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -150 -248 120 0 0 -1 0 1 0 1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -150 -272 120 0 0 -1 0 1 0 1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -150 -296 120 0 0 -1 0 1 0 1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -150 -296 0 0 0 -1 0 1 0 1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -150 -272 0 0 0 -1 0 1 0 1 0 0 30136.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -150 -248 0 0 0 -1 0 1 0 1 0 0 30136.dat
-0 // Brick  1 x  1 with Headlight
+0 // Brick  1 x  1 with Headlight (brown)
 1 6 -250 -272 -10 1 0 0 0 1 0 0 0 1 4070.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (brown)
 1 6 -250 -296 -10 1 0 0 0 1 0 0 0 1 3005.dat
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (black)
 1 0 -250 -262 -24 1 0 0 0 0 -1 0 1 0 2555.dat
-0 // Minifig Flame with Pegs
+0 // Minifig Flame with Pegs (trans_neon_orange)
 1 38 -250 -268 -30 -1 0 0 0 0 -1 0 -1 0 6126a.dat
-0 // Tap  1 x  1 without Hole in Spout
+0 // Tap  1 x  1 without Hole in Spout (black)
 1 0 -240.002 -86 -250 0 -1 0 0 0 1 -1 0 0 4599b.dat
 0 STEP
-0 // Panel  3 x  8 x  7 Rock Triangular
+0 // Panel  3 x  8 x  7 Rock Triangular (light_grey)
 1 7 -200 -464 150 1 0 0 0 1 0 0 0 1 6083.dat
-0 // Brick  1 x  1 x  2 with Shutter Holder
+0 // Brick  1 x  1 x  2 with Shutter Holder (brown)
 1 6 -230 -296 -10 1 0 0 0 1 0 0 0 1 3581.dat
-0 // Window  1 x  4 x  3
+0 // Window  1 x  4 x  3 (brown)
 1 6 -150 -296 60 0 0 -1 0 1 0 1 0 0 3853.dat
-0 // Window  1 x  2 x  3 Shutter
+0 // Window  1 x  2 x  3 Shutter (light_grey)
 1 7 -138 -296 100 -1 0 0 0 1 0 0 0 -1 3856.dat
-0 // Window  1 x  2 x  3 Shutter
+0 // Window  1 x  2 x  3 Shutter (light_grey)
 1 7 -138 -296 20 1 0 0 0 1 0 0 0 1 3856.dat
-0 // Window  1 x  2 x  3 Pane
+0 // Window  1 x  2 x  3 Pane (blue)
 1 1 -146 -292 94 1 0 0 0 1 0 0 0 1 3854.dat
-0 // Window  1 x  2 x  3 Pane
+0 // Window  1 x  2 x  3 Pane (blue)
 1 1 -146 -292 26 -1 0 0 0 1 0 0 0 -1 3854.dat
-0 // Door  1 x  4 x  6 Grooved
+0 // Door  1 x  4 x  6 Grooved (black)
 1 0 -230 -344 -23 0 0 1 0 1 0 -1 0 0 3644.dat
-0 // Barrel  4 x  4 x  3.5
+0 // Barrel  4 x  4 x  3.5 (brown)
 1 6 -299.997 -101 -260 1 0 0 0 1 0 0 0 1 30139.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (light_grey)
 1 7 -150 -320 90 0 0 1 0 1 0 -1 0 0 3622.dat
-0 // Brick  1 x  4 Log
+0 // Brick  1 x  4 Log (brown)
 1 6 -150 -320 20 0 0 1 0 1 0 -1 0 0 30137.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (brown)
 1 6 -240 -320 -10 1 0 0 0 1 0 0 0 1 30136.dat
-0 // Staircase  7 x  4 x  6 Open
+0 // Staircase  7 x  4 x  6 Open (black)
 1 0 -180 -152 -140 1 0 0 0 1 0 0 0 1 30134.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (black)
 1 0 -180 -168 -70 1 0 0 0 1 0 0 0 1 3004.dat
 0 STEP
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (black)
 1 0 -200 -328 0 1 0 0 0 1 0 0 0 1 3795.dat
-0 // Hinge Tile  1 x  4
+0 // Hinge Tile  1 x  4 (light_grey)
 1 7 -150 -328 80 0 0 1 0 1 0 -1 0 0 4625.dat
-0 // Hinge Car Roof  4 x  4
+0 // Hinge Car Roof  4 x  4 (light_grey)
 1 7 -173.547 -352.952 80 0 -0.485 0.875 0 0.875 0.485 -1 0 0 4213.dat
 0 STEP
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (black)
 1 0 -200 -416 130 1 0 0 0 1 0 0 0 1 3010.dat
-0 // Brick  1 x  3 with Control Panel Pattern
+0 // Brick  1 x  3 with Control Panel Pattern (black)
 1 0 -230 -352 -10 1 0 0 0 1 0 0 0 1 3622p02.dat
-0 // Slope Brick 33  3 x  1
+0 // Slope Brick 33  3 x  1 (black)
 1 0 -190 -352 -10 0 0 -1 0 1 0 1 0 0 4286.dat
 0 STEP
-0 // Slope Brick 33  3 x  1
+0 // Slope Brick 33  3 x  1 (black)
 1 0 -230 -376 -10 0 0 -1 0 1 0 1 0 0 4286.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (black)
 1 0 -250 -376 -10 1 0 0 0 1 0 0 0 1 3005.dat
 0 !LDCAD GROUP_NXT [ids=1] [nrs=3]
 1 7 -124.245 -339.05 240 0.803 -0.375 0.464 0.324 0.927 0.187 -0.5 0 0.866 6761 - Machinegun.ldr
-0 // Plate  4 x  8
+0 // Plate  4 x  8 (black)
 1 0 -152.176 -350.252 40 0 -0.485 0.875 0 0.875 0.485 -1 0 0 3035.dat
-0 // Brick  1 x  2 with Pin
+0 // Brick  1 x  2 with Pin (light_grey)
 1 7 -200 -440 130 1 0 0 0 1 0 0 0 1 2458.dat
 1 7 212.392 2.897 -220.603 0.788 0 0.616 -0.011 1 0.014 -0.616 -0.017 0.788 6761 - Trip hazard.ldr
 0 STEP
-0 // Plate  4 x  8
+0 // Plate  4 x  8 (black)
 1 0 -222.146 -389.037 40 0 -0.485 0.875 0 0.875 0.485 -1 0 0 3035.dat
-0 // ~Plant Bush (Obsolete)
+0 // ~Plant Bush (Obsolete) (green)
 1 2 200 -152 260 1 0 0 0 1 0 0 0 1 6064.dat
-0 // ~Plant Bush (Obsolete)
+0 // ~Plant Bush (Obsolete) (green)
 1 2 -260 -320 300 1 0 0 0 1 0 0 0 1 6064.dat
-0 // ~Plant Bush (Obsolete)
+0 // ~Plant Bush (Obsolete) (green)
 1 2 283.16 0.157 -290.706 1 0 0 0 1 0 0 0 1 6064.dat
 1 2 -102 -68 59.995 0 -0.017 -1 0 1 -0.017 1 0 0 6761 - Cannon.ldr
 0 STEP
 1 0 -180.649 -411.304 80 0.07 -0.998 0 0.998 0.07 0 0 0 1 6761 - Sign.ldr
-0 // Barrel  2 x  2 x  1.667
+0 // Barrel  2 x  2 x  1.667 (brown)
 1 6 -208.761 -409.058 36 0.875 0 0.485 0.485 0 -0.875 0 1 0 2489.dat
-0 // Animal Bird Parrot
+0 // Animal Bird Parrot (dark_grey)
 1 8 -210 -464 170 1 0 0 0 1 0 0 0 1 2546.dat
-0 // Minifig Gun Rifle
+0 // Minifig Gun Rifle (dark_grey)
 1 8 -289.997 -173 -236 -0.201 0.957 0.208 -0.306 0.141 -0.942 -0.931 -0.253 0.264 30141.dat
-0 // Minifig Pickaxe
+0 // Minifig Pickaxe (dark_grey)
 1 8 -310.997 -152 -287 0.375 0 -0.927 0 1 0 0.927 0 0.375 3841.dat
 1 7 80 -144 291 1 0 0 0 1 0 0 0 1 6761 - Bandit1.ldr
 1 7 -175.723 -192 -58.261 0.485 0 -0.875 0 1 0 0.875 0 0.485 6761 - Bandit3.ldr
@@ -350,42 +350,42 @@
 0 Name: 6761 - Cavalry Lieutenant.ldr
 0 Author: Willy Tschager [Holly-Wood]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Animal Horse  (Complete) with Brown/Black Tack Pattern
+0 // Animal Horse  (Complete) with Brown/Black Tack Pattern (white)
 1 15 0 -57 0 1 0 0 0 1 0 0 0 1 4493c02.dat
-0 // Animal Horse Saddle with Two Clips
+0 // Animal Horse Saddle with Two Clips (black)
 1 0 0 -65 0 1 0 0 0 1 0 0 0 1 4491b.dat
-0 // Minifig Gun Rifle
+0 // Minifig Gun Rifle (dark_grey)
 1 8 31 -99 7.5 -1 0 0 0 0 -1 0 -1 0 30141.dat
-0 // Bar  6.6L with Stop
+0 // Bar  6.6L with Stop (white)
 1 15 -31 -79 17.5 -1 0 0 0 1 0 0 0 -1 4095.dat
-0 // Flag  2 x  2 with Cavalry Logo Pattern
+0 // Flag  2 x  2 with Cavalry Logo Pattern (white)
 1 15 -31 -196 17.5 1 0 0 0 1 0 0 0 1 2335pw1.dat
 0 STEP
-0 // ~Minifig Leg Left (Obsolete)
+0 // ~Minifig Leg Left (Obsolete) (blue)
 1 1 0 -97 0 1 0 0 0 1 0 0 0 1 3817.dat
-0 // ~Minifig Leg Right (Obsolete)
+0 // ~Minifig Leg Right (Obsolete) (blue)
 1 1 0 -97 0 1 0 0 0 1 0 0 0 1 3816.dat
-0 // ~Minifig Hips (Obsolete)
+0 // ~Minifig Hips (Obsolete) (blue)
 1 1 0 -109 0 1 0 0 0 1 0 0 0 1 3815.dat
-0 // Minifig Torso with US Cavalry Officer Pattern
+0 // Minifig Torso with US Cavalry Officer Pattern (blue)
 1 1 0 -141 0 1 0 0 0 1 0 0 0 1 973pw2.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (blue)
 1 1 15.552 -132 0 0.985 0.147 0.085 -0.17 0.853 0.493 0 -0.5 0.866 3819.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (blue)
 1 1 -15.552 -132 0 0.985 -0.164 -0.044 0.17 0.952 0.255 0 -0.259 0.966 3818.dat
-0 // Minifig Hand
+0 // Minifig Hand (white)
 1 15 22.418 -121.603 -18.002 0.984 -0.175 -0.044 0.159 0.954 -0.255 0.087 0.244 0.966 3820.dat
-0 // Minifig Hand
+0 // Minifig Hand (white)
 1 15 -23.144 -117.395 -14.435 0.966 -0.244 0.085 0.253 0.833 -0.493 0.049 0.498 0.866 3820.dat
-0 // Minifig Bugle
+0 // Minifig Bugle (chrome_gold)
 1 334 -23.676 -113.546 -23.763 0.961 -0.215 0.172 0.274 0.683 -0.678 0.028 0.699 0.715 71342.dat
-0 // Minifig Sword Cutlass
+0 // Minifig Sword Cutlass (dark_grey)
 1 8 23.088 -120.294 -27.999 0.984 -0.181 -0.003 0.157 0.86 -0.486 0.09 0.478 0.874 2530.dat
-0 // Minifig Head with Grin, Dark Grey Beard and Eyebrows Pattern
+0 // Minifig Head with Grin, Dark Grey Beard and Eyebrows Pattern (yellow)
 1 14 0 -165 0 1 0 -0.023 0 1 0 0.023 0 1 3626bp39.dat
-0 // Minifig Bandana
+0 // Minifig Bandana (white)
 1 15 0.034 -141.655 0 1 0 -0.023 0 1 0 0.023 0 1 30133.dat
-0 // Minifig Hat Cowboy
+0 // Minifig Hat Cowboy (blue)
 1 1 0 -165 0 1 0 -0.023 0 1 0 0.023 0 1 3629.dat
 
 0 FILE 6761 - Cavalry soldier.ldr
@@ -393,36 +393,36 @@
 0 Name: 6761 - Cavalry soldier.ldr
 0 Author: Willy Tschager [Holly-Wood]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Animal Horse (Complete) with Brown/White Tack Pattern
+0 // Animal Horse (Complete) with Brown/White Tack Pattern (black)
 1 0 0 -57 0 1 0 0 0 1 0 0 0 1 4493c01.dat
-0 // Animal Horse Saddle with Two Clips
+0 // Animal Horse Saddle with Two Clips (black)
 1 0 0 -65 0 1 0 0 0 1 0 0 0 1 4491b.dat
-0 // Minifig Gun Rifle
+0 // Minifig Gun Rifle (dark_grey)
 1 8 31 -99 7.5 -1 0 0 0 0 -1 0 -1 0 30141.dat
 0 STEP
-0 // ~Minifig Leg Left (Obsolete)
+0 // ~Minifig Leg Left (Obsolete) (blue)
 1 1 0 -97 0 1 0 0 0 1 0 0 0 1 3817.dat
-0 // ~Minifig Leg Right (Obsolete)
+0 // ~Minifig Leg Right (Obsolete) (blue)
 1 1 0 -97 0 1 0 0 0 1 0 0 0 1 3816.dat
-0 // ~Minifig Hips (Obsolete)
+0 // ~Minifig Hips (Obsolete) (blue)
 1 1 0 -109 0 1 0 0 0 1 0 0 0 1 3815.dat
-0 // Minifig Torso with US Cavalry Soldier Pattern
+0 // Minifig Torso with US Cavalry Soldier Pattern (blue)
 1 1 0 -141 0 1 0 0 0 1 0 0 0 1 973pw3.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (blue)
 1 1 15.552 -132 0 0.985 0.147 0.085 -0.17 0.853 0.493 0 -0.5 0.866 3819.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (blue)
 1 1 -15.552 -132 0 0.985 -0.164 -0.044 0.17 0.952 0.255 0 -0.259 0.966 3818.dat
-0 // Minifig Hand
+0 // Minifig Hand (white)
 1 15 22.418 -121.603 -18.002 0.984 -0.175 -0.044 0.159 0.954 -0.255 0.087 0.244 0.966 3820.dat
-0 // Minifig Hand
+0 // Minifig Hand (white)
 1 15 -23.144 -117.395 -14.435 0.966 -0.244 0.085 0.253 0.833 -0.493 0.049 0.498 0.866 3820.dat
-0 // Minifig Sword Cutlass
+0 // Minifig Sword Cutlass (dark_grey)
 1 8 -23.677 -113.544 -23.763 0.976 -0.215 0.053 0.189 0.683 -0.706 0.115 0.699 0.707 2530.dat
-0 // Minifig Head with Grin, Dark Grey Beard and Eyebrows Pattern
+0 // Minifig Head with Grin, Dark Grey Beard and Eyebrows Pattern (yellow)
 1 14 0 -165 0 1 0 -0.023 0 1 0 0.023 0 1 3626bp39.dat
-0 // Minifig Bandana
+0 // Minifig Bandana (white)
 1 15 0.034 -141.655 0 1 0 -0.023 0 1 0 0.023 0 1 30133.dat
-0 // Minifig Hat Kepi
+0 // Minifig Hat Kepi (blue)
 1 1 0 -165 0 1 0 -0.023 0 1 0 0.023 0 1 30135.dat
 
 0 FILE 6761 - Bandit1.ldr
@@ -430,31 +430,31 @@
 0 Name: 6761 - Bandit1.ldr
 0 Author: Willy Tschager [Holly-Wood]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // ~Minifig Leg Left (Obsolete)
+0 // ~Minifig Leg Left (Obsolete) (black)
 1 0 0 -28 0 1 0 0 0 1 0 0 0 1 3817.dat
-0 // ~Minifig Leg Right (Obsolete)
+0 // ~Minifig Leg Right (Obsolete) (black)
 1 0 0 -28 0 1 0 0 0 1 0 0 0 1 3816.dat
-0 // ~Minifig Hips (Obsolete)
+0 // ~Minifig Hips (Obsolete) (black)
 1 0 0 -40 0 1 0 0 0 1 0 0 0 1 3815.dat
-0 // Minifig Torso with Jacket over Blue Undershirt with Green Bow and Gun in Belt Pattern
+0 // Minifig Torso with Jacket over Blue Undershirt with Green Bow and Gun in Belt Pattern (black)
 1 0 0 -72 0 1 0 0 0 1 0 0 0 1 973pw5.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (black)
 1 0 15.552 -63 0 0.985 0.147 0.085 -0.17 0.853 0.493 0 -0.5 0.866 3819.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (black)
 1 0 -15.552 -63 0 0.985 -0.164 -0.044 0.17 0.952 0.255 0 -0.259 0.966 3818.dat
-0 // Minifig Hand
+0 // Minifig Hand (black)
 1 0 22.418 -52.603 -18.002 0.984 -0.175 -0.044 0.159 0.954 -0.255 0.087 0.244 0.966 3820.dat
-0 // Minifig Hand
+0 // Minifig Hand (black)
 1 0 -23.144 -48.395 -14.435 0.966 -0.244 0.085 0.253 0.833 -0.493 0.049 0.498 0.866 3820.dat
-0 // Minifig Gun Revolver
+0 // Minifig Gun Revolver (dark_grey)
 1 8 -23.677 -44.544 -23.763 0.976 -0.215 0.053 0.189 0.683 -0.706 0.115 0.699 0.707 30132.dat
-0 // Minifig Head with Thick Angry Moustache, Stubble and Long Hair Pattern
+0 // Minifig Head with Thick Angry Moustache, Stubble and Long Hair Pattern (yellow)
 1 14 0 -96 0 1 0 -0.023 0 1 0 0.023 0 1 3626bpw1.dat
-0 // Minifig Bandana
+0 // Minifig Bandana (black)
 1 0 0.034 -72.655 0 -1 0 0.023 0 1 0 -0.023 0 -1 30133.dat
-0 // Minifig Hat Cowboy
+0 // Minifig Hat Cowboy (brown)
 1 6 0 -96 0 1 0 -0.023 0 1 0 0.023 0 1 3629.dat
-0 // Minifig Gun Revolver
+0 // Minifig Gun Revolver (dark_grey)
 1 8 23.629 -53.872 -29.434 0.984 -0.181 -0.003 0.156 0.86 -0.486 0.09 0.478 0.874 30132.dat
 
 0 FILE 6761 - Bandit2.ldr
@@ -462,31 +462,31 @@
 0 Name: 6761 - Bandit2.ldr
 0 Author: Willy Tschager [Holly-Wood]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // ~Minifig Leg Left (Obsolete)
+0 // ~Minifig Leg Left (Obsolete) (light_grey)
 1 7 0 -28 0 1 0 0 0 1 0 0 0 1 3817.dat
-0 // ~Minifig Leg Right (Obsolete)
+0 // ~Minifig Leg Right (Obsolete) (light_grey)
 1 7 0 -28 0 1 0 0 0 1 0 0 0 1 3816.dat
-0 // ~Minifig Hips (Obsolete)
+0 // ~Minifig Hips (Obsolete) (light_grey)
 1 7 0 -40 0 1 0 0 0 1 0 0 0 1 3815.dat
-0 // Minifig Torso with Jacket over Blue Undershirt with Green Bow and Gun in Belt Pattern
+0 // Minifig Torso with Jacket over Blue Undershirt with Green Bow and Gun in Belt Pattern (red)
 1 4 0 -72 0 1 0 0 0 1 0 0 0 1 973pw5.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (red)
 1 4 15.552 -63 0 0.985 0.147 0.085 -0.17 0.853 0.493 0 -0.5 0.866 3819.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (red)
 1 4 -15.552 -63 0 0.985 -0.164 -0.044 0.12 0.49 0.863 -0.12 -0.856 0.503 3818.dat
-0 // Minifig Hand
+0 // Minifig Hand (yellow)
 1 14 22.418 -52.603 -18.002 0.984 -0.175 -0.044 0.159 0.954 -0.255 0.087 0.244 0.966 3820.dat
-0 // Minifig Hand
+0 // Minifig Hand (yellow)
 1 14 -23.144 -62.88 -20.534 0.988 0.008 0.15 -0.044 0.972 0.233 -0.144 -0.237 0.961 3820.dat
-0 // Minifig Head with Angry Moustache and Teeth Pattern
+0 // Minifig Head with Angry Moustache and Teeth Pattern (yellow)
 1 14 0 -96 0 1 0 -0.023 0 1 0 0.023 0 1 3626bpw2.dat
-0 // Minifig Bandana
+0 // Minifig Bandana (black)
 1 0 0.034 -72.655 0 1 0 -0.023 0 1 0 0.023 0 1 30133.dat
-0 // Minifig Hat Cowboy
+0 // Minifig Hat Cowboy (brown)
 1 6 0 -96 0 0.023 0 1 0 1 0 -1 0 0.023 3629.dat
-0 // Minifig Gun Revolver
+0 // Minifig Gun Revolver (dark_grey)
 1 8 23.629 -53.872 -29.434 0.984 -0.181 -0.003 0.156 0.86 -0.486 0.09 0.478 0.874 30132.dat
-0 // Minifig Gun Rifle
+0 // Minifig Gun Rifle (dark_grey)
 1 8 -22.479 -40.435 -39.509 0.994 0.1 0.045 -0.046 0.007 0.999 0.1 -0.995 0.011 30141.dat
 
 0 FILE 6761 - Bandit3.ldr
@@ -494,29 +494,29 @@
 0 Name: 6761 - Bandit3.ldr
 0 Author: Willy Tschager [Holly-Wood]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // ~Minifig Leg Left (Obsolete)
+0 // ~Minifig Leg Left (Obsolete) (light_grey)
 1 7 0 -28 0 1 0 0 0 1 0 0 0 1 3817.dat
-0 // ~Minifig Leg Right (Obsolete)
+0 // ~Minifig Leg Right (Obsolete) (light_grey)
 1 7 0 -28 0 1 0 0 0 1 0 0 0 1 3816.dat
-0 // ~Minifig Hips (Obsolete)
+0 // ~Minifig Hips (Obsolete) (light_grey)
 1 7 0 -40 0 1 0 0 0 1 0 0 0 1 3815.dat
-0 // Minifig Torso with Card, Suit, Vest, and Gold Fob Pattern
+0 // Minifig Torso with Card, Suit, Vest, and Gold Fob Pattern (green)
 1 2 0 -72 0 1 0 0 0 1 0 0 0 1 973pw8.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (green)
 1 2 15.552 -63 0 0.985 0.147 0.085 -0.17 0.853 0.493 0 -0.5 0.866 3819.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (green)
 1 2 -15.552 -63 0 0.992 -0.119 -0.014 0.115 0.913 0.39 -0.034 -0.389 0.921 3818.dat
-0 // Minifig Hand
+0 // Minifig Hand (black)
 1 0 22.418 -52.603 -18.002 0.984 -0.175 -0.044 0.159 0.954 -0.255 0.087 0.244 0.966 3820.dat
-0 // Minifig Hand
+0 // Minifig Hand (black)
 1 0 -22.631 -50.187 -16.28 -0.042 0.996 0.075 -0.929 -0.011 -0.37 -0.368 -0.085 0.926 3820.dat
-0 // Minifig Head with Angry Moustache, White Teeth and Gold Tooth Pattern
+0 // Minifig Head with Angry Moustache, White Teeth and Gold Tooth Pattern (yellow)
 1 14 0 -96 0 1 0 -0.023 0 1 0 0.023 0 1 6761 - 3626bpw0.dat
-0 // Minifig Top Hat
+0 // Minifig Top Hat (black)
 1 0 0 -96 0 1 0 0 0 1 0 0 0 1 3878.dat
-0 // Minifig Gun Revolver
+0 // Minifig Gun Revolver (dark_grey)
 1 8 23.629 -53.872 -29.434 0.984 -0.181 -0.003 0.156 0.86 -0.486 0.09 0.478 0.874 30132.dat
-0 // Tile  1 x  2 with Dynamite Pattern
+0 // Tile  1 x  2 with Dynamite Pattern (light_grey)
 1 7 -22.854 -42.641 -43.483 -0.117 0.058 -0.991 -0.365 0.926 0.097 0.924 0.373 -0.087 3069bp03.dat
 
 0 FILE 6761 - Cannon.ldr
@@ -524,26 +524,26 @@
 0 Name: 6761 - Cannon.ldr
 0 Author: Willy Tschager [Holly-Wood]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  2 x  2 with 2 Wheel Pins
+0 // Plate  2 x  2 with 2 Wheel Pins (black)
 1 0 0 0 20 1 0 0 0 1 0 0 0 1 4600.dat
-0 // Plate  2 x  2 with 2 Wheel Pins
+0 // Plate  2 x  2 with 2 Wheel Pins (black)
 1 0 0 0 -60 1 0 0 0 1 0 0 0 1 4600.dat
 0 STEP
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (dark_grey)
 1 8 0 -8 -20 0 0 -1 0 1 0 1 0 0 3795.dat
 0 STEP
-0 // Minifig Cannon  2 x  4 Base
+0 // Minifig Cannon  2 x  4 Base (brown)
 1 6 0 -16 -40 1 0 0 0 1 0 0 0 1 2527.dat
 0 STEP
-0 // Minifig Cannon Shooting (Complete)
+0 // Minifig Cannon Shooting (Complete) (dark_grey)
 1 8 0 -44 -70 1 0 0 0 0.966 0.259 0 -0.259 0.966 2533c01.dat
-0 // Train Wheel Small with Notched Hole
+0 // Train Wheel Small with Notched Hole (black)
 1 0 30 5 -60 0 0 -1 0 1 0 1 0 0 50254.dat
-0 // Train Wheel Small with Notched Hole
+0 // Train Wheel Small with Notched Hole (black)
 1 0 30 5 20 0 0 -1 0 1 0 1 0 0 50254.dat
-0 // Train Wheel Small with Notched Hole
+0 // Train Wheel Small with Notched Hole (black)
 1 0 -30 5 20 0 0 1 0 1 0 -1 0 0 50254.dat
-0 // Train Wheel Small with Notched Hole
+0 // Train Wheel Small with Notched Hole (black)
 1 0 -30 5 -60 0 0 1 0 1 0 -1 0 0 50254.dat
 1 2 0 -8 31 1 0 0 0 1 0 0 0 1 6761 - Bandit2.ldr
 
@@ -552,21 +552,21 @@
 0 Name: 6761 - Packhorse.ldr
 0 Author: Willy Tschager [Holly-Wood]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Animal Horse  (Complete) with Red Tack and Black Mane Pattern
+0 // Animal Horse  (Complete) with Red Tack and Black Mane Pattern (brown)
 1 6 0 -57 0 1 0 0 0 1 0 0 0 1 4493c04.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (brown)
 1 6 0 -81 0 1 0 0 0 1 0 0 0 1 3004.dat
 0 STEP
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (black)
 1 0 0 -89 0 1 0 0 0 1 0 0 0 1 3666.dat
 0 STEP
-0 // Container Box  2 x  2 x  2 with Hollow Studs
+0 // Container Box  2 x  2 x  2 with Hollow Studs (black)
 1 0 40 -81 10 1 0 0 0 1 0 0 0 1 4345b.dat
-0 // Container Box  2 x  2 x  2 Door with Slot and Vintage 'Safe Co' Pattern
+0 // Container Box  2 x  2 x  2 Door with Slot and Vintage 'Safe Co' Pattern (green)
 1 2 40 -81 10 1 0 0 0 1 0 0 0 1 4346pw01.dat
-0 // Minifig Coin with "30" Sans-serif Type
+0 // Minifig Coin with "30" Sans-serif Type (chrome_gold)
 1 334 40 -45 10 1 0 0 0 1 0 0 0 1 70501c.dat
-0 // Minifig Coin with "40" Sans-serif Type
+0 // Minifig Coin with "40" Sans-serif Type (chrome_gold)
 1 334 35 -48 -2 1 0 0 0 0.94 -0.342 0 0.342 0.94 70501d.dat
 1 0 -40 -49 10 1 0 0 0 1 0 0 0 1 6761 - Box.ldr
 
@@ -575,31 +575,31 @@
 0 Name: 6761 - Box.ldr
 0 Author: Willy Tschager [Holly-Wood]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (black)
 1 0 0 0 0 0 0 -1 0 1 0 1 0 0 3795.dat
 0 STEP
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (blue)
 1 1 -10 -24 -20 0 0 -1 0 1 0 1 0 0 4865a.dat
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (blue)
 1 1 -10 -24 20 0 0 -1 0 1 0 1 0 0 4865a.dat
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (blue)
 1 1 10 -24 -20 0 0 1 0 1 0 -1 0 0 4865a.dat
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (blue)
 1 1 10 -24 20 0 0 1 0 1 0 -1 0 0 4865a.dat
 0 STEP
-0 // Panel  1 x  1 x  1 Corner with Rounded Corners
+0 // Panel  1 x  1 x  1 Corner with Rounded Corners (black)
 1 0 -10 -24 50 1 0 0 0 1 0 0 0 1 6231.dat
-0 // Panel  1 x  1 x  1 Corner with Rounded Corners
+0 // Panel  1 x  1 x  1 Corner with Rounded Corners (black)
 1 0 10 -24 -50 -1 0 0 0 1 0 0 0 -1 6231.dat
 0 STEP
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (black)
 1 0 -10 -24 -50 0 0 1 0 1 0 -1 0 0 3005.dat
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (black)
 1 0 10 -24 50 0 0 1 0 1 0 -1 0 0 3005.dat
-0 // Minifig Gun Rifle
+0 // Minifig Gun Rifle (dark_grey)
 1 8 8 -12 -17 0 0.996 0.087 1 0 0 0 0.087 -0.996 30141.dat
 0 STEP
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (black)
 1 0 0 -32 0 0 0 -1 0 1 0 1 0 0 3795.dat
 
 0 FILE 6761 - Train track.ldr
@@ -609,36 +609,36 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !LDCAD GROUP_DEF [topLevel=false] [LID=0] [GID=6sIskoUgoEv]
 0 !LDCAD GROUP_NXT [ids=0] [nrs=4]
-0 // Plate  4 x 12
+0 // Plate  4 x 12 (black)
 1 0 -0.035 1.777 1.769 0 0 -1 0.018 1.003 0 1.003 -0.018 0 3029.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=7]
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (light_grey)
 1 7 -0.005 -8.17 -108.382 1 0 0 0 1.003 0.018 0 -0.018 1.003 3023.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=0] [nrs=6]
-0 // Train Track Rail Slotted Straight
+0 // Train Track Rail Slotted Straight (light_grey)
 1 7 -30.052 -13.556 42.147 0 0 1 -0.018 1.003 0 -1.003 -0.018 0 3228b.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=5]
-0 // Train Track Rail Slotted Straight
+0 // Train Track Rail Slotted Straight (light_grey)
 1 7 29.948 -13.574 42.165 0 0 1 -0.018 1.003 0 -1.003 -0.018 0 3228b.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=0] [nrs=3]
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (light_grey)
 1 7 -0.003 8.047 -98.635 -1 0 0 0 1.003 -0.018 0 -0.018 -1.003 3020.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=0] [nrs=2]
-0 // Plate  2 x  2 with Hole and Split Underside Ribs
+0 // Plate  2 x  2 with Hole and Split Underside Ribs (light_grey)
 1 7 20 16.063 -98.769 1 0 0 0 1.003 0.018 0 -0.018 1.003 2444.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=-1]
-0 // Plate  2 x  2 with Hole and Split Underside Ribs
+0 // Plate  2 x  2 with Hole and Split Underside Ribs (light_grey)
 1 7 -20 16.075 -98.781 -1 0 0 0 1 -0.018 0 -0.018 -1 2444.dat
 0 STEP
-0 // Brick  1 x  2 with Pin
+0 // Brick  1 x  2 with Pin (light_grey)
 1 7 50 16 -100 0 0 1 0 1 0 -1 0 0 2458.dat
-0 // Brick  1 x  2 with Pin
+0 // Brick  1 x  2 with Pin (light_grey)
 1 7 -50 16 -100 0 0 -1 0 1 0 1 0 0 2458.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=8]
-0 // Panel  1 x  2 x  1 with Square Corners
+0 // Panel  1 x  2 x  1 with Square Corners (black)
 1 0 -0.012 -32.233 -107.961 -1 0 0 0 1.003 -0.018 0 -0.018 -1.003 4865a.dat
 
 0 FILE 6761 - Machinegun.ldr
@@ -646,24 +646,24 @@
 0 Name: 6761 - Machinegun.ldr
 0 Author: Willy Tschager [Holly-Wood]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Brick  1 x  1 with Studs on Four Sides
+0 // Brick  1 x  1 with Studs on Four Sides (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 4733.dat
 0 STEP
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (black)
 1 0 0 -8 0 0 0 -1 0 1 0 1 0 0 2555.dat
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (black)
 1 0 0 10 -18 0 0 -1 -1 0 0 0 1 0 2555.dat
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (black)
 1 0 0 10 18 0 0 -1 1 0 0 0 -1 0 2555.dat
 0 STEP
-0 // Brick  1 x  1
+0 // Brick  1 x  1 (black)
 1 0 34 10 0 0 -1 0 1 0 0 0 0 1 3005.dat
 0 STEP
-0 // Minifig Gun Rifle
+0 // Minifig Gun Rifle (dark_grey)
 1 8 -26 -4 0 0 0 -1 0 1 0 1 0 0 30141.dat
-0 // Minifig Gun Rifle
+0 // Minifig Gun Rifle (dark_grey)
 1 8 -26 10 -14 0 0 -1 -1 0 0 0 1 0 30141.dat
-0 // Minifig Gun Rifle
+0 // Minifig Gun Rifle (dark_grey)
 1 8 -26 10 14 0 0 -1 1 0 0 0 -1 0 30141.dat
 
 0 FILE 6761 - Trip hazard.ldr
@@ -673,19 +673,19 @@
 0 !LDCAD GROUP_DEF [topLevel=true] [LID=0] [GID=JYWbzQmBRK6] [name=Group 1] [center=200.157 1.015 0]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !LDCAD GROUP_NXT [ids=0] [nrs=3]
-0 // Dish  2 x  2 with Rim
+0 // Dish  2 x  2 with Rim (light_grey)
 1 7 -414.262 -18.51 0 0.704 -0.068 -0.706 0.066 0.997 -0.031 0.707 -0.025 0.707 2654.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=0] [nrs=2]
-0 // Plate  2 x  2 Corner
+0 // Plate  2 x  2 Corner (light_grey)
 1 7 -427.825 -27.454 0.202 0.706 -0.068 0.704 0.031 0.997 0.066 -0.707 -0.025 0.707 2420.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=0] [nrs=-1]
-0 // String Braided 21L with End Studs
+0 // String Braided 21L with End Studs (black)
 1 0 -199.768 -16.725 0 0.999 -0.044 0 0.044 0.999 0 0 0 1 75924.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=0] [nrs=4]
-0 // Tile  2 x  2 Round with Cross Underside Stud
+0 // Tile  2 x  2 Round with Cross Underside Stud (light_grey)
 1 7 -413.17 -34.468 0.395 0.706 -0.068 0.704 0.031 0.997 0.066 -0.707 -0.025 0.707 4150.dat
 
 0 FILE 6761 - Sign.ldr
@@ -693,13 +693,13 @@
 0 Name: 6761 - Sign.ldr
 0 Author: Willy Tschager [Holly-Wood]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
-0 // Plate  4 x  4 with 4 Studs on One Edge
+0 // Plate  4 x  4 with 4 Studs on One Edge (black)
 1 0 0 0 0 0 0 -1 0 1 0 1 0 0 6179.dat
 0 STEP
-0 // Plate  2 x  2 with Hole and Split Underside Ribs
+0 // Plate  2 x  2 with Hole and Split Underside Ribs (light_grey)
 1 7 -20 8 20 0 0 -1 0 1 0 1 0 0 2444.dat
 0 STEP
-0 // Sticker  3.2 x  4 with "GOLD MINE" Sign
+0 // Sticker  3.2 x  4 with "GOLD MINE" Sign (black)
 1 0 8 0 0 0 0 -1 0 1 0 1 0 0 4106330a.dat
 
 0 FILE 6761 - 2359p04.dat
@@ -721,70 +721,70 @@
 0 // Subpart
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2359s01.dat
 
-0 // Disc 0.25
+0 // Disc 0.25 (main_colour)
 1 16 -316 0 -316 -4 0 0 0 1 0 0 0 -4 1-4disc.dat
-0 // Disc 0.25
+0 // Disc 0.25 (main_colour)
 1 16 316 0 -316 4 0 0 0 1 0 0 0 -4 1-4disc.dat
-0 // Disc 0.25
+0 // Disc 0.25 (main_colour)
 1 16 316 0 316 4 0 0 0 1 0 0 0 4 1-4disc.dat
-0 // Disc 0.25
+0 // Disc 0.25 (main_colour)
 1 16 -316 0 316 -4 0 0 0 1 0 0 0 4 1-4disc.dat
 
 0 // Pattern
 0 // Black
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 -305.02 0 102.81 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 -208.02 0 101.81 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 -303.02 0 18.81 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 -309.02 0 -14.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 -268.02 0 -54.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 -280.02 0 -96.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 -151.02 0 23.81 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 -134.02 0 -16.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 -90.02 0 46.81 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 -82.02 0 95.81 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 4.98 0 22.81 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 51.98 0 -52.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 73.98 0 -81.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 -51.02 0 -92.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 24.98 0 -138.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 46.98 0 -209.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 132.98 0 -205.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 -144.02 0 -190.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 -174.02 0 -244.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 -217.02 0 -130.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 -244.02 0 -112.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 -63.02 0 -306.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 97.98 0 -305.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 108.98 0 -265.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 168.98 0 -279.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 -147.02 0 146.81 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (black)
 1 0 -308.02 0 146.81 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4disc.dat
 4 0 -127.44 0 -309.83 -127.94 0 -311.08 -130.31 0 -311.33 -129.19 0 -308.08
 3 0 -127.44 0 -309.83 -129.19 0 -308.08 -126.68 0 -307.86
@@ -1337,49 +1337,49 @@
 4 0 -243.1 0 77.2 -260.4 0 77.8 -260.428 0 83.2175 -241.3 0 83.3
 
 0 // Dark tan
-0 // Disc 1.0
+0 // Disc 1.0 (dark_tan)
 1 28 -265.02 0 170.81 -4.463 0 0 0 1 0 0 0 -4.463 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (dark_tan)
 1 28 -95 0 -38 -3.115 0 0 0 1 0 0 0 -3.115 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (dark_tan)
 1 28 -268 0 126 -3.115 0 0 0 1 0 0 0 -3.115 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (dark_tan)
 1 28 -80 0 -108 -3.115 0 0 0 1 0 0 0 -3.115 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (dark_tan)
 1 28 92 0 -73 -3.115 0 0 0 1 0 0 0 -3.115 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (dark_tan)
 1 28 103 0 -196 -3.115 0 0 0 1 0 0 0 -3.115 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (dark_tan)
 1 28 -16 0 -254 -3.115 0 0 0 1 0 0 0 -3.115 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (dark_tan)
 1 28 -105 0 -289 -3.115 0 0 0 1 0 0 0 -3.115 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (dark_tan)
 1 28 -118 0 -263 -3.115 0 0 0 1 0 0 0 -3.115 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (dark_tan)
 1 28 -269 0 -95 -3.115 0 0 0 1 0 0 0 -3.115 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (dark_tan)
 1 28 174 0 -237 -2.555 0 0 0 1 0 0 0 -2.555 4-4disc.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (dark_tan)
 1 28 -16 0 -254 -3.115 0 0 0 1 0 0 0 -3.115 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (dark_tan)
 1 28 -105 0 -289 -3.115 0 0 0 1 0 0 0 -3.115 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (dark_tan)
 1 28 -118 0 -263 -3.115 0 0 0 1 0 0 0 -3.115 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (dark_tan)
 1 28 -269 0 -95 -3.115 0 0 0 1 0 0 0 -3.115 4-4ndis.dat
-0 // Disc 1.0
+0 // Disc 1.0 (dark_tan)
 1 28 -134.2 0 -176.5 -1 0 0 0 1 0 0 0 -1 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (dark_tan)
 1 28 -95.2 0 -166.7 -1 0 0 0 1 0 0 0 -1 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (dark_tan)
 1 28 -58.8 0 -158.1 -1 0 0 0 1 0 0 0 -1 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (dark_tan)
 1 28 97 0 -178.7 -1 0 0 0 1 0 0 0 -1 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (dark_tan)
 1 28 116.5 0 -179.5 -1 0 0 0 1 0 0 0 -1 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (dark_tan)
 1 28 -13.1 0 -260.5 -1 0 0 0 1 0 0 0 -1 4-4disc.dat
-0 // Disc 1.0
+0 // Disc 1.0 (dark_tan)
 1 28 -100 0 -26.2 -1 0 0 0 1 0 0 0 -1 4-4disc.dat
 4 28 -129.4 0 77.7 -134.8 0 77.1 -136.3 0 83.9 -130.9 0 84.5
 4 28 -124.2 0 79.2 -129.4 0 77.7 -130.9 0 84.5 -125.7 0 86
@@ -2274,87 +2274,87 @@
 4 0x263564B -320 0 79.625 -306.025 0 81.2259 -305.984 0 78.5839 -320 0 76.95
 
 0 // Main color
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -305.02 0 102.81 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -208.02 0 101.81 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -308.02 0 146.81 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -147.02 0 146.81 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -82.02 0 95.81 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -90.02 0 46.81 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -151.02 0 23.81 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -303.02 0 18.81 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -309.02 0 -14.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -134.02 0 -16.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 4.98 0 22.81 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 51.98 0 -52.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 73.98 0 -81.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -51.02 0 -92.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 24.98 0 -138.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 46.98 0 -209.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 132.98 0 -205.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 108.98 0 -265.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 97.98 0 -305.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 168.98 0 -279.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -268.02 0 -54.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -280.02 0 -96.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -244.02 0 -112.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -217.02 0 -130.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -144.02 0 -190.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -174.02 0 -244.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -63.02 0 -306.19 -3.3306 0 0 0 1 0 0 0 -3.3306 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -265.02 0 170.81 -4.463 0 0 0 1 0 0 0 -4.463 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -268 0 126 -3.115 0 0 0 1 0 0 0 -3.115 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 174 0 -237 -2.555 0 0 0 1 0 0 0 -2.555 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -95 0 -38 -3.115 0 0 0 1 0 0 0 -3.115 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -80 0 -108 -3.115 0 0 0 1 0 0 0 -3.115 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 92 0 -73 -3.115 0 0 0 1 0 0 0 -3.115 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 103 0 -196 -3.115 0 0 0 1 0 0 0 -3.115 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -134.2 0 -176.5 -1 0 0 0 1 0 0 0 -1 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -95.2 0 -166.7 -1 0 0 0 1 0 0 0 -1 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -58.8 0 -158.1 -1 0 0 0 1 0 0 0 -1 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 97 0 -178.7 -1 0 0 0 1 0 0 0 -1 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 116.5 0 -179.5 -1 0 0 0 1 0 0 0 -1 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -13.1 0 -260.5 -1 0 0 0 1 0 0 0 -1 4-4ndis.dat
-0 // Disc Negative 1.0
+0 // Disc Negative 1.0 (main_colour)
 1 16 -100 0 -26.2 -1 0 0 0 1 0 0 0 -1 4-4ndis.dat
 4 16 -316 0 316 -316 0 320 316 0 320 316 0 316
 4 16 -106.768 0 -209.692 -105.143 0 -210.567 -107.768 0 -211.567 -126.162 0 -204.977
@@ -3614,7 +3614,7 @@
 1 16 0 4 0 0 0 8 0 -6.4 0 8 0 0 t04o6250.dat
 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 8 t04o6250.dat
 1 16 0 4 0 0 0 -8 0 -6.4 0 -8 0 0 t04o6250.dat
-0 // Cylinder 0.75
+0 // Cylinder 0.75 (main_colour)
 1 16 0 4 0 9.1924 0 9.1924 0 13 0 -9.1924 0 9.1924 3-4cyli.dat
 1 16 0 17 0 5.6569 0 5.6569 0 6.4 0 -5.6569 0 5.6569 t08o6250.dat
 1 16 0 17 0 8 0 0 0 6.4 0 0 0 8 t04o6250.dat

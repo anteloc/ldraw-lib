@@ -4,35 +4,35 @@
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Duplo Brick  2 x  4 x  2 with Giraffe Legs Pattern
+0 // Duplo Brick  2 x  4 x  2 with Giraffe Legs Pattern (yellow)
 1 14 -18.289 0 -93.127 0.94 0 -0.342 0 1 0 0.342 0 0.94 10885 - 31111p02.dat
-0 // Duplo Brick  2 x  4 x  2 with Giraffe Body Pattern
+0 // Duplo Brick  2 x  4 x  2 with Giraffe Body Pattern (yellow)
 1 14 -18.289 -96 -93.127 0.94 0 -0.342 0 1 0 0.342 0 0.94 10885 - 31111p03.dat
-0 // Duplo Brick  2 x  4 x  2 with Giraffe Head Pattern
+0 // Duplo Brick  2 x  4 x  2 with Giraffe Head Pattern (yellow)
 1 14 -18.289 -192 -93.127 0.94 0 -0.342 0 1 0 0.342 0 0.94 10885 - 31111p04.dat
-0 // Duplo Brick  2 x  4 x  2 with Crocodile Legs Pattern
+0 // Duplo Brick  2 x  4 x  2 with Crocodile Legs Pattern (lime)
 1 27 172.735 0 -31.257 0.985 0 -0.174 0 1 0 0.174 0 0.985 10885 - 31111p08.dat
-0 // Duplo Brick  2 x  4 x  2 with Crocodile Body Pattern
+0 // Duplo Brick  2 x  4 x  2 with Crocodile Body Pattern (lime)
 1 27 172.735 -96 -31.257 0.985 0 -0.174 0 1 0 0.174 0 0.985 10885 - 31111p09.dat
-0 // Duplo Brick  2 x  4 x  2 with Crocodile Head Pattern
+0 // Duplo Brick  2 x  4 x  2 with Crocodile Head Pattern (lime)
 1 27 172.735 -192 -31.257 0.985 0 -0.174 0 1 0 0.174 0 0.985 10885 - 31111p0a.dat
-0 // Duplo Brick  2 x  4 x  2 with Flamingo Legs Pattern
+0 // Duplo Brick  2 x  4 x  2 with Flamingo Legs Pattern (dark_pink)
 1 5 360 0 0 1 0 0 0 1 0 0 0 1 10885 - 31111p0b.dat
-0 // Duplo Brick  2 x  4 x  2 with Flamingo Body Pattern
+0 // Duplo Brick  2 x  4 x  2 with Flamingo Body Pattern (dark_pink)
 1 5 360 -96 0 1 0 0 0 1 0 0 0 1 10885 - 31111p0c.dat
-0 // Duplo Brick  2 x  4 x  2 with Flamingo Head Pattern
+0 // Duplo Brick  2 x  4 x  2 with Flamingo Head Pattern (dark_pink)
 1 5 360 -192 0 1 0 0 0 1 0 0 0 1 10885 - 31111p0d.dat
-0 // Duplo Brick  2 x  4 x  2 with Tiger Legs Pattern
+0 // Duplo Brick  2 x  4 x  2 with Tiger Legs Pattern (orange)
 1 25 547.265 0 -31.257 0.985 0 0.174 0 1 0 -0.174 0 0.985 10885 - 31111p05.dat
-0 // Duplo Brick  2 x  4 x  2 with Tiger Body Pattern
+0 // Duplo Brick  2 x  4 x  2 with Tiger Body Pattern (orange)
 1 25 547.265 -96 -31.257 0.985 0 0.174 0 1 0 -0.174 0 0.985 10885 - 31111p06.dat
-0 // Duplo Brick  2 x  4 x  2 with Tiger Head Pattern
+0 // Duplo Brick  2 x  4 x  2 with Tiger Head Pattern (orange)
 1 25 547.265 -192 -31.257 0.985 0 0.174 0 1 0 -0.174 0 0.985 10885 - 31111p07.dat
-0 // Duplo Brick  2 x  4 x  2 with Zebra Legs Pattern
+0 // Duplo Brick  2 x  4 x  2 with Zebra Legs Pattern (medium_azure)
 1 322 738.289 0 -93.127 0.94 0 0.342 0 1 0 -0.342 0 0.94 10885 - 31111p0e.dat
-0 // Duplo Brick  2 x  4 x  2 with Zebra Body Pattern
+0 // Duplo Brick  2 x  4 x  2 with Zebra Body Pattern (medium_azure)
 1 322 738.289 -96 -93.127 0.94 0 0.342 0 1 0 -0.342 0 0.94 10885 - 31111p0f.dat
-0 // Duplo Brick  2 x  4 x  2 with Zebra Head Pattern
+0 // Duplo Brick  2 x  4 x  2 with Zebra Head Pattern (medium_azure)
 1 322 738.289 -192 -93.127 0.94 0 0.342 0 1 0 -0.342 0 0.94 10885 - 31111p0g.dat
 
 0 FILE 10885 - 31111p02.dat
@@ -7339,10 +7339,10 @@
 
 0 BFC CERTIFY CCW
 
-0 // Box with 4 Faces without 1 Edge
+0 // Box with 4 Faces without 1 Edge (main_colour)
 1 16 0 96 0 80 0 0 0 -96 0 0 0 40 box4-1.dat
 0 BFC INVERTNEXT
-0 // Box with 5 Faces and All Edges
+0 // Box with 5 Faces and All Edges (main_colour)
 1 16 0 96 0 76 0 0 0 -92 0 0 0 36 box5.dat
 4 16 80 96 40 76 96 36 -76 96 36 -80 96 40
 4 16 -80 96 40 -76 96 36 -76 96 -36 -80 96 -40
@@ -7351,29 +7351,29 @@
 1 16 40 0 0 1 0 0 0 2.75 0 0 0 1 stug7-2x2.dat
 1 16 -40 0 0 1 0 0 0 2.75 0 0 0 1 stug7-2x2.dat
 1 16 0 4 0 1 0 0 0 -22 0 0 0 1 stug8-1x3.dat
-0 // Box with 4 Faces without 1 Edge
+0 // Box with 4 Faces without 1 Edge (main_colour)
 1 16 60 4 -34 1.5 0 0 0 91 0 0 0 2 box4-1.dat
-0 // Box with 4 Faces without 1 Edge
+0 // Box with 4 Faces without 1 Edge (main_colour)
 1 16 20 4 -34 1.5 0 0 0 91 0 0 0 2 box4-1.dat
-0 // Box with 4 Faces without 1 Edge
+0 // Box with 4 Faces without 1 Edge (main_colour)
 1 16 -20 4 -34 1.5 0 0 0 91 0 0 0 2 box4-1.dat
-0 // Box with 4 Faces without 1 Edge
+0 // Box with 4 Faces without 1 Edge (main_colour)
 1 16 -60 4 -34 1.5 0 0 0 91 0 0 0 2 box4-1.dat
-0 // Box with 4 Faces without 1 Edge
+0 // Box with 4 Faces without 1 Edge (main_colour)
 1 16 60 4 34 1.5 0 0 0 91 0 0 0 -2 box4-1.dat
-0 // Box with 4 Faces without 1 Edge
+0 // Box with 4 Faces without 1 Edge (main_colour)
 1 16 20 4 34 1.5 0 0 0 91 0 0 0 -2 box4-1.dat
-0 // Box with 4 Faces without 1 Edge
+0 // Box with 4 Faces without 1 Edge (main_colour)
 1 16 -20 4 34 1.5 0 0 0 91 0 0 0 -2 box4-1.dat
-0 // Box with 4 Faces without 1 Edge
+0 // Box with 4 Faces without 1 Edge (main_colour)
 1 16 -60 4 34 1.5 0 0 0 91 0 0 0 -2 box4-1.dat
-0 // Box with 4 Faces without 1 Edge
+0 // Box with 4 Faces without 1 Edge (main_colour)
 1 16 -74 4 -20 0 0 2 0 91 0 -1.5 0 0 box4-1.dat
-0 // Box with 4 Faces without 1 Edge
+0 // Box with 4 Faces without 1 Edge (main_colour)
 1 16 74 4 -20 0 0 -2 0 91 0 1.5 0 0 box4-1.dat
-0 // Box with 4 Faces without 1 Edge
+0 // Box with 4 Faces without 1 Edge (main_colour)
 1 16 -74 4 20 0 0 2 0 91 0 -1.5 0 0 box4-1.dat
-0 // Box with 4 Faces without 1 Edge
+0 // Box with 4 Faces without 1 Edge (main_colour)
 1 16 74 4 20 0 0 -2 0 91 0 1.5 0 0 box4-1.dat
 2 24 -80 96 -40 80 96 -40
 

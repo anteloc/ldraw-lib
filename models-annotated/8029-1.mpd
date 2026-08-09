@@ -25,62 +25,62 @@
 0 !KEYWORDS Snowspeeder
 0 !HISTORY 2011-12-30 [theJudeAbides] Initial file created.
 0 ROTSTEP 35 50 0 ABS
-0 // Plate  4 x  4
+0 // Plate  4 x  4 (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 3031.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (dark_bluish_grey)
 1 72 0 -8 -10 0 0 1 0 1 0 -1 0 0 3021.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (white)
 1 15 0 -24 30 -1 0 0 0 1 0 0 0 -1 3004.dat
 0 STEP
-0 // Hinge  1 x  2 Base
+0 // Hinge  1 x  2 Base (dark_bluish_grey)
 1 72 -30 -24 20 0 0 1 0 1 0 -1 0 0 3937.dat
-0 // Hinge  1 x  2 Base
+0 // Hinge  1 x  2 Base (dark_bluish_grey)
 1 72 -30 -24 -20 0 0 1 0 1 0 -1 0 0 3937.dat
-0 // Hinge  1 x  2 Base
+0 // Hinge  1 x  2 Base (dark_bluish_grey)
 1 72 30 -24 20 0 0 -1 0 1 0 1 0 0 3937.dat
-0 // Hinge  1 x  2 Base
+0 // Hinge  1 x  2 Base (dark_bluish_grey)
 1 72 30 -24 -20 0 0 -1 0 1 0 1 0 0 3937.dat
 1 72 -30 -14 0 0.965926 0.258819 0 -0.258819 0.965926 0 0 0 1 8029 - m-1a.ldr
 1 72 30 -14 0 0.965926 -0.258819 0 0.258819 0.965926 0 0 0 1 8029 - m-1b.ldr
 0 STEP
 1 72 0 -32 30 -1 0 0 0 1 0 0 0 -1 8029 - m-1c.ldr
 0 STEP
-0 // Slope Brick Curved  6 x  1 Inverted
+0 // Slope Brick Curved  6 x  1 Inverted (white)
 1 15 -10 -32 0 1 0 0 0 1 0 0 0 1 42023.dat
-0 // Slope Brick Curved  6 x  1 Inverted
+0 // Slope Brick Curved  6 x  1 Inverted (white)
 1 15 10 -32 0 1 0 0 0 1 0 0 0 1 42023.dat
 0 STEP
-0 // Plate  1 x  2 without Groove with 1 Centre Stud
+0 // Plate  1 x  2 without Groove with 1 Centre Stud (light_bluish_grey)
 1 71 0 -40 30 1 0 0 0 1 0 0 0 1 3794a.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (white)
 1 15 0 -40 0 1 0 0 0 1 0 0 0 1 3022.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (white)
 1 15 0 -40 -60 1 0 0 0 1 0 0 0 1 3022.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (white)
 1 15 0 -56 -30 1 0 0 0 1 0 0 0 1 3004.dat
 0 STEP
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (black)
 1 0 0 -48 -10 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (black)
 1 0 0 -48 -50 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Slope Brick 31  1 x  1 x  0.667
+0 // Slope Brick 31  1 x  1 x  0.667 (black)
 1 0 -10 -40 -70 1 0 0 0 1 0 0 0 1 54200.dat
-0 // Slope Brick 31  1 x  1 x  0.667
+0 // Slope Brick 31  1 x  1 x  0.667 (black)
 1 0 10 -40 -70 1 0 0 0 1 0 0 0 1 54200.dat
-0 // Slope Brick 31  1 x  1 x  0.667
+0 // Slope Brick 31  1 x  1 x  0.667 (black)
 1 0 -10 -40 10 -1 0 0 0 1 0 0 0 -1 54200.dat
-0 // Slope Brick 31  1 x  1 x  0.667
+0 // Slope Brick 31  1 x  1 x  0.667 (black)
 1 0 10 -40 10 -1 0 0 0 1 0 0 0 -1 54200.dat
 0 STEP
-0 // Slope Brick 31  1 x  1 x  0.667
+0 // Slope Brick 31  1 x  1 x  0.667 (white)
 1 15 10 -32 -90 1 0 0 0 1 0 0 0 1 54200.dat
-0 // Slope Brick 31  1 x  1 x  0.667
+0 // Slope Brick 31  1 x  1 x  0.667 (white)
 1 15 -10 -32 -90 1 0 0 0 1 0 0 0 1 54200.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (white)
 1 15 0 -56 -50 1 0 0 0 1 0 0 0 1 3069b.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (white)
 1 15 0 -56 -10 1 0 0 0 1 0 0 0 1 3069b.dat
-0 // Minifig Binoculars with Round Eyepiece
+0 // Minifig Binoculars with Round Eyepiece (dark_bluish_grey)
 1 72 0 -44 30 -1 0 0 0 1 0 0 0 -1 30162.dat
 0 STEP
 
@@ -95,38 +95,38 @@
 0 !KEYWORDS Snowspeeder
 0 !HISTORY 2011-12-30 [theJudeAbides] Initial file created.
 0 ROTSTEP 45 60 0 ABS
-0 // Hinge  1 x  2 Top
+0 // Hinge  1 x  2 Top (black)
 1 0 0 -10 -20 0 0 1 0 1 0 -1 0 0 3938.dat
-0 // Hinge  1 x  2 Top
+0 // Hinge  1 x  2 Top (black)
 1 0 0 -10 20 0 0 1 0 1 0 -1 0 0 3938.dat
 0 STEP
-0 // Wing  2 x  3 Right
+0 // Wing  2 x  3 Right (white)
 1 15 -20 -18 40 0 0 1 0 1 0 -1 0 0 43722.dat
-0 // Plate  1 x  3
+0 // Plate  1 x  3 (light_bluish_grey)
 1 71 -20 -18 10 -1 0 0 0 1 0 0 0 -1 3623.dat
-0 // Wing  3 x  6 Right
+0 // Wing  3 x  6 Right (white)
 1 15 -20 -18 -60 1 0 0 0 1 0 0 0 1 54383.dat
 0 STEP
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (white)
 1 15 0 -26 0 0 0 1 0 1 0 -1 0 0 3710.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (light_bluish_grey)
 1 71 -40 -26 30 0 0 1 0 1 0 -1 0 0 3024.dat
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (white)
 1 15 -20 -26 -50 -1 0 0 0 1 0 0 0 -1 2555.dat
-0 // Slope Brick 31  1 x  1 x  0.667
+0 // Slope Brick 31  1 x  1 x  0.667 (white)
 1 15 0 -18 -50 0 0 -1 0 1 0 1 0 0 54200.dat
 0 STEP
 0 ROTSTEP -135 120 0 ABS
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (white)
 1 15 -20 -10 0 0 0 -1 0 1 0 1 0 0 3710.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (black)
 1 0 -20 -2 0 0 0 -1 0 1 0 1 0 0 3023.dat
 0 STEP
 0 ROTSTEP 45 60 0 ABS
 1 0 -20 -42 30 1 0 0 0 1 0 0 0 1 8029 - m-1aa.ldr
-0 // Slope Brick 31  1 x  1 x  0.667
+0 // Slope Brick 31  1 x  1 x  0.667 (light_bluish_grey)
 1 71 -40 -26 30 0 0 1 0 1 0 -1 0 0 54200.dat
-0 // Slope Brick 31  1 x  1 x  0.667
+0 // Slope Brick 31  1 x  1 x  0.667 (light_bluish_grey)
 1 71 0 -26 30 0 0 -1 0 1 0 1 0 0 54200.dat
 
 0 FILE 8029 - m-1b.ldr
@@ -140,38 +140,38 @@
 0 !KEYWORDS Snowspeeder
 0 !HISTORY 2011-12-30 [theJudeAbides] Initial file created.
 0 ROTSTEP 45 60 0 ABS
-0 // Hinge  1 x  2 Top
+0 // Hinge  1 x  2 Top (black)
 1 0 0 -10 -20 0 0 1 0 1 0 -1 0 0 3938.dat
-0 // Hinge  1 x  2 Top
+0 // Hinge  1 x  2 Top (black)
 1 0 0 -10 20 0 0 1 0 1 0 -1 0 0 3938.dat
 0 STEP
-0 // Wing  2 x  3 Left
+0 // Wing  2 x  3 Left (white)
 1 15 20 -18 40 0 0 -1 0 1 0 1 0 0 43723.dat
-0 // Plate  1 x  3
+0 // Plate  1 x  3 (light_bluish_grey)
 1 71 20 -18 10 1 0 0 0 1 0 0 0 1 3623.dat
-0 // Wing  3 x  6 Left
+0 // Wing  3 x  6 Left (white)
 1 15 20 -18 -60 1 0 0 0 1 0 0 0 1 54384.dat
 0 STEP
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (white)
 1 15 0 -26 0 0 0 1 0 1 0 -1 0 0 3710.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (light_bluish_grey)
 1 71 40 -26 30 0 0 1 0 1 0 -1 0 0 3024.dat
-0 // Slope Brick 31  1 x  1 x  0.667
+0 // Slope Brick 31  1 x  1 x  0.667 (white)
 1 15 0 -18 -50 0 0 1 0 1 0 -1 0 0 54200.dat
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (white)
 1 15 20 -26 -50 -1 0 0 0 1 0 0 0 -1 2555.dat
 0 STEP
 0 ROTSTEP -135 120 0 ABS
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (white)
 1 15 20 -10 0 0 0 -1 0 1 0 1 0 0 3710.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (black)
 1 0 20 -2 0 0 0 -1 0 1 0 1 0 0 3023.dat
 0 STEP
 0 ROTSTEP 45 60 0 ABS
 1 0 20 -42 30 1 0 0 0 1 0 0 0 1 8029 - m-1aa.ldr
-0 // Slope Brick 31  1 x  1 x  0.667
+0 // Slope Brick 31  1 x  1 x  0.667 (light_bluish_grey)
 1 71 0 -26 30 0 0 1 0 1 0 -1 0 0 54200.dat
-0 // Slope Brick 31  1 x  1 x  0.667
+0 // Slope Brick 31  1 x  1 x  0.667 (light_bluish_grey)
 1 71 40 -26 30 0 0 -1 0 1 0 1 0 0 54200.dat
 
 0 FILE 8029 - m-1c.ldr
@@ -185,15 +185,15 @@
 0 !KEYWORDS Snowspeeder
 0 !HISTORY 2011-12-30 [theJudeAbides] Initial file created.
 0 ROTSTEP 35 -45 0 ABS
-0 // Bracket  1 x  2 -  2 x  2 Down
+0 // Bracket  1 x  2 -  2 x  2 Down (white)
 1 15 0 0 0 1 0 0 0 1 0 0 0 1 44728.dat
 0 STEP
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (black)
 1 0 0 20 -22 1 0 0 0 0 -1 0 1 0 3022.dat
 0 STEP
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (black)
 1 0 -10 20 -30 0 0 1 1 0 0 0 1 0 2412b.dat
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (black)
 1 0 10 20 -30 0 0 1 1 0 0 0 1 0 2412b.dat
 
 0 FILE 8029 - m-1aa.ldr
@@ -207,17 +207,17 @@
 0 !KEYWORDS Snowspeeder
 0 !HISTORY 2011-12-30 [theJudeAbides] Initial file created.
 0 ROTSTEP 45 60 0 ABS
-0 // Cone  1 x  1
+0 // Cone  1 x  1 (dark_bluish_grey)
 1 72 0 10 -30 1 0 0 0 0 -1 0 1 0 4589.dat
-0 // Cone  1 x  1
+0 // Cone  1 x  1 (dark_bluish_grey)
 1 72 0 10 -150 1 0 0 0 0 -1 0 1 0 4589.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_neon_orange)
 1 38 0 10 -158 1 0 0 0 0 -1 0 1 0 6141.dat
-0 // Bar  6.6L with Stop
+0 // Bar  6.6L with Stop (light_bluish_grey)
 1 71 0 10 -34 1 0 0 0 0 -1 0 1 0 4095.dat
 0 STEP
-0 // Brick  1 x  1 with Headlight
+0 // Brick  1 x  1 with Headlight (light_bluish_grey)
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 4070.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (dark_bluish_grey)
 1 72 0 10 10 1 0 0 0 0 -1 0 1 0 6141.dat
 

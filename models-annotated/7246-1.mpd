@@ -9,89 +9,89 @@
 0 !LDCAD GROUP_DEF [topLevel=true] [LID=1] [GID=AvAXlCIKdQz] [name=Wheel LF] [center=0 0 0]
 0 !LDCAD GROUP_DEF [topLevel=true] [LID=2] [GID=6KXDkrBBnr5] [name=Wheel RR] [center=0 0 0]
 0 !LDCAD GROUP_DEF [topLevel=true] [LID=3] [GID=CbPOVoRhuFe] [name=Wheel LR] [center=0 0 0]
-0 // Plate  2 x  6
+0 // Plate  2 x  6 (black)
 1 0 0 -54 0 0 0 -1 0 1 0 1 0 0 3795.dat
 0 STEP
-0 // Wing  2 x  4
+0 // Wing  2 x  4 (yellow)
 1 14 0 -62 -40 1 0 0 0 1 0 0 0 1 51739.dat
 0 STEP
-0 // Car Base  4 x  5
+0 // Car Base  4 x  5 (yellow)
 1 14 0 -70 40 -1 0 0 0 1 0 0 0 -1 4211.dat
 0 STEP
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (dark_bluish_grey)
 1 72 -30 -70 0 0 0 -1 0 1 0 1 0 0 2412b.dat
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (dark_bluish_grey)
 1 72 30 -70 0 0 0 -1 0 1 0 1 0 0 2412b.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (trans_red)
 1 36 -30 -70 70 0 0 -1 0 1 0 1 0 0 3024.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (trans_red)
 1 36 30 -70 70 0 0 -1 0 1 0 1 0 0 3024.dat
 0 STEP
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (black)
 1 0 0 -70 -20 0 0 -1 0 1 0 1 0 0 3022.dat
-0 // Plate  1 x  1 with Clip Vertical (Thick U-Clip)
+0 // Plate  1 x  1 with Clip Vertical (Thick U-Clip) (black)
 1 0 -10 -70 70 -1 0 0 0 1 0 0 0 -1 4085c.dat
-0 // Plate  1 x  1 with Clip Vertical (Thick U-Clip)
+0 // Plate  1 x  1 with Clip Vertical (Thick U-Clip) (black)
 1 0 10 -70 70 -1 0 0 0 1 0 0 0 -1 4085c.dat
 0 STEP
-0 // Hinge Plate  1 x  2 Locking with Groove with Single Finger On Side Vertical
+0 // Hinge Plate  1 x  2 Locking with Groove with Single Finger On Side Vertical (dark_bluish_grey)
 1 72 0 -70 -50 1 0 0 0 1 0 0 0 1 44567.dat
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (dark_bluish_grey)
 1 72 0 -78 70 1 0 0 0 1 0 0 0 1 2412b.dat
 0 STEP
-0 // Hinge Brick  1 x  2 Locking Double, Two Finger End with  9 Teeth
+0 // Hinge Brick  1 x  2 Locking Double, Two Finger End with  9 Teeth (yellow)
 1 14 0 -65.758 -101.543 0 0 1 0.383 0.924 0 -0.924 0.383 0 30386.dat
-0 // Slope Brick Curved Top  2 x  2 x  1 with Dimples
+0 // Slope Brick Curved Top  2 x  2 x  1 with Dimples (yellow)
 1 14 0 -94 -40 1 0 0 0 1 0 0 0 1 44675.dat
-0 // Minifig Seat  2 x  2
+0 // Minifig Seat  2 x  2 (black)
 1 0 0 -62 20 1 0 0 0 1 0 0 0 1 4079.dat
 0 STEP
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (dark_bluish_grey)
 1 72 0 -46 -40 1 0 0 0 1 0 0 0 1 3003.dat
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (dark_bluish_grey)
 1 72 0 -46 40 1 0 0 0 1 0 0 0 1 3003.dat
 0 STEP
-0 // Plate  2 x  2 with 2 Wheel Pins Extended without Wishbones
+0 // Plate  2 x  2 with 2 Wheel Pins Extended without Wishbones (black)
 1 0 0 -30 -40 1 0 0 0 1 0 0 0 1 6157.dat
-0 // Plate  2 x  2 with 2 Wheel Pins Extended without Wishbones
+0 // Plate  2 x  2 with 2 Wheel Pins Extended without Wishbones (black)
 1 0 0 -30 40 1 0 0 0 1 0 0 0 1 6157.dat
 0 STEP
-0 // Excavator Bucket  6 x  3 with Click Hinge 2-Finger with  9 Teeth
+0 // Excavator Bucket  6 x  3 with Click Hinge 2-Finger with  9 Teeth (yellow)
 1 14 0 -45.028 -125.433 1 0 0 0 1 0 0 0 1 30394.dat
-0 // Car Steering Stand and Wheel (Complete)
+0 // Car Steering Stand and Wheel (Complete) (black)
 1 0 0 -78 -10 1 0 0 0 1 0 0 0 1 3829c01.dat
-0 // Bar  1 x  4 x  2 with Studs
+0 // Bar  1 x  4 x  2 with Studs (black)
 1 0 0 -118 70 1 0 0 0 1 0 0 0 1 4083.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=0] [nrs=-1]
-0 // Wheel Rim 12 x 11 with Round Hole
+0 // Wheel Rim 12 x 11 with Round Hole (yellow)
 1 14 -40 -25 -40 0 0 1 0 1 0 -1 0 0 6014.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=2]
-0 // Tyre 12/ 40 x 11 Wide
+0 // Tyre 12/ 40 x 11 Wide (rubber_black)
 1 256 -46 -25 -40 0 0 1 0 1 0 -1 0 0 6015.dat
 0 !LDCAD GROUP_NXT [ids=1] [nrs=-1]
-0 // Wheel Rim 12 x 11 with Round Hole
+0 // Wheel Rim 12 x 11 with Round Hole (yellow)
 1 14 40 -25 -40 0 0 -1 0 1 0 1 0 0 6014.dat
 0 !LDCAD GROUP_NXT [ids=1] [nrs=2]
-0 // Tyre 12/ 40 x 11 Wide
+0 // Tyre 12/ 40 x 11 Wide (rubber_black)
 1 256 46 -25 -40 0 0 -1 0 1 0 1 0 0 6015.dat
 0 !LDCAD GROUP_NXT [ids=2] [nrs=-1]
-0 // Wheel Rim 12 x 11 with Round Hole
+0 // Wheel Rim 12 x 11 with Round Hole (yellow)
 1 14 -40 -25 40 0 0 1 0 1 0 -1 0 0 6014.dat
 0 !LDCAD GROUP_NXT [ids=2] [nrs=2]
-0 // Tyre 12/ 40 x 11 Wide
+0 // Tyre 12/ 40 x 11 Wide (rubber_black)
 1 256 -46 -25 40 0 0 1 0 1 0 -1 0 0 6015.dat
 0 !LDCAD GROUP_NXT [ids=3] [nrs=-1]
-0 // Wheel Rim 12 x 11 with Round Hole
+0 // Wheel Rim 12 x 11 with Round Hole (yellow)
 1 14 40 -25 40 0 0 -1 0 1 0 1 0 0 6014.dat
 0 !LDCAD GROUP_NXT [ids=3] [nrs=2]
-0 // Tyre 12/ 40 x 11 Wide
+0 // Tyre 12/ 40 x 11 Wide (rubber_black)
 1 256 46 -25 40 0 0 -1 0 1 0 1 0 0 6015.dat
-0 // Cone  1 x  1
+0 // Cone  1 x  1 (trans_orange)
 1 57 10 -142 70 0 0 -1 0 1 0 1 0 0 4589.dat
-0 // Minifig Shovel
+0 // Minifig Shovel (dark_bluish_grey)
 1 72 -10 -91 90 -1 0 0 0 1 0 0 0 -1 3837.dat
-0 // Minifig Jackhammer
+0 // Minifig Jackhammer (dark_bluish_grey)
 1 72 10 -112 90 0.978 0 0.208 0 1 0 -0.208 0 0.978 30228.dat
 1 14 0 -44 28 1 0 0 0 1 0 0 0 1 7246 - mfCityConstruction.ldr
 
@@ -103,27 +103,27 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // ~Minifig Leg Right (Obsolete)
+0 // ~Minifig Leg Right (Obsolete) (blue)
 1 1 0 -28 0 1 0 0 0 0 1 0 -1 0 3816b.dat
-0 // ~Minifig Leg Left (Obsolete)
+0 // ~Minifig Leg Left (Obsolete) (blue)
 1 1 0 -28 0 1 0 0 0 0 1 0 -1 0 3817b.dat
-0 // Minifig Hips
+0 // Minifig Hips (blue)
 1 1 0 -40 0 1 0 0 0 0.999 0.035 0 -0.035 0.999 3815b.dat
 0 STEP
-0 // Minifig Torso with Blue Shirt and Safety Stripes Pattern
+0 // Minifig Torso with Blue Shirt and Safety Stripes Pattern (orange)
 1 25 0 -71.981 1.117 1 0 0 0 0.999 0.035 0 -0.035 0.999 973p8g.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (blue)
 1 1 -15.552 -62.99 0.802 0.985 -0.134 -0.105 0.17 0.755 0.634 -0.006 -0.642 0.766 3818.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (blue)
 1 1 15.552 -62.99 0.802 0.985 0.124 0.116 -0.17 0.696 0.697 0.006 -0.707 0.707 3819.dat
-0 // Minifig Hand
+0 // Minifig Hand (dark_bluish_grey)
 1 72 -21.973 -55.854 -18.874 0.966 -0.258 0.021 0.259 0.962 -0.085 0.002 0.088 0.996 3820.dat
-0 // Minifig Hand
+0 // Minifig Hand (dark_bluish_grey)
 1 72 21.68 -57.577 -19.507 0.966 0.259 -0.006 -0.259 0.966 0.001 0.006 0.001 1 3820.dat
 0 STEP
-0 // Minifig Head with Smile, Brown Eyebrows and White Pupils Pattern (Blocked Hollow Stud)
+0 // Minifig Head with Smile, Brown Eyebrows and White Pupils Pattern (Blocked Hollow Stud) (yellow)
 1 14 0 -95.966 1.954 0.985 0 0.174 -0.006 0.999 0.034 -0.174 -0.035 0.984 3626bp85.dat
-0 // Minifig Construction Helmet
+0 // Minifig Construction Helmet (red)
 1 4 0 -95.966 1.954 0.985 0 0.174 -0.006 0.999 0.034 -0.174 -0.035 0.984 3833.dat
 
 
@@ -143,7 +143,7 @@
 4 16 19 29 10 19 32 10 -19 32 10 -19 29 10
 4 16 -14.345 2 10 14.345 2 10 19 29 10 -19 29 10
 4 16 -14.345 2 10 -12 0 10 12 0 10 14.345 2 10
-0 // Cylinder 0.25
+0 // Cylinder 0.25 (black)
 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
 
 4 0 4.25 27 -10 3.5 27.5 -10 3.5 31 -10 4.25 30.25 -10

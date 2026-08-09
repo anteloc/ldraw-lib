@@ -16,44 +16,44 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Boat  5 x 14 x  2 with Front Side Bar Holders
+0 // Boat  5 x 14 x  2 with Front Side Bar Holders (red)
 1 4 0 0 0 1 0 0 0 1 0 0 0 1 6245 - 2551.dat
 0 STEP
-0 // Turntable  4 x  4 Base
+0 // Turntable  4 x  4 Base (black)
 1 0 0 -24 40 0 0 1 0 1 0 -1 0 0 3403.dat
-0 // Turntable  4 x  4 Top
+0 // Turntable  4 x  4 Top (black)
 1 0 0 -24 40 0.707 0 0.707 0 1 0 -0.707 0 0.707 3404.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (light_grey)
 1 7 -30 -8 -40 0 0 1 0 1 0 -1 0 0 3023.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (light_grey)
 1 7 0 -8 -80 0 0 1 0 1 0 -1 0 0 3022.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (light_grey)
 1 7 30 -8 -40 0 0 1 0 1 0 -1 0 0 3023.dat
 0 STEP
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (light_grey)
 1 7 0 -16 -40 -1 0 0 0 1 0 0 0 -1 3020.dat
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (black)
 1 0 -10 -32 -70 -1 0 0 0 1 0 0 0 -1 3062b.dat
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (black)
 1 0 -10 -32 -90 -1 0 0 0 1 0 0 0 -1 3062b.dat
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (black)
 1 0 10 -32 -90 -1 0 0 0 1 0 0 0 -1 3062b.dat
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (black)
 1 0 10 -32 -70 -1 0 0 0 1 0 0 0 -1 3062b.dat
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (black)
 1 0 -10 -56 -70 -1 0 0 0 1 0 0 0 -1 3062b.dat
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (black)
 1 0 10 -56 -90 -1 0 0 0 1 0 0 0 -1 3062b.dat
-0 // Minifig Cannon  2 x  4 Base
+0 // Minifig Cannon  2 x  4 Base (brown)
 1 6 0 -32 40 -0.707 0 0.707 0 1 0 -0.707 0 -0.707 2527.dat
-0 // Minifig Cannon Shooting (Complete)
+0 // Minifig Cannon Shooting (Complete) (dark_grey)
 1 8 -21.213 -60 61.213 -0.707 -0.183 0.683 0 0.966 0.259 -0.707 0.183 -0.683 2533c01.dat
 0 STEP
-0 // Antenna  4H with Rounded Top
+0 // Antenna  4H with Rounded Top (black)
 1 0 0 -88 110 1 0 0 0 -1 0 0 0 -1 3957a.dat
-0 // Flag  2 x  2 with Blue Imperial Guard Pattern
+0 // Flag  2 x  2 with Blue Imperial Guard Pattern (white)
 1 15 0 -36 110 -1 0 0 0 -1 0 0 0 1 2335p04.dat
-0 // Minifig Sword Cutlass
+0 // Minifig Sword Cutlass (dark_grey)
 1 8 -14.142 -46 11.716 -0.707 0 0.707 0 1 0 -0.707 0 -0.707 2530.dat
 1 16 0 -25 -48 1 0 0 0 1 0 0 0 1 6245 - MiniFig1.ldr
 
@@ -65,31 +65,31 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // ~Minifig Leg Right (Obsolete)
+0 // ~Minifig Leg Right (Obsolete) (white)
 1 15 0 0 0 -1 0 0 0 0 1 0 1 0 3816.dat
-0 // ~Minifig Leg Left (Obsolete)
+0 // ~Minifig Leg Left (Obsolete) (white)
 1 15 0 0 0 -1 0 0 0 0 1 0 1 0 3817.dat
-0 // ~Minifig Hips (Obsolete)
+0 // ~Minifig Hips (Obsolete) (white)
 1 15 0 -12 0 -1 0 0 0 1 0 0 0 -1 3815.dat
-0 // Minifig Torso with Blue Imperial Guard Pattern
+0 // Minifig Torso with Blue Imperial Guard Pattern (white)
 1 15 0 -44 0 -1 0 0 0 1 0 0 0 -1 973p3n.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (blue)
 1 1 15.552 -35 0 -0.985 0.121 0.119 0.17 0.704 0.69 0 0.7 -0.714 3818.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (blue)
 1 1 -15.552 -35 0 -0.985 -0.121 -0.119 -0.17 0.704 0.69 0 0.7 -0.714 3819.dat
-0 // Minifig Hand
+0 // Minifig Hand (yellow)
 1 14 21.596 -29.372 20.275 -0.259 0.966 -0.002 0.966 0.259 -0.01 -0.009 -0.004 -1 3820.dat
-0 // Minifig Hand
+0 // Minifig Hand (yellow)
 1 14 -21.596 -29.372 20.275 -0.162 -0.987 0.002 -0.987 0.162 -0.01 0.01 -0.003 -1 3820.dat
-0 // Minifig Epaulette
+0 // Minifig Epaulette (yellow)
 1 14 0 -47 0 -1 0 0 0 1 0 0 0 -1 2526.dat
-0 // Minifig Head with Red Moustache, Beard and Messy Hair Pattern
+0 // Minifig Head with Red Moustache, Beard and Messy Hair Pattern (yellow)
 1 14 0 -71 0 -1 0 0 0 1 0 0 0 -1 3626bp43.dat
-0 // ~Minifig Hat Bicorne (Obsolete)
+0 // ~Minifig Hat Bicorne (Obsolete) (black)
 1 0 0 -71 0 -1 0 0 0 1 0 0 0 -1 2528.dat
-0 // Minifig Tool Oar
+0 // Minifig Tool Oar (brown)
 1 6 -11.727 -30.873 32.583 -0.162 -0.955 0.249 -0.987 0.155 -0.05 0.01 -0.254 -0.967 2542.dat
-0 // Minifig Tool Oar
+0 // Minifig Tool Oar (brown)
 1 6 11.936 -31.841 32.593 -0.259 0.935 -0.244 0.966 0.248 -0.075 -0.009 -0.255 -0.967 2542.dat
 
 
@@ -109,9 +109,9 @@
 
 4 16 16.610001 12.25 -100.300003 -16.610001 12.25 -100.300003 -20 10.373 -100.300003 -20 0 -100.300003
 4 16 20 0 -100.300003 20 10.373 -100.300003 16.610001 12.25 -100.300003 -20 0 -100.300003
-0 // Rectangle with 1 Edge
+0 // Rectangle with 1 Edge (main_colour)
 1 16 0 0 -80.2 0 0 -20 0 1 0 -20.1 0 0 rect1.dat
-0 // Rectangle with 1 Edge
+0 // Rectangle with 1 Edge (main_colour)
 1 16 0 0 19.825 0 0 40.23 0 1 0 79.925 0 0 rect1.dat
 2 24 -16.610001 12.25 -100.300003 16.610001 12.25 -100.300003
 4 16 5.69 12.25 -103.699997 0 12.25 -104.400002 -5.69 12.25 -103.699997 -16.610001 12.25 -100.300003
@@ -119,17 +119,17 @@
 1 16 20 3.75 20 0 0 -1 0 -3.0625 0 1 0 0 stug4-1x7.dat
 1 16 -20 3.75 20 0 0 -1 0 -3.0625 0 1 0 0 stug4-1x7.dat
 1 16 0 3.75 0 0 0 -1 0 -3.0625 0 1 0 0 stug4-1x9.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 0 3.75 21.6 0 0 36.25 0 -1 0 -77.9 0 0 rect2p.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 0 3.75 -76.25 -16.25 0 0 0 -1 0 0 0 -19.95 rect3.dat
-0 // Rectangle with 2 Adjacent Edges
+0 // Rectangle with 2 Adjacent Edges (main_colour)
 1 16 0 9.875 -96.2 -16.25 0 0 0 0 6.125 0 -1 0 rect2a.dat
 1 16 0 0 60 0 0 -1 0 1 0 1 0 0 stug-4x4.dat
 1 16 0 0 -20 0 0 -1 0 1 0 1 0 0 stug-4x4.dat
 1 16 0 0 -80 0 0 -1 0 1 0 1 0 0 stug-2x2.dat
 1 16 0 -40 -150 0 0 -1 0 1 0 1 0 0 stud2a.dat
-0 // Circle 1.0
+0 // Circle 1.0 (main_colour)
 1 16 0 -40 -150 0 0 6 0 1 0 6 0 0 4-4edge.dat
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6245 - 2551s01.dat
 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\6245 - 2551s01.dat
@@ -157,45 +157,45 @@
 5 24 0 -28.870001 102.739998 0 -28.48 101.790001 -10.4 -28.190001 101.769997 10.41 -28.58 102.720001
 5 24 0 -27.860001 100.949997 0 -27.040001 100.309998 -10.36 -26.74 100.32 10.38 -27.559999 100.949997
 5 24 0 -27.040001 100.309998 0 -26.059999 99.891998 -10.36 -26.74 100.32 10.36 -26.74 100.32
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 0 9.875 99.5 -8.5 0 0 0 0 -6.125 0 1 0 rect2p.dat
 3 16 0 16 -116.699997 1.87 16 -105.699997 -1.87 16 -105.699997
 4 16 -1.87 16 -105.699997 1.87 16 -105.699997 16.25 16 -96.199997 -16.25 16 -96.199997
 3 16 8.5 16 99.5 0 16 103.75 -8.5 16 99.5
 
 0 BFC INVERTNEXT
-0 // Cylinder Open 1.0
+0 // Cylinder Open 1.0 (main_colour)
 1 16 30 0 -70 3.9231 0 0.7804 0 12.225 0 -0.7804 0 3.9231 4-4cylo.dat
-0 // Ring  2 x 1.0
+0 // Ring  2 x 1.0 (main_colour)
 1 16 30 0 -70 1.9616 0 0.3902 0 1 0 -0.3902 0 1.9616 4-4ring2.dat
-0 // Cylinder Open 0.5
+0 // Cylinder Open 0.5 (main_colour)
 1 16 30 0 -70 5.8847 0 1.1705 0 12.225 0 -1.1705 0 5.8847 2-4cylo.dat
-0 // Cylinder Open 0.4375
+0 // Cylinder Open 0.4375 (main_colour)
 1 16 30 0 -70 5.8847 0 -1.1705 0 12.225 0 -1.1705 0 -5.8847 7-16cylo.dat
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 22.0575 6.1125 -71.1706 0.00005 0 -2.0575 6.1125 0 0 0 1 0 rect.dat
-0 // Rectangle with 1 Edge
+0 // Rectangle with 1 Edge (main_colour)
 1 16 22.0576 0 -70 0 0 2.0575 0 1 0 1.17055 0 0 rect1.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 22.0576 6.1125 -68.8295 -2.0576 0 0.00005 0 0 6.1125 -0.00005 -1 -0.00005 rect3.dat
 3 16 20 0 -71.170601 20 12.225 -71.170601 20 0 -100.300003
 2 24 20 0 -71.170601 20 0 -100.300003
 2 24 20 0 -60.099998 20 0 -68.829498
 4 16 20 0 -60.099998 20 12.25 -60.099998 20 12.225 -68.829498 20 0 -68.829498
 0 BFC INVERTNEXT
-0 // Cylinder Open 1.0
+0 // Cylinder Open 1.0 (main_colour)
 1 16 -30 0 -70 -3.9231 0 -0.7804 0 12.225 0 -0.7804 0 3.9231 4-4cylo.dat
-0 // Ring  2 x 1.0
+0 // Ring  2 x 1.0 (main_colour)
 1 16 -30 0 -70 -1.9616 0 -0.3902 0 1 0 -0.3902 0 1.9616 4-4ring2.dat
-0 // Cylinder Open 0.5
+0 // Cylinder Open 0.5 (main_colour)
 1 16 -30 0 -70 -5.8847 0 -1.1705 0 12.225 0 -1.1705 0 5.8847 2-4cylo.dat
-0 // Cylinder Open 0.4375
+0 // Cylinder Open 0.4375 (main_colour)
 1 16 -30 0 -70 -5.8847 0 1.1705 0 12.225 0 -1.1705 0 -5.8847 7-16cylo.dat
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 -22.0575 6.1125 -71.1706 -2.05755 0 0 0 0 -6.1125 0 1 0 rect.dat
-0 // Rectangle with 1 Edge
+0 // Rectangle with 1 Edge (main_colour)
 1 16 -22.0576 0 -70 -0.0001 0 2.0575 0 1 0 1.1706 0 0 rect1.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 -22.0576 6.1125 -68.8295 -2.0576 0 0 0 0 6.1125 0.00005 -1 0 rect3.dat
 3 16 -20 12.225 -71.170601 -20 0 -71.170601 -20 0 -100.300003
 2 24 -20 0 -71.170601 -20 0 -100.300003
@@ -1079,7 +1079,7 @@
 2 24 40.16 0 -60.099998 20 0 -60.099998
 4 16 50 -34 -4.25 50 -34 -1.25 50 -20 2.5 50 -20 -4.25
 2 24 50 -34 -1.25 50 -20 2.5
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 46 -34 -2.75 -4 0 0 0 1 0 0 0 -1.5 rect.dat
 3 16 42.02 -20.35 2.41 42.23 -21.33 2.14 42 -34 -1.25
 2 24 42 -34 -1.25 42.02 -20.35 2.41
@@ -1182,7 +1182,7 @@
 2 24 50 -34 -16.299999 50 -20 -16.299999
 4 16 50 -34 -19.299999 50 -34 -16.299999 50 -20 -16.299999 50 -20 -23
 2 24 50 -20 -23 50 -34 -19.299999
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 46 -34 -17.8 -4 0 0 0 1 0 0 0 -1.5 rect.dat
 3 16 50 -20 -23 49.869999 -21.040001 -22.700001 50 -34 -19.299999
 2 24 50 -20 -23 49.869999 -21.040001 -22.700001
@@ -1686,9 +1686,9 @@
 4 16 44.549999 6.121 -61.099998 44.580002 7.551 -39.099998 43.580002 7.551 -38.099998 43.549999 6.121 -60.099998
 4 16 44.580002 7.551 -39.099998 44.549999 8.045 98.75 43.549999 8.045 98.75 43.580002 7.551 -38.099998
 4 16 44.549999 8.045 98.75 44.369999 8.045 100.040001 43.369999 8.045 100.040001 43.549999 8.045 98.75
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 43.615 8.045 100.64 0.255 0 -0.5 0 -1 0 -0.6 0 0 rect2p.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 42.96 8.045 101.755 0.4 0 -0.5 0 -1 0 -0.515 0 0 rect2p.dat
 3 16 42.060001 8.045 102.269997 43.060001 8.045 102.269997 41.02 8.045 103.07
 2 24 43.259998 5.26 -68.5 43.549999 6.121 -60.099998
@@ -1802,11 +1802,11 @@
 4 16 45.669998 -6.03 -61.299999 45.619999 -4.5 -39.099998 44.619999 -4.5 -38.099998 44.669998 -6.03 -60.299999
 4 16 45.619999 -4.5 -39.099998 45.599998 -3.99 -17.299999 44.599998 -3.99 -16.299999 44.619999 -4.5 -38.099998
 4 16 45.599998 -3.99 -17.299999 45.599998 -3.99 98.75 44.599998 -3.99 98.75 44.599998 -3.99 -16.299999
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 45.01 -3.99 99.395 0.09 0 -0.5 0 -1 0 -0.645 0 0 rect2p.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 44.665 -3.99 100.64 0.255 0 -0.5 0 -1 0 -0.6 0 0 rect2p.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 44.01 -3.99 101.755 0.4 0 -0.5 0 -1 0 -0.515 0 0 rect2p.dat
 3 16 44.110001 -3.99 102.269997 42.080002 -3.99 103.07 43.110001 -3.99 102.269997
 2 24 1.87 -5.62 -130.600006 1.87 -5.62 -129.600006
@@ -3366,17 +3366,17 @@
 5 24 42.02 -20.35 98.75 42.02 -20.35 99.75 40.23 0 99.75 42.209999 -21.379999 99.351997
 5 24 42.02 -20.35 -4.25 42.02 -20.35 2.41 40.23 0 -16.299999 42 -34 -1.25
 5 24 41.66 -21.370001 100.099998 41.110001 -22.370001 100.68 30.905001 -23.52 100.209999 41.389999 -22.24 100.650002
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 36.25 9.875 21.6 0 1 0 0 0 6.125 -77.9 0 0 rect3.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 26.25 9.875 -56.3 0 0 -10 -6.125 0 0 0 -1 0 rect3.dat
-0 // Rectangle with 2 Adjacent Edges
+0 // Rectangle with 2 Adjacent Edges (main_colour)
 1 16 16.25 9.875 -76.25 0 1 0 0 0 6.125 -19.95 0 0 rect2a.dat
-0 // Box with 3 Faces without 2 Parallel Edges
+0 // Box with 3 Faces without 2 Parallel Edges (main_colour)
 1 16 30 9.875 99.5 0 0 -1.5 6.125 0 0 0 -3.25 0 box3u2p.dat
-0 // Box with 3 Faces without 2 Parallel Edges
+0 // Box with 3 Faces without 2 Parallel Edges (main_colour)
 1 16 10 9.875 99.5 0 0 -1.5 6.125 0 0 0 -3.25 0 box3u2p.dat
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 20 9.875 99.5 -8.5 0 0 0 0 -6.125 0 1 0 rect2p.dat
 2 24 15.32 16 -102.699997 21.57 16 -99.900002
 2 24 8.69 16 -104.599998 15.32 16 -102.699997
@@ -3411,7 +3411,7 @@
 4 16 36.25 16 99.5 40.330002 16 103.07 39.130001 16 103.580002 37.831001 16 103.75
 4 16 42.419998 16 -66.800003 42.849998 16 -60 36.25 16 -56.299999 41.139999 16 -73.400002
 3 16 39.02 16 -79.900002 41.139999 16 -73.400002 36.25 16 -56.299999
-0 // Rectangle with 2 Parallel Edges
+0 // Rectangle with 2 Parallel Edges (main_colour)
 1 16 33.875 9.875 99.5 2.375 0 0 0 0 6.125 0 1 0 rect2p.dat
 2 24 1.15 16 -116 0.65 16 -116.5
 2 24 0.65 16 -116.5 0 16 -116.699997

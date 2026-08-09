@@ -13,9 +13,9 @@
 1 0 -110 -30 100 1 0 0 0 1 0 0 0 1 8448 - box6-2.ldr
 0 STEP
 1 0 0 -70 300 -1 0 0 0 1 0 0 0 -1 8448 - hotrodbox8.ldr
-0 // Technic Axle  3 with Stud
+0 // Technic Axle  3 with Stud (dark_grey)
 1 8 -53 -150 540 -1 0 0 0 1 0 0 0 -1 6587.dat
-0 // Technic Axle  3 with Stud
+0 // Technic Axle  3 with Stud (dark_grey)
 1 8 53 -150 540 1 0 0 0 1 0 0 0 1 6587.dat
 0 STEP
 1 0 0 -166.672 267.37 1 0 0 0 0.996 -0.093 0 0.093 0.996 8448 - hotrodstep1-2.ldr
@@ -47,22 +47,22 @@
 0 !THEME Technic
 0 STEP
 1 0 0 -8 410 1 0 0 0 1 0 0 0 1 8448 - box2.ldr
-0 // Technic Universal Joint 4L End with Bush End
+0 // Technic Universal Joint 4L End with Bush End (light_grey)
 1 7 60 -30 -270 -1 0 0 0 1 0 0 0 -1 3712.dat
-0 // Technic Universal Joint Centre Type 2
+0 // Technic Universal Joint Centre Type 2 (light_grey)
 1 7 60 -30 -240 -1 0 0 0 0.821 0.571 0 0.571 -0.821 3326b.dat
 0 STEP
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -80 -70 540 1 0 0 0 0 1 0 -1 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 80 -70 540 1 0 0 0 0 1 0 -1 0 2780.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 90 -70 360 1 0 0 0 0 1 0 -1 0 32054.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 90 -70 380 1 0 0 0 0 1 0 -1 0 32054.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 -90 -70 360 -1 0 0 0 0 1 0 1 0 32054.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 -90 -70 380 -1 0 0 0 0 1 0 1 0 32054.dat
 0 STEP
 1 0 105 -30 280 -1 0 0 0 0 1 0 1 0 8448 - box2step22sub3.ldr
@@ -70,13 +70,13 @@
 1 0 -70 -50 458 1 0 0 0 1 0 0 0 1 8448 - box2step22sub1.ldr
 1 0 70 -50 458 1 0 0 0 1 0 0 0 1 8448 - box2step22sub2.ldr
 0 STEP
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 110 10 360 -1 0 0 0 0 1 0 1 0 32054.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 110 10 380 -1 0 0 0 0 1 0 1 0 32054.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 -110 10 360 1 0 0 0 0 1 0 -1 0 32054.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 -110 10 380 1 0 0 0 0 1 0 -1 0 32054.dat
 0 STEP
 1 7 0 -20 -310 1 0 0 0 1 0 0 0 1 8448 - box3step14.ldr
@@ -85,93 +85,93 @@
 0 // Needs work
 1 7 60 -30 -240 -0.88 -0.362 -0.308 -0.475 0.67 0.57 0 0.648 -0.762 8448 - box3step13sub1.ldr
 0 STEP
-0 // Technic Axle  5
+0 // Technic Axle  5 (black)
 1 0 130 -106 -72 -1 0 0 0 0.8 0.6 0 0.6 -0.8 32073.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 -140 -106 -72 -1 0 0 0 0.8 0.6 0 0.6 -0.8 3705.dat
-0 // Technic Pin Joiner Round
+0 // Technic Pin Joiner Round (black)
 1 0 -140 -106 -72 -1 0 0 0 0.8 0.6 0 0.6 -0.8 75535.dat
-0 // Plate  3 x  3 without Corner
+0 // Plate  3 x  3 without Corner (light_grey)
 1 7 70 -48 -270 -1 0 0 0 1 0 0 0 -1 2450.dat
-0 // Plate  3 x  3 without Corner
+0 // Plate  3 x  3 without Corner (light_grey)
 1 7 -70 -48 -270 0 0 -1 0 1 0 1 0 0 2450.dat
 0 STEP
-0 // Plate  1 x 10
+0 // Plate  1 x 10 (light_grey)
 1 7 0 -56 -290 1 0 0 0 1 0 0 0 1 4477.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (light_grey)
 1 7 90 -56 -270 1 0 0 0 1 0 0 0 1 6141.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (light_grey)
 1 7 -90 -56 -270 1 0 0 0 1 0 0 0 1 6141.dat
 0 STEP
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (black)
 1 0 -90 -48 -460 0 0 -1 0 1 0 1 0 0 3460.dat
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (black)
 1 0 90 -48 -460 0 0 -1 0 1 0 1 0 0 3460.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (black)
 1 0 -90 -80 -280 0 0 -1 0 1 0 1 0 0 3700.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (black)
 1 0 90 -80 -280 0 0 -1 0 1 0 1 0 0 3700.dat
 0 STEP
 1 0 105 -30 -280 -1 0 0 0 0 1 0 1 0 8448 - box2step22sub3.ldr
 1 0 -105 -30 -280 1 0 0 0 0 1 0 -1 0 8448 - box2step22sub3.ldr
 0 STEP
-0 // Technic Connector (Axle) with Axle 1.5
+0 // Technic Connector (Axle) with Axle 1.5 (light_grey)
 1 7 -120 10 -360 0 1 0 0 0 1 1 0 0 6553.dat
-0 // Technic Connector (Axle) with Axle 1.5
+0 // Technic Connector (Axle) with Axle 1.5 (light_grey)
 1 7 -120 10 -340 0 1 0 0 0 1 1 0 0 6553.dat
-0 // Technic Connector (Axle) with Axle 1.5
+0 // Technic Connector (Axle) with Axle 1.5 (light_grey)
 1 7 120 10 -340 0 -1 0 0 0 1 -1 0 0 6553.dat
-0 // Technic Connector (Axle) with Axle 1.5
+0 // Technic Connector (Axle) with Axle 1.5 (light_grey)
 1 7 120 10 -360 0 -1 0 0 0 1 -1 0 0 6553.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 -120 10 -350 0 -1 0 0 0 1 -1 0 0 4519.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 120 10 -350 0 -1 0 0 0 1 -1 0 0 4519.dat
-0 // Technic Axle  3 with Stud
+0 // Technic Axle  3 with Stud (dark_grey)
 1 8 -250 -30 -350 1 0 0 0 0 1 0 -1 0 6587.dat
-0 // Technic Axle  3 with Stud
+0 // Technic Axle  3 with Stud (dark_grey)
 1 8 250 -30 -350 -1 0 0 0 0 1 0 1 0 6587.dat
 0 STEP
-0 // Wheel Rim 30 x 61 with 3 Spokes Swirled
+0 // Wheel Rim 30 x 61 with 3 Spokes Swirled (metallic_silver)
 1 80 242 -30 -350 0 0 -1 -1 0 0 0 1 0 32197.dat
-0 // Tyre 32/ 33 x 61 Racing Wet
+0 // Tyre 32/ 33 x 61 Racing Wet (rubber_black)
 1 256 242 -30 -350 0 0 -1 -1 0 0 0 1 0 32196.dat
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_grey)
 1 7 272 -30 -350 0 0 -1 -1 0 0 0 1 0 32123a.dat
-0 // Wheel Rim 30 x 61 with 3 Spokes Swirled
+0 // Wheel Rim 30 x 61 with 3 Spokes Swirled (metallic_silver)
 1 80 242 -30 370 0 0 -1 -1 0 0 0 1 0 32197.dat
-0 // Tyre 32/ 33 x 61 Racing Wet
+0 // Tyre 32/ 33 x 61 Racing Wet (rubber_black)
 1 256 242 -30 370 0 0 -1 -1 0 0 0 1 0 32196.dat
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_grey)
 1 7 272 -30 370 0 0 -1 -1 0 0 0 1 0 32123a.dat
-0 // Wheel Rim 30 x 61 with 3 Spokes Swirled
+0 // Wheel Rim 30 x 61 with 3 Spokes Swirled (metallic_silver)
 1 80 -242 -30 370 0 0 1 -1 0 0 0 -1 0 32197.dat
-0 // Tyre 32/ 33 x 61 Racing Wet
+0 // Tyre 32/ 33 x 61 Racing Wet (rubber_black)
 1 256 -242 -30 370 0 0 1 -1 0 0 0 -1 0 32196.dat
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_grey)
 1 7 -272 -30 370 0 0 1 -1 0 0 0 -1 0 32123a.dat
-0 // Wheel Rim 30 x 61 with 3 Spokes Swirled
+0 // Wheel Rim 30 x 61 with 3 Spokes Swirled (metallic_silver)
 1 80 -242 -30 -350 0 0 1 -1 0 0 0 -1 0 32197.dat
-0 // Tyre 32/ 33 x 61 Racing Wet
+0 // Tyre 32/ 33 x 61 Racing Wet (rubber_black)
 1 256 -242 -30 -350 0 0 1 -1 0 0 0 -1 0 32196.dat
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_grey)
 1 7 -272 -30 -350 0 0 1 -1 0 0 0 -1 0 32123a.dat
 0 STEP
-0 // Technic Axle  8
+0 // Technic Axle  8 (black)
 1 0 0 -70 0 1 0 0 0 1 0 0 0 1 3707.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 60 -70 0 0 0 -1 0 1 0 1 0 0 3713.dat
 0 STEP
 1 7 0 -30 50 1 0 0 0 1 0 0 0 1 8448 - box4.ldr
 0 STEP
 1 7 -90 -56 -140 1 0 0 0 1 0 0 0 1 8448 - box4step25.ldr
 1 7 90 -56 -140 1 0 0 0 1 0 0 0 1 8448 - box4step25.ldr
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 90 -70 -120 1 0 0 0 1 0 0 0 1 32054.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 -90 -70 -120 -1 0 0 0 1 0 0 0 -1 32054.dat
 0 STEP
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 -60 -70 0 0 0 1 0 1 0 -1 0 0 3713.dat
 1 7 0 -90 0 1 0 0 0 1 0 0 0 1 8448 - box4step26.ldr
 0 STEP
@@ -186,134 +186,134 @@
 0 FILE 8448 - box1.ldr
 0 box1
 0 Name: 8448 - box1.ldr
-0 // Technic Brick  1 x 16 with Holes
+0 // Technic Brick  1 x 16 with Holes (black)
 1 0 -70 0 260 0 0 -1 0 1 0 1 0 0 3703.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -60 10 380 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -60 10 360 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -80 10 400 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -80 10 340 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -80 10 180 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -80 10 140 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -80 10 120 1 0 0 0 1 0 0 0 1 2780.dat
 0 STEP
-0 // Technic Brick  1 x 16 with Holes
+0 // Technic Brick  1 x 16 with Holes (black)
 1 0 -90 0 0 0 0 -1 0 1 0 1 0 0 3703.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -100 10 40 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -80 10 0 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -80 10 -100 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -100 10 -120 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -80 10 -140 1 0 0 0 1 0 0 0 1 2780.dat
 0 STEP
-0 // Technic Brick  1 x 12 with Holes
+0 // Technic Brick  1 x 12 with Holes (black)
 1 0 -70 0 -200 0 0 -1 0 1 0 1 0 0 3895.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -80 10 -300 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 -70 10 -180 -1 0 0 0 1 0 0 0 -1 6558.dat
 0 STEP
-0 // Technic Brick  1 x 16 with Holes
+0 // Technic Brick  1 x 16 with Holes (black)
 1 0 -90 0 -320 0 0 -1 0 1 0 1 0 0 3703.dat
 0 STEP
-0 // Technic Brick  1 x 16 with Holes
+0 // Technic Brick  1 x 16 with Holes (black)
 1 0 -90 0 320 0 0 -1 0 1 0 1 0 0 3703.dat
 0 STEP
-0 // Technic Brick  1 x  6 with Holes
+0 // Technic Brick  1 x  6 with Holes (black)
 1 0 -50 0 340 0 0 -1 0 1 0 1 0 0 3894.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (black)
 1 0 -50 0 -180 0 0 -1 0 1 0 1 0 0 3700.dat
 0 STEP
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 -90 10 -460 -1 0 0 0 1 0 0 0 -1 32054.dat
-0 // Technic Axle  8
+0 // Technic Axle  8 (black)
 1 0 0 10 -460 -1 0 0 0 1 0 0 0 -1 3707.dat
 1 7 10 10 273 0 0 1 0 1 0 -1 0 0 8448 - box1step7.ldr
 0 STEP
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 90 10 -460 1 0 0 0 1 0 0 0 1 32054.dat
-0 // Technic Axle  6
+0 // Technic Axle  6 (black)
 1 0 0 10 340 1 0 0 0 1 0 0 0 1 3706.dat
-0 // Technic Gear 16 Tooth
+0 // Technic Gear 16 Tooth (light_grey)
 1 7 -30 10 340 0 0 -1 0 1 0 1 0 0 4019.dat
-0 // Technic Gear 20 Tooth Bevel
+0 // Technic Gear 20 Tooth Bevel (light_grey)
 1 7 37 10 340 0 0 1 0 1 0 -1 0 0 32198.dat
 1 0 0 10 460 1 0 0 0 1 0 0 0 1 8448 - box1step8.ldr
 0 STEP
 1 0 90 0 0 1 0 0 0 1 0 0 0 1 8448 - box1step9.ldr
 0 STEP
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (black)
 1 0 70 -8 380 1 0 0 0 1 0 0 0 1 3021.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (black)
 1 0 70 -8 300 1 0 0 0 1 0 0 0 1 3021.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (black)
 1 0 -70 -8 380 1 0 0 0 1 0 0 0 1 3021.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (black)
 1 0 -70 -8 300 1 0 0 0 1 0 0 0 1 3021.dat
-0 // Plate  4 x  4 Corner
+0 // Plate  4 x  4 Corner (black)
 1 0 80 -8 160 0 0 1 0 1 0 -1 0 0 2639.dat
-0 // Plate  4 x  4 Corner
+0 // Plate  4 x  4 Corner (black)
 1 0 -80 -8 160 -1 0 0 0 1 0 0 0 -1 2639.dat
-0 // Plate  2 x 10
+0 // Plate  2 x 10 (black)
 1 0 0 -8 -300 1 0 0 0 1 0 0 0 1 3832.dat
 0 STEP
-0 // Plate  2 x 10
+0 // Plate  2 x 10 (black)
 1 0 -80 -8 -420 0 0 1 0 1 0 -1 0 0 3832.dat
-0 // Plate  2 x 10
+0 // Plate  2 x 10 (black)
 1 0 80 -8 -420 0 0 1 0 1 0 -1 0 0 3832.dat
-0 // Technic Plate  2 x  4 with Holes
+0 // Technic Plate  2 x  4 with Holes (black)
 1 0 80 -8 -160 0 0 1 0 1 0 -1 0 0 3709b.dat
-0 // Technic Plate  2 x  4 with Holes
+0 // Technic Plate  2 x  4 with Holes (black)
 1 0 -80 -8 -160 0 0 1 0 1 0 -1 0 0 3709b.dat
-0 // Plate  1 x  2 with Door Rail
+0 // Plate  1 x  2 with Door Rail (black)
 1 0 50 -8 -180 0 0 1 0 1 0 -1 0 0 32028.dat
-0 // Plate  1 x  2 with Door Rail
+0 // Plate  1 x  2 with Door Rail (black)
 1 0 -50 -8 -180 0 0 -1 0 1 0 1 0 0 32028.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (black)
 1 0 90 -8 20 0 0 -1 0 1 0 1 0 0 3710.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (black)
 1 0 -90 -8 20 0 0 -1 0 1 0 1 0 0 3710.dat
 0 STEP
-0 // Plate  2 x 10
+0 // Plate  2 x 10 (black)
 1 0 0 -16 -500 1 0 0 0 1 0 0 0 1 3832.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (light_grey)
 1 7 -80 -16 -400 1 0 0 0 1 0 0 0 1 3022.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (light_grey)
 1 7 80 -16 -400 1 0 0 0 1 0 0 0 1 3022.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (light_grey)
 1 7 -80 -16 -350 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (light_grey)
 1 7 80 -16 -350 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (light_grey)
 1 7 -80 -16 -290 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (light_grey)
 1 7 80 -16 -290 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (light_grey)
 1 7 -70 -16 -180 1 0 0 0 1 0 0 0 1 3021.dat
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (light_grey)
 1 7 70 -16 -180 1 0 0 0 1 0 0 0 1 3021.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (light_grey)
 1 7 -90 -16 20 0 0 -1 0 1 0 1 0 0 3710.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (light_grey)
 1 7 90 -16 20 0 0 -1 0 1 0 1 0 0 3710.dat
 0 STEP
-0 // Technic Brick  1 x 16 with Holes
+0 // Technic Brick  1 x 16 with Holes (black)
 1 0 90 -80 420 0 0 -1 0 1 0 1 0 0 3703.dat
-0 // Technic Brick  1 x 16 with Holes
+0 // Technic Brick  1 x 16 with Holes (black)
 1 0 -90 -80 420 0 0 -1 0 1 0 1 0 0 3703.dat
 0 STEP
 1 7 0 24 80 1 0 0 0 1 0 0 0 1 8448 - box1step14sub1.ldr
@@ -321,141 +321,141 @@
 0 STEP
 1 7 10 10 120 0 0 1 0 1 0 -1 0 0 8448 - box1step15.ldr
 0 STEP
-0 // Plate  1 x 10
+0 // Plate  1 x 10 (light_grey)
 1 7 0 -16 290 1 0 0 0 1 0 0 0 1 4477.dat
-0 // Plate  1 x 10
+0 // Plate  1 x 10 (light_grey)
 1 7 0 -16 130 1 0 0 0 1 0 0 0 1 4477.dat
 1 7 -40 10 10 0 0 1 0 1 0 -1 0 0 8448 - box1step16.ldr
 0 STEP
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (black)
 1 0 0 -8 -50 1 0 0 0 1 0 0 0 1 3666.dat
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (black)
 1 0 0 -8 70 1 0 0 0 1 0 0 0 1 3666.dat
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (light_grey)
 1 7 0 -16 -50 1 0 0 0 1 0 0 0 1 3666.dat
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (light_grey)
 1 7 0 -16 70 1 0 0 0 1 0 0 0 1 3666.dat
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (black)
 1 0 -140 -16 -150 1 0 0 0 1 0 0 0 1 3460.dat
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (black)
 1 0 140 -16 -150 1 0 0 0 1 0 0 0 1 3460.dat
-0 // Plate  1 x 10
+0 // Plate  1 x 10 (light_grey)
 1 7 0 -16 -130 1 0 0 0 1 0 0 0 1 4477.dat
-0 // Technic Plate  2 x  8 with Holes
+0 // Technic Plate  2 x  8 with Holes (black)
 1 0 -140 -16 160 1 0 0 0 1 0 0 0 1 3738.dat
-0 // Technic Plate  2 x  8 with Holes
+0 // Technic Plate  2 x  8 with Holes (black)
 1 0 140 -16 160 1 0 0 0 1 0 0 0 1 3738.dat
 0 STEP
-0 // Technic Brick  1 x 14 with Holes
+0 // Technic Brick  1 x 14 with Holes (black)
 1 0 -90 -40 160 0 0 -1 0 1 0 1 0 0 32018.dat
-0 // Technic Brick  1 x 14 with Holes
+0 // Technic Brick  1 x 14 with Holes (black)
 1 0 90 -40 160 0 0 -1 0 1 0 1 0 0 32018.dat
-0 // Technic Brick  1 x 16 with Holes
+0 // Technic Brick  1 x 16 with Holes (black)
 1 0 -90 -40 -140 0 0 -1 0 1 0 1 0 0 3703.dat
-0 // Technic Brick  1 x 16 with Holes
+0 // Technic Brick  1 x 16 with Holes (black)
 1 0 90 -40 -140 0 0 -1 0 1 0 1 0 0 3703.dat
-0 // Technic Brick  1 x 10 with Holes
+0 // Technic Brick  1 x 10 with Holes (black)
 1 0 -90 -40 -500 0 0 -1 0 1 0 1 0 0 2730.dat
-0 // Technic Brick  1 x 10 with Holes
+0 // Technic Brick  1 x 10 with Holes (black)
 1 0 90 -40 -500 0 0 -1 0 1 0 1 0 0 2730.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 100 -30 -500 1 0 0 0 1 0 0 0 1 3749.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 -100 -30 -500 -1 0 0 0 1 0 0 0 -1 3749.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 100 -30 -460 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -100 -30 -460 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 100 -30 -120 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -100 -30 -120 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 100 -30 40 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -100 -30 40 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin  3/4
+0 // Technic Pin  3/4 (dark_grey)
 1 8 -80 -30 0 1 0 0 0 1 0 0 0 1 32002.dat
-0 // Technic Pin  3/4
+0 // Technic Pin  3/4 (dark_grey)
 1 8 80 -30 0 -1 0 0 0 1 0 0 0 -1 32002.dat
 0 STEP
-0 // Technic Brick  1 x  4 with Holes
+0 // Technic Brick  1 x  4 with Holes (black)
 1 0 110 -10 30 0 0 1 1 0 0 0 1 0 3701.dat
-0 // Technic Brick  1 x  4 with Holes
+0 // Technic Brick  1 x  4 with Holes (black)
 1 0 -110 -10 30 0 0 1 1 0 0 0 1 0 3701.dat
-0 // Technic Beam  5 x  0.5
+0 // Technic Beam  5 x  0.5 (black)
 1 0 -75 -30 0 0 -1 0 0 0 -1 1 0 0 32017.dat
-0 // Technic Beam  5 x  0.5
+0 // Technic Beam  5 x  0.5 (black)
 1 0 75 -30 0 0 -1 0 0 0 -1 1 0 0 32017.dat
-0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle
+0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle (black)
 1 0 105 -30 -460 0 -1 0 0 0 1 -1 0 0 2905.dat
-0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle
+0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle (black)
 1 0 115 -30 -460 0 -1 0 0 0 1 -1 0 0 2905.dat
-0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle
+0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle (black)
 1 0 -115 -30 -460 0 -1 0 0 0 1 -1 0 0 2905.dat
-0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle
+0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle (black)
 1 0 -105 -30 -460 0 -1 0 0 0 1 -1 0 0 2905.dat
 0 STEP
 1 0 230 0 -20 1 0 0 0 1 0 0 0 1 8448 - box1step20.ldr
 1 0 -230 0 -20 -1 0 0 0 1 0 0 0 -1 8448 - box1step20.ldr
 0 STEP
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (light_grey)
 1 7 210 -16 -170 1 0 0 0 1 0 0 0 1 6141.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (light_grey)
 1 7 -210 -16 -170 1 0 0 0 1 0 0 0 1 6141.dat
-0 // Technic Brick  1 x  6 x  1.667 Wing Back
+0 // Technic Brick  1 x  6 x  1.667 Wing Back (black)
 1 0 210 -40 -140 0 0 -1 0 1 0 1 0 0 2744.dat
-0 // Technic Brick  1 x  6 x  1.667 Wing Back
+0 // Technic Brick  1 x  6 x  1.667 Wing Back (black)
 1 0 -210 -40 -140 0 0 -1 0 1 0 1 0 0 2744.dat
-0 // Technic Brick  1 x  6 x  1.667 Wing Back
+0 // Technic Brick  1 x  6 x  1.667 Wing Back (black)
 1 0 210 -40 140 0 0 1 0 1 0 -1 0 0 2744.dat
-0 // Technic Brick  1 x  6 x  1.667 Wing Back
+0 // Technic Brick  1 x  6 x  1.667 Wing Back (black)
 1 0 -210 -40 140 0 0 1 0 1 0 -1 0 0 2744.dat
-0 // Technic Axle  3 with Stud
+0 // Technic Axle  3 with Stud (dark_grey)
 1 8 92 -30 -420 1 0 0 0 1 0 0 0 1 6587.dat
-0 // Technic Axle  3 with Stud
+0 // Technic Axle  3 with Stud (dark_grey)
 1 8 -92 -30 -420 -1 0 0 0 1 0 0 0 -1 6587.dat
 0 STEP
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 -190 10 -120 1 0 0 0 1 0 0 0 1 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 -190 -30 -120 1 0 0 0 1 0 0 0 1 6558.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -200 -30 120 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -200 10 120 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 190 10 -120 -1 0 0 0 1 0 0 0 -1 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 190 -30 -120 -1 0 0 0 1 0 0 0 -1 6558.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 200 -30 120 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 200 10 120 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Brick  1 x  4 with Holes
+0 // Technic Brick  1 x  4 with Holes (black)
 1 0 -190 -10 -130 0 0 1 1 0 0 0 1 0 3701.dat
-0 // Technic Brick  1 x  4 with Holes
+0 // Technic Brick  1 x  4 with Holes (black)
 1 0 -190 -10 110 0 0 1 1 0 0 0 1 0 3701.dat
-0 // Technic Brick  1 x  4 with Holes
+0 // Technic Brick  1 x  4 with Holes (black)
 1 0 190 -10 110 0 0 1 1 0 0 0 1 0 3701.dat
-0 // Technic Brick  1 x  4 with Holes
+0 // Technic Brick  1 x  4 with Holes (black)
 1 0 190 -10 -130 0 0 1 1 0 0 0 1 0 3701.dat
 0 STEP
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (blue)
 1 1 -71 -30 -420 1 0 0 0 -1 0 0 0 -1 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (blue)
 1 1 70 -30 -420 1 0 0 0 -1 0 0 0 -1 6536.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 70 -50 -430 0 0 -1 0 -1 0 -1 0 0 3749.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 -71 -50 -430 0 0 -1 0 -1 0 -1 0 0 3749.dat
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (black)
 1 0 -170 30 -120 0 -1 0 0 0 -1 1 0 0 6629.dat
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (black)
 1 0 -110 30 -120 0 -1 0 0 0 -1 1 0 0 6629.dat
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (black)
 1 0 110 30 -120 0 -1 0 0 0 -1 1 0 0 6629.dat
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (black)
 1 0 170 30 -120 0 -1 0 0 0 -1 1 0 0 6629.dat
 0 STEP
 
@@ -467,25 +467,25 @@
 0 FILE 8448 - box1step7.ldr
 0 box1step7
 0 Name: 8448 - box1step7.ldr
-0 // Technic Axle  5.5 with Stop Type 1
+0 // Technic Axle  5.5 with Stop Type 1 (white)
 1 15 0 0 0 1 0 0 0 1 0 0 0 1 32209.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
-0 // Technic Angle Connector #2 (180 degree)
+0 // Technic Angle Connector #2 (180 degree) (light_grey)
 1 7 -27 0 0 1 0 0 0 1 0 0 0 1 32034.dat
-0 // Technic Gear 20 Tooth Bevel
+0 // Technic Gear 20 Tooth Bevel (light_grey)
 1 7 -40 0 0 0 0 1 0 1 0 -1 0 0 32198.dat
 0 STEP
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 -27 0 -30 0 0 1 0 1 0 -1 0 0 32062.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 -27 0 40 0 0 1 0 1 0 -1 0 0 4519.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_grey)
 1 7 53 0 0 0 0 1 0 1 0 -1 0 0 6538b.dat
 0 STEP
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 -27 0 -60 0 0 1 0 1 0 -1 0 0 32054.dat
 
 
@@ -496,19 +496,19 @@
 0 FILE 8448 - box1step8.ldr
 0 box1step8
 0 Name: 8448 - box1step8.ldr
-0 // Technic Axle 10
+0 // Technic Axle 10 (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3737.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
-0 // Technic Connector (Axle) with Axle 1.5
+0 // Technic Connector (Axle) with Axle 1.5 (light_grey)
 1 7 50 0 0 1 0 0 0 0 -1 0 1 0 6553.dat
-0 // Technic Connector (Axle) with Axle 1.5
+0 // Technic Connector (Axle) with Axle 1.5 (light_grey)
 1 7 -50 0 0 1 0 0 0 0 -1 0 1 0 6553.dat
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (black)
 1 0 -70 0 80 0 -1 0 0 0 1 -1 0 0 32009.dat
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (black)
 1 0 70 0 80 0 -1 0 0 0 1 -1 0 0 32009.dat
 
 
@@ -519,55 +519,55 @@
 0 FILE 8448 - box1step9.ldr
 0 box1step9
 0 Name: 8448 - box1step9.ldr
-0 // Technic Brick  1 x 16 with Holes
+0 // Technic Brick  1 x 16 with Holes (black)
 1 0 -20 0 260 0 0 1 0 1 0 -1 0 0 3703.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -30 10 380 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -30 10 360 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 10 400 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 10 340 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 10 180 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 10 140 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 10 120 1 0 0 0 1 0 0 0 1 2780.dat
 0 STEP
-0 // Technic Brick  1 x 16 with Holes
+0 // Technic Brick  1 x 16 with Holes (black)
 1 0 0 0 0 0 0 1 0 1 0 -1 0 0 3703.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 10 40 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 10 0 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 10 -100 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 10 -120 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 10 -140 1 0 0 0 1 0 0 0 1 2780.dat
 0 STEP
-0 // Technic Brick  1 x 12 with Holes
+0 // Technic Brick  1 x 12 with Holes (black)
 1 0 -20 0 -200 0 0 1 0 1 0 -1 0 0 3895.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 10 -300 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 -20 10 -180 1 0 0 0 1 0 0 0 1 6558.dat
 0 STEP
-0 // Technic Brick  1 x 16 with Holes
+0 // Technic Brick  1 x 16 with Holes (black)
 1 0 0 0 -320 0 0 1 0 1 0 -1 0 0 3703.dat
-0 // Technic Brick  1 x 16 with Holes
+0 // Technic Brick  1 x 16 with Holes (black)
 1 0 0 0 320 0 0 1 0 1 0 -1 0 0 3703.dat
 0 STEP
-0 // Technic Brick  1 x  6 with Holes
+0 // Technic Brick  1 x  6 with Holes (black)
 1 0 -40 0 340 0 0 1 0 1 0 -1 0 0 3894.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (black)
 1 0 -40 0 -180 0 0 1 0 1 0 -1 0 0 3700.dat
 
 
@@ -578,21 +578,21 @@
 0 FILE 8448 - box1step14.ldr
 0 box1step14
 0 Name: 8448 - box1step14.ldr
-0 // Bracket  5 x  2 x  2.333 with Inside Rib
+0 // Bracket  5 x  2 x  2.333 with Inside Rib (black)
 1 0 70 -40 0 0 0 1 0 1 0 -1 0 0 6087.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
-0 // Bracket  5 x  2 x  2.333 with Inside Rib
+0 // Bracket  5 x  2 x  2.333 with Inside Rib (black)
 1 0 -70 -40 0 0 0 -1 0 1 0 1 0 0 6087.dat
 0 STEP
-0 // Technic Plate  2 x  6 with Holes
+0 // Technic Plate  2 x  6 with Holes (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 32001.dat
 0 STEP
-0 // Technic Plate  2 x  8 with Holes
+0 // Technic Plate  2 x  8 with Holes (black)
 1 0 -160 -32 0 1 0 0 0 1 0 0 0 1 3738.dat
-0 // Technic Plate  2 x  8 with Holes
+0 // Technic Plate  2 x  8 with Holes (black)
 1 0 160 -32 0 1 0 0 0 1 0 0 0 1 3738.dat
 
 
@@ -609,7 +609,7 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 STEP
-0 // Slope Brick 45  2 x  2
+0 // Slope Brick 45  2 x  2 (light_grey)
 1 7 40 -24 -10 -1 0 0 0 1 0 0 0 -1 3039.dat
 
 
@@ -626,7 +626,7 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 STEP
-0 // Slope Brick 45  2 x  2
+0 // Slope Brick 45  2 x  2 (light_grey)
 1 7 40 -24 10 1 0 0 0 1 0 0 0 1 3039.dat
 
 
@@ -637,25 +637,25 @@
 0 FILE 8448 - box1step15.ldr
 0 box1step15
 0 Name: 8448 - box1step15.ldr
-0 // Technic Axle 10
+0 // Technic Axle 10 (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3737.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
-0 // Technic Angle Connector #2 (180 degree)
+0 // Technic Angle Connector #2 (180 degree) (light_grey)
 1 7 110 0 0 0 0 1 1 0 0 0 1 0 32034.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 150 0 0 1 0 0 0 1 0 0 0 1 4519.dat
 0 STEP
-0 // Technic Gear 16 Tooth
+0 // Technic Gear 16 Tooth (light_grey)
 1 7 150 0 0 0 0 -1 0 1 0 1 0 0 4019.dat
-0 // Technic Gear 24 Tooth with Single Axle Hole
+0 // Technic Gear 24 Tooth with Single Axle Hole (light_grey)
 1 7 70 0 0 0 0 -1 0 1 0 1 0 0 3648b.dat
 0 STEP
-0 // Technic Brick  1 x  2 with Holes
+0 // Technic Brick  1 x  2 with Holes (light_grey)
 1 7 170 -10 -10 0 0 -1 0 1 0 1 0 0 32000.dat
-0 // Technic Brick  1 x  2 with Holes
+0 // Technic Brick  1 x  2 with Holes (light_grey)
 1 7 50 -10 -10 0 0 -1 0 1 0 1 0 0 32000.dat
 
 
@@ -666,23 +666,23 @@
 0 FILE 8448 - box1step16.ldr
 0 box1step16
 0 Name: 8448 - box1step16.ldr
-0 // Technic Axle  8
+0 // Technic Axle  8 (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3707.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_grey)
 1 7 -75 0 0 0 0 1 0 1 0 -1 0 0 32123a.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (light_grey)
 1 7 -60 -10 0 0 0 1 0 1 0 -1 0 0 3700.dat
 0 STEP
-0 // Technic Gear 16 Tooth
+0 // Technic Gear 16 Tooth (light_grey)
 1 7 -40 0 0 0 0 1 0 1 0 -1 0 0 4019.dat
-0 // Technic Gear 16 Tooth
+0 // Technic Gear 16 Tooth (light_grey)
 1 7 -20 0 0 0 0 1 0 1 0 -1 0 0 4019.dat
 0 STEP
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (light_grey)
 1 7 60 -10 0 0 0 1 0 1 0 -1 0 0 3700.dat
 
 
@@ -693,29 +693,29 @@
 0 FILE 8448 - box1step20.ldr
 0 box1step20
 0 Name: 8448 - box1step20.ldr
-0 // Technic Brick  1 x  6 with Holes
+0 // Technic Brick  1 x  6 with Holes (black)
 1 0 0 0 0 0 0 -1 0 1 0 1 0 0 3894.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 10 -40 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 10 -20 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 10 20 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 10 40 1 0 0 0 1 0 0 0 1 2780.dat
 0 STEP
-0 // Technic Brick  1 x 10 with Holes
+0 // Technic Brick  1 x 10 with Holes (black)
 1 0 -20 0 -100 0 0 -1 0 1 0 1 0 0 2730.dat
-0 // Technic Brick  1 x 10 with Holes
+0 // Technic Brick  1 x 10 with Holes (black)
 1 0 -20 0 100 0 0 -1 0 1 0 1 0 0 2730.dat
 0 STEP
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (black)
 1 0 -20 -8 160 0 0 -1 0 1 0 1 0 0 3710.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (black)
 1 0 -20 -8 -160 0 0 -1 0 1 0 1 0 0 3710.dat
 
 
@@ -726,70 +726,70 @@
 0 FILE 8448 - box2.ldr
 0 box2
 0 Name: 8448 - box2.ldr
-0 // Plate  1 x 10
+0 // Plate  1 x 10 (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 4477.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 STEP
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (light_grey)
 1 7 -50 -8 -50 0 0 1 0 1 0 -1 0 0 3666.dat
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (light_grey)
 1 7 50 -8 -50 0 0 1 0 1 0 -1 0 0 3666.dat
-0 // Technic Plate  2 x  6 with Holes
+0 // Technic Plate  2 x  6 with Holes (black)
 1 0 -80 -8 -50 0 0 1 0 1 0 -1 0 0 32001.dat
-0 // Technic Plate  2 x  6 with Holes
+0 // Technic Plate  2 x  6 with Holes (black)
 1 0 80 -8 -50 0 0 1 0 1 0 -1 0 0 32001.dat
 0 STEP
-0 // Technic Brick  1 x  2 with Holes
+0 // Technic Brick  1 x  2 with Holes (black)
 1 0 -60 -32 0 1 0 0 0 1 0 0 0 1 32000.dat
-0 // Technic Brick  1 x  2 with Holes
+0 // Technic Brick  1 x  2 with Holes (black)
 1 0 60 -32 0 1 0 0 0 1 0 0 0 1 32000.dat
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (light_grey)
 1 7 -90 -32 0 1 0 0 0 1 0 0 0 1 6541.dat
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (light_grey)
 1 7 90 -32 0 1 0 0 0 1 0 0 0 1 6541.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (light_grey)
 1 7 30 -8 0 1 0 0 0 1 0 0 0 1 6141.dat
-0 // Brick  1 x  1 Round with Hollow Stud
+0 // Brick  1 x  1 Round with Hollow Stud (light_grey)
 1 7 30 -32 0 1 0 0 0 1 0 0 0 1 3062b.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (light_grey)
 1 7 30 -40 0 1 0 0 0 1 0 0 0 1 6141.dat
 0 STEP
-0 // Technic Brick  1 x  2 with Holes
+0 // Technic Brick  1 x  2 with Holes (black)
 1 0 -80 -32 -20 1 0 0 0 1 0 0 0 1 32000.dat
-0 // Technic Brick  1 x  2 with Holes
+0 // Technic Brick  1 x  2 with Holes (black)
 1 0 80 -32 -20 1 0 0 0 1 0 0 0 1 32000.dat
-0 // Technic Brick  1 x  2 with Holes
+0 // Technic Brick  1 x  2 with Holes (black)
 1 0 -80 -32 -60 1 0 0 0 1 0 0 0 1 32000.dat
-0 // Technic Brick  1 x  2 with Holes
+0 // Technic Brick  1 x  2 with Holes (black)
 1 0 80 -32 -60 1 0 0 0 1 0 0 0 1 32000.dat
 0 STEP
-0 // Technic Brick  1 x  2 with Holes
+0 // Technic Brick  1 x  2 with Holes (black)
 1 0 -60 -32 -80 1 0 0 0 1 0 0 0 1 32000.dat
-0 // Technic Brick  1 x  2 with Holes
+0 // Technic Brick  1 x  2 with Holes (black)
 1 0 60 -32 -80 1 0 0 0 1 0 0 0 1 32000.dat
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (light_grey)
 1 7 -90 -32 -80 1 0 0 0 1 0 0 0 1 6541.dat
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (light_grey)
 1 7 90 -32 -80 1 0 0 0 1 0 0 0 1 6541.dat
 0 STEP
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 -90 -22 -80 0 0 -1 0 1 0 1 0 0 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 -70 -22 -80 0 0 -1 0 1 0 1 0 0 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 70 -22 -80 0 0 -1 0 1 0 1 0 0 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 90 -22 -80 0 0 -1 0 1 0 1 0 0 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 70 -22 0 0 0 1 0 1 0 -1 0 0 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 90 -22 0 0 0 1 0 1 0 -1 0 0 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 -70 -22 0 0 0 1 0 1 0 -1 0 0 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 -90 -22 0 0 0 1 0 1 0 -1 0 0 6558.dat
 0 STEP
 1 7 110 -2 -30 1 0 0 0 1 0 0 0 1 8448 - box2step7.ldr
@@ -798,77 +798,77 @@
 0 STEP
 1 0 0 -22 -40 1 0 0 0 1 0 0 0 1 8448 - box2step9.ldr
 0 STEP
-0 // Technic Axle  3 with Stud
+0 // Technic Axle  3 with Stud (dark_grey)
 1 8 -50 -22 2 0 0 -1 0 1 0 1 0 0 6587.dat
-0 // Technic Axle  3 with Stud
+0 // Technic Axle  3 with Stud (dark_grey)
 1 8 50 -22 2 0 0 -1 0 1 0 1 0 0 6587.dat
-0 // Technic Rotor  2 Blade with 4 Studs
+0 // Technic Rotor  2 Blade with 4 Studs (light_grey)
 1 7 -50 -40 -40 0 0 -1 0 1 0 1 0 0 32124.dat
-0 // Technic Rotor  2 Blade with 4 Studs
+0 // Technic Rotor  2 Blade with 4 Studs (light_grey)
 1 7 50 -40 -40 0 0 -1 0 1 0 1 0 0 32124.dat
 0 STEP
 1 0 -230 -2 -40 0 0 -1 0 1 0 1 0 0 8448 - box2step11.ldr
 1 0 230 -2 -40 0 0 1 0 1 0 -1 0 0 8448 - box2step11.ldr
 0 STEP
-0 // Technic Beam  5 x  0.5
+0 // Technic Beam  5 x  0.5 (black)
 1 0 -150 -2 -65 0 0 1 1 0 0 0 1 0 32017.dat
-0 // Technic Beam  5 x  0.5
+0 // Technic Beam  5 x  0.5 (black)
 1 0 150 -2 -65 0 0 1 1 0 0 0 1 0 32017.dat
-0 // Technic Beam  5 x  0.5
+0 // Technic Beam  5 x  0.5 (black)
 1 0 150 -42 -15 0 0 1 1 0 0 0 1 0 32017.dat
-0 // Technic Beam  5 x  0.5
+0 // Technic Beam  5 x  0.5 (black)
 1 0 -150 -42 -15 0 0 1 1 0 0 0 1 0 32017.dat
 0 STEP
 1 0 -110 -42 -40 0 0 -1 0 1 0 1 0 0 8448 - box2step13.ldr
 1 0 110 -42 -40 0 0 -1 0 1 0 1 0 0 8448 - box2step13.ldr
-0 // Technic Axle  5
+0 // Technic Axle  5 (black)
 1 0 -158 -138 -40 0 -0.6 -0.8 0 0.8 -0.6 1 0 0 32073.dat
-0 // Technic Axle  5
+0 // Technic Axle  5 (black)
 1 0 158 -138 -40 0 -0.8 -0.6 0 0.6 -0.8 1 0 0 32073.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 -158 -138 -20 0.8 -0.6 0 0.6 0.8 0 0 0 1 3713.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 158 -138 -20 0.6 -0.8 0 0.8 0.6 0 0 0 1 3713.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 -158 -138 -60 -0.8 0.6 0 0.6 0.8 0 0 0 -1 3713.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 158 -138 -60 -0.8 0.6 0 0.6 0.8 0 0 0 -1 3713.dat
 0 STEP
-0 // Technic Beam  5 x  0.5
+0 // Technic Beam  5 x  0.5 (black)
 1 0 150 -42 -65 0 0 1 1 0 0 0 1 0 32017.dat
-0 // Technic Beam  5 x  0.5
+0 // Technic Beam  5 x  0.5 (black)
 1 0 -150 -42 -65 0 0 1 1 0 0 0 1 0 32017.dat
 0 STEP
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (black)
 1 0 -110 -2 -80 -1 0 0 0 0 -1 0 -1 0 6629.dat
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (black)
 1 0 110 -2 -80 1 0 0 0 0 -1 0 1 0 6629.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -110 -22 -90 0 0 -1 0 1 0 1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 110 -22 -90 0 0 -1 0 1 0 1 0 0 2780.dat
 0 STEP
-0 // Technic Beam  2 x  4 Liftarm Bent 90
+0 // Technic Beam  2 x  4 Liftarm Bent 90 (light_grey)
 1 7 -50 -22 -100 0 0 -1 1 0 0 0 -1 0 32140.dat
-0 // Technic Beam  2 x  4 Liftarm Bent 90
+0 // Technic Beam  2 x  4 Liftarm Bent 90 (light_grey)
 1 7 50 -22 -100 0 0 1 1 0 0 0 1 0 32140.dat
-0 // Technic Axle  3 with Stud
+0 // Technic Axle  3 with Stud (dark_grey)
 1 8 -50 -22 -82 0 0 -1 0 -1 0 -1 0 0 6587.dat
-0 // Technic Axle  3 with Stud
+0 // Technic Axle  3 with Stud (dark_grey)
 1 8 50 -22 -82 0 0 -1 0 -1 0 -1 0 0 6587.dat
 0 STEP
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (black)
 1 0 -90 -40 -70 0 0 1 0 1 0 -1 0 0 3460.dat
-0 // Plate  1 x  8
+0 // Plate  1 x  8 (black)
 1 0 90 -40 -70 0 0 1 0 1 0 -1 0 0 3460.dat
-0 // Plate  1 x  3
+0 // Plate  1 x  3 (black)
 1 0 -90 -48 -120 0 0 1 0 1 0 -1 0 0 3623.dat
-0 // Plate  1 x  3
+0 // Plate  1 x  3 (black)
 1 0 90 -48 -120 0 0 1 0 1 0 -1 0 0 3623.dat
 0 STEP
-0 // Plate  1 x 10
+0 // Plate  1 x 10 (black)
 1 0 0 -48 -80 -1 0 0 0 1 0 0 0 -1 4477.dat
-0 // Plate  1 x 10
+0 // Plate  1 x 10 (black)
 1 0 0 -48 0 -1 0 0 0 1 0 0 0 -1 4477.dat
 0 STEP
 
@@ -879,26 +879,26 @@
 0 FILE 8448 - box2step7.ldr
 0 box2step7
 0 Name: 8448 - box2step7.ldr
-0 // Technic Beam  2 x  4 Liftarm Bent 90
+0 // Technic Beam  2 x  4 Liftarm Bent 90 (light_grey)
 1 7 -60 -20 50 0 0 1 1 0 0 0 1 0 32140.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 0 -20 40 0 0 1 0 -1 0 1 0 0 2780.dat
 0 STEP
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (black)
 1 0 0 0 30 1 0 0 0 0 -1 0 1 0 6629.dat
 0 STEP
-0 // Technic Axle  8
+0 // Technic Axle  8 (black)
 1 0 0 0 0 0 0 -1 0 1 0 1 0 0 3707.dat
-0 // Technic Beam  5 x  0.5
+0 // Technic Beam  5 x  0.5 (black)
 1 0 40 0 15 0 0 -1 -1 0 0 0 1 0 32017.dat
 0 STEP
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_grey)
 1 7 0 0 0 0 0 -1 0 1 0 1 0 0 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_grey)
 1 7 0 0 -20 0 0 -1 0 1 0 1 0 0 6536.dat
 
 
@@ -908,26 +908,26 @@
 0 FILE 8448 - box2step8.ldr
 0 box2step8
 0 Name: 8448 - box2step8.ldr
-0 // Technic Beam  2 x  4 Liftarm Bent 90
+0 // Technic Beam  2 x  4 Liftarm Bent 90 (light_grey)
 1 7 60 -20 50 0 0 -1 1 0 0 0 -1 0 32140.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 0 -20 40 0 0 -1 0 -1 0 -1 0 0 2780.dat
 0 STEP
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (black)
 1 0 0 0 30 -1 0 0 0 0 -1 0 -1 0 6629.dat
 0 STEP
-0 // Technic Axle  8
+0 // Technic Axle  8 (black)
 1 0 0 0 0 0 0 1 0 1 0 -1 0 0 3707.dat
-0 // Technic Beam  5 x  0.5
+0 // Technic Beam  5 x  0.5 (black)
 1 0 -40 0 15 0 0 1 1 0 0 0 1 0 32017.dat
 0 STEP
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_grey)
 1 7 0 0 0 0 0 1 0 1 0 -1 0 0 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_grey)
 1 7 0 0 -20 0 0 1 0 1 0 -1 0 0 6536.dat
 
 
@@ -938,46 +938,46 @@
 0 FILE 8448 - box2step9.ldr
 0 box2step9
 0 Name: 8448 - box2step9.ldr
-0 // Technic Differential with Gear 16 Tooth and 24 Tooth
+0 // Technic Differential with Gear 16 Tooth and 24 Tooth (dark_grey)
 1 8 0 0 0 0 0 -1 0 1 0 1 0 0 6573.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
-0 // Technic Gear 12 Tooth Bevel
+0 // Technic Gear 12 Tooth Bevel (light_grey)
 1 7 0 17 0 0 -1 0 0 0 -1 1 0 0 6589.dat
 0 STEP
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 -40 0 0 1 0 0 0 -1 0 0 0 -1 3705.dat
-0 // Technic Gear 12 Tooth Bevel
+0 // Technic Gear 12 Tooth Bevel (light_grey)
 1 7 -17 0 0 0 0 1 0 -1 0 1 0 0 6589.dat
 0 STEP
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 40 0 0 1 0 0 0 -1 0 0 0 -1 3705.dat
-0 // Technic Gear 12 Tooth Bevel
+0 // Technic Gear 12 Tooth Bevel (light_grey)
 1 7 17 0 0 0 0 -1 0 -1 0 -1 0 0 6589.dat
 0 STEP
-0 // Technic Angle Connector #2 (180 degree)
+0 // Technic Angle Connector #2 (180 degree) (light_grey)
 1 7 -50 0 0 -1 0 0 0 -1 0 0 0 1 32034.dat
-0 // Technic Angle Connector #2 (180 degree)
+0 // Technic Angle Connector #2 (180 degree) (light_grey)
 1 7 50 0 0 -1 0 0 0 -1 0 0 0 1 32034.dat
-0 // Technic Universal Joint 4L with Bush Ends with Centre Type 2 (Complete)
+0 // Technic Universal Joint 4L with Bush Ends with Centre Type 2 (Complete) (light_grey)
 1 7 -100 0 0 0 0 1 0 -1 0 1 0 0 3712c01.dat
-0 // Technic Universal Joint 4L with Bush Ends with Centre Type 2 (Complete)
+0 // Technic Universal Joint 4L with Bush Ends with Centre Type 2 (Complete) (light_grey)
 1 7 100 0 0 0 0 -1 0 -1 0 -1 0 0 3712c01.dat
 0 STEP
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 -140 0 0 1 0 0 0 -1 0 0 0 -1 32062.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 140 0 0 1 0 0 0 -1 0 0 0 -1 32062.dat
-0 // Technic Universal Joint 4L with Bush Ends with Centre Type 2 (Complete)
+0 // Technic Universal Joint 4L with Bush Ends with Centre Type 2 (Complete) (light_grey)
 1 7 180 0 0 0 0 1 0 -1 0 1 0 0 3712c01.dat
-0 // Technic Universal Joint 4L with Bush Ends with Centre Type 2 (Complete)
+0 // Technic Universal Joint 4L with Bush Ends with Centre Type 2 (Complete) (light_grey)
 1 7 -180 0 0 0 0 -1 0 -1 0 -1 0 0 3712c01.dat
 0 STEP
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 -240 0 0 1 0 0 0 -1 0 0 0 -1 3705.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 240 0 0 1 0 0 0 -1 0 0 0 -1 3705.dat
 
 
@@ -987,33 +987,33 @@
 0 FILE 8448 - box2step11.ldr
 0 box2step11
 0 Name: 8448 - box2step11.ldr
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 4519.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
-0 // Technic Beam  4 x  0.5 Liftarm with Boss
+0 // Technic Beam  4 x  0.5 Liftarm with Boss (black)
 1 0 -20 0 0 0 1 0 1 0 0 0 0 -1 2825.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 0 0 -40 1 0 0 0 -1 0 0 0 -1 6558.dat
 0 STEP
-0 // Technic Cross Block 1 x 3 (Axle/Pin/Axle)
+0 // Technic Cross Block 1 x 3 (Axle/Pin/Axle) (light_grey)
 1 7 0 -20 0 1 0 0 0 -1 0 0 0 -1 32184.dat
 0 STEP
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 0 -40 0 1 0 0 0 1 0 0 0 1 4519.dat
-0 // Technic Beam  4 x  0.5 Liftarm with Boss
+0 // Technic Beam  4 x  0.5 Liftarm with Boss (black)
 1 0 20 0 0 0 -1 0 -1 0 0 0 0 -1 2825.dat
 0 STEP
-0 // Technic Beam  4 x  0.5 Liftarm with Boss
+0 // Technic Beam  4 x  0.5 Liftarm with Boss (black)
 1 0 -20 -40 0 0 1 0 1 0 0 0 0 -1 2825.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 0 -40 -40 1 0 0 0 -1 0 0 0 -1 6558.dat
 0 STEP
 1 8 0 -150 -40 0 0 1 0 1 0 -1 0 0 8448 - box2step11shock.ldr
 0 STEP
-0 // Technic Beam  4 x  0.5 Liftarm with Boss
+0 // Technic Beam  4 x  0.5 Liftarm with Boss (black)
 1 0 20 -40 0 0 -1 0 -1 0 0 0 0 -1 2825.dat
 
 
@@ -1053,11 +1053,11 @@
 0 BFC CERTIFY CCW
 
 0 //Start cap reference(s)
-0 // ~Technic Shock Absorber  6.5L Cylinder
+0 // ~Technic Shock Absorber  6.5L Cylinder (main_colour)
 1 16 32 14 0 0.949 -0.316 0 0.316 0.949 0 0 0 1 4255.dat
 
 0 //End cap reference(s)
-0 // ~Technic Shock Absorber  6.5L Piston Rod
+0 // ~Technic Shock Absorber  6.5L Piston Rod (black)
 1 0 0 110 0 0.949 -0.316 0 0.316 0.949 0 0 0 1 4254.dat
 
 0 //Spring mesh reference
@@ -5363,17 +5363,17 @@
 0 FILE 8448 - box2step13.ldr
 0 box2step13
 0 Name: 8448 - box2step13.ldr
-0 // Technic Axle  5
+0 // Technic Axle  5 (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 32073.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
-0 // Technic Cross Block 1 x 3 (Axle/Pin/Axle)
+0 // Technic Cross Block 1 x 3 (Axle/Pin/Axle) (light_grey)
 1 7 10 -20 0 1 0 0 0 1 0 0 0 1 32184.dat
-0 // Technic Cross Block 1 x 3 (Axle/Pin/Axle)
+0 // Technic Cross Block 1 x 3 (Axle/Pin/Axle) (light_grey)
 1 7 -10 -20 0 1 0 0 0 1 0 0 0 1 32184.dat
-0 // Technic Axle  5
+0 // Technic Axle  5 (black)
 1 0 0 -40 0 1 0 0 0 1 0 0 0 1 32073.dat
 
 
@@ -5385,20 +5385,20 @@
 0 FILE 8448 - box2step22sub1.ldr
 0 box2step22sub1
 0 Name: 8448 - box2step22sub1.ldr
-0 // Technic Axle  3 with Stud
+0 // Technic Axle  3 with Stud (dark_grey)
 1 8 0 0 0 0 0 1 0 1 0 -1 0 0 6587.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (blue)
 1 1 0 0 -18 0 0 -1 0 -1 0 -1 0 0 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (blue)
 1 1 0 0 2 0 0 -1 0 -1 0 -1 0 0 6536.dat
 0 STEP
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 -20 2 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -10 -20 -18 1 0 0 0 1 0 0 0 1 2780.dat
 
 
@@ -5407,19 +5407,19 @@
 0 FILE 8448 - box2step22sub2.ldr
 0 box2step22sub2
 0 Name: 8448 - box2step22sub2.ldr
-0 // Technic Axle  3 with Stud
+0 // Technic Axle  3 with Stud (dark_grey)
 1 8 0 0 0 0 0 1 0 1 0 -1 0 0 6587.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (blue)
 1 1 0 0 -18 0 0 -1 0 -1 0 -1 0 0 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (blue)
 1 1 0 0 2 0 0 -1 0 -1 0 -1 0 0 6536.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 -20 2 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 10 -20 -18 1 0 0 0 1 0 0 0 1 2780.dat
 
 
@@ -5428,19 +5428,19 @@
 0 FILE 8448 - box2step22sub3.ldr
 0 box2step22sub3
 0 Name: 8448 - box2step22sub3.ldr
-0 // Technic Beam  5 x  0.5
+0 // Technic Beam  5 x  0.5 (black)
 1 0 0 0 0 0 -1 0 1 0 0 0 0 1 32017.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 5 0 -40 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 5 0 0 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 5 0 40 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Beam  5 x  0.5
+0 // Technic Beam  5 x  0.5 (black)
 1 0 -10 0 0 0 -1 0 1 0 0 0 0 1 32017.dat
 
 
@@ -5449,89 +5449,89 @@
 0 FILE 8448 - box3.ldr
 0 box3
 0 Name: 8448 - box3.ldr
-0 // Technic Brick  1 x 14 with Holes
+0 // Technic Brick  1 x 14 with Holes (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 32018.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -100 10 -10 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 100 10 -10 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 -60 10 -10 0 0 1 0 1 0 -1 0 0 3749.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 60 10 -10 0 0 1 0 1 0 -1 0 0 3749.dat
 0 STEP
-0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle
+0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle (black)
 1 0 -120 10 -15 0 0 1 1 0 0 0 1 0 2905.dat
-0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle
+0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle (black)
 1 0 120 10 -15 0 0 -1 1 0 0 0 -1 0 2905.dat
 0 STEP
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (black)
 1 0 -80 10 -25 0 0 -1 1 0 0 0 -1 0 6632.dat
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (black)
 1 0 120 10 -25 0 0 -1 1 0 0 0 -1 0 6632.dat
 0 STEP
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 -120 -30 -40 0 0 -1 0 1 0 1 0 0 4519.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 120 -30 -40 0 0 -1 0 1 0 1 0 0 4519.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 -120 10 -30 0 0 -1 0 1 0 1 0 0 3705.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 -80 10 -30 0 0 -1 0 1 0 1 0 0 3705.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 80 10 -30 0 0 -1 0 1 0 1 0 0 3705.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 120 10 -30 0 0 -1 0 1 0 1 0 0 3705.dat
 0 STEP
 1 8 -170 30 -40 1 0 0 0 1 0 0 0 1 8448 - box3step5.ldr
 0 STEP
 1 8 170 30 -40 1 0 0 0 1 0 0 0 1 8448 - box3step6.ldr
 0 STEP
-0 // Technic Axle  6
+0 // Technic Axle  6 (black)
 1 0 -40 10 -50 0 0.6 0.8 0 0.8 -0.6 -1 0 0 3706.dat
-0 // Technic Axle  6
+0 // Technic Axle  6 (black)
 1 0 40 10 -50 0 -0.6 0.8 0 0.8 0.6 -1 0 0 3706.dat
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (black)
 1 0 -40 10 -20 -0.8 0 -0.6 0.6 0 -0.8 0 -1 0 6629.dat
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (black)
 1 0 40 10 -20 0.8 0 0.6 0.6 0 -0.8 0 1 0 6629.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 -160 -70 -40 0 0 1 0 1 0 -1 0 0 4519.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 160 -70 -40 0 -1 0 0 0 1 -1 0 0 4519.dat
 0 STEP
-0 // Technic Brick  1 x 10 with Holes
+0 // Technic Brick  1 x 10 with Holes (black)
 1 0 0 0 -40 1 0 0 0 1 0 0 0 1 2730.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 -120 -70 -40 0 0 -1 0 1 0 1 0 0 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 120 -70 -40 0 0 -1 0 1 0 1 0 0 6558.dat
 0 STEP
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (black)
 1 0 -40 10 -60 -0.8 0 -0.6 0.6 0 -0.8 0 -1 0 6629.dat
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (black)
 1 0 40 10 -60 0.8 0 0.6 0.6 0 -0.8 0 1 0 6629.dat
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (black)
 1 0 120 10 -55 0 0 -1 1 0 0 0 -1 0 6632.dat
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (black)
 1 0 -80 10 -55 0 0 -1 1 0 0 0 -1 0 6632.dat
 0 STEP
-0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle
+0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle (black)
 1 0 -120 10 -65 0 0 1 1 0 0 0 1 0 2905.dat
-0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle
+0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle (black)
 1 0 120 10 -65 0 0 -1 1 0 0 0 -1 0 2905.dat
 0 STEP
 1 7 0 0 -100 1 0 0 0 1 0 0 0 1 8448 - box3step11.ldr
 0 STEP
-0 // Technic Plate  2 x  6 with Holes
+0 // Technic Plate  2 x  6 with Holes (black)
 1 0 0 -8 -50 0 0 1 0 1 0 -1 0 0 32001.dat
-0 // Technic Steering Link  6L Type 2
+0 // Technic Steering Link  6L Type 2 (dark_grey)
 1 8 -230 10 -80 0 0 1 0 1 0 -1 0 0 32005.dat
-0 // Technic Steering Link  6L Type 2
+0 // Technic Steering Link  6L Type 2 (dark_grey)
 1 8 230 10 -80 0 0 -1 0 1 0 1 0 0 32005.dat
 0 STEP
 1 0 -120 -10 -270 1 0 0 0 0.963 0.271 0 -0.271 0.963 8448 - box3step13.ldr
@@ -5542,44 +5542,44 @@
 0 FILE 8448 - box3step5.ldr
 0 box3step5
 0 Name: 8448 - box3step5.ldr
-0 // Technic Suspension Arm  2 x  6.5 Type 2
+0 // Technic Suspension Arm  2 x  6.5 Type 2 (dark_grey)
 1 8 0 0 0 0 0 1 0 -1 0 1 0 0 32195a.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 STEP
-0 // Technic Steering Arm with 3 Ball Joints
+0 // Technic Steering Arm with 3 Ball Joints (light_grey)
 1 7 -60 -20 0 1 0 0 0 1 0 0 0 1 32186.dat
 0 STEP
-0 // Technic Axle  3 with Stud
+0 // Technic Axle  3 with Stud (dark_grey)
 1 8 -30 0 10 0 0 1 0 1 0 -1 0 0 6587.dat
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_grey)
 1 7 -30 0 25 -1 0 0 0 1 0 0 0 -1 32123a.dat
 1 8 -30 0 0 1 0 0 0 -1 0 0 0 -1 8448 - box3step5shock.ldr
 0 STEP
-0 // Technic Cross Block 1 x 3 (Axle/Pin/Axle)
+0 // Technic Cross Block 1 x 3 (Axle/Pin/Axle) (light_grey)
 1 7 10 -20 0 0 0 1 0 1 0 -1 0 0 32184.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 10 0 0 0 0 1 0 1 0 -1 0 0 32062.dat
 0 STEP
-0 // Technic Suspension Arm  2 x  6.5 Type 2
+0 // Technic Suspension Arm  2 x  6.5 Type 2 (dark_grey)
 1 8 0 -40 0 0 0 1 0 1 0 -1 0 0 32195a.dat
 0 STEP
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 10 -40 0 0 0 1 0 1 0 -1 0 0 32062.dat
 0 STEP
-0 // Technic Pin  3/4
+0 // Technic Pin  3/4 (dark_grey)
 1 8 50 0 -20 0 0 1 0 1 0 -1 0 0 32002.dat
-0 // Technic Pin  3/4
+0 // Technic Pin  3/4 (dark_grey)
 1 8 50 -40 -20 0 0 1 0 1 0 -1 0 0 32002.dat
-0 // Technic Pin  3/4
+0 // Technic Pin  3/4 (dark_grey)
 1 8 50 -40 20 0 0 -1 0 1 0 1 0 0 32002.dat
-0 // Technic Pin  3/4
+0 // Technic Pin  3/4 (dark_grey)
 1 8 50 0 20 0 0 -1 0 1 0 1 0 0 32002.dat
-0 // Technic Beam  6 x  0.5
+0 // Technic Beam  6 x  0.5 (light_grey)
 1 7 50 -50 -5 1 0 0 0 0 -1 0 1 0 32063.dat
-0 // Technic Beam  6 x  0.5
+0 // Technic Beam  6 x  0.5 (light_grey)
 1 7 50 -50 5 1 0 0 0 0 -1 0 1 0 32063.dat
 
 
@@ -5618,11 +5618,11 @@
 0 BFC CERTIFY CCW
 
 0 //Start cap reference(s)
-0 // ~Technic Shock Absorber  6.5L Cylinder
+0 // ~Technic Shock Absorber  6.5L Cylinder (main_colour)
 1 16 0 0 0 0.928 0.371 0 -0.371 0.928 0 0 0 1 4255.dat
 
 0 //End cap reference(s)
-0 // ~Technic Shock Absorber  6.5L Piston Rod
+0 // ~Technic Shock Absorber  6.5L Piston Rod (black)
 1 0 40 100 0 0.928 0.371 0 -0.371 0.928 0 0 0 1 4254.dat
 
 0 //Spring mesh reference
@@ -9928,43 +9928,43 @@
 0 FILE 8448 - box3step6.ldr
 0 box3step6
 0 Name: 8448 - box3step6.ldr
-0 // Technic Suspension Arm  2 x  6.5 Type 2
+0 // Technic Suspension Arm  2 x  6.5 Type 2 (dark_grey)
 1 8 0 0 0 0 0 -1 0 -1 0 -1 0 0 32195a.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 STEP
-0 // Technic Steering Arm with 3 Ball Joints
+0 // Technic Steering Arm with 3 Ball Joints (light_grey)
 1 7 60 -20 0 1 0 0 0 1 0 0 0 1 32186.dat
 0 STEP
-0 // Technic Axle  3 with Stud
+0 // Technic Axle  3 with Stud (dark_grey)
 1 8 30 0 10 0 0 1 0 1 0 -1 0 0 6587.dat
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_grey)
 1 7 30 0 25 -1 0 0 0 1 0 0 0 -1 32123a.dat
 0 STEP
-0 // Technic Cross Block 1 x 3 (Axle/Pin/Axle)
+0 // Technic Cross Block 1 x 3 (Axle/Pin/Axle) (light_grey)
 1 7 -10 -20 0 0 0 -1 0 1 0 1 0 0 32184.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 -10 0 0 0 0 -1 0 1 0 1 0 0 32062.dat
 0 STEP
-0 // Technic Suspension Arm  2 x  6.5 Type 2
+0 // Technic Suspension Arm  2 x  6.5 Type 2 (dark_grey)
 1 8 0 -40 0 0 0 -1 0 1 0 1 0 0 32195a.dat
 0 STEP
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 -10 -40 0 0 0 -1 0 1 0 1 0 0 32062.dat
 0 STEP
-0 // Technic Pin  3/4
+0 // Technic Pin  3/4 (dark_grey)
 1 8 -50 0 -20 0 0 1 0 1 0 -1 0 0 32002.dat
-0 // Technic Pin  3/4
+0 // Technic Pin  3/4 (dark_grey)
 1 8 -50 -40 -20 0 0 1 0 1 0 -1 0 0 32002.dat
-0 // Technic Pin  3/4
+0 // Technic Pin  3/4 (dark_grey)
 1 8 -50 -40 20 0 0 -1 0 1 0 1 0 0 32002.dat
-0 // Technic Pin  3/4
+0 // Technic Pin  3/4 (dark_grey)
 1 8 -50 0 20 0 0 -1 0 1 0 1 0 0 32002.dat
-0 // Technic Beam  6 x  0.5
+0 // Technic Beam  6 x  0.5 (light_grey)
 1 7 -50 -50 -5 1 0 0 0 0 -1 0 1 0 32063.dat
-0 // Technic Beam  6 x  0.5
+0 // Technic Beam  6 x  0.5 (light_grey)
 1 7 -50 -50 5 1 0 0 0 0 -1 0 1 0 32063.dat
 1 8 30 0 0 -1 0 0 0 -1 0 0 0 1 8448 - box3step5shock.ldr
 
@@ -9974,22 +9974,22 @@
 0 FILE 8448 - box3step11.ldr
 0 box3step11
 0 Name: 8448 - box3step11.ldr
-0 // Technic Brick  1 x  8 with Holes
+0 // Technic Brick  1 x  8 with Holes (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3702.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
-0 // Technic Axle  5
+0 // Technic Axle  5 (black)
 1 0 -60 10 20 0 0 1 0 1 0 -1 0 0 32073.dat
-0 // Technic Axle  5
+0 // Technic Axle  5 (black)
 1 0 60 10 20 0 0 1 0 1 0 -1 0 0 32073.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 60 10 -20 1 0 0 0 1 0 0 0 1 3713.dat
 0 STEP
-0 // Technic Gear  8 Tooth
+0 // Technic Gear  8 Tooth (light_grey)
 1 7 -60 10 20 1 0 0 0 1 0 0 0 1 3647.dat
-0 // Technic Gear  8 Tooth
+0 // Technic Gear  8 Tooth (light_grey)
 1 7 60 10 20 1 0 0 0 1 0 0 0 1 3647.dat
 
 
@@ -10002,48 +10002,48 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - box3step13.ldr
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 -10 -20 -10 0 0 1 0 1 0 -1 0 0 3705.dat
-0 // Technic Connector (Axle/Bush) Type 1
+0 // Technic Connector (Axle/Bush) Type 1 (black)
 1 0 -10 -20 -41.968 1 0 0 0 1 0 0 0 1 32039.dat
 0 STEP
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 -10 -20 -20 1 0 0 0 1 0 0 0 1 3713.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_grey)
 1 7 -10 -20 0 0 0 1 0 1 0 -1 0 0 6536.dat
 0 STEP
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 0 -20 -61.968 -1 0 0 0 1 0 0 0 -1 3705.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 0 0 -1.968 -1 0 0 0 1 0 0 0 -1 2780.dat
 0 STEP
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (black)
 1 0 -25 -60 -61.968 0 1 0 1 0 0 0 0 -1 32056.dat
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (black)
 1 0 -35 -60 -61.968 0 1 0 1 0 0 0 0 -1 32056.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 10 -20 -61.968 0 0 1 1 0 0 0 1 0 3713.dat
 0 STEP
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 0 -60 -101.968 -1 0 0 0 1 0 0 0 -1 3705.dat
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_grey)
 1 7 -15 -60 -101.968 0 0 1 0 1 0 -1 0 0 32123a.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_grey)
 1 7 0 -60 -101.968 1 0 0 0 -1 0 0 0 -1 6536.dat
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_grey)
 1 7 15 -60 -101.968 0 0 1 0 -1 0 1 0 0 32123a.dat
 0 STEP
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (black)
 1 0 25 -60 -61.968 0 1 0 1 0 0 0 0 -1 32056.dat
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (black)
 1 0 35 -60 -61.968 0 1 0 1 0 0 0 0 -1 32056.dat
 0 STEP
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 0 -80 -101.968 0 1 0 0 0 -1 -1 0 0 4519.dat
 0 STEP
-0 // Technic Steering Wheel Large
+0 // Technic Steering Wheel Large (black)
 1 0 0 -80 -123.968 1 0 0 0 0 -1 0 1 0 2741.dat
-0 // Technic Universal Joint 4L End with Bush End
+0 // Technic Universal Joint 4L End with Bush End (light_grey)
 1 7 0 -80 -81.968 -1 0 0 0 1 0 0 0 -1 3712.dat
 
 
@@ -10056,15 +10056,15 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - box3step14.ldr
-0 // Technic Axle Towball
+0 // Technic Axle Towball (light_grey)
 1 7 130 2 0 0 -1 0 1 0 0 0 0 1 2736.dat
-0 // Technic Gear Rack  1 x 14 with Holes
+0 // Technic Gear Rack  1 x 14 with Holes (light_grey)
 1 7 0 0 0 1 0 0 0 1 0 0 0 1 32185.dat
-0 // Technic Axle Towball
+0 // Technic Axle Towball (light_grey)
 1 7 -130 2 0 0 -1 0 1 0 0 0 0 1 2736.dat
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_grey)
 1 7 -130 15 0 0 -1 0 0 0 1 -1 0 0 32123a.dat
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_grey)
 1 7 130 15 0 0 -1 0 0 0 1 -1 0 0 32123a.dat
 
 
@@ -10076,15 +10076,15 @@
 0 Name: 8448 - box3step13sub1.ldr
 0 !LDRAW_ORG Unofficial_Model
 0 !THEME Technic
-0 // Technic Axle  8
+0 // Technic Axle  8 (black)
 1 0 0 0 -97.4 0 1 0 0 0 -1 -1 0 0 3707.dat
-0 // Technic Universal Joint 4L End with Bush End
+0 // Technic Universal Joint 4L End with Bush End (light_grey)
 1 7 0 0 -164.8 0 1 0 -1 0 0 0 0 1 3712.dat
-0 // Technic Universal Joint Centre Type 2
+0 // Technic Universal Joint Centre Type 2 (light_grey)
 1 7 0 0 -194.8 0 1 0 -1 0 0 0 0 1 3326b.dat
-0 // Technic Universal Joint 4L End with Bush End
+0 // Technic Universal Joint 4L End with Bush End (light_grey)
 1 7 0 0 -30 0 -1 0 -1 0 0 0 0 -1 3712.dat
-0 // Technic Universal Joint Centre Type 2
+0 // Technic Universal Joint Centre Type 2 (light_grey)
 1 7 0 0 0 -1 0 0 0 -1 0 0 0 1 3326b.dat
 
 
@@ -10096,126 +10096,126 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - box4.ldr
-0 // Technic Axle  5
+0 // Technic Axle  5 (black)
 1 0 0 0 0 0 0 -1 0 1 0 1 0 0 32073.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_grey)
 1 7 0 0 50 1 0 0 0 1 0 0 0 1 6538b.dat
 0 STEP
-0 // Technic Brick  1 x  8 with Holes
+0 // Technic Brick  1 x  8 with Holes (black)
 1 0 0 -10 20 1 0 0 0 1 0 0 0 1 3702.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 0 0 0 1 0 0 0 1 0 0 0 1 3713.dat
-0 // Technic Pin
+0 // Technic Pin (light_grey)
 1 7 -60 0 10 0 0 -1 0 1 0 1 0 0 3673.dat
 0 STEP
-0 // Technic Gear 16 Tooth with Clutch
+0 // Technic Gear 16 Tooth with Clutch (dark_grey)
 1 8 0 0 -20 -1 0 0 0 1 0 0 0 -1 6542a.dat
-0 // Technic Brick  1 x  2 with Holes
+0 // Technic Brick  1 x  2 with Holes (light_grey)
 1 7 -50 -10 0 -1 0 0 0 1 0 0 0 -1 32000.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_grey)
 1 7 0 0 -50 -1 0 0 0 1 0 0 0 -1 6538b.dat
 0 STEP
-0 // Technic Axle  8
+0 // Technic Axle  8 (black)
 1 0 0 0 -130 0 0 -1 0 1 0 1 0 0 3707.dat
-0 // Technic Transmission Driving Ring
+0 // Technic Transmission Driving Ring (light_grey)
 1 7 0 0 -50 0.707 0.707 0 -0.707 0.707 0 0 0 1 6539.dat
 0 STEP
-0 // Technic Gear 16 Tooth with Clutch
+0 // Technic Gear 16 Tooth with Clutch (dark_grey)
 1 8 0 0 -80 1 0 0 0 1 0 0 0 1 6542a.dat
 0 STEP
 1 8 -40 0 -50 1 0 0 0 1 0 0 0 1 8448 - box4step6.ldr
 0 STEP
 1 8 40 0 -50 1 0 0 0 1 0 0 0 1 8448 - box4step7.ldr
 0 STEP
-0 // Technic Brick  1 x  8 with Holes
+0 // Technic Brick  1 x  8 with Holes (black)
 1 0 0 -10 -100 1 0 0 0 1 0 0 0 1 3702.dat
 0 STEP
-0 // Technic Gear 20 Tooth Double Bevel
+0 // Technic Gear 20 Tooth Double Bevel (light_grey)
 1 7 0 0 -120 1 0 0 0 1 0 0 0 1 32269.dat
-0 // Technic Gear 12 Tooth Double Bevel
+0 // Technic Gear 12 Tooth Double Bevel (light_grey)
 1 7 -40 0 -120 1 0 0 0 1 0 0 0 1 32270.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 40 0 -120 -1 0 0 0 1 0 0 0 -1 3713.dat
 0 STEP
-0 // Technic Gear 20 Tooth Double Bevel
+0 // Technic Gear 20 Tooth Double Bevel (light_grey)
 1 7 40 0 -140 -1 0 0 0 1 0 0 0 -1 32269.dat
-0 // Technic Gear 12 Tooth Double Bevel
+0 // Technic Gear 12 Tooth Double Bevel (light_grey)
 1 7 0 0 -140 -1 0 0 0 1 0 0 0 -1 32270.dat
 0 STEP
-0 // Technic Gear 24 Tooth with Single Axle Hole
+0 // Technic Gear 24 Tooth with Single Axle Hole (light_grey)
 1 7 0 0 -160 -1 0 0 0 1 0 0 0 -1 3648b.dat
 0 STEP
-0 // Technic Brick  1 x  6 with Holes
+0 // Technic Brick  1 x  6 with Holes (black)
 1 0 0 -10 -180 1 0 0 0 1 0 0 0 1 3894.dat
 0 STEP
-0 // Technic Gear 16 Tooth
+0 // Technic Gear 16 Tooth (light_grey)
 1 7 0 0 -200 -1 0 0 0 1 0 0 0 -1 4019.dat
 0 STEP
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 0 0 80 0 0 -1 0 1 0 1 0 0 4519.dat
-0 // Technic Brick  1 x  6 with Holes
+0 // Technic Brick  1 x  6 with Holes (black)
 1 0 0 -10 80 1 0 0 0 1 0 0 0 1 3894.dat
-0 // Technic Gear 24 Tooth with Single Axle Hole
+0 // Technic Gear 24 Tooth with Single Axle Hole (light_grey)
 1 7 0 0 100 1 0 0 0 1 0 0 0 1 3648b.dat
 0 STEP
-0 // Plate  1 x 10
+0 // Plate  1 x 10 (black)
 1 0 0 -18 -180 1 0 0 0 1 0 0 0 1 4477.dat
-0 // Plate  1 x 10
+0 // Plate  1 x 10 (black)
 1 0 0 -18 -100 1 0 0 0 1 0 0 0 1 4477.dat
-0 // Plate  2 x 10
+0 // Plate  2 x 10 (black)
 1 0 0 -18 30 1 0 0 0 1 0 0 0 1 3832.dat
 0 STEP
-0 // Plate  1 x  2 without Groove with 1 Centre Stud
+0 // Plate  1 x  2 without Groove with 1 Centre Stud (light_grey)
 1 7 -40 -26 20 1 0 0 0 1 0 0 0 1 3794a.dat
-0 // Plate  1 x  2 without Groove with 1 Centre Stud
+0 // Plate  1 x  2 without Groove with 1 Centre Stud (light_grey)
 1 7 0 -26 20 1 0 0 0 1 0 0 0 1 3794a.dat
-0 // Plate  1 x  2 without Groove with 1 Centre Stud
+0 // Plate  1 x  2 without Groove with 1 Centre Stud (light_grey)
 1 7 40 -26 20 1 0 0 0 1 0 0 0 1 3794a.dat
-0 // Plate  1 x  2 without Groove with 1 Centre Stud
+0 // Plate  1 x  2 without Groove with 1 Centre Stud (light_grey)
 1 7 -40 -26 40 1 0 0 0 1 0 0 0 1 3794a.dat
-0 // Plate  1 x  2 without Groove with 1 Centre Stud
+0 // Plate  1 x  2 without Groove with 1 Centre Stud (light_grey)
 1 7 0 -26 40 1 0 0 0 1 0 0 0 1 3794a.dat
-0 // Plate  1 x  2 without Groove with 1 Centre Stud
+0 // Plate  1 x  2 without Groove with 1 Centre Stud (light_grey)
 1 7 40 -26 40 1 0 0 0 1 0 0 0 1 3794a.dat
-0 // Plate  1 x  2 without Groove with 1 Centre Stud
+0 // Plate  1 x  2 without Groove with 1 Centre Stud (light_grey)
 1 7 40 -26 -100 1 0 0 0 1 0 0 0 1 3794a.dat
-0 // Plate  1 x  2 without Groove with 1 Centre Stud
+0 // Plate  1 x  2 without Groove with 1 Centre Stud (light_grey)
 1 7 0 -26 -100 1 0 0 0 1 0 0 0 1 3794a.dat
-0 // Plate  1 x  2 without Groove with 1 Centre Stud
+0 // Plate  1 x  2 without Groove with 1 Centre Stud (light_grey)
 1 7 -40 -26 -100 1 0 0 0 1 0 0 0 1 3794a.dat
 0 STEP
 1 1 0 -50 40 1 0 0 0 1 0 0 0 1 8448 - box4step17.ldr
 0 STEP
 1 7 -20 -40 -130 1 0 0 0 1 0 0 0 1 8448 - box4step18.ldr
-0 // Brick  2 x  3
+0 // Brick  2 x  3 (light_grey)
 1 7 0 -50 10 1 0 0 0 1 0 0 0 1 3002.dat
 0 STEP
-0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring (black)
 1 0 40 -50 -100 -1 0 0 0 1 0 0 0 -1 3665a.dat
-0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring (black)
 1 0 -40 -50 -100 -1 0 0 0 1 0 0 0 -1 3665a.dat
-0 // Slope Brick 33  3 x  1 Inverted with Notch and Thick Front
+0 // Slope Brick 33  3 x  1 Inverted with Notch and Thick Front (black)
 1 0 -40 -50 20 1 0 0 0 1 0 0 0 1 4287a.dat
-0 // Slope Brick 33  3 x  1 Inverted with Notch and Thick Front
+0 // Slope Brick 33  3 x  1 Inverted with Notch and Thick Front (black)
 1 0 40 -50 20 1 0 0 0 1 0 0 0 1 4287a.dat
 0 STEP
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (light_grey)
 1 7 0 -58 -90 0 0 1 0 1 0 -1 0 0 3023.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (light_grey)
 1 7 0 -58 10 0 0 1 0 1 0 -1 0 0 3710.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (light_grey)
 1 7 -30 -58 30 0 0 1 0 1 0 -1 0 0 3022.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (light_grey)
 1 7 30 -58 30 0 0 1 0 1 0 -1 0 0 3022.dat
 0 STEP
-0 // Technic Plate  2 x  6 with 2 Position Gear Shift Gate
+0 // Technic Plate  2 x  6 with 2 Position Gear Shift Gate (light_grey)
 1 7 30 -58 -50 1 0 0 0 1 0 0 0 1 6631.dat
-0 // Technic Plate  2 x  6 with 2 Position Gear Shift Gate
+0 // Technic Plate  2 x  6 with 2 Position Gear Shift Gate (light_grey)
 1 7 -30 -58 -50 -1 0 0 0 1 0 0 0 -1 6631.dat
 0 STEP
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (light_grey)
 1 7 10 -66 -80 1 0 0 0 1 0 0 0 1 2431.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (light_grey)
 1 7 10 -66 -20 1 0 0 0 1 0 0 0 1 2431.dat
 0 STEP
 0 STEP
@@ -10230,19 +10230,19 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - box4step6.ldr
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_grey)
 1 7 0 0 0 1 0 0 0 1 0 0 0 1 6538b.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 0 0 40 0 0 1 0 1 0 -1 0 0 3705.dat
-0 // Technic Axle  8
+0 // Technic Axle  8 (black)
 1 0 0 0 -80 0 0 1 0 1 0 -1 0 0 3707.dat
 0 STEP
-0 // Technic Gear 16 Tooth with Clutch
+0 // Technic Gear 16 Tooth with Clutch (dark_grey)
 1 8 0 0 30 -1 0 0 0 1 0 0 0 -1 6542a.dat
-0 // Technic Transmission Driving Ring
+0 // Technic Transmission Driving Ring (light_grey)
 1 7 0 0 0 -0.707 -0.707 0 -0.707 0.707 0 0 0 -1 6539.dat
 0 STEP
-0 // Technic Gear 16 Tooth with Clutch
+0 // Technic Gear 16 Tooth with Clutch (dark_grey)
 1 8 0 0 -30 1 0 0 0 1 0 0 0 1 6542a.dat
 
 
@@ -10255,19 +10255,19 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - box4step7.ldr
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_grey)
 1 7 0 0 0 1 0 0 0 1 0 0 0 1 6538b.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 0 0 40 0 0 1 0 1 0 -1 0 0 3705.dat
-0 // Technic Axle  8
+0 // Technic Axle  8 (black)
 1 0 0 0 -80 0 0 1 0 1 0 -1 0 0 3707.dat
-0 // Technic Transmission Driving Ring Extension
+0 // Technic Transmission Driving Ring Extension (dark_grey)
 1 8 0 0 29 -1 0 0 0 1 0 0 0 -1 32187.dat
-0 // Technic Transmission Driving Ring
+0 // Technic Transmission Driving Ring (light_grey)
 1 7 0 0 0 -0.707 -0.707 0 -0.707 0.707 0 0 0 -1 6539.dat
-0 // Technic Gear 16 Tooth with Clutch
+0 // Technic Gear 16 Tooth with Clutch (dark_grey)
 1 8 0 0 -30 1 0 0 0 1 0 0 0 1 6542a.dat
-0 // Technic Gear 16 Tooth with Clutch
+0 // Technic Gear 16 Tooth with Clutch (dark_grey)
 1 8 0 0 50 -1 0 0 0 1 0 0 0 -1 6542a.dat
 
 
@@ -10280,22 +10280,22 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - box4step17.ldr
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -20 10 10 0 0 -1 0 1 0 1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 0 10 10 0 0 -1 0 1 0 1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 20 10 10 0 0 -1 0 1 0 1 0 0 2780.dat
-0 // Technic Beam  5 x  0.5
+0 // Technic Beam  5 x  0.5 (blue)
 1 1 0 10 15 0 0 -1 -1 0 0 0 1 0 32017.dat
-0 // Technic Beam  5 x  0.5
+0 // Technic Beam  5 x  0.5 (blue)
 1 1 0 10 25 0 0 -1 -1 0 0 0 1 0 32017.dat
 0 STEP
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (light_grey)
 1 7 0 0 0 1 0 0 0 1 0 0 0 1 6541.dat
-0 // Technic Brick  1 x  2 with Holes
+0 // Technic Brick  1 x  2 with Holes (light_grey)
 1 7 -30 0 0 1 0 0 0 1 0 0 0 1 32000.dat
-0 // Technic Brick  1 x  2 with Holes
+0 // Technic Brick  1 x  2 with Holes (light_grey)
 1 7 30 0 0 1 0 0 0 1 0 0 0 1 32000.dat
 
 
@@ -10308,25 +10308,25 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - box4step18.ldr
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 0 0 30 0 0 -1 0 1 0 1 0 0 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 20 0 30 0 0 -1 0 1 0 1 0 0 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 40 0 30 0 0 -1 0 1 0 1 0 0 6558.dat
-0 // Technic Beam  5 x  0.5
+0 // Technic Beam  5 x  0.5 (blue)
 1 1 20 0 5 0 0 -1 -1 0 0 0 1 0 32017.dat
-0 // Technic Beam  5 x  0.5
+0 // Technic Beam  5 x  0.5 (blue)
 1 1 20 0 15 0 0 -1 -1 0 0 0 1 0 32017.dat
 0 STEP
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (light_grey)
 1 7 40 -10 30 1 0 0 0 1 0 0 0 1 6541.dat
-0 // Technic Brick  1 x  2 with Holes
+0 // Technic Brick  1 x  2 with Holes (light_grey)
 1 7 10 -10 30 1 0 0 0 1 0 0 0 1 32000.dat
 0 STEP
-0 // Technic Brick  1 x  2 with Holes
+0 // Technic Brick  1 x  2 with Holes (light_grey)
 1 7 30 -10 50 1 0 0 0 1 0 0 0 1 32000.dat
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (light_grey)
 1 7 0 -10 50 1 0 0 0 1 0 0 0 1 6541.dat
 
 
@@ -10339,11 +10339,11 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - box4step25.ldr
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (black)
 1 0 0 0 0 0 0 1 0 1 0 -1 0 0 3023.dat
-0 // Technic Brick  1 x  6 x  1.667 Wing Back
+0 // Technic Brick  1 x  6 x  1.667 Wing Back (black)
 1 0 0 -24 20 0 0 -1 0 1 0 1 0 0 2744.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (light_grey)
 1 7 0 8 -10 0 0 -1 0 1 0 1 0 0 6141.dat
 
 
@@ -10356,9 +10356,9 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - box4step26.ldr
-0 // Technic Transmission Changeover Catch Type 1
+0 // Technic Transmission Changeover Catch Type 1 (light_grey)
 1 7 0 0 0 1 0 0 0 0 -1 0 1 0 6641.dat
-0 // Technic Axle  3 with Stud
+0 // Technic Axle  3 with Stud (dark_grey)
 1 8 0 -19 0 0 0 -1 -1 0 0 0 1 0 6587.dat
 
 
@@ -10372,21 +10372,21 @@
 0 !THEME Technic
 0 Name: 8448 - box5.ldr
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 8448 - box5step1-5.ldr
-0 // Technic Engine Piston Round
+0 // Technic Engine Piston Round (yellow)
 1 14 -44.596 -20.077 20 0.484 0.875 0 -0.875 0.484 0 0 0 1 2851.dat
-0 // Technic Engine Piston Round
+0 // Technic Engine Piston Round (yellow)
 1 14 -28.46 -10.993 60 0.484 0.875 0 -0.875 0.484 0 0 0 1 2851.dat
-0 // Technic Engine Piston Round
+0 // Technic Engine Piston Round (yellow)
 1 14 -44.596 -20.077 100 0.484 0.875 0 -0.875 0.484 0 0 0 1 2851.dat
-0 // Technic Engine Piston Round
+0 // Technic Engine Piston Round (yellow)
 1 14 -28.46 -10.993 140 0.484 0.875 0 -0.875 0.484 0 0 0 1 2851.dat
-0 // Technic Engine Piston Round
+0 // Technic Engine Piston Round (yellow)
 1 14 28.46 -10.993 20 0.484 -0.875 0 0.875 0.484 0 0 0 1 2851.dat
-0 // Technic Engine Piston Round
+0 // Technic Engine Piston Round (yellow)
 1 14 44.596 -20.077 60 0.484 -0.875 0 0.875 0.484 0 0 0 1 2851.dat
-0 // Technic Engine Piston Round
+0 // Technic Engine Piston Round (yellow)
 1 14 28.46 -10.993 100 0.484 -0.875 0 0.875 0.484 0 0 0 1 2851.dat
-0 // Technic Engine Piston Round
+0 // Technic Engine Piston Round (yellow)
 1 14 44.596 -20.077 140 0.484 -0.875 0 0.875 0.484 0 0 0 1 2851.dat
 0 STEP
 1 0 -50 0 0 0.484 0.875 0 -0.875 0.484 0 0 0 1 8448 - box5step6.ldr
@@ -10400,28 +10400,28 @@
 0 STEP
 1 7 0 20 190 1 0 0 0 1 0 0 0 1 8448 - box5step10.ldr
 0 STEP
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 0 0 190 1 0 0 0 1 0 0 0 1 3713.dat
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_grey)
 1 7 0 0 205 1 0 0 0 1 0 0 0 1 32123a.dat
 0 STEP
 1 7 0 20 -120 1 0 0 0 1 0 0 0 1 8448 - box5step12.ldr
 0 STEP
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (black)
 1 0 -30.65 -55 -10 1 0 0 0 1 0 0 0 1 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (black)
 1 0 30.65 -55 -10 1 0 0 0 1 0 0 0 1 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (black)
 1 0 -30.65 -55 170 1 0 0 0 1 0 0 0 1 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (black)
 1 0 30.65 -55 170 1 0 0 0 1 0 0 0 1 6536.dat
 0 STEP
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 0 -55 170 1 0 0 0 1 0 0 0 1 3705.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 0 -55 -10 1 0 0 0 1 0 0 0 1 3705.dat
 1 0 0 -65 80 1 0 0 0 1 0 0 0 1 8448 - box5step14.ldr
-0 // Technic Rotor  3 Blade with  6 Studs
+0 // Technic Rotor  3 Blade with  6 Studs (yellow)
 1 14 0 0 218 -1 0 0 0 0 -1 0 -1 0 32125.dat
 
 
@@ -10434,39 +10434,39 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - box5step1-5.ldr
-0 // Technic Axle  5
+0 // Technic Axle  5 (black)
 1 0 0 0 -40 0 0 1 0 1 0 -1 0 0 32073.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 0 0 190 0 0 1 0 1 0 -1 0 0 3705.dat
-0 // Technic Engine Crankshaft
+0 // Technic Engine Crankshaft (light_grey)
 1 7 0 0 20 1 0 0 0 1 0 0 0 1 2853.dat
-0 // Technic Engine Crankshaft
+0 // Technic Engine Crankshaft (light_grey)
 1 7 0 0 140 -1 0 0 0 1 0 0 0 -1 2853.dat
-0 // Technic Engine Connecting Rod
+0 // Technic Engine Connecting Rod (light_grey)
 1 7 -10 0 20 0.275 -0.961 0 0.961 0.275 0 0 0 1 2852.dat
-0 // Technic Engine Connecting Rod
+0 // Technic Engine Connecting Rod (light_grey)
 1 7 -10 0 20 -0.502 0.865 0 0.865 0.502 0 0 0 -1 2852.dat
-0 // Technic Engine Crankshaft Centre
+0 // Technic Engine Crankshaft Centre (dark_grey)
 1 8 0 0 40 -1 0 0 0 1 0 0 0 -1 2854.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 10 0 60 0 0 -1 0 1 0 1 0 0 32062.dat
-0 // Technic Engine Connecting Rod
+0 // Technic Engine Connecting Rod (light_grey)
 1 7 10 0 60 0.502 -0.865 0 0.865 0.502 0 0 0 1 2852.dat
-0 // Technic Engine Connecting Rod
+0 // Technic Engine Connecting Rod (light_grey)
 1 7 10 0 60 -0.275 0.961 0 0.961 0.275 0 0 0 -1 2852.dat
-0 // Technic Engine Crankshaft Centre
+0 // Technic Engine Crankshaft Centre (dark_grey)
 1 8 0 0 80 1 0 0 0 -1 0 0 0 -1 2854.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 -10 0 100 0 0 1 0 -1 0 1 0 0 32062.dat
-0 // Technic Engine Connecting Rod
+0 // Technic Engine Connecting Rod (light_grey)
 1 7 -10 0 100 -0.502 0.865 0 0.865 0.502 0 0 0 -1 2852.dat
-0 // Technic Engine Connecting Rod
+0 // Technic Engine Connecting Rod (light_grey)
 1 7 -10 0 100 0.275 -0.961 0 0.961 0.275 0 0 0 1 2852.dat
-0 // Technic Engine Connecting Rod
+0 // Technic Engine Connecting Rod (light_grey)
 1 7 10 0 140 -0.275 0.961 0 0.961 0.275 0 0 0 -1 2852.dat
-0 // Technic Engine Connecting Rod
+0 // Technic Engine Connecting Rod (light_grey)
 1 7 10 0 140 0.502 -0.865 0 0.865 0.502 0 0 0 1 2852.dat
-0 // Technic Engine Crankshaft Centre
+0 // Technic Engine Crankshaft Centre (dark_grey)
 1 8 0 0 120 -1 0 0 0 1 0 0 0 -1 2854.dat
 
 
@@ -10479,33 +10479,33 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - box5step6.ldr
-0 // Technic Engine Cylinder Head with Side Slots
+0 // Technic Engine Cylinder Head with Side Slots (trans_clear)
 1 47 20 -26 20 1 0 0 0 1 0 0 0 1 2850a.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 0 0 0 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Pin
+0 // Technic Pin (light_grey)
 1 7 40 0 0 0 0 1 0 1 0 -1 0 0 3673.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 0 0 40 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 40 0 40 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Engine Cylinder Head with Side Slots
+0 // Technic Engine Cylinder Head with Side Slots (trans_clear)
 1 47 20 -26 60 1 0 0 0 1 0 0 0 1 2850a.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 0 0 80 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 40 0 80 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Engine Cylinder Head with Side Slots
+0 // Technic Engine Cylinder Head with Side Slots (trans_clear)
 1 47 20 -26 100 1 0 0 0 1 0 0 0 1 2850a.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 0 0 120 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 40 0 120 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Engine Cylinder Head with Side Slots
+0 // Technic Engine Cylinder Head with Side Slots (trans_clear)
 1 47 20 -26 140 1 0 0 0 1 0 0 0 1 2850a.dat
-0 // Technic Pin
+0 // Technic Pin (light_grey)
 1 7 40 0 160 0 0 1 0 1 0 -1 0 0 3673.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 0 0 170 0 0 -1 0 1 0 1 0 0 6558.dat
 
 
@@ -10518,33 +10518,33 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - box5step7.ldr
-0 // Technic Engine Cylinder Head with Side Slots
+0 // Technic Engine Cylinder Head with Side Slots (trans_clear)
 1 47 -20 -26 20 1 0 0 0 1 0 0 0 1 2850a.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 0 0 0 0 0 -1 0 1 0 1 0 0 2780.dat
-0 // Technic Pin
+0 // Technic Pin (light_grey)
 1 7 -40 0 0 0 0 -1 0 1 0 1 0 0 3673.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 0 0 40 0 0 -1 0 1 0 1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -40 0 40 0 0 -1 0 1 0 1 0 0 2780.dat
-0 // Technic Engine Cylinder Head with Side Slots
+0 // Technic Engine Cylinder Head with Side Slots (trans_clear)
 1 47 -20 -26 60 1 0 0 0 1 0 0 0 1 2850a.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 0 0 80 0 0 -1 0 1 0 1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -40 0 80 0 0 -1 0 1 0 1 0 0 2780.dat
-0 // Technic Engine Cylinder Head with Side Slots
+0 // Technic Engine Cylinder Head with Side Slots (trans_clear)
 1 47 -20 -26 100 1 0 0 0 1 0 0 0 1 2850a.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 0 0 120 0 0 -1 0 1 0 1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -40 0 120 0 0 -1 0 1 0 1 0 0 2780.dat
-0 // Technic Engine Cylinder Head with Side Slots
+0 // Technic Engine Cylinder Head with Side Slots (trans_clear)
 1 47 -20 -26 140 1 0 0 0 1 0 0 0 1 2850a.dat
-0 // Technic Pin
+0 // Technic Pin (light_grey)
 1 7 -40 0 160 0 0 -1 0 1 0 1 0 0 3673.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 0 0 170 0 0 -1 0 1 0 1 0 0 6558.dat
 
 
@@ -10557,17 +10557,17 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - box5step8.ldr
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3666.dat
-0 // Technic Brick  1 x  4 with Holes
+0 // Technic Brick  1 x  4 with Holes (black)
 1 0 0 -24 0 1 0 0 0 1 0 0 0 1 3701.dat
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (black)
 1 0 -50 -24 0 1 0 0 0 1 0 0 0 1 6541.dat
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (black)
 1 0 50 -24 0 1 0 0 0 1 0 0 0 1 6541.dat
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (black)
 1 0 0 -32 0 1 0 0 0 1 0 0 0 1 3666.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (black)
 1 0 0 -40 0 1 0 0 0 1 0 0 0 1 2431.dat
 
 
@@ -10580,21 +10580,21 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - box5step9.ldr
-0 // Technic Axle  5
+0 // Technic Axle  5 (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 32073.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_grey)
 1 7 20 0 0 1 0 0 0 -1 0 0 0 -1 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_grey)
 1 7 -20 0 0 1 0 0 0 -1 0 0 0 -1 6536.dat
 0 STEP
-0 // Technic Connector (Axle) with Axle 1.5
+0 // Technic Connector (Axle) with Axle 1.5 (light_grey)
 1 7 -40 0 0 1 0 0 0 0 1 0 -1 0 6553.dat
-0 // Technic Connector (Axle) with Axle 1.5
+0 // Technic Connector (Axle) with Axle 1.5 (light_grey)
 1 7 40 0 0 1 0 0 0 0 1 0 -1 0 6553.dat
 0 STEP
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -20 -20 10 0 0 -1 0 1 0 1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 20 -20 10 0 0 -1 0 1 0 1 0 0 2780.dat
 
 
@@ -10607,15 +10607,15 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - box5step10.ldr
-0 // Technic Axle  8
+0 // Technic Axle  8 (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3707.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_grey)
 1 7 70 0 0 1 0 0 0 1 0 0 0 1 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_grey)
 1 7 -70 0 0 1 0 0 0 1 0 0 0 1 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_grey)
 1 7 -50 0 0 1 0 0 0 -1 0 0 0 -1 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_grey)
 1 7 50 0 0 1 0 0 0 -1 0 0 0 -1 6536.dat
 
 
@@ -10628,30 +10628,30 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - box5step12.ldr
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 4519.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (light_grey)
 1 7 0 0 0 1 0 0 0 -1 0 0 0 -1 6536.dat
 0 STEP
-0 // Technic Connector (Axle/Bush) Type 1
+0 // Technic Connector (Axle/Bush) Type 1 (light_grey)
 1 7 20 0 0 0 0 -1 0 -1 0 -1 0 0 32039.dat
-0 // Technic Connector (Axle/Bush) Type 1
+0 // Technic Connector (Axle/Bush) Type 1 (light_grey)
 1 7 -20 0 0 0 0 1 0 -1 0 1 0 0 32039.dat
 0 STEP
-0 // Technic Axle  5.5 with Stop Type 1
+0 // Technic Axle  5.5 with Stop Type 1 (white)
 1 15 -40 0 -17 0 0 -1 0 -1 0 -1 0 0 32209.dat
-0 // Technic Axle  5.5 with Stop Type 1
+0 // Technic Axle  5.5 with Stop Type 1 (white)
 1 15 40 0 -17 0 0 -1 0 -1 0 -1 0 0 32209.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_grey)
 1 7 -40 0 40 1 0 0 0 -1 0 0 0 -1 6538b.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_grey)
 1 7 40 0 40 1 0 0 0 -1 0 0 0 -1 6538b.dat
 0 STEP
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 0 -20 0 0 0 -1 0 -1 0 -1 0 0 4519.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_grey)
 1 7 0 -20 30 -1 0 0 0 -1 0 0 0 1 6538b.dat
-0 // Technic Gear 24 Tooth with Single Axle Hole
+0 // Technic Gear 24 Tooth with Single Axle Hole (light_grey)
 1 7 0 -20 -20 -1 0 0 0 -1 0 0 0 1 3648b.dat
 
 
@@ -10664,47 +10664,47 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - box5step14.ldr
-0 // Technic Axle  8
+0 // Technic Axle  8 (black)
 1 0 -10 10 0 0 0 -1 0 1 0 1 0 0 3707.dat
-0 // Technic Axle  8
+0 // Technic Axle  8 (black)
 1 0 10 10 0 0 0 -1 0 1 0 1 0 0 3707.dat
-0 // Technic Angle Connector #3 (157.5 degree)
+0 // Technic Angle Connector #3 (157.5 degree) (black)
 1 0 -10 10 -90 1 0 0 0 -1 0 0 0 -1 32016.dat
-0 // Technic Angle Connector #3 (157.5 degree)
+0 // Technic Angle Connector #3 (157.5 degree) (black)
 1 0 10 10 -90 1 0 0 0 -1 0 0 0 -1 32016.dat
 0 STEP
-0 // Technic Connector Toggle Joint Smooth
+0 // Technic Connector Toggle Joint Smooth (light_grey)
 1 7 30 10 -50 0 0 1 0 -1 0 1 0 0 32126.dat
-0 // Technic Connector Toggle Joint Smooth
+0 // Technic Connector Toggle Joint Smooth (light_grey)
 1 7 -30 10 -50 0 0 -1 0 1 0 1 0 0 32126.dat
-0 // Technic Brick  1 x  2 with Holes
+0 // Technic Brick  1 x  2 with Holes (black)
 1 0 0 0 -40 1 0 0 0 1 0 0 0 1 32000.dat
 0 STEP
-0 // Technic Connector (Axle/Bush) Type 1
+0 // Technic Connector (Axle/Bush) Type 1 (light_grey)
 1 7 -30 10 -20 0 0 -1 0 1 0 1 0 0 32039.dat
-0 // Technic Connector (Axle/Bush) Type 1
+0 // Technic Connector (Axle/Bush) Type 1 (light_grey)
 1 7 30 10 -20 0 0 1 0 1 0 -1 0 0 32039.dat
-0 // Technic Brick  1 x  2 with Holes
+0 // Technic Brick  1 x  2 with Holes (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 32000.dat
-0 // Technic Connector (Axle/Bush) Type 1
+0 // Technic Connector (Axle/Bush) Type 1 (light_grey)
 1 7 -30 10 20 0 0 -1 0 1 0 1 0 0 32039.dat
-0 // Technic Connector (Axle/Bush) Type 1
+0 // Technic Connector (Axle/Bush) Type 1 (light_grey)
 1 7 30 10 20 0 0 1 0 1 0 -1 0 0 32039.dat
 0 STEP
-0 // Technic Brick  1 x  2 with Holes
+0 // Technic Brick  1 x  2 with Holes (black)
 1 0 0 0 40 -1 0 0 0 1 0 0 0 -1 32000.dat
-0 // Technic Connector Toggle Joint Smooth
+0 // Technic Connector Toggle Joint Smooth (light_grey)
 1 7 -30 10 50 0 0 -1 0 -1 0 -1 0 0 32126.dat
-0 // Technic Connector Toggle Joint Smooth
+0 // Technic Connector Toggle Joint Smooth (light_grey)
 1 7 30 10 50 0 0 1 0 1 0 -1 0 0 32126.dat
-0 // Technic Angle Connector #3 (157.5 degree)
+0 // Technic Angle Connector #3 (157.5 degree) (black)
 1 0 10 10 90 -1 0 0 0 -1 0 0 0 1 32016.dat
-0 // Technic Angle Connector #3 (157.5 degree)
+0 // Technic Angle Connector #3 (157.5 degree) (black)
 1 0 -10 10 90 -1 0 0 0 -1 0 0 0 1 32016.dat
 0 STEP
-0 // Tile  1 x  8
+0 // Tile  1 x  8 (black)
 1 0 -10 -8 0 0 0 -1 0 1 0 1 0 0 4162.dat
-0 // Tile  1 x  8
+0 // Tile  1 x  8 (black)
 1 0 10 -8 0 0 0 -1 0 1 0 1 0 0 4162.dat
 
 
@@ -10717,11 +10717,11 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - box5step18.ldr
-0 // Technic Brick  1 x  2 with Axlehole with Open Sides and Stud Blocker
+0 // Technic Brick  1 x  2 with Axlehole with Open Sides and Stud Blocker (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 32064a.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 0 10 -10 0 0 1 0 1 0 -1 0 0 32062.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (blue)
 1 1 0 10 -20 0 0 1 0 1 0 -1 0 0 6536.dat
 
 
@@ -10734,47 +10734,47 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - box6-1.ldr
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 0 0 0 -1 0 0 0 1 0 0 0 -1 6558.dat
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (black)
 1 0 5 0 -20 0 1 0 -1 0 0 0 0 1 32056.dat
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (black)
 1 0 -5 0 -20 0 1 0 -1 0 0 0 0 1 6632.dat
 0 STEP
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 0 0 -20 1 0 0 0 1 0 0 0 1 4519.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 0 0 20 1 0 0 0 1 0 0 0 1 4519.dat
 0 STEP
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (black)
 1 0 15 0 -20 0 1 0 -1 0 0 0 0 1 32056.dat
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (black)
 1 0 25 0 -20 0 1 0 -1 0 0 0 0 1 6632.dat
 0 STEP
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (white)
 1 15 60 -120 60 0 -1 0 -0.6 0 0.8 -0.8 0 -0.6 6629.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 10 -40 -20 1 0 0 0 1 0 0 0 1 32062.dat
 0 STEP
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (white)
 1 15 -5 -40 -60 0 1 0 -1 0 0 0 0 1 6632.dat
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (white)
 1 15 25 -40 -60 0 1 0 -1 0 0 0 0 1 6632.dat
 0 STEP
-0 // Technic Axle  6
+0 // Technic Axle  6 (black)
 1 0 10 -40 -60 1 0 0 0 1 0 0 0 1 3706.dat
 0 STEP
 1 15 10 -40 -60 1 0 0 0 0.966 -0.259 0 0.259 0.966 8448 - box6-1step7.ldr
 0 STEP
 1 15 10 -40 -40 1 0 0 0 0.976 0.22 0 -0.22 0.976 8448 - box6-1step8.ldr
 0 STEP
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (white)
 1 15 40 -22.44 38.049 0 -1 0 -0.22 0 0.976 -0.976 0 -0.22 32009.dat
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (white)
 1 15 -40 -120 60 0 -1 0 -0.6 0 0.8 -0.8 0 -0.6 6629.dat
-0 // Technic Axle  6
+0 // Technic Axle  6 (black)
 1 0 10 -120 60 1 0 0 0 0.8 0.6 0 -0.6 0.8 3706.dat
-0 // Technic Pin Joiner Round
+0 // Technic Pin Joiner Round (white)
 1 15 10 -120 60 1 0 0 0 1 0 0 0 1 75535.dat
 
 
@@ -10787,15 +10787,15 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - box6-1step7.ldr
-0 // Technic Pin Joiner Round
+0 // Technic Pin Joiner Round (white)
 1 15 0 0 -20 1 0 0 0 1 0 0 0 1 75535.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 20 0 -20 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -20 0 -20 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Brick  1 x  2 with Holes
+0 // Technic Brick  1 x  2 with Holes (white)
 1 15 30 -10 -10 0 0 -1 0 1 0 1 0 0 32000.dat
-0 // Technic Brick  1 x  2 with Holes
+0 // Technic Brick  1 x  2 with Holes (white)
 1 15 -30 -10 -10 0 0 -1 0 1 0 1 0 0 32000.dat
 
 
@@ -10808,29 +10808,29 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - box6-1step8.ldr
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (white)
 1 15 -30 0 80 0 -1 0 0 0 1 -1 0 0 32009.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 0 -160 80 -1 0 0 0 0 1 0 1 0 3705.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -20 -40 80 -1 0 0 0 0 1 0 1 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -20 0 40 -1 0 0 0 0 1 0 1 0 2780.dat
-0 // Technic Axle  6
+0 // Technic Axle  6 (black)
 1 0 0 0 0 -1 0 0 0 0 1 0 1 0 3706.dat
 0 STEP
-0 // Technic Pin Joiner Round
+0 // Technic Pin Joiner Round (white)
 1 15 0 0 40 1 0 0 0 1 0 0 0 1 75535.dat
-0 // Technic Pin Joiner Round
+0 // Technic Pin Joiner Round (white)
 1 15 0 -40 80 1 0 0 0 1 0 0 0 1 75535.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 20 0 40 -1 0 0 0 0 1 0 1 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 20 -40 80 -1 0 0 0 0 1 0 1 0 2780.dat
 0 STEP
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (white)
 1 15 -10 -160 80 -1 0 0 0 -1 0 0 0 1 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (white)
 1 15 10 -160 80 -1 0 0 0 -1 0 0 0 1 6536.dat
 
 
@@ -10843,47 +10843,47 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - box6-2.ldr
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 20 0 0 -1 0 0 0 1 0 0 0 -1 6558.dat
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (black)
 1 0 5 0 -20 0 1 0 -1 0 0 0 0 1 32056.dat
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (black)
 1 0 -5 0 -20 0 1 0 -1 0 0 0 0 1 6632.dat
 0 STEP
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 20 0 -20 1 0 0 0 1 0 0 0 1 4519.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 20 0 20 1 0 0 0 1 0 0 0 1 4519.dat
 0 STEP
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (black)
 1 0 15 0 -20 0 1 0 -1 0 0 0 0 1 32056.dat
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (black)
 1 0 25 0 -20 0 1 0 -1 0 0 0 0 1 6632.dat
 0 STEP
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (white)
 1 15 60 -120 60 0 -1 0 -0.6 0 0.8 -0.8 0 -0.6 6629.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 10 -40 -20 1 0 0 0 1 0 0 0 1 32062.dat
 0 STEP
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (white)
 1 15 -5 -40 -60 0 1 0 -1 0 0 0 0 1 6632.dat
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (white)
 1 15 25 -40 -60 0 1 0 -1 0 0 0 0 1 6632.dat
 0 STEP
-0 // Technic Axle  6
+0 // Technic Axle  6 (black)
 1 0 10 -40 -60 1 0 0 0 1 0 0 0 1 3706.dat
 0 STEP
 1 15 10 -40 -60 1 0 0 0 0.966 -0.259 0 0.259 0.966 8448 - box6-1step7.ldr
 0 STEP
 1 15 10 -40 -40 1 0 0 0 0.976 0.22 0 -0.22 0.976 8448 - box6-1step8.ldr
 0 STEP
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (white)
 1 15 40 -22.44 38.049 0 -1 0 -0.22 0 0.976 -0.976 0 -0.22 32009.dat
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (white)
 1 15 -40 -120 60 0 -1 0 -0.6 0 0.8 -0.8 0 -0.6 6629.dat
-0 // Technic Axle  6
+0 // Technic Axle  6 (black)
 1 0 10 -120 60 1 0 0 0 0.8 0.6 0 -0.6 0.8 3706.dat
-0 // Technic Pin Joiner Round
+0 // Technic Pin Joiner Round (white)
 1 15 10 -120 60 1 0 0 0 1 0 0 0 1 75535.dat
 
 
@@ -10896,162 +10896,162 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - hotrodbox8.ldr
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (white)
 1 15 5 -80 -220 0 -1 0 -0.093 0 0.996 -0.996 0 -0.093 6632.dat
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (white)
 1 15 -5 -80 -220 0 -1 0 -0.093 0 0.996 -0.996 0 -0.093 6632.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 0 -40.172 -223.705 -1 0 0 0 0.093 0.996 0 0.996 -0.093 32062.dat
 0 STEP
-0 // Technic Axle  8
+0 // Technic Axle  8 (black)
 1 0 0 -80 -220 -1 0 0 0 -0.996 0.093 0 0.093 0.996 3707.dat
 0 STEP
-0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle
+0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle (black)
 1 0 -15 -80 -220 0 1 0 -0.996 0 0.093 0.093 0 0.996 2905.dat
-0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle
+0 // Technic Beam  5 x  3 x  0.5 Liftarm Triangle (black)
 1 0 15 -80 -220 0 1 0 -0.996 0 0.093 0.093 0 0.996 2905.dat
 0 STEP
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (black)
 1 0 25 -76.295 -180.172 0 1 0 -0.093 0 -0.996 -0.996 0 0.093 32056.dat
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (black)
 1 0 -25 -76.295 -180.172 0 1 0 -0.093 0 -0.996 -0.996 0 0.093 32056.dat
 0 STEP
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (red)
 1 4 -35 -81.852 -239.914 0 1 0 0.093 0 0.996 0.996 0 -0.093 32056.dat
 0 STEP
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (black)
 1 0 -50 -80 -80 0 -1 0 1 0 0 0 0 1 32009.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -40 -80 -120 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -40 -80 -140 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 -40 -80 -160 1 0 0 0 1 0 0 0 1 3749.dat
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (black)
 1 0 -30 -80 -160 0 -1 0 1 0 0 0 0 1 6629.dat
 0 STEP
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_grey)
 1 7 -65 -80 -220 0 0 -1 -0.093 -0.996 0 -0.996 0.093 0 32123a.dat
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_grey)
 1 7 -75 -80 -220 0 0 -1 -0.093 -0.996 0 -0.996 0.093 0 32123a.dat
 0 STEP
 1 0 -60 -32 -24 1 0 0 0 0.6 0.8 0 -0.8 0.6 8448 - hotrodbox8step8.ldr
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_grey)
 1 7 -15 -64 -48 0 0 -1 0.8 0.6 0 0.6 -0.8 0 32123a.dat
 0 STEP
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 0 -76.295 -180.172 1 0 0 0 -0.093 0.996 0 -0.996 -0.093 4519.dat
 1 0 0 -64 -48 0 0 1 -0.996 -0.093 0 0.093 -0.996 0 8448 - hotrodshock.ldr
 0 STEP
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (red)
 1 4 35 -81.852 -239.914 0 1 0 0.093 0 0.996 0.996 0 -0.093 32056.dat
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_grey)
 1 7 15 -64 -48 0 0 -1 0.8 0.6 0 0.6 -0.8 0 32123a.dat
 0 STEP
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 40 -80 -160 -1 0 0 0 1 0 0 0 -1 3749.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 40 -80 -140 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (black)
 1 0 50 -80 -80 0 -1 0 1 0 0 0 0 1 32009.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 40 -80 -120 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (black)
 1 0 30 -80 -160 0 -1 0 1 0 0 0 0 1 6629.dat
 0 STEP
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_grey)
 1 7 75 -80 -220 0 0 -1 -0.093 -0.996 0 -0.996 0.093 0 32123a.dat
-0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced (light_grey)
 1 7 65 -80 -220 0 0 -1 -0.093 -0.996 0 -0.996 0.093 0 32123a.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 50 -48 -36 -1 0 0 0 0.6 0.8 0 0.8 -0.6 6558.dat
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (black)
 1 0 55 -64 -48 0 -1 0 0.6 0 0.8 -0.8 0 0.6 6632.dat
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (black)
 1 0 45 -64 -48 0 -1 0 0.6 0 0.8 -0.8 0 0.6 6632.dat
 0 STEP
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 50 -32 -24 1 0 0 0 0.6 0.8 0 -0.8 0.6 4519.dat
-0 // Technic Axle  5
+0 // Technic Axle  5 (black)
 1 0 0 -116.123 -176.467 1 0 0 0 -0.996 -0.093 0 0.093 -0.996 32073.dat
 0 STEP
-0 // Technic Beam  5 x  0.5
+0 // Technic Beam  5 x  0.5 (red)
 1 4 75 -32 -24 0 -1 0 0.6 0 0.8 -0.8 0 0.6 32017.dat
-0 // Technic Beam  5 x  0.5
+0 // Technic Beam  5 x  0.5 (red)
 1 4 65 -32 -24 0 -1 0 0.6 0 0.8 -0.8 0 0.6 32017.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 70 0 0 1 0 0 0 0.6 -0.8 0 0.8 0.6 32054.dat
 0 STEP
-0 // Technic Axle  5
+0 // Technic Axle  5 (black)
 1 0 0 -61.938 -241.766 1 0 0 0 -0.093 0.996 0 -0.996 -0.093 32073.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (black)
 1 0 0 -61.938 -241.766 1 0 0 0 0.996 0.093 0 -0.093 0.996 6536.dat
 0 STEP
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (black)
 1 0 -45 -22.11 -245.471 0 -1 0 -0.996 0 -0.093 0.093 0 -0.996 32056.dat
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (black)
 1 0 45 -22.11 -245.471 0 -1 0 -0.996 0 -0.093 0.093 0 -0.996 32056.dat
-0 // Technic Axle  5
+0 // Technic Axle  5 (black)
 1 0 0 -22.11 -245.471 1 0 0 0 -0.093 0.996 0 -0.996 -0.093 32073.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 -30 -25.815 -285.299 1 0 0 0 -0.093 0.996 0 -0.996 -0.093 32062.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 30 -25.815 -285.299 1 0 0 0 -0.093 0.996 0 -0.996 -0.093 32062.dat
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (black)
 1 0 -35 -25.815 -285.299 0 -1 0 0.996 0 0.093 -0.093 0 0.996 6632.dat
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (black)
 1 0 35 -25.815 -285.299 0 -1 0 0.996 0 0.093 -0.093 0 0.996 6632.dat
-0 // Technic Angle Connector #2 (180 degree)
+0 // Technic Angle Connector #2 (180 degree) (red)
 1 4 0 -25.815 -285.299 0 0 1 0.093 -0.996 0 0.996 0.093 0 32034.dat
 0 STEP
-0 // Technic Axle  5
+0 // Technic Axle  5 (black)
 1 0 0 -119.828 -216.295 1 0 0 0 -0.996 -0.093 0 0.093 -0.996 32073.dat
-0 // Technic Angle Connector #1
+0 // Technic Angle Connector #1 (black)
 1 0 -60 -116.123 -176.467 0 0 -1 -0.093 -0.996 0 -0.996 0.093 0 32013.dat
-0 // Technic Angle Connector #1
+0 // Technic Angle Connector #1 (black)
 1 0 60 -116.123 -176.467 0 0 1 -0.093 0.996 0 -0.996 -0.093 0 32013.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -60 -115.197 -166.51 0 0 1 -0.093 0.996 0 -0.996 -0.093 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 60 -115.197 -166.51 0 0 1 -0.093 0.996 0 -0.996 -0.093 0 2780.dat
 0 STEP
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 60 -121.681 -236.209 0 0 1 -0.093 0.996 0 -0.996 -0.093 0 6558.dat
-0 // Technic Angle Connector #1
+0 // Technic Angle Connector #1 (black)
 1 0 60 -119.828 -216.295 0 0 1 0.093 -0.996 0 0.996 0.093 0 32013.dat
-0 // Technic Angle Connector #1
+0 // Technic Angle Connector #1 (black)
 1 0 -60 -119.828 -216.295 0 0 -1 0.093 0.996 0 0.996 -0.093 0 32013.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 -60 -121.681 -236.209 0 0 -1 -0.093 -0.996 0 -0.996 0.093 0 6558.dat
 0 STEP
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (black)
 1 0 180 -123.533 -256.123 0 0 1 -0.996 -0.093 0 0.093 -0.996 0 32009.dat
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (black)
 1 0 -180 -123.533 -256.123 0 0 -1 -0.996 0.093 0 0.093 0.996 0 32009.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 -20 -122.607 -246.166 0 0 -1 -0.093 -0.996 0 -0.996 0.093 0 3749.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 20 -122.607 -246.166 0 0 -1 -0.093 -0.996 0 -0.996 0.093 0 3749.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -40 -122.607 -246.166 0 0 -1 -0.093 -0.996 0 -0.996 0.093 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 40 -122.607 -246.166 0 0 -1 -0.093 -0.996 0 -0.996 0.093 0 2780.dat
-0 // Technic Beam  5 x  0.5
+0 // Technic Beam  5 x  0.5 (black)
 1 0 0 -122.144 -241.188 0 0 1 -0.996 -0.093 0 0.093 -0.996 0 32017.dat
-0 // Technic Beam  5 x  0.5
+0 // Technic Beam  5 x  0.5 (black)
 1 0 0 -121.217 -231.231 0 0 1 -0.996 -0.093 0 0.093 -0.996 0 32017.dat
 0 STEP
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (black)
 1 0 -180 -114.271 -156.553 0 0 -1 -0.996 0.093 0 0.093 0.996 0 32009.dat
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (black)
 1 0 180 -114.271 -156.553 0 0 1 -0.996 -0.093 0 0.093 -0.996 0 32009.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 -20 -111.492 -126.682 0 -1 0 -0.093 0 0.996 -0.996 0 -0.093 3705.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 20 -111.492 -126.682 0 -1 0 -0.093 0 0.996 -0.996 0 -0.093 3705.dat
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (black)
 1 0 -20 -112.881 -141.617 0 0 1 -0.996 -0.093 0 0.093 -0.996 0 6632.dat
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (black)
 1 0 -20 -111.955 -131.66 0 0 1 -0.996 -0.093 0 0.093 -0.996 0 6632.dat
 
 
@@ -11064,23 +11064,23 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - hotrodbox8step8.ldr
-0 // Technic Beam  5 x  0.5
+0 // Technic Beam  5 x  0.5 (red)
 1 4 -5 0 0 0 -1 0 1 0 0 0 0 1 32017.dat
-0 // Technic Beam  5 x  0.5
+0 // Technic Beam  5 x  0.5 (red)
 1 4 -15 0 0 0 -1 0 1 0 0 0 0 1 32017.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 10 0 -20 1 0 0 0 1 0 0 0 1 6558.dat
 0 STEP
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (black)
 1 0 5 0 -40 0 -1 0 1 0 0 0 0 1 6632.dat
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (black)
 1 0 15 0 -40 0 -1 0 1 0 0 0 0 1 6632.dat
 0 STEP
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 10 0 0 1 0 0 0 1 0 0 0 1 4519.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 -10 0 40 -1 0 0 0 1 0 0 0 -1 32054.dat
-0 // Technic Axle  8
+0 // Technic Axle  8 (black)
 1 0 60 0 -40 1 0 0 0 1 0 0 0 1 3707.dat
 
 
@@ -11119,11 +11119,11 @@
 0 BFC CERTIFY CCW
 
 0 //Start cap reference(s)
-0 // ~Technic Shock Absorber 10L Damped, TransClear Cylinder with Cap (Complete) (Obsolete)
+0 // ~Technic Shock Absorber 10L Damped, TransClear Cylinder with Cap (Complete) (Obsolete) (main_colour)
 1 16 0 90 0 1 0 0 0 1 0 0 0 1 32181c01.dat
 
 0 //End cap reference(s)
-0 // Technic Shock Absorber 10L Damped Piston Rod with Gasket
+0 // Technic Shock Absorber 10L Damped Piston Rod with Gasket (main_colour)
 1 16 0 132.743 0 1 0 0 0 1 0 0 0 1 32183c02.dat
 
 0 //Spring mesh reference
@@ -16201,45 +16201,45 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - hotrodstep1-2.ldr
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (black)
 1 0 20 0 5 0 0 -1 1 0 0 0 -1 0 6632.dat
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (black)
 1 0 20 0 15 0 0 -1 1 0 0 0 -1 0 6632.dat
-0 // Technic Axle  6
+0 // Technic Axle  6 (black)
 1 0 -20 0 40 0 0 1 0 1 0 -1 0 0 3706.dat
-0 // Technic Axle  6
+0 // Technic Axle  6 (black)
 1 0 20 0 40 0 0 1 0 1 0 -1 0 0 3706.dat
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (black)
 1 0 180 0 -10 0 0 1 -1 0 0 0 -1 0 32009.dat
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (black)
 1 0 -180 0 -10 0 0 -1 -1 0 0 0 1 0 32009.dat
-0 // Technic Angle Connector #2 (180 degree)
+0 // Technic Angle Connector #2 (180 degree) (black)
 1 0 -20 0 110 0 1 0 -1 0 0 0 0 1 32034.dat
-0 // Technic Angle Connector #2 (180 degree)
+0 // Technic Angle Connector #2 (180 degree) (black)
 1 0 20 0 110 0 1 0 -1 0 0 0 0 1 32034.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 -120 0 10 0 0 -1 0 1 0 1 0 0 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 120 0 10 0 0 -1 0 1 0 1 0 0 6558.dat
-0 // Technic Axle 12
+0 // Technic Axle 12 (red)
 1 4 -180 -80 100 0 0 -1 0 1 0 1 0 0 3708.dat
-0 // Technic Axle 12
+0 // Technic Axle 12 (red)
 1 4 180 -80 100 0 0 -1 0 1 0 1 0 0 3708.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_grey)
 1 7 -180 -80 220 1 0 0 0 1 0 0 0 1 6538b.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_grey)
 1 7 180 -80 220 1 0 0 0 1 0 0 0 1 6538b.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 -180 -80 240 0 0 1 0 1 0 -1 0 0 32062.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 180 -80 240 0 0 1 0 1 0 -1 0 0 32062.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_grey)
 1 7 180 -80 260 1 0 0 0 1 0 0 0 1 6538b.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (light_grey)
 1 7 -180 -80 260 1 0 0 0 1 0 0 0 1 6538b.dat
-0 // =Technic Panel Fairing #1
+0 // =Technic Panel Fairing #1 (red)
 1 4 -150 -40 20 0.8 0.6 0 -0.6 0.8 0 0 0 1 22749.dat
-0 // =Technic Panel Fairing #2
+0 // =Technic Panel Fairing #2 (red)
 1 4 150 -40 20 0.8 -0.6 0 0.6 0.8 0 0 0 1 22750.dat
 
 
@@ -16252,33 +16252,33 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - hotrodstep3-4.ldr
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 100 0 10 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 100 0 -10 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -100 0 -10 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -100 0 10 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (black)
 1 0 90 -20 -10 0 0 -1 0 1 0 1 0 0 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (black)
 1 0 90 -20 10 0 0 -1 0 1 0 1 0 0 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (black)
 1 0 -90 -20 10 0 0 -1 0 1 0 1 0 0 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (black)
 1 0 -90 -20 -10 0 0 -1 0 1 0 1 0 0 6536.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 90 -20 0 0 0 -1 0 1 0 1 0 0 3705.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 -90 -20 0 0 0 -1 0 1 0 1 0 0 3705.dat
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (red)
 1 4 210 -100 -30 -0.8 0 -0.6 -0.6 0 0.8 0 1 0 6629.dat
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (red)
 1 4 210 -100 30 -0.8 0 -0.6 -0.6 0 0.8 0 1 0 6629.dat
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (red)
 1 4 -210 -100 -30 0.8 0 0.6 -0.6 0 0.8 0 -1 0 6629.dat
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (red)
 1 4 -210 -100 30 0.8 0 0.6 -0.6 0 0.8 0 -1 0 6629.dat
 
 
@@ -16291,99 +16291,99 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - hotrodstep4-5.ldr
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 100 0 20 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 100 0 -20 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -100 0 -20 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -100 0 20 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (black)
 1 0 110 20 -20 0 0 -1 0 -1 0 -1 0 0 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (black)
 1 0 110 20 20 0 0 -1 0 -1 0 -1 0 0 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (black)
 1 0 -110 20 20 0 0 -1 0 -1 0 -1 0 0 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (black)
 1 0 -110 20 -20 0 0 -1 0 -1 0 -1 0 0 6536.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 110 20 0 0 0 -1 0 1 0 1 0 0 4519.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 -110 20 0 0 0 -1 0 1 0 1 0 0 4519.dat
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (black)
 1 0 190 -100 0 0.6 0 -0.8 0.8 0 0.6 0 -1 0 6629.dat
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (black)
 1 0 -190 -100 0 -0.6 0 0.8 0.8 0 0.6 0 1 0 6629.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 174 -88 10 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 158 -76 10 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -174 -88 10 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -158 -76 10 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (black)
 1 0 190 -200 20 -1 0 0 0 0 1 0 1 0 6629.dat
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (black)
 1 0 -190 -200 20 1 0 0 0 0 1 0 -1 0 6629.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 190 -100 30 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 190 -120 30 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -190 -100 30 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -190 -120 30 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 190 -140 20 0 0 1 0 1 0 -1 0 0 32054.dat
-0 // Technic Pin Long with Stop Bush
+0 // Technic Pin Long with Stop Bush (red)
 1 4 -190 -140 20 0 0 1 0 1 0 -1 0 0 32054.dat
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (red)
 1 4 190 -240 0 -1 0 0 0 0 1 0 1 0 6629.dat
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (red)
 1 4 -190 -240 0 1 0 0 0 0 1 0 -1 0 6629.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 190 -180 10 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -190 -180 10 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 190 -240 20 0 0 1 0 1 0 -1 0 0 4519.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 -190 -240 20 0 0 1 0 1 0 -1 0 0 4519.dat
-0 // Technic Axle 12
+0 // Technic Axle 12 (red)
 1 4 190 -140 150 0 0 1 0 1 0 -1 0 0 3708.dat
-0 // Technic Axle 12
+0 // Technic Axle 12 (red)
 1 4 -190 -140 150 0 0 1 0 1 0 -1 0 0 3708.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (red)
 1 4 190 -240 50 1 0 0 0 1 0 0 0 1 6538b.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (red)
 1 4 -190 -240 50 1 0 0 0 1 0 0 0 1 6538b.dat
-0 // Technic Axle 12
+0 // Technic Axle 12 (red)
 1 4 -190 -240 170 0 0 1 0 1 0 -1 0 0 3708.dat
-0 // Technic Axle 12
+0 // Technic Axle 12 (red)
 1 4 190 -240 170 0 0 1 0 1 0 -1 0 0 3708.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -190 -220 10 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 190 -220 10 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Beam  2 x  4 Liftarm Bent 90
+0 // Technic Beam  2 x  4 Liftarm Bent 90 (black)
 1 0 130 -240 20 0 0 1 1 0 0 0 1 0 32140.dat
-0 // Technic Beam  2 x  4 Liftarm Bent 90
+0 // Technic Beam  2 x  4 Liftarm Bent 90 (black)
 1 0 -130 -240 20 0 0 -1 1 0 0 0 -1 0 32140.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 -130 -240 10 0 0 1 0 1 0 -1 0 0 32062.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 130 -240 10 0 0 1 0 1 0 -1 0 0 32062.dat
-0 // Technic Connector (Axle/Bush) Type 1
+0 // Technic Connector (Axle/Bush) Type 1 (black)
 1 0 -110 -240 0 0 0 1 0 1 0 -1 0 0 32039.dat
-0 // Technic Connector (Axle/Bush) Type 1
+0 // Technic Connector (Axle/Bush) Type 1 (black)
 1 0 110 -240 0 0 0 -1 0 -1 0 -1 0 0 32039.dat
-0 // =Technic Panel Fairing #3
+0 // =Technic Panel Fairing #3 (red)
 1 4 -190 -70 50 1 0 0 0 1 0 0 0 1 22972.dat
-0 // =Technic Panel Fairing #4
+0 // =Technic Panel Fairing #4 (red)
 1 4 190 -70 50 1 0 0 0 1 0 0 0 1 22973.dat
-0 // Technic Axle 12
+0 // Technic Axle 12 (red)
 1 4 0 -240 0 1 0 0 0 1 0 0 0 1 3708.dat
 
 
@@ -16396,53 +16396,53 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - hotrodstep5-6.ldr
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (black)
 1 0 190 -20 0 0 0 1 0 1 0 -1 0 0 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (black)
 1 0 190 -20 20 0 0 1 0 1 0 -1 0 0 6536.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 190 -20 20 0 0 1 0 1 0 -1 0 0 4519.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 -190 -20 20 0 0 1 0 1 0 -1 0 0 4519.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (black)
 1 0 -190 -20 0 0 0 1 0 1 0 -1 0 0 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (black)
 1 0 -190 -20 20 0 0 1 0 1 0 -1 0 0 6536.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 190 0 20 1 0 0 0 1 0 0 0 1 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 190 0 0 1 0 0 0 1 0 0 0 1 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 -190 0 0 -1 0 0 0 1 0 0 0 -1 6558.dat
-0 // Technic Pin Long with Friction and Slot
+0 // Technic Pin Long with Friction and Slot (black)
 1 0 -190 0 20 -1 0 0 0 1 0 0 0 -1 6558.dat
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (black)
 1 0 190 -100 40 0 0 1 1 0 0 0 1 0 32009.dat
-0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double (black)
 1 0 -190 -100 40 0 0 -1 1 0 0 0 -1 0 32009.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 50 -100 50 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 90 -100 50 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 150 -100 50 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -90 -100 50 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -150 -100 50 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -50 -100 50 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 -30 -100 50 0 0 1 0 1 0 -1 0 0 3749.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 30 -100 50 0 0 1 0 1 0 -1 0 0 3749.dat
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (red)
 1 4 70 -100 60 0 0 1 1 0 0 0 1 0 6629.dat
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (red)
 1 4 -70 -100 60 0 0 -1 1 0 0 0 -1 0 6629.dat
-0 // Technic Beam  6 x  0.5
+0 // Technic Beam  6 x  0.5 (red)
 1 4 0 -100 55 0 0 -1 1 0 0 0 -1 0 32063.dat
-0 // Technic Beam  6 x  0.5
+0 // Technic Beam  6 x  0.5 (red)
 1 4 0 -100 65 0 0 -1 1 0 0 0 -1 0 32063.dat
 1 4 206 -52 50 0 0 -1 -1 0 0 0 1 0 8448 - hotrodflexaxle1.ldr
 1 4 -206 -52 50 0 0 -1 -1 0 0 0 1 0 8448 - hotrodflexaxle2.ldr
@@ -21496,51 +21496,51 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - hotrodstep7-8.ldr
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (black)
 1 0 210 0 0 0 1 0 -0.8 0 -0.6 -0.6 0 0.8 6629.dat
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (black)
 1 0 -210 0 0 0 1 0 -0.8 0 -0.6 -0.6 0 0.8 6629.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 210 -120 80 1 0 0 0 1 0 0 0 1 4519.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 -210 -120 80 1 0 0 0 1 0 0 0 1 4519.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (black)
 1 0 240 -120 80 0 0 1 0 1 0 -1 0 0 6538b.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (black)
 1 0 -240 -120 80 0 0 1 0 1 0 -1 0 0 6538b.dat
-0 // Technic Cross Block 1 x 3 (Axle/None/Pin)
+0 // Technic Cross Block 1 x 3 (Axle/None/Pin) (black)
 1 0 200 -120 60 0 -1 0 -1 0 0 0 0 -1 32068.dat
-0 // Technic Cross Block 1 x 3 (Axle/None/Pin)
+0 // Technic Cross Block 1 x 3 (Axle/None/Pin) (black)
 1 0 -180 -120 60 0 -1 0 -1 0 0 0 0 -1 32068.dat
-0 // Technic Connector Block  3 x  3 Triangular
+0 // Technic Connector Block  3 x  3 Triangular (black)
 1 0 270 -120 80 0 0 -1 -1 0 0 0 1 0 32175.dat
-0 // Technic Connector Block  3 x  3 Triangular
+0 // Technic Connector Block  3 x  3 Triangular (black)
 1 0 -270 -120 80 0 0 1 1 0 0 0 1 0 32175.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 190 -130 40 0 0 -1 -1 0 0 0 1 0 3749.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 -190 -130 40 0 0 -1 -1 0 0 0 1 0 3749.dat
-0 // Technic Angle Connector #2 (180 degree)
+0 // Technic Angle Connector #2 (180 degree) (red)
 1 4 -190 -160 40 1 0 0 0 0 -1 0 1 0 32034.dat
-0 // Technic Angle Connector #2 (180 degree)
+0 // Technic Angle Connector #2 (180 degree) (red)
 1 4 190 -160 40 1 0 0 0 0 -1 0 1 0 32034.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 190 -190 40 0 0 1 1 0 0 0 1 0 3749.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 -190 -190 40 0 0 1 1 0 0 0 1 0 3749.dat
-0 // Technic Angle Connector #6 (90 degree)
+0 // Technic Angle Connector #6 (90 degree) (red)
 1 4 190 -200 40 0 1 0 1 0 0 0 0 -1 32014.dat
-0 // Technic Angle Connector #6 (90 degree)
+0 // Technic Angle Connector #6 (90 degree) (red)
 1 4 -190 -200 40 0 0 -1 1 0 0 0 -1 0 32014.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 -160 -200 40 1 0 0 0 1 0 0 0 1 32062.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 160 -200 40 1 0 0 0 1 0 0 0 1 32062.dat
-0 // Technic Angle Connector #2 (180 degree)
+0 // Technic Angle Connector #2 (180 degree) (red)
 1 4 130 -200 40 0 0 1 -1 0 0 0 -1 0 32034.dat
-0 // Technic Angle Connector #2 (180 degree)
+0 // Technic Angle Connector #2 (180 degree) (red)
 1 4 -130 -200 40 0 0 1 -1 0 0 0 -1 0 32034.dat
-0 // Technic Axle 12
+0 // Technic Axle 12 (red)
 1 4 0 -200 40 1 0 0 0 1 0 0 0 1 3708.dat
 
 
@@ -21553,41 +21553,41 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - hotrodstep9-10.ldr
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 120 0 -20 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 120 0 20 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -120 0 20 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -120 0 -20 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (black)
 1 0 130 20 -20 0 0 -1 0 -1 0 -1 0 0 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (black)
 1 0 130 20 20 0 0 -1 0 -1 0 -1 0 0 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (black)
 1 0 -130 20 20 0 0 -1 0 -1 0 -1 0 0 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (black)
 1 0 -130 20 -20 0 0 -1 0 -1 0 -1 0 0 6536.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 -130 20 0 0 0 1 0 1 0 -1 0 0 4519.dat
-0 // Technic Axle  3
+0 // Technic Axle  3 (black)
 1 0 130 20 0 0 0 1 0 1 0 -1 0 0 4519.dat
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (black)
 1 0 130 20 0 -1 0 0 0 0 -1 0 -1 0 6629.dat
-0 // Technic Beam  4 x  6 Liftarm Bent 53.13
+0 // Technic Beam  4 x  6 Liftarm Bent 53.13 (black)
 1 0 -130 20 0 1 0 0 0 0 -1 0 1 0 6629.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 82 -116 10 0 -0.6 0.8 0 0.8 0.6 -1 0 0 3749.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 -82 -116 10 0 -0.8 0.6 0 0.6 0.8 -1 0 0 3749.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 98 -104 10 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -98 -104 10 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // =Technic Panel Fairing #3
+0 // =Technic Panel Fairing #3 (red)
 1 4 -58 -134 10 0.6 -0.8 0 0.8 0.6 0 0 0 1 22972.dat
-0 // =Technic Panel Fairing #4
+0 // =Technic Panel Fairing #4 (red)
 1 4 58 -134 10 0.6 0.8 0 -0.8 0.6 0 0 0 1 22973.dat
 1 7 88.912 -140.216 7 0.6 0 0.8 -0.8 0 0.6 0 -1 0 8448 - hotrodribbedhose1.ldr
 1 7 -88.912 -140.216 7 0.6 0 -0.8 0.8 0 0.6 0 -1 0 8448 - hotrodribbedhose1.ldr
@@ -59068,77 +59068,77 @@
 0 Name: 8448 - hotrodstep11-12.ldr
 0 !LDRAW_ORG Unofficial_Model
 0 !THEME Technic
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 220 0 0 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -220 0 0 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Angle Connector #5 (112.5 degree)
+0 // Technic Angle Connector #5 (112.5 degree) (red)
 1 4 230 0 0 -1 0 0 0 1 0 0 0 -1 32015.dat
-0 // Technic Angle Connector #5 (112.5 degree)
+0 // Technic Angle Connector #5 (112.5 degree) (red)
 1 4 -230 0 0 -1 0 0 0 1 0 0 0 -1 32015.dat
-0 // Technic Axle 12
+0 // Technic Axle 12 (red)
 1 4 230 0 130 0 0 1 0 1 0 -1 0 0 3708.dat
-0 // Technic Axle 12
+0 // Technic Axle 12 (red)
 1 4 -230 0 130 0 0 1 0 1 0 -1 0 0 3708.dat
-0 // Technic Angle Connector #5 (112.5 degree)
+0 // Technic Angle Connector #5 (112.5 degree) (red)
 1 4 -230 0 320 1 0 0 0 1 0 0 0 1 32015.dat
-0 // Technic Angle Connector #5 (112.5 degree)
+0 // Technic Angle Connector #5 (112.5 degree) (red)
 1 4 230 0 320 1 0 0 0 1 0 0 0 1 32015.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 220 0 320 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -220 0 320 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Angle Connector #2 (180 degree)
+0 // Technic Angle Connector #2 (180 degree) (red)
 1 4 230 0 260 1 0 0 0 1 0 0 0 1 32034.dat
-0 // Technic Angle Connector #2 (180 degree)
+0 // Technic Angle Connector #2 (180 degree) (red)
 1 4 -230 0 260 1 0 0 0 1 0 0 0 1 32034.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 -230 0 290 0 0 1 0 1 0 -1 0 0 32062.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 230 0 290 0 0 1 0 1 0 -1 0 0 32062.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 130 -80 -290 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -130 -80 -290 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (black)
 1 0 130 -100 -280 -1 0 0 0 1 0 0 0 -1 6536.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (black)
 1 0 -130 -100 -280 -1 0 0 0 1 0 0 0 -1 6536.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 140 -100 -280 -1 0 0 0 1 0 0 0 -1 32062.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 -140 -100 -280 -1 0 0 0 1 0 0 0 -1 32062.dat
-0 // Technic Angle Connector #3 (157.5 degree)
+0 // Technic Angle Connector #3 (157.5 degree) (red)
 1 4 170 -100 -280 0 0 1 0 1 0 -1 0 0 32016.dat
-0 // Technic Angle Connector #3 (157.5 degree)
+0 // Technic Angle Connector #3 (157.5 degree) (red)
 1 4 -170 -100 -280 0 0 -1 0 1 0 1 0 0 32016.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 197.716 -111.481 -280 0.924 0.383 0 -0.383 0.924 0 0 0 1 32062.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 -197.716 -111.481 -280 0.924 -0.383 0 0.383 0.924 0 0 0 1 32062.dat
-0 // Technic Angle Connector #5 (112.5 degree)
+0 // Technic Angle Connector #5 (112.5 degree) (red)
 1 4 225.433 -122.961 -280 -0.383 0 0.924 -0.924 0 -0.383 0 -1 0 32015.dat
-0 // Technic Angle Connector #5 (112.5 degree)
+0 // Technic Angle Connector #5 (112.5 degree) (red)
 1 4 -225.433 -122.961 -280 0.383 -0.854 0.354 -0.924 -0.354 0.146 0 -0.383 -0.924 32015.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 236.039 -127.354 -252.284 -0.354 0.383 0.854 0.146 0.924 -0.354 -0.924 0 -0.383 3749.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 -236.039 -127.354 -252.284 0.354 -0.383 0.854 0.146 0.924 0.354 -0.924 0 0.383 3749.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 230 -27.716 -11.481 0 -1 0 0.924 0 -0.383 0.383 0 0.924 3749.dat
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 -230 -27.716 -11.481 0 -1 0 0.924 0 -0.383 0.383 0 0.924 3749.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 170 -100 -270 0 0 1 0 1 0 -1 0 0 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -170 -100 -270 0 0 -1 0 1 0 1 0 0 2780.dat
-0 // Plate  3 x  2 with Hole
+0 // Plate  3 x  2 with Hole (black)
 1 0 164.147 -129.424 -268 0.981 0 -0.195 -0.195 0 -0.981 0 1 0 3176.dat
-0 // Plate  3 x  2 with Hole
+0 // Plate  3 x  2 with Hole (black)
 1 0 -164.147 -129.424 -268 0.981 0 0.195 0.195 0 -0.981 0 1 0 3176.dat
-0 // Tile  2 x  2 Round with Cross Underside Stud
+0 // Tile  2 x  2 Round with Cross Underside Stud (white)
 1 15 -164.147 -129.424 -276 0.981 0 0.195 0.195 0 -0.981 0 1 0 4150.dat
-0 // Tile  2 x  2 Round with Cross Underside Stud
+0 // Tile  2 x  2 Round with Cross Underside Stud (white)
 1 15 164.147 -129.424 -276 0.981 0 -0.195 -0.195 0 -0.981 0 1 0 4150.dat
 1 4 230 -29.564 -12.247 1 0 0 0 0.924 -0.383 0 0.383 0.924 8448 - hotrodribbedhose2.ldr
 1 4 -230 -29.564 -12.247 1 0 0 0 0.924 -0.383 0 0.383 0.924 8448 - hotrodribbedhose3.ldr
@@ -59175,117 +59175,117 @@
 0 BFC CERTIFY CCW
 
 0 //Segments
-0 // ~Technic Ribbed Hose End Segment
+0 // ~Technic Ribbed Hose End Segment (main_colour)
 1 16 0.011852 -1.989874 -0.015242 0.999982 -0.005956 0.000016 0.005956 0.999953 -0.00766 0.000029 0.007659 0.999971 79.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 0.071921 -7.564169 -0.093308 0.99984 -0.0156 0.0088 0.015775 0.999671 -0.020219 -0.008482 0.020355 0.999757 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 0.183894 -12.881461 -0.241073 0.999445 -0.027026 0.019465 0.027703 0.998989 -0.0354 -0.018489 0.035919 0.999184 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 0.362293 -18.1935 -0.481351 0.998743 -0.039448 0.030933 0.041032 0.997785 -0.052365 -0.028799 0.053568 0.998149 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 0.601374 -23.498431 -0.809731 0.997769 -0.050961 0.043132 0.053842 0.996197 -0.0685 -0.039477 0.070669 0.996718 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 0.890317 -28.544331 -1.215417 0.996429 -0.063004 0.056205 0.067693 0.994006 -0.085843 -0.05046 0.089342 0.994722 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 1.258578 -33.825475 -1.744525 0.994725 -0.074865 0.070131 0.081897 0.991258 -0.103441 -0.061774 0.108639 0.99216 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 1.690109 -39.090059 -2.379249 0.992474 -0.087958 0.085194 0.098122 0.987473 -0.123569 -0.073258 0.130998 0.988672 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 2.193654 -44.331337 -3.140737 0.98975 -0.100721 0.101243 0.114755 0.9829 -0.14401 -0.085006 0.154152 0.984384 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 2.760076 -49.547765 -4.019463 0.986569 -0.11276 0.118177 0.13138 0.977686 -0.163917 -0.097057 0.177242 0.97937 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 3.396074 -54.73092 -5.036145 0.982634 -0.125698 0.136491 0.150097 0.970935 -0.186429 -0.10909 0.203678 0.972941 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 4.097914 -59.876021 -6.192675 0.977947 -0.13873 0.156122 0.170165 0.962675 -0.210477 -0.121096 0.232401 0.965052 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 4.829512 -64.735903 -7.43831 0.972861 -0.149834 0.176325 0.188989 0.954208 -0.231884 -0.133507 0.258915 0.956629 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 5.659834 -69.782423 -8.901978 0.966719 -0.161729 0.19824 0.210444 0.943314 -0.256656 -0.145494 0.289832 0.945954 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 6.547866 -74.770518 -10.523337 0.959843 -0.1726 0.221159 0.232203 0.931178 -0.281051 -0.157429 0.321118 0.933862 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 7.494834 -79.685292 -12.324672 0.952013 -0.182893 0.245402 0.255188 0.917011 -0.306546 -0.168971 0.354459 0.919678 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 8.490872 -84.52454 -14.295932 0.943367 -0.191955 0.270577 0.278512 0.901387 -0.331562 -0.18025 0.388143 0.9038 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 9.533739 -89.272745 -16.455693 0.933889 -0.199696 0.296601 0.302161 0.884273 -0.356032 -0.191178 0.422116 0.886154 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 10.614775 -93.92143 -18.804224 0.922802 -0.206998 0.324944 0.329084 0.862078 -0.385391 -0.200352 0.462573 0.863646 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 11.675106 -98.243213 -21.233081 0.911841 -0.21123 0.352033 0.352422 0.842566 -0.407286 -0.21058 0.495444 0.842728 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 12.807204 -102.66048 -23.971441 0.899573 -0.214204 0.380637 0.377742 0.819059 -0.431803 -0.21927 0.532221 0.817717 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 13.949245 -106.954956 -26.89464 0.886585 -0.215156 0.409482 0.402872 0.794147 -0.455 -0.227293 0.568365 0.790759 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 15.090625 -111.1065 -30.017683 0.87291 -0.213968 0.438459 0.4278 0.767743 -0.477031 -0.234554 0.603977 0.761706 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 16.220329 -115.120297 -33.319893 0.858597 -0.210548 0.467419 0.452492 0.739804 -0.497936 -0.240959 0.63903 0.730465 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 17.324964 -118.977499 -36.811959 0.843892 -0.204962 0.495819 0.47633 0.7115 -0.516602 -0.246891 0.67213 0.698059 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 18.395152 -122.687261 -40.470601 0.828682 -0.196952 0.523923 0.499847 0.681618 -0.534369 -0.25187 0.704704 0.66329 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 19.36806 -126.06804 -44.120525 0.813279 -0.186797 0.551075 0.522272 0.65188 -0.549804 -0.256533 0.734955 0.62772 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 20.329077 -129.456391 -48.106764 0.797799 -0.175014 0.576963 0.543442 0.623188 -0.562412 -0.261127 0.762238 0.592289 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 21.225247 -132.698461 -52.227466 0.782136 -0.161221 0.60189 0.563872 0.594189 -0.573574 -0.265164 0.788002 0.555644 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 22.039675 -135.780126 -56.485996 0.766418 -0.145664 0.625608 0.583337 0.565592 -0.582944 -0.268925 0.811719 0.518451 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 22.771083 -138.718191 -60.859657 0.750695 -0.128472 0.648037 0.601847 0.537535 -0.590623 -0.272464 0.833397 0.480846 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 23.404745 -141.505229 -65.346174 0.735067 -0.110566 0.668919 0.619199 0.511358 -0.595907 -0.27617 0.852225 0.444345 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 23.942607 -144.15915 -69.924981 0.719452 -0.090684 0.688597 0.635806 0.485022 -0.600421 -0.279536 0.869787 0.406607 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 24.353389 -146.559571 -74.371674 0.703985 -0.071341 0.706623 0.651247 0.461777 -0.602195 -0.283341 0.884122 0.371545 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 24.676386 -148.954166 -79.11112 0.688588 -0.051028 0.723355 0.665907 0.439403 -0.602904 -0.28708 0.896839 0.336547 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 24.893116 -151.23651 -83.911623 0.673267 -0.029426 0.738814 0.679851 0.4175 -0.602907 -0.290713 0.908201 0.301094 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 24.990061 -153.402338 -88.769821 0.658049 -0.008021 0.752932 0.692988 0.397564 -0.601424 -0.294515 0.917539 0.267175 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 24.977164 -155.469789 -93.671672 0.64292 0.013898 0.765807 0.705443 0.378696 -0.599116 -0.298335 0.925417 0.233667 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 24.842581 -157.436511 -98.613062 0.627884 0.035668 0.77749 0.717229 0.361397 -0.595798 -0.302234 0.931729 0.201333 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 24.600028 -159.320384 -103.582625 0.612942 0.056484 0.788106 0.728426 0.346018 -0.591326 -0.306099 0.936526 0.170944 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 24.259813 -161.037945 -108.340999 0.598094 0.077704 0.79765 0.739071 0.331425 -0.586457 -0.309931 0.940277 0.140795 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 23.787047 -162.763631 -113.351435 0.583339 0.099002 0.806172 0.749165 0.317874 -0.581126 -0.313793 0.94295 0.11126 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 23.207824 -164.423901 -118.372807 0.568693 0.119694 0.813795 0.758776 0.305625 -0.575197 -0.317564 0.944599 0.082986 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 22.513367 -166.018303 -123.400885 0.554153 0.140374 0.820494 0.767914 0.29423 -0.568979 -0.321284 0.94537 0.055253 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 21.716027 -167.557939 -128.430841 0.539746 0.160271 0.826431 0.776628 0.284021 -0.5623 -0.324844 0.945328 0.028828 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 20.806669 -169.042276 -133.458422 0.525437 0.18059 0.831447 0.784874 0.274375 -0.555599 -0.328464 0.944513 0.002426 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 19.798934 -170.481419 -138.480419 0.511326 0.199075 0.836012 0.792796 0.266199 -0.548282 -0.331695 0.943137 -0.021711 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 18.742639 -171.811949 -143.257856 0.497358 0.217547 0.839826 0.800319 0.258587 -0.540945 -0.334849 0.941173 -0.045497 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 17.536248 -173.169157 -148.258906 0.483584 0.235095 0.843135 0.807502 0.251884 -0.53338 -0.337767 0.938768 -0.068033 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 16.238437 -174.492683 -153.246054 0.469907 0.253604 0.845501 0.814262 0.245302 -0.526122 -0.34083 0.935688 -0.091231 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 14.841996 -175.782489 -158.21542 0.456484 0.270504 0.847614 0.820748 0.239777 -0.518537 -0.343505 0.932381 -0.112561 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 13.359132 -177.045075 -163.166706 0.443206 0.28769 0.849001 0.826872 0.234566 -0.511138 -0.346196 0.928555 -0.133922 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 11.783353 -178.280648 -168.096094 0.43017 0.303862 0.850071 0.832718 0.230078 -0.503631 -0.348617 0.924517 -0.154058 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 10.127376 -179.49479 -173.004488 0.417382 0.319321 0.85078 0.838293 0.226113 -0.496122 -0.350795 0.920275 -0.173309 80.dat
-0 // ~Technic Ribbed Hose Mid Segment
+0 // ~Technic Ribbed Hose Mid Segment (main_colour)
 1 16 8.472308 -180.6329 -177.660357 0.404915 0.333461 0.85138 0.84365 0.222774 -0.488493 -0.352558 0.916065 -0.19112 80.dat
-0 // ~Technic Ribbed Hose End Segment
+0 // ~Technic Ribbed Hose End Segment (main_colour)
 1 16 6.692924 -181.790539 -182.440894 0.392773 -0.34649 -0.851865 0.848791 -0.219938 0.480814 -0.353954 -0.911906 0.207712 79.dat
 
 
@@ -100917,68 +100917,68 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !THEME Technic
 0 Name: 8448 - hotrodstep13-14.ldr
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (white)
 1 15 0 20 -18 1 0 0 0 0 -1 0 1 0 2431.dat
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (black)
 1 0 -30 0 0 1 0 0 0 1 0 0 0 1 6536.dat
 0 STEP
-0 // Technic Cross Block 1 x 2 (Axle/Pin)
+0 // Technic Cross Block 1 x 2 (Axle/Pin) (black)
 1 0 30 0 0 1 0 0 0 1 0 0 0 1 6536.dat
-0 // Technic Pin  1/2
+0 // Technic Pin  1/2 (light_grey)
 1 7 30 20 -10 0 0 1 0 1 0 -1 0 0 4274.dat
-0 // Technic Pin  1/2
+0 // Technic Pin  1/2 (light_grey)
 1 7 -30 20 -10 0 0 1 0 1 0 -1 0 0 4274.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 -40 0 0 1 0 0 0 1 0 0 0 1 32062.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 40 0 0 1 0 0 0 1 0 0 0 1 32062.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (black)
 1 0 -60 0 0 0 0 1 0 1 0 -1 0 0 6538b.dat
-0 // Technic Axle Joiner Offset
+0 // Technic Axle Joiner Offset (black)
 1 0 60 0 0 0 0 1 0 1 0 -1 0 0 6538b.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 -100 0 0 -1 0 0 0 1 0 0 0 -1 3705.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 100 0 0 -1 0 0 0 1 0 0 0 -1 3705.dat
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (black)
 1 0 105 0 0 0 1 0 0 0 1 1 0 0 32056.dat
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (black)
 1 0 115 0 0 0 1 0 0 0 1 1 0 0 32056.dat
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (black)
 1 0 -105 0 0 0 1 0 0 0 1 1 0 0 32056.dat
-0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (black)
 1 0 -115 0 0 0 1 0 0 0 1 1 0 0 32056.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 -100 0 20 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Pin with Friction and Slots
+0 // Technic Pin with Friction and Slots (black)
 1 0 100 0 20 1 0 0 0 1 0 0 0 1 2780.dat
-0 // Technic Angle Connector #3 (157.5 degree)
+0 // Technic Angle Connector #3 (157.5 degree) (light_grey)
 1 7 150 0 0 0 0 1 -1 0 0 0 -1 0 32016.dat
-0 // Technic Angle Connector #3 (157.5 degree)
+0 // Technic Angle Connector #3 (157.5 degree) (light_grey)
 1 7 -150 0 0 0 0 -1 1 0 0 0 -1 0 32016.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 120 40 0 1 0 0 0 1 0 0 0 1 32062.dat
-0 // Technic Axle  2 Notched
+0 // Technic Axle  2 Notched (black)
 1 0 -120 40 0 1 0 0 0 1 0 0 0 1 32062.dat
-0 // Technic Angle Connector #3 (157.5 degree)
+0 // Technic Angle Connector #3 (157.5 degree) (light_grey)
 1 7 150 40 0 0 0 1 -1 0 0 0 -1 0 32016.dat
-0 // Technic Angle Connector #3 (157.5 degree)
+0 // Technic Angle Connector #3 (157.5 degree) (light_grey)
 1 7 -150 40 0 0 0 -1 1 0 0 0 -1 0 32016.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 196.194 0 19.134 0.924 0.383 0 0 0 1 0.383 -0.924 0 3705.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 196.194 40 19.134 0.924 0.383 0 0 0 1 0.383 -0.924 0 3705.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 -196.194 40 19.134 0.924 -0.383 0 0 0 1 -0.383 -0.924 0 3705.dat
-0 // Technic Axle  4
+0 // Technic Axle  4 (black)
 1 0 -196.194 0 19.134 0.924 -0.383 0 0 0 1 -0.383 -0.924 0 3705.dat
-0 // Technic Angle Connector #1
+0 // Technic Angle Connector #1 (light_grey)
 1 7 -242.388 0 38.268 0 -0.383 -0.924 1 0 0 0 -0.924 0.383 32013.dat
-0 // Technic Angle Connector #1
+0 // Technic Angle Connector #1 (light_grey)
 1 7 242.388 0 38.268 0.383 0 0.924 0 1 0 -0.924 0 0.383 32013.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 -223.91 40 30.615 -0.383 0 0.924 0 1 0 -0.924 0 -0.383 3713.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_grey)
 1 7 223.91 40 30.615 -0.383 0 -0.924 0 1 0 0.924 0 -0.383 3713.dat
 
 

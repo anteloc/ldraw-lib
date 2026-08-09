@@ -9,300 +9,300 @@
 0 !LDCAD GROUP_DEF [topLevel=true] [LID=1] [GID=L6iJQCwXuBu] [name=Antenna orb L] [center=0 10 0]
 0 !LDCAD GROUP_DEF [topLevel=true] [LID=2] [GID=XSToBVPRtu] [name=Windscreen] [center=0 10 0]
 0 !LDCAD GROUP_DEF [topLevel=true] [LID=3] [GID=C6q9jdNI6Sb] [name=Latch] [center=0 10 0]
-0 // Plate  6 x 16
+0 // Plate  6 x 16 (black)
 1 0 0 -30 -170 0 0 1 0 1 0 -1 0 0 3027.dat
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (blue)
 1 1 0 -38 -30 1 0 0 0 1 0 0 0 1 3020.dat
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (dark_grey)
 1 8 0 -46 -30 1 0 0 0 1 0 0 0 1 3020.dat
 0 STEP
-0 // Technic Brick  1 x  4 x  1.667 Wing Front
+0 // Technic Brick  1 x  4 x  1.667 Wing Front (black)
 1 0 -50 -54 -10 0 0 -1 0 1 0 1 0 0 2743.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (blue)
 1 1 0 -54 -30 1 0 0 0 1 0 0 0 1 3022.dat
-0 // Technic Brick  1 x  4 x  1.667 Wing Front
+0 // Technic Brick  1 x  4 x  1.667 Wing Front (black)
 1 0 50 -54 -10 0 0 -1 0 1 0 1 0 0 2743.dat
 0 STEP
-0 // Slope Brick 45  2 x  1 Inverted with Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted with Inner Stopper Ring (blue)
 1 1 -50 -54 -60 0 0 1 0 1 0 -1 0 0 3665b.dat
-0 // Tile  1 x  1 with Groove
+0 // Tile  1 x  1 with Groove (black)
 1 0 -70 -62 -60 1 0 0 0 1 0 0 0 1 3070b.dat
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (dark_grey)
 1 8 0 -54 -60 1 0 0 0 1 0 0 0 1 3010.dat
-0 // Slope Brick 45  2 x  1 Inverted with Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted with Inner Stopper Ring (blue)
 1 1 50 -54 -60 0 0 -1 0 1 0 1 0 0 3665b.dat
-0 // Tile  1 x  1 with Groove
+0 // Tile  1 x  1 with Groove (black)
 1 0 70 -62 -60 1 0 0 0 1 0 0 0 1 3070b.dat
 0 STEP
-0 // Brick  2 x  4 with Pins
+0 // Brick  2 x  4 with Pins (dark_grey)
 1 8 -60 -54 -150 1 0 0 0 1 0 0 0 1 6249.dat
-0 // Brick  2 x  4 with Pins
+0 // Brick  2 x  4 with Pins (dark_grey)
 1 8 60 -54 -150 1 0 0 0 1 0 0 0 1 6249.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (blue)
 1 1 -50 -54 -100 0 0 1 0 1 0 -1 0 0 3622.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (blue)
 1 1 50 -54 -100 0 0 1 0 1 0 -1 0 0 3622.dat
 0 STEP
-0 // Plate  4 x  6
+0 // Plate  4 x  6 (black)
 1 0 0 -30 -390 0 0 1 0 1 0 -1 0 0 3032.dat
-0 // Brick  2 x  6
+0 // Brick  2 x  6 (blue)
 1 1 0 -54 -250 1 0 0 0 1 0 0 0 1 2456.dat
-0 // Brick  2 x  6
+0 // Brick  2 x  6 (blue)
 1 1 0 -54 -190 1 0 0 0 1 0 0 0 1 2456.dat
 0 STEP
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (black)
 1 0 0 -30 -470 1 0 0 0 1 0 0 0 1 3022.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (dark_grey)
 1 8 0 -54 -350 0 0 1 0 1 0 -1 0 0 3001.dat
-0 // Brick  2 x  4 with Pins
+0 // Brick  2 x  4 with Pins (dark_grey)
 1 8 -60 -54 -290 1 0 0 0 1 0 0 0 1 6249.dat
-0 // Brick  2 x  4 with Pins
+0 // Brick  2 x  4 with Pins (dark_grey)
 1 8 60 -54 -290 1 0 0 0 1 0 0 0 1 6249.dat
 0 STEP
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (dark_grey)
 1 8 0 -54 -430 0 0 1 0 1 0 -1 0 0 3001.dat
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (dark_grey)
 1 8 -30 -54 -320 -1 0 0 0 1 0 0 0 -1 2357.dat
-0 // Brick  2 x  2 Corner
+0 // Brick  2 x  2 Corner (dark_grey)
 1 8 30 -54 -320 0 0 1 0 1 0 -1 0 0 2357.dat
 0 STEP
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (blue)
 1 1 -30 -54 -400 0 0 1 0 1 0 -1 0 0 3622.dat
-0 // Brick  1 x  3
+0 // Brick  1 x  3 (blue)
 1 1 30 -54 -400 0 0 1 0 1 0 -1 0 0 3622.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (blue)
 1 1 0 -62 -140 1 0 0 0 1 0 0 0 1 2431.dat
-0 // Tile  1 x  4 with Groove
+0 // Tile  1 x  4 with Groove (blue)
 1 1 0 -62 -60 1 0 0 0 1 0 0 0 1 2431.dat
 0 STEP
-0 // ~Slope Brick 45  2 x  2 Inverted without Inner Stopper Ring (Obsolete)
+0 // ~Slope Brick 45  2 x  2 Inverted without Inner Stopper Ring (Obsolete) (dark_grey)
 1 8 0 -54 -480 1 0 0 0 1 0 0 0 1 3660.dat
-0 // Slope Brick 45  2 x  1 Inverted with Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted with Inner Stopper Ring (dark_grey)
 1 8 -30 -54 -440 1 0 0 0 1 0 0 0 1 3665b.dat
-0 // Slope Brick 45  2 x  1 Inverted with Inner Stopper Ring
+0 // Slope Brick 45  2 x  1 Inverted with Inner Stopper Ring (dark_grey)
 1 8 30 -54 -440 1 0 0 0 1 0 0 0 1 3665b.dat
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (black)
 1 0 0 -78 -30 1 0 0 0 1 0 0 0 1 3003.dat
 0 STEP
-0 // Support Insectoid Leg Small
+0 // Support Insectoid Leg Small (dark_grey)
 1 8 -100 -38 -360 0 0 1 0 1 0 -1 0 0 30211.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (blue)
 1 1 -30 -46 -360 1 0 0 0 1 0 0 0 1 3024.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_neon_green)
 1 42 -30 -54 -360 1 0 0 0 1 0 0 0 1 6141.dat
-0 // Support Insectoid Leg Small
+0 // Support Insectoid Leg Small (dark_grey)
 1 8 100 -38 -360 0 0 -1 0 1 0 1 0 0 30211.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (blue)
 1 1 30 -46 -360 1 0 0 0 1 0 0 0 1 3024.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_neon_green)
 1 42 30 -54 -360 1 0 0 0 1 0 0 0 1 6141.dat
-0 // Support Insectoid Leg Small
+0 // Support Insectoid Leg Small (dark_grey)
 1 8 -120 -38 -220 0 0 1 0 1 0 -1 0 0 30211.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (blue)
 1 1 -50 -46 -220 1 0 0 0 1 0 0 0 1 3024.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_neon_green)
 1 42 -50 -54 -220 1 0 0 0 1 0 0 0 1 6141.dat
-0 // Support Insectoid Leg Small
+0 // Support Insectoid Leg Small (dark_grey)
 1 8 120 -38 -220 0 0 -1 0 1 0 1 0 0 30211.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (blue)
 1 1 50 -46 -220 1 0 0 0 1 0 0 0 1 3024.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_neon_green)
 1 42 50 -54 -220 1 0 0 0 1 0 0 0 1 6141.dat
 0 STEP
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (blue)
 1 1 0 -62 -460 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Plate  1 x  2 with  2 Offset Hollow Studs
+0 // Plate  1 x  2 with  2 Offset Hollow Studs (dark_grey)
 1 8 0 -70 -270 1 0 0 0 1 0 0 0 1 4590.dat
-0 // Plate  1 x  2 with  2 Offset Hollow Studs
+0 // Plate  1 x  2 with  2 Offset Hollow Studs (dark_grey)
 1 8 0 -70 -230 -1 0 0 0 1 0 0 0 -1 4590.dat
-0 // Cockpit  4 x 11 x  2.667
+0 // Cockpit  4 x 11 x  2.667 (black)
 1 0 0 -78 -10 1 0 0 0 1 0 0 0 1 6058.dat
 0 STEP
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (white)
 1 15 0 -70 -460 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (black)
 1 0 -30 -78 -250 0 0 1 0 1 0 -1 0 0 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (black)
 1 0 30 -78 -250 0 0 1 0 1 0 -1 0 0 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (white)
 1 15 0 -62 100 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (blue)
 1 1 0 -70 100 1 0 0 0 1 0 0 0 1 3023.dat
 0 STEP
-0 // Brick  1 x 16
+0 // Brick  1 x 16 (dark_grey)
 1 8 -50 -78 -170 0 0 1 0 1 0 -1 0 0 2465.dat
-0 // Brick  1 x 16
+0 // Brick  1 x 16 (dark_grey)
 1 8 50 -78 -170 0 0 1 0 1 0 -1 0 0 2465.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (blue)
 1 1 0 -78 -270 1 0 0 0 1 0 0 0 1 3069b.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (blue)
 1 1 0 -78 -230 1 0 0 0 1 0 0 0 1 3069b.dat
-0 // Slope Brick 45  2 x  2
+0 // Slope Brick 45  2 x  2 (blue)
 1 1 0 -78 80 1 0 0 0 1 0 0 0 1 3039.dat
 0 STEP
-0 // Slope Brick 45  2 x  2 with Blue/Copper Radar Display Pattern
+0 // Slope Brick 45  2 x  2 with Blue/Copper Radar Display Pattern (dark_grey)
 1 8 0 -78 -440 -1 0 0 0 1 0 0 0 -1 3039p67.dat
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (black)
 1 0 0 -62 -350 1 0 0 0 1 0 0 0 1 3068b.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (blue)
 1 1 0 -78 -310 1 0 0 0 1 0 0 0 1 3001.dat
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (dark_grey)
 1 8 0 -78 -200 1 0 0 0 1 0 0 0 1 3010.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (dark_grey)
 1 8 0 -78 -170 1 0 0 0 1 0 0 0 1 3001.dat
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (blue)
 1 1 0 -102 -30 1 0 0 0 1 0 0 0 1 3003.dat
 0 STEP
-0 // Slope Brick 33  3 x  1
+0 // Slope Brick 33  3 x  1 (blue)
 1 1 -30 -78 -340 1 0 0 0 1 0 0 0 1 4286.dat
-0 // Slope Brick 33  3 x  1
+0 // Slope Brick 33  3 x  1 (blue)
 1 1 30 -78 -340 1 0 0 0 1 0 0 0 1 4286.dat
-0 // Hinge Tile  1 x  4
+0 // Hinge Tile  1 x  4 (black)
 1 0 -50 -86 -250 0 0 -1 0 1 0 1 0 0 4625.dat
-0 // Hinge Tile  1 x  4
+0 // Hinge Tile  1 x  4 (black)
 1 0 50 -86 -250 0 0 1 0 1 0 -1 0 0 4625.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (blue)
 1 1 -50 -102 -160 -1 0 0 0 1 0 0 0 -1 3040b.dat
-0 // Cone  1 x  1
+0 // Cone  1 x  1 (trans_neon_green)
 1 42 -30 -102 -160 1 0 0 0 1 0 0 0 1 4589.dat
-0 // Cone  1 x  1
+0 // Cone  1 x  1 (trans_neon_green)
 1 42 -30 -126 -160 1 0 0 0 1 0 0 0 1 4589.dat
-0 // Cone  1 x  1
+0 // Cone  1 x  1 (trans_neon_green)
 1 42 30 -102 -160 1 0 0 0 1 0 0 0 1 4589.dat
-0 // Cone  1 x  1
+0 // Cone  1 x  1 (trans_neon_green)
 1 42 30 -126 -160 1 0 0 0 1 0 0 0 1 4589.dat
-0 // Slope Brick 45  2 x  1
+0 // Slope Brick 45  2 x  1 (blue)
 1 1 50 -102 -160 -1 0 0 0 1 0 0 0 -1 3040b.dat
-0 // Slope Brick 45  2 x  2
+0 // Slope Brick 45  2 x  2 (blue)
 1 1 -30 -102 -30 0 0 1 0 1 0 -1 0 0 3039.dat
-0 // Slope Brick 45  2 x  2
+0 // Slope Brick 45  2 x  2 (blue)
 1 1 30 -102 -30 0 0 -1 0 1 0 1 0 0 3039.dat
 0 STEP
-0 // Hinge  1 x  2 Base
+0 // Hinge  1 x  2 Base (dark_grey)
 1 8 -30 -78 -430 0 0 1 0 1 0 -1 0 0 3937.dat
 0 // * Max rotation of the antenna orbs is 31.93019°
 0 !LDCAD GROUP_NXT [ids=0] [nrs=-1]
-0 // Hinge  1 x  2 Top
+0 // Hinge  1 x  2 Top (black)
 1 0 -35.289 -76.487 -430 0 0.529 0.849 0 0.849 -0.529 -1 0 0 3938.dat
-0 // Hinge  1 x  2 Base
+0 // Hinge  1 x  2 Base (dark_grey)
 1 8 30 -78 -430 0 0 -1 0 1 0 1 0 0 3937.dat
 0 !LDCAD GROUP_NXT [ids=1] [nrs=-1]
-0 // Hinge  1 x  2 Top
+0 // Hinge  1 x  2 Top (black)
 1 0 35.289 -76.487 -430 0 -0.529 -0.849 0 0.849 -0.529 1 0 0 3938.dat
-0 // Tile  1 x  2 with Handle
+0 // Tile  1 x  2 with Handle (blue)
 1 1 -30 -110 -250 0 0 -1 0 1 0 1 0 0 2432.dat
-0 // Tile  1 x  2 with Handle
+0 // Tile  1 x  2 with Handle (blue)
 1 1 30 -110 -250 0 0 1 0 1 0 -1 0 0 2432.dat
-0 // Brick  2 x  6
+0 // Brick  2 x  6 (blue)
 1 1 0 -102 -190 1 0 0 0 1 0 0 0 1 2456.dat
 0 STEP
 1 16 0 -70 210 1 0 0 0 1 0 0 0 1 6919 - 017tail.ldr
 0 STEP
 0 !LDCAD GROUP_NXT [ids=0] [nrs=2]
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (dark_grey)
 1 8 -39.52 -83.276 -430 0 0.529 0.849 0 0.849 -0.529 -1 0 0 3023.dat
 0 !LDCAD GROUP_NXT [ids=1] [nrs=2]
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (dark_grey)
 1 8 39.52 -83.276 -430 0 -0.529 0.849 0 0.849 0.529 -1 0 0 3023.dat
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (dark_grey)
 1 8 0 -102 -320 1 0 0 0 1 0 0 0 1 3010.dat
-0 // Brick  1 x  6
+0 // Brick  1 x  6 (black)
 1 0 0 -102 -300 1 0 0 0 1 0 0 0 1 3009.dat
-0 // Plate  2 x  2 Round with Axlehole
+0 // Plate  2 x  2 Round with Axlehole (black)
 1 0 0 -86 90 1 0 0 0 1 0 0 0 1 4032a.dat
 0 STEP
-0 // Wedge  3 x  4
+0 // Wedge  3 x  4 (blue)
 1 1 0 -78 -460 1 0 0 0 1 0 0 0 1 2399.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (blue)
 1 1 -50 -86 -320 1 0 0 0 1 0 0 0 1 3024.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_neon_green)
 1 42 -50 -94 -320 1 0 0 0 1 0 0 0 1 6141.dat
-0 // Plate  1 x  1 with Clip Horizontal (Thick U-Clip)
+0 // Plate  1 x  1 with Clip Horizontal (Thick U-Clip) (blue)
 1 1 -50 -102 -320 0 0 1 0 1 0 -1 0 0 6019.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (blue)
 1 1 50 -86 -320 1 0 0 0 1 0 0 0 1 3024.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_neon_green)
 1 42 50 -94 -320 1 0 0 0 1 0 0 0 1 6141.dat
-0 // Plate  1 x  1 with Clip Horizontal (Thick U-Clip)
+0 // Plate  1 x  1 with Clip Horizontal (Thick U-Clip) (blue)
 1 1 50 -102 -320 0 0 -1 0 1 0 1 0 0 6019.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (black)
 1 0 -50 -126 -170 0 0 1 0 1 0 -1 0 0 3700.dat
-0 // Technic Brick  1 x  2 with Hole
+0 // Technic Brick  1 x  2 with Hole (black)
 1 0 50 -126 -170 0 0 1 0 1 0 -1 0 0 3700.dat
-0 // Brick  2 x  4
+0 // Brick  2 x  4 (dark_grey)
 1 8 0 -126 -30 1 0 0 0 1 0 0 0 1 3001.dat
 0 STEP
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (black)
 1 0 0 -110 -310 1 0 0 0 1 0 0 0 1 3068b.dat
-0 // Brick  1 x  4
+0 // Brick  1 x  4 (dark_grey)
 1 8 0 -126 -180 1 0 0 0 1 0 0 0 1 3010.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (blue)
 1 1 -30 -134 -40 1 0 0 0 1 0 0 0 1 3024.dat
-0 // Tile  1 x  2 with Groove
+0 // Tile  1 x  2 with Groove (blue)
 1 1 0 -134 -40 1 0 0 0 1 0 0 0 1 3069b.dat
-0 // Plate  1 x  1
+0 // Plate  1 x  1 (blue)
 1 1 30 -134 -40 1 0 0 0 1 0 0 0 1 3024.dat
-0 // Rock  2 x  2 Crystal 3 Point
+0 // Rock  2 x  2 Crystal 3 Point (trans_neon_green)
 1 42 0 -110 90 0 0 1 0 1 0 -1 0 0 30213.dat
-0 // Sticker  1.1 x  1.1 Round with Magnetic Silver Copper Machine
+0 // Sticker  1.1 x  1.1 Round with Magnetic Silver Copper Machine (metallic_silver)
 1 80 0 -110 90 0 0 -1 0 1 0 1 0 0 s13a.dat
 0 STEP
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (dark_grey)
 1 8 -40 -126 -310 1 0 0 0 1 0 0 0 1 3003.dat
-0 // Brick  2 x  2
+0 // Brick  2 x  2 (dark_grey)
 1 8 40 -126 -310 1 0 0 0 1 0 0 0 1 3003.dat
-0 // Brick  1 x  6
+0 // Brick  1 x  6 (black)
 1 0 0 -126 -200 1 0 0 0 1 0 0 0 1 3009.dat
-0 // Hinge Plate  1 x  4 with Car Roof Holder
+0 // Hinge Plate  1 x  4 with Car Roof Holder (blue)
 1 1 0 -134 -20 -1 0 0 0 1 0 0 0 -1 4315.dat
-0 // Windscreen 10 x  4 x  2.333 Canopy with Insectoids Silver & Copper Circuitry Pattern
+0 // Windscreen 10 x  4 x  2.333 Canopy with Insectoids Silver & Copper Circuitry Pattern (trans_green)
 1 34 0 -130 -6 -1 0 0 0 1 0 0 0 -1 2507p61.dat
 0 STEP
-0 // Hinge  1 x  2 Base
+0 // Hinge  1 x  2 Base (dark_grey)
 1 8 0 -102 -440 -1 0 0 0 1 0 0 0 -1 3937.dat
 0 // * Max rotation of the windscreen is 78.38037°
 0 !LDCAD GROUP_NXT [ids=2] [nrs=-1]
-0 // Hinge  1 x  2 Top
+0 // Hinge  1 x  2 Top (black)
 1 0 0 -94.014 -430.205 -1 0 0 0 0.201 -0.98 0 -0.98 -0.201 3938.dat
-0 // Slope Brick 45  2 x  2
+0 // Slope Brick 45  2 x  2 (blue)
 1 1 -30 -150 -310 0 0 1 0 1 0 -1 0 0 3039.dat
-0 // Slope Brick 45  2 x  2
+0 // Slope Brick 45  2 x  2 (blue)
 1 1 30 -150 -310 0 0 -1 0 1 0 1 0 0 3039.dat
-0 // Brick  1 x  1 with Headlight
+0 // Brick  1 x  1 with Headlight (blue)
 1 1 -10 -150 -180 -1 0 0 0 1 0 0 0 -1 4070.dat
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_neon_green)
 1 42 -10 -140 -166 1 0 0 0 0 1 0 -1 0 6141.dat
-0 // Slope Brick 45  2 x  1 with Targeting Screen Pattern
+0 // Slope Brick 45  2 x  1 with Targeting Screen Pattern (dark_grey)
 1 8 10 -150 -180 -1 0 0 0 1 0 0 0 -1 3040p58.dat
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (black)
 1 0 -30 -142 -30 0 0 1 0 1 0 -1 0 0 2412b.dat
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (black)
 1 0 30 -142 -30 0 0 1 0 1 0 -1 0 0 2412b.dat
 0 STEP
-0 // Slope Brick 33  3 x  2 with Insectoid Scope Pattern
+0 // Slope Brick 33  3 x  2 with Insectoid Scope Pattern (dark_grey)
 1 8 0 -94 -460 1 0 0 0 1 0 0 0 1 3298p67.dat
 1 256 -30 -70 -400 0 0 -1 0 1 0 1 0 0 6919 - 73590bf6919a.dat
 1 256 30 -70 -400 0 0 -1 0 1 0 1 0 0 6919 - 73590bf6919b.dat
-0 // Slope Brick 45  2 x  3
+0 // Slope Brick 45  2 x  3 (blue)
 1 1 -30 -150 -180 0 0 1 0 1 0 -1 0 0 3038.dat
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (dark_grey)
 1 8 0 -150 -200 1 0 0 0 1 0 0 0 1 3004.dat
-0 // Slope Brick 45  2 x  3
+0 // Slope Brick 45  2 x  3 (blue)
 1 1 30 -150 -180 0 0 -1 0 1 0 1 0 0 3038.dat
-0 // Hinge  1 x  2 Base
+0 // Hinge  1 x  2 Base (dark_grey)
 1 8 0 -158 -20 1 0 0 0 1 0 0 0 1 3937.dat
 0 !LDCAD GROUP_NXT [ids=3] [nrs=-1]
-0 // Hinge  1 x  2 Top
+0 // Hinge  1 x  2 Top (black)
 1 0 0 -154.428 -27.66 1 0 0 0 0.643 -0.766 0 0.766 0.643 3938.dat
 0 STEP
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (trans_neon_green)
 1 42 -30 -158 -190 0 0 1 0 1 0 -1 0 0 2412b.dat
-0 // Slope Brick 45  2 x  2
+0 // Slope Brick 45  2 x  2 (black)
 1 0 0 -174 -200 -1 0 0 0 1 0 0 0 -1 3039.dat
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (trans_neon_green)
 1 42 30 -158 -190 0 0 1 0 1 0 -1 0 0 2412b.dat
 0 !LDCAD GROUP_NXT [ids=3] [nrs=2]
-0 // Tile  1 x  2 with Handle
+0 // Tile  1 x  2 with Handle (blue)
 1 1 0 -174.997 -52.174 -1 0 0 0 0.643 0.766 0 0.766 -0.643 2432.dat
 0 STEP
 1 16 -56 -90 -250 0.174 0.985 0 -0.985 0.174 0 0 0 1 6919 - 025-1wingR.ldr
@@ -315,15 +315,15 @@
 1 16 39.52 -83.277 -430 0.849 -0.529 0 0.529 0.849 0 0 0 1 6919 - 027orbL.ldr
 0 STEP
 0 !LDCAD GROUP_NXT [ids=2] [nrs=2]
-0 // Panel  3 x  2 x  6
+0 // Panel  3 x  2 x  6 (trans_neon_green)
 1 42 0 -121.406 -296.992 1 0 0 0 0.201 0.98 0 -0.98 0.201 2466.dat
-0 // Wheel 30 x 35 with Tread on Sidewall
+0 // Wheel 30 x 35 with Tread on Sidewall (blue)
 1 1 -100 -44 -290 0 0 1 0 1 0 -1 0 0 2593.dat
-0 // Wheel 30 x 35 with Tread on Sidewall
+0 // Wheel 30 x 35 with Tread on Sidewall (blue)
 1 1 100 -44 -290 0 0 -1 0 1 0 1 0 0 2593.dat
-0 // Wheel 30 x 35 with Tread on Sidewall
+0 // Wheel 30 x 35 with Tread on Sidewall (blue)
 1 1 -100 -44 -150 0 0 1 0 1 0 -1 0 0 2593.dat
-0 // Wheel 30 x 35 with Tread on Sidewall
+0 // Wheel 30 x 35 with Tread on Sidewall (blue)
 1 1 100 -44 -150 0 0 -1 0 1 0 1 0 0 2593.dat
 1 16 7.8 -35.5 6 0.751 0.587 -0.302 -0.328 0.728 0.602 0.573 -0.354 0.739 6919 - 028scanner.ldr
 1 16 0 -36 -382 1 0 0 0 1 0 0 0 1 6919 - mf6919-1leon.ldr
@@ -347,34 +347,34 @@
 0 !LDCAD GROUP_DEF [topLevel=true] [LID=0] [GID=6G9y4EsVNlo] [name=Right arm] [center=0 0 0]
 0 !LDCAD GROUP_DEF [topLevel=true] [LID=1] [GID=7l7If3hDv16] [name=Left arm] [center=0 0 0]
 0 !LDCAD GROUP_DEF [topLevel=true] [LID=2] [GID=5VnMLUc6fBO] [name=Head] [center=0 0 0]
-0 // ~Minifig Leg Right (Obsolete)
+0 // ~Minifig Leg Right (Obsolete) (black)
 1 0 0 -28 0 1 0 0 0 0 1 0 -1 0 3816b.dat
-0 // ~Minifig Leg Left (Obsolete)
+0 // ~Minifig Leg Left (Obsolete) (black)
 1 0 0 -28 0 1 0 0 0 0 1 0 -1 0 3817b.dat
-0 // Minifig Hips
+0 // Minifig Hips (dark_grey)
 1 8 0 -40 0 1 0 0 0 1 0 0 0 1 3815b.dat
 0 // Torso
-0 // Minifig Torso with Insectoids with Silver Logo on Black Panels Pattern
+0 // Minifig Torso with Insectoids with Silver Logo on Black Panels Pattern (dark_grey)
 1 8 0 -72 0 1 0 0 0 1 0 0 0 1 973p57.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=-1]
-0 // Minifig Arm Right
+0 // Minifig Arm Right (green)
 1 2 -15.552 -63 0 0.985 -0.12 -0.12 0.17 0.697 0.697 0 -0.706 0.707 3818.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=2]
-0 // Minifig Hand
+0 // Minifig Hand (black)
 1 0 -21.558 -57.575 -20.337 1 0 0 0 1 0 0 0 1 3820.dat
 0 !LDCAD GROUP_NXT [ids=1] [nrs=-1]
-0 // Minifig Arm Left
+0 // Minifig Arm Left (green)
 1 2 15.552 -63 0 0.985 0.12 0.12 -0.17 0.697 0.697 0 -0.706 0.707 3819.dat
 0 !LDCAD GROUP_NXT [ids=1] [nrs=2]
-0 // Minifig Hand
+0 // Minifig Hand (black)
 1 0 21.558 -57.575 -20.337 1 0 0 0 1 0 0 0 1 3820.dat
-0 // Minifig Airtanks
+0 // Minifig Airtanks (black)
 1 0 0 -72 0 1 0 0 0 1 0 0 0 1 3838.dat
 0 // Head
 0 !LDCAD GROUP_NXT [ids=2] [nrs=-1]
 1 8 0 -100 0 1 0 0 0 1 0 0 0 1 6919 - 3626bp52.dat
 0 !LDCAD GROUP_NXT [ids=2] [nrs=2]
-0 // Minifig Helmet Round Bubble
+0 // Minifig Helmet Round Bubble (trans_green)
 1 34 0 -100 0 1 0 0 0 1 0 0 0 1 6919 - 30214.dat
 
 
@@ -389,33 +389,33 @@
 0 !LDCAD GROUP_DEF [topLevel=true] [LID=0] [GID=A7ZWdvVqzvZ] [name=Right arm] [center=0 0 0]
 0 !LDCAD GROUP_DEF [topLevel=true] [LID=1] [GID=LTqwnSUQtDE] [name=Left arm] [center=0 0 0]
 0 !LDCAD GROUP_DEF [topLevel=true] [LID=2] [GID=KRYtZUYMvdU] [name=Head] [center=0 0 0]
-0 // ~Minifig Leg Right with Insectoids Robot Pattern (Obsolete)
+0 // ~Minifig Leg Right with Insectoids Robot Pattern (Obsolete) (black)
 1 0 0 -28 0 1 0 0 0 0 1 0 -1 0 3816bp60.dat
-0 // ~Minifig Leg Left with Insectoids Robot Pattern (Obsolete)
+0 // ~Minifig Leg Left with Insectoids Robot Pattern (Obsolete) (black)
 1 0 0 -28 0 1 0 0 0 0 1 0 -1 0 3817bp60.dat
-0 // Minifig Hips
+0 // Minifig Hips (dark_grey)
 1 8 0 -39.897 1.566 1 0 0 0 0.991 0.131 0 -0.131 0.991 3815b.dat
 0 // Torso
-0 // Minifig Torso with Insectoids Robot Pattern
+0 // Minifig Torso with Insectoids Robot Pattern (black)
 1 0 0 -71.617 5.732 1 0 0 0 0.991 0.131 0 -0.131 0.991 973p53.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=-1]
-0 // Minifig Arm Right
+0 // Minifig Arm Right (dark_grey)
 1 8 -15.552 -62.695 4.561 0.984 -0.058 -0.16 0.168 0.212 0.962 -0.023 -0.974 0.218 3818.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=2]
-0 // Minifig Hand
+0 // Minifig Hand (black)
 1 0 -19.993 -69.046 -15.9 0.997 0.016 -0.072 0.025 0.847 0.53 0.069 -0.531 0.844 3820.dat
 0 !LDCAD GROUP_NXT [ids=1] [nrs=-1]
-0 // Minifig Arm Left
+0 // Minifig Arm Left (dark_grey)
 1 8 15.552 -62.695 4.561 0.984 0.058 0.16 -0.168 0.212 0.962 0.023 -0.974 0.218 3819.dat
 0 !LDCAD GROUP_NXT [ids=1] [nrs=2]
-0 // Minifig Hand
+0 // Minifig Hand (black)
 1 0 19.993 -69.046 -15.9 0.997 -0.016 0.072 -0.025 0.847 0.53 -0.069 -0.531 0.844 3820.dat
 0 // Head
 0 !LDCAD GROUP_NXT [ids=2] [nrs=-1]
-0 // Minifig Head with Insectoids Robot Pattern
+0 // Minifig Head with Insectoids Robot Pattern (black)
 1 0 0 -95.406 8.856 1 0 0 0 0.991 0.131 0 -0.131 0.991 3626bp50.dat
 0 !LDCAD GROUP_NXT [ids=2] [nrs=2]
-0 // ~Minifig Helmet Standard (Obsolete)
+0 // ~Minifig Helmet Standard (Obsolete) (trans_clear)
 1 47 0 -95.406 8.856 1 0 0 0 0.991 0.131 0 -0.131 0.991 2446.dat
 
 
@@ -426,36 +426,36 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Plate  2 x 12
+0 // Plate  2 x 12 (blue)
 1 1 0 -8 0 0 0 1 0 1 0 -1 0 0 2445.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (dark_grey)
 1 8 0 -16 90 1 0 0 0 1 0 0 0 1 3023.dat
 0 STEP
-0 // Plate  1 x  2 with Jet Engine with Axle Hole
+0 // Plate  1 x  2 with Jet Engine with Axle Hole (dark_grey)
 1 8 -10 -16 60 0 0 -1 0 1 0 1 0 0 3475b.dat
-0 // Plate  1 x  2 with 3L Extension and Stud Hole
+0 // Plate  1 x  2 with 3L Extension and Stud Hole (black)
 1 0 0 -16 110 -1 0 0 0 1 0 0 0 -1 4596.dat
 0 STEP
-0 // Plate  1 x  2 with Jet Engine with Axle Hole
+0 // Plate  1 x  2 with Jet Engine with Axle Hole (dark_grey)
 1 8 10 -16 60 0 0 1 0 1 0 -1 0 0 3475b.dat
-0 // Cone  1 x  1
+0 // Cone  1 x  1 (trans_neon_green)
 1 42 -40 -12 100 1 0 0 0 0 -1 0 1 0 4589.dat
-0 // Cone  1 x  1
+0 // Cone  1 x  1 (trans_neon_green)
 1 42 40 -12 100 1 0 0 0 0 -1 0 1 0 4589.dat
-0 // Cone  1 x  1
+0 // Cone  1 x  1 (trans_neon_green)
 1 42 0 -14 180 1 0 0 0 0 -1 0 1 0 4589.dat
 0 STEP
-0 // Tail  4 x  2 x  2 with Rocket
+0 // Tail  4 x  2 x  2 with Rocket (black)
 1 0 0 -64 60 -1 0 0 0 1 0 0 0 -1 4746.dat
 0 STEP
-0 // Tile  1 x  2 with Mars Orbit Display Pattern
+0 // Tile  1 x  2 with Mars Orbit Display Pattern (black)
 1 0 0 -72 50 -1 0 0 0 1 0 0 0 -1 3069bp53.dat
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (trans_neon_green)
 1 42 0 -72 70 1 0 0 0 1 0 0 0 1 2412b.dat
 0 STEP
-0 // ~Magnet Holder Plate  2 x  2 Bottom (Obsolete)
+0 // ~Magnet Holder Plate  2 x  2 Bottom (Obsolete) (dark_grey)
 1 8 0 0 80 1 0 0 0 1 0 0 0 1 30159.dat
-0 // ~Magnet Cylindrical in Casing (Complete) (Obsolete)
+0 // ~Magnet Cylindrical in Casing (Complete) (Obsolete) (black)
 1 0 0 14.5 80 1 0 0 0 0 -1 0 1 0 2959c01.dat
 
 
@@ -466,18 +466,18 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Hinge Panel  2 x  4 x  3.333
+0 // Hinge Panel  2 x  4 x  3.333 (trans_green)
 1 34 26 -68 0 0 0 1 0 1 0 -1 0 0 2582.dat
 0 STEP
-0 // Brick  1 x  1 with Headlight
+0 // Brick  1 x  1 with Headlight (blue)
 1 1 26 -92 -10 0 0 1 0 1 0 -1 0 0 4070.dat
-0 // Slope Brick 33  3 x  1
+0 // Slope Brick 33  3 x  1 (blue)
 1 1 26 -92 10 -1 0 0 0 1 0 0 0 -1 4286.dat
 0 STEP
-0 // Minifig Loudhailer
+0 // Minifig Loudhailer (black)
 1 0 6 -82 -10 0 1 0 1 0 0 0 0 -1 4349.dat
 1 42 6 -82 -11.7 1 0 0 0 0 1 0 -1 0 6919 - 6919.dat
-0 // Tile  1 x  2 with Arrow Short Yellow Pattern
+0 // Tile  1 x  2 with Arrow Short Yellow Pattern (black)
 1 0 26 -100 0 0 0 -1 0 1 0 1 0 0 3069bp21.dat
 
 
@@ -488,18 +488,18 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Hinge Panel  2 x  4 x  3.333
+0 // Hinge Panel  2 x  4 x  3.333 (trans_green)
 1 34 -26 -68 0 0 0 -1 0 1 0 1 0 0 2582.dat
 0 STEP
-0 // Brick  1 x  1 with Headlight
+0 // Brick  1 x  1 with Headlight (blue)
 1 1 -26 -92 -10 0 0 -1 0 1 0 1 0 0 4070.dat
-0 // Slope Brick 33  3 x  1
+0 // Slope Brick 33  3 x  1 (blue)
 1 1 -26 -92 10 -1 0 0 0 1 0 0 0 -1 4286.dat
 0 STEP
-0 // Minifig Loudhailer
+0 // Minifig Loudhailer (black)
 1 0 -6 -82 -10 0 -1 0 -1 0 0 0 0 -1 4349.dat
 1 42 -6 -82 -11.7 1 0 0 0 0 1 0 -1 0 6919 - 6919.dat
-0 // Tile  1 x  2 with Arrow Short Yellow Pattern
+0 // Tile  1 x  2 with Arrow Short Yellow Pattern (black)
 1 0 -26 -100 0 0 0 1 0 1 0 -1 0 0 3069bp21.dat
 
 
@@ -511,18 +511,18 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
 0 !LDCAD GROUP_DEF [topLevel=true] [LID=0] [GID=7szhdz0RC0I] [name=Antenna R] [center=0 36 0] [layers=2]
-0 // Bracket  1 x  2 - Dish  4 x  4
+0 // Bracket  1 x  2 - Dish  4 x  4 (blue)
 1 1 0 -8 0 0 0 -1 0 1 0 1 0 0 30209.dat
-0 // Hemisphere  4 x  4 Multifaceted
+0 // Hemisphere  4 x  4 Multifaceted (trans_green)
 1 34 -30 -4 0 0 1 0 -1 0 0 0 0 1 30208.dat
 0 STEP
-0 // Hinge Tile  1 x  2 with 2 Fingers
+0 // Hinge Tile  1 x  2 with 2 Fingers (black)
 1 0 0 -24 0 0 0 1 0 1 0 -1 0 0 4531.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=-1]
-0 // Hinge Bar  2 with 3 Fingers and Top Stud
+0 // Hinge Bar  2 with 3 Fingers and Top Stud (black)
 1 0 0 -45.456 -4.544 0 0 1 -0.707 0.707 0 -0.707 -0.707 0 2433.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=2]
-0 // Antenna  8H Whip
+0 // Antenna  8H Whip (trans_neon_green)
 1 42 0 -51.113 1.113 1 0 0 0 0.707 0.707 0 -0.707 0.707 2569.dat
 
 
@@ -534,18 +534,18 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
 0 !LDCAD GROUP_DEF [topLevel=true] [LID=0] [GID=5LiSrgW0unm] [name=Antenna L] [center=0 36 0] [layers=2]
-0 // Bracket  1 x  2 - Dish  4 x  4
+0 // Bracket  1 x  2 - Dish  4 x  4 (blue)
 1 1 0 -8 0 0 0 1 0 1 0 -1 0 0 30209.dat
-0 // Hemisphere  4 x  4 Multifaceted
+0 // Hemisphere  4 x  4 Multifaceted (trans_green)
 1 34 30 -4 0 0 -1 0 1 0 0 0 0 1 30208.dat
 0 STEP
-0 // Hinge Tile  1 x  2 with 2 Fingers
+0 // Hinge Tile  1 x  2 with 2 Fingers (black)
 1 0 0 -24 0 0 0 1 0 1 0 -1 0 0 4531.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=-1]
-0 // Hinge Bar  2 with 3 Fingers and Top Stud
+0 // Hinge Bar  2 with 3 Fingers and Top Stud (black)
 1 0 0 -45.456 -4.544 0 0 1 -0.707 0.707 0 -0.707 -0.707 0 2433.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=2]
-0 // Antenna  8H Whip
+0 // Antenna  8H Whip (trans_neon_green)
 1 42 0 -51.113 1.113 1 0 0 0 0.707 0.707 0 -0.707 0.707 2569.dat
 
 
@@ -556,9 +556,9 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Plate  1 x  1 Round
+0 // Plate  1 x  1 Round (trans_neon_green)
 1 42 0 -8 0 1 0 0 0 1 0 0 0 1 6141.dat
-0 // Minifig Space Scanner Tool
+0 // Minifig Space Scanner Tool (blue)
 1 1 0 -32 0 1 0 0 0 0 1 0 -1 0 30035.dat
 1 42 20 -6 10 0.866 0 -0.5 0 1 0 0.5 0 0.866 6919 - 6919.dat
 
@@ -572,62 +572,62 @@
 
 0 !LDCAD GROUP_DEF [topLevel=true] [LID=0] [GID=CrkAaXvhnKn] [name=Rear leg L] [center=0 -14 140]
 0 !LDCAD GROUP_NXT [ids=0] [nrs=-1]
-0 // Support Insectoid Leg Large
+0 // Support Insectoid Leg Large (dark_grey)
 1 8 0 14 140 -1 0 0 0 1 0 0 0 -1 30212.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=2]
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (blue)
 1 1 20 30 240 1 0 0 0 1 0 0 0 1 3020.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=0] [nrs=3]
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (blue)
 1 1 10 6 0 0 0 1 0 1 0 -1 0 0 3023.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=4]
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (blue)
 1 1 0 14 250 1 0 0 0 1 0 0 0 1 3023.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=0] [nrs=5]
-0 // Brick  2 x  2 with Pin and Axlehole
+0 // Brick  2 x  2 with Pin and Axlehole (blue)
 1 1 -20 -10 0 -1 0 0 0 1 0 0 0 -1 6232.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=6]
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (blue)
 1 1 0 6 240 1 0 0 0 1 0 0 0 1 3022.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=0] [nrs=7]
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (blue)
 1 1 -10 -34 0 0 0 1 0 1 0 -1 0 0 3004.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=8]
-0 // Brick  2 x  2 with Pin and Axlehole
+0 // Brick  2 x  2 with Pin and Axlehole (blue)
 1 1 40 6 240 1 0 0 0 1 0 0 0 1 6232.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=0] [nrs=9]
-0 // Minifig Loudhailer
+0 // Minifig Loudhailer (black)
 1 0 10 -16 -10 0 1 0 0 0 -1 -1 0 0 4349.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=10]
-0 // Minifig Loudhailer
+0 // Minifig Loudhailer (black)
 1 0 10 -16 10 0 1 0 0 0 -1 -1 0 0 4349.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=11]
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (dark_grey)
 1 8 20 -2 240 1 0 0 0 1 0 0 0 1 3020.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=0] [nrs=12]
-0 // Brick  2 x  2 with Pin and Axlehole
+0 // Brick  2 x  2 with Pin and Axlehole (blue)
 1 1 0 -58 0 -1 0 0 0 1 0 0 0 -1 6232.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=13]
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (trans_neon_green)
 1 42 -10 -10 240 0 0 1 0 1 0 -1 0 0 2412b.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=0] [nrs=14]
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (black)
 1 0 0 -66 -10 1 0 0 0 1 0 0 0 1 2412b.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=15]
-0 // Tile  2 x  2 with Insectoids Logo in Triangle Pattern
+0 // Tile  2 x  2 with Insectoids Logo in Triangle Pattern (black)
 1 0 0 -66 20 1 0 0 0 1 0 0 0 1 3068bp55.dat
 0 STEP
 1 0 -30 -93.981 -164.249 0 0 -1 -0.963 0.27 0 0.27 0.963 0 6919 - shock-09_5L-soft-1.ldr
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 -40 -72 -160 1 0 0 0 0.963 0.27 0 -0.27 0.963 3749.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=16]
-0 // Wheel 32 x 56 Hard-Plastic with Inner Supports
+0 // Wheel 32 x 56 Hard-Plastic with Inner Supports (blue)
 1 1 60 16 240 0 0 -1 0 1 0 1 0 0 2515b.dat
 
 
@@ -640,62 +640,62 @@
 
 0 !LDCAD GROUP_DEF [topLevel=true] [LID=0] [GID=2N4DHedP8dn] [name=Rear leg R] [center=0 -14 140]
 0 !LDCAD GROUP_NXT [ids=0] [nrs=-1]
-0 // Support Insectoid Leg Large
+0 // Support Insectoid Leg Large (dark_grey)
 1 8 0 14 140 -1 0 0 0 1 0 0 0 -1 30212.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=2]
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (blue)
 1 1 -20 30 240 1 0 0 0 1 0 0 0 1 3020.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=0] [nrs=3]
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (blue)
 1 1 -10 6 0 0 0 1 0 1 0 -1 0 0 3023.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=4]
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (blue)
 1 1 0 14 250 1 0 0 0 1 0 0 0 1 3023.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=0] [nrs=5]
-0 // Minifig Loudhailer
+0 // Minifig Loudhailer (black)
 1 0 -10 -16 -10 0 -1 0 0 0 -1 1 0 0 4349.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=6]
-0 // Minifig Loudhailer
+0 // Minifig Loudhailer (black)
 1 0 -10 -16 10 0 -1 0 0 0 -1 1 0 0 4349.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=7]
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (blue)
 1 1 0 6 240 1 0 0 0 1 0 0 0 1 3022.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=0] [nrs=8]
-0 // Brick  2 x  2 with Pin and Axlehole
+0 // Brick  2 x  2 with Pin and Axlehole (blue)
 1 1 20 -10 0 1 0 0 0 1 0 0 0 1 6232.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=9]
-0 // Brick  2 x  2 with Pin and Axlehole
+0 // Brick  2 x  2 with Pin and Axlehole (blue)
 1 1 -40 6 240 -1 0 0 0 1 0 0 0 -1 6232.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=0] [nrs=10]
-0 // Brick  1 x  2
+0 // Brick  1 x  2 (blue)
 1 1 10 -34 0 0 0 1 0 1 0 -1 0 0 3004.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=11]
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (dark_grey)
 1 8 -20 -2 240 1 0 0 0 1 0 0 0 1 3020.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=0] [nrs=12]
-0 // Brick  2 x  2 with Pin and Axlehole
+0 // Brick  2 x  2 with Pin and Axlehole (blue)
 1 1 0 -58 0 1 0 0 0 1 0 0 0 1 6232.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=13]
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (trans_neon_green)
 1 42 10 -10 240 0 0 1 0 1 0 -1 0 0 2412b.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=0] [nrs=14]
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (black)
 1 0 0 -66 -10 1 0 0 0 1 0 0 0 1 2412b.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=15]
-0 // Tile  2 x  2 with Insectoids Logo in Triangle Pattern
+0 // Tile  2 x  2 with Insectoids Logo in Triangle Pattern (black)
 1 0 0 -66 20 1 0 0 0 1 0 0 0 1 3068bp55.dat
 0 STEP
 1 0 30 -93.981 -164.249 0 0 -1 -0.963 0.27 0 0.27 0.963 0 6919 - shock-09_5L-soft-2.ldr
-0 // Technic Axle Pin
+0 // Technic Axle Pin (light_grey)
 1 7 40 -72.021 -160.019 -1 0 0 0 0.963 -0.27 0 -0.27 -0.963 3749.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=16]
-0 // Wheel 32 x 56 Hard-Plastic with Inner Supports
+0 // Wheel 32 x 56 Hard-Plastic with Inner Supports (blue)
 1 1 -60 16 240 0 0 1 0 1 0 -1 0 0 2515b.dat
 
 
@@ -706,49 +706,49 @@
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
-0 // Brick  2 x  4 x  2 with Studs on Sides
+0 // Brick  2 x  4 x  2 with Studs on Sides (black)
 1 0 0 -48 0 0 0 1 0 1 0 -1 0 0 2434.dat
 0 STEP
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (blue)
 1 1 -28 -18 -30 0 1 0 0 0 -1 -1 0 0 2555.dat
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (blue)
 1 1 28 -18 -30 0 -1 0 0 0 1 -1 0 0 2555.dat
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (blue)
 1 1 -28 -18 30 0 1 0 0 0 -1 -1 0 0 2555.dat
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (blue)
 1 1 28 -18 30 0 -1 0 0 0 1 -1 0 0 2555.dat
 0 STEP
-0 // Hinge  1 x  2 Base
+0 // Hinge  1 x  2 Base (dark_grey)
 1 8 -44 -38 0 0 1 0 0 0 1 1 0 0 3937.dat
-0 // Hinge  1 x  2 Top
+0 // Hinge  1 x  2 Top (black)
 1 0 -41.071 -45.071 0 0 0.707 -0.707 0 0.707 0.707 1 0 0 3938.dat
-0 // Hinge  1 x  2 Base
+0 // Hinge  1 x  2 Base (dark_grey)
 1 8 44 -38 0 0 -1 0 0 0 1 -1 0 0 3937.dat
-0 // Hinge  1 x  2 Top
+0 // Hinge  1 x  2 Top (black)
 1 0 41.071 -45.071 0 0 -0.707 0.707 0 0.707 0.707 -1 0 0 3938.dat
 0 STEP
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (trans_neon_green)
 1 42 -46.728 -50.728 0 0 0.707 0.707 0 0.707 -0.707 -1 0 0 2412b.dat
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (trans_neon_green)
 1 42 46.728 -50.728 0 0 -0.707 0.707 0 0.707 0.707 -1 0 0 2412b.dat
 0 STEP
-0 // Minifig Torch
+0 // Minifig Torch (dark_grey)
 1 8 -34 -33 -30 0 -1 0 0 0 1 -1 0 0 3959.dat
-0 // Minifig Torch
+0 // Minifig Torch (dark_grey)
 1 8 34 -33 -30 0 1 0 0 0 1 1 0 0 3959.dat
-0 // Minifig Torch
+0 // Minifig Torch (dark_grey)
 1 8 -34 -33 30 0 -1 0 0 0 1 -1 0 0 3959.dat
-0 // Minifig Torch
+0 // Minifig Torch (dark_grey)
 1 8 34 -33 30 0 1 0 0 0 1 1 0 0 3959.dat
 0 STEP
-0 // Tile  1 x  2 with Handle
+0 // Tile  1 x  2 with Handle (blue)
 1 1 0 -80 -30 -1 0 0 0 1 0 0 0 -1 2432.dat
-0 // Tile  1 x  2 with Handle
+0 // Tile  1 x  2 with Handle (blue)
 1 1 0 -80 30 1 0 0 0 1 0 0 0 1 2432.dat
 0 STEP
-0 // Rock  2 x  2 Crystal 3 Point
+0 // Rock  2 x  2 Crystal 3 Point (trans_neon_green)
 1 42 0 -72 0 0.087 0 0.996 0 1 0 -0.996 0 0.087 30213.dat
-0 // Sticker  1.1 x  1.1 Round with Magnetic Silver Copper Machine
+0 // Sticker  1.1 x  1.1 Round with Magnetic Silver Copper Machine (metallic_silver)
 1 80 0 -72 0 0.087 0 0.996 0 1 0 -0.996 0 0.087 s13a.dat
 
 
@@ -760,44 +760,44 @@
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
 0 !LDCAD GROUP_DEF [topLevel=true] [LID=0] [GID=GKRpP7wQciT] [name=Control column] [center=0 10 0]
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (blue)
 1 1 0 -8 0 0 0 1 0 1 0 -1 0 0 3020.dat
 0 STEP
-0 // Plate  1 x  2 with  2 Offset Hollow Studs
+0 // Plate  1 x  2 with  2 Offset Hollow Studs (dark_grey)
 1 8 0 0 30 1 0 0 0 1 0 0 0 1 4590.dat
 0 STEP
-0 // Plate  1 x  2 with  2 Offset Hollow Studs
+0 // Plate  1 x  2 with  2 Offset Hollow Studs (dark_grey)
 1 8 0 0 -30 -1 0 0 0 1 0 0 0 -1 4590.dat
-0 // Plate  1 x  2 with  2 Offset Hollow Studs
+0 // Plate  1 x  2 with  2 Offset Hollow Studs (dark_grey)
 1 8 0 0 10 1 0 0 0 1 0 0 0 1 4590.dat
 0 STEP
-0 // Bracket  2 x  3 -  2 x  2
+0 // Bracket  2 x  3 -  2 x  2 (dark_grey)
 1 8 0 -16 10 1 0 0 0 1 0 0 0 1 4598.dat
 0 STEP
-0 // Hinge  1 x  2 Base
+0 // Hinge  1 x  2 Base (dark_grey)
 1 8 0 -32 -30 1 0 0 0 1 0 0 0 1 3937.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=-1]
-0 // Hinge  1 x  2 Top
+0 // Hinge  1 x  2 Top (black)
 1 0 0 -31.88 -31.568 1 0 0 0 0.988 -0.156 0 0.156 0.988 3938.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=0] [nrs=2]
-0 // Tile  1 x  2 with Console
+0 // Tile  1 x  2 with Console (black)
 1 0 0 -39.785 -32.821 1 0 0 0 0.988 -0.156 0 0.156 0.988 2342.dat
 0 STEP
 0 !LDCAD GROUP_NXT [ids=0] [nrs=3]
-0 // Tile  1 x  1 with Clip
+0 // Tile  1 x  1 with Clip (blue)
 1 1 0 -77.726 -47.195 1 0 0 0 0.86 -0.512 0 0.512 0.86 2555.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=4]
-0 // Hinge Control Stick Base
+0 // Hinge Control Stick Base (black)
 1 0 -18 -63.489 -36.576 0 1 0 -0.857 0 -0.515 -0.515 0 0.857 4592.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=5]
-0 // Hinge Control Stick
+0 // Hinge Control Stick (black)
 1 0 -19.5 -63.489 -36.576 0 0 1 -0.857 0.515 0 -0.515 -0.857 0 4593.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=6]
-0 // Hinge Control Stick Base
+0 // Hinge Control Stick Base (black)
 1 0 18 -63.489 -36.576 0 -1 0 0.857 0 -0.515 0.515 0 0.857 4592.dat
 0 !LDCAD GROUP_NXT [ids=0] [nrs=7]
-0 // Hinge Control Stick
+0 // Hinge Control Stick (black)
 1 0 19.5 -63.489 -36.576 0 0 -1 0.857 0.515 0 0.515 -0.857 0 4593.dat
 1 16 0 2 8 1 0 0 0 1 0 0 0 1 6919 - mf6919-2gigabot.ldr
 
@@ -834,11 +834,11 @@
 0 BFC CERTIFY CCW
 
 0 //Start cap reference(s)
-0 // Technic Shock Absorber  9L Cylinder
+0 // Technic Shock Absorber  9L Cylinder (main_colour)
 1 16 0 50 0 1 0 0 0 1 0 0 0 1 2909.dat
 
 0 //End cap reference(s)
-0 // Technic Shock Absorber  9L Piston Rod
+0 // Technic Shock Absorber  9L Piston Rod (main_colour)
 1 16 0.068 170.541 0 1 0 0 0 1 0 0 0 1 2910.dat
 
 0 //Spring mesh reference
@@ -7090,11 +7090,11 @@
 0 BFC CERTIFY CCW
 
 0 //Start cap reference(s)
-0 // Technic Shock Absorber  9L Cylinder
+0 // Technic Shock Absorber  9L Cylinder (main_colour)
 1 16 0 50 0 1 0 0 0 1 0 0 0 1 2909.dat
 
 0 //End cap reference(s)
-0 // Technic Shock Absorber  9L Piston Rod
+0 // Technic Shock Absorber  9L Piston Rod (main_colour)
 1 16 0.068 170.541 0 1 0 0 0 1 0 0 0 1 2910.dat
 
 0 //Spring mesh reference
@@ -13325,119 +13325,119 @@
 0 !KEYWORDS flexible
 
 0 //Start cap reference(s)
-0 // Hose Flexible End  1 x  1 x  0.667 with Tabs
+0 // Hose Flexible End  1 x  1 x  0.667 with Tabs (black)
 1 0 0 0 0 0 0 1 0 1 0 -1 0 0 750.dat
-0 // ~Hose Flexible Segment End Section
+0 // ~Hose Flexible Segment End Section (black)
 1 0 0 0 0 0 0 -1 0 -1 0 -1 0 0 755.dat
 
 0 //End cap reference(s)
-0 // Hose Flexible End  1 x  1 x  0.667 with Tabs
+0 // Hose Flexible End  1 x  1 x  0.667 with Tabs (black)
 1 0 91 -30 40 0 1 0 0 0 -1 -1 0 0 750.dat
-0 // ~Hose Flexible Segment End Section
+0 // ~Hose Flexible Segment End Section (black)
 1 0 91 -30 40 0 -1 0 0 0 1 -1 0 0 755.dat
 
 0 //Segments
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 0.004877 -5.76874 0.018315 0.000019 -0.002757 0.999996 -0.010354 0.999943 0.002757 -0.999946 -0.010354 -0.00001 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 0.019025 -8.305786 0.070045 0.000288 -0.0068 0.999977 -0.024744 0.999671 0.006805 -0.999694 -0.024745 0.000119 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 0.047358 -10.841188 0.169498 0.001055 -0.013062 0.999914 -0.04546 0.99888 0.013097 -0.998966 -0.04547 0.00046 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 0.092038 -13.373801 0.320315 0.002311 -0.019582 0.999806 -0.065468 0.99766 0.019692 -0.997852 -0.065501 0.001023 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 0.158178 -15.901376 0.533225 0.004557 -0.028881 0.999572 -0.091807 0.995349 0.029177 -0.995766 -0.0919 0.001884 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 0.249306 -18.421584 0.813265 0.007673 -0.038967 0.999211 -0.118169 0.992204 0.039601 -0.992964 -0.118379 0.003008 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 0.37118 -20.930694 1.169799 0.012382 -0.051966 0.998572 -0.149672 0.987301 0.053235 -0.988658 -0.150118 0.004447 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 0.533102 -23.422488 1.618482 0.019489 -0.06896 0.997429 -0.187516 0.979664 0.071395 -0.982068 -0.188425 0.006161 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 0.744194 -25.889244 2.171701 0.029422 -0.089375 0.995563 -0.229144 0.968867 0.093751 -0.972948 -0.230885 0.008026 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 1.019902 -28.317166 2.851055 0.044701 -0.117048 0.99212 -0.280404 0.951719 0.124916 -0.958841 -0.283778 0.009722 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 1.373709 -30.690505 3.670802 0.065376 -0.149198 0.986644 -0.334048 0.928437 0.162531 -0.940286 -0.340212 0.010858 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 1.83661 -32.973472 4.668253 0.100313 -0.196958 0.975267 -0.404106 0.887656 0.22083 -0.909195 -0.416264 0.009452 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 2.428353 -35.131612 5.855446 0.145672 -0.24912 0.957454 -0.46853 0.834998 0.288543 -0.871355 -0.490629 0.004916 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 3.194953 -37.085196 7.267188 0.223236 -0.325469 0.918823 -0.541404 0.742447 0.394531 -0.810585 -0.585528 -0.010469 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 4.155555 -38.768013 8.890628 0.317247 -0.402261 0.858802 -0.584864 0.629866 0.51108 -0.746518 -0.664421 -0.035445 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 5.319737 -40.107959 10.687843 0.433695 -0.484089 0.759978 -0.590142 0.484759 0.645555 -0.680912 -0.728469 -0.075444 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 6.682754 -41.047334 12.595875 0.552585 -0.560911 0.616466 -0.541257 0.320949 0.777195 -0.633791 -0.763132 -0.126245 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 8.203984 -41.615681 14.53483 0.63484 -0.617046 0.465009 -0.459636 0.182162 0.869225 -0.621059 -0.765553 -0.167972 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 9.8484 -41.861475 16.443531 0.682681 -0.662061 0.309227 -0.363063 0.059925 0.929836 -0.634138 -0.74705 -0.19946 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 11.588929 -41.846005 18.285223 0.696123 -0.696469 0.174193 -0.275211 -0.034781 0.960755 -0.663077 -0.716743 -0.215888 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 13.40548 -41.631308 20.040981 0.686407 -0.724362 0.064386 -0.203442 -0.106268 0.973303 -0.698181 -0.681181 -0.220309 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 15.285144 -41.269832 21.705008 0.663545 -0.74787 -0.019963 -0.148915 -0.158179 0.976117 -0.733166 -0.644724 -0.216328 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 17.216996 -40.806153 23.282437 0.636408 -0.767158 -0.080335 -0.110066 -0.1934 0.974927 -0.763459 -0.611609 -0.207519 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 19.201323 -40.262025 24.766322 0.60043 -0.788408 -0.133778 -0.077071 -0.223565 0.971637 -0.795954 -0.57309 -0.194999 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 21.231013 -39.665338 26.167047 0.569701 -0.804793 -0.166578 -0.0559 -0.240162 0.969122 -0.819949 -0.542799 -0.181808 754.dat
-0 // ~Hose Flexible Segment Center Section
+0 // ~Hose Flexible Segment Center Section (main_colour)
 1 16 23.345113 -39.019766 27.463086 0.514344 -0.833238 -0.20289 -0.035098 -0.256838 0.965817 -0.856866 -0.489641 -0.161348 756.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 27.166137 -37.843983 29.661694 0.462452 0.857458 0.225619 -0.014382 0.261685 -0.965046 -0.886528 0.443043 0.133349 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 29.353371 -37.181213 30.763648 0.430786 0.872311 0.231294 -0.008149 0.260044 -0.965562 -0.902417 0.414066 0.119132 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 31.57774 -36.524817 31.792723 0.400081 0.886432 0.232752 -0.003709 0.255527 -0.966795 -0.916472 0.385933 0.105519 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 33.837357 -35.881731 32.75101 0.370349 0.899788 0.230701 -0.000629 0.248605 -0.968605 -0.928892 0.358577 0.092637 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 36.12961 -35.257191 33.641865 0.343499 0.911478 0.226308 0.001612 0.240398 -0.970673 -0.939151 0.33379 0.081107 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 38.452278 -34.655839 34.467439 0.31364 0.924092 0.218368 0.002698 0.229104 -0.973398 -0.949538 0.305885 0.069363 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 40.80503 -34.08299 35.225647 0.288644 0.934179 0.209746 0.0036 0.21801 -0.97594 -0.95743 0.282455 0.059564 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 43.18349 -33.540059 35.923025 0.262041 0.944433 0.198447 0.003795 0.204622 -0.978834 -0.965049 0.257247 0.050036 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 45.586846 -33.031236 36.558002 0.237748 0.953257 0.186485 0.003842 0.191065 -0.98157 -0.971319 0.234083 0.041763 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 48.012103 -32.5576 37.134294 0.21377 0.961414 0.173163 0.003609 0.176482 -0.984297 -0.976877 0.211038 0.034257 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 50.457774 -32.122258 37.651474 0.189125 0.969174 0.157901 0.003063 0.16022 -0.987077 -0.981948 0.187164 0.027333 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 52.921982 -31.727546 38.110041 0.167241 0.975462 0.143191 0.002649 0.144792 -0.989459 -0.985913 0.165857 0.021631 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 55.401312 -31.371566 38.515838 0.147196 0.980681 0.12883 0.002294 0.12991 -0.991523 -0.989105 0.146244 0.016873 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 57.893925 -31.055585 38.869718 0.12444 0.985948 0.111448 0.001625 0.112119 -0.993694 -0.992226 0.123836 0.01235 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 60.398713 -30.782667 39.169952 0.105988 0.989661 0.096628 0.001282 0.097039 -0.99528 -0.994367 0.105611 0.009016 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 62.912586 -30.548547 39.423761 0.087364 0.992875 0.081031 0.000905 0.081263 -0.996692 -0.996176 0.087149 0.006201 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 65.434433 -30.356463 39.628946 0.066482 0.995811 0.062769 0.000437 0.062879 -0.998021 -0.997788 0.066378 0.003746 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 67.962897 -30.208977 39.784162 0.049217 0.997676 0.04712 0.00021 0.047166 -0.998887 -0.998788 0.049172 0.002112 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 70.495595 -30.100262 39.89722 0.033938 0.998883 0.032873 0.000089 0.032889 -0.999459 -0.999424 0.033923 0.001027 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 73.031164 -30.031602 39.96789 0.013875 0.999811 0.013636 -0.000037 0.013638 -0.999907 -0.999904 0.013873 0.000226 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 75.568521 -30.005212 39.994724 0.002984 0.999991 0.002947 -0.000007 0.002947 -0.999996 -0.999996 0.002984 0.000016 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 78.106213 -29.999999 40.000001 -0.000001 1 -0.000001 0 -0.000001 -1 -1 -0.000001 0 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 80.643932 -30 40 0 1 0 0 0 -1 -1 0 0 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 83.18165 -30 40 0 1 0 0 0 -1 -1 0 0 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 85.475255 -30 40 0 1 0 0 0 -1 -1 0 0 754.dat
 
 
@@ -13454,119 +13454,119 @@
 0 !KEYWORDS flexible
 
 0 //Start cap reference(s)
-0 // Hose Flexible End  1 x  1 x  0.667 with Tabs
+0 // Hose Flexible End  1 x  1 x  0.667 with Tabs (black)
 1 0 0 0 0 0 0 1 0 1 0 -1 0 0 750.dat
-0 // ~Hose Flexible Segment End Section
+0 // ~Hose Flexible Segment End Section (black)
 1 0 0 0 0 0 0 -1 0 -1 0 -1 0 0 755.dat
 
 0 //End cap reference(s)
-0 // Hose Flexible End  1 x  1 x  0.667 with Tabs
+0 // Hose Flexible End  1 x  1 x  0.667 with Tabs (black)
 1 0 91 -30 -40 0 1 0 0 0 -1 -1 0 0 750.dat
-0 // ~Hose Flexible Segment End Section
+0 // ~Hose Flexible Segment End Section (black)
 1 0 91 -30 -40 0 -1 0 0 0 1 -1 0 0 755.dat
 
 0 //Segments
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 0.004877 -5.76874 -0.018315 -0.000019 -0.002757 0.999996 0.010354 0.999943 0.002757 -0.999946 0.010354 0.00001 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 0.019025 -8.305786 -0.070045 -0.000288 -0.0068 0.999977 0.024744 0.999671 0.006805 -0.999694 0.024745 -0.000119 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 0.047358 -10.841188 -0.169498 -0.001055 -0.013062 0.999914 0.04546 0.99888 0.013097 -0.998966 0.04547 -0.00046 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 0.092038 -13.373801 -0.320315 -0.002311 -0.019582 0.999806 0.065468 0.99766 0.019692 -0.997852 0.065501 -0.001023 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 0.158178 -15.901376 -0.533225 -0.004557 -0.028881 0.999572 0.091807 0.995349 0.029177 -0.995766 0.0919 -0.001884 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 0.249306 -18.421584 -0.813265 -0.007673 -0.038967 0.999211 0.118169 0.992204 0.039601 -0.992964 0.118379 -0.003008 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 0.37118 -20.930694 -1.169799 -0.012382 -0.051966 0.998572 0.149672 0.987301 0.053235 -0.988658 0.150118 -0.004447 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 0.533102 -23.422488 -1.618482 -0.019489 -0.06896 0.997429 0.187516 0.979664 0.071395 -0.982068 0.188425 -0.006161 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 0.744194 -25.889244 -2.171701 -0.029422 -0.089375 0.995563 0.229144 0.968867 0.093751 -0.972948 0.230885 -0.008026 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 1.019902 -28.317166 -2.851055 -0.044701 -0.117048 0.99212 0.280404 0.951719 0.124916 -0.958841 0.283778 -0.009722 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 1.373709 -30.690505 -3.670802 -0.065376 -0.149198 0.986644 0.334048 0.928437 0.162531 -0.940286 0.340212 -0.010858 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 1.83661 -32.973472 -4.668253 -0.100313 -0.196958 0.975267 0.404106 0.887656 0.22083 -0.909195 0.416264 -0.009452 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 2.428353 -35.131612 -5.855446 -0.145672 -0.24912 0.957454 0.46853 0.834998 0.288543 -0.871355 0.490629 -0.004916 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 3.194953 -37.085196 -7.267188 -0.223236 -0.325469 0.918823 0.541404 0.742447 0.394531 -0.810585 0.585528 0.010469 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 4.155555 -38.768013 -8.890628 -0.317247 -0.402261 0.858802 0.584864 0.629866 0.51108 -0.746518 0.664421 0.035445 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 5.319737 -40.107959 -10.687843 -0.433695 -0.484089 0.759978 0.590142 0.484759 0.645555 -0.680912 0.728469 0.075444 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 6.682754 -41.047334 -12.595875 -0.552585 -0.560911 0.616466 0.541257 0.320949 0.777195 -0.633791 0.763132 0.126245 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 8.203984 -41.615681 -14.53483 -0.63484 -0.617046 0.465009 0.459636 0.182162 0.869225 -0.621059 0.765553 0.167972 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 9.8484 -41.861475 -16.443531 -0.682681 -0.662061 0.309227 0.363063 0.059925 0.929836 -0.634138 0.74705 0.19946 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 11.588929 -41.846005 -18.285223 -0.696123 -0.696469 0.174193 0.275211 -0.034781 0.960755 -0.663077 0.716743 0.215888 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 13.40548 -41.631308 -20.040981 -0.686407 -0.724362 0.064386 0.203442 -0.106268 0.973303 -0.698181 0.681181 0.220309 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 15.285144 -41.269832 -21.705008 -0.663545 -0.74787 -0.019963 0.148915 -0.158179 0.976117 -0.733166 0.644724 0.216328 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 17.216996 -40.806153 -23.282437 -0.636408 -0.767158 -0.080335 0.110066 -0.1934 0.974927 -0.763459 0.611609 0.207519 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 19.201323 -40.262025 -24.766322 -0.60043 -0.788408 -0.133778 0.077071 -0.223565 0.971637 -0.795954 0.57309 0.194999 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 21.231013 -39.665338 -26.167047 -0.569701 -0.804793 -0.166578 0.0559 -0.240162 0.969122 -0.819949 0.542799 0.181808 754.dat
-0 // ~Hose Flexible Segment Center Section
+0 // ~Hose Flexible Segment Center Section (main_colour)
 1 16 23.345113 -39.019766 -27.463086 -0.514344 -0.833238 -0.20289 0.035098 -0.256838 0.965817 -0.856866 0.489641 0.161348 756.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 27.166137 -37.843983 -29.661694 -0.462452 0.857458 0.225619 0.014382 0.261685 -0.965046 -0.886528 -0.443043 -0.133349 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 29.353371 -37.181213 -30.763648 -0.430786 0.872311 0.231294 0.008149 0.260044 -0.965562 -0.902417 -0.414066 -0.119132 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 31.57774 -36.524817 -31.792723 -0.400081 0.886432 0.232752 0.003709 0.255527 -0.966795 -0.916472 -0.385933 -0.105519 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 33.837357 -35.881731 -32.75101 -0.370349 0.899788 0.230701 0.000629 0.248605 -0.968605 -0.928892 -0.358577 -0.092637 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 36.12961 -35.257191 -33.641865 -0.343499 0.911478 0.226308 -0.001612 0.240398 -0.970673 -0.939151 -0.33379 -0.081107 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 38.452278 -34.655839 -34.467439 -0.31364 0.924092 0.218368 -0.002698 0.229104 -0.973398 -0.949538 -0.305885 -0.069363 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 40.80503 -34.08299 -35.225647 -0.288644 0.934179 0.209746 -0.0036 0.21801 -0.97594 -0.95743 -0.282455 -0.059564 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 43.18349 -33.540059 -35.923025 -0.262041 0.944433 0.198447 -0.003795 0.204622 -0.978834 -0.965049 -0.257247 -0.050036 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 45.586846 -33.031236 -36.558002 -0.237748 0.953257 0.186485 -0.003842 0.191065 -0.98157 -0.971319 -0.234083 -0.041763 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 48.012103 -32.5576 -37.134294 -0.21377 0.961414 0.173163 -0.003609 0.176482 -0.984297 -0.976877 -0.211038 -0.034257 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 50.457774 -32.122258 -37.651474 -0.189125 0.969174 0.157901 -0.003063 0.16022 -0.987077 -0.981948 -0.187164 -0.027333 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 52.921982 -31.727546 -38.110041 -0.167241 0.975462 0.143191 -0.002649 0.144792 -0.989459 -0.985913 -0.165857 -0.021631 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 55.401312 -31.371566 -38.515838 -0.147196 0.980681 0.12883 -0.002294 0.12991 -0.991523 -0.989105 -0.146244 -0.016873 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 57.893925 -31.055585 -38.869718 -0.12444 0.985948 0.111448 -0.001625 0.112119 -0.993694 -0.992226 -0.123836 -0.01235 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 60.398713 -30.782667 -39.169952 -0.105988 0.989661 0.096628 -0.001282 0.097039 -0.99528 -0.994367 -0.105611 -0.009016 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 62.912586 -30.548547 -39.423761 -0.087364 0.992875 0.081031 -0.000905 0.081263 -0.996692 -0.996176 -0.087149 -0.006201 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 65.434433 -30.356463 -39.628946 -0.066482 0.995811 0.062769 -0.000437 0.062879 -0.998021 -0.997788 -0.066378 -0.003746 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 67.962897 -30.208977 -39.784162 -0.049217 0.997676 0.04712 -0.00021 0.047166 -0.998887 -0.998788 -0.049172 -0.002112 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 70.495595 -30.100262 -39.89722 -0.033938 0.998883 0.032873 -0.000089 0.032889 -0.999459 -0.999424 -0.033923 -0.001027 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 73.031164 -30.031602 -39.96789 -0.013875 0.999811 0.013636 0.000037 0.013638 -0.999907 -0.999904 -0.013873 -0.000226 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 75.568521 -30.005212 -39.994724 -0.002984 0.999991 0.002947 0.000007 0.002947 -0.999996 -0.999996 -0.002984 -0.000016 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 78.106213 -29.999999 -40.000001 0.000001 1 -0.000001 0 -0.000001 -1 -1 0.000001 0 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 80.643932 -30 -40 0 1 0 0 0 -1 -1 0 0 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 83.18165 -30 -40 0 1 0 0 0 -1 -1 0 0 754.dat
-0 // ~Hose Flexible Segment Link Section
+0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 85.475255 -30 -40 0 1 0 0 0 -1 -1 0 0 754.dat
 
 
@@ -13586,7 +13586,7 @@
 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 8 t04o6250.dat
 1 16 0 17 0 0 0 -8 0 6.4 0 8 0 0 t04o6250.dat
 1 16 0 17 0 8 0 0 0 6.4 0 0 0 8 t04o6250.dat
-0 // Cylinder 0.5
+0 // Cylinder 0.5 (main_colour)
 1 16 0 17 0 -13 0 0 0 -13 0 0 0 13 2-4cyli.dat
 
 
@@ -14946,43 +14946,43 @@
 
 0 BFC CERTIFY CCW
 
-0 // Cylinder Closed 1.0
+0 // Cylinder Closed 1.0 (main_colour)
 1 16 0 0 0 4 0 0 0 -22.7 0 0 0 4 4-4cylc.dat
-0 // Cone  2 x 1.0
+0 // Cone  2 x 1.0 (main_colour)
 1 16 0 -23.5 0 2 0 0 0 0.8 0 0 0 2 4-4con2.dat
-0 // Cylinder Open 1.0
+0 // Cylinder Open 1.0 (main_colour)
 1 16 0 -25.5 0 6 0 0 0 2 0 0 0 6 4-4cylo.dat
-0 // Cone  2 x 1.0
+0 // Cone  2 x 1.0 (main_colour)
 1 16 0 -25.5 0 2 0 0 0 -0.8 0 0 0 2 4-4con2.dat
-0 // Cylinder Open 1.0
+0 // Cylinder Open 1.0 (main_colour)
 1 16 0 -27.2 0 4 0 0 0 0.9 0 0 0 4 4-4cylo.dat
-0 // Cone  2 x 1.0
+0 // Cone  2 x 1.0 (main_colour)
 1 16 0 -28 0 2 0 0 0 0.8 0 0 0 2 4-4con2.dat
-0 // Cylinder Open 1.0
+0 // Cylinder Open 1.0 (main_colour)
 1 16 0 -30 0 6 0 0 0 2 0 0 0 6 4-4cylo.dat
-0 // Cone  2 x 1.0
+0 // Cone  2 x 1.0 (main_colour)
 1 16 0 -30 0 2 0 0 0 -0.8 0 0 0 2 4-4con2.dat
-0 // Cylinder Open 1.0
+0 // Cylinder Open 1.0 (main_colour)
 1 16 0 -31.7 0 4 0 0 0 0.9 0 0 0 4 4-4cylo.dat
-0 // Cone  2 x 1.0
+0 // Cone  2 x 1.0 (main_colour)
 1 16 0 -32.5 0 2 0 0 0 0.8 0 0 0 2 4-4con2.dat
-0 // Cylinder Open 1.0
+0 // Cylinder Open 1.0 (main_colour)
 1 16 0 -34.5 0 6 0 0 0 2 0 0 0 6 4-4cylo.dat
-0 // Cone  2 x 1.0
+0 // Cone  2 x 1.0 (main_colour)
 1 16 0 -34.5 0 2 0 0 0 -0.8 0 0 0 2 4-4con2.dat
-0 // Circle 1.0
+0 // Circle 1.0 (main_colour)
 1 16 0 -35.3 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
-0 // Cylinder Sloped 1.0
+0 // Cylinder Sloped 1.0 (main_colour)
 1 16 0 -35.3 0 0 0 4 0 -0.8999 0 -4 -0.10275 0 4-4cyls.dat
-0 // Cylinder 1.0
+0 // Cylinder 1.0 (main_colour)
 1 16 0 -36.2 -0.103 0 0 4 0.899804 -20.968444 0 -3.89748 -4.840947 0 4-4cyli.dat
-0 // Cylinder Sloped 1.0
+0 // Cylinder Sloped 1.0 (main_colour)
 1 16 0 -57.168 -4.943 0 0 4 0.899804 -1.117584 0 -3.89748 -0.258015 0 4-4cyls.dat
-0 // Circle 1.0
+0 // Circle 1.0 (main_colour)
 1 16 0 -58.286 -5.202 4 0 0 0 0.87462 -2.017389 0 0.48481 3.639466 4-4edge.dat
-0 // Cylinder Sloped 1.0
+0 // Cylinder Sloped 1.0 (main_colour)
 1 16 0 -59.097 -6.013 0 0 4 2.828427 0.811038 0 -2.828427 0.811038 0 4-4cyls.dat
-0 // Cylinder 1.0
+0 // Cylinder 1.0 (main_colour)
 1 16 0 -59.804 -6.72 0 0 4 2.828427 0.707107 0 -2.828427 0.707107 0 4-4cyli.dat
 1 16 0 -62.632 -9.548 0 0 1 -0.707107 -0.707107 0 0.707107 -0.707107 0 s\6919 - 6919s02.dat
 
@@ -15008,20 +15008,20 @@
 1 16 0 8 0 6 0 0 0 -5.6 0 0 0 6 48\4-4cyli.dat
 1 16 0 8 0 6 0 0 0 1 0 0 0 6 48\4-4edge.dat
 1 16 0 8 0 6 0 0 0 -1 0 0 0 6 48\4-4aring.dat
-0 // Ring  2 x 1.0
+0 // Ring  2 x 1.0 (main_colour)
 1 16 0 8 0 2 0 0 0 -1 0 0 0 2 4-4ring2.dat
 0 BFC INVERTNEXT
-0 // Cylinder Open 1.0
+0 // Cylinder Open 1.0 (main_colour)
 1 16 0 8 0 4 0 0 0 -5.6 0 0 0 4 4-4cylo.dat
-0 // Ring  3 x 1.0
+0 // Ring  3 x 1.0 (main_colour)
 1 16 0 2.4 0 1 0 0 0 -1 0 0 0 1 4-4ring3.dat
 0 BFC INVERTNEXT
-0 // Cylinder Closed 1.0
+0 // Cylinder Closed 1.0 (main_colour)
 1 16 0 -2 0 3 0 0 0 4.4 0 0 0 3 4-4cylc.dat
 
-0 // Circle 1.0
+0 // Circle 1.0 (main_colour)
 1 16 0 -4 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
-0 // Ring  2 x 1.0
+0 // Ring  2 x 1.0 (main_colour)
 1 16 0 -4 0 2 0 0 0 1 0 0 0 2 4-4ring2.dat
 1 16 0 -4 0 6 0 0 0 1 0 0 0 6 48\4-4aring.dat
 1 16 0 -4 0 6 0 0 0 1 0 0 0 6 48\4-4edge.dat
@@ -15121,11 +15121,11 @@
 0 // r=20
 1 16 0 0 0 20 0 0 0 -2.4 0 0 0 20 48\1-4cylo.dat
 
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 9.526 -5.383 5.5 0 -1 -0.866 -1.2 0 -0.2835 0 0 -0.5 rect3.dat
-0 // Rectangle with 3 Edges
+0 // Rectangle with 3 Edges (main_colour)
 1 16 11.691 -4.5 6.75 0 -1 1.299 1.2 0 0.6 0 0 0.75 rect3.dat
-0 // Rectangle
+0 // Rectangle (main_colour)
 1 16 6.75 -4.5 11.691 0.749966 1 0 0.6 0 1.2 1.299019 0 0 rect.dat
 4 16 4.5 -4.75 7.794 3 -5.6 5.196 3 -8 5.196 4.5 -7.15 7.794
 2 24 3 -5.6 5.196 3 -8 5.196

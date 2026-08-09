@@ -30,134 +30,134 @@
 
 0 !HISTORY 2013-05-25 [Leftmost] Initial revision
 
-0 // Plate  2 x  8
+0 // Plate  2 x  8 (black)
 1 0 -30 0 125.674 0 0 1 0 1 0 -1 0 0 3034.dat
 0 STEP
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (dark_bluish_grey)
 1 72 10 0 145.674 -1 0 0 0 1 0 0 0 -1 3022.dat
-0 // Plate  2 x  2
+0 // Plate  2 x  2 (dark_bluish_grey)
 1 72 -70 0 145.674 -1 0 0 0 1 0 0 0 -1 3022.dat
-0 // Slope Brick 45  2 x  2
+0 // Slope Brick 45  2 x  2 (dark_bluish_grey)
 1 72 -30 -24 175.674 -1 0 0 0 1 0 0 0 -1 3039.dat
 0 STEP
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (black)
 1 0 -30 -8 155.674 -1 0 0 0 1 0 0 0 -1 3666.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (black)
 1 0 -30 -8 135.674 -1 0 0 0 1 0 0 0 -1 3710.dat
 0 STEP
-0 // Plate  1 x  1 with Clip Light Type 2
+0 // Plate  1 x  1 with Clip Light Type 2 (black)
 1 0 -80 -8 135.674 0 0 1 0 1 0 -1 0 0 4081b.dat
-0 // Plate  1 x  1 with Clip Light Type 2
+0 // Plate  1 x  1 with Clip Light Type 2 (black)
 1 0 20 -8 135.674 0 0 -1 0 1 0 1 0 0 4081b.dat
-0 // Plate  1 x  2 with  2 Clips Horizontal (Thick U-Clips)
+0 // Plate  1 x  2 with  2 Clips Horizontal (Thick U-Clips) (black)
 1 0 -30 -8 55.674 1 0 0 0 1 0 0 0 1 60470a.dat
 0 STEP
-0 // Slope Brick 33  3 x  2
+0 // Slope Brick 33  3 x  2 (blue)
 1 1 -40 -32 145.674 0 0 1 0 1 0 -1 0 0 3298.dat
-0 // Slope Brick 33  3 x  2
+0 // Slope Brick 33  3 x  2 (blue)
 1 1 -20 -32 145.674 0 0 -1 0 1 0 1 0 0 3298.dat
-0 // Plate  1 x  2
+0 // Plate  1 x  2 (blue)
 1 1 -30 -32 175.674 1 0 0 0 1 0 0 0 1 3023.dat
-0 // Brick  1 x  2 Log
+0 // Brick  1 x  2 Log (dark_bluish_grey)
 1 72 -30 -24 115.674 1 0 0 0 1 0 0 0 1 30136.dat
 0 STEP
-0 // Brick  1 x  2 with Grille
+0 // Brick  1 x  2 with Grille (black)
 1 0 -30 -56 175.674 1 0 0 0 1 0 0 0 1 2877.dat
 0 // Omitted two Imperial symbol stickers as per step 6 on page 6
 0 STEP
-0 // Panel  1 x  2 x  2 with Hollow Studs
+0 // Panel  1 x  2 x  2 with Hollow Studs (black)
 1 0 -20 -80 145.674 0 0 -1 0 1 0 1 0 0 4864b.dat
-0 // Panel  1 x  2 x  2 with Hollow Studs
+0 // Panel  1 x  2 x  2 with Hollow Studs (black)
 1 0 -40 -80 145.674 0 0 1 0 1 0 -1 0 0 4864b.dat
-0 // Slope Brick 33  3 x  2 Inverted without Ribs between Studs
+0 // Slope Brick 33  3 x  2 Inverted without Ribs between Studs (black)
 1 0 -30 -80 175.674 -1 0 0 0 1 0 0 0 -1 3747a.dat
-0 // Cone  1 x  1
+0 // Cone  1 x  1 (trans_red)
 1 36 40 -6 107.674 -1 0 0 0 0 1 0 1 0 4589.dat
-0 // Cone  1 x  1
+0 // Cone  1 x  1 (trans_red)
 1 36 -100 -6 107.674 -1 0 0 0 0 1 0 1 0 4589.dat
 0 STEP
-0 // Slope Brick 45  2 x  2
+0 // Slope Brick 45  2 x  2 (dark_bluish_grey)
 1 72 -30 -104 155.674 1 0 0 0 1 0 0 0 1 3039.dat
-0 // ~Slope Brick 45  2 x  2 Inverted without Inner Stopper Ring (Obsolete)
+0 // ~Slope Brick 45  2 x  2 Inverted without Inner Stopper Ring (Obsolete) (light_bluish_grey)
 1 71 -40 -104 185.674 0 0 1 0 1 0 -1 0 0 3660.dat
-0 // ~Slope Brick 45  2 x  2 Inverted without Inner Stopper Ring (Obsolete)
+0 // ~Slope Brick 45  2 x  2 Inverted without Inner Stopper Ring (Obsolete) (light_bluish_grey)
 1 71 -20 -104 185.674 0 0 -1 0 1 0 1 0 0 3660.dat
 0 STEP
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (blue)
 1 1 -30 -112 175.674 0 0 1 0 1 0 -1 0 0 3021.dat
 0 STEP
-0 // Technic Brick  1 x  2 with Axlehole with Open Sides and Stud Blocker
+0 // Technic Brick  1 x  2 with Axlehole with Open Sides and Stud Blocker (dark_bluish_grey)
 1 72 -30 -104 215.674 1 0 0 0 1 0 0 0 1 32064a.dat
 0 ROTSTEP 23 135 0 ABS
-0 // Technic Axle  3
+0 // Technic Axle  3 (light_bluish_grey)
 1 71 -30 -96 235.674 0 0 1 0 1 0 -1 0 0 4519.dat
-0 // Technic Bush with Two Flanges
+0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 -30 -96 235.674 -1 0 0 0 1 0 0 0 -1 3713.dat
 0 STEP
-0 // Plate  2 x  4
+0 // Plate  2 x  4 (dark_bluish_grey)
 1 72 -30 -112 245.674 0 0 1 0 1 0 -1 0 0 3020.dat
 0 ROTSTEP END
-0 // Slope Brick 45  2 x  2
+0 // Slope Brick 45  2 x  2 (blue)
 1 1 -30 -136 255.674 -1 0 0 0 1 0 0 0 -1 3039.dat
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (blue)
 1 1 -20 -136 235.674 0 0 1 0 1 0 -1 0 0 6541.dat
-0 // Technic Brick  1 x  1 with Hole
+0 // Technic Brick  1 x  1 with Hole (blue)
 1 1 -40 -136 235.674 0 0 1 0 1 0 -1 0 0 6541.dat
 0 STEP
-0 // Slope Brick 18  4 x  2
+0 // Slope Brick 18  4 x  2 (blue)
 1 1 -30 -136 215.674 1 0 0 0 1 0 0 0 1 30363.dat
 0 // Omitted Imperial symbol sticker as per step 11-4 on page 10
 0 STEP
-0 // Tile  2 x  2 with Groove
+0 // Tile  2 x  2 with Groove (blue)
 1 1 -30 -144 225.674 1 0 0 0 1 0 0 0 1 3068b.dat
-0 // Tile  1 x  2 Grille with Groove
+0 // Tile  1 x  2 Grille with Groove (dark_bluish_grey)
 1 72 -30 -144 255.674 1 0 0 0 1 0 0 0 1 2412b.dat
 0 STEP
-0 // Plate  1 x  2 with Handle
+0 // Plate  1 x  2 with Handle (light_bluish_grey)
 1 71 -30 -90.892 119.899 -1 0 0 0 0.669131 0.743144 0 0.743144 -0.669131 2540.dat
-0 // Plate  1 x  4
+0 // Plate  1 x  4 (black)
 1 0 -30 -96.244 113.955 -1 0 0 0 0.669131 0.743144 0 0.743144 -0.669131 3710.dat
 0 STEP
-0 // Windscreen  6 x  4 x  2 Canopy Curved
+0 // Windscreen  6 x  4 x  2 Canopy Curved (trans_brown)
 1 40 -30 -59.087 80.497 1 0 0 0 0.669131 -0.743144 0 0.743144 0.669131 41883.dat
 0 STEP
-0 // Plate  1 x  2 with Handle Type 2
+0 // Plate  1 x  2 with Handle Type 2 (black)
 1 0 -30 -21.93 47.039 1 0 0 0 0.669131 -0.743144 0 0.743144 0.669131 48336.dat
 0 STEP
-0 // Technic Axle  7
+0 // Technic Axle  7 (light_bluish_grey)
 1 71 -30 -126 295 1 0 0 0 1 0 0 0 1 44294.dat
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (light_bluish_grey)
 1 71 -35 -126 295 0 -1 0 0 0 1 -1 0 0 6632.dat
-0 // Technic Beam  3 x  0.5 Liftarm
+0 // Technic Beam  3 x  0.5 Liftarm (light_bluish_grey)
 1 71 -25 -126 295 0 -1 0 0 0 1 -1 0 0 6632.dat
 0 STEP
-0 // Technic Beam  4 x  0.5 Liftarm with Boss
+0 // Technic Beam  4 x  0.5 Liftarm with Boss (black)
 1 0 -50 -126 295 0 -1 0 -1 0 0 0 0 -1 2825.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -54 -126 235 -1 0 0 0 1 0 0 0 -1 43093.dat
 0 STEP
-0 // Technic Beam  4 x  0.5 Liftarm with Boss
+0 // Technic Beam  4 x  0.5 Liftarm with Boss (black)
 1 0 -10 -126 295 0 1 0 1 0 0 0 0 -1 2825.dat
-0 // Technic Axle Pin with Friction
+0 // Technic Axle Pin with Friction (blue)
 1 1 -6 -126 235 1 0 0 0 -1 0 0 0 -1 43093.dat
 0 STEP
-0 // Brick  2 x  2 with Pin and Axlehole
+0 // Brick  2 x  2 with Pin and Axlehole (dark_bluish_grey)
 1 72 -100 -126 295 0 1 0 0 0 1 1 0 0 6232.dat
-0 // Wheel Rim  8 x 11.2 with Centre Groove
+0 // Wheel Rim  8 x 11.2 with Centre Groove (light_bluish_grey)
 1 71 -90 -126 325 0 1 0 1 0 0 0 0 -1 42610.dat
-0 // Brick  2 x  2 with Pin and Axlehole
+0 // Brick  2 x  2 with Pin and Axlehole (dark_bluish_grey)
 1 72 40 -126 295 0 -1 0 0 0 -1 1 0 0 6232.dat
-0 // Wheel Rim  8 x 11.2 with Centre Groove
+0 // Wheel Rim  8 x 11.2 with Centre Groove (light_bluish_grey)
 1 71 30 -126 325 0 -1 0 -1 0 0 0 0 -1 42610.dat
 0 STEP
-0 // Plate  3 x  6 without Corners
+0 // Plate  3 x  6 without Corners (black)
 1 0 -108 -126 285 0 1 0 -1 0 0 0 0 1 2419.dat
-0 // Plate  3 x  6 without Corners
+0 // Plate  3 x  6 without Corners (black)
 1 0 48 -126 285 0 -1 0 1 0 0 0 0 1 2419.dat
 0 STEP
-0 // Minifig Gun Long Blaster
+0 // Minifig Gun Long Blaster (black)
 1 0 -0.177 -125 175.343 0.984808 0 -0.173648 0 1 0 0.173648 0 0.984808 57899.dat
-0 // Minifig Gun Long Blaster
+0 // Minifig Gun Long Blaster (black)
 1 0 -60.19 -125 175.93 0.984808 0 0.173648 0 1 0 -0.173648 0 0.984808 57899.dat
 
 
@@ -172,30 +172,30 @@
 
 0 !HISTORY 2013-05-25 [Leftmost] Initial revision
 
-0 // Plate  4 x  6
+0 // Plate  4 x  6 (black)
 1 0 -30 -8 246 1 0 0 0 1 0 0 0 1 3032.dat
-0 // Plate  1 x  6
+0 // Plate  1 x  6 (black)
 1 0 -30 -8 296 1 0 0 0 1 0 0 0 1 3666.dat
 0 STEP
-0 // Plate  2 x  3
+0 // Plate  2 x  3 (blue)
 1 1 -30 -16 276 0 0 1 0 1 0 -1 0 0 3021.dat
 0 STEP
-0 // Dish  2 x  2 with Rim
+0 // Dish  2 x  2 with Rim (dark_bluish_grey)
 1 72 -70 0 286 1 0 0 0 1 0 0 0 1 2654.dat
-0 // Dish  2 x  2 with Rim
+0 // Dish  2 x  2 with Rim (dark_bluish_grey)
 1 72 10 0 286 1 0 0 0 1 0 0 0 1 2654.dat
-0 // Dish  2 x  2 with Rim
+0 // Dish  2 x  2 with Rim (dark_bluish_grey)
 1 72 -30 0 226 1 0 0 0 1 0 0 0 1 2654.dat
 0 ROTSTEP -135 135 0 ABS
-0 // Support  2 x  2 x  2 Round with Open Hole and Stud Holders
+0 // Support  2 x  2 x  2 Round with Open Hole and Stud Holders (black)
 1 0 -30 -64 266 0 0 1 0 1 0 -1 0 0 3940.dat
 0 ROTSTEP END
-0 // Technic Tile  1 x  2 with Two Holes
+0 // Technic Tile  1 x  2 with Two Holes (dark_bluish_grey)
 1 72 -30 -72 276 -1 0 0 0 1 0 0 0 -1 32530.dat
-0 // Technic Pin
+0 // Technic Pin (black)
 1 0 -30 -74 266 0 0 -1 0 1 0 1 0 0 3673.dat
 0 STEP
-0 // Technic Tile  1 x  2 with Two Holes
+0 // Technic Tile  1 x  2 with Two Holes (dark_bluish_grey)
 1 72 -30 -72 256 -1 0 0 0 1 0 0 0 -1 32530.dat
 
 
@@ -212,27 +212,27 @@
 0 !HISTORY 2013-05-25 [Leftmost] Initial revision
 
 0 // The next piece should have the Stormtrooper pattern "No2" with dotted mouth (part 84468) as per step iii on page 3
-0 // Minifig Helmet Stormtrooper
+0 // Minifig Helmet Stormtrooper (white)
 1 15 0 -24 0 1 0 0 0 1 0 0 0 1 30408.dat
-0 // Minifig Head with Solid Stud
+0 // Minifig Head with Solid Stud (black)
 1 0 0 -24 0 1 0 0 0 1 0 0 0 1 3626a.dat
-0 // Minifig Torso with SW Stormtrooper Armour Grey Pattern
+0 // Minifig Torso with SW Stormtrooper Armour Grey Pattern (white)
 1 15 0 0 0 1 0 0 0 1 0 0 0 1 973psk.dat
-0 // ~Minifig Hips (Obsolete)
+0 // ~Minifig Hips (Obsolete) (black)
 1 0 0 32 0 1 0 0 0 1 0 0 0 1 3815.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (white)
 1 15 -15.552 9 0 0.985 -0.17 0 0.17 0.985 0 0 0 1 3818.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (white)
 1 15 15.552 9 0 0.985 0.17 0 -0.17 0.985 0 0 0 1 3819.dat
-0 // Minifig Hand
+0 // Minifig Hand (black)
 1 0 -23.8634 26.5956 -10.321 0.985 -0.12019 0.12019 0.17 0.696395 -0.696395 0 0.707 0.707 3820.dat
-0 // Minifig Hand
+0 // Minifig Hand (black)
 1 0 23.8634 26.5956 -10.321 0.985 0.12019 -0.12019 -0.17 0.696395 -0.696395 0 0.707 0.707 3820.dat
-0 // Minifig Gun Short Blaster
+0 // Minifig Gun Short Blaster (black)
 1 0 -24.6826 31.3422 -19.2547 0.985 -0.0874983 0.14567 0.17 0.506976 -0.844031 0 0.856884 0.514696 58247.dat
-0 // ~Minifig Leg Right (Obsolete)
+0 // ~Minifig Leg Right (Obsolete) (white)
 1 15 0 44 0 1 0 0 0 0 1 0 -1 0 3816.dat
-0 // ~Minifig Leg Left (Obsolete)
+0 // ~Minifig Leg Left (Obsolete) (white)
 1 15 0 44 0 1 0 0 0 0 1 0 -1 0 3817.dat
 
 
@@ -249,25 +249,25 @@
 0 !HISTORY 2013-05-25 [Leftmost] Initial revision
 
 0 // The next piece should have the Stormtrooper pattern "No2" with dotted mouth (part 84468) as per step iii on page 3
-0 // Minifig Helmet Stormtrooper
+0 // Minifig Helmet Stormtrooper (white)
 1 15 0 -24 0 1 0 0 0 1 0 0 0 1 30408.dat
-0 // Minifig Head with Solid Stud
+0 // Minifig Head with Solid Stud (black)
 1 0 0 -24 0 1 0 0 0 1 0 0 0 1 3626a.dat
-0 // Minifig Torso with SW Stormtrooper Armour Grey Pattern
+0 // Minifig Torso with SW Stormtrooper Armour Grey Pattern (white)
 1 15 0 0 0 1 0 0 0 1 0 0 0 1 973psk.dat
-0 // ~Minifig Hips (Obsolete)
+0 // ~Minifig Hips (Obsolete) (black)
 1 0 0 32 0 1 0 0 0 1 0 0 0 1 3815.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (white)
 1 15 -15.552 9 0 0.985 -0.17 0 0.17 0.985 0 0 0 1 3818.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (white)
 1 15 15.552 9 0 0.985 0.17 0 -0.17 0.985 0 0 0 1 3819.dat
-0 // Minifig Hand
+0 // Minifig Hand (black)
 1 0 -23.8634 26.5956 -10.321 0.985 -0.12019 0.12019 0.17 0.696395 -0.696395 0 0.707 0.707 3820.dat
-0 // Minifig Hand
+0 // Minifig Hand (black)
 1 0 23.8634 26.5956 -10.321 0.985 0.12019 -0.12019 -0.17 0.696395 -0.696395 0 0.707 0.707 3820.dat
-0 // ~Minifig Leg Right (Obsolete)
+0 // ~Minifig Leg Right (Obsolete) (white)
 1 15 0 44 0 1 0 0 0 0 1 0 -1 0 3816.dat
-0 // ~Minifig Leg Left (Obsolete)
+0 // ~Minifig Leg Left (Obsolete) (white)
 1 15 0 44 0 1 0 0 0 0 1 0 -1 0 3817.dat
 
 
@@ -283,25 +283,25 @@
 
 0 !HISTORY 2013-05-25 [Leftmost] Initial revision
 
-0 // Minifig Helmet Stormtrooper with Shadow Trooper Pattern
+0 // Minifig Helmet Stormtrooper with Shadow Trooper Pattern (black)
 1 0 0 -24 0 1 0 0 0 1 0 0 0 1 7667 - 30408p03.dat
-0 // Minifig Head with Solid Stud
+0 // Minifig Head with Solid Stud (black)
 1 0 0 -24 0 1 0 0 0 1 0 0 0 1 3626a.dat
-0 // Minifig Torso with SW Stormtrooper Armour Grey Pattern
+0 // Minifig Torso with SW Stormtrooper Armour Grey Pattern (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 973psk.dat
-0 // ~Minifig Hips (Obsolete)
+0 // ~Minifig Hips (Obsolete) (black)
 1 0 0 32 0 1 0 0 0 1 0 0 0 1 3815.dat
-0 // Minifig Arm Right
+0 // Minifig Arm Right (black)
 1 0 -15.552 9 0 0.985 -0.17 0 0.17 0.985 0 0 0 1 3818.dat
-0 // Minifig Arm Left
+0 // Minifig Arm Left (black)
 1 0 15.552 9 0 0.985 0.17 0 -0.17 0.985 0 0 0 1 3819.dat
-0 // Minifig Hand
+0 // Minifig Hand (black)
 1 0 -23.8634 26.5956 -10.321 0.985 -0.12019 0.12019 0.17 0.696395 -0.696395 0 0.707 0.707 3820.dat
-0 // Minifig Hand
+0 // Minifig Hand (black)
 1 0 23.8634 26.5956 -10.321 0.985 0.12019 -0.12019 -0.17 0.696395 -0.696395 0 0.707 0.707 3820.dat
-0 // ~Minifig Leg Right (Obsolete)
+0 // ~Minifig Leg Right (Obsolete) (black)
 1 0 0 44 0 1 0 0 0 0 1 0 -1 0 3816.dat
-0 // ~Minifig Leg Left (Obsolete)
+0 // ~Minifig Leg Left (Obsolete) (black)
 1 0 0 44 0 1 0 0 0 0 1 0 -1 0 3817.dat
 
 0 FILE 7667 - 30408p03.dat
