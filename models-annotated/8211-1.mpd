@@ -1,0 +1,1537 @@
+0 FILE 8211 - Main
+0 Main
+0 Name: 8211 - Main
+0 Author: Massimo Maso [Sirio]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+
+0 !HISTORY 2019-02-20 [technicbasics] Add tyres and OMRize file
+
+0 ROTATION CENTER 0 0 0 1 "Custom"
+0 ROTATION CONFIG 0 0
+1 0 -70 -19 360 1 0 0 0 1 0 0 0 1 8211 - 8211-1.ldr
+1 0 70 -19 370 1 0 0 0 1 0 0 0 1 8211 - 8211-2.ldr
+1 0 -290 -32 340 0 0 -1 0 1 0 1 0 0 8211 - 8211-3.ldr
+1 0 -70 -19 -190 1 0 0 0 1 0 0 0 1 8211 - 8211-4.ldr
+1 0 160 -19 -210 0 0 1 0 1 0 -1 0 0 8211 - 8211-5.ldr
+1 0 0 -9 620 1 0 0 0 1 0 0 0 1 8211 - 8211-6.ldr
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 8211 - 8211-7.ldr
+
+
+
+
+0 FILE 8211 - 8211-1.ldr
+0 8211-1
+0 Name: 8211 - 8211-1.ldr
+0 Author: Massimo Maso [Sirio]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+
+
+0 ROTATION CENTER 0 0 0 1 "Custom"
+0 ROTATION CONFIG 0 0
+0 // Plate  2 x  2 with 2 Wheel Pins Extended without Wishbones
+1 0 0 -8 60 1 0 0 0 1 0 0 0 1 6157.dat
+0 // Plate  4 x  4
+1 15 0 0 0 1 0 0 0 1 0 0 0 1 3031.dat
+0 // Plate  2 x  2 with 2 Wheel Pins Extended without Wishbones
+1 0 0 -8 -60 1 0 0 0 1 0 0 0 1 6157.dat
+0 STEP
+0 // Plate  1 x  2 with Door Rail
+1 15 0 -8 70 -1 0 0 0 1 0 0 0 -1 32028.dat
+0 // Plate  2 x  6
+1 0 0 -8 0 0 0 1 0 1 0 -1 0 0 3795.dat
+0 // Plate  1 x  2 with Racer Grille 4 x 1 x 2/3
+1 0 0 -8 -70 1 0 0 0 1 0 0 0 1 50949.dat
+0 STEP
+0 // Plate  1 x  2
+1 14 0 -16 70 1 0 0 0 1 0 0 0 1 3023.dat
+0 // Plate  2 x  8
+1 15 0 -16 -20 0 0 1 0 1 0 -1 0 0 3034.dat
+0 STEP
+0 // Car Mudguard  2 x  4
+1 15 0 -32 60 1 0 0 0 1 0 0 0 1 3788.dat
+0 // Brick  1 x  4 with Studs on Side
+1 0 30 -24 0 0 0 -1 0 1 0 1 0 0 30414.dat
+0 // Plate  2 x  4
+1 9 0 -24 0 0 0 1 0 1 0 -1 0 0 3020.dat
+0 // Brick  1 x  4 with Studs on Side
+1 0 -30 -24 0 0 0 1 0 1 0 -1 0 0 30414.dat
+0 // Car Mudguard  3 x  4 Overhanging
+1 15 0 -24 -60 1 0 0 0 1 0 0 0 1 44674.dat
+0 // Slope Brick 31  1 x  2 x  0.667
+1 15 0 -16 -90 1 0 0 0 1 0 0 0 1 85984.dat
+0 STEP
+0 // Tile  1 x  4 with Groove
+1 15 -48 -14 0 0 1 0 0 0 -1 -1 0 0 2431.dat
+0 // Tile  1 x  4 with Groove
+1 15 48 -14 0 0 -1 0 0 0 1 -1 0 0 2431.dat
+0 STEP
+0 // Bracket  1 x  2 -  1 x  4 with Square Corners
+1 0 0 -32 70 -1 0 0 0 1 0 0 0 -1 2436a.dat
+0 // Plate  4 x  4
+1 15 0 -32 0 1 0 0 0 1 0 0 0 1 3031.dat
+0 // Tile  1 x  2 with Groove
+1 15 0 -32 -50 1 0 0 0 1 0 0 0 1 3069b.dat
+0 // Plate  1 x  1 Round
+1 36 -10 -32 -70 1 0 0 0 1 0 0 0 1 6141.dat
+0 // Plate  1 x  1 Round
+1 33 10 -32 -70 1 0 0 0 1 0 0 0 1 6141.dat
+0 STEP
+0 // Plate  1 x  1
+1 36 -30 -22 92 1 0 0 0 0 1 0 -1 0 3024.dat
+0 // Tile  1 x  2 with Groove
+1 15 0 -22 92 1 0 0 0 0 1 0 -1 0 3069b.dat
+0 // Plate  1 x  1
+1 36 30 -22 92 1 0 0 0 0 1 0 -1 0 3024.dat
+0 ROTSTEP 23 135 0 ABS
+0 // ~Slope Brick 18  2 x  1 x  0.667 Grille (Obsolete)
+1 0 -30 -32 60 -1 0 0 0 1 0 0 0 -1 61409.dat
+0 // ~Slope Brick 18  2 x  1 x  0.667 Grille (Obsolete)
+1 0 30 -32 60 -1 0 0 0 1 0 0 0 -1 61409.dat
+0 // Plate  2 x  3
+1 15 0 -40 50 0 0 1 0 1 0 -1 0 0 3021.dat
+0 // Plate  1 x  1
+1 15 -30 -40 30 1 0 0 0 1 0 0 0 1 3024.dat
+0 // Plate  1 x  1
+1 15 30 -40 30 1 0 0 0 1 0 0 0 1 3024.dat
+0 // Slope Brick Curved  2 x  4 with Underside Studs
+1 0 0 -32 0 1 0 0 0 1 0 0 0 1 88930.dat
+0 ROTSTEP END
+0 // Tile  2 x  2 Round with Cross Underside Stud
+1 15 0 -48 60 1 0 0 0 1 0 0 0 1 4150.dat
+0 // Plate  1 x  4
+1 15 0 -48 30 1 0 0 0 1 0 0 0 1 3710.dat
+0 STEP
+0 // =Wheel Rim  6.4 x 11 with  5 Spokes with Metallic Silver Outline Pattern
+1 0 -40 -3 60 0 0 1 0 1 0 -1 0 0 51719.dat
+0 // =Wheel Rim  6.4 x 11 with  5 Spokes with Metallic Silver Outline Pattern
+1 0 40 -3 60 0 0 -1 0 1 0 1 0 0 51719.dat
+0 // =Wheel Rim  6.4 x 11 with  5 Spokes with Metallic Silver Outline Pattern
+1 0 -40 -3 -60 0 0 1 0 1 0 -1 0 0 51719.dat
+0 // =Wheel Rim  6.4 x 11 with  5 Spokes with Metallic Silver Outline Pattern
+1 0 40 -3 -60 0 0 -1 0 1 0 1 0 0 51719.dat
+0 STEP
+0 // Tyre  6/ 30 x 11
+1 256 -40 -3 60 0 0 1 0 1 0 -1 0 0 50951.dat
+0 // Tyre  6/ 30 x 11
+1 256 40 -3 60 0 0 1 0 1 0 -1 0 0 50951.dat
+0 // Tyre  6/ 30 x 11
+1 256 -40 -3 -60 0 0 1 0 1 0 -1 0 0 50951.dat
+0 // Tyre  6/ 30 x 11
+1 256 40 -3 -60 0 0 1 0 1 0 -1 0 0 50951.dat
+
+
+
+
+0 FILE 8211 - 8211-2.ldr
+0 8211-2
+0 Name: 8211 - 8211-2.ldr
+0 Author: Massimo Maso [Sirio]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+
+
+0 ROTATION CENTER 0 0 0 1 "Custom"
+0 ROTATION CONFIG 0 0
+0 // Plate  2 x  2 with 2 Wheel Pins Extended without Wishbones
+1 0 0 -8 60 1 0 0 0 1 0 0 0 1 6157.dat
+0 // Plate  2 x  2 With Raised Grilles
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 41862.dat
+0 // Plate  2 x  2 with 2 Wheel Pins Extended without Wishbones
+1 0 0 -8 -60 1 0 0 0 1 0 0 0 1 6157.dat
+0 STEP
+0 // Plate  2 x  8
+1 15 0 -8 0 0 0 1 0 1 0 -1 0 0 3034.dat
+0 STEP
+0 // Plate  1 x  2 with Door Rail
+1 15 0 -16 70 -1 0 0 0 1 0 0 0 -1 32028.dat
+0 // Plate  2 x  6
+1 0 0 -16 0 0 0 1 0 1 0 -1 0 0 3795.dat
+0 // Plate  1 x  2
+1 14 0 -16 -70 1 0 0 0 1 0 0 0 1 3023.dat
+0 STEP
+0 // Plate  2 x  2
+1 7 0 -24 60 1 0 0 0 1 0 0 0 1 3022.dat
+0 // Plate  2 x  2
+1 7 0 -24 -60 1 0 0 0 1 0 0 0 1 3022.dat
+0 STEP
+0 // Car Mudguard  2 x  4
+1 0 0 -40 60 1 0 0 0 1 0 0 0 1 3788.dat
+0 // Car Mudguard  2 x  4
+1 0 0 -40 -60 1 0 0 0 1 0 0 0 1 3788.dat
+0 STEP
+0 // Bracket  1 x  2 -  1 x  4 with Square Corners
+1 15 0 -40 70 -1 0 0 0 1 0 0 0 -1 2436a.dat
+0 // Brick  2 x  4
+1 0 -20 -40 0 0 0 1 0 1 0 -1 0 0 3001.dat
+0 // Brick  2 x  4
+1 0 20 -40 0 0 0 1 0 1 0 -1 0 0 3001.dat
+0 // Bracket  1 x  2 -  2 x  2 Down
+1 15 0 -40 -70 1 0 0 0 1 0 0 0 1 44728.dat
+0 STEP
+0 // Plate  2 x  4
+1 15 0 -20 -92 1 0 0 0 0 -1 0 1 0 3020.dat
+0 STEP
+0 // Slope Brick 31  1 x  1 x  0.667
+1 15 -30 -10 -92 0 0 1 1 0 0 0 1 0 54200.dat
+0 // Slope Brick 31  1 x  1 x  0.667
+1 15 30 -10 -92 0 0 -1 -1 0 0 0 1 0 54200.dat
+0 // Plate  2 x  2
+1 0 0 -20 -100 1 0 0 0 0 -1 0 1 0 3022.dat
+0 // Slope Brick 31  1 x  1 x  0.667
+1 15 -30 -30 -92 0 0 1 1 0 0 0 1 0 54200.dat
+0 // Slope Brick 31  1 x  1 x  0.667
+1 15 30 -30 -92 0 0 -1 -1 0 0 0 1 0 54200.dat
+0 STEP
+0 // Tile  1 x  2 Grille with Groove
+1 15 0 -10 -108 1 0 0 0 0 -1 0 1 0 2412b.dat
+0 // Tile  1 x  2 Grille with Groove
+1 15 0 -30 -108 1 0 0 0 0 -1 0 1 0 2412b.dat
+0 STEP
+0 // Brick  1 x  4 with Studs on Side
+1 15 0 -64 70 -1 0 0 0 1 0 0 0 -1 30414.dat
+0 // Brick  1 x  6
+1 15 -30 -64 0 0 0 1 0 1 0 -1 0 0 3009.dat
+0 // Brick  1 x  6
+1 15 30 -64 0 0 0 1 0 1 0 -1 0 0 3009.dat
+0 // Brick  2 x  4
+1 0 0 -64 -80 1 0 0 0 1 0 0 0 1 3001.dat
+0 STEP
+0 // Plate  1 x  1
+1 36 -30 -30 92 1 0 0 0 0 1 0 -1 0 3024.dat
+0 // Tile  1 x  2 Grille with Groove
+1 0 0 -30 92 1 0 0 0 0 1 0 -1 0 2412b.dat
+0 // Plate  1 x  1
+1 36 30 -30 92 1 0 0 0 0 1 0 -1 0 3024.dat
+0 // Slope Brick 31  1 x  1 x  0.667
+1 15 -30 -54 80 1 0 0 0 0 1 0 -1 0 54200.dat
+0 // Tile  1 x  2 Grille with Groove
+1 0 0 -54 88 1 0 0 0 0 1 0 -1 0 2412b.dat
+0 // Slope Brick 31  1 x  1 x  0.667
+1 15 30 -54 80 1 0 0 0 0 1 0 -1 0 54200.dat
+0 ROTSTEP 23 135 0 ABS
+0 // Plate  4 x  8
+1 15 0 -72 0 0 0 1 0 1 0 -1 0 0 3035.dat
+0 // Tile  1 x  4 with Groove
+1 15 0 -72 -90 1 0 0 0 1 0 0 0 1 2431.dat
+0 ROTSTEP END
+0 // Plate  1 x  1
+1 33 -30 -80 70 1 0 0 0 1 0 0 0 1 3024.dat
+0 // Plate  1 x  1
+1 36 30 -80 70 1 0 0 0 1 0 0 0 1 3024.dat
+0 // Tile  2 x  2 with Groove
+1 15 0 -80 20 1 0 0 0 1 0 0 0 1 3068b.dat
+0 // Tile  1 x  2 Grille with Groove
+1 0 -10 -80 -20 0 0 1 0 1 0 -1 0 0 2412b.dat
+0 // Tile  2 x  2 Round with Cross Underside Stud
+1 0 20 -80 -20 1 0 0 0 1 0 0 0 1 4150.dat
+0 // Tile  2 x  2 with Groove
+1 15 0 -80 -60 1 0 0 0 1 0 0 0 1 3068b.dat
+0 // Plate  1 x  1
+1 36 -30 -80 -70 1 0 0 0 1 0 0 0 1 3024.dat
+0 // Plate  1 x  1
+1 33 30 -80 -70 1 0 0 0 1 0 0 0 1 3024.dat
+0 STEP
+0 // =Wheel Rim  6.4 x 11 with  5 Spokes with Metallic Silver Outline Pattern
+1 0 -40 -3 60 0 0 1 0 1 0 -1 0 0 51719.dat
+0 // =Wheel Rim  6.4 x 11 with  5 Spokes with Metallic Silver Outline Pattern
+1 0 40 -3 60 0 0 -1 0 1 0 1 0 0 51719.dat
+0 // =Wheel Rim  6.4 x 11 with  5 Spokes with Metallic Silver Outline Pattern
+1 0 -40 -3 -60 0 0 1 0 1 0 -1 0 0 51719.dat
+0 // =Wheel Rim  6.4 x 11 with  5 Spokes with Metallic Silver Outline Pattern
+1 0 40 -3 -60 0 0 -1 0 1 0 1 0 0 51719.dat
+0 STEP
+0 // Tyre  6/ 30 x 11
+1 256 -40 -3 60 0 0 1 0 1 0 -1 0 0 50951.dat
+0 // Tyre  6/ 30 x 11
+1 256 40 -3 60 0 0 1 0 1 0 -1 0 0 50951.dat
+0 // Tyre  6/ 30 x 11
+1 256 -40 -3 -60 0 0 1 0 1 0 -1 0 0 50951.dat
+0 // Tyre  6/ 30 x 11
+1 256 40 -3 -60 0 0 1 0 1 0 -1 0 0 50951.dat
+
+
+
+
+0 FILE 8211 - 8211-3.ldr
+0 8211-3
+0 Name: 8211 - 8211-3.ldr
+0 Author: Massimo Maso [Sirio]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+
+
+0 ROTATION CENTER 0 0 0 1 "Custom"
+0 ROTATION CONFIG 0 0
+0 // Plate  2 x  2 with 2 Wheel Pins
+1 0 0 -8 60 1 0 0 0 1 0 0 0 1 4600.dat
+0 // Plate  2 x  2 with 2 Wheel Pins
+1 0 0 -8 -60 1 0 0 0 1 0 0 0 1 4600.dat
+0 STEP
+0 // Brick  1 x  2 with Handle
+1 0 0 -32 70 -1 0 0 0 1 0 0 0 -1 30236.dat
+0 // Slope Brick 33  3 x  2 Inverted with Ribs between Studs
+1 0 0 -32 50 1 0 0 0 1 0 0 0 1 3747b.dat
+0 // Slope Brick 33  3 x  2 Inverted with Ribs between Studs
+1 0 0 -32 -50 -1 0 0 0 1 0 0 0 -1 3747b.dat
+0 // Brick  1 x  2 with Handle
+1 0 0 -32 -70 1 0 0 0 1 0 0 0 1 30236.dat
+0 STEP
+0 // Plate  2 x  8
+1 8 0 -40 0 0 0 1 0 1 0 -1 0 0 3034.dat
+0 STEP
+0 // Car Mudguard  2 x  4
+1 25 0 -56 60 1 0 0 0 1 0 0 0 1 3788.dat
+0 // Plate  1 x  2
+1 15 0 -48 30 1 0 0 0 1 0 0 0 1 3023.dat
+0 // Bracket  1 x  2 -  1 x  4 with Square Corners
+1 0 -10 -48 0 0 0 1 0 1 0 -1 0 0 2436a.dat
+0 // Bracket  1 x  2 -  1 x  4 with Square Corners
+1 0 10 -48 0 0 0 -1 0 1 0 1 0 0 2436a.dat
+0 // Plate  1 x  2
+1 15 0 -48 -30 1 0 0 0 1 0 0 0 1 3023.dat
+0 // Car Mudguard  3 x  4 Overhanging
+1 25 0 -48 -60 1 0 0 0 1 0 0 0 1 44674.dat
+0 STEP
+0 // Tile  1 x  4 with Groove
+1 25 -32 -38 0 0 1 0 0 0 -1 -1 0 0 2431.dat
+0 // Tile  1 x  4 with Groove
+1 25 32 -38 0 0 -1 0 0 0 1 -1 0 0 2431.dat
+0 STEP
+0 // Plate  2 x  4
+1 25 0 -56 20 1 0 0 0 1 0 0 0 1 3020.dat
+0 // Plate  2 x  4
+1 25 0 -56 -20 1 0 0 0 1 0 0 0 1 3020.dat
+0 // Car Engine  2 x  2 with Air Scoop
+1 0 0 -80 -60 1 0 0 0 1 0 0 0 1 50943.dat
+0 STEP
+0 // Tile  1 x  4 with Groove
+1 25 0 -64 70 1 0 0 0 1 0 0 0 1 2431.dat
+0 // Tile  1 x  2 with Handle
+1 0 0 -88 30 -1 0 0 0 1 0 0 0 -1 2432.dat
+0 // Plate  2 x  4
+1 0 0 -64 0 1 0 0 0 1 0 0 0 1 3020.dat
+0 // Slope Brick 31  1 x  2 x  0.667
+1 0 -20 -56 -30 1 0 0 0 1 0 0 0 1 85984.dat
+0 // Slope Brick 31  1 x  2 x  0.667
+1 0 20 -56 -30 1 0 0 0 1 0 0 0 1 85984.dat
+0 STEP
+0 // Plate  2 x  4
+1 0 0 -72 0 1 0 0 0 1 0 0 0 1 3020.dat
+0 STEP
+0 // Slope Brick 45  2 x  1
+1 25 -30 -80 30 -1 0 0 0 1 0 0 0 -1 3040b.dat
+0 // Slope Brick 45  2 x  1
+1 25 30 -80 30 -1 0 0 0 1 0 0 0 -1 3040b.dat
+0 // Tile  1 x  2 with Groove
+1 25 -30 -80 0 0 0 1 0 1 0 -1 0 0 3069b.dat
+0 // Tile  2 x  2 with Groove
+1 0 0 -80 0 1 0 0 0 1 0 0 0 1 3068b.dat
+0 // Tile  1 x  2 with Groove
+1 25 30 -80 0 0 0 1 0 1 0 -1 0 0 3069b.dat
+0 STEP
+0 // Wheel Rim 12 x 11 with Round Hole
+1 0 -30 -3 60 0 0 1 0 1 0 -1 0 0 6014.dat
+0 // Wheel Rim 12 x 11 with Round Hole
+1 0 30 -3 60 0 0 -1 0 1 0 1 0 0 6014.dat
+0 // Wheel Rim 12 x 11 with Round Hole
+1 0 -30 -3 -60 0 0 1 0 1 0 -1 0 0 6014.dat
+0 // Wheel Rim 12 x 11 with Round Hole
+1 0 30 -3 -60 0 0 -1 0 1 0 1 0 0 6014.dat
+0 // =Tyre 12/ 40 x 11 Wide
+1 256 -36 -3 60 0 0 1 0 1 0 -1 0 0 60700.dat
+0 // =Tyre 12/ 40 x 11 Wide
+1 256 36 -3 60 0 0 -1 0 1 0 1 0 0 60700.dat
+0 // =Tyre 12/ 40 x 11 Wide
+1 256 -36 -3 -60 0 0 1 0 1 0 -1 0 0 60700.dat
+0 // =Tyre 12/ 40 x 11 Wide
+1 256 36 -3 -60 0 0 -1 0 1 0 1 0 0 60700.dat
+0 STEP
+
+
+
+
+0 FILE 8211 - 8211-4.ldr
+0 8211-4
+0 Name: 8211 - 8211-4.ldr
+0 Author: Massimo Maso [Sirio]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+
+
+0 ROTATION CENTER 0 0 0 1 "Custom"
+0 ROTATION CONFIG 0 0
+0 // Plate  2 x  2 with 2 Wheel Pins Extended without Wishbones
+1 0 0 -7.989 59.667 1 0 0 0 0.997785 -0.0665177 0 0.0665177 0.997785 6157.dat
+0 STEP
+0 // Plate  2 x  2
+1 7 0 -7.989 59.667 1 0 0 0 0.997785 -0.0665177 0 0.0665177 0.997785 3022.dat
+0 // Plate  4 x  4
+1 8 0 -3.998 -0.2 1 0 0 0 0.997785 -0.0665177 0 0.0665177 0.997785 3031.dat
+0 // Plate  2 x  2 with 2 Wheel Pins Extended without Wishbones
+1 0 0 -7.989 -60.599 1 0 0 0 0.997785 -0.0665177 0 0.0665177 0.997785 6157.dat
+0 STEP
+0 // Bracket  1 x  2 -  1 x  4 with Square Corners
+1 0 0 -16.636 69.113 -1 0 0 0 0.997785 0.0665177 0 0.0665177 -0.997785 2436a.dat
+0 // Plate  1 x  4
+1 7 -30 -11.98 -0.732 0 0 1 0.0665177 0.997785 0 -0.997785 0.0665177 0 3710.dat
+0 // Plate  2 x  6
+1 0 0 -11.98 -0.732 0 0 1 0.0665177 0.997785 0 -0.997785 0.0665177 0 3795.dat
+0 // Plate  1 x  4
+1 7 30 -11.98 -0.732 0 0 1 0.0665177 0.997785 0 -0.997785 0.0665177 0 3710.dat
+0 // Plate  1 x  2 with Racer Grille 4 x 1 x 2/3
+1 0 0 -7.324 -70.577 1 0 0 0 0.997785 -0.0665177 0 0.0665177 0.997785 50949.dat
+0 STEP
+0 // Hinge Plate  1 x  4 Locking with Two Single Fingers on Side
+1 7 0 -25.949 88.537 -1 0 0 0 0.997785 0.0665177 0 0.0665177 -0.997785 44568.dat
+0 // Car Mudguard  2 x  4
+1 10 0 -31.936 58.071 1 0 0 0 0.997785 -0.0665177 0 0.0665177 0.997785 3788.dat
+0 // Plate  2 x  6
+1 0 0 -18.632 -21.22 0 0 1 0.0665177 0.997785 0 -0.997785 0.0665177 0 3795.dat
+0 STEP
+0 // Slope Brick 31  1 x  1 x  0.667
+1 0 -30 -7.59 83.747 -1 0 0 0 0.0665177 -0.997785 0 -0.997785 -0.0665177 54200.dat
+0 // Panel  1 x  1 x  1 Corner with Rounded Corners
+1 0 -10 -9.186 107.694 0 0 1 -0.997785 0.0665177 0 -0.0665177 -0.997785 0 6231.dat
+0 // Panel  1 x  1 x  1 Corner with Rounded Corners
+1 0 10 -9.186 107.694 1 0 0 0 0.0665177 0.997785 0 -0.997785 0.0665177 6231.dat
+0 // Slope Brick 31  1 x  1 x  0.667
+1 0 30 -7.59 83.747 -1 0 0 0 0.0665177 -0.997785 0 -0.997785 -0.0665177 54200.dat
+0 // Hinge Tile  2 x  4 with Ribs Locking with Rear Reinforcements
+1 8 0 -49.098 105.033 1 0 0 0 0.0665177 0.997785 0 -0.997785 0.0665177 44569.dat
+0 ROTSTEP 23 135 0 ABS
+0 // Plate  1 x  1
+1 36 -30 -33.931 88.005 1 0 0 0 0.997785 -0.0665177 0 0.0665177 0.997785 3024.dat
+0 // Plate  1 x  1
+1 36 30 -33.931 88.005 1 0 0 0 0.997785 -0.0665177 0 0.0665177 0.997785 3024.dat
+0 // Plate  2 x  6
+1 0 0 -30.605 38.115 0 0 1 0.0665177 0.997785 0 -0.997785 0.0665177 0 3795.dat
+0 // Plate  1 x  2
+1 15 0 -25.949 -31.73 1 0 0 0 0.997785 -0.0665177 0 0.0665177 0.997785 3023.dat
+0 // Car Mudguard  2 x  4
+1 10 0 -31.936 -62.195 1 0 0 0 0.997785 -0.0665177 0 0.0665177 0.997785 3788.dat
+0 ROTSTEP END
+0 // Plate  1 x  3
+1 10 -30 -40.583 67.517 0 0 1 0.0665177 0.997785 0 -0.997785 0.0665177 0 3623.dat
+0 // Plate  1 x  3
+1 10 30 -40.583 67.517 0 0 1 0.0665177 0.997785 0 -0.997785 0.0665177 0 3623.dat
+0 // Plate  2 x  2
+1 7 0 -37.257 17.627 1 0 0 0 0.997785 -0.0665177 0 0.0665177 0.997785 3022.dat
+0 // Brick  1 x  4
+1 10 -30 -35.927 -2.328 0 0 1 0.0665177 0.997785 0 -0.997785 0.0665177 0 3010.dat
+0 // Brick  1 x  4
+1 10 30 -35.927 -2.328 0 0 1 0.0665177 0.997785 0 -0.997785 0.0665177 0 3010.dat
+0 // Plate  2 x  3
+1 8 0 -33.931 -32.262 0 0 1 0.0665177 0.997785 0 -0.997785 0.0665177 0 3021.dat
+0 // Bracket  1 x  2 -  1 x  4 with Square Corners
+1 0 0 -31.271 -72.173 1 0 0 0 0.997785 -0.0665177 0 0.0665177 0.997785 2436a.dat
+0 STEP
+0 // Slope Brick 31  1 x  1 x  0.667
+1 47 -30 -20.362 -85.477 0 0 1 0.997785 -0.0665177 0 0.0665177 0.997785 0 54200.dat
+0 // Tile  1 x  2 with Groove
+1 10 0 -19.83 -93.459 1 0 0 0 -0.0665177 -0.997785 0 0.997785 -0.0665177 3069b.dat
+0 // Slope Brick 31  1 x  1 x  0.667
+1 47 30 -20.362 -85.477 0 0 -1 -0.997785 -0.0665177 0 -0.0665177 0.997785 0 54200.dat
+0 STEP
+0 // Plate  1 x  4
+1 10 -30 -47.9 57.007 0 0 1 0.0665177 0.997785 0 -0.997785 0.0665177 0 3710.dat
+0 // Plate  1 x  4
+1 10 30 -47.9 57.007 0 0 1 0.0665177 0.997785 0 -0.997785 0.0665177 0 3710.dat
+0 // Plate  1 x  2
+1 15 0 -45.905 27.073 1 0 0 0 0.997785 -0.0665177 0 0.0665177 0.997785 3023.dat
+0 // Plate  1 x  4
+1 10 0 -44.574 7.117 1 0 0 0 0.997785 -0.0665177 0 0.0665177 0.997785 3710.dat
+0 // Slope Brick Curved  2 x  4 with Underside Studs
+1 0 0 -34.597 -22.284 1 0 0 0 0.997785 -0.0665177 0 0.0665177 0.997785 88930.dat
+0 // Tile  2 x  2 with Groove
+1 8 0 -39.918 -62.728 1 0 0 0 0.997785 -0.0665177 0 0.0665177 0.997785 3068b.dat
+0 STEP
+0 // Tile  1 x  2 with Handle
+1 8 -20 -77.834 24.945 -1 0 0 0 0.997785 0.0665177 0 0.0665177 -0.997785 2432.dat
+0 // Tile  1 x  2 with Handle
+1 8 20 -77.834 24.945 -1 0 0 0 0.997785 0.0665177 0 0.0665177 -0.997785 2432.dat
+0 // Plate  1 x  4
+1 10 0 -52.557 6.585 1 0 0 0 0.997785 -0.0665177 0 0.0665177 0.997785 3710.dat
+0 STEP
+0 // Plate  1 x  1
+1 57 -30 -60.539 6.053 1 0 0 0 0.997785 -0.0665177 0 0.0665177 0.997785 3024.dat
+0 // Tile  1 x  2 with Groove
+1 8 0 -60.539 6.053 1 0 0 0 0.997785 -0.0665177 0 0.0665177 0.997785 3069b.dat
+0 // Plate  1 x  1
+1 57 30 -60.539 6.053 1 0 0 0 0.997785 -0.0665177 0 0.0665177 0.997785 3024.dat
+0 STEP
+0 // =Wheel Rim  6.4 x 11 with  5 Spokes with Metallic Silver Outline Pattern
+1 0 -40 -3 60 0 0 1 0.0665177 0.997785 0 -0.997785 0.0665177 0 51719.dat
+0 // =Wheel Rim  6.4 x 11 with  5 Spokes with Metallic Silver Outline Pattern
+1 0 40 -3 60 0 0 -1 -0.0665177 0.997785 0 0.997785 0.0665177 0 51719.dat
+0 // =Wheel Rim  6.4 x 11 with  5 Spokes with Metallic Silver Outline Pattern
+1 0 -40 -3 -60.266 0 0 1 0.0665177 0.997785 0 -0.997785 0.0665177 0 51719.dat
+0 // =Wheel Rim  6.4 x 11 with  5 Spokes with Metallic Silver Outline Pattern
+1 0 40 -3 -60.266 0 0 -1 -0.0665177 0.997785 0 0.997785 0.0665177 0 51719.dat
+0 STEP
+0 // Tyre  6/ 30 x 11
+1 256 -40 -3 60 0 0 1 0.0665177 0.997785 0 -0.997785 0.0665177 0 50951.dat
+0 // Tyre  6/ 30 x 11
+1 256 40 -3 60 0 0 1 0.0665177 0.997785 0 -0.997785 0.0665177 0 50951.dat
+0 // Tyre  6/ 30 x 11
+1 256 -40 -3 -60.266 0 0 1 0.0665177 0.997785 0 -0.997785 0.0665177 0 50951.dat
+0 // Tyre  6/ 30 x 11
+1 256 40 -3 -60.266 0 0 1 0.0665177 0.997785 0 -0.997785 0.0665177 0 50951.dat
+
+
+
+
+0 FILE 8211 - 8211-5.ldr
+0 8211-5
+0 Name: 8211 - 8211-5.ldr
+0 Author: Massimo Maso [Sirio]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+
+
+0 ROTATION CENTER 0 0 0 1 "Custom"
+0 ROTATION CONFIG 0 0
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 8211 - 8211-5-a.ldr
+1 0 0 -46 0 1 0 0 0 0.924 -0.383 0 0.383 0.924 8211 - 8211-5-b.ldr
+
+
+
+
+0 FILE 8211 - 8211-6.ldr
+0 8211-6
+0 Name: 8211 - 8211-6.ldr
+0 Author: Massimo Maso [Sirio]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+
+
+0 ROTATION CENTER 0 0 0 1 "Custom"
+0 ROTATION CONFIG 0 0
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 8211 - 8211-6-a.ldr
+1 0 0 0 -20 1 0 0 0 0.707 -0.708 0 0.708 0.707 8211 - 8211-6-b.ldr
+1 0 0 -70.67 -34.198 1 0 0 0 0.822 0.57 0 -0.57 0.822 8211 - 8211-6-c.ldr
+1 0 0 -120 0 1 0 0 0 1 0 0 0 1 8211 - 8211-6-d.ldr
+
+
+
+
+0 FILE 8211 - 8211-7.ldr
+0 8211-7
+0 Name: 8211 - 8211-7.ldr
+0 Author: Massimo Maso [Sirio]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+
+
+0 ROTATION CENTER 0 0 0 1 "Custom"
+0 ROTATION CONFIG 0 0
+0 // Container Fold-Out Race Track Case 34 x 42
+1 8 0 0 0 -1 0 0 0 1 0 0 0 -1 86501.dat
+1 0 0 -36 340 1 0 0 0 1 0 0 0 1 8211 - 8211-7-a.ldr
+1 0 -300 -8 340 1 0 0 0 1 0 0 0 1 8211 - 8211-7-b.ldr
+1 0 -410 -40 340 0 0 1 0 1 0 -1 0 0 8211 - 8211-7-c.ldr
+1 0 -140 -58 60 1 0 0 0 1 0 0 0 1 8211 - 8211-7-d.ldr
+1 0 140 -58 60 -1 0 0 0 1 0 0 0 -1 8211 - 8211-7-d.ldr
+1 0 -280 -36 -180 0 0 -1 0 1 0 1 0 0 8211 - 8211-7-e.ldr
+1 0 -230 -164 -220 0 0 -1 0 1 0 1 0 0 8211 - 8211-7-f.ldr
+1 0 -230 -164 -140 0 0 -1 0 1 0 1 0 0 8211 - 8211-7-f.ldr
+1 0 -260 -162 -180 0 0 -1 0 1 0 1 0 0 8211 - 8211-7-g.ldr
+1 0 -380 -12 -180 0 0 -1 0 1 0 1 0 0 8211 - 8211-7-h.ldr
+0 // Container  2 x  2 Rubbish Bin
+1 10 280 -54 -120 1 0 0 0 1 0 0 0 1 2439.dat
+
+
+
+
+0 FILE 8211 - 8211-5-a.ldr
+0 8211-5-a
+0 Name: 8211 - 8211-5-a.ldr
+0 Author: Massimo Maso [Sirio]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+
+
+0 ROTATION CENTER 0 0 0 1 "Custom"
+0 ROTATION CONFIG 0 0
+0 // Plate  2 x  2 with 2 Wheel Pins Extended without Wishbones
+1 0 0 -8 130 1 0 0 0 1 0 0 0 1 6157.dat
+0 // Plate  2 x  2 with 2 Wheel Pins Extended without Wishbones
+1 0 0 -8 90 1 0 0 0 1 0 0 0 1 6157.dat
+0 // Plate  2 x  2 with 2 Wheel Pins Extended without Wishbones
+1 0 0 -8 50 1 0 0 0 1 0 0 0 1 6157.dat
+0 // Plate  2 x  3
+1 8 -20 0 0 0 0 1 0 1 0 -1 0 0 3021.dat
+0 // Plate  2 x  3
+1 8 20 0 0 0 0 1 0 1 0 -1 0 0 3021.dat
+0 // Plate  2 x  2 With Raised Grilles
+1 0 0 0 -50 1 0 0 0 1 0 0 0 1 41862.dat
+0 // Plate  2 x  4
+1 8 0 0 -90 1 0 0 0 1 0 0 0 1 3020.dat
+0 // Plate  2 x  2 with 2 Wheel Pins Extended without Wishbones
+1 0 0 -8 -130 1 0 0 0 1 0 0 0 1 6157.dat
+0 STEP
+0 // Plate  2 x  3
+1 8 0 -8 120 0 0 1 0 1 0 -1 0 0 3021.dat
+0 // Plate  1 x  3
+1 7 -30 -8 0 0 0 1 0 1 0 -1 0 0 3623.dat
+0 // Plate  1 x  3
+1 7 30 -8 0 0 0 1 0 1 0 -1 0 0 3623.dat
+0 // Plate  2 x 12
+1 15 0 -8 -30 0 0 1 0 1 0 -1 0 0 2445.dat
+0 // Plate  1 x  2 with Door Rail
+1 7 -30 -8 -90 0 0 1 0 1 0 -1 0 0 32028.dat
+0 // Plate  1 x  2 with Door Rail
+1 7 30 -8 -90 0 0 -1 0 1 0 1 0 0 32028.dat
+0 STEP
+0 // Bracket  1 x  2 -  1 x  4 with Square Corners
+1 0 0 -16 140 -1 0 0 0 1 0 0 0 -1 2436a.dat
+0 // Plate  2 x 10
+1 7 0 -16 30 0 0 1 0 1 0 -1 0 0 3832.dat
+0 // Plate  1 x  2 with Groove with 1 Centre Stud
+1 4 0 -16 -80 1 0 0 0 1 0 0 0 1 3794b.dat
+0 // Tile  1 x  2 Grille with Groove
+1 0 -30 -16 -90 0 0 1 0 1 0 -1 0 0 2412b.dat
+0 // Tile  1 x  2 Grille with Groove
+1 0 30 -16 -90 0 0 1 0 1 0 -1 0 0 2412b.dat
+0 // Plate  1 x  2 with Groove with 1 Centre Stud
+1 4 0 -16 -100 1 0 0 0 1 0 0 0 1 3794b.dat
+0 // Plate  2 x  2
+1 7 0 -16 -130 1 0 0 0 1 0 0 0 1 3022.dat
+0 STEP
+0 // Tile  1 x  1 with Groove
+1 36 -30 -6 162 1 0 0 0 0 1 0 -1 0 3070b.dat
+0 // Tile  1 x  2 with Groove
+1 15 0 -6 162 1 0 0 0 0 1 0 -1 0 3069b.dat
+0 // Tile  1 x  1 with Groove
+1 36 30 -6 162 1 0 0 0 0 1 0 -1 0 3070b.dat
+0 ROTSTEP 23 135 0 ABS
+0 // Car Mudguard  2 x  4
+1 0 0 -32 130 1 0 0 0 1 0 0 0 1 3788.dat
+0 // Car Mudguard  2 x  4
+1 0 0 -32 90 1 0 0 0 1 0 0 0 1 3788.dat
+0 // Car Mudguard  2 x  4
+1 0 0 -32 50 1 0 0 0 1 0 0 0 1 3788.dat
+0 // Plate  2 x  4
+1 0 0 -24 -50 1 0 0 0 1 0 0 0 1 3020.dat
+0 // Plate  2 x  3
+1 0 0 -24 -90 1 0 0 0 1 0 0 0 1 3021.dat
+0 // Car Mudguard  2 x  4
+1 0 0 -32 -130 1 0 0 0 1 0 0 0 1 3788.dat
+0 ROTSTEP END
+0 // Tile  2 x  2 with Groove
+1 8 0 -32 50 1 0 0 0 1 0 0 0 1 3068b.dat
+0 // Brick  1 x  3
+1 0 -30 -32 0 0 0 1 0 1 0 -1 0 0 3622.dat
+0 // Brick  1 x  3
+1 0 30 -32 0 0 0 1 0 1 0 -1 0 0 3622.dat
+0 // Plate  2 x  4
+1 0 0 -32 -50 1 0 0 0 1 0 0 0 1 3020.dat
+0 // Plate  2 x  3
+1 0 0 -32 -90 1 0 0 0 1 0 0 0 1 3021.dat
+0 // Plate  1 x  2
+1 15 0 -32 -120 1 0 0 0 1 0 0 0 1 3023.dat
+0 // Plate  1 x  1 with Clip Vertical (Thin C-Clip)
+1 8 -10 -32 -140 1 0 0 0 1 0 0 0 1 4085a.dat
+0 // Plate  1 x  1 with Clip Vertical (Thin C-Clip)
+1 8 10 -32 -140 1 0 0 0 1 0 0 0 1 4085a.dat
+0 STEP
+0 // Plate  1 x  1
+1 57 -30 -40 140 1 0 0 0 1 0 0 0 1 3024.dat
+0 // Plate  1 x  1
+1 57 30 -40 140 1 0 0 0 1 0 0 0 1 3024.dat
+0 // Tile  1 x  4 with Groove
+1 10 -30 -40 90 0 0 1 0 1 0 -1 0 0 2431.dat
+0 // Tile  1 x  4 with Groove
+1 10 30 -40 90 0 0 1 0 1 0 -1 0 0 2431.dat
+0 // Plate  1 x  6
+1 10 -30 -40 -10 0 0 1 0 1 0 -1 0 0 3666.dat
+0 // Plate  1 x  6
+1 10 30 -40 -10 0 0 1 0 1 0 -1 0 0 3666.dat
+0 // Plate  1 x  3
+1 10 0 -40 -80 1 0 0 0 1 0 0 0 1 3623.dat
+0 // Plate  1 x  3
+1 10 0 -40 -100 1 0 0 0 1 0 0 0 1 3623.dat
+0 // Plate  2 x  2
+1 10 0 -40 -130 1 0 0 0 1 0 0 0 1 3022.dat
+0 STEP
+0 // Plate  1 x  1 with Clip Vertical (Thin C-Clip)
+1 8 -20 -48 -80 0 0 1 0 1 0 -1 0 0 4085a.dat
+0 // Plate  1 x  1 with Clip Vertical (Thin C-Clip)
+1 8 20 -48 -80 0 0 -1 0 1 0 1 0 0 4085a.dat
+0 // Plate  1 x  3
+1 8 0 -48 -100 1 0 0 0 1 0 0 0 1 3623.dat
+0 // Tile  2 x  2 with Groove
+1 8 0 -48 -130 1 0 0 0 1 0 0 0 1 3068b.dat
+0 STEP
+0 // Antenna  4H with Rounded Top
+1 0 -40 -24 -80 1 0 0 0 1 0 0 0 1 3957a.dat
+0 // Antenna  4H with Rounded Top
+1 0 40 -24 -80 1 0 0 0 1 0 0 0 1 3957a.dat
+0 // Bar  1 x  4 x  3 with End Protrusions
+1 8 0 -28 -160 1 0 0 0 1 0 0 0 1 62113.dat
+0 STEP
+0 // Hinge Brick  2 x  2 Locking with Axlehole and Single Finger
+1 14 0 -56 -30 0 0 -1 0 1 0 1 0 0 30389b.dat
+0 // Brick  1 x  2
+1 4 0 -56 -60 1 0 0 0 1 0 0 0 1 3004.dat
+0 STEP
+0 // Tile  1 x  2 with Groove
+1 8 0 -64 -20 1 0 0 0 1 0 0 0 1 3069b.dat
+0 // Slope Brick Curved  6 x  1
+1 8 -30 -64 -50 -1 0 0 0 1 0 0 0 -1 42022.dat
+0 // Plate  2 x  2
+1 7 0 -64 -50 1 0 0 0 1 0 0 0 1 3022.dat
+0 // Slope Brick Curved  6 x  1
+1 8 30 -64 -50 -1 0 0 0 1 0 0 0 -1 42022.dat
+0 STEP
+0 // Plate  2 x  4
+1 8 0 -72 -50 1 0 0 0 1 0 0 0 1 3020.dat
+0 // Brick  2 x  3
+1 0 0 -72 -90 1 0 0 0 1 0 0 0 1 3002.dat
+0 STEP
+0 // Plate  1 x  2 with Groove with 1 Centre Stud
+1 8 -20 -80 -40 1 0 0 0 1 0 0 0 1 3794b.dat
+0 // Plate  1 x  2 with Groove with 1 Centre Stud
+1 8 20 -80 -40 1 0 0 0 1 0 0 0 1 3794b.dat
+0 // Plate  1 x  2 with Groove with 1 Centre Stud
+1 8 -20 -80 -60 1 0 0 0 1 0 0 0 1 3794b.dat
+0 // Plate  1 x  2 with Groove with 1 Centre Stud
+1 8 20 -80 -60 1 0 0 0 1 0 0 0 1 3794b.dat
+0 // Plate  2 x  3
+1 8 0 -80 -90 1 0 0 0 1 0 0 0 1 3021.dat
+0 STEP
+0 // Plate  1 x  3
+1 0 -20 -88 -40 1 0 0 0 1 0 0 0 1 3623.dat
+0 // Plate  1 x  2
+1 0 30 -88 -40 1 0 0 0 1 0 0 0 1 3023.dat
+0 STEP
+0 // Plate  1 x  1
+1 57 -40 -96 -40 1 0 0 0 1 0 0 0 1 3024.dat
+0 // Plate  1 x  1
+1 57 40 -96 -40 1 0 0 0 1 0 0 0 1 3024.dat
+0 // Slope Brick Curved  3 x  1
+1 0 -20 -104 -60 1 0 0 0 1 0 0 0 1 50950.dat
+0 // Slope Brick Curved  3 x  1
+1 0 0 -104 -60 1 0 0 0 1 0 0 0 1 50950.dat
+0 // Slope Brick Curved  3 x  1
+1 0 20 -104 -60 1 0 0 0 1 0 0 0 1 50950.dat
+0 STEP
+0 // =Wheel Rim  6.4 x 11 with  5 Spokes with Metallic Silver Outline Pattern
+1 0 -40 -3 130 0 0 1 0 1 0 -1 0 0 51719.dat
+0 // =Wheel Rim  6.4 x 11 with  5 Spokes with Metallic Silver Outline Pattern
+1 0 40 -3 130 0 0 -1 0 1 0 1 0 0 51719.dat
+0 // =Wheel Rim  6.4 x 11 with  5 Spokes with Metallic Silver Outline Pattern
+1 0 -40 -3 90 0 0 1 0 1 0 -1 0 0 51719.dat
+0 // =Wheel Rim  6.4 x 11 with  5 Spokes with Metallic Silver Outline Pattern
+1 0 40 -3 90 0 0 -1 0 1 0 1 0 0 51719.dat
+0 // =Wheel Rim  6.4 x 11 with  5 Spokes with Metallic Silver Outline Pattern
+1 0 -40 -3 50 0 0 1 0 1 0 -1 0 0 51719.dat
+0 // =Wheel Rim  6.4 x 11 with  5 Spokes with Metallic Silver Outline Pattern
+1 0 40 -3 50 0 0 -1 0 1 0 1 0 0 51719.dat
+0 // =Wheel Rim  6.4 x 11 with  5 Spokes with Metallic Silver Outline Pattern
+1 0 -40 -3 -130 0 0 1 0 1 0 -1 0 0 51719.dat
+0 // =Wheel Rim  6.4 x 11 with  5 Spokes with Metallic Silver Outline Pattern
+1 0 40 -3 -130 0 0 -1 0 1 0 1 0 0 51719.dat
+0 STEP
+0 // Tyre  6/ 30 x 11
+1 256 -40 -3 130 0 0 1 0 1 0 -1 0 0 50951.dat
+0 // Tyre  6/ 30 x 11
+1 256 40 -3 130 0 0 1 0 1 0 -1 0 0 50951.dat
+0 // Tyre  6/ 30 x 11
+1 256 -40 -3 90 0 0 1 0 1 0 -1 0 0 50951.dat
+0 // Tyre  6/ 30 x 11
+1 256 40 -3 90 0 0 1 0 1 0 -1 0 0 50951.dat
+0 // Tyre  6/ 30 x 11
+1 256 -40 -3 50 0 0 1 0 1 0 -1 0 0 50951.dat
+0 // Tyre  6/ 30 x 11
+1 256 40 -3 50 0 0 1 0 1 0 -1 0 0 50951.dat
+0 // Tyre  6/ 30 x 11
+1 256 -40 -3 -130 0 0 1 0 1 0 -1 0 0 50951.dat
+0 // Tyre  6/ 30 x 11
+1 256 40 -3 -130 0 0 1 0 1 0 -1 0 0 50951.dat
+
+
+
+
+0 FILE 8211 - 8211-5-b.ldr
+0 8211-5-b
+0 Name: 8211 - 8211-5-b.ldr
+0 Author: Massimo Maso [Sirio]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+
+
+0 ROTATION CENTER 0 0 0 1 "Custom"
+0 ROTATION CONFIG 0 0
+0 // Plate  2 x  3
+1 8 0 6 40 0 0 1 0 1 0 -1 0 0 3021.dat
+0 STEP
+0 // Plate  2 x  6
+1 0 0 -2 90 0 0 1 0 1 0 -1 0 0 3795.dat
+0 // Hinge Plate  1 x  2 Locking 9-Position with Dual Finger on Side
+1 0 0 -2 20 1 0 0 0 1 0 0 0 1 60471.dat
+0 STEP
+0 // Hinge Plate  1 x  2 Locking 9-Position with Dual Finger on Side
+1 0 0 -10 140 -1 0 0 0 1 0 0 0 -1 60471.dat
+0 // Hose Reel  2 x  2 Holder
+1 0 0 -26 30 1 0 0 0 1 0 0 0 1 2584.dat
+0 STEP
+0 // Hose Reel  2 x  2
+1 7 0 -32 30 1 0 0 0 1 0 0 0 1 2585.dat
+0 // Technic Axle  2 Notched
+1 4 0 -32 30 1 0 0 0 1 0 0 0 1 32062.dat
+
+
+
+
+0 FILE 8211 - 8211-6-a.ldr
+0 8211-6-a
+0 Name: 8211 - 8211-6-a.ldr
+0 Author: Massimo Maso [Sirio]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+
+
+0 ROTATION CENTER 0 0 0 1 "Custom"
+0 ROTATION CONFIG 0 0
+0 // Technic Angle Connector #2 (180 degree)
+1 7 0 0 80 0 0 1 -1 0 0 0 -1 0 32034.dat
+0 STEP
+0 // Technic Axle  3
+1 7 -40 0 80 1 0 0 0 1 0 0 0 1 4519.dat
+0 // Technic Axle  3
+1 7 40 0 80 1 0 0 0 1 0 0 0 1 4519.dat
+0 STEP
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+1 15 -40 0 0 0 1 0 0 0 1 1 0 0 32009.dat
+0 STEP
+0 // Technic Pin
+1 0 -50 0 40 1 0 0 0 1 0 0 0 1 3673.dat
+0 // Technic Axle  2 Notched
+1 4 -30 -160 0 1 0 0 0 1 0 0 0 1 32062.dat
+0 STEP
+0 // Technic Beam  9
+1 9 -60 0 0 0 -1 0 1 0 0 0 0 1 40490.dat
+0 // Technic Angle Connector #2 (180 degree)
+1 7 0 -160 0 0 0 1 -1 0 0 0 -1 0 32034.dat
+0 STEP
+0 // Technic Axle  2 Notched
+1 4 30 -160 0 1 0 0 0 1 0 0 0 1 32062.dat
+0 STEP
+0 // Technic Beam  3 x  3.8 x  7 Liftarm Bent 45 Double
+1 15 40 0 0 0 1 0 0 0 1 1 0 0 32009.dat
+0 STEP
+0 // Technic Pin
+1 0 50 0 40 1 0 0 0 1 0 0 0 1 3673.dat
+0 STEP
+0 // Technic Beam  9
+1 9 60 0 0 0 -1 0 1 0 0 0 0 1 40490.dat
+
+
+
+
+0 FILE 8211 - 8211-6-b.ldr
+0 8211-6-b
+0 Name: 8211 - 8211-6-b.ldr
+0 Author: Massimo Maso [Sirio]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+
+
+0 ROTATION CENTER 0 0 0 1 "Custom"
+0 ROTATION CONFIG 0 0
+0 // Technic Axle  3
+1 7 0 0 0 -1 0 0 0 1 0 0 0 -1 4519.dat
+0 STEP
+0 // Technic Beam  3 x  5 x  0.5 Liftarm Bent 90 Quarter Ellipse
+1 8 -5 0 40 0 1 0 0 0 -1 -1 0 0 32250.dat
+0 // Technic Beam  3 x  5 x  0.5 Liftarm Bent 90 Quarter Ellipse
+1 8 5 0 40 0 1 0 0 0 -1 -1 0 0 32250.dat
+0 STEP
+0 // Technic Axle Joiner Inline Smooth
+1 7 -30 0 0 0 0 1 0 1 0 -1 0 0 59443.dat
+0 // Technic Axle Joiner Inline Smooth
+1 7 30 0 0 0 0 1 0 1 0 -1 0 0 59443.dat
+0 STEP
+0 // Technic Axle Pin
+1 18 -50 0 0 1 0 0 0 1 0 0 0 1 3749.dat
+0 // Technic Axle Pin
+1 18 50 0 0 -1 0 0 0 1 0 0 0 -1 3749.dat
+0 // Technic Pin Long without Friction with Single Slot
+1 9 0 -40 40 -1 0 0 0 1 0 0 0 -1 32556.dat
+
+
+
+
+0 FILE 8211 - 8211-6-c.ldr
+0 8211-6-c
+0 Name: 8211 - 8211-6-c.ldr
+0 Author: Massimo Maso [Sirio]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+
+
+0 ROTATION CENTER 0 0 0 1 "Custom"
+0 ROTATION CONFIG 0 0
+0 // Technic Axle  3
+1 7 0 0 0 1 0 0 0 1 0 0 0 1 4519.dat
+0 STEP
+0 // Technic Beam  4 x  0.5 Liftarm
+1 7 -15 -30 0 0 -1 0 0 0 -1 1 0 0 32449.dat
+0 // Technic Beam  4 x  0.5 Liftarm
+1 7 15 -30 0 0 -1 0 0 0 -1 1 0 0 32449.dat
+0 STEP
+0 // Technic Axle  3
+1 7 0 -60 0 1 0 0 0 1 0 0 0 1 4519.dat
+0 STEP
+0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
+1 7 -25 -60 0 0 0 1 0 1 0 -1 0 0 32123b.dat
+0 // Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
+1 7 25 -60 0 0 0 1 0 1 0 -1 0 0 32123b.dat
+
+
+
+
+0 FILE 8211 - 8211-6-d.ldr
+0 8211-6-d
+0 Name: 8211 - 8211-6-d.ldr
+0 Author: Massimo Maso [Sirio]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+
+
+0 ROTATION CENTER 0 0 0 1 "Custom"
+0 ROTATION CONFIG 0 0
+0 // Technic Axle  5
+1 7 0 -60 0 0 -1 0 1 0 0 0 0 1 32073.dat
+0 STEP
+0 // Technic Angle Connector #1
+1 0 0 0 0 1 0 0 0 0 1 0 -1 0 32013.dat
+0 // Plate  2 x  2 Round with Axlehole
+1 9 0 -86 0 -1 0 0 0 -1 0 0 0 1 4032a.dat
+0 STEP
+0 // Plate  2 x  2 Round with Axlehole
+1 9 0 -94 0 -1 0 0 0 -1 0 0 0 1 4032a.dat
+0 STEP
+0 // Plate  2 x  2 Round with Axlehole
+1 9 0 -102 0 -1 0 0 0 -1 0 0 0 1 4032a.dat
+0 STEP
+0 // Dish  2 x  2 with Rim
+1 15 0 -110 0 -1 0 0 0 -1 0 0 0 1 2654.dat
+
+
+
+
+0 FILE 8211 - 8211-7-a.ldr
+0 8211-7-a
+0 Name: 8211 - 8211-7-a.ldr
+0 Author: Massimo Maso [Sirio]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+
+
+0 ROTATION CENTER 0 0 0 1 "Custom"
+0 ROTATION CONFIG 0 0
+0 // Plate  2 x  2 with Pin Type 1
+1 15 -140 0 140 1 0 0 0 1 0 0 0 1 2476a.dat
+0 // Plate  2 x  2 with Pin Type 1
+1 15 140 0 140 1 0 0 0 1 0 0 0 1 2476a.dat
+0 // Plate  2 x  2 with Pin Type 1
+1 15 -140 0 100 1 0 0 0 1 0 0 0 1 2476a.dat
+0 // Plate  2 x  2 with Pin Type 1
+1 15 140 0 100 1 0 0 0 1 0 0 0 1 2476a.dat
+0 // Plate  2 x  2 with Pin Type 1
+1 15 -140 0 -100 1 0 0 0 1 0 0 0 1 2476a.dat
+0 // Plate  2 x  2 with Pin Type 1
+1 15 -140 0 -140 1 0 0 0 1 0 0 0 1 2476a.dat
+0 // Hinge Arm Locking with Single Finger and Friction Pin
+1 0 -140 -2 -280 0 -1 0 0 0 1 -1 0 0 41532.dat
+0 // Hinge Arm Locking with Single Finger and Friction Pin
+1 0 140 -2 -280 0 -1 0 0 0 1 -1 0 0 41532.dat
+0 STEP
+0 // Brick  1 x  1 Round with Hollow Stud
+1 9 130 -24 150 1 0 0 0 1 0 0 0 1 3062b.dat
+0 // Brick  1 x  1 Round with Hollow Stud
+1 9 150 -24 150 1 0 0 0 1 0 0 0 1 3062b.dat
+0 // Brick  2 x  3
+1 9 -140 -24 130 0 0 1 0 1 0 -1 0 0 3002.dat
+0 // Slope Brick 33  3 x  2
+1 9 140 -24 130 1 0 0 0 1 0 0 0 1 3298.dat
+0 // Brick  1 x  1 with Clip Vertical (Thick U-Clip) and Solid Stud
+1 7 -150 -24 90 0 0 1 0 1 0 -1 0 0 60475a.dat
+0 // Brick  1 x  1 Round with Hollow Stud
+1 9 -130 -24 90 1 0 0 0 1 0 0 0 1 3062b.dat
+0 // Brick  1 x  1 with Clip Vertical (Thick U-Clip) and Solid Stud
+1 7 -150 -24 -90 0 0 1 0 1 0 -1 0 0 60475a.dat
+0 // Brick  1 x  1 Round with Hollow Stud
+1 9 -130 -24 -90 1 0 0 0 1 0 0 0 1 3062b.dat
+0 // Slope Brick 33  3 x  2
+1 9 -140 -24 -110 1 0 0 0 1 0 0 0 1 3298.dat
+0 STEP
+0 // Brick  1 x  2 with Clip Vertical (Thick U-Clip) with Centre Notch
+1 15 -140 -48 150 -1 0 0 0 1 0 0 0 -1 30237.dat
+0 // Brick  1 x  2 with Clip Vertical (Thick U-Clip) with Centre Notch
+1 15 140 -48 150 -1 0 0 0 1 0 0 0 -1 30237.dat
+0 // Brick  1 x  2 with Clip Vertical (Thick U-Clip) with Centre Notch
+1 15 140 -48 130 1 0 0 0 1 0 0 0 1 30237.dat
+0 // Brick  2 x  2
+1 15 -140 -48 120 1 0 0 0 1 0 0 0 1 3003.dat
+0 // Brick  1 x  2 with Clip Vertical (Thick U-Clip) with Centre Notch
+1 15 -140 -48 90 1 0 0 0 1 0 0 0 1 30237.dat
+0 // Brick  1 x  2 with Clip Vertical (Thick U-Clip) with Centre Notch
+1 15 -140 -48 -90 -1 0 0 0 1 0 0 0 -1 30237.dat
+0 // Brick  1 x  2 with Clip Vertical (Thick U-Clip) with Centre Notch
+1 15 -140 -48 -110 1 0 0 0 1 0 0 0 1 30237.dat
+0 STEP
+0 // Brick  2 x  2
+1 15 -140 -72 140 1 0 0 0 1 0 0 0 1 3003.dat
+0 // Brick  2 x  2
+1 15 140 -72 140 1 0 0 0 1 0 0 0 1 3003.dat
+0 STEP
+0 // Brick  2 x  2
+1 15 -140 -96 140 1 0 0 0 1 0 0 0 1 3003.dat
+0 // Brick  2 x  2
+1 15 140 -96 140 1 0 0 0 1 0 0 0 1 3003.dat
+0 STEP
+0 // Brick  1 x 16
+1 15 0 -120 150 1 0 0 0 1 0 0 0 1 2465.dat
+0 // Brick  1 x 16
+1 15 0 -120 130 1 0 0 0 1 0 0 0 1 2465.dat
+0 // Bar  4L Lightsaber Blade
+1 0 140 -102 110 1 0 0 0 1 0 0 0 1 30374.dat
+0 // Brick  2 x  2 x  3
+1 15 -140 -120 100 1 0 0 0 1 0 0 0 1 30145.dat
+0 // Door  1 x  4 x  6 Barred
+1 7 -140 -120 70 0 0 1 0 1 0 -1 0 0 60621.dat
+0 // Door  1 x  4 x  6 Barred
+1 7 -140 -120 -70 0 0 -1 0 1 0 1 0 0 60621.dat
+0 // Brick  2 x  2 x  3
+1 15 -140 -120 -100 1 0 0 0 1 0 0 0 1 30145.dat
+0 // Bar  4L Lightsaber Blade
+1 0 -140 -102 -130 1 0 0 0 1 0 0 0 1 30374.dat
+0 STEP
+0 // Roadsign Clip-on  2 x  2 Square
+1 0 140 -90 110 1 0 0 0 1 0 0 0 1 30258.dat
+0 // Roadsign Clip-on  2 x  2 Square
+1 0 -140 -90 -130 1 0 0 0 1 0 0 0 1 30258.dat
+0 STEP
+0 // Plate  2 x  8
+1 9 -80 -128 140 1 0 0 0 1 0 0 0 1 3034.dat
+0 // Plate  2 x  8
+1 9 80 -128 140 1 0 0 0 1 0 0 0 1 3034.dat
+0 // Plate  2 x 12
+1 9 -140 -128 0 0 0 1 0 1 0 -1 0 0 2445.dat
+0 STEP
+0 // Plate  1 x  3
+1 15 130 -136 130 1 0 0 0 1 0 0 0 1 3623.dat
+0 // Wing  6 x 12 Right
+1 15 -20 -136 100 0 0 -1 0 1 0 1 0 0 30356.dat
+0 // Tile  1 x  1 with Clip
+1 15 -130 -136 30 0 0 1 0 1 0 -1 0 0 2555.dat
+0 // Plate  1 x  3
+1 15 -130 -136 -10 0 0 1 0 1 0 -1 0 0 3623.dat
+0 // Tile  1 x  1 with Clip
+1 15 -130 -136 -50 0 0 1 0 1 0 -1 0 0 2555.dat
+0 // Plate  1 x  3
+1 15 -130 -136 -90 0 0 1 0 1 0 -1 0 0 3623.dat
+0 STEP
+0 // Plate  1 x  2 without Groove with 1 Centre Stud
+1 9 -70 -144 120 0 0 1 0 1 0 -1 0 0 3794a.dat
+0 // Plate  1 x  2 without Groove with 1 Centre Stud
+1 9 70 -144 120 0 0 1 0 1 0 -1 0 0 3794a.dat
+0 // Minifig Barbed Wire Loop
+1 7 -130 -142 30 -1 0 0 0 0.92388 -0.382683 0 -0.382683 -0.92388 62700.dat
+0 // Minifig Barbed Wire Loop
+1 7 -130 -142 -50 -1 0 0 0 0.92388 -0.382683 0 -0.382683 -0.92388 62700.dat
+0 STEP
+0 // Plate  1 x  8
+1 9 0 -152 120 1 0 0 0 1 0 0 0 1 3460.dat
+0 STEP
+0 // Brick  1 x  8
+1 15 0 -176 120 1 0 0 0 1 0 0 0 1 3008.dat
+0 STEP
+0 // Tile  1 x  8
+1 9 0 -184 120 1 0 0 0 1 0 0 0 1 4162.dat
+0 STEP
+0 // Support  2 x  2 x 10 Girder Triangular with Axlehole
+1 8 -120 -376 140 0 0 -1 0 1 0 1 0 0 58827.dat
+0 STEP
+0 // Tile  1 x  1 with Clip
+1 15 -101.704 -235 134.457 0.92388 0.382683 0 0 0 1 0.382683 -0.92388 0 2555.dat
+0 // Tile  1 x  1 with Clip
+1 15 -99.757 -277 135.757 0.707107 0.707107 0 0 0 1 0.707107 -0.707107 0 2555.dat
+0 // Plate  2 x  2 with Groove with 1 Centre Stud
+1 8 -120 -384 140 1 0 0 0 1 0 0 0 1 87580.dat
+0 STEP
+0 // Dish  2 x  2 Inverted
+1 7 -96.795 -235 127.831 0.92388 0.382683 0 0 0 1 0.382683 -0.92388 0 4740.dat
+0 // Dish  3 x  3 Inverted
+1 0 -94.101 -277 130.101 0.707107 0.707107 0 0 0 1 0.707107 -0.707107 0 43898.dat
+0 // Plate  1 x  1 Round
+1 36 -120 -392 140 1 0 0 0 1 0 0 0 1 6141.dat
+0 STEP
+0 // Antenna  4H with Rounded Top
+1 0 -120 -400 140 1 0 0 0 1 0 0 0 1 3957a.dat
+
+
+
+
+0 FILE 8211 - 8211-7-b.ldr
+0 8211-7-b
+0 Name: 8211 - 8211-7-b.ldr
+0 Author: Massimo Maso [Sirio]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+
+
+0 ROTATION CENTER 0 0 0 1 "Custom"
+0 ROTATION CONFIG 0 0
+0 // Plate  6 x 10
+1 8 -60 0 0 0 0 1 0 1 0 -1 0 0 3033.dat
+0 // Plate  6 x 10
+1 8 60 0 0 0 0 1 0 1 0 -1 0 0 3033.dat
+0 STEP
+0 // Plate  1 x  2 with Groove with 1 Centre Stud
+1 7 -110 -8 40 0 0 1 0 1 0 -1 0 0 3794b.dat
+0 // Plate  1 x  2 with Groove with 1 Centre Stud
+1 7 -110 -8 0 0 0 1 0 1 0 -1 0 0 3794b.dat
+0 // Plate  1 x  2 with Groove with 1 Centre Stud
+1 7 -110 -8 -40 0 0 1 0 1 0 -1 0 0 3794b.dat
+0 STEP
+0 // Brick  2 x  2 Corner
+1 15 -110 -24 90 0 0 1 0 1 0 -1 0 0 2357.dat
+0 // Brick  1 x 10
+1 15 20 -24 90 1 0 0 0 1 0 0 0 1 6111.dat
+0 // Brick  2 x  2 Corner
+1 15 -110 -24 -90 1 0 0 0 1 0 0 0 1 2357.dat
+0 // Brick  1 x 10
+1 15 20 -24 -90 1 0 0 0 1 0 0 0 1 6111.dat
+0 STEP
+0 // Brick  2 x  2 Corner
+1 8 -110 -48 90 0 0 1 0 1 0 -1 0 0 2357.dat
+0 // Brick  1 x  1
+1 8 90 -48 90 1 0 0 0 1 0 0 0 1 3005.dat
+0 // Brick  1 x  1 with Handle
+1 8 110 -48 90 0 0 -1 0 1 0 1 0 0 2921.dat
+0 // Brick  2 x  2 Corner
+1 8 -110 -48 -90 1 0 0 0 1 0 0 0 1 2357.dat
+0 // Brick  1 x  1
+1 8 90 -48 -90 1 0 0 0 1 0 0 0 1 3005.dat
+0 // Brick  1 x  1 with Handle
+1 8 110 -48 -90 0 0 -1 0 1 0 1 0 0 2921.dat
+0 STEP
+0 // Brick  2 x  2 Corner
+1 15 -110 -72 90 0 0 1 0 1 0 -1 0 0 2357.dat
+0 // Fence Spindled  1 x  4 x  2
+1 8 -40 -72 90 1 0 0 0 1 0 0 0 1 30055.dat
+0 // Fence Spindled  1 x  4 x  2
+1 8 40 -72 90 1 0 0 0 1 0 0 0 1 30055.dat
+0 // Brick  1 x  2
+1 15 100 -72 90 1 0 0 0 1 0 0 0 1 3004.dat
+0 // Brick  2 x  2 Corner
+1 15 -110 -72 -90 1 0 0 0 1 0 0 0 1 2357.dat
+0 // Fence Spindled  1 x  4 x  2
+1 8 -40 -72 -90 1 0 0 0 1 0 0 0 1 30055.dat
+0 // Fence Spindled  1 x  4 x  2
+1 8 40 -72 -90 1 0 0 0 1 0 0 0 1 30055.dat
+0 // Brick  1 x  2
+1 15 100 -72 -90 1 0 0 0 1 0 0 0 1 3004.dat
+0 STEP
+0 // Plate  1 x 10
+1 15 0 -80 90 1 0 0 0 1 0 0 0 1 4477.dat
+0 // Plate  1 x 10
+1 15 0 -80 -90 1 0 0 0 1 0 0 0 1 4477.dat
+0 STEP
+0 // Tile  1 x  8
+1 9 0 -88 90 1 0 0 0 1 0 0 0 1 4162.dat
+0 // Tile  1 x  8
+1 9 0 -88 -90 1 0 0 0 1 0 0 0 1 4162.dat
+
+
+
+
+0 FILE 8211 - 8211-7-c.ldr
+0 8211-7-c
+0 Name: 8211 - 8211-7-c.ldr
+0 Author: Massimo Maso [Sirio]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+
+
+0 ROTATION CENTER 0 0 0 1 "Custom"
+0 ROTATION CONFIG 0 0
+0 // Brick  1 x  6
+1 15 0 0 0 1 0 0 0 1 0 0 0 1 3009.dat
+0 STEP
+0 // Brick  1 x  2 with Grille
+1 8 -40 -24 0 1 0 0 0 1 0 0 0 1 2877.dat
+0 // Brick  1 x  2 with Handle
+1 0 0 -24 0 1 0 0 0 1 0 0 0 1 30236.dat
+0 // Brick  1 x  2 with Grille
+1 8 40 -24 0 1 0 0 0 1 0 0 0 1 2877.dat
+0 STEP
+0 // Brick  1 x  6
+1 15 0 -48 0 1 0 0 0 1 0 0 0 1 3009.dat
+0 STEP
+0 // Tile  1 x  6
+1 9 0 -56 0 1 0 0 0 1 0 0 0 1 6636.dat
+
+
+
+
+0 FILE 8211 - 8211-7-d.ldr
+0 8211-7-d
+0 Name: 8211 - 8211-7-d.ldr
+0 Author: Massimo Maso [Sirio]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+
+
+0 ROTATION CENTER 0 0 0 1 "Custom"
+0 ROTATION CONFIG 0 0
+0 // Technic Pin
+1 0 70 0 0 1 0 0 0 1 0 0 0 1 3673.dat
+0 STEP
+0 // Technic Pin Joiner Round with Slot
+1 15 50 0 0 1 0 0 0 1 0 0 0 1 62462.dat
+0 // Technic Pin Joiner Round with Slot
+1 4 90 0 0 1 0 0 0 1 0 0 0 1 62462.dat
+0 STEP
+0 // Technic Axle Pin
+1 9 30 0 0 -1 0 0 0 1 0 0 0 -1 3749.dat
+0 // Technic Pin  1/2
+1 7 110 0 0 1 0 0 0 1 0 0 0 1 4274.dat
+0 STEP
+0 // Hinge Arm Locking with Dual Finger and Axlehole
+1 7 10 0 0 0 0 1 0 1 0 -1 0 0 30553.dat
+0 // Plate  1 x  1 Round
+1 36 118 0 0 0 -1 0 1 0 0 0 0 1 6141.dat
+
+
+
+
+0 FILE 8211 - 8211-7-e.ldr
+0 8211-7-e
+0 Name: 8211 - 8211-7-e.ldr
+0 Author: Massimo Maso [Sirio]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+
+
+0 ROTATION CENTER 0 0 0 1 "Custom"
+0 ROTATION CONFIG 0 0
+0 // Plate  6 x 10
+1 7 0 24 0 1 0 0 0 1 0 0 0 1 3033.dat
+0 STEP
+0 // Plate  2 x  4
+1 7 -80 16 40 1 0 0 0 1 0 0 0 1 3020.dat
+0 // Plate  2 x  4
+1 7 80 16 40 1 0 0 0 1 0 0 0 1 3020.dat
+0 // Plate  1 x  8
+1 0 0 16 -30 1 0 0 0 1 0 0 0 1 3460.dat
+0 // Plate  2 x  2
+1 7 -100 16 -40 1 0 0 0 1 0 0 0 1 3022.dat
+0 // Plate  2 x  2
+1 7 100 16 -40 1 0 0 0 1 0 0 0 1 3022.dat
+0 // Plate  1 x  2 without Groove with 1 Centre Stud
+1 7 -60 16 -50 1 0 0 0 1 0 0 0 1 3794a.dat
+0 // Plate  1 x  2 without Groove with 1 Centre Stud
+1 7 -20 16 -50 1 0 0 0 1 0 0 0 1 3794a.dat
+0 // Plate  1 x  2 without Groove with 1 Centre Stud
+1 7 20 16 -50 1 0 0 0 1 0 0 0 1 3794a.dat
+0 // Plate  1 x  2 without Groove with 1 Centre Stud
+1 7 60 16 -50 1 0 0 0 1 0 0 0 1 3794a.dat
+0 STEP
+0 // Plate  2 x  4
+1 7 -80 8 40 1 0 0 0 1 0 0 0 1 3020.dat
+0 // Plate  2 x  4
+1 7 80 8 40 1 0 0 0 1 0 0 0 1 3020.dat
+0 // Plate  2 x  2
+1 7 -100 8 -40 1 0 0 0 1 0 0 0 1 3022.dat
+0 // Plate  2 x  2
+1 7 100 8 -40 1 0 0 0 1 0 0 0 1 3022.dat
+0 // Tile  1 x  8
+1 22 0 8 -30 1 0 0 0 1 0 0 0 1 4162.dat
+0 STEP
+0 // Plate  2 x  6
+1 19 -60 0 80 0 0 1 0 1 0 -1 0 0 3795.dat
+0 // Plate  2 x  6
+1 19 60 0 80 0 0 1 0 1 0 -1 0 0 3795.dat
+0 // Plate  2 x  6
+1 19 -100 0 0 0 0 1 0 1 0 -1 0 0 3795.dat
+0 // Plate  2 x  6
+1 19 100 0 0 0 0 1 0 1 0 -1 0 0 3795.dat
+0 // Plate  2 x  2 with Pin Type 1
+1 19 -140 0 -40 1 0 0 0 1 0 0 0 1 2476a.dat
+0 // Plate  2 x  2 with Pin Type 1
+1 19 140 0 -40 1 0 0 0 1 0 0 0 1 2476a.dat
+0 STEP
+0 // Slope Brick 45  2 x  3
+1 18 -130 -24 -30 1 0 0 0 1 0 0 0 1 3038.dat
+0 // Slope Brick 45  2 x  3
+1 18 130 -24 -30 1 0 0 0 1 0 0 0 1 3038.dat
+0 // Brick  1 x  2 Log
+1 18 -90 -24 -40 0 0 1 0 1 0 -1 0 0 30136.dat
+0 // Brick  1 x  2 Log
+1 18 90 -24 -40 0 0 1 0 1 0 -1 0 0 30136.dat
+0 STEP
+0 // Plate  1 x  2
+1 22 -140 -32 -30 1 0 0 0 1 0 0 0 1 3023.dat
+0 // Plate  2 x  2 Corner
+1 22 -90 -32 -30 -1 0 0 0 1 0 0 0 -1 2420.dat
+0 // Plate  2 x  2 Corner
+1 22 90 -32 -30 0 0 1 0 1 0 -1 0 0 2420.dat
+0 // Plate  1 x  2
+1 22 140 -32 -30 1 0 0 0 1 0 0 0 1 3023.dat
+0 STEP
+0 // Plate  1 x  1 Round
+1 7 -90 -40 -50 1 0 0 0 1 0 0 0 1 6141.dat
+0 // Plate  1 x  1 Round
+1 7 90 -40 -50 1 0 0 0 1 0 0 0 1 6141.dat
+0 STEP
+0 // Brick  1 x  1 Round with Hollow Stud
+1 7 -90 -64 -50 1 0 0 0 1 0 0 0 1 3062b.dat
+0 // Brick  1 x  1 Round with Hollow Stud
+1 7 90 -64 -50 1 0 0 0 1 0 0 0 1 3062b.dat
+0 STEP
+0 // Brick  1 x  2 x  2
+1 7 -100 -80 -30 1 0 0 0 1 0 0 0 1 3245a.dat
+0 // Brick  1 x  2 x  2
+1 7 100 -80 -30 1 0 0 0 1 0 0 0 1 3245a.dat
+0 STEP
+0 // Plate  2 x  2
+1 7 -100 -88 -20 1 0 0 0 1 0 0 0 1 3022.dat
+0 // Plate  2 x  2
+1 7 100 -88 -20 1 0 0 0 1 0 0 0 1 3022.dat
+0 // Brick  1 x  1 Round with Hollow Stud
+1 7 -90 -88 -50 1 0 0 0 1 0 0 0 1 3062b.dat
+0 // Brick  1 x  1 Round with Hollow Stud
+1 7 90 -88 -50 1 0 0 0 1 0 0 0 1 3062b.dat
+0 STEP
+0 // Brick  2 x  3 x  3 with Lion's Head Carving and Cutout
+1 7 -140 -104 -30 1 0 0 0 1 0 0 0 1 30274.dat
+0 // Plate  2 x  2
+1 7 -100 -96 -20 1 0 0 0 1 0 0 0 1 3022.dat
+0 // Plate  2 x  2
+1 7 100 -96 -20 1 0 0 0 1 0 0 0 1 3022.dat
+0 // Brick  2 x  3 x  3 with Lion's Head Carving and Cutout
+1 7 140 -104 -30 1 0 0 0 1 0 0 0 1 30274.dat
+0 // Plate  1 x  1 Round
+1 7 -90 -96 -50 1 0 0 0 1 0 0 0 1 6141.dat
+0 // Plate  1 x  1 Round
+1 7 90 -96 -50 1 0 0 0 1 0 0 0 1 6141.dat
+0 STEP
+0 // Plate  1 x  2
+1 19 -100 -104 -10 1 0 0 0 1 0 0 0 1 3023.dat
+0 // Plate  1 x  2
+1 19 100 -104 -10 1 0 0 0 1 0 0 0 1 3023.dat
+0 // Plate  2 x  4
+1 18 -120 -104 -40 1 0 0 0 1 0 0 0 1 3020.dat
+0 // Plate  2 x  4
+1 18 120 -104 -40 1 0 0 0 1 0 0 0 1 3020.dat
+0 STEP
+0 // Brick  2 x  3
+1 7 -130 -128 -20 1 0 0 0 1 0 0 0 1 3002.dat
+0 // Slope Brick 33  3 x  2 Inverted with Ribs between Studs
+1 8 -90 -128 -20 0 0 -1 0 1 0 1 0 0 3747b.dat
+0 // Slope Brick 33  3 x  2 Inverted with Ribs between Studs
+1 8 90 -128 -20 0 0 1 0 1 0 -1 0 0 3747b.dat
+0 // Brick  2 x  3
+1 7 130 -128 -20 1 0 0 0 1 0 0 0 1 3002.dat
+0 // ~Slope Brick 45  2 x  2 Inverted without Inner Stopper Ring (Obsolete)
+1 7 -140 -128 -50 1 0 0 0 1 0 0 0 1 3660.dat
+0 // ~Slope Brick 45  2 x  2 Inverted without Inner Stopper Ring (Obsolete)
+1 7 -100 -128 -50 1 0 0 0 1 0 0 0 1 3660.dat
+0 // ~Slope Brick 45  2 x  2 Inverted without Inner Stopper Ring (Obsolete)
+1 7 100 -128 -50 1 0 0 0 1 0 0 0 1 3660.dat
+0 // ~Slope Brick 45  2 x  2 Inverted without Inner Stopper Ring (Obsolete)
+1 7 140 -128 -50 1 0 0 0 1 0 0 0 1 3660.dat
+0 STEP
+0 // Plate  2 x  2 with Hole and Split Underside Ribs
+1 8 -40 -136 -20 1 0 0 0 1 0 0 0 1 2444.dat
+0 // Plate  2 x  2 with Hole and Split Underside Ribs
+1 8 40 -136 -20 -1 0 0 0 1 0 0 0 -1 2444.dat
+0 // Plate  2 x  4
+1 7 -140 -136 -40 0 0 1 0 1 0 -1 0 0 3020.dat
+0 // Plate  2 x  4
+1 7 -100 -136 -40 0 0 1 0 1 0 -1 0 0 3020.dat
+0 // Plate  2 x  4
+1 7 100 -136 -40 0 0 1 0 1 0 -1 0 0 3020.dat
+0 // Plate  2 x  4
+1 7 140 -136 -40 0 0 1 0 1 0 -1 0 0 3020.dat
+0 STEP
+0 // Plate  2 x  6
+1 19 -80 -144 -20 1 0 0 0 1 0 0 0 1 3795.dat
+0 // Plate  2 x  6
+1 19 80 -144 -20 1 0 0 0 1 0 0 0 1 3795.dat
+0 // Plate  1 x  3
+1 22 -150 -144 -30 0 0 1 0 1 0 -1 0 0 3623.dat
+0 // Plate  1 x  3
+1 22 150 -144 -30 0 0 1 0 1 0 -1 0 0 3623.dat
+0 // Plate  1 x  3
+1 22 -110 -144 -50 1 0 0 0 1 0 0 0 1 3623.dat
+0 // Plate  1 x  3
+1 22 110 -144 -50 1 0 0 0 1 0 0 0 1 3623.dat
+0 // Plate  1 x  1 with Clip Vertical (Thin C-Clip)
+1 8 -150 -144 -70 1 0 0 0 1 0 0 0 1 4085a.dat
+0 // Plate  1 x  3
+1 22 -110 -144 -70 1 0 0 0 1 0 0 0 1 3623.dat
+0 // Plate  1 x  3
+1 22 110 -144 -70 1 0 0 0 1 0 0 0 1 3623.dat
+0 // Plate  1 x  1 with Clip Vertical (Thin C-Clip)
+1 8 150 -144 -70 1 0 0 0 1 0 0 0 1 4085a.dat
+0 STEP
+0 // Cylinder Domed  1 x  1 x  1.667 with Bar
+1 36 -150 -136 -90 1 0 0 0 1 0 0 0 1 58176.dat
+0 // Minifig Camera Snapshot Type 1
+1 0 146 -136 -108 0 0.5 0.866025 0 0.866025 -0.5 -1 0 0 30089.dat
+0 STEP
+0 // Plate  2 x 12
+1 8 0 -152 -60 1 0 0 0 1 0 0 0 1 2445.dat
+0 STEP
+0 // Slope Brick 18  4 x  2
+1 8 -140 -168 -10 1 0 0 0 1 0 0 0 1 30363.dat
+0 // Slope Brick 18  4 x  2
+1 8 140 -168 -10 1 0 0 0 1 0 0 0 1 30363.dat
+0 STEP
+0 // Slope Brick 45  2 x  1
+1 18 -110 -176 -70 0 0 -1 0 1 0 1 0 0 3040b.dat
+0 // Slope Brick 45  2 x  1
+1 18 110 -176 -70 0 0 1 0 1 0 -1 0 0 3040b.dat
+0 STEP
+0 // Plate  1 x  1 Round
+1 7 -110 -184 -70 1 0 0 0 1 0 0 0 1 6141.dat
+0 // Plate  1 x  1 Round
+1 7 110 -184 -70 1 0 0 0 1 0 0 0 1 6141.dat
+0 STEP
+0 // Brick  1 x  2 x  2
+1 18 -60 -200 -70 1 0 0 0 1 0 0 0 1 3245a.dat
+0 // Brick  1 x  2 x  2
+1 18 -20 -200 -70 1 0 0 0 1 0 0 0 1 3245a.dat
+0 // Brick  1 x  2 x  2
+1 18 20 -200 -70 1 0 0 0 1 0 0 0 1 3245a.dat
+0 // Brick  1 x  2 x  2
+1 18 60 -200 -70 1 0 0 0 1 0 0 0 1 3245a.dat
+0 STEP
+0 // Tile  1 x  8
+1 22 0 -208 -70 1 0 0 0 1 0 0 0 1 4162.dat
+
+
+
+
+0 FILE 8211 - 8211-7-f.ldr
+0 8211-7-f
+0 Name: 8211 - 8211-7-f.ldr
+0 Author: Massimo Maso [Sirio]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+
+
+0 ROTATION CENTER 0 0 0 1 "Custom"
+0 ROTATION CONFIG 0 0
+0 // Window  1 x  4 x  6 with Fixed Transparent Light Blue Glass
+1 8 0 0 0 1 0 0 0 1 0 0 0 1 6160c01.dat
+0 STEP
+0 // Tile  1 x  4 with Groove
+1 7 0 -8 0 1 0 0 0 1 0 0 0 1 2431.dat
+
+
+
+
+0 FILE 8211 - 8211-7-g.ldr
+0 8211-7-g
+0 Name: 8211 - 8211-7-g.ldr
+0 Author: Massimo Maso [Sirio]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+
+
+0 ROTATION CENTER 0 0 0 1 "Custom"
+0 ROTATION CONFIG 0 0
+0 // Technic Axle  4
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 3705.dat
+0 STEP
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+1 7 -5 0 0 0 -1 0 1 0 0 0 0 1 32056.dat
+0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90
+1 7 5 0 0 0 -1 0 1 0 0 0 0 1 32056.dat
+0 STEP
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+1 7 -15 0 0 0 0 1 0 1 0 -1 0 0 32123a.dat
+0 // Technic Bush  1/2 Smooth with Axle Hole Reduced
+1 7 15 0 0 0 0 1 0 1 0 -1 0 0 32123a.dat
+
+
+
+
+0 FILE 8211 - 8211-7-h.ldr
+0 8211-7-h
+0 Name: 8211 - 8211-7-h.ldr
+0 Author: Massimo Maso [Sirio]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+
+
+0 ROTATION CENTER 0 0 0 1 "Custom"
+0 ROTATION CONFIG 0 0
+0 // Plate  1 x  1 Round
+1 7 -30 0 30 1 0 0 0 1 0 0 0 1 6141.dat
+0 // Plate  1 x  1 Round
+1 7 30 0 30 1 0 0 0 1 0 0 0 1 6141.dat
+0 // Plate  1 x  1 Round
+1 7 -30 0 -30 1 0 0 0 1 0 0 0 1 6141.dat
+0 // Plate  1 x  1 Round
+1 7 30 0 -30 1 0 0 0 1 0 0 0 1 6141.dat
+0 STEP
+0 // Plate  4 x  4
+1 8 0 -8 0 1 0 0 0 1 0 0 0 1 3031.dat
+0 STEP
+0 // Brick  1 x  3
+1 8 -10 -32 30 1 0 0 0 1 0 0 0 1 3622.dat
+0 // Brick  1 x  3
+1 8 30 -32 10 0 0 1 0 1 0 -1 0 0 3622.dat
+0 // Brick  1 x  3
+1 8 -30 -32 -10 0 0 1 0 1 0 -1 0 0 3622.dat
+0 STEP
+0 // Brick  1 x  3
+1 8 10 -56 30 1 0 0 0 1 0 0 0 1 3622.dat
+0 // Brick  1 x  3
+1 8 -30 -56 10 0 0 1 0 1 0 -1 0 0 3622.dat
+0 // Brick  1 x  2 with Grille
+1 7 30 -56 0 0 0 -1 0 1 0 1 0 0 2877.dat
+0 // Brick  1 x  1 with Headlight
+1 7 -30 -56 -30 1 0 0 0 1 0 0 0 1 4070.dat
+0 STEP
+0 // Tile  1 x  1 with White and Red Dial, Black Needle and 4 Black Screw Heads Pattern
+1 7 -30 -46 -44 0 0 1 1 0 0 0 1 0 3070bp07.dat
+0 STEP
+0 // Brick  1 x  3
+1 8 -10 -80 30 1 0 0 0 1 0 0 0 1 3622.dat
+0 // Brick  1 x  3
+1 8 30 -80 10 0 0 1 0 1 0 -1 0 0 3622.dat
+0 // Brick  1 x  3
+1 8 -30 -80 -10 0 0 1 0 1 0 -1 0 0 3622.dat
+0 // Door  1 x  3 x  3 Right with Vertical Handle with Grip
+1 8 30 -80 -30 0 0 -1 0 1 0 1 0 0 3190.dat
+0 STEP
+0 // Plate  4 x  4
+1 8 0 -88 0 1 0 0 0 1 0 0 0 1 3031.dat
+0 STEP
+0 // Tile  1 x  2 Grille with Groove
+1 8 0 -96 30 1 0 0 0 1 0 0 0 1 2412b.dat
+0 // Tile  1 x  4 with Groove
+1 8 -30 -96 0 0 0 1 0 1 0 -1 0 0 2431.dat
+0 // Tile  2 x  2 Round with Lifting Ring
+1 0 0 -96 0 0 0 1 0 1 0 -1 0 0 2376.dat
+0 // Tile  1 x  4 with Groove
+1 8 30 -96 0 0 0 1 0 1 0 -1 0 0 2431.dat
+0 // Tile  1 x  2 Grille with Groove
+1 8 0 -96 -30 1 0 0 0 1 0 0 0 1 2412b.dat
+
+
+
+
+
+
+

@@ -1,0 +1,118 @@
+0 FILE 604 - main.ldr
+0 main
+0 Name: 604 - main.ldr
+0 Author: Takeshi Takahashi [RainbowDolphin]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+
+0 !THEME Town
+0 !KEYWORDS shell, car
+
+0 !HISTORY 2020-04-20 [RainbowDolphin] Initial creation
+
+0 ROTATION CENTER 0 0 0 1 "Custom"
+0 ROTATION CONFIG 0 0
+1 0 0 0 0 1 0 0 0 1 0 0 0 1 604 - Car.ldr
+1 0 -40 -40 -70 1 0 0 0 1 0 0 0 1 604 - Minifig.ldr
+
+
+
+
+
+
+0 FILE 604 - Car.ldr
+0 Car
+0 Name: 604 - Car.ldr
+0 Author: Takeshi Takahashi [RainbowDolphin]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+
+0 ROTATION CENTER 0 0 0 1 "Custom"
+0 ROTATION CONFIG 0 0
+0 // Plate  2 x  8
+1 14 0 0 0 1 0 0 0 1 0 0 0 1 3034.dat
+0 STEP
+0 // Car Mudguard  2 x  4 without Studs
+1 14 -60 -16 0 0 0 1 0 1 0 -1 0 0 3787.dat
+0 // Car Mudguard  2 x  4 without Studs
+1 14 40 -16 0 0 0 1 0 1 0 -1 0 0 3787.dat
+0 // Plate  2 x  3
+1 14 -10 -8 0 1 0 0 0 1 0 0 0 1 3021.dat
+0 // Plate  1 x  2
+1 14 70 -8 0 0 0 1 0 1 0 -1 0 0 3023.dat
+0 STEP
+0 // Plate  2 x  8
+1 4 0 -16 0 1 0 0 0 1 0 0 0 1 3034.dat
+0 STEP
+0 // Plate  2 x  2 with Red Wheels (Complete)
+1 7 -60 8 0 0 0 1 0 1 0 -1 0 0 122c01.dat
+0 // Plate  2 x  2 with Red Wheels (Complete)
+1 7 40 8 0 0 0 1 0 1 0 -1 0 0 122c01.dat
+0 // Tyre  6/ 50 x  8 Offset Tread
+1 256 -60 14 -30 1 0 0 0 1 0 0 0 1 3641.dat
+0 // Tyre  6/ 50 x  8 Offset Tread
+1 256 40 14 -30 1 0 0 0 1 0 0 0 1 3641.dat
+0 // Tyre  6/ 50 x  8 Offset Tread
+1 256 -60 14 30 1 0 0 0 1 0 0 0 1 3641.dat
+0 // Tyre  6/ 50 x  8 Offset Tread
+1 256 40 14 30 1 0 0 0 1 0 0 0 1 3641.dat
+0 // Plate  2 x  3
+1 14 -10 8 -20 1 0 0 0 1 0 0 0 1 3021.dat
+0 // Plate  2 x  3
+1 14 -10 8 20 1 0 0 0 1 0 0 0 1 3021.dat
+0 STEP
+0 // Brick  2 x  3
+1 15 50 -40 0 1 0 0 0 1 0 0 0 1 3002.dat
+0 // Slope Brick 45  2 x  2
+1 47 10 -40 0 0 0 1 0 1 0 -1 0 0 3039.dat
+0 STEP
+0 // Plate  2 x  4
+1 15 40 -48 0 1 0 0 0 1 0 0 0 1 3020.dat
+0 // Sticker  1.1 x  1.25 with Shell Logo 1971
+1 15 50 -28 -20 1 0 0 0 0 -1 0 1 0 004318b.dat
+0 // Sticker  1.1 x  1.25 with Shell Logo 1971
+1 15 50 -28 20 -1 0 0 0 0 -1 0 -1 0 004318b.dat
+
+
+
+
+
+
+0 FILE 604 - Minifig.ldr
+0 Minifig
+0 Name: 604 - Minifig.ldr
+0 Author: Takeshi Takahashi [RainbowDolphin]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+
+0 ROTATION CENTER 0 0 0 1 "Custom"
+0 ROTATION CONFIG 0 0
+0 // Minifig Police Hat
+1 4 0 -24 0 1 0 0 0 1 0 0 0 1 3624.dat
+0 // Minifig Head with Standard Grin Pattern (Blocked Hollow Stud)
+1 14 0 -24 0 1 0 0 0 1 0 0 0 1 3626bp01.dat
+0 // Minifig Torso with Sticker Shell Logo on White Background
+1 15 0 0 0 1 0 0 0 1 0 0 0 1 973d04.dat
+0 // ~Minifig Hips (Obsolete)
+1 1 0 32 0 1 0 0 0 1 0 0 0 1 3815.dat
+0 // Minifig Arm Right
+1 15 -15.552 9 0 0.985 -0.17 0 0.17 0.985 0 0 0 1 3818.dat
+0 // Minifig Arm Left
+1 15 15.552 9 0 0.985 0.17 0 -0.17 0.985 0 0 0 1 3819.dat
+0 // Minifig Hand
+1 14 -23.863 26.596 -10.321 0.985 -0.12019 0.12019 0.17 0.696395 -0.696395 0 0.707 0.707 3820.dat
+0 // Minifig Hand
+1 14 23.863 26.596 -10.321 0.985 0.12019 -0.12019 -0.17 0.696395 -0.696395 0 0.707 0.707 3820.dat
+0 // ~Minifig Leg Right (Obsolete)
+1 1 0 44 0 1 0 0 0 1 0 0 0 1 3816.dat
+0 // ~Minifig Leg Left (Obsolete)
+1 1 0 44 0 1 0 0 0 1 0 0 0 1 3817.dat
+
+
+
+
+
+
+
+
+

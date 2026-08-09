@@ -1,0 +1,234 @@
+0 FILE 2962 - main.ldr
+0 main
+0 Name: 2962 - main.ldr
+0 Author: TotalyWicked [TotalyWicked]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+0 !HISTORY 2020-03-18 [bercik] OMR version by Robert Paciorek [bercik] with perrmision of TotalyWicked
+
+1 16 -2 62 0 1 0 0 0 1 0 0 0 1 2962 - car.ldr
+1 16 -84.342 -97.0298 -132.93 1 0 0 0 1 0 0 0 1 2962 - minifig 2.ldr
+1 16 42.7247 63.33 -113.61 1 0 0 0 1 0 0 0 1 2962 - minifig 1.ldr
+1 16 -68.59 62.97 -192.9402 1 0 0 0 1 0 0 0 1 2962 - lifebuoy.ldr
+1 16 -77.59 62.97 -139.93 1 0 0 0 1 0 0 0 1 2962 - tower.ldr
+0 // Minifig Binoculars with Round Eyepiece
+1 8 -28.6 56.97 -219.93 0 0 -1 0 1 0 1 0 0 30162.dat
+0 // ~Minifig Cap with Long Flat Peak (Obsolete)
+1 15 -25.6 52.97 -190.93 0 0 -1 0 1 0 1 0 0 4485.dat
+
+
+
+0 FILE 2962 - car.ldr
+0 car
+0 Name: 2962 - car.ldr
+0 Author: TotalyWicked [TotalyWicked]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+0 !HISTORY 2020-03-18 [bercik] OMR version by Robert Paciorek [bercik] with perrmision of TotalyWicked
+
+0 // Car Steering Stand and Wheel (Complete)
+1 15 32 -70 0 0 0 -1 0 1 0 1 0 0 3829c01.dat
+0 // Tyre 12/ 40 x 11 Wide
+1 0 62 -25 -40 0 1 0 -1 0 0 0 0 1 6015.dat
+0 // Wheel Rim 12 x 11 with Round Hole
+1 15 62 -25 -34 0 1 0 -1 0 0 0 0 1 6014.dat
+0 // Plate  2 x  2 with 2 Wheel Pins
+1 0 62 -30 0 0 0 1 0 1 0 -1 0 0 4600.dat
+0 // Tyre 12/ 40 x 11 Wide
+1 0 62 -25 40 0 -1 0 -1 0 0 0 0 -1 6015.dat
+0 // Wheel Rim 12 x 11 with Round Hole
+1 15 62 -25 34 0 -1 0 -1 0 0 0 0 -1 6014.dat
+0 // Plate  1 x  1
+1 36 -114 -72 -30 0 1 0 0 0 -1 -1 0 0 3024.dat
+0 // Plate  1 x  1
+1 36 -114 -72 30 0 1 0 0 0 -1 -1 0 0 3024.dat
+0 // Hinge Car Roof  4 x  4
+1 0 -106 -102 0 0 1 0 0 0 -1 -1 0 0 4213.dat
+0 // Hinge Plate  1 x  4 with Car Roof Holder
+1 0 -88 -142 0 0 0 1 0 1 0 -1 0 0 4315.dat
+0 // Hinge Plate  1 x  4 with Car Roof Holder
+1 0 -68 -142 0 0 0 -1 0 1 0 1 0 0 4315.dat
+0 // Windscreen  6 x  4 x  2 Canopy
+1 33 -54 -138 0 0 0 -1 0 1 0 1 0 0 4474.dat
+0 // Plate  1 x  1 Round
+1 36 -56 -124 -50 0 -1 0 0 0 -1 1 0 0 6141.dat
+0 // Plate  1 x  1 Round
+1 33 -56 -124 50 0 -1 0 0 0 -1 1 0 0 6141.dat
+0 // Slope Brick 33  3 x  4
+1 0 52 -94 0 0 0 -1 0 1 0 1 0 0 3297.dat
+0 // Plate  2 x  4
+1 0 -78 -134 0 0 0 1 0 1 0 -1 0 0 3020.dat
+0 // Plate  1 x  1
+1 36 -88 -126 -30 0 0 1 0 1 0 -1 0 0 3024.dat
+0 // Plate  1 x  1
+1 33 -88 -126 30 0 0 1 0 1 0 -1 0 0 3024.dat
+0 // Plate  1 x  1 with Clip Light Type 2
+1 15 -68 -126 -30 1 0 0 0 1 0 0 0 1 4081b.dat
+0 // Plate  1 x  1 with Clip Light Type 2
+1 15 -68 -126 30 -1 0 0 0 1 0 0 0 -1 4081b.dat
+0 // Brick  1 x  2
+1 0 -78 -118 30 -1 0 0 0 1 0 0 0 -1 3004.dat
+0 // Brick  1 x  2
+1 0 -78 -118 -30 -1 0 0 0 1 0 0 0 -1 3004.dat
+0 // Panel  1 x  2 x  1 with Rounded Corners
+1 0 22 -94 30 1 0 0 0 1 0 0 0 1 4865b.dat
+0 // Panel  1 x  2 x  1 with Rounded Corners
+1 0 -18 -94 30 1 0 0 0 1 0 0 0 1 4865b.dat
+0 // Panel  1 x  2 x  1 with Rounded Corners
+1 0 22 -94 -30 -1 0 0 0 1 0 0 0 -1 4865b.dat
+0 // Panel  1 x  2 x  1 with Rounded Corners
+1 0 -18 -94 -30 -1 0 0 0 1 0 0 0 -1 4865b.dat
+0 // Brick  1 x  1 with Headlight
+1 14 -48 -94 -30 1 0 0 0 1 0 0 0 1 4070.dat
+0 // Brick  1 x  1 with Headlight
+1 14 -48 -94 30 -1 0 0 0 1 0 0 0 -1 4070.dat
+0 // Brick  1 x  2
+1 0 -78 -94 30 -1 0 0 0 1 0 0 0 -1 3004.dat
+0 // Brick  1 x  2
+1 0 -78 -94 -30 -1 0 0 0 1 0 0 0 -1 3004.dat
+0 // Plate  1 x 10
+1 14 2 -70 30 -1 0 0 0 1 0 0 0 -1 4477.dat
+0 // Plate  1 x 10
+1 14 2 -70 -30 -1 0 0 0 1 0 0 0 -1 4477.dat
+0 // Plate  1 x  2 with Handle
+1 7 92 -70 0 0 0 -1 0 1 0 1 0 0 2540.dat
+0 // ~Slope Brick 45  2 x  2 Inverted without Inner Stopper Ring (Obsolete)
+1 7 72 -54 0 0 0 -1 0 1 0 1 0 0 3660.dat
+0 // ~Slope Brick 45  2 x  2 Inverted without Inner Stopper Ring (Obsolete)
+1 7 -68 -54 0 0 0 1 0 1 0 -1 0 0 3660.dat
+0 // Brick  1 x  2
+1 7 -48 -54 0 0 0 -1 0 1 0 1 0 0 3004.dat
+0 // Brick  1 x  2
+1 7 52 -54 0 0 0 -1 0 1 0 1 0 0 3004.dat
+0 // Car Base  4 x 10 x  0.667 with  2 x  2 Center Open
+1 0 2 -62 0 0 0 -1 0 1 0 1 0 0 4212b.dat
+0 // Tyre 12/ 40 x 11 Wide
+1 0 -58 -25 -39.96 0 1 0 -1 0 0 0 0 1 6015.dat
+0 // Wheel Rim 12 x 11 with Round Hole
+1 15 -58 -25 -33.96 0 1 0 -1 0 0 0 0 1 6014.dat
+0 // Plate  2 x  2 with 2 Wheel Pins
+1 0 -58 -30 0.04 0 0 1 0 1 0 -1 0 0 4600.dat
+0 // Tyre 12/ 40 x 11 Wide
+1 0 -58 -25 40.04 0 -1 0 -1 0 0 0 0 -1 6015.dat
+0 // Wheel Rim 12 x 11 with Round Hole
+1 15 -58 -25 34.04 0 -1 0 -1 0 0 0 0 -1 6014.dat
+0 // ~Hinge Control Stick and Base (Complete) (Obsolete)
+1 15 -88 -150 -10 0 0 -1 0 1 0 1 0 0 4592c01.dat
+
+
+
+0 FILE 2962 - tower.ldr
+0 tower
+0 Name: 2962 - tower.ldr
+0 Author: TotalyWicked [TotalyWicked]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+0 !HISTORY 2020-03-18 [bercik] OMR version by Robert Paciorek [bercik] with perrmision of TotalyWicked
+
+0 // Bar  7 x  3 with Double Clips
+1 14 30 -150 7 0 -1 0 0 0 1 -1 0 0 6020.dat
+0 // Minifig Loudhailer
+1 7 -10 -161.96 37 0 0 -1 0 1 0 1 0 0 4349.dat
+0 // Minifig Radio with Long Handle
+1 0 -10 -150 -23 0 0 -1 0 1 0 1 0 0 3962b.dat
+0 // Minifig Seat  2 x  2
+1 0 0 -160 7 0 0 -1 0 1 0 1 0 0 4079.dat
+0 // Plate  1 x  1 with Clip Vertical (Thick U-Clip)
+1 15 -10 -152 17 -1 0 0 0 1 0 0 0 -1 4085c.dat
+0 // Plate  1 x  1 with Clip Vertical (Thick U-Clip)
+1 15 -10 -152 -3 1 0 0 0 1 0 0 0 1 4085c.dat
+0 // Plate  1 x  2 with Handle
+1 15 10 -152 7 0 0 -1 0 1 0 1 0 0 2540.dat
+0 // Brick  2 x  2
+1 14 0 -144 7 0 0 -1 0 1 0 1 0 0 3003.dat
+0 // Support  4 x  4 x  5 Stanchion with Tall Studs
+1 0 0 -120 7 0 0 -1 0 1 0 1 0 0 2680a.dat
+
+
+
+0 FILE 2962 - lifebuoy.ldr
+0 lifebuoy
+0 Name: 2962 - lifebuoy.ldr
+0 Author: TotalyWicked [TotalyWicked]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+0 !HISTORY 2020-03-18 [bercik] OMR version by Robert Paciorek [bercik] with perrmision of TotalyWicked
+
+0 // ~Tile  2 x  2 Round with Lifepreserver Sticker (Shortcut) (Obsolete)
+1 15 10 -91.98 -0.0098 0 -1 0 0 0 -1 1 0 0 4150c07.dat
+0 // Plate  1 x  2 with 3L Extension and Stud Hole
+1 0 2 -102 0.0103 0 -1 0 0 0 -1 1 0 0 4596.dat
+0 // Brick  1 x  1 Round with Hollow Stud
+1 0 0 -32 0.0103 0 0 1 0 1 0 -1 0 0 3062b.dat
+0 // Plate  2 x  2
+1 14 0 -8 0.0103 0 0 1 0 1 0 -1 0 0 3022.dat
+
+
+
+0 FILE 2962 - minifig 1.ldr
+0 minifig 1
+0 Name: 2962 - minifig 1.ldr
+0 Author: TotalyWicked [TotalyWicked]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+0 !HISTORY 2020-03-18 [bercik] OMR version by Robert Paciorek [bercik] with perrmision of TotalyWicked
+
+0 // ~Minifig Leg Right (Obsolete)
+1 14 -5.2247 -28 0 0 0 -1 0 1 0 1 0 0 3816.dat
+0 // ~Minifig Leg Left (Obsolete)
+1 14 -5.2247 -28 0 0 0 -1 0 1 0 1 0 0 3817.dat
+0 // Minifig Hand
+1 0 4.7753 -46.13 -23.66 0 -0.71 -0.71 0.17 0.7 -0.7 0.99 -0.12 0.12 3820.dat
+0 // Minifig Hand
+1 0 4.7753 -46.13 23.66 0 -0.71 -0.71 -0.17 0.7 -0.7 0.99 0.12 -0.12 3820.dat
+0 // Minifig Arm Right
+1 15 -5.2247 -64 -15.5 0 0 -1 0.17 0.99 0 0.99 -0.17 0 3818.dat
+0 // Minifig Arm Left
+1 15 -5.2247 -64 15.5 0 0 -1 -0.17 0.99 0 0.99 0.17 0 3819.dat
+0 // ~Minifig Hips (Obsolete)
+1 0 -5.2247 -40 0 0 0 -1 0 1 0 1 0 0 3815.dat
+0 // Minifig Torso
+1 15 -5.2247 -72 0 0 0 -1 0 1 0 1 0 0 973.dat
+0 // Minifig Head with Standard Grin, Eyebrows and Microphone Pattern
+1 14 -5.2247 -96 0 0 0 -1 0 1 0 1 0 0 3626bp06.dat
+0 // ~Minifig Helmet Visor Standard (Obsolete)
+1 41 -5.2247 -96 0 0 0 -1 0 1 0 1 0 0 2447.dat
+0 // ~Minifig Helmet Standard (Obsolete)
+1 15 -5.2247 -96 0 0 0 -1 0 1 0 1 0 0 2446.dat
+
+
+
+0 FILE 2962 - minifig 2.ldr
+0 minifig 2
+0 Name: 2962 - minifig 2.ldr
+0 Author: TotalyWicked [TotalyWicked]
+0 !LDRAW_ORG Model
+0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
+0 !HISTORY 2020-03-18 [bercik] OMR version by Robert Paciorek [bercik] with perrmision of TotalyWicked
+
+0 // ~Minifig Leg Right (Obsolete)
+1 14 -1.258 -9.0002 0 0 1 0 0 0 1 1 0 0 3816.dat
+0 // ~Minifig Leg Left (Obsolete)
+1 14 -1.258 -9.0002 0 0 1 0 0 0 1 1 0 0 3817.dat
+0 // Minifig Hand
+1 14 8.742 -27.1302 -23.66 0 -0.71 -0.71 0.17 0.7 -0.7 0.99 -0.12 0.12 3820.dat
+0 // Minifig Hand
+1 14 8.742 -27.1302 23.66 0 -0.71 -0.71 -0.17 0.7 -0.7 0.99 0.12 -0.12 3820.dat
+0 // Minifig Arm Right
+1 14 -1.258 -45.0002 -15.5 0 0 -1 0.17 0.99 0 0.99 -0.17 0 3818.dat
+0 // Minifig Arm Left
+1 14 -1.258 -45.0002 15.5 0 0 -1 -0.17 0.99 0 0.99 0.17 0 3819.dat
+0 // ~Minifig Hips (Obsolete)
+1 15 -1.258 -21.0002 0 0 0 -1 0 1 0 1 0 0 3815.dat
+0 // Minifig Torso with Blue Flowers on Tied Shirt Pattern
+1 13 -1.258 -53.0002 0 0 0 -1 0 1 0 1 0 0 973p2g.dat
+0 // Minifig Lifevest
+1 14 -1.258 -53.0002 0 0 0 -1 0 1 0 1 0 0 2610.dat
+0 // Minifig Head with Standard Woman Pattern
+1 14 -1.258 -79.0002 0 0 0 -1 0 1 0 1 0 0 3626bp02.dat
+0 // Minifig Hair Ponytail
+1 6 -1.258 -79.0002 0 0 0 -1 0 1 0 1 0 0 6093a.dat
+
+
+
+
