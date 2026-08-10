@@ -1,5 +1,5 @@
 0 FILE 10218 - main.ldr
-0 main
+0 LEGO Pet Shop modular building (set 10218): two adjoining townhouses - a reddish-brown pet shop and a blue/sand-blue neighbouring house, each built up from basement, two storeys and a roof and joined by a corkscrew stair and rigid hose detail - together with a woman, a man and a girl riding a bicycle
 0 Name: 10218 - main.ldr
 0 Author: Stefan Frenz (smf)
 0 !LDRAW_ORG Model
@@ -15,7 +15,7 @@
 1 2 280 -60 20 -1 0 0 0 1 0 0 0 -1 10218 - MiniFig3.ldr
 
 0 FILE 10218 - rigidHoseD9.ldr
-0 rigidHoseD9
+0 LDCad-generated rigid 3 mm hose (path-deform fallback geometry) made of capped and segment donors joined by conditional-line rings
 0 Name: 10218 - rigidHoseD9.ldr
 0 Author: Stefan Frenz (smf) with LDCad
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -540,7 +540,7 @@
 5 24 1.4142 -1.4142 100 1.4142 -1.4142 98 1.8478 -0.7654 100 0.7654 -1.8478 100
 5 24 1.8478 -0.7654 100 1.8478 -0.7654 98 2 0 100 1.4142 -1.4142 100
 0 FILE 10218 - Brown House 1 Basement.ldr
-0 Brown House 1 Basement
+0 Basement and yard foundation of the brown house on a green baseplate, with tiled floor, log-brick and slope walls, technic-pin structure, a trap door, spindled fence, hinged panels, doors and windows, plus garden and household accessories (rubbish bin, inverted dish, saucepan, life ring, skeleton leg and lightsaber hilt)
 0 Name: 10218 - Brown House 1 Basement.ldr
 0 Author: Stefan Frenz (smf)
 0 !LDRAW_ORG Model
@@ -1495,7 +1495,7 @@
 1 256 170.659 -187.502 150 0.777 -0.629 0 0 0 1 -0.629 -0.777 0 10218 - rigidHoseD9.ldr
 
 0 FILE 10218 - Brown House 2 Downstairs.ldr
-0 Brown House 2 Downstairs
+0 Ground floor of the brown house: large floor plates, hinged plates, white and reddish-brown panel and brick walls with log detailing, headlight bricks, glazed windows and a panelled door, finished with slopes, tiles and a technic rotor
 0 Name: 10218 - Brown House 2 Downstairs.ldr
 0 Author: Stefan Frenz (smf)
 0 !LDRAW_ORG Model
@@ -1982,7 +1982,7 @@
 1 71 -110.007 -456 -70.013 1 0 0 0 1 0 0 0 1 63864.dat
 
 0 FILE 10218 - Brown House 3 Upstairs.ldr
-0 Brown House 3 Upstairs
+0 Upper floor of the brown house with white and reddish-brown brick walls, hinged bricks and plates, glazed windows and a green-panelled door, a dark-red sloped fireplace, and furnished rooms (tap, carrot-top food, skeleton leg) under tiled trim
 0 Name: 10218 - Brown House 3 Upstairs.ldr
 0 Author: Stefan Frenz (smf)
 0 !LDRAW_ORG Model
@@ -2417,7 +2417,7 @@
 1 71 60.003 -616 -150.01 -1 0 0 0 1 0 0 0 -1 92593.dat
 
 0 FILE 10218 - Brown House 4 Roof.ldr
-0 Brown House 4 Roof
+0 Pitched roof of the brown house built from large plates, sloped bricks, log-brick detailing, lattice fence sections and topped with tiles and stop-cone finials
 0 Name: 10218 - Brown House 4 Roof.ldr
 0 Author: Stefan Frenz
 0 !LDRAW_ORG Model
@@ -2482,7 +2482,7 @@
 1 70 130.003 -660 -150.01 1 0 0 0 1 0 0 0 1 59900.dat
 
 0 FILE 10218 - Corkskrew Stair.ldr
-0 Corkskrew Stair
+0 Compact corkscrew stair connector built from a round plate, a 1x3 tile and a 1x4 plate
 0 Name: 10218 - Corkskrew Stair.ldr
 0 Author: Stefan Frenz (smf)
 0 !LDRAW_ORG Model
@@ -2501,7 +2501,7 @@
 1 72 30 0 0 1 0 0 0 1 0 0 0 1 3710.dat
 
 0 FILE 10218 - Blue House 1 Basement.ldr
-0 Blue House 1 Basement
+0 Pet-shop basement and yard on a green baseplate, with tiled and bricked walls and a staircase, housing animals (dog, cat, rat, parrot, fish, frog), a bone, bucket, treasure chest, cupboard with money, telescope, glazed windscreen, hinged control stick and assorted container boxes
 0 Name: 10218 - Blue House 1 Basement.ldr
 0 Author: Stefan Frenz (smf)
 0 !LDRAW_ORG Model
@@ -3430,7 +3430,7 @@
 1 4 210.683 -45.997 -119 0 -0.707 0.707 0 0.707 0.707 -1 0 0 32474.dat
 
 0 FILE 10218 - Blue House 2 Downstairs.ldr
-0 Blue House 2 Downstairs
+0 Ground floor of the blue house: large floor plates, sand-blue brick walls with log detailing, an open staircase, a kitchen (frypan, tap, cups), a fireplace with neon-orange flame, glazed windows and panelled doors, finished with slopes, arches and tiles
 0 Name: 10218 - Blue House 2 Downstairs.ldr
 0 Author: Stefan Frenz (smf)
 0 !LDRAW_ORG Model
@@ -4065,7 +4065,7 @@
 1 71 150 -440 -80 0 0 -1 0 1 0 1 0 0 30586.dat
 
 0 FILE 10218 - Blue House 3 Upstairs.ldr
-0 Blue House 3 Upstairs
+0 Upper floor of the blue house with sand-blue and black brick walls, an arch, spindled fence, glazed windows, a dark-green curved feature and a dark-red sloped section, furnished with a goblet and inverted dish under tiled trim
 0 Name: 10218 - Blue House 3 Upstairs.ldr
 0 Author: Stefan Frenz (smf)
 0 !LDRAW_ORG Model
@@ -4626,7 +4626,7 @@
 1 72 0 -616 -150 1 0 0 0 1 0 0 0 1 92593.dat
 
 0 FILE 10218 - Blue House 4 Roof.ldr
-0 Blue House 4 Roof
+0 Pitched roof of the blue house built from large black plates, sloped bricks, a trans-brown skylight, log-brick detailing and stop-cone finials
 0 Name: 10218 - Blue House 4 Roof.ldr
 0 Author: Stefan Frenz (smf)
 0 !LDRAW_ORG Model
@@ -4736,7 +4736,7 @@
 1 72 110 -656 -80 0 0 1 0 1 0 -1 0 0 4162.dat
 
 0 FILE 10218 - MiniFig1.ldr
-0 MiniFig1
+0 Woman minifig with long reddish-brown hair, wearing a dark-red jacket over a red patterned torso
 0 Name: 10218 - MiniFig1.ldr
 0 Author: Stefan Frenz (smf)
 0 !LDRAW_ORG Model
@@ -4763,7 +4763,7 @@
 1 70 0 -56 0 0.966 0 0.259 0 1 0 -0.259 0 0.966 85974.dat
 
 0 FILE 10218 - MiniFig2.ldr
-0 MiniFig2
+0 Man minifig with tousled dark-orange hair, wearing a green V-neck sweater over a light-blue shirt
 0 Name: 10218 - MiniFig2.ldr
 0 Author: Stefan Frenz (smf)
 0 !LDRAW_ORG Model
@@ -4790,7 +4790,7 @@
 1 14 0 0 0 1 0 0 0 1 0 0 0 1 3626bp01.dat
 
 0 FILE 10218 - MiniFig3.ldr
-0 MiniFig3
+0 Girl minifig with a dark-brown ponytail braid, wearing a white hooded sweatshirt, riding a green bicycle
 0 Name: 10218 - MiniFig3.ldr
 0 Author: Stefan Frenz (smf)
 0 !LDRAW_ORG Model
@@ -4819,7 +4819,7 @@
 1 308 0 -56 -35 0.986 0 -0.169 0 1 0 0.169 0 0.986 88286.dat
 
 0 FILE 10218 - MiniFig4.ldr
-0 MiniFig4
+0 Worker minifig with a white peaked cap and blue dungarees over a white torso, fitted with a light-grey antenna, bracket and technic pin accessory
 0 Name: 10218 - MiniFig4.ldr
 0 Author: Stefan Frenz (smf)
 0 !LDRAW_ORG Model
@@ -4855,7 +4855,7 @@
 0 // Technic Pin Joiner Round with Slot (white)
 1 15 -83.929 -66.535 -53.257 -0.595 -0.711 0.375 0.804 -0.535 0.261 0.015 0.457 0.89 62462.dat
 0 FILE 10218 - Brown House.ldr
-0 Brown House
+0 Brown house assembly stacking its basement, downstairs, upstairs and roof submodels into a complete four-level townhouse
 0 Name: 10218 - Brown House.ldr
 0 Author: Stefan Frenz [smf]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -4868,7 +4868,7 @@
 0 STEP
 1 0 0.022 0 0.016 1 0 0 0 1 0 0 0 1 10218 - Brown House 4 Roof.ldr
 0 FILE 10218 - Blue House.ldr
-0 Blue House
+0 Blue house assembly stacking its basement, downstairs, upstairs and roof submodels into a complete four-level townhouse
 0 Name: 10218 - Blue House.ldr
 0 Author: Stefan Frenz [smf]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -4881,7 +4881,7 @@
 0 STEP
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 10218 - Blue House 4 Roof.ldr
 0 FILE 10218 - ldcRigid3mmHoseCap.dat
-0 ldcRigid3mmHoseCap
+0 LDCad donor part: capped end segment of the 3 mm rigid hose (cylinder body, inner cylinder, ring and edge circle with a conditional-line ring)
 0 Name: 10218 - ldcRigid3mmHoseCap.dat
 0 Author: LDCad
 0 UNOFFICIAL PART
@@ -4910,7 +4910,7 @@
 0 //  It will also take care of segment overlapping control points
 1 16 0 1 0 4 0 0 0 1 0 0 0 4 10218 - ldcConRing-4-4.dat
 0 FILE 10218 - ldcRigid3mmHoseSeg.dat
-0 ldcRigid3mmHoseSeg
+0 LDCad donor part: middle segment of the 3 mm rigid hose (cylinder body with two conditional-line rings)
 0 Name: 10218 - ldcRigid3mmHoseSeg.dat
 0 Author: LDCad
 0 UNOFFICIAL PART
@@ -4930,7 +4930,7 @@
 1 16 0 0 0 4 0 0 0 1 0 0 0 4 10218 - ldcConRing-4-4.dat
 1 16 0 1 0 4 0 0 0 1 0 0 0 4 10218 - ldcConRing-4-4.dat
 0 FILE 10218 - ldcConRing-4-4.dat
-0 ldcConRing-4-4
+0 LDCad donor part: ring of conditional lines used to blend adjacent hose segments
 0 Name: 10218 - ldcConRing-4-4.dat
 0 Author: LDCad
 0 UNOFFICIAL PRIMITIVE

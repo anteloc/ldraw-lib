@@ -1,5 +1,5 @@
 0 FILE 10230 - main.ldr
-0 main
+0 Mini Modulars display row of five scaled-down buildings: Cafe Corner, Market Street, Green Grocer, Fire Brigade and Grand Emporium
 0 Name: 10230 - main.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -13,7 +13,7 @@
 
 
 0 FILE 10230 - cornercafe.ldr
-0 cornercafe
+0 Mini Cafe Corner building on a green baseplate, with tan, dark red and reddish brown brickwork, grooved tiled facades, arched windows, lattice fence railings, a HOTEL sign tile, street lamps and rooftop detail
 0 Name: 10230 - cornercafe.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -601,7 +601,7 @@
 
 
 0 FILE 10230 - tower.ldr
-0 tower
+0 Small rooftop tower with arched window panels, a rounded corner roof and railing details
 0 Name: 10230 - tower.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -637,7 +637,7 @@
 
 
 0 FILE 10230 - marketstreet.ldr
-0 marketstreet
+0 Mini Market Street building with tan, dark blue and white brickwork, grooved tiled facade, window grilles and decorative trim
 0 Name: 10230 - marketstreet.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -831,7 +831,7 @@
 
 
 0 FILE 10230 - market1stfloor.ldr
-0 market1stfloor
+0 Upper floor of the Market Street building with medium blue tiled walls and clip-light detailing
 0 Name: 10230 - market1stfloor.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -932,7 +932,7 @@
 
 
 0 FILE 10230 - marketroof.ldr
-0 marketroof
+0 Roof section of the Market Street building with medium blue and tan plates, slope detailing, clip lights and a flagpole tap
 0 Name: 10230 - marketroof.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1087,7 +1087,7 @@
 
 
 0 FILE 10230 - greengrocer.ldr
-0 greengrocer
+0 Mini Green Grocer building with a sand green facade, black window and door detail, clear trans windows and tiled cornices
 0 Name: 10230 - greengrocer.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1616,7 +1616,7 @@
 
 
 0 FILE 10230 - firebrigade.ldr
-0 firebrigade
+0 Mini Fire Brigade building with dark red and dark tan brickwork, headlight-brick detailing, tiled facade and window trims
 0 Name: 10230 - firebrigade.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2273,7 +2273,7 @@
 
 
 0 FILE 10230 - grandemporium.ldr
-0 grandemporium
+0 Mini Grand Emporium building with a tan facade, trans green display windows, tiled cornices and curved detailing
 0 Name: 10230 - grandemporium.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2899,7 +2899,7 @@
 
 
 0 FILE 10230 - stringStudsLQ-1.ldr
-0 stringStudsLQ-1
+0 Flexible rope assembly of cylinder segments with end studs (LDCad generated)
 0 Name: 10230 - stringStudsLQ-1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2954,7 +2954,7 @@
 
 
 0 FILE 10230 - stringStudsLQ-1_subPart1.ldr
-0 stringStudsLQ-1_subPart1
+0 Rope segment chain subpart of 57 cylinder links (LDCad generated)
 0 Name: 10230 - stringStudsLQ-1_subPart1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3091,7 +3091,7 @@
 
 
 0 FILE 10230 - ldcLQRopeSeg.dat
-0 ldcLQRopeSeg
+0 Single rope-link cylinder segment primitive (LDCad generated)
 0 Name: 10230 - ldcLQRopeSeg.dat
 0 Author: LDCad
 0 UNOFFICIAL PRIMITIVE
@@ -3105,7 +3105,7 @@
 1 16 0 0 0 1.5 0 0 0 1 0 0 0 1.5 4-4cyli.dat
 
 0 FILE 10230 - ldcRopeEnd.dat
-0 ldcRopeEnd
+0 Rope end cylinder primitive (LDCad generated)
 0 Name: 10230 - ldcRopeEnd.dat
 0 Author: LDCad
 0 UNOFFICIAL PART
@@ -3119,7 +3119,7 @@
 1 16 0 0 0 1.5 0 0 0 4 0 0 0 1.5 4-4cyli.dat
 
 0 FILE 10230 - clip14.dat
-0 clip14
+0 Clip geometry primitive built from rectangles, discs and open cylinders
 0 Name: 10230 - clip14.dat
 0 Author: Michael Heidemann [mikeheide]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -3235,7 +3235,7 @@
 5 24 5.375 -4 -0.998 5.375 4 -0.998 5.005 4 -2.779 6.54 4 0
 
 0 FILE s\10230 - 60601s01.dat
-0 60601s01
+0 Stud geometry subpart built from chords, boxes and open cylinders
 0 Name: s\10230 - 60601s01.dat
 0 Author: Ulrich Röder [UR]
 0 !LDRAW_ORG Unofficial_Subpart
