@@ -1,5 +1,5 @@
 0 FILE 10918 - main.ldr
-0 main
+0 Main model assembly that combines a Duplo truck, wheels, and decorative patterned parts into a complete build.
 0 Name: 10918 - main.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -9,7 +9,7 @@
 
 
 0 FILE 10918 - truck.ldr
-0 truck
+0 A white and dark azure Duplo truck built on a 2x6 car base with mudguards, four wheels, a printed brick showing children, and a crane hook assembly.
 0 Name: 10918 - truck.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -43,7 +43,7 @@
 
 
 0 FILE 10918 - 11377.dat
-0 11377
+0 A geometric sub-part composed of boxes and rectangles forming a structural shell or casing element.
 0 Name: 10918 - 11377.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -126,7 +126,7 @@
 1 16 -60 4 0 0 0 -1.5 0 4 0 6 0 0 box3u2p.dat
 
 0 FILE 10918 - 12589c02.dat
-0 12589c02
+0 A Duplo wheel assembly consisting of a rim, dark azure tyre, and black axle.
 0 Name: 10918 - 12589c02.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -147,7 +147,7 @@
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 10918 - 12588.dat
 
 0 FILE 10918 - 11170p01.dat
-0 11170p01
+0 A patterned decorative element depicting a boy, a girl, and a front design for printing on a Duplo brick.
 0 Name: 10918 - 11170p01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -1530,7 +1530,7 @@
 3 78 -40 29.299999 7.7 -40 29.299999 8 -40 30.299999 8.1
 
 0 FILE 10918 - 16195.dat
-0 16195
+0 A Duplo part sub-model with no direct pieces, serving as a container for referenced geometry.
 0 Name: 10918 - 16195.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -1545,7 +1545,7 @@
 1 16 0 72 0 12 0 0 0 -54 0 0 0 12 48\4-4con2.dat
 
 0 FILE 10918 - 15450.dat
-0 15450
+0 A geometric sub-part built from rectangles, cylinders, circles, and a snapping ridge, forming a Duplo connection element.
 0 Name: 10918 - 15450.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -1607,7 +1607,7 @@
 4 16 16.5 -96 -34 22.5 -96 -20 -22.5 -96 -20 -16.5 -96 -34
 
 0 FILE 10918 - 15449.dat
-0 15449
+0 A detailed geometric sub-part using hinge pins, cylinders, rings, and rectangles to form a complex curved mechanical component.
 0 Name: 10918 - 15449.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -1910,7 +1910,7 @@
 2 24 -3 16.3988 9 -3 17.553499 7.2709
 
 0 FILE s\10918 - 11377s01.dat
-0 11377s01
+0 A geometric sub-part made of cylinders, chords, and rectangles forming a rounded structural detail of part 11377.
 0 Name: s\10918 - 11377s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -2092,7 +2092,7 @@
 5 24 98 21.6 68.900002 97.199997 14.5 69 97.199997 17.9 69 99.199997 23.200001 68.800003
 
 0 FILE s\10918 - 41989s01.dat
-0 41989s01
+0 A geometric sub-part composed of cylinders, cones, discs, and rectangles forming a rounded tubular or nozzle-like detail.
 0 Name: s\10918 - 41989s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -2276,7 +2276,7 @@
 2 24 61.5 25.2017 36 61.5 25.2017 23.236
 
 0 FILE 10918 - 5-16con5.dat
-0 5-16con5
+0 A primitive cone segment (5/16 sweep) generated for LDraw geometry.
 0 Name: 10918 - 5-16con5.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -2299,7 +2299,7 @@
 0 // Build by LDPartEditor (PrimGen 2.X)
 
 0 FILE 48\10918 - tm04o2500.dat
-0 tm04o2500
+0 A 48-segment torus tube primitive with major radius 4 and minor radius 1.
 0 Name: 48\10918 - tm04o2500.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_48_Primitive
@@ -2477,7 +2477,7 @@
 5 24 0 0.231 1.0957 0 0.25 1 0.143 0.231 1.0863 -0.1442 0.231 1.0957
 
 0 FILE 10918 - 12589.dat
-0 12589
+0 A geometric sub-part built from cylinders, cones, rings, bumps, and chords forming the detailed body of a Duplo wheel rim.
 0 Name: 10918 - 12589.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -2650,7 +2650,7 @@
 1 16 0 11.6 -7 1.5607 0 0 0 1 0 0 0 7 rect3.dat
 
 0 FILE 10918 - 12590.dat
-0 12590
+0 A geometric sub-part using cylinders, rings, and a cone to form a hub or axle-hole component for a Duplo wheel.
 0 Name: 10918 - 12590.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -2709,7 +2709,7 @@
 1 16 0 0 -24 0 0 1.66667 1.66667 0 0 0 1 0 4-4rin12.dat
 
 0 FILE s\10918 - 12590s01.dat
-0 12590s01
+0 A sub-part of the 12590 component with no direct pieces, relying on referenced geometry.
 0 Name: s\10918 - 12590s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -2837,7 +2837,7 @@
 5 24 -3.9811 -30.244301 -3.8 -7.8951 -29.4664 -3.8 -11.6749 -28.185101 -3.8 -5.6091 -31.174601 -4.193
 
 0 FILE 48\10918 - 1-24con32.dat
-0 1-24con32
+0 A 1/24 sweep cone primitive (radius 32) generated for LDraw geometry.
 0 Name: 48\10918 - 1-24con32.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_48_Primitive
@@ -2854,7 +2854,7 @@
 0 // Build by LDPartEditor (PrimGen 2.X)
 
 0 FILE 48\10918 - 1-24con15.dat
-0 1-24con15
+0 A 1/24 sweep cone primitive (radius 15) generated for LDraw geometry.
 0 Name: 48\10918 - 1-24con15.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_48_Primitive
@@ -2871,7 +2871,7 @@
 0 // Build by LDPartEditor (PrimGen 2.X)
 
 0 FILE 48\10918 - 1-24ring3.dat
-0 1-24ring3
+0 A 1/24 sweep ring primitive (radius 3) generated for LDraw geometry.
 0 Name: 48\10918 - 1-24ring3.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_48_Primitive
@@ -2884,7 +2884,7 @@
 0 // Build by LDPartEditor (PrimGen 2.X)
 
 0 FILE 10918 - 12588.dat
-0 12588
+0 A geometric sub-part made of cylinders, cones, discs, chords, and rings forming a detailed tubular or column element.
 0 Name: 10918 - 12588.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -2959,7 +2959,7 @@
 1 16 0 0 31.5 0 0 1.14286 1.14286 0 0 0 1 0 4-4ring6.dat
 
 0 FILE s\10918 - 11170s01.dat
-0 11170s01
+0 A geometric sub-part of part 11170 built from boxes, cylinders, sloped cylinders, and rectangles forming a shaped Duplo brick body.
 0 Name: s\10918 - 11170s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -3078,7 +3078,7 @@
 2 24 1.5 44.017799 15.7017 1.5 4.0178 15.7017
 
 0 FILE 10918 - stug7-1x2.dat
-0 stug7-1x2
+0 A 1x2 stud geometry sub-part with no direct pieces, referencing standard Duplo stud geometry.
 0 Name: 10918 - stug7-1x2.dat
 0 Author: Steffen [Steffen]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -3090,7 +3090,7 @@
 1 16 20 0 0 1 0 0 0 1 0 0 0 1 stud7.dat
 
 0 FILE s\10918 - 16195s01.dat
-0 16195s01
+0 A small geometric sub-part of part 16195 composed of four box faces forming a notched structural detail.
 0 Name: s\10918 - 16195s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -3178,7 +3178,7 @@
 2 24 0 25 -20.6667 1.5 25 -20.567801
 
 0 FILE s\10918 - 47408s01.dat
-0 47408s01
+0 A geometric sub-part built from cylinders, rings, chords, discs, and boxes forming a hollow rounded connector element.
 0 Name: s\10918 - 47408s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -3335,7 +3335,7 @@
 2 24 -36 95 18.5 -36 76 18.5
 
 0 FILE s\10918 - 15450s01.dat
-0 15450s01
+0 A detailed geometric sub-part of part 15450 using a hinge socket, cylinders, rings, discs, and rectangles to form a hinge connection mechanism.
 0 Name: s\10918 - 15450s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -3627,7 +3627,7 @@
 5 24 13.1992 -72 13.1992 13.1992 -62 13.1992 7.1433 -72 17.245701 15.7408 -72 9.3962
 
 0 FILE 10918 - dhingesocket.dat
-0 dhingesocket
+0 A Duplo hinge socket primitive built from cylinders, discs, rings, cones, and chords forming the socket half of a hinge joint.
 0 Name: 10918 - dhingesocket.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -3796,7 +3796,7 @@
 4 16 28 0 5.86667 26.5 0 7.8222 26.5 -8.2635 7.8222 28 -7.6362 5.8667
 
 0 FILE 10918 - dsnapridge.dat
-0 dsnapridge
+0 A snap-fit ridge connector with pins, tubes, and cylindrical segments forming a locking joint.
 0 Name: 10918 - dsnapridge.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -3948,7 +3948,7 @@
 1 16 0 -10.5 0 -2.14599 0 -10.78864 0 -1 0 10.78864 0 -2.14599 10918 - 3-16tang.dat
 
 0 FILE 10918 - 3-16tang.dat
-0 3-16tang
+0 An empty geometric tangent reference part with no constituent pieces.
 0 Name: 10918 - 3-16tang.dat
 0 Author: Massimo Maso [Sirio]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -3961,7 +3961,7 @@
 3 16 0.7071 0 0.7071 0.5665 0 0.8478 0.3827 0 0.9239
 
 0 FILE 10918 - dhingepin2.dat
-0 dhingepin2
+0 A hinge pin with a spherical end, cylindrical shaft, and ring forming a pivoting joint.
 0 Name: 10918 - dhingepin2.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Primitive

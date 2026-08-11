@@ -1,5 +1,5 @@
 0 FILE 10315 - main.ldr
-0 main
+0 Landscaped Japanese garden scene with a base of multi-colored plates and a traditional tea house surrounded by cherry trees, rocks, lanterns, and a bridge.
 0 Name: 10315 - main.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Redistributable under CCAL version 4.0 : see CAreadme.txt
@@ -1408,7 +1408,7 @@
 0 STEP
 1 70 320 -46 80 1 0 0 0 1 0 0 0 1 10315 - pine-tree-twisted.ldr
 0 FILE 10315 - tea-house.ldr
-0 tea-house
+0 Traditional tea house structure with a dark tan floor, lattice fencing, black windows, and reddish brown decorative trim.
 0 Name: 10315 - tea-house.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Redistributable under CCAL version 4.0 : see CAreadme.txt
@@ -1563,7 +1563,7 @@
 0 STEP
 1 484 0 -16 0 0 0 1 0 1 0 -1 0 0 10315 - tea-house-walls-and-roof.ldr
 0 FILE 10315 - tea-house-support.ldr
-0 tea-house-support
+0 Simple support pillar made of two dark orange 1x1 bricks.
 0 Name: 10315 - tea-house-support.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Redistributable under CCAL version 4.0 : see CAreadme.txt
@@ -1573,7 +1573,7 @@
 0 // Brick  1 x  1 (dark_orange)
 1 484 0 24 0 1 0 0 0 1 0 0 0 1 3005.dat
 0 FILE 10315 - tea-house-tea-service.ldr
-0 tea-house-tea-service
+0 Tea ceremony set with a teapot, rice bowls, whisk, and serving table in dark orange and tan tones.
 0 Name: 10315 - tea-house-tea-service.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Redistributable under CCAL version 4.0 : see CAreadme.txt
@@ -1616,7 +1616,7 @@
 0 // Minifig Whisk (tan)
 1 19 40 -22 20 0.707107 0.707107 0 0 0 1 0.707107 -0.707107 0 29636.dat
 0 FILE 10315 - tea-house-cauldron.ldr
-0 tea-house-cauldron
+0 Small black cooking pot with transparent round elements representing contents.
 0 Name: 10315 - tea-house-cauldron.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Redistributable under CCAL version 4.0 : see CAreadme.txt
@@ -1628,7 +1628,7 @@
 0 // Plate  1 x  1 Round (trans_clear)
 1 47 0 -19 0 1 0 0 0 1 0 0 0 1 6141.dat
 0 FILE 10315 - tea-house-utensil.ldr
-0 tea-house-utensil
+0 Small decorative utensil built from a reddish brown pin piece and a tan bar element.
 0 Name: 10315 - tea-house-utensil.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Redistributable under CCAL version 4.0 : see CAreadme.txt
@@ -1638,7 +1638,7 @@
 0 // Plate  1 x  1 Round with Bar (tan)
 1 19 0 -8 0 1 0 0 0 -1 0 0 0 -1 32828.dat
 0 FILE 10315 - tea-house-walls-and-roof.ldr
-0 tea-house-walls-and-roof
+0 Tea house walls with many windows and sloped brown corner elements forming the structural frame.
 0 Name: 10315 - tea-house-walls-and-roof.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Redistributable under CCAL version 4.0 : see CAreadme.txt
@@ -1814,7 +1814,7 @@
 0 STEP
 1 16 0 -208 0 1 0 0 0 1 0 0 0 1 10315 - tea-house-roof-top.ldr
 0 FILE 10315 - tea-house-roof.ldr
-0 tea-house-roof
+0 Tiled roof section with sloped dark brown shingles, reddish brown plates, and pearl gold ornamental handles.
 0 Name: 10315 - tea-house-roof.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Redistributable under CCAL version 4.0 : see CAreadme.txt
@@ -1936,7 +1936,7 @@
 1 308 50 -32 -50 1 0 0 0 1 0 0 0 1 3675.dat
 0 STEP
 0 FILE 10315 - tea-house-roof-top.ldr
-0 tea-house-roof-top
+0 Decorative roof finial made of pearl gold elements including two fez-shaped pieces.
 0 Name: 10315 - tea-house-roof-top.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Redistributable under CCAL version 4.0 : see CAreadme.txt
@@ -1951,7 +1951,7 @@
 0 // Plate  1 x  1 Round with Swirled Top (pearl_gold)
 1 297 0 -32 0 0 0 -1 0 1 0 1 0 0 15470.dat
 0 FILE 10315 - lily-pad.ldr
-0 lily-pad
+0 Decorative lily pad made from a green inverted dish with lavender and orange flower accents.
 0 Name: 10315 - lily-pad.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Redistributable under CCAL version 4.0 : see CAreadme.txt
@@ -1963,7 +1963,7 @@
 0 // Minifig Tuft (bright_light_orange)
 1 191 0 -8 0 1 0 0 0 1 0 0 0 1 10315 - 68212.dat
 0 FILE 10315 - bridge-anchor.ldr
-0 bridge-anchor
+0 Small grey and green structural anchor piece that secures the bridge using clip plates.
 0 Name: 10315 - bridge-anchor.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Redistributable under CCAL version 4.0 : see CAreadme.txt
@@ -1981,7 +1981,7 @@
 0 // Plate  1 x  2 with Single Clip on Top (Thick C-Clip) (medium_nougat)
 1 84 0 -8 -10 0 0 1 0 1 0 -1 0 0 44861.dat
 0 FILE 10315 - border-curve-left.ldr
-0 border-curve-left
+0 Left curved border element built from a black handle plate and a curved slope brick.
 0 Name: 10315 - border-curve-left.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Redistributable under CCAL version 4.0 : see CAreadme.txt
@@ -1991,7 +1991,7 @@
 0 // Slope Brick Curved  2 x  2 x  0.667 (black)
 1 0 0 8 -10 1 0 0 0 1 0 0 0 1 15068.dat
 0 FILE 10315 - border-curve-right.ldr
-0 border-curve-right
+0 Right curved border element built from a black handle plate and a curved slope brick.
 0 Name: 10315 - border-curve-right.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Redistributable under CCAL version 4.0 : see CAreadme.txt
@@ -2001,7 +2001,7 @@
 0 // Slope Brick Curved  2 x  2 x  0.667 (black)
 1 0 0 8 -10 1 0 0 0 1 0 0 0 1 15068.dat
 0 FILE 10315 - border-curve-middle.ldr
-0 border-curve-middle
+0 Middle curved border section with a dark green plate and three curved black slope bricks.
 0 Name: 10315 - border-curve-middle.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Redistributable under CCAL version 4.0 : see CAreadme.txt
@@ -2016,7 +2016,7 @@
 0 // Slope Brick Curved  2 x  2 x  0.667 (black)
 1 0 -40 8 -10 1 0 0 0 1 0 0 0 1 15068.dat
 0 FILE 10315 - foot.ldr
-0 foot
+0 Single black rubber tire used as a base foot or support.
 0 Name: 10315 - foot.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Redistributable under CCAL version 4.0 : see CAreadme.txt
@@ -2025,7 +2025,7 @@
 0 // Tyre  4/ 80 x  8 Single Smooth Type 2 (rubber_black)
 1 256 0 19 0 1 0 0 0 0 -1 0 1 0 59895.dat
 0 FILE 10315 - rock-piece.ldr
-0 rock-piece
+0 Rugged rock formation made of light bluish grey slopes, wedges, and log bricks with brown and green accents.
 0 Name: 10315 - rock-piece.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Redistributable under CCAL version 4.0 : see CAreadme.txt
@@ -2065,7 +2065,7 @@
 0 // Slope Brick 31  1 x  1 x  0.667 (light_bluish_grey)
 1 71 30 -72 -10 -1 0 0 0 1 0 0 0 -1 54200.dat
 0 FILE 10315 - lantern.ldr
-0 lantern
+0 Stone garden lantern assembled from a cone, multi-stud brick, inverted dish, and domed cylinder.
 0 Name: 10315 - lantern.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Redistributable under CCAL version 4.0 : see CAreadme.txt
@@ -2080,7 +2080,7 @@
 0 // Cylinder Domed  1 x  1 x  1.667 with Bar (light_bluish_grey)
 1 71 0 -24 0 1 0 0 0 1 0 0 0 1 58176.dat
 0 FILE 10315 - tree-small-conical.ldr
-0 tree-small-conical
+0 Small conical tree built from a dark green jagged cone and fez top on a black bar trunk.
 0 Name: 10315 - tree-small-conical.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Redistributable under CCAL version 4.0 : see CAreadme.txt
@@ -2096,7 +2096,7 @@
 0 // Cone  2 x  2 x  3 Jagged (dark_green)
 1 288 0 -80 0 1 0 0 0 1 0 0 0 1 28598.dat
 0 FILE 10315 - tea-house-pylon.ldr
-0 tea-house-pylon
+0 Small vertical pylon made of a reddish brown plate and a dark orange 1x1x3 brick.
 0 Name: 10315 - tea-house-pylon.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Redistributable under CCAL version 4.0 : see CAreadme.txt
@@ -2106,7 +2106,7 @@
 0 // Brick  1 x  1 x  3 (dark_orange)
 1 484 0 -72 0 1 0 0 0 1 0 0 0 1 14716.dat
 0 FILE 10315 - cherry-tree-1.ldr
-0 cherry-tree-1
+0 Blossoming cherry tree with a brown technic trunk and reddish brown tail-section foliage on a green base.
 0 Name: 10315 - cherry-tree-1.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Licenced under CC BY 4.0 : see CAreadme.txt
@@ -2148,7 +2148,7 @@
 0 // Animal Tail Section End (reddish_brown)
 1 70 84.72791 -210.918888 -18 -1 0 0 0 1 0 0 0 -1 40379.dat
 0 FILE 10315 - cherry-tree-trunk-1.ldr
-0 cherry-tree-trunk-1
+0 Cherry tree trunk segment built from reddish brown technic connectors, pins, and angle joints.
 0 Name: 10315 - cherry-tree-trunk-1.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Licenced under CC BY 4.0 : see CAreadme.txt
@@ -2166,7 +2166,7 @@
 0 // Technic Pin  1/2 with Friction (dark_bluish_grey)
 1 72 -10 -179.355371 89.355371 -1 0 0 0 -0.707107 -0.707107 0 -0.707107 0.707107 89678.dat
 0 FILE 10315 - cherry-tree-trunk-2.ldr
-0 cherry-tree-trunk-2
+0 Extended cherry tree trunk segment using technic axle connectors, pin joiners, and reddish brown elements.
 0 Name: 10315 - cherry-tree-trunk-2.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Licenced under CC BY 4.0 : see CAreadme.txt
@@ -2190,7 +2190,7 @@
 0 // Bar  2L with Thick Stop and Pin Holes (reddish_brown)
 1 70 0 -106 0 0 0 -1 0 1 0 1 0 0 78258.dat
 0 FILE 10315 - cherry-tree-2.ldr
-0 cherry-tree-2
+0 Larger blossoming cherry tree with a branching technic trunk, reddish brown foliage, and lime leaf accents.
 0 Name: 10315 - cherry-tree-2.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Licenced under CC BY 4.0 : see CAreadme.txt
@@ -2260,7 +2260,7 @@
 0 // Animal Tail Section End (reddish_brown)
 1 70 -10 -270.865545 -23.922012 1 0 0 0 1 0 0 0 1 40379.dat
 0 FILE 10315 - cherry-tree-trunk-3.ldr
-0 cherry-tree-trunk-3
+0 Short cherry tree trunk connector segment using technic pin joiners and axle-hole elements.
 0 Name: 10315 - cherry-tree-trunk-3.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Licenced under CC BY 4.0 : see CAreadme.txt
@@ -2273,7 +2273,7 @@
 0 // Technic Axle Hole with  2 Perpendicular Bar Tubes (reddish_brown)
 1 70 0 -30 0 1 0 0 0 0 -1 0 1 0 24122.dat
 0 FILE 10315 - cherry-tree-trunk-4.ldr
-0 cherry-tree-trunk-4
+0 Cherry tree trunk segment with technic axle connectors, a cone stop, and bar pin piece.
 0 Name: 10315 - cherry-tree-trunk-4.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Licenced under CC BY 4.0 : see CAreadme.txt
@@ -2288,7 +2288,7 @@
 0 // Bar  2L with Thick Stop and Pin Holes (reddish_brown)
 1 70 0 -46 0 1 0 0 0 1 0 0 0 1 78258.dat
 0 FILE 10315 - cherry-tree-blossoms.ldr
-0 cherry-tree-blossoms
+0 A flowering cherry blossom branch with white leaves and clusters of pink and dark pink petals.
 0 Name: 10315 - cherry-tree-blossoms.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Licenced under CC BY 4.0 : see CAreadme.txt
@@ -2310,7 +2310,7 @@
 0 // Plate  1 x  1 Round with  3 Leaves (lime)
 1 27 0 0 0 -0.707107 0 0.707107 0 1 0 -0.707107 0 -0.707107 32607.dat
 0 FILE 10315 - pagoda.ldr
-0 pagoda
+0 A dark bluish-grey pagoda structure with green base, technic connections, and inverted slope corners topped with truncated cones.
 0 Name: 10315 - pagoda.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Licenced under CC BY 4.0 : see CAreadme.txt
@@ -2371,7 +2371,7 @@
 0 // Cone  1.5 x  1.5 x  0.667 Truncated (dark_bluish_grey)
 1 72 0 -146 2 0.707107 0 -0.707107 0 1 0 0.707107 0 0.707107 33492.dat
 0 FILE 10315 - pine-tree.ldr
-0 pine-tree
+0 A reddish-brown pine tree trunk with green base and dark brown branch joiners built on a technic frame.
 0 Name: 10315 - pine-tree.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Licenced under CC BY 4.0 : see CAreadme.txt
@@ -2414,7 +2414,7 @@
 0 STEP
 1 288 0 -350 2 0.707107 0 0.707107 0 -1 0 0.707107 0 -0.707107 10315 - pine-tree-top.ldr
 0 FILE 10315 - pine-tree-branches.ldr
-0 pine-tree-branches
+0 Dark green serrated leaf clusters attached to a round reddish-brown plate with center stud.
 0 Name: 10315 - pine-tree-branches.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Licenced under CC BY 4.0 : see CAreadme.txt
@@ -2434,7 +2434,7 @@
 0 // Plate  2 x  2 Round with  1 Centre Stud (reddish_brown)
 1 70 0 -16 0 1 0 0 0 1 0 0 0 1 18674.dat
 0 FILE 10315 - pine-tree-top.ldr
-0 pine-tree-top
+0 A tree top crown of dark green serrated leaves mounted on a round reddish-brown brick.
 0 Name: 10315 - pine-tree-top.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Licenced under CC BY 4.0 : see CAreadme.txt
@@ -2448,7 +2448,7 @@
 0 // Brick  1 x  1 Round with Hollow Stud (reddish_brown)
 1 70 0 -40 0 -1 0 0 0 1 0 0 0 -1 3062b.dat
 0 FILE 10315 - bamboo.ldr
-0 bamboo
+0 A green bamboo base with socket joints enabling poseable bamboo stalk connections.
 0 Name: 10315 - bamboo.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Licenced under CC BY 4.0 : see CAreadme.txt
@@ -2480,7 +2480,7 @@
 0 STEP
 1 0 8 -30 10 -0.707107 0 -0.707107 0.40558 0.819152 -0.40558 0.579228 -0.573576 -0.579228 10315 - bamboo-stalk-4.ldr
 0 FILE 10315 - bamboo-stalk-1.ldr
-0 bamboo-stalk-1
+0 A green bamboo stalk segment with bright green cylinders, ball-joint connections, and bamboo leaf clusters.
 0 Name: 10315 - bamboo-stalk-1.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Licenced under CC BY 4.0 : see CAreadme.txt
@@ -2515,7 +2515,7 @@
 0 // Plate  1 x  1 Round with  3 Leaves (lime)
 1 27 0 -215 0 -1 0 0 0 1 0 0 0 -1 32607.dat
 0 FILE 10315 - bamboo-stalk-2.ldr
-0 bamboo-stalk-2
+0 A slightly taller green bamboo stalk segment with extra cylinders, ball-joint connections, and bamboo leaf clusters.
 0 Name: 10315 - bamboo-stalk-2.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Licenced under CC BY 4.0 : see CAreadme.txt
@@ -2553,7 +2553,7 @@
 0 // Plate  1 x  1 Round with  3 Leaves (lime)
 1 27 0 -247 0 0 0 1 0 1 0 -1 0 0 32607.dat
 0 FILE 10315 - bamboo-stalk-3.ldr
-0 bamboo-stalk-3
+0 A shorter bamboo stalk segment with a black lightsaber blade core and lime bamboo leaf clusters.
 0 Name: 10315 - bamboo-stalk-3.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Licenced under CC BY 4.0 : see CAreadme.txt
@@ -2578,7 +2578,7 @@
 0 // Plant Brick  1 x  1 Round with 3 Bamboo Leaves (lime)
 1 27 0 -136 0 0 0 1 0 1 0 -1 0 0 30176.dat
 0 FILE 10315 - bamboo-stalk-4.ldr
-0 bamboo-stalk-4
+0 A mid-height bamboo stalk segment with a black lightsaber blade core and lime bamboo leaf clusters.
 0 Name: 10315 - bamboo-stalk-4.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Licenced under CC BY 4.0 : see CAreadme.txt
@@ -2606,7 +2606,7 @@
 0 // Plant Brick  1 x  1 Round with 3 Bamboo Leaves (lime)
 1 27 0 -168 0 0 0 1 0 1 0 -1 0 0 30176.dat
 0 FILE 10315 - pine-tree-twisted.ldr
-0 pine-tree-twisted
+0 A twisted pine tree base with green technic mounting bricks and a bladed reddish-brown tail piece for the trunk.
 0 Name: 10315 - pine-tree-twisted.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Licenced under CC BY 4.0 : see CAreadme.txt
@@ -2632,7 +2632,7 @@
 1 70 13.611894 -233.847684 2 -0.96225 -0.258819 -0.084186 -0.257834 0.965926 -0.022558 0.087156 0 -0.996195 10315 - pine-twisted-branches-2.ldr
 1 70 13.57564 -180.951794 28 -0.707107 -0.707107 0 -0.707107 0.707107 0 0 0 -1 10315 - pine-twisted-branches-2.ldr
 0 FILE 10315 - pine-twisted-branches-1.ldr
-0 pine-twisted-branches-1
+0 A cluster of dark green large leaves and small leaf plates forming twisted pine foliage.
 0 Name: 10315 - pine-twisted-branches-1.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Licenced under CC BY 4.0 : see CAreadme.txt
@@ -2645,7 +2645,7 @@
 0 // Plate  1 x  1 Round with  3 Leaves (dark_green)
 1 288 -20 -8 -40 -0.707107 0 -0.707107 0 1 0 0.707107 0 -0.707107 32607.dat
 0 FILE 10315 - pine-twisted-branch-1.ldr
-0 pine-twisted-branch-1
+0 A reddish-brown twisted branch built from a mechanical arm and angular handlebars.
 0 Name: 10315 - pine-twisted-branch-1.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Licenced under CC BY 4.0 : see CAreadme.txt
@@ -2655,7 +2655,7 @@
 0 // Minifig Handlebars with Angular Handles (reddish_brown)
 1 70 0 0 0 0 0 -1 0 1 0 1 0 0 98397.dat
 0 FILE 10315 - pine-twisted-branch-2.ldr
-0 pine-twisted-branch-2
+0 A reddish-brown twisted branch with a mechanical arm, handlebars, and a small dark green leaf accent.
 0 Name: 10315 - pine-twisted-branch-2.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Licenced under CC BY 4.0 : see CAreadme.txt
@@ -2667,7 +2667,7 @@
 0 // Plate  1 x  1 Round with  3 Leaves (dark_green)
 1 288 -7.191818 -22.627406 26 0 0.866025 -0.5 0 0.5 0.866025 1 0 0 32607.dat
 0 FILE 10315 - pine-twisted-branches-2.ldr
-0 pine-twisted-branches-2
+0 A fuller cluster of dark green large leaves and multiple leaf plates forming twisted pine foliage.
 0 Name: 10315 - pine-twisted-branches-2.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Licenced under CC BY 4.0 : see CAreadme.txt
@@ -2682,7 +2682,7 @@
 0 // Plate  1 x  1 Round with  3 Leaves (dark_green)
 1 288 -40 -8 40 -0.707107 0 -0.707107 0 1 0 0.707107 0 -0.707107 32607.dat
 0 FILE 10315 - bridge.ldr
-0 bridge
+0 A red arching bridge structure made of tube handles and parallel mechanical arm clips.
 0 Name: 10315 - bridge.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Licenced under CC BY 4.0 : see CAreadme.txt
@@ -2728,7 +2728,7 @@
 0 // Minifig Mechanical Arm with Clips Parallel (red)
 1 4 180 -40.055896 0 0 0.759957 0.649973 0 0.649973 -0.759957 -1 0 0 30377.dat
 0 FILE 10315 - bridge-side-1.ldr
-0 bridge-side-1
+0 A flexible curved bridge side railing formed from a rigid 3mm hose with generated segment geometry.
 0 Name: 10315 - bridge-side-1.ldr
 0 Author: LDCad
 0 !LICENSE Licenced under CC BY 4.0 : see CAreadme.txt
@@ -4567,7 +4567,7 @@
 5 24 -13.77526665 154.72633362 -1.41420007 -12.82723999 153.05630493 -1.41419995 -14.3371439 154.40193176 -1.84780002 -13.39975834 154.94313049 -0.76540011
 5 24 -14.3371439 154.40193176 -1.84780002 -13.39437485 152.74118042 -1.84780002 -15 154.01924133 -2 -13.77526665 154.72633362 -1.41420007
 0 FILE 10315 - bridge-side-2.ldr
-0 bridge-side-2
+0 A mirrored flexible curved bridge side railing formed from a rigid 3mm hose with generated segment geometry.
 0 Name: 10315 - bridge-side-2.ldr
 0 Author: LDCad
 0 !LICENSE Licenced under CC BY 4.0 : see CAreadme.txt
@@ -6406,7 +6406,7 @@
 5 24 -13.77526665 154.72633362 -1.41420007 -12.82723999 153.05630493 -1.41419995 -14.3371439 154.40193176 -1.84780002 -13.39975834 154.94313049 -0.76540011
 5 24 -14.3371439 154.40193176 -1.84780002 -13.39437485 152.74118042 -1.84780002 -15 154.01924133 -2 -13.77526665 154.72633362 -1.41420007
 0 FILE 10315 - bridge-deck.ldr
-0 bridge-deck
+0 A medium nougat bridge deck tile with red side clips for attaching to the bridge structure.
 0 Name: 10315 - bridge-deck.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Licenced under CC BY 4.0 : see CAreadme.txt
@@ -6418,7 +6418,7 @@
 0 // Plate  1 x  2 with Clip Horizontal on Side (Thick C-Clip) (red)
 1 4 0 -2 10 -1 0 0 0 1 0 0 0 -1 11476.dat
 0 FILE 10315 - bridge-railing-arm.ldr
-0 bridge-railing-arm
+0 A single red mechanical arm with parallel clips used as a bridge railing support.
 0 Name: 10315 - bridge-railing-arm.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Licenced under CC BY 4.0 : see CAreadme.txt
@@ -6427,7 +6427,7 @@
 1 4 0 0 0 1 0 0 0 0.953717 -0.300705 0 0.300705 0.953717 30377.dat
 1 4 -4 0 0 0 8 0 -1 0 0 0 0 1 10315 - ldcRigid3mmHoseSeg.dat
 0 FILE 10315 - bridge-railing.ldr
-0 bridge-railing
+0 A flexible curved bridge railing formed from a rigid 3mm hose with generated segment geometry.
 0 Name: 10315 - bridge-railing.ldr
 0 Author: LDCad
 0 !LICENSE Licenced under CC BY 4.0 : see CAreadme.txt
@@ -8358,7 +8358,7 @@
 5 24 -13.77526665 154.72633362 -1.41420007 -12.82470894 153.05175781 -1.41419995 -14.3371439 154.40193176 -1.84780002 -13.39975834 154.94313049 -0.76540011
 5 24 -14.3371439 154.40193176 -1.84780002 -13.39185429 152.73666382 -1.84780002 -15 154.01924133 -2 -13.77526665 154.72633362 -1.41420007
 0 FILE 10315 - 68212.dat
-0 68212
+0 A cylindrical primitive part with open cylinder and quarter-disc cutouts.
 0 Name: 10315 - 68212.dat
 0 Author: Vincent Messenet [Cheenzo]
 0 !LDRAW_ORG Unofficial_Part
@@ -10784,7 +10784,7 @@
 5 24 -2.71099997 -10.58600044 5.36100006 -3.3440001 -10.43500042 4.80000019 -3.97799993 -10.24400043 5.46500015 -2.7420001 -10.00899982 4.18200016
 5 24 -1.39499998 -9.92599964 4.63700008 -0.87300003 -10.5010004 4.59499979 -0.036 -9.69900036 4.21899986 -1.17299998 -11.04800034 5.23699999
 0 FILE 10315 - 40145.dat
-0 40145
+0 A round plate primitive with rings, cones, and chords forming a ribbed disc shape.
 0 Name: 10315 - 40145.dat
 0 Author: Evert-Jan Boer [ejboer]
 0 !LDRAW_ORG Unofficial_Part
@@ -10853,7 +10853,7 @@
 0 // Ring  4 x 1.0 (main_colour)
 1 16 0 24 0 2 0 0 0 -1 0 0 0 2 4-4ring4.dat
 0 FILE 10315 - 67361.dat
-0 67361
+0 A technic connector primitive with one-sided hole, axle teeth, and a three-face box body.
 0 Name: 10315 - 67361.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -10915,7 +10915,7 @@
 5 24 0 -82.43340302 13.48649979 0 -67.86199951 15.5909996 -5.12879992 -82.19120026 13.71829987 5.12879992 -82.19120026 13.71829987
 5 24 0 -54.30199814 19.82500076 -0.0002 -69.57479858 20.13549995 5.38100004 -69.54370117 19.2446003 -5.38100004 -69.54370117 19.2446003
 0 FILE 10315 - 51274.dat
-0 51274
+0 A complex technic primitive part with pins, cylinders, rings, and multiple tube sub-segments.
 0 Name: 10315 - 51274.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Part

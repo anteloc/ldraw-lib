@@ -1,5 +1,5 @@
 0 FILE 17101-1 - main.ldr
-0 main
+0 Top-level assembly for Frankie the Cat, a LEGO Boost robotic cat with color sensor, interactive motor, movable ears, face, body, legs, tail, and accessory toys.
 0 Name: 17101-1 - main.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -13,7 +13,7 @@
 1 0 60 -24 -460 -0.921 0 0.391 0 1 0 -0.391 0 -0.921 17101-1 - slug.ldr
 
 0 FILE 17101-1 - colorsensor.ldr
-0 colorsensor
+0 Mounting bracket built from plates and technic bricks that houses the color and distance sensor.
 0 Name: 17101-1 - colorsensor.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -37,7 +37,7 @@
 1 15 0 -40 0 1 0 0 0 1 0 0 0 1 87079.dat
 
 0 FILE 17101-1 - powerFunc2Color-LQ-1.ldr
-0 powerFunc2Color-LQ-1
+0 Color and distance sensor assembly with cable routing harness and plug stub.
 0 Name: 17101-1 - powerFunc2Color-LQ-1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -81,7 +81,7 @@
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 17101-1 - powerFunc2Color-LQ-1 subPart 1.ldr
 
 0 FILE 17101-1 - powerFunc2Color-LQ-1 subPart 1.ldr
-0 powerFunc2Color-LQ-1 subPart 1
+0 Cable routing subpart containing the modeled wire segments for the color sensor cable.
 0 Name: 17101-1 - powerFunc2Color-LQ-1 subPart 1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -226,7 +226,7 @@
 1 16 53.160128 32.98225 239.996821 -0.021166 3.999093 0.002383 0.999726 0.084566 0.010003 0.00995 0.010377 -0.999947 u9218.dat
 
 0 FILE 17101-1 - powerFunc2MotorInteractive-LQ-1.ldr
-0 powerFunc2MotorInteractive-LQ-1
+0 Interactive motor assembly with cable routing harness and plug stub.
 0 Name: 17101-1 - powerFunc2MotorInteractive-LQ-1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -270,7 +270,7 @@
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 17101-1 - powerFunc2MotorInteractive-LQ-1 subPart 1.ldr
 
 0 FILE 17101-1 - powerFunc2MotorInteractive-LQ-1 subPart 1.ldr
-0 powerFunc2MotorInteractive-LQ-1 subPart 1
+0 Cable routing subpart containing the modeled wire segments for the interactive motor cable.
 0 Name: 17101-1 - powerFunc2MotorInteractive-LQ-1 subPart 1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -399,7 +399,7 @@
 1 16 54.299162 147.015707 119.998932 -0.022397 3.998978 -0.003082 -0.999731 -0.089658 -0.005908 -0.005976 0.011795 0.999978 u9218.dat
 
 0 FILE 17101-1 - ears.ldr
-0 ears
+0 Articulated cat ears built from technic beams, pins, towballs, and angle connectors with dark azure curved slope shells and pink inner detail.
 0 Name: 17101-1 - ears.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -472,7 +472,7 @@
 1 71 129.976 -45.836 -16.236 -0.338 -0.341 0.877 0.897 -0.399 0.191 0.285 0.851 0.441 17101-1 - 14418.dat
 
 0 FILE 17101-1 - face.ldr
-0 face
+0 Cat face structure using round plates and bricks for the head, with lime dishes for eyes and decorative orange tile accents.
 0 Name: 17101-1 - face.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -624,7 +624,7 @@
 1 1 -59.729 10.011 -34.014 0 -0.009 1 0 1 0.009 -1 0 0 4274.dat
 
 0 FILE 17101-1 - skull.ldr
-0 skull
+0 Inner skull frame made of rounded corner plates and curved slopes forming the structural core of the head.
 0 Name: 17101-1 - skull.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -668,7 +668,7 @@
 1 321 20 -16 90 -1 0 0 0 1 0 0 0 -1 93606.dat
 
 0 FILE 17101-1 - toy.ldr
-0 toy
+0 Small play accessory shaped from white and orange cones on an axle with a bevel gear, resembling a toy or lure.
 0 Name: 17101-1 - toy.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -688,7 +688,7 @@
 1 25 0 -162 0 1 0 0 0 1 0 0 0 1 3942c.dat
 
 0 FILE 17101-1 - bodybackright.ldr
-0 bodybackright
+0 Right rear body panel assembly using long technic bricks, pins, brackets, and studded plates for structural support.
 0 Name: 17101-1 - bodybackright.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -773,7 +773,7 @@
 0 STEP
 
 0 FILE 17101-1 - bodybackleft.ldr
-0 bodybackleft
+0 Left rear body panel assembly using long technic bricks, pins, brackets, and studded plates for structural support.
 0 Name: 17101-1 - bodybackleft.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -840,7 +840,7 @@
 1 321 20 -30 -80 0 -1 0 0 0 -1 1 0 0 32316.dat
 
 0 FILE 17101-1 - back.ldr
-0 back
+0 Curved back shell formed from wedge plates, slope plates, and tiles over a technic plate frame.
 0 Name: 17101-1 - back.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -881,7 +881,7 @@
 1 25 50 -16 10 -1 0 0 0 1 0 0 0 -1 98138.dat
 
 0 FILE 17101-1 - tailbase.ldr
-0 tailbase
+0 Articulated tail base mechanism using technic beams, long pins, and a bent beam for the tail mounting joint.
 0 Name: 17101-1 - tailbase.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -917,7 +917,7 @@
 1 1 20 40 60 1 0 0 0 0 -1 0 1 0 6558.dat
 
 0 FILE 17101-1 - frontleg.ldr
-0 frontleg
+0 Front leg assembly with a long technic brick core, curved slope detailing, direction-arrow patterned tile, and bracket joints.
 0 Name: 17101-1 - frontleg.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -961,7 +961,7 @@
 1 25 10 152 -58 0 0 -1 -1 0 0 0 1 0 98138.dat
 
 0 FILE 17101-1 - rearleftfoot.ldr
-0 rearleftfoot
+0 Left rear paw built from brackets, curved-top bricks, a bent liftarm, and axle joints with studded detailing.
 0 Name: 17101-1 - rearleftfoot.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -999,7 +999,7 @@
 1 4 0 29.799 27.172 1 0 0 0 -0.141 0.99 0 -0.99 -0.141 32062.dat
 
 0 FILE 17101-1 - rearrightfoot.ldr
-0 rearrightfoot
+0 Right rear paw built from brackets, curved-top bricks, a bent liftarm, and axle joints with studded detailing.
 0 Name: 17101-1 - rearrightfoot.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1037,7 +1037,7 @@
 1 4 0 29.799 27.172 1 0 0 0 -0.141 0.99 0 -0.99 -0.141 32062.dat
 
 0 FILE 17101-1 - frankie.ldr
-0 frankie
+0 Core body chassis integrating the Boost Move Hub, large technic frame bricks, axles, pins, and sloped shell plates forming the cat's torso.
 0 Name: 17101-1 - frankie.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1649,7 +1649,7 @@
 0 STEP
 
 0 FILE 17101-1 - knot.ldr
-0 knot
+0 Small decorative orange assembly of a curved slope and triple-curved wedges on a plate, forming a bow or knot accent.
 0 Name: 17101-1 - knot.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1667,7 +1667,7 @@
 1 191 50 -24 0 0 0 1 0 1 0 -1 0 0 64225.dat
 
 0 FILE 17101-1 - birthdaycake.ldr
-0 birthdaycake
+0 Cylindrical birthday cake accessory built from stacked round bricks on an axle with bushes, topped by a wheel.
 0 Name: 17101-1 - birthdaycake.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1698,7 +1698,7 @@
 1 14 0 -155 0 0 1 0 0 0 1 1 0 0 32123b.dat
 
 0 FILE 17101-1 - caterpillar.ldr
-0 caterpillar
+0 Caterpillar creature accessory with a robot-face brick, elbow cylinders, and rounded plates on a technic base.
 0 Name: 17101-1 - caterpillar.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1731,7 +1731,7 @@
 1 0 31.27 -70 -14.71 0 -0.999 0.052 -1 0 0 0 -0.052 -0.999 25214.dat
 
 0 FILE 17101-1 - slug.ldr
-0 slug
+0 Simple black slug creature made from a brick base, large curved slopes, and bar antennae.
 0 Name: 17101-1 - slug.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1749,7 +1749,7 @@
 1 0 24.142 -32 -44.142 0.707 0 0.707 0 1 0 -0.707 0 0.707 6190.dat
 
 0 FILE 17101-1 - 26912.dat
-0 Electric Power Functions 2.0 Boost Colour & Distance Sensor
+0 Part definition for the Boost Colour and Distance Sensor, modeling its case, LEDs, phototransistor, and internal components.
 0 Name: 17101-1 - 26912.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -1782,7 +1782,7 @@
 
 
 0 FILE 17101-1 - 26913.dat
-0 Electric Power Functions 2.0 Boost Interactive Motor
+0 Part definition for the Boost Interactive Motor, modeling its case, axle hub, and motor bush.
 0 Name: 17101-1 - 26913.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -1801,7 +1801,7 @@
 
 
 0 FILE 17101-1 - 14418.dat
-0 Plate 1 x  2 with Socket Joint-8 with Friction
+0 Part definition for a plate with socket joint, containing no sub-pieces.
 0 Name: 17101-1 - 14418.dat
 0 Author: Tim Gould [timgould]
 0 !LDRAW_ORG Unofficial_Part
@@ -5818,7 +5818,7 @@
 
 
 0 FILE 17101-1 - u9356.dat
-0 ~Electric Power Functions 2.0 Boost Interactive Motor Back
+0 Rear housing of the Power Functions 2.0 Boost interactive motor, built from boxes, cylinders, and rectangular panels forming the motor back shell.
 0 Name: 17101-1 - u9356.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -6053,7 +6053,7 @@
 
 
 0 FILE s\17101-1 - 14418s01.dat
-0 ~Plate 1 x  2 with Socket Joint-8 with Friction
+0 Primitive geometry for a 1x2 plate with socket joint, composed of small boxes and cylinders forming the socket and plate structure.
 0 Name: s\17101-1 - 14418s01.dat
 0 Author: Tim Gould [timgould]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -6104,7 +6104,7 @@
 
 
 0 FILE 17101-1 - joint-8-socket-frica.dat
-0 Friction Socket Joint-8
+0 Friction socket joint-8 element built from cylindrical sections, spherical cut-offs, and surface panels forming a ball-and-socket connection.
 0 Name: 17101-1 - joint-8-socket-frica.dat
 0 Author: Tim Gould [timgould]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -6699,7 +6699,7 @@
 
 
 0 FILE s\17101-1 - 10187s01.dat
-0 ~Minifig Bladed Claw Spread
+0 Minifig bladed claw spread primitive with no direct pieces, serving as a shape subpart reference.
 0 Name: s\17101-1 - 10187s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -7107,7 +7107,7 @@
 
 
 0 FILE s\17101-1 - 57518s01.dat
-0 ~Technic Chain Tread 38
+0 Technic chain tread link segment formed from numerous rectangles, circles, and ring primitives defining the repeating tread geometry.
 0 Name: s\17101-1 - 57518s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -7733,7 +7733,7 @@
 
 
 0 FILE 17101-1 - toothb20.dat
-0 Single Tooth for Technic Bevel Gear 20 Tooth
+0 Single tooth for a Technic bevel gear (20-tooth), defined as a shape primitive with no direct pieces.
 0 Name: 17101-1 - toothb20.dat
 0 Author: Santeri Piippo [arezey]
 0 !LDRAW_ORG Unofficial_Primitive

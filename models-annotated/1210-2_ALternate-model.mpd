@@ -1,5 +1,5 @@
 0 FILE 1210-2 - main.ldr
-0 main
+0 Alternate model of the 1955 set 1210, a small town-plan shop building assembled from white bricks, printed window/door elements, and geometric structural submodels.
 0 Name: 1210-2 - main.ldr
 0 Author: N. W. Perry [Plastikean]
 0 !LDRAW_ORG Model
@@ -76,7 +76,7 @@
 
 
 0 FILE 1210-2 - u8012.dat
-0 u8012
+0 Detailed geometric component combining boxes, cylinders, discs, and rectangles with both flat and rounded surfaces, likely a fixture or decorative building element.
 0 Name: 1210-2 - u8012.dat
 0 Author: J.C. Tchang [tchang]
 0 !LDRAW_ORG Unofficial_Part
@@ -224,7 +224,7 @@
 
 
 0 FILE 1210-2 - u8024.dat
-0 u8024
+0 Box-and-cylinder geometric component with flat panels and rounded details, a smaller variant of the main structural fixture.
 0 Name: 1210-2 - u8024.dat
 0 Author: J.C. Tchang [tchang]
 0 !LDRAW_ORG Unofficial_Part
@@ -325,7 +325,7 @@
 
 
 0 FILE 1210-2 - u8021.dat
-0 u8021
+0 Flat box-based component built from rectangles and faced boxes, forming a simple panel or wall section.
 0 Name: 1210-2 - u8021.dat
 0 Author: J.C. Tchang [tchang]
 0 !LDRAW_ORG Unofficial_Part
@@ -407,7 +407,7 @@
 
 
 0 FILE 1210-2 - 925p0u.dat
-0 925p0u
+0 Printed slotted window or door element from the classic 1955 era, represented as a patterned part with no direct pieces.
 0 Name: 1210-2 - 925p0u.dat
 0 Author: N. W. Perry [Plastikean]
 0 !LDRAW_ORG Unofficial_Part
@@ -425,7 +425,7 @@
 
 
 0 FILE s\1210-2 - u8012s01.dat
-0 u8012s01
+0 Cylindrical and disc sub-component forming the rounded protrusion or knob detail of the u8012 fixture.
 0 Name: s\1210-2 - u8012s01.dat
 0 Author: N. W. Perry [Plastikean]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -456,7 +456,7 @@
 
 
 0 FILE s\1210-2 - 925p0us01.dat
-0 925p0us01
+0 Pattern sub-part of the printed 925 window/door element with no direct geometric pieces.
 0 Name: s\1210-2 - 925p0us01.dat
 0 Author: N. W. Perry [Plastikean]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -750,7 +750,7 @@
 
 
 0 FILE s\1210-2 - 925p0us02.dat
-0 925p0us02
+0 Second pattern sub-part of the printed 925 window/door element with no direct geometric pieces.
 0 Name: s\1210-2 - 925p0us02.dat
 0 Author: N. W. Perry [Plastikean]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -1115,7 +1115,7 @@
 
 
 0 FILE s\1210-2 - 925s02.dat
-0 925s02
+0 Structural sub-part of the 925 window/door element built from multi-faced boxes forming the frame.
 0 Name: s\1210-2 - 925s02.dat
 0 Author: N. W. Perry [Plastikean]
 0 !LDRAW_ORG Unofficial_Subpart
