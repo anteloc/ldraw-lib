@@ -38,8 +38,8 @@ Provide **only the FTS query expression** as the search argument. Do **not** gen
 * `foo AND bar` — both terms
 * `foo OR bar` — either term
 * `foo NOT bar` — foo, excluding bar
-* `foo NEAR bar` — terms near each other
-* `foo NEAR/5 bar` — terms separated by ≤5 intervening tokens
+* `foo NEAR bar` — terms near each other (default proximity of 10 tokens)
+* `NEAR(foo bar, 5)` — terms separated by ≤5 intervening tokens
 * `column:term` — restrict term to an FTS column
 * `column:"exact phrase"` — restrict phrase to a column
 * `(foo OR bar) AND baz` — explicit grouping (enhanced syntax)
@@ -54,6 +54,7 @@ Provide **only the FTS query expression** as the search argument. Do **not** gen
 6. Prefer explicit parentheses when combining boolean operators.
 7. Do not add `%`, `LIKE`, regex syntax, SQL clauses, or SQL string quotes.
 8. Keep the expression minimal: use synonyms with `OR`, required concepts with `AND`, and `NOT` only when exclusion is intentional.
+9. Avoid apostrophes in bare tokens (e.g. `logo's`) — FTS5 will reject them; drop the apostrophe (`logos`) or quote the whole term as a phrase (`"logo's"`).
 
 **Example script arg**
 
@@ -69,18 +70,16 @@ function query_part_descriptions() {
     local max_results="$1"
     local where_clause="$2"
     local query="$3"
+    local sql_query=${query//\'/\'\'}
 
-       sqlite3 -json "$DB" \
-           -cmd '.parameter init' \
-           -cmd '.parameter set :query '"$(printf '%q' "$query")" \
-           -cmd '.parameter set :limit '"$(printf '%q' "$max_results")" \
+    sqlite3 -json "$DB" \
 <<SQL
     SELECT part, description
     FROM PARTS_DESCRIPTIONS_FTS
     WHERE $where_clause
-    AND PARTS_DESCRIPTIONS_FTS MATCH :query
+    AND PARTS_DESCRIPTIONS_FTS MATCH '$sql_query'
     ORDER BY rank
-    LIMIT :limit;
+    LIMIT $max_results;
 SQL
 }
 
@@ -88,18 +87,16 @@ function query_model_descriptions() {
     local max_results="$1"
     local where_clause="$2"
     local query="$3"
+    local sql_query=${query//\'/\'\'}
 
     sqlite3 -json "$DB" \
-        -cmd '.parameter init' \
-        -cmd '.parameter set :query '"$(printf '%q' "$query")" \
-        -cmd '.parameter set :limit '"$(printf '%q' "$max_results")" \
 <<SQL
     SELECT model, description
     FROM MODELS_DESCRIPTIONS_FTS
     WHERE $where_clause
-    AND MODELS_DESCRIPTIONS_FTS MATCH :query
+    AND MODELS_DESCRIPTIONS_FTS MATCH '$sql_query'
     ORDER BY rank
-    LIMIT :limit;
+    LIMIT $max_results;
 SQL
 }
 
@@ -107,18 +104,16 @@ function query_submodel_descriptions() {
  local max_results="$1"
  local where_clause="$2"
  local query="$3"
+ local sql_query=${query//\'/\'\'}
 
     sqlite3 -json "$DB" \
-        -cmd '.parameter init' \
-        -cmd '.parameter set :query '"$(printf '%q' "$query")" \
-        -cmd '.parameter set :limit '"$(printf '%q' "$max_results")" \
 <<SQL
     SELECT model, submodel, description
     FROM SUBMODELS_DESCRIPTIONS_FTS
     WHERE $where_clause
-    AND SUBMODELS_DESCRIPTIONS_FTS MATCH :query
+    AND SUBMODELS_DESCRIPTIONS_FTS MATCH '$sql_query'
     ORDER BY rank
-    LIMIT :limit;
+    LIMIT $max_results;
 SQL
 }
 
