@@ -1,5 +1,5 @@
 0 FILE 6562 - main.ldr
-0 main
+0 A construction scene diorama featuring a multi-story building under construction with workers, a pickup truck, and a tank truck with a flexible hose.
 0 Name: 6562 - main.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -15,7 +15,7 @@
 1 1 0 0 -210 -0.866 0 -0.5 0 1 0 0.5 0 -0.866 6562 - minifig 2.ldr
 
 0 FILE 6562 - building.ldr
-0 building
+0 A two-story building structure built from plates and bricks in red, white, and grey with slopes and construction tools like a power drill and screwdriver.
 0 Name: 6562 - building.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -175,7 +175,7 @@
 1 2 -120 -72 -30 0 0 -1 0 1 0 1 0 0 4210a.dat
 
 0 FILE 6562 - car.ldr
-0 car
+0 A small green and red car with black wheel plates, blue steering wheel, and sloped inverted red body panels.
 0 Name: 6562 - car.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -296,7 +296,7 @@
 1 4 -30 -56 70 1 0 0 0 1 0 0 0 1 3135c02.dat
 
 0 FILE 6562 - car tank.ldr
-0 car tank
+0 A red and black tank truck built on a green car base with brackets, grooved tiles, wheel pins, and a telemetry computer panel.
 0 Name: 6562 - car tank.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -494,7 +494,7 @@
 1 0 -16 -72 150 0 0 1 0 -1 0 1 0 0 6562 - car tank - flexHose.ldr
 
 0 FILE 6562 - car tank - flexHose.ldr
-0 car tank - flexHose
+0 A long flexible hose assembly made of many linked hose segments with end caps, approximately 49 mm in length.
 0 Name: 6562 - car tank - flexHose.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -626,7 +626,7 @@
 0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 0 -23.551682 59.95628 1 0 0 0 0.999603 -0.028166 0 0.028166 0.999603 754.DAT
 0 FILE 6562 - minifig 1.ldr
-0 minifig 1
+0 A construction worker minifigure wearing a red cap, blue zippered jacket torso, and blue legs.
 0 Name: 6562 - minifig 1.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -656,7 +656,7 @@
 1 1 0 -28.022 1.818 1 0 0 0 1 0 0 0 1 3816.dat
 
 0 FILE 6562 - minifig 2.ldr
-0 minifig 2
+0 A worker minifigure wearing a red cap with a plain green torso and green legs.
 0 Name: 6562 - minifig 2.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt

@@ -1,5 +1,5 @@
 0 FILE 6540 - main.ldr 
-0 main
+0 A LEGO City police coastal port scene combining a waterfront building with ramps, a large police boat, a police car, a police motorbike, a small police boat, and four policeman minifigures.
 0 Name: 6540 - main.ldr 
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -20,7 +20,7 @@
 
 
 0 FILE 6540 - building.ldr 
-0 building
+0 A light grey and black coastal warehouse structure with red danger-stripe tiles, ladders, and sloped ramps leading down to the water.
 0 Name: 6540 - building.ldr 
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -399,7 +399,7 @@
 
 
 0 FILE 6540 - police boat.ldr 
-0 police boat
+0 A red and black police patrol boat featuring a bow plate, hull base, steering wheel, and printed POLICE markings.
 0 Name: 6540 - police boat.ldr 
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -578,7 +578,7 @@
 
 
 0 FILE 6540 - police car.ldr 
-0 police car
+0 A white and black police sedan built on a car base, with mudguards, windscreen, trans-red lights, and POLICE-patterned doors.
 0 Name: 6540 - police car.ldr 
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -668,7 +668,7 @@
 
 
 0 FILE 6540 - police motorbike.ldr 
-0 police motorbike
+0 A white police motorcycle with a complete frame, two offset-tread tyres, a POLICE-patterned windshield and tiles, and warning light elements.
 0 Name: 6540 - police motorbike.ldr 
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -704,7 +704,7 @@
 
 
 0 FILE 6540 - small police boat.ldr 
-0 small police boat
+0 A compact white and black police speedboat with inverted slopes, a wing element, hinge assembly, and steering wheel.
 0 Name: 6540 - small police boat.ldr 
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -776,7 +776,7 @@
 
 
 0 FILE 6540 - policeman 1.ldr 
-0 policeman 1
+0 A policeman minifigure wearing a white police hat and a black uniform torso with buttons and a badge.
 0 Name: 6540 - policeman 1.ldr 
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -805,7 +805,7 @@
 0 // ~Minifig Leg Right (Obsolete) (black)
 1 0 0 -28 0 1 0 0 0 1 0 0 0 1 3816.dat
 0 FILE 6540 - policeman 2.ldr 
-0 policeman 2
+0 A policeman minifigure wearing a yellow lifevest over a zippered black police uniform torso and white police hat.
 0 Name: 6540 - policeman 2.ldr 
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -836,7 +836,7 @@
 0 // Minifig Lifevest (yellow)
 1 14 0 -72 0 1 0 0 0 1 0 0 0 1 2610.dat
 0 FILE 6540 - policeman 3.ldr 
-0 policeman 3
+0 A policeman minifigure wearing a white helmet with trans-light-blue visor and a zippered black police uniform torso.
 0 Name: 6540 - policeman 3.ldr 
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -867,7 +867,7 @@
 0 // ~Minifig Leg Right (Obsolete) (black)
 1 0 0 -28 0 1 0 0 0 1 0 0 0 1 3816.dat
 0 FILE 6540 - policeman 4.ldr 
-0 policeman 4
+0 A policeman minifigure with black hair, a yellow lifevest, and a black uniform torso with buttons and a badge.
 0 Name: 6540 - policeman 4.ldr 
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -901,7 +901,7 @@
 
 
 0 FILE 6540 - 4480c01.dat 
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 A complete motorcycle frame assembly consisting of the left and right side frames plus the front forks.
 0 Bike  2 Wheel Motorcycle Frame  3 x  6 x  3 (Complete)
 0 Name: 6540 - 4480c01.dat 
 0 Author: Magnus Forsberg [MagFors]
@@ -920,7 +920,7 @@
 
 
 0 FILE 6540 - 4481.dat 
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 A minifig motorcycle wheel or tyre component with a LEGO stud logo and cylindrical mounting detail.
 0 ~Bike  2 Wheel Motorcycle Frame  3 x  6 x  3 - Left Side
 0 Name: 6540 - 4481.dat 
 0 Author: Magnus Forsberg [MagFors]
@@ -992,7 +992,7 @@
 
 
 0 FILE 6540 - 4480.dat 
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 A detailed motorcycle frame submodel with rear section, pinholes, and connecting structural geometry.
 0 ~Bike  2 Wheel Motorcycle Frame  3 x  6 x  3 - Right Side
 0 Name: 6540 - 4480.dat 
 0 Author: Magnus Forsberg [MagFors]
@@ -1165,7 +1165,7 @@
 
 
 0 FILE 6540 - 4481s01.dat 
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 A geometric primitive submodel forming a circular cylindrical wheel or hub element with various rings and discs.
 0 ~Bike  2 Wheel Motorcycle Frame  3 x  6 x  3 - Left/Right
 0 Name: 6540 - 4481s01.dat 
 0 Author: Magnus Forsberg [MagFors]
@@ -2148,7 +2148,7 @@
 
 
 0 FILE 6540 - logo5.dat 
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 A LEGO logo graphic element with no direct pieces.
 0 LEGO Logo for Studs - 3D Flattened
 0 Name: 6540 - logo5.dat 
 0 Author: Magnus Forsberg [MagFors]

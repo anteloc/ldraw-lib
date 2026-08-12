@@ -1,5 +1,5 @@
 0 FILE 6571 - main.ldr
-0 main
+0 Fire station scene featuring a fire department building with two response vehicles, a helicopter, and a crew of three firefighters and a civilian.
 0 Name: 6571 - main.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -17,7 +17,7 @@
 1 7 58.66 0 -215 0.866 0 0.5 0 1 0 -0.5 0 0.866 6571 - fireman 3.ldr
 
 0 FILE 6571 - FD building.ldr
-0 FD building
+0 Red-and-white fire station built on a 32x32 road baseplate with tall brick walls, a roll-up door, and small detail pieces like a radio, tap, and light elements.
 0 Name: 6571 - FD building.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -411,7 +411,7 @@
 1 14 -360 -13 -250 1 0 0 0 1 0 0 0 1 3741ac01.dat
 
 0 FILE 6571 - FD car 1.ldr
-0 FD car 1
+0 White response car assembled from plates and a 4x5 car base with wheel pins, red light tiles, and clip attachments for accessories.
 0 Name: 6571 - FD car 1.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -635,7 +635,7 @@
 1 0 -175 -4 25.001 -1 0 0 0 1 0 0 0 -1 6015.dat
 
 0 FILE 6571 - FD car 2.ldr
-0 FD car 2
+0 Compact white-and-red vehicle on a 4x10 car base featuring mudguards, translucent light bar tiles, and a radio antenna.
 0 Name: 6571 - FD car 2.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -752,7 +752,7 @@
 1 33 -6 -103 48 1 0 0 0 0 -1 0 1 0 3070a.dat
 
 0 FILE 6571 - FD helicopter.ldr
-0 FD helicopter
+0 Red-and-black rescue helicopter with sloped nose pieces, hinged rotor assemblies, landing bars, and translucent indicator lights.
 0 Name: 6571 - FD helicopter.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -905,7 +905,7 @@
 1 14 24 -81.5 75.5 0 -1 0 -0.921 0 0.391 -0.391 0 -0.921 6571 - FD helicopter - flexHose.ldr
 
 0 FILE 6571 - FD helicopter - flexHose.ldr
-0 FD helicopter - flexHose
+0 Flexible black hose assembly composed of segmented links and end fittings for the helicopter's detailing.
 0 Name: 6571 - FD helicopter - flexHose.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1041,7 +1041,7 @@
 0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 -0.010448 -23.683205 59.947762 0.999981 0.006204 0 -0.006201 0.9995 -0.031021 -0.000192 0.03102 0.999519 754.DAT
 0 FILE 6571 - woman.ldr
-0 woman
+0 Civilian minifigure woman with a black ponytail hairstyle and a white shirt with pockets over blue legs.
 0 Name: 6571 - woman.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1071,7 +1071,7 @@
 1 1 0 -28 0 1 0 0 0 1 0 0 0 1 3816.dat
 
 0 FILE 6571 - fireman 1.ldr
-0 fireman 1
+0 Firefighter minifigure wearing a white helmet with clear visor and black modern firefighter turnout gear.
 0 Name: 6571 - fireman 1.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1103,7 +1103,7 @@
 1 0 0 -28.022 1.818 1 0 0 0 1 0 0 0 1 3816.dat
 
 0 FILE 6571 - fireman 2.ldr
-0 fireman 2
+0 Firefighter minifigure with a white fire helmet bearing a fire logo shield and black modern firefighter gear.
 0 Name: 6571 - fireman 2.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1133,7 +1133,7 @@
 1 0 0 -28.022 1.818 1 0 0 0 1 0 0 0 1 3816.dat
 
 0 FILE 6571 - fireman 3.ldr
-0 fireman 3
+0 Firefighter minifigure in light grey gear with an air gauge torso print, plain white helmet, and a moustached face.
 0 Name: 6571 - fireman 3.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
