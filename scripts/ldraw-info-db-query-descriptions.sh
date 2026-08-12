@@ -7,40 +7,78 @@ parent_dir="$(dirname "$scripts_dir")"
 DB="$scripts_dir/ldraw-info.db"
 
 function usage() {
-    echo "Usage: $(basename $0) <--parts | --models | --submodels | --submodels-for-model <model name> [--max-results <number>] --query <'query'>"
+    echo "Usage: $(basename $0) <--parts | --models | --submodels> [--max-results <number>] [--where "column=value"] --query <'query'>"
     echo "FTS (full-text-search) descriptions for parts, models and submodels from ldraw-info.db"
     echo " --parts: matches query against parts descriptions"
     echo " --models: matches query against models descriptions"
     echo " --submodels: matches query against submodels descriptions"
-    echo " --submodels-for-model <model name>: matches query against submodels descriptions for a specific model"
+    echo " --where 'column=value': both column and value *must* be unquoted, used to build a WHERE clause to filter by specific columns (e.g. --where \"model=41606-1.mpd\")"
     echo " --max-results <number>: limits the number of results returned (default: 10)"
-    echo " --query <'query'>: the query string to search for (enclose in single quotes), in SQLite FTS5 syntax"
+    echo " --query <'query'>: FTS query string to search for (enclose in single quotes), in SQLite FTS5 syntax"
     echo ""
     echo "Example: $(basename $0) --parts --max-results 10 --query 'star'"
-    echo "Example: $(basename $0) --submodels-for-model '41606-1.mpd' --max-results 2 --query 'rebel'"
+    echo "Example: $(basename $0) --submodels --where \"model=41606-1.mpd\" --max-results 2 --query 'rebel'"
     echo ""
-    echo 'Output format is JSON'
-    echo 'For both parts and models has the following structure:'
+    echo 'Output format (JSON):'
+    echo '[{"part":"1-16chrd.dat","description":"Block xxx"}, ...]'
     echo '[{"model":"41606-1.mpd","description":"Star-Lord"}, ...]'
+    echo '[{"model":"41606-1.mpd","submodel":"41606-1.mpd","description":"Star-Lord"}, ...]'
     echo ""
-    echo 'For submodels has the following structure:'
-    echo '[{"alias":"41606-1.mpd","submodel":"41606-1.mpd","description":"Star-Lord"}, ...]'
-    echo ""
+    cat <<'SQL'
+### SQLite FTS `MATCH` Query Syntax
+
+Provide **only the FTS query expression** as the search argument. Do **not** generate SQL, `MATCH`, `WHERE`, table names, or SQL quoting—the script builds and parameterizes the SQL.
+
+**Patterns**
+
+* `term` — contains token
+* `prefix*` — token beginning with prefix
+* `"exact phrase"` — adjacent tokens in exact order
+* `foo bar` — both terms (implicit AND)
+* `foo AND bar` — both terms
+* `foo OR bar` — either term
+* `foo NOT bar` — foo, excluding bar
+* `foo NEAR bar` — terms near each other
+* `foo NEAR/5 bar` — terms separated by ≤5 intervening tokens
+* `column:term` — restrict term to an FTS column
+* `column:"exact phrase"` — restrict phrase to a column
+* `(foo OR bar) AND baz` — explicit grouping (enhanced syntax)
+
+**Rules for agents**
+
+1. Return the **query expression only**, e.g. `sqlite AND "full text"`.
+2. Use uppercase `AND`, `OR`, `NOT`, and `NEAR`.
+3. Quote multi-token phrases with `"..."`.
+4. Append `*` for prefix matching; it is not a general glob/wildcard.
+5. Use `column:` only for known FTS columns.
+6. Prefer explicit parentheses when combining boolean operators.
+7. Do not add `%`, `LIKE`, regex syntax, SQL clauses, or SQL string quotes.
+8. Keep the expression minimal: use synonyms with `OR`, required concepts with `AND`, and `NOT` only when exclusion is intentional.
+
+**Example script arg**
+
+```text
+sqlite AND ("full text" OR fts*) NOT deprecated
+```
+
+SQL
     exit 1
 }
 
 function query_part_descriptions() {
     local max_results="$1"
-    local query="$2"
+    local where_clause="$2"
+    local query="$3"
 
        sqlite3 -json "$DB" \
            -cmd '.parameter init' \
            -cmd '.parameter set :query '"$(printf '%q' "$query")" \
            -cmd '.parameter set :limit '"$(printf '%q' "$max_results")" \
-<<'SQL'
+<<SQL
     SELECT part, description
     FROM PARTS_DESCRIPTIONS_FTS
-    WHERE PARTS_DESCRIPTIONS_FTS MATCH :query
+    WHERE $where_clause
+    AND PARTS_DESCRIPTIONS_FTS MATCH :query
     ORDER BY rank
     LIMIT :limit;
 SQL
@@ -48,36 +86,36 @@ SQL
 
 function query_model_descriptions() {
     local max_results="$1"
-    local query="$2"
+    local where_clause="$2"
+    local query="$3"
 
     sqlite3 -json "$DB" \
         -cmd '.parameter init' \
         -cmd '.parameter set :query '"$(printf '%q' "$query")" \
         -cmd '.parameter set :limit '"$(printf '%q' "$max_results")" \
-<<'SQL'
+<<SQL
     SELECT model, description
     FROM MODELS_DESCRIPTIONS_FTS
-    WHERE MODELS_DESCRIPTIONS_FTS MATCH :query
+    WHERE $where_clause
+    AND MODELS_DESCRIPTIONS_FTS MATCH :query
     ORDER BY rank
     LIMIT :limit;
 SQL
 }
 
 function query_submodel_descriptions() {
-
  local max_results="$1"
- local query="$2"
- local alias="${3:-}" # empty string if not provided
+ local where_clause="$2"
+ local query="$3"
 
     sqlite3 -json "$DB" \
         -cmd '.parameter init' \
         -cmd '.parameter set :query '"$(printf '%q' "$query")" \
         -cmd '.parameter set :limit '"$(printf '%q' "$max_results")" \
-        -cmd '.parameter set :alias '"$(printf '%q' "$alias")" \
-<<'SQL'
+<<SQL
     SELECT model, submodel, description
     FROM SUBMODELS_DESCRIPTIONS_FTS
-    WHERE (:alias = '' OR alias = :alias)
+    WHERE $where_clause
     AND SUBMODELS_DESCRIPTIONS_FTS MATCH :query
     ORDER BY rank
     LIMIT :limit;
@@ -85,6 +123,7 @@ SQL
 }
 
 max_results=10
+where_clause="1=1"
 
 # Parse command line arguments
 while [[ $# -gt 0 ]]; do
@@ -101,9 +140,10 @@ while [[ $# -gt 0 ]]; do
             query_type="submodels"
             shift
             ;;
-        --submodels-for-model)
-            query_type="submodels-for-model"
-            model_alias="$2"
+        --where)
+            where_clause="$2"
+            # Add quotes where required for SQL
+            where_clause="$(printf '"%s"=%s' "${where_clause%%=*}" "'${where_clause#*=}'")"
             shift 2
             ;;
         --max-results)
@@ -123,26 +163,19 @@ done
 
 # Validate required arguments
 if [[ -z "$query_type" || -z "$query" ]]; then
-    echo "Error: --query and one of --parts, --models, --submodels, or --submodels-for-model must be specified."
+    echo "Error: --query and one of --parts, --models or --submodels must be specified."
     usage
 fi
 
 case "$query_type" in
     parts)
-        query_part_descriptions "$max_results" "$query"
+        query_part_descriptions "$max_results" "$where_clause" "$query"
         ;;
     models)
-        query_model_descriptions "$max_results" "$query"
+        query_model_descriptions "$max_results" "$where_clause" "$query"
         ;;
     submodels)
-        query_submodel_descriptions "$max_results" "$query"
-        ;;
-    submodels-for-model)
-        if [[ -z "$model_alias" ]]; then
-            echo "Error: --submodels-for-model requires a model alias."
-            usage
-        fi
-        query_submodel_descriptions "$max_results" "$query" "$model_alias"
+        query_submodel_descriptions "$max_results" "$where_clause" "$query"
         ;;
 esac
 
