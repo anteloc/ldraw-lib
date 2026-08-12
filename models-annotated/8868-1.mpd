@@ -1,5 +1,5 @@
 0 FILE 8868-1 - Main.ldr
-0 Main
+0 Complete pneumatic crane truck model comprising chassis, turntable base, articulated liftarm boom with pneumatic cylinders, engine block, gripper claw, wheels, and pneumatic hose routing.
 0 Name: 8868-1 - Main.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -16,7 +16,7 @@
 
 
 0 FILE 8868-1 - Airtech Claw Rig.ldr
-0 Airtech Claw Rig
+0 Large Technic chassis assembly built from long studless beams, pins, and axles forming the structural frame of the crane rig.
 0 Name: 8868-1 - Airtech Claw Rig.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -1475,7 +1475,7 @@
 
 
 0 FILE 8868-1 - Tank.ldr
-0 Tank
+0 Small white cylindrical tank unit with hinge plates and inverted dishes mounted on an axle.
 0 Name: 8868-1 - Tank.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -1522,7 +1522,7 @@
 
 
 0 FILE 8868-1 - Turn Table Base.ldr
-0 Turn Table Base
+0 Yellow Technic turntable base with long bricks, axles, and a pneumatic cylinder for rotation actuation.
 0 Name: 8868-1 - Turn Table Base.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -1644,7 +1644,7 @@
 
 
 0 FILE 8868-1 - Liftarm Segment 1.ldr
-0 Liftarm Segment 1
+0 Black liftarm boom segment with triangle beams, clipped tiles, and flex hoses forming the first articulated arm section.
 0 Name: 8868-1 - Liftarm Segment 1.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -1700,7 +1700,7 @@
 
 
 0 FILE 8868-1 - Pneumatic Rubber Band.ldr
-0 Pneumatic Rubber Band
+0 Flexible rubber band loop of approximately 126 mm used as a tension element.
 0 Name: 8868-1 - Pneumatic Rubber Band.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -1888,7 +1888,7 @@
 
 
 0 FILE 8868-1 - Motor Rubber Band.ldr
-0 Motor Rubber Band
+0 Flexible rubber band loop of approximately 97 mm used for motor or drive tension.
 0 Name: 8868-1 - Motor Rubber Band.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -2041,7 +2041,7 @@
 
 
 0 FILE 8868-1 - myrubbercyl.dat
-0 myrubbercyl
+0 Empty custom rubber cylinder reference part with no direct pieces.
 0 Name: 8868-1 - myrubbercyl.dat
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Unofficial_Part
@@ -2070,7 +2070,7 @@
 
 
 0 FILE 8868-1 - Liftarm Segment 2.ldr
-0 Liftarm Segment 2
+0 Black liftarm boom segment with clipped tiles and short flex hoses forming an intermediate arm section.
 0 Name: 8868-1 - Liftarm Segment 2.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -2101,7 +2101,7 @@
 
 
 0 FILE 8868-1 - Liftarm Segment 3.ldr
-0 Liftarm Segment 3
+0 Black liftarm boom segment with boss liftarms, clipped tiles, and flex hoses forming another articulated arm section.
 0 Name: 8868-1 - Liftarm Segment 3.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -2153,7 +2153,7 @@
 
 
 0 FILE 8868-1 - Motorblock.ldr
-0 Motorblock
+0 Inline six-cylinder Technic engine assembly with crankshafts, connecting rods, and pistons mounted on a plate base.
 0 Name: 8868-1 - Motorblock.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -2222,7 +2222,7 @@
 
 
 0 FILE 8868-1 - Cylinder Head.ldr
-0 Cylinder Head
+0 Set of three light grey Technic engine cylinder heads pinned together as the engine's upper assembly.
 0 Name: 8868-1 - Cylinder Head.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -2261,7 +2261,7 @@
 
 
 0 FILE 8868-1 - Liftarm Segment 4.ldr
-0 Liftarm Segment 4
+0 Short liftarm boom segment incorporating a small yellow pneumatic cylinder and triangle beams for actuation.
 0 Name: 8868-1 - Liftarm Segment 4.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -2298,7 +2298,7 @@
 
 
 0 FILE 8868-1 - Mudguard Left.ldr
-0 Mudguard Left
+0 Left black mudguard assembly built from plates and a 45-degree slope brick.
 0 Name: 8868-1 - Mudguard Left.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -2327,7 +2327,7 @@
 
 
 0 FILE 8868-1 - Mudguard Right.ldr
-0 Mudguard Right
+0 Right black mudguard assembly built from plates and a 45-degree slope brick.
 0 Name: 8868-1 - Mudguard Right.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -2356,7 +2356,7 @@
 
 
 0 FILE 8868-1 - Gripper Inside.ldr
-0 Gripper Inside
+0 Inner yellow gripper mechanism with axle-mounted liftarms and bushed plates forming the claw's interior linkage.
 0 Name: 8868-1 - Gripper Inside.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -2392,7 +2392,7 @@
 
 
 0 FILE 8868-1 - Gripper Outside.ldr
-0 Gripper Outside
+0 Outer yellow gripper mechanism with axle-mounted boss liftarms forming the claw's exterior jaws.
 0 Name: 8868-1 - Gripper Outside.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -2424,7 +2424,7 @@
 
 
 0 FILE 8868-1 - Tailpipe.ldr
-0 Tailpipe
+0 Exhaust tailpipe assembly using a long axle, bevel gear, and stacked round bricks with a crankshaft support.
 0 Name: 8868-1 - Tailpipe.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -2471,7 +2471,7 @@
 
 
 0 FILE 8868-1 - Horn.ldr
-0 Horn
+0 Horn accessory built from an axle, connectors, and a palm trunk element serving as the horn body.
 0 Name: 8868-1 - Horn.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -2499,7 +2499,7 @@
 
 
 0 FILE 8868-1 - Wheel.ldr
-0 Wheel
+0 Single wheel assembly consisting of a white six-pinhole rim and an offset-tread rubber tyre.
 0 Name: 8868-1 - Wheel.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -2515,7 +2515,7 @@
 
 
 0 FILE 8868-1 - Hose Turn Left.ldr
-0 Hose Turn Left
+0 Pneumatic tube routing approximately 70 mm long curving left, with bulged end connectors.
 0 Name: 8868-1 - Hose Turn Left.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -2663,7 +2663,7 @@
 
 
 0 FILE 8868-1 - Hose Turn Right.ldr
-0 Hose Turn Right
+0 Pneumatic tube routing approximately 67 mm long curving right, with bulged end connectors.
 0 Name: 8868-1 - Hose Turn Right.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -2805,7 +2805,7 @@
 
 
 0 FILE 8868-1 - Hose Big Arm Down white.ldr
-0 Hose Big Arm Down white
+0 Long white pneumatic tube of approximately 348 mm routing down the main boom arm, with bulged end connectors.
 0 Name: 8868-1 - Hose Big Arm Down white.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -3271,7 +3271,7 @@
 
 
 0 FILE 8868-1 - Hose Big Arm Up rose.ldr
-0 Hose Big Arm Up rose
+0 Long rose-colored pneumatic tube of approximately 329 mm routing up the main boom arm, with bulged end connectors.
 0 Name: 8868-1 - Hose Big Arm Up rose.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -3721,7 +3721,7 @@
 
 
 0 FILE 8868-1 - Hose Front Arm Up yellow.ldr
-0 Hose Front Arm Up yellow
+0 Long yellow pneumatic tube of approximately 368 mm routing up the front arm, with bulged end connectors.
 0 Name: 8868-1 - Hose Front Arm Up yellow.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -4187,7 +4187,7 @@
 
 
 0 FILE 8868-1 - Hose Front Arm Down red.ldr
-0 Hose Front Arm Down red
+0 Red pneumatic hose assembly with 239 tube segments and bulged end caps routing down the front arm.
 0 Name: 8868-1 - Hose Front Arm Down red.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -4719,7 +4719,7 @@
 
 
 0 FILE 8868-1 - Hose Gripper Open green.ldr
-0 Hose Gripper Open green
+0 Green pneumatic hose assembly with 170 tube segments and bulged end caps for the gripper open circuit.
 0 Name: 8868-1 - Hose Gripper Open green.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -5112,7 +5112,7 @@
 
 
 0 FILE 8868-1 - Hose Gripper Close blue.ldr
-0 Hose Gripper Close blue
+0 Blue pneumatic hose assembly with 189 tube segments and bulged end caps for the gripper close circuit.
 0 Name: 8868-1 - Hose Gripper Close blue.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -5544,7 +5544,7 @@
 
 
 0 FILE 8868-1 - Cable.ldr
-0 Cable
+0 Electric cable assembly with 122 twin cable segments connecting two black 2x2 electric bricks.
 0 Name: 8868-1 - Cable.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -5839,7 +5839,7 @@
 
 
 0 FILE 8868-1 - Hose Turn Left Seg 2.ldr
-0 Hose Turn Left Seg 2
+0 Short pneumatic hose segment with 44 tube segments and bulged end caps forming a left turn section.
 0 Name: 8868-1 - Hose Turn Left Seg 2.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -5970,7 +5970,7 @@
 
 
 0 FILE 8868-1 - Hose Turn Left Seg 3.ldr
-0 Hose Turn Left Seg 3
+0 Short pneumatic hose segment with 31 tube segments and bulged end caps forming a left turn section.
 0 Name: 8868-1 - Hose Turn Left Seg 3.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -6074,7 +6074,7 @@
 
 
 0 FILE 8868-1 - Hose Turn Right Seg 2.ldr
-0 Hose Turn Right Seg 2
+0 Short pneumatic hose segment with 29 tube segments and bulged end caps forming a right turn section.
 0 Name: 8868-1 - Hose Turn Right Seg 2.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -6174,7 +6174,7 @@
 
 
 0 FILE 8868-1 - Hose Turn Right Seg 3.ldr
-0 Hose Turn Right Seg 3
+0 Short pneumatic hose segment with 34 tube segments and bulged end caps forming a right turn section.
 0 Name: 8868-1 - Hose Turn Right Seg 3.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -6285,7 +6285,7 @@
 
 
 0 FILE 8868-1 - Hose Supply Gripper.ldr
-0 Hose Supply Gripper
+0 Pneumatic supply hose with 35 tube segments and bulged end caps routing to the gripper.
 0 Name: 8868-1 - Hose Supply Gripper.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -6399,7 +6399,7 @@
 
 
 0 FILE 8868-1 - Hose Supply Con Left.ldr
-0 Hose Supply Con Left
+0 Short pneumatic supply hose with 12 tube segments and bulged end caps for the left connector.
 0 Name: 8868-1 - Hose Supply Con Left.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -6465,7 +6465,7 @@
 
 
 0 FILE 8868-1 - Hose Supply Con Right.ldr
-0 Hose Supply Con Right
+0 Short pneumatic supply hose with 8 tube segments and bulged end caps for the right connector.
 0 Name: 8868-1 - Hose Supply Con Right.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -6523,7 +6523,7 @@
 
 
 0 FILE 8868-1 - Hose Supply Turn.ldr
-0 Hose Supply Turn
+0 Pneumatic supply hose with 36 tube segments and bulged end caps forming a turn section.
 0 Name: 8868-1 - Hose Supply Turn.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -6639,7 +6639,7 @@
 
 
 0 FILE 8868-1 - Hose Supply Front Arm.ldr
-0 Hose Supply Front Arm
+0 Pneumatic supply hose with 36 tube segments and bulged end caps routing to the front arm.
 0 Name: 8868-1 - Hose Supply Front Arm.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -6755,7 +6755,7 @@
 
 
 0 FILE 8868-1 - Hose Supply Big Arm.ldr
-0 Hose Supply Big Arm
+0 Pneumatic supply hose with 39 tube segments and bulged end caps routing to the big arm.
 0 Name: 8868-1 - Hose Supply Big Arm.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -6877,7 +6877,7 @@
 
 
 0 FILE 8868-1 - Hose Supply Main.ldr
-0 Hose Supply Main
+0 Main pneumatic supply hose with 73 tube segments and bulged end caps as the primary feed line.
 0 Name: 8868-1 - Hose Supply Main.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -7068,7 +7068,7 @@
 
 
 0 FILE 8868-1 - Hose Gripper Seg 2 both.ldr
-0 Hose Gripper Seg 2 both
+0 Pneumatic hose segment with 32 tube segments and bulged end caps serving both gripper circuits.
 0 Name: 8868-1 - Hose Gripper Seg 2 both.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -7175,7 +7175,7 @@
 
 
 0 FILE 8868-1 - Hose Gripper Close Seg 3 blue.ldr
-0 Hose Gripper Close Seg 3 blue
+0 Blue pneumatic hose segment with 38 tube segments and bulged end caps for the gripper close circuit.
 0 Name: 8868-1 - Hose Gripper Close Seg 3 blue.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -7294,7 +7294,7 @@
 
 
 0 FILE 8868-1 - Hose Gripper Open Seg 3 green.ldr
-0 Hose Gripper Open Seg 3 green
+0 Green pneumatic hose segment with 38 tube segments and bulged end caps for the gripper open circuit.
 0 Name: 8868-1 - Hose Gripper Open Seg 3 green.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -7413,7 +7413,7 @@
 
 
 0 FILE 8868-1 - Hose Gripper Close Seg 4 blue.ldr
-0 Hose Gripper Close Seg 4 blue
+0 Blue pneumatic hose segment with 63 tube segments and bulged end caps for the gripper close circuit.
 0 Name: 8868-1 - Hose Gripper Close Seg 4 blue.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -7583,7 +7583,7 @@
 
 
 0 FILE 8868-1 - Hose Gripper Open Seg 4 green.ldr
-0 Hose Gripper Open Seg 4 green
+0 Green pneumatic hose segment with 44 tube segments and bulged end caps for the gripper open circuit.
 0 Name: 8868-1 - Hose Gripper Open Seg 4 green.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -7715,7 +7715,7 @@
 
 
 0 FILE 8868-1 - 166285c.dat
-0 166285c
+0 Single decorative box element with five faces and no edges.
 0 Name: 8868-1 - 166285c.dat
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Unofficial_Part
@@ -7941,7 +7941,7 @@
 
 
 0 FILE 8868-1 - 166285a.dat
-0 166285a
+0 Single decorative box element with five faces and no edges.
 0 Name: 8868-1 - 166285a.dat
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Unofficial_Part
@@ -8138,7 +8138,7 @@
 4 7 5 -0.25 -4.5 4.963 -0.25 -2.744 4.564 -0.25 -2.711 4.2 -0.25 -2.9
 
 0 FILE 8868-1 - 166285d.dat
-0 166285d
+0 Single decorative box element with five faces and no edges.
 0 Name: 8868-1 - 166285d.dat
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Unofficial_Part
@@ -8341,7 +8341,7 @@
 
 
 0 FILE 8868-1 - 166285b.dat
-0 166285b
+0 Single decorative box element with five faces and no edges.
 0 Name: 8868-1 - 166285b.dat
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Unofficial_Part

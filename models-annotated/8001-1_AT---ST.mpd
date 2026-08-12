@@ -1,5 +1,5 @@
 0 FILE 8001 - main.ldr
-0 main
+0 Main chassis of the AT-ST walker integrating gears, axles, liftarms, two articulated legs, and a multi-section cabin assembly.
 0 Name: 8001 - main.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -135,7 +135,7 @@
 
 
 0 FILE 8001 - leftleg.ldr
-0 leftleg
+0 Left articulated leg built from bent liftarms, a ribbed fan beam, and a connector block joined by axles and pins.
 0 Name: 8001 - leftleg.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -174,7 +174,7 @@
 
 
 0 FILE 8001 - rightleg.ldr
-0 rightleg
+0 Right articulated leg built from bent liftarms, a ribbed fan beam, and a connector block joined by axles and pins.
 0 Name: 8001 - rightleg.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -213,7 +213,7 @@
 
 
 0 FILE 8001 - rubberBandSquare-Studio-1.ldr
-0 rubberBandSquare-Studio-1
+0 Flexible rubber band modeled as a continuous loop of 417 connected box segments forming an approx 83 mm square path.
 0 Name: 8001 - rubberBandSquare-Studio-1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1074,7 +1074,7 @@
 1 16 -8.508242 -0.247815 0 0.999447 0.033242 0 -0.033242 0.999447 0 0 0 1 box4o8a.dat
 
 0 FILE 8001 - cabin.ldr
-0 cabin
+0 Core cabin frame using bent liftarms, angle connectors, pin joiners, and a multi-axle connector block.
 0 Name: 8001 - cabin.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1147,7 +1147,7 @@
 
 
 0 FILE 8001 - cabin2.ldr
-0 cabin2
+0 Cabin extension with angle connectors, ribbed hoses, and long pins forming a detailed sub-frame.
 0 Name: 8001 - cabin2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1193,7 +1193,7 @@
 
 
 0 FILE 8001 - cabin3.ldr
-0 cabin3
+0 Cabin side structure built from double-bent liftarms, cross blocks, and long stop-bush pins.
 0 Name: 8001 - cabin3.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1316,7 +1316,7 @@
 
 
 0 FILE 8001 - cabin4.ldr
-0 cabin4
+0 Cabin detail assembly featuring ribbed hoses, a ribbed fan beam, and bent liftarms mounted on an axle.
 0 Name: 8001 - cabin4.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1352,7 +1352,7 @@
 
 
 0 FILE 8001 - cabintop.ldr
-0 cabintop
+0 Top canopy frame with quarter-circle bent liftarms, angle connectors, and offset axle joiners.
 0 Name: 8001 - cabintop.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1537,7 +1537,7 @@
 
 
 0 FILE s\8001 - 32269s01.dat
-0 32269s01
+0 Subpart geometry consisting of rectangles forming the base shape of a Technic liftarm.
 0 Name: s\8001 - 32269s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -1628,7 +1628,7 @@
 
 
 0 FILE s\8001 - 32269s02.dat
-0 32269s02
+0 Subpart geometry using cylinders and rectangles defining the curved end of a Technic liftarm.
 0 Name: s\8001 - 32269s02.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -1701,7 +1701,7 @@
 
 
 0 FILE s\8001 - 4185as01.dat
-0 4185as01
+0 Subpart geometry using cylinders, rings, and discs defining the detailed cross-section of part 4185a.
 0 Name: s\8001 - 4185as01.dat
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -1851,7 +1851,7 @@
 
 
 0 FILE s\8001 - 33299s01.dat
-0 33299s01
+0 Subpart geometry using cylinders, circles, rings, and pin collars defining the detailed shape of part 33299a.
 0 Name: s\8001 - 33299s01.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Subpart

@@ -1,5 +1,5 @@
 0 FILE 8828 - main.ldr
-0 main
+0 Main assembly of a Technic grader vehicle, integrating chassis, steering, gearing, and blade submodels.
 0 Name: 8828 - main.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -14,7 +14,7 @@
 
 
 0 FILE 8828 - Grader.ldr
-0 Grader
+0 Core grader chassis frame built from Technic bricks, plates, and an axle forming the structural base.
 0 Name: 8828 - Grader.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -159,7 +159,7 @@
 
 
 0 FILE 8828 - Substep_Step-3.ldr
-0 Substep_Step-3
+0 Front steering linkage assembly using a steering arm, axle, and bushings.
 0 Name: 8828 - Substep_Step-3.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -182,7 +182,7 @@
 
 
 0 FILE 8828 - Substep_Step-4.ldr
-0 Substep_Step-4
+0 Second steering arm assembly with axle pin, axle, and bushings mirroring the front steering.
 0 Name: 8828 - Substep_Step-4.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -205,7 +205,7 @@
 
 
 0 FILE 8828 - Substep_Step-5.ldr
-0 Substep_Step-5
+0 Front grille detail made of headlight bricks and grille tiles.
 0 Name: 8828 - Substep_Step-5.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -231,7 +231,7 @@
 
 
 0 FILE 8828 - Substep_Step-6_1.ldr
-0 Substep_Step-6_1
+0 Technic plate with gear rack for steering mechanism.
 0 Name: 8828 - Substep_Step-6_1.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -247,7 +247,7 @@
 
 
 0 FILE 8828 - Substep_Step-6_2.ldr
-0 Substep_Step-6_2
+0 Pair of small light grey plates as connectors or spacers.
 0 Name: 8828 - Substep_Step-6_2.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -263,7 +263,7 @@
 
 
 0 FILE 8828 - Substep_Step-6_3.ldr
-0 Substep_Step-6_3
+0 Rotor blade assembly on an axle with Technic bricks for a rotating element.
 0 Name: 8828 - Substep_Step-6_3.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -291,7 +291,7 @@
 
 
 0 FILE 8828 - Substep_Step-7.ldr
-0 Substep_Step-7
+0 Gear train with 8-tooth and bevel gears on a short axle for power transfer.
 0 Name: 8828 - Substep_Step-7.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -314,7 +314,7 @@
 
 
 0 FILE 8828 - Substep_Step-9.ldr
-0 Substep_Step-9
+0 Extended Technic frame section using long bricks and plates joined with friction pins.
 0 Name: 8828 - Substep_Step-9.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -373,7 +373,7 @@
 
 
 0 FILE 8828 - Substep_Step-9_Substep_Step-6.ldr
-0 Substep_Step-9_Substep_Step-6
+0 Technic plate with axle-pinned bricks forming a sub-frame connector.
 0 Name: 8828 - Substep_Step-9_Substep_Step-6.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -395,7 +395,7 @@
 
 
 0 FILE 8828 - Substep_Step-10.ldr
-0 Substep_Step-10
+0 Bevel and crown gear assembly on an axle for redirecting rotational drive.
 0 Name: 8828 - Substep_Step-10.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -422,7 +422,7 @@
 
 
 0 FILE 8828 - Substep_Step-11.ldr
-0 Substep_Step-11
+0 Excavator bucket mounted on an axle with a bevel gear acting as the grader blade.
 0 Name: 8828 - Substep_Step-11.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -443,7 +443,7 @@
 
 
 0 FILE 8828 - Substep_Step-11_Substep_Step-1.ldr
-0 Substep_Step-11_Substep_Step-1
+0 Liftarm with axle pin forming a support arm for the bucket mechanism.
 0 Name: 8828 - Substep_Step-11_Substep_Step-1.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -459,7 +459,7 @@
 
 
 0 FILE 8828 - Substep_Step-12.ldr
-0 Substep_Step-12
+0 Long axle with bevel gear and bushed plate for extended drive linkage.
 0 Name: 8828 - Substep_Step-12.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -480,7 +480,7 @@
 
 
 0 FILE 8828 - Substep_Step-13.ldr
-0 Substep_Step-13
+0 Yellow plate decking forming a platform or cover section.
 0 Name: 8828 - Substep_Step-13.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -501,7 +501,7 @@
 
 
 0 FILE 8828 - Substep_Step-14.ldr
-0 Substep_Step-14
+0 Worm gear assembly on an axle with bushings for reduction drive.
 0 Name: 8828 - Substep_Step-14.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -530,7 +530,7 @@
 
 
 0 FILE 8828 - Substep_Step-16_1.ldr
-0 Substep_Step-16_1
+0 Two Technic plates with holes serving as structural supports.
 0 Name: 8828 - Substep_Step-16_1.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -546,7 +546,7 @@
 
 
 0 FILE 8828 - Substep_Step-16_2.ldr
-0 Substep_Step-16_2
+0 Engine crankshaft center on a short axle representing the engine.
 0 Name: 8828 - Substep_Step-16_2.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -562,7 +562,7 @@
 
 
 0 FILE 8828 - Substep_Step-16_3.ldr
-0 Substep_Step-16_3
+0 Single half-bush as a spacing component.
 0 Name: 8828 - Substep_Step-16_3.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -576,7 +576,7 @@
 
 
 0 FILE 8828 - Substep_Step-17_1.ldr
-0 Substep_Step-17_1
+0 Round translucent brick on a round tile forming a light or headlamp element.
 0 Name: 8828 - Substep_Step-17_1.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -592,7 +592,7 @@
 
 
 0 FILE 8828 - Substep_Step-17_2.ldr
-0 Substep_Step-17_2
+0 Single flanged bush serving as a collar or spacer.
 0 Name: 8828 - Substep_Step-17_2.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -606,7 +606,7 @@
 
 
 0 FILE 8828 - Substep_Step-17_3.ldr
-0 Substep_Step-17_3
+0 Large yellow base plates forming the rear bodywork or cab floor.
 0 Name: 8828 - Substep_Step-17_3.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -626,7 +626,7 @@
 
 
 0 FILE 8828 - Substep_Step-17_3_Substep_Step-3.ldr
-0 Substep_Step-17_3_Substep_Step-3
+0 Hinge plates forming an articulated joint for bodywork panels.
 0 Name: 8828 - Substep_Step-17_3_Substep_Step-3.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model

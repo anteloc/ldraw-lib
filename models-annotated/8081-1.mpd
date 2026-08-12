@@ -1,5 +1,5 @@
 0 FILE 8081 - Main.ldr
-0 Main
+0 Complete Technic model integrating frame, drivetrain, engine, body, and suspension submodels.
 0 Name: 8081 - Main.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8,7 +8,7 @@
 
 
 0 FILE 8081 - Frame.ldr
-0 Frame
+0 Structural chassis core built from large liftarms, gears, and axle joiners forming the vehicle's main framework.
 0 Name: 8081 - Frame.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -182,7 +182,7 @@
 
 
 0 FILE 8081 - Frame08.ldr
-0 Frame08
+0 Small bent liftarm and pin linkage subassembly used to connect frame elements.
 0 Name: 8081 - Frame08.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -201,7 +201,7 @@
 
 
 0 FILE 8081 - Body.ldr
-0 Body
+0 Vehicle body structure assembled from bent liftarms, long beams, and angle connectors forming the main shell.
 0 Name: 8081 - Body.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -338,7 +338,7 @@
 
 
 0 FILE 8081 - Frame11.ldr
-0 Frame11
+0 Geared linkage subassembly using axles, knobs, and short liftarms for motion transfer within the frame.
 0 Name: 8081 - Frame11.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -376,7 +376,7 @@
 
 
 0 FILE 8081 - Frame11S04.ldr
-0 Frame11S04
+0 Compact cross block and knob gear subassembly for routing motion through the frame.
 0 Name: 8081 - Frame11S04.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -393,7 +393,7 @@
 
 
 0 FILE 8081 - Frame15.ldr
-0 Frame15
+0 Simple beam and pin connector subassembly reinforcing the frame structure.
 0 Name: 8081 - Frame15.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -412,7 +412,7 @@
 
 
 0 FILE 8081 - Frame17.ldr
-0 Frame17
+0 Simple beam and pin connector subassembly reinforcing the frame structure.
 0 Name: 8081 - Frame17.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -431,7 +431,7 @@
 
 
 0 FILE 8081 - Frame19.ldr
-0 Frame19
+0 Differential and universal joint drivetrain subassembly with bevel gears for power distribution.
 0 Name: 8081 - Frame19.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -517,7 +517,7 @@
 
 
 0 FILE 8081 - Frame19S04.ldr
-0 Frame19S04
+0 Cross block and axle joint subassembly for connecting drivetrain components.
 0 Name: 8081 - Frame19S04.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -529,7 +529,7 @@
 
 
 0 FILE 8081 - Frame19S09.ldr
-0 Frame19S09
+0 Small cross block and bush subassembly for securing an axle within the drivetrain.
 0 Name: 8081 - Frame19S09.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -544,7 +544,7 @@
 
 
 0 FILE 8081 - Frame19S11.ldr
-0 Frame19S11
+0 Minimal cross block and pin subassembly joining drivetrain linkages.
 0 Name: 8081 - Frame19S11.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -556,7 +556,7 @@
 
 
 0 FILE 8081 - Engine.ldr
-0 Engine
+0 Engine block assembly with cylinder bricks, gears, and beams forming the motor housing.
 0 Name: 8081 - Engine.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -602,7 +602,7 @@
 
 
 0 FILE 8081 - Engine03.ldr
-0 Engine03
+0 Cylinder head pair with pins forming one bank of the engine.
 0 Name: 8081 - Engine03.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -623,7 +623,7 @@
 
 
 0 FILE 8081 - Engine04.ldr
-0 Engine04
+0 Reciprocating engine internals with crankshafts, connecting rods, and pistons.
 0 Name: 8081 - Engine04.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -655,7 +655,7 @@
 
 
 0 FILE 8081 - Engine05.ldr
-0 Engine05
+0 Cylinder head pair with pins forming one bank of the engine.
 0 Name: 8081 - Engine05.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -676,7 +676,7 @@
 
 
 0 FILE 8081 - Engine07.ldr
-0 Engine07
+0 Cross block and angle connector linkage subassembly routing motion from the engine.
 0 Name: 8081 - Engine07.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -705,7 +705,7 @@
 
 
 0 FILE 8081 - Front Axle.ldr
-0 Front Axle
+0 Steerable front axle assembly with suspension arms, shock absorber, steering rack, and steering links.
 0 Name: 8081 - Front Axle.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -771,7 +771,7 @@
 
 
 0 FILE 8081 - Front Axle S10.ldr
-0 Front Axle S10
+0 Steering arm and axle subassembly providing directional control of the front wheels.
 0 Name: 8081 - Front Axle S10.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -786,7 +786,7 @@
 
 
 0 FILE 8081 - Body09.ldr
-0 Body09
+0 Bent liftarm and beam connector subassembly extending the body structure.
 0 Name: 8081 - Body09.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -805,7 +805,7 @@
 
 
 0 FILE 8081 - Body11.ldr
-0 Body11
+0 Axle and cross block linkage subassembly with red liftarms reinforcing the body framework.
 0 Name: 8081 - Body11.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -846,7 +846,7 @@
 
 
 0 FILE 8081 - Body12.ldr
-0 Body12
+0 Cross block and beam connector subassembly joining body framework elements.
 0 Name: 8081 - Body12.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -868,7 +868,7 @@
 
 
 0 FILE 8081 - Body12S04.ldr
-0 Body12S04
+0 Bent liftarm and pin subassembly adding articulation to the body structure.
 0 Name: 8081 - Body12S04.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -884,7 +884,7 @@
 
 
 0 FILE 8081 - Body13.ldr
-0 Body13
+0 Cross block and beam connector subassembly joining body framework elements.
 0 Name: 8081 - Body13.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -909,7 +909,7 @@
 
 
 0 FILE 8081 - Body13S04.ldr
-0 Body13S04
+0 Bent liftarm and pin subassembly adding articulation to the body structure.
 0 Name: 8081 - Body13S04.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -926,7 +926,7 @@
 
 
 0 FILE 8081 - Body15.ldr
-0 Body15
+0 Compact Technic linkage assembly with axles, liftarms, and cross blocks forming a small mechanical connector joint.
 0 Name: 8081 - Body15.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -982,7 +982,7 @@
 
 
 0 FILE 8081 - Body16.ldr
-0 Body16
+0 Small Technic connector subassembly using cross blocks, an axle, and a gear tooth element.
 0 Name: 8081 - Body16.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -1004,7 +1004,7 @@
 
 
 0 FILE 8081 - Body17.ldr
-0 Body17
+0 Steering column assembly featuring a small steering wheel mounted on an axle with a bush and liftarm support.
 0 Name: 8081 - Body17.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -1029,7 +1029,7 @@
 
 
 0 FILE 8081 - Body19.ldr
-0 Body19
+0 Structural framework built from red and black beams joined by long pins and double pin connectors forming a rigid chassis section.
 0 Name: 8081 - Body19.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -1083,7 +1083,7 @@
 
 
 0 FILE 8081 - Body19S07.ldr
-0 Body19S07
+0 Long axle assembly with inline joiners and friction pins used to connect and align distant Technic beams.
 0 Name: 8081 - Body19S07.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -1102,7 +1102,7 @@
 
 
 0 FILE 8081 - Body20.ldr
-0 Body20
+0 Short red axle assembly with an angle connector and inline joiners forming a compact linkage joint.
 0 Name: 8081 - Body20.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -1126,7 +1126,7 @@
 
 
 0 FILE 8081 - Seat.ldr
-0 Seat
+0 Driver's seat constructed from blue bent and straight liftarms mounted on a grey support beam.
 0 Name: 8081 - Seat.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -1159,7 +1159,7 @@
 
 
 0 FILE 8081 - Body26.ldr
-0 Body26
+0 Body panel mounting assembly using a large 5x11 panel attached via angle connectors and friction pins.
 0 Name: 8081 - Body26.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -1187,7 +1187,7 @@
 
 
 0 FILE 8081 - Body28.ldr
-0 Body28
+0 Articulated linkage assembly combining a long axle, toggle joint connectors, and a 90-degree angle connector.
 0 Name: 8081 - Body28.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -1214,7 +1214,7 @@
 
 
 0 FILE 8081 - Body29.ldr
-0 Body29
+0 Compact angled linkage with toggle joint connectors and a 90-degree angle connector mounted on a short axle.
 0 Name: 8081 - Body29.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -1238,7 +1238,7 @@
 
 
 0 FILE 8081 - Extreme Cruiser.ldr
-0 Extreme Cruiser
+0 Main model assembly featuring four off-road wheels with tyres, body fairing panels, and a central support beam forming the core of the Extreme Cruiser vehicle.
 0 Name: 8081 - Extreme Cruiser.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -1309,7 +1309,7 @@
 
 
 0 FILE 8081 - Panel02.ldr
-0 Panel02
+0 Body panel section combining a long black liftarm, a holed brick, and a white grooved tile for a finished exterior surface.
 0 Name: 8081 - Panel02.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -1335,7 +1335,7 @@
 
 
 0 FILE 8081 - Panel03.ldr
-0 Panel03
+0 Curved body panel assembly with a fairing panel, bent liftarm, and a red translucent light element attached to a support beam.
 0 Name: 8081 - Panel03.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -1380,7 +1380,7 @@
 
 
 0 FILE 8081 - Panel05.ldr
-0 Panel05
+0 Curved body panel assembly with a fairing panel, bent liftarm, and a red translucent light element forming a mirror of the Panel03 section.
 0 Name: 8081 - Panel05.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -1425,7 +1425,7 @@
 
 
 0 FILE 8081 - Hose.ldr
-0 Hose
+0 Flexible hose assembly composed of multiple curved segments forming an approximately 97mm routed pneumatic or decorative line.
 0 Name: 8081 - Hose.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -2652,7 +2652,7 @@
 
 
 0 FILE 8081 - Panel07.ldr
-0 Panel07
+0 Angled body panel mount using bent liftarms and pin joiners to form a structural support for exterior cladding.
 0 Name: 8081 - Panel07.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -2685,7 +2685,7 @@
 
 
 0 FILE 8081 - Panel08.ldr
-0 Panel08
+0 Long panel support structure built around a 13-stud beam and axle with cross blocks and pins for mounting.
 0 Name: 8081 - Panel08.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -2712,7 +2712,7 @@
 
 
 0 FILE 8081 - Panel09.ldr
-0 Panel09
+0 Wide smooth fairing panel mounted on a red beam using friction pins for an aerodynamic exterior surface.
 0 Name: 8081 - Panel09.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -2729,7 +2729,7 @@
 
 
 0 FILE 8081 - Panel10.ldr
-0 Panel10
+0 Angular support assembly using a double-bent liftarm, axle connector, and angle connector to mount bodywork.
 0 Name: 8081 - Panel10.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -2756,7 +2756,7 @@
 
 
 0 FILE 8081 - Panel11.ldr
-0 Panel11
+0 Angled body panel mount using bent liftarms and pin joiners, mirroring the Panel07 section on the opposite side.
 0 Name: 8081 - Panel11.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -2789,7 +2789,7 @@
 
 
 0 FILE 8081 - Panel12.ldr
-0 Panel12
+0 Long panel support structure built around a 13-stud beam and axle with cross blocks and pins, mirroring Panel08.
 0 Name: 8081 - Panel12.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -2815,7 +2815,7 @@
 
 
 0 FILE 8081 - Panel13.ldr
-0 Panel13
+0 Wide smooth fairing panel mounted on a red beam using friction pins, mirroring Panel09 with a different fairing variant.
 0 Name: 8081 - Panel13.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -2832,7 +2832,7 @@
 
 
 0 FILE 8081 - Panel14.ldr
-0 Panel14
+0 Angular support assembly using a double-bent liftarm, axle connector, and angle connector, mirroring Panel10.
 0 Name: 8081 - Panel14.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -2859,7 +2859,7 @@
 
 
 0 FILE 8081 - Panel15.ldr
-0 Panel15
+0 Wide fairing panel mounted on a red beam with an angle connector and friction pins for an exterior body surface.
 0 Name: 8081 - Panel15.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -2884,7 +2884,7 @@
 
 
 0 FILE 8081 - Panel16.ldr
-0 Panel16
+0 Wide smooth fairing panel mounted on a red beam using friction pins for an aerodynamic exterior surface.
 0 Name: 8081 - Panel16.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -2901,7 +2901,7 @@
 
 
 0 FILE 8081 - Panel17.ldr
-0 Panel17
+0 Short black fairing panel assembly built on an axle with angle connectors and friction pins.
 0 Name: 8081 - Panel17.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -2937,7 +2937,7 @@
 
 
 0 FILE 8081 - Panel17S04.ldr
-0 Panel17S04
+0 Small subassembly joining two angle connectors on a short axle with friction pins.
 0 Name: 8081 - Panel17S04.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -2956,7 +2956,7 @@
 
 
 0 FILE 8081 - Panel18.ldr
-0 Panel18
+0 Medium black fairing panel structure with beams, cross blocks, and round clear plates on an axle frame.
 0 Name: 8081 - Panel18.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -3013,7 +3013,7 @@
 
 
 0 FILE 8081 - Panel18S07.ldr
-0 Panel18S07
+0 Decorative grille assembly using six grille tiles on a black plate with white accents.
 0 Name: 8081 - Panel18S07.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -3044,7 +3044,7 @@
 
 
 0 FILE 8081 - Panel18S08.ldr
-0 Panel18S08
+0 Small clear dish light mounted on a round plate with axlehole and a friction pin.
 0 Name: 8081 - Panel18S08.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model

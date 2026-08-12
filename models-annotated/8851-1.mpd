@@ -1,5 +1,5 @@
 0 FILE 8851 - main.ldr
-0 main
+0 Main assembly of a pneumatic Technic excavator featuring red chassis beams, pneumatic valves, cylinders, and flexible hoses connecting the drive and arm systems.
 0 Name: 8851 - main.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -203,7 +203,7 @@
 0 // Plate  4 x  4 (light_grey)
 1 7 110 -381.946 -10.862 0 0 1 0.051 0.999 0 -0.999 0.051 0 3031.dat
 0 FILE 8851 - pneumaticHoseLQ-1.ldr
-0 pneumaticHoseLQ-1
+0 Short pneumatic tube (approx. 36 mm) with bulged ends forming a flexible air line connection.
 0 Name: 8851 - pneumaticHoseLQ-1.ldr
 0 Author: LDCad
 0 !LDRAW_ORG Model
@@ -283,7 +283,7 @@
 0 // ~Technic Pneumatic Tube Segment (main_colour)
 1 16 -40.00064 -11.000176 57.026081 1 0.012547 0 0 0.00345 1 0.000316 -39.747211 0.000087 166.dat
 0 FILE 8851 - pneumaticHoseLQ-2.ldr
-0 pneumaticHoseLQ-2
+0 Short pneumatic tube (approx. 35 mm) with bulged ends forming a flexible air line connection.
 0 Name: 8851 - pneumaticHoseLQ-2.ldr
 0 Author: LDCad
 0 !LDRAW_ORG Model
@@ -367,7 +367,7 @@
 0 // ~Technic Pneumatic Tube Segment (main_colour)
 1 16 -40.000009 -9.000002 56.006275 1 0.000336 0 0 0.000076 1 0.000009 -36.608366 0.000002 166.dat
 0 FILE 8851 - pneumaticHoseLQ-3.ldr
-0 pneumaticHoseLQ-3
+0 Long pneumatic tube (approx. 100 mm) with bulged ends routing air over an extended distance.
 0 Name: 8851 - pneumaticHoseLQ-3.ldr
 0 Author: LDCad
 0 !LDRAW_ORG Model
@@ -542,7 +542,7 @@
 0 // ~Technic Pneumatic Tube Segment (main_colour)
 1 16 -26.537273 199.621191 60.039413 -0.971744 0.942471 0.008822 -0.236033 -3.87927 -0.041486 -0.001221 -0.169403 0.9991 166.dat
 0 FILE 8851 - chassisbeam1.ldr
-0 chassisbeam1
+0 Red structural chassis beam built from technic bricks and plates with friction pins for mounting.
 0 Name: 8851 - chassisbeam1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -570,7 +570,7 @@
 0 // Plate  1 x  2 (red)
 1 4 0 -16 -20 1 0 0 0 1 0 0 0 1 3023.dat
 0 FILE 8851 - chassisbeam2.ldr
-0 chassisbeam2
+0 Red structural chassis beam assembled from technic bricks with multiple friction pins for connection points.
 0 Name: 8851 - chassisbeam2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -592,7 +592,7 @@
 0 // Technic Brick  1 x  4 with Holes (red)
 1 4 -110 30 20 0 1 0 1 0 0 0 0 -1 3701.dat
 0 FILE 8851 - pneumaticHoseLQ-5.ldr
-0 pneumaticHoseLQ-5
+0 Medium pneumatic tube (approx. 46 mm) with bulged ends forming a flexible air line.
 0 Name: 8851 - pneumaticHoseLQ-5.ldr
 0 Author: LDCad
 0 !LDRAW_ORG Model
@@ -693,7 +693,7 @@
 0 // ~Technic Pneumatic Tube Segment (main_colour)
 1 16 14.008096 -46.088815 108.028115 0.999963 -0.034167 -0.000102 -0.008542 -3.994639 0.029553 -0.000355 -0.118104 -0.999563 166.dat
 0 FILE 8851 - pneumaticHoseLQ-6.ldr
-0 pneumaticHoseLQ-6
+0 Short pneumatic tube (approx. 25 mm) with bulged ends for a close air line connection.
 0 Name: 8851 - pneumaticHoseLQ-6.ldr
 0 Author: LDCad
 0 !LDRAW_ORG Model
@@ -759,7 +759,7 @@
 0 // ~Technic Pneumatic Tube Segment (main_colour)
 1 16 -5.004243 5.004244 77.51783 0.999967 0.032244 0.000033 0.000033 -0.032245 0.999967 0.008108 -3.976522 -0.008108 166.dat
 0 FILE 8851 - pneumaticHoseLQ-7.ldr
-0 pneumaticHoseLQ-7
+0 Short pneumatic tube (approx. 15 mm) with bulged ends for a very close air line connection.
 0 Name: 8851 - pneumaticHoseLQ-7.ldr
 0 Author: LDCad
 0 !LDRAW_ORG Model
@@ -833,7 +833,7 @@
 0 // ~Technic Pneumatic Tube Segment (main_colour)
 1 16 -23.821137 5.217655 -1.0222 0.689834 2.902029 -0.021643 -0.723888 2.766679 -0.005825 0.010716 0.078943 0.999749 166.dat
 0 FILE 8851 - pneumaticHoseLQ-8.ldr
-0 pneumaticHoseLQ-8
+0 Short pneumatic tube (approx. 22 mm) with bulged ends forming a flexible air line.
 0 Name: 8851 - pneumaticHoseLQ-8.ldr
 0 Author: LDCad
 0 !LDRAW_ORG Model
@@ -915,7 +915,7 @@
 0 // ~Technic Pneumatic Tube Segment (main_colour)
 1 16 -23.78546 -25.305328 -1.044688 0.038101 2.936964 -0.669654 -0.011968 -2.652093 -0.742486 -0.999202 0.143759 -0.016642 166.dat
 0 FILE 8851 - pneumaticHoseLQ-9.ldr
-0 pneumaticHoseLQ-9
+0 Very long pneumatic tube (approx. 241 mm) with bulged ends routing air across the model.
 0 Name: 8851 - pneumaticHoseLQ-9.ldr
 0 Author: LDCad
 0 !LDRAW_ORG Model
@@ -1315,7 +1315,7 @@
 0 // ~Technic Pneumatic Tube Segment (main_colour)
 1 16 -288.145226 -329.396895 -20.003625 -0.003776 -3.837671 0.281603 0.000695 1.126287 0.959531 -0.999993 0.015276 -0.000396 166.dat
 0 FILE 8851 - pneumaticHoseLQ-10.ldr
-0 pneumaticHoseLQ-10
+0 Short pneumatic tube (approx. 26 mm) with bulged ends for a close air line connection.
 0 Name: 8851 - pneumaticHoseLQ-10.ldr
 0 Author: LDCad
 0 !LDRAW_ORG Model
@@ -1393,7 +1393,7 @@
 0 // ~Technic Pneumatic Tube Segment (main_colour)
 1 16 14.031197 32.642411 45.030179 0.998615 -0.213778 -0.001408 -0.052492 -4.055061 0.042291 -0.003629 -0.171344 -0.999104 166.dat
 0 FILE 8851 - pneumaticHoseLQ-11.ldr
-0 pneumaticHoseLQ-11
+0 Medium pneumatic tube (approx. 34 mm) with bulged ends forming a flexible air line.
 0 Name: 8851 - pneumaticHoseLQ-11.ldr
 0 Author: LDCad
 0 !LDRAW_ORG Model
@@ -1496,7 +1496,7 @@
 0 // ~Technic Pneumatic Tube Segment (main_colour)
 1 16 39.998888 19.980404 3.11105 0.999796 0.00211 -0.02017 -0.020177 0.077005 -0.999612 -0.000139 4.004528 0.019233 166.dat
 0 FILE 8851 - chassisbeam3.ldr
-0 chassisbeam3
+0 Red chassis beam incorporating a pneumatic distribution block, technic bricks, and plates for structural support and air routing.
 0 Name: 8851 - chassisbeam3.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1523,7 +1523,7 @@
 0 // ~_Technic Pneumatic Distribution Block  2 x  4 (Complete) Lt Grey (Obsolete) (red)
 1 4 20 0 -50 0 0 -1 0 1 0 1 0 0 73479.dat
 0 FILE 8851 - pneumaticHoseLQ-12.ldr
-0 pneumaticHoseLQ-12
+0 Short pneumatic tube (approx. 14 mm) with bulged ends for a very close air line connection.
 0 Name: 8851 - pneumaticHoseLQ-12.ldr
 0 Author: LDCad
 0 !LDRAW_ORG Model
@@ -1589,7 +1589,7 @@
 0 // ~Technic Pneumatic Tube Segment (main_colour)
 1 16 -5.005644 9.01016 34.064107 0.999977 0.027002 0.000041 0.000041 -0.048603 0.999926 0.00675 -3.999614 -0.012151 166.dat
 0 FILE 8851 - pneumaticHoseLQ-13.ldr
-0 pneumaticHoseLQ-13
+0 Medium pneumatic tube (approx. 35 mm) with bulged ends forming a flexible air line.
 0 Name: 8851 - pneumaticHoseLQ-13.ldr
 0 Author: LDCad
 0 !LDRAW_ORG Model
@@ -1694,7 +1694,7 @@
 0 // ~Technic Pneumatic Tube Segment (main_colour)
 1 16 -26.012656 8.959048 36.000576 0.999946 0.041842 -0.000689 -0.010387 4.027842 0.000241 0.000691 -0.00094 1 166.dat
 0 FILE 8851 - pneumaticHoseLQ-14.ldr
-0 pneumaticHoseLQ-14
+0 Medium pneumatic tube (approx. 38 mm) with bulged ends forming a flexible air line.
 0 Name: 8851 - pneumaticHoseLQ-14.ldr
 0 Author: LDCad
 0 !LDRAW_ORG Model
@@ -1803,7 +1803,7 @@
 0 // ~Technic Pneumatic Tube Segment (main_colour)
 1 16 -27.142131 45.044934 29.007602 0.008138 -4.00342 -0.052421 0.013789 -0.209695 0.998536 -0.999872 -0.035477 0.013344 166.dat
 0 FILE 8851 - pneumaticHoseLQ-15.ldr
-0 pneumaticHoseLQ-15
+0 Very long pneumatic tube (approx. 359 mm) with bulged ends routing air across the entire model.
 0 Name: 8851 - pneumaticHoseLQ-15.ldr
 0 Author: LDCad
 0 !LDRAW_ORG Model
@@ -2271,7 +2271,7 @@
 0 // ~Technic Pneumatic Tube Segment (main_colour)
 1 16 -244.382142 -611.729365 -100 -0.047586 -8.78532 0.012299 0.967015 -0.432315 -0.249934 0.250236 0 0.968185 166.dat
 0 FILE 8851 - chassisbeam4.ldr
-0 chassisbeam4
+0 Red chassis beam built from a large technic brick, plates, and a 6x14 plate with friction pins for mounting.
 0 Name: 8851 - chassisbeam4.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -2295,7 +2295,7 @@
 0 // Technic Pin with Friction (black)
 1 0 -20 10 -10 0 0 1 0 1 0 -1 0 0 4459.dat
 0 FILE 8851 - tracks.ldr
-0 tracks
+0 Black tracked drive assembly composed of technic plates, bricks, axles, nuts, and pins forming the track undercarriage.
 0 Name: 8851 - tracks.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -2441,7 +2441,7 @@
 1 0 -140 26 -110 1 0 0 0 1 0 0 0 1 8851 - technicChainTread17Closed-1.ldr
 1 0 -140 26 110 1 0 0 0 1 0 0 0 1 8851 - technicChainTread17Closed-1.ldr
 0 FILE 8851 - technicChainTread17Closed-1.ldr
-0 technicChainTread17Closed-1
+0 Closed loop of chain tread links forming one continuous track band for the crawler drive.
 0 Name: 8851 - technicChainTread17Closed-1.ldr
 0 Author: LDCad
 0 !LDRAW_ORG Model
@@ -2579,7 +2579,7 @@
 0 // Technic Chain Tread 2.5 Wide (main_colour)
 1 16 -51.143096 1.163847 0 0 0.983893 0.178758 0 -0.178758 0.983893 1 0 0 3873.dat
 0 FILE 8851 - arm.ldr
-0 arm
+0 Grey excavator arm assembly featuring pneumatic cylinders, technic bricks, axles, and a yellow excavator bucket.
 0 Name: 8851 - arm.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -2696,7 +2696,7 @@
 0 // Technic Bush  1/2 Type 1 (light_grey)
 1 7 -293.563 16 -165.563 -0.999 0.048 0 0 0 -1 -0.048 -0.999 0 4265a.dat
 0 FILE 8851 - rubberBandSquare-1.ldr
-0 rubberBandSquare-1
+0 Square rubber band formed from multiple generated segments providing tension or drive coupling.
 0 Name: 8851 - rubberBandSquare-1.ldr
 0 Author: LDCad
 0 !LDRAW_ORG Model
@@ -3046,7 +3046,7 @@
 5 24 6.73383 1.911944 2 10.581734 3.004483 2 6.907321 -1.103678 2 6.67647 2.910297 2
 5 24 10.581734 3.004483 2 10.581734 3.004483 -2 10.854696 -1.750389 2 10.524373 4.002837 2
 0 FILE 8851 - back.ldr
-0 back
+0 Red rear counterweight/body block built from bricks and plates to form the back structure of the excavator.
 0 Name: 8851 - back.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt

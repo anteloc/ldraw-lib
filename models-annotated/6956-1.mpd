@@ -1,5 +1,5 @@
 0 FILE 6956 - Stellar Recon Voyager.ldr
-0 Stellar Recon Voyager
+0 An M:Tron-themed space exploration vehicle set featuring a large spaceship, a wheeled rover, cargo boxes, a crane assembly, and two astronaut minifigures with airtanks and neon-green visored helmets.
 0 Name: 6956 - Stellar Recon Voyager.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -11,7 +11,7 @@
 1 0 -250 24 260 0.382683 0 -0.92388 0 1 0 0.92388 0 0.382683 6956 - Vehicle + Minifig.ldr
 
 0 FILE 6956 - Vehicle.ldr
-0 Vehicle
+0 A small black wheeled rover built on a plate chassis with a steering stand, four offset-tread tyres, and a front-mounted cylindrical magnet for coupling cargo.
 0 Name: 6956 - Vehicle.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -60,7 +60,7 @@
 
 
 0 FILE 6956 - Vehicle + Minifig.ldr
-0 Vehicle + Minifig
+0 The wheeled rover assembly complete with an astronaut minifigure, combining the vehicle and crewed driver unit.
 0 Name: 6956 - Vehicle + Minifig.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -72,7 +72,7 @@
 1 0 0 -80 -31 -1 0 0 0 1 0 0 0 -1 6956 - Minifig 1.ldr
 
 0 FILE 6956 - Spaceship.ldr
-0 Spaceship
+0 A large red and black spacecraft built from numerous plates and angled wings, forming the multi-section hull with integrated cargo, crane, and cockpit modules.
 0 Name: 6956 - Spaceship.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -707,7 +707,7 @@
 0 GROUP 50 Hose 2
 
 0 FILE 6956 - Spaceship - Box 1.ldr
-0 Spaceship - Box 1
+0 An M:Tron cargo container module with lattice fences, hinged panels, grille tiles, tools, and a magnetic coupling, designed to attach to the spaceship.
 0 Name: 6956 - Spaceship - Box 1.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -757,7 +757,7 @@
 1 0 42 -15.387 -5.063 1 0 0 0 0.076719 -0.997053 0 0.997053 0.076719 4006.dat
 
 0 FILE 6956 - Spaceship - Box 2.ldr
-0 Spaceship - Box 2
+0 A compact red storage box with a hinged M:Tron-patterned door, a neon-green translucent round element, and a magnetic coupling mount.
 0 Name: 6956 - Spaceship - Box 2.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -778,7 +778,7 @@
 
 
 0 FILE 6956 - Spaceship - Crane.ldr
-0 Spaceship - Crane
+0 A red articulated crane assembly with a pivoting hinge arm, an inclined stanchion support, and a magnet-tipped grabber with neon-green light elements.
 0 Name: 6956 - Spaceship - Crane.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -812,7 +812,7 @@
 
 
 0 FILE 6956 - Spaceship - Crane + Box 1.ldr
-0 Spaceship - Crane + Box 1
+0 A combined assembly uniting the articulated crane with the M:Tron cargo box for magnetically-coupled lifting operations aboard the spaceship.
 0 Name: 6956 - Spaceship - Crane + Box 1.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -824,7 +824,7 @@
 1 0 0 -34.5 46.5 1 0 0 0 1 0 0 0 1 6956 - Spaceship - Box 1.ldr
 
 0 FILE 6956 - Spaceship + Minifig.ldr
-0 Spaceship + Minifig
+0 The complete large spacecraft assembled with its crewed astronaut minifigure, representing the fully manned spaceship.
 0 Name: 6956 - Spaceship + Minifig.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -836,7 +836,7 @@
 1 0 0 -69 78 1 0 0 0 1 0 0 0 1 6956 - Minifig 2.ldr
 
 0 FILE 6956 - Spaceship - Lamp.ldr
-0 Spaceship - Lamp
+0 A small light fixture made of a clipped round bar with a translucent neon-green round plate, serving as a signal or indicator lamp.
 0 Name: 6956 - Spaceship - Lamp.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -852,7 +852,7 @@
 
 
 0 FILE 6956 - Minifig 1.ldr
-0 Minifig 1
+0 An M:Tron astronaut minifigure wearing a red logo torso, white arms and legs, black airtanks, and a radio, ready for space duty.
 0 Name: 6956 - Minifig 1.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -886,7 +886,7 @@
 
 
 0 FILE 6956 - Minifig 1 - Helmet.ldr
-0 Minifig 1 - Helmet
+0 A black standard space helmet fitted with a translucent neon-green visor for the first astronaut.
 0 Name: 6956 - Minifig 1 - Helmet.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -902,7 +902,7 @@
 
 
 0 FILE 6956 - Minifig 2.ldr
-0 Minifig 2
+0 A second M:Tron astronaut minifigure with matching red logo torso, white arms and legs, black airtanks, and a radio.
 0 Name: 6956 - Minifig 2.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -934,7 +934,7 @@
 
 
 0 FILE 6956 - Minifig 2 - Helmet.ldr
-0 Minifig 2 - Helmet
+0 A black standard space helmet fitted with a translucent neon-green visor for the second astronaut.
 0 Name: 6956 - Minifig 2 - Helmet.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model

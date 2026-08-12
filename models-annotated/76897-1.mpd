@@ -1,5 +1,5 @@
 0 FILE 76897 - Main.ldr
-0 Main
+0 A complete LEGO Speed Champions racing car model featuring a detailed build with a pilot minifigure, multi-section car body, trunk, hood, spoiler, windshield, and wheels.
 0 Name: 76897 - Main.ldr
 0 Author: Adrien Pennamen [Adrien Pennamen]
 0 !LDRAW_ORG Model
@@ -15,7 +15,7 @@
 
 
 0 FILE 76897 - Pilot.ldr
-0 Pilot
+0 A white-and-grey minifigure pilot wearing a white racing helmet with clear visor, yellow/orange racesuit torso, and holding a black spanner/screwdriver tool.
 0 Name: 76897 - Pilot.ldr
 0 Author: Adrien Pennamen [Adrien Pennamen]
 0 !LDRAW_ORG Model
@@ -49,7 +49,7 @@
 
 
 0 FILE 76897 - Car.ldr
-0 Car
+0 The main chassis of a racing car built on a black 6x12 car base with extensive plating, white mudguards, dark grey structural plates, and yellow accent plates.
 0 Name: 76897 - Car.ldr
 0 Author: Adrien Pennamen [Adrien Pennamen]
 0 !LDRAW_ORG Model
@@ -496,7 +496,7 @@
 
 
 0 FILE 76897 - Back trunk.ldr
-0 Back trunk
+0 The rear trunk assembly featuring a white tile with sticker detail, yellow and white plates, black grille tiles, trans-red light elements, and black headlight bricks.
 0 Name: 76897 - Back trunk.ldr
 0 Author: Adrien Pennamen [Adrien Pennamen]
 0 !LDRAW_ORG Model
@@ -557,7 +557,7 @@
 
 
 0 FILE 76897 - Front bumper.ldr
-0 Front bumper
+0 A front bumper constructed from yellow plates with white sloped panels and white brackets forming the aerodynamic front edge.
 0 Name: 76897 - Front bumper.ldr
 0 Author: Adrien Pennamen [Adrien Pennamen]
 0 !LDRAW_ORG Model
@@ -587,7 +587,7 @@
 
 
 0 FILE 76897 - Hood.ldr
-0 Hood
+0 A white and yellow hood section with a central grille tile, black trim tiles, and yellow sloped accents with a stickered detail plate.
 0 Name: 76897 - Hood.ldr
 0 Author: Adrien Pennamen [Adrien Pennamen]
 0 !LDRAW_ORG Model
@@ -612,7 +612,7 @@
 
 
 0 FILE 76897 - Spoiler.ldr
-0 Spoiler
+0 A rear wing spoiler made of white plates, sloped bricks, and inverted curved slopes mounted on a long white tile base.
 0 Name: 76897 - Spoiler.ldr
 0 Author: Adrien Pennamen [Adrien Pennamen]
 0 !LDRAW_ORG Model
@@ -646,7 +646,7 @@
 
 
 0 FILE 76897 - Windshield.ldr
-0 Windshield
+0 A windshield module consisting of a large trans-brown windscreen mounted on a white plate with multiple edge studs and stickered detail plates.
 0 Name: 76897 - Windshield.ldr
 0 Author: Adrien Pennamen [Adrien Pennamen]
 0 !LDRAW_ORG Model
@@ -661,7 +661,7 @@
 
 
 0 FILE 76897 - Wheel.ldr
-0 Wheel
+0 A single wheel assembly combining a black intermediate tyre, bright yellow axle pin, and white 5-spoke wheel rim with disc brake detail.
 0 Name: 76897 - Wheel.ldr
 0 Author: Adrien Pennamen [Adrien Pennamen]
 0 !LDRAW_ORG Model
@@ -679,7 +679,7 @@
 
 
 0 FILE 76897 - 65635.dat
-0 65635
+0 A geometric primitive subpart composed of boxes and rectangles defining part of a plate with axlehole structure.
 0 Name: 76897 - 65635.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Part
@@ -709,7 +709,7 @@
 
 
 0 FILE 76897 - 65634.dat
-0 65634
+0 A geometric primitive subpart made of box faces forming half of a car base structure.
 0 Name: 76897 - 65634.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Part
@@ -738,7 +738,7 @@
 
 
 0 FILE 76897 - 66727c01.dat
-0 66727c01
+0 A wheel and tyre assembly combining a white drilled disc brake rim with a black intermediate tyre.
 0 Name: 76897 - 66727c01.dat
 0 Author: Steffen [Steffen]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -753,7 +753,7 @@
 
 
 0 FILE 76897 - 65635s01.dat
-0 ~Plate 2 x  6 with Side Bricks  1 x  2 x  1.333 with Axlehole - Brick
+0 A geometric subpart defining the brick portion of a plate with side bricks and axlehole, built from boxes, studs, and an axle hole.
 0 Name: 76897 - 65635s01.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -814,7 +814,7 @@
 
 
 0 FILE 76897 - 65634s01.dat
-0 ~Car Base 12 x  6 with 6 Studs on 2 Sides - Half
+0 A detailed geometric subpart forming half of a car base 12x6 plate, composed of numerous boxes, cylinders, discs, and stud tubes.
 0 Name: 76897 - 65634s01.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -1043,7 +1043,7 @@
 1 16 60 10 -50 0 -2 0 1 0 0 0 0 1 stud2a.dat
 
 0 FILE 76897 - 66727.dat
-0 Wheel Rim 11 x 18 with Drilled Disc Brake
+0 A detailed geometric model of a drilled disc brake wheel rim constructed from connectors, cylinders, rings, cones, and circular primitives.
 0 Name: 76897 - 66727.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Part
@@ -1204,7 +1204,7 @@
 1 16 0 0 -10 22 0 0 0 0 22 0 -10 0 4-4cylo.dat
 
 0 FILE 76897 - 65635s02.dat
-0 ~Plate  2 x  6 with Side Bricks  1 x  2 x  1.333 with Axlehole - Quarter
+0 A geometric subpart forming a quarter section of a plate with axlehole, built from cylinders, chords, and rectangular faces.
 0 Name: 76897 - 65635s02.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -1254,7 +1254,7 @@
 4 16 0 -1 10 0 -2 11.7922 0 -2 16 0 0 10
 
 0 FILE 76897 - 3-8con19.dat
-0 Cone 19 x 0.375
+0 A low-resolution cone primitive segment with conditional lines generated by LDPartEditor.
 0 Name: 76897 - 3-8con19.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -1279,7 +1279,7 @@
 0 // Build by LDPartEditor (PrimGen 2.X)
 
 0 FILE 76897 - 3-8con10.dat
-0 Cone 10 x 0.375
+0 A low-resolution cone primitive segment with conditional lines generated by Primitive Generator 2.
 0 Name: 76897 - 3-8con10.dat
 0 Author: Ulrich Röder [UR]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -1304,7 +1304,7 @@
 0 // Build by Primitive Generator 2
 
 0 FILE 76897 - 66727s01.dat
-0 ~Wheel Rim 11 x 18 with Drilled Disc Brake - Holes
+0 A subpart defining the three drilled holes in a disc brake wheel rim using cone primitives.
 0 Name: 76897 - 66727s01.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -1340,7 +1340,7 @@
 4 16 -11.8902 -3.112 0 -9.4523 -6.626 0 -9.9258 -10.2733 0 -13.8599 -3.4593 0
 
 0 FILE 76897 - 66727s02.dat
-0 ~Wheel Rim 11 x 18 with Drilled Disc Brake - Half Adapter
+0 An empty adapter subpart for half of a drilled disc brake wheel rim with no direct geometry pieces.
 0 Name: 76897 - 66727s02.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -1367,7 +1367,7 @@
 4 16 1 6.75 -12 3.5728 5.8136 -12 2.2962 5.5434 -12 0 6 -12
 
 0 FILE 76897 - 4-4con0.dat
-0 Lo-Res Cone  0 x 1.0
+0 A low-resolution cone primitive with zero-radius apex, consisting only of conditional line geometry.
 0 Name: 76897 - 4-4con0.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_8_Primitive

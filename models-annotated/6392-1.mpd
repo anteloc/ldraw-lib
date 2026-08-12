@@ -1,5 +1,5 @@
 0 FILE 6392 - main.ldr 
-0 main
+0 Complete airport scene featuring a control building, airplane, helicopter, tractor with trailer, runway baseplates, antenna equipment, and eight minifigures.
 0 Name: 6392 - main.ldr 
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -25,7 +25,7 @@
 
 
 0 FILE 6392 - building.ldr 
-0 building
+0 Airport terminal building constructed from bricks, panels, transparent windows, and minifig seats on a green baseplate.
 0 Name: 6392 - building.ldr 
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -409,7 +409,7 @@
 
 
 0 FILE 6392 - antenna.ldr 
-0 antenna
+0 Antenna assembly built from hinge plates and a turntable top plate.
 0 Name: 6392 - antenna.ldr 
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -428,7 +428,7 @@
 
 
 0 FILE 6392 - antenna - subpart.ldr 
-0 antenna - subpart
+0 Antenna subassembly using hinge plates supporting an inverted dish.
 0 Name: 6392 - antenna - subpart.ldr 
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -446,7 +446,7 @@
 
 
 0 FILE 6392 - airplane.ldr 
-0 airplane
+0 Passenger airplane built with large wings, wedge plates, inverted slopes, and cockpit panels.
 0 Name: 6392 - airplane.ldr 
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -708,7 +708,7 @@
 
 
 0 FILE 6392 - airplane - subpart.ldr 
-0 airplane - subpart
+0 Airplane subassembly featuring cockpit windows, transparent glass panes, and hinged slope sections.
 0 Name: 6392 - airplane - subpart.ldr 
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -756,7 +756,7 @@
 
 
 0 FILE 6392 - helicopter.ldr 
-0 helicopter
+0 Helicopter with wedge and slope body panels, control sticks, doors, computer panel, and a minifig seat.
 0 Name: 6392 - helicopter.ldr 
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -914,7 +914,7 @@
 
 
 0 FILE 6392 - tractor.ldr 
-0 tractor
+0 Wheeled tractor vehicle with wheels, steering wheel, towball socket, and a minifig seat.
 0 Name: 6392 - tractor.ldr 
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -954,7 +954,7 @@
 
 
 0 FILE 6392 - trailer.ldr 
-0 trailer
+0 Wheeled trailer with towball coupling, flatbed plates, and lattice fences.
 0 Name: 6392 - trailer.ldr 
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -993,7 +993,7 @@
 
 
 0 FILE 6392 - runway.ldr 
-0 runway
+0 Runway layout made of printed green baseplates depicting landing pad, T-junction, and straight road sections.
 0 Name: 6392 - runway.ldr 
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1044,7 +1044,7 @@
 
 
 0 FILE 6392 - runway - end.ldr 
-0 runway - end
+0 Green runway end section built from a long plate.
 0 Name: 6392 - runway - end.ldr 
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1063,7 +1063,7 @@
 
 
 0 FILE 6392 - runway - light.ldr 
-0 runway - light
+0 Runway light marker made from small round plates.
 0 Name: 6392 - runway - light.ldr 
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1079,7 +1079,7 @@
 
 
 0 FILE 6392 - minifig 1.ldr 
-0 minifig 1
+0 Police officer minifigure wearing a white police hat and black uniform torso with badge.
 0 Name: 6392 - minifig 1.ldr 
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1111,7 +1111,7 @@
 
 
 0 FILE 6392 - minifig 2.ldr 
-0 minifig 2
+0 Pilot minifigure wearing a red cap and white torso with airplane logo.
 0 Name: 6392 - minifig 2.ldr 
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1143,7 +1143,7 @@
 
 
 0 FILE 6392 - minifig 3.ldr 
-0 minifig 3
+0 Pilot minifigure with shoulder-length black hair, white torso with airplane logo, and red legs.
 0 Name: 6392 - minifig 3.ldr 
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1175,7 +1175,7 @@
 
 
 0 FILE 6392 - minifig 4.ldr 
-0 minifig 4
+0 Ground crew minifigure with male brown hair, airplane-logo torso, and signal baton holders.
 0 Name: 6392 - minifig 4.ldr 
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1215,7 +1215,7 @@
 
 
 0 FILE 6392 - minifig 5.ldr 
-0 minifig 5
+0 Civilian passenger minifigure with blue-striped torso, shoulder-length hair, and a red cup.
 0 Name: 6392 - minifig 5.ldr 
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1249,7 +1249,7 @@
 
 
 0 FILE 6392 - minifig 6.ldr 
-0 minifig 6
+0 Mechanic or worker minifigure wearing a white helmet and blue zip-up jumpsuit torso.
 0 Name: 6392 - minifig 6.ldr 
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1281,7 +1281,7 @@
 
 
 0 FILE 6392 - minifig 7.ldr 
-0 minifig 7
+0 Businessman minifigure in a suit-and-tie torso, carrying a grey suitcase.
 0 Name: 6392 - minifig 7.ldr 
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1315,7 +1315,7 @@
 
 
 0 FILE 6392 - minifig 8.ldr 
-0 minifig 8
+0 Police officer minifigure wearing a black police hat and black suit torso with airplane pattern.
 0 Name: 6392 - minifig 8.ldr 
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1347,7 +1347,7 @@
 
 
 0 FILE 6392 - 4343c02.dat 
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 Background gradient element consisting of a 1x4x5 door frame and transparent glass door.
 0 Door  1 x  4 x  5 Right with TransClear Glass
 0 Name: 6392 - 4343c02.dat 
 0 Author: Steffen [Steffen]

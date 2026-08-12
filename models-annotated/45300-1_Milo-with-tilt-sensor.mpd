@@ -1,5 +1,5 @@
 0 FILE 45300 - main.ldr
-0 main
+0 Main body of the Milo robot featuring a Power Functions 2.0 hub, wheeled chassis with technic axles, and a ball-joint neck connecting to the head.
 0 Name: 45300 - main.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -94,7 +94,7 @@
 
 
 0 FILE 45300 - rubberBandRound-1.ldr
-0 rubberBandRound-1
+0 A flexible rubber band assembly composed of 49 generated curve segments forming a closed loop approximately 154 mm in circumference.
 0 !CATEGORY technic
 0 Name: 45300 - rubberBandRound-1.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -1418,7 +1418,7 @@
 
 
 0 FILE 45300 - head.ldr
-0 head
+0 Milo's head with round printed eyes, hinge-based ears, ball-joint neck connection, and a decorative azure and orange color scheme.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 45300 - head.ldr
 0 !LDRAW_ORG Model
@@ -1468,7 +1468,7 @@
 
 
 0 FILE 45300 - tilt.ldr
-0 tilt
+0 A compact tilt mechanism built from a plate frame with open center, four lime slope bricks, and a notched axle pivot.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 45300 - tilt.ldr
 0 !LDRAW_ORG Model
@@ -1498,7 +1498,7 @@
 0
 
 0 FILE 45300 - tilt2.ldr
-0 tilt2
+0 A ball-joint tilt assembly using technic bricks, a round reinforced brick, and an axle-mounted yellow ball joint for articulation.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 45300 - tilt2.ldr
 0 !LDRAW_ORG Model
@@ -1539,7 +1539,7 @@
 0
 
 0 FILE 45300 - powerFunc2MotorM-LQ-1.ldr
-0 powerFunc2MotorM-LQ-1
+0 A Power Functions 2.0 Medium Motor with attached flexible cable routing generated across 165 segments.
 0 !CATEGORY electric
 0 Name: 45300 - powerFunc2MotorM-LQ-1.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -1588,7 +1588,7 @@
 
 
 0 FILE 45300 - powerFunc2MotorM-LQ-1_subPart1.ldr
-0 powerFunc2MotorM-LQ-1_subPart1
+0 Sub-part containing the flexible cable geometry for the Medium Motor connection, spanning 165 segments.
 0 !LDCAD GENERATED [generator=LDCad 1.5] [master=45300 - powerFunc2MotorM-LQ-1.ldr]
 0 Name: 45300 - powerFunc2MotorM-LQ-1_subPart1.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -1779,7 +1779,7 @@
 
 
 0 FILE 45300 - powerFunc2Tilt-LQ-1.ldr
-0 powerFunc2Tilt-LQ-1
+0 A Power Functions 2.0 Tilt Sensor with attached flexible cable routing generated across 158 segments.
 0 !CATEGORY electric
 0 Name: 45300 - powerFunc2Tilt-LQ-1.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -1828,7 +1828,7 @@
 
 
 0 FILE 45300 - powerFunc2Tilt-LQ-1_subPart1.ldr
-0 powerFunc2Tilt-LQ-1_subPart1
+0 Sub-part containing the flexible cable geometry for the Tilt Sensor connection, spanning 158 segments.
 0 !LDCAD GENERATED [generator=LDCad 1.5] [master=45300 - powerFunc2Tilt-LQ-1.ldr]
 0 Name: 45300 - powerFunc2Tilt-LQ-1_subPart1.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -2012,7 +2012,7 @@
 
 
 0 FILE 45300 - 19071.dat
-0 Electric Power Functions 2.0 Hub
+0 Electric Power Functions 2.0 Hub assembly with top, bottom, glass display, green button, and diffusing glass components.
 0 Name: 45300 - 19071.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -2043,7 +2043,7 @@
 0
 
 0 FILE 45300 - u9219.dat
-0 Electric Power Functions 2.0 Plug
+0 Electric Power Functions 2.0 Plug connector built from cylinders, cones, discs, and chrome gold contact details.
 0 Name: 45300 - u9219.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -2317,7 +2317,7 @@
 0
 
 0 FILE 45300 - 19066.dat
-0 ~Electric Power Functions 2.0 Hub Top
+0 Geometric base element for the Power Functions 2.0 Hub Top, consisting of a single box primitive.
 0 Name: 45300 - 19066.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -2365,7 +2365,7 @@
 0
 
 0 FILE 45300 - 19070.dat
-0 ~Electric Power Functions 2.0 Hub Glass
+0 The Power Functions 2.0 Hub Glass element modeled from cylindrical and chord primitives forming a curved transparent surface.
 0 Name: 45300 - 19070.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -2496,7 +2496,7 @@
 0
 
 0 FILE s\45300 - u9219s01.dat
-0 ~Electric Power Functions  2.0 6-Wire Ribbon Cable End
+0 A 6-wire ribbon cable end indicator for Power Functions 2.0 elements, built from cylindrical and chord primitives.
 0 Name: s\45300 - u9219s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -2567,7 +2567,7 @@
 0
 
 0 FILE 45300 - u9322.dat
-0 ~Electric Power Functions 2.0 Tilt Sensor Top
+0 The Power Functions 2.0 Tilt Sensor Top housing built from box and rectangle geometric primitives.
 0 Name: 45300 - u9322.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -2604,7 +2604,7 @@
 0
 
 0 FILE s\45300 - 19066s01.dat
-0 ~Electric Power Functions 2.0 Hub Top Half
+0 Half of the Power Functions 2.0 Hub Top shell, modeled from numerous cylindrical, disc, and chord primitives for a curved housing.
 0 Name: s\45300 - 19066s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -2899,7 +2899,7 @@
 
 
 0 FILE 45300 - 92013.dat
-0 Brick 2 x  2 with Ball Socket and Axlehole (Needs Work)
+0 A 2x2 brick with ball socket and axlehole, serving as an articulated joint connector.
 0 Name: 45300 - 92013.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part

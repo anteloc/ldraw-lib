@@ -1,11 +1,11 @@
 0 FILE 8289 - Main.ldr
-0 Main
+0 Complete Technic tow truck model featuring a chassis, drivetrain, steering linkage, wheels, a functional crane/winch assembly, and body panels with lights and grille details.
 0 Name: 8289 - Main.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 1 71 0 0 0 1 0 0 0 1 0 0 0 1 8289 - Truck.ldr
 0 FILE 8289 - Truck.ldr
-0 Truck
+0 Main truck chassis subassembly built from Technic liftarms, bent beams, axles, cross blocks, and pins forming the structural frame.
 0 Name: 8289 - Truck.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -299,7 +299,7 @@
 0 // Tyre 26/ 52 x 30 Off Road (rubber_black)
 1 256 -110 80 560 0 0 -1 0 1 0 1 0 0 55976.dat
 0 FILE 8289 - Truck 007.ldr
-0 Truck 007
+0 Small linkage assembly using an axle 5, cross blocks, and stop-bush pins for connecting steering or suspension components.
 0 Name: 8289 - Truck 007.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -318,7 +318,7 @@
 0 // Technic Pin Long with Stop Bush (red)
 1 4 -20 0 20 0 1 0 1 0 0 0 0 -1 32054.dat
 0 FILE 8289 - Truck 008.ldr
-0 Truck 008
+0 Linear actuator rack assembly with a gear rack, two beam 7 liftarms, and mounting plates for steering or lift mechanism.
 0 Name: 8289 - Truck 008.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -347,7 +347,7 @@
 0 // Technic Beam  7 (light_bluish_grey)
 1 71 0 0 -40 0 0 1 0 1 0 -1 0 0 32524.dat
 0 FILE 8289 - Truck 008S04.ldr
-0 Truck 008S04
+0 Axle and cross-block subassembly with a stopped axle, pin connector, and half-bushings for rotational mounting.
 0 Name: 8289 - Truck 008S04.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -362,7 +362,7 @@
 1 71 25 0 -20 0 0 1 1 0 0 0 1 0 32123a.dat
 0 STEP
 0 FILE 8289 - Truck 012.ldr
-0 Truck 012
+0 Compact connector subassembly joining a bent 45-degree liftarm with two axles for structural linkage.
 0 Name: 8289 - Truck 012.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -373,7 +373,7 @@
 0 // Technic Axle  5 (light_bluish_grey)
 1 71 20 0 -160 -1 0 0 0 -1 0 0 0 1 32073.dat
 0 FILE 8289 - Truck 014.ldr
-0 Truck 014
+0 Offset linkage assembly with an axle 3, two red axle joiners, and two small red liftarms forming an articulated joint.
 0 Name: 8289 - Truck 014.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -390,7 +390,7 @@
 0 // Technic Axle Joiner Offset (red)
 1 4 30 0 0 0 0 1 0 1 0 -1 0 0 6538b.dat
 0 FILE 8289 - Truck 015.ldr
-0 Truck 015
+0 Gear drive subassembly with an axle 5, two 8-tooth gears, an offset joiner, and a bushing for power transmission.
 0 Name: 8289 - Truck 015.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -406,7 +406,7 @@
 0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 0 0 -20 -1 0 0 0 1 0 0 0 -1 3713.dat
 0 FILE 8289 - Truck 017.ldr
-0 Truck 017
+0 Axle coupling assembly with two axle 7s, an axle/pin/axle cross block, and two flanged bushes for shaft support.
 0 Name: 8289 - Truck 017.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -423,7 +423,7 @@
 0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 -20 20 0 0 0 -1 0 1 0 1 0 0 3713.dat
 0 FILE 8289 - Truck 018.ldr
-0 Truck 018
+0 Axle joiner assembly combining an axle 3 and axle 7 with an offset joiner for extending a drive shaft.
 0 Name: 8289 - Truck 018.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -434,7 +434,7 @@
 0 // Technic Axle  7 (light_bluish_grey)
 1 71 0 0 100 0 0 -1 0 1 0 1 0 0 44294.dat
 0 FILE 8289 - Truck 024.ldr
-0 Truck 024
+0 Straight connector assembly using a 180-degree angle connector and two axle 4s to form a rigid linkage.
 0 Name: 8289 - Truck 024.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -445,7 +445,7 @@
 0 // Technic Axle  4 (black)
 1 0 50 0 0 -1 0 0 0 1 0 0 0 -1 3705.dat
 0 FILE 8289 - Truck 030.ldr
-0 Truck 030
+0 Small red liftarm assembly with an axle pin, axle 4, and bushing forming a mounting bracket.
 0 Name: 8289 - Truck 030.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -462,7 +462,7 @@
 0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 -30 20 0 0 0 1 1 0 0 0 1 0 3713.dat
 0 FILE 8289 - Truck 031.ldr
-0 Truck 031
+0 Large structural subassembly of bent 45 liftarms, beam 7/9 liftarms, axles, cross blocks, and connectors forming a major chassis or boom frame.
 0 Name: 8289 - Truck 031.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -576,7 +576,7 @@
 0 // Technic Pin  1/2 (light_bluish_grey)
 1 71 -70 0 -380 -1 0 0 0 -1 0 0 0 1 4274.dat
 0 FILE 8289 - Truck 031S06.ldr
-0 Truck 031S06
+0 Axle support subassembly with axle 5 and 7, a cross block, and two flanged bushes for shaft mounting.
 0 Name: 8289 - Truck 031S06.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -593,7 +593,7 @@
 0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 -20 20 0 0 0 1 0 1 0 -1 0 0 3713.dat
 0 FILE 8289 - Truck 031S14.ldr
-0 Truck 031S14
+0 Straight connector assembly with a 180-degree angle connector and two axle 4s for a rigid link.
 0 Name: 8289 - Truck 031S14.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -604,7 +604,7 @@
 0 // Technic Axle  4 (black)
 1 0 50 0 0 -1 0 0 0 1 0 0 0 -1 3705.dat
 0 FILE 8289 - Truck 034.ldr
-0 Truck 034
+0 Long red beam 13 liftarm with four friction pins serving as a structural mounting bar.
 0 Name: 8289 - Truck 034.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -619,7 +619,7 @@
 0 // Technic Pin with Friction and Slots (black)
 1 0 120 0 -10 0 1 0 0 0 -1 -1 0 0 2780.dat
 0 FILE 8289 - Truck 035.ldr
-0 Truck 035
+0 Beam 7 liftarm with two long friction pins for a pivoting structural element.
 0 Name: 8289 - Truck 035.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -630,7 +630,7 @@
 0 // Technic Pin Long with Friction and Slot (black)
 1 0 40 0 20 0 0 1 0 -1 0 1 0 0 6558.dat
 0 FILE 8289 - Truck 036.ldr
-0 Truck 036
+0 Wheel and steering subassembly with a wedge belt wheel, black liftarms, axle 6, cross blocks, and joiners forming a hub and steering linkage.
 0 Name: 8289 - Truck 036.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -671,7 +671,7 @@
 1 1 -70 0 -60 -1 0 0 0 -1 0 0 0 1 8289 - Truck 036S07.ldr
 1 1 70 0 -60 1 0 0 0 1 0 0 0 1 8289 - Truck 036S07.ldr
 0 FILE 8289 - Truck 036S07.ldr
-0 Truck 036S07
+0 Small connector subassembly with an axle 4, offset joiner, and axle pin for articulating a linkage.
 0 Name: 8289 - Truck 036S07.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -682,7 +682,7 @@
 0 // Technic Axle Pin with Friction (blue)
 1 1 60 0 0 -1 0 0 0 1 0 0 0 -1 43093.dat
 0 FILE 8289 - Truck 037.ldr
-0 Truck 037
+0 White body trim assembly with a long technic brick 1x14, a tiled 1x4 plate, and two half-pins for a decorative side panel.
 0 Name: 8289 - Truck 037.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -696,7 +696,7 @@
 0 // Tile  1 x  4 with Groove (white)
 1 15 0 10 -18 1 0 0 0 0 -1 0 1 0 2431.dat
 0 FILE 8289 - Truck 038.ldr
-0 Truck 038
+0 Rear light and bumper assembly with red beams, a black plate, grille tiles, trans-clear and neon-orange round plates, and slope bricks forming taillights.
 0 Name: 8289 - Truck 038.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -739,7 +739,7 @@
 0 // Tile  1 x  2 Grille with Groove (red)
 1 4 30 -26 -10 0 0 -1 0 1 0 1 0 0 2412b.dat
 0 FILE 8289 - Truck 039.ldr
-0 Truck 039
+0 Wheel and fairing subassembly with two axle 6s, angle connectors, cross blocks, a beam 11, and red panel fairings forming a styled wheel housing.
 0 Name: 8289 - Truck 039.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -806,7 +806,7 @@
 0 // Technic Panel Fairing #8 (red)
 1 4 -50 0 -100 0 1 0 -1 0 0 0 0 1 32535.dat
 0 FILE 8289 - Truck 040.ldr
-0 Truck 040
+0 Red beam connector assembly with a 3-pin cross block and two beam 9 liftarms forming a structural frame joint.
 0 Name: 8289 - Truck 040.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -818,7 +818,7 @@
 0 // Technic Beam  9 (red)
 1 4 -20 0 -20 0 1 0 1 0 0 0 0 -1 40490.dat
 0 FILE 8289 - Truck 041.ldr
-0 Truck 041
+0 Long red beam 13 with cross blocks and long friction pins forming a structural arm or support bar.
 0 Name: 8289 - Truck 041.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -858,7 +858,7 @@
 0 STEP
 1 4 -100 -60 20 -1 0 0 0 1 0 0 0 -1 8289 - Truck 041S09.ldr
 0 FILE 8289 - Truck 041S03.ldr
-0 Truck 041S03
+0 Small connector subassembly with an axle 4 and red offset joiner for extending a linkage.
 0 Name: 8289 - Truck 041S03.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -867,7 +867,7 @@
 0 // Technic Axle Joiner Offset (red)
 1 4 0 0 -40 -1 0 0 0 1 0 0 0 -1 6538b.dat
 0 FILE 8289 - Truck 041S04.ldr
-0 Truck 041S04
+0 Red body panel fairing mounted on a liftarm with axle and cross block for cab side detailing.
 0 Name: 8289 - Truck 041S04.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -887,7 +887,7 @@
 0 // Technic Panel Fairing #25 (red)
 1 4 30 -10 0 0 0 -1 0 -1 0 -1 0 0 47713.dat
 0 FILE 8289 - Truck 041S05.ldr
-0 Truck 041S05
+0 Red body panel fairing on a liftarm assembly, mirroring the opposite cab side.
 0 Name: 8289 - Truck 041S05.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -907,7 +907,7 @@
 0 // Technic Panel Fairing #24 (red)
 1 4 0 -30 0 0 0 1 0 -1 0 1 0 0 47712.dat
 0 FILE 8289 - Truck 041S06.ldr
-0 Truck 041S06
+0 Red liftarm beam joined by axle pins forming a short structural connector arm.
 0 Name: 8289 - Truck 041S06.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -923,7 +923,7 @@
 0 // Technic Pin with Friction and Slots (black)
 1 0 0 0 -10 0 0 1 0 -1 0 1 0 0 2780.dat
 0 FILE 8289 - Truck 041S07.ldr
-0 Truck 041S07
+0 Long red beam with cross blocks and pins forming an extended structural support link.
 0 Name: 8289 - Truck 041S07.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -947,7 +947,7 @@
 0 // Technic Cross Block 1 x 2 (Axle/Pin) (red)
 1 4 80 0 -20 0 1 0 0 0 -1 -1 0 0 6536.dat
 0 FILE 8289 - Truck 041S08.ldr
-0 Truck 041S08
+0 Grey bent liftarm fitted with a red fairing panel for lower bodywork detailing.
 0 Name: 8289 - Truck 041S08.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -961,7 +961,7 @@
 0 // Technic Panel Fairing #8 (red)
 1 4 0 50 10 -1 0 0 0 1 0 0 0 -1 32535.dat
 0 FILE 8289 - Truck 041S09.ldr
-0 Truck 041S09
+0 Grey bent liftarm with red fairing panel mirroring the opposite lower bodywork side.
 0 Name: 8289 - Truck 041S09.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -975,7 +975,7 @@
 0 // Technic Panel Fairing #7 (red)
 1 4 0 50 10 -1 0 0 0 1 0 0 0 -1 32534.dat
 0 FILE 8289 - Truck 042.ldr
-0 Truck 042
+0 Steering column assembly featuring a small steering wheel, beams, and angle connectors for the driver controls.
 0 Name: 8289 - Truck 042.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1033,7 +1033,7 @@
 1 71 20 -68.526 -47.761 1 0 0 0 0.588 0.809 0 -0.809 0.588 2819.dat
 0 STEP
 0 FILE 8289 - Truck 042S10.ldr
-0 Truck 042S10
+0 Bent liftarm pair on an axle with a tiled plate forming a small hinged mechanism or lever.
 0 Name: 8289 - Truck 042S10.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1056,7 +1056,7 @@
 0 // Tile  2 x  2 with Groove (light_bluish_grey)
 1 71 -10 -34.8 3.6 1 0 0 0 0.6 -0.8 0 0.8 0.6 3068b.dat
 0 FILE 8289 - Truck 042S11.ldr
-0 Truck 042S11
+0 Beam and pin framework of dark grey liftarms mirroring part of the steering or chassis linkage.
 0 Name: 8289 - Truck 042S11.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1099,7 +1099,7 @@
 0 // Technic Pin Long with Stop Bush (red)
 1 4 40 20 -20 -1 0 0 0 0 -1 0 -1 0 32054.dat
 0 FILE 8289 - Truck 045.ldr
-0 Truck 045
+0 Heavy red chassis frame built from long beams and bent liftarms with a gear and axle for structural support.
 0 Name: 8289 - Truck 045.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1162,7 +1162,7 @@
 0 // Technic Gear  4 Knob (yellow)
 1 14 0 -40 -180 -0.707 0.707 0 -0.707 -0.707 0 0 0 1 32072.dat
 0 FILE 8289 - Truck 045S08.ldr
-0 Truck 045S08
+0 Axle and 20-tooth bevel gear joined by 180-degree angle connectors forming a gear linkage.
 0 Name: 8289 - Truck 045S08.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1179,7 +1179,7 @@
 0 // Technic Axle Pin with Friction (blue)
 1 1 0 30 0 0 1 0 -1 0 0 0 0 1 43093.dat
 0 FILE 8289 - Truck 045S09.ldr
-0 Truck 045S09
+0 Cross block with axle pins forming a small pivot joint connector.
 0 Name: 8289 - Truck 045S09.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1191,7 +1191,7 @@
 0 // Technic Axle Pin with Friction (blue)
 1 1 20 -10 0 0 -1 0 1 0 0 0 0 1 43093.dat
 0 FILE 8289 - Truck 046R.ldr
-0 Truck 046R
+0 Right-side bent liftarm bracket with pins for suspension or arm mounting.
 0 Name: 8289 - Truck 046R.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1205,7 +1205,7 @@
 0 // Technic Pin Long with Friction and Slot (black)
 1 0 0 0 60 -1 0 0 0 1 0 0 0 -1 6558.dat
 0 FILE 8289 - Truck 046L.ldr
-0 Truck 046L
+0 Left-side bent liftarm bracket with pins mirroring the opposite suspension or arm mount.
 0 Name: 8289 - Truck 046L.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1219,7 +1219,7 @@
 0 // Technic Pin Long with Friction and Slot (black)
 1 0 0 0 -60 -1 0 0 0 -1 0 0 0 1 6558.dat
 0 FILE 8289 - Truck 047.ldr
-0 Truck 047
+0 Axle assembly with angle connectors and bushing connectors forming a universal or linkage joint.
 0 Name: 8289 - Truck 047.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1246,7 +1246,7 @@
 0 // Technic Axle Pin with Friction (blue)
 1 1 0 -10 -100 0 -1 0 1 0 0 0 0 1 43093.dat
 0 FILE 8289 - Truck 048.ldr
-0 Truck 048
+0 Two red bent liftarms joined by an axle pin forming a simple pivot bracket.
 0 Name: 8289 - Truck 048.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1258,7 +1258,7 @@
 0 // Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 (red)
 1 4 0 10 0 1 0 0 0 1 0 0 0 1 32056.dat
 0 FILE 8289 - Truck 050.ldr
-0 Truck 050
+0 Major gearbox assembly with worm gear, gears, bent liftarms, and axles forming the tow truck's winch mechanism.
 0 Name: 8289 - Truck 050.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1395,7 +1395,7 @@
 0 // Technic Pin Long with Stop Bush (red)
 1 4 100 40 180 -1 0 0 0 1 0 0 0 -1 32054.dat
 0 FILE 8289 - Truck 050S06.ldr
-0 Truck 050S06
+0 White bent liftarm pair on an axle forming a pivoting lever or arm sub-assembly.
 0 Name: 8289 - Truck 050S06.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1409,7 +1409,7 @@
 0 // Technic Pin with Friction and Slots (black)
 1 0 10 60 20 -1 0 0 0 1 0 0 0 -1 2780.dat
 0 FILE 8289 - Truck 050S10.ldr
-0 Truck 050S10
+0 Bent liftarm with red beams and axles forming a gear-supported support arm of the winch.
 0 Name: 8289 - Truck 050S10.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1430,7 +1430,7 @@
 0 // Technic Cross Block 1 x 3 (Pin/Pin/Pin) with 4 Pins (light_bluish_grey)
 1 71 45 72.787 94.335 0 0 1 -0.13 0.989 0 -0.989 -0.13 0 48989.dat
 0 FILE 8289 - Truck 050S17.ldr
-0 Truck 050S17
+0 Axle joiner with gears and long axles forming a drive-shaft-like connecting element.
 0 Name: 8289 - Truck 050S17.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1444,7 +1444,7 @@
 0 // Technic Gear  4 Knob (yellow)
 1 14 30 0 0 0 0 -1 0 1 0 1 0 0 32072.dat
 0 FILE 8289 - Truck 050S19.ldr
-0 Truck 050S19
+0 Axle joiner and beam assembly with cross block forming an extendable linkage or piston rod.
 0 Name: 8289 - Truck 050S19.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1473,7 +1473,7 @@
 0 // Technic Pin with Friction and Slots (black)
 1 0 100 0 20 0 0 1 0 1 0 -1 0 0 2780.dat
 0 FILE 8289 - Truck 050S19S03.ldr
-0 Truck 050S19S03
+0 Offset axle joiners on short axles forming a coupled connecting rod segment.
 0 Name: 8289 - Truck 050S19S03.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1492,7 +1492,7 @@
 0 // Technic Cross Block 1 x 2 (Axle/Pin) (black)
 1 0 90 20 0 0 0 1 0 -1 0 1 0 0 6536.dat
 0 FILE 8289 - Truck 050S23.ldr
-0 Truck 050S23
+0 Offset axle joiners on an axle with pins forming a short articulated connector.
 0 Name: 8289 - Truck 050S23.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1508,7 +1508,7 @@
 0 // Technic Axle Pin with Friction (blue)
 1 1 70 0 0 -1 0 0 0 1 0 0 0 -1 43093.dat
 0 FILE 8289 - Truck 052.ldr
-0 Truck 052
+0 Large red double-bent liftarm with axle and cross block forming a main chassis or boom support.
 0 Name: 8289 - Truck 052.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1522,7 +1522,7 @@
 0 // Technic Pin with Friction and Slots (black)
 1 0 20 100 10 0 0 1 0 -1 0 1 0 0 2780.dat
 0 FILE 8289 - Truck 053.ldr
-0 Truck 053
+0 Cross block cluster with a bent liftarm and notched axle forming a steering or linkage pivot hub.
 0 Name: 8289 - Truck 053.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1546,7 +1546,7 @@
 0 // Technic Beam  3 x  7 Liftarm Bent 53.13 (white)
 1 15 40 20 -40 0 -1 0 1 0 0 0 0 1 32271.dat
 0 FILE 8289 - Truck Bar.ldr
-0 Truck Bar
+0 A compact axle linkage assembly built from red axle joiners, a blue axle pin, and short grey axles.
 0 Name: 8289 - Truck Bar.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1568,7 +1568,7 @@
 0 // Technic Axle  2 Notched (black)
 1 0 10 0 -150 1 0 0 0 1 0 0 0 1 32062.dat
 0 FILE 8289 - Truck 056.ldr
-0 Truck 056
+0 A multi-connector linkage subassembly using red angle connectors and joiners, blue axle pins, and trans dark-blue round plates on grey axles.
 0 Name: 8289 - Truck 056.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1624,7 +1624,7 @@
 0 // Technic Pin Long with Stop Bush (red)
 1 4 120 0 120 0 0 -1 0 1 0 1 0 0 32054.dat
 0 FILE 8289 - Truck 056S08.ldr
-0 Truck 056S08
+0 A pair of red 13-stud beams joined by cross blocks and slotted pins, fitted with trans dark-blue tooth elements.
 0 Name: 8289 - Truck 056S08.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1656,7 +1656,7 @@
 0 // Technic Tooth  1 x  3 with Axlehole with Rounded Bottom Cavity (trans_dark_blue)
 1 33 -60 -20 -20 0 0 1 0 1 0 -1 0 0 41669.dat
 0 FILE 8289 - Truck 057.ldr
-0 Truck 057
+0 A small pivot block combining a red cross block and axle joiner with a black 2x2 hole plate and grooved tile.
 0 Name: 8289 - Truck 057.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1676,7 +1676,7 @@
 0 // Tile  2 x  2 with Groove (black)
 1 0 0 -18 -60 0 0 -1 0 1 0 1 0 0 3068b.dat
 0 FILE 8289 - Truck 058.ldr
-0 Truck 058
+0 A cross-block joint assembly with a white bent liftarm, red split cross block, and friction pins.
 0 Name: 8289 - Truck 058.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1700,7 +1700,7 @@
 0 // Technic Beam  3 x  7 Liftarm Bent 53.13 (white)
 1 15 -70 20 100 0 1 0 1 0 0 0 0 -1 32271.dat
 0 FILE 8289 - Truck 059.ldr
-0 Truck 059
+0 A compact joint built around a red double bent 45-degree liftarm connected via a cross block and axle.
 0 Name: 8289 - Truck 059.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1714,7 +1714,7 @@
 0 // Technic Pin with Friction and Slots (black)
 1 0 20 100 -10 0 0 -1 0 1 0 1 0 0 2780.dat
 0 FILE 8289 - Truck 062.ldr
-0 Truck 062
+0 A long white technic brick with a grooved tile, pinned joints, and red and neon-orange round indicator plates.
 0 Name: 8289 - Truck 062.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1744,7 +1744,7 @@
 0 // Plate  1 x  1 Round (trans_red)
 1 36 80 10 -18 -1 0 0 0 0 1 0 1 0 6141.dat
 0 FILE 8289 - Truck 064.ldr
-0 Truck 064
+0 A short dark-grey bent liftarm assembly joined to a beam 9 by friction pins.
 0 Name: 8289 - Truck 064.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1761,7 +1761,7 @@
 0 // Technic Pin with Friction and Slots (black)
 1 0 -20 -80 -10 0 -1 0 0 0 -1 1 0 0 2780.dat
 0 FILE 8289 - Truck 065.ldr
-0 Truck 065
+0 A dark-grey bent liftarm and beam 9 connected with friction pins on a light-grey axle.
 0 Name: 8289 - Truck 065.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1781,7 +1781,7 @@
 0 // Technic Beam  9 (dark_bluish_grey)
 1 72 0 20 -20 1 0 0 0 0 -1 0 1 0 40490.dat
 0 FILE 8289 - Truck 067.ldr
-0 Truck 067
+0 A white bent liftarm jointed by blue axle pins and red offset joiners on a short axle.
 0 Name: 8289 - Truck 067.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1802,7 +1802,7 @@
 0 // Technic Axle Pin with Friction (blue)
 1 1 -120 0 -110 0 0 1 0 -1 0 1 0 0 43093.dat
 0 FILE 8289 - Truck 068.ldr
-0 Truck 068
+0 A simple straight axle coupling formed from three light-grey axles and two red offset joiners.
 0 Name: 8289 - Truck 068.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1818,7 +1818,7 @@
 0 // Technic Axle  3 (light_bluish_grey)
 1 71 60 0 0 -1 0 0 0 1 0 0 0 -1 4519.dat
 0 FILE 8289 - Truck 070.ldr
-0 Truck 070
+0 A dark-grey beam 5 with red 180-degree angle connectors and blue axle pins.
 0 Name: 8289 - Truck 070.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1837,7 +1837,7 @@
 0 // Technic Axle Pin with Friction (blue)
 1 1 70 0 -40 -1 0 0 0 1 0 0 0 -1 43093.dat
 0 FILE 8289 - Hose.ldr
-0 Hose
+0 A flexible 3mm rigid hose assembly defined by a 17-segment path roughly 41mm long.
 0 Name: 8289 - Hose.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt

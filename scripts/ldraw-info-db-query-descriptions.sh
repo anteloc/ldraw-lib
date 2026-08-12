@@ -38,7 +38,7 @@ function query_part_descriptions() {
            -cmd '.parameter set :query '"$(printf '%q' "$query")" \
            -cmd '.parameter set :limit '"$(printf '%q' "$max_results")" \
 <<'SQL'
-    SELECT alias AS part, description
+    SELECT part, description
     FROM PARTS_DESCRIPTIONS_FTS
     WHERE PARTS_DESCRIPTIONS_FTS MATCH :query
     ORDER BY rank
@@ -55,7 +55,7 @@ function query_model_descriptions() {
         -cmd '.parameter set :query '"$(printf '%q' "$query")" \
         -cmd '.parameter set :limit '"$(printf '%q' "$max_results")" \
 <<'SQL'
-    SELECT alias AS model, description
+    SELECT model, description
     FROM MODELS_DESCRIPTIONS_FTS
     WHERE MODELS_DESCRIPTIONS_FTS MATCH :query
     ORDER BY rank
@@ -75,7 +75,7 @@ function query_submodel_descriptions() {
         -cmd '.parameter set :limit '"$(printf '%q' "$max_results")" \
         -cmd '.parameter set :alias '"$(printf '%q' "$alias")" \
 <<'SQL'
-    SELECT alias, submodel, description
+    SELECT model, submodel, description
     FROM SUBMODELS_DESCRIPTIONS_FTS
     WHERE (:alias = '' OR alias = :alias)
     AND SUBMODELS_DESCRIPTIONS_FTS MATCH :query

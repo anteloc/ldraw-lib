@@ -1,5 +1,5 @@
 0 FILE 7822 - main.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 A train station set combining platforms, track sections, a signal light, a station building, and three minifigures.
 0 main
 0 Name: 7822 - main.ldr 
 0 Author: Robert Paciorek [bercik]
@@ -14,7 +14,7 @@
 1 7 300 -344 -309.999 0 0 1 0 1 0 -1 0 0 7822 - minifig 3.ldr
 0 NOFILE
 0 FILE 7822 - station.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 A track section with rail plates, sleepers, slotted rails, tiles, and lattice fences forming a fenced rail line.
 0 !LEOCAD MODEL CURRENT_STEP15
 
 
@@ -144,7 +144,7 @@
 0 STEP
 0 NOFILE
 0 FILE 7822 - station - building.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 A large multi-story station building constructed from plates and bricks of various sizes with ladder elements.
 
 
 0 station - building
@@ -623,7 +623,7 @@
 1 16 -170.001 -304 -50.002 0 0 -1 0 1 0 1 0 0 3040b.dat
 0 NOFILE
 0 FILE 7822 - station - platform.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 A train platform with inverted slopes, seating, ladder access, and yellow accents for benches and details.
 
 
 0 station - platform
@@ -801,7 +801,7 @@
 1 16 280 -240 -450 1 0 0 0 1 0 0 0 1 3004.dat
 0 NOFILE
 0 FILE 7822 - platform - light.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 A train signal assembly with a signal stand, mast, and inverted dishes on a technic axle.
 
 
 0 platform - light
@@ -837,7 +837,7 @@
 1 16 0.002 -273.009 75.008 0 0 1 0 1 0 -1 0 0 3960.dat
 0 NOFILE
 0 FILE 7822 - minifig 1.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 A blue-shirted male minifigure carrying a pushbroom for sweeping duties.
 
 
 0 minifig 1
@@ -872,7 +872,7 @@
 1 6 -29.67 -11.289 11.215 0.985 0.12 -0.12 0.17 -0.697 0.697 0 -0.707 -0.707 3836.dat
 0 NOFILE
 0 FILE 7822 - minifig 2.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 A minifigure in a suit and tie wearing a red police hat and holding a signal accessory.
 
 
 0 minifig 2
@@ -907,7 +907,7 @@
 1 4 1.888 -96 9.462 1 0 0 0 1 0 0 0 1 3624.dat
 0 NOFILE
 0 FILE 7822 - minifig 3.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 A red-shirted female minifigure with pigtails holding a white tile accessory.
 
 
 0 minifig 3

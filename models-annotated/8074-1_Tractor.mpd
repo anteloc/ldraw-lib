@@ -1,5 +1,5 @@
 0 FILE 8074 - main.ldr
-0 main
+0 Complete tractor model featuring a grab truck arm, steering assembly, gear-driven drivetrain, turntable, flex-system cable, and rubber band-powered mechanisms.
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 Name: 8074 - main.ldr
@@ -9,7 +9,7 @@
 
 
 0 FILE 8074 - Grab Truck.ldr
-0 Grab Truck
+0 Long Technic brick and plate chassis with axles, pins, and gears forming a grab truck arm assembly.
 0 Name: 8074 - Grab Truck.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -262,7 +262,7 @@
 
 
 0 FILE 8074 - Substep_Step-2.ldr
-0 Substep_Step-2
+0 Steering linkage subassembly using a steering arm, axle, and bushings.
 0 Name: 8074 - Substep_Step-2.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -281,7 +281,7 @@
 
 
 0 FILE 8074 - Substep_Step-3.ldr
-0 Substep_Step-3
+0 Mirrored steering linkage subassembly with steering arm, axle pin, and bushings.
 0 Name: 8074 - Substep_Step-3.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -300,7 +300,7 @@
 
 
 0 FILE 8074 - Substep_Step-5_1.ldr
-0 Substep_Step-5_1
+0 Gear reduction unit with a 24-tooth crown gear meshing a 14-tooth bevel gear on a Technic brick frame.
 0 Name: 8074 - Substep_Step-5_1.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -320,7 +320,7 @@
 
 
 0 FILE 8074 - Substep_Step-5_2.ldr
-0 Substep_Step-5_2
+0 Small gear assembly with an 8-tooth gear mounted on an axle within a Technic brick.
 0 Name: 8074 - Substep_Step-5_2.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -334,7 +334,7 @@
 
 
 0 FILE 8074 - Substep_Step-6_1.ldr
-0 Substep_Step-6_1
+0 Gear train combining an 8-tooth gear and 24-tooth crown gear between Technic bricks.
 0 Name: 8074 - Substep_Step-6_1.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -352,7 +352,7 @@
 
 
 0 FILE 8074 - Substep_Step-6_2.ldr
-0 Substep_Step-6_2
+0 Compact gear pair with an 8-tooth and 14-tooth bevel gear on a Technic plate base.
 0 Name: 8074 - Substep_Step-6_2.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -373,7 +373,7 @@
 
 
 0 FILE 8074 - Substep_Step-7.ldr
-0 Substep_Step-7
+0 Rotating turntable assembly with top and bottom plates secured by friction pins.
 0 Name: 8074 - Substep_Step-7.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -403,7 +403,7 @@
 
 
 0 FILE 8074 - Substep_Step-7_Substep_Step-2.ldr
-0 Substep_Step-7_Substep_Step-2
+0 Reinforcing plate and square tile base supporting the turntable mount.
 0 Name: 8074 - Substep_Step-7_Substep_Step-2.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -417,7 +417,7 @@
 
 
 0 FILE 8074 - Substep_Step-8_1.ldr
-0 Substep_Step-8_1
+0 Short Technic brick frame with plates forming a support bracket.
 0 Name: 8074 - Substep_Step-8_1.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -433,7 +433,7 @@
 
 
 0 FILE 8074 - Substep_Step-8_2.ldr
-0 Substep_Step-8_2
+0 Worm gear drive unit with belt wheels and bushings mounted on an axle between Technic bricks.
 0 Name: 8074 - Substep_Step-8_2.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -466,7 +466,7 @@
 
 
 0 FILE 8074 - Substep_Step-9.ldr
-0 Substep_Step-9
+0 Long liftarm assembly with a 24-tooth gear with 3 axleholes, axles, and bushings forming a structural gear mount.
 0 Name: 8074 - Substep_Step-9.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -521,7 +521,7 @@
 
 
 0 FILE 8074 - Substep_Step-10.ldr
-0 Substep_Step-10
+0 Long axle driveshaft with a 24-tooth gear with 3 axleholes and a 14-tooth bevel gear.
 0 Name: 8074 - Substep_Step-10.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -537,7 +537,7 @@
 
 
 0 FILE 8074 - Substep_Step-11.ldr
-0 Substep_Step-11
+0 Tall structural frame built from yellow Technic bricks and grey liftarms with axles and a dark pink axle accent.
 0 Name: 8074 - Substep_Step-11.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -592,7 +592,7 @@
 
 
 0 FILE 8074 - Substep_Step-11_Substep_Step-1_a.ldr
-0 Substep_Step-11_Substep_Step-1_a
+0 Paired liftarm subassembly joined by axles, connector pins, and pin/bush connectors.
 0 Name: 8074 - Substep_Step-11_Substep_Step-1_a.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -632,7 +632,7 @@
 
 
 0 FILE 8074 - Substep_Step-11_Substep_Step-1_b.ldr
-0 Substep_Step-11_Substep_Step-1_b
+0 Reinforced liftarm pair with long axles and pin/bush connectors forming a beam structure.
 0 Name: 8074 - Substep_Step-11_Substep_Step-1_b.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -664,7 +664,7 @@
 
 
 0 FILE 8074 - Substep_Step-12_1.ldr
-0 Substep_Step-12_1
+0 Yellow Technic brick frame with pins connecting 1x6 bricks to a plate base.
 0 Name: 8074 - Substep_Step-12_1.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -694,7 +694,7 @@
 
 
 0 FILE 8074 - Substep_Step-12_2.ldr
-0 Substep_Step-12_2
+0 Yellow plate deck with small Technic bricks and half-pins forming a mounted cover.
 0 Name: 8074 - Substep_Step-12_2.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -718,7 +718,7 @@
 
 
 0 FILE 8074 - rigid3mmHose-1.ldr
-0 rigid3mmHose-1
+0 Flexible 3mm rigid hose approximately 110mm long formed from 31 segments.
 0 !CATEGORY Technic
 0 !KEYWORDS flexible
 0 !LDCAD CONTENT [type=path] [addFallBack=default] [looped=false] [displayKind=mm] [curveStep=0] [displayLenCor=0]
@@ -2446,7 +2446,7 @@
 
 
 0 FILE 8074 - technicflexSysCable-1.ldr
-0 technicflexSysCable-1
+0 Flex-system cable approximately 126mm long with grey connector ends.
 0 !CATEGORY technic
 0 !KEYWORDS flexible
 0 !LDCAD CONTENT [type=path] [addFallBack=default] [looped=false] [displayKind=mm] [curveStep=0] [displayLenCor=0]
@@ -2501,7 +2501,7 @@
 
 
 0 FILE 8074 - technicflexSysCable-1_subPart1.ldr
-0 technicflexSysCable-1_subPart1
+0 Generated cable segment skin subpart for the flex-system cable.
 0 Author: LDCad
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 Name: 8074 - technicflexSysCable-1_subPart1.ldr
@@ -4702,7 +4702,7 @@
 
 
 0 FILE 8074 - rubberBandSquare-1.ldr
-0 rubberBandSquare-1
+0 Square rubber band approximately 90mm long formed from 26 segments.
 0 !CATEGORY technic
 0 !KEYWORDS flexible, band
 0 !LDCAD CONTENT [type=path] [addFallBack=default] [looped=true] [displayKind=mm] [curveStep=0] [displayLenCor=0]
@@ -5110,7 +5110,7 @@
 
 
 0 FILE 8074 - rubberBandSquare-2.ldr
-0 rubberBandSquare-2
+0 Square rubber band approximately 90mm long formed from 26 segments.
 0 !CATEGORY technic
 0 !KEYWORDS flexible, band
 0 !LDCAD CONTENT [type=path] [addFallBack=default] [looped=true] [displayKind=mm] [curveStep=0] [displayLenCor=0]
@@ -5518,7 +5518,7 @@
 
 
 0 FILE 8074 - Substep_Step-13.ldr
-0 Substep_Step-13
+0 Round cylindrical element with a trans-yellow brick, round plate, and round tile forming a lamp or rotor piece.
 0 Name: 8074 - Substep_Step-13.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -5532,7 +5532,7 @@
 
 
 0 FILE 8074 - 4185a.dat
-0 4185a
+0 A bracket-like assembly of rectangles, axle hole, and cylindrical elements forming a mechanical connector or mount.
 0 Name: 8074 - 4185a.dat
 0 Author: James Jessiman
 0 !LDRAW_ORG Unofficial_Part
@@ -5605,7 +5605,7 @@
 
 
 0 FILE s\8074 - 4185as01.dat
-0 ~Technic Wedge Belt Wheel  1/8
+0 A segmented circular wheel component with concentric rings and discs forming an eighth section of a Technic wedge belt wheel.
 0 Name: s\8074 - 4185as01.dat
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Unofficial_Subpart

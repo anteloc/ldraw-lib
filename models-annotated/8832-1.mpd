@@ -1,5 +1,5 @@
 0 FILE 8832-1 - Roadster - main.ldr
-0 Roadster - main
+0 Main roadster chassis built from Technic plates, bricks with holes, axles, and suspension arms, integrating shock absorbers and flexible hoses for a functional steering and suspension system.
 0 Name: 8832-1 - Roadster - main.ldr
 0 Author: Florian Schüller [schuellerf]
 0 !LDRAW_ORG Model
@@ -185,7 +185,7 @@
 1 256 -90 -14.047 -70.236 0 0 1 0 1 0 -1 0 0 2346.dat
 1 0 199 -30.047 168.764 0 0 -1 0 1 0 1 0 0 8832-1 - Roadster - 3.ldr
 0 FILE 8832-1 - Roadster - shock-06_5L-soft-1.ldr
-0 Roadster - shock-06_5L-soft-1
+0 A 6.5L Technic shock absorber assembly consisting of a cylinder and piston rod with a soft spring.
 0 Name: 8832-1 - Roadster - shock-06_5L-soft-1.ldr
 0 Author: LDCad
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -228,7 +228,7 @@
 1 494 0 56 0 1 0 0 0 1 0 0 0 1 8832-1 - Roadster - shock-06_5L-soft-1_springMesh.ldr
 
 0 FILE 8832-1 - Roadster - shock-06_5L-soft-1_springMesh.ldr
-0 Roadster - shock-06_5L-soft-1_springMesh
+0 A generated coiled spring mesh for the shock absorber, defined by coil and wire resolution parameters across three sections.
 0 Name: 8832-1 - Roadster - shock-06_5L-soft-1_springMesh.ldr
 0 Author: LDCad
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -4517,7 +4517,7 @@
 2 24 -7.625 42.750214 0.016406 -7.183058 42.933212 0.011601
 5 24 -7.625 43.379101 0.156196 -7.183058 42.933212 0.011601 -7.625 42.750214 0.016406 -7 43.375 0
 0 FILE 8832-1 - Roadster - 1.ldr
-0 Roadster - 1
+0 A flexible hose assembly composed of 42 link segments with end caps and a center section.
 0 Name: 8832-1 - Roadster - 1.ldr
 0 Author: LDCad
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -4645,7 +4645,7 @@
 0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 0 -23.60293 59.964586 1 0 0 0 0.999756 -0.022088 0 0.022088 0.999756 754.dat
 0 FILE 8832-1 - Roadster - 2.ldr
-0 Roadster - 2
+0 A flexible hose assembly composed of 42 link segments with end caps and a center section.
 0 Name: 8832-1 - Roadster - 2.ldr
 0 Author: LDCad
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -4773,7 +4773,7 @@
 0 // ~Hose Flexible Segment Link Section (main_colour)
 1 16 0 -23.60293 59.964586 1 0 0 0 0.999756 -0.022088 0 0.022088 0.999756 754.dat
 0 FILE 8832-1 - Roadster - 3.ldr
-0 Roadster - 3
+0 A flexible hose assembly of 58 segments with end caps and static-color skin segments split into subparts.
 0 Name: 8832-1 - Roadster - 3.ldr
 0 Author: LDCad
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -4821,7 +4821,7 @@
 1 14 0 0 0 1 0 0 0 1 0 0 0 1 8832-1 - Roadster - 3_subPart1.ldr
 
 0 FILE 8832-1 - Roadster - 3_subPart1.ldr
-0 Roadster - 3_subPart1
+0 The link and center segments of a 58-segment flexible hose, separated to preserve correct edge colors.
 0 Name: 8832-1 - Roadster - 3_subPart1.ldr
 0 Author: LDCad
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt

@@ -1,5 +1,5 @@
 0 FILE 6354 - main.ldr
-0 main
+0 A police-themed set featuring a car, helicopter, motorbike, trailer, boat, two officers, and road signs.
 0 Name: 6354 - main.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -20,7 +20,7 @@
 1 14 -4.639 -56 -74.642 -0.866 0 0.5 0 1 0 -0.5 0 -0.866 6354 - boat.ldr
 
 0 FILE 6354 - police car.ldr
-0 police car
+0 A white police car with black plates, mudguards, steering wheel, and wheel pin assemblies.
 0 Name: 6354 - police car.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -141,7 +141,7 @@
 1 0 -41 5 -40 0 0 1 0 1 0 -1 0 0 4084.dat
 
 0 FILE 6354 - police helicopter.ldr
-0 police helicopter
+0 A white police helicopter with black structural plates, light grey bars, trans-colored lights, and a minifig camera.
 0 Name: 6354 - police helicopter.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -270,7 +270,7 @@
 1 0 -100 -184 -90 0 0 -1 0 1 0 1 0 0 4162.dat
 
 0 FILE 6354 - police motorbike.ldr
-0 police motorbike
+0 A white police motorcycle with red frame, black tyres, and a printed 'POLICE' tile.
 0 Name: 6354 - police motorbike.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -300,7 +300,7 @@
 1 15 20 -2.2 0 0 -1 0 0 0 -1 1 0 0 3069bp18.dat
 
 0 FILE 6354 - trailer.ldr
-0 trailer
+0 A grey and black wheeled trailer with towball hitch, tyres, and red indicator lights.
 0 Name: 6354 - trailer.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -350,7 +350,7 @@
 1 36 -222 -36.25 -30 0 1 0 0 0 -1 -1 0 0 6141.dat
 
 0 FILE 6354 - policemen 1.ldr
-0 policemen 1
+0 A police officer minifigure with white helmet, light blue visor, and black torso with zipper and police badge.
 0 Name: 6354 - policemen 1.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -382,7 +382,7 @@
 1 0 0 -28 0 1 0 0 0 1 0 0 0 1 3816.dat
 
 0 FILE 6354 - policemen 2.ldr
-0 policemen 2
+0 A police officer minifigure with white police hat and black torso with buttons and police badge.
 0 Name: 6354 - policemen 2.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -412,7 +412,7 @@
 1 0 0 -28 0 1 0 0 0 1 0 0 0 1 3816.dat
 
 0 FILE 6354 - road sign 1.ldr
-0 road sign 1
+0 A warning triangle road sign on a small white plate stand.
 0 Name: 6354 - road sign 1.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -426,7 +426,7 @@
 1 15 0 -10 -1 1 0 0 0 0 -1 0 1 0 3023.dat
 
 0 FILE 6354 - road sign 2.ldr
-0 road sign 2
+0 A simple white round post topped with a trans-dark-blue round light.
 0 Name: 6354 - road sign 2.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -440,7 +440,7 @@
 1 33 0 -32 0 1 0 0 0 1 0 0 0 1 30057.dat
 
 0 FILE 6354 - 4480c01.dat
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 A motorcycle frame sub-assembly with left side, right side, and forks.
 0 Bike 2 Wheel Motorcycle Frame  3 x  6 x  3 (Complete)
 0 Name: 6354 - 4480c01.dat
 0 Author: Magnus Forsberg [MagFors]
@@ -457,7 +457,7 @@
 1 16 0 30 -90 1 0 0 0 0.924 0.383 0 -0.383 0.924 4482.dat
 
 0 FILE 6354 - 4481.dat
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 A decorative stud-and-pin assembly featuring cylinders, a patch, and a LEGO logo.
 0 ~Bike 2 Wheel Motorcycle Frame  3 x  6 x  3 - Left Side
 0 Name: 6354 - 4481.dat
 0 Author: Magnus Forsberg [MagFors]
@@ -527,7 +527,7 @@
 1 16 11 0 -62 0 -1 0 1 0 0 0 0 1 6354 - logo5.dat
 
 0 FILE 6354 - 4480.dat
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 A motorcycle body geometry sub-part with rear section, legs, middle cover, and cylindrical primitives.
 0 ~Bike 2 Wheel Motorcycle Frame  3 x  6 x  3 - Right Side
 0 Name: 6354 - 4480.dat
 0 Author: Magnus Forsberg [MagFors]
@@ -698,7 +698,7 @@
 1 16 -11 0 -62 0 1 0 1 0 0 0 0 -1 6354 - logo5.dat
 
 0 FILE 6354 - 4481s01.dat
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 A detailed geometric sub-part composed of rectangles, circles, and cylinders forming studs and discs.
 0 ~Bike 2 Wheel Motorcycle Frame  3 x  6 x  3 - Left/Right
 0 Name: 6354 - 4481s01.dat
 0 Author: Magnus Forsberg [MagFors]
@@ -1679,7 +1679,7 @@
 5 24 7.4 19.862 -63.392 0 19.862 -63.392 0 6.432 -70.213 7.4 34.01 -55.85
 
 0 FILE 6354 - logo5.dat
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 A logo sub-model containing no direct pieces.
 0 LEGO Logo for Studs - 3D Flattened
 0 Name: 6354 - logo5.dat
 0 Author: Magnus Forsberg [MagFors]
@@ -2680,7 +2680,7 @@
 5 24 -1.563 -0.0749 4.5009 -1.5627 -0.05 4.3545 1.3213 -0.0749 3.9039 -1.7712 -0.05 4.313
 
 0 FILE 6354 - boat.ldr
-0 boat
+0 A white and black boat with inverted wedge and slope elements, steering wheel, cones, and a grille tile.
 0 Name: 6354 - boat.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt

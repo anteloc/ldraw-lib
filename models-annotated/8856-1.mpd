@@ -1,5 +1,5 @@
 0 FILE 8856 - main.ldr
-0 main
+0 Top-level assembly referencing the Whirlwind Rescue helicopter with rotor, landing gear, winch, and side structural submodels.
 0 Name: 8856 - main.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -11,7 +11,7 @@
 
 
 0 FILE 8856 - Whirlwind Rescue.ldr
-0 Whirlwind Rescue
+0 Main helicopter body built from red Technic bricks, plates, axles, universal joints, and gears forming the chassis and drivetrain.
 0 Name: 8856 - Whirlwind Rescue.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -501,7 +501,7 @@
 
 
 0 FILE 8856 - Connector1.ldr
-0 Connector1
+0 Small linkage assembly combining a toggle joint connector, towball axle, and half bush.
 0 Name: 8856 - Connector1.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -520,7 +520,7 @@
 
 
 0 FILE 8856 - Connector2.ldr
-0 Connector2
+0 Articulated connector subassembly using an axle with three toggle joint connectors, a towball axle, and two half bushes.
 0 Name: 8856 - Connector2.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -549,7 +549,7 @@
 
 
 0 FILE 8856 - Side-Beam-Right.ldr
-0 Side-Beam-Right
+0 Right-side structural beam of long Technic bricks with pins, a crown gear, and bushes mounted on an axle.
 0 Name: 8856 - Side-Beam-Right.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -599,7 +599,7 @@
 
 
 0 FILE 8856 - Front-Landing-Gear.ldr
-0 Front-Landing-Gear
+0 Front landing gear unit with two wheeled tyres on axles, bevel gear, and bushings on holed plates.
 0 Name: 8856 - Front-Landing-Gear.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -642,7 +642,7 @@
 
 
 0 FILE 8856 - Main-Back-Outside.ldr
-0 Main-Back-Outside
+0 Small rear exterior detail consisting of a red plate and a holed Technic brick.
 0 Name: 8856 - Main-Back-Outside.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -659,7 +659,7 @@
 
 
 0 FILE 8856 - Back-Landing-Gear-Right.ldr
-0 Back-Landing-Gear-Right
+0 Right rear landing gear strut built from an axle, toggle joint connector, pin-bush connector, and bushes.
 0 Name: 8856 - Back-Landing-Gear-Right.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -686,7 +686,7 @@
 
 
 0 FILE 8856 - Back-Landing-Gear-Left.ldr
-0 Back-Landing-Gear-Left
+0 Left rear landing gear strut mirroring the right side with an axle, toggle joint connector, pin-bush connector, and bushes.
 0 Name: 8856 - Back-Landing-Gear-Left.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -713,7 +713,7 @@
 
 
 0 FILE 8856 - Brick4L-with-Plate6L.ldr
-0 Brick4L-with-Plate6L
+0 Composite structural element pairing a 4-stud holed Technic brick with a 6-stud plate.
 0 Name: 8856 - Brick4L-with-Plate6L.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -730,7 +730,7 @@
 
 
 0 FILE 8856 - Lower-Left-Side.ldr
-0 Lower-Left-Side
+0 Lower left body panel made of plates and angled wing bricks forming the side skirt.
 0 Name: 8856 - Lower-Left-Side.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -753,7 +753,7 @@
 
 
 0 FILE 8856 - Lower-Right-Side.ldr
-0 Lower-Right-Side
+0 Lower right body panel made of plates and angled wing bricks mirroring the left side skirt.
 0 Name: 8856 - Lower-Right-Side.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -776,7 +776,7 @@
 
 
 0 FILE 8856 - Rotor-Flex-Bottom.ldr
-0 Rotor-Flex-Bottom
+0 Lower rotor mount using a holed Technic brick, plate, half pins, and inverted slope bricks.
 0 Name: 8856 - Rotor-Flex-Bottom.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -805,7 +805,7 @@
 
 
 0 FILE 8856 - technicflexSysHose-1.ldr
-0 technicflexSysHose-1
+0 Generated Technic flex-system pneumatic hose routed along an approximated 129 mm path.
 0 !CATEGORY technic
 0 !KEYWORDS flexible
 0 !LDCAD CONTENT [type=path] [addFallBack=default] [looped=false] [displayKind=mm] [curveStep=0] [displayLenCor=0]
@@ -3460,7 +3460,7 @@
 
 
 0 FILE 8856 - technicflexSysCable-1.ldr
-0 technicflexSysCable-1
+0 Flex-system control cable with ball connectors and cable ends spanning an approximated 146 mm path.
 0 !CATEGORY technic
 0 !KEYWORDS flexible
 0 !LDCAD CONTENT [type=path] [addFallBack=default] [looped=false] [displayKind=mm] [curveStep=0] [displayLenCor=0]
@@ -3520,7 +3520,7 @@
 
 
 0 FILE 8856 - technicflexSysCable-1_subPart1.ldr
-0 technicflexSysCable-1_subPart1
+0 Generated segment skin subpart for the flex-system cable-1 defining its cylindrical segments and edge rings.
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 Name: 8856 - technicflexSysCable-1_subPart1.ldr
@@ -7096,7 +7096,7 @@
 
 
 0 FILE 8856 - Bottom-Part1.ldr
-0 Bottom-Part1
+0 Lower hull section combining a plate, holed Technic brick, and inverted slope bricks.
 0 Name: 8856 - Bottom-Part1.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -7117,7 +7117,7 @@
 
 
 0 FILE 8856 - Landing-Gear-and-Winch-Drive.ldr
-0 Landing-Gear-and-Winch-Drive
+0 Drivetrain assembly linking landing gear and winch via a worm gear, bevel and spur gears, belt wheel, and axles on a long holed brick.
 0 Name: 8856 - Landing-Gear-and-Winch-Drive.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -7156,7 +7156,7 @@
 
 
 0 FILE 8856 - Flex_Rotor-Cable.ldr
-0 Flex_Rotor-Cable
+0 Grouping reference for the rotor flex cable subparts with no direct pieces of its own.
 0 Name: 8856 - Flex_Rotor-Cable.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -7171,7 +7171,7 @@
 
 
 0 FILE 8856 - technicflexSysHose-2.ldr
-0 technicflexSysHose-2
+0 Generated Technic flex-system pneumatic hose routed along an approximated 80 mm path.
 0 !CATEGORY technic
 0 !KEYWORDS flexible
 0 !LDCAD CONTENT [type=path] [addFallBack=default] [looped=false] [displayKind=mm] [curveStep=0] [displayLenCor=0]
@@ -7721,7 +7721,7 @@
 
 
 0 FILE 8856 - technicflexSysCable-2.ldr
-0 technicflexSysCable-2
+0 Flex-system control cable with two ball connectors and cable ends spanning an approximated 103 mm path.
 0 !CATEGORY technic
 0 !KEYWORDS flexible
 0 !LDCAD CONTENT [type=path] [addFallBack=default] [looped=false] [displayKind=mm] [curveStep=0] [displayLenCor=0]
@@ -7776,7 +7776,7 @@
 
 
 0 FILE 8856 - technicflexSysCable-2_subPart1.ldr
-0 technicflexSysCable-2_subPart1
+0 Generated segment skin subpart for the flex-system cable-2 defining its cylindrical segments and edge rings.
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 Name: 8856 - technicflexSysCable-2_subPart1.ldr
@@ -9288,7 +9288,7 @@
 
 
 0 FILE 8856 - Which-Rope.ldr
-0 Which-Rope
+0 Winch rope drive unit with a bevel gear and bushes mounted on an axle between two holed Technic bricks.
 0 Name: 8856 - Which-Rope.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -9315,7 +9315,7 @@
 
 
 0 FILE 8856 - ropeLQ-1.ldr
-0 ropeLQ-1
+0 Generated long winch rope composed of 718 cylindrical segments spanning an approximated 958 mm path.
 0 !KEYWORDS flexible, string, rope
 0 !LDCAD CONTENT [type=path] [addFallBack=default] [looped=false] [displayKind=mm] [curveStep=0] [displayLenCor=0]
 0 Name: 8856 - ropeLQ-1.ldr
@@ -10926,7 +10926,7 @@
 
 
 0 FILE 8856 - Winch-Stopper.ldr
-0 Winch-Stopper
+0 Winch stopper mechanism built from an axle, flanged bush, and pin-bush connector with studs.
 0 Name: 8856 - Winch-Stopper.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -10945,7 +10945,7 @@
 
 
 0 FILE 8856 - Lower-Back-Function-Tower.ldr
-0 Lower-Back-Function-Tower
+0 A reinforced tower section built from technic plates and bricks forming a structural support.
 0 Name: 8856 - Lower-Back-Function-Tower.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -10972,7 +10972,7 @@
 
 
 0 FILE 8856 - Flex-Hose-Side-Tilt.ldr
-0 Flex-Hose-Side-Tilt
+0 A minimal assembly of a single half-pin used for flexible hose side tilt attachment.
 0 Name: 8856 - Flex-Hose-Side-Tilt.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -10988,7 +10988,7 @@
 
 
 0 FILE 8856 - Upper-Back-Function-Tower.ldr
-0 Upper-Back-Function-Tower
+0 A tall tower section constructed from technic plates and small plates providing upper structural support.
 0 Name: 8856 - Upper-Back-Function-Tower.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -11020,7 +11020,7 @@
 
 
 0 FILE 8856 - Rotor-Drive.ldr
-0 Rotor-Drive
+0 A drive shaft assembly with an axle, bevel gear, bush, and technic bricks for transmitting rotation.
 0 Name: 8856 - Rotor-Drive.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -11043,7 +11043,7 @@
 
 
 0 FILE 8856 - Top-Back-Function-Tower.ldr
-0 Top-Back-Function-Tower
+0 The topmost function tower with plates, a long axle, and a bevel and crown gear for redirecting drive.
 0 Name: 8856 - Top-Back-Function-Tower.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -11070,7 +11070,7 @@
 
 
 0 FILE 8856 - Lower-Front-Function-Tower.ldr
-0 Lower-Front-Function-Tower
+0 A complex front tower section with gears, axles, liftarm, and connector bricks forming part of the drive mechanism.
 0 Name: 8856 - Lower-Front-Function-Tower.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -11120,7 +11120,7 @@
 
 
 0 FILE 8856 - Seats.ldr
-0 Seats
+0 A pair of blue technic seats joined by a friction pin, forming the helicopter cockpit seating.
 0 Name: 8856 - Seats.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -11139,7 +11139,7 @@
 
 
 0 FILE 8856 - Upper-Front-Function-Tower.ldr
-0 Upper-Front-Function-Tower
+0 A red upper front tower built from technic plates and a small plate for structural support.
 0 Name: 8856 - Upper-Front-Function-Tower.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -11158,7 +11158,7 @@
 
 
 0 FILE 8856 - Dashboard.ldr
-0 Dashboard
+0 A red dashboard assembly with plates, bracket, and black tiles forming the cockpit instrument panel.
 0 Name: 8856 - Dashboard.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -11193,7 +11193,7 @@
 
 
 0 FILE 8856 - Frame-Top-Left.ldr
-0 Frame-Top-Left
+0 The left upper frame rail built from long red technic bricks joined with friction pins.
 0 Name: 8856 - Frame-Top-Left.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -11238,7 +11238,7 @@
 
 
 0 FILE 8856 - Frame-Top-Right.ldr
-0 Frame-Top-Right
+0 The right upper frame rail built from long red technic bricks joined with friction pins.
 0 Name: 8856 - Frame-Top-Right.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -11283,7 +11283,7 @@
 
 
 0 FILE 8856 - Hook-Lift-Drive.ldr
-0 Hook-Lift-Drive
+0 A worm gear drive on a long axle with bushes, used for the hook winch mechanism.
 0 Name: 8856 - Hook-Lift-Drive.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -11304,7 +11304,7 @@
 
 
 0 FILE 8856 - TwoTechnicPlates.ldr
-0 TwoTechnicPlates
+0 A simple pair of red technic plates used as a structural spacer or reinforcement.
 0 Name: 8856 - TwoTechnicPlates.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -11321,7 +11321,7 @@
 
 
 0 FILE 8856 - Lower-Back-Arm.ldr
-0 Lower-Back-Arm
+0 The lower section of the back boom arm built from long red technic bricks with an axle and bushes.
 0 Name: 8856 - Lower-Back-Arm.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -11352,7 +11352,7 @@
 
 
 0 FILE 8856 - Plate+PlateWithHandle.ldr
-0 Plate+PlateWithHandle
+0 A light grey plate combined with a handled plate, forming a small lever or latch detail.
 0 Name: 8856 - Plate+PlateWithHandle.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -11369,7 +11369,7 @@
 
 
 0 FILE 8856 - Upper-Back-Arm.ldr
-0 Upper-Back-Arm
+0 The upper section of the back boom arm with long red technic bricks, pins, and a large red wing panel.
 0 Name: 8856 - Upper-Back-Arm.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -11404,7 +11404,7 @@
 
 
 0 FILE 8856 - Tail-Rotor-Drive-Front-Part.ldr
-0 Tail-Rotor-Drive-Front-Part
+0 The front section of the tail rotor drive with bevel gears, a universal joint, and axles for power transfer.
 0 Name: 8856 - Tail-Rotor-Drive-Front-Part.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -11431,7 +11431,7 @@
 
 
 0 FILE 8856 - Main-Rotor-Horizontal-Tilt-Redirection.ldr
-0 Main-Rotor-Horizontal-Tilt-Redirection
+0 A linkage assembly with a suspension arm, liftarms, and axles that redirects rotor tilt motion.
 0 Name: 8856 - Main-Rotor-Horizontal-Tilt-Redirection.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -11459,7 +11459,7 @@
 
 
 0 FILE 8856 - Small-Crank-Handle.ldr
-0 Small-Crank-Handle
+0 A small crank handle made from a wedge belt wheel and a half-pin.
 0 Name: 8856 - Small-Crank-Handle.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -11476,7 +11476,7 @@
 
 
 0 FILE 8856 - Big-Crank-Handle.ldr
-0 Big-Crank-Handle
+0 A large crank handle made from a pulley wheel and a technic pin.
 0 Name: 8856 - Big-Crank-Handle.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -11493,7 +11493,7 @@
 
 
 0 FILE 8856 - Back-Arm-Back-End-Left.ldr
-0 Back-Arm-Back-End-Left
+0 The left rear end of the back arm with plates, a long technic brick, and a bevel gear on an axle.
 0 Name: 8856 - Back-Arm-Back-End-Left.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -11520,7 +11520,7 @@
 
 
 0 FILE 8856 - Main-Rotor-Center.ldr
-0 Main-Rotor-Center
+0 The central main rotor hub with a four-blade rotor, ball joint, and helicopter rotor holder.
 0 Name: 8856 - Main-Rotor-Center.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -11539,7 +11539,7 @@
 
 
 0 FILE 8856 - Tail-Rotor-Drive-Middle-Part.ldr
-0 Tail-Rotor-Drive-Middle-Part
+0 The middle section of the tail rotor drive using a long axle, technic bricks, and a universal joint.
 0 Name: 8856 - Tail-Rotor-Drive-Middle-Part.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -11560,7 +11560,7 @@
 
 
 0 FILE 8856 - Back-Arm-Back-End-Right.ldr
-0 Back-Arm-Back-End-Right
+0 The right rear end of the back arm with a long red technic brick and a small plate.
 0 Name: 8856 - Back-Arm-Back-End-Right.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -11577,7 +11577,7 @@
 
 
 0 FILE 8856 - Long-Back-Brace.ldr
-0 Long-Back-Brace
+0 An empty submodel serving as a structural placeholder or brace reference with no direct pieces.
 0 Name: 8856 - Long-Back-Brace.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -11591,7 +11591,7 @@
 
 
 0 FILE 8856 - technicflexSysCable-3.ldr
-0 technicflexSysCable-3
+0 A short Technic Flex-System cable with two pin hole connectors at its ends, spanning approximately 25.60 mm across 4 segments.
 0 !CATEGORY technic
 0 !KEYWORDS flexible
 0 !LDCAD CONTENT [type=path] [addFallBack=default] [looped=false] [displayKind=mm] [curveStep=0] [displayLenCor=0]
@@ -11644,7 +11644,7 @@
 
 
 0 FILE 8856 - technicflexSysCable-3_subPart1.ldr
-0 technicflexSysCable-3_subPart1
+0 Auto-generated subpart defining the 3D geometry of a Technic Flex-System cable segment, composed of cylindrical primitives and connector rings.
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 Name: 8856 - technicflexSysCable-3_subPart1.ldr
@@ -11894,7 +11894,7 @@
 
 
 0 FILE 8856 - Short-Back-Brace.ldr
-0 Short-Back-Brace
+0 A structural brace assembly, referenced as a submodel with no direct pieces of its own.
 0 Name: 8856 - Short-Back-Brace.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -11908,7 +11908,7 @@
 
 
 0 FILE 8856 - technicflexSysCable-4.ldr
-0 technicflexSysCable-4
+0 A short Technic Flex-System cable with two pin hole connectors at its ends, spanning approximately 15.07 mm across 2 segments.
 0 !CATEGORY technic
 0 !KEYWORDS flexible
 0 !LDCAD CONTENT [type=path] [addFallBack=default] [looped=false] [displayKind=mm] [curveStep=0] [displayLenCor=0]
@@ -11961,7 +11961,7 @@
 
 
 0 FILE 8856 - technicflexSysCable-4_subPart1.ldr
-0 technicflexSysCable-4_subPart1
+0 Auto-generated subpart defining the 3D geometry of a Technic Flex-System cable segment, composed of cylindrical primitives and connector rings.
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 Name: 8856 - technicflexSysCable-4_subPart1.ldr
@@ -12111,7 +12111,7 @@
 
 
 0 FILE 8856 - Tail-Rotor-Drive-End-Part.ldr
-0 Tail-Rotor-Drive-End-Part
+0 A tail rotor drive mechanism using a bevel gear on an axle mounted through a Technic brick with a half bush for spacing.
 0 Name: 8856 - Tail-Rotor-Drive-End-Part.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -12136,7 +12136,7 @@
 
 
 0 FILE 8856 - Turbine-inside.ldr
-0 Turbine-inside
+0 An internal turbine assembly built from a round plate with axlehole and a dish mounted on a Technic axle.
 0 Name: 8856 - Turbine-inside.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -12156,7 +12156,7 @@
 
 
 0 FILE 8856 - Main-Rotor-Top.ldr
-0 Main-Rotor-Top
+0 A main rotor top cap consisting of an inverted dish mounted on a short Technic axle.
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 Name: 8856 - Main-Rotor-Top.ldr
 0 Author: Max Martin Richter [MMR1988]
@@ -12173,7 +12173,7 @@
 
 
 0 FILE 8856 - Rotor-Blade.ldr
-0 Rotor-Blade
+0 A helicopter rotor blade constructed from black plates of varying lengths with a yellow grooved tile accent.
 0 Name: 8856 - Rotor-Blade.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -12194,7 +12194,7 @@
 
 
 0 FILE 8856 - Tile-Rotor.ldr
-0 Tile-Rotor
+0 A rotor assembly featuring three 2-blade rotors connected by black plates and accented with yellow grooved tiles.
 0 Name: 8856 - Tile-Rotor.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -12229,7 +12229,7 @@
 
 
 0 FILE 8856 - 2900.dat
-0 Technic Flex-System Pin Hole Connector
+0 Primitive geometry definition for the Technic Flex-System Pin Hole Connector, composed of cylinders, rings, and rectangular faces.
 0 Name: 8856 - 2900.dat
 0 Author: Donald Sutter [technog]
 0 !LDRAW_ORG Unofficial_Part
@@ -12548,7 +12548,7 @@
 
 
 0 FILE 8856 - 2901.dat
-0 Technic Flex-System Ball Connector
+0 Primitive geometry definition for the Technic Flex-System Ball Connector, composed of rings, cylinders, boxes, and chord shapes.
 0 Name: 8856 - 2901.dat
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Unofficial_Part
@@ -12880,7 +12880,7 @@
 
 
 0 FILE 8856 - 4185a.dat
-0 Technic Wedge Belt Wheel
+0 Primitive geometry definition for the Technic Wedge Belt Wheel, composed of cylinders and rectangular faces around an axle hole.
 0 Name: 8856 - 4185a.dat
 0 Author: James Jessiman
 0 !LDRAW_ORG Unofficial_Part
@@ -12959,7 +12959,7 @@
 
 
 0 FILE s\8856 - 4185as01.dat
-0 ~Technic Wedge Belt Wheel  1/8
+0 One-eighth subpart of the Technic Wedge Belt Wheel geometry, composed of cylindrical and disc primitives forming the grooved pulley profile.
 0 Name: s\8856 - 4185as01.dat
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -13110,7 +13110,7 @@
 
 
 0 FILE 8856 - 3665a.dat
-0 Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring
+0 A slope brick primitive definition for a 45-degree inverted 2x1 element without an inner stopper ring.
 0 Name: 8856 - 3665a.dat
 0 Author: James Jessiman
 0 !LDRAW_ORG Unofficial_Part
@@ -13134,7 +13134,7 @@
 
 
 0 FILE s\8856 - 3665as01.dat
-0 ~Slope Brick 45  2 x  1 Inverted without Inner Stopper Ring and Front Face
+0 Subpart defining the core box and rectangular faces of a 45-degree inverted 2x1 slope brick without front face or stopper ring.
 0 Name: s\8856 - 3665as01.dat
 0 Author: Michael Heidemann [mikeheide]
 0 !LDRAW_ORG Unofficial_Subpart

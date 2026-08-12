@@ -1,5 +1,5 @@
 0 FILE 8820 - main.ldr
-0 main
+0 A Technic dune buggy model with a chassis, steering system, suspension, roll cage, side panels, headlights, and belt wheels.
 0 Name: 8820 - main.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -12,7 +12,7 @@
 
 
 0 FILE 8820 - Dune Buggy.ldr
-0 Dune Buggy
+0 The main chassis built from Technic plates, bricks, and steering components forming the buggy's structural frame with steering rack and gears.
 0 Name: 8820 - Dune Buggy.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -175,7 +175,7 @@
 
 
 0 FILE 8820 - Steering.ldr
-0 Steering
+0 The steering assembly consisting of a steering top wheel and a steering gear holder.
 0 Name: 8820 - Steering.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -189,7 +189,7 @@
 
 
 0 FILE 8820 - Spring-Connection.ldr
-0 Spring-Connection
+0 A suspension linkage subassembly using axles, bushes, and Technic bricks to connect the shock absorber springs.
 0 Name: 8820 - Spring-Connection.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -229,7 +229,7 @@
 
 
 0 FILE 8820 - shock-06_5L-soft-1.ldr
-0 shock-06_5L-soft-1
+0 A 6.5L soft Technic shock absorber with a cylinder, piston rod, and coiled spring.
 0 !CATEGORY Technic
 0 !KEYWORDS spring, shock
 0 !LDCAD CONTENT [type=spring] [addFallBack=default] [cRes=16] [cResLD=16] [cDia=14] [cRoll=0] [wRes=8] [wResLD=8] [wDia=0.5mm] [wCol=494] [sepMesh=false]
@@ -276,7 +276,7 @@
 
 
 0 FILE 8820 - shock-06_5L-soft-1_springMesh.ldr
-0 shock-06_5L-soft-1_springMesh
+0 A procedurally generated coiled spring mesh for the shock absorber with defined coil and wire resolution parameters.
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 Name: 8820 - shock-06_5L-soft-1_springMesh.ldr
@@ -4570,7 +4570,7 @@
 
 
 0 FILE 8820 - Left-Side.ldr
-0 Left-Side
+0 The left body side panel made of a red Technic brick with holes and a red plate.
 0 Name: 8820 - Left-Side.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -4584,7 +4584,7 @@
 
 
 0 FILE 8820 - Right-Side.ldr
-0 Right-Side
+0 The right body side panel made of a red Technic brick with holes and a red plate.
 0 Name: 8820 - Right-Side.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -4598,7 +4598,7 @@
 
 
 0 FILE 8820 - Roll-Cage-Front.ldr
-0 Roll-Cage-Front
+0 The front section of the roll cage built from an axle, a pin/bush connector with studs, and a toggle joint connector.
 0 Name: 8820 - Roll-Cage-Front.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -4614,7 +4614,7 @@
 
 
 0 FILE 8820 - Roll-Cage-Top.ldr
-0 Roll-Cage-Top
+0 The top section of the roll cage assembled from an axle, connectors, and a friction pin.
 0 Name: 8820 - Roll-Cage-Top.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -4632,7 +4632,7 @@
 
 
 0 FILE 8820 - Front-Lights.ldr
-0 Front-Lights
+0 The front light assembly consisting of a Technic brick with a hole and a round grille-patterned tile.
 0 Name: 8820 - Front-Lights.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Model
@@ -4647,7 +4647,7 @@
 
 
 0 FILE 8820 - 4185a.dat
-0 4185a
+0 A Technic wedge belt wheel built from cylindrical and rectangular primitive shapes forming a pulley.
 0 Name: 8820 - 4185a.dat
 0 Author: James Jessiman
 0 !LDRAW_ORG Unofficial_Part
@@ -4725,7 +4725,7 @@
 
 
 0 FILE s\8820 - 4185as01.dat
-0 ~Technic Wedge Belt Wheel  1/8
+0 One eighth section of the Technic wedge belt wheel built from cylindrical rings, discs, and rectangular primitives forming part of the pulley geometry.
 0 Name: s\8820 - 4185as01.dat
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Unofficial_Subpart

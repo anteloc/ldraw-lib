@@ -1,5 +1,5 @@
 0 FILE 8202 - Bungee Chopper.ldr
-0 Bungee Chopper
+0 A Technic bungee-launching helicopter with liftarm frame, reel winch, clutch assembly, and flexible bungee cord.
 0 Name: 8202 - Bungee Chopper.ldr
 0 Author: Tomas Kralicek [RabbiT_CZ]
 0 !LDRAW_ORG Model
@@ -150,7 +150,7 @@
 1 511 3 -31 67 1 0 0 0 0.975 0.222 0 -0.222 0.975 8202 - rubber_string.ldr
 
 0 FILE 8202 - clutch.ldr
-0 clutch
+0 A Technic clutch mechanism built from angle connectors, axles, and a 16-tooth gear.
 0 Name: 8202 - clutch.ldr
 0 !LDRAW_ORG Model
 0 Author: Tomas Kralicek [RabbiT_CZ]
@@ -176,7 +176,7 @@
 1 7 20 -40 60 0 0 -1 -0.195 0.981 0 0.981 0.195 0 4019.dat
 
 0 FILE 8202 - rubber_string.ldr
-0 rubber_string
+0 A flexible segmented bungee cord rope composed of 265 connected cylinder segments.
 0 Name: 8202 - rubber_string.ldr
 0 Author: LDCad
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -745,7 +745,7 @@
 1 16 -5.971698 -0.995044 2.502591 1.498998 -0.146222 0.001331 -0.049753 -3.668112 -0.597233 0.023045 1.591977 -1.375976 4-4cyli.dat
 
 0 FILE 8202 - 57719.dat
-0 Technic Ribbed Hose  7L
+0 A 7-stud-long Technic ribbed hose with end caps.
 0 Name: 8202 - 57719.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part

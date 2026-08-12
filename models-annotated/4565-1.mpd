@@ -1,5 +1,5 @@
 0 FILE 4565 - main.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 Complete train layout with curved and straight 9V track sections linking a station with cargo crane, scales, locomotive, train cars, various cargo containers, and minifigures.
 0 main
 0 Name: 4565 - main.ldr
 0 Author: Robert Paciorek [bercik]
@@ -63,7 +63,7 @@
 
 0 NOFILE
 0 FILE 4565 - station.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 Train station built on a 32x32 road baseplate with black brick walls, technic elements, and structural plates forming the station building.
 0 station
 0 Name: 4565 - station.ldr
 0 Author: Robert Paciorek [bercik]
@@ -432,7 +432,7 @@
 
 0 NOFILE
 0 FILE 4565 - station - crane.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 Cargo loading crane with white and black technic plates, derrick arms, hose reel, and a pivoting boom structure.
 0 station - crane
 0 Name: 4565 - station - crane.ldr
 0 Author: Robert Paciorek [bercik]
@@ -583,7 +583,7 @@
 
 0 NOFILE
 0 FILE 4565 - station - crane - hook.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 Crane hook assembly consisting of a grey hook plate mounted on yellow plates.
 0 station - crane - hook
 0 Name: 4565 - station - crane - hook.ldr
 0 Author: Robert Paciorek [bercik]
@@ -602,7 +602,7 @@
 
 0 NOFILE
 0 FILE 4565 - car.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 Red road vehicle built on plates with wheel pins, slopes, and grille detailing.
 0 car
 0 Name: 4565 - car.ldr
 0 Author: Robert Paciorek [bercik]
@@ -783,7 +783,7 @@
 
 0 NOFILE
 0 FILE 4565 - locomotive.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 9V locomotive on a 6x28 train base with motorized wheels, headlights, light-and-sound brick, and detailed bodywork.
 0 locomotive
 0 Name: 4565 - locomotive.ldr
 0 Author: Robert Paciorek [bercik]
@@ -1049,7 +1049,7 @@
 
 0 NOFILE
 0 FILE 4565 - locomotive - part.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 Locomotive detail section with grille bricks, hinge tops, and brackets forming the upper bodywork trim.
 0 locomotive - part
 0 Name: 4565 - locomotive - part.ldr
 0 Author: Robert Paciorek [bercik]
@@ -1092,7 +1092,7 @@
 
 0 NOFILE
 0 FILE 4565 - locomotive - wheels 1.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 Powered 9V motor bogie with train motor, decorative side plates, buffer beam, coupling, and magnet.
 0 locomotive - wheels 1
 0 Name: 4565 - locomotive - wheels 1.ldr
 0 Author: Robert Paciorek [bercik]
@@ -1121,7 +1121,7 @@
 
 0 NOFILE
 0 FILE 4565 - locomotive - wheels 2.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 Unpowered single-axle bogie assembly with train wheels, buffer beam, coupling, and magnet on plate supports.
 0 locomotive - wheels 2
 0 Name: 4565 - locomotive - wheels 2.ldr
 0 Author: Robert Paciorek [bercik]
@@ -1171,7 +1171,7 @@
 
 0 NOFILE
 0 FILE 4565 - train car 1.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 Red freight train car on a 6x24 base with sloped ends, panels, ladder plates, and wagon-end pieces.
 0 train car 1
 0 Name: 4565 - train car 1.ldr
 0 Author: Robert Paciorek [bercik]
@@ -1275,7 +1275,7 @@
 
 0 NOFILE
 0 FILE 4565 - train car 2.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 Red flatbed train car on a 6x28 base with sloped ends, side tiles, and wagon-end plates.
 0 train car 2
 0 Name: 4565 - train car 2.ldr
 0 Author: Robert Paciorek [bercik]
@@ -1339,7 +1339,7 @@
 
 0 NOFILE
 0 FILE 4565 - train car - wheels.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 Single-axle train bogie with wheels, buffer beam, coupling, and magnet for connecting cars.
 0 train car - wheels
 0 Name: 4565 - train car - wheels.ldr
 0 Author: Robert Paciorek [bercik]
@@ -1370,7 +1370,7 @@
 
 0 NOFILE
 0 FILE 4565 - container 1.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 Cargo container with grey hinged roof panels, corner plates, and a lifting ring on top.
 0 container 1
 0 Name: 4565 - container 1.ldr
 0 Author: Robert Paciorek [bercik]
@@ -1440,7 +1440,7 @@
 
 0 NOFILE
 0 FILE 4565 - container 1 - item.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 Small crate cargo item made of round red studs and a lifting-ring tile.
 0 container 1 - item
 0 Name: 4565 - container 1 - item.ldr
 0 Author: Robert Paciorek [bercik]
@@ -1462,7 +1462,7 @@
 
 0 NOFILE
 0 FILE 4565 - container 2.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 Tool container holding a jack assembly plus assorted minifig tools including wrench, hammer, screwdriver, drill, and oilcan.
 0 container 2
 0 Name: 4565 - container 2.ldr
 0 Author: Robert Paciorek [bercik]
@@ -1492,7 +1492,7 @@
 
 0 NOFILE
 0 FILE 4565 - container 2 - empty.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 Empty tool container with grey base, black panels, and blue clip plates for holding accessories.
 0 container 2 - empty
 0 Name: 4565 - container 2 - empty.ldr
 0 Author: Robert Paciorek [bercik]
@@ -1554,7 +1554,7 @@
 
 0 NOFILE
 0 FILE 4565 - container 3.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 Cargo container with hinged panels, grilles, antennas, and cone details housing an internal mechanism.
 0 container 3
 0 Name: 4565 - container 3.ldr
 0 Author: Robert Paciorek [bercik]
@@ -1614,7 +1614,7 @@
 
 0 NOFILE
 0 FILE 4565 - container 3 - mixer.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 Concrete mixer unit with turntable, round corner bricks, hollow cone, and inverted slope supports.
 0 container 3 - mixer
 0 Name: 4565 - container 3 - mixer.ldr
 0 Author: Robert Paciorek [bercik]
@@ -1658,7 +1658,7 @@
 
 0 NOFILE
 0 FILE 4565 - container 4.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 Open cargo container base with corner plates and hinge tiles for attaching accessories.
 0 container 4
 0 Name: 4565 - container 4.ldr
 0 Author: Robert Paciorek [bercik]
@@ -1687,7 +1687,7 @@
 
 0 NOFILE
 0 FILE 4565 - container 4 - part.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 Hinge bar with fingered ends for connecting container components.
 0 container 4 - part
 0 Name: 4565 - container 4 - part.ldr
 0 Author: Robert Paciorek [bercik]
@@ -1704,7 +1704,7 @@
 
 0 NOFILE
 0 FILE 4565 - container 4 - subpart.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 Tipping trailer bed with hinge plates, tipper ends, and large base plates on a lifting-ring support.
 0 container 4 - subpart
 0 Name: 4565 - container 4 - subpart.ldr
 0 Author: Robert Paciorek [bercik]
@@ -1735,7 +1735,7 @@
 
 0 NOFILE
 0 FILE 4565 - minifig 1.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 Stationmaster minifigure wearing a red police hat, suit with red tie and train logo, and a moustache.
 0 minifig 1
 0 Name: 4565 - minifig 1.ldr
 0 Author: Robert Paciorek [bercik]
@@ -1767,7 +1767,7 @@
 
 0 NOFILE
 0 FILE 4565 - minifig 2.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 Worker minifigure in a blue vest with train logo, white construction helmet, and a moustached face.
 0 minifig 2
 0 Name: 4565 - minifig 2.ldr
 0 Author: Robert Paciorek [bercik]
@@ -1799,7 +1799,7 @@
 
 0 NOFILE
 0 FILE 4565 - minifig 3.ldr
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 Worker minifigure in a blue vest with train logo, white construction helmet, and a sunglasses face.
 0 minifig 3
 0 Name: 4565 - minifig 3.ldr
 0 Author: Robert Paciorek [bercik]

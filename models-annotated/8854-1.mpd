@@ -1,5 +1,5 @@
 0 FILE 8854 - Main.ldr
-0 Main
+0 A motorized pneumatic power crane with a geared lift arm mechanism, steering assembly, outrigger arms, and rubber-wheeled chassis built from Technic bricks, gears, axles, and pneumatic tubing.
 0 Name: 8854 - Main.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -9,7 +9,7 @@
 
 
 0 FILE 8854 - Power Crane.ldr
-0 Power Crane
+0 The main chassis structure built from Technic plates and bricks with friction pins, steering arms, multiple axles, and bushings forming the crane's load-bearing frame.
 0 Name: 8854 - Power Crane.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -641,7 +641,7 @@
 
 
 0 FILE 8854 - Back Arm Bottom.ldr
-0 Back Arm Bottom
+0 A short liftarm assembly of two Technic beams joined by an axle and bushing, forming the lower section of the back support arm.
 0 Name: 8854 - Back Arm Bottom.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -658,7 +658,7 @@
 
 
 0 FILE 8854 - Back Arm Top Left.ldr
-0 Back Arm Top Left
+0 A left-side back arm segment using two liftarms braced by an axle with a 14-tooth bevel gear for power transfer.
 0 Name: 8854 - Back Arm Top Left.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -675,7 +675,7 @@
 
 
 0 FILE 8854 - Back Arm Top Right.ldr
-0 Back Arm Top Right
+0 A right-side back arm segment using two liftarms braced by a longer axle with a 14-tooth bevel gear for power transfer.
 0 Name: 8854 - Back Arm Top Right.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -692,7 +692,7 @@
 
 
 0 FILE 8854 - Back Arm Axle Mid.ldr
-0 Back Arm Axle Mid
+0 A center axle fitted with two 14-tooth bevel gears to redirect drive within the back arm mechanism.
 0 Name: 8854 - Back Arm Axle Mid.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -707,7 +707,7 @@
 
 
 0 FILE 8854 - Steering Axle Horizontal.ldr
-0 Steering Axle Horizontal
+0 A horizontal steering shaft with an 8-tooth gear and 14-tooth bevel gear to transmit steering input.
 0 Name: 8854 - Steering Axle Horizontal.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -726,7 +726,7 @@
 
 
 0 FILE 8854 - Steering Axle Vertical Bottom.ldr
-0 Steering Axle Vertical Bottom
+0 A short vertical steering axle with a bevel gear and bushing for the bottom steering linkage.
 0 Name: 8854 - Steering Axle Vertical Bottom.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -741,7 +741,7 @@
 
 
 0 FILE 8854 - Turning Axle 1.ldr
-0 Turning Axle 1
+0 A turning shaft with a pulley wheel, pin, bushing, and 8-tooth gear for the first stage of the turning mechanism.
 0 Name: 8854 - Turning Axle 1.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -760,7 +760,7 @@
 
 
 0 FILE 8854 - Turning Axle 2.ldr
-0 Turning Axle 2
+0 A turning shaft pairing a 24-tooth crown gear with an 8-tooth pinion for the second reduction stage.
 0 Name: 8854 - Turning Axle 2.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -775,7 +775,7 @@
 
 
 0 FILE 8854 - Turning Axle 3.ldr
-0 Turning Axle 3
+0 A turning shaft pairing a 24-tooth gear with an 8-tooth pinion for the third turning stage.
 0 Name: 8854 - Turning Axle 3.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -790,7 +790,7 @@
 
 
 0 FILE 8854 - Back Arm Axle 2.ldr
-0 Back Arm Axle 2
+0 A back arm drive shaft with a 24-tooth gear, bushing, and universal joint to transfer torque at an angle.
 0 Name: 8854 - Back Arm Axle 2.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -807,7 +807,7 @@
 
 
 0 FILE 8854 - Back Arm Foot.ldr
-0 Back Arm Foot
+0 A stabilizing outrigger foot with wedge belt wheels, toggle connectors, and an axle pin assembly for ground contact.
 0 Name: 8854 - Back Arm Foot.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -837,7 +837,7 @@
 
 
 0 FILE 8854 - Back Arm Axle 1.ldr
-0 Back Arm Axle 1
+0 A long back arm axle driven by a worm gear with bushings for the outrigger extension mechanism.
 0 Name: 8854 - Back Arm Axle 1.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -858,7 +858,7 @@
 
 
 0 FILE 8854 - Lift Arm Base.ldr
-0 Lift Arm Base
+0 The lift arm rotating base with a turntable, corner bricks, threaded axle, and crown gear for elevation adjustment.
 0 Name: 8854 - Lift Arm Base.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -895,7 +895,7 @@
 
 
 0 FILE 8854 - Liftarm.ldr
-0 Liftarm
+0 A long red liftarm boom built from Technic plates, bricks, and pins with a worm gear for the main lifting extension.
 0 Name: 8854 - Liftarm.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -1066,7 +1066,7 @@
 
 
 0 FILE 8854 - Liftarm Gearbox.ldr
-0 Liftarm Gearbox
+0 A red gearbox housing of Technic bricks and plates with friction pins providing the drive connection to the liftarm.
 0 Name: 8854 - Liftarm Gearbox.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -1111,7 +1111,7 @@
 
 
 0 FILE 8854 - Liftarm Gearbox Axle 1.ldr
-0 Liftarm Gearbox Axle 1
+0 A short gearbox shaft with bushings and an 8-tooth gear for the first liftarm drive stage.
 0 Name: 8854 - Liftarm Gearbox Axle 1.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -1128,7 +1128,7 @@
 
 
 0 FILE 8854 - Liftarm Gearbox Axle 2.ldr
-0 Liftarm Gearbox Axle 2
+0 A longer gearbox shaft with two 8-tooth gears and bushings for the second liftarm drive stage.
 0 Name: 8854 - Liftarm Gearbox Axle 2.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -1149,7 +1149,7 @@
 
 
 0 FILE 8854 - Liftarm Extension.ldr
-0 Liftarm Extension
+0 A telescoping liftarm extension using Technic bricks, a rack, rotor blades, and a wheel rim for the extension drive.
 0 Name: 8854 - Liftarm Extension.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -1214,7 +1214,7 @@
 
 
 0 FILE 8854 - Wheel.ldr
-0 Wheel
+0 A yellow wheel rim with a black rubber tire for the crane's road wheels.
 0 Name: 8854 - Wheel.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -1227,7 +1227,7 @@
 
 
 0 FILE 8854 - Liftarm Axle 3.ldr
-0 Liftarm Axle 3
+0 A liftarm drive shaft with 8-tooth and bevel gears plus a universal joint for angled power transfer.
 0 Name: 8854 - Liftarm Axle 3.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -1246,7 +1246,7 @@
 
 
 0 FILE 8854 - Liftarm Axle 4.ldr
-0 Liftarm Axle 4
+0 A liftarm shaft with two 14-tooth bevel gears and a bushing for drive redirection.
 0 Name: 8854 - Liftarm Axle 4.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -1263,7 +1263,7 @@
 
 
 0 FILE 8854 - Pressure Supply.ldr
-0 Pressure Supply
+0 A long pneumatic tube routing pressure from the supply source through 239 tube segments to the pneumatic cylinders.
 0 Name: 8854 - Pressure Supply.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -1784,7 +1784,7 @@
 
 
 0 FILE 8854 - Pressure Bottom Up Supply.ldr
-0 Pressure Bottom Up Supply
+0 A shorter pneumatic tube routing pressure upward through 64 tube segments to the bottom portion of the system.
 0 Name: 8854 - Pressure Bottom Up Supply.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -1951,7 +1951,7 @@
 
 
 0 FILE 8854 - Pressure Top Down Supply.ldr
-0 Pressure Top Down Supply
+0 A long pneumatic pressure tube assembly with 55 segments routed top-down for supply.
 0 Name: 8854 - Pressure Top Down Supply.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -2100,7 +2100,7 @@
 
 
 0 FILE 8854 - Pressure Bottom Up Right.ldr
-0 Pressure Bottom Up Right
+0 A pneumatic pressure tube assembly with 21 segments routed bottom-up on the right side.
 0 Name: 8854 - Pressure Bottom Up Right.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -2181,7 +2181,7 @@
 
 
 0 FILE 8854 - Pressure Bottom Up Left.ldr
-0 Pressure Bottom Up Left
+0 A pneumatic pressure tube assembly with 22 segments routed bottom-up on the left side.
 0 Name: 8854 - Pressure Bottom Up Left.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -2264,7 +2264,7 @@
 
 
 0 FILE 8854 - Pressure Top Down Left.ldr
-0 Pressure Top Down Left
+0 A pneumatic pressure tube assembly with 22 segments routed top-down on the left side.
 0 Name: 8854 - Pressure Top Down Left.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -2347,7 +2347,7 @@
 
 
 0 FILE 8854 - Pressure Top Down Right.ldr
-0 Pressure Top Down Right
+0 A pneumatic pressure tube assembly with 22 segments routed top-down on the right side.
 0 Name: 8854 - Pressure Top Down Right.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model
@@ -2430,7 +2430,7 @@
 
 
 0 FILE 8854 - Rope.ldr
-0 Rope
+0 A long flexible rope element spanning 274 segments across the model.
 0 Name: 8854 - Rope.ldr
 0 Author: Stefan Frenz [smf]
 0 !LDRAW_ORG Model

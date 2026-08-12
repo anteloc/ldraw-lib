@@ -1,5 +1,5 @@
 0 FILE 8527 - Main.ldr
-0 Main
+0 Tri-bot assembly featuring an NXT brick with motors, drive wheels, gripper claws, and ultrasonic, touch, sound, and light sensor attachments connected by NXT cables.
 0 Name: 8527 - Main.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -63,7 +63,7 @@
 
 
 0 FILE 8527 - Tribot Base.ldr
-0 Tribot Base
+0 Core chassis built from Technic beams and pins housing the NXT brick with two drive wheels and a caster wheel mount.
 0 Name: 8527 - Tribot Base.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -179,7 +179,7 @@
 
 
 0 FILE 8527 - Tribot Base - Motors.ldr
-0 Tribot Base - Motors
+0 Motor mounting frame using a bent liftarm connector.
 0 Name: 8527 - Tribot Base - Motors.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -202,7 +202,7 @@
 
 
 0 FILE 8527 - Tribot Base - Motors - Left Motor.ldr
-0 Tribot Base - Motors - Left Motor
+0 Left drive motor assembly with an NXT motor, axle, bushes, and bent liftarm bracing.
 0 Name: 8527 - Tribot Base - Motors - Left Motor.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -253,7 +253,7 @@
 
 
 0 FILE 8527 - Tribot Base - Motors - Center Motor.ldr
-0 Tribot Base - Motors - Center Motor
+0 Center drive motor built around an NXT motor with beams, pins, and cross block connectors.
 0 Name: 8527 - Tribot Base - Motors - Center Motor.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -292,7 +292,7 @@
 
 
 0 FILE 8527 - Tribot Base - Motors - Right Motor.ldr
-0 Tribot Base - Motors - Right Motor
+0 Right drive motor assembly with an NXT motor, axle, bushes, and bent liftarm bracing.
 0 Name: 8527 - Tribot Base - Motors - Right Motor.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -338,7 +338,7 @@
 
 
 0 FILE 8527 - Tribot Base - Back Wheel.ldr
-0 Tribot Base - Back Wheel
+0 Rear caster wheel unit with belt wheels mounted on an axle and supported by beams.
 0 Name: 8527 - Tribot Base - Back Wheel.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -379,7 +379,7 @@
 
 
 0 FILE 8527 - Ball Holder.ldr
-0 Ball Holder
+0 Blue ball held within a cage of flexible axle joiners and angle connectors.
 0 Name: 8527 - Ball Holder.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -433,7 +433,7 @@
 
 
 0 FILE 8527 - Ball Holder - Front.ldr
-0 Ball Holder - Front
+0 Front portion of the ball holder using flexible axle joiners and angle connectors.
 0 Name: 8527 - Ball Holder - Front.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -463,7 +463,7 @@
 
 
 0 FILE 8527 - Touch Sensor Attachment.ldr
-0 Touch Sensor Attachment
+0 Touch sensor assembly with beams, angle connectors, and a gear linkage for the bumper mechanism.
 0 Name: 8527 - Touch Sensor Attachment.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -568,7 +568,7 @@
 
 
 0 FILE 8527 - Touch Sensor Attachment - Mount.ldr
-0 Touch Sensor Attachment - Mount
+0 Mounting bracket for the touch sensor using beams, pins, and cross blocks.
 0 Name: 8527 - Touch Sensor Attachment - Mount.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -624,7 +624,7 @@
 
 
 0 FILE 8527 - Left Claw.ldr
-0 Left Claw
+0 Left gripper claw with pincer elements, an orange tooth, and bent liftarms.
 0 Name: 8527 - Left Claw.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -668,7 +668,7 @@
 
 
 0 FILE 8527 - Right Claw.ldr
-0 Right Claw
+0 Right gripper claw with pincer elements, an orange tooth, and bent liftarms.
 0 Name: 8527 - Right Claw.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -712,7 +712,7 @@
 
 
 0 FILE 8527 - Sound Sensor Attachment.ldr
-0 Sound Sensor Attachment
+0 Sound sensor mount with bent liftarms and angle connectors.
 0 Name: 8527 - Sound Sensor Attachment.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -767,7 +767,7 @@
 
 
 0 FILE 8527 - Light Sensor Attachment.ldr
-0 Light Sensor Attachment
+0 Light sensor mounted between two short beams on a pin.
 0 Name: 8527 - Light Sensor Attachment.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -793,7 +793,7 @@
 
 
 0 FILE 8527 - cable1.ldr
-0 cable1
+0 NXT RJ12 cable assembly approximately 309mm long with plug ends.
 0 Name: 8527 - cable1.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -843,7 +843,7 @@
 
 
 0 FILE 8527 - cable1_subPart1.ldr
-0 cable1_subPart1
+0 Cable segment subpart for cable1 containing the geometric path data.
 0 Name: 8527 - cable1_subPart1.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -1031,7 +1031,7 @@
 
 
 0 FILE 8527 - cable2.ldr
-0 cable2
+0 NXT RJ12 cable assembly approximately 242mm long with plug ends.
 0 Name: 8527 - cable2.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -1078,7 +1078,7 @@
 
 
 0 FILE 8527 - cable2_subPart1.ldr
-0 cable2_subPart1
+0 Cable segment subpart for cable2 containing the geometric path data.
 0 Name: 8527 - cable2_subPart1.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -1242,7 +1242,7 @@
 
 
 0 FILE 8527 - cable4.ldr
-0 cable4
+0 NXT RJ12 cable assembly approximately 279mm long with plug ends.
 0 Name: 8527 - cable4.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -1291,7 +1291,7 @@
 
 
 0 FILE 8527 - cable4_subPart1.ldr
-0 cable4_subPart1
+0 Cable segment subpart for cable4 containing the geometric path data.
 0 Name: 8527 - cable4_subPart1.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -1430,7 +1430,7 @@
 
 
 0 FILE 8527 - cable3.ldr
-0 cable3
+0 NXT RJ12 cable assembly approximately 309mm long with plug ends.
 0 Name: 8527 - cable3.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -1480,7 +1480,7 @@
 
 
 0 FILE 8527 - cable3_subPart1.ldr
-0 cable3_subPart1
+0 Cable segment subpart for cable3 containing the geometric path data.
 0 Name: 8527 - cable3_subPart1.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -1668,7 +1668,7 @@
 
 
 0 FILE 8527 - cable5.ldr
-0 cable5
+0 NXT RJ12 cable assembly approximately 257mm long with plug ends.
 0 Name: 8527 - cable5.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -1715,7 +1715,7 @@
 
 
 0 FILE 8527 - cable5_subPart1.ldr
-0 cable5_subPart1
+0 Cable segment subpart for cable5 containing the geometric path data.
 0 Name: 8527 - cable5_subPart1.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model

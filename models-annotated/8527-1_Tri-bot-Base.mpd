@@ -1,5 +1,5 @@
 0 FILE 8527 - main.ldr
-0 Main
+0 Mindstorms NXT Tri-bot main chassis assembly integrating three motors, a caster back wheel, drive wheels, and routed cables.
 0 Name: 8527 - main.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -117,7 +117,7 @@
 
 
 0 FILE 8527 - tribot base - motors.ldr
-0 Tribot Base - Motors
+0 Structural connector bracket using a bent liftarm to mount the motor assembly.
 0 Name: 8527 - tribot base - motors.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -137,7 +137,7 @@
 
 
 0 FILE 8527 - tribot base - motors - left motor.ldr
-0 Tribot Base - Motors - Left Motor
+0 Left drive motor subassembly built from an NXT motor, bent liftarms, and pin-connected cross blocks on an axle.
 0 Name: 8527 - tribot base - motors - left motor.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -184,7 +184,7 @@
 
 
 0 FILE 8527 - tribot base - motors - center motor.ldr
-0 Tribot Base - Motors - Center Motor
+0 Center motor subassembly mounting an NXT motor between beams and cross blocks with friction pins.
 0 Name: 8527 - tribot base - motors - center motor.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -219,7 +219,7 @@
 
 
 0 FILE 8527 - tribot base - motors - right motor.ldr
-0 Tribot Base - Motors - Right Motor
+0 Right drive motor subassembly built from an NXT motor, bent liftarms, and pin-connected cross blocks on an axle.
 0 Name: 8527 - tribot base - motors - right motor.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -261,7 +261,7 @@
 
 
 0 FILE 8527 - tribot base - back wheel.ldr
-0 Tribot Base - Back Wheel
+0 Rear caster wheel subassembly using belt wheels on an axle with beam and cross block supports.
 0 Name: 8527 - tribot base - back wheel.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -298,7 +298,7 @@
 
 
 0 FILE 8527 - ev3Cable-1.ldr
-0 ev3Cable-1
+0 Routed Mindstorms NXT cable path with plug end caps spanning approximately 275mm.
 0 Name: 8527 - ev3Cable-1.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -352,7 +352,7 @@
 
 
 0 FILE 8527 - ev3cable-1_subPart1.ldr
-0 ev3Cable-1_subPart1
+0 Generated cable segment subpart defining the curved wire mesh for cable 1.
 0 Name: 8527 - ev3cable-1_subPart1.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -9214,7 +9214,7 @@
 
 
 0 FILE 8527 - ev3Cable-2.ldr
-0 ev3Cable-2
+0 Routed Mindstorms NXT cable path with plug end caps spanning approximately 425mm.
 0 Name: 8527 - ev3Cable-2.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -9259,7 +9259,7 @@
 
 
 0 FILE 8527 - ev3Cable-2_subPart1.ldr
-0 ev3Cable-2_subPart1
+0 Generated cable segment subpart defining the curved wire mesh for cable 2.
 0 Name: 8527 - ev3Cable-2_subPart1.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -9880,7 +9880,7 @@
 
 
 0 FILE 8527 - ev3Cable-3.ldr
-0 ev3Cable-3
+0 Routed Mindstorms NXT cable path with plug end caps spanning approximately 418mm.
 0 Name: 8527 - ev3Cable-3.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -9925,7 +9925,7 @@
 
 
 0 FILE 8527 - ev3Cable-3_subPart1.ldr
-0 ev3Cable-3_subPart1
+0 Generated cable segment subpart defining the curved wire mesh for cable 3.
 0 Name: 8527 - ev3Cable-3_subPart1.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -10517,7 +10517,7 @@
 
 
 0 FILE 8527 - ldcev3wireseg.dat
-0 ldcEv3WireSeg
+0 Reusable wire segment primitive composed of cylinders defining a cable cross-section.
 0 Name: 8527 - ldcev3wireseg.dat
 0 Author: LDCad
 0 !LDRAW_ORG Unofficial_Primitive
@@ -10551,7 +10551,7 @@
 
 
 0 FILE 8527 - ldcconring-2-4.dat
-0 ldcConRing-2-4
+0 Connector ring primitive used to cap and edge cable segments within the path generator.
 0 Name: 8527 - ldcconring-2-4.dat
 0 Author: LDCad
 0 !LDRAW_ORG Unofficial_Primitive

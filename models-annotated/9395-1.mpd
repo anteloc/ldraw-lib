@@ -1,5 +1,5 @@
 0 FILE 9395 - Main.ldr
-0 Main
+0 Technic tow truck model featuring a geared chassis with drivetrain, steering, and winch string assembly.
 0 Name: 9395 - Main.ldr
 0 Author: Oh-Seong KWON
 0 !LDRAW_ORG Model
@@ -15,7 +15,7 @@
 
 
 0 FILE 9395 - 9395-1.ldr
-0 9395-1
+0 Technic chassis submodel built from beams, gears, a differential, axles, and angle connectors forming the drivetrain and steering structure.
 0 Author: Oh-Seong KWON
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -2631,7 +2631,7 @@
 
 
 0 FILE 9395 - LS60.dat
-0 ~LSynth Short Straight String Segment
+0 LSynth-generated short straight string segment used for the winch or cable element.
 0 Name: 9395 - LS60.dat
 0 Author: Larry Pieniazek
 0 !LDRAW_ORG Unofficial_Part

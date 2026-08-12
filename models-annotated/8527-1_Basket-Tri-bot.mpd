@@ -1,5 +1,5 @@
 0 FILE 8527 - Main.ldr
-0 Main
+0 Top-level assembly joining gears, axles, and cross blocks that connect the Tribot base with its motor, sensor, and basket attachments.
 0 Name: 8527 - Main.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -58,7 +58,7 @@
 
 
 0 FILE 8527 - Tribot Base.ldr
-0 Tribot Base
+0 Core chassis built from long liftarms and pins, carrying the NXT brick and two large off-road drive wheels.
 0 Name: 8527 - Tribot Base.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -166,7 +166,7 @@
 
 
 0 FILE 8527 - Tribot Base - Motors.ldr
-0 Tribot Base - Motors
+0 Structural bracket assembly that groups and mounts the left, center, and right drive motors to the base.
 0 Name: 8527 - Tribot Base - Motors.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -181,7 +181,7 @@
 
 
 0 FILE 8527 - Tribot Base - Motors - Left Motor.ldr
-0 Tribot Base - Motors - Left Motor
+0 Left drive motor module using a 15-stud liftarm, bent liftarms, and an NXT motor with axle and pin connectors.
 0 Name: 8527 - Tribot Base - Motors - Left Motor.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -224,7 +224,7 @@
 
 
 0 FILE 8527 - Tribot Base - Motors - Center Motor.ldr
-0 Tribot Base - Motors - Center Motor
+0 Center drive motor module built from two 7-stud liftarms and pin connectors holding a single NXT motor.
 0 Name: 8527 - Tribot Base - Motors - Center Motor.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -255,7 +255,7 @@
 
 
 0 FILE 8527 - Tribot Base - Motors - Right Motor.ldr
-0 Tribot Base - Motors - Right Motor
+0 Right drive motor module mirroring the left, using a 15-stud liftarm, bent liftarm, and an NXT motor.
 0 Name: 8527 - Tribot Base - Motors - Right Motor.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -293,7 +293,7 @@
 
 
 0 FILE 8527 - Tribot Base - Back Wheel.ldr
-0 Tribot Base - Back Wheel
+0 Rear caster wheel assembly using a 5-stud axle, bush, pulley wheels, and cross blocks to provide a trailing support wheel.
 0 Name: 8527 - Tribot Base - Back Wheel.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -326,7 +326,7 @@
 
 
 0 FILE 8527 - Basket Bot Attachments - Flapper.ldr
-0 Basket Bot Attachments - Flapper
+0 Hinged flap made of two 9-stud liftarms and a bent connector on long pins for a swinging basket gate.
 0 Name: 8527 - Basket Bot Attachments - Flapper.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -350,7 +350,7 @@
 
 
 0 FILE 8527 - Basket Bot Attachments - Basket.ldr
-0 Basket Bot Attachments - Basket
+0 Rectangular basket frame assembled from long liftarms, bent beams, and pin connectors forming an open container.
 0 Name: 8527 - Basket Bot Attachments - Basket.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -435,7 +435,7 @@
 
 
 0 FILE 8527 - Ultrasonic Sensor Attachment.ldr
-0 Ultrasonic Sensor Attachment
+0 Mounting bracket of beams and long pins that holds the NXT ultrasonic distance sensor to the robot.
 0 Name: 8527 - Ultrasonic Sensor Attachment.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -474,7 +474,7 @@
 
 
 0 FILE 8527 - Sound Sensor Attachment.ldr
-0 Sound Sensor Attachment
+0 Bracket of bent liftarms and angle connectors that mounts the NXT sound sensor.
 0 Name: 8527 - Sound Sensor Attachment.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -513,7 +513,7 @@
 
 
 0 FILE 8527 - cable1.ldr
-0 cable1
+0 Flexible NXT RJ12 cable assembly routed through 168 segments over a 309 mm path between two plug ends.
 0 Name: 8527 - cable1.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -563,7 +563,7 @@
 
 
 0 FILE 8527 - cable1_subPart1.ldr
-0 cable1_subPart1
+0 Sub-segment data for cable1 defining its 309 mm, 168-segment routing path.
 0 Name: 8527 - cable1_subPart1.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -750,7 +750,7 @@
 
 
 0 FILE 8527 - cable2.ldr
-0 cable2
+0 Flexible NXT RJ12 cable assembly routed through 144 segments over a 242 mm path between two plug ends.
 0 Name: 8527 - cable2.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -797,7 +797,7 @@
 
 
 0 FILE 8527 - cable2_subPart1.ldr
-0 cable2_subPart1
+0 Sub-segment data for cable2 defining its 242 mm, 144-segment routing path.
 0 Name: 8527 - cable2_subPart1.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -960,7 +960,7 @@
 
 
 0 FILE 8527 - cable4.ldr
-0 cable4
+0 Flexible NXT RJ12 cable assembly routed through 119 segments over a 279 mm path between two plug ends.
 0 Name: 8527 - cable4.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -1009,7 +1009,7 @@
 
 
 0 FILE 8527 - cable4_subPart1.ldr
-0 cable4_subPart1
+0 Sub-segment data for cable4 defining its 279 mm, 119-segment routing path.
 0 Name: 8527 - cable4_subPart1.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -1147,7 +1147,7 @@
 
 
 0 FILE 8527 - cable3.ldr
-0 cable3
+0 Flexible NXT RJ12 cable assembly routed through 168 segments over a 309 mm path between two plug ends.
 0 Name: 8527 - cable3.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -1197,7 +1197,7 @@
 
 
 0 FILE 8527 - cable3_subPart1.ldr
-0 cable3_subPart1
+0 Sub-segment data for cable3 defining its 309 mm, 168-segment routing path.
 0 Name: 8527 - cable3_subPart1.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -1384,7 +1384,7 @@
 
 
 0 FILE 8527 - cable5.ldr
-0 cable5
+0 Flexible NXT RJ12 cable assembly routed through 119 segments over a 257 mm path between two plug ends.
 0 Name: 8527 - cable5.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -1431,7 +1431,7 @@
 
 
 0 FILE 8527 - cable5_subPart1.ldr
-0 cable5_subPart1
+0 Sub-segment data for cable5 defining its 257 mm, 119-segment routing path.
 0 Name: 8527 - cable5_subPart1.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -1569,7 +1569,7 @@
 
 
 0 FILE 8527 - cable6.ldr
-0 cable6
+0 Placeholder submodel for an NXT cable assembly with no directly-listed pieces.
 0 Name: 8527 - cable6.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -1598,7 +1598,7 @@
 
 
 0 FILE 8527 - cable7.ldr
-0 cable7
+0 Placeholder submodel for an NXT cable assembly with no directly-listed pieces.
 0 Name: 8527 - cable7.ldr
 0 Author: Cameron Brick [LegoManIAm94]
 0 !LDRAW_ORG Model
@@ -1625,7 +1625,7 @@
 
 
 0 FILE 8527 - ldcNxtWireSeg.dat
-0 ldcNxtWireSeg
+0 LDCad path-deform primitive defining the cylindrical geometry of a single NXT wire cable segment.
 0 Name: 8527 - ldcNxtWireSeg.dat
 0 Author: LDCad
 0 !LDRAW_ORG Unofficial_Primitive
@@ -1669,7 +1669,7 @@
 
 
 0 FILE 8527 - ldcConRing-2-4.dat
-0 ldcConRing-2-4
+0 LDCad path-deform primitive defining the connector ring geometry used to cap NXT cable segments.
 0 Name: 8527 - ldcConRing-2-4.dat
 0 Author: LDCad
 0 !LDRAW_ORG Unofficial_Primitive

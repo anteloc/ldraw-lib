@@ -1,332 +1,165 @@
 PRAGMA trusted_schema = ON;
 PRAGMA foreign_keys = ON;
 
-
--- ============================================================
--- Drop existing triggers
--- ============================================================
-
 DROP TRIGGER IF EXISTS MODELS_DESCRIPTIONS_AI;
 DROP TRIGGER IF EXISTS MODELS_DESCRIPTIONS_AD;
 DROP TRIGGER IF EXISTS MODELS_DESCRIPTIONS_AU;
-
 DROP TRIGGER IF EXISTS SUBMODELS_DESCRIPTIONS_AI;
 DROP TRIGGER IF EXISTS SUBMODELS_DESCRIPTIONS_AD;
 DROP TRIGGER IF EXISTS SUBMODELS_DESCRIPTIONS_AU;
-
 DROP TRIGGER IF EXISTS PARTS_DESCRIPTIONS_AI;
 DROP TRIGGER IF EXISTS PARTS_DESCRIPTIONS_AD;
 DROP TRIGGER IF EXISTS PARTS_DESCRIPTIONS_AU;
-
-
--- ============================================================
--- Drop existing FTS5 virtual tables
--- ============================================================
 
 DROP TABLE IF EXISTS MODELS_DESCRIPTIONS_FTS;
 DROP TABLE IF EXISTS SUBMODELS_DESCRIPTIONS_FTS;
 DROP TABLE IF EXISTS PARTS_DESCRIPTIONS_FTS;
 
-
--- ============================================================
--- Drop existing relational tables
---
--- SUBMODELS_DESCRIPTIONS must be dropped before
--- MODELS_DESCRIPTIONS because of the foreign key.
--- ============================================================
-
 DROP TABLE IF EXISTS SUBMODELS_DESCRIPTIONS;
 DROP TABLE IF EXISTS MODELS_DESCRIPTIONS;
 DROP TABLE IF EXISTS PARTS_DESCRIPTIONS;
 
-
--- ============================================================
--- Authoritative relational tables
--- ============================================================
-
 CREATE TABLE MODELS_DESCRIPTIONS (
-    alias       VARCHAR NOT NULL PRIMARY KEY,
+    model       VARCHAR NOT NULL PRIMARY KEY,
     description TEXT NOT NULL
 );
 
 CREATE TABLE SUBMODELS_DESCRIPTIONS (
+    model       VARCHAR NOT NULL,
     submodel    VARCHAR NOT NULL,
-    alias       VARCHAR NOT NULL,
     description TEXT NOT NULL,
-
-    PRIMARY KEY (submodel, alias),
-
-    FOREIGN KEY (alias)
-        REFERENCES MODELS_DESCRIPTIONS(alias)
+    PRIMARY KEY (model, submodel),
+    FOREIGN KEY (model)
+        REFERENCES MODELS_DESCRIPTIONS(model)
         ON UPDATE CASCADE
         ON DELETE CASCADE
 );
 
 CREATE TABLE PARTS_DESCRIPTIONS (
-    alias       VARCHAR NOT NULL PRIMARY KEY,
+    part        VARCHAR NOT NULL PRIMARY KEY,
     description TEXT NOT NULL
 );
 
-
--- ============================================================
--- FTS5 external-content indexes
---
--- Identifier columns are UNINDEXED so they are returned as
--- metadata but do not participate in MATCH.
---
--- Only "description" is full-text indexed.
--- ============================================================
-
+-- All FTS columns below are indexed/searchable, including identifiers.
 CREATE VIRTUAL TABLE MODELS_DESCRIPTIONS_FTS USING fts5(
-    alias UNINDEXED,
+    model,
     description,
     content='MODELS_DESCRIPTIONS',
     content_rowid='rowid'
 );
 
 CREATE VIRTUAL TABLE SUBMODELS_DESCRIPTIONS_FTS USING fts5(
-    submodel UNINDEXED,
-    alias UNINDEXED,
+    model,
+    submodel,
     description,
     content='SUBMODELS_DESCRIPTIONS',
     content_rowid='rowid'
 );
 
 CREATE VIRTUAL TABLE PARTS_DESCRIPTIONS_FTS USING fts5(
-    alias UNINDEXED,
+    part,
     description,
     content='PARTS_DESCRIPTIONS',
     content_rowid='rowid'
 );
 
-
--- ============================================================
--- MODELS_DESCRIPTIONS synchronization triggers
--- ============================================================
-
 CREATE TRIGGER MODELS_DESCRIPTIONS_AI
 AFTER INSERT ON MODELS_DESCRIPTIONS
 BEGIN
-    INSERT INTO MODELS_DESCRIPTIONS_FTS (
-        rowid,
-        alias,
-        description
-    )
-    VALUES (
-        new.rowid,
-        new.alias,
-        new.description
-    );
+    INSERT INTO MODELS_DESCRIPTIONS_FTS(rowid, model, description)
+    VALUES (new.rowid, new.model, new.description);
 END;
 
 CREATE TRIGGER MODELS_DESCRIPTIONS_AD
 AFTER DELETE ON MODELS_DESCRIPTIONS
 BEGIN
-    INSERT INTO MODELS_DESCRIPTIONS_FTS (
-        MODELS_DESCRIPTIONS_FTS,
-        rowid,
-        alias,
-        description
-    )
-    VALUES (
-        'delete',
-        old.rowid,
-        old.alias,
-        old.description
+    INSERT INTO MODELS_DESCRIPTIONS_FTS(
+        MODELS_DESCRIPTIONS_FTS, rowid, model, description
+    ) VALUES (
+        'delete', old.rowid, old.model, old.description
     );
 END;
 
 CREATE TRIGGER MODELS_DESCRIPTIONS_AU
 AFTER UPDATE ON MODELS_DESCRIPTIONS
 BEGIN
-    INSERT INTO MODELS_DESCRIPTIONS_FTS (
-        MODELS_DESCRIPTIONS_FTS,
-        rowid,
-        alias,
-        description
-    )
-    VALUES (
-        'delete',
-        old.rowid,
-        old.alias,
-        old.description
+    INSERT INTO MODELS_DESCRIPTIONS_FTS(
+        MODELS_DESCRIPTIONS_FTS, rowid, model, description
+    ) VALUES (
+        'delete', old.rowid, old.model, old.description
     );
-
-    INSERT INTO MODELS_DESCRIPTIONS_FTS (
-        rowid,
-        alias,
-        description
-    )
-    VALUES (
-        new.rowid,
-        new.alias,
-        new.description
-    );
+    INSERT INTO MODELS_DESCRIPTIONS_FTS(rowid, model, description)
+    VALUES (new.rowid, new.model, new.description);
 END;
-
-
--- ============================================================
--- SUBMODELS_DESCRIPTIONS synchronization triggers
--- ============================================================
 
 CREATE TRIGGER SUBMODELS_DESCRIPTIONS_AI
 AFTER INSERT ON SUBMODELS_DESCRIPTIONS
 BEGIN
-    INSERT INTO SUBMODELS_DESCRIPTIONS_FTS (
-        rowid,
-        submodel,
-        alias,
-        description
-    )
-    VALUES (
-        new.rowid,
-        new.submodel,
-        new.alias,
-        new.description
-    );
+    INSERT INTO SUBMODELS_DESCRIPTIONS_FTS(rowid, model, submodel, description)
+    VALUES (new.rowid, new.model, new.submodel, new.description);
 END;
 
 CREATE TRIGGER SUBMODELS_DESCRIPTIONS_AD
 AFTER DELETE ON SUBMODELS_DESCRIPTIONS
 BEGIN
-    INSERT INTO SUBMODELS_DESCRIPTIONS_FTS (
-        SUBMODELS_DESCRIPTIONS_FTS,
-        rowid,
-        submodel,
-        alias,
-        description
-    )
-    VALUES (
-        'delete',
-        old.rowid,
-        old.submodel,
-        old.alias,
-        old.description
+    INSERT INTO SUBMODELS_DESCRIPTIONS_FTS(
+        SUBMODELS_DESCRIPTIONS_FTS, rowid, model, submodel, description
+    ) VALUES (
+        'delete', old.rowid, old.model, old.submodel, old.description
     );
 END;
 
 CREATE TRIGGER SUBMODELS_DESCRIPTIONS_AU
 AFTER UPDATE ON SUBMODELS_DESCRIPTIONS
 BEGIN
-    INSERT INTO SUBMODELS_DESCRIPTIONS_FTS (
-        SUBMODELS_DESCRIPTIONS_FTS,
-        rowid,
-        submodel,
-        alias,
-        description
-    )
-    VALUES (
-        'delete',
-        old.rowid,
-        old.submodel,
-        old.alias,
-        old.description
+    INSERT INTO SUBMODELS_DESCRIPTIONS_FTS(
+        SUBMODELS_DESCRIPTIONS_FTS, rowid, model, submodel, description
+    ) VALUES (
+        'delete', old.rowid, old.model, old.submodel, old.description
     );
-
-    INSERT INTO SUBMODELS_DESCRIPTIONS_FTS (
-        rowid,
-        submodel,
-        alias,
-        description
-    )
-    VALUES (
-        new.rowid,
-        new.submodel,
-        new.alias,
-        new.description
-    );
+    INSERT INTO SUBMODELS_DESCRIPTIONS_FTS(rowid, model, submodel, description)
+    VALUES (new.rowid, new.model, new.submodel, new.description);
 END;
-
-
--- ============================================================
--- PARTS_DESCRIPTIONS synchronization triggers
--- ============================================================
 
 CREATE TRIGGER PARTS_DESCRIPTIONS_AI
 AFTER INSERT ON PARTS_DESCRIPTIONS
 BEGIN
-    INSERT INTO PARTS_DESCRIPTIONS_FTS (
-        rowid,
-        alias,
-        description
-    )
-    VALUES (
-        new.rowid,
-        new.alias,
-        new.description
-    );
+    INSERT INTO PARTS_DESCRIPTIONS_FTS(rowid, part, description)
+    VALUES (new.rowid, new.part, new.description);
 END;
 
 CREATE TRIGGER PARTS_DESCRIPTIONS_AD
 AFTER DELETE ON PARTS_DESCRIPTIONS
 BEGIN
-    INSERT INTO PARTS_DESCRIPTIONS_FTS (
-        PARTS_DESCRIPTIONS_FTS,
-        rowid,
-        alias,
-        description
-    )
-    VALUES (
-        'delete',
-        old.rowid,
-        old.alias,
-        old.description
+    INSERT INTO PARTS_DESCRIPTIONS_FTS(
+        PARTS_DESCRIPTIONS_FTS, rowid, part, description
+    ) VALUES (
+        'delete', old.rowid, old.part, old.description
     );
 END;
 
 CREATE TRIGGER PARTS_DESCRIPTIONS_AU
 AFTER UPDATE ON PARTS_DESCRIPTIONS
 BEGIN
-    INSERT INTO PARTS_DESCRIPTIONS_FTS (
-        PARTS_DESCRIPTIONS_FTS,
-        rowid,
-        alias,
-        description
-    )
-    VALUES (
-        'delete',
-        old.rowid,
-        old.alias,
-        old.description
+    INSERT INTO PARTS_DESCRIPTIONS_FTS(
+        PARTS_DESCRIPTIONS_FTS, rowid, part, description
+    ) VALUES (
+        'delete', old.rowid, old.part, old.description
     );
-
-    INSERT INTO PARTS_DESCRIPTIONS_FTS (
-        rowid,
-        alias,
-        description
-    )
-    VALUES (
-        new.rowid,
-        new.alias,
-        new.description
-    );
+    INSERT INTO PARTS_DESCRIPTIONS_FTS(rowid, part, description)
+    VALUES (new.rowid, new.part, new.description);
 END;
 
-
--- ============================================================
--- Search query templates
--- ============================================================
-
--- Models:
---
--- SELECT alias, description
+-- Search examples:
+-- SELECT model, description
 -- FROM MODELS_DESCRIPTIONS_FTS
--- WHERE MODELS_DESCRIPTIONS_FTS MATCH ?
--- ORDER BY rank;
-
-
--- Submodels:
+-- WHERE MODELS_DESCRIPTIONS_FTS MATCH 'model:"some_model.mpd"';
 --
--- SELECT submodel, alias, description
+-- SELECT model, submodel, description
 -- FROM SUBMODELS_DESCRIPTIONS_FTS
--- WHERE SUBMODELS_DESCRIPTIONS_FTS MATCH ?
--- ORDER BY rank;
-
-
--- Parts:
+-- WHERE SUBMODELS_DESCRIPTIONS_FTS MATCH
+--       'model:"some_model.mpd" AND submodel:"some_submodel"';
 --
--- SELECT alias, description
+-- SELECT part, description
 -- FROM PARTS_DESCRIPTIONS_FTS
--- WHERE PARTS_DESCRIPTIONS_FTS MATCH ?
--- ORDER BY rank;
-
+-- WHERE PARTS_DESCRIPTIONS_FTS MATCH 'part:"3001.dat"';

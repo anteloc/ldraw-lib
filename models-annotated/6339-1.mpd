@@ -1,5 +1,5 @@
 0 FILE 6339 - main.ldr
-0 main
+0 A shuttle launch complex combining a raised platform, a space shuttle, external fuel tank with boosters, minifigures, a launch umbilical, and rope rigging.
 0 Name: 6339 - main.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LDRAW_ORG Model
@@ -12,7 +12,7 @@
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6339 - minifig 3.ldr
 
 0 FILE 6339 - platform.ldr
-0 platform
+0 A launch platform built on a green baseplate with 45-degree slopes, turntable, door rails, and structural bricks supporting the shuttle assembly.
 0 Name: 6339 - platform.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LDRAW_ORG Model
@@ -721,7 +721,7 @@
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6339 - rope.ldr
 
 0 FILE 6339 - space shuttle - ready for start.ldr
-0 space shuttle - ready for start
+0 A small attachment using two Technic axle pins that connects the shuttle to the launch platform in launch position.
 0 Name: 6339 - space shuttle - ready for start.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LDRAW_ORG Model
@@ -739,7 +739,7 @@
 
 
 0 FILE 6339 - space shuttle.ldr
-0 space shuttle
+0 A space shuttle orbiter featuring large shuttle wings, wedge plates, body plates, and a tile canopy with grooved detail panels.
 0 Name: 6339 - space shuttle.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LDRAW_ORG Model
@@ -1015,7 +1015,7 @@
 
 
 0 FILE 6339 - tank and rackets.ldr
-0 tank and rackets
+0 An external fuel tank and twin solid rocket boosters built from cylinders, round cones, and axles mounted on a Technic framework.
 0 Name: 6339 - tank and rackets.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LDRAW_ORG Model
@@ -1143,7 +1143,7 @@
 
 
 0 FILE 6339 - minifig 1.ldr
-0 minifig 1
+0 A minifigure wearing a blue outfit with a red cap, depicting a launch crew member with a microphone-pattern head.
 0 Name: 6339 - minifig 1.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LDRAW_ORG Model
@@ -1171,7 +1171,7 @@
 1 14 273.611 -47.504 63.115 0 0.543 0.839 0.173 0.825 -0.538 -0.985 0.155 -0.079 3820.dat
 
 0 FILE 6339 - minifig 2.ldr
-0 minifig 2
+0 A minifigure wearing a white outfit with black hair, representing an astronaut or ground crew member.
 0 Name: 6339 - minifig 2.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LDRAW_ORG Model
@@ -1199,7 +1199,7 @@
 1 14 255.052 -51.576 0.289 0.885 0.223 0.409 -0.174 1 -0.154 -0.432 0.065 0.9 3820.dat
 
 0 FILE 6339 - minifig 3.ldr
-0 minifig 3
+0 A minifigure wearing a blue outfit with a red cap, identical to crew member one, depicting additional launch staff.
 0 Name: 6339 - minifig 3.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LDRAW_ORG Model
@@ -1227,7 +1227,7 @@
 1 14 182.926 -81.575 54.648 1 0 -0.173 0.168 0.227 1 0 -0.974 0.223 3820.dat
 
 0 FILE 6339 - rope.ldr
-0 rope
+0 A flexible rigging element contributing the launch tower's support cables.
 0 Name: 6339 - rope.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LDRAW_ORG Model
@@ -2452,7 +2452,7 @@
 
 
 0 FILE 6339 - LS60.dat
-0 ~LSynth Short Straight String Segment
+0 An LSynth short straight string segment used to render flexible rope or cord sections.
 0 Name: 6339 - LS60.dat
 0 Author: Larry Pieniazek
 0 !LDRAW_ORG Unofficial_Part

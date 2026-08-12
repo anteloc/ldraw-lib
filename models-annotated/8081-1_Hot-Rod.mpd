@@ -1,5 +1,5 @@
 0 FILE 8081 - Main.ldr
-0 Main
+0 Main assembly for a Technic Hot Rod model, integrating the chassis, drivetrain, engine, steering, and body submodels.
 0 Name: 8081 - Main.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8,7 +8,7 @@
 
 
 0 FILE 8081 - Hot Rod.ldr
-0 Hot Rod
+0 Core chassis assembly with beams, gears, and axles forming the main structural frame and drivetrain of the Hot Rod.
 0 Name: 8081 - Hot Rod.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -403,7 +403,7 @@
 
 
 0 FILE 8081 - Hot Rod 011.ldr
-0 Hot Rod 011
+0 Axle and connector linkage assembly with liftarms and a 4-knob gear, forming a drivetrain linkage.
 0 Name: 8081 - Hot Rod 011.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -444,7 +444,7 @@
 
 
 0 FILE 8081 - Hot Rod 011S05.ldr
-0 Hot Rod 011S05
+0 Small axle-driven gear sub-assembly with a cross block and 4-knob gear for drive transfer.
 0 Name: 8081 - Hot Rod 011S05.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -464,7 +464,7 @@
 
 
 0 FILE 8081 - Hot Rod 018.ldr
-0 Hot Rod 018
+0 Rear axle assembly featuring a differential, universal joint, bevel gears, and cross blocks for power delivery to the wheels.
 0 Name: 8081 - Hot Rod 018.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -583,7 +583,7 @@
 
 
 0 FILE 8081 - Hot Rod 021.ldr
-0 Hot Rod 021
+0 Simple pin joiner coupling connecting two friction pins for a short linkage.
 0 Name: 8081 - Hot Rod 021.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -597,7 +597,7 @@
 
 
 0 FILE 8081 - Hot Rod 027.ldr
-0 Hot Rod 027
+0 Small bent liftarm bracket assembly with blue beams and pins for structural mounting.
 0 Name: 8081 - Hot Rod 027.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -620,7 +620,7 @@
 
 
 0 FILE 8081 - Hot Rod 028.ldr
-0 Hot Rod 028
+0 Small bent liftarm bracket assembly with blue beams and pins for structural mounting.
 0 Name: 8081 - Hot Rod 028.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -643,7 +643,7 @@
 
 
 0 FILE 8081 - Hot Rod 032.ldr
-0 Hot Rod 032
+0 Front splitter or spoiler blade assembly using bent liftarms, angle connectors, and red/black decorative teeth.
 0 Name: 8081 - Hot Rod 032.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -676,7 +676,7 @@
 
 
 0 FILE 8081 - Hot Rod 035.ldr
-0 Hot Rod 035
+0 Axle joiner coupling assembly using inline joiners and a cross block for a connecting shaft.
 0 Name: 8081 - Hot Rod 035.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -703,7 +703,7 @@
 
 
 0 FILE 8081 - Hot Rod 038.ldr
-0 Hot Rod 038
+0 Front splitter or spoiler blade assembly using bent liftarms, angle connectors, and red/black decorative teeth.
 0 Name: 8081 - Hot Rod 038.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -736,7 +736,7 @@
 
 
 0 FILE 8081 - Hot Rod 040.ldr
-0 Hot Rod 040
+0 Small mounting plate assembly with a black liftarm, half-pins, and a white grooved tile.
 0 Name: 8081 - Hot Rod 040.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -753,7 +753,7 @@
 
 
 0 FILE 8081 - Hot Rod 041.ldr
-0 Hot Rod 041
+0 Short axle and dual angle connector assembly forming a simple angled linkage.
 0 Name: 8081 - Hot Rod 041.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -767,7 +767,7 @@
 
 
 0 FILE 8081 - Hot Rod 045.ldr
-0 Hot Rod 045
+0 Axle coupling assembly with inline joiners and cross blocks forming a short structural connector.
 0 Name: 8081 - Hot Rod 045.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -791,7 +791,7 @@
 
 
 0 FILE 8081 - Hot Rod 047.ldr
-0 Hot Rod 047
+0 Engine block sub-assembly with peghole bricks, gears, and axles supporting the cylinder heads and crankshaft.
 0 Name: 8081 - Hot Rod 047.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -834,7 +834,7 @@
 
 
 0 FILE 8081 - Hot Rod 047S02.ldr
-0 Hot Rod 047S02
+0 Pair of engine cylinder heads joined by pins, forming one bank of the V-engine.
 0 Name: 8081 - Hot Rod 047S02.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -855,7 +855,7 @@
 
 
 0 FILE 8081 - Hot Rod 047S03.ldr
-0 Hot Rod 047S03
+0 Engine crankshaft assembly with two crankshafts, four connecting rods, and pistons forming the moving internals.
 0 Name: 8081 - Hot Rod 047S03.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -887,7 +887,7 @@
 
 
 0 FILE 8081 - Hot Rod 047S04.ldr
-0 Hot Rod 047S04
+0 Pair of engine cylinder heads joined by pins, forming one bank of the V-engine.
 0 Name: 8081 - Hot Rod 047S04.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -908,7 +908,7 @@
 
 
 0 FILE 8081 - Hot Rod 047S08.ldr
-0 Hot Rod 047S08
+0 Engine drive linkage with angle connectors, cross blocks, and red stop-bush pins transferring motion to the crankshaft.
 0 Name: 8081 - Hot Rod 047S08.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -937,7 +937,7 @@
 
 
 0 FILE 8081 - Hot Rod 050.ldr
-0 Hot Rod 050
+0 Front suspension and steering assembly with suspension arms, towballs, shock absorber, steering links, and gear rack.
 0 Name: 8081 - Hot Rod 050.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -1019,7 +1019,7 @@
 
 
 0 FILE 8081 - Hot Rod 050S06.ldr
-0 Hot Rod 050S06
+0 Steering arm sub-assembly with a towball steering arm, stopped axle, and yellow bushing.
 0 Name: 8081 - Hot Rod 050S06.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -1034,7 +1034,7 @@
 
 
 0 FILE 8081 - Hot Rod 050S10.ldr
-0 Hot Rod 050S10
+0 Wheel hub cover assembly with a clear dish, round plate, and friction axle pin.
 0 Name: 8081 - Hot Rod 050S10.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -1049,7 +1049,7 @@
 
 
 0 FILE 8081 - Hot Rod 052.ldr
-0 Hot Rod 052
+0 Steering column assembly with a steering wheel, beams, cross blocks, and pins for the driver controls.
 0 Name: 8081 - Hot Rod 052.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -1108,7 +1108,7 @@
 
 
 0 FILE 8081 - Hot Rod 053.ldr
-0 Hot Rod 053
+0 Small angled connector joint with a 157.5-degree connector and friction axle pins for linkage.
 0 Name: 8081 - Hot Rod 053.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -1125,7 +1125,7 @@
 
 
 0 FILE 8081 - Hot Rod 055.ldr
-0 Hot Rod 055
+0 Body panel mounting assembly with a wide black fairing panel and cross blocks for exterior detail.
 0 Name: 8081 - Hot Rod 055.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model

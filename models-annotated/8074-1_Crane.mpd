@@ -1,10 +1,10 @@
 0 FILE 8074 - main.ldr
-0 main
+0 Complete Technic crane model with boom, turntable, gears, rope, and flex-system cables.
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 8074 - Crane.ldr
 0 FILE 8074 - Crane.ldr
-0 Crane
+0 Main crane assembly built from yellow Technic bricks, plates, gears, and axles forming the structural framework and drivetrain.
 0 Name: 8074 - Crane.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -194,7 +194,7 @@
 
 
 0 FILE 8074 - Substep_Step-4.ldr
-0 Substep_Step-4
+0 Axle and half-bush subassembly for a rotating shaft connection.
 0 Name: 8074 - Substep_Step-4.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -208,7 +208,7 @@
 
 
 0 FILE 8074 - ropeLQ-1.ldr
-0 ropeLQ-1
+0 Long flexible rope made of 555 cylindrical segments spanning approximately 987mm.
 0 !KEYWORDS flexible, string, rope
 0 !LDCAD CONTENT [type=path] [addFallBack=default] [looped=false] [displayKind=mm] [curveStep=0] [displayLenCor=0]
 0 Name: 8074 - ropeLQ-1.ldr
@@ -1463,7 +1463,7 @@
 
 
 0 FILE 8074 - Substep_Step-5.ldr
-0 Substep_Step-5
+0 Turntable mechanism with base plate, Technic bricks, gears, and pins forming a rotating joint.
 0 Name: 8074 - Substep_Step-5.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1510,7 +1510,7 @@
 
 
 0 FILE 8074 - Substep_Step-5_Substep_Step-4.ldr
-0 Substep_Step-5_Substep_Step-4
+0 Single holed Technic plate used as a connector in the turntable subassembly.
 0 Name: 8074 - Substep_Step-5_Substep_Step-4.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1519,7 +1519,7 @@
 
 
 0 FILE 8074 - Substep_Step-5_Substep_Step-5.ldr
-0 Substep_Step-5_Substep_Step-5
+0 Small gearbox subassembly with an axle, 8-tooth gear, and bevel gear mounted on a holed plate.
 0 Name: 8074 - Substep_Step-5_Substep_Step-5.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1534,7 +1534,7 @@
 
 
 0 FILE 8074 - Substep_Step-6_a.ldr
-0 Substep_Step-6_a
+0 Empty or reference-only substep grouping for the crane assembly sequence.
 0 Name: 8074 - Substep_Step-6_a.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1543,7 +1543,7 @@
 
 
 0 FILE 8074 - technicflexSysCable-1.ldr
-0 technicflexSysCable-1
+0 Flex-system cable assembly with pin hole connectors and cable ends spanning approximately 73mm.
 0 !CATEGORY technic
 0 !KEYWORDS flexible
 0 !LDCAD CONTENT [type=path] [addFallBack=default] [looped=false] [displayKind=mm] [curveStep=0] [displayLenCor=0]
@@ -1590,7 +1590,7 @@
 
 
 0 FILE 8074 - technicflexSysCable-1_subPart1.ldr
-0 technicflexSysCable-1_subPart1
+0 Segmented cylinder subpart defining the skin geometry of flex-system cable 1.
 0 Author: LDCad
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
@@ -2188,7 +2188,7 @@
 
 
 0 FILE 8074 - Substep_Step-6_b.ldr
-0 Substep_Step-6_b
+0 Empty or reference-only substep grouping for the crane assembly sequence.
 0 Name: 8074 - Substep_Step-6_b.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -2197,7 +2197,7 @@
 
 
 0 FILE 8074 - technicflexSysCable-2.ldr
-0 technicflexSysCable-2
+0 Flex-system cable assembly with pin hole connectors and cable ends spanning approximately 73mm.
 0 !CATEGORY technic
 0 !KEYWORDS flexible
 0 !LDCAD CONTENT [type=path] [addFallBack=default] [looped=false] [displayKind=mm] [curveStep=0] [displayLenCor=0]
@@ -2244,7 +2244,7 @@
 
 
 0 FILE 8074 - technicflexSysCable-2_subPart1.ldr
-0 technicflexSysCable-2_subPart1
+0 Segmented cylinder subpart defining the skin geometry of flex-system cable 2.
 0 Author: LDCad
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
@@ -2792,7 +2792,7 @@
 
 
 0 FILE 8074 - Substep_Step-7_1.ldr
-0 Substep_Step-7_1
+0 Round 2x2 rotor assembly with axle hole, transparent yellow cylinder, and cross-studded tile.
 0 Name: 8074 - Substep_Step-7_1.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -2805,7 +2805,7 @@
 
 
 0 FILE 8074 - Substep_Step-7_2.ldr
-0 Substep_Step-7_2
+0 Axle connector subassembly with bush and pin/bush connector with two studs.
 0 Name: 8074 - Substep_Step-7_2.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -2818,7 +2818,7 @@
 
 
 0 FILE 8074 - Substep_Step-8.ldr
-0 Substep_Step-8
+0 Large structural subassembly of black Technic bricks, plates, and wedge belt wheels forming part of the crane boom or gearbox.
 0 Name: 8074 - Substep_Step-8.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -2925,7 +2925,7 @@
 
 
 0 FILE 8074 - Substep_Step-8_Substep_Step-3.ldr
-0 Substep_Step-8_Substep_Step-3
+0 Worm gear drive subassembly with axles, two worm gears, and bushes for gear reduction.
 0 Name: 8074 - Substep_Step-8_Substep_Step-3.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -2960,7 +2960,7 @@
 
 
 0 FILE 8074 - Substep_Step-8_Substep_Step-6_1.ldr
-0 Substep_Step-8_Substep_Step-6_1
+0 Axle-mounted 24-tooth gear with three axleholes and a half-bush.
 0 Name: 8074 - Substep_Step-8_Substep_Step-6_1.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -2973,7 +2973,7 @@
 
 
 0 FILE 8074 - Substep_Step-8_Substep_Step-6_2.ldr
-0 Substep_Step-8_Substep_Step-6_2
+0 Axle-mounted 24-tooth gear assembly with liftarm bosses and half-bushes.
 0 Name: 8074 - Substep_Step-8_Substep_Step-6_2.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -2994,7 +2994,7 @@
 
 
 0 FILE 8074 - Substep_Step-8_Substep_Step-8.ldr
-0 Substep_Step-8_Substep_Step-8
+0 Small connector subassembly of a holed plate and two Technic bricks joined by half-pins.
 0 Name: 8074 - Substep_Step-8_Substep_Step-8.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -3016,7 +3016,7 @@
 
 
 0 FILE 8074 - rigid3mmHose-1.ldr
-0 rigid3mmHose-1
+0 Rigid 3mm hose made of five segments spanning approximately 40mm with end caps.
 0 !CATEGORY Technic
 0 !KEYWORDS flexible
 0 !LDCAD CONTENT [type=path] [addFallBack=default] [looped=false] [displayKind=mm] [curveStep=0] [displayLenCor=0]
@@ -3441,7 +3441,7 @@
 
 
 0 FILE 8074 - technicflexSysCable-3.ldr
-0 technicflexSysCable-3
+0 Flex-system cable assembly with pin hole connectors and cable ends spanning approximately 56mm.
 0 !CATEGORY technic
 0 !KEYWORDS flexible
 0 !LDCAD CONTENT [type=path] [addFallBack=default] [looped=false] [displayKind=mm] [curveStep=0] [displayLenCor=0]
@@ -3487,7 +3487,7 @@
 
 
 0 FILE 8074 - technicflexSysCable-3_subPart1.ldr
-0 technicflexSysCable-3_subPart1
+0 Segmented cylinder subpart defining the skin geometry of flex-system cable 3.
 0 Author: LDCad
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
@@ -3885,7 +3885,7 @@
 
 
 0 FILE 8074 - Substep_Step-10.ldr
-0 Substep_Step-10
+0 Empty or reference-only substep grouping for the crane assembly sequence.
 0 Name: 8074 - Substep_Step-10.ldr
 0 Author: Max Martin Richter [MMR1988]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -3893,7 +3893,7 @@
 
 
 0 FILE 8074 - technicflexSysCable-4.ldr
-0 technicflexSysCable-4
+0 Flex-system cable assembly with pin hole connectors and cable ends spanning approximately 40mm.
 0 !CATEGORY technic
 0 !KEYWORDS flexible
 0 !LDCAD CONTENT [type=path] [addFallBack=default] [looped=false] [displayKind=mm] [curveStep=0] [displayLenCor=0]

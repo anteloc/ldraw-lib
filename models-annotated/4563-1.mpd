@@ -1,5 +1,5 @@
 0 FILE 4563 - main.ldr
-0 main
+0 A complete 9V freight train layout featuring a motorized locomotive, three cargo train cars, curved and straight tracks, a speed regulator, and supporting vehicles and cargo including a forklift, containers, pallets, a motorbike, and three minifigures.
 0 Name: 4563 - main.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LDRAW_ORG Model
@@ -69,7 +69,7 @@
 
 
 0 FILE 4563 - locomotive.ldr
-0 locomotive
+0 A black 9V motorized locomotive built on a motor cutout plate, featuring an electric train motor, inverted slope detailing, coupling magnets, buffer beams, and red accent plates.
 0 Name: 4563 - locomotive.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LDRAW_ORG Model
@@ -359,7 +359,7 @@
 
 
 0 FILE 4563 - train car 1.ldr
-0 train car 1
+0 A train car with a 6x16 base, single-axle wheel bogies, magnetic couplings, buffer beams, and a roof structure built from hinged plates and tiles.
 0 Name: 4563 - train car 1.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LDRAW_ORG Model
@@ -490,7 +490,7 @@
 
 
 0 FILE 4563 - train car 2.ldr
-0 train car 2
+0 A train car with a 6x16 black base, single-axle wheel bogies, magnetic couplings, and a body detailed with hinged bars, handles, and accent bricks.
 0 Name: 4563 - train car 2.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LDRAW_ORG Model
@@ -635,7 +635,7 @@
 
 
 0 FILE 4563 - train car 3.ldr
-0 train car 3
+0 A train car featuring a 6x16 base, single-axle wheel bogies, magnetic couplings, and side walls built from panels, door rails, and handle bricks.
 0 Name: 4563 - train car 3.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LDRAW_ORG Model
@@ -792,7 +792,7 @@
 
 
 0 FILE 4563 - forklift.ldr
-0 forklift
+0 A small forklift vehicle with a chassis of black plates and brackets, wheel-mounted base, mudguard, lifting rails, and forklift forks.
 0 Name: 4563 - forklift.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LDRAW_ORG Model
@@ -938,7 +938,7 @@
 
 
 0 FILE 4563 - container.ldr
-0 container
+0 A wheeled red cargo container with headlight bricks, a steering stand, and round plates, mounted on white wheel rims and black tyres.
 0 Name: 4563 - container.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LDRAW_ORG Model
@@ -1004,7 +1004,7 @@
 
 
 0 FILE 4563 - frame container.ldr
-0 frame container
+0 A framed container structure built from corner plates, panels, and connector plates forming an open cargo frame.
 0 Name: 4563 - frame container.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LDRAW_ORG Model
@@ -1046,7 +1046,7 @@
 
 
 0 FILE 4563 - pallete.ldr
-0 pallete
+0 A white pallet carrying eight brown barrels, assembled on a corner-plated base with round axle-hole plates.
 0 Name: 4563 - pallete.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LDRAW_ORG Model
@@ -1105,7 +1105,7 @@
 
 
 0 FILE 4563 - minifig 1.ldr
-0 minifig 1
+0 A train conductor minifigure wearing a blue suit torso with train logo, black legs, and a red police hat.
 0 Name: 4563 - minifig 1.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LDRAW_ORG Model
@@ -1139,7 +1139,7 @@
 
 
 0 FILE 4563 - minifig 2.ldr
-0 minifig 2
+0 A train worker minifigure in blue overalls with red diagonal stripes, a white construction helmet, and a handheld radio.
 0 Name: 4563 - minifig 2.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LDRAW_ORG Model
@@ -1175,7 +1175,7 @@
 
 
 0 FILE 4563 - minifig 3.ldr
-0 minifig 3
+0 A worker minifigure in a white shirt with blue dungarees, blue legs, and black hair.
 0 Name: 4563 - minifig 3.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LDRAW_ORG Model
@@ -1209,7 +1209,7 @@
 
 
 0 FILE 4563 - motorbike.ldr
-0 motorbike
+0 A two-wheel motorcycle with a complete black frame, offset tread tyres, and transparent indicator and light round plates.
 0 Name: 4563 - motorbike.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LDRAW_ORG Model
@@ -1237,7 +1237,7 @@
 
 
 0 FILE 4563 - 4480c01.dat
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 A motorcycle frame assembly composed of the left side, right side, and forks subcomponents forming the structural body of a 3x6x3 motorbike.
 0 Bike 2 Wheel Motorcycle Frame  3 x  6 x  3 (Complete)
 0 Name: 4563 - 4480c01.dat
 0 Author: Magnus Forsberg [MagFors]
@@ -1255,7 +1255,7 @@
 
 
 0 FILE 4563 - 4481.dat
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 A low-level motorcycle part mesh composed of geometric primitives including cylinders, circles, a rectangle, pinholes, and a LEGO stud logo.
 0 ~Bike 2 Wheel Motorcycle Frame  3 x  6 x  3 - Left Side
 0 Name: 4563 - 4481.dat
 0 Author: Magnus Forsberg [MagFors]
@@ -1326,7 +1326,7 @@
 
 
 0 FILE 4563 - 4480.dat
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 A low-level motorcycle frame mesh built from geometric primitives like cylinders, rectangles, rings, and boxes defining the rear frame and covers.
 0 ~Bike 2 Wheel Motorcycle Frame  3 x  6 x  3 - Right Side
 0 Name: 4563 - 4480.dat
 0 Author: Magnus Forsberg [MagFors]
@@ -1498,7 +1498,7 @@
 
 
 0 FILE 4563 - 4481s01.dat
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 A low-level subpart mesh composed of geometric primitives such as rectangles, circles, cylinders, discs, and rings forming a detailed component shape.
 0 ~Bike 2 Wheel Motorcycle Frame  3 x  6 x  3 - Left/Right
 0 Name: 4563 - 4481s01.dat
 0 Author: Magnus Forsberg [MagFors]
@@ -2480,7 +2480,7 @@
 
 
 0 FILE 4563 - logo5.dat
-0 !LEOCAD MODEL BACKGROUND GRADIENT 0 0 0.74902 1 1 1
+0 A decorative logo subpart containing no direct pieces, used as an empty reference placeholder for branding graphics.
 0 LEGO Logo for Studs - 3D Flattened
 0 Name: 4563 - logo5.dat
 0 Author: Magnus Forsberg [MagFors]

@@ -1,5 +1,5 @@
 0 FILE 6990 - Monorail Transport System.ldr
-0 Monorail Transport System
+0 Complete monorail transport system featuring motorized trains, support vehicles, cargo containers, and two rail stations with platforms and control infrastructure.
 0 Name: 6990 - Monorail Transport System.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -12,7 +12,7 @@
 1 0 -1300 -44.9 -759.1 0.258819 0 -0.965926 0 1 0 0.965926 0 0.258819 6990 - Minifig 3.ldr
 
 0 FILE 6990 - Vehicle 1.ldr
-0 Vehicle 1
+0 Small white support vehicle built on a black 2x4 plate with round axle plates, headlight bricks, a console tile, and red indicator lights.
 0 Name: 6990 - Vehicle 1.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -38,7 +38,7 @@
 1 36 -10 -22 80 0 0 1 -1 0 0 0 -1 0 3062b.dat
 
 0 FILE 6990 - Vehicle 2.ldr
-0 Vehicle 2
+0 Large white ground vehicle with four jet engines, flexible hoses, and control sticks mounted on extended 2x10 and 2x6 plate chassis.
 0 Name: 6990 - Vehicle 2.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -429,7 +429,7 @@
 0 GROUP 53 Hose 2
 
 0 FILE 6990 - Vehicle 2 - Door.ldr
-0 Vehicle 2 - Door
+0 Hinged white door assembly with a yellow arrow pattern tile, inverted slope, and bracket mount for the Vehicle 2 cargo bay.
 0 Name: 6990 - Vehicle 2 - Door.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -453,7 +453,7 @@
 1 15 126 -48 0 0 -1 0 0 0 1 -1 0 0 3068bp08.dat
 
 0 FILE 6990 - Vehicle 2 - Container.ldr
-0 Vehicle 2 - Container
+0 White cargo container built on a black 4x8 base with hinged panels and side walls for the Vehicle 2 transporter.
 0 Name: 6990 - Vehicle 2 - Container.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -509,7 +509,7 @@
 1 0 -30 -14 0 1 0 0 0 1 0 0 0 1 6990 - Train 1 - Container - Door 2.ldr
 
 0 FILE 6990 - Vehicle 2 + Minifig.ldr
-0 Vehicle 2 + Minifig
+0 Assembly combining the Vehicle 2 transporter with an included minifigure operator.
 0 Name: 6990 - Vehicle 2 + Minifig.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -521,7 +521,7 @@
 1 0 0 -61 -72 1 0 0 0 1 0 0 0 1 6990 - Minifig 2.ldr
 
 0 FILE 6990 - Train 1.ldr
-0 Train 1
+0 Main monorail passenger car built on a 4x20 black monorail base with white body panels, trans-dark-blue cones, windows, and hinge-mounted door assemblies.
 0 Name: 6990 - Train 1.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -863,7 +863,7 @@
 1 0 0 31 -120 0 0 1 0 1 0 -1 0 0 2697.dat
 
 0 FILE 6990 - Train 1 - Command.ldr
-0 Train 1 - Command
+0 Small command station with a console tile and computer display pattern for the Train 1 cockpit controls.
 0 Name: 6990 - Train 1 - Command.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -877,7 +877,7 @@
 1 15 0 -39.71 -8.266 1 0 0 0 0.927999 -0.372583 0 0.372583 0.927999 3070bpc2.dat
 
 0 FILE 6990 - Train 1 - Door.ldr
-0 Train 1 - Door
+0 Hinged door panel with trans-dark-blue transparent windows and corner plates for the Train 1 car.
 0 Name: 6990 - Train 1 - Door.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -905,7 +905,7 @@
 1 15 0 -90 -30 0 0 -1 0 1 0 1 0 0 2420.dat
 
 0 FILE 6990 - Train 1 - Container.ldr
-0 Train 1 - Container
+0 White cargo container built on a black 4x8 base with hinged panels and side walls for the Train 1 monorail car.
 0 Name: 6990 - Train 1 - Container.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -961,7 +961,7 @@
 1 0 -30 -14 0 1 0 0 0 1 0 0 0 1 6990 - Train 1 - Container - Door 2.ldr
 
 0 FILE 6990 - Train 1 - Container - Door 1.ldr
-0 Train 1 - Container - Door 1
+0 First hinged container door with a long yellow arrow pattern tile and plate-built panel for the Train 1 cargo container.
 0 Name: 6990 - Train 1 - Container - Door 1.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -991,7 +991,7 @@
 1 0 -20 -66 0 0 0 1 0 1 0 -1 0 0 3069b.dat
 
 0 FILE 6990 - Train 1 - Container - Door 2.ldr
-0 Train 1 - Container - Door 2
+0 Second hinged container door with a long yellow arrow pattern tile and plate-built panel for the Train 1 cargo container.
 0 Name: 6990 - Train 1 - Container - Door 2.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -1019,7 +1019,7 @@
 1 0 20 -66 0.001 0 0 -1 0 1 0 1 0 0 3069b.dat
 
 0 FILE 6990 - Train 1 + Minifig.ldr
-0 Train 1 + Minifig
+0 Assembly combining the Train 1 monorail car with an included minifigure operator.
 0 Name: 6990 - Train 1 + Minifig.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -1031,7 +1031,7 @@
 1 0 0 -61 -112 1 0 0 0 1 0 0 0 1 6990 - Minifig 1.ldr
 
 0 FILE 6990 - Train 1 + Vehicle 1.ldr
-0 Train 1 + Vehicle 1
+0 Assembly combining the Train 1 monorail car with the Vehicle 1 support vehicle attached.
 0 Name: 6990 - Train 1 + Vehicle 1.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -1043,7 +1043,7 @@
 1 0 0 -28 32 1 0 0 0 0 -1 0 1 0 6990 - Vehicle 1.ldr
 
 0 FILE 6990 - Train 2.ldr
-0 Train 2
+0 Motorized monorail drive unit with motor base and case, steel axles with wheels, and a trans-dark-blue light element for propulsion.
 0 Name: 6990 - Train 2.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -1072,7 +1072,7 @@
 1 0 0 74 53 0 0 1 -1 0 0 0 -1 0 2726c01.dat
 
 0 FILE 6990 - Train 3.ldr
-0 Train 3
+0 Second monorail passenger car built on a 4x20 black monorail base with white and black body panels, trans-dark-blue cones, windows, and bracket detailing.
 0 Name: 6990 - Train 3.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -1416,7 +1416,7 @@
 1 0 0 31 120 0 0 -1 0 1 0 1 0 0 2697.dat
 
 0 FILE 6990 - Train 3 - Battery.ldr
-0 Train 3 - Battery
+0 Power car assembly with a 9V battery box on a 4x8 plate, a light and sound brick with red globe, and yellow arrow indicator tiles.
 0 Name: 6990 - Train 3 - Battery.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -1452,7 +1452,7 @@
 1 36 0 -88 30 1 0 0 0 1 0 0 0 1 4770.dat
 
 0 FILE 6990 - Station 1.ldr
-0 Station 1
+0 Large monorail station built on a 16x32 baseplate with support stanchions, a stop/go switch, round pillars, platform plates, and decorative light dishes.
 0 Name: 6990 - Station 1.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -2008,7 +2008,7 @@
 0 GROUP 52 Hose 2
 
 0 FILE 6990 - Station 1 - Antenna.ldr
-0 Station 1 - Antenna
+0 Communications antenna array with an inverted 6x6 dish, a 1x20 gear rack, and trans-red indicator plates mounted on a bracket.
 0 Name: 6990 - Station 1 - Antenna.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -2050,7 +2050,7 @@
 1 36 -15 -380 0 0 1 0 0 0 -1 -1 0 0 4740.dat
 
 0 FILE 6990 - Station 1 - Lamp.ldr
-0 Station 1 - Lamp
+0 Small station lamp fixture made from a trans-red dish on a clip bar and hinge control stick stand.
 0 Name: 6990 - Station 1 - Lamp.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -2068,7 +2068,7 @@
 1 0 0 -24 40 1 0 0 0 0.92388 -0.382683 0 0.382683 0.92388 4593.dat
 
 0 FILE 6990 - Station 1 + Minifig.ldr
-0 Station 1 + Minifig
+0 Assembly combining Station 1 with an included minifigure attendant.
 0 Name: 6990 - Station 1 + Minifig.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -2080,7 +2080,7 @@
 1 0 169 -304 -140 0 0 -1 0 1 0 1 0 0 6990 - Minifig 4.ldr
 
 0 FILE 6990 - Station 2.ldr
-0 Station 2
+0 Second monorail station built on a 32x32 baseplate with black brick walls, tiled surfaces, windows, and corner structural detailing.
 0 Name: 6990 - Station 2.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -2202,7 +2202,7 @@
 1 7 40 -56 -400 1 0 0 0 1 0 0 0 1 4150p04.dat
 
 0 FILE 6990 - Station 2 - Door 1.ldr
-0 Station 2 - Door 1
+0 Turntable-mounted door assembly on a 2x6 plate with grooved tiles for the Station 2 building entrance.
 0 Name: 6990 - Station 2 - Door 1.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -2222,7 +2222,7 @@
 1 15 -80 -16 0 1 0 0 0 1 0 0 0 1 3680.dat
 
 0 FILE 6990 - Station 2 - Platform.ldr
-0 Station 2 - Platform
+0 Large elevated platform built on a 10x10 corner plate with support plates, a gear rack, and a button-patterned slope control panel.
 0 Name: 6990 - Station 2 - Platform.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -2294,7 +2294,7 @@
 1 0 80 -296 -80 1 0 0 0 1 0 0 0 1 6990 - Station 2 - Door 2 - Antenna.ldr
 
 0 FILE 6990 - Station 2 - Platform - Platform.ldr
-0 Station 2 - Platform - Platform
+0 Platform surface extension made of 1x8 and 2x8 plates with black grooved tiles and trans-red indicator studs.
 0 Name: 6990 - Station 2 - Platform - Platform.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -2334,7 +2334,7 @@
 1 0 0 -32 30 1 0 0 0 1 0 0 0 1 4162.dat
 
 0 FILE 6990 - Station 2 - Door 2.ldr
-0 Station 2 - Door 2
+0 A detailed white door structure built from plates, hinges, and sloped bricks with a turntable mechanism.
 0 Name: 6990 - Station 2 - Door 2.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -2383,7 +2383,7 @@
 1 0 -20 -296 -20 -1 0 0 0 1 0 0 0 -1 6990 - Station 2 - Door 2 - Antenna.ldr
 
 0 FILE 6990 - Station 2 - Door 2 - Antenna.ldr
-0 Station 2 - Door 2 - Antenna
+0 A small white and black antenna assembly with a trans-red dish and cone elements.
 0 Name: 6990 - Station 2 - Door 2 - Antenna.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -2409,7 +2409,7 @@
 1 15 -18 2 50 0 1 0 0 0 -1 -1 0 0 4589.dat
 
 0 FILE 6990 - Station 2 - Antenna.ldr
-0 Station 2 - Antenna
+0 A compact communication antenna with a trans-dark-blue mast, inverted dish, and trans-red light.
 0 Name: 6990 - Station 2 - Antenna.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -2431,7 +2431,7 @@
 1 36 0 -30 26 1 0 0 0 0 -1 0 1 0 6141.dat
 
 0 FILE 6990 - Station 2 + Minifig.ldr
-0 Station 2 + Minifig
+0 An empty assembly placeholder referencing the Station 2 structure and an accompanying minifigure.
 0 Name: 6990 - Station 2 + Minifig.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -2443,7 +2443,7 @@
 1 0 260 -104 251 1 0 0 0 1 0 0 0 1 6990 - Minifig 5.ldr
 
 0 FILE 6990 - Track.ldr
-0 Track
+0 A monorail track layout with curved sections, straight segments, ramps, and black support stanchions.
 0 Name: 6990 - Track.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -2530,7 +2530,7 @@
 1 0 -2640 -230 96 -1 0 0 0 1 0 0 0 -1 6990 - Track - Antenna.ldr
 
 0 FILE 6990 - Track - Antenna.ldr
-0 Track - Antenna
+0 A trackside antenna mounted on a bracket with an inverted webbed dish and trans-red cone.
 0 Name: 6990 - Track - Antenna.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -2554,7 +2554,7 @@
 1 36 0 -206 60 1 0 0 0 1 0 0 0 1 3957a.dat
 
 0 FILE 6990 - Track - Gate.ldr
-0 Track - Gate
+0 A track gate with white panels, grille-patterned bricks, sloped elements, and trans-red warning cones.
 0 Name: 6990 - Track - Gate.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -2620,7 +2620,7 @@
 1 0 10 62 -46 0 0 -1 1 0 0 0 -1 0 3040b.dat
 
 0 FILE 6990 - Track - Rise.ldr
-0 Track - Rise
+0 A lower ramp section of monorail track with supporting plates for elevation change.
 0 Name: 6990 - Track - Rise.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -2636,7 +2636,7 @@
 1 7 640 -109.162 -40 -0.93144 0 -0.363895 0.363895 0 -0.93144 0 1 0 3710.dat
 
 0 FILE 6990 - Track + Train.ldr
-0 Track + Train
+0 An electric track assembly with motor clips and wiring cables for the monorail train.
 0 Name: 6990 - Track + Train.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -2772,7 +2772,7 @@
 0 GROUP 39 Cable
 
 0 FILE 6990 - Minifig 1.ldr
-0 Minifig 1
+0 A yellow Futuron minifigure with airtanks, white torso with yellow pattern, and standard grin.
 0 Name: 6990 - Minifig 1.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -2803,7 +2803,7 @@
 1 14 0 44 0 1 0 0 0 0 1 0 -1 0 3817.dat
 
 0 FILE 6990 - Minifig 1 - Helmet.ldr
-0 Minifig 1 - Helmet
+0 A standard yellow helmet with a trans-dark-blue visor for a Futuron minifigure.
 0 Name: 6990 - Minifig 1 - Helmet.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -2817,7 +2817,7 @@
 1 33 0 1.904 4.596 1 0 0 0 0.707107 0.707107 0 -0.707107 0.707107 2447.dat
 
 0 FILE 6990 - Minifig 2.ldr
-0 Minifig 2
+0 A yellow Futuron minifigure with airtanks, radio accessory, and white torso with yellow pattern.
 0 Name: 6990 - Minifig 2.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -2850,7 +2850,7 @@
 1 14 0 44 0 1 0 0 0 0 1 0 -1 0 3817.dat
 
 0 FILE 6990 - Minifig 2 - Helmet.ldr
-0 Minifig 2 - Helmet
+0 A standard yellow helmet with a trans-dark-blue visor for a Futuron minifigure.
 0 Name: 6990 - Minifig 2 - Helmet.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -2864,7 +2864,7 @@
 1 33 0 0 0 1 0 0 0 1 0 0 0 1 2447.dat
 
 0 FILE 6990 - Minifig 3.ldr
-0 Minifig 3
+0 A yellow Futuron minifigure with airtanks, spanner/screwdriver tool, and white torso with yellow pattern.
 0 Name: 6990 - Minifig 3.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -2897,7 +2897,7 @@
 1 14 0 44 0 1 0 0 0 0.97437 -0.224951 0 0.224951 0.97437 3817.dat
 
 0 FILE 6990 - Minifig 3 - Helmet.ldr
-0 Minifig 3 - Helmet
+0 A standard yellow helmet with a trans-dark-blue visor for a Futuron minifigure.
 0 Name: 6990 - Minifig 3 - Helmet.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -2911,7 +2911,7 @@
 1 33 0 0 0 1 0 0 0 1 0 0 0 1 2447.dat
 
 0 FILE 6990 - Minifig 4.ldr
-0 Minifig 4
+0 A blue Futuron minifigure with airtanks, camera accessory, and white torso with blue pattern.
 0 Name: 6990 - Minifig 4.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -2944,7 +2944,7 @@
 1 1 0 44 0 1 0 0 0 1 0 0 0 1 3817.dat
 
 0 FILE 6990 - Minifig 4 - Helmet.ldr
-0 Minifig 4 - Helmet
+0 A standard blue helmet with a trans-dark-blue visor for a Futuron minifigure.
 0 Name: 6990 - Minifig 4 - Helmet.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -2958,7 +2958,7 @@
 1 33 0 0 0 1 0 0 0 1 0 0 0 1 2447.dat
 
 0 FILE 6990 - Minifig 5.ldr
-0 Minifig 5
+0 A blue Futuron minifigure with airtanks, torch accessory, and white torso with blue pattern.
 0 Name: 6990 - Minifig 5.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -2991,7 +2991,7 @@
 1 1 0 44 0 1 0 0 0 1 0 0 0 1 3817.dat
 
 0 FILE 6990 - Minifig 5 - Helmet.ldr
-0 Minifig 5 - Helmet
+0 A standard blue helmet with a trans-dark-blue visor for a Futuron minifigure.
 0 Name: 6990 - Minifig 5 - Helmet.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model

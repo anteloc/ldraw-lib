@@ -1,5 +1,5 @@
 0 FILE 8841 - Desert Racer.ldr
-0 Desert Racer
+0 Main chassis of a Technic desert racer featuring blue structural beams, axles, and gear connectors housing piston, engine, seat, steering, and suspension hose submodels.
 0 Name: 8841 - Desert Racer.ldr
 0 Author: Ignacio Fernandez Galvan [jellby]
 0 !LDRAW_ORG Model
@@ -197,7 +197,7 @@
 
 
 0 FILE 8841 - Piston.ldr
-0 Piston
+0 Technic piston assembly combining a piston block, 24-tooth gear with axleholes, and connector pins to form a functional piston mechanism.
 0 Name: 8841 - Piston.ldr
 0 Author: Ignacio Fernandez Galvan [jellby]
 0 !LDRAW_ORG Model
@@ -224,7 +224,7 @@
 
 
 0 FILE 8841 - Back part.ldr
-0 Back part
+0 Rear body section built from blue plates and red slopes with attached torches, forming the angled tail of the racer.
 0 Name: 8841 - Back part.ldr
 0 Author: Ignacio Fernandez Galvan [jellby]
 0 !LDRAW_ORG Unofficial_Model
@@ -277,7 +277,7 @@
 
 
 0 FILE 8841 - Engine.ldr
-0 Engine
+0 Engine block constructed from stacked grey and black plates forming a compact rectangular engine housing.
 0 Name: 8841 - Engine.ldr
 0 Author: Ignacio Fernandez Galvan [jellby]
 0 !LDRAW_ORG Unofficial_Model
@@ -340,7 +340,7 @@
 
 
 0 FILE 8841 - Seat.ldr
-0 Seat
+0 Driver's seat made from layered red, white, and blue plates and bricks mounted on a Technic plate base.
 0 Name: 8841 - Seat.ldr
 0 Author: Ignacio Fernandez Galvan [jellby]
 0 !LDRAW_ORG Unofficial_Model
@@ -411,7 +411,7 @@
 
 
 0 FILE 8841 - Steering wheel.ldr
-0 Steering wheel
+0 Steering mechanism using universal joints, 8-tooth gears, a belt wheel, and an axle linkage for front-wheel control.
 0 Name: 8841 - Steering wheel.ldr
 0 Author: Ignacio Fernandez Galvan [jellby]
 0 !LDRAW_ORG Unofficial_Model
@@ -447,7 +447,7 @@
 
 
 0 FILE 8841 - Left hose.ldr
-0 Left hose
+0 Flexible Technic hose routed along the left side using LSynth-synthesized segments.
 0 Name: 8841 - Left hose.ldr
 0 Author: Ignacio Fernandez Galvan [jellby]
 0 !LDRAW_ORG Unofficial_Model
@@ -728,7 +728,7 @@
 
 
 0 FILE 8841 - Right hose.ldr
-0 Right hose
+0 Flexible Technic hose routed along the right side using LSynth-synthesized segments.
 0 Name: 8841 - Right hose.ldr
 0 Author: Ignacio Fernandez Galvan [jellby]
 0 !LDRAW_ORG Unofficial_Model
@@ -1011,7 +1011,7 @@
 
 
 0 FILE 8841 - Arch.ldr
-0 Arch
+0 Suspension arch structure using rigid Technic axles and toggle joint connectors to form a curved flex-axle frame.
 0 Name: 8841 - Arch.ldr
 0 Author: Ignacio Fernandez Galvan [jellby]
 0 !LDRAW_ORG Unofficial_Model
@@ -1085,7 +1085,7 @@
 
 
 0 FILE 8841 - LS50.dat
-0 LS50
+0 LSynth primitive part composed of cylinders, circles, and rings defining hose geometry.
 0 Name: 8841 - LS50.dat
 0 Author: Kevin Clague [kclague]
 0 !LDRAW_ORG Unofficial_Part
@@ -1117,7 +1117,7 @@
 
 
 0 FILE 8841 - LS51.dat
-0 LS51
+0 LSynth primitive part composed of cylinders and rings defining hose geometry.
 0 Name: 8841 - LS51.dat
 0 Author: Kevin Clague [kclague]
 0 !LDRAW_ORG Unofficial_Part
@@ -1147,7 +1147,7 @@
 
 
 0 FILE 8841 - LS40a.dat
-0 LS40a
+0 LSynth primitive defining the end surface and edge details of a Technic axle.
 0 Name: 8841 - LS40a.dat
 0 Author: J.C. Tchang [tchang]
 0 !LDRAW_ORG Unofficial_Part
@@ -1170,7 +1170,7 @@
 
 
 0 FILE 8841 - LS41a.dat
-0 LS41a
+0 Empty LSynth primitive placeholder for axle edge geometry.
 0 Name: 8841 - LS41a.dat
 0 Author: J.C. Tchang [tchang]
 0 !LDRAW_ORG Unofficial_Part

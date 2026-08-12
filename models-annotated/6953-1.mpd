@@ -1,5 +1,5 @@
 0 FILE 6953 - Cosmic Laser Launcher.ldr
-0 Cosmic Laser Launcher
+0 A Futuron-themed space launch complex featuring a large wheeled vehicle, a command base with control consoles, a tall rocket with deployable wings and door, and three astronaut minifigures.
 0 Name: 6953 - Cosmic Laser Launcher.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -12,7 +12,7 @@
 
 
 0 FILE 6953 - Vehicle.ldr
-0 Vehicle
+0 An articulated multi-section transport vehicle composed of a front cockpit module and a rear cargo section, both equipped with wheeled chassis.
 0 Name: 6953 - Vehicle.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -25,7 +25,7 @@
 
 
 0 FILE 6953 - Vehicle - Front.ldr
-0 Vehicle - Front
+0 A two-wheeled front cockpit module with a hinged articulation joint, built on white plates with a trans-red dish detail.
 0 Name: 6953 - Vehicle - Front.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -52,7 +52,7 @@
 1 256 -30 6 0 0 0 1 0 1 0 -1 0 0 3641.dat
 
 0 FILE 6953 - Vehicle - Front - Command.ldr
-0 Vehicle - Front - Command
+0 A small control console for the front vehicle section featuring a patterned button tile and a console tile.
 0 Name: 6953 - Vehicle - Front - Command.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -67,7 +67,7 @@
 
 
 0 FILE 6953 - Vehicle - Front + Minifig.ldr
-0 Vehicle - Front + Minifig
+0 The front vehicle cockpit module fitted with a pilot minifigure and its command console.
 0 Name: 6953 - Vehicle - Front + Minifig.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -80,7 +80,7 @@
 
 
 0 FILE 6953 - Vehicle - Back.ldr
-0 Vehicle - Back
+0 A four-wheeled rear vehicle section with a large base plate, sloped panels, and a male hinge joint connecting to the front module.
 0 Name: 6953 - Vehicle - Back.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -125,7 +125,7 @@
 
 
 0 FILE 6953 - Base.ldr
-0 Base
+0 A large 32x32 baseplate foundation with inclined stanchions, roof windows, grilled bricks, and sloped panels forming the launch complex structure.
 0 Name: 6953 - Base.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -270,7 +270,7 @@
 
 
 0 FILE 6953 - Base - Command 1.ldr
-0 Base - Command 1
+0 A rotating control station on a turntable featuring a button-and-lamp control panel slope and a control stick.
 0 Name: 6953 - Base - Command 1.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -291,7 +291,7 @@
 
 
 0 FILE 6953 - Base - Command 2.ldr
-0 Base - Command 2
+0 A rotating control station on a turntable featuring a button-and-lamp control panel slope and a control stick.
 0 Name: 6953 - Base - Command 2.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -312,7 +312,7 @@
 
 
 0 FILE 6953 - Base - Structure.ldr
-0 Base - Structure
+0 The structural framework of the base, composed of multiple sub-sections including support plates, a turntable assembly, and hinged side panels with Futuron-patterned detailing.
 0 Name: 6953 - Base - Structure.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -327,7 +327,7 @@
 1 0 -32 -189.971 61.282 1 0 0 0 1 0 0 0 1 6953 - Base - Structure - 1 + Rocket.ldr
 
 0 FILE 6953 - Base - Structure - 1.ldr
-0 Base - Structure - 1
+0 A structural support frame built from white plates with a gear rack, rounded corner bricks, and turntable tops forming the central base assembly.
 0 Name: 6953 - Base - Structure - 1.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -381,7 +381,7 @@
 1 7 -52 0 0 0 1 0 0 0 -1 -1 0 0 3679.dat
 
 0 FILE 6953 - Base - Structure - 1 + Rocket.ldr
-0 Base - Structure - 1 + Rocket
+0 The central base structure with the rocket mounted on its turntable-supported launch platform.
 0 Name: 6953 - Base - Structure - 1 + Rocket.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -393,7 +393,7 @@
 1 0 20 140 -60 0 0 -1 0 1 0 1 0 0 6953 - Base - Rocket.ldr
 
 0 FILE 6953 - Base - Structure - 2.ldr
-0 Base - Structure - 2
+0 A long plate with a turntable base and top providing a rotating mounting point within the base structure.
 0 Name: 6953 - Base - Structure - 2.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -409,7 +409,7 @@
 1 0 160 -8 0 1 0 0 0 1 0 0 0 1 3680.dat
 
 0 FILE 6953 - Base - Structure - 3.ldr
-0 Base - Structure - 3
+0 A hinged side panel with a large Futuron-patterned trans-dark-blue panel, antennas, and trans-red accents that can pivot outward.
 0 Name: 6953 - Base - Structure - 3.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -451,7 +451,7 @@
 1 36 36 -304 -160 0 1 0 0 0 1 1 0 0 4740.dat
 
 0 FILE 6953 - Base - Structure - 4.ldr
-0 Base - Structure - 4
+0 A hinged side panel with a large Futuron-patterned trans-dark-blue panel, antennas, and trans-red accents that can pivot outward.
 0 Name: 6953 - Base - Structure - 4.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -493,7 +493,7 @@
 1 36 36 -304 160 0 1 0 0 0 1 1 0 0 4740.dat
 
 0 FILE 6953 - Base - Rocket.ldr
-0 Base - Rocket
+0 A tall space rocket with conical nose cones, panel body sections, finned details, trans-red accents, and hinged mounting points for deployable wings and a door.
 0 Name: 6953 - Base - Rocket.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -550,7 +550,7 @@
 1 0 -56 -94 -10 0.984808 0.173648 0 0 0 -1 -0.173648 0.984808 0 6953 - Base - Rocket - Wing 2.ldr
 
 0 FILE 6953 - Base - Rocket - Door.ldr
-0 Base - Rocket - Door
+0 A hinged sunroof-style door panel with a trans-dark-blue window and a yellow arrow pattern tile.
 0 Name: 6953 - Base - Rocket - Door.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -569,7 +569,7 @@
 
 
 0 FILE 6953 - Base - Rocket - Wing 1.ldr
-0 Base - Rocket - Wing 1
+0 A deployable trans-dark-blue wing panel attached via a hinged plate to the rocket body.
 0 Name: 6953 - Base - Rocket - Wing 1.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -584,7 +584,7 @@
 
 
 0 FILE 6953 - Base - Rocket - Wing 2.ldr
-0 Base - Rocket - Wing 2
+0 A deployable trans-dark-blue wing panel attached via a hinged plate to the rocket body.
 0 Name: 6953 - Base - Rocket - Wing 2.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -599,7 +599,7 @@
 
 
 0 FILE 6953 - Base + Minifigs.ldr
-0 Base + Minifigs
+0 The complete launch base with the structural frame, rocket, command stations, and astronaut minifigures assembled together.
 0 Name: 6953 - Base + Minifigs.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -613,7 +613,7 @@
 
 
 0 FILE 6953 - Minifig 1.ldr
-0 Minifig 1
+0 A red Futuron astronaut minifigure with airtanks, a standard grin, and a red torso with the Futuron pattern.
 0 Name: 6953 - Minifig 1.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -645,7 +645,7 @@
 
 
 0 FILE 6953 - Minifig 1 - Helmet.ldr
-0 Minifig 1 - Helmet
+0 A red standard space helmet with a trans-dark-blue visor for an astronaut minifigure.
 0 Name: 6953 - Minifig 1 - Helmet.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -660,7 +660,7 @@
 
 
 0 FILE 6953 - Minifig 2.ldr
-0 Minifig 2
+0 A yellow Futuron astronaut minifigure with airtanks, a yellow torso with the Futuron pattern, and a handheld radio.
 0 Name: 6953 - Minifig 2.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -694,7 +694,7 @@
 
 
 0 FILE 6953 - Minifig 2 - Helmet.ldr
-0 Minifig 2 - Helmet
+0 A yellow standard space helmet with a trans-dark-blue visor for an astronaut minifigure.
 0 Name: 6953 - Minifig 2 - Helmet.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -709,7 +709,7 @@
 
 
 0 FILE 6953 - Minifig 3.ldr
-0 Minifig 3
+0 A red Futuron astronaut minifigure with airtanks, a red torso with the Futuron pattern, and a handheld spanner and screwdriver tool.
 0 Name: 6953 - Minifig 3.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -743,7 +743,7 @@
 
 
 0 FILE 6953 - Minifig 3 - Helmet.ldr
-0 Minifig 3 - Helmet
+0 A red standard minifig helmet with a translucent dark blue visor.
 0 Name: 6953 - Minifig 3 - Helmet.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model

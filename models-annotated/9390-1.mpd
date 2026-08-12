@@ -1,5 +1,5 @@
 0 FILE 9390 - Main.ldr
-0 Main
+0 Technic model assembling a geared mechanism submodel and a custom reference part into the complete build.
 0 Name: 9390 - Main.ldr
 0 Author: Oh-Seong KWON
 0 !LDRAW_ORG Model
@@ -15,7 +15,7 @@
 
 
 0 FILE 9390 - 9390-1.L3B.ldr
-0 9390-1.L3B
+0 Technic mechanical assembly built from liftarms, axles, gears, and pins forming a geared drivetrain structure.
 0 Name: 9390 - 9390-1.L3B.ldr
 0 Author: Oh-Seong KWON
 0 !LDRAW_ORG Model
@@ -753,7 +753,7 @@
 
 
 0 FILE 9390 - LS60.dat
-0 LS60
+0 Referenced custom part file with no direct pieces included in the model.
 0 Name: 9390 - LS60.dat
 0 Author: Larry Pieniazek
 0 !LDRAW_ORG Unofficial_Part

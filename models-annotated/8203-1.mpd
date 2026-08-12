@@ -1,5 +1,5 @@
 0 FILE 8203 - main.ldr
-0 main
+0 A Technic vehicle chassis with four wheels, bent liftarms, axles, and pins, incorporating a rubber band, an angular connector linkage submodel, and a flex hose.
 0 Name: 8203 - main.ldr
 0 Author: Jaco van der Molen [Jaco]
 0 !LDRAW_ORG Model
@@ -51,7 +51,7 @@
 1 256 20 -21 82 0 1 0 -0.985 0 0.174 0.174 0 0.985 8203 - rubberBandSquare-2.ldr
 1 14 20 -28.004 -0.733 1 0 0 0 0.978 0.208 0 -0.208 0.978 8203 - subModel-1.ldr
 0 FILE 8203 - rubberBandSquare-2.ldr
-0 rubberBandSquare-2
+0 A flexible square rubber band assembly rendered via LDCad-generated segment subparts.
 0 !CATEGORY technic
 0 Name: 8203 - rubberBandSquare-2.ldr
 0 Author: Jaco van der Molen [Jaco]
@@ -807,7 +807,7 @@
 5 24 -0.174312 -32.0076 -11 -0.174311 -32.0076 -15 2.47704 -31.7756 -10.3181 -1.13808 -32.0919 -11.2531
 5 24 -0.174311 -32.0076 -15 0.174312 -35.9924 -15 4.51788 -31.5971 -13.7537 -1.13808 -32.0919 -15.2531
 0 FILE 8203 - subModel-1.ldr
-0 subModel-1
+0 A Technic steering or linkage assembly built from a bent liftarm, angle connectors, cross blocks, and axles.
 0 Author: Jaco van der Molen [Jaco]
 0 Name: 8203 - subModel-1.ldr
 0 !LDRAW_ORG Model
@@ -840,7 +840,7 @@
 1 0 -20 -78 100 0 0 -1 -0.866 -0.5 0 -0.5 0.866 0 8203 - technicflexSysHose-1.ldr
 1 0 20 -78 100 0 0 -1 -0.866 -0.5 0 -0.5 0.866 0 8203 - technicflexSysHose-1.ldr
 0 FILE 8203 - technicflexSysHose-1.ldr
-0 technicflexSysHose-1
+0 A flexible Technic ribbed hose assembly composed of 20 generated segments.
 0 !CATEGORY technic
 0 Name: 8203 - technicflexSysHose-1.ldr
 0 Author: Jaco van der Molen [Jaco]

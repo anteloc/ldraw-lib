@@ -1,5 +1,5 @@
 0 FILE 7657 - AT-ST - main.ldr
-0 AT-ST - main
+0 Main AT-ST walker body assembled with technic gears, plates, panels, brackets, and grille bricks, integrating the legs, head, and side armor submodels.
 0 Name: 7657 - AT-ST - main.ldr
 0 Author: Evert Jan Boer [ejboer]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -143,7 +143,7 @@
 
 
 0 FILE 7657 - AT-ST - subModel-1.ldr
-0 AT-ST - subModel-1
+0 Articulated leg section built from a 2x6 plate, hinge plates, a sloped brick, and a technic brick with hole.
 0 Name: 7657 - AT-ST - subModel-1.ldr
 0 Author: Evert Jan Boer [ejboer]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -165,7 +165,7 @@
 
 
 0 FILE 7657 - AT-ST - subModel-2.ldr
-0 AT-ST - subModel-2
+0 Articulated leg section mirroring subModel-1, using a 2x6 plate, hinge plates, a slope brick, and a technic brick with hole.
 0 Name: 7657 - AT-ST - subModel-2.ldr
 0 Author: Evert Jan Boer [ejboer]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -187,7 +187,7 @@
 
 
 0 FILE 7657 - AT-ST - subModel-3.ldr
-0 AT-ST - subModel-3
+0 Rotating joint assembly using a turntable, round brick with holes, and a bevel gear on a technic axle.
 0 Name: 7657 - AT-ST - subModel-3.ldr
 0 Author: Evert Jan Boer [ejboer]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -205,7 +205,7 @@
 
 
 0 FILE 7657 - AT-ST - subModel-4.ldr
-0 AT-ST - subModel-4
+0 Detailed cockpit or body section with grille bricks, side-stud bricks, a minifig seat, brackets, and technic pin connections.
 0 Name: 7657 - AT-ST - subModel-4.ldr
 0 Author: Evert Jan Boer [ejboer]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -394,7 +394,7 @@
 
 
 0 FILE 7657 - AT-ST - subModel-5.ldr
-0 AT-ST - subModel-5
+0 Flat plate assembly with handle plates forming a small access panel or hatch cover.
 0 Name: 7657 - AT-ST - subModel-5.ldr
 0 Author: Evert Jan Boer [ejboer]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -414,7 +414,7 @@
 
 
 0 FILE 7657 - AT-ST - subModel-6.ldr
-0 AT-ST - subModel-6
+0 Weapon assembly with inverted dishes, a pneumatic T-piece, binoculars, and a round axle plate forming a gun or sensor mount.
 0 Name: 7657 - AT-ST - subModel-6.ldr
 0 Author: Evert Jan Boer [ejboer]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -436,7 +436,7 @@
 
 
 0 FILE 7657 - AT-ST - subModel-7.ldr
-0 AT-ST - subModel-7
+0 Weapon or sensor pod built from inverted dishes, a pneumatic T-piece, and round hollow-stud bricks on an axle plate.
 0 Name: 7657 - AT-ST - subModel-7.ldr
 0 Author: Evert Jan Boer [ejboer]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -460,7 +460,7 @@
 
 
 0 FILE 7657 - AT-ST - subModel-8.ldr
-0 AT-ST - subModel-8
+0 Sloped armor panel assembly using plates, inverted dishes, a pneumatic T-piece, and 75-degree slope bricks.
 0 Name: 7657 - AT-ST - subModel-8.ldr
 0 Author: Evert Jan Boer [ejboer]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -499,7 +499,7 @@
 
 
 0 FILE 7657 - AT-ST - subModel-9.ldr
-0 AT-ST - subModel-9
+0 Small joint or hinge mechanism with headlight bricks, round hollow-stud bricks, and lightsaber hilt pieces.
 0 Name: 7657 - AT-ST - subModel-9.ldr
 0 Author: Evert Jan Boer [ejboer]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -525,7 +525,7 @@
 
 
 0 FILE 7657 - AT-ST - subModel-10.ldr
-0 AT-ST - subModel-10
+0 Large side armor or leg cover panel with locking hinge plates, grille tiles, door rail plates, and an inverted dish.
 0 Name: 7657 - AT-ST - subModel-10.ldr
 0 Author: Evert Jan Boer [ejboer]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -581,7 +581,7 @@
 
 
 0 FILE 7657 - AT-ST - subModel-11.ldr
-0 AT-ST - subModel-11
+0 Foot or ankle assembly using a curved wedge, car mudguard, and locking hinge plates on a 2x6 base plate.
 0 Name: 7657 - AT-ST - subModel-11.ldr
 0 Author: Evert Jan Boer [ejboer]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -611,7 +611,7 @@
 
 
 0 FILE 7657 - AT-ST - subModel-12.ldr
-0 AT-ST - subModel-12
+0 Small foot or toe segment with a car mudguard attached via locking hinge plates and a plate.
 0 Name: 7657 - AT-ST - subModel-12.ldr
 0 Author: Evert Jan Boer [ejboer]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -629,7 +629,7 @@
 
 
 0 FILE 7657 - AT-ST - subModel-13.ldr
-0 AT-ST - subModel-13
+0 Large side armor or leg cover panel mirroring subModel-10, with locking hinge plates, grille tiles, door rail plates, and an inverted dish.
 0 Name: 7657 - AT-ST - subModel-13.ldr
 0 Author: Evert Jan Boer [ejboer]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -685,7 +685,7 @@
 
 
 0 FILE 7657 - AT-ST - subModel-14.ldr
-0 AT-ST - subModel-14
+0 Foot or ankle assembly mirroring subModel-11, using a curved wedge, car mudguard, and locking hinge plates on a 2x6 base plate.
 0 Name: 7657 - AT-ST - subModel-14.ldr
 0 Author: Evert Jan Boer [ejboer]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -715,7 +715,7 @@
 
 
 0 FILE 7657 - AT-ST - 973prr.dat
-0 AT-ST - 973prr
+0 Decorated minifig torso represented by a single black cylinder primitive.
 0 Name: 7657 - AT-ST - 973prr.dat
 0 Author: Evert Jan Boer [ejboer]
 0 !LDRAW_ORG Unofficial_Part
@@ -1277,7 +1277,7 @@
 
 
 0 FILE 7657 - AT-ST - 3626bpsa.dat
-0 AT-ST - 3626bpsa
+0 Printed minifig head part with no direct primitive pieces listed.
 0 Name: 7657 - AT-ST - 3626bpsa.dat
 0 Author: Evert Jan Boer [EJBoer]
 0 !LDRAW_ORG Unofficial_Part
@@ -1639,7 +1639,7 @@
 
 
 0 FILE s\7657 - AT-ST - 30237s01.dat
-0 AT-ST - 30237s01
+0 Geometric subpart composed of cylinders, discs, and rectangles forming a curved or rounded shape component.
 0 Name: s\7657 - AT-ST - 30237s01.dat
 0 Author: Michael Heidemann [mikeheide]
 0 !LDRAW_ORG Unofficial_Subpart

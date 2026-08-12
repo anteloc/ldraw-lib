@@ -1,5 +1,5 @@
 0 FILE 5571 - Giant Truck - Truck.ldr
-0 5571 - Giant Truck - Truck
+0 A giant truck model with tools, windows, steering system, chassis, engine blocks, mud flaps, fifth wheel, doors, and lighting.
 0 Name: 5571 - Giant Truck - Truck.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -67,7 +67,7 @@
 
 
 0 FILE 5571 - SubModel 30 Fire Extinguisher.ldr
-0 5571 - SubModel 30 Fire Extinguisher
+0 A red fire extinguisher made from a round brick and tap piece.
 0 Name: 5571 - SubModel 30 Fire Extinguisher.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -79,7 +79,7 @@
 1 4 0 0 0 1 0 0 0 1 0 0 0 1 4599a.dat
 
 0 FILE 5571 - Assembly 6 Steering System.ldr
-0 5571 - Assembly 6 Steering System
+0 A steering system assembly with no direct pieces.
 0 Name: 5571 - Assembly 6 Steering System.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -91,7 +91,7 @@
 1 14 0 -148 240 1 0 0 0 1 0 0 0 1 5571 - Axle 17 Steering Linkage.ldr
 
 0 FILE 5571 - Assembly 33 Steering Column.ldr
-0 5571 - Assembly 33 Steering Column
+0 A steering column assembly with no direct pieces.
 0 Name: 5571 - Assembly 33 Steering Column.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -101,7 +101,7 @@
 1 0 0 -24 10 1 0 0 0 1 0 0 0 1 5571 - Axle 38 Steering Column.ldr
 
 0 FILE 5571 - Assembly 48a Hatch - Left.ldr
-0 5571 - Assembly 48a Hatch - Left
+0 A left-side sunroof hatch made of clear glass.
 0 Name: 5571 - Assembly 48a Hatch - Left.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -112,7 +112,7 @@
 1 47 0 0 -53 1 0 0 0 0.866025 -0.5 0 0.5 0.866025 2348b.dat
 
 0 FILE 5571 - Assembly 48b Hatch - Right.ldr
-0 5571 - Assembly 48b Hatch - Right
+0 A right-side sunroof hatch made of clear glass.
 0 Name: 5571 - Assembly 48b Hatch - Right.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -123,7 +123,7 @@
 1 47 0 0 -53 1 0 0 0 0.965926 -0.258819 0 0.258819 0.965926 2348b.dat
 
 0 FILE 5571 - Assembly 48c Mirror - Left.ldr
-0 5571 - Assembly 48c Mirror - Left
+0 A left-side mirror assembly with no direct pieces.
 0 Name: 5571 - Assembly 48c Mirror - Left.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -133,7 +133,7 @@
 1 0 40 -24 0 0.965926 -0.258819 0 0 0 -1 0.258819 0.965926 0 5571 - SubUnit 50a Mirror - Left.ldr
 
 0 FILE 5571 - Assembly 48d Mirror - Right.ldr
-0 5571 - Assembly 48d Mirror - Right
+0 A right-side mirror assembly with no direct pieces.
 0 Name: 5571 - Assembly 48d Mirror - Right.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -143,7 +143,7 @@
 1 0 -40 -24 0 0.965926 0.258819 0 0 0 -1 -0.258819 0.965926 0 5571 - SubUnit 50b Mirror - Right.ldr
 
 0 FILE 5571 - SubAssembly 6a Steering - Left.ldr
-0 5571 - SubAssembly 6a Steering - Left
+0 A left-side steering subassembly with no direct pieces.
 0 Name: 5571 - SubAssembly 6a Steering - Left.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -153,7 +153,7 @@
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 5571 - SubUnit 6 Steering Arm.ldr
 
 0 FILE 5571 - SubAssembly 6b Steering - Right.ldr
-0 5571 - SubAssembly 6b Steering - Right
+0 A right-side steering subassembly with no direct pieces.
 0 Name: 5571 - SubAssembly 6b Steering - Right.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -164,7 +164,7 @@
 1 0 0 -16 40 1 0 0 0 1 0 0 0 1 5571 - SubUnit 7 Steering Rack.ldr
 
 0 FILE 5571 - Unit 1 Chassis.ldr
-0 5571 - Unit 1 Chassis
+0 A large black and red chassis built from plates, bricks, and Technic components with pins and holes.
 0 Name: 5571 - Unit 1 Chassis.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -2903,7 +2903,7 @@
 1 47 -140 -44 140 0 1 0 0 0 -1 -1 0 0 4100418c.dat
 
 0 FILE 5571 - Unit 21a Mud Flap - Left.ldr
-0 5571 - Unit 21a Mud Flap - Left
+0 A left-side black mud flap built from plates and corner pieces.
 0 Name: 5571 - Unit 21a Mud Flap - Left.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -2919,7 +2919,7 @@
 1 0 0 -18 0 0 0 -1 0 1 0 1 0 0 6180.dat
 
 0 FILE 5571 - Unit 21b Mud Flap - Right.ldr
-0 5571 - Unit 21b Mud Flap - Right
+0 A right-side black mud flap built from plates and corner pieces.
 0 Name: 5571 - Unit 21b Mud Flap - Right.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -2935,7 +2935,7 @@
 1 0 0 -18 0 0 0 1 0 1 0 -1 0 0 6180.dat
 
 0 FILE 5571 - Unit 23 Fifth Wheel.ldr
-0 5571 - Unit 23 Fifth Wheel
+0 A black fifth wheel hitch assembly with panels, slopes, and arches.
 0 Name: 5571 - Unit 23 Fifth Wheel.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -2975,7 +2975,7 @@
 1 0 10 -34 20 0 0 -1 0 1 0 1 0 0 6005.dat
 
 0 FILE 5571 - Unit 25a Engine Block - Left.ldr
-0 5571 - Unit 25a Engine Block - Left
+0 A left-side engine block with round bricks, pneumatic T-pieces, and blue accents.
 0 Name: 5571 - Unit 25a Engine Block - Left.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -3034,7 +3034,7 @@
 1 7 10 -62 40 1 0 0 0 1 0 0 0 1 4697a.dat
 
 0 FILE 5571 - Unit 25b Engine Block - Right.ldr
-0 5571 - Unit 25b Engine Block - Right
+0 A right-side engine block with round bricks, pneumatic T-pieces, and blue accents.
 0 Name: 5571 - Unit 25b Engine Block - Right.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -3094,7 +3094,7 @@
 1 7 -10 -62 -40 1 0 0 0 1 0 0 0 1 4697a.dat
 
 0 FILE 5571 - Unit 27 Seat.ldr
-0 5571 - Unit 27 Seat
+0 A yellow seat assembly with hinges, plates, and grooved tiles.
 0 Name: 5571 - Unit 27 Seat.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -3128,7 +3128,7 @@
 1 14 0 -22 40 1 0 0 0 0.173648 -0.984808 0 0.984808 0.173648 5571 - SubUnit 40 Seat Back.ldr
 
 0 FILE 5571 - Unit 28 Lift Door.ldr
-0 5571 - Unit 28 Lift Door
+0 A red lift door.
 0 Name: 5571 - Unit 28 Lift Door.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -3138,7 +3138,7 @@
 1 4 4 0 0 0 0 1 0 1 0 -1 0 0 6155.dat
 
 0 FILE 5571 - Unit 35 Side Light.ldr
-0 5571 - Unit 35 Side Light
+0 A yellow side light made from a round plate and clip.
 0 Name: 5571 - Unit 35 Side Light.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -3150,7 +3150,7 @@
 1 7 0 -2 20 1 0 0 0 1 0 0 0 1 6019.dat
 
 0 FILE 5571 - Unit 42 Engine Hood.ldr
-0 5571 - Unit 42 Engine Hood
+0 A large engine hood assembly with grey and black plates, slopes, clips, and bars.
 0 Name: 5571 - Unit 42 Engine Hood.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -3594,7 +3594,7 @@
 1 47 60 -190 130 1 0 0 0 0 -1 0 1 0 4100418e.dat
 
 0 FILE 5571 - Unit 43 Sleeper Door.ldr
-0 5571 - Unit 43 Sleeper Door
+0 A red sleeper door with a clear glass window.
 0 Name: 5571 - Unit 43 Sleeper Door.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -3606,7 +3606,7 @@
 1 4 0 0 0 1 0 0 0 1 0 0 0 1 4181.dat
 
 0 FILE 5571 - Unit 45a Door - Left.ldr
-0 5571 - Unit 45a Door - Left
+0 A tall black left door with a window and red sticker.
 0 Name: 5571 - Unit 45a Door - Left.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -3618,7 +3618,7 @@
 1 47 10 168 55 0 -1 0 0 0 -1 1 0 0 4100418b.dat
 
 0 FILE 5571 - Unit 45b Door - Right.ldr
-0 5571 - Unit 45b Door - Right
+0 A tall black right door with a window and red sticker.
 0 Name: 5571 - Unit 45b Door - Right.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -3630,7 +3630,7 @@
 1 47 -10 168 55 0 1 0 0 0 -1 -1 0 0 4100418b.dat
 
 0 FILE 5571 - Unit 50 Rear Light.ldr
-0 5571 - Unit 50 Rear Light
+0 A chrome silver rear light reflector with a clip.
 0 Name: 5571 - Unit 50 Rear Light.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -3642,7 +3642,7 @@
 1 7 0 -2 -20 -1 0 0 0 1 0 0 0 -1 4081b.dat
 
 0 FILE 5571 - SubUnit 6 Steering Arm.ldr
-0 5571 - SubUnit 6 Steering Arm
+0 A Technic steering arm connected with an axle pin.
 0 Name: 5571 - SubUnit 6 Steering Arm.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -3654,7 +3654,7 @@
 1 7 0 0 0 1 0 0 0 1 0 0 0 1 4261.dat
 
 0 FILE 5571 - SubUnit 7 Steering Rack.ldr
-0 5571 - SubUnit 7 Steering Rack
+0 A light grey steering rack built from a Technic plate with holes and a 4-stud gear rack.
 0 Name: 5571 - SubUnit 7 Steering Rack.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -3666,7 +3666,7 @@
 1 7 90 -8 0 1 0 0 0 1 0 0 0 1 3743.dat
 
 0 FILE 5571 - SubUnit 33 Steering Column Frame.ldr
-0 5571 - SubUnit 33 Steering Column Frame
+0 A compact black mounting frame assembled from a hinge top, Technic brick, and grooved tile.
 0 Name: 5571 - SubUnit 33 Steering Column Frame.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -3680,7 +3680,7 @@
 1 0 0 -42 0 1 0 0 0 1 0 0 0 1 3069b.dat
 
 0 FILE 5571 - SubUnit 40 Seat Back.ldr
-0 5571 - SubUnit 40 Seat Back
+0 A yellow seat backrest formed from hinged plates, plates, and rows of grooved tiles and a grille tile.
 0 Name: 5571 - SubUnit 40 Seat Back.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -3712,7 +3712,7 @@
 1 14 0 -4 10 1 0 0 0 1 0 0 0 1 3068b.dat
 
 0 FILE 5571 - SubUnit 48a Hatch Frame.ldr
-0 5571 - SubUnit 48a Hatch Frame
+0 A black sunroof hatch frame made from a hinged car roof panel and a handled tile.
 0 Name: 5571 - SubUnit 48a Hatch Frame.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -3724,7 +3724,7 @@
 1 0 0 -36 -66 1 0 0 0 1 0 0 0 1 2432.dat
 
 0 FILE 5571 - SubUnit 48b Mirror Frame.ldr
-0 5571 - SubUnit 48b Mirror Frame
+0 A light grey mirror support frame using clip-and-bar bricks with antenna rods.
 0 Name: 5571 - SubUnit 48b Mirror Frame.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -3740,7 +3740,7 @@
 1 7 0 8 0 0 0 1 0 1 0 -1 0 0 4735.dat
 
 0 FILE 5571 - SubUnit 49a Fairing.ldr
-0 5571 - SubUnit 49a Fairing
+0 A red and black air spoiler fairing with hinged top, hinge plates, a large slope brick, and a red/white V sticker.
 0 Name: 5571 - SubUnit 49a Fairing.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -3765,7 +3765,7 @@
 1 47 0 -16.5 30 1 0 0 0 0.987688 0.156434 0 -0.156434 0.987688 4100418a.dat
 
 0 FILE 5571 - SubUnit 49b Fairing Strut.ldr
-0 5571 - SubUnit 49b Fairing Strut
+0 A pair of black hinge bars forming the connecting strut for the fairing.
 0 Name: 5571 - SubUnit 49b Fairing Strut.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -3777,7 +3777,7 @@
 1 0 10 0 30 1 0 0 0 1 0 0 0 1 2923.dat
 
 0 FILE 5571 - SubUnit 50a Mirror - Left.ldr
-0 5571 - SubUnit 50a Mirror - Left
+0 A left side mirror with a trans-yellow round reflector on a grey plate and clip tile.
 0 Name: 5571 - SubUnit 50a Mirror - Left.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -3791,7 +3791,7 @@
 1 7 0 6 0 1 0 0 0 1 0 0 0 1 2555.dat
 
 0 FILE 5571 - SubUnit 50b Mirror - Right.ldr
-0 5571 - SubUnit 50b Mirror - Right
+0 A right side mirror with a trans-yellow round reflector on a grey plate and clip tile.
 0 Name: 5571 - SubUnit 50b Mirror - Right.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -3805,7 +3805,7 @@
 1 7 0 6 0 1 0 0 0 1 0 0 0 1 2555.dat
 
 0 FILE 5571 - Axle 6 Front Axle.ldr
-0 5571 - Axle 6 Front Axle
+0 A front wheel axle assembly with a Technic axle, bushes, belt wheel, and a rubber tyre on a light grey rim.
 0 Name: 5571 - Axle 6 Front Axle.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -3832,7 +3832,7 @@
 1 7 48 0 0 0 0 1 0 1 0 -1 0 0 3713.dat
 
 0 FILE 5571 - Axle 12.3 Rear Axle.ldr
-0 5571 - Axle 12.3 Rear Axle
+0 A rear wheel axle assembly with a Technic axle, bushes, and a rubber tyre on a light grey rim.
 0 Name: 5571 - Axle 12.3 Rear Axle.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -3858,7 +3858,7 @@
 1 7 60 0 0 0 0 1 0 1 0 -1 0 0 3713.dat
 
 0 FILE 5571 - Axle 14 Steering Linkage.ldr
-0 5571 - Axle 14 Steering Linkage
+0 A steering linkage axle with an 8-tooth gear and a 12-tooth bevel gear.
 0 Name: 5571 - Axle 14 Steering Linkage.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -3872,7 +3872,7 @@
 1 7 0 0 103 1 0 0 0 1 0 0 0 1 6589.dat
 
 0 FILE 5571 - Axle 17 Steering Linkage.ldr
-0 5571 - Axle 17 Steering Linkage
+0 A steering linkage assembly combining axles, bevel gears, an axle joiner, and a round brick housing.
 0 Name: 5571 - Axle 17 Steering Linkage.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -3900,7 +3900,7 @@
 1 0 0 -260 0 1 0 0 0 1 0 0 0 1 4150.dat
 
 0 FILE 5571 - Axle 23 Engine Fan.ldr
-0 5571 - Axle 23 Engine Fan
+0 An engine fan built from a Technic axle pin, a half bush, and a wedge belt wheel.
 0 Name: 5571 - Axle 23 Engine Fan.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model
@@ -3915,7 +3915,7 @@
 1 7 0 0 -15 1 0 0 0 1 0 0 0 1 4185.dat
 
 0 FILE 5571 - Axle 38 Steering Column.ldr
-0 5571 - Axle 38 Steering Column
+0 A steering column with an axle pin, bush, and belt wheel fitted with a rubber belt tyre.
 0 Name: 5571 - Axle 38 Steering Column.ldr
 0 Author: Tim Singer [tsinger]
 0 !LDRAW_ORG Model

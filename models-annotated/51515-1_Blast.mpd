@@ -1,5 +1,5 @@
 0 FILE 51515 - main.ldr
-0 main
+0 Complete humanoid robot assembly integrating head, torso, arms, shoulders, hips, and legs with Spike Prime motors, distance and color sensors, and a Powered Up hub.
 0 Name: 51515 - main.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -9,7 +9,7 @@
 
 
 0 FILE 51515 - head.ldr
-0 head
+0 Robot head built around a Powered Up 6-port hub with whip antennas and pin-connected cross blocks for mounting.
 0 Name: 51515 - head.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -38,7 +38,7 @@
 
 
 0 FILE 51515 - torso.ldr
-0 torso
+0 Central torso frame constructed from open-center beams, liftarms, a 36-tooth gear, and numerous connector pins providing structural support and articulation.
 0 Name: 51515 - torso.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -314,7 +314,7 @@
 
 
 0 FILE 51515 - shoulders.ldr
-0 shoulders
+0 Shoulder assembly with 12- and 20-tooth gears, connector blocks, and a large open-center beam frame supporting arm articulation.
 0 Name: 51515 - shoulders.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -388,7 +388,7 @@
 
 
 0 FILE 51515 - spikePrimeMotorM-LQ-1.ldr
-0 spikePrimeMotorM-LQ-1
+0 Flexible-cable model of a Powered Up Medium Angular Motor with white cable stub for robotic actuation.
 0 Name: 51515 - spikePrimeMotorM-LQ-1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -434,7 +434,7 @@
 
 
 0 FILE 51515 - spikePrimeMotorM-LQ-1_subPart1.ldr
-0 spikePrimeMotorM-LQ-1_subPart1
+0 Subpart containing flexible cable routing segments for the Medium Angular Motor model.
 0 Name: 51515 - spikePrimeMotorM-LQ-1_subPart1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1490,7 +1490,7 @@
 
 
 0 FILE 51515 - torsolid.ldr
-0 torsolid
+0 Solid torso cladding using smooth fairing panels and a MINDSTORMS-decorated panel to enclose the frame.
 0 Name: 51515 - torsolid.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1540,7 +1540,7 @@
 
 
 0 FILE 51515 - rightarm.ldr
-0 rightarm
+0 Right arm built from bent liftarms, angle connectors, fairing panels, and pins enabling articulated forearm and upper-arm segments.
 0 Name: 51515 - rightarm.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1640,7 +1640,7 @@
 
 
 0 FILE 51515 - spikePrimeMotorM-LQ-2.ldr
-0 spikePrimeMotorM-LQ-2
+0 Flexible-cable model of a Powered Up Medium Angular Motor with white cable stub for robotic actuation.
 0 Name: 51515 - spikePrimeMotorM-LQ-2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1685,7 +1685,7 @@
 
 
 0 FILE 51515 - spikePrimeMotorM-LQ-2_subPart1.ldr
-0 spikePrimeMotorM-LQ-2_subPart1
+0 Subpart containing flexible cable routing segments for the Medium Angular Motor model.
 0 Name: 51515 - spikePrimeMotorM-LQ-2_subPart1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2860,7 +2860,7 @@
 
 
 0 FILE 51515 - leftarm.ldr
-0 leftarm
+0 Left arm assembled from bent liftarms, cross blocks, a circular connector, fairing panels, and pins forming an articulated limb.
 0 Name: 51515 - leftarm.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2973,7 +2973,7 @@
 
 
 0 FILE 51515 - spikePrimeDistSens-LQ-1.ldr
-0 spikePrimeDistSens-LQ-1
+0 Flexible-cable model of a Powered Up Distance Sensor with white cable stub for proximity sensing.
 0 Name: 51515 - spikePrimeDistSens-LQ-1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3020,7 +3020,7 @@
 
 
 0 FILE 51515 - spikePrimeDistSens-LQ-1_subPart1.ldr
-0 spikePrimeDistSens-LQ-1_subPart1
+0 Subpart containing flexible cable routing segments for the Distance Sensor model.
 0 Name: 51515 - spikePrimeDistSens-LQ-1_subPart1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3346,7 +3346,7 @@
 
 
 0 FILE 51515 - spikePrimeColorSens-LQ-1.ldr
-0 spikePrimeColorSens-LQ-1
+0 Flexible-cable model of a Powered Up Colour Sensor with white cable stub for color detection.
 0 Name: 51515 - spikePrimeColorSens-LQ-1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3395,7 +3395,7 @@
 
 
 0 FILE 51515 - spikePrimeColorSens-LQ-1_subPart1.ldr
-0 spikePrimeColorSens-LQ-1_subPart1
+0 Subpart containing flexible cable routing segments for the Colour Sensor model.
 0 Name: 51515 - spikePrimeColorSens-LQ-1_subPart1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -4473,7 +4473,7 @@
 
 
 0 FILE 51515 - leftarmsensors.ldr
-0 leftarmsensors
+0 Sensor mounting subassembly using friction pins to attach components to the left arm.
 0 Name: 51515 - leftarmsensors.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -4489,7 +4489,7 @@
 
 
 0 FILE 51515 - leftarmside.ldr
-0 leftarmside
+0 Left arm side reinforcement built from a bent double liftarm, beam, circular connector, and pins.
 0 Name: 51515 - leftarmside.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -4517,7 +4517,7 @@
 
 
 0 FILE 51515 - legs.ldr
-0 legs
+0 Leg assembly with bent liftarms, axle connectors, and four spoked wheels with tyres for a wheeled robot base.
 0 Name: 51515 - legs.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -4680,7 +4680,7 @@
 
 
 0 FILE 51515 - spikePrimeMotorM-LQ-3.ldr
-0 spikePrimeMotorM-LQ-3
+0 Flexible-cable model of a Powered Up Medium Angular Motor with white cable stub for robotic actuation.
 0 Name: 51515 - spikePrimeMotorM-LQ-3.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -4728,7 +4728,7 @@
 
 
 0 FILE 51515 - spikePrimeMotorM-LQ-3_subPart1.ldr
-0 spikePrimeMotorM-LQ-3_subPart1
+0 Subpart containing flexible cable routing segments for the Medium Angular Motor model.
 0 Name: 51515 - spikePrimeMotorM-LQ-3_subPart1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -5858,7 +5858,7 @@
 
 
 0 FILE 51515 - hips.ldr
-0 hips
+0 Hip frame constructed from an open-center beam and bent beams joined with friction pins to connect torso and legs.
 0 Name: 51515 - hips.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -5891,7 +5891,7 @@
 
 
 0 FILE 51515 - spikePrimeMotorM-LQ-4.ldr
-0 spikePrimeMotorM-LQ-4
+0 Flexible-cable model of a Powered Up Medium Angular Motor with white cable stub for robotic actuation.
 0 Name: 51515 - spikePrimeMotorM-LQ-4.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -5939,7 +5939,7 @@
 
 
 0 FILE 51515 - spikePrimeMotorM-LQ-4_subPart1.ldr
-0 spikePrimeMotorM-LQ-4_subPart1
+0 Subpart containing flexible cable routing segments for the Medium Angular Motor model.
 0 Name: 51515 - spikePrimeMotorM-LQ-4_subPart1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -7022,7 +7022,7 @@
 
 
 0 FILE 51515 - legpanel1.ldr
-0 legpanel1
+0 Decorative leg panel using a smooth long fairing attached with perpendicular and friction pins.
 0 Name: 51515 - legpanel1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -7040,7 +7040,7 @@
 
 
 0 FILE 51515 - legpanel2.ldr
-0 legpanel2
+0 Decorative leg panel using a smooth long fairing attached with perpendicular and friction pins.
 0 Name: 51515 - legpanel2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -7058,7 +7058,7 @@
 
 
 0 FILE 51515 - foot1.ldr
-0 foot1
+0 Articulated foot assembly with bent beams, cross blocks, smooth wheels, and fairing panels for a rolling stance.
 0 Name: 51515 - foot1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -7122,7 +7122,7 @@
 
 
 0 FILE 51515 - shooter.ldr
-0 shooter
+0 Dual spring-loaded shooter mechanism built on bent beams with elbow connectors, axles, and competition arrows.
 0 Name: 51515 - shooter.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -7202,7 +7202,7 @@
 
 
 0 FILE 51515 - blast.ldr
-0 blast
+0 Compact connector subassembly using long stop pins, perpendicular pin blocks, and an axle with bushes.
 0 Name: 51515 - blast.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -7240,7 +7240,7 @@
 
 
 0 FILE 51515 - 67718c01.dat
-0 67718c01
+0 Powered Up 6-port hub unit with dark turquoise rechargeable battery pack.
 0 Name: 51515 - 67718c01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -7257,7 +7257,7 @@
 
 
 0 FILE 51515 - 54696p02.dat
-0 54696p02
+0 Printed or decorated part referenced as a single component with no direct sub-pieces.
 0 Name: 51515 - 54696p02.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -7271,7 +7271,7 @@
 1 71 0 -50 0 1 0 0 0 1 0 0 0 1 u9363.dat
 
 0 FILE 51515 - 6327015a.dat
-0 6327015a
+0 Primitive part reference with no direct sub-pieces, used as a standalone component.
 0 Name: 51515 - 6327015a.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -7287,7 +7287,7 @@
 1 15 0 0 0 1 0 0 0 1 0 0 0 1 s\51515 - 6327015as04.dat
 
 0 FILE 51515 - 65098.dat
-0 65098
+0 Tire or wheel primitive formed from circular segments and pin-based collar ribs.
 0 Name: 51515 - 65098.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -7330,7 +7330,7 @@
 2 24 10 -12.8284 -2.8284 10 -12.8284 2.8284
 
 0 FILE 51515 - 55889.dat
-0 55889
+0 Cylindrical primitive part with connector hole, rings, and circular segments forming a hub-like component.
 0 Name: 51515 - 55889.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -7357,7 +7357,7 @@
 1 16 0 0 0 0 1 0 -1 0 0 0 0 1 s\51515 - 55889s01.dat
 
 0 FILE 51515 - 46537.dat
-0 46537
+0 Single rubber-black curved box element with three faces, likely a tire or tread component.
 0 Name: 51515 - 46537.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -7375,7 +7375,7 @@
 1 256 0 0 -40 0 0 4 -6.14286 0 0 0 19 0 box3u2p.dat
 
 0 FILE 51515 - 67718.dat
-0 67718
+0 Simple six-faced black box primitive representing a basic cuboid housing element.
 0 Name: 51515 - 67718.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -7409,7 +7409,7 @@
 1 0 0 -57 87 8 0 0 0 2 0 0 0 4 box.dat
 
 0 FILE 51515 - u9364c02.dat
-0 u9364c02
+0 Cable and blocker stub assembly representing an electrical connection element.
 0 Name: 51515 - u9364c02.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -7434,7 +7434,7 @@
 4 71 -27 -8.5 130 -12 -8.5 130 -12 7.5 130 -27 7.5 130
 
 0 FILE s\51515 - 6327015as01.dat
-0 6327015as01
+0 Primitive sub-part of the 6327015a component with no direct sub-pieces.
 0 Name: s\51515 - 6327015as01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -7453,7 +7453,7 @@
 4 16 -56.200001 0 0 -51.599998 0 -7.5 -51.599998 -0.25 -7.5 -56.200001 -0.25 0
 
 0 FILE s\51515 - 6327015as02.dat
-0 6327015as02
+0 Primitive sub-part of the 6327015a component with no direct sub-pieces.
 0 Name: s\51515 - 6327015as02.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -7546,7 +7546,7 @@
 4 16 37.182999 -0.25 2.5 37.724201 -0.25 2.7242 37.5 -0.25 2.817 37.275902 -0.25 2.7242
 
 0 FILE s\51515 - 6327015as03.dat
-0 6327015as03
+0 Primitive sub-part of the 6327015a component with no direct sub-pieces.
 0 Name: s\51515 - 6327015as03.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -7568,7 +7568,7 @@
 4 16 -44.599998 -0.25 -5.9 -39.599998 -0.25 -5.9 -41.400002 -0.25 -4.8 -44.200001 -0.25 -4.8
 
 0 FILE s\51515 - 6327015as04.dat
-0 6327015as04
+0 Primitive sub-part of the 6327015a component with no direct sub-pieces.
 0 Name: s\51515 - 6327015as04.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -7723,7 +7723,7 @@
 3 16 -22.799999 -0.25 -3.1 -39.599998 -0.25 -5.9 -19.35 -0.25 -3.1
 
 0 FILE s\51515 - 32138s01.dat
-0 32138s01
+0 Geometric primitive sub-part composed of cylinders, rings, circles, and rectangles forming a complex rounded body.
 0 Name: s\51515 - 32138s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -8030,7 +8030,7 @@
 5 24 -7 4.8 -9 -7 4.8 -7.5 -8 3 -9 -6 6 -7.5
 
 0 FILE s\51515 - 55889s01.dat
-0 55889s01
+0 Geometric primitive sub-part made of small circular and cylindrical segments with edge rectangles.
 0 Name: s\51515 - 55889s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -8192,7 +8192,7 @@
 3 16 8.201 14.205 4.5 5.8266 14.0664 4.5 10.7656 10.7656 4.5
 
 0 FILE s\51515 - 46537s01.dat
-0 46537s01
+0 Detailed geometric primitive sub-part built from cylinders, circles, chords, and rectangles forming a contoured shape.
 0 Name: s\51515 - 46537s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -8377,7 +8377,7 @@
 2 24 5 6.1429 -40 5 10.5455 -40.454102
 
 0 FILE s\51515 - 46537s02.dat
-0 46537s02
+0 Primitive sub-part of the 46537 component with no direct sub-pieces.
 0 Name: s\51515 - 46537s02.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
