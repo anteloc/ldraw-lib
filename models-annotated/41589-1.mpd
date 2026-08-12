@@ -1,5 +1,5 @@
 0 FILE 41589 - Captain America.ldr
-0 Captain America
+0 Captain America BrickHeadz figure base featuring a black nameplate, series number tile, and dark blue body components.
 0 Name: 41589 - Captain America.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -18,7 +18,7 @@
 1 0 0 -48 20 1 0 0 0 1 0 0 0 1 41589 - 1.ldr
 
 0 FILE 41589 - 1.ldr
-0 1
+0 Main torso and body assembly built from dark blue plates and bricks with reddish brown accents, star and stripe patterned bricks, and grey side-stud bricks forming the armored figure.
 0 Name: 41589 - 1.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -155,7 +155,7 @@
 1 0 30 32 0 0 0 -1 0 1 0 1 0 0 3023.dat
 
 0 FILE 41589 - 2.ldr
-0 2
+0 Small reddish brown and dark blue plate assembly with a clip, likely part of a limb or weapon attachment.
 0 Name: 41589 - 2.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -182,7 +182,7 @@
 
 
 0 FILE 41589 - 3.ldr
-0 3
+0 Compact dark blue and reddish brown plate segment with a horizontal clip for attachment.
 0 Name: 41589 - 3.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -201,7 +201,7 @@
 
 
 0 FILE 41589 - 4.ldr
-0 4
+0 Compact dark blue and reddish brown plate segment with an end clip for attachment.
 0 Name: 41589 - 4.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -217,7 +217,7 @@
 1 70 -10 -8 0 0 0 1 0 1 0 -1 0 0 63868.dat
 
 0 FILE 41589 - 87079pz0.dat
-0 Tile 2 x  4 with Groove with Brickheadz Series Number "1" Pattern
+0 Printed black tile bearing the BrickHeadz series number one pattern.
 0 Name: 41589 - 87079pz0.dat
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Unofficial_Part
@@ -232,7 +232,7 @@
 1 15 0 0 0 1 0 0 0 1 0 0 0 1 s\41589 - 87079pz0s02.dat
 
 0 FILE 41589 - 3010pz4.dat
-0 Brick 1 x  4 with  3 Dark Red Vertical Stripes Pattern
+0 Printed white brick decorated with three dark red vertical stripes.
 0 Name: 41589 - 3010pz4.dat
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Unofficial_Part
@@ -280,7 +280,7 @@
 4 320 40 24 -10 40 13.55 -10 36.25 16.99 -10 35.41 24 -10
 
 0 FILE 41589 - 3010pz5.dat
-0 Brick 1 x  4 with Silver Star and  2 Belt Buckles Pattern
+0 Printed dark blue brick featuring a silver star and two belt buckles pattern.
 0 Name: 41589 - 3010pz5.dat
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Unofficial_Part
@@ -295,7 +295,7 @@
 1 16 0 0 -10 -1 0 0 0 1 0 0 0 1 s\41589 - 3010pz5s01.dat
 
 0 FILE 41589 - 87079pz1.dat
-0 Tile 2 x  4 with White "A" and  4 Black Lines Pattern
+0 Printed tile displaying a white letter A with four black lines.
 0 Name: 41589 - 87079pz1.dat
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Unofficial_Part
@@ -403,7 +403,7 @@
 4 16 40 0 -20 40 0 20 34.35 0 0.307 33.697 0 -4.726
 
 0 FILE 41589 - 98138pz0.dat
-0 Tile 1 x  1 Round with Two White Squares Pattern
+0 Round printed tile decorated with two white squares, using an adapter ring.
 0 Name: 41589 - 98138pz0.dat
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Unofficial_Part
@@ -435,7 +435,7 @@
 3 16 0 0 9 1.81 0 4.601 3.4443 0 8.3151
 
 0 FILE s\41589 - 87079pz0s01.dat
-0 ~Tile 2 x  4 with Groove with Brickheadz Series Number Pattern without Number
+0 Subpattern geometry for the series number tile base, composed of black rings and white chord and disc primitives.
 0 Name: s\41589 - 87079pz0s01.dat
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -620,7 +620,7 @@
 3 16 40 0 20 33.5 0 14.5 35 0 14.5
 
 0 FILE s\41589 - 87079pz0s02.dat
-0 ~Tile 2 x  4 with Groove with Brickheadz Series Number Pattern - "1"
+0 Subpattern forming the numeral one on the series number tile using chord and disc primitives.
 0 Name: s\41589 - 87079pz0s02.dat
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -661,7 +661,7 @@
 4 16 34 0 13 33.5 0 13.5 22.824 0 7.138 22.824 0 -7.1
 
 0 FILE s\41589 - 3010pz5s01.dat
-0 ~Brick 1 x  4 with Silver Star and  2 Belt Buckles Pattern - Half
+0 Half of the silver star and belt buckles brick pattern subpart.
 0 Name: s\41589 - 3010pz5s01.dat
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Unofficial_Subpart

@@ -1,5 +1,5 @@
 0 FILE 42037 - Formula Off Roader.ldr
-0 Formula Off Roader
+0 Technic frame assembly with liftarms, axles, and connectors forming the main body of the Formula Off Roader, integrating the steering, motor, chassis, suspension, and body panels.
 0 Name: 42037 - Formula Off Roader.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -365,7 +365,7 @@
 1 256 -200.9188 -102.1122 -242.0246 0 0 1 0.083 0.9965 0 -0.9965 0.083 0 45982.dat
 
 0 FILE 42037 - steer.ldr
-0 steer
+0 Steering linkage built from liftarms, a gear rack, towball pins, and an axle gear for rack-and-pinion steering.
 0 Name: 42037 - steer.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -399,7 +399,7 @@
 
 
 0 FILE 42037 - motor.ldr
-0 motor
+0 Inline four-cylinder Technic engine with crankshafts, pistons, rods, and cylinder heads.
 0 Name: 42037 - motor.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -478,7 +478,7 @@
 
 
 0 FILE 42037 - chasisside1.ldr
-0 chasisside1
+0 Long chassis side rail of beams, cross blocks, angle connectors, and pins for structural support.
 0 Name: 42037 - chasisside1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -534,7 +534,7 @@
 
 
 0 FILE 42037 - chassisside2.ldr
-0 chassisside2
+0 Mirrored chassis side rail of beams, cross blocks, angle connectors, and pins for structural support.
 0 Name: 42037 - chassisside2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -589,7 +589,7 @@
 
 
 0 FILE 42037 - rearaxle.ldr
-0 rearaxle
+0 Live rear axle with differential, CV joints, portal hubs, gears, and suspension mounting points.
 0 Name: 42037 - rearaxle.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -877,7 +877,7 @@
 
 
 0 FILE 42037 - shock-06_5L-hard-1.ldr
-0 shock-06_5L-hard-1
+0 6.5L hard shock absorber assembly with cylinder, piston rod, and coiled spring.
 0 Name: 42037 - shock-06_5L-hard-1.ldr
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -922,7 +922,7 @@
 1 494 0 62.729 0 1 0 0 0 1 0 0 0 1 42037 - shock-06_5L-hard-1_springMesh.ldr
 
 0 FILE 42037 - shock-06_5L-hard-1_springMesh.ldr
-0 shock-06_5L-hard-1_springMesh
+0 Mesh model of the coiled spring for the 6.5L shock absorber, defined by multiple winding sections.
 0 Name: 42037 - shock-06_5L-hard-1_springMesh.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -6753,7 +6753,7 @@
 5 24 -7.75 36.5268 0.1874 -7.2197 35.9909 0.0164 -7.75 35.7714 0.0232 -7 36.521 0
 
 0 FILE 42037 - rearaxletop.ldr
-0 rearaxletop
+0 Upper rear axle structure of beams, gears, angle connectors, and axle joiners linking to the drivetrain.
 0 Name: 42037 - rearaxletop.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -6811,7 +6811,7 @@
 
 
 0 FILE 42037 - sidepanel1.ldr
-0 sidepanel1
+0 Right body side panel of liftarms and smooth fairing panels in lime and medium blue.
 0 Name: 42037 - sidepanel1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -6856,7 +6856,7 @@
 
 
 0 FILE 42037 - seat.ldr
-0 seat
+0 Driver's seat of bent blue liftarms and beams mounted on pins and axles.
 0 Name: 42037 - seat.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -6892,7 +6892,7 @@
 
 
 0 FILE 42037 - sidepanel2.ldr
-0 sidepanel2
+0 Left body side panel of liftarms and smooth fairing panels in lime and medium blue.
 0 Name: 42037 - sidepanel2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -6937,7 +6937,7 @@
 
 
 0 FILE 42037 - windscreen.ldr
-0 windscreen
+0 Roll cage and windscreen frame of angle connectors, axle joiners, round plates, and clear dish elements.
 0 Name: 42037 - windscreen.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -7024,7 +7024,7 @@
 
 
 0 FILE 42037 - 2850b.dat
-0 Technic Engine Cylinder Head with Bottom Slots
+0 Technic engine cylinder head with bottom slots, built from cylinders, rectangles, discs, and rings.
 0 Name: 42037 - 2850b.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -7172,7 +7172,7 @@
 
 
 0 FILE s\42037 - 2850s01.dat
-0 ~Technic Engine Cylinder Head Common Geometry
+0 Common geometric primitive subpart defining the cylinder head body using cylinders, circles, boxes, and rings.
 0 Name: s\42037 - 2850s01.dat
 0 Author: Jeff Boen
 0 !LDRAW_ORG Unofficial_Subpart

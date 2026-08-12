@@ -1,5 +1,5 @@
 0 FILE 42080 - main.ldr
-0 main
+0 Central chassis assembly integrating the beams, axles, front axle, steering lever, cabin, pneumatics, and trailer hitch of the Forest Machine model.
 0 Name: 42080 - main.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -315,7 +315,7 @@
 
 
 0 FILE 42080 - steerlever.ldr
-0 steerlever
+0 Steering control lever built from a bent liftarm, towball pin, and angle connector to link the steering mechanism.
 0 Name: 42080 - steerlever.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -353,7 +353,7 @@
 
 
 0 FILE 42080 - frontaxle.ldr
-0 frontaxle
+0 Front axle assembly with green beams, towball connectors, and cross blocks forming a steerable wheel suspension.
 0 Name: 42080 - frontaxle.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -453,7 +453,7 @@
 
 
 0 FILE 42080 - pneumaticHoseLQ-1.ldr
-0 pneumaticHoseLQ-1
+0 Long pneumatic hose (~185mm) routed as a flexible tube between pneumatic components.
 0 Name: 42080 - pneumaticHoseLQ-1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -763,7 +763,7 @@
 
 
 0 FILE 42080 - cabin.ldr
-0 cabin
+0 Operator cabin structure built from bent liftarms, angle connectors, turntable, and clear round plates for windows.
 0 Name: 42080 - cabin.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1000,7 +1000,7 @@
 
 
 0 FILE 42080 - cabinside1.ldr
-0 cabinside1
+0 One side panel of the cabin using a curved lime fairing, split cross blocks, and a bent liftarm for the interior frame.
 0 Name: 42080 - cabinside1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1032,7 +1032,7 @@
 
 
 0 FILE 42080 - cabinfront1.ldr
-0 cabinfront1
+0 Left front section of the cabin built from a T-beam, bent liftarm, and connector blocks for the windshield framing.
 0 Name: 42080 - cabinfront1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1066,7 +1066,7 @@
 
 
 0 FILE 42080 - cabinfront2.ldr
-0 cabinfront2
+0 Right front section of the cabin built from a T-beam, bent liftarm, and connector blocks mirroring the left side framing.
 0 Name: 42080 - cabinfront2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1098,7 +1098,7 @@
 
 
 0 FILE 42080 - cabinside2.ldr
-0 cabinside2
+0 Opposite side panel of the cabin using a curved lime fairing and split cross blocks to mirror the other interior side.
 0 Name: 42080 - cabinside2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1128,7 +1128,7 @@
 
 
 0 FILE 42080 - pneuswitch1.ldr
-0 pneuswitch1
+0 First pneumatic valve switch assembly using a valve, bent liftarms, and an axle to control pneumatic flow direction.
 0 Name: 42080 - pneuswitch1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1160,7 +1160,7 @@
 
 
 0 FILE 42080 - pneuswitch2.ldr
-0 pneuswitch2
+0 Second pneumatic valve switch assembly mirroring the first valve control to direct air to a second function.
 0 Name: 42080 - pneuswitch2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1192,7 +1192,7 @@
 
 
 0 FILE 42080 - pneumaticHoseLQ-2.ldr
-0 pneumaticHoseLQ-2
+0 Short pneumatic hose (~18mm) connecting two nearby pneumatic components.
 0 Name: 42080 - pneumaticHoseLQ-2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1263,7 +1263,7 @@
 
 
 0 FILE 42080 - pneumaticHoseLQ-3.ldr
-0 pneumaticHoseLQ-3
+0 Medium pneumatic hose (~100mm) routing a flexible tube between pneumatic system components.
 0 Name: 42080 - pneumaticHoseLQ-3.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1423,7 +1423,7 @@
 
 
 0 FILE 42080 - cabinfront.ldr
-0 cabinfront
+0 Front grille and light bar of the cabin built from axle blocks, elbow cylinders, clear round plates, and a grille tile.
 0 Name: 42080 - cabinfront.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1476,7 +1476,7 @@
 
 
 0 FILE 42080 - trailer.ldr
-0 trailer
+0 Trailer chassis assembly with green beams, turntable, axles, and connector blocks forming the towed equipment bed.
 0 Name: 42080 - trailer.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1754,7 +1754,7 @@
 
 
 0 FILE 42080 - trailergears.ldr
-0 trailergears
+0 Gear linkage for the trailer using bevel gears, bent liftarms, and cross blocks to transfer drive between axles.
 0 Name: 42080 - trailergears.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1796,7 +1796,7 @@
 
 
 0 FILE 42080 - traileraxle1.ldr
-0 traileraxle1
+0 First trailer axle built from green beams, pins, and triangle liftarms supporting a pair of wheels.
 0 Name: 42080 - traileraxle1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1834,7 +1834,7 @@
 
 
 0 FILE 42080 - traileraxle2.ldr
-0 traileraxle2
+0 Second trailer axle with green beams, triangle liftarms, pins, and an angle connector linking it to the drivetrain.
 0 Name: 42080 - traileraxle2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1881,7 +1881,7 @@
 
 
 0 FILE 42080 - liftarm.ldr
-0 liftarm
+0 Auxiliary liftarm linkage built from bushings, cross blocks, and colored axles to connect moving elements.
 0 Name: 42080 - liftarm.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1915,7 +1915,7 @@
 
 
 0 FILE 42080 - powerFuncMotorL-LQ-1.ldr
-0 powerFuncMotorL-LQ-1
+0 Power Functions Large Motor unit with wiring harness and connector providing drive to the model.
 0 Name: 42080 - powerFuncMotorL-LQ-1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1964,7 +1964,7 @@
 
 
 0 FILE 42080 - powerFuncMotorL-LQ-1_subPart1.ldr
-0 powerFuncMotorL-LQ-1_subPart1
+0 Wire routing subpart for the Power Functions Large Motor defining the cable path geometry.
 0 Name: 42080 - powerFuncMotorL-LQ-1_subPart1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2117,7 +2117,7 @@
 
 
 0 FILE 42080 - pumpsupport.ldr
-0 pumpsupport
+0 Mounting bracket for the pneumatic pump built from bent liftarms, cross blocks, and axles to secure the pump drive.
 0 Name: 42080 - pumpsupport.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2169,7 +2169,7 @@
 
 
 0 FILE 42080 - trailerrearbump.ldr
-0 trailerrearbump
+0 Rear bumper of the trailer built from cross blocks, T-beam, elbow cylinders, and an axle for the mounting structure.
 0 Name: 42080 - trailerrearbump.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2210,7 +2210,7 @@
 
 
 0 FILE 42080 - trailertop.ldr
-0 trailertop
+0 Upper frame and paneling of the trailer built from long beams, angle connectors, a side panel, and elbow cylinders.
 0 Name: 42080 - trailertop.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2368,7 +2368,7 @@
 
 
 0 FILE 42080 - trailertoprear.ldr
-0 trailertoprear
+0 Rear upper section of the trailer with cross blocks, bent liftarms, bushings, and a red light plate for tail detailing.
 0 Name: 42080 - trailertoprear.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2431,7 +2431,7 @@
 
 
 0 FILE 42080 - minifigChainStuds-1.ldr
-0 minifigChainStuds-1
+0 A flexible minifig chain assembly made of 21 links with end connectors.
 0 Name: 42080 - minifigChainStuds-1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2516,7 +2516,7 @@
 
 
 0 FILE 42080 - trailerfairing1.ldr
-0 trailerfairing1
+0 A green trailer fairing panel assembly mounted on a 9-long beam with pins and connectors.
 0 Name: 42080 - trailerfairing1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2552,7 +2552,7 @@
 
 
 0 FILE 42080 - trailerfairing2.ldr
-0 trailerfairing2
+0 A lime trailer fairing panel assembly built on white 11 and 7-long beams with friction pins.
 0 Name: 42080 - trailerfairing2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2582,7 +2582,7 @@
 
 
 0 FILE 42080 - trailerfairing4.ldr
-0 trailerfairing4
+0 A lime trailer fairing panel assembly attached to two white 7-long beams with friction pins.
 0 Name: 42080 - trailerfairing4.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2612,7 +2612,7 @@
 
 
 0 FILE 42080 - trailerfairing3.ldr
-0 trailerfairing3
+0 A green trailer fairing panel assembly mounted on beams with axles, pins, and connectors.
 0 Name: 42080 - trailerfairing3.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2642,7 +2642,7 @@
 
 
 0 FILE 42080 - pneumaticHoseLQ-4.ldr
-0 pneumaticHoseLQ-4
+0 A pneumatic hose run approximately 57 mm long made of 48 tube segments with bulged ends.
 0 Name: 42080 - pneumaticHoseLQ-4.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2777,7 +2777,7 @@
 
 
 0 FILE 42080 - pneumaticHoseLQ-5.ldr
-0 pneumaticHoseLQ-5
+0 A pneumatic hose run approximately 34 mm long made of 28 tube segments with bulged ends.
 0 Name: 42080 - pneumaticHoseLQ-5.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2872,7 +2872,7 @@
 
 
 0 FILE 42080 - pneumaticHoseLQ-6.ldr
-0 pneumaticHoseLQ-6
+0 A pneumatic hose run approximately 65 mm long made of 39 tube segments with bulged ends.
 0 Name: 42080 - pneumaticHoseLQ-6.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2989,7 +2989,7 @@
 
 
 0 FILE 42080 - pneumaticHoseLQ-7.ldr
-0 pneumaticHoseLQ-7
+0 A pneumatic hose run approximately 65 mm long made of 38 tube segments with bulged ends.
 0 Name: 42080 - pneumaticHoseLQ-7.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3104,7 +3104,7 @@
 
 
 0 FILE 42080 - pneumaticHoseLQ-8.ldr
-0 pneumaticHoseLQ-8
+0 A pneumatic hose run approximately 74 mm long made of 55 tube segments with bulged ends.
 0 Name: 42080 - pneumaticHoseLQ-8.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3254,7 +3254,7 @@
 
 
 0 FILE 42080 - arm.ldr
-0 arm
+0 A white articulated arm structure built from long Technic bricks, plates, curved slope panels, and bent liftarms with axles and pins.
 0 Name: 42080 - arm.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3424,7 +3424,7 @@
 
 
 0 FILE 42080 - arm2.ldr
-0 arm2
+0 A small bent liftarm joint assembly with an axle, cross blocks, pins, and transparent round plates.
 0 Name: 42080 - arm2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3458,7 +3458,7 @@
 
 
 0 FILE 42080 - armhead.ldr
-0 armhead
+0 A complex rotating arm head built around a turntable with multiple axles, liftarms, gears, bushes, and cross blocks.
 0 Name: 42080 - armhead.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3650,7 +3650,7 @@
 
 
 0 FILE 42080 - armhead2.ldr
-0 armhead2
+0 A compact arm head linkage using a bent liftarm, cross blocks, gears, and axle connectors.
 0 Name: 42080 - armhead2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3688,7 +3688,7 @@
 
 
 0 FILE 42080 - armheadcyl.ldr
-0 armheadcyl
+0 A pneumatic cylinder assembly mounted on bent liftarms with axles, bushes, and a piston rod for actuating the arm head.
 0 Name: 42080 - armheadcyl.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3739,7 +3739,7 @@
 
 
 0 FILE 42080 - pneumaticHoseLQ-9.ldr
-0 pneumaticHoseLQ-9
+0 A pneumatic hose run approximately 56 mm long made of 42 tube segments with bulged ends.
 0 Name: 42080 - pneumaticHoseLQ-9.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3862,7 +3862,7 @@
 
 
 0 FILE 42080 - gripper.ldr
-0 gripper
+0 A gripper claw built from an axle joiner hub with spiked round bricks for gripping surfaces.
 0 Name: 42080 - gripper.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3885,7 +3885,7 @@
 
 
 0 FILE 42080 - pneumaticHoseLQ-10.ldr
-0 pneumaticHoseLQ-10
+0 A pneumatic hose run approximately 93 mm long made of 67 tube segments with bulged ends.
 0 Name: 42080 - pneumaticHoseLQ-10.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -4058,7 +4058,7 @@
 
 
 0 FILE 42080 - pneumaticHoseLQ-11.ldr
-0 pneumaticHoseLQ-11
+0 A long pneumatic hose run approximately 294 mm long made of 111 tube segments with bulged ends.
 0 Name: 42080 - pneumaticHoseLQ-11.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -4323,7 +4323,7 @@
 
 
 0 FILE 42080 - pneumaticHoseLQ-12.ldr
-0 pneumaticHoseLQ-12
+0 A long pneumatic hose run approximately 283 mm long made of 121 tube segments with bulged ends.
 0 Name: 42080 - pneumaticHoseLQ-12.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -4608,7 +4608,7 @@
 
 
 0 FILE 42080 - pneumaticHoseLQ-13.ldr
-0 pneumaticHoseLQ-13
+0 A pneumatic hose run approximately 60 mm long made of 50 tube segments with bulged ends.
 0 Name: 42080 - pneumaticHoseLQ-13.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -4748,7 +4748,7 @@
 
 
 0 FILE 42080 - pneumaticHoseLQ-14.ldr
-0 pneumaticHoseLQ-14
+0 A pneumatic hose run approximately 74 mm long made of 55 tube segments with bulged ends.
 0 Name: 42080 - pneumaticHoseLQ-14.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -4898,7 +4898,7 @@
 
 
 0 FILE 42080 - trunk.ldr
-0 trunk
+0 A tree trunk made of stacked round grille bricks on a round base plate with an axle.
 0 Name: 42080 - trunk.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -4938,7 +4938,7 @@
 
 
 0 FILE 42080 - xsupport.ldr
-0 xsupport
+0 A cross support assembly of thin liftarms joined by a pin joiner and round hollow-stud bricks.
 0 Name: 42080 - xsupport.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -4970,7 +4970,7 @@
 
 
 0 FILE 42080 - chainsaw.ldr
-0 chainsaw
+0 A minifig chainsaw accessory combining a chainsaw blade with small liftarms, an axle connector hub, and pins.
 0 Name: 42080 - chainsaw.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -4998,7 +4998,7 @@
 
 
 0 FILE 42080 - 18575.dat
-0 18575
+0 A small Technic connector element with axle holes and surrounding rectangular edges.
 0 Name: 42080 - 18575.dat
 0 Author: Merlijn Wissink [legolijntje]
 0 !LDRAW_ORG Unofficial_Part
@@ -5120,7 +5120,7 @@
 1 16 1.5 5.7018 0 0 0 0.5 0 1 -0.0998 -10 0 0 rect3.dat
 
 0 FILE 42080 - 19474-f1.dat
-0 19474-f1
+0 An empty placeholder submodel with no direct pieces.
 0 Name: 42080 - 19474-f1.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -5134,7 +5134,7 @@
 1 0 0 0 0 -1 0 0 0 0 1 0 1 0 42080 - u9419.dat
 
 0 FILE 42080 - 26674-f1.dat
-0 26674-f1
+0 A black Technic pneumatic pump piston rod with gasket.
 0 Name: 42080 - 26674-f1.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -5149,7 +5149,7 @@
 1 0 0 -100 0 1 0 0 0 1 0 0 0 1 42080 - 2944c02.dat
 
 0 FILE 42080 - 10197.dat
-0 10197
+0 A cylindrical Technic joint element with perpendicular axle connectors and multiple cylindrical and circular surfaces.
 0 Name: 42080 - 10197.dat
 0 Author: Rolf Osterthun [Rolf]
 0 !LDRAW_ORG Unofficial_Part
@@ -5223,7 +5223,7 @@
 0 !LDCAD SNAP_CYL [gender=M] [caps=one] [secs=A 6 20] [slide=true]
 
 0 FILE 42080 - 23444.dat
-0 23444
+0 A multi-segment cylindrical component with circles, discs, cylinders, and tapered cylinder joints.
 0 Name: 42080 - 23444.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -5327,7 +5327,7 @@
 1 16 -30 4 20 6 0 0 0 -1 0 0 0 6 4-4disc.dat
 
 0 FILE 42080 - 30104k02.dat
-0 30104k02
+0 A simple cylindrical element consisting of two full cylinders.
 0 Name: 42080 - 30104k02.dat
 0 Author: Matt Schild [mschild]
 0 !LDRAW_ORG Unofficial_Part Flexible_Section
@@ -5362,7 +5362,7 @@
 1 16 0 -9 0 -4 0 0 0 0 -4 0 -4 0 t04q3750.dat
 
 0 FILE 42080 - 30104k01.dat
-0 30104k01
+0 A cylindrical part with rings, sloped cylinder surfaces, and circular end caps.
 0 Name: 42080 - 30104k01.dat
 0 Author: Matt Schild [mschild]
 0 !LDRAW_ORG Unofficial_Part Flexible_Section
@@ -5464,7 +5464,7 @@
 2 24 -3.426 0.1141 7.1478 -4 0 6.7641
 
 0 FILE 42080 - 33299a.dat
-0 33299a
+0 A Technic mounting element with reduced axle holes, peg holes, and negative disc surfaces.
 0 Name: 42080 - 33299a.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Part
@@ -5497,7 +5497,7 @@
 4 16 -9 10 35.661999 -8 10 36.661999 -8 10 32 -9 10 32
 
 0 FILE 42080 - 2944c01.dat
-0 2944c01
+0 A single Technic pneumatic cylinder piston rod component.
 0 Name: 42080 - 2944c01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -5510,7 +5510,7 @@
 1 256 0 56 0 1 0 0 0 1 0 0 0 1 u9338.dat
 
 0 FILE 42080 - 27266.dat
-0 27266
+0 A simple full cylindrical element.
 0 Name: 42080 - 27266.dat
 0 Author: Gerald Lasser [GeraldLasser]
 0 !LDRAW_ORG Unofficial_Part
@@ -5527,7 +5527,7 @@
 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 s\42080 - 27266s01.dat
 
 0 FILE 42080 - npeghol3.dat
-0 npeghol3
+0 A Technic peg hole element with open cylinders, rings, and rectangular box faces.
 0 Name: 42080 - npeghol3.dat
 0 Author: Guy Vivan [guyvivan]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -5572,7 +5572,7 @@
 1 16 2.7222 0.5 -3.041 0 -0.72215 0 0.5 0 0 0 0.14395 1.5 box2-7.dat
 
 0 FILE 42080 - u9417.dat
-0 u9417
+0 A complex multi-featured Technic part with open cylinders, cones, rings, and connector holes.
 0 Name: 42080 - u9417.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -6052,7 +6052,7 @@
 2 24 -3 -6.3605 -15.3553 10 -6.3605 -15.3552
 
 0 FILE 42080 - u9416.dat
-0 u9416
+0 A detailed geometric submodel with open cylinders, chords, and rectangular edge elements.
 0 Name: 42080 - u9416.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -6269,7 +6269,7 @@
 1 16 0 25 -17 0 -1 0 9 0 0 0 0 -9 1-4chrd.dat
 
 0 FILE 42080 - u9418.dat
-0 u9418
+0 A detailed submodel with open cylinders, chords, and multiple rectangular edge configurations.
 0 Name: 42080 - u9418.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -6384,7 +6384,7 @@
 1 16 2 35.4 0 0 0 2 0 -1 0 3 0 0 rect2p.dat
 
 0 FILE 42080 - u9419.dat
-0 u9419
+0 A Technic part with axle holes, large open cylinders, rings, and rectangular edge details.
 0 Name: 42080 - u9419.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -6514,7 +6514,7 @@
 1 16 2 -16.4274 0 0 -1 0 1.07265 0 0 0.0002 0 6.3605 rect2p.dat
 
 0 FILE s\42080 - 32269s01.dat
-0 32269s01
+0 A geometric primitive submodel composed entirely of rectangles and rectangular edge elements.
 0 Name: s\42080 - 32269s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -6603,7 +6603,7 @@
 3 16 15.3375 12.7626 -10 14.6121 11.2123 -10 13.0227 13.0227 -10
 
 0 FILE s\42080 - 32269s02.dat
-0 32269s02
+0 A geometric primitive submodel with an open cylinder, rings, and various rectangular elements.
 0 Name: s\42080 - 32269s02.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -6674,7 +6674,7 @@
 3 16 17 0 -10 16.934099 -1 -10 16.934099 1 -10
 
 0 FILE 42080 - u9413.dat
-0 u9413
+0 A detailed Technic part with peg holes, cylinders, cones, rings, and sloped cylindrical surfaces.
 0 Name: 42080 - u9413.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -6860,7 +6860,7 @@
 4 16 -9 -22 -10 -8 -6 -10 8 -6 -10 9 -22 -10
 
 0 FILE 42080 - u9415.dat
-0 u9415
+0 A geometric submodel with open cylinders, a ring, and multiple chord and rectangular edge elements.
 0 Name: 42080 - u9415.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -6965,7 +6965,7 @@
 4 16 -10 11.5 -4 -8.5 11.5 -4 -8.5 4.5 -4 -10 9.5 -4
 
 0 FILE 42080 - u9414.dat
-0 u9414
+0 A compact submodel with boxed faces, cylinders, circular surfaces, and rectangular elements.
 0 Name: 42080 - u9414.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -7058,7 +7058,7 @@
 1 16 0 10.5 -10 0 0 9 9.5 0 0 0 1 0 rect1.dat
 
 0 FILE 42080 - 2944c02.dat
-0 2944c02
+0 A pneumatic cylinder piston rod with an attached rubber gasket seal.
 0 Name: 42080 - 2944c02.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -7072,7 +7072,7 @@
 1 256 0 56 0 1 0 0 0 1 0 0 0 1 70834.dat
 
 0 FILE 42080 - 2944.dat
-0 2944
+0 A cylindrical Technic element with peg holes, discs, a cone, and multiple rings.
 0 Name: 42080 - 2944.dat
 0 Author: Marc Klein [marckl]
 0 !LDRAW_ORG Unofficial_Part
@@ -7150,7 +7150,7 @@
 0 !LDCAD SNAP_INCL [ref=connhole.dat]
 
 0 FILE 42080 - axleconnect.dat
-0 axleconnect
+0 A small axle connector element with open cylinders, sloped cylinders, and chords.
 0 Name: 42080 - axleconnect.dat
 0 Author: Santeri Piippo [arezey]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -7181,7 +7181,7 @@
 1 16 0 0 0 0 0 9 -9 -1 0 -9 0 0 1-4edge.dat
 
 0 FILE 42080 - t04q8000.dat
-0 t04q8000
+0 A torus quarter-segment primitive with major and minor radii and edge lines.
 0 Name: 42080 - t04q8000.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -7406,7 +7406,7 @@
 0 // Build by LDPartEditor (PrimGen 2.X)
 
 0 FILE s\42080 - 6143s01.dat
-0 6143s01
+0 A geometric submodel defining the edges and surfaces of a semi-reduced Technic axle hole.
 0 Name: s\42080 - 6143s01.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Subpart

@@ -1,5 +1,5 @@
 0 FILE 40413 - main.ldr
-0 main
+0 Complete robot character set combining multiple buildable mechs (Blast, Charlie, Gelo, MVP, Tricky) with their limbs, heads, and accessories.
 0 Name: 40413 - main.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -14,7 +14,7 @@
 
 
 0 FILE 40413 - blast.ldr
-0 blast
+0 Core body frame of the Blast mech built from Technic beams, pins, and white fairing panels.
 0 Name: 40413 - blast.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -79,7 +79,7 @@
 
 
 0 FILE 40413 - blast-leg1.ldr
-0 blast-leg1
+0 Left leg assembly using a Technic beam 5, cross block, axle, and a white fairing panel.
 0 Name: 40413 - blast-leg1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -104,7 +104,7 @@
 
 
 0 FILE 40413 - blastleg2.ldr
-0 blastleg2
+0 Right leg assembly mirroring the left leg with a Technic beam 5, cross block, axle, and fairing panel.
 0 Name: 40413 - blastleg2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -129,7 +129,7 @@
 
 
 0 FILE 40413 - blastarm1.ldr
-0 blastarm1
+0 Articulated arm with angle connectors, hinge elements, a slope brick, and a round trans-brown detail tile.
 0 Name: 40413 - blastarm1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -170,7 +170,7 @@
 
 
 0 FILE 40413 - blastarm2.ldr
-0 blastarm2
+0 Spring-loaded shooter arm with a loaded arrow, angle connector, and corner tiles for a weaponized limb.
 0 Name: 40413 - blastarm2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -195,7 +195,7 @@
 
 
 0 FILE 40413 - blasthead.ldr
-0 blasthead
+0 Mech head built from plates and bricks with two control sticks and a round trans-red eye tile.
 0 Name: 40413 - blasthead.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -233,7 +233,7 @@
 
 
 0 FILE 40413 - charlie.ldr
-0 charlie
+0 Main body of the Charlie vehicle assembled from plates, brackets, inverted slopes, and a ball-joint plate.
 0 Name: 40413 - charlie.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -304,7 +304,7 @@
 
 
 0 FILE 40413 - charliebelly.ldr
-0 charliebelly
+0 Curved belly section of Charlie using curved slope bricks and a hinge top piece.
 0 Name: 40413 - charliebelly.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -328,7 +328,7 @@
 
 
 0 FILE 40413 - charliewheels.ldr
-0 charliewheels
+0 Wheeled undercarriage with two rubber tyres on rimmed wheels attached via ball joints and axles.
 0 Name: 40413 - charliewheels.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -381,7 +381,7 @@
 
 
 0 FILE 40413 - charliearm.ldr
-0 charliearm
+0 Small articulated arm using an angle connector, friction axle pin, and a clipped bar element.
 0 Name: 40413 - charliearm.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -396,7 +396,7 @@
 
 
 0 FILE 40413 - charliehead.ldr
-0 charliehead
+0 Detailed head module with socket joint, grooved tiles, control sticks, and trans-light-blue/clear eye accents.
 0 Name: 40413 - charliehead.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -470,7 +470,7 @@
 
 
 0 FILE 40413 - gelo.ldr
-0 gelo
+0 Main body of the Gelo mech made of plates, brackets, technic bricks, tiles, and liftarms.
 0 Name: 40413 - gelo.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -578,7 +578,7 @@
 
 
 0 FILE 40413 - geloleg.ldr
-0 geloleg
+0 Compact leg joint assembly using angle connectors, a notched axle, and a cross block.
 0 Name: 40413 - geloleg.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -596,7 +596,7 @@
 
 
 0 FILE 40413 - mvp.ldr
-0 mvp
+0 Main body of the MVP vehicle built from plates, curved-top bricks, a radio grille, and clip tiles.
 0 Name: 40413 - mvp.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -703,7 +703,7 @@
 
 
 0 FILE 40413 - mvpfront.ldr
-0 mvpfront
+0 Front section of MVP featuring curved slopes, handle plates, and a multi-position hinge plate.
 0 Name: 40413 - mvpfront.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -740,7 +740,7 @@
 
 
 0 FILE 40413 - mvparm.ldr
-0 mvparm
+0 Mechanical arm with a turntable base, handle plates, clip elements, and a red conical bucket end.
 0 Name: 40413 - mvparm.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -782,7 +782,7 @@
 
 
 0 FILE 40413 - mvpshooter.ldr
-0 mvpshooter
+0 Turret assembly on a turntable with two mini shooting blasters, triggers, and trans-light-blue accents.
 0 Name: 40413 - mvpshooter.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -824,7 +824,7 @@
 
 
 0 FILE 40413 - tricky.ldr
-0 tricky
+0 Main body of the Tricky mech composed of plates, brackets, technic beams, and pins.
 0 Name: 40413 - tricky.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -928,7 +928,7 @@
 
 
 0 FILE 40413 - trickyarm1.ldr
-0 trickyarm1
+0 Long articulated arm built from axles, angle connectors, bushes, and friction pins.
 0 Name: 40413 - trickyarm1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -970,7 +970,7 @@
 
 
 0 FILE 40413 - trickyarm2.ldr
-0 trickyarm2
+0 Secondary articulated arm using axles, angle connectors, and bushes similar to the first arm.
 0 Name: 40413 - trickyarm2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -995,7 +995,7 @@
 
 
 0 FILE 40413 - 44301b.dat
-0 44301b
+0 Single moulded box part with three faces and missing adjacent edges used as a prebuilt element.
 0 Name: 40413 - 44301b.dat
 0 Author: Vincent Messenet [Cheenzo]
 0 !LDRAW_ORG Unofficial_Part
@@ -1014,7 +1014,7 @@
 4 16 -20 8 -10 -16 8 -6 16 8 -6 20 8 -10
 
 0 FILE 40413 - 3660a.dat
-0 3660a
+0 Reference submodel for a slope/brick part with no direct pieces of its own.
 0 Name: 40413 - 3660a.dat
 0 Author: James Jessiman
 0 !LDRAW_ORG Unofficial_Part

@@ -1,5 +1,5 @@
 0 FILE 350-3 - main.ldr
-0 main
+0 A Fabuland scene featuring an umbrella and broom accessory, referencing a town hall, furniture, vehicles, and animal characters.
 0 Name: 350-3 - main.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -29,7 +29,7 @@
 
 
 0 FILE 350-3 - townhall.ldr
-0 townhall
+0 A two-story Fabuland town hall building with windowed panels, brick walls, fence detailing, and a 'FIRE STATION' sticker sign.
 0 Name: 350-3 - townhall.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -193,7 +193,7 @@
 
 
 0 FILE 350-3 - chair.ldr
-0 chair
+0 A simple brick-built chair made from a 2x3 and a 1x2 brick.
 0 Name: 350-3 - chair.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -204,7 +204,7 @@
 1 16 -20 -24 0 0 0 -1 0 1 0 1 0 0 3004.dat
 
 0 FILE 350-3 - table.ldr
-0 table
+0 A small brick-built table with a 4x4 plate top supported by two 2x2 bricks.
 0 Name: 350-3 - table.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -217,7 +217,7 @@
 1 16 0 -32 0 1 0 0 0 1 0 0 0 1 3031.dat
 
 0 FILE 350-3 - sofa.ldr
-0 sofa
+0 A brick-built sofa with a 4x8 base plate and 1x4 and 1x2 brick armrests and back.
 0 Name: 350-3 - sofa.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -240,7 +240,7 @@
 1 16 -30 -48 -40 0 0 -1 0 1 0 1 0 0 3004.dat
 
 0 FILE 350-3 - firecar.ldr
-0 firecar
+0 A red fire truck built on a wheeled vehicle chassis with doors, a cab window, a turntable, and a grille sticker.
 0 Name: 350-3 - firecar.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -281,7 +281,7 @@
 
 
 0 FILE 350-3 - policecar.ldr
-0 policecar
+0 A blue police car built on a wheeled vehicle chassis with doors, a cab window, and a badge grille sticker.
 0 Name: 350-3 - policecar.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -312,7 +312,7 @@
 
 
 0 FILE 350-3 - leonardlion.ldr
-0 leonardlion
+0 A Leonard Lion Fabuland character figure with no direct pieces.
 0 Name: 350-3 - leonardlion.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -326,7 +326,7 @@
 1 4 0 -37 4 1 0 0 0 1 0 0 0 1 u9103.dat
 
 0 FILE 350-3 - bulldog.ldr
-0 bulldog
+0 A Bulldog Fabuland character figure with no direct pieces.
 0 Name: 350-3 - bulldog.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -340,7 +340,7 @@
 1 4 -7.735 -37 3.879 0.966 0 0.259 0 1 0 -0.259 0 0.966 u9103.dat
 
 0 FILE 350-3 - freddyfox.ldr
-0 freddyfox
+0 A Freddy Fox Fabuland character figure with no direct pieces.
 0 Name: 350-3 - freddyfox.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -354,7 +354,7 @@
 1 4 0 -37 4 1 0 0 0 1 0 0 0 1 u9103.dat
 
 0 FILE 350-3 - 958c01.dat
-0 958c01
+0 A complete umbrella assembly consisting of a stand with round base and an 8x8 canopy.
 0 Name: 350-3 - 958c01.dat
 0 Author: Steffen [Steffen]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -371,7 +371,7 @@
 1 16 0 -170 0 1 0 0 0 1 0 0 0 1 958.dat
 
 0 FILE 350-3 - 4000c01-f2.dat
-0 4000c01-f2
+0 A Fabuland fire ladder assembly with a red support bracket and a long pivotable ladder.
 0 Name: 350-3 - 4000c01-f2.dat
 0 Author: Chris Dee [cwdee]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -385,7 +385,7 @@
 1 16 0 -44 16 1 0 0 0 0.707 0.707 0 -0.707 0.707 350-3 - 4000.dat
 
 0 FILE 350-3 - 3999.dat
-0 3999
+0 A primitive geometric part composed of boxes, cylinders, and discs forming a rounded technical shape.
 0 Name: 350-3 - 3999.dat
 0 Author: Chris Dee [cwdee]
 0 !LDRAW_ORG Unofficial_Part
@@ -575,7 +575,7 @@
 4 16 -16 -4 -40 -16 -49.120998 6.879 -20 -49.120998 6.879 -20 -4 -40
 
 0 FILE 350-3 - 4000.dat
-0 4000
+0 A primitive geometric part composed of pivots, cylinders, and boxes forming a symmetrical technical shape.
 0 Name: 350-3 - 4000.dat
 0 Author: Chris Dee [cwdee]
 0 !LDRAW_ORG Unofficial_Part
@@ -837,7 +837,7 @@
 4 16 20 -8 -246 20 -8 -254 -20 -8 -254 -20 -8 -246
 
 0 FILE 48\350-3 - 1-24disc.dat
-0 1-24disc
+0 A primitive partial disc geometric element with no direct pieces.
 0 Name: 48\350-3 - 1-24disc.dat
 0 Author: Chris Dee [cwdee]
 0 !LDRAW_ORG Unofficial_48_Primitive

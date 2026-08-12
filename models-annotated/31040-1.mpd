@@ -1,5 +1,5 @@
 0 FILE 31040 - main.ldr
-0 main
+0 A small red vehicle built on a chassis with mudguards, grille tiles, wheel pins, and a submodel for the wheels.
 0 Name: 31040 - main.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -147,7 +147,7 @@
 0 // Tyre  6.4/ 75 x  8 Shallow Offset Tread with Centre Band (black)
 1 0 -40 -23 40 0 0 1 0 -1 0 1 0 0 31040 - 92409.dat
 0 FILE 31040 - 92409.dat
-0 92409
+0 A LEGO wheel assembly composed of an open cylinder rim with two stacked cones forming the tire tread on front and back sides.
 0 Name: 31040 - 92409.dat
 0 Author: Massimo Maso [Sirio]
 0 !LDRAW_ORG Unofficial_Part
@@ -272,7 +272,7 @@
 4 16 8.875 -19.033001 8 12.045 -17.202 8 5.358 -12.935 8 5.435 -20.285 8
 4 16 5.358 -12.935 8 0 -14 8 1.83 -20.92 8 5.435 -20.285 8
 0 FILE s\31040 - 92409s01.dat
-0 92409s01
+0 A wheel submodel with no direct pieces, serving as a structural or reference component for the wheel assembly.
 0 Name: s\31040 - 92409s01.dat
 0 Author: Massimo Maso [Sirio]
 0 !LDRAW_ORG Unofficial_Subpart

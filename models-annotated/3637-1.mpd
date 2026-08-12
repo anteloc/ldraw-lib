@@ -1,5 +1,5 @@
 0 FILE 3637 - main.ldr
-0 main
+0 A Fabuland set featuring a yellow barrel, a black ladder, a goat figure, and a red and yellow truck with curved roof and tow-hook chassis.
 0 Name: 3637 - main.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -13,7 +13,7 @@
 0 // Fabuland Ladder (black)
 1 0 67.258 -34.091 195.951 0.297 -0.86 0.415 0.951 0.305 -0.049 -0.084 0.41 0.908 3637 - 4206.dat
 0 FILE 3637 - gertrudgoat.ldr
-0 gertrudgoat
+0 An empty placeholder submodel for the Fabuland goat figure Gertrude.
 0 Name: 3637 - gertrudgoat.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -26,7 +26,7 @@
 1 15 22.565 -37 11.481 0.988 0 -0.156 0 1 0 0.156 0 0.988 u9100.dat
 1 4 12.688 -37 9.917 0.988 0 -0.156 0 1 0 0.156 0 0.988 u9103.dat
 0 FILE 3637 - truck.ldr
-0 truck
+0 A red and yellow Fabuland truck built on a chassis with tow-hook and wheels, featuring a curved window, hinged roof, and container boxes.
 0 Name: 3637 - truck.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -52,7 +52,7 @@
 0 // Container Box  6 x  6 (white)
 1 15 0 -48 100 0 0 -1 0 1 0 1 0 0 4452.dat
 0 FILE 3637 - u669.dat
-0 u669
+0 A primitive geometric part composed of cylinders, rings, a cone, and a disc forming a rounded stud-like shape.
 0 Name: 3637 - u669.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -567,7 +567,7 @@
 3 16 5.2551 70 -10.3966 1.7119 70 -11.3601 0 70 -6
 2 24 -5 70 11.3 -5.8 70 10.9
 0 FILE 3637 - 4206.dat
-0 4206
+0 A high-resolution primitive part built from many cylinders, rings, circles, chords, and spheres forming a complex curved surface.
 0 Name: 3637 - 4206.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -1166,7 +1166,7 @@
 0 // Circle 0.125 (main_colour)
 1 16 -30.5 -204 2.4748 1.33939 0 -3.23358 0 1 0 3.23358 0 1.33939 1-8edge.dat
 0 FILE 3637 - 4463.dat
-0 4463
+0 A primitive geometric part constructed from boxes, rectangles, and small discs forming an angular bracket-like shape.
 0 Name: 3637 - 4463.dat
 0 Author: Niels Karsdorp [nielsk]
 0 !LDRAW_ORG Unofficial_Part
@@ -1276,7 +1276,7 @@
 1 16 10 30 -5.1538 0 0 30 -30 0.137152 0 4.15381 0.99055 0 48\1-4edge.dat
 1 16 10 30 -5.1538 0 0 22.5 -22.5 0.137152 0 3.11535 0.99055 0 48\1-4edge.dat
 0 FILE 3637 - 4469.dat
-0 4469
+0 A primitive geometric part made of rectangles, cylinders, and boxes forming a curved and angular structural element.
 0 Name: 3637 - 4469.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -1335,7 +1335,7 @@
 4 16 -40 0 10 40 0 10 36 0 6 -36 0 6
 4 16 -40 0 -10 -36 0 -6 36 0 -6 40 0 -10
 0 FILE 3637 - 4468.dat
-0 4468
+0 A simple primitive part consisting of a small cylinder and rectangular plates forming a thin rounded edge.
 0 Name: 3637 - 4468.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -1379,7 +1379,7 @@
 0 // Rectangle with 1 Edge (main_colour)
 1 16 0 -63.16665 -88 0 0 2 -4.16665 0 0 0 -1 0 rect1.dat
 0 FILE s\3637 - 4468s01.dat
-0 4468s01
+0 A sub-part primitive built from cylinders, discs, chords, spheres, and a cone forming a detailed rounded cylindrical surface.
 0 Name: s\3637 - 4468s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart

@@ -1,5 +1,5 @@
 0 FILE 42058 - main.ldr
-0 main
+0 Complete stunt bike assembly with chassis, pull-back motor bike, tank, flexible ribbed hose, and a cardboard stunt ramp for jumps.
 0 Name: 42058 - main.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -10,7 +10,7 @@
 
 
 0 FILE 42058 - chassis.ldr
-0 chassis
+0 Structural frame built from long technic beams and reinforced 16-tooth gears connected by pins, forming the drivetrain backbone.
 0 Name: 42058 - chassis.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -49,7 +49,7 @@
 1 1 -40 0 -140 -1 0 0 0 -1 0 0 0 1 6558.dat
 
 0 FILE 42058 - tank.ldr
-0 tank
+0 Fuel tank bodywork using yellow fairing panels and bent liftarms with clear and light-blue teeth for decorative accents.
 0 Name: 42058 - tank.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -121,7 +121,7 @@
 
 
 0 FILE 42058 - tankmid.ldr
-0 tankmid
+0 Mid-section of the tank built from a large bent liftarm and multiple 0.5 liftarms reinforced with axles and pins.
 0 Name: 42058 - tankmid.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -158,7 +158,7 @@
 
 
 0 FILE 42058 - technicRibHose-1.ldr
-0 technicRibHose-1
+0 Flexible ribbed hose segment defined by generated cylindrical primitives forming a curved tubing element.
 0 Name: 42058 - technicRibHose-1.ldr
 0 Author: LDCad
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -16047,7 +16047,7 @@
 
 
 0 FILE 42058 - Bike.ldr
-0 Bike
+0 Pull-back motor stunt bike with two large spoked wheels and rubber tyres, built on a bent liftarm frame with axles and bushes.
 0 Name: 42058 - Bike.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -16213,7 +16213,7 @@
 1 179 60 -10.392 -174 1 0 0 0 0.866 0.5 0 -0.5 0.866 42058 - technicRibHose-1.ldr
 
 0 FILE 42058 - ramp.ldr
-0 ramp
+0 Stunt jump ramp consisting of a formed cardboard ramp with yellow chevrons supported by two technic beams and flexible axle joiners.
 0 Name: 42058 - ramp.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -16242,7 +16242,7 @@
 1 14 -132 0 -80 0 0 -1 1 0 0 0 -1 0 32123a.dat
 
 0 FILE 42058 - ldcRibHoseSeg.dat
-0 ldcRibHoseSeg
+0 Low-level ribbed hose segment primitive made of cylinders and rings forming a single ribbed section.
 0 Name: 42058 - ldcRibHoseSeg.dat
 0 Author: LDCad
 0 UNOFFICIAL PART
@@ -16292,7 +16292,7 @@
 
 
 0 FILE 42058 - 24316.dat
-0 24316
+0 Primitive axle-and-disc subpart combining a cylinder, disc, and axle shape.
 0 Name: 42058 - 24316.dat
 0 Author: Owen Burgoyne [C3POwen]
 0 !LDRAW_ORG Unofficial_Part
@@ -16309,7 +16309,7 @@
 
 
 0 FILE 42058 - 28884c01.dat
-0 28884c01
+0 Composite part definition with no direct pieces, serving as an assembly reference.
 0 Name: 42058 - 28884c01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -16341,7 +16341,7 @@
 
 
 0 FILE s\42058 - 98138s01.dat
-0 98138s01
+0 Round tile subpart built from concentric rings and an open cylinder forming a smooth round tile.
 0 Name: s\42058 - 98138s01.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -16370,7 +16370,7 @@
 
 
 0 FILE 42058 - t02o0526.dat
-0 t02o0526
+0 Primitive torus segment with major radius 19 and minor radius 1, generated for curved surface detailing.
 0 Name: 42058 - t02o0526.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -16497,7 +16497,7 @@
 
 
 0 FILE s\42058 - u9331c01s01.dat
-0 u9331c01s01
+0 Subpart composed of rectangles and edge lines defining flat geometric surface details.
 0 Name: s\42058 - u9331c01s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -17164,7 +17164,7 @@
 
 
 0 FILE s\42058 - u9331c01s02.dat
-0 u9331c01s02
+0 Subpart definition with no direct pieces, serving as an assembly reference.
 0 Name: s\42058 - u9331c01s02.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -17188,7 +17188,7 @@
 
 
 0 FILE s\42058 - u9331c01s03.dat
-0 u9331c01s03
+0 Subpart definition with no direct pieces, serving as an assembly reference.
 0 Name: s\42058 - u9331c01s03.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart

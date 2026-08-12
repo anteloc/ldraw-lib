@@ -1,5 +1,5 @@
 0 FILE 42039 - 24 Hours Race Car.ldr
-0 24 Hours Race Car
+0 A detailed Technic 24 Hours Race Car featuring a functional drivetrain with differential, CV joints, suspension, engine, steering, bodywork panels and flexible axles.
 0 Name: 42039 - 24 Hours Race Car.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1511,7 +1511,7 @@
 0 STEP
 
 0 FILE 42039 - shock-06_5L-hard-1.ldr
-0 shock-06_5L-hard-1
+0 A 6.5L hard shock absorber assembly with a cylinder and piston rod.
 0 Name: 42039 - shock-06_5L-hard-1.ldr
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1556,7 +1556,7 @@
 1 494 0 56 0 1 0 0 0 1 0 0 0 1 42039 - shock-06_5L-hard-1_springMesh.ldr
 
 0 FILE 42039 - shock-06_5L-hard-1_springMesh.ldr
-0 shock-06_5L-hard-1_springMesh
+0 A 5-section coil spring mesh approximating 17.6mm length for a 6.5L shock absorber.
 0 Name: 42039 - shock-06_5L-hard-1_springMesh.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -7387,7 +7387,7 @@
 5 24 -7.75 43.2558 0.1874 -7.2197 42.7199 0.0164 -7.75 42.5004 0.0232 -7 43.25 0
 
 0 FILE 42039 - motor.ldr
-0 motor
+0 A Technic V8 engine assembly with 8 cylinders, pistons, connecting rods, and dual crankshafts.
 0 Name: 42039 - motor.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -7532,7 +7532,7 @@
 
 
 0 FILE 42039 - frontchassis.ldr
-0 frontchassis
+0 A front chassis substructure built from long liftarms, cross blocks, and an open-center beam.
 0 Name: 42039 - frontchassis.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -7596,7 +7596,7 @@
 
 
 0 FILE 42039 - technicRibHose-1.ldr
-0 technicRibHose-1
+0 An empty placeholder submodel for a ribbed hose.
 0 Name: 42039 - technicRibHose-1.ldr
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -7618,7 +7618,7 @@
 0 !LDCAD GENERATED [generator=LDCad 1.4b]
 
 0 FILE 42039 - technicRibHoseLQ-1.ldr
-0 technicRibHoseLQ-1
+0 A long ribbed hose assembly of 43 segments with end caps, approximately 90mm in length.
 0 Name: 42039 - technicRibHoseLQ-1.ldr
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -7734,7 +7734,7 @@
 1 16 -77.012 -162.842 31.8162 0.9061 0 0.423 -0.423 0 0.9061 0 -1 0 79.dat
 
 0 FILE 42039 - technicRibHoseLQ-2.ldr
-0 technicRibHoseLQ-2
+0 A long ribbed hose assembly of 43 segments with end caps, approximately 89.5mm in length.
 0 Name: 42039 - technicRibHoseLQ-2.ldr
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -7850,7 +7850,7 @@
 1 16 -77.012 -162.842 -31.7205 0.9061 0 -0.423 -0.423 0 -0.9061 0 1 0 79.dat
 
 0 FILE 42039 - frontfloor.ldr
-0 frontfloor
+0 A front floor panel section using curved panels, beams, and cross blocks.
 0 Name: 42039 - frontfloor.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -7918,7 +7918,7 @@
 
 
 0 FILE 42039 - frontaxle.ldr
-0 frontaxle
+0 A front axle assembly with independent suspension arms, steering bearings, towball joints, and shock mounting points.
 0 Name: 42039 - frontaxle.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -8053,7 +8053,7 @@
 
 
 0 FILE 42039 - shock-06_5L-hard-2.ldr
-0 shock-06_5L-hard-2
+0 A 6.5L hard shock absorber assembly with a cylinder and piston rod.
 0 Name: 42039 - shock-06_5L-hard-2.ldr
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -8098,7 +8098,7 @@
 1 494 0 56 0 1 0 0 0 1 0 0 0 1 42039 - shock-06_5L-hard-2_springMesh.ldr
 
 0 FILE 42039 - shock-06_5L-hard-2_springMesh.ldr
-0 shock-06_5L-hard-2_springMesh
+0 A 5-section coil spring mesh approximating 15.6mm length for a 6.5L shock absorber.
 0 Name: 42039 - shock-06_5L-hard-2_springMesh.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -13929,7 +13929,7 @@
 5 24 -7.75 38.2558 0.1874 -7.2197 37.7199 0.0164 -7.75 37.5004 0.0232 -7 38.25 0
 
 0 FILE 42039 - steeringrack.ldr
-0 steeringrack
+0 A steering rack mechanism with gear rack, steering links, towball pins, and a drive gear.
 0 Name: 42039 - steeringrack.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -13983,7 +13983,7 @@
 
 
 0 FILE 42039 - frontaxletop.ldr
-0 frontaxletop
+0 An upper front axle support structure using bent liftarms, cross blocks, and T-beams.
 0 Name: 42039 - frontaxletop.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -14036,7 +14036,7 @@
 1 1 20 -22.9438 -82.1661 0 0 1 0.9455 -0.3256 0 0.3256 0.9455 0 43093.dat
 
 0 FILE 42039 - doorlift.ldr
-0 doorlift
+0 A door-lift mechanism using bevel gears, a toggle joint connector, and axles.
 0 Name: 42039 - doorlift.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -14067,7 +14067,7 @@
 
 
 0 FILE 42039 - doorlift2.ldr
-0 doorlift2
+0 A worm-gear-driven door-lift reduction mechanism with an 8-tooth output gear.
 0 Name: 42039 - doorlift2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -14112,7 +14112,7 @@
 
 
 0 FILE 42039 - hoodlift.ldr
-0 hoodlift
+0 A hood-lift mechanism using bevel gears and a toggle joint connector on axles.
 0 Name: 42039 - hoodlift.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -14142,7 +14142,7 @@
 
 
 0 FILE 42039 - hoodlift2.ldr
-0 hoodlift2
+0 A worm-gear-driven hood-lift reduction mechanism with a 24-tooth output gear.
 0 Name: 42039 - hoodlift2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -14192,7 +14192,7 @@
 1 0 0 0 220 1 0 0 0 1 0 0 0 1 42039 - hoodlift.ldr
 
 0 FILE 42039 - seat.ldr
-0 seat
+0 A racing seat assembly built from bent red liftarms forming a backrest and base.
 0 Name: 42039 - seat.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -14228,7 +14228,7 @@
 
 
 0 FILE 42039 - technicFlexAxle-1.ldr
-0 technicFlexAxle-1
+0 A long flexible axle assembly of 78 segments, approximately 154mm in length.
 0 Name: 42039 - technicFlexAxle-1.ldr
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -17946,7 +17946,7 @@
 5 24 236.3044 0 -1.5308 236.3044 -3.9292 -1.5308 236 0 0 237.1716 0 -2.8284
 
 0 FILE 42039 - technicFlexAxle-2.ldr
-0 technicFlexAxle-2
+0 A flexible axle assembly of 40 segments, approximately 88mm in length.
 0 Name: 42039 - technicFlexAxle-2.ldr
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -20370,7 +20370,7 @@
 5 24 39.0847 -196.5585 72.6515 37.7347 -193.752 70.9939 39.3663 -195.6801 73.9104 38.2831 -197.5038 71.7029
 
 0 FILE 42039 - technicFlexAxle-3.ldr
-0 technicFlexAxle-3
+0 A flexible axle assembly of 40 segments, approximately 89mm in length.
 0 Name: 42039 - technicFlexAxle-3.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -22795,7 +22795,7 @@
 5 24 -32.797 -200.1179 74.7544 -31.3942 -197.2018 73.0317 -32.5162 -199.4399 76.1319 -33.5979 -200.4919 73.4681
 
 0 FILE 42039 - headlight1.ldr
-0 headlight1
+0 A bright-green headlight housing substructure with fairing panels and mounting beams.
 0 Name: 42039 - headlight1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -22848,7 +22848,7 @@
 
 
 0 FILE 42039 - headlight2.ldr
-0 headlight2
+0 A headlight assembly with clear trans dishes serving as lenses and bushings for mounting.
 0 Name: 42039 - headlight2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -22885,7 +22885,7 @@
 
 
 0 FILE 42039 - mudguard1.ldr
-0 mudguard1
+0 A bright-green mudguard assembly using curved panels mounted on cross blocks and an axle.
 0 Name: 42039 - mudguard1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -22907,7 +22907,7 @@
 1 10 -50 20 0 1 0 0 0 1 0 0 0 1 42003.dat
 
 0 FILE 42039 - headlight3.ldr
-0 headlight3
+0 Right-side headlight assembly with bright green fairing panels and cross blocks mounted on bent liftarms.
 0 Name: 42039 - headlight3.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -22959,7 +22959,7 @@
 
 
 0 FILE 42039 - headlight4.ldr
-0 headlight4
+0 Headlight unit featuring clear trans dish lenses mounted on a T-shaped beam with axle and bush fittings.
 0 Name: 42039 - headlight4.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -22995,7 +22995,7 @@
 
 
 0 FILE 42039 - mudguard2.ldr
-0 mudguard2
+0 Curved mudguard panel assembly built from two long bright green panels on cross blocks and an axle connector.
 0 Name: 42039 - mudguard2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -23017,7 +23017,7 @@
 1 10 -50 20 0 1 0 0 0 1 0 0 0 1 42003.dat
 
 0 FILE 42039 - technicFlexAxle-4.ldr
-0 technicFlexAxle-4
+0 Flexible Technic axle component generated by LDCad, approximately 144mm long with 38 segments.
 0 Name: 42039 - technicFlexAxle-4.ldr
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -25373,7 +25373,7 @@
 5 24 57.0269 -341.6055 74.5805 55.8423 -338.3505 73.1793 57.1169 -340.9622 75.9997 56.3782 -342.359 73.3775
 
 0 FILE 42039 - technicFlexAxle-5.ldr
-0 technicFlexAxle-5
+0 Flexible Technic axle component generated by LDCad, approximately 144mm long with 38 segments.
 0 Name: 42039 - technicFlexAxle-5.ldr
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -27729,7 +27729,7 @@
 5 24 56.9138 -341.2941 -77.6569 55.6805 -337.9056 -76.1983 57.3959 -341.7292 -76.2377 55.9326 -341.1336 -78.86
 
 0 FILE 42039 - hood.ldr
-0 hood
+0 Hood structure composed of multiple liftarms, bent beams, and long pins forming the front bodywork framework.
 0 Name: 42039 - hood.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -27829,7 +27829,7 @@
 
 
 0 FILE 42039 - hood2.ldr
-0 hood2
+0 Hood side panel built from long white beams and smooth fairing panels with connecting pins and axles.
 0 Name: 42039 - hood2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -27881,7 +27881,7 @@
 
 
 0 FILE 42039 - hood3.ldr
-0 hood3
+0 Hood section with white short fairing panels supported by long black beams and angle connectors.
 0 Name: 42039 - hood3.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -27969,7 +27969,7 @@
 
 
 0 FILE 42039 - mudguard3.ldr
-0 mudguard3
+0 Curved mudguard assembly using two long bright green panels joined by cross blocks on an axle.
 0 Name: 42039 - mudguard3.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -27989,7 +27989,7 @@
 1 15 0 0 0 1 0 0 0 -1 0 0 0 -1 62462.dat
 
 0 FILE 42039 - rear1.ldr
-0 rear1
+0 Rear bodywork section with bright green medium fairing panels, a liftarm, and angle connectors.
 0 Name: 42039 - rear1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -28030,7 +28030,7 @@
 
 
 0 FILE 42039 - rear2.ldr
-0 rear2
+0 Mirror rear bodywork section with bright green medium fairing panels, a liftarm, and angle connectors.
 0 Name: 42039 - rear2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -28069,7 +28069,7 @@
 
 
 0 FILE 42039 - 33299b.dat
-0 Technic Beam  3 x  0.5 Liftarm with Boss and Pin Semi-Reduced
+0 Part definition for the Technic Beam 3 x 0.5 Liftarm with boss and semi-reduced axle hole, composed of primitive shapes.
 0 Name: 42039 - 33299b.dat
 0 Author: Santeri Piippo [arezey]
 0 !LDRAW_ORG Unofficial_Part
@@ -28107,7 +28107,7 @@
 
 
 0 FILE s\42039 - 33299s01.dat
-0 ~Technic Beam  3 x  0.5 Liftarm with Boss and Pin Common
+0 Subpart defining the common geometry of the Technic Beam 3 x 0.5 Liftarm using cylinders, rings, and peg hole primitives.
 0 Name: s\42039 - 33299s01.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Subpart

@@ -1,5 +1,5 @@
 0 FILE 42099 - main.ldr
-0 main
+0 Main assembly of a 4x4 RC crawler featuring four large tractor wheels and tyres mounted on stopped axles and bushings.
 0 Name: 42099 - main.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -35,7 +35,7 @@
 
 
 0 FILE 42099 - frontaxle.ldr
-0 frontaxle
+0 Front axle assembly built from beams, liftarms, and gears providing drive and structural support.
 0 Name: 42099 - frontaxle.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -421,7 +421,7 @@
 
 
 0 FILE 42099 - frontaxle2.ldr
-0 frontaxle2
+0 Front axle suspension arms and liftarm supports with cross blocks and axles.
 0 Name: 42099 - frontaxle2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -494,7 +494,7 @@
 
 
 0 FILE 42099 - steerhub1.ldr
-0 steerhub1
+0 Front-left steering hub with planetary wheel bearing, CV joint, and towball steering links.
 0 Name: 42099 - steerhub1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -525,7 +525,7 @@
 
 
 0 FILE 42099 - steerhub2.ldr
-0 steerhub2
+0 Front-right steering hub with planetary wheel bearing, CV joint, and towball steering links.
 0 Name: 42099 - steerhub2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -556,7 +556,7 @@
 
 
 0 FILE 42099 - steerrack.ldr
-0 steerrack
+0 Steering rack mechanism using a gear rack, steering links, and towball connectors.
 0 Name: 42099 - steerrack.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -591,7 +591,7 @@
 
 
 0 FILE 42099 - steerlink.ldr
-0 steerlink
+0 Steering link assembly connecting liftarms to steering links via towball pins.
 0 Name: 42099 - steerlink.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -621,7 +621,7 @@
 
 
 0 FILE 42099 - frontaxle3.ldr
-0 frontaxle3
+0 Front axle brace with H-beam and split cross blocks reinforcing the axle structure.
 0 Name: 42099 - frontaxle3.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -645,7 +645,7 @@
 
 
 0 FILE 42099 - frontmotor.ldr
-0 frontmotor
+0 Front drive motor mounting frame using long beams, T-beams, and a 20-tooth gear.
 0 Name: 42099 - frontmotor.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -701,7 +701,7 @@
 
 
 0 FILE 42099 - controlPlusMotorXL-LQ-1.ldr
-0 controlPlusMotorXL-LQ-1
+0 Control+ XL electric motor with cable and flexible routing subpart.
 0 Name: 42099 - controlPlusMotorXL-LQ-1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -753,7 +753,7 @@
 
 
 0 FILE 42099 - controlPlusMotorXL-LQ-1_subPart1.ldr
-0 controlPlusMotorXL-LQ-1_subPart1
+0 Flexible cable routing subpart for the XL motor (223 segments).
 0 Name: 42099 - controlPlusMotorXL-LQ-1_subPart1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -995,7 +995,7 @@
 
 
 0 FILE 42099 - frontmotoraxle.ldr
-0 frontmotoraxle
+0 Front motor drive axle with a 12-tooth gear, angle connector, and connector block.
 0 Name: 42099 - frontmotoraxle.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1027,7 +1027,7 @@
 
 
 0 FILE 42099 - steermotor.ldr
-0 steermotor
+0 Front steering motor assembly with bent liftarms, a 12-tooth gear, and mounting frame.
 0 Name: 42099 - steermotor.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1085,7 +1085,7 @@
 
 
 0 FILE 42099 - controlPlusMotorL-LQ-1.ldr
-0 controlPlusMotorL-LQ-1
+0 Control+ L electric motor with cable and flexible routing subpart.
 0 Name: 42099 - controlPlusMotorL-LQ-1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1137,7 +1137,7 @@
 
 
 0 FILE 42099 - controlPlusMotorL-LQ-1_subPart1.ldr
-0 controlPlusMotorL-LQ-1_subPart1
+0 Flexible cable routing subpart for the L motor (198 segments).
 0 Name: 42099 - controlPlusMotorL-LQ-1_subPart1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1354,7 +1354,7 @@
 
 
 0 FILE 42099 - steermotor2.ldr
-0 steermotor2
+0 Steering motor linkage with a long axle, orange liftarms, and stop-bush pins.
 0 Name: 42099 - steermotor2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1391,7 +1391,7 @@
 
 
 0 FILE 42099 - frontturntable.ldr
-0 frontturntable
+0 Front axle pivot turntable (60-tooth) with mounting beams and cross block.
 0 Name: 42099 - frontturntable.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1419,7 +1419,7 @@
 
 
 0 FILE 42099 - rearaxle.ldr
-0 rearaxle
+0 Rear axle assembly with differential, CV joints, bevel gears, and drive gearing.
 0 Name: 42099 - rearaxle.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1720,7 +1720,7 @@
 
 
 0 FILE 42099 - rearaxle2.ldr
-0 rearaxle2
+0 Rear axle suspension arm supports with bent liftarms and cross-pinned beams.
 0 Name: 42099 - rearaxle2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1753,7 +1753,7 @@
 
 
 0 FILE 42099 - rearaxle3.ldr
-0 rearaxle3
+0 Rear axle gear drive section with 20-tooth and 12-tooth gears on a mounted beam frame.
 0 Name: 42099 - rearaxle3.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1793,7 +1793,7 @@
 
 
 0 FILE 42099 - rearaxle4.ldr
-0 rearaxle4
+0 Rear axle mounting bracket with triangle liftarms, connector block, and bent beams.
 0 Name: 42099 - rearaxle4.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1849,7 +1849,7 @@
 
 
 0 FILE 42099 - rearmotor.ldr
-0 rearmotor
+0 Rear drive motor mounting frame using long beams, a 20-tooth gear, and cross block.
 0 Name: 42099 - rearmotor.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1908,7 +1908,7 @@
 
 
 0 FILE 42099 - controlPlusMotorXL-LQ-2.ldr
-0 controlPlusMotorXL-LQ-2
+0 Second Control+ XL electric motor with cable and flexible routing subpart.
 0 Name: 42099 - controlPlusMotorXL-LQ-2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1961,7 +1961,7 @@
 
 
 0 FILE 42099 - controlPlusMotorXL-LQ-2_subPart1.ldr
-0 controlPlusMotorXL-LQ-2_subPart1
+0 Flexible cable routing subpart for the second XL motor (211 segments).
 0 Name: 42099 - controlPlusMotorXL-LQ-2_subPart1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2191,7 +2191,7 @@
 
 
 0 FILE 42099 - rearturntable.ldr
-0 rearturntable
+0 Rear axle pivot turntable (60-tooth) with mounting liftarms and pin connectors.
 0 Name: 42099 - rearturntable.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2229,7 +2229,7 @@
 
 
 0 FILE 42099 - chassis.ldr
-0 chassis
+0 Main chassis frame built from long technic beams and connectors housing the Electric Control+ Hub.
 0 Name: 42099 - chassis.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2359,7 +2359,7 @@
 
 
 0 FILE 42099 - chassis2.ldr
-0 chassis2
+0 Small chassis cross-brace subassembly using cross blocks, axles, and T-shaped beams.
 0 Name: 42099 - chassis2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2396,7 +2396,7 @@
 
 
 0 FILE 42099 - chassis3.ldr
-0 chassis3
+0 Chassis support subassembly with bent liftarms and long beams reinforcing the frame structure.
 0 Name: 42099 - chassis3.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2457,7 +2457,7 @@
 
 
 0 FILE 42099 - bodywork.ldr
-0 bodywork
+0 Lower bodywork section featuring large black panels and transparent red plates forming rear lights.
 0 Name: 42099 - bodywork.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2622,7 +2622,7 @@
 
 
 0 FILE 42099 - bodywork2.ldr
-0 bodywork2
+0 Bodywork side rail assembly using long beams and angle connectors to form support struts.
 0 Name: 42099 - bodywork2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2658,7 +2658,7 @@
 
 
 0 FILE 42099 - bodywork3.ldr
-0 bodywork3
+0 Orange bent liftarm and connector subassembly forming a small bodywork mounting bracket.
 0 Name: 42099 - bodywork3.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2686,7 +2686,7 @@
 
 
 0 FILE 42099 - door1.ldr
-0 door1
+0 Right door assembly with orange trapezium panel and fairing panels mounted on a liftarm frame.
 0 Name: 42099 - door1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2725,7 +2725,7 @@
 
 
 0 FILE 42099 - bodywork4.ldr
-0 bodywork4
+0 Small dark bluish grey bent bracket subassembly reinforcing bodywork mounting points.
 0 Name: 42099 - bodywork4.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2751,7 +2751,7 @@
 
 
 0 FILE 42099 - bodywork3b.ldr
-0 bodywork3b
+0 Mirrored orange bent liftarm and connector subassembly forming the opposite bodywork mounting bracket.
 0 Name: 42099 - bodywork3b.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2779,7 +2779,7 @@
 
 
 0 FILE 42099 - door1b.ldr
-0 door1b
+0 Left door assembly with mirrored orange trapezium panel and fairing panels mounted on a liftarm frame.
 0 Name: 42099 - door1b.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2818,7 +2818,7 @@
 
 
 0 FILE 42099 - bodywork4b.ldr
-0 bodywork4b
+0 Mirrored dark bluish grey bent bracket subassembly reinforcing the opposite bodywork mounting points.
 0 Name: 42099 - bodywork4b.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2844,7 +2844,7 @@
 
 
 0 FILE 42099 - roof.ldr
-0 roof
+0 Roof structure composed of large orange panels and smooth panels supported by axles and angle connectors.
 0 Name: 42099 - roof.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2939,7 +2939,7 @@
 
 
 0 FILE 42099 - bonnet.ldr
-0 bonnet
+0 Front bonnet assembly with large orange panels and wide fairing panels mounted on a liftarm frame.
 0 Name: 42099 - bonnet.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3058,7 +3058,7 @@
 
 
 0 FILE 42099 - headlight.ldr
-0 headlight
+0 Right headlight assembly featuring a clear dish lens mounted on angle connectors and cross blocks.
 0 Name: 42099 - headlight.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3094,7 +3094,7 @@
 
 
 0 FILE 42099 - grille.ldr
-0 grille
+0 Front grille assembly formed by angle connectors and elbow cylinders arranged in an angled grid.
 0 Name: 42099 - grille.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3119,7 +3119,7 @@
 
 
 0 FILE 42099 - sidebar.ldr
-0 sidebar
+0 Right side bar assembly using a long axle and toggle joint connectors forming a side step rail.
 0 Name: 42099 - sidebar.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3143,7 +3143,7 @@
 
 
 0 FILE 42099 - headlightb.ldr
-0 headlightb
+0 Left headlight assembly mirroring the right, with a clear dish lens on angle connectors and cross blocks.
 0 Name: 42099 - headlightb.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3179,7 +3179,7 @@
 
 
 0 FILE 42099 - grilleb.ldr
-0 grilleb
+0 Mirrored front grille assembly using angle connectors and elbow cylinders in an angled grid.
 0 Name: 42099 - grilleb.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3204,7 +3204,7 @@
 
 
 0 FILE 42099 - rigid3mmHose-1.ldr
-0 rigid3mmHose-1
+0 Generated flexible rigid hose model composed of many curved primitive segments forming a 113mm tube.
 0 Name: 42099 - rigid3mmHose-1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3780,7 +3780,7 @@
 
 
 0 FILE 42099 - toplightbar.ldr
-0 toplightbar
+0 Top light bar assembly with a long red axle supporting clear transparent plates and tiles as lenses.
 0 Name: 42099 - toplightbar.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3851,7 +3851,7 @@
 
 
 0 FILE 42099 - sidebarb.ldr
-0 sidebarb
+0 Left side bar assembly mirroring the right, using a long axle and toggle joint connectors as a side step rail.
 0 Name: 42099 - sidebarb.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3875,7 +3875,7 @@
 
 
 0 FILE 42099 - 18575.dat
-0 18575
+0 Primitive part definition for a technic axle connector with open axle holes and rectangular edges.
 0 Name: 42099 - 18575.dat
 0 Author: Merlijn Wissink [legolijntje]
 0 !LDRAW_ORG Unofficial_Part
@@ -3997,7 +3997,7 @@
 1 16 1.5 5.7018 0 0 0 0.5 0 1 -0.0998 -10 0 0 rect3.dat
 
 0 FILE 42099 - 52730.dat
-0 52730
+0 Primitive part definition for a technic axle component with cylindrical surfaces, cones, and rings.
 0 Name: 42099 - 52730.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -4044,7 +4044,7 @@
 1 16 0 0 -10.6 3 0 0 0 0 3 0 1 0 4-4cylc.dat
 
 0 FILE 42099 - 52731.dat
-0 52731
+0 Primitive part definition for a technic bush with semi-reduced axle hole, discs, and rectangles.
 0 Name: 42099 - 52731.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -4112,7 +4112,7 @@
 2 24 -3.4439 -8.5 50 3.4439 -8.5 50
 
 0 FILE 42099 - 39793.dat
-0 39793
+0 Primitive part definition for a technic connector with multiple peg holes and long connector holes.
 0 Name: 42099 - 39793.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -6181,7 +6181,7 @@
 2 24 10 29 7 27 29 7
 
 0 FILE 42099 - 41089.dat
-0 41089
+0 A submodel composed of cylinders, chords, discs, and various rectangular panels forming a rounded geometric part.
 0 Name: 42099 - 41089.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -6333,7 +6333,7 @@
 4 16 10 -2.5 -3 12 -12 -3 -12 -12 -3 -10 -2.5 -3
 
 0 FILE 42099 - 40940.dat
-0 40940
+0 A 9V geared electric Technic motor with an axle bush.
 0 Name: 42099 - 40940.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -6345,7 +6345,7 @@
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 47157.dat
 
 0 FILE s\42099 - 49283s01.dat
-0 49283s01
+0 A submodel of circles, a cylinder, and rectangular panels forming a small rounded element.
 0 Name: s\42099 - 49283s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -6393,7 +6393,7 @@
 4 16 0 -10.5 -3 0 -27 -3 5 -26.5 -3 6.2076 -10.5 -3
 
 0 FILE 8\42099 - t04i4000.dat
-0 t04i4000
+0 A torus primitive segment with major radius 5 and minor radius 2 covering a quarter sweep.
 0 Name: 8\42099 - t04i4000.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -6426,7 +6426,7 @@
 0 // Build by LDPartEditor (PrimGen 2.X)
 
 0 FILE 42099 - npeghol5.dat
-0 npeghol5
+0 A simplified non-physical peg hole element with rings, discs, and open cylinders.
 0 Name: 42099 - npeghol5.dat
 0 Author: Guy Vivan [guyvivan]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -6480,7 +6480,7 @@
 5 24 -3.4443 1 -1.6849 -3.4443 0 -1.6849 -6.3639 1 -3.6361 -2 1 -1.397
 
 0 FILE 42099 - u9479c01.dat
-0 u9479c01
+0 A see-through blocker element used as a visibility occluder.
 0 Name: 42099 - u9479c01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -6496,7 +6496,7 @@
 4 256 -10 2.5 127 -10 -2.5 127 10 -2.5 127 10 2.5 127
 
 0 FILE 42099 - u9479.dat
-0 u9479
+0 A Technic connector part with connector holes, boxes, cylinders, and rectangular panels.
 0 Name: 42099 - u9479.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -6704,7 +6704,7 @@
 4 16 17 27 32 27 27 8 27 27 50 17 27 50
 
 0 FILE 42099 - u9485.dat
-0 u9485
+0 A cylindrical Technic part with rings, discs, and rectangular panels.
 0 Name: 42099 - u9485.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -6803,7 +6803,7 @@
 1 16 -17 0 8 0 1 0 0 0 -26.364 -1 0 0 rect1.dat
 
 0 FILE s\42099 - u9485s02.dat
-0 u9485s02
+0 A submodel with a connector hole, ring, cylinder, and disc forming a circular mount.
 0 Name: s\42099 - u9485s02.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -6844,7 +6844,7 @@
 1 16 22 0 7 5 0 0 0 0 -27 0 1 0 rect1.dat
 
 0 FILE s\42099 - u9485s01.dat
-0 u9485s01
+0 A detailed submodel of a Technic part with a long connector hole, cylinders, circles, and chords.
 0 Name: s\42099 - u9485s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -6942,7 +6942,7 @@
 4 16 27 27 -70 27 19 -70 27 14 -65 27 27 7
 
 0 FILE 42099 - u9486.dat
-0 u9486
+0 A simple rectangular plate element with parallel edges.
 0 Name: 42099 - u9486.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -7009,7 +7009,7 @@
 4 16 -10 -9 25 -12.6 -3 25 -12.6 3 25 -10 9 25
 
 0 FILE 42099 - 25561.dat
-0 25561
+0 A multi-colored part combining main, transparent, and chrome-blue rectangular and cylindrical sections.
 0 Name: 42099 - 25561.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -7608,7 +7608,7 @@
 3 16 47.004101 -50 -16.4256 50 -50 -9.5 40.900002 -50 -15.2
 
 0 FILE s\42099 - 25561s01.dat
-0 25561s01
+0 A complex submodel with cylinders, cones, rings, discs, and chords forming a detailed cylindrical body.
 0 Name: s\42099 - 25561s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -8044,7 +8044,7 @@
 1 16 37.5 -7.5 87.5 0 -1 -2.5 0 0 2.5 -1.5 0 0 rect.dat
 
 0 FILE 42099 - 34745.dat
-0 34745
+0 A Mindstorms EV3 square button element.
 0 Name: 42099 - 34745.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -8056,7 +8056,7 @@
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 99146.dat
 
 0 FILE 42099 - 25560.dat
-0 25560
+0 A part with cylinders, circles, rings, and rectangular panels forming a contoured element.
 0 Name: 42099 - 25560.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -8230,7 +8230,7 @@
 4 16 -66 -20 -77 66 -20 -77 48 10 -77 -48 10 -77
 
 0 FILE s\42099 - 25560s01.dat
-0 25560s01
+0 A detailed submodel with connector holes, cylinders, rings, and numerous rectangular faces forming a large Technic element.
 0 Name: s\42099 - 25560s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -8858,7 +8858,7 @@
 2 24 50 -24 -77 50 -34 -77
 
 0 FILE 42099 - 24849.dat
-0 24849
+0 A large part with simplified internal structure composed of cylinders, rings, chords, and many rectangular panels.
 0 Name: 42099 - 24849.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -9580,7 +9580,7 @@
 2 24 -58 -34.400002 73 -52 -37.599998 73
 
 0 FILE 42099 - 24853.dat
-0 24853
+0 A box-based part with rectangular faces, edges, and panels forming a structured element.
 0 Name: 42099 - 24853.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -9742,7 +9742,7 @@
 2 24 -5 -4 78 5 -4 78
 
 0 FILE s\42099 - 24853s01.dat
-0 24853s01
+0 A submodel of boxes and rectangular panels with a cylinder and chord forming a detailed bracket.
 0 Name: s\42099 - 24853s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -9982,7 +9982,7 @@
 5 24 16 -15.9801 -85.202003 14 -15.9801 -85.202003 16 -17 -84.599998 16 -14 -85.400002
 
 0 FILE s\42099 - 24853s02.dat
-0 24853s02
+0 An empty submodel with no direct pieces.
 0 Name: s\42099 - 24853s02.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -10014,7 +10014,7 @@
 2 24 9 0 -21 9 0 -19
 
 0 FILE 42099 - npeghol3.dat
-0 npeghol3
+0 A simplified non-physical peg hole element with rings, cylinders, and boxed faces.
 0 Name: 42099 - npeghol3.dat
 0 Author: Guy Vivan [guyvivan]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -10059,7 +10059,7 @@
 1 16 2.7222 0.5 -3.041 0 -0.72215 0 0.5 0 0 0 0.14395 1.5 box2-7.dat
 
 0 FILE s\42099 - 33299s01.dat
-0 33299s01
+0 A detailed submodel with cylinders, circles, rings, discs, and a Technic pin forming a connector body.
 0 Name: s\42099 - 33299s01.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Subpart

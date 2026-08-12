@@ -1,5 +1,5 @@
 0 FILE 31088 - Main.ldr
-0 Main
+0 Deep-sea angler fish body with articulated fins, ball-jointed jaw, curved dark blue and red slope-shell plating, and large open-mouth structure.
 0 Name: 31088 - Main.ldr
 0 Author: Marc Belanger [MonsieurPoulet]
 0 !LDRAW_ORG Model
@@ -312,7 +312,7 @@
 
 
 0 FILE 31088 - Little Fish.ldr
-0 Little Fish
+0 Small companion fish built from round red plates, axlehole discs, dark blue slope fins, and printed squinting eye tiles.
 0 Name: 31088 - Little Fish.ldr
 0 Author: Marc Belanger [MonsieurPoulet]
 0 !LDRAW_ORG Model
@@ -367,7 +367,7 @@
 
 
 0 FILE 31088 - Jaw.ldr
-0 Jaw
+0 Articulated angler fish jaw assembly with tan tooth-plates, white brackets and curved cutout slopes forming the mouth structure.
 0 Name: 31088 - Jaw.ldr
 0 Author: Marc Belanger [MonsieurPoulet]
 0 !LDRAW_ORG Model
@@ -423,7 +423,7 @@
 
 
 0 FILE 31088 - Fin.ldr
-0 Fin
+0 Movable fin with socket joint, dark blue slope and wedge plates mounted on a white base plate.
 0 Name: 31088 - Fin.ldr
 0 Author: Marc Belanger [MonsieurPoulet]
 0 !LDRAW_ORG Model
@@ -457,7 +457,7 @@
 
 
 0 FILE 31088 - 15456.dat
-0 Plate 2 x  2 with Towball and Centre Hole
+0 Primitive 2x2 plate geometry with towball and centre hole, modeled from spheres, cylinders, cones and box primitives.
 0 Name: 31088 - 15456.dat
 0 Author: Owen Burgoyne [C3POwen]
 0 !LDRAW_ORG Unofficial_Part
@@ -514,7 +514,7 @@
 
 
 0 FILE 31088 - 4-4cyl19sph40.dat
-0 Cylinder 0.76 LDU Truncated to Fit Sphere  1.6 LDU
+0 Low-level primitive combining a sphere segment and a cylinder for the truncated-to-sphere part definition.
 0 Name: 31088 - 4-4cyl19sph40.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Primitive

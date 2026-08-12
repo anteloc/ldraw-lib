@@ -1,5 +1,5 @@
 0 FILE 42105 - main.ldr
-0 main
+0 A Technic catamaran sailboat model composed of a central deck, twin floating hulls, a mast with sails, rudders, and various structural submodels.
 0 Name: 42105 - main.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -9,7 +9,7 @@
 
 
 0 FILE 42105 - mast.ldr
-0 mast
+0 A tall vertical mast assembly built from long liftarms, axles, and towball pins for mounting sails and rigging.
 0 Name: 42105 - mast.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -126,7 +126,7 @@
 
 
 0 FILE 42105 - deck.ldr
-0 deck
+0 The main central deck structure with a large open-center beam frame, cross blocks, towball joints, and gears for connecting hulls and mast.
 0 Name: 42105 - deck.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -310,7 +310,7 @@
 
 
 0 FILE 42105 - deck2.ldr
-0 deck2
+0 A secondary deck section using a long lime liftarm, short beams, and cross blocks to extend the deck framework.
 0 Name: 42105 - deck2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -369,7 +369,7 @@
 
 
 0 FILE 42105 - deck3.ldr
-0 deck3
+0 A compact deck extension section with a lime liftarm, cross blocks, and short beams connecting to the main deck frame.
 0 Name: 42105 - deck3.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -413,7 +413,7 @@
 
 
 0 FILE 42105 - deck4.ldr
-0 deck4
+0 A small deck connector piece joining two angle connectors with a short axle and pins.
 0 Name: 42105 - deck4.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -432,7 +432,7 @@
 
 
 0 FILE 42105 - dirarm.ldr
-0 dirarm
+0 A short directional arm or lever built from a beam, liftarm, and stop axle with bushes.
 0 Name: 42105 - dirarm.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -454,7 +454,7 @@
 
 
 0 FILE 42105 - mastbase.ldr
-0 mastbase
+0 The base support for the mast using cross blocks, long pins, and liftarms to anchor it to the deck.
 0 Name: 42105 - mastbase.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -485,7 +485,7 @@
 
 
 0 FILE 42105 - righthull.ldr
-0 righthull
+0 The right pontoon assembly with beams, cross blocks, gears, and pins forming one of the twin floating hulls.
 0 Name: 42105 - righthull.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -659,7 +659,7 @@
 
 
 0 FILE 42105 - catamaran.ldr
-0 catamaran
+0 The catamaran float assembly using beams, steering links, towball pins, axles, and two patterned trapezoid sails.
 0 Name: 42105 - catamaran.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -721,7 +721,7 @@
 
 
 0 FILE 42105 - lefthull.ldr
-0 lefthull
+0 The left pontoon assembly mirroring the right hull, with beams, cross blocks, gears, and pins forming the twin floating hull.
 0 Name: 42105 - lefthull.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -895,7 +895,7 @@
 
 
 0 FILE 42105 - rightrudder.ldr
-0 rightrudder
+0 The right rudder assembly with rotor blades, short liftarms, notched axles, and a towball axle for steering control.
 0 Name: 42105 - rightrudder.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -954,7 +954,7 @@
 
 
 0 FILE 42105 - leftrudder.ldr
-0 leftrudder
+0 The left rudder assembly mirroring the right, with rotor blades, short liftarms, notched axles, and a towball axle for steering.
 0 Name: 42105 - leftrudder.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1013,7 +1013,7 @@
 
 
 0 FILE 42105 - 33299b.dat
-0 33299b
+0 A geometric subpart defining axle holes, rings, and disc surfaces for a Technic connector element.
 0 Name: 42105 - 33299b.dat
 0 Author: Santeri Piippo [arezey]
 0 !LDRAW_ORG Unofficial_Part
@@ -1050,7 +1050,7 @@
 4 16 3.444 10 31.684999 0 10 31 0 10 32 3.062 10 32.609001
 
 0 FILE 42105 - 18575.dat
-0 18575
+0 A geometric subpart defining an open axle hole with rectangular faces forming a beam-like element.
 0 Name: 42105 - 18575.dat
 0 Author: Merlijn Wissink [legolijntje]
 0 !LDRAW_ORG Unofficial_Part
@@ -1172,7 +1172,7 @@
 1 16 1.5 5.7018 0 0 0 0.5 0 1 -0.0998 -10 0 0 rect3.dat
 
 0 FILE 42105 - 65781.dat
-0 65781
+0 A two-piece boat hull assembly consisting of a floating hull top and blue bottom shell.
 0 Name: 42105 - 65781.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -1188,7 +1188,7 @@
 1 1 0 0 0 1 0 0 0 1 0 0 0 1 42105 - 65417.dat
 
 0 FILE 42105 - 66645ap01.dat
-0 66645ap01
+0 A decorated hull float shell subpart with no direct primitive pieces.
 0 Name: 42105 - 66645ap01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -1209,7 +1209,7 @@
 0 !TEXMAP END
 
 0 FILE 42105 - 66645bp01.dat
-0 66645bp01
+0 A second decorated hull float shell subpart with no direct primitive pieces.
 0 Name: 42105 - 66645bp01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -1230,7 +1230,7 @@
 0 !TEXMAP END
 
 0 FILE s\42105 - 33299s01.dat
-0 33299s01
+0 A geometric primitive subpart defining cylindrical sections, rings, and circles for a Technic connector shape.
 0 Name: s\42105 - 33299s01.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -1500,7 +1500,7 @@
 5 24 4.9497 10 35.050301 4.9498 0 35.050201 6 0 36.661999 2.6788 10 33.5327
 
 0 FILE 42105 - npeghol3.dat
-0 npeghol3
+0 A geometric subpart defining cylinders, rectangles, and rings forming a peg hole structure.
 0 Name: 42105 - npeghol3.dat
 0 Author: Guy Vivan [guyvivan]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -1545,7 +1545,7 @@
 1 16 2.7222 0.5 -3.041 0 -0.72215 0 0.5 0 0 0 0.14395 1.5 box2-7.dat
 
 0 FILE s\42105 - 32269s01.dat
-0 32269s01
+0 A geometric subpart composed entirely of rectangles and edged rectangles forming a flat structural surface.
 0 Name: s\42105 - 32269s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -1634,7 +1634,7 @@
 3 16 15.3375 12.7626 -10 14.6121 11.2123 -10 13.0227 13.0227 -10
 
 0 FILE s\42105 - 32269s02.dat
-0 32269s02
+0 A geometric subpart defining cylinders, rings, and rectangles forming a circular connector element.
 0 Name: s\42105 - 32269s02.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -1705,7 +1705,7 @@
 3 16 17 0 -10 16.934099 -1 -10 16.934099 1 -10
 
 0 FILE 42105 - 65418.dat
-0 65418
+0 A geometric subpart defining boxes and connector holes forming a multi-connection Technic beam element.
 0 Name: 42105 - 65418.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -1794,7 +1794,7 @@
 4 16 29 13 310 5 47 310 -5 47 310 -29 13 310
 
 0 FILE s\42105 - 65418s01.dat
-0 65418s01
+0 A detailed geometric primitive subpart defining peg holes, cylinders, rings, and rectangles for a complex Technic connector.
 0 Name: s\42105 - 65418s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -3146,7 +3146,7 @@
 4 16 5 47 308 5 71 308 15.5427 71 308 15.5427 15 308
 
 0 FILE 42105 - 5-16ring13.dat
-0 5-16ring13
+0 A single primitive ring segment (5/16 of a full ring) generated as a geometric building block.
 0 Name: 42105 - 5-16ring13.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Primitive

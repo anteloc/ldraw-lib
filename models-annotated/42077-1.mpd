@@ -1,5 +1,5 @@
 0 FILE 42077 - main.ldr
-0 main
+0 Main assembly integrating the chassis, drivetrain, bodywork, and aerodynamic components of a Technic rally car model.
 0 Name: 42077 - main.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -10,7 +10,7 @@
 
 
 0 FILE 42077 - rearaxle.ldr
-0 rearaxle
+0 Live rear axle assembly with a differential, bevel gears, CV joints, and portal wheel hubs for power transmission.
 0 Name: 42077 - rearaxle.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -160,7 +160,7 @@
 
 
 0 FILE 42077 - engine.ldr
-0 engine
+0 Inline 6-cylinder piston engine with crankshafts, connecting rods, cylinder heads, and drive gearing.
 0 Name: 42077 - engine.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -278,7 +278,7 @@
 
 
 0 FILE 42077 - shockabsbar.ldr
-0 shockabsbar
+0 Rear shock absorber mounting bar built from beams and cross blocks to support the suspension struts.
 0 Name: 42077 - shockabsbar.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -333,7 +333,7 @@
 
 
 0 FILE 42077 - technicRibHoseLQ-1.ldr
-0 technicRibHoseLQ-1
+0 Flexible ribbed hose assembly composed of end and mid segments forming a curved pipe run.
 0 Name: 42077 - technicRibHoseLQ-1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -456,7 +456,7 @@
 
 
 0 FILE 42077 - technicRibHoseLQ-2.ldr
-0 technicRibHoseLQ-2
+0 Flexible ribbed hose assembly composed of end and mid segments forming a curved pipe run.
 0 Name: 42077 - technicRibHoseLQ-2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -579,7 +579,7 @@
 
 
 0 FILE 42077 - hoggear.ldr
-0 hoggear
+0 Steering hog gear mechanism with bevel gears, joiners, and a toggle connector to redirect steering input.
 0 Name: 42077 - hoggear.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -632,7 +632,7 @@
 
 
 0 FILE 42077 - seat.ldr
-0 seat
+0 Racing seat built from bent liftarms and axles in blue and azure, forming a contoured driver's seat.
 0 Name: 42077 - seat.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -667,7 +667,7 @@
 
 
 0 FILE 42077 - frontaxle.ldr
-0 frontaxle
+0 Independent front suspension assembly with suspension arms, towball steering linkages, portal hubs, and liftarms.
 0 Name: 42077 - frontaxle.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -852,7 +852,7 @@
 
 
 0 FILE 42077 - frontspoiler.ldr
-0 frontspoiler
+0 Front splitter/spoiler built from beams, a long axle, and smooth fairing panels for aerodynamic detailing.
 0 Name: 42077 - frontspoiler.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -890,7 +890,7 @@
 
 
 0 FILE 42077 - headlight1.ldr
-0 headlight1
+0 Left headlight module with curved trans-clear elements, beams, and fairing panels forming the light housing.
 0 Name: 42077 - headlight1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -950,7 +950,7 @@
 
 
 0 FILE 42077 - headlight2.ldr
-0 headlight2
+0 Right headlight module with curved trans-clear elements, beams, and fairing panels forming the light housing.
 0 Name: 42077 - headlight2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1010,7 +1010,7 @@
 
 
 0 FILE 42077 - hood1.ldr
-0 hood1
+0 Left hood section with a long beam, curved fairing panels, and a bodywork panel forming the engine cover.
 0 Name: 42077 - hood1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1053,7 +1053,7 @@
 
 
 0 FILE 42077 - hood2.ldr
-0 hood2
+0 Right hood section with a long beam, curved fairing panels, and a bodywork panel forming the engine cover.
 0 Name: 42077 - hood2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1096,7 +1096,7 @@
 
 
 0 FILE 42077 - roof.ldr
-0 roof
+0 Roof structure assembled from long beams and large curved panels forming the car's canopy.
 0 Name: 42077 - roof.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1154,7 +1154,7 @@
 
 
 0 FILE 42077 - technicFlexAxle-1.ldr
-0 technicFlexAxle-1
+0 Flexible Technic axle assembly routed through multiple segments forming a curved structural element.
 0 Name: 42077 - technicFlexAxle-1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3687,7 +3687,7 @@
 
 
 0 FILE 42077 - door1.ldr
-0 door1
+0 Left door assembly with long beams, grille detail, and fairing panels forming the side bodywork.
 0 Name: 42077 - door1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3724,7 +3724,7 @@
 
 
 0 FILE 42077 - door2.ldr
-0 door2
+0 Right door assembly with long beams, grille detail, and fairing panels forming the side bodywork.
 0 Name: 42077 - door2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3761,7 +3761,7 @@
 
 
 0 FILE 42077 - rearroof.ldr
-0 rearroof
+0 Rear roof and quarter panel section built from beams, bent liftarms, and large smooth body panels.
 0 Name: 42077 - rearroof.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3851,7 +3851,7 @@
 
 
 0 FILE 42077 - technicFlexAxle-2.ldr
-0 technicFlexAxle-2
+0 Flexible Technic axle assembly routed through multiple segments forming a curved structural element.
 0 Name: 42077 - technicFlexAxle-2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -6312,7 +6312,7 @@
 
 
 0 FILE 42077 - technicFlexAxle-3.ldr
-0 technicFlexAxle-3
+0 Flexible Technic axle assembly routed through multiple segments forming a curved structural element.
 0 Name: 42077 - technicFlexAxle-3.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -8773,7 +8773,7 @@
 
 
 0 FILE 42077 - back.ldr
-0 back
+0 Rear bodywork section with panels, bent liftarms, and beams forming the back of the car.
 0 Name: 42077 - back.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -8865,7 +8865,7 @@
 
 
 0 FILE 42077 - technicFlexAxle-4.ldr
-0 technicFlexAxle-4
+0 Short flexible Technic axle assembly routed through segments forming a curved structural element.
 0 Name: 42077 - technicFlexAxle-4.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -10853,7 +10853,7 @@
 
 
 0 FILE 42077 - rearspoiler.ldr
-0 rearspoiler
+0 Rear wing spoiler with a large arched mudguard panel, bent panels, and angle connectors mounted on liftarms.
 0 Name: 42077 - rearspoiler.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -10918,7 +10918,7 @@
 
 
 0 FILE 42077 - car.ldr
-0 car
+0 Complete car chassis and bodywork integrating frame beams, drivetrain, suspension, panels, and aerodynamic parts.
 0 Name: 42077 - car.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model

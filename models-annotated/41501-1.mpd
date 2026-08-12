@@ -1,5 +1,5 @@
 0 FILE 41501 - Vulk.ldr
-0 Vulk
+0 Red and dark-red Mixels character figure with articulated ball-jointed arms and legs, a printed-eye head, and an accompanying small black Nixel creature.
 0 Name: 41501 - Vulk.ldr
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model
@@ -15,7 +15,7 @@
 
 
 0 FILE 41501 - Body.ldr
-0 Body
+0 Red and dark-red torso built from plates and socket-joint brackets with hinge attachment, featuring 45-degree and curved slope detailing and a trans-orange accent.
 0 Name: 41501 - Body.ldr
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model
@@ -64,7 +64,7 @@
 1 57 0 -40 -10 1 0 0 0 1 0 0 0 1 54200.dat
 
 0 FILE 41501 - Leg Left.ldr
-0 Leg Left
+0 Red and dark-red left leg formed from a towball plate and 45-degree slope with small angled slope toe details.
 0 Name: 41501 - Leg Left.ldr
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model
@@ -81,7 +81,7 @@
 1 320 -10 10 -32 -1 0 0 0 0 1 0 1 0 54200.dat
 
 0 FILE 41501 - Leg Right.ldr
-0 Leg Right
+0 Red and dark-red right leg formed from a towball plate and 45-degree slope with small angled slope toe details.
 0 Name: 41501 - Leg Right.ldr
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model
@@ -98,7 +98,7 @@
 1 320 10 10 -32 -1 0 0 0 0 1 0 1 0 54200.dat
 
 0 FILE 41501 - Arm Left.ldr
-0 Arm Left
+0 Red and dark-red left arm with ball-joint connection, angled handle base, clip plates, and trans-orange slope accents.
 0 Name: 41501 - Arm Left.ldr
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model
@@ -125,7 +125,7 @@
 1 57 55.189 0 -25.713 0.367 0 -0.93 0 1 0 0.93 0 0.367 54200.dat
 
 0 FILE 41501 - Arm Right.ldr
-0 Arm Right
+0 Red and dark-red right arm with ball-joint connection, angled handle base, clip plates, and trans-orange slope accents.
 0 Name: 41501 - Arm Right.ldr
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model
@@ -152,7 +152,7 @@
 1 57 -55.189 0 25.713 -0.367 0 0.93 0 1 0 -0.93 0 -0.367 54200.dat
 
 0 FILE 41501 - Head.ldr
-0 Head
+0 Red head with curved slope top, black hinge connection, tooth plates, and a round white printed-eye face tile.
 0 Name: 41501 - Head.ldr
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model
@@ -173,7 +173,7 @@
 1 0 0 8 10 -1 0 0 0 1 0 0 0 -1 6134.dat
 
 0 FILE 41501 - Nixel.ldr
-0 Nixel
+0 Small black and white blocky creature figure with bracket body, tooth and slope detailing, clip bars for limbs, and a round tile printed with squinting eyes and a sharp-toothed grin.
 0 Name: 41501 - Nixel.ldr
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model
@@ -202,7 +202,7 @@
 1 0 -35 -14 0 0 1 0 -1 0 0 0 0 1 48729.dat
 
 0 FILE 41501 - 14704.dat
-0 Plate 1 x  2 with Socket Joint-8 with Friction Centre
+0 Geometric primitive assembly of boxes, cylinders, discs, and chords forming the socket-joint core of a plate element.
 0 Name: 41501 - 14704.dat
 0 Author: Tim Gould [timgould]
 0 !LDRAW_ORG Unofficial_Part
@@ -272,7 +272,7 @@
 
 
 0 FILE 41501 - 14418.dat
-0 Plate 1 x  2 with Socket Joint-8 with Friction
+0 Empty submodel placeholder for the Plate 1 x 2 with Socket Joint-8 with Friction part.
 0 Name: 41501 - 14418.dat
 0 Author: Tim Gould [timgould]
 0 !LDRAW_ORG Unofficial_Part
@@ -289,7 +289,7 @@
 
 
 0 FILE 41501 - 15456.dat
-0 Plate 2 x  2 with Towball and Centre Hole
+0 Primitive assembly of cylinders, cones, spheres, and discs defining the towball and centre hole of a plate element.
 0 Name: 41501 - 15456.dat
 0 Author: Owen Burgoyne [C3POwen]
 0 !LDRAW_ORG Unofficial_Part
@@ -345,7 +345,7 @@
 
 
 0 FILE 41501 - joint-8-socket-frica.dat
-0 Friction Socket Joint-8
+0 Primitive assembly of quartered circles, cylinders, chords, and cut-off spheres forming a friction ball-joint socket.
 0 Name: 41501 - joint-8-socket-frica.dat
 0 Author: Tim Gould [timgould]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -939,7 +939,7 @@
 
 
 0 FILE s\41501 - 14418s01.dat
-0 ~Plate 1 x  2 with Socket Joint-8 with Friction
+0 Subpart of boxes and closed cylinders forming the base geometry of the friction socket-joint plate.
 0 Name: s\41501 - 14418s01.dat
 0 Author: Tim Gould [timgould]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -990,7 +990,7 @@
 
 
 0 FILE 41501 - 4-4cyl19sph40.dat
-0 Cylinder 0.76 LDU Truncated to Fit Sphere  1.6 LDU
+0 Primitive subpart combining a sphere and cylinder to form a truncated spherical joint surface.
 0 Name: 41501 - 4-4cyl19sph40.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Primitive

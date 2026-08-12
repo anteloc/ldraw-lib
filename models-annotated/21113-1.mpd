@@ -1,5 +1,5 @@
 0 FILE 21113 - The Cave.ldr
-0 The Cave
+0 A Minecraft-inspired cave scene featuring a Steve minifig, a zombie and spider for mobs, a multi-level rocky cave structure with ores, a treasure-filled top floor, TNT, and torches.
 0 Name: 21113 - The Cave.ldr
 0 Author: Merlijn Wissink [legolijntje]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -9,7 +9,7 @@
 1 2 150 -8 -279 1 0 0 0 1 0 0 0 1 21113 - Zombie.ldr
 
 0 FILE 21113 - Steve.ldr
-0 Steve
+0 A humanoid minifigure with a dark azure torso, lilac legs, and a dark brown blocky head.
 0 Name: 21113 - Steve.ldr
 0 Author: Merlijn Wissink [legolijntje]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -29,7 +29,7 @@
 1 308 0 -64 0 1 0 0 0 1 0 0 0 1 21113 - 19729.dat
 
 0 FILE 21113 - Cave.ldr
-0 Cave
+0 A large rocky cave structure built from grey and bluish-grey bricks and plates with orange slope accents and blue and orange base plates.
 0 Name: 21113 - Cave.ldr
 0 Author: Merlijn Wissink [legolijntje]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -268,7 +268,7 @@
 
 
 0 FILE 21113 - Stone Block.ldr
-0 Stone Block
+0 A small grey stone block built from a 2x2 brick and a grooved centre-stud plate.
 0 Name: 21113 - Stone Block.ldr
 0 Author: Merlijn Wissink [legolijntje]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -280,7 +280,7 @@
 
 
 0 FILE 21113 - Redstone Ore.ldr
-0 Redstone Ore
+0 A stone block decorated with glowing translucent red studs representing redstone ore.
 0 Name: 21113 - Redstone Ore.ldr
 0 Author: Merlijn Wissink [legolijntje]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -308,7 +308,7 @@
 
 
 0 FILE 21113 - Gold Ore.ldr
-0 Gold Ore
+0 A stone block decorated with gleaming pearl gold studs representing gold ore.
 0 Name: 21113 - Gold Ore.ldr
 0 Author: Merlijn Wissink [legolijntje]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -336,7 +336,7 @@
 
 
 0 FILE 21113 - Zombie.ldr
-0 Zombie
+0 A humanoid minifigure with a dark azure torso, lilac legs, and a green blocky head and hands.
 0 Name: 21113 - Zombie.ldr
 0 Author: Merlijn Wissink [legolijntje]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -356,7 +356,7 @@
 1 2 0 -64 0 1 0 0 0 1 0 0 0 1 21113 - 19729.dat
 
 0 FILE 21113 - Spider.ldr
-0 Spider
+0 A black spider model with a brick body and hinged plate legs with clip attachments.
 0 Name: 21113 - Spider.ldr
 0 Author: Merlijn Wissink [legolijntje]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -414,7 +414,7 @@
 
 
 0 FILE 21113 - Grass Block.ldr
-0 Grass Block
+0 A small block combining a reddish-brown dirt base with a bright green grass top.
 0 Name: 21113 - Grass Block.ldr
 0 Author: Merlijn Wissink [legolijntje]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -426,7 +426,7 @@
 
 
 0 FILE 21113 - Coal Ore.ldr
-0 Coal Ore
+0 A stone block decorated with black studs representing coal deposits.
 0 Name: 21113 - Coal Ore.ldr
 0 Author: Merlijn Wissink [legolijntje]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -454,7 +454,7 @@
 
 
 0 FILE 21113 - Iron Ore.ldr
-0 Iron Ore
+0 A stone block decorated with tan studs representing iron deposits.
 0 Name: 21113 - Iron Ore.ldr
 0 Author: Merlijn Wissink [legolijntje]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -482,7 +482,7 @@
 
 
 0 FILE 21113 - TNT.ldr
-0 TNT
+0 A red explosive block with a pixelated 'TNT' label pattern on its sides.
 0 Name: 21113 - TNT.ldr
 0 Author: Merlijn Wissink [legolijntje]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -500,7 +500,7 @@
 
 
 0 FILE 21113 - Top Floor.ldr
-0 Top Floor
+0 A grey platform with a treasure chest and French bread sitting on top.
 0 Name: 21113 - Top Floor.ldr
 0 Author: Merlijn Wissink [legolijntje]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -532,7 +532,7 @@
 
 
 0 FILE 21113 - Torch.ldr
-0 Torch
+0 A small wall-mounted torch made from a brown telescope handle with yellow and orange translucent flame tips.
 0 Name: 21113 - Torch.ldr
 0 Author: Merlijn Wissink [legolijntje]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -544,7 +544,7 @@
 1 57 0 -16 0 1 0 0 0 1 0 0 0 1 3024.dat
 
 0 FILE 21113 - 19729.dat
-0 Minifig Head Cuboid
+0 A reference part file for the cuboid minifigure head used by the Minecraft-style characters.
 0 Name: 21113 - 19729.dat
 0 Author: Mark Kennedy [mkennedy]
 0 !LDRAW_ORG Unofficial_Part
@@ -560,7 +560,7 @@
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\21113 - 19729s1.dat
 
 0 FILE s\21113 - 19729s1.dat
-0 ~Minifig Head Cuboid without Front Surface
+0 A subpart defining the box geometry of the cuboid minifigure head without its front face surface.
 0 Name: s\21113 - 19729s1.dat
 0 Author: Mark Kennedy [mkennedy]
 0 !LDRAW_ORG Unofficial_Subpart

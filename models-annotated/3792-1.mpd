@@ -1,5 +1,5 @@
 0 FILE 3792 - main.ldr
-0 main
+0 A Fabuland bedroom scene featuring a bed, chair, flower, and hairbrush arranged on yellow brick and plate construction.
 0 Name: 3792 - main.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -33,7 +33,7 @@
 0 // Minifig Hairbrush with Long Handle (brown)
 1 6 265.211 -61.93 -42.299 0.242 0.25 0.937 -0.129 0.966 -0.224 -0.962 -0.067 0.266 3792 - 3852a.dat
 0 FILE 3792 - lamb.ldr
-0 lamb
+0 An empty submodel with no direct pieces, serving as a placeholder or assembly reference.
 0 Name: 3792 - lamb.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -46,7 +46,7 @@
 1 15 10 -37 4 1 0 0 0 0 1 0 -1 0 u9100.dat
 1 4 0 -37 4 1 0 0 0 1 0 0 0 1 u9103.dat
 0 FILE 3792 - 4336.dat
-0 4336
+0 A geometric mesh composed of boxes, cylinders, chords, and rectangles forming a complex 3D shape.
 0 Name: 3792 - 4336.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -286,7 +286,7 @@
 0 // Box with  4 Faces without  2 Parallel Edges (main_colour)
 1 16 -10 -8 -60 2 0 0 0 0 8 0 4 0 box4-2p.dat
 0 FILE 3792 - 197295.dat
-0 197295
+0 A small cylindrical component built from chords and quarter-cylinders forming a curved surface.
 0 Name: 3792 - 197295.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -903,7 +903,7 @@
 4 16 49.5 0 -26 -49.5 0 -26 -49.5 0 26 49.5 0 26
 4 16 49.5 0 -26 49.5 0 26 49.5 -0.25 26 49.5 -0.25 -26
 0 FILE 3792 - 3852a.dat
-0 3852a
+0 A handle-and-disc assembly combining a long handle with cylindrical and circular elements.
 0 Name: 3792 - 3852a.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Part
@@ -925,7 +925,7 @@
 0 // Disc 1.0 (main_colour)
 1 16 0 24 0 -4 0 0 0 -1 0 0 0 -4 4-4disc.dat
 0 FILE s\3792 - 3852s01.dat
-0 3852s01
+0 A submodel detail part constructed from sloped cylinders, rings, chords, and discs forming a rounded geometric surface.
 0 Name: s\3792 - 3852s01.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -1076,7 +1076,7 @@
 5 24 2.5 -13.09031 6.96119 -1 -13.09031 6.96119 2.5 -10.50814 5.32809 2.5 -19.471951 8.51008
 5 24 2.5 -40.909931 6.96157 -1 -40.909931 6.96157 2.5 -43.491859 5.32809 2.5 -34.528049 8.51008
 0 FILE s\3792 - 3852-1.dat
-0 3852-1
+0 An empty submodel with no direct pieces, serving as an assembly wrapper or reference.
 0 Name: s\3792 - 3852-1.dat
 0 Author: John Van Zwieten [jvan]
 0 !LDRAW_ORG Unofficial_Subpart

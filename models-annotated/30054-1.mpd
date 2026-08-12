@@ -1,5 +1,5 @@
 0 FILE 30054 - AT-ST.ldr
-0 AT-ST
+0 Compact chicken-walker scout mech body built from plates, wing panels, and hinge-based articulated legs, feet, and ankles.
 0 Name: 30054 - AT-ST.ldr
 0 Author: Jude Parrill
 0 !LDRAW_ORG Model
@@ -85,7 +85,7 @@
 1 71 0 26 0 1 0 0 0 1 0 0 0 1 30054 - Hips.ldr
 
 0 FILE 30054 - Hips.ldr
-0 Hips
+0 Technic axle hip assembly with connectors, cross block, and locking hinge arms forming a pivoting pelvic joint.
 0 Name: 30054 - Hips.ldr
 0 Author: Jude Parrill
 0 !LDRAW_ORG Model
@@ -117,7 +117,7 @@
 1 72 -40 0 60 1 0 0 0 0 -1 0 1 0 30054 - Right Leg.ldr
 
 0 FILE 30054 - Left Leg.ldr
-0 Left Leg
+0 Single locking hinge arm piece forming the left leg strut.
 0 Name: 30054 - Left Leg.ldr
 0 Author: Jude Parrill
 0 !LDRAW_ORG Model
@@ -130,7 +130,7 @@
 1 71 0 0 -40 1 0 0 0 0.707107 0.707107 0 -0.707107 0.707107 30054 - Left Ankle.ldr
 
 0 FILE 30054 - Left Ankle.ldr
-0 Left Ankle
+0 Single locking hinge arm piece forming the left ankle joint.
 0 Name: 30054 - Left Ankle.ldr
 0 Author: Jude Parrill
 0 !LDRAW_ORG Model
@@ -143,7 +143,7 @@
 1 71 0 0 -40 1 0 0 0 0.707107 0.707107 0 -0.707107 0.707107 30054 - Foot.ldr
 
 0 FILE 30054 - Foot.ldr
-0 Foot
+0 Round plate, inverted dish, and locking hinge tile forming an articulated foot pad.
 0 Name: 30054 - Foot.ldr
 0 Author: Jude Parrill
 0 !LDRAW_ORG Model
@@ -159,7 +159,7 @@
 1 72 0 6 -20 0 0 -1 0 1 0 1 0 0 44300.dat
 
 0 FILE 30054 - Right Leg.ldr
-0 Right Leg
+0 Single locking hinge arm piece forming the right leg strut.
 0 Name: 30054 - Right Leg.ldr
 0 Author: Jude Parrill
 0 !LDRAW_ORG Model
@@ -172,7 +172,7 @@
 1 0 0 0 -40 1 0 0 0 0.707107 0.707107 0 -0.707107 0.707107 30054 - Right Ankle.ldr
 
 0 FILE 30054 - Right Ankle.ldr
-0 Right Ankle
+0 Single locking hinge arm piece forming the right ankle joint.
 0 Name: 30054 - Right Ankle.ldr
 0 Author: Jude Parrill
 0 !LDRAW_ORG Model

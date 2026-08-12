@@ -1,5 +1,5 @@
 0 FILE 42045 - Hydroplane Racer.ldr
-0 Hydroplane Racer
+0 A hydroplane racer model featuring a multi-cylinder engine with pistons, crankshafts and connecting rods, cross blocks and axles forming the structural frame.
 0 Name: 42045 - Hydroplane Racer.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -252,7 +252,7 @@
 1 1 -140 -123.347 19.297 0 1 0 0.017 0 -1 -1 0 -0.017 42045 - 24116.dat
 
 0 FILE 42045 - wheelseat.ldr
-0 wheelseat
+0 A wheel and seat assembly combining belt wheels with tyres, bent liftarms, beams and an axle with a bevel gear.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42045 - wheelseat.ldr
 0 !LDRAW_ORG Unofficial_Model
@@ -347,7 +347,7 @@
 1 71 100 0 140 -1 0 0 0 -1 0 0 0 1 32054.dat
 
 0 FILE 42045 - technicFlexAxle-1.ldr
-0 technicFlexAxle-1
+0 A flexible axle component composed of generated cylindrical and ring primitives forming a smooth bendable connector.
 0 !CATEGORY technic
 0 Name: 42045 - technicFlexAxle-1.ldr
 0 !LDRAW_ORG Unofficial_Model
@@ -2414,7 +2414,7 @@
 5 24 61.399979 -114.457886 -1.5308 58.834675 -111.892578 -1.5308 61.615223 -114.242638 0 60.786777 -115.071091 -2.8284
 
 0 FILE 42045 - side1.ldr
-0 side1
+0 A smooth body panel side section using long fairing panels, a liftarm and angle connectors mounted on an axle.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42045 - side1.ldr
 0 !LDRAW_ORG Unofficial_Model
@@ -2447,7 +2447,7 @@
 1 15 20 20 -40 0 1 0 -1 0 0 0 0 1 32525.dat
 
 0 FILE 42045 - side2.ldr
-0 side2
+0 A mirrored smooth body panel side section with wide long fairing panels, a liftarm and angle connectors on an axle.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42045 - side2.ldr
 0 !LDRAW_ORG Unofficial_Model
@@ -2480,7 +2480,7 @@
 1 15 20 0 -20 0 1 0 -1 0 0 0 0 1 32525.dat
 
 0 FILE 42045 - 2850b.dat
-0 Technic Engine Cylinder Head with Bottom Slots
+0 A Technic engine cylinder head with bottom slots, built from cylinders, rectangles and discs forming the ribbed head geometry.
 0 Name: 42045 - 2850b.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -2649,7 +2649,7 @@
 4 16 -20 36 2 -20 33 2 -27 33 2 -27 36 2
 
 0 FILE 42045 - 33299b.dat
-0 Technic Beam  3 x  0.5 Liftarm with Boss and Pin Semi-Reduced
+0 A short Technic liftarm with boss and semi-reduced pin hole, constructed from axle holes, rings and a disc primitive.
 0 Name: 42045 - 33299b.dat
 0 Author: Santeri Piippo [arezey]
 0 !LDRAW_ORG Unofficial_Part
@@ -2686,7 +2686,7 @@
 4 16 3.444 10 31.685 0 10 31 0 10 32 3.062 10 32.609
 
 0 FILE 42045 - 24116.dat
-0 Technic Panel Bent  4 x  5 x  3
+0 A bent Technic panel with connector holes and curved surfaces formed from cylinders, cones, boxes and rings.
 0 Name: 42045 - 24116.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -3091,7 +3091,7 @@
 1 16 1.5 -4.126 -9 0 -3 0 0.12568 0 2 -1 0 0 tri3u1.dat
 
 0 FILE s\42045 - 2850s01.dat
-0 ~Technic Engine Cylinder Head Common Geometry Half
+0 The common half-geometry of a Technic engine cylinder head, including top studs, cooling ribs and connector holes.
 0 Name: s\42045 - 2850s01.dat
 0 Author: Jeff Boen
 0 !LDRAW_ORG Unofficial_Subpart
@@ -3527,7 +3527,7 @@
 3 16 13.8585 36 5.7405 10.6065 36 10.6065 16 36 16
 
 0 FILE s\42045 - 33299s01.dat
-0 ~Technic Beam  3 x  0.5 Liftarm with Boss and Pin Common
+0 The common geometry of a short liftarm with boss, consisting of peg holes, cylinders, rings and circles defining its outline.
 0 Name: s\42045 - 33299s01.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -3781,7 +3781,7 @@
 4 16 8.091 0 3.78 4.014 0 6.93 5.184 0 5.184 6.93 0 4.014
 
 0 FILE 42045 - 7-16cylo.dat
-0 Cylinder Open 0.4375
+0 A partial open cylinder primitive (7/16) made of a cylinder section with two circle caps.
 0 Name: 42045 - 7-16cylo.dat
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -3797,7 +3797,7 @@
 1 16 0 1 0 1 0 0 0 1 0 0 0 1 7-16edge.dat
 
 0 FILE 42045 - 7-16ring2.dat
-0 Ring 2 x 0.4375
+0 A partial ring primitive (7/16 at radius 2) generated from a single ring element.
 0 Name: 42045 - 7-16ring2.dat
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Unofficial_Primitive

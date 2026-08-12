@@ -1,5 +1,5 @@
 0 FILE 42088 - Main.ldr
-0 Main
+0 Main assembly of an orange and blue Technic crane truck featuring chassis, cab, boom with worm-gear pivot, platform, rear bumper, and hood submodels.
 0 Name: 42088 - Main.ldr
 0 Author: Marc Belanger [MonsieurPoulet]
 0 !LDRAW_ORG Model
@@ -164,7 +164,7 @@
 
 
 0 FILE 42088 - Chassis.ldr
-0 Chassis
+0 Orange and blue Technic chassis frame built from 13-stud beams, cross blocks, plates, and curved slope body panels.
 0 Name: 42088 - Chassis.ldr
 0 Author: Marc Belanger [MonsieurPoulet]
 0 !LDRAW_ORG Model
@@ -261,7 +261,7 @@
 
 
 0 FILE 42088 - Rear Bumper.ldr
-0 Rear Bumper
+0 Compact rear bumper assembly using an axle, angle connectors, bushes, and trans-red round lights.
 0 Name: 42088 - Rear Bumper.ldr
 0 Author: Marc Belanger [MonsieurPoulet]
 0 !LDRAW_ORG Model
@@ -294,7 +294,7 @@
 
 
 0 FILE 42088 - Hood.ldr
-0 Hood
+0 Hood structure built from a bent orange liftarm, cross blocks, pins, and short notched axles.
 0 Name: 42088 - Hood.ldr
 0 Author: Marc Belanger [MonsieurPoulet]
 0 !LDRAW_ORG Model
@@ -329,7 +329,7 @@
 
 
 0 FILE 42088 - Cab.ldr
-0 Cab
+0 Orange and black Technic cab frame using angle connectors, cross blocks, an axle, and a short liftarm.
 0 Name: 42088 - Cab.ldr
 0 Author: Marc Belanger [MonsieurPoulet]
 0 !LDRAW_ORG Model
@@ -375,7 +375,7 @@
 
 
 0 FILE 42088 - Boom Pivot.ldr
-0 Boom Pivot
+0 Boom pivot mechanism using bent liftarms, gears, a worm gear, bushes, and cross blocks for rotational articulation.
 0 Name: 42088 - Boom Pivot.ldr
 0 Author: Marc Belanger [MonsieurPoulet]
 0 !LDRAW_ORG Model
@@ -463,7 +463,7 @@
 
 
 0 FILE 42088 - Boom.ldr
-0 Boom
+0 Extendable white Technic boom arm made of 5- and 7-stud liftarms, a 24-tooth gear, and notched axles.
 0 Name: 42088 - Boom.ldr
 0 Author: Marc Belanger [MonsieurPoulet]
 0 !LDRAW_ORG Model
@@ -512,7 +512,7 @@
 
 
 0 FILE 42088 - Platform.ldr
-0 Platform
+0 Work platform built from bent liftarms, cross blocks, axles, bushes, and a pin joiner.
 0 Name: 42088 - Platform.ldr
 0 Author: Marc Belanger [MonsieurPoulet]
 0 !LDRAW_ORG Model
@@ -560,7 +560,7 @@
 
 
 0 FILE 42088 - 32905.dat
-0 Technic Worm Gear with Reduced Axlehole
+0 Detailed model of a Technic worm gear with reduced axlehole, composed of cylindrical and sliding axle-hole primitives.
 0 Name: 42088 - 32905.dat
 0 Author: Santeri Piippo [arezey]
 0 !LDRAW_ORG Unofficial_Part
@@ -582,7 +582,7 @@
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\42088 - 4716s02.dat
 
 0 FILE 42088 - axl4hol2.dat
-0 Technic Axle Hole Sliding Side Edges
+0 Primitive subpart representing the side edges of a sliding Technic axle hole using quarter-circle segments.
 0 Name: 42088 - axl4hol2.dat
 0 Author: Santeri Piippo [arezey]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -600,7 +600,7 @@
 1 16 0 0 0 -6 0 0 0 1 0 0 0 -6 1-4edge.dat
 
 0 FILE 42088 - axl4hole.dat
-0 Technic Axle Hole Sliding
+0 Primitive subpart modeling a sliding Technic axle hole using cylinders and axle-hole teeth.
 0 Name: 42088 - axl4hole.dat
 0 Author: Santeri Piippo [arezey]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -628,7 +628,7 @@
 4 16 -2 1 5.602 0 1 6 0 0 6 -2 0 5.602
 
 0 FILE 42088 - axl4hol3.dat
-0 Technic Axle Hole Sliding Tooth Outer Edges
+0 Primitive subpart defining the outer edges of the sliding axle hole teeth.
 0 Name: 42088 - axl4hol3.dat
 0 Author: Santeri Piippo [arezey]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -646,7 +646,7 @@
 2 24 2.296 0 -5.543 2 0 -5.602
 
 0 FILE s\42088 - 4716s02.dat
-0 ~Technic Worm Gear Body
+0 Subpart forming the main body of a Technic worm gear.
 0 Name: s\42088 - 4716s02.dat
 0 Author: Santeri Piippo [arezey]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -743,7 +743,7 @@
 1 16 0 0 18 7 0 0 0 0 7 0 2 0 42088 - 1-4cyloh.dat
 
 0 FILE s\42088 - 4716s03.dat
-0 ~Technic Worm Gear End Surface
+0 Subpart modeling the end surface of a Technic worm gear using rings, discs, chords, and helical cylinders.
 0 Name: s\42088 - 4716s03.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -820,7 +820,7 @@
 1 16 0 0 0 0 0 12.7 -12.7 0 0 0 2 0 1-4edgh.dat
 
 0 FILE s\42088 - 4716s01.dat
-0 ~Technic Worm Gear Thread
+0 Subpart representing a single helical thread segment of a Technic worm gear.
 0 Name: s\42088 - 4716s01.dat
 0 Author: Remco Braak [remco1974]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -879,7 +879,7 @@
 0 // 5 24 0 12.7 -2 0 7 -4 2.6788 6.4672 -4.5 -4.8601 11.7333 -1.5
 
 0 FILE 42088 - 1-4cyloh.dat
-0 Cylinder Helical Cylinder 0.25 with Edges
+0 Primitive subpart defining a quarter helical cylinder with edges for worm-gear geometry.
 0 Name: 42088 - 1-4cyloh.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -894,7 +894,7 @@
 1 16 0 -1 0 1 0 0 0 1 0 0 0 1 1-4edgh.dat
 
 0 FILE 42088 - 1-4cylih.dat
-0 Cylinder Helical Cylinder 0.25
+0 Primitive subpart defining a quarter helical cylinder without edges for worm-gear geometry.
 0 Name: 42088 - 1-4cylih.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Primitive

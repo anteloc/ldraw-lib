@@ -1,5 +1,5 @@
 0 FILE 42121 - main.ldr
-0 main
+0 Complete tracked tractor model featuring a chassis with tracked drive, driver cab with seat and windscreen, front hood, loader arm with bucket, and ladder access.
 0 Name: 42121 - main.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -12,7 +12,7 @@
 
 
 0 FILE 42121 - chassisbase.ldr
-0 chassisbase
+0 Longitudinal chassis base frame built from yellow and grey liftarms joined by pins.
 0 Name: 42121 - chassisbase.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -65,7 +65,7 @@
 
 
 0 FILE 42121 - transmission.ldr
-0 transmission
+0 Geared transmission linkage with bevel gears, axles, and a linear actuator mount.
 0 Name: 42121 - transmission.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -106,7 +106,7 @@
 
 
 0 FILE 42121 - chassis2.ldr
-0 chassis2
+0 Chassis support section using a bent yellow liftarm and connector block mounted with pins.
 0 Name: 42121 - chassis2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -134,7 +134,7 @@
 
 
 0 FILE 42121 - chassis3.ldr
-0 chassis3
+0 Angled chassis strut assembly composed of various bent liftarms, an axle, and connector blocks.
 0 Name: 42121 - chassis3.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -167,7 +167,7 @@
 
 
 0 FILE 42121 - arm.ldr
-0 arm
+0 Loader arm assembly with a linear actuator, universal joints, and bent liftarms for articulation.
 0 Name: 42121 - arm.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -209,7 +209,7 @@
 
 
 0 FILE 42121 - chassis4.ldr
-0 chassis4
+0 Rear chassis frame section built from long dark bluish grey liftarms connected by pins and a cross block.
 0 Name: 42121 - chassis4.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -240,7 +240,7 @@
 
 
 0 FILE 42121 - seat.ldr
-0 seat
+0 Operator seat made from red plates, a curved slope, and locking hinge elements.
 0 Name: 42121 - seat.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -271,7 +271,7 @@
 
 
 0 FILE 42121 - side1.ldr
-0 side1
+0 Side panel assembly using triangular and bent liftarms fastened with pins.
 0 Name: 42121 - side1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -301,7 +301,7 @@
 
 
 0 FILE 42121 - roof.ldr
-0 roof
+0 Cab roof structure built around a connector block and a yellow beam supported by pins.
 0 Name: 42121 - roof.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -334,7 +334,7 @@
 
 
 0 FILE 42121 - windscreen.ldr
-0 windscreen
+0 Windscreen frame supporting a transparent bent panel between yellow beams and pins.
 0 Name: 42121 - windscreen.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -363,7 +363,7 @@
 
 
 0 FILE 42121 - chassisside1.ldr
-0 chassisside1
+0 Left chassis side panel with a beam, quarter-ellipse liftarms, and a grille slope detail.
 0 Name: 42121 - chassisside1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -395,7 +395,7 @@
 
 
 0 FILE 42121 - chassisside1b.ldr
-0 chassisside1b
+0 Left chassis side extension using a beam, cross block, and angled connector pins.
 0 Name: 42121 - chassisside1b.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -421,7 +421,7 @@
 
 
 0 FILE 42121 - chassisside1c.ldr
-0 chassisside1c
+0 Left chassis side detail with a fairing panel, angle connector, and yellow beam.
 0 Name: 42121 - chassisside1c.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -445,7 +445,7 @@
 
 
 0 FILE 42121 - chassisside2.ldr
-0 chassisside2
+0 Right chassis side panel with a beam, quarter-ellipse liftarms, and a grille slope detail.
 0 Name: 42121 - chassisside2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -479,7 +479,7 @@
 
 
 0 FILE 42121 - chassisside2b.ldr
-0 chassisside2b
+0 Right chassis side extension using a beam, cross block, and axle pins.
 0 Name: 42121 - chassisside2b.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -503,7 +503,7 @@
 
 
 0 FILE 42121 - ladder.ldr
-0 ladder
+0 Access ladder built from angle connectors, yellow liftarm rungs, and axle pins.
 0 Name: 42121 - ladder.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -534,7 +534,7 @@
 
 
 0 FILE 42121 - hood.ldr
-0 hood
+0 Front hood assembly built from a white beam and bent liftarms with a grille slope detail.
 0 Name: 42121 - hood.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -576,7 +576,7 @@
 
 
 0 FILE 42121 - linac.ldr
-0 linac
+0 Linear actuator unit comprising a body, piston, axle actuator, gear, and bushing.
 0 Name: 42121 - linac.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -600,7 +600,7 @@
 
 
 0 FILE 42121 - arm2.ldr
-0 arm2
+0 Loader bucket arm assembly with an excavator bucket attached to bent liftarms.
 0 Name: 42121 - arm2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -630,7 +630,7 @@
 
 
 0 FILE 42121 - track1.ldr
-0 track1
+0 Track drive wheel assembly with gears, angled connectors, and liftarm supports.
 0 Name: 42121 - track1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -693,7 +693,7 @@
 
 
 0 FILE 42121 - technicChainTread17Closed-1.ldr
-0 technicChainTread17Closed-1
+0 Closed track loop of 21 chain tread segments forming one crawler tread.
 0 Name: 42121 - technicChainTread17Closed-1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -766,7 +766,7 @@
 
 
 0 FILE 42121 - track3.ldr
-0 track3
+0 Track drive unit with 8-tooth gears, beams, and split cross blocks supporting the tread.
 0 Name: 42121 - track3.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -820,7 +820,7 @@
 
 
 0 FILE 42121 - technicChainTread17Closed-2.ldr
-0 technicChainTread17Closed-2
+0 Closed track loop of 22 chain tread segments forming one crawler tread.
 0 Name: 42121 - technicChainTread17Closed-2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -894,7 +894,7 @@
 
 
 0 FILE 42121 - track4.ldr
-0 track4
+0 Track drive unit with 8-tooth gears, beams, and split cross blocks supporting the tread.
 0 Name: 42121 - track4.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2646,7 +2646,7 @@
 1 16 -9 0 0 0 1 0 0 0 10 20 0 0 rect2p.dat
 
 0 FILE 42121 - confric11.dat
-0 confric11
+0 A friction pin component with cylinders, rings, and ribs forming a ridged connector body.
 0 Name: 42121 - confric11.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -3010,7 +3010,7 @@
 5 24 -2.692 -5.7 5.6627 -2.5337 -6 5.3847 -3.558 -5.7 5.1627 -2.2962 -5.7 5.5434
 
 0 FILE s\42121 - 87082s01.dat
-0 87082s01
+0 A subassembly with a central cylinder and four sloped sides forming a tapered connector.
 0 Name: s\42121 - 87082s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -3056,7 +3056,7 @@
 4 16 -10 3 4 -10 3 -4 -10 -3 -4 -10 -3 4
 
 0 FILE s\42121 - 15100s01.dat
-0 15100s01
+0 A Technic connector with a long hole, cylinders, and sloped end caps.
 0 Name: s\42121 - 15100s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -3110,7 +3110,7 @@
 4 16 10 -3 -4 10 3 -4 10 3 4 10 -3 4
 
 0 FILE s\42121 - 32269s01.dat
-0 32269s01
+0 A rectangular beam-like part composed of flat rectangle panels with defined edges.
 0 Name: s\42121 - 32269s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -3199,7 +3199,7 @@
 3 16 15.3375 12.7626 -10 14.6121 11.2123 -10 13.0227 13.0227 -10
 
 0 FILE s\42121 - 32269s02.dat
-0 32269s02
+0 A detailed rectangular connector with a central cylindrical hole and multiple edge-defined panels.
 0 Name: s\42121 - 32269s02.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -3270,7 +3270,7 @@
 3 16 17 0 -10 16.934099 -1 -10 16.934099 1 -10
 
 0 FILE s\42121 - 60483s01.dat
-0 60483s01
+0 A Technic beam connector with axle and peg holes plus cylindrical reinforcements.
 0 Name: s\42121 - 60483s01.dat
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -3308,7 +3308,7 @@
 2 24 9 10 20 9 10 0
 
 0 FILE s\42121 - 32526s01.dat
-0 32526s01
+0 A multi-hole Technic beam with three connector holes, beam holes, and peg holes along its length.
 0 Name: s\42121 - 32526s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -3388,7 +3388,7 @@
 2 24 0 10 89 40 10 89
 
 0 FILE 42121 - confric3.dat
-0 confric3
+0 A friction pin with ribs, stop rings, and collars forming a long Technic pin with grip features.
 0 Name: 42121 - confric3.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -3467,7 +3467,7 @@
 1 16 0 -2 0 8 0 0 0 2 0 0 0 -8 4-4cyli.dat
 
 0 FILE 42121 - connectcollar4.dat
-0 connectcollar4
+0 A small cylindrical collar connector with a central hole and chord details.
 0 Name: 42121 - connectcollar4.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -3552,7 +3552,7 @@
 1 16 -2.4 5 2 0 -1 0 0 0 -5 1 0 0 rect2a.dat
 
 0 FILE 42121 - connectslit2.dat
-0 connectslit2
+0 A slim cylindrical connector with a narrow slit feature.
 0 Name: 42121 - connectslit2.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -3580,7 +3580,7 @@
 1 16 3.9941 5 0 0 1 -0.199 1 0 0 0 0 1 8\1-4ndis.dat
 
 0 FILE s\42121 - 48989s01.dat
-0 48989s01
+0 A complex Technic connector with three long holes, multiple cylinders, and box elements.
 0 Name: s\42121 - 48989s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -3779,7 +3779,7 @@
 2 24 -6.6856 5 6.3639 -6.6856 5 -6.3639
 
 0 FILE 42121 - connect7.dat
-0 connect7
+0 A cylindrical connector with concentric rings, ribs, and edge details forming a multi-section joint.
 0 Name: 42121 - connect7.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -4049,7 +4049,7 @@
 0 !LDCAD SNAP_CYL [gender=M] [caps=one] [secs=R 8 2   R 6 16   _L 6.25 2]
 
 0 FILE 42121 - npeghol3.dat
-0 npeghol3
+0 A small non-peg hole connector with a cylindrical opening and rectangular panels.
 0 Name: 42121 - npeghol3.dat
 0 Author: Guy Vivan [guyvivan]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -4094,7 +4094,7 @@
 1 16 2.7222 0.5 -3.041 0 -0.72215 0 0.5 0 0 0 0.14395 1.5 box2-7.dat
 
 0 FILE 42121 - clh6.dat
-0 clh6
+0 A curved clip-hand component with sloped surfaces, cones, and cylindrical sections forming a flexible hinge.
 0 Name: 42121 - clh6.dat
 0 Author: Chris Dee [cwdee]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -4391,7 +4391,7 @@
 0 !LDCAD SNAP_FGR [group=lckHng] [genderOfs=M] [seq=8]
 
 0 FILE s\42121 - 3023s01.dat
-0 3023s01
+0 A simple box-shaped plate subpart with full face and edge geometry.
 0 Name: s\42121 - 3023s01.dat
 0 Author: Massimo Maso [Sirio]
 0 !LDRAW_ORG Unofficial_Subpart

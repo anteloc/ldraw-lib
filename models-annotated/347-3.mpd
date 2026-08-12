@@ -1,5 +1,5 @@
 0 FILE 347-3 - main.ldr
-0 main
+0 Fabuland hospital scene composed of a multi-story hospital building, ambulance vehicle, furniture, and character figures.
 0 Name: 347-3 - main.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -12,7 +12,7 @@
 1 14 55.692 -1 -322.926 0.358 0 0.934 0 1 0 -0.934 0 0.358 347-3 - lucylamb.ldr
 1 14 354.026 -1 -202.999 0.809 0 0.588 0 1 0 -0.588 0 0.809 347-3 - docdog.ldr
 0 FILE 347-3 - hospital.ldr
-0 hospital
+0 Two-story Fabuland hospital building with rectangular windows, red windowed panels, yellow brick walls, and a red umbrella.
 0 Name: 347-3 - hospital.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -180,7 +180,7 @@
 0 // Plate  4 x  8 (white)
 1 15 -20 -248 240 0 0 1 0 1 0 -1 0 0 3035.dat
 0 FILE 347-3 - chair.ldr
-0 chair
+0 Simple chair assembled from a 2x3 brick seat and a 1x2 brick backrest.
 0 Name: 347-3 - chair.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -190,7 +190,7 @@
 0 // Brick  1 x  2 (main_colour)
 1 16 20 -24 0 0 0 1 0 1 0 -1 0 0 3004.dat
 0 FILE 347-3 - bed.ldr
-0 bed
+0 White hospital bed built from a 4x8 plate base with 1x4 and 1x2 brick side rails.
 0 Name: 347-3 - bed.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -210,7 +210,7 @@
 0 // Brick  1 x  2 (white)
 1 15 20 -32 140 1 0 0 0 1 0 0 0 1 3004.dat
 0 FILE 347-3 - ambulance.ldr
-0 ambulance
+0 Blue and white Fabuland ambulance vehicle with chassis, opening doors, and a rounded-top window.
 0 Name: 347-3 - ambulance.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -240,7 +240,7 @@
 0 // Plate  4 x  8 (yellow)
 1 14 0 -128 60 0 0 1 0 1 0 -1 0 0 3035.dat
 0 FILE 347-3 - docdog.ldr
-0 docdog
+0 Fabuland Doctor Dog character figure (referenced part, no direct pieces).
 0 Name: 347-3 - docdog.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -253,7 +253,7 @@
 1 0 10 -37 4 1 0 0 0 1 0 0 0 1 u9100.dat
 1 4 0 -37 4 1 0 0 0 1 0 0 0 1 u9103.dat
 0 FILE 347-3 - lucylamb.ldr
-0 lucylamb
+0 Fabuland Lucy Lamb character figure (referenced part, no direct pieces).
 0 Name: 347-3 - lucylamb.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -266,7 +266,7 @@
 1 15 10 -37 4 1 0 0 0 1 0 0 0 1 u9100.dat
 1 4 0 -37 4 1 0 0 0 1 0 0 0 1 u9103.dat
 0 FILE 347-3 - charliecat.ldr
-0 charliecat
+0 Fabuland Charlie Cat character figure (referenced part, no direct pieces).
 0 Name: 347-3 - charliecat.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -279,7 +279,7 @@
 1 14 10 -37 4 1 0 0 0 -0.017 1 0 -1 -0.017 u9100.dat
 1 4 0 -37 4 1 0 0 0 1 0 0 0 1 u9103.dat
 0 FILE 347-3 - u9318.dat
-0 u9318
+0 Custom Fabuland door subpart featuring a door handle, hinges, and window panes with rounded edges.
 0 Name: 347-3 - u9318.dat
 0 Author: Chris Dee [cwdee]
 0 !LDRAW_ORG Unofficial_Part
@@ -1198,7 +1198,7 @@
 3 16 -101 -43 6 -88.330002 -42.59 6 -88.910004 -44.650002 6
 3 16 -101 -43 6 -88.910004 -44.650002 6 -89 -46.790001 6
 0 FILE 347-3 - 3995.dat
-0 3995
+0 Referenced Fabuland part (no direct pieces).
 0 Name: 347-3 - 3995.dat
 0 Author: Tore Eriksson [Tore_Eriksson]
 0 !LDRAW_ORG Unofficial_Part
@@ -1214,7 +1214,7 @@
 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 stud.dat
 0 
 0 FILE 347-3 - 3996.dat
-0 3996
+0 Referenced Fabuland part (no direct pieces).
 0 Name: 347-3 - 3996.dat
 0 Author: Tore Eriksson [Tore_Eriksson]
 0 !LDRAW_ORG Unofficial_Part
@@ -1230,7 +1230,7 @@
 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 stud.dat
 0 
 0 FILE 347-3 - u9370c01.dat
-0 u9370c01
+0 Referenced Fabuland part assembly (no direct pieces).
 0 Name: 347-3 - u9370c01.dat
 0 Author: Chris Dee [cwdee]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -1243,7 +1243,7 @@
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 347-3 - u9370.dat
 1 16 -45 8 -13 1 0 0 0 1 0 0 0 1 347-3 - u9371.dat
 0 FILE 347-3 - u9370.dat
-0 u9370
+0 Cylindrical Fabuland subpart with studs, front and back frames, and outer/inner surfaces.
 0 Name: 347-3 - u9370.dat
 0 Author: Chris Dee [cwdee]
 0 !LDRAW_ORG Unofficial_Part
@@ -1475,7 +1475,7 @@
 3 16 -50 -4 -16 -46.414001 -4 -14.414 -46.848 -4 -13.765
 4 16 -50 -4 -16 -47.703999 -4 -15.543 -46.214001 -4 -14.548 -46.414001 -4 -14.414
 0 FILE 347-3 - u9371.dat
-0 u9371
+0 Fabuland window or door subpart with left and right mullions separating panes.
 0 Name: 347-3 - u9371.dat
 0 Author: Chris Dee [cwdee]
 0 !LDRAW_ORG Unofficial_Part
@@ -1545,7 +1545,7 @@
 4 16 0 0 -7 34 12 -7 58 12 -7 96 0 -7
 4 16 0 92 -7 96 92 -7 58 60 -7 34 60 -7
 0 FILE s\347-3 - 3996s01.dat
-0 3996s01
+0 Geometric primitive subpart composed of circles, cylinders, discs, and rings forming a rounded stud-like shape.
 0 Name: s\347-3 - 3996s01.dat
 0 Author: Tore Eriksson [Tore_Eriksson]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -1654,7 +1654,7 @@
 4 16 10 48 35 10 48 110 10 14 88 10 14 52
 3 16 10 48 110 10 14 110 10 14 88
 0 FILE s\347-3 - u9371s01.dat
-0 u9371s01
+0 Detailed Fabuland window subpart with front panes, hinge, spherical elements, and edge surfaces.
 0 Name: s\347-3 - u9371s01.dat
 0 Author: Chris Dee [cwdee]
 0 !LDRAW_ORG Unofficial_Subpart

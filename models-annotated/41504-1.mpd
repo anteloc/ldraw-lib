@@ -164,7 +164,7 @@
 1 71 10 20 -16 0 0 -1 -1 0 0 0 1 0 54200.dat
 
 0 FILE 41504 - 14418.dat
-0 Plate 1 x  2 with Socket Joint-8 with Friction
+0 A plate with a friction ball socket joint, represented as a part submodel with no internal pieces.
 0 Name: 41504 - 14418.dat
 0 Author: Tim Gould [timgould]
 0 !LDRAW_ORG Unofficial_Part
@@ -180,7 +180,7 @@
 1 16 30 4 0 0 0 -1 0 1 0 1 0 0 41504 - joint-8-socket-frica.dat
 
 0 FILE 41504 - 14419.dat
-0 Plate 1 x  2 with Socket Joint-8 with Friction and Ball Joint-8
+0 A plate combining a friction socket joint and ball joint, modeled with primitive circle, cylinder, and sphere shapes.
 0 Name: 41504 - 14419.dat
 0 Author: Tim Gould [timgould]
 0 !LDRAW_ORG Unofficial_Part
@@ -201,7 +201,7 @@
 1 16 30 4 0 0 0 -1 0 1 0 1 0 0 41504 - joint-8-socket-frica.dat
 
 0 FILE s\41504 - 14418s01.dat
-0 ~Plate 1 x  2 with Socket Joint-8 with Friction
+0 The internal geometry subpart of a friction socket joint plate, constructed from box and cylinder primitives defining the joint housing.
 0 Name: s\41504 - 14418s01.dat
 0 Author: Tim Gould [timgould]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -251,7 +251,7 @@
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug2-1x2.dat
 
 0 FILE 41504 - joint-8-socket-frica.dat
-0 Friction Socket Joint-8
+0 A detailed friction ball socket joint built from quartered surface segments, discs, cylinders, and partial spheres forming the socket interior.
 0 Name: 41504 - joint-8-socket-frica.dat
 0 Author: Tim Gould [timgould]
 0 !LDRAW_ORG Unofficial_Primitive

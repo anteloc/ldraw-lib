@@ -1,5 +1,5 @@
 0 FILE 41071 - Main.ldr
-0 Main
+0 An Elves creative workshop scene featuring a workbench, bench, bird stand with food and roof, a flying machine, the Aira Windwhistler minidoll, a bird figure, and a decorative map tile.
 0 Name: 41071 - Main.ldr
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model 
@@ -15,7 +15,7 @@
 
 
 0 FILE 41071 - Workbench.ldr
-0 Workbench
+0 A tan and magenta workbench with brown brick framing, clip bricks, lavender and purple accents, and a patterned scroll tile depicting a house in the clouds.
 0 Name: 41071 - Workbench.ldr
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model 
@@ -73,7 +73,7 @@
 
 
 0 FILE 41071 - Workbench Drawer.ldr
-0 Workbench Drawer
+0 A small white drawer unit with lilac and red round plates, a trans-clear accent, and a pearl-gold grooved round tile.
 0 Name: 41071 - Workbench Drawer.ldr
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model 
@@ -98,7 +98,7 @@
 
 
 0 FILE 41071 - Bench.ldr
-0 Bench
+0 A simple white and lilac bench built from a plate, a 2x2 brick, and grooved tiles forming the seat.
 0 Name: 41071 - Bench.ldr
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model 
@@ -117,7 +117,7 @@
 
 
 0 FILE 41071 - Bird Stand.ldr
-0 Bird Stand
+0 An ornate lavender and tan bird perch on a magenta base with brown pillars, arched tan details, and trans-purple and trans-pink decorative accents.
 0 Name: 41071 - Bird Stand.ldr
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model 
@@ -193,7 +193,7 @@
 
 
 0 FILE 41071 - Bird Stand Roof Part.ldr
-0 Bird Stand Roof Part
+0 A small white, magenta, and lilac curved-roof assembly with a clip plate for mounting atop the bird stand.
 0 Name: 41071 - Bird Stand Roof Part.ldr
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model 
@@ -208,7 +208,7 @@
 
 
 0 FILE 41071 - Bird Stand Food.ldr
-0 Bird Stand Food
+0 A brown food tray holding a frosted cookie tile and accented with a pearl-gold slope piece.
 0 Name: 41071 - Bird Stand Food.ldr
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model
@@ -225,7 +225,7 @@
 
 
 0 FILE 41071 - Flying Machine.ldr
-0 Flying Machine
+0 A compact lavender and pearl-gold flying contraption with feathered wings, white flame plumes, and clip-and-handle connectors.
 0 Name: 41071 - Flying Machine.ldr
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model
@@ -260,7 +260,7 @@
 
 
 0 FILE 41071 - Aira Windwhistler.ldr
-0 Aira Windwhistler
+0 The Aira Windwhistler Friends minidoll figure with white torso and pleated skirt, tan arms, and a tan head.
 0 Name: 41071 - Aira Windwhistler.ldr
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model
@@ -279,7 +279,7 @@
 
 
 0 FILE 18920.dat
-0 18920
+0 A primitive geometric part composed of cylinders, circles, discs, and a bump, used as a subpart for a larger element.
 0 Name: 18920.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -306,7 +306,7 @@
 0 // Bump 1.0 x 0.5 (main_colour)
 1 16 0 -11.9 -5 3.3 0 0 0 0 3.3 0 -2 0 bump5000.dat
 0 FILE 2453b.dat
-0 2453b
+0 A primitive part made of two box-with-edges forms, used as a subpart geometry element.
 0 Name: 2453b.dat
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Unofficial_Part
@@ -329,7 +329,7 @@
 
 
 0 FILE s\18920s01.dat
-0 18920s01
+0 A subpart providing nested geometry for primitive part 18920 with no direct pieces of its own.
 0 Name: s\18920s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -642,7 +642,7 @@
 5 24 7.045 -35.353001 4.088 7.265 -35.137001 -0.029 8.166 -32.75 -0.029 5.477 -36.047001 2.949
 5 24 0.076 -22.427 1.587 2.232 -17.423 4.11 3.67 -21.319 4.11 -1.252 -16.496 4.11
 0 FILE 98388p04.dat
-0 Animal Friends Bird with Eyes, Feathers and Magenta Beak Pattern
+0 A Friends bird animal figure with eyes, feathers, and a magenta beak pattern, built from primitive geometric shapes.
 0 Name: 98388p04.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -817,7 +817,7 @@
 3 16 -4.45 -21.24 -10.492 -3.041 -21.527 -11.547 -4.24 -21.559999 -10.629
 3 0 -4.45 -21.24 -10.492 -4.24 -21.559999 -10.629 -4.35 -22.084 -10.509
 0 FILE s\98388p04s01.dat
-0 ~Animal Friends Bird with Eyes, Feathers and Magenta Beak Pattern Half
+0 A half-symmetry subpart for the patterned Friends bird figure, containing no direct pieces of its own.
 0 Name: s\98388p04s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart

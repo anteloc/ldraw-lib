@@ -5445,7 +5445,7 @@
 1 16 -27.002721 -75.499555 0.056185 1.499985 0.017704 -0.000471 -0.00657 3.983944 0.134104 0.001063 -0.357603 1.493993 4-4cyli.dat
 
 0 FILE 42052 - 13971.dat
-0 Wheel Rim  8 x 18 with Deep Centre Groove, Deep Spokes and Peghole
+0 Wheel rim part with deep center groove and spokes built from cylinders, cones, and rings.
 0 Name: 42052 - 13971.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -5545,7 +5545,7 @@
 1 16 0 0 0 -1 0 0 0 -1 0 0 0 1 s\42052 - 13971s01.dat
 
 0 FILE 42052 - 61254.dat
-0 Tyre 7/ 45x 17 Offset Tread with Middle Band
+0 Large offset tyre submodel built from tapered cones, open cylinders, and wide ring bands forming a grooved tread surface.
 0 Name: 42052 - 61254.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -5659,7 +5659,7 @@
 1 16 0 0 0 -0.14231 0.98982 0 -0.98982 -0.14231 0 0 0 1 s\42052 - 61254s01.dat
 
 0 FILE 42052 - 33299b.dat
-0 Technic Beam  3 x  0.5 Liftarm with Boss and Pin Semi-Reduced
+0 Short Technic liftarm with boss featuring semi-reduced axle holes and peg connections, defined by rings and disc primitives.
 0 Name: 42052 - 33299b.dat
 0 Author: Santeri Piippo [arezey]
 0 !LDRAW_ORG Unofficial_Part
@@ -5696,7 +5696,7 @@
 4 16 3.444 10 31.685 0 10 31 0 10 32 3.062 10 32.609
 
 0 FILE s\42052 - 13971s01.dat
-0 ~Spokes for Wheel Rim  8 x 18 with Deep Centre Groove, Deep Spokes and Peghole
+0 Subpart forming the spokes of a deep-groove wheel rim, constructed from two rectangular edge primitives.
 0 Name: s\42052 - 13971s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -5786,7 +5786,7 @@
 5 24 8.851 5.1101 10 6.5421 8.288 10 8.7763 6.5738 9.888 8.3151 3.4443 10
 
 0 FILE s\42052 - 61254s01.dat
-0 ~Tyre 7/ 45 x 17 Offset Tread with Middle Band Tread Element
+0 Subpart defining a single tread band element of the offset tyre, composed of two rectangular edge primitives.
 0 Name: s\42052 - 61254s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -5838,7 +5838,7 @@
 5 24 1.779 -29.631 -1.25 2.456 -29.583 1.25 -2.456 -29.583 1.25 6.64106 -28.9319 -1.25
 
 0 FILE s\42052 - 33299s01.dat
-0 ~Technic Beam  3 x  0.5 Liftarm with Boss and Pin Common
+0 Common geometry subpart for a short Technic liftarm with boss, constructed from cylinders, rings, circles, and peg-hole primitives.
 0 Name: s\42052 - 33299s01.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Subpart

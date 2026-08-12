@@ -1,5 +1,5 @@
 0 FILE 21019 - The Eiffel Tower.ldr
-0 The Eiffel Tower
+0 Display base and nameplate for The Eiffel Tower architecture model, featuring a tiled platform with turntable supports and a patterned title tile.
 0 Name: 21019 - The Eiffel Tower.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -113,7 +113,7 @@
 1 179 -114.39 -54.808 74.787 0.425 0.06 0.903 -0.799 0.494 0.344 -0.426 -0.867 0.259 21019 - technicFlexAxle-1.ldr
 1 179 -74.895 -54.905 -114.457 0.425 0.867 -0.258 -0.798 0.494 0.344 0.425 0.06 0.903 21019 - technicFlexAxle-1.ldr
 0 FILE 21019 - 1.ldr
-0 1
+0 Small turntable-based mounting subassembly with clip plates for attaching structural elements.
 0 Name: 21019 - 1.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -134,7 +134,7 @@
 
 
 0 FILE 21019 - 2.ldr
-0 2
+0 Square structural platform assembly built from large plates and corner elements forming a stable tiered base section.
 0 Name: 21019 - 2.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -249,7 +249,7 @@
 
 
 0 FILE 21019 - 2 - 1.ldr
-0 2 - 1
+0 Tiny connector subassembly combining a clip plate and stud plate for attaching small details.
 0 Name: 21019 - 2 - 1.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -266,7 +266,7 @@
 
 
 0 FILE 21019 - 2 - 2.ldr
-0 2 - 2
+0 Bracket-mounted grille tile detail used to simulate metal latticework on the tower's surface.
 0 Name: 21019 - 2 - 2.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -285,7 +285,7 @@
 
 
 0 FILE 21019 - 2 - 3.ldr
-0 2 - 3
+0 Single clip tile element used as a small attachment point connector.
 0 Name: 21019 - 2 - 3.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -301,7 +301,7 @@
 
 
 0 FILE 21019 - 2 - 4.ldr
-0 2 - 4
+0 Technic axle joiner with two short red axles forming a rotational linkage component.
 0 Name: 21019 - 2 - 4.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -320,7 +320,7 @@
 
 
 0 FILE 21019 - 2 - 5.ldr
-0 2 - 5
+0 Reinforced round brick platform with axle hole, used as a rotational pivot point for a structural section.
 0 Name: 21019 - 2 - 5.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -343,7 +343,7 @@
 
 
 0 FILE 21019 - 2 - 3 - 1.ldr
-0 2 - 3 - 1
+0 Small handle-and-plate assembly forming a structural cross detail with a tile surface.
 0 Name: 21019 - 2 - 3 - 1.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -367,7 +367,7 @@
 
 
 0 FILE 21019 - 2 - 3 - 2.ldr
-0 2 - 3 - 2
+0 Single horizontal clip plate used as a lightweight attachment connector.
 0 Name: 21019 - 2 - 3 - 2.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -381,7 +381,7 @@
 
 
 0 FILE 21019 - 2 - 6.ldr
-0 2 - 6
+0 Downward bracket with grille tile detail simulating lattice pattern on the tower leg.
 0 Name: 21019 - 2 - 6.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -398,7 +398,7 @@
 
 
 0 FILE 21019 - 3.ldr
-0 3
+0 Bracket-based structural node with handles and grooved tiles forming a connecting joint in the tower framework.
 0 Name: 21019 - 3.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -434,7 +434,7 @@
 
 
 0 FILE 21019 - 2 - 7.ldr
-0 2 - 7
+0 Round Technic platform with axle, grille tiles, and a cone stopper forming an upper tower tier with rotational support.
 0 Name: 21019 - 2 - 7.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -469,7 +469,7 @@
 
 
 0 FILE 21019 - 2 - 7 - 1.ldr
-0 2 - 7 - 1
+0 Single clip-on-top plate used as a small structural attachment connector.
 0 Name: 21019 - 2 - 7 - 1.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -484,7 +484,7 @@
 
 
 0 FILE 21019 - 2 - 7 - 2.ldr
-0 2 - 7 - 2
+0 Horizontal plate and handle assembly with a long tile, forming a lattice beam detail.
 0 Name: 21019 - 2 - 7 - 2.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -506,7 +506,7 @@
 
 
 0 FILE 21019 - 2 - 7 - 3.ldr
-0 2 - 7 - 3
+0 Four-sided stud brick with clip plates radiating outward, forming a multi-directional lattice connector node.
 0 Name: 21019 - 2 - 7 - 3.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -541,7 +541,7 @@
 
 
 0 FILE 21019 - 2 - 7 - 3 - 1.ldr
-0 2 - 7 - 3 - 1
+0 Single horizontal clip plate used as a minimal attachment connector element.
 0 Name: 21019 - 2 - 7 - 3 - 1.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -557,7 +557,7 @@
 
 
 0 FILE 21019 - 2 - 7 - 3 - 2.ldr
-0 2 - 7 - 3 - 2
+0 Long handle-and-tile beam assembly forming an extended lattice framework detail.
 0 Name: 21019 - 2 - 7 - 3 - 2.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -577,7 +577,7 @@
 
 
 0 FILE 21019 - 2 - 7 - 4.ldr
-0 2 - 7 - 4
+0 Four-sided stud brick with clip plates and sloped bricks, forming a tapered lattice connector with angular detail.
 0 Name: 21019 - 2 - 7 - 4.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -607,7 +607,7 @@
 
 
 0 FILE 21019 - 4.ldr
-0 4
+0 Decorative antenna spire assembly made of an octagonal rod frame, domed cylinder, and lightsaber bar element.
 0 Name: 21019 - 4.ldr
 0 Author: Damien Roux [Darats]
 0 !LDRAW_ORG Model
@@ -625,7 +625,7 @@
 
 
 0 FILE 21019 - technicFlexAxle-1.ldr
-0 technicFlexAxle-1
+0 Long flexible Technic axle element providing curved structural support for the tower's lattice arches.
 0 Name: 21019 - technicFlexAxle-1.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt

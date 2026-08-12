@@ -1,5 +1,5 @@
 0 FILE 3636 - main.ldr
-0 main
+0 A Fabuland-style bedroom scene featuring a green baseplate with a windowed cupboard, a red bed, a red chair, flowers, and assorted accessory items like a cup and hairbrush.
 0 Name: 3636 - main.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -51,7 +51,7 @@
 0 STEP
 1 4 0 0 20 1 0 0 0 1 0 0 0 1 3636 - lucylamb.ldr
 0 FILE 3636 - lucylamb.ldr
-0 lucylamb
+0 An empty submodel placeholder referencing the Lucy Lamb character figure with no direct pieces.
 0 Name: 3636 - lucylamb.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -64,7 +64,7 @@
 1 15 10 -37 4 1 0 0 0 1 0 0 0 1 u9100.dat
 1 4 0 -37 4 1 0 0 0 1 0 0 0 1 u9103.dat
 0 FILE 3636 - 2042.dat
-0 2042
+0 A geometric primitive mesh composed of boxes, cylinders, chords, and discs forming a rounded multi-faced solid shape.
 0 Name: 3636 - 2042.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -251,7 +251,7 @@
 0 // Cylinder Closed 0.5 (main_colour)
 1 16 -3.5 135 -14.25 0 2 0 -1.5 0 0 0 0 -1.5 2-4cylc.dat
 0 FILE 3636 - 2043.dat
-0 2043
+0 A complex curved primitive mesh built from cylinders, circles, rings, spheres, and chords forming a detailed rounded object.
 0 Name: 3636 - 2043.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -396,7 +396,7 @@
 3 16 52 -24.5 -3.5 50.225899 0 -3.5 52 24.5 -3.5
 3 16 52 24.5 -3.5 50.225899 0 -3.5 43.000198 4.828 -3.5
 0 FILE 3636 - 197295.dat
-0 197295
+0 A simple cylindrical primitive shape formed from chords and quarter-cylinders.
 0 Name: 3636 - 197295.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -1013,7 +1013,7 @@
 4 16 49.5 0 -26 -49.5 0 -26 -49.5 0 26 49.5 0 26
 4 16 49.5 0 -26 49.5 0 26 49.5 -0.25 26 49.5 -0.25 -26
 0 FILE 3636 - 4728.dat
-0 4728
+0 A basic cylindrical primitive composed of circles, a ring, and a full cylinder forming a short tube or sleeve.
 0 Name: 3636 - 4728.dat
 0 Author: Tore Eriksson [Tore_Eriksson]
 0 !LDRAW_ORG Unofficial_Part
@@ -1044,7 +1044,7 @@
 
 0 !LDCAD SNAP_CYL [gender=F] [caps=none] [secs=R 6 20   R 4 8]
 0 FILE 3636 - 3067bpfd.dat
-0 3067bpfd
+0 An empty submodel placeholder, likely a printed or decorated panel part with no direct geometry pieces.
 0 Name: 3636 - 3067bpfd.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -1690,7 +1690,7 @@
 3 16 -7 0 0.9 -7.5189 0 0.4678 -7.1 0 -2.3
 4 16 -7.1 0 -2.3 -7.5189 0 0.4678 -7.5189 0 -7.8678 -7.3528 0 -8.4876
 0 FILE 3636 - 3852a.dat
-0 3852a
+0 A long-handled object composed of a handle, circle, cylinder, and disc forming a cylindrical tool or implement.
 0 Name: 3636 - 3852a.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Part
@@ -1712,7 +1712,7 @@
 0 // Disc 1.0 (main_colour)
 1 16 0 24 0 -4 0 0 0 -1 0 0 0 -4 4-4disc.dat
 0 FILE 3636 - 4336.dat
-0 4336
+0 An intricate geometric primitive mesh of boxes, rectangles, cylinders, and chords forming a detailed multi-faceted shape.
 0 Name: 3636 - 4336.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -1952,7 +1952,7 @@
 0 // Box with  4 Faces without  2 Parallel Edges (main_colour)
 1 16 -10 -8 -60 2 0 0 0 0 8 0 4 0 box4-2p.dat
 0 FILE s\3636 - 4728s02.dat
-0 4728s02
+0 A sub-part composed of multiple cylinders, circles, and a ring forming a segmented tubular structure.
 0 Name: s\3636 - 4728s02.dat
 0 Author: Sylvain L. Sauvage [SLS]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -2007,7 +2007,7 @@
 1 16 0 19 0 8 0 0 0 1 0 0 0 8 4-4cyli.dat
 1 16 0 20 0 1 0 0 0 -1 0 0 0 -1 stud4a.dat
 0 FILE s\3636 - 4728s01.dat
-0 4728s01
+0 An empty sub-part placeholder with no direct geometry pieces.
 0 Name: s\3636 - 4728s01.dat
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -2102,7 +2102,7 @@
 2 24 -1.35648 8 12.1495 0 8 11.998
 2 24 0 4 11.998 -1.35648 4 12.1495
 0 FILE s\3636 - 3852s01.dat
-0 3852s01
+0 A detailed sub-part mesh of sloped cylinders, chords, rings, and discs forming a tapered rounded surface.
 0 Name: s\3636 - 3852s01.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -2253,7 +2253,7 @@
 5 24 2.5 -13.09031 6.96119 -1 -13.09031 6.96119 2.5 -10.50814 5.32809 2.5 -19.471951 8.51008
 5 24 2.5 -40.909931 6.96157 -1 -40.909931 6.96157 2.5 -43.491859 5.32809 2.5 -34.528049 8.51008
 0 FILE s\3636 - 3852-1.dat
-0 3852-1
+0 An empty sub-part placeholder with no direct geometry pieces.
 0 Name: s\3636 - 3852-1.dat
 0 Author: John Van Zwieten [jvan]
 0 !LDRAW_ORG Unofficial_Subpart

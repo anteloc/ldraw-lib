@@ -1,5 +1,5 @@
 0 FILE 42029 - Main.ldr
-0 Main
+0 Assembly container for the custom Pickup truck, integrating drivetrain, suspension, steering, and body submodels.
 0 Name: 42029 - Main.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8,7 +8,7 @@
 
 
 0 FILE 42029 - Pickup A.ldr
-0 Pickup A
+0 Rear axle assembly with differential, CV joints, wheel spindles, gears, and shock mounting beams.
 0 Name: 42029 - Pickup A.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -172,7 +172,7 @@
 
 
 0 FILE 42029 - Pickup A005.ldr
-0 Pickup A005
+0 Front steering hub subassembly with spindle axle, steering bearing, and cross blocks for wheel mounting.
 0 Name: 42029 - Pickup A005.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -216,7 +216,7 @@
 
 
 0 FILE 42029 - Pickup A009.ldr
-0 Pickup A009
+0 Small connector linkage of two liftarms joined by long frictionless pins.
 0 Name: 42029 - Pickup A009.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -233,7 +233,7 @@
 
 
 0 FILE 42029 - Pickup A012.ldr
-0 Pickup A012
+0 Compact linkage of bent liftarms and a short beam pinned around an axle pivot.
 0 Name: 42029 - Pickup A012.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -253,7 +253,7 @@
 
 
 0 FILE 42029 - Shock Rear.ldr
-0 Shock Rear
+0 Rear shock absorber unit consisting of a cylinder, piston rod, and coiled spring.
 0 Name: 42029 - Shock Rear.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -300,7 +300,7 @@
 
 
 0 FILE 42029 - Shock Rear_springMesh.ldr
-0 Shock Rear_springMesh
+0 Generated coil spring mesh defining the rear shock's winding geometry and dimensions.
 0 Name: 42029 - Shock Rear_springMesh.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -6132,7 +6132,7 @@
 
 
 0 FILE 42029 - Pickup A015.ldr
-0 Pickup A015
+0 Structural frame section of long beams and bent liftarms connected by pins and angle connectors.
 0 Name: 42029 - Pickup A015.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -6188,7 +6188,7 @@
 
 
 0 FILE 42029 - Pickup A015 S04.ldr
-0 Pickup A015 S04
+0 Linkage sub-step joining a beam and angle connector with long axle pins.
 0 Name: 42029 - Pickup A015 S04.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -6205,7 +6205,7 @@
 
 
 0 FILE 42029 - Pickup A019.ldr
-0 Pickup A019
+0 Single-beam extension arm pinned with blue friction pin to the chassis.
 0 Name: 42029 - Pickup A019.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -6219,7 +6219,7 @@
 
 
 0 FILE 42029 - Pickup A020.ldr
-0 Pickup A020
+0 Single short beam extension pinned with blue friction pin to the chassis.
 0 Name: 42029 - Pickup A020.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -6233,7 +6233,7 @@
 
 
 0 FILE 42029 - Pickup A021.ldr
-0 Pickup A021
+0 Small bent liftarm and short beam linkage pinned with friction connectors.
 0 Name: 42029 - Pickup A021.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -6250,7 +6250,7 @@
 
 
 0 FILE 42029 - Pickup A022.ldr
-0 Pickup A022
+0 Linear actuator mechanism with body, axle, and piston mounted between bent liftarms and links.
 0 Name: 42029 - Pickup A022.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -6303,7 +6303,7 @@
 
 
 0 FILE 42029 - Pickup A022 S07.ldr
-0 Pickup A022 S07
+0 Connector sub-step attaching an angle connector and bent liftarm via long axle pins.
 0 Name: 42029 - Pickup A022 S07.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -6320,7 +6320,7 @@
 
 
 0 FILE 42029 - Pickup A023.ldr
-0 Pickup A023
+0 Small bent liftarm and short beam linkage pinned with friction connectors.
 0 Name: 42029 - Pickup A023.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -6337,7 +6337,7 @@
 
 
 0 FILE 42029 - Pickup A028.ldr
-0 Pickup A028
+0 Pair of Technic bricks with holes joined by blue friction pins as a mounting block.
 0 Name: 42029 - Pickup A028.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -6354,7 +6354,7 @@
 
 
 0 FILE 42029 - Pickup B.ldr
-0 Pickup B
+0 Chassis connector assembly with H-beam, T-beam, bent liftarms, and cross blocks for frame reinforcement.
 0 Name: 42029 - Pickup B.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -6407,7 +6407,7 @@
 
 
 0 FILE 42029 - Pickup B004.ldr
-0 Pickup B004
+0 Compact linkage of short liftarms and quarter-circle bent beams on axles with a cross block.
 0 Name: 42029 - Pickup B004.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -6439,7 +6439,7 @@
 
 
 0 FILE 42029 - Pickup B007.ldr
-0 Pickup B007
+0 Mounting bracket of H-beam, T-beam, and bent liftarms pinned together for structural support.
 0 Name: 42029 - Pickup B007.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -6469,7 +6469,7 @@
 
 
 0 FILE 42029 - Pickup B009.ldr
-0 Pickup B009
+0 Steering linkage subassembly with gear rack, towball pins, and steering links.
 0 Name: 42029 - Pickup B009.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -6488,7 +6488,7 @@
 
 
 0 FILE 42029 - Pickup B010.ldr
-0 Pickup B010
+0 Small gear-and-axle assembly with a 12-tooth bevel gear, beam, and joiner for rotational transfer.
 0 Name: 42029 - Pickup B010.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -6510,7 +6510,7 @@
 
 
 0 FILE 42029 - Pickup C.ldr
-0 Pickup C
+0 Front-end assembly with beams, gears, angle connectors, and bushings for steering and drive linkage.
 0 Name: 42029 - Pickup C.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -6648,7 +6648,7 @@
 
 
 0 FILE 42029 - Pickup C009.ldr
-0 Pickup C009
+0 Connector sub-step joining a bent liftarm and angle connector with long axle pins.
 0 Name: 42029 - Pickup C009.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -6666,7 +6666,7 @@
 
 
 0 FILE 42029 - Pickup C014.ldr
-0 Pickup C014
+0 Mounting frame combining a T-beam and open-center beam held by friction pins.
 0 Name: 42029 - Pickup C014.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -6692,7 +6692,7 @@
 
 
 0 FILE 42029 - Pickup C015.ldr
-0 Pickup C015
+0 Short axle linkage of a notched axle, joiner, and long axle for drive connection.
 0 Name: 42029 - Pickup C015.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -6706,7 +6706,7 @@
 
 
 0 FILE 42029 - Pickup C018.ldr
-0 Pickup C018
+0 Small gear mechanism with paired 12-tooth bevel gears on axles and connector blocks.
 0 Name: 42029 - Pickup C018.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -6731,7 +6731,7 @@
 
 
 0 FILE 42029 - Pickup C020.ldr
-0 Pickup C020
+0 Simple T-shaped beam connector subassembly joined by a long friction pin.
 0 Name: 42029 - Pickup C020.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -6745,7 +6745,7 @@
 
 
 0 FILE 42029 - Pickup C024R.ldr
-0 Pickup C024R
+0 Angled bracket formed by a 90-degree bent liftarm secured with friction pins.
 0 Name: 42029 - Pickup C024R.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -6759,7 +6759,7 @@
 
 
 0 FILE 42029 - Pickup C024L.ldr
-0 Pickup C024L
+0 Angled bracket formed by a 90-degree bent liftarm secured with friction pins.
 0 Name: 42029 - Pickup C024L.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -6773,7 +6773,7 @@
 
 
 0 FILE 42029 - Pickup C028.ldr
-0 Pickup C028
+0 Extended axle shaft built from two axle-5 studs coupled by inline joiners and a red bush.
 0 Name: 42029 - Pickup C028.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -6792,7 +6792,7 @@
 
 
 0 FILE 42029 - Pickup C029.ldr
-0 Pickup C029
+0 Flexible drive shaft using universal joints on a long axle with an inline joiner.
 0 Name: 42029 - Pickup C029.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -6819,7 +6819,7 @@
 
 
 0 FILE 42029 - Pickup.ldr
-0 Pickup
+0 Main pickup chassis submodel combining a red beam frame, multiple gears, transmission rings, and numerous connecting subassemblies.
 0 Name: 42029 - Pickup.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -7272,7 +7272,7 @@
 
 
 0 FILE 42029 - Pickup 006.ldr
-0 Pickup 006
+0 Compact geared linkage with bevel gears, angle connector, and bent liftarm on stopped axles.
 0 Name: 42029 - Pickup 006.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -7313,7 +7313,7 @@
 
 
 0 FILE 42029 - Pickup 007.ldr
-0 Pickup 007
+0 Short coupled axle section joining a notched axle-2 to an axle-3 with inline joiners.
 0 Name: 42029 - Pickup 007.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -7330,7 +7330,7 @@
 
 
 0 FILE 42029 - Pickup 012.ldr
-0 Pickup 012
+0 Transmission gear stack featuring a clutch gear and driving ring on a long axle with offset joiner.
 0 Name: 42029 - Pickup 012.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -7349,7 +7349,7 @@
 
 
 0 FILE 42029 - Pickup 014.ldr
-0 Pickup 014
+0 Geared axle module with a 16-tooth reinforced gear, bush, and inline axle joiner.
 0 Name: 42029 - Pickup 014.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -7368,7 +7368,7 @@
 
 
 0 FILE 42029 - Pickup 016.ldr
-0 Pickup 016
+0 Geared axle module with a 16-tooth reinforced gear, bush, and inline axle joiner on a longer axle.
 0 Name: 42029 - Pickup 016.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -7387,7 +7387,7 @@
 
 
 0 FILE 42029 - Pickup 018.ldr
-0 Pickup 018
+0 Reinforced beam framework using a beam-13, T-beams, and cross blocks pinned together.
 0 Name: 42029 - Pickup 018.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -7432,7 +7432,7 @@
 
 
 0 FILE 42029 - Pickup 021.ldr
-0 Pickup 021
+0 Long structural beam joined to a bent beam by friction pins.
 0 Name: 42029 - Pickup 021.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -7451,7 +7451,7 @@
 
 
 0 FILE 42029 - Pickup 022.ldr
-0 Pickup 022
+0 Small bracket of a bent red liftarm and short beam pinned together.
 0 Name: 42029 - Pickup 022.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -7474,7 +7474,7 @@
 
 
 0 FILE 42029 - Pickup 023.ldr
-0 Pickup 023
+0 Compact bent-liftarm connector subassembly held by long friction pins.
 0 Name: 42029 - Pickup 023.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -7494,7 +7494,7 @@
 
 
 0 FILE 42029 - Pickup 032.ldr
-0 Pickup 032
+0 Paired blue bent liftarms linked through a T-beam with long friction pins.
 0 Name: 42029 - Pickup 032.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -7516,7 +7516,7 @@
 
 
 0 FILE 42029 - Pickup 033.ldr
-0 Pickup 033
+0 Short axle fitted with a red bush and a half-width liftarm via an inline joiner.
 0 Name: 42029 - Pickup 033.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -7533,7 +7533,7 @@
 
 
 0 FILE 42029 - Pickup 036.ldr
-0 Pickup 036
+0 Linked beam assembly connecting a beam-7 and a red beam-5 with friction pins.
 0 Name: 42029 - Pickup 036.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -7556,7 +7556,7 @@
 
 
 0 FILE 42029 - Pickup 038.ldr
-0 Pickup 038
+0 Linked beam assembly connecting a beam-7 and a red beam-5 with friction pins.
 0 Name: 42029 - Pickup 038.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -7579,7 +7579,7 @@
 
 
 0 FILE 42029 - Pickup 043.ldr
-0 Pickup 043
+0 Longitudinal beam-11 reinforced by two bent liftarms and friction pins.
 0 Name: 42029 - Pickup 043.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -7602,7 +7602,7 @@
 
 
 0 FILE 42029 - Pickup 044.ldr
-0 Pickup 044
+0 Small gear node with an 8-tooth gear on a stopped axle attached to a T-beam.
 0 Name: 42029 - Pickup 044.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -7617,7 +7617,7 @@
 
 
 0 FILE 42029 - Pickup 045.ldr
-0 Pickup 045
+0 Red body panel mounting structure using beams and bent cross blocks with friction pins.
 0 Name: 42029 - Pickup 045.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -7654,7 +7654,7 @@
 
 
 0 FILE 42029 - Pickup 047.ldr
-0 Pickup 047
+0 Large structural frame assembly of red and black beams, cross blocks, and liftarms pinned into a rigid chassis section.
 0 Name: 42029 - Pickup 047.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -7747,7 +7747,7 @@
 
 
 0 FILE 42029 - Pickup 047 S05.ldr
-0 Pickup 047 S05
+0 Small pinned linkage of two short red beams on an axle with stop-bush pins.
 0 Name: 42029 - Pickup 047 S05.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -7766,7 +7766,7 @@
 
 
 0 FILE 42029 - Pickup 047 S13.ldr
-0 Pickup 047 S13
+0 A small steering assembly consisting of a steering wheel, axle, and a long stop pin.
 0 Name: 42029 - Pickup 047 S13.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -7781,7 +7781,7 @@
 
 
 0 FILE 42029 - Pickup 047 S15.ldr
-0 Pickup 047 S15
+0 A compact structural bracket built from liftarms, connector hubs, and friction pins arranged at right angles.
 0 Name: 42029 - Pickup 047 S15.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -7808,7 +7808,7 @@
 
 
 0 FILE 42029 - Pickup 057.ldr
-0 Pickup 057
+0 A short pin-and-joiner linkage coupling two round pin joiners with a friction pin.
 0 Name: 42029 - Pickup 057.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -7822,7 +7822,7 @@
 
 
 0 FILE 42029 - Pickup 058.ldr
-0 Pickup 058
+0 A drivetrain section featuring universal joints, a 6-stud axle, and a 9-stud axle for power transmission.
 0 Name: 42029 - Pickup 058.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -7847,7 +7847,7 @@
 
 
 0 FILE 42029 - Pickup 060.ldr
-0 Pickup 060
+0 An engine block subassembly with three cylinder heads, T-shaped liftarms, a multi-hole Technic brick, and supporting axles and pins.
 0 Name: 42029 - Pickup 060.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -7911,7 +7911,7 @@
 
 
 0 FILE 42029 - Pickup 060 S05.ldr
-0 Pickup 060 S05
+0 An engine moving-parts assembly with two crankshafts, six pistons, connecting rods, and a notched axle.
 0 Name: 42029 - Pickup 060 S05.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -7958,7 +7958,7 @@
 
 
 0 FILE 42029 - Pickup 060 S07.ldr
-0 Pickup 060 S07
+0 A cylinder head stack of three engine cylinder heads held together by friction pins.
 0 Name: 42029 - Pickup 060 S07.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -7981,7 +7981,7 @@
 
 
 0 FILE 42029 - Hose L.ldr
-0 Hose L
+0 A left-side ribbed flex hose made of 36 mid segments and 2 end segments.
 0 Name: 42029 - Hose L.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8086,7 +8086,7 @@
 
 
 0 FILE 42029 - Hose R.ldr
-0 Hose R
+0 A right-side ribbed flex hose made of 36 mid segments and 2 end segments.
 0 Name: 42029 - Hose R.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8191,7 +8191,7 @@
 
 
 0 FILE 42029 - Pickup 060 S03.ldr
-0 Pickup 060 S03
+0 A mounting bracket built from a multi-hole Technic brick secured with a long stop pin and friction pins.
 0 Name: 42029 - Pickup 060 S03.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8208,7 +8208,7 @@
 
 
 0 FILE 42029 - Pickup 060 S11.ldr
-0 Pickup 060 S11
+0 A wheel hub assembly with six rims, cross blocks, long axle pins, and liftarms forming a wheeled axle unit.
 0 Name: 42029 - Pickup 060 S11.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8257,7 +8257,7 @@
 
 
 0 FILE 42029 - Pickup 060 S11 s5.ldr
-0 Pickup 060 S11 s5
+0 A small axle and bushing unit using a 9-stud axle, liftarm, flanged bush, and a long blue pin.
 0 Name: 42029 - Pickup 060 S11 s5.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8274,7 +8274,7 @@
 
 
 0 FILE 42029 - Pickup 060 S12.ldr
-0 Pickup 060 S12
+0 A linkage subassembly combining a cross block with pins, a 5-stud liftarm, a blue long pin, and friction pins.
 0 Name: 42029 - Pickup 060 S12.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8294,7 +8294,7 @@
 
 
 0 FILE 42029 - Pickup 062.ldr
-0 Pickup 062
+0 A left body panel module featuring a smooth fairing panel mounted on a cross block and pins.
 0 Name: 42029 - Pickup 062.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8315,7 +8315,7 @@
 
 
 0 FILE 42029 - Pickup 063.ldr
-0 Pickup 063
+0 A right body panel module featuring a smooth fairing panel mounted on a cross block and pins.
 0 Name: 42029 - Pickup 063.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8336,7 +8336,7 @@
 
 
 0 FILE 42029 - Pickup 064.ldr
-0 Pickup 064
+0 A structural beam section built around a 7-stud liftarm with a cross block, long blue pin, and friction pins.
 0 Name: 42029 - Pickup 064.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8357,7 +8357,7 @@
 
 
 0 FILE 42029 - Pickup 065.ldr
-0 Pickup 065
+0 A rear axle suspension module with an open-center beam, suspension liftarms, domed cylinders, and multiple pins.
 0 Name: 42029 - Pickup 065.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8429,7 +8429,7 @@
 
 
 0 FILE 42029 - Pickup 065 S05.ldr
-0 Pickup 065 S05
+0 A single suspension arm assembly with a red liftarm, suspension arm, studded axle, and a 3/4 pin.
 0 Name: 42029 - Pickup 065 S05.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8447,7 +8447,7 @@
 
 
 0 FILE 42029 - Pickup 065 S06.ldr
-0 Pickup 065 S06
+0 A single suspension arm assembly with a red liftarm, suspension arm, studded axle, and a 3/4 pin.
 0 Name: 42029 - Pickup 065 S06.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8465,7 +8465,7 @@
 
 
 0 FILE 42029 - Pickup 065 S08.ldr
-0 Pickup 065 S08
+0 A steering hub and ball-joint bearing assembly for a portal axle with two towball pins.
 0 Name: 42029 - Pickup 065 S08.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8482,7 +8482,7 @@
 
 
 0 FILE 42029 - Pickup 065 S09.ldr
-0 Pickup 065 S09
+0 A single suspension arm assembly with a red liftarm, suspension arm, studded axle, and a 3/4 pin.
 0 Name: 42029 - Pickup 065 S09.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8501,7 +8501,7 @@
 
 
 0 FILE 42029 - Pickup 065 S10.ldr
-0 Pickup 065 S10
+0 A single suspension arm assembly with a red liftarm, suspension arm, studded axle, and a 3/4 pin.
 0 Name: 42029 - Pickup 065 S10.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8520,7 +8520,7 @@
 
 
 0 FILE 42029 - Pickup 074.ldr
-0 Pickup 074
+0 A small triangular liftarm bracket mounted on a 5-stud axle with a flanged bush.
 0 Name: 42029 - Pickup 074.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8535,7 +8535,7 @@
 
 
 0 FILE 42029 - Pickup 086.ldr
-0 Pickup 086
+0 A complex structural frame built from bent liftarms, cross blocks, axles, bushes, and connectors, including two translucent round plates.
 0 Name: 42029 - Pickup 086.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8625,7 +8625,7 @@
 
 
 0 FILE 42029 - Pickup 086 S08.ldr
-0 Pickup 086 S08
+0 An axle-and-beam linkage assembly with cross blocks, bent liftarms, flanged bushes, and a 9-stud axle.
 0 Name: 42029 - Pickup 086 S08.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8669,7 +8669,7 @@
 
 
 0 FILE 42029 - Pickup 086 S09.ldr
-0 Pickup 086 S09
+0 An axle with angle connectors and long stop pins forming a small linkage assembly.
 0 Name: 42029 - Pickup 086 S09.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8688,7 +8688,7 @@
 
 
 0 FILE 42029 - Pickup 086 S13.ldr
-0 Pickup 086 S13
+0 A red bent liftarm frame with a perpendicular pin connector and axle joined by friction pins.
 0 Name: 42029 - Pickup 086 S13.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8722,7 +8722,7 @@
 
 
 0 FILE 42029 - Pickup 086 S14.ldr
-0 Pickup 086 S14
+0 A small drive-train component with a notched axle, transmission ring extension, and a clear round plate.
 0 Name: 42029 - Pickup 086 S14.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8737,7 +8737,7 @@
 
 
 0 FILE 42029 - Pickup 086 S16.ldr
-0 Pickup 086 S16
+0 Two angled connectors joined by a short notched axle forming a steering linkage joint.
 0 Name: 42029 - Pickup 086 S16.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8752,7 +8752,7 @@
 
 
 0 FILE 42029 - Pickup 086 S18.ldr
-0 Pickup 086 S18
+0 A pair of thin short red fairing panels mounted on an axle.
 0 Name: 42029 - Pickup 086 S18.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8766,7 +8766,7 @@
 
 
 0 FILE 42029 - Pickup 088.ldr
-0 Pickup 088
+0 A dark bluish-grey bent liftarm and beam frame assembly connected with friction pins.
 0 Name: 42029 - Pickup 088.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8796,7 +8796,7 @@
 
 
 0 FILE 42029 - Pickup 088 Bar.ldr
-0 Pickup 088 Bar
+0 A short handle bar made of an axle-pin hub and angled connector.
 0 Name: 42029 - Pickup 088 Bar.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8811,7 +8811,7 @@
 
 
 0 FILE 42029 - Pickup 088 S05.ldr
-0 Pickup 088 S05
+0 A dark bluish-grey bent liftarm sub-frame with short beam and friction pins.
 0 Name: 42029 - Pickup 088 S05.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8836,7 +8836,7 @@
 
 
 0 FILE 42029 - Pickup 090R.ldr
-0 Pickup 090R
+0 A wide long red fairing panel attached with friction pins.
 0 Name: 42029 - Pickup 090R.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8851,7 +8851,7 @@
 
 
 0 FILE 42029 - Pickup 090L.ldr
-0 Pickup 090L
+0 A wide long red fairing panel attached with friction pins.
 0 Name: 42029 - Pickup 090L.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8866,7 +8866,7 @@
 
 
 0 FILE 42029 - Pickup 091.ldr
-0 Pickup 091
+0 A small black tiled plate with a red holed plate base forming a deck or cover piece.
 0 Name: 42029 - Pickup 091.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8879,7 +8879,7 @@
 
 
 0 FILE 42029 - Pickup 092.ldr
-0 Pickup 092
+0 A pair of clear dish headlights mounted on axle joiners and short liftarms.
 0 Name: 42029 - Pickup 092.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -8917,7 +8917,7 @@
 
 
 0 FILE 42029 - Pickup 093.ldr
-0 Pickup 093
+0 A large red body panel assembly built from 5x11 panels, bent beams, and many friction pins.
 0 Name: 42029 - Pickup 093.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -9039,7 +9039,7 @@
 
 
 0 FILE 42029 - Pickup 093 S12.ldr
-0 Pickup 093 S12
+0 A split cross block and triple-pin cross block joined by a short notched axle.
 0 Name: 42029 - Pickup 093 S12.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -9055,7 +9055,7 @@
 
 
 0 FILE 42029 - Pickup 094.ldr
-0 Pickup 094
+0 A red 3x11 panel and beam section with bent liftarms pinned together.
 0 Name: 42029 - Pickup 094.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -9093,7 +9093,7 @@
 
 
 0 FILE 42029 - Pickup 095.ldr
-0 Pickup 095
+0 Cross blocks and a pin joiner on a notched axle forming a linkage pivot.
 0 Name: 42029 - Pickup 095.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -9118,7 +9118,7 @@
 
 
 0 FILE 42029 - Pickup 096.ldr
-0 Pickup 096
+0 A pair of red 5x11 body panels attached with friction pins.
 0 Name: 42029 - Pickup 096.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -9134,7 +9134,7 @@
 
 
 0 FILE 42029 - Pickup 097.ldr
-0 Pickup 097
+0 A red double bent liftarm arm assembly with short beams and friction pins.
 0 Name: 42029 - Pickup 097.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -9176,7 +9176,7 @@
 
 
 0 FILE 42029 - Pickup 097 S04.ldr
-0 Pickup 097 S04
+0 A small red double bent liftarm joint with beams and friction pins.
 0 Name: 42029 - Pickup 097 S04.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -9198,7 +9198,7 @@
 
 
 0 FILE 42029 - Pickup 098.ldr
-0 Pickup 098
+0 A red double bent liftarm arm assembly with short beams and friction pins.
 0 Name: 42029 - Pickup 098.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -9240,7 +9240,7 @@
 
 
 0 FILE 42029 - Pickup 098 S04.ldr
-0 Pickup 098 S04
+0 A small red double bent liftarm joint with beams and friction pins.
 0 Name: 42029 - Pickup 098 S04.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -9262,7 +9262,7 @@
 
 
 0 FILE 42029 - Pickup 099.ldr
-0 Pickup 099
+0 A red fairing panel and smooth front panel mounted with long stop pins.
 0 Name: 42029 - Pickup 099.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -9284,7 +9284,7 @@
 
 
 0 FILE 42029 - Pickup 101.ldr
-0 Pickup 101
+0 A red smooth front panel mounted with a long stop pin.
 0 Name: 42029 - Pickup 101.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -9301,7 +9301,7 @@
 
 
 0 FILE 42029 - Pickup 102.ldr
-0 Pickup 102
+0 A dark bluish-grey beam frame with cross blocks and red stop pins forming a mounting bracket.
 0 Name: 42029 - Pickup 102.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -9332,7 +9332,7 @@
 
 
 0 FILE 42029 - Shock Front.ldr
-0 Shock Front
+0 A Technic 6.5L shock absorber assembly with cylinder, piston rod, and spring.
 0 Name: 42029 - Shock Front.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -9379,7 +9379,7 @@
 
 
 0 FILE 42029 - Shock Front_springMesh.ldr
-0 Shock Front_springMesh
+0 Helical front suspension spring coil built from five tapered winding sections.
 0 Name: 42029 - Shock Front_springMesh.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -15211,7 +15211,7 @@
 
 
 0 FILE 42029 - String 01.ldr
-0 String 01
+0 Flexible rope string composed of twelve cylindrical segments forming a longer path.
 0 Name: 42029 - String 01.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model
@@ -15265,7 +15265,7 @@
 
 
 0 FILE 42029 - String 02.ldr
-0 String 02
+0 Short flexible rope string composed of five cylindrical segments.
 0 Name: 42029 - String 02.ldr
 0 Author: Marc Giraudet [Mad_Marc]
 0 !LDRAW_ORG Model

@@ -1,5 +1,5 @@
 0 FILE 42074 - Racing Yacht.mpd
-0 Racing Yacht
+0 A racing yacht model built from Technic beams, pins, and gears with steering, sail rigging, mast, boom, and hull nose subassemblies.
 0 Name: 42074 - Racing Yacht.mpd
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -359,7 +359,7 @@
 
 
 0 FILE 42074 - steer.ldr
-0 steer
+0 A small steering mechanism using a beam, steering wheel, and 16-tooth gears on an axle.
 0 Name: 42074 - steer.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -386,7 +386,7 @@
 
 
 0 FILE 42074 - steer2.ldr
-0 steer2
+0 A secondary steering assembly with bevel gears, angle connectors, and a toggle joint for directional linkage.
 0 Name: 42074 - steer2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -423,7 +423,7 @@
 
 
 0 FILE 42074 - sailbase.ldr
-0 sailbase
+0 A sail base framework of white bent and straight beams with reels, gears, and towball pins forming the sail control structure.
 0 Name: 42074 - sailbase.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -552,7 +552,7 @@
 
 
 0 FILE 42074 - rubberBandRound-1.ldr
-0 rubberBandRound-1
+0 A procedurally generated rubber band composed of 24 cylindrical path segments forming a rounded loop.
 0 Name: 42074 - rubberBandRound-1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1221,7 +1221,7 @@
 
 
 0 FILE 42074 - sailgear.ldr
-0 sailgear
+0 A sail control gear train using a 24-tooth gear, triangle liftarm, axles with stops, and bushes for rotational adjustment.
 0 Name: 42074 - sailgear.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1258,7 +1258,7 @@
 
 
 0 FILE 42074 - nose.ldr
-0 nose
+0 The yacht's bow section built from beams, cross blocks, panels, and angle connectors with blue and yellow fairing panels.
 0 Name: 42074 - nose.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1350,7 +1350,7 @@
 
 
 0 FILE 42074 - boom.ldr
-0 boom
+0 A horizontal boom built from a long beam, axle, angle connectors, and towball pins for sail attachment.
 0 Name: 42074 - boom.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1404,7 +1404,7 @@
 
 
 0 FILE 42074 - mast.ldr
-0 mast
+0 A vertical mast assembly of long beams, cross blocks, towball pins, and a ball joint for sail and rigging mounting.
 0 Name: 42074 - mast.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1455,7 +1455,7 @@
 
 
 0 FILE 42074 - 13971.dat
-0 13971
+0 A cylindrical wheel rim part built from cones, cylinders, and rings forming a hollow wheel profile.
 0 Name: 42074 - 13971.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -1555,7 +1555,7 @@
 
 
 0 FILE 42074 - 61254.dat
-0 61254
+0 A small cylindrical hub part made of cones, open cylinders, and rings.
 0 Name: 42074 - 61254.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -1670,7 +1670,7 @@
 
 
 0 FILE 42074 - 6209851ap01.dat
-0 6209851ap01
+0 A decorative patterned part subcomponent with no directly listed pieces.
 0 Name: 42074 - 6209851ap01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -1691,7 +1691,7 @@
 
 
 0 FILE 42074 - 6209851bp01.dat
-0 6209851bp01
+0 A decorative patterned part subcomponent with no directly listed pieces.
 0 Name: 42074 - 6209851bp01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -1712,7 +1712,7 @@
 
 
 0 FILE 42074 - 32198.dat
-0 32198
+0 A detailed Technic rim part composed of cylinders, discs, rings, rectangles, and a cone forming a spoked wheel.
 0 Name: 42074 - 32198.dat
 0 Author: Marc Klein [marckl]
 0 !LDRAW_ORG Unofficial_Part
@@ -1962,7 +1962,7 @@
 
 
 0 FILE 42074 - ldcRubberBandRndSeg.dat
-0 ldcRubberBandRndSeg
+0 A single rubber band path-deform segment used for segment overlap control and edge cleanup.
 0 Name: 42074 - ldcRubberBandRndSeg.dat
 0 Author: LDCad
 0 UNOFFICIAL PART
@@ -1983,7 +1983,7 @@
 
 
 0 FILE s\42074 - 13971s01.dat
-0 13971s01
+0 A small subpart of the wheel rim defined by rectangles with adjacent and three edges.
 0 Name: s\42074 - 13971s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -2074,7 +2074,7 @@
 
 
 0 FILE s\42074 - 61254s01.dat
-0 61254s01
+0 A small subpart of the cylindrical hub defined by rectangles with adjacent and three edges.
 0 Name: s\42074 - 61254s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -2127,7 +2127,7 @@
 
 
 0 FILE 42074 - toothb20.dat
-0 toothb20
+0 A 20-tooth bevel gear primitive with no directly listed pieces.
 0 Name: 42074 - toothb20.dat
 0 Author: Santeri Piippo [arezey]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -2173,7 +2173,7 @@
 
 
 0 FILE 42074 - ldcCyli8.dat
-0 ldcCyli8
+0 An 8-segment cylinder primitive used by the rubber band path generator.
 0 Name: 42074 - ldcCyli8.dat
 0 Author: LDCad
 0 UNOFFICIAL PRIMITIVE
@@ -2203,7 +2203,7 @@
 
 
 0 FILE 42074 - ldcConRing8.dat
-0 ldcConRing8
+0 An 8-segment cone ring primitive for path-deform segment edge control.
 0 Name: 42074 - ldcConRing8.dat
 0 Author: LDCad
 0 UNOFFICIAL PRIMITIVE
@@ -2227,7 +2227,7 @@
 
 
 0 FILE s\42074 - 6209851as01.dat
-0 6209851as01
+0 A sail surface subpart composed of negative discs forming the sail shape.
 0 Name: s\42074 - 6209851as01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -2325,7 +2325,7 @@
 
 
 0 FILE s\42074 - 6209851ap01s01.dat
-0 6209851ap01s01
+0 A patterned sail surface subpart with a foldback texture and negative discs.
 0 Name: s\42074 - 6209851ap01s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -2519,7 +2519,7 @@
 
 
 0 FILE s\42074 - 6209851as02.dat
-0 6209851as02
+0 A sail surface subpart formed by open cylinders.
 0 Name: s\42074 - 6209851as02.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -2680,7 +2680,7 @@
 
 
 0 FILE s\42074 - 6209851bs01.dat
-0 6209851bs01
+0 A sail surface subpart composed of negative discs.
 0 Name: s\42074 - 6209851bs01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -2760,7 +2760,7 @@
 
 
 0 FILE s\42074 - 6209851bp01s01.dat
-0 6209851bp01s01
+0 A patterned sail surface subpart with a foldback texture and negative discs.
 0 Name: s\42074 - 6209851bp01s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -2881,7 +2881,7 @@
 
 
 0 FILE s\42074 - 6209851bs02.dat
-0 6209851bs02
+0 A stack of nine open cylinders forming a tubular column.
 0 Name: s\42074 - 6209851bs02.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -3053,7 +3053,7 @@
 
 
 0 FILE 8\42074 - 2-4ndis.dat
-0 Disc Negative 0.5
+0 A primitive-generated disc negative half shape.
 0 Name: 8\42074 - 2-4ndis.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_8_Primitive

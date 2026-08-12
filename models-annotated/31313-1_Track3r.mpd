@@ -1,5 +1,5 @@
 0 FILE 31313 - main.ldr
-0 main
+0 The complete Track3r Mindstorms EV3 robot model, featuring a tracked chassis with IR sensor, medium motor attachment, rotor blades, EV3 brick with battery, large drive motors, decorative panels, and connecting cables.
 0 Name: 31313 - main.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -11,7 +11,7 @@
 
 
 0 FILE 31313 - track.ldr
-0 track
+0 A single track unit with two large toothed gears, drive wheels, support beams, and axles.
 0 Name: 31313 - track.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -71,7 +71,7 @@
 
 
 0 FILE 31313 - 3rdmotor.ldr
-0 3rdmotor
+0 A medium motor assembly with bent liftarms, angle connectors, toothed elements, and decorative side panels forming a weapon or tool attachment.
 0 Name: 31313 - 3rdmotor.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -155,7 +155,7 @@
 
 
 0 FILE 31313 - ev3Cable-studio-1.ldr
-0 ev3Cable-studio-1
+0 An EV3 cable assembly (~237mm) with two RJ12 plugs and a routed cable made of 1185 segments.
 0 Name: 31313 - ev3Cable-studio-1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -202,7 +202,7 @@
 
 
 0 FILE 31313 - ev3Cable-studio-1_subPart1.ldr
-0 ev3Cable-studio-1_subPart1
+0 The routed cable geometry subpart containing 1185 individual NXT cable segments forming the physical cable path.
 0 Name: 31313 - ev3Cable-studio-1_subPart1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2591,7 +2591,7 @@
 
 
 0 FILE 31313 - rotor.ldr
-0 rotor
+0 A rotor assembly with curved blades, cams, bent liftarms, and cross blocks forming a spinning weapon element.
 0 Name: 31313 - rotor.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2644,7 +2644,7 @@
 
 
 0 FILE 31313 - distsensor.ldr
-0 distsensor
+0 An infrared distance sensor module mounted on bent liftarms with axle and pin connectors.
 0 Name: 31313 - distsensor.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2678,7 +2678,7 @@
 
 
 0 FILE 31313 - ev3Cable-studio-2.ldr
-0 ev3Cable-studio-2
+0 An EV3 cable assembly (~244mm) with two RJ12 plugs and a routed cable made of 1220 segments.
 0 Name: 31313 - ev3Cable-studio-2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2724,7 +2724,7 @@
 
 
 0 FILE 31313 - ev3Cable-studio-2_subPart1.ldr
-0 ev3Cable-studio-2_subPart1
+0 The routed cable geometry subpart containing 1220 individual NXT cable segments forming the physical cable path.
 0 Name: 31313 - ev3Cable-studio-2_subPart1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -5183,7 +5183,7 @@
 
 
 0 FILE 31313 - track3r.ldr
-0 track3r
+0 The main Track3r body frame built around the EV3 brick with rechargeable battery, two large drive motors, structural liftarms, and decorative side fairing panels.
 0 Name: 31313 - track3r.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -5313,7 +5313,7 @@
 
 
 0 FILE 31313 - ev3Cable-studio-3.ldr
-0 ev3Cable-studio-3
+0 An EV3 cable assembly (~258mm) with two RJ12 plugs and a routed cable made of 1288 segments.
 0 Name: 31313 - ev3Cable-studio-3.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -5360,7 +5360,7 @@
 
 
 0 FILE 31313 - ev3Cable-studio-3_subPart1.ldr
-0 ev3Cable-studio-3_subPart1
+0 The routed cable geometry subpart containing 1288 individual NXT cable segments forming the physical cable path.
 0 Name: 31313 - ev3Cable-studio-3_subPart1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -7955,7 +7955,7 @@
 
 
 0 FILE 31313 - ev3Cable-studio-4.ldr
-0 ev3Cable-studio-4
+0 An EV3 cable assembly (~245mm) with two RJ12 plugs and a routed cable made of 1227 segments.
 0 Name: 31313 - ev3Cable-studio-4.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -8002,7 +8002,7 @@
 
 
 0 FILE 31313 - ev3Cable-studio-4_subPart1.ldr
-0 ev3Cable-studio-4_subPart1
+0 The routed cable geometry subpart containing 1227 individual NXT cable segments forming the physical cable path.
 0 Name: 31313 - ev3Cable-studio-4_subPart1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -10475,7 +10475,7 @@
 
 
 0 FILE 31313 - 53992c05.dat
-0 53992c05
+0 A composite part representing the EV3 IR sensor with two cylindrical transducer elements and a mounting bracket.
 0 Name: 31313 - 53992c05.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -10536,7 +10536,7 @@
 1 16 -6.562984 8.422097 0 1.007157 0.074979 0 0.075729 -0.997185 0 0 0 -1 31313 - 53992a.dat
 
 0 FILE 31313 - 64391d03.dat
-0 64391d03
+0 A medium smooth panel fairing decorated with Mindstorms EV3 sticker #5.
 0 Name: 31313 - 64391d03.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -10550,7 +10550,7 @@
 1 15 0 0 0 0 1 0 -1 0 0 0 0 1 31313 - 13710ec01.dat
 
 0 FILE 31313 - 64683d03.dat
-0 64683d03
+0 A medium smooth panel fairing decorated with Mindstorms EV3 sticker #6.
 0 Name: 31313 - 64683d03.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -10564,7 +10564,7 @@
 1 15 0 0 0 0 -1 0 1 0 0 0 0 1 31313 - 13710fc01.dat
 
 0 FILE 31313 - 64681d03.dat
-0 64681d03
+0 A long smooth panel fairing decorated with Mindstorms EV3 sticker #14.
 0 Name: 31313 - 64681d03.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -10578,7 +10578,7 @@
 1 15 0 0 0 0 -1 0 1 0 0 0 0 1 31313 - 13710nc01.dat
 
 0 FILE 31313 - 64393d03.dat
-0 64393d03
+0 A long smooth panel fairing decorated with Mindstorms EV3 sticker #13.
 0 Name: 31313 - 64393d03.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -10592,7 +10592,7 @@
 1 15 0 0 0 0 1 0 -1 0 0 0 0 1 31313 - 13710mc01.dat
 
 0 FILE 31313 - 53992b.dat
-0 53992b
+0 A primitive geometry part composed of rectangles and a box shape forming the IR sensor surface details.
 0 Name: 31313 - 53992b.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -10640,7 +10640,7 @@
 2 24 -7.835 -36.967999 -10 -7.835 -36.967999 10
 
 0 FILE 31313 - 53992a.dat
-0 53992a
+0 A primitive geometry part composed of rectangles and a box shape forming part of the IR sensor housing.
 0 Name: 31313 - 53992a.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -10675,7 +10675,7 @@
 1 16 0 -38 0 2 0 0 0 5 0 0 0 10 box5.dat
 
 0 FILE 31313 - 13710nc01.dat
-0 13710nc01
+0 A texture image file for a Mindstorms EV3 component, pending more detailed fallback pattern work.
 0 Name: 31313 - 13710nc01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -10694,7 +10694,7 @@
 0 !TEXMAP END
 
 0 FILE s\31313 - 64681s03.dat
-0 64681s03
+0 A subpart defining the bottom and edge surfaces of a long panel fairing.
 0 Name: s\31313 - 64681s03.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -10795,7 +10795,7 @@
 5 24 9.231 0.958 201.274994 9 1.054 201.274994 9.231 -0.096 200.600006 9.231 1.764 201.529007
 
 0 FILE s\31313 - 64681s04.dat
-0 64681s04
+0 A subpart defining the top surface of a long panel fairing.
 0 Name: s\31313 - 64681s04.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -10847,7 +10847,7 @@
 5 24 8.567 -8.654 194.5 8.566 -8.661 42.846001 9.231 -0.096 45.5 6.596 -17.066999 36.299999
 
 0 FILE 31313 - 13710mc01.dat
-0 13710mc01
+0 A texture image file for a Mindstorms EV3 component main color, pending more detailed fallback pattern work.
 0 Name: 31313 - 13710mc01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part

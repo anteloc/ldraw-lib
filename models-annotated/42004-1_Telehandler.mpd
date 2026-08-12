@@ -1,5 +1,5 @@
 0 FILE 42004 - Mini Backhoe Loader - Telehandler.ldr
-0 Mini Backhoe Loader - Telehandler
+0 Main chassis of a telehandler built from beams, pins, gears, axles, and joiners, integrating rear steering, arm lever, lifting arm, and cabin submodels.
 0 Name: 42004 - Mini Backhoe Loader - Telehandler.ldr
 0 Author: Tomas Kralicek [RabbiT_CZ]
 0 !LDRAW_ORG Model
@@ -315,7 +315,7 @@
 
 
 0 FILE 42004 - SubModel1.ldr
-0 SubModel1
+0 Compact linkage assembly using short liftarms, an axle 7, a cross block, and pin stops.
 0 Name: 42004 - SubModel1.ldr
 0 Author: Tomas Kralicek [RabbiT_CZ]
 0 !LDRAW_ORG Model
@@ -350,7 +350,7 @@
 0 STEP
 
 0 FILE 42004 - Rear steering.ldr
-0 Rear steering
+0 Rear steering mechanism with bent liftarms, axles with stops, bushes, and cross blocks forming a steerable axle.
 0 Name: 42004 - Rear steering.ldr
 0 Author: Tomas Kralicek [RabbiT_CZ]
 0 !LDRAW_ORG Model
@@ -396,7 +396,7 @@
 1 0 100 -10 20 0 -1 0 -1 0 0 0 0 -1 2780.dat
 
 0 FILE 42004 - SubModel2.ldr
-0 SubModel2
+0 Small connector subassembly built from angle connectors, a cross block, and axles.
 0 Name: 42004 - SubModel2.ldr
 0 Author: Tomas Kralicek [RabbiT_CZ]
 0 !LDRAW_ORG Model
@@ -420,7 +420,7 @@
 1 14 -20 0 -40 -1 0 0 0 0 1 0 1 0 6536.dat
 
 0 FILE 42004 - Arm lever.ldr
-0 Arm lever
+0 Articulated lever mechanism using thin liftarms, half bushes, an 8-tooth gear, and a long axle.
 0 Name: 42004 - Arm lever.ldr
 0 Author: Tomas Kralicek [RabbiT_CZ]
 0 !LDRAW_ORG Model
@@ -456,7 +456,7 @@
 1 14 -45 0 60 0 0 -1 0 -1 0 -1 0 0 32123a.dat
 
 0 FILE 42004 - Arm.ldr
-0 Arm
+0 Telescoping lifting arm constructed from long beams and bent liftarms joined by friction pins.
 0 Name: 42004 - Arm.ldr
 0 Author: Tomas Kralicek [RabbiT_CZ]
 0 !LDRAW_ORG Model
@@ -497,7 +497,7 @@
 1 0 40 0 160 0 -1 0 -1 0 0 0 0 -1 32525.dat
 
 0 FILE 42004 - Cabin.ldr
-0 Cabin
+0 Operator cabin frame with curved quarter-ellipse liftarms, a steering wheel, and assorted thin beams.
 0 Name: 42004 - Cabin.ldr
 0 Author: Tomas Kralicek [RabbiT_CZ]
 0 !LDRAW_ORG Model

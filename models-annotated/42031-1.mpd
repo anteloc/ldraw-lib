@@ -1,5 +1,5 @@
 0 FILE 42031 - Cherry Picker.ldr
-0 Cherry Picker
+0 Cherry picker vehicle with four wheels, angle connectors forming the chassis, and references to submodels for chassis, bumpers, roof, and the lifting arm assembly with bucket.
 0 Name: 42031 - Cherry Picker.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -86,7 +86,7 @@
 1 14 -75 -59 56 1 0 0 0 1 0 0 0 1 42031 - picker.ldr
 
 0 FILE 42031 - chassis1.ldr
-0 chassis1
+0 Short white Technic beam frame joined by long pins, forming a compact sub-assembly for the chassis structure.
 0 Name: 42031 - chassis1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -113,7 +113,7 @@
 
 
 0 FILE 42031 - chassis2.ldr
-0 chassis2
+0 Main chassis built from long black beams with red bodywork plates and curved slopes, connected by cross blocks and pins.
 0 Name: 42031 - chassis2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -181,7 +181,7 @@
 1 4 40 -24.6587 -17.3867 1 0 0 0 0.2588 -0.9659 0 0.9659 0.2588 54200.dat
 
 0 FILE 42031 - rearbumper.ldr
-0 rearbumper
+0 Rear bumper assembly using angle connectors and a Technic axle with bushes, accented by small red round plates.
 0 Name: 42031 - rearbumper.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -207,7 +207,7 @@
 1 36 -50 0 10 0 0 1 1 0 0 0 1 0 30057.dat
 
 0 FILE 42031 - front.ldr
-0 front
+0 Front-end assembly with a bent liftarm and cross blocks joined by pins and notched red axles.
 0 Name: 42031 - front.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -236,7 +236,7 @@
 
 
 0 FILE 42031 - roof.ldr
-0 roof
+0 Cab roof structure formed by angle connectors and cross blocks with a liftarm, featuring clear orange domed light elements.
 0 Name: 42031 - roof.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -281,7 +281,7 @@
 1 57 60 -1 -20 0 0 -1 0 1 0 1 0 0 58176.dat
 
 0 FILE 42031 - picker.ldr
-0 picker
+0 Yellow lifting mechanism with bent liftarms, a worm gear, and bevel gear for the elevation and rotation of the boom.
 0 Name: 42031 - picker.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -348,7 +348,7 @@
 
 
 0 FILE 42031 - arm.ldr
-0 arm
+0 Telescoping boom arm made of paired yellow and grey liftarms with a 24-tooth gear for articulation.
 0 Name: 42031 - arm.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -387,7 +387,7 @@
 
 
 0 FILE 42031 - bucket.ldr
-0 bucket
+0 Work bucket platform built from curved grey liftarms and yellow connectors, forming the operator basket at the end of the arm.
 0 Name: 42031 - bucket.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model

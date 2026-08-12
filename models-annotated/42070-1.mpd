@@ -1,5 +1,5 @@
 0 FILE 42070 - main.ldr
-0 main
+0 Complete Technic 6x6 truck chassis integrating drivetrain, steering portal axles, multi-speed gearboxes, V-engine, turntable, outriggers, and motorized Power Functions with cab bodywork.
 0 Name: 42070 - main.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -2227,7 +2227,7 @@
 0 // Technic Bush with Two Flanges (light_bluish_grey)
 1 71 342.321 -87 -156.321 -0.5 -0.866 0 0 0 1 -0.866 0.5 0 3713.dat
 0 FILE 42070 - gearbox1.ldr
-0 gearbox1
+0 Primary transmission gearbox built around multiple 16-tooth gears, axles with stops, and cross blocks to switch drive ratios.
 0 Name: 42070 - gearbox1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -2388,7 +2388,7 @@
 0 // Technic Beam  3 x  5 Bent 90 (light_bluish_grey)
 1 71 160 -80 0 1 0 0 0 0 1 0 -1 0 32526.dat
 0 FILE 42070 - motorassy.ldr
-0 motorassy
+0 Motor mounting assembly using long beams, clutch gears, and a 20-tooth bevel gear to transfer motor torque into the drivetrain.
 0 Name: 42070 - motorassy.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -2496,7 +2496,7 @@
 0 // Technic Beam  5 (dark_azure)
 1 321 -100 -40 -40 -1 0 0 0 0 -1 0 -1 0 32316.dat
 0 FILE 42070 - powerFuncMotorM-LQ-1.ldr
-0 powerFuncMotorM-LQ-1
+0 Power Functions Medium Motor with its PF connector and flexible cable skin.
 0 Name: 42070 - powerFuncMotorM-LQ-1.ldr
 0 Author: LDCad
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -2541,7 +2541,7 @@
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 42070 - powerFuncMotorM-LQ-1_subPart1.ldr
 
 0 FILE 42070 - powerFuncMotorM-LQ-1_subPart1.ldr
-0 powerFuncMotorM-LQ-1_subPart1
+0 Flexible cable path subpart for the Medium Motor wiring skin.
 0 Name: 42070 - powerFuncMotorM-LQ-1_subPart1.ldr
 0 Author: LDCad
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -2740,7 +2740,7 @@
 1 16 82.639023 -258.89697 10.086809 0.149213 3.919262 -0.122821 -0.988805 0.591557 -0.018275 0.000258 0.496016 0.992261 u9190.dat
 1 16 79.475719 -259.026427 9.977766 0.050341 3.985931 -0.042264 -0.998732 0.200915 -0.002103 0.000027 0.169034 0.999104 u9190.dat
 0 FILE 42070 - gearbox2.ldr
-0 gearbox2
+0 Compact auxiliary gearbox using an 8-tooth, 12-tooth bevel, and 24-tooth clutch gear for gear reduction.
 0 Name: 42070 - gearbox2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -2778,7 +2778,7 @@
 0 // Technic Beam  3 x  3 T-shaped (black)
 1 0 60 -40 20 -1 0 0 0 0 1 0 1 0 60484.dat
 0 FILE 42070 - gearbox3.ldr
-0 gearbox3
+0 Secondary gearbox assembly with bent beams, a 20-tooth bevel gear, and inline axle joiners for drive routing.
 0 Name: 42070 - gearbox3.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -2881,7 +2881,7 @@
 0 // Technic Pin Long with Stop Bush (red)
 1 4 -80 20 40 1 0 0 0 1 0 0 0 1 32054.dat
 0 FILE 42070 - frontdiff.ldr
-0 frontdiff
+0 Front differential assembly with a 28-tooth bevel differential, portal gearing, and angle connectors for steering linkage.
 0 Name: 42070 - frontdiff.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -2981,7 +2981,7 @@
 0 // Technic Pin with Friction with Perpendicular Pin Hole Type 1 (black)
 1 0 -60 -40 60 0 0 -1 1 0 0 0 -1 0 15100.dat
 0 FILE 42070 - frontportal.ldr
-0 frontportal
+0 Front steering portal axle with portal frame, hub, reduction gears, and a universal joint for drive articulation.
 0 Name: 42070 - frontportal.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -3025,7 +3025,7 @@
 0 // Technic Pin Long with Friction and Slot (blue)
 1 1 0 -20 0 0 0 1 0 1 0 -1 0 0 6558.dat
 0 FILE 42070 - powerFuncMotorXL-LQ-1.ldr
-0 powerFuncMotorXL-LQ-1
+0 Power Functions XL Motor with its PF connector and flexible cable skin.
 0 Name: 42070 - powerFuncMotorXL-LQ-1.ldr
 0 Author: LDCad
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -3069,7 +3069,7 @@
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 42070 - powerFuncMotorXL-LQ-1_subPart1.ldr
 
 0 FILE 42070 - powerFuncMotorXL-LQ-1_subPart1.ldr
-0 powerFuncMotorXL-LQ-1_subPart1
+0 Flexible cable path subpart for the XL Motor wiring skin.
 0 Name: 42070 - powerFuncMotorXL-LQ-1_subPart1.ldr
 0 Author: LDCad
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -3219,7 +3219,7 @@
 1 16 17.469111 -258.978069 -250.005623 -0.03631 -4.002035 0.009304 -0.999341 0.145408 -0.000338 0 -0.037284 -0.999957 u9190.dat
 1 16 20.463152 -259.006292 -249.998387 -0.013583 -4.004456 0.003483 -0.999908 0.054398 -0.000047 0 -0.013948 -0.999994 u9190.dat
 0 FILE 42070 - axle2.ldr
-0 axle2
+0 Rear portal axle assembly with a 28-tooth differential, bevel gears, portal frames and hubs, and angle connectors.
 0 Name: 42070 - axle2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -3384,7 +3384,7 @@
 0 // Technic Axle Joiner  3L with Ridges for Driving Ring (white)
 1 15 0 0 120 0 1 0 1 0 0 0 0 -1 18948.dat
 0 FILE 42070 - axle3.ldr
-0 axle3
+0 Additional portal axle assembly mirroring axle2 with differential, bevel gears, portal frames, and hubs.
 0 Name: 42070 - axle3.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -3596,7 +3596,7 @@
 0 // Technic Beam  7 (red)
 1 4 0 50 0 0 -1 0 -1 0 0 0 0 -1 32524.dat
 0 FILE 42070 - chassis1.ldr
-0 chassis1
+0 Main chassis frame section using an 11x5 open-center beam, long beams, and orange liftarms to tie the structure together.
 0 Name: 42070 - chassis1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -3669,7 +3669,7 @@
 0 STEP
 1 16 -60 -40 -240 1 0 0 0 -1 0 0 0 -1 42070 - chassis2.ldr
 0 FILE 42070 - chassis2.ldr
-0 chassis2
+0 Supplementary chassis bracing with bent beams, red beams, and an orange liftarm for structural reinforcement.
 0 Name: 42070 - chassis2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -3709,7 +3709,7 @@
 0 // Technic Beam  7 (red)
 1 4 0 0 0 0 1 0 1 0 0 0 0 -1 32524.dat
 0 FILE 42070 - turntable.ldr
-0 turntable
+0 Rotating turntable mechanism built around a 60-tooth turntable with beams and connectors for mounting a rotating superstructure.
 0 Name: 42070 - turntable.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -3776,7 +3776,7 @@
 0 // Technic Beam  1 (dark_bluish_grey)
 1 72 -40 20 140 0 0 1 0 -1 0 1 0 0 18654.dat
 0 FILE 42070 - wormscrewbox.ldr
-0 wormscrewbox
+0 Worm gear reduction box using a 2L worm screw, 24-tooth gear, and triangle liftarms for linear actuation drive.
 0 Name: 42070 - wormscrewbox.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -3842,7 +3842,7 @@
 0 // Technic Axle Joiner Inline Smooth (yellow)
 1 14 20 -45 40 0 1 0 0 0 1 1 0 0 59443.dat
 0 FILE 42070 - engine.ldr
-0 engine
+0 Inline V-engine assembly with four cylinder heads, pistons, connecting rods, crankshafts, and cross blocks.
 0 Name: 42070 - engine.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -3981,7 +3981,7 @@
 0 // Wheel Rim 14 x 18 with Holes on Both Sides (Needs Work) (light_bluish_grey)
 1 71 -80 -4 -90 0 -1 0 0 0 1 -1 0 0 55981.dat
 0 FILE 42070 - gearbeam.ldr
-0 gearbeam
+0 Gear selector beam assembly with H-shaped beams and three 16-tooth clutch gears for gear shifting.
 0 Name: 42070 - gearbeam.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -4018,7 +4018,7 @@
 0 // Technic Pin with Friction with Perpendicular Pin Hole Type 1 (black)
 1 0 0 20 -40 0 0 1 -1 0 0 0 -1 0 15100.dat
 0 FILE 42070 - outrigger.ldr
-0 outrigger
+0 Stabilizer outrigger with a long gear rack and beam housing for extending and supporting the vehicle.
 0 Name: 42070 - outrigger.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -4051,7 +4051,7 @@
 0 // Technic Pin Long without Friction with Single Slot (tan)
 1 19 0 -130 10 -1 0 0 0 0 -1 0 -1 0 32556.dat
 0 FILE 42070 - hood.ldr
-0 hood
+0 Hood/bodywork section built from two large dark-azure panels and beams.
 0 Name: 42070 - hood.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -4084,7 +4084,7 @@
 0 // Technic Beam 11 (dark_azure)
 1 321 -120 0 -100 0 1 0 1 0 0 0 0 -1 32525.dat
 0 FILE 42070 - powerFuncIRRecV1-LQ-1.ldr
-0 powerFuncIRRecV1-LQ-1
+0 Power Functions IR Receiver with its PF connector and flexible cable skin.
 0 Name: 42070 - powerFuncIRRecV1-LQ-1.ldr
 0 Author: LDCad
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -4129,7 +4129,7 @@
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 42070 - powerFuncIRRecV1-LQ-1_subPart1.ldr
 
 0 FILE 42070 - powerFuncIRRecV1-LQ-1_subPart1.ldr
-0 powerFuncIRRecV1-LQ-1_subPart1
+0 Flexible cable path subpart for the IR Receiver wiring skin.
 0 Name: 42070 - powerFuncIRRecV1-LQ-1_subPart1.ldr
 0 Author: LDCad
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -4277,7 +4277,7 @@
 1 16 152.446757 -48.804521 29.940096 0.379151 3.667146 0.112757 -0.925238 1.509481 0.031827 -0.013397 -0.464741 0.993113 u9190.dat
 1 16 149.499982 -49.066576 30.021237 0.135272 3.952616 0.041594 -0.990807 0.539905 0.004078 -0.001587 -0.166751 0.999126 u9190.dat
 0 FILE 42070 - cabinside1.ldr
-0 cabinside1
+0 One side of the cab interior with tall smooth panels, a beam, and an angle connector forming the cabin wall.
 0 Name: 42070 - cabinside1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -4308,7 +4308,7 @@
 0 // Technic Angle Connector #2 (180 degree) (light_bluish_grey)
 1 71 -40 100 -80 0 -1 0 0 0 -1 1 0 0 32034.dat
 0 FILE 42070 - cabinside2.ldr
-0 cabinside2
+0 Opposite side of the cab interior mirroring cabinside1 with tall smooth panels and an angle connector.
 0 Name: 42070 - cabinside2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -4339,7 +4339,7 @@
 0 // Technic Angle Connector #2 (180 degree) (light_bluish_grey)
 1 71 40 100 -80 0 1 0 0 0 -1 -1 0 0 32034.dat
 0 FILE 42070 - outriggerrear1.ldr
-0 outriggerrear1
+0 Rear stabilizer outrigger assembly built from bent liftarms, gear racks, and axles for telescoping support.
 0 Name: 42070 - outriggerrear1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -4404,7 +4404,7 @@
 0 // Technic Beam  3 (black)
 1 0 -30 229.081 48 0 0 1 1 0 0 0 1 0 32523.dat
 0 FILE 42070 - outriggerrear2.ldr
-0 outriggerrear2
+0 Rear stabilizer outrigger assembly mirroring outriggerrear1, using bent liftarms, gear racks, and axles.
 0 Name: 42070 - outriggerrear2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -4469,7 +4469,7 @@
 0 // Technic Beam  3 (black)
 1 0 30 229.081 48 0 0 -1 -1 0 0 0 1 0 32523.dat
 0 FILE 42070 - bumper.ldr
-0 bumper
+0 Dark azure front bumper featuring fairing panels, beams, angle connectors, and a commemorative '40 1977-2017' text beam.
 0 Name: 42070 - bumper.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -4531,7 +4531,7 @@
 0 // Technic Beam  3 with "40 1977 - 2017" Text and 24 Tooth Gear Pattern (white)
 1 15 0 60 0 0 0 1 0 1 0 -1 0 0 42070 - 32523p01.dat
 0 FILE 42070 - minifigChainStuds-1.ldr
-0 minifigChainStuds-1
+0 A flexible minifig-scale chain of 21 links with end caps.
 0 Name: 42070 - minifigChainStuds-1.ldr
 0 Author: LDCad
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -4611,7 +4611,7 @@
 0 // Minifig Chain Link for Chain  6L and 17L (main_colour)
 1 16 -199.394689 2.275028 17.530443 -0.405712 -0.401453 -0.821117 0.508559 -0.84562 0.162154 -0.75945 -0.351799 0.547241 209.dat
 0 FILE 42070 - minifigChainStuds-2.ldr
-0 minifigChainStuds-2
+0 A flexible minifig-scale chain of 21 links with end caps.
 0 Name: 42070 - minifigChainStuds-2.ldr
 0 Author: LDCad
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -4691,7 +4691,7 @@
 0 // Minifig Chain Link for Chain  6L and 17L (main_colour)
 1 16 -187.067776 2.643119 12.423496 -0.707495 -0.47429 -0.523927 0.511856 -0.855066 0.082861 -0.487292 -0.209552 0.847723 209.dat
 0 FILE 42070 - armtrans.ldr
-0 armtrans
+0 Transmission linkage for the crane arm using gears, an H-shaped liftarm, toggle joint connector, and beams.
 0 Name: 42070 - armtrans.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -4735,7 +4735,7 @@
 0 // Technic Beam  3 (yellow)
 1 14 0 -10 40 0 0 -1 0 1 0 1 0 0 32523.dat
 0 FILE 42070 - hook.ldr
-0 hook
+0 Lifting hook assembly with T-shaped liftarms, a grooved wheel rim, and a cross block pivot.
 0 Name: 42070 - hook.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -4762,7 +4762,7 @@
 0 // Technic Beam  1 (dark_bluish_grey)
 1 72 20 -80 0 0 0 1 0 -1 0 1 0 0 18654.dat
 0 FILE 42070 - side1.ldr
-0 side1
+0 Dark azure body side panel section with trapezium panels, bent liftarms, and an orange accent beam.
 0 Name: 42070 - side1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -4808,7 +4808,7 @@
 0 // Technic Beam  2 x  4 Liftarm Bent 90 (light_bluish_grey)
 1 71 -40 60 200 0 1 0 1 0 0 0 0 -1 32140.dat
 0 FILE 42070 - minifigChainStuds-3.ldr
-0 minifigChainStuds-3
+0 A flexible minifig-scale chain of 21 links with end caps.
 0 Name: 42070 - minifigChainStuds-3.ldr
 0 Author: LDCad
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -4890,7 +4890,7 @@
 0 // Minifig Chain Link for Chain  6L and 17L (main_colour)
 1 16 18.623828 -6.440739 1.524294 -0.352852 -0.707145 -0.612732 0.935104 -0.243547 -0.257421 0.032805 -0.6638 0.74719 209.dat
 0 FILE 42070 - side2.ldr
-0 side2
+0 Dark azure body side panel section mirroring side1, with trapezium panels, bent liftarms, and an orange accent beam.
 0 Name: 42070 - side2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -4936,7 +4936,7 @@
 0 // Technic Beam  2 x  4 Liftarm Bent 90 (light_bluish_grey)
 1 71 40 60 200 0 1 0 1 0 0 0 0 -1 32140.dat
 0 FILE 42070 - minifigChainStuds-4.ldr
-0 minifigChainStuds-4
+0 A flexible minifig-scale chain of 21 links with end caps.
 0 Name: 42070 - minifigChainStuds-4.ldr
 0 Author: LDCad
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -5018,7 +5018,7 @@
 0 // Minifig Chain Link for Chain  6L and 17L (main_colour)
 1 16 18.39797 -6.510926 1.433828 -0.300795 -0.678165 -0.670533 0.953157 -0.237253 -0.187624 -0.031846 -0.69556 0.717762 209.dat
 0 FILE 42070 - 33299a.dat
-0 33299a
+0 Primitive geometry subpart defining axle holes, peg holes, rings, and discs for a molded part.
 0 Name: 42070 - 33299a.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Part
@@ -5050,7 +5050,7 @@
 4 16 8 10 36.661999 9 10 35.661999 9 10 32 8 10 32
 4 16 -9 10 35.661999 -8 10 36.661999 -8 10 32 -9 10 32
 0 FILE 42070 - 98382p01.dat
-0 98382p01
+0 Primitive geometry subpart forming a conical disc shape with rings and circles.
 0 Name: 42070 - 98382p01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -5090,7 +5090,7 @@
 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\42070 - 98382p01s05.dat
 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\42070 - 98382s06.dat
 0 FILE 42070 - 13971.dat
-0 13971
+0 Primitive geometry subpart for a tire/wheel profile with cylinders, cones, and rings.
 0 Name: 42070 - 13971.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -5188,7 +5188,7 @@
 1 16 0 0 0 1 0 0 0 -1 0 0 0 1 s\42070 - 13971s01.dat
 1 16 0 0 0 -1 0 0 0 -1 0 0 0 1 s\42070 - 13971s01.dat
 0 FILE 42070 - 23798.dat
-0 23798
+0 Single primitive element representing a tire nomenclature placeholder.
 0 Name: 42070 - 23798.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -5639,7 +5639,7 @@
 0 BFC INVERTNEXT
 1 16 0 0 -20 15.8889 0 0 0 0 15.8889 0 -30 0 48\4-4con7.dat
 0 FILE 42070 - 32198.dat
-0 32198
+0 Primitive geometry subpart defining a ribbed cylindrical part with rectangles, cylinders, and rings.
 0 Name: 42070 - 32198.dat
 0 Author: Marc Klein [marckl]
 0 !LDRAW_ORG Unofficial_Part
@@ -5882,7 +5882,7 @@
 0 !LDCAD SNAP_CLEAR 
 0 !LDCAD SNAP_CYL [gender=F] [caps=none] [secs=R 6 3   A 6 7] [center=true] [slide=true]
 0 FILE 42070 - 2850b.dat
-0 2850b
+0 Primitive geometry subpart forming a hollow cylindrical hub with rectangular faces.
 0 Name: 42070 - 2850b.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -6050,7 +6050,7 @@
 3 16 -13 33 2 -20 33 2 -20 36 2
 4 16 -20 36 2 -20 33 2 -27 33 2 -27 36 2
 0 FILE 42070 - 32523p01.dat
-0 32523p01
+0 Primitive geometry subpart for a printed beam with connector holes, cylinders, and patterned detail.
 0 Name: 42070 - 32523p01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -6575,7 +6575,7 @@
 3 16 9 -6.4 13.3 9 -5.5 12.35 9 -5.85 13.25
 4 16 9 7.9 10.4 9 8.55 10.1 9 8.55 11.55 9 7.35 10.75
 0 FILE 42070 - toothb20.dat
-0 toothb20
+0 Empty placeholder subpart for a 20-tooth bevel gear geometry.
 0 Name: 42070 - toothb20.dat
 0 Author: Santeri Piippo [arezey]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -6619,7 +6619,7 @@
 5 24 1.582 0 0 0 -6.13 2 0 -3.13 0 2.07 -6.13 6.5
 5 24 0 -6.13 2 -1.582 0 0 0 -3.13 0 -2.07 -6.13 6.5
 0 FILE s\42070 - 33299s01.dat
-0 33299s01
+0 Primitive geometry subpart defining cylindrical and ring sections for a pin-based molded component.
 0 Name: s\42070 - 33299s01.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -6888,7 +6888,7 @@
 5 24 -4.9498 0 35.050098 -4.9498 10 35.050098 -6 0 36.661999 -2.6788 0 33.5327
 5 24 4.9497 10 35.050301 4.9498 0 35.050201 6 0 36.661999 2.6788 10 33.5327
 0 FILE s\42070 - 2850s01.dat
-0 2850s01
+0 Primitive geometry subpart forming a detailed hub with cooling ribs, top studs, and connector holes.
 0 Name: s\42070 - 2850s01.dat
 0 Author: Jeff Boen
 0 !LDRAW_ORG Unofficial_Subpart
@@ -7322,7 +7322,7 @@
 3 16 10.6065 36 10.6065 5.7405 36 13.8585 16 36 16
 3 16 13.8585 36 5.7405 10.6065 36 10.6065 16 36 16
 0 FILE s\42070 - 98382s01.dat
-0 98382s01
+0 Empty placeholder subpart for a conical component geometry.
 0 Name: s\42070 - 98382s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -7787,7 +7787,7 @@
 4 16 12.169 0 2.35 12.448 0 -1.833 8 0 0 7.391 0 3.062
 4 16 10.364 0 6.219 12.169 0 2.35 7.391 0 3.062 5.657 0 5.657
 0 FILE s\42070 - 98382p01s02.dat
-0 98382p01s02
+0 Empty placeholder subpart for a patterned conical component detail.
 0 Name: s\42070 - 98382p01s02.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -7841,7 +7841,7 @@
 3 16 0 -31.416 -6.133 1.471 -29.304001 -6.88 3.798 -31.233 -4.995
 3 16 0 -31.416 -6.133 0 -29.295 -7.017 1.471 -29.304001 -6.88
 0 FILE s\42070 - 98382p01s03.dat
-0 98382p01s03
+0 Empty placeholder subpart for a patterned conical component detail.
 0 Name: s\42070 - 98382p01s03.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -7938,7 +7938,7 @@
 3 16 0.511 -34.674999 -13.087 0 -33.720001 -12.556 0.95 -34.439999 -12.841
 3 16 0 -35.139999 -13.459 0 -33.720001 -12.556 0.511 -34.674999 -13.087
 0 FILE s\42070 - 98382s04.dat
-0 98382s04
+0 Empty placeholder subpart for a conical component geometry.
 0 Name: s\42070 - 98382s04.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -8069,7 +8069,7 @@
 5 24 11.723 -45.928001 -2.101 12.684 -47.102001 -2.695 11.656 -47.494999 -2.614 12.993 -45.43 -2.521
 5 24 11.723 -45.928001 -2.101 12.993 -45.43 -2.521 12.684 -47.102001 -2.695 12.143 -44.679001 -2.296
 0 FILE s\42070 - 98382p01s05.dat
-0 98382p01s05
+0 Empty internal geometry submodel for part 98382.
 0 Name: s\42070 - 98382p01s05.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -8177,7 +8177,7 @@
 3 16 2.323 -46.765999 -9.915 0 -46.765999 -9.969 0 -42.826 -11.441
 3 16 2.323 -46.765999 -9.915 0 -42.826 -11.441 2.679 -42.629002 -11.267
 0 FILE s\42070 - 98382s06.dat
-0 98382s06
+0 Empty internal geometry submodel for part 98382.
 0 Name: s\42070 - 98382s06.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -8333,7 +8333,7 @@
 5 24 7.14 -49.099998 4.473 4.358 -52.030998 0.763 8.788 -49.472 0.668 3.652 -51.238998 3.682
 5 24 7.14 -49.099998 4.473 3.652 -51.238998 3.682 4.358 -52.030998 0.763 3.709 -47.776001 7.336
 0 FILE 42070 - ldcLQRopeSeg.dat
-0 ldcLQRopeSeg
+0 Single cylinder segment forming one unit of a generated rope.
 0 Name: 42070 - ldcLQRopeSeg.dat
 0 Author: LDCad
 0 UNOFFICIAL PRIMITIVE
@@ -8346,7 +8346,7 @@
 0 // Cylinder 1.0 (main_colour)
 1 16 0 0 0 1.5 0 0 0 1 0 0 0 1.5 4-4cyli.dat
 0 FILE s\42070 - 13971s01.dat
-0 13971s01
+0 Rectangular edge panels forming the side detail of part 13971.
 0 Name: s\42070 - 13971s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -8436,7 +8436,7 @@
 5 24 8.851 5.1101 10 6.5421 8.288 10 8.7763 6.5738 9.888 8.3151 3.4443 10
 
 0 FILE 42070 - ropeLQ-1.ldr
-0 Name: 42070 - ropeLQ-1.ldr
+0 A long flexible rope assembly composed of 464 connected cylinder segments.
 0 Author: LDCad
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 
@@ -9419,7 +9419,7 @@
 0 // Cylinder 1.0 (main_colour)
 1 16 536.454923 -570.488012 1 0 1.584494 -1.481055 0 9.874839 0.237647 1.5 0 0 4-4cyli.dat
 0 FILE s\42070 - 23798s01.dat
-0 23798s01
+0 Empty internal geometry submodel for part 23798.
 0 Name: s\42070 - 23798s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart

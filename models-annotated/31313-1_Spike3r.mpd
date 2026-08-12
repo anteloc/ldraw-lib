@@ -1,5 +1,5 @@
 0 FILE 31313 - main.ldr
-0 main
+0 Complete Spike3r scorpion robot model composed of motorized body, legs, tail, claws, distance sensor, shooter, EV3 cables, and a separate IR beacon bug.
 0 Name: 31313 - main.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -12,7 +12,7 @@
 
 
 0 FILE 31313 - spike3r.ldr
-0 spike3r
+0 Mechanical linkage assembly using cams, liftarms, and steering links that converts rotary motion into a striking or snapping movement.
 0 Name: 31313 - spike3r.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -54,7 +54,7 @@
 
 
 0 FILE 31313 - shooterclip.ldr
-0 shooterclip
+0 Ball shooter assembly built from a Bionicle shooter magazine, white panel fairings with EV3 stickers, and angle connectors mounted on a pin-and-axle frame.
 0 Name: 31313 - shooterclip.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -86,7 +86,7 @@
 
 
 0 FILE 31313 - ev3Cable-studio-1.ldr
-0 ev3Cable-studio-1
+0 Flexible EV3 cable assembly routing an RJ12-style connection over an approximately 154.6 mm path, with its geometry delegated to a subpart.
 0 Name: 31313 - ev3Cable-studio-1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -131,7 +131,7 @@
 
 
 0 FILE 31313 - ev3Cable-studio-1_subPart1.ldr
-0 ev3Cable-studio-1_subPart1
+0 Geometric subpart containing 773 cable segments that form the physical path of EV3 cable 1.
 0 Name: 31313 - ev3Cable-studio-1_subPart1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1696,7 +1696,7 @@
 
 
 0 FILE 31313 - tail.ldr
-0 tail
+0 Articulated robotic tail mounted on an EV3 Large Motor, using bent liftarms, cross blocks, and toothed elements to form a stinger appendage.
 0 Name: 31313 - tail.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1854,7 +1854,7 @@
 
 
 0 FILE 31313 - body.ldr
-0 body
+0 Main structural chassis built from long liftarms, cross blocks, and pins housing an EV3 Large Motor that anchors the rest of the model.
 0 Name: 31313 - body.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2157,7 +2157,7 @@
 
 
 0 FILE 31313 - frontmotor.ldr
-0 frontmotor
+0 Front drive unit mounting an EV3 Medium Motor using T-shaped beams and pin cross blocks for attachment to the body.
 0 Name: 31313 - frontmotor.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2190,7 +2190,7 @@
 
 
 0 FILE 31313 - ev3Cable-studio-2.ldr
-0 ev3Cable-studio-2
+0 Flexible EV3 cable assembly routing an RJ12-style connection over an approximately 148.9 mm path, with its geometry delegated to a subpart.
 0 Name: 31313 - ev3Cable-studio-2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2236,7 +2236,7 @@
 
 
 0 FILE 31313 - ev3Cable-studio-2_subPart1.ldr
-0 ev3Cable-studio-2_subPart1
+0 Geometric subpart containing 744 cable segments that form the physical path of EV3 cable 2.
 0 Name: 31313 - ev3Cable-studio-2_subPart1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3743,7 +3743,7 @@
 
 
 0 FILE 31313 - midleg.ldr
-0 midleg
+0 Mid-leg segment constructed from bent liftarms, an angle connector, and a serrated constraction blade forming part of the walking mechanism.
 0 Name: 31313 - midleg.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3788,7 +3788,7 @@
 
 
 0 FILE 31313 - leg.ldr
-0 leg
+0 Lower leg segment built from bent liftarms, an angle connector, and a serrated constraction blade forming a walking limb.
 0 Name: 31313 - leg.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3815,7 +3815,7 @@
 
 
 0 FILE 31313 - ev3Cable-studio-3.ldr
-0 ev3Cable-studio-3
+0 Flexible EV3 cable assembly routing an RJ12-style connection over an approximately 117.3 mm path, with its geometry delegated to a subpart.
 0 Name: 31313 - ev3Cable-studio-3.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3859,7 +3859,7 @@
 
 
 0 FILE 31313 - ev3Cable-studio-3_subPart1.ldr
-0 ev3Cable-studio-3_subPart1
+0 Geometric subpart containing 587 cable segments that form the physical path of EV3 cable 3.
 0 Name: 31313 - ev3Cable-studio-3_subPart1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -5052,7 +5052,7 @@
 
 
 0 FILE 31313 - claws.ldr
-0 claws
+0 Pincer claw assembly using bent liftarms, towball joints, toothed elements, and wheel rims to form a gripping appendage.
 0 Name: 31313 - claws.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -5087,7 +5087,7 @@
 
 
 0 FILE 31313 - distsensor.ldr
-0 distsensor
+0 Mounting bracket for the EV3 Infrared Sensor using cross blocks, bushes, and white toothed elements to form a protective sensor housing.
 0 Name: 31313 - distsensor.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -5139,7 +5139,7 @@
 
 
 0 FILE 31313 - ev3Cable-studio-4.ldr
-0 ev3Cable-studio-4
+0 Flexible EV3 cable assembly routing an RJ12-style connection over an approximately 175.3 mm path, with its geometry delegated to a subpart.
 0 Name: 31313 - ev3Cable-studio-4.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -5184,7 +5184,7 @@
 
 
 0 FILE 31313 - ev3Cable-studio-4_subPart1.ldr
-0 ev3Cable-studio-4_subPart1
+0 Geometric subpart containing 876 cable segments that form the physical path of EV3 cable 4.
 0 Name: 31313 - ev3Cable-studio-4_subPart1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -6955,7 +6955,7 @@
 
 
 0 FILE 31313 - beaconbug.ldr
-0 beaconbug
+0 Standalone remote-controlled beacon bug built around the EV3 IR Beacon handset with curved blades, beams, and axles forming legs.
 0 Name: 31313 - beaconbug.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -7021,7 +7021,7 @@
 
 
 0 FILE 31313 - 64391d01.dat
-0 64391d01
+0 Pre-decorated medium panel fairing (#4) with an applied Mindstorms EV3 sticker #2.
 0 Name: 31313 - 64391d01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -7035,7 +7035,7 @@
 1 15 0 0 0 0 1 0 -1 0 0 0 0 1 31313 - 13710bc01.dat
 
 0 FILE 31313 - 64683d01.dat
-0 64683d01
+0 Pre-decorated medium panel fairing (#3) with an applied Mindstorms EV3 sticker #1.
 0 Name: 31313 - 64683d01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -7049,7 +7049,7 @@
 1 15 0 0 0 0 -1 0 1 0 0 0 0 1 31313 - 13710ac01.dat
 
 0 FILE 31313 - 13710bc01.dat
-0 13710bc01
+0 Printed EV3 sticker texture image file attributed to the LEGO MINDSTORMS Team.
 0 Name: 31313 - 13710bc01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -7068,7 +7068,7 @@
 0 !TEXMAP END
 
 0 FILE s\31313 - 64683s04.dat
-0 64683s04
+0 Surface geometry subpart defining the bottom and edge surfaces of a panel fairing.
 0 Name: s\31313 - 64683s04.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -7172,7 +7172,7 @@
 5 24 9.231 -0.096 120.699997 9 0 120.699997 8.567 -8.654 115 9.231 0.622 121.093002
 
 0 FILE s\31313 - 64683s05.dat
-0 64683s05
+0 Surface geometry subpart defining the top surface of a panel fairing.
 0 Name: s\31313 - 64683s05.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -7227,7 +7227,7 @@
 5 24 6.596 -17.066999 36.799999 6.597 -17.068001 -6.3 8.567 -8.654 -6.3 3.537 -24.729 -3.874
 
 0 FILE 31313 - 13710ac01.dat
-0 13710ac01
+0 Printed EV3 sticker texture image file attributed to the LEGO MINDSTORMS Team.
 0 Name: 31313 - 13710ac01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part

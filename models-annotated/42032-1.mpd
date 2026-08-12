@@ -1,5 +1,5 @@
 0 FILE 42032 - Compact Tracked Loader.ldr
-0 Compact Tracked Loader
+0 Compact tracked loader with liftarm frame, sloped bodywork, twin tracks, lifting arms with bucket, operator seat, and windscreen.
 0 Name: 42032 - Compact Tracked Loader.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -108,7 +108,7 @@
 
 
 0 FILE 42032 - Liftctrl.ldr
-0 Liftctrl
+0 Lift control mechanism built from liftarms, gears, a worm gear, and axles forming a geared winch assembly.
 0 Name: 42032 - Liftctrl.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -185,7 +185,7 @@
 
 
 0 FILE 42032 - Side2.ldr
-0 Side2
+0 Orange side frame section using a bent liftarm, beams, pins, and a cross block.
 0 Name: 42032 - Side2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -212,7 +212,7 @@
 
 
 0 FILE 42032 - seat.ldr
-0 seat
+0 Operator seat assembly constructed from bent 90-degree liftarms, pins, and a connecting beam.
 0 Name: 42032 - seat.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -241,7 +241,7 @@
 
 
 0 FILE 42032 - windscreen.ldr
-0 windscreen
+0 Cab windscreen frame with angle connectors, clear transparent slopes, and a trans-orange warning light.
 0 Name: 42032 - windscreen.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -301,7 +301,7 @@
 
 
 0 FILE 42032 - arm1.ldr
-0 arm1
+0 Long lifting arm built from a 15-stud beam, bent liftarm, cross blocks, and a trans-red light element.
 0 Name: 42032 - arm1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -341,7 +341,7 @@
 0 STEP
 
 0 FILE 42032 - bucket.ldr
-0 bucket
+0 Excavator bucket attached via liftarms and axle pins to a mounting axle.
 0 Name: 42032 - bucket.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -363,7 +363,7 @@
 
 
 0 FILE 42032 - arm2.ldr
-0 arm2
+0 Second lifting arm mirroring arm1, using a 15-stud beam, bent liftarm, cross blocks, and a trans-red light.
 0 Name: 42032 - arm2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -401,7 +401,7 @@
 1 0 10 12.7561 35.6315 1 0 0 0 -0.9962 -0.0871 0 0.0871 -0.9962 2780.dat
 
 0 FILE 42032 - fork.ldr
-0 fork
+0 Fork attachment made from a long beam, bent liftarms, axles, and axle connectors.
 0 Name: 42032 - fork.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -444,7 +444,7 @@
 
 
 0 FILE 42032 - track.ldr
-0 track
+0 Left track assembly with a 9-stud beam, bevel gears, cross blocks, and support pins.
 0 Name: 42032 - track.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -492,7 +492,7 @@
 
 
 0 FILE 42032 - track2.ldr
-0 track2
+0 Right track assembly mirroring the left track, with a 9-stud beam, bevel gears, and cross blocks.
 0 Name: 42032 - track2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -540,7 +540,7 @@
 
 
 0 FILE 42032 - technicChainTread17Closed-2.ldr
-0 technicChainTread17Closed-2
+0 Closed chain tread loop composed of 32 linked tread segments.
 0 Name: 42032 - technicChainTread17Closed-2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -633,7 +633,7 @@
 1 16 -24.0612 2.0429 0 0 0.9135 0.4068 0 -0.4068 0.9135 1 0 0 3873.dat
 
 0 FILE 42032 - 33299b.dat
-0 Technic Beam  3 x  0.5 Liftarm with Boss and Pin Semi-Reduced
+0 Part definition for a semi-reduced liftarm boss pin beam with axle and peg holes.
 0 Name: 42032 - 33299b.dat
 0 Author: Santeri Piippo [arezey]
 0 !LDRAW_ORG Unofficial_Part
@@ -671,7 +671,7 @@
 
 
 0 FILE s\42032 - 33299s01.dat
-0 ~Technic Beam  3 x  0.5 Liftarm with Boss and Pin Common
+0 Common subpart definition for the liftarm boss pin beam, composed of geometric primitives.
 0 Name: s\42032 - 33299s01.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Subpart

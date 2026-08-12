@@ -1,5 +1,5 @@
 0 FILE 42111 - main.ldr
-0 main
+0 Complete Technic vehicle chassis assembly with steering linkage, suspension, drivetrain with universal joints and differential, plus front and rear frame submodels.
 0 Name: 42111 - main.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -517,7 +517,7 @@
 
 
 0 FILE 42111 - differential.ldr
-0 differential
+0 Technic differential assembly with a 28-tooth bevel differential housing and three 12-tooth bevel gears mounted on axles.
 0 Name: 42111 - differential.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -540,7 +540,7 @@
 
 
 0 FILE 42111 - frame.ldr
-0 frame
+0 Structural frame section built around an open-center liftarm beam with bent liftarms, ball joint socket, and steering links for suspension mounting.
 0 Name: 42111 - frame.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -635,7 +635,7 @@
 
 
 0 FILE 42111 - rear-shock.ldr
-0 rear-shock
+0 Small mounting subassembly using a split cross block and notched axle for attaching a rear shock absorber.
 0 Name: 42111 - rear-shock.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -651,7 +651,7 @@
 
 
 0 FILE 42111 - rear-shock-assy.ldr
-0 rear-shock-assy
+0 Rear shock absorber assembly consisting of a 6.5L cylinder and piston rod with a coiled spring.
 0 Name: 42111 - rear-shock-assy.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -700,7 +700,7 @@
 
 
 0 FILE 42111 - rear-shock-assy_springMesh.ldr
-0 rear-shock-assy_springMesh
+0 Generated coil spring mesh for the rear shock absorber with five sections and fifteen windings.
 0 Name: 42111 - rear-shock-assy_springMesh.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -6532,7 +6532,7 @@
 
 
 0 FILE 42111 - rear-frame-right.ldr
-0 rear-frame-right
+0 Right-side rear frame section using bent double liftarms, axle-pin connectors, and cross blocks for structural support.
 0 Name: 42111 - rear-frame-right.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -6562,7 +6562,7 @@
 
 
 0 FILE 42111 - rear.ldr
-0 rear
+0 Rear section assembly with a connector block, panel, gears, and bent liftarms forming the rear structural and drivetrain mount.
 0 Name: 42111 - rear.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -6610,7 +6610,7 @@
 
 
 0 FILE 42111 - rear-brace.ldr
-0 rear-brace
+0 Rear bracing element using an angle connector, notched axle-pin pins, and a perpendicular-pin-hole axle for triangulated support.
 0 Name: 42111 - rear-brace.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -6629,7 +6629,7 @@
 
 
 0 FILE 42111 - rear-gear-rack.ldr
-0 rear-gear-rack
+0 Rear gear linkage assembly with bevel gears, toggle joint connector, cross block, and axle joiners for drivetrain connection.
 0 Name: 42111 - rear-gear-rack.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -6664,7 +6664,7 @@
 
 
 0 FILE 42111 - rear-frame-right-2.ldr
-0 rear-frame-right-2
+0 Additional right-side rear frame support using a bent double liftarm, axle-pin connector, and a short liftarm with boss.
 0 Name: 42111 - rear-frame-right-2.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -6681,7 +6681,7 @@
 
 
 0 FILE 42111 - rear-frame-left-2.ldr
-0 rear-frame-left-2
+0 Additional left-side rear frame support mirroring the right side, using a bent double liftarm, axle-pin connector, and short liftarm.
 0 Name: 42111 - rear-frame-left-2.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -6698,7 +6698,7 @@
 
 
 0 FILE 42111 - rear-frame-left.ldr
-0 rear-frame-left
+0 Left-side rear frame section using bent double liftarms, axle-pin connectors, and cross blocks, mirroring the right rear frame.
 0 Name: 42111 - rear-frame-left.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -6728,7 +6728,7 @@
 
 
 0 FILE 42111 - underside-bar.ldr
-0 underside-bar
+0 Underside structural bar built from two long liftarms, wheel rims, and pin connectors for chassis reinforcement.
 0 Name: 42111 - underside-bar.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -6764,7 +6764,7 @@
 
 
 0 FILE 42111 - trans-axle.ldr
-0 trans-axle
+0 Transmission axle subassembly using a stopped axle joined by two 3L axle joiners for extended drivetrain length.
 0 Name: 42111 - trans-axle.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -6781,7 +6781,7 @@
 
 
 0 FILE 42111 - frame-2.ldr
-0 frame-2
+0 Secondary frame section with a connector block, long liftarm, cross blocks, and pins forming a rigid structural mount.
 0 Name: 42111 - frame-2.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -6835,7 +6835,7 @@
 
 
 0 FILE 42111 - steering-linkage.ldr
-0 steering-linkage
+0 Steering linkage assembly with a 20-tooth bevel gear driven by a 12-tooth gear on an axle joiner and stop axle for steering input.
 0 Name: 42111 - steering-linkage.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -6865,7 +6865,7 @@
 
 
 0 FILE 42111 - brace.ldr
-0 brace
+0 Structural brace using a pin cross block and two bent 90-degree liftarms for angular reinforcement.
 0 Name: 42111 - brace.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -6882,7 +6882,7 @@
 
 
 0 FILE 42111 - underside-brace.ldr
-0 underside-brace
+0 Underside bracing element with cross blocks, an axle, and a bent liftarm connected by long friction pins.
 0 Name: 42111 - underside-brace.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -6905,7 +6905,7 @@
 
 
 0 FILE 42111 - front-end.ldr
-0 front-end
+0 Front-end assembly with suspension arms, bent liftarms, cross blocks, rotors, and axles forming the front steering and suspension structure.
 0 Name: 42111 - front-end.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -7038,7 +7038,7 @@
 
 
 0 FILE 42111 - front-end-assy.ldr
-0 front-end-assy
+0 Front-end subassembly with a split cross block, axle, bushes, and liftarms mounting the front suspension and steering components.
 0 Name: 42111 - front-end-assy.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -7074,7 +7074,7 @@
 
 
 0 FILE 42111 - steering-rack.ldr
-0 steering-rack
+0 Steering rack assembly using a gear rack, steering arms with ball joints, steering links, and towball pins for front wheel steering.
 0 Name: 42111 - steering-rack.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -7110,7 +7110,7 @@
 
 
 0 FILE 42111 - front-end-top.ldr
-0 front-end-top
+0 Top portion of the front-end structure with suspension arms, cross blocks, a liftarm, and pins for mounting the front suspension.
 0 Name: 42111 - front-end-top.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -7155,7 +7155,7 @@
 
 
 0 FILE 42111 - frond-end-bracket.ldr
-0 frond-end-bracket
+0 Front-end bracket built from a long liftarm, bent quarter-ellipse liftarms, and axle stops providing a mounting platform.
 0 Name: 42111 - frond-end-bracket.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -7198,7 +7198,7 @@
 
 
 0 FILE 42111 - fornt-end-assy-2.ldr
-0 fornt-end-assy-2
+0 Secondary front-end subassembly using an elbow cylinder, cross block, bushes, and an axle for connecting front structure elements.
 0 Name: 42111 - fornt-end-assy-2.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -7223,7 +7223,7 @@
 
 
 0 FILE 42111 - engine.ldr
-0 engine
+0 Gear-driven engine assembly with a T-shaped beam, cross block, and 16-tooth gear on a stopped axle.
 0 Name: 42111 - engine.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -7256,7 +7256,7 @@
 
 
 0 FILE 42111 - engine-cylinders-1.ldr
-0 engine-cylinders-1
+0 Bank of four engine cylinder heads secured with friction pins forming one side of the engine block.
 0 Name: 42111 - engine-cylinders-1.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -7294,7 +7294,7 @@
 
 
 0 FILE 42111 - engine-crankshaft.ldr
-0 engine-crankshaft
+0 Dual crankshafts with connecting rods, pistons, and crankshaft centres forming the engine's reciprocating assembly.
 0 Name: 42111 - engine-crankshaft.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -7359,7 +7359,7 @@
 
 
 0 FILE 42111 - engine-cylinders-2.ldr
-0 engine-cylinders-2
+0 Second bank of four engine cylinder heads pinned together, mirroring the opposite cylinder bank.
 0 Name: 42111 - engine-cylinders-2.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -7395,7 +7395,7 @@
 
 
 0 FILE 42111 - frame-assy-1.ldr
-0 frame-assy-1
+0 H-shaped structural beam subframe reinforced with pins and a short liftarm for chassis mounting.
 0 Name: 42111 - frame-assy-1.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -7424,7 +7424,7 @@
 
 
 0 FILE 42111 - frame-assy-2.ldr
-0 frame-assy-2
+0 Mirrored H-shaped structural beam subframe with pins and a short liftarm for chassis mounting.
 0 Name: 42111 - frame-assy-2.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -7453,7 +7453,7 @@
 
 
 0 FILE 42111 - front-shock.ldr
-0 front-shock
+0 Front suspension shock absorber with a 6.5L cylinder, piston rod, and coiled spring.
 0 Name: 42111 - front-shock.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -7502,7 +7502,7 @@
 
 
 0 FILE 42111 - front-shock_springMesh.ldr
-0 front-shock_springMesh
+0 Five-section coiled spring mesh approximating the shock absorber's 6.5L compression spring.
 0 Name: 42111 - front-shock_springMesh.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -13334,7 +13334,7 @@
 
 
 0 FILE 42111 - chain.ldr
-0 chain
+0 Technic chain of 16 links forming a drive chain loop for power transmission.
 0 Name: 42111 - chain.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -13395,7 +13395,7 @@
 
 
 0 FILE 42111 - underside-bar-brace.ldr
-0 underside-bar-brace
+0 Yellow 5-stud liftarm brace pinned under the chassis for structural reinforcement.
 0 Name: 42111 - underside-bar-brace.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -13412,7 +13412,7 @@
 
 
 0 FILE 42111 - wheel.ldr
-0 wheel
+0 Street tyre mounted on a six-spoke wheel rim for the model's road wheels.
 0 Name: 42111 - wheel.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -13427,7 +13427,7 @@
 
 
 0 FILE 42111 - front-face.ldr
-0 front-face
+0 Front fascia assembly built from a large smooth panel, bent liftarms, and elbow cylinders with axles.
 0 Name: 42111 - front-face.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -13514,7 +13514,7 @@
 
 
 0 FILE 42111 - front-face-right.ldr
-0 front-face-right
+0 Right-side front fascia detail with triangular liftarms, a toothed element, and mounting pins.
 0 Name: 42111 - front-face-right.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -13547,7 +13547,7 @@
 
 
 0 FILE 42111 - front-face-left.ldr
-0 front-face-left
+0 Left-side front fascia detail with triangular liftarms, a toothed element, and mounting pins.
 0 Name: 42111 - front-face-left.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -13580,7 +13580,7 @@
 
 
 0 FILE 42111 - front-bumper-left.ldr
-0 front-bumper-left
+0 Left front bumper segment with cross blocks, an elbow cylinder, and a translucent orange accent light.
 0 Name: 42111 - front-bumper-left.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -13611,7 +13611,7 @@
 
 
 0 FILE 42111 - front-bumper-right.ldr
-0 front-bumper-right
+0 Right front bumper segment with cross blocks, an elbow cylinder, and a translucent orange accent light.
 0 Name: 42111 - front-bumper-right.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -13642,7 +13642,7 @@
 
 
 0 FILE 42111 - headlight.ldr
-0 headlight
+0 Headlight unit consisting of a clear dish lens on a round axle plate.
 0 Name: 42111 - headlight.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -13659,7 +13659,7 @@
 
 
 0 FILE 42111 - grill.ldr
-0 grill
+0 Front grille assembly using a large panel, axles with bushings, and cross blocks to form the slatted fascia.
 0 Name: 42111 - grill.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -13692,7 +13692,7 @@
 
 
 0 FILE 42111 - front-bumper-middle.ldr
-0 front-bumper-middle
+0 Central front bumper section composed of plates and tiles mounted on brackets to form a smooth lower fascia.
 0 Name: 42111 - front-bumper-middle.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -13735,7 +13735,7 @@
 
 
 0 FILE 42111 - quarter-panel-left.ldr
-0 quarter-panel-left
+0 Left rear quarter panel built from smooth curved panels, fairings, and liftarms with connector hardware.
 0 Name: 42111 - quarter-panel-left.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -13837,7 +13837,7 @@
 
 
 0 FILE 42111 - quarter-panel-right.ldr
-0 quarter-panel-right
+0 Right rear quarter panel built from smooth curved panels, fairings, and liftarms with connector hardware.
 0 Name: 42111 - quarter-panel-right.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -13928,7 +13928,7 @@
 
 
 0 FILE 42111 - front-bumper-top.ldr
-0 front-bumper-top
+0 Upper front bumper fascia of plates and tiles, including black accent strips, mounted on brackets.
 0 Name: 42111 - front-bumper-top.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -13974,7 +13974,7 @@
 
 
 0 FILE 42111 - steering-wheel.ldr
-0 steering-wheel
+0 Interior steering wheel mounted on a cross block and pin joiner for the steering column.
 0 Name: 42111 - steering-wheel.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -13997,7 +13997,7 @@
 
 
 0 FILE 42111 - supercharger-intake.ldr
-0 supercharger-intake
+0 Twin-supercharger intake assembly with grooved wheel rims, angle connectors, and axle tubing for the air ducts.
 0 Name: 42111 - supercharger-intake.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -14091,7 +14091,7 @@
 
 
 0 FILE 42111 - hood.ldr
-0 hood
+0 Hood assembly of long beams and twin large panels hinged with pins to cover the engine bay.
 0 Name: 42111 - hood.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -14141,7 +14141,7 @@
 
 
 0 FILE 42111 - door-left.ldr
-0 door-left
+0 Left side door built from a large smooth panel, liftarms, and angle connectors with a grab handle.
 0 Name: 42111 - door-left.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -14200,7 +14200,7 @@
 
 
 0 FILE 42111 - running-board-left.ldr
-0 running-board-left
+0 Left running board made of two smooth side panels joined by friction pins.
 0 Name: 42111 - running-board-left.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -14223,7 +14223,7 @@
 
 
 0 FILE 42111 - door-right.ldr
-0 door-right
+0 Right side door built from a large smooth panel, liftarms, and angle connectors with a grab handle.
 0 Name: 42111 - door-right.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -14282,7 +14282,7 @@
 
 
 0 FILE 42111 - running-board-right.ldr
-0 running-board-right
+0 Right running board made of two smooth side panels joined by friction pins.
 0 Name: 42111 - running-board-right.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -14305,7 +14305,7 @@
 
 
 0 FILE 42111 - seat-drivers.ldr
-0 seat-drivers
+0 Driver's seat formed from bent liftarms and friction pins on a support axle.
 0 Name: 42111 - seat-drivers.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -14331,7 +14331,7 @@
 
 
 0 FILE 42111 - rear-bumper-and-lights.ldr
-0 rear-bumper-and-lights
+0 Rear bumper assembly combining smooth panels, fairings, beams, and tile light elements.
 0 Name: 42111 - rear-bumper-and-lights.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -14449,7 +14449,7 @@
 
 
 0 FILE 42111 - nos-tank.ldr
-0 nos-tank
+0 Small NOS tank built from stacked blue round bricks topped with a domed cap.
 0 Name: 42111 - nos-tank.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -14470,7 +14470,7 @@
 
 
 0 FILE 42111 - rear-bumper.ldr
-0 rear-bumper
+0 Rear bumper constructed from black plates and slope bricks forming a tapered bar.
 0 Name: 42111 - rear-bumper.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -14518,7 +14518,7 @@
 
 
 0 FILE 42111 - rear-lights.ldr
-0 rear-lights
+0 Rear light cluster using red and translucent red tiles on a black base plate.
 0 Name: 42111 - rear-lights.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -14558,7 +14558,7 @@
 
 
 0 FILE 42111 - roof.ldr
-0 roof
+0 Roof section made from a large technic panel supported by beams and axle joiners.
 0 Name: 42111 - roof.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -14611,7 +14611,7 @@
 
 
 0 FILE 42111 - roof-left.ldr
-0 roof-left
+0 Left roof panel formed from a curved technic panel with liftarms and clip bars.
 0 Name: 42111 - roof-left.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -14646,7 +14646,7 @@
 
 
 0 FILE 42111 - roof-right.ldr
-0 roof-right
+0 Right roof panel formed from a curved technic panel with liftarms and clip bars.
 0 Name: 42111 - roof-right.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -14681,7 +14681,7 @@
 
 
 0 FILE 42111 - roll-bar.ldr
-0 roll-bar
+0 Internal roll bar assembled from axles, cross blocks, and liftarms with friction pins.
 0 Name: 42111 - roll-bar.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -14730,7 +14730,7 @@
 
 
 0 FILE 42111 - roll-bar-outer.ldr
-0 roll-bar-outer
+0 Outer roll bar segment using a long axle joined by angle and elbow connectors.
 0 Name: 42111 - roll-bar-outer.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -14747,7 +14747,7 @@
 
 
 0 FILE 42111 - windshield-frame-1.ldr
-0 windshield-frame-1
+0 Windshield frame section built from bars and handled tube pieces forming a rail.
 0 Name: 42111 - windshield-frame-1.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -14768,7 +14768,7 @@
 
 
 0 FILE 42111 - windshield-frame-2.ldr
-0 windshield-frame-2
+0 Windshield frame section built from bars and handled tube pieces forming a rail.
 0 Name: 42111 - windshield-frame-2.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -14789,7 +14789,7 @@
 
 
 0 FILE 42111 - trunk.ldr
-0 trunk
+0 Trunk lid made from a large technic panel mounted on beams and axle joiners.
 0 Name: 42111 - trunk.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -14849,7 +14849,7 @@
 
 
 0 FILE 42111 - quarter-panel-rear-right.ldr
-0 quarter-panel-rear-right
+0 Right rear quarter panel combining smooth panels, fairings, and support beams.
 0 Name: 42111 - quarter-panel-rear-right.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -14934,7 +14934,7 @@
 
 
 0 FILE 42111 - tank.ldr
-0 tank
+0 Cylindrical tank made of stacked red round bricks with a domed top.
 0 Name: 42111 - tank.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -14959,7 +14959,7 @@
 
 
 0 FILE 42111 - rear-side-panel-right.ldr
-0 rear-side-panel-right
+0 Right rear side fairing panel mounted via cross blocks and friction pins.
 0 Name: 42111 - rear-side-panel-right.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -14985,7 +14985,7 @@
 
 
 0 FILE 42111 - rear-panel-right-2.ldr
-0 rear-panel-right-2
+0 Right rear body panel with curved slope bricks and a rotor element.
 0 Name: 42111 - rear-panel-right-2.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -15012,7 +15012,7 @@
 
 
 0 FILE 42111 - quarter-panel-rear-left.ldr
-0 quarter-panel-rear-left
+0 Left rear quarter panel combining smooth panels, fairings, and support beams.
 0 Name: 42111 - quarter-panel-rear-left.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -15094,7 +15094,7 @@
 
 
 0 FILE 42111 - rear-side-panel-left.ldr
-0 rear-side-panel-left
+0 Left rear side fairing panel mounted via cross blocks and friction pins.
 0 Name: 42111 - rear-side-panel-left.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -15120,7 +15120,7 @@
 
 
 0 FILE 42111 - rear-panel-left-2.ldr
-0 rear-panel-left-2
+0 Left rear body panel with curved slope bricks and a rotor element.
 0 Name: 42111 - rear-panel-left-2.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -15147,7 +15147,7 @@
 
 
 0 FILE 42111 - window-trim-left.ldr
-0 window-trim-left
+0 Left window trim formed from a flexible hose and ring segments.
 0 Name: 42111 - window-trim-left.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -16635,7 +16635,7 @@
 
 
 0 FILE 42111 - window-trim-right.ldr
-0 window-trim-right
+0 Right-side window trim assembly composed of flexible hose segments, connector rings, and cylindrical Technic elements.
 0 Name: 42111 - window-trim-right.ldr
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Model
@@ -18123,7 +18123,7 @@
 
 
 0 FILE 42111 - 39790.dat
-0 39790
+0 Technic connector part made of peg holes, extended peg hole ends, and cylindrical sections.
 0 Name: 42111 - 39790.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Part
@@ -18188,7 +18188,7 @@
 
 
 0 FILE 42111 - 39793.dat
-0 39793
+0 Technic connector element featuring multiple peg holes and long connector holes.
 0 Name: 42111 - 39793.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Part
@@ -18231,7 +18231,7 @@
 
 
 0 FILE 42111 - ldcTechFlexSysHoseSeg.dat
-0 ldcTechFlexSysHoseSeg
+0 Single cylindrical segment used as a flexible hose section in the LDCad path deform system.
 0 Name: 42111 - ldcTechFlexSysHoseSeg.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Part
@@ -18258,7 +18258,7 @@
 
 
 0 FILE s\42111 - 39790s01.dat
-0 39790s01
+0 Subpart of Technic connector 39790 combining peg holes, connector holes, cylinders, and disc primitives.
 0 Name: s\42111 - 39790s01.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -18299,7 +18299,7 @@
 
 
 0 FILE s\42111 - 39790s02.dat
-0 39790s02
+0 Detailed subpart of Technic connector 39790 with cylinders, discs, rings, and rectangular surfaces.
 0 Name: s\42111 - 39790s02.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -18481,7 +18481,7 @@
 
 
 0 FILE s\42111 - 39793s01.dat
-0 39793s01
+0 Subpart of Technic connector 39793 with sloped cylinders, circles, discs, and a one-sided connector hole.
 0 Name: s\42111 - 39793s01.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -18617,7 +18617,7 @@
 
 
 0 FILE 42111 - ldcConRing-4-4.dat
-0 ldcConRing-4-4
+0 Connector ring primitive for the LDCad path deform generator controlling edge visibility between hose segments.
 0 Name: 42111 - ldcConRing-4-4.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Primitive

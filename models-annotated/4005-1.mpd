@@ -1,5 +1,5 @@
 0 FILE 4005 - main.ldr
-0 main
+0 A LEGO model combining a boat submodel with a minifig figure and rope rigging.
 0 Name: 4005 - main.ldr
 0 Author: Robert Paciorek [bercik]
 0 !LDRAW_ORG Model
@@ -10,7 +10,7 @@
 1 16 190 0 70 1 0 0 0 1 0 0 0 1 4005 - minifig.ldr
 
 0 FILE 4005 - boat.ldr
-0 boat
+0 A boat built from bow, middle, and stern hull sections with deck plates and reinforcing bricks.
 0 Name: 4005 - boat.ldr
 0 Author: Robert Paciorek [[bercik]]
 0 !LDRAW_ORG Model
@@ -146,7 +146,7 @@
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4005 - rope.ldr
 
 0 FILE 4005 - minifig.ldr
-0 minifig
+0 A blue-torsoed minifig wearing a police hat with standard grin head and black legs.
 0 Name: 4005 - minifig.ldr
 0 Author: Robert Paciorek [[bercik]]
 0 !LDRAW_ORG Model
@@ -175,7 +175,7 @@
 1 0 0 -16 0 1 0 0 0 1 0 0 0 1 3624.dat
 
 0 FILE 4005 - LS60.dat
-0 ~LSynth Short Straight String Segment
+0 A short straight string segment used for LSynth rigging simulation.
 0 Name: 4005 - LS60.dat 
 0 Author: Larry Pieniazek
 0 !LDRAW_ORG Unofficial_Part
@@ -210,7 +210,7 @@
 3 16 0 0 -1 0 -1 -1 0.866 -0.5 -1
 
 0 FILE 4005 - LS04.dat
-0 LSynth Constraint Part - Type 4 - "String"
+0 An LSynth constraint part defining a type-4 string attachment point.
 0 Name: 4005 - LS04.dat 
 0 Author: Willy Tschager [Holly-Wood]
 0 !LDRAW_ORG Unofficial_Part
@@ -271,7 +271,7 @@
 3 16 0.195 0 -1.4 -0.195 0 -1.4 0 -4 -1.4
 
 0 FILE 4005 - rope.ldr
-0 rope
+0 A rope assembly composed of LSynth string segments with no direct physical pieces.
 0 Name: 4005 - rope.ldr
 0 Author: Robert Paciorek [[bercik]]
 0 !LDRAW_ORG Model

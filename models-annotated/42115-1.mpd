@@ -1,5 +1,5 @@
 0 FILE 42115 - 0-main.ldr
-0 0-main
+0 Main chassis assembly of the Lamborghini Sián supercar, integrating rear differential, suspension, 8-speed gearbox, V12 engine, front steering axle, and body framework with extensive beams, pins, and axles.
 0 Name: 42115 - 0-main.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -2368,7 +2368,7 @@
 
 
 0 FILE 42115 - 1-1-1-rear-differential.ldr
-0 1-1-1-rear-differential
+0 Rear differential unit built around a 28-tooth bevel differential with 20-tooth and 12-tooth bevel gears inside a 7x5 open-center liftarm frame.
 0 Name: 42115 - 1-1-1-rear-differential.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -2415,7 +2415,7 @@
 
 
 0 FILE 42115 - 1-1-2-rear-whisbones.ldr
-0 1-1-2-rear-whisbones
+0 Rear wishbone suspension arms constructed from short liftarms (2, 3, and 4 stud lengths) joined by axles and pins in a triangular A-arm configuration.
 0 Name: 42115 - 1-1-2-rear-whisbones.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -2454,7 +2454,7 @@
 
 
 0 FILE 42115 - 1-1-3-rear-suspension.ldr
-0 1-1-3-rear-suspension
+0 Rear suspension linkage assembly using 6-stud liftarms, cross blocks, and bushings that connect the wishbones to the chassis mounting points.
 0 Name: 42115 - 1-1-3-rear-suspension.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -2521,7 +2521,7 @@
 
 
 0 FILE 42115 - shock-06_5L-hard-1.ldr
-0 shock-06_5L-hard-1
+0 6.5L hard shock absorber with cylinder, piston rod, and tightly wound metal spring for stiff rear suspension damping.
 0 Name: 42115 - shock-06_5L-hard-1.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -2574,7 +2574,7 @@
 
 
 0 FILE 42115 - shock-06_5L-hard-1_springMesh.ldr
-0 shock-06_5L-hard-1_springMesh
+0 Procedurally generated spring mesh for the 6.5L shock absorber with 5 sections and 15 windings at 5.6mm coil diameter.
 0 Name: 42115 - shock-06_5L-hard-1_springMesh.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -8412,7 +8412,7 @@
 
 
 0 FILE 42115 - 1-2-0-gearbox.ldr
-0 1-2-0-gearbox
+0 8-speed sequential gearbox housing with multiple 16-tooth clutch gears, 20-tooth and 12-tooth bevel gears, driving rings, and a large 15x11 open-center frame structure.
 0 Name: 42115 - 1-2-0-gearbox.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -8771,7 +8771,7 @@
 
 
 0 FILE 42115 - 1-2-1.ldr
-0 1-2-1
+0 Gearbox sub-assembly with a transmission driving ring, 16-tooth clutch gear, 20-tooth bevel gear, and 16-tooth reinforced gear on a bent liftarm mount.
 0 Name: 42115 - 1-2-1.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -8820,7 +8820,7 @@
 
 
 0 FILE 42115 - 1-2-2.ldr
-0 1-2-2
+0 Gearbox sub-assembly using a 13-stud beam, bent 2x4 lime liftarm, transmission driving ring, and 16-tooth clutch gear for an additional gear stage.
 0 Name: 42115 - 1-2-2.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -8854,7 +8854,7 @@
 
 
 0 FILE 42115 - 1-2-3.ldr
-0 1-2-3
+0 Gearbox sub-assembly with a transmission driving ring, 16-tooth clutch gear, and 16-tooth reinforced gear mounted on a bent 3x5 liftarm.
 0 Name: 42115 - 1-2-3.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -8892,7 +8892,7 @@
 
 
 0 FILE 42115 - rubberBandRound-1.ldr
-0 rubberBandRound-1
+0 Procedurally generated round rubber band approximately 111mm long with 18 segments, used as a tension band in the drivetrain or gearbox mechanism.
 0 Name: 42115 - rubberBandRound-1.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -9408,7 +9408,7 @@
 
 
 0 FILE 42115 - 1-3-bottom-plate.ldr
-0 1-3-bottom-plate
+0 Lower chassis plate structure built from long beams (13 and 7 stud), bent liftarms, H-shaped beams, and body panels forming the underbody framework.
 0 Name: 42115 - 1-3-bottom-plate.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -9550,7 +9550,7 @@
 
 
 0 FILE 42115 - 1-4-paddle-shifter.ldr
-0 1-4-paddle-shifter
+0 Paddle shifter mechanism with a wheel rim, angle connectors, towball pins, and a 9-stud beam enabling the paddle-shift gear selection behind the steering wheel.
 0 Name: 42115 - 1-4-paddle-shifter.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -9631,7 +9631,7 @@
 
 
 0 FILE 42115 - rubberBandRound-2.ldr
-0 rubberBandRound-2
+0 Procedurally generated round rubber band approximately 55mm long with 17 segments, used as a smaller tension element in the mechanism.
 0 Name: 42115 - rubberBandRound-2.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -10122,7 +10122,7 @@
 
 
 0 FILE 42115 - 2-1.ldr
-0 2-1
+0 Longitudinal chassis frame section joining 15-stud beams and a 13-stud lime beam to a 7-stud cross beam, forming part of the central backbone.
 0 Name: 42115 - 2-1.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -10163,7 +10163,7 @@
 
 
 0 FILE 42115 - 2-2-0-v12-engine.ldr
-0 2-2-0-v12-engine
+0 V12 engine base structure with two 5x3 Technic bricks, an 11-stud beam, and inline axle joiners supporting the crankshaft and cylinder bank mounting.
 0 Name: 42115 - 2-2-0-v12-engine.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -10225,7 +10225,7 @@
 
 
 0 FILE 42115 - 2-2-1-engine-block.ldr
-0 2-2-1-engine-block
+0 Engine block consisting of six cylinder heads and connecting pins arranged in two banks of three for the V6 engine configuration.
 0 Name: 42115 - 2-2-1-engine-block.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -10278,7 +10278,7 @@
 
 
 0 FILE 42115 - 2-2-2-crank-shaft.ldr
-0 2-2-2-crank-shaft
+0 Crankshaft assembly with two crankshafts, five crankshaft centers, twelve connecting rods, twelve pistons, and notched axles forming the V12 reciprocating mechanism.
 0 Name: 42115 - 2-2-2-crank-shaft.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -10368,7 +10368,7 @@
 
 
 0 FILE 42115 - 2-3-front-axle.ldr
-0 2-3-front-axle
+0 Front axle assembly with 7x5 open-center frames, suspension components, 12-tooth bevel gears, a 9-stud axle, and multiple cross blocks and liftarms for steering and drive geometry.
 0 Name: 42115 - 2-3-front-axle.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -10840,7 +10840,7 @@
 
 
 0 FILE 42115 - 2-4-steering-rack.ldr
-0 2-4-steering-rack
+0 Steering rack mechanism with a 7-stud gear rack, 9L steering links, towball pins, and bent lime liftarms providing the front wheel steering linkage.
 0 Name: 42115 - 2-4-steering-rack.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -10902,7 +10902,7 @@
 
 
 0 FILE 42115 - rubberBandRound-3.ldr
-0 rubberBandRound-3
+0 Procedurally generated round rubber band approximately 66mm long with 34 segments, used as a tension band in the engine or drivetrain.
 0 Name: 42115 - rubberBandRound-3.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -11834,7 +11834,7 @@
 
 
 0 FILE 42115 - 2-5.ldr
-0 2-5
+0 Chassis connector section linking a 15-stud beam to two 7-stud lime beams using perpendicular pins and a stop axle for structural reinforcement.
 0 Name: 42115 - 2-5.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -11872,7 +11872,7 @@
 
 
 0 FILE 42115 - 2-6-1.ldr
-0 2-6-1
+0 Exhaust or detail pipe assembly using three 2x2 elbow cylinders, a connector bush, and short axles forming a curved tubular element.
 0 Name: 42115 - 2-6-1.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -11922,7 +11922,7 @@
 
 
 0 FILE 42115 - 2-7-1.ldr
-0 2-7-1
+0 Radiator or cooling duct assembly with three 2x2 elbow cylinders, perpendicular axle pins, and round pin joiners forming an angled pipe routing.
 0 Name: 42115 - 2-7-1.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -11969,7 +11969,7 @@
 
 
 0 FILE 42115 - technicRibHose-LQ-1.ldr
-0 technicRibHose-LQ-1
+0 Ribbed flexible hose approximately 23mm long composed of 9 middle segments and 2 end segments for detailing or fluid line routing.
 0 Name: 42115 - technicRibHose-LQ-1.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -12026,7 +12026,7 @@
 
 
 0 FILE 42115 - 2-8-1.ldr
-0 2-8-1
+0 A structural liftarm assembly with a large open-center beam, bent beams, and pins for mounting support.
 0 Name: 42115 - 2-8-1.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -12074,7 +12074,7 @@
 
 
 0 FILE 42115 - 2-6-2.ldr
-0 2-6-2
+0 A mechanical linkage using elbow cylinders, notched axles, and a cross block to form an articulated connector group.
 0 Name: 42115 - 2-6-2.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -12124,7 +12124,7 @@
 
 
 0 FILE 42115 - 2-7-2.ldr
-0 2-7-2
+0 A compact linkage of elbow cylinders joined by perpendicular axles and pin joiners forming a routed connection.
 0 Name: 42115 - 2-7-2.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -12171,7 +12171,7 @@
 
 
 0 FILE 42115 - 2-8-2.ldr
-0 2-8-2
+0 A structural liftarm assembly mirroring 2-8-1 with a large open-center beam, bent beams, and pins for mounting support.
 0 Name: 42115 - 2-8-2.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -12219,7 +12219,7 @@
 
 
 0 FILE 42115 - 2-9-engine-cover.ldr
-0 2-9-engine-cover
+0 The V12 engine cover featuring carbon fiber tiles, Lamborghini-branded tiles, smooth panels, and wheel rim accents.
 0 Name: 42115 - 2-9-engine-cover.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -12343,7 +12343,7 @@
 
 
 0 FILE 42115 - 2-10-1.ldr
-0 2-10-1
+0 A small frame with a bent liftarm, tiles, and a curved slope forming a bodywork detail piece.
 0 Name: 42115 - 2-10-1.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -12388,7 +12388,7 @@
 
 
 0 FILE 42115 - 2-10-2.ldr
-0 2-10-2
+0 A bodywork detail with a bent liftarm, tiles, and a curved slope, similar to but lighter than 2-10-1.
 0 Name: 42115 - 2-10-2.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -12425,7 +12425,7 @@
 
 
 0 FILE 42115 - 2-11.ldr
-0 2-11
+0 A structural subframe using a large open-center beam, multiple bent liftarms, and perpendicular connectors for chassis support.
 0 Name: 42115 - 2-11.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -12548,7 +12548,7 @@
 
 
 0 FILE 42115 - 2-12.ldr
-0 2-12
+0 A bodywork panel assembly with large Technic panels and long beams forming a side skirt or body section.
 0 Name: 42115 - 2-12.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -12599,7 +12599,7 @@
 
 
 0 FILE 42115 - 2-13.ldr
-0 2-13
+0 A long beam with an angle connector and pins serving as a linkage or support strut.
 0 Name: 42115 - 2-13.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -12626,7 +12626,7 @@
 
 
 0 FILE 42115 - 3-1-0-passenger-seat.ldr
-0 3-1-0-passenger-seat
+0 The passenger seat frame with bent double liftarms, cross blocks, and mounting beams.
 0 Name: 42115 - 3-1-0-passenger-seat.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -12691,7 +12691,7 @@
 
 
 0 FILE 42115 - 3-1-1-passenger-seat.ldr
-0 3-1-1-passenger-seat
+0 The detailed passenger seat with bent liftarms, axle connectors, a Lamborghini logo beam, and lime accent beams.
 0 Name: 42115 - 3-1-1-passenger-seat.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -12792,7 +12792,7 @@
 
 
 0 FILE 42115 - 3-1-2.ldr
-0 3-1-2
+0 A seat-related subframe using lime and grey beams with axle pins forming part of the seat structure.
 0 Name: 42115 - 3-1-2.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -12840,7 +12840,7 @@
 
 
 0 FILE 42115 - 3-2-0-driver-seat.ldr
-0 3-2-0-driver-seat
+0 The driver seat frame with a bent double liftarm, cross blocks, and mounting beams for the seat base.
 0 Name: 42115 - 3-2-0-driver-seat.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -12897,7 +12897,7 @@
 
 
 0 FILE 42115 - 3-2-1-driver-seat.ldr
-0 3-2-1-driver-seat
+0 The detailed driver seat with bent liftarms, axle connectors, a Lamborghini logo beam, and lime accent beams.
 0 Name: 42115 - 3-2-1-driver-seat.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -12997,7 +12997,7 @@
 
 
 0 FILE 42115 - 3-3.ldr
-0 3-3
+0 A structural body assembly with large panels, bent beams, and angle connectors forming a rear or side body module.
 0 Name: 42115 - 3-3.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -13109,7 +13109,7 @@
 
 
 0 FILE 42115 - 3-4.ldr
-0 3-4
+0 A support frame with bent beams, a T-shaped connector, and long liftarms forming a structural mounting point.
 0 Name: 42115 - 3-4.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -13168,7 +13168,7 @@
 
 
 0 FILE 42115 - 3-5.ldr
-0 3-5
+0 A structural body assembly mirroring 3-3 with large panels, bent beams, and angle connectors for body support.
 0 Name: 42115 - 3-5.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -13280,7 +13280,7 @@
 
 
 0 FILE 42115 - 3-6-cockpit.ldr
-0 3-6-cockpit
+0 The cockpit interior with smooth fairing panels, beams, and a grooved tile forming the cockpit surround.
 0 Name: 42115 - 3-6-cockpit.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -13320,7 +13320,7 @@
 
 
 0 FILE 42115 - 3-7.ldr
-0 3-7
+0 A support frame with bent beams, cross blocks, and long liftarms forming a mounting structure similar to 3-4.
 0 Name: 42115 - 3-7.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -13375,7 +13375,7 @@
 
 
 0 FILE 42115 - 3-8-crossbars.ldr
-0 3-8-crossbars
+0 A set of crossbars using long beams, thin liftarms, angle connectors, and axle joiners forming the vehicle's transverse structure.
 0 Name: 42115 - 3-8-crossbars.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -13469,7 +13469,7 @@
 
 
 0 FILE 42115 - technicFlexAxle-1.ldr
-0 technicFlexAxle-1
+0 A flexible axle routing assembly made of multiple flex axle segments forming a curved contour element.
 0 Name: 42115 - technicFlexAxle-1.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -14565,7 +14565,7 @@
 
 
 0 FILE 42115 - 3-9.ldr
-0 3-9
+0 A structural assembly with long beams, bent liftarms, and cross blocks forming a mounting or body subframe.
 0 Name: 42115 - 3-9.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -14661,7 +14661,7 @@
 
 
 0 FILE 42115 - 3-10.ldr
-0 3-10
+0 A reinforced frame using bent beams, axle joiners, and an open-center beam forming part of the rear chassis structure.
 0 Name: 42115 - 3-10.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -14752,7 +14752,7 @@
 
 
 0 FILE 42115 - 3-11-spoiler-lift.ldr
-0 3-11-spoiler-lift
+0 The spoiler lift mechanism with axles, connector bushes, a cross block, and liftarms forming the adjustable wing linkage.
 0 Name: 42115 - 3-11-spoiler-lift.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -22643,7 +22643,7 @@
 
 
 0 FILE 42115 - 4-12-rear-spoiler.ldr
-0 4-12-rear-spoiler
+0 Curved rear wing assembly built from lime angle connectors, liftarms, and smooth fairing panels.
 0 Name: 42115 - 4-12-rear-spoiler.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -22796,7 +22796,7 @@
 
 
 0 FILE 42115 - technicFlexAxle-6.ldr
-0 technicFlexAxle-6
+0 Short flexible axle routing element spanning approximately 37 mm across 19 segments.
 0 Name: 42115 - technicFlexAxle-6.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -24166,7 +24166,7 @@
 
 
 0 FILE 42115 - technicFlexAxle-7.ldr
-0 technicFlexAxle-7
+0 Flexible axle routing element spanning approximately 77 mm across 16 segments.
 0 Name: 42115 - technicFlexAxle-7.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -25432,7 +25432,7 @@
 
 
 0 FILE 42115 - 4-13-0-rear-hood.ldr
-0 4-13-0-rear-hood
+0 Structural rear hood frame made of black liftarms, cross blocks, and blue friction pins.
 0 Name: 42115 - 4-13-0-rear-hood.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -25727,7 +25727,7 @@
 
 
 0 FILE 42115 - 4-13-1.ldr
-0 4-13-1
+0 Small reinforcing beam subassembly using a 7-stud axle, liftarms, and connector pins.
 0 Name: 42115 - 4-13-1.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -25770,7 +25770,7 @@
 
 
 0 FILE 42115 - 4-13-2.ldr
-0 4-13-2
+0 Left-side bodywork panel cluster combining wide medium, short, and thin short lime fairings on a cross block mount.
 0 Name: 42115 - 4-13-2.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -25813,7 +25813,7 @@
 
 
 0 FILE 42115 - 4-13-3.ldr
-0 4-13-3
+0 Right-side bodywork panel cluster mirroring the left with wide medium, short, and thin short lime fairings on a cross block mount.
 0 Name: 42115 - 4-13-3.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -25856,7 +25856,7 @@
 
 
 0 FILE 42115 - 4-13-4.ldr
-0 4-13-4
+0 Left-side long bodywork fairing pair with wide long and wide medium lime panels mounted on axles and cross blocks.
 0 Name: 42115 - 4-13-4.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -25890,7 +25890,7 @@
 
 
 0 FILE 42115 - 4-13-5.ldr
-0 4-13-5
+0 Right-side long bodywork fairing pair mirroring the left with wide long and wide medium lime panels mounted on axles and cross blocks.
 0 Name: 42115 - 4-13-5.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -25924,7 +25924,7 @@
 
 
 0 FILE 42115 - technicFlexAxle-8.ldr
-0 technicFlexAxle-8
+0 Long flexible axle routing element spanning approximately 133 mm across 23 segments.
 0 Name: 42115 - technicFlexAxle-8.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -27428,7 +27428,7 @@
 
 
 0 FILE 42115 - technicFlexAxle-9-1.ldr
-0 technicFlexAxle-9-1
+0 Flexible axle routing element spanning approximately 106 mm across 27 segments.
 0 Name: 42115 - technicFlexAxle-9-1.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -29069,7 +29069,7 @@
 
 
 0 FILE 42115 - 5-1-0-front-spoiler.ldr
-0 5-1-0-front-spoiler
+0 Robust front splitter assembly combining black liftarms, large 3x11 panels, and lime reinforcement beams.
 0 Name: 42115 - 5-1-0-front-spoiler.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -29279,7 +29279,7 @@
 
 
 0 FILE 42115 - 5-1-1.ldr
-0 5-1-1
+0 Left front spoiler support bracket built from bent and straight black liftarms joined with blue friction pins.
 0 Name: 42115 - 5-1-1.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -29317,7 +29317,7 @@
 
 
 0 FILE 42115 - 5-1-2.ldr
-0 5-1-2
+0 Right front spoiler support bracket mirroring the left with bent and straight black liftarms joined with blue friction pins.
 0 Name: 42115 - 5-1-2.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -29355,7 +29355,7 @@
 
 
 0 FILE 42115 - 5-1-3.ldr
-0 5-1-3
+0 Cross-block-mounted lime strut subassembly with bent liftarms and a yellow axle for the front spoiler.
 0 Name: 42115 - 5-1-3.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -29397,7 +29397,7 @@
 
 
 0 FILE 42115 - technicFlexAxle-10.ldr
-0 technicFlexAxle-10
+0 Flexible axle routing element spanning approximately 77 mm across 31 segments.
 0 Name: 42115 - technicFlexAxle-10.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -31173,7 +31173,7 @@
 
 
 0 FILE 42115 - 5-2-1-front-lights.ldr
-0 5-2-1-front-lights
+0 Left front headlight pod assembly using cross blocks, bent liftarms, angle connectors, and red axles.
 0 Name: 42115 - 5-2-1-front-lights.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -31321,7 +31321,7 @@
 
 
 0 FILE 42115 - technicFlexAxle-11.ldr
-0 technicFlexAxle-11
+0 Short flexible axle routing element spanning approximately 38 mm across 16 segments.
 0 Name: 42115 - technicFlexAxle-11.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -32587,7 +32587,7 @@
 
 
 0 FILE 42115 - 5-3-1.ldr
-0 5-3-1
+0 Left small accent subassembly featuring a lime tooth element, short fairing panel, and liftarm mount.
 0 Name: 42115 - 5-3-1.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -32624,7 +32624,7 @@
 
 
 0 FILE 42115 - 5-2-2-front-lights.ldr
-0 5-2-2-front-lights
+0 Right front headlight pod assembly mirroring the left with cross blocks, bent liftarms, angle connectors, and red axles.
 0 Name: 42115 - 5-2-2-front-lights.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -32772,7 +32772,7 @@
 
 
 0 FILE 42115 - technicFlexAxle-12.ldr
-0 technicFlexAxle-12
+0 Short flexible axle routing element spanning approximately 38 mm across 16 segments.
 0 Name: 42115 - technicFlexAxle-12.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -34038,7 +34038,7 @@
 
 
 0 FILE 42115 - 5-3-2.ldr
-0 5-3-2
+0 Right small accent subassembly mirroring the left with a lime tooth element, short fairing panel, and liftarm mount.
 0 Name: 42115 - 5-3-2.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -34075,7 +34075,7 @@
 
 
 0 FILE 42115 - 5-4-front-spoiler.ldr
-0 5-4-front-spoiler
+0 Front splitter lip combining black liftarms, lime and black aero teeth, and thin short fairing panels.
 0 Name: 42115 - 5-4-front-spoiler.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -34161,7 +34161,7 @@
 
 
 0 FILE 42115 - 5-5-hood.ldr
-0 5-5-hood
+0 Curved front hood assembly featuring lime 3x11 panels, a Lamborghini-logo liftarm, and thin fairing accents.
 0 Name: 42115 - 5-5-hood.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -34244,7 +34244,7 @@
 
 
 0 FILE 42115 - 5-6-1.ldr
-0 5-6-1
+0 Small lime detail subassembly using a curved slope brick, plates, and cross block connectors with a smooth axle joiner.
 0 Name: 42115 - 5-6-1.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -34294,7 +34294,7 @@
 
 
 0 FILE 42115 - 5-6-2.ldr
-0 5-6-2
+0 Small lime liftarm assembly with cross blocks and a curved slope detail
 0 Name: 42115 - 5-6-2.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -34344,7 +34344,7 @@
 
 
 0 FILE 42115 - 5-7-1-0-scissor-door.ldr
-0 5-7-1-0-scissor-door
+0 Left scissor door mechanism with lime panels, pin connectors, and a steering link
 0 Name: 42115 - 5-7-1-0-scissor-door.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -34430,7 +34430,7 @@
 
 
 0 FILE 42115 - 5-7-1-1.ldr
-0 5-7-1-1
+0 Left door internal frame with lime body panels, beams, and a gear tooth element
 0 Name: 42115 - 5-7-1-1.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -34500,7 +34500,7 @@
 
 
 0 FILE 42115 - technicFlexAxle-13.ldr
-0 technicFlexAxle-13
+0 Flexible Technic axle approximately 131mm long with 39 segments
 0 Name: 42115 - technicFlexAxle-13.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -36548,7 +36548,7 @@
 
 
 0 FILE 42115 - 5-8-1-rear-view-mirror.ldr
-0 5-8-1-rear-view-mirror
+0 Left rear-view mirror mounted on a short beam with a lime fairing panel
 0 Name: 42115 - 5-8-1-rear-view-mirror.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -36580,7 +36580,7 @@
 
 
 0 FILE 42115 - 5-7-2-0-scissor-door.ldr
-0 5-7-2-0-scissor-door
+0 Right scissor door mechanism with lime panels, pin connectors, and a steering link
 0 Name: 42115 - 5-7-2-0-scissor-door.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -36666,7 +36666,7 @@
 
 
 0 FILE 42115 - 5-7-2-1.ldr
-0 5-7-2-1
+0 Right door internal frame with lime body panels, beams, and a gear tooth element
 0 Name: 42115 - 5-7-2-1.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -36736,7 +36736,7 @@
 
 
 0 FILE 42115 - 5-8-2-rear-view-mirror.ldr
-0 5-8-2-rear-view-mirror
+0 Right rear-view mirror mounted on a short beam with a lime fairing panel
 0 Name: 42115 - 5-8-2-rear-view-mirror.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -36768,7 +36768,7 @@
 
 
 0 FILE 42115 - technicFlexAxle-14.ldr
-0 technicFlexAxle-14
+0 Flexible Technic axle approximately 130mm long with 40 segments
 0 Name: 42115 - technicFlexAxle-14.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -38850,7 +38850,7 @@
 
 
 0 FILE 42115 - technicFlexAxle-9-2.ldr
-0 technicFlexAxle-9-2
+0 Flexible Technic axle approximately 106mm long with 27 segments
 0 Name: 42115 - technicFlexAxle-9-2.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -40491,7 +40491,7 @@
 
 
 0 FILE 42115 - technicFlexAxle-15-1.ldr
-0 technicFlexAxle-15-1
+0 Flexible Technic axle approximately 79mm long with 29 segments
 0 Name: 42115 - technicFlexAxle-15-1.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -42199,7 +42199,7 @@
 
 
 0 FILE 42115 - technicFlexAxle-15-2.ldr
-0 technicFlexAxle-15-2
+0 Flexible Technic axle approximately 79mm long with 28 segments
 0 Name: 42115 - technicFlexAxle-15-2.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -43873,7 +43873,7 @@
 
 
 0 FILE 42115 - 5-9-bag.ldr
-0 5-9-bag
+0 Dark bluish grey panel and beam assembly with axle pin hubs forming a storage bag
 0 Name: 42115 - 5-9-bag.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -43942,7 +43942,7 @@
 
 
 0 FILE 42115 - stringStudsLQ-1.ldr
-0 stringStudsLQ-1
+0 Flexible string with stud ends approximately 56mm long composed of 47 segments
 0 Name: 42115 - stringStudsLQ-1.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -44000,7 +44000,7 @@
 
 
 0 FILE 42115 - stringStudsLQ-1_subPart1.ldr
-0 stringStudsLQ-1_subPart1
+0 Segmented cylinder subpart forming the body of the stud-ended string
 0 Name: 42115 - stringStudsLQ-1_subPart1.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -44123,7 +44123,7 @@
 
 
 0 FILE 42115 - 5-10-sign.ldr
-0 5-10-sign
+0 Sign assembly built from bent liftarms, axles, and a 4x6 studded plate base
 0 Name: 42115 - 5-10-sign.ldr
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Model
@@ -44163,7 +44163,7 @@
 
 
 0 FILE 42115 - 23801.dat
-0 Technic Steering Wheel Bearing with 2 Pegholes & 2 Axleholes Arms
+0 Technic steering wheel bearing with pegholes and axlehole arms, built from primitive cylinders and rings
 0 Name: 42115 - 23801.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -44265,7 +44265,7 @@
 
 
 0 FILE 42115 - 52731.dat
-0 Technic Steering Constant Velocity 8mm Joint Male
+0 Technic constant velocity 8mm male joint part modeled from axle hole and disc primitives
 0 Name: 42115 - 52731.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -44337,7 +44337,7 @@
 
 
 0 FILE 42115 - 33299b.dat
-0 Technic Beam  3 x  0.5 Liftarm with Boss and Pin with Open Central Axle Hole
+0 Technic 3x0.5 liftarm with boss and open axle hole composed of axle hole and ring primitives
 0 Name: 42115 - 33299b.dat
 0 Author: Santeri Piippo [arezey]
 0 !LDRAW_ORG Unofficial_Part
@@ -44378,7 +44378,7 @@
 
 
 0 FILE 42115 - 98138pt3.dat
-0 Tile 1 x  1 Round with Lamborghini Logo Pattern
+0 Round 1x1 tile printed with the Lamborghini logo pattern
 0 Name: 42115 - 98138pt3.dat
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Unofficial_Part
@@ -44410,7 +44410,7 @@
 
 
 0 FILE 42115 - 65422.dat
-0 Technic Rotor Blade 19L with Beam  3L
+0 Technic 19L rotor blade with 3L beam modeled from beam hole and cylinder primitives
 0 Name: 42115 - 65422.dat
 0 Author: Gerald Lasser [GeraldLasser]
 0 !LDRAW_ORG Unofficial_Part
@@ -44477,7 +44477,7 @@
 
 
 0 FILE 42115 - 68196.dat
-0 Technic Panel  5 x 13 Curved #51 Tapered Right
+0 Technic curved 5x13 tapered right panel referencing its mirrored left counterpart
 0 Name: 42115 - 68196.dat
 0 Author: Gerald Lasser [GeraldLasser]
 0 !LDRAW_ORG Unofficial_Part
@@ -44493,7 +44493,7 @@
 
 
 0 FILE 42115 - 67142.dat
-0 Technic Panel  5 x 13 Curved 50 Tapered Left
+0 Technic curved 5x13 tapered left panel built from pinhole, chord, and cylinder primitives
 0 Name: 42115 - 67142.dat
 0 Author: Gerald Lasser [GeraldLasser]
 0 !LDRAW_ORG Unofficial_Part
@@ -45097,7 +45097,7 @@
 
 
 0 FILE 42115 - 35185.dat
-0 Technic Gear 20 Tooth Double Bevel with Clutch on Both Sides
+0 Technic 20 tooth double bevel clutch gear built from connector hole, ring, and cylinder primitives
 0 Name: 42115 - 35185.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -45139,7 +45139,7 @@
 
 
 0 FILE 42115 - ldcRubberBandRndSeg.dat
-0 Donor segment for round rubber band
+0 Donor segment primitive used to generate round rubber band geometry
 0 Name: 42115 - ldcRubberBandRndSeg.dat
 0 Author: LDCad
 0 !LDRAW_ORG Unofficial_Model
@@ -47609,7 +47609,7 @@
 
 
 0 FILE s\42115 - logolambs04.dat
-0 ~Logo Lamborghini Text Background Without Outline
+0 Background panel for the Lamborghini logo text without any outline.
 0 Name: s\42115 - logolambs04.dat
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -48353,7 +48353,7 @@
 
 
 0 FILE s\42115 - logolambl01.dat
-0 ~Logo Lamborghini Badge with Outer Box
+0 Complete Lamborghini badge featuring the bull emblem, yellow LAMBORGHINI lettering, and a yellow frame.
 0 Name: s\42115 - logolambl01.dat
 0 Author: Massimo Maso [Sirio]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -49222,7 +49222,7 @@
 
 
 0 FILE s\42115 - logolambi01.dat
-0 ~Logo Lamborghini Bull - First Part
+0 First part of the Lamborghini logo bull with horn, eye, leg spots, and body details.
 0 Name: s\42115 - logolambi01.dat
 0 Author: Massimo Maso [Sirio]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -49479,7 +49479,7 @@
 
 
 0 FILE s\42115 - logolambi02.dat
-0 ~Logo Lamborghini Bull - Second Part
+0 Second part of the Lamborghini logo bull with back spots and external outline.
 0 Name: s\42115 - logolambi02.dat
 0 Author: Massimo Maso [Sirio]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -49974,7 +49974,7 @@
 
 
 0 FILE s\42115 - logolambt02.dat
-0 ~Logo Lamborghini Text Black
+0 Black text layer for the Lamborghini logo lettering.
 0 Name: s\42115 - logolambt02.dat
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -49994,7 +49994,7 @@
 
 
 0 FILE s\42115 - 65422s01.dat
-0 ~Technic Rotor Blade 19L with Beam  3L Half
+0 Technic rotor blade 19L with a 3L half liftarm beam, featuring rotor surfaces, a slanted tip, and reinforcement structures.
 0 Name: s\42115 - 65422s01.dat
 0 Author: Gerald Lasser [GeraldLasser]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -50176,7 +50176,7 @@
 
 
 0 FILE s\42115 - 60483s01.dat
-0 ~Technic Beam  2 Liftarm without Side
+0 Technic 2-stud liftarm beam without side faces, including axle and peg holes with connecting rings.
 0 Name: s\42115 - 60483s01.dat
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -50218,7 +50218,7 @@
 
 
 0 FILE s\42115 - 67142s01.dat
-0 ~Technic Panel  5 x 13 Curved Tapered, Pin Hole
+0 Curved tapered Technic panel 5x13 with pin hole, featuring cylinders, rings, and attachment points.
 0 Name: s\42115 - 67142s01.dat
 0 Author: Gerald Lasser [GeraldLasser]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -50513,7 +50513,7 @@
 
 
 0 FILE 42115 - 68577.dat
-0 Wheel Rim 42 x 62 with 20 Spokes and  3 Pins
+0 Wheel rim 42x62 with 20 spokes and 3 pins, including center hub, spokes, pin connectors, and outer rim joiners.
 0 Name: 42115 - 68577.dat
 0 Author: Gerald Lasser [GeraldLasser]
 0 !LDRAW_ORG Unofficial_Part
@@ -50628,7 +50628,7 @@
 
 
 0 FILE s\42115 - 68577s03.dat
-0 ~Wheel Rim 42 x 62 with 20 Spokes and  3 Pins - Centre Ornament Half
+0 Center ornament half for the wheel rim, composed of nine rectangles forming the decorative pattern.
 0 Name: s\42115 - 68577s03.dat
 0 Author: Gerald Lasser [GeraldLasser]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -51099,7 +51099,7 @@
 
 
 0 FILE s\42115 - 68577s01.dat
-0 ~Wheel Rim 42 x 62 with 20 Spokes and  3 Pins - Half
+0 Half-section of the wheel rim with outer rim, raised edges, spokes, and pin connectors.
 0 Name: s\42115 - 68577s01.dat
 0 Author: Gerald Lasser [GeraldLasser]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -51638,7 +51638,7 @@
 
 
 0 FILE s\42115 - 68577s02.dat
-0 ~Wheel Rim 42 x 62 with 20 Spokes and  3 Pins - 1/ 10th
+0 One-tenth radial section of the wheel rim with thick and thin spokes, outer rim, and decorative indents.
 0 Name: s\42115 - 68577s02.dat
 0 Author: Gerald Lasser [GeraldLasser]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -52115,7 +52115,7 @@
 
 
 0 FILE 48\42115 - 1-4tang.dat
-0 Hi-Res Disc Negative Tangent 0.25
+0 High-resolution quarter-disc negative tangent primitive used for curved geometry construction.
 0 Name: 48\42115 - 1-4tang.dat
 0 Author: Yu Zhang [ishkafel]
 0 !LDRAW_ORG Unofficial_48_Primitive

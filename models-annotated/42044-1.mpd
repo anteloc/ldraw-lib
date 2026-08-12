@@ -1,5 +1,5 @@
 0 FILE 42044 - Display Team Jet
-0 Display Team Jet
+0 Main body of the display team jet built from yellow and blue Technic beams, pins, bent liftarms, towball axles, and a tail assembly with flexible axles forming the streamlined jet fuselage.
 0 Name: 42044 - Display Team Jet.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -210,7 +210,7 @@
 
 
 0 FILE 42044 - tail.ldr
-0 tail
+0 Tail assembly constructed from yellow Technic beams with a white wing element and cross blocks forming the rear stabilizer.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42044 - tail.ldr
 0 !LDRAW_ORG Unofficial_Model
@@ -258,7 +258,7 @@
 
 
 0 FILE 42044 - technicFlexAxle-1.ldr
-0 technicFlexAxle-1
+0 Flexible Technic axle approximately 58.76mm long made of 33 curved segments forming a contoured structural element.
 0 !CATEGORY technic
 0 Name: 42044 - technicFlexAxle-1.ldr
 0 !LDRAW_ORG Unofficial_Model
@@ -2461,7 +2461,7 @@
 5 24 128.701614 -60.786095 8.4692 125.148354 -60.789074 8.4692 128.701614 -60.481693 10 128.70163 -61.653294 7.1716
 
 0 FILE 42044 - technicFlexAxle-2.ldr
-0 technicFlexAxle-2
+0 Flexible Technic axle approximately 58.57mm long made of 35 curved segments forming a contoured structural element.
 0 !CATEGORY technic
 0 Name: 42044 - technicFlexAxle-2.ldr
 0 !LDRAW_ORG Unofficial_Model
@@ -4732,7 +4732,7 @@
 5 24 128.059067 -60.447647 -11.5308 124.571442 -60.510925 -11.5308 128.053757 -60.143291 -10 128.074203 -61.314716 -12.8284
 
 0 FILE 42044 - 33299b.dat
-0 Technic Beam  3 x  0.5 Liftarm with Boss and Pin Semi-Reduced
+0 Technic liftarm subpart with semi-reduced axle holes, open axle holes, and rings forming the boss and pin connection points.
 0 Name: 42044 - 33299b.dat
 0 Author: Santeri Piippo [arezey]
 0 !LDRAW_ORG Unofficial_Part
@@ -4770,7 +4770,7 @@
 
 
 0 FILE s\42044 - 33299s01.dat
-0 ~Technic Beam  3 x  0.5 Liftarm with Boss and Pin Common
+0 Common geometric subpart of the Technic liftarm with boss, composed of peg holes, cylinders, rings, and circles defining the basic beam shape.
 0 Name: s\42044 - 33299s01.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Subpart

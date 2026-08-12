@@ -1,5 +1,5 @@
 0 FILE 21035 - main.ldr
-0 Author: Philippe Hurbain [Philo]
+0 Main assembly of the Solomon R. Guggenheim Museum, combining large black plates and tiles for the base with white plates, yellow accents, and all building submodels.
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 // Plate  6 x 10 (black)
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3033.dat
@@ -1261,7 +1261,7 @@
 0 // Tile  1 x  1 with Groove (yellow)
 1 14 230 -24 -180 0 0 -1 0 1 0 1 0 0 3070b.dat
 0 FILE 21035 - side1.ldr
-0 Name: side1.ldr
+0 White curved wall section built from plates, bricks with curved tops, and smooth tiles forming one side of the museum structure.
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 // Plate  1 x  4 (white)
@@ -1289,7 +1289,7 @@
 0 // Plate  1 x  3 (white)
 1 15 30 -32 -40 0 0 1 0 1 0 -1 0 0 21035 - 3623.dat
 0 FILE 21035 - 2ndfloor.ldr
-0 Name: 2ndfloor.ldr
+0 Upper-level white platform made of plates and tiles with tan accents, forming the museum's second floor structure.
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 // Plate  2 x 16 (white)
@@ -1403,7 +1403,7 @@
 0 // Brick  1 x  2 (white)
 1 15 -40 8 150 1 0 0 0 1 0 0 0 1 3004.dat
 0 FILE 21035 - solomon.ldr
-0 Name: solomon.ldr
+0 Nameplate module featuring a printed tile reading 'THE SOLOMON R GUGGENHEIM' mounted on white plates with curved slopes.
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 // Plate  2 x 12 (white)
@@ -1426,7 +1426,7 @@
 0 // Slope Brick Curved  3 x  1 (white)
 1 15 10 -16 -130 1 0 0 0 1 0 0 0 1 50950.dat
 0 FILE 21035 - curve.ldr
-0 Name: curve.ldr
+0 Curved architectural detail using black bricks with side studs and white curved slope pieces to form a rounded building corner.
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 // Brick  1 x  4 with Studs on Side (black)
@@ -1451,7 +1451,7 @@
 0 // Slope Brick Curved  4 x  1 (white)
 1 15 42 10 40 0 -1 0 -1 0 0 0 0 -1 61678.dat
 0 FILE 21035 - side2.ldr
-0 Name: side2.ldr
+0 Black structural side section built from bricks with side studs and plates, forming a recessed wall element.
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 // Brick  1 x  4 with Studs on Side (black)
@@ -1476,7 +1476,7 @@
 0 // Brick  1 x  2 with Two Studs on One Side (black)
 1 0 0 0 -60 0 0 -1 0 1 0 1 0 0 11211.dat
 0 FILE 21035 - window.ldr
-0 Name: window.ldr
+0 Window module with transparent brown glass tiles framed by tan and dark bluish grey plates and bricks.
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 // Plate  2 x  3 (dark_bluish_grey)
@@ -1505,7 +1505,7 @@
 0 // Tile  1 x  1 with Groove (trans_brown)
 1 40 36 -2 -20 0 -1 0 0 0 -1 1 0 0 3070b.dat
 0 FILE 21035 - window2.ldr
-0 Name: window2.ldr
+0 Smaller window module with transparent brown glass elements and tan plates with a vertical clip detail.
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 // Plate  1 x  3 (tan)
@@ -1550,7 +1550,7 @@
 0 // Brick  1 x  1 (tan)
 1 19 0 26 0 0 0 -1 0 1 0 1 0 0 3005.dat
 0 FILE 21035 - 3623.dat
-0 Plate  1 x  3
+0 Geometric definition for the Plate 1 x 3 part.
 0 Name: 3623.dat
 0 Author: James Jessiman
 0 !LDRAW_ORG Unofficial_Part
@@ -1572,7 +1572,7 @@
 
 0 !LDCAD SNAP_CYL [gender=F] [caps=one] [secs=S 6 4] [grid=C 3 1 20 0]
 0 FILE 21035 - 25269.dat
-0 Tile  1 x  1 Corner Round
+0 Geometric definition for the Tile 1 x 1 Corner Round part, consisting of a quarter-disc shape.
 0 Name: 25269.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Part
@@ -1584,7 +1584,7 @@
 0 // Disc 0.25 (main_colour)
 1 16 -10 0 10 0 0 20 0 1 0 -20 0 0 1-4disc.dat
 0 FILE 21035 - 15207.dat
-0 Panel  1 x  4 x  1 with Rounded Corners, Thin Wall
+0 Geometric definition for the thin-walled Panel 1 x 4 x 1 with rounded corners, composed of boxes and curved cylinder segments.
 0 Name: 15207.dat
 0 Author: Gerald Lasser [GeraldLasser]
 0 !LDRAW_ORG Unofficial_Part
@@ -1641,7 +1641,7 @@
 0 // Box with 2 Faces without 5 Edges (main_colour)
 1 16 0 20 -1.5 -40 0 0 0 -4 0 0 0 -8.5 box2-5.dat
 0 FILE 21035 - 23950.dat
-0 Panel  1 x  3 x  1 with Rounded Corners
+0 Geometric definition for the Panel 1 x 3 x 1 with rounded corners, made of boxes and curved chord/cylinder segments.
 0 Name: 23950.dat
 0 Author: Rolf Osterthun [Rolf]
 0 !LDRAW_ORG Unofficial_Part
@@ -1698,7 +1698,7 @@
 
 0 !LDCAD SNAP_CYL [gender=F] [caps=one] [secs=S 6 4] [grid=C 3 1 20 0]
 0 FILE 21035 - 24246.dat
-0 Tile  1 x  1 with Rounded End
+0 Geometric definition for the Tile 1 x 1 with Rounded End, composed of a half-circle chord.
 0 Name: 24246.dat
 0 Author: Owen Burgoyne [C3POwen]
 0 !LDRAW_ORG Unofficial_Part
@@ -1711,7 +1711,7 @@
 0 // Chord 0.5 (main_colour)
 1 16 0 0 0 9.5 0 0 0 1 0 0 0 -9.5 2-4chrd.dat
 0 FILE 21035 - 4865b.dat
-0 Panel  1 x  2 x  1 with Rounded Corners
+0 Geometric definition for the Panel 1 x 2 x 1 with rounded corners, made of two quarter-circle chords.
 0 Name: 4865b.dat
 0 Author: Rolf Osterthun [Rolf]
 0 !LDRAW_ORG Unofficial_Part
@@ -1730,7 +1730,7 @@
 4 16 20 2 10 20 24 10 -20 24 10 -20 2 10
 4 16 -18 0 10 18 0 10 20 2 10 -20 2 10
 0 FILE 21035 - 15068p05.dat
-0 Slope Brick Curved  2 x  2 x  0.667 with "MUSEUM" Text Pattern
+0 Geometric definition for the Slope Brick Curved 2 x 2 x 0.667 with 'MUSEUM' text pattern.
 0 Name: 15068p05.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -1905,7 +1905,7 @@
 5 24 -20 -10.51 -8.284 10 -10.51 -8.284 -20 -12.883 -1.648 -20 -7.532 -14.436
 5 24 -20 -7.532 -14.436 10 -7.532 -14.436 -20 -10.51 -8.284 -20 -4 -20
 0 FILE 21035 - 26603.dat
-0 Tile  2 x  3
+0 Geometric definition for the Tile 2 x 3 part.
 0 Name: 26603.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -1916,7 +1916,7 @@
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\21035 - 26603s01.dat
 4 16 30 0 20 -30 0 20 -30 0 -20 30 0 -20
 0 FILE 21035 - 51739.dat
-0 Wing  2 x  4
+0 Geometric definition for the Wing 2 x 4 part, composed of box and rectangular faces forming an angled slope.
 0 Name: 51739.dat
 0 Author: Chris Dee [cwdee]
 0 !LDRAW_ORG Unofficial_Part
@@ -1953,7 +1953,7 @@
 0 //barrel snap
 0 !LDCAD SNAP_CYL [gender=F] [caps=one] [secs=S 16 4]
 0 FILE 21035 - 22885.dat
-0 Brick  1 x  2 x  1.667 with Studs on 1 Side
+0 Geometric definition for the Brick 1 x 2 x 1.667 with Studs on 1 Side, built from various box and rectangle primitives.
 0 Name: 22885.dat
 0 Author: Owen Burgoyne [C3POwen]
 0 !LDRAW_ORG Unofficial_Part
@@ -2029,7 +2029,7 @@
 
 0 !LDCAD SNAP_CYL [gender=F] [caps=one] [secs=R 6 36] [grid=C 3 1 10 0]
 0 FILE 21035 - 85984.dat
-0 Slope Brick 31  1 x  2 x  0.667
+0 Geometric definition for the Slope Brick 31 1 x 2 x 0.667 part.
 0 Name: 85984.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Part
@@ -2045,7 +2045,7 @@
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\21035 - 85984s01.dat
 4 16 20 -16 10 -20 -16 10 -20 -4 -10 20 -4 -10
 0 FILE 21035 - 24309.dat
-0 Slope Brick Curved  3 x  2
+0 Geometric definition for the Slope Brick Curved 3 x 2, composed of many rectangles, cylinders, and circles forming a smooth curved surface.
 0 Name: 24309.dat
 0 Author: Owen Burgoyne [C3POwen]
 0 !LDRAW_ORG Unofficial_Part
@@ -2231,7 +2231,7 @@
 0 !LDCAD SNAP_CYL [gender=F] [caps=one] [secs=R 6 4] [grid=C 2 C 2 20 20]
 0 !LDCAD SNAP_CYL [gender=F] [caps=one] [secs=S 6 10] [grid=C 2 1 20 0]
 0 FILE 21035 - 4162p15.dat
-0 Tile  1 x  8 with "THE SOLOMON R GUGGENHEIM" Text Pattern
+0 Geometric definition for the Tile 1 x 8 with 'THE SOLOMON R GUGGENHEIM' text pattern.
 0 Name: 4162p15.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -2705,7 +2705,7 @@
 3 16 -23.25 0 -6.15 -23.75 0 -6.15 -80 0 -10
 3 16 -80 0 -10 -23.75 0 -6.15 -25.35 0 -6.15
 0 FILE 21035 - 4-4edge.dat
-0 Circle 1.0
+0 Geometric primitive defining a full circle (circle 1.0) edge.
 0 Name: 4-4edge.dat
 0 Author: James Jessiman
 0 !LDRAW_ORG Unofficial_Primitive
@@ -2736,7 +2736,7 @@
 2 24 0.7071 0 -0.7071 0.9239 0 -0.3827
 2 24 0.9239 0 -0.3827 1 0 0
 0 FILE s\21035 - 3623s01.dat
-0 ~Plate  1 x  3 without Front Face
+0 Subpart defining the Plate 1 x 3 body without the front face, composed of box primitives.
 0 Name: s\3623s01.dat
 0 Author: Massimo Maso [Sirio]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -2760,7 +2760,7 @@
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud.dat
 1 16 -20 0 0 1 0 0 0 1 0 0 0 1 stud.dat
 0 FILE 21035 - 2-4edge.dat
-0 Circle 0.5
+0 Geometric primitive defining a half circle (circle 0.5) edge.
 0 Name: 2-4edge.dat
 0 Author: James Jessiman
 0 !LDRAW_ORG Unofficial_Primitive
@@ -2781,7 +2781,7 @@
 2 24 -0.7071 0 0.7071 -0.9239 0 0.3827
 2 24 -0.9239 0 0.3827 -1 0 0
 0 FILE s\21035 - 25269s01.dat
-0 ~Tile  1 x  1 Corner Round without Top Surface
+0 Subpart defining the Tile 1 x 1 Corner Round body without the top surface, composed of boxes, cylinders, and edge rectangles.
 0 Name: s\25269s01.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Subpart

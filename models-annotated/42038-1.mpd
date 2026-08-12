@@ -1,5 +1,5 @@
 0 FILE 42038 - Arctic Truck.ldr
-0 Arctic Truck
+0 Main chassis of the Arctic Truck combining gears, beams, and axles to link the drivetrain, steering, tracks, and tipping bed submodels.
 0 Name: 42038 - Arctic Truck.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -958,7 +958,7 @@
 1 0 -120 0 225 0 0 -1 1 0 0 0 -1 0 41677.dat
 
 0 FILE 42038 - frame1.ldr
-0 frame1
+0 Central frame section built around a large open-center beam with a 16-tooth gear and axle stop for drivetrain mounting.
 0 Name: 42038 - frame1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1000,7 +1000,7 @@
 
 
 0 FILE 42038 - selector.ldr
-0 selector
+0 Transmission gear selector assembly using driving rings, clutch gears, a changeover catch, and an H-shaped beam frame.
 0 Name: 42038 - selector.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1068,7 +1068,7 @@
 1 72 -10 0 -40 1 0 0 0 0 1 0 -1 0 11214.dat
 
 0 FILE 42038 - shock-06_5L-soft-1.ldr
-0 shock-06_5L-soft-1
+0 Soft 6.5L shock absorber with cylinder and piston rod for suspension damping.
 0 Name: 42038 - shock-06_5L-soft-1.ldr
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1111,7 +1111,7 @@
 1 494 0 56 0 1 0 0 0 1 0 0 0 1 42038 - shock-06_5L-soft-1_springMesh.ldr
 
 0 FILE 42038 - shock-06_5L-soft-1_springMesh.ldr
-0 shock-06_5L-soft-1_springMesh
+0 Generated spring mesh for the 6.5L soft shock absorber defining coil geometry and windings.
 0 Name: 42038 - shock-06_5L-soft-1_springMesh.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -5402,7 +5402,7 @@
 5 24 -7.625 43.3791 0.1562 -7.1831 42.9332 0.0116 -7.625 42.7502 0.0164 -7 43.375 0
 
 0 FILE 42038 - shock-06_5L-soft-2.ldr
-0 shock-06_5L-soft-2
+0 Second soft 6.5L shock absorber with cylinder and piston rod for suspension damping.
 0 Name: 42038 - shock-06_5L-soft-2.ldr
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -5445,7 +5445,7 @@
 1 494 0 56 0 1 0 0 0 1 0 0 0 1 42038 - shock-06_5L-soft-2_springMesh.ldr
 
 0 FILE 42038 - shock-06_5L-soft-2_springMesh.ldr
-0 shock-06_5L-soft-2_springMesh
+0 Generated spring mesh for the second 6.5L soft shock absorber defining coil geometry and windings.
 0 Name: 42038 - shock-06_5L-soft-2_springMesh.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -9736,7 +9736,7 @@
 5 24 -7.625 43.3791 0.1562 -7.1831 42.9332 0.0116 -7.625 42.7502 0.0164 -7 43.375 0
 
 0 FILE 42038 - rearaxle.ldr
-0 rearaxle
+0 Rear portal axle assembly with steering wheel hubs, bearings, ball joints, and long beams for track mounting.
 0 Name: 42038 - rearaxle.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -9865,7 +9865,7 @@
 
 
 0 FILE 42038 - frontaxle.ldr
-0 frontaxle
+0 Front portal axle assembly with steering hubs, gear rack, bent beams, and a bevel gear for steering linkage.
 0 Name: 42038 - frontaxle.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -9970,7 +9970,7 @@
 
 
 0 FILE 42038 - tipperfloor.ldr
-0 tipperfloor
+0 Tipping truck bed floor built from a large orange panel, beams, and pins forming a hinged load surface.
 0 Name: 42038 - tipperfloor.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -10037,7 +10037,7 @@
 
 
 0 FILE 42038 - sidepanel1.ldr
-0 sidepanel1
+0 Left orange body side panel with fairings, a long beam, and a clear round plate forming the truck's exterior cladding.
 0 Name: 42038 - sidepanel1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -10090,7 +10090,7 @@
 
 
 0 FILE 42038 - sidepanel2.ldr
-0 sidepanel2
+0 Right orange body side panel with fairings, a long beam, and a clear round plate mirroring the truck's exterior cladding.
 0 Name: 42038 - sidepanel2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -10144,7 +10144,7 @@
 
 
 0 FILE 42038 - seats.ldr
-0 seats
+0 Driver cabin seating assembly using bent liftarms, angle connectors, and thin beams to form two seats.
 0 Name: 42038 - seats.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -10211,7 +10211,7 @@
 1 1 -110 -100 60 0 1 0 0 0 1 1 0 0 32140.dat
 
 0 FILE 42038 - cabinfront.ldr
-0 cabinfront
+0 Front cabin section with an orange panel, bent liftarms, a long tile, and a steering yoke for the dashboard and grille.
 0 Name: 42038 - cabinfront.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -10264,7 +10264,7 @@
 
 
 0 FILE 42038 - technicFlexAxle-1.ldr
-0 technicFlexAxle-1
+0 First flexible Technic axle routing a curved path to shape bodywork or suspension travel.
 0 Name: 42038 - technicFlexAxle-1.ldr
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -12654,7 +12654,7 @@
 5 24 -36.3044 -210 18.4692 -36.3044 -206.0928 18.4692 -36 -210 20 -37.1716 -210 17.1716
 
 0 FILE 42038 - technicFlexAxle-2.ldr
-0 technicFlexAxle-2
+0 Second flexible Technic axle routing a curved path to shape bodywork or suspension travel.
 0 Name: 42038 - technicFlexAxle-2.ldr
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -15078,7 +15078,7 @@
 5 24 23.6956 -210 -41.5308 23.6956 -206.2261 -41.5308 24 -210 -40 22.8284 -210 -42.8284
 
 0 FILE 42038 - track1.ldr
-0 track1
+0 Left track assembly with sprocket wheels, bent liftarms, and cross blocks forming the tracked drive unit.
 0 Name: 42038 - track1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -15141,7 +15141,7 @@
 
 
 0 FILE 42038 - technicChainTread38Closed-1.ldr
-0 technicChainTread38Closed-1
+0 Closed loop of 24 chain tread links forming the rubber track band around a sprocket set.
 0 Name: 42038 - technicChainTread38Closed-1.ldr
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -15217,7 +15217,7 @@
 1 16 -155.8739 77.5528 0 0 0.9988 -0.0498 0 0.0498 0.9988 1 0 0 57518.dat
 
 0 FILE 42038 - track2.ldr
-0 track2
+0 Right track assembly with sprocket wheels, bent liftarms, and cross blocks forming the tracked drive unit.
 0 Name: 42038 - track2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -15280,7 +15280,7 @@
 
 
 0 FILE 42038 - canearm.ldr
-0 canearm
+0 Rotating boom arm built from white beams, 8-tooth gears, and a reel for a winch or crane function.
 0 Name: 42038 - canearm.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -15336,7 +15336,7 @@
 
 
 0 FILE 42038 - Spool&Loop-1.ldr
-0 Spool&Loop-1
+0 Winch cable spool made of a long rope loop wound through 210 cylindrical segments.
 0 Name: 42038 - Spool&Loop-1.ldr
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt

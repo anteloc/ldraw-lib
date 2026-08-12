@@ -1,5 +1,5 @@
 0 FILE 42050 - Drag Racer.ldr
-0 Drag Racer
+0 A Technic drag racer featuring a multi-cylinder engine, chain drive, bodywork panels, large rear wheels, and a linear actuator mechanism, all built on a long red beam chassis.
 0 Name: 42050 - Drag Racer.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -536,7 +536,7 @@
 1 71 -95 -108 500 0 0 1 -0.072 -0.998 0 0.998 -0.072 0 32123a.dat
 
 0 FILE 42050 - engine.ldr
-0 engine
+0 A Technic V-engine assembly with eight cylinder heads, pistons, connecting rods, and dual crankshafts mounted on a 5x3 brick base.
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -690,7 +690,7 @@
 1 71 20 -40 -200 1 0 0 0 0 1 0 -1 0 60484.dat
 
 0 FILE 42050 - technicChainClosed-1.ldr
-0 technicChainClosed-1
+0 A closed Technic chain loop made of eighteen interlinked chain links.
 0 !CATEGORY technic
 0 !THEME Technic
 0 !KEYWORDS flexible, chain
@@ -753,7 +753,7 @@
 1 16 -0.669592 -103.570619 40 0 0.999787 -0.02065 0 0.02065 0.999787 1 0 0 3711.dat
 
 0 FILE 42050 - side1.ldr
-0 side1
+0 A structural side frame built from long red beams and an H-shaped liftarm joined by pins and connectors.
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -809,7 +809,7 @@
 1 71 140 40 0 0 1 0 0 0 -1 -1 0 0 87082.dat
 
 0 FILE 42050 - wheelgears.ldr
-0 wheelgears
+0 A wheel and gear drive assembly using bevel gears, cross blocks, and axles to transmit motion to the wheels.
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -849,7 +849,7 @@
 1 19 -60 20 -17 0 -1 0 -1 0 0 0 0 -1 32198.dat
 
 0 FILE 42050 - linact.ldr
-0 linact
+0 A linear actuator mechanism with a geared body, piston, and orange actuator axle mounted on beams and ball joints.
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -907,7 +907,7 @@
 1 1 0 0 0 0 -1 0 0 0 1 -1 0 0 6558.dat
 
 0 FILE 42050 - technicRibHoseLQ-1.ldr
-0 technicRibHoseLQ-1
+0 A flexible ribbed hose assembly approximately 115 mm long composed of ribbed hose segments.
 0 !CATEGORY technic
 0 !THEME Technic
 0 !KEYWORDS flexible
@@ -997,7 +997,7 @@
 1 16 67.474065 -70 -29.094478 0.5 0.707107 0.5 0.707107 0 -0.707107 -0.5 0.707107 -0.5 79.dat
 
 0 FILE 42050 - technicRibHoseLQ-2.ldr
-0 technicRibHoseLQ-2
+0 A flexible ribbed hose assembly approximately 52 mm long composed of ribbed hose segments.
 0 !CATEGORY technic
 0 !THEME Technic
 0 !KEYWORDS flexible
@@ -1081,7 +1081,7 @@
 1 16 58.643465 -70 -1.365022 0.5 0.707107 0.5 0.707107 0 -0.707107 -0.5 0.707107 -0.5 79.dat
 
 0 FILE 42050 - technicRibHoseLQ-3.ldr
-0 technicRibHoseLQ-3
+0 A flexible ribbed hose assembly approximately 49 mm long composed of ribbed hose segments.
 0 !CATEGORY technic
 0 !THEME Technic
 0 !KEYWORDS flexible
@@ -1161,7 +1161,7 @@
 1 16 51.621828 -70 28.186184 0.5 0.707107 0.5 0.707107 0 -0.707107 -0.5 0.707107 -0.5 79.dat
 
 0 FILE 42050 - technicRibHoseLQ-4.ldr
-0 technicRibHoseLQ-4
+0 A flexible ribbed hose assembly approximately 51 mm long composed of ribbed hose segments.
 0 !CATEGORY technic
 0 !THEME Technic
 0 !KEYWORDS flexible
@@ -1243,7 +1243,7 @@
 1 16 41.997683 -70 55.136296 0.5 0.707107 0.5 0.707107 0 -0.707107 -0.5 0.707107 -0.5 79.dat
 
 0 FILE 42050 - technicRibHoseLQ-5.ldr
-0 technicRibHoseLQ-5
+0 A flexible ribbed hose assembly approximately 59 mm long composed of ribbed hose segments.
 0 !CATEGORY technic
 0 !THEME Technic
 0 !KEYWORDS flexible
@@ -1333,7 +1333,7 @@
 1 16 28.395988 -70 -68.183928 -0.5 -0.707107 -0.5 0.707107 0 -0.707107 0.5 -0.707107 0.5 79.dat
 
 0 FILE 42050 - technicRibHoseLQ-6.ldr
-0 technicRibHoseLQ-6
+0 A flexible ribbed hose assembly approximately 53 mm long composed of ribbed hose segments.
 0 !CATEGORY technic
 0 !THEME Technic
 0 !KEYWORDS flexible
@@ -1417,7 +1417,7 @@
 1 16 0.048784 -70 -59.956873 -0.5 -0.707107 -0.5 0.707107 0 -0.707107 0.5 -0.707107 0.5 79.dat
 
 0 FILE 42050 - technicRibHoseLQ-7.ldr
-0 technicRibHoseLQ-7
+0 A flexible ribbed hose assembly approximately 49 mm long composed of ribbed hose segments.
 0 !CATEGORY technic
 0 !THEME Technic
 0 !KEYWORDS flexible
@@ -1497,7 +1497,7 @@
 1 16 -26.911971 -70 -50.344786 -0.5 -0.707107 -0.5 0.707107 0 -0.707107 0.5 -0.707107 0.5 79.dat
 
 0 FILE 42050 - technicRibHoseLQ-8.ldr
-0 technicRibHoseLQ-8
+0 A flexible ribbed hose assembly approximately 51 mm long composed of ribbed hose segments.
 0 !CATEGORY technic
 0 !THEME Technic
 0 !KEYWORDS flexible
@@ -1579,7 +1579,7 @@
 1 16 -55.140421 -70 -41.998979 -0.5 -0.707107 -0.5 0.707107 0 -0.707107 0.5 -0.707107 0.5 79.dat
 
 0 FILE 42050 - technicFlexAxle-1.ldr
-0 technicFlexAxle-1
+0 A long flexible Technic axle assembly approximately 128 mm long with soft axle segments.
 0 !CATEGORY technic
 0 !THEME Technic
 0 !KEYWORDS flexible
@@ -3269,7 +3269,7 @@
 5 24 -114.067108 -133.965881 51.077232 -110.544579 -133.965881 50.133373 -113.684593 -133.464096 52.504787 -114.470184 -133.863663 49.572945
 
 0 FILE 42050 - cooler.ldr
-0 cooler
+0 A compact cooling mechanism assembly built from short liftarms, toggle joints, and bars arranged on cross blocks.
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -3333,7 +3333,7 @@
 1 71 35 -60 -30 0 0 -1 0 -1 0 -1 0 0 62462.dat
 
 0 FILE 42050 - technicRibHoseLQ-9.ldr
-0 technicRibHoseLQ-9
+0 A flexible ribbed hose assembly approximately 49 mm long composed of ribbed hose segments.
 0 !CATEGORY technic
 0 !THEME Technic
 0 !KEYWORDS flexible
@@ -3411,7 +3411,7 @@
 1 16 -40 -49 -65.66388 1 0 0 0 0 1 0 -1 0 79.dat
 
 0 FILE 42050 - tail.ldr
-0 tail
+0 The rear tail section built from long black beams, cross blocks, and two large wheel rims for the rear wheels.
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -3477,7 +3477,7 @@
 1 4 80 0 -60 -1 0 0 0 0 1 0 1 0 32054.dat
 
 0 FILE 42050 - bodywork.ldr
-0 bodywork
+0 The main body shell composed of azure panels, fairing panels, and beams forming the aerodynamic bodywork.
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -3581,7 +3581,7 @@
 1 71 460 -60 0 0 0 1 0 1 0 -1 0 0 42050 - bodyworktop.ldr
 
 0 FILE 42050 - mudguard.ldr
-0 mudguard
+0 A mudguard assembly made of thin fairing panels, angle connectors, and liftarms framing the wheel opening.
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -3664,7 +3664,7 @@
 1 322 0 -60 0 -1 0 0 0 -1 0 0 0 1 32524.dat
 
 0 FILE 42050 - technicFlexAxle-2.ldr
-0 technicFlexAxle-2
+0 A short flexible Technic axle assembly approximately 55 mm long with soft axle segments.
 0 !CATEGORY technic
 0 !THEME Technic
 0 !KEYWORDS flexible
@@ -5234,7 +5234,7 @@
 5 24 -16.304399 -130.304138 0.326292 -16.304399 -126.668152 0.326292 -16 -130.304138 1.857092 -17.1716 -130.304138 -0.971308
 
 0 FILE 42050 - technicFlexAxle-3.ldr
-0 technicFlexAxle-3
+0 A short flexible Technic axle assembly approximately 55 mm long with soft axle segments.
 0 !CATEGORY technic
 0 !THEME Technic
 0 !KEYWORDS flexible
@@ -6804,7 +6804,7 @@
 5 24 -16.304399 -130.304138 -3.387892 -16.304399 -126.668152 -3.387892 -16 -130.304138 -1.857092 -17.1716 -130.304138 -4.685492
 
 0 FILE 42050 - bodyworkside1.ldr
-0 bodyworkside1
+0 A side bodywork panel assembly with large black panels and an azure beam clipped onto a support beam.
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -6848,7 +6848,7 @@
 1 0 0 -90 360 0 -1 0 1 0 0 0 0 1 2780.dat
 
 0 FILE 42050 - bodyworkside2.ldr
-0 bodyworkside2
+0 A mirrored side bodywork panel assembly with large black panels and an azure beam clipped onto a support beam.
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -6888,7 +6888,7 @@
 1 0 -360 -90 0 0 0 1 1 0 0 0 1 0 2780.dat
 
 0 FILE 42050 - bodyworkrear.ldr
-0 bodyworkrear
+0 The rear bodywork frame built from multiple long beams and cross blocks forming a sturdy rear structure.
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -6973,7 +6973,7 @@
 1 0 -160 -20 -140 -1 0 0 0 1 0 0 0 -1 32316.dat
 
 0 FILE 42050 - bodyworktop.ldr
-0 bodyworktop
+0 A curved upper bodywork assembly built from a 5x11 Technic panel reinforced with medium azure beams and angle connectors.
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -7045,7 +7045,7 @@
 1 71 -90 113.13 -35.676 -1 0 0 0 -0.631 -0.776 0 -0.776 0.631 3673.dat
 
 0 FILE 42050 - spoiler.ldr
-0 spoiler
+0 A rear wing spoiler using bent liftarms and angle connectors mounted on a red 15-stud beam with axles and pins.
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -7094,7 +7094,7 @@
 1 4 100 112 -144 0 -1 0 0.6 0 -0.8 0.8 0 0.6 32278.dat
 
 0 FILE 42050 - 33299b.dat
-0 Technic Beam  3 x  0.5 Liftarm with Boss and Pin Semi-Reduced
+0 A short 3x0.5 Technic liftarm with boss and semi-reduced pin hole defined by axle and peg hole primitives.
 0 Name: 42050 - 33299b.dat
 0 Author: Santeri Piippo [arezey]
 0 !LDRAW_ORG Unofficial_Part
@@ -7131,7 +7131,7 @@
 4 16 3.444 10 31.685 0 10 31 0 10 32 3.062 10 32.609
 
 0 FILE 42050 - 24316.dat
-0 Technic Axle  3 with Stop
+0 A Technic axle 3 with stop, modeled as a shaft capped with a stop disc and cylinder.
 0 Name: 42050 - 24316.dat
 0 Author: Owen Burgoyne [C3POwen]
 0 !LDRAW_ORG Unofficial_Part
@@ -7147,7 +7147,7 @@
 1 16 30 0 0 0 -2 0 8 0 0 0 0 8 4-4cylc.dat
 
 0 FILE 42050 - 2850b.dat
-0 Technic Engine Cylinder Head with Bottom Slots
+0 A Technic engine cylinder head with bottom slots, composed of cylinders, rectangles, and disc primitives.
 0 Name: 42050 - 2850b.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -7316,7 +7316,7 @@
 4 16 -20 36 2 -20 33 2 -27 33 2 -27 36 2
 
 0 FILE s\42050 - 33299s01.dat
-0 ~Technic Beam  3 x  0.5 Liftarm with Boss and Pin Common
+0 Common geometry subpart for the 3x0.5 liftarm with boss, formed from cylinders, rings, and peg hole primitives.
 0 Name: s\42050 - 33299s01.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -7570,7 +7570,7 @@
 4 16 8.091 0 3.78 4.014 0 6.93 5.184 0 5.184 6.93 0 4.014
 
 0 FILE s\42050 - 2850s01.dat
-0 ~Technic Engine Cylinder Head Common Geometry Half
+0 Half of the common geometry for the engine cylinder head, featuring top studs, cooling ribs, and connector holes.
 0 Name: s\42050 - 2850s01.dat
 0 Author: Jeff Boen
 0 !LDRAW_ORG Unofficial_Subpart

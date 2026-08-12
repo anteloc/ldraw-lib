@@ -1,5 +1,5 @@
 0 FILE 42042 - Crawler Crane - Tower Crane.ldr
-0 Crawler Crane - Tower Crane
+0 Complete tower crane model integrating crawler base, drive gears, vertical tower, turntable, winch, rope, and motorized grabber assembly.
 0 Name: 42042 - Crawler Crane - Tower Crane.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -366,7 +366,7 @@
 1 71 30.004 -700 -690 0 0 -1 0 1 0 1 0 0 3713.dat
 
 0 FILE 42042 - drivegear1.ldr
-0 drivegear1
+0 Compact gear drive unit using 12- and 20-tooth bevel gears on stopped axles with a toggle joint connector for torque transfer.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42042 - drivegear1.ldr
 0 !LDRAW_ORG Model
@@ -402,7 +402,7 @@
 1 4 0 -50 70 0 1 0 1 0 0 0 0 -1 59443.dat
 
 0 FILE 42042 - baseside1.ldr
-0 baseside1
+0 Reinforced side frame for the crawler base built from long beams and cross blocks joined by friction pins.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42042 - baseside1.ldr
 0 !LDRAW_ORG Model
@@ -450,7 +450,7 @@
 1 1 -220 0 -20 0 1 0 0 0 -1 -1 0 0 6558.dat
 
 0 FILE 42042 - baseside2.ldr
-0 baseside2
+0 Lighter counterpart side frame of the crawler base using long beams and cross blocks connected with friction pins.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42042 - baseside2.ldr
 0 !LDRAW_ORG Model
@@ -486,7 +486,7 @@
 1 1 220 0 -20 0 1 0 0 0 -1 -1 0 0 6558.dat
 
 0 FILE 42042 - drivegear2.ldr
-0 drivegear2
+0 Bevel-gear drive unit (12- and 20-tooth) mounted on stopped axles with axle joiners for power transmission.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42042 - drivegear2.ldr
 0 !LDRAW_ORG Model
@@ -523,7 +523,7 @@
 1 71 80 0 50 -1 0 0 0 0 1 0 1 0 4519.dat
 
 0 FILE 42042 - treadsupport1.ldr
-0 treadsupport1
+0 Crawler tread support structure with sprocket wheels, drive gears, and braced beams forming one track assembly.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42042 - treadsupport1.ldr
 0 !LDRAW_ORG Model
@@ -650,7 +650,7 @@
 1 28 60 20 98 0 0 -1 0 -1 0 -1 0 0 15462.dat
 
 0 FILE 42042 - treadsupport2.ldr
-0 treadsupport2
+0 Mirrored crawler tread support structure with sprocket wheels, drive gears, and braced beams for the opposite track.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42042 - treadsupport2.ldr
 0 !LDRAW_ORG Model
@@ -777,7 +777,7 @@
 1 28 60 20 -98 0 0 1 0 -1 0 1 0 0 15462.dat
 
 0 FILE 42042 - rollers.ldr
-0 rollers
+0 Roller array of eight grooved wheel rims mounted on blue beams forming stabilizing rollers for the crawler tracks.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42042 - rollers.ldr
 0 !LDRAW_ORG Model
@@ -837,7 +837,7 @@
 1 71 40 0 200 0 0 1 0 1 0 -1 0 0 42610.dat
 
 0 FILE 42042 - turntable.ldr
-0 turntable
+0 Slewing turntable assembly combining a 60-tooth top and bottom turntable ring braced by long beams for crane rotation.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42042 - turntable.ldr
 0 !LDRAW_ORG Model
@@ -869,7 +869,7 @@
 1 1 -80 40 -120 -1 0 0 0 1 0 0 0 -1 6558.dat
 
 0 FILE 42042 - technicChainTread38Closed-1.ldr
-0 technicChainTread38Closed-1
+0 Closed-loop crawler tread made of 45 linked chain tread segments forming one continuous track.
 0 Name: 42042 - technicChainTread38Closed-1.ldr
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -989,7 +989,7 @@
 1 16 -361.315902 28.158113 0 0 0.955587 0.294708 0 -0.294708 0.955587 1 0 0 57518.dat
 
 0 FILE 42042 - winch.ldr
-0 winch
+0 Cable winch unit using two wedge belt wheels as drums spaced by half-bushes and joined by a pin joiner.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42042 - winch.ldr
 0 !LDRAW_ORG Model
@@ -1016,7 +1016,7 @@
 1 0 96 55.908 61.491 -1 0 0 0 0.588 0.809 0 0.809 -0.588 42042 - ropeLQ-1.ldr
 
 0 FILE 42042 - tower.ldr
-0 tower
+0 Vertical crane tower built from stacked long beams and pinned segments with an internal 8-tooth gear and belt-wheel winch mechanism.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42042 - tower.ldr
 0 !LDRAW_ORG Model
@@ -1220,7 +1220,7 @@
 1 0 0 0 -180 0 1 0 -1 0 0 0 0 1 32054.dat
 
 0 FILE 42042 - ropeLQ-1.ldr
-0 ropeLQ-1
+0 Long flexible hoist rope modeled as 764 cylindrical segments forming a continuous cable path.
 0 Name: 42042 - ropeLQ-1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2812,7 +2812,7 @@
 1 16 -39.006219 -75.542057 0.139374 1.499956 0.04544 -0.001466 -0.010991 5.925928 0.234714 0.003225 -0.938784 1.481522 4-4cyli.dat
 
 0 FILE 42042 - grabbertop.ldr
-0 grabbertop
+0 Top linkage of the grabber using triangular liftarms and grooved wheel rims on stopped axles for pivoting.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42042 - grabbertop.ldr
 0 !LDRAW_ORG Model
@@ -2842,7 +2842,7 @@
 1 71 0 30 -40 0 0 1 -1 0 0 0 -1 0 4519.dat
 
 0 FILE 42042 - grabber.ldr
-0 grabber
+0 Four-claw grabber assembly with a linear actuator, bevel gear, and jointed liftarms for opening and closing the claws.
 0 Name: 42042 - grabber.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3007,7 +3007,7 @@
 1 0 -80 -175 20 0 0 -1 0 1 0 1 0 0 32270.dat
 
 0 FILE 42042 - base.ldr
-0 base
+0 Central crawler base frame incorporating open-center beams, angle connectors, and a gear train for drive distribution.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42042 - base.ldr
 0 !LDRAW_ORG Model
@@ -3437,7 +3437,7 @@
 0 STEP
 
 0 FILE 42042 - baseside.ldr
-0 baseside
+0 Cross-braced base side connector built from a long beam and two liftarms joined with a cross block and pins.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42042 - baseside.ldr
 0 !LDRAW_ORG Model
@@ -3467,7 +3467,7 @@
 1 1 -40 -40 -70 0 0 -1 0 1 0 1 0 0 43093.dat
 
 0 FILE 42042 - motorassy.ldr
-0 motorassy
+0 Main motor assembly with a clutch gear, driving rings, and a multi-stage gear train coupling the Power Functions motor output.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42042 - motorassy.ldr
 0 !LDRAW_ORG Model
@@ -3591,7 +3591,7 @@
 1 71 30 -80 -60 0 0 -1 -1 0 0 0 1 0 62519.dat
 
 0 FILE 42042 - powerFuncMotorL-1.ldr
-0 powerFuncMotorL-1
+0 Power Functions Large Motor unit with attached PF connector and routed wiring cable.
 0 !CATEGORY electric
 0 Name: 42042 - powerFuncMotorL-1.ldr
 0 !LDRAW_ORG Model
@@ -3633,7 +3633,7 @@
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 42042 - powerFuncMotorL-1_subPart1.ldr
 
 0 FILE 42042 - powerFuncMotorL-1_subPart1.ldr
-0 powerFuncMotorL-1_subPart1
+0 Sub-part containing the flexible wiring cable segments and primitive geometry for the PF motor's power lead.
 0 !LDCAD GENERATED [generator=LDCad 1.5 Beta 1a] [master=42042 - powerFuncMotorL-1.ldr]
 0 Name: 42042 - powerFuncMotorL-1_subPart1.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -17485,7 +17485,7 @@
 5 24 103.04232 -120.616783 252 102.474403 -120.237396 252 103.063675 -120.651222 251.000824 102.950951 -120.477409 256.191528
 
 0 FILE 42042 - motorassy2.ldr
-0 motorassy2
+0 Auxiliary motor mount using bent liftarms, cross blocks, and pins to position and support a secondary drivetrain.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42042 - motorassy2.ldr
 0 !LDRAW_ORG Model
@@ -17531,7 +17531,7 @@
 1 0 -20 0 -20 0 1 0 0 0 -1 -1 0 0 42042 - motorassy3.ldr
 
 0 FILE 42042 - motorassy3.ldr
-0 motorassy3
+0 Secondary gearbox stage with clutch and double-bevel gears on stopped axles for engaging a drive function.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42042 - motorassy3.ldr
 0 !LDRAW_ORG Model
@@ -17569,7 +17569,7 @@
 1 0 -40 0 -80 0 0 1 -1 0 0 0 -1 0 32270.dat
 
 0 FILE 42042 - shiftplate.ldr
-0 shiftplate
+0 Gear-shifting plate assembly using bent liftarms, a perpendicular pin connector, and a white selector beam to actuate gear changes.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42042 - shiftplate.ldr
 0 !LDRAW_ORG Model
@@ -17636,7 +17636,7 @@
 1 1 -80 -80 -60 -1 0 0 0 0 -1 0 -1 0 32524.dat
 
 0 FILE 42042 - grille.ldr
-0 grille
+0 Decorative grille panel made of slanted grille bricks on plates with a technic mounting pin.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42042 - grille.ldr
 0 !LDRAW_ORG Model
@@ -17669,7 +17669,7 @@
 1 71 30 18 -10 0 -1 0 0 0 1 -1 0 0 32054.dat
 
 0 FILE 42042 - shiftgears2.ldr
-0 shiftgears2
+0 Shifting gear cluster with clutch gears, a transmission driving ring, and reinforced 16-tooth gears for selecting drive modes.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42042 - shiftgears2.ldr
 0 !LDRAW_ORG Model
@@ -17731,7 +17731,7 @@
 1 71 0 -10 -40 1 0 0 0 -1 0 0 0 -1 3713.dat
 
 0 FILE 42042 - grille2.ldr
-0 grille2
+0 Grille assembly built from plates and slope grille bricks connected by technic bricks and a pin.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42042 - grille2.ldr
 0 !LDRAW_ORG Model
@@ -17764,7 +17764,7 @@
 1 71 -70 8 -10 0 1 0 0 0 -1 -1 0 0 32054.dat
 
 0 FILE 42042 - sidefairing1.ldr
-0 sidefairing1
+0 Streamlined side fairing composed of white and blue technic panels and fairings joined with pins and a round light plate.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42042 - sidefairing1.ldr
 0 !LDRAW_ORG Model
@@ -17813,7 +17813,7 @@
 1 57 -40 0 -236 0 0 1 1 0 0 0 1 0 6141.dat
 
 0 FILE 42042 - sidefairing2.ldr
-0 sidefairing2
+0 Mirrored side fairing of white and blue technic panels and fairings held together with pins and a round light plate.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42042 - sidefairing2.ldr
 0 !LDRAW_ORG Model
@@ -17862,7 +17862,7 @@
 1 57 226 0 50 0 -1 0 -1 0 0 0 0 -1 6141.dat
 
 0 FILE 42042 - spoolwormgear.ldr
-0 spoolwormgear
+0 Worm gear winch mechanism using a worm gear, 8-tooth gear, axles, and bent liftarms to drive a spool.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42042 - spoolwormgear.ldr
 0 !LDRAW_ORG Model
@@ -17900,7 +17900,7 @@
 1 0 35 40 0 0 1 0 0 0 -1 -1 0 0 11478.dat
 
 0 FILE 42042 - boom.ldr
-0 boom
+0 Long crane boom constructed from blue 15-stud and bent liftarms linked by friction pins and braced with liftarm links.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42042 - boom.ldr
 0 !LDRAW_ORG Model
@@ -18089,7 +18089,7 @@
 1 71 -150 -20 -59 -1 0 0 0 1 0 0 0 -1 3713.dat
 
 0 FILE 42042 - towertop.ldr
-0 towertop
+0 Top crane section combining long liftarms, pins, and axles that support the boom pivot and sheave structure.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42042 - towertop.ldr
 0 !LDRAW_ORG Model
@@ -18210,7 +18210,7 @@
 1 1 0 -40 20 1 0 0 0 -1 0 0 0 -1 32523.dat
 
 0 FILE 42042 - trolley.ldr
-0 trolley
+0 Horizontal trolley unit with short liftarms, axles, and grooved wheel rims for traveling along the boom.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42042 - trolley.ldr
 0 !LDRAW_ORG Model
@@ -18251,7 +18251,7 @@
 1 1 40 0 0 0 -1 0 1 0 0 0 0 1 32523.dat
 
 0 FILE 42042 - backstay.ldr
-0 backstay
+0 Angled backstay support built from white 13-stud beams, short liftarms, and a 16L link stabilized with notched axles.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42042 - backstay.ldr
 0 !LDRAW_ORG Model
@@ -18297,7 +18297,7 @@
 1 71 0 0 942.25 1 0 0 0 1 0 0 0 1 4519.dat
 
 0 FILE 42042 - 18938.dat
-0 Technic Turntable 60 Tooth Top
+0 Top half of a 60-tooth technic turntable with connector holes for mounting.
 0 Name: 42042 - 18938.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -18339,7 +18339,7 @@
 5 24 0 -10 -65.9997 0 -9.1 -68.1983 6.8975 -10 -65.6364 -6.8975 -10 -65.6364
 
 0 FILE 42042 - 18939.dat
-0 Technic Turntable 60 Tooth Bottom
+0 Bottom half of a 60-tooth technic turntable with connector holes for rotation mounting.
 0 Name: 42042 - 18939.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -18357,7 +18357,7 @@
 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\42042 - 18939s01.dat
 
 0 FILE 42042 - 18654.dat
-0 Technic Beam  1
+0 Single-stud technic beam primitive formed from a connector hole and open cylinder.
 0 Name: 42042 - 18654.dat
 0 Author: Owen Burgoyne [C3POwen]
 0 !LDRAW_ORG Unofficial_Part
@@ -18371,7 +18371,7 @@
 1 16 0 -10 0 9 0 0 0 20 0 0 0 9 4-4cylo.dat
 
 0 FILE 42042 - 18948.dat
-0 Technic Axle Joiner  3L with Ridges for Driving Ring
+0 3L ridged axle joiner for a driving ring, composed of concentric cylinders, discs, and axle-hole primitives.
 0 Name: 42042 - 18948.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -18855,7 +18855,7 @@
 5 24 1.6583 -8.3367 -10 1.6583 -8.3367 0 3.6355 -8.7769 -5 0 -7.95 -10
 
 0 FILE 42042 - 18946.dat
-0 Technic Gear 16 Tooth with Clutch on Both Sides
+0 16-tooth double-sided clutch gear with a connector hole, rings, and clutch ridges.
 0 Name: 42042 - 18946.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -19178,7 +19178,7 @@
 2 24 -13.718 0.5 9.4 -13.718 -0.5 9.4
 
 0 FILE 42042 - 18947.dat
-0 Technic Transmission Driving Ring  3L
+0 3L transmission driving ring made of nested cylinders, rings, and discs forming the sliding clutch body.
 0 Name: 42042 - 18947.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -19596,7 +19596,7 @@
 2 24 3.6355 8.7769 -20 3.6355 8.7769 20
 
 0 FILE 42042 - 33299b.dat
-0 Technic Beam  3 x  0.5 Liftarm with Boss and Pin Semi-Reduced
+0 Thin 3x0.5 liftarm with boss and semi-reduced axle hole constructed from axle and peg hole primitives.
 0 Name: 42042 - 33299b.dat
 0 Author: Santeri Piippo [arezey]
 0 !LDRAW_ORG Unofficial_Part
@@ -19633,7 +19633,7 @@
 4 16 3.444 10 31.685 0 10 31 0 10 32 3.062 10 32.609
 
 0 FILE s\42042 - 18938s01.dat
-0 ~Technic Turntable 60 Tooth Top Quarter
+0 Quarter-section subpart of the 60-tooth turntable top built from cylinders, rings, and rectangular teeth geometry.
 0 Name: s\42042 - 18938s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -20015,7 +20015,7 @@
 4 16 30 10 12.124 31.271 10 8.3787 32.0966 10 4.2249 32.375 10 0
 
 0 FILE s\42042 - 18938s02.dat
-0 ~Technic Turntable 60 Tooth Top -  5 Teeth
+0 Five-teeth segment subpart of the 60-tooth turntable top made entirely of rectangular plates.
 0 Name: s\42042 - 18938s02.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -20361,7 +20361,7 @@
 3 16 -2.056 -5 71.2998 0 -5 69 2.056 -5 71.2998
 
 0 FILE s\42042 - 18939s01.dat
-0 ~Technic Turntable 60 Tooth Bottom Quarter
+0 Quarter-section subpart of the 60-tooth turntable bottom with connector hole, cylinders, rings, and teeth.
 0 Name: s\42042 - 18939s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -20534,7 +20534,7 @@
 4 16 34 6 23.7125 34 10 23.7125 34 12.2132 26 34 6 26
 
 0 FILE s\42042 - 33299s01.dat
-0 ~Technic Beam  3 x  0.5 Liftarm with Boss and Pin Common
+0 Common geometry subpart of the 3x0.5 liftarm with boss and pin, composed of peg holes, cylinders, and rings.
 0 Name: s\42042 - 33299s01.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -20788,7 +20788,7 @@
 4 16 8.091 0 3.78 4.014 0 6.93 5.184 0 5.184 6.93 0 4.014
 
 0 FILE 42042 - 7-16cylo.dat
-0 Cylinder Open 0.4375
+0 Open cylinder primitive of radius 0.4375 built from a cylinder and two circles.
 0 Name: 42042 - 7-16cylo.dat
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -20804,7 +20804,7 @@
 1 16 0 1 0 1 0 0 0 1 0 0 0 1 7-16edge.dat
 
 0 FILE 48\42042 - 1-24con24.dat
-0 Hi-Res Cone 24 x 0.0417
+0 High-resolution 24-segment cone primitive of radius 0.0417 generated without direct pieces.
 0 Name: 48\42042 - 1-24con24.dat
 0 Author: Alex Taylor [anathema]
 0 !LDRAW_ORG Unofficial_48_Primitive
@@ -20821,7 +20821,7 @@
 5 24 23.1816 1 6.2112 24.1475 0 6.47 23.7936 1 3.132 22.1736 1 9.1848
 
 0 FILE 48\42042 - 1-24ring29.dat
-0 Hi-Res Ring 29 x 0.0417
+0 High-resolution 24-segment ring primitive of radius 0.0417 generated by the primitive generator.
 0 Name: 48\42042 - 1-24ring29.dat
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Unofficial_48_Primitive
@@ -20834,7 +20834,7 @@
 0 // Build by Primitive Generator 2
 
 0 FILE 48\42042 - 7-48ring10.dat
-0 Hi-Res Ring 10 x 0.1458
+0 High-resolution 48-segment ring primitive of radius 0.1458 generated by the primitive generator.
 0 Name: 48\42042 - 7-48ring10.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_48_Primitive

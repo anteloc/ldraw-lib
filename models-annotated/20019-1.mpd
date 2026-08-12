@@ -1,5 +1,5 @@
 0 FILE 20019 - Slave I.ldr
-0 Slave I
+0 Slave I starship model composed of a sloped dark red and dark green hull assembly with engine, wing, and thruster detail submodules.
 0 Name: 20019 - Slave I.ldr
 0 Author: Jude Parrill
 0 !LDRAW_ORG Model
@@ -15,7 +15,7 @@
 1 0 0 0 0 1 0 0 0 0 -1 0 1 0 20019 - m-1.ldr
 
 0 FILE 20019 - m-1.ldr
-0 m-1
+0 Main hull structure built from dark red slopes, dark green curved panels, and bluish grey plates forming the angled body of the ship.
 0 Name: 20019 - m-1.ldr
 0 Author: Jude Parrill
 0 !LDRAW_ORG Model
@@ -152,7 +152,7 @@
 1 0 -29 -59 -120 1 0 0 0 0 1 0 -1 0 20019 - m-1d.ldr
 
 0 FILE 20019 - m-1a.ldr
-0 m-1a
+0 Technic axle assembly with locking hinge arms and bushings for mounting or rotating a component.
 0 Name: 20019 - m-1a.ldr
 0 Author: Jude Parrill
 0 !LDRAW_ORG Model
@@ -185,7 +185,7 @@
 1 71 -80 0 0 1 0 0 0 1 0 0 0 1 20019 - m-1ab.ldr
 
 0 FILE 20019 - m-1aa.ldr
-0 m-1aa
+0 Small hinged detail module with a grille tile and slope, using a tan rounded corner plate as a base.
 0 Name: 20019 - m-1aa.ldr
 0 Author: Jude Parrill
 0 !LDRAW_ORG Model
@@ -207,7 +207,7 @@
 1 71 20 6 0 0 0 -1 0 1 0 1 0 0 54200.dat
 
 0 FILE 20019 - m-1ab.ldr
-0 m-1ab
+0 Small hinged detail module with a grille tile and slope, using a tan rounded corner plate as a base.
 0 Name: 20019 - m-1ab.ldr
 0 Author: Jude Parrill
 0 !LDRAW_ORG Model
@@ -229,7 +229,7 @@
 1 71 -20 6 0 0 0 1 0 1 0 -1 0 0 54200.dat
 
 0 FILE 20019 - m-1b.ldr
-0 m-1b
+0 Curved dark green and dark bluish grey wing or engine section with wheel pins and grooved tiles.
 0 Name: 20019 - m-1b.ldr
 0 Author: Jude Parrill
 0 !LDRAW_ORG Model
@@ -263,7 +263,7 @@
 1 288 0 -32 -20 0 0 -1 0 1 0 1 0 0 2431.dat
 
 0 FILE 20019 - m-1c.ldr
-0 m-1c
+0 Mounted binocular detail piece representing a sensor or cannon element attached via a clipped bar.
 0 Name: 20019 - m-1c.ldr
 0 Author: Jude Parrill
 0 !LDRAW_ORG Model
@@ -280,7 +280,7 @@
 1 72 0 6 -43 0 -1 0 -1 0 0 0 0 -1 30162.dat
 
 0 FILE 20019 - m-1d.ldr
-0 m-1d
+0 Mounted binocular detail piece representing a sensor or cannon element attached via a clipped bar.
 0 Name: 20019 - m-1d.ldr
 0 Author: Jude Parrill
 0 !LDRAW_ORG Model

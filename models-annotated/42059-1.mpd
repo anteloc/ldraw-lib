@@ -1,5 +1,5 @@
 0 FILE 42059 - main.ldr
-0 main
+0 Top-level assembly of a pull-back stunt truck with an included stunt ramp accessory.
 0 Name: 42059 - main.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -7,7 +7,7 @@
 1 16 -90 -10 175 1 0 0 0 0.985 -0.174 0 0.174 0.985 42059 - truck.ldr
 1 179 0 -13 -360 1 0 0 0 1 0 0 0 1 42059 - ramp.ldr
 0 FILE 42059 - truck.ldr
-0 truck
+0 Pull-back Technic stunt truck with four rubber tyres, a friction motor, and a chassis built from bent liftarms, axles, and connector pins.
 0 Name: 42059 - truck.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -287,7 +287,7 @@
 1 256 0 -48 -16 0 0 -1 -1 0 0 0 1 0 44309.dat
 0 STEP
 0 FILE 42059 - ramp.ldr
-0 ramp
+0 Cardboard stunt ramp with a medium azure arrow pattern, supported by Technic beams and flexible axle joiners.
 0 Name: 42059 - ramp.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -870,7 +870,7 @@
 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\42059 - u9331c01s03.dat
 0 !TEXMAP END
 0 FILE s\42059 - 98138s01.dat
-0 98138s01
+0 Primitive geometry subfile defining a small round tile disc using concentric ring and cylinder shapes.
 0 Name: s\42059 - 98138s01.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -897,7 +897,7 @@
 1 16 0 0.5 0 -9.5 0 0 0 -9.5 0 0 0 9.5 42059 - t02o0526.dat
 1 16 0 0.5 0 9.5 0 0 0 -9.5 0 0 0 -9.5 42059 - t02o0526.dat
 0 FILE 42059 - t02o0526.dat
-0 t02o0526
+0 Primitive geometry subfile defining a partial torus ring using circular edge segments.
 0 Name: 42059 - t02o0526.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -1022,7 +1022,7 @@
 5 24 -1.0486 0.0201 0 -1.0526 0 0 -1.0486 0.0201 -0.4343 -0.9688 0.0201 0.4013
 0 // Build by Primitive Generator 2
 0 FILE s\42059 - u9331c01s01.dat
-0 u9331c01s01
+0 Primitive geometry subfile defining rectangular faces and edge lines for a moulded part.
 0 Name: s\42059 - u9331c01s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -1687,7 +1687,7 @@
 5 24 -137 -5.999 -79.880997 -137.5 -5.999 -79.880997 -137.5 -5.497 -77.595001 -137 -5.588 -82.185997
 5 24 -137 -5.588 -82.185997 -137.5 -5.588 -82.185997 -137.5 -5.999 -79.880997 -137 -4.326 -84.157997
 0 FILE s\42059 - u9331c01s02.dat
-0 u9331c01s02
+0 Empty part subfile providing no direct geometry.
 0 Name: s\42059 - u9331c01s02.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -1709,7 +1709,7 @@
 4 16 -137 -21.726999 55.080002 137 -21.726999 55.080002 137 -17.122 67.237 -137 -17.122 67.237
 4 16 -137 -17.122 67.237 137 -17.122 67.237 137 -4.369 100.902 -137 -4.369 100.902
 0 FILE s\42059 - u9331c01s03.dat
-0 u9331c01s03
+0 Empty part subfile providing no direct geometry.
 0 Name: s\42059 - u9331c01s03.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart

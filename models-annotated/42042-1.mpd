@@ -1,5 +1,5 @@
 0 FILE 42042 - Crawler Crane.ldr
-0 Crawler Crane
+0 Motorized crawler crane with tracked base, turntable, multi-speed gearbox, twin winches, control sticks, and a lattice boom.
 0 Name: 42042 - Crawler Crane.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -635,7 +635,7 @@
 1 0 27 -655 -1160 0 0 -1 0 1 0 1 0 0 42042 - grabber.ldr
 
 0 FILE 42042 - drivegear1.ldr
-0 drivegear1
+0 Compact bevel gear assembly with 12 and 20 tooth gears mounted on an axle joiner and T-beam frame.
 0 Name: 42042 - drivegear1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -674,7 +674,7 @@
 
 
 0 FILE 42042 - baseside1.ldr
-0 baseside1
+0 Reinforced base side panel built from long beams, bent liftarms, and cross blocks pinned together.
 0 Name: 42042 - baseside1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -725,7 +725,7 @@
 
 
 0 FILE 42042 - baseside2.ldr
-0 baseside2
+0 Symmetrical base side frame of long beams and cross blocks joined with friction pins.
 0 Name: 42042 - baseside2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -764,7 +764,7 @@
 
 
 0 FILE 42042 - drivegear2.ldr
-0 drivegear2
+0 Bevel gear drive module with 12 and 20 tooth gears on multiple axles with inline joiners.
 0 Name: 42042 - drivegear2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -804,7 +804,7 @@
 
 
 0 FILE 42042 - treadsupport1.ldr
-0 treadsupport1
+0 Tracked drive support unit with sprocket wheels, 24-tooth gear, and bracing beams for the crawler tread.
 0 Name: 42042 - treadsupport1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -934,7 +934,7 @@
 
 
 0 FILE 42042 - treadsupport2.ldr
-0 treadsupport2
+0 Mirrored tracked drive support unit with sprocket wheels, 24-tooth gear, and bracing beams for the crawler tread.
 0 Name: 42042 - treadsupport2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1064,7 +1064,7 @@
 
 
 0 FILE 42042 - rollers.ldr
-0 rollers
+0 Roller assembly with eight grooved wheel rims mounted on a blue beam frame for smooth tread guidance.
 0 Name: 42042 - rollers.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1127,7 +1127,7 @@
 
 
 0 FILE 42042 - turntable.ldr
-0 turntable
+0 60-tooth turntable top and bottom rings held between two long blue beams for crane rotation.
 0 Name: 42042 - turntable.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1159,7 +1159,7 @@
 1 1 -80 40 -120 -1 0 0 0 1 0 0 0 -1 6558.dat
 
 0 FILE 42042 - technicChainTread38Closed-1.ldr
-0 technicChainTread38Closed-1
+0 Closed crawler tread loop of 45 chain tread links forming one continuous track.
 0 Name: 42042 - technicChainTread38Closed-1.ldr
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1279,7 +1279,7 @@
 1 16 -361.315902 28.158113 0 0 0.955587 0.294708 0 -0.294708 0.955587 1 0 0 57518.dat
 
 0 FILE 42042 - gearbox.ldr
-0 gearbox
+0 Main multi-function gearbox with clutch gears, driving rings, bevel gears, and numerous axles for switching drive outputs.
 0 Name: 42042 - gearbox.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1592,7 +1592,7 @@
 1 1 -160 120 80 1 0 0 0 -1 0 0 0 -1 32009.dat
 
 0 FILE 42042 - gearboxbeam.ldr
-0 gearboxbeam
+0 Mounting beam assembly combining long beams and cross blocks to support gearbox components.
 0 Name: 42042 - gearboxbeam.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1622,7 +1622,7 @@
 
 
 0 FILE 42042 - gearbox2.ldr
-0 gearbox2
+0 Secondary gear stage with 24-tooth and 16-tooth gears on a triangular liftarm bracket.
 0 Name: 42042 - gearbox2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1652,7 +1652,7 @@
 
 
 0 FILE 42042 - gearbox3.ldr
-0 gearbox3
+0 Auxiliary gear module with two 20-tooth double bevel gears on long beams and a bent liftarm.
 0 Name: 42042 - gearbox3.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1698,7 +1698,7 @@
 
 
 0 FILE 42042 - gearbox4.ldr
-0 gearbox4
+0 Compound gear reduction unit with 12, 16, and 20-tooth gears on multiple joined axles and a white beam frame.
 0 Name: 42042 - gearbox4.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1780,7 +1780,7 @@
 1 71 -60 0 -80 0 -0.4226 0.9063 0 0.9063 0.4226 -1 0 0 4519.dat
 
 0 FILE 42042 - powerFuncMotorL-1.ldr
-0 powerFuncMotorL-1
+0 Power Functions large motor unit with connector and routed wire.
 0 Name: 42042 - powerFuncMotorL-1.ldr
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1823,7 +1823,7 @@
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 42042 - powerFuncMotorL-1_subPart1.ldr
 
 0 FILE 42042 - powerFuncMotorL-1_subPart1.ldr
-0 powerFuncMotorL-1_subPart1
+0 Detailed geometry subpart containing the wire path and primitive shapes for the PF large motor cable.
 0 Name: 42042 - powerFuncMotorL-1_subPart1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -12786,7 +12786,7 @@
 5 24 110.616783 123.04232 -230 110.237396 122.474403 -230 110.622704 123.056778 -230.999878 110.595078 122.98925 -226.322617
 
 0 FILE 42042 - drivegear3.ldr
-0 drivegear3
+0 Universal joint drive assembly with bevel gears and notched axles for transferring rotational power.
 0 Name: 42042 - drivegear3.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -12829,7 +12829,7 @@
 
 
 0 FILE 42042 - winch.ldr
-0 winch
+0 Worm gear winch unit with 8-tooth gear, long axle, and bushings for controlled cable winding.
 0 Name: 42042 - winch.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -12898,7 +12898,7 @@
 1 0 96 55.908 61.491 -1 0 0 0 0.588 0.809 0 0.809 -0.588 42042 - ropeLQ-1.ldr
 
 0 FILE 42042 - winch2.ldr
-0 winch2
+0 Secondary worm gear winch unit with 8-tooth gear, long axle, and inline joiner for additional hoisting.
 0 Name: 42042 - winch2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -12980,7 +12980,7 @@
 1 71 160 0 10 0 0 1 1 0 0 0 1 0 4185.dat
 
 0 FILE 42042 - controlsticks.ldr
-0 controlsticks
+0 Operator control stick assembly with levers, changeover catch, and tiled plate base for gear selection.
 0 Name: 42042 - controlsticks.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -13051,7 +13051,7 @@
 
 
 0 FILE 42042 - controlsticks2.ldr
-0 controlsticks2
+0 Mirrored control stick assembly with levers, changeover catch, and tiled plate base for gear selection.
 0 Name: 42042 - controlsticks2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -13124,7 +13124,7 @@
 
 
 0 FILE 42042 - boomlift.ldr
-0 boomlift
+0 Boom lifting mechanism with long beams, axles, grooved wheel pulleys, and a towball joint.
 0 Name: 42042 - boomlift.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -13159,7 +13159,7 @@
 
 
 0 FILE 42042 - boombase.ldr
-0 boombase
+0 Boom base pivot assembly with bent liftarms and long blue beams providing the crane arm mounting point.
 0 Name: 42042 - boombase.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -13211,7 +13211,7 @@
 
 
 0 FILE 42042 - platformfront.ldr
-0 platformfront
+0 Front platform section with bent liftarms, perpendicular pin connectors, and long beams for structural support.
 0 Name: 42042 - platformfront.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -13261,7 +13261,7 @@
 
 
 0 FILE 42042 - cabin.ldr
-0 cabin
+0 Operator's cabin structure built from white bent liftarms, beams, and axle/pin connectors forming a framed enclosure.
 0 Name: 42042 - cabin.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -13461,7 +13461,7 @@
 1 28 22 -88 -44 1 0 0 0 -0.9997 -0.026 0 0.026 -0.9997 15462.dat
 
 0 FILE 42042 - cabinroof.ldr
-0 cabinroof
+0 Angled roof section for the cabin using a bent liftarm, long beam, and clear round plates for windows.
 0 Name: 42042 - cabinroof.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -13504,7 +13504,7 @@
 
 
 0 FILE 42042 - fairingright.ldr
-0 fairingright
+0 Right-side body fairing made of blue smooth panels and fairing pieces mounted on a long white liftarm beam.
 0 Name: 42042 - fairingright.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -13547,7 +13547,7 @@
 
 
 0 FILE 42042 - fairingright2.ldr
-0 fairingright2
+0 Secondary right-side fairing section with short blue fairing panels, a bent liftarm, and a transparent orange light element.
 0 Name: 42042 - fairingright2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -13582,7 +13582,7 @@
 1 72 20 0 -40 0 0 1 -1 0 0 0 -1 0 18654.dat
 
 0 FILE 42042 - fairingleft.ldr
-0 fairingleft
+0 Left-side body fairing composed of blue smooth panels and fairing pieces attached to a long white liftarm.
 0 Name: 42042 - fairingleft.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -13635,7 +13635,7 @@
 
 
 0 FILE 42042 - fairingleft2.ldr
-0 fairingleft2
+0 Secondary left-side fairing section with short blue fairing panels, a bent liftarm, and a transparent orange light element.
 0 Name: 42042 - fairingleft2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -13670,7 +13670,7 @@
 1 72 20 -20 0 0 0 1 0 -1 0 1 0 0 18654.dat
 
 0 FILE 42042 - grid.ldr
-0 grid
+0 Decorative grille panel made of sloped grille bricks on plates, with a grooved accent tile.
 0 Name: 42042 - grid.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -13698,7 +13698,7 @@
 
 
 0 FILE 42042 - boom.ldr
-0 boom
+0 Main crane boom arm constructed from long blue liftarms, white panels, and connecting links with numerous pins.
 0 Name: 42042 - boom.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -13838,7 +13838,7 @@
 
 
 0 FILE 42042 - boomtip.ldr
-0 boomtip
+0 Boom tip section with bent liftarms, a wheel rim pulley, and a reel for routing the lift cable.
 0 Name: 42042 - boomtip.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -13941,7 +13941,7 @@
 1 71 40 -48 216 1 0 0 0 0.8 0.6 0 -0.6 0.8 4519.dat
 
 0 FILE 42042 - boomext.ldr
-0 boomext
+0 Telescoping boom extension segment built from long blue liftarms joined by pins and axles.
 0 Name: 42042 - boomext.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -13992,7 +13992,7 @@
 
 
 0 FILE 42042 - subModel-1.ldr
-0 subModel-1
+0 Small pulley/wheel assembly using wedge belt wheels and half-bushes on a round pin joiner.
 0 Name: 42042 - subModel-1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -14014,7 +14014,7 @@
 
 
 0 FILE 42042 - boompull.ldr
-0 boompull
+0 Cable-pulling mechanism with wheel rim pulleys, link bars, and axles mounted on thin liftarm bosses.
 0 Name: 42042 - boompull.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -14049,7 +14049,7 @@
 
 
 0 FILE 42042 - ropeLQ-1.ldr
-0 ropeLQ-1
+0 Flexible rope cable represented by 787 cylinder segments forming a curved path.
 0 Name: 42042 - ropeLQ-1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -15700,7 +15700,7 @@
 1 16 -60.003442 -75.330683 0.084632 1.499952 0.047413 -0.001521 -0.011446 5.919261 0.244981 0.003437 -0.979847 1.479859 4-4cyli.dat
 
 0 FILE 42042 - ropeLQ-2.ldr
-0 ropeLQ-2
+0 Flexible rope cable represented by 612 cylinder segments forming a curved path.
 0 Name: 42042 - ropeLQ-2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -17002,7 +17002,7 @@
 1 16 -60.005849 -75.505594 0.132349 1.499955 0.045945 -0.00149 -0.011106 5.924197 0.237423 0.003289 -0.949618 1.48109 4-4cyli.dat
 
 0 FILE 42042 - boomext2.ldr
-0 boomext2
+0 Second telescoping boom extension segment of long blue liftarms reinforced with beams and stop-bush pins.
 0 Name: 42042 - boomext2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -17095,7 +17095,7 @@
 
 
 0 FILE 42042 - grabbertop.ldr
-0 grabbertop
+0 Top portion of the grabber claw using triangle liftarms, thin axle beams, and wheel rim pulleys.
 0 Name: 42042 - grabbertop.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -17128,7 +17128,7 @@
 
 
 0 FILE 42042 - grabber.ldr
-0 grabber
+0 Motorized grabber claw with four hook arms, a linear actuator assembly, bevel gear, and connecting cross blocks.
 0 Name: 42042 - grabber.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -17295,7 +17295,7 @@
 
 
 0 FILE 42042 - 13971.dat
-0 Wheel Rim  8 x 18 with Deep Centre Groove, Deep Spokes and Peghole
+0 Detailed wheel rim part (8 x 18) with deep centre groove and spokes, built from primitive cylinders, cones, and rings.
 0 Name: 42042 - 13971.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -17397,7 +17397,7 @@
 
 
 0 FILE 42042 - 18938.dat
-0 Technic Turntable 60 Tooth Top
+0 Top half of a Technic turntable (60 tooth) defined by connector holes.
 0 Name: 42042 - 18938.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -17441,7 +17441,7 @@
 
 
 0 FILE 42042 - 33299b.dat
-0 Technic Beam  3 x  0.5 Liftarm with Boss and Pin Semi-Reduced
+0 Thin Technic liftarm with boss and semi-reduced pin hole, composed of axle hole and ring primitives.
 0 Name: 42042 - 33299b.dat
 0 Author: Santeri Piippo [arezey]
 0 !LDRAW_ORG Unofficial_Part
@@ -17480,7 +17480,7 @@
 
 
 0 FILE s\42042 - 13971s01.dat
-0 ~Spokes for Wheel Rim  8 x 18 with Deep Centre Groove, Deep Spokes and Peghole
+0 Subpart representing the spokes of the 8 x 18 wheel rim using rectangle primitives.
 0 Name: s\42042 - 13971s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -17572,7 +17572,7 @@
 
 
 0 FILE s\42042 - 18938s01.dat
-0 ~Technic Turntable 60 Tooth Top Quarter
+0 Quarter section of the Technic turntable top built from cylinders, discs, rings, and rectangles.
 0 Name: s\42042 - 18938s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -17954,7 +17954,7 @@
 4 16 30 10 12.124 31.271 10 8.3787 32.0966 10 4.2249 32.375 10 0
 
 0 FILE s\42042 - 18938s02.dat
-0 ~Technic Turntable 60 Tooth Top -  5 Teeth
+0 Set of five teeth for the Technic turntable top, modeled with rectangle primitives.
 0 Name: s\42042 - 18938s02.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -18302,7 +18302,7 @@
 
 
 0 FILE s\42042 - 33299s01.dat
-0 ~Technic Beam  3 x  0.5 Liftarm with Boss and Pin Common
+0 Common geometry subpart for the 3 x 0.5 liftarm with boss, made of peg holes, cylinders, and rings.
 0 Name: s\42042 - 33299s01.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -18558,7 +18558,7 @@
 
 
 0 FILE 48\42042 - 1-24ring29.dat
-0 Hi-Res Ring 29 x 0.0417
+0 High-resolution primitive ring (radius 29, 1/24 segmentation) generated by the primitive builder.
 0 Name: 48\42042 - 1-24ring29.dat
 0 Author: Max Martin Richter [MMR1988]
 0 !LDRAW_ORG Unofficial_48_Primitive

@@ -1,5 +1,5 @@
 0 FILE 42040 - Fire Plane.ldr
-0 Fire Plane
+0 Technic fire-fighting plane featuring an articulated engine, landing gear with treaded tyres, wings with flaps, and a geared tail boom with horizontal stabilizer.
 0 Name: 42040 - Fire Plane.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -390,7 +390,7 @@
 1 43 -107 -207.1194 73.3253 1 0 0 0 -0.9986 -0.0523 0 0.0523 -0.9986 6143.dat
 
 0 FILE 42040 - motor.ldr
-0 motor
+0 Engine motor subassembly built from bent liftarms, cross blocks, bevel gears and a toggle-joint connector to transfer rotation.
 0 Name: 42040 - motor.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -491,7 +491,7 @@
 
 
 0 FILE 42040 - motor2.ldr
-0 motor2
+0 Engine block subassembly containing two cylinders with crankshafts, connecting rods and pistons.
 0 Name: 42040 - motor2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -600,7 +600,7 @@
 0 STEP
 
 0 FILE 42040 - motortop.ldr
-0 motortop
+0 Top cover of the engine formed by an axle 7, toothed elements, red liftarms and cross blocks.
 0 Name: 42040 - motortop.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -638,7 +638,7 @@
 
 
 0 FILE 42040 - motorhood.ldr
-0 motorhood
+0 Red engine cowling made of smooth fairing panels, beams and angle connectors.
 0 Name: 42040 - motorhood.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -678,7 +678,7 @@
 
 
 0 FILE 42040 - motorgears.ldr
-0 motorgears
+0 Small gear train using bevel gears, a stop axle and a toggle-joint connector for the motor drive.
 0 Name: 42040 - motorgears.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -702,7 +702,7 @@
 
 
 0 FILE 42040 - leftside.ldr
-0 leftside
+0 Left-side fuselage panel assembly with a large white panel, a red beam 11 and connector blocks.
 0 Name: 42040 - leftside.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -742,7 +742,7 @@
 
 
 0 FILE 42040 - leftside2.ldr
-0 leftside2
+0 Left-side structural frame of cross blocks, liftarms and a towball axle for body support.
 0 Name: 42040 - leftside2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -774,7 +774,7 @@
 1 71 90 0 -40 -1 0 0 0 0 -1 0 -1 0 2736.dat
 
 0 FILE 42040 - floor.ldr
-0 floor
+0 Floor chassis built from beams, bent liftarms and a towball axle forming the fuselage base.
 0 Name: 42040 - floor.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -833,7 +833,7 @@
 
 
 0 FILE 42040 - seats.ldr
-0 seats
+0 Cockpit seats constructed from bent liftarms, cross blocks and towball pins.
 0 Name: 42040 - seats.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -880,7 +880,7 @@
 
 
 0 FILE 42040 - rubberBandRound-1.ldr
-0 rubberBandRound-1
+0 Generated LDCad rubber band of approximately 56 mm routed in a closed loop.
 0 Name: 42040 - rubberBandRound-1.ldr
 0 !LDRAW_ORG Model
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1338,7 +1338,7 @@
 5 24 5.9497 -25.9497 -3.5858 4.9497 -24.9497 -3 6.8276 -25.4708 -3.5858 1.7872 -28.2206 -3.5858
 
 0 FILE 42040 - rearframe.ldr
-0 rearframe
+0 Rear fuselage frame of bent liftarms, triangle liftarms and cross blocks with towball pins.
 0 Name: 42040 - rearframe.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1400,7 +1400,7 @@
 0 STEP
 
 0 FILE 42040 - tail.ldr
-0 tail
+0 Tail boom assembly with white trapezium panels, beams, a trans-red light tile and mounting cross blocks.
 0 Name: 42040 - tail.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1598,7 +1598,7 @@
 1 47 -220 0 -478 -1 0 0 0 0 1 0 1 0 6141.dat
 
 0 FILE 42040 - hstab.ldr
-0 hstab
+0 Horizontal stabilizer using a trapezium panel, bent liftarms and an axle 7 pivot.
 0 Name: 42040 - hstab.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1620,7 +1620,7 @@
 1 28 0 40 2 0 0 -1 0 1 0 1 0 0 15462.dat
 
 0 FILE 42040 - joystick.ldr
-0 joystick
+0 Cockpit control stick built from a towball suspension arm, angle connector and axles.
 0 Name: 42040 - joystick.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1650,7 +1650,7 @@
 
 
 0 FILE 42040 - tailgearing.ldr
-0 tailgearing
+0 Tail rotor gear train of angle connectors, knob gears and bent liftarms driving the tail.
 0 Name: 42040 - tailgearing.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1694,7 +1694,7 @@
 
 
 0 FILE 42040 - tailside.ldr
-0 tailside
+0 Left tail side frame made of a beam 13, a bent beam and a knob gear linkage.
 0 Name: 42040 - tailside.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1731,7 +1731,7 @@
 
 
 0 FILE 42040 - wing1.ldr
-0 wing1
+0 Left wing assembly using a white 5x11 panel, beams and angle connectors with a strut linkage.
 0 Name: 42040 - wing1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1771,7 +1771,7 @@
 1 0 -120 28.2843 108.2843 -1 0 0 0 0.7071 -0.7071 0 -0.7071 -0.7071 32126.dat
 
 0 FILE 42040 - tailside2.ldr
-0 tailside2
+0 Right tail side frame made of a beam 13, a bent beam and a knob gear linkage.
 0 Name: 42040 - tailside2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1803,7 +1803,7 @@
 
 
 0 FILE 42040 - wing2.ldr
-0 wing2
+0 Right wing assembly using a white 5x11 panel, beams and angle connectors with a strut linkage.
 0 Name: 42040 - wing2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1843,7 +1843,7 @@
 1 0 -120 28.2843 -108.2843 1 0 0 0 0.7071 -0.7071 0 0.7071 0.7071 32126.dat
 
 0 FILE 42040 - flap.ldr
-0 flap
+0 Hinged wing flap built from two red beams 11 on a long axle 12.
 0 Name: 42040 - flap.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1871,7 +1871,7 @@
 
 
 0 FILE 42040 - 61254.dat
-0 Tyre  7/ 45x 17 Offset Tread with Middle Band
+0 Offset-tread tyre modelled from cones, open cylinders and rings forming the carcass.
 0 Name: 42040 - 61254.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -1986,7 +1986,7 @@
 
 
 0 FILE 42040 - 2850b.dat
-0 Technic Engine Cylinder Head with Bottom Slots
+0 Primitive geometry defining the Technic engine cylinder head with bottom slots.
 0 Name: 42040 - 2850b.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -2134,7 +2134,7 @@
 
 
 0 FILE 42040 - 33299b.dat
-0 Technic Beam  3 x  0.5 Liftarm with Boss and Pin Semi-Reduced
+0 Primitive geometry defining a Technic 3x0.5 liftarm with boss and semi-reduced axle hole.
 0 Name: 42040 - 33299b.dat
 0 Author: Santeri Piippo [arezey]
 0 !LDRAW_ORG Unofficial_Part
@@ -2172,7 +2172,7 @@
 
 
 0 FILE s\42040 - 61254s01.dat
-0 ~Tyre  7/ 45 x 17 Offset Tread with Middle Band Tread Element
+0 Primitive tread element forming the repeating band of the offset-tread tyre.
 0 Name: s\42040 - 61254s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -2225,7 +2225,7 @@
 
 
 0 FILE s\42040 - 2850s01.dat
-0 ~Technic Engine Cylinder Head Common Geometry
+0 Technic engine cylinder head common geometry composed of cylinders, discs, rings, and rectangular primitives defining the rounded combustion chamber and cooling fins.
 0 Name: s\42040 - 2850s01.dat
 0 Author: Jeff Boen
 0 !LDRAW_ORG Unofficial_Subpart
@@ -2899,7 +2899,7 @@
 
 
 0 FILE s\42040 - 33299s01.dat
-0 ~Technic Beam  3 x  0.5 Liftarm with Boss and Pin Common
+0 Technic liftarm beam common geometry with a peg hole, pin, and boss, built from cylinders, rings, and circular primitives.
 0 Name: s\42040 - 33299s01.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Subpart

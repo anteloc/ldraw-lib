@@ -1,5 +1,5 @@
 0 FILE 312 - Cargo Ship.ldr
-0 Cargo Ship
+0 A cargo ship model with a white hull structure, yellow deck elements, transparent windows, and a weighted boat keel assembly.
 0 Name: 312 - Cargo Ship.ldr
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model
@@ -229,7 +229,7 @@
 
 
 0 FILE 312 - x139b.dat
-0 Boat Keel Weighted  2 x  8 x  4 without Bottom Tab (Needs Work)
+0 A weighted boat keel primitive composed of spheres, a cylinder, and circular elements forming the weighted lower hull.
 0 Name: 312 - x139b.dat
 0 Author: Michael Heidemann [mikeheide]
 0 !LDRAW_ORG Unofficial_Part
@@ -251,7 +251,7 @@
 1 16 0 80 60 -20 0 0 0 0 20 0 20 0 4-8sphe.dat
 
 0 FILE s\312 - x139s01.dat
-0 ~Boat Keel Half (Needs Work)
+0 A half-section boat keel form built from rings, circles, cylinders, and sloped cylinders defining the curved keel profile.
 0 Name: s\312 - x139s01.dat
 0 Author: Michael Heidemann [mikeheide]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -549,7 +549,7 @@
 2 24 12.296 2 -64.457 14.243 2 -65.757
 
 0 FILE s\312 - x139s02.dat
-0 ~Boat Keel Half Form
+0 A boat keel half form consisting of cylinders, chords, and circular shapes with added conditional lines.
 0 Name: s\312 - x139s02.dat
 0 Author: Michael Heidemann [mikeheide]
 0 !LDRAW_ORG Unofficial_Subpart

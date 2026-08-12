@@ -1,5 +1,5 @@
 0 FILE 30193 - Main.ldr
-0 Main
+0 Complete pull-back race car model featuring a Ferrari 250 GT Berlinetta body built on a motorized chassis with four wheels.
 0 Name: 30193 - Main.ldr
 0 Author: Massimo Maso [Sirio]
 0 !LDRAW_ORG Model
@@ -15,7 +15,7 @@
 
 
 0 FILE 30193 - 250 GT Berlinetta.ldr
-0 250 GT Berlinetta
+0 Assembled Ferrari 250 GT Berlinetta car with a red curved body, mudguards, pull-back motor, and four rubber tyres on wheel pins.
 0 Name: 30193 - 250 GT Berlinetta.ldr
 0 Author: Massimo Maso [Sirio]
 0 !LDRAW_ORG Model
@@ -80,7 +80,7 @@
 
 
 0 FILE 30193 - 93597.dat
-0 93597
+0 Car mudguard front bonnet part constructed from geometric cylinders and surface primitives.
 0 Name: 30193 - 93597.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Part
@@ -138,7 +138,7 @@
 
 
 0 FILE 30193 - 94740.dat
-0 94740
+0 Wheel rim shortcut part defining a 6.4 x 11 black rim with 8 Y-shaped spokes and silver pattern.
 0 Name: 30193 - 94740.dat
 0 Author: [PTadmin]
 0 !LDRAW_ORG Unofficial_Part Physical_Colour
@@ -155,7 +155,7 @@
 
 
 0 FILE s\30193 - 93597s01.dat
-0 ~Car Mudguard  3 x  4 x  1.333 Curved without Top and Front
+0 Subpart of the curved car mudguard (3 x 4 x 1.333) without top and front surfaces, composed of primitive geometric shapes forming the curved shell.
 0 Name: s\30193 - 93597s01.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Subpart

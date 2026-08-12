@@ -9033,7 +9033,7 @@
 
 
 0 FILE 42076 - 92402.dat
-0 92402
+0 A wheel hub assembly with a central hub, rim, and surrounding circular and cylindrical detail surfaces.
 0 Name: 42076 - 92402.dat
 0 Author: Massimo Maso [Sirio]
 0 !LDRAW_ORG Unofficial_Part
@@ -9087,7 +9087,7 @@
 1 16 0 0 0 -1 0 0 0 -1 0 0 0 1 s\42076 - 92402s02.dat
 
 0 FILE 42076 - 32198.dat
-0 32198
+0 A complex cylindrical body built from rings, rectangles, cylinders, and cones, forming a grooved mechanical component.
 0 Name: 42076 - 32198.dat
 0 Author: Marc Klein [marckl]
 0 !LDRAW_ORG Unofficial_Part
@@ -9331,7 +9331,7 @@
 0 !LDCAD SNAP_CYL [gender=F] [caps=none] [secs=R 6 3   A 6 7] [center=true] [slide=true]
 
 0 FILE 42076 - 92409.dat
-0 92409
+0 A tire model composed of open cylinders and stacked cones with front and back side surfaces.
 0 Name: 42076 - 92409.dat
 0 Author: Massimo Maso [Sirio]
 0 !LDRAW_ORG Unofficial_Part
@@ -9457,7 +9457,7 @@
 4 16 5.358 -12.935 8 0 -14 8 1.83 -20.92 8 5.435 -20.285 8
 
 0 FILE 42076 - ldcFlexAxleEndA.dat
-0 ldcFlexAxleEndA
+0 A placeholder submodel representing a flexible axle end component.
 0 Name: 42076 - ldcFlexAxleEndA.dat
 0 Author: LDCad
 0 UNOFFICIAL PART
@@ -9474,7 +9474,7 @@
 0 //  these don't seem to be worth the trouble, might add them in the future though.
 
 0 FILE 42076 - ldcFlexAxleEndB.dat
-0 ldcFlexAxleEndB
+0 A placeholder flexible axle end component containing a single cylindrical surface.
 0 Name: 42076 - ldcFlexAxleEndB.dat
 0 Author: LDCad
 0 UNOFFICIAL PART
@@ -9492,7 +9492,7 @@
 0 //  these don't seem to be worth the trouble, might add them in the future though.
 
 0 FILE 42076 - ldcFlexAxleEndC.dat
-0 ldcFlexAxleEndC
+0 A placeholder submodel representing a flexible axle end component.
 0 Name: 42076 - ldcFlexAxleEndC.dat
 0 Author: LDCad
 0 UNOFFICIAL PART
@@ -9509,7 +9509,7 @@
 0 //  these don't seem to be worth the trouble, might add them in the future though.
 
 0 FILE 42076 - ldcFlexAxleEndD.dat
-0 ldcFlexAxleEndD
+0 A placeholder submodel representing a flexible axle end component.
 0 Name: 42076 - ldcFlexAxleEndD.dat
 0 Author: LDCad
 0 UNOFFICIAL PART
@@ -9526,7 +9526,7 @@
 0 //  these don't seem to be worth the trouble, might add them in the future though.
 
 0 FILE 42076 - ldcFlexAxleEndE.dat
-0 ldcFlexAxleEndE
+0 A placeholder submodel representing a flexible axle end component.
 0 Name: 42076 - ldcFlexAxleEndE.dat
 0 Author: LDCad
 0 UNOFFICIAL PART
@@ -9543,7 +9543,7 @@
 0 //  these don't seem to be worth the trouble, might add them in the future though.
 
 0 FILE 42076 - ldcFlexAxleEndF.dat
-0 ldcFlexAxleEndF
+0 A placeholder submodel representing a flexible axle end component.
 0 Name: 42076 - ldcFlexAxleEndF.dat
 0 Author: LDCad
 0 UNOFFICIAL PART
@@ -9560,7 +9560,7 @@
 0 //  these don't seem to be worth the trouble, might add them in the future though.
 
 0 FILE 42076 - ldcFlexAxleEndG.dat
-0 ldcFlexAxleEndG
+0 A placeholder submodel representing a flexible axle end component.
 0 Name: 42076 - ldcFlexAxleEndG.dat
 0 Author: LDCad
 0 UNOFFICIAL PART
@@ -9595,7 +9595,7 @@
 0 //  these don't seem to be worth the trouble, might add them in the future though.
 
 0 FILE s\42076 - 92402s02.dat
-0 92402s02
+0 An empty subpart referenced by the wheel hub assembly.
 0 Name: s\42076 - 92402s02.dat
 0 Author: Massimo Maso [Sirio]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -9632,7 +9632,7 @@
 4 16 5.16233 -32.593739 17 8.04 -19.4 17 0 -21 17 0 -33 17
 
 0 FILE s\42076 - 92402s01.dat
-0 92402s01
+0 An empty subpart referenced by the wheel hub assembly.
 0 Name: s\42076 - 92402s01.dat
 0 Author: Massimo Maso [Sirio]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -9670,7 +9670,7 @@
 5 24 38 0 -1.0667 38 0 1.0667 37.532162 -5.94451 -1.0667 37.532162 5.94451 -1.0667
 
 0 FILE 42076 - toothb20.dat
-0 toothb20
+0 An empty submodel representing a toothed gear component.
 0 Name: 42076 - toothb20.dat
 0 Author: Santeri Piippo [arezey]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -9715,7 +9715,7 @@
 5 24 0 -6.13 2 -1.582 0 0 0 -3.13 0 -2.07 -6.13 6.5
 
 0 FILE s\42076 - 92409s01.dat
-0 92409s01
+0 An empty subpart referenced by the tire assembly.
 0 Name: s\42076 - 92409s01.dat
 0 Author: Massimo Maso [Sirio]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -9748,7 +9748,7 @@
 5 24 1.9174 -21.916 -1.0667 1.9174 -21.916 1.0667 -1.9174 -21.916 1.0667 5.69394 -21.250099 -1.0667
 
 0 FILE s\42076 - faxle1.dat
-0 faxle1
+0 A detailed Technic axle end segment with axle perimeter, base surface, inner edges, and tooth outer edges.
 0 Name: s\42076 - faxle1.dat
 0 Author: Steve Bliss [sbliss]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -9782,7 +9782,7 @@
 1 16 0.4 0 0 0 -0.4 0 -1 0 0 0 0 1 axlehol8.dat
 
 0 FILE s\42076 - faxle2.dat
-0 faxle2
+0 A Technic axle end segment composed of axle perimeter, base surface, inner edges, tooth edges, and a cylinder.
 0 Name: s\42076 - faxle2.dat
 0 Author: Steve Bliss [sbliss]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -9810,7 +9810,7 @@
 1 16 0 0 0 0 0.8 0 6 0 0 0 0 6 4-4cyli.dat
 
 0 FILE s\42076 - faxle3.dat
-0 faxle3
+0 A Technic axle end segment featuring axle perimeter, base surface, inner edges, tooth edges, and a cylinder.
 0 Name: s\42076 - faxle3.dat
 0 Author: Steve Bliss [sbliss]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -9838,7 +9838,7 @@
 1 16 1.2 0 0 0 -1.2 0 -1 0 0 0 0 1 axlehol8.dat
 
 0 FILE s\42076 - faxle4.dat
-0 faxle4
+0 A Technic axle end segment with axle perimeter, base surface, inner edges, tooth edges, and a cylinder.
 0 Name: s\42076 - faxle4.dat
 0 Author: Steve Bliss [sbliss]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -9866,7 +9866,7 @@
 1 16 0 0 0 0 1.6 0 6 0 0 0 0 6 4-4cyli.dat
 
 0 FILE s\42076 - faxle5.dat
-0 faxle5
+0 A Technic axle end segment consisting of axle perimeter, base surface, inner edges, tooth edges, and a cylinder.
 0 Name: s\42076 - faxle5.dat
 0 Author: Steve Bliss [sbliss]
 0 !LDRAW_ORG Unofficial_Subpart

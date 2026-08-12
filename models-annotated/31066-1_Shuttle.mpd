@@ -1,5 +1,5 @@
 0 FILE 31066 - main.ldr
-0 main
+0 Space shuttle model composed of a shuttle, astronaut, satellite, manipulator arms, cargo door, and tail fin submodels.
 0 Name: 31066 - main.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -11,7 +11,7 @@
 
 
 0 FILE 31066 - astronaut.ldr
-0 astronaut
+0 White spacesuit minifigure with helmet, visor, gloved hands, and side-mounted equipment brackets.
 0 Name: 31066 - astronaut.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -58,7 +58,7 @@
 
 
 0 FILE 31066 - shuttle.ldr
-0 shuttle
+0 Large winged spacecraft fuselage built from black plates and yellow plates with left and right wings.
 0 Name: 31066 - shuttle.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -553,7 +553,7 @@
 
 
 0 FILE 31066 - satellite.ldr
-0 satellite
+0 Compact satellite with pearl-gold panels, solar-array clips, domed sensor top, and grille tiles.
 0 Name: 31066 - satellite.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -588,7 +588,7 @@
 
 
 0 FILE 31066 - arm1.ldr
-0 arm1
+0 Technic manipulator arm segment using angle connectors, an axle, and friction pins.
 0 Name: 31066 - arm1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -608,7 +608,7 @@
 
 
 0 FILE 31066 - arm2.ldr
-0 arm2
+0 Articulated Technic arm joint combining an angle connector, axle, and locking hinge arm.
 0 Name: 31066 - arm2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -624,7 +624,7 @@
 
 
 0 FILE 31066 - door.ldr
-0 door
+0 Curved white cargo bay door assembly built from hinged panels and a long plate.
 0 Name: 31066 - door.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -644,7 +644,7 @@
 
 
 0 FILE 31066 - 3626cp80.dat
-0 3626cp80
+0 Quarter-cylinder primitive geometry used in a minifigure head or similar round part.
 0 Name: 31066 - 3626cp80.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -1219,7 +1219,7 @@
 
 
 0 FILE 31066 - 2447.dat
-0 2447
+0 Primitive-based geometry forming a curved, domed cylindrical part such as a gear or knob.
 0 Name: 31066 - 2447.dat
 0 Author: Chris Dee [cwdee]
 0 !LDRAW_ORG Unofficial_Part
@@ -1356,7 +1356,7 @@
 
 
 0 FILE 31066 - 3665a.dat
-0 3665a
+0 Empty wrapper submodel referencing lower-level geometry primitives for a slope brick.
 0 Name: 31066 - 3665a.dat
 0 Author: James Jessiman
 0 !LDRAW_ORG Unofficial_Part
@@ -1378,7 +1378,7 @@
 
 
 0 FILE 31066 - 11291.dat
-0 11291
+0 Box-face primitives defining the solid shape of a small bracket or tile element.
 0 Name: 31066 - 11291.dat
 0 Author: Michael Heidemann [mikeheide]
 0 !LDRAW_ORG Unofficial_Part
@@ -1408,7 +1408,7 @@
 
 
 0 FILE 31066 - 33299a.dat
-0 33299a
+0 Primitive Technic geometry defining axle holes and peg recesses for a connector element.
 0 Name: 31066 - 33299a.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Part
@@ -1442,7 +1442,7 @@
 
 
 0 FILE s\31066 - 3665as01.dat
-0 3665as01
+0 Sub-part composed of box and rectangle primitives forming the body of a slope brick.
 0 Name: s\31066 - 3665as01.dat
 0 Author: Michael Heidemann [mikeheide]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -1496,7 +1496,7 @@
 
 
 0 FILE s\31066 - 11291s01.dat
-0 11291s01
+0 Empty wrapper sub-part referencing geometry for a tile or bracket component.
 0 Name: s\31066 - 11291s01.dat
 0 Author: Michael Heidemann [mikeheide]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -1702,7 +1702,7 @@
 
 
 0 FILE s\31066 - 33299s01.dat
-0 33299s01
+0 Detailed primitive sub-part defining cylinders, rings, and pin geometry for a Technic connector.
 0 Name: s\31066 - 33299s01.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -1973,7 +1973,7 @@
 
 
 0 FILE 31066 - Tail.ldr
-0 Tail
+0 Vertical tail fin built from white plates, black slopes, grille, and an inverted curved slope.
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 Name: 31066 - Tail.ldr

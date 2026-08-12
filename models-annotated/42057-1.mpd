@@ -1,5 +1,5 @@
 0 FILE 42057 - main.ldr
-0 main
+0 Main assembly of the Ultralight Gyrocopter, integrating the tail control, engine, rotor axle, landing gear, and helicopter frame submodels into a complete gyrocopter model.
 0 Name: 42057 - main.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model 
@@ -9,7 +9,7 @@
 
 
 0 FILE 42057 - tailctrl.ldr
-0 tailctrl
+0 Tail control assembly with liftarms, towball connectors, and a steering link forming the adjustable tail rotor mechanism.
 0 Name: 42057 - tailctrl.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model 
@@ -66,7 +66,7 @@
 
 
 0 FILE 42057 - engine.ldr
-0 engine
+0 Two-cylinder Technic engine with crankshafts, pistons, connecting rods, and gears forming the powertrain of the gyrocopter.
 0 Name: 42057 - engine.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model 
@@ -146,7 +146,7 @@
 
 
 0 FILE 42057 - rotoraxle.ldr
-0 rotoraxle
+0 Rotor axle assembly using cross blocks, liftarms, bushes, and gears to mount and drive the main rotor.
 0 Name: 42057 - rotoraxle.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model 
@@ -182,7 +182,7 @@
 
 
 0 FILE 42057 - rigid3mmHose-1.ldr
-0 rigid3mmHose-1
+0 Generated rigid 3mm hose path composed of cylindrical segments forming a flexible tube element.
 0 Name: 42057 - rigid3mmHose-1.ldr
 0 Author: LDCad
 0 !LDRAW_ORG Model
@@ -1808,7 +1808,7 @@
 5 24 -0.5858 -85.387924 147.598328 -0.5858 -84.216629 146.427032 -0.1522 -84.929153 148.057098 -1.2346 -85.694527 147.291733
 5 24 -0.1522 -84.929153 148.057098 -0.1522 -83.757858 146.885803 0 -84.387932 148.598328 -0.5858 -85.387924 147.598328
 0 FILE 42057 - land1.ldr
-0 land1
+0 Left landing gear strut with angle connectors, a fairing panel, wheel rim, and tyre forming a landing wheel assembly.
 0 Name: 42057 - land1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -1843,7 +1843,7 @@
 
 
 0 FILE 42057 - land2.ldr
-0 land2
+0 Right landing gear strut with angle connectors, a fairing panel, wheel rim, and tyre forming a landing wheel assembly.
 0 Name: 42057 - land2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2121,7 +2121,7 @@
 
 
 0 FILE 42057 - 2850b.dat
-0 2850b
+0 Primitive geometry defining a Technic engine cylinder head shape using cylinders, rectangles, and boxes.
 0 Name: 42057 - 2850b.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -2289,7 +2289,7 @@
 3 16 -13 33 2 -20 33 2 -20 36 2
 4 16 -20 36 2 -20 33 2 -27 33 2 -27 36 2
 0 FILE 42057 - 24316.dat
-0 24316
+0 Primitive geometry defining a simple axle-and-disc component using a cylinder and disc.
 0 Name: 42057 - 24316.dat
 0 Author: Owen Burgoyne [C3POwen]
 0 !LDRAW_ORG Unofficial_Part
@@ -2304,7 +2304,7 @@
 0 // Cylinder Closed 1.0 (main_colour)
 1 16 30 0 0 0 -2 0 8 0 0 0 0 8 4-4cylc.dat
 0 FILE 42057 - ldcRigid3mmHoseCap.dat
-0 ldcRigid3mmHoseCap
+0 End cap primitive for the generated rigid 3mm hose, composed of cylinders, a ring, and a circle.
 0 Name: 42057 - ldcRigid3mmHoseCap.dat
 0 Author: LDCad
 0 UNOFFICIAL PART
@@ -2333,7 +2333,7 @@
 0 //  It will also take care of segment overlapping control points
 1 16 0 1 0 4 0 0 0 1 0 0 0 4 42057 - ldcConRing-4-4.dat
 0 FILE 42057 - ldcRigid3mmHoseSeg.dat
-0 ldcRigid3mmHoseSeg
+0 Single segment primitive for the generated rigid 3mm hose, composed of a cylinder.
 0 Name: 42057 - ldcRigid3mmHoseSeg.dat
 0 Author: LDCad
 0 UNOFFICIAL PART
@@ -2353,7 +2353,7 @@
 1 16 0 0 0 4 0 0 0 1 0 0 0 4 42057 - ldcConRing-4-4.dat
 1 16 0 1 0 4 0 0 0 1 0 0 0 4 42057 - ldcConRing-4-4.dat
 0 FILE 42057 - 92409.dat
-0 92409
+0 Tyre primitive built from cylinders and cones defining the tread profile of a small rubber tyre.
 0 Name: 42057 - 92409.dat
 0 Author: Massimo Maso [Sirio]
 0 !LDRAW_ORG Unofficial_Part
@@ -2478,7 +2478,7 @@
 4 16 8.875 -19.033001 8 12.045 -17.202 8 5.358 -12.935 8 5.435 -20.285 8
 4 16 5.358 -12.935 8 0 -14 8 1.83 -20.92 8 5.435 -20.285 8
 0 FILE 42057 - 13971.dat
-0 13971
+0 Tyre primitive built from cylinders, cones, and rings defining the profile of a larger rubber tyre.
 0 Name: 42057 - 13971.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -2576,7 +2576,7 @@
 1 16 0 0 0 1 0 0 0 -1 0 0 0 1 s\42057 - 13971s01.dat
 1 16 0 0 0 -1 0 0 0 -1 0 0 0 1 s\42057 - 13971s01.dat
 0 FILE 42057 - 61254.dat
-0 61254
+0 Wheel rim primitive built from cones and cylinders defining a tapered rim profile.
 0 Name: 42057 - 61254.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -2689,7 +2689,7 @@
 1 16 0 0 0 0.14232 0.98982 0 -0.98982 0.14232 0 0 0 1 s\42057 - 61254s01.dat
 1 16 0 0 0 -0.14231 0.98982 0 -0.98982 -0.14231 0 0 0 1 s\42057 - 61254s01.dat
 0 FILE 42057 - 27940.dat
-0 27940
+0 Technic component primitive with connector holes, cylinders, and sloped sections defining a specialized connector shape.
 0 Name: 42057 - 27940.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -2747,7 +2747,7 @@
 0 // Cylinder Sloped 0.25 (main_colour)
 1 16 -9 0 0 0 9 0 -9 0 0 0 0 -9 1-4cyls.dat
 0 FILE s\42057 - 13971s01.dat
-0 13971s01
+0 Sub-part primitive consisting of rectangles defining edge geometry for the 13971 tyre part.
 0 Name: s\42057 - 13971s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -2836,7 +2836,7 @@
 5 24 3.9065 9.8096 10 0 10.2202 10 1.3049 10.8874 9.888 3.4443 8.3151 10
 5 24 8.851 5.1101 10 6.5421 8.288 10 8.7763 6.5738 9.888 8.3151 3.4443 10
 0 FILE s\42057 - 61254s01.dat
-0 61254s01
+0 Sub-part primitive consisting of rectangles defining edge geometry for the 61254 rim part.
 0 Name: s\42057 - 61254s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -2887,7 +2887,7 @@
 5 24 -2.456 -29.583 1.25 2.456 -29.583 1.25 2.199 -29.215 9 -1.779 -29.631001 -1.25
 5 24 1.779 -29.631001 -1.25 2.456 -29.583 1.25 -2.456 -29.583 1.25 6.64106 -28.9319 -1.25
 0 FILE s\42057 - 2850s01.dat
-0 2850s01
+0 Sub-part primitive defining the detailed body of a Technic engine cylinder head with cooling ribs, studs, and connector holes.
 0 Name: s\42057 - 2850s01.dat
 0 Author: Jeff Boen
 0 !LDRAW_ORG Unofficial_Subpart
@@ -3321,7 +3321,7 @@
 3 16 10.6065 36 10.6065 5.7405 36 13.8585 16 36 16
 3 16 13.8585 36 5.7405 10.6065 36 10.6065 16 36 16
 0 FILE 42057 - ldcConRing-4-4.dat
-0 ldcConRing-4-4
+0 Conditional ring primitive used by the LDCad path deform generator for edge visibility control in hose segments.
 0 Name: 42057 - ldcConRing-4-4.dat
 0 Author: LDCad
 0 UNOFFICIAL PRIMITIVE
@@ -3351,7 +3351,7 @@
 5 24 0.7071 0 -0.7071 0.9239 0 -0.3827 0.7071 -1 -0.7071 0.7071 1 -0.7071
 5 24 0.9239 0 -0.3827 1 0 0 0.9239 -1 -0.3827 0.9239 1 -0.3827
 0 FILE s\42057 - 92409s01.dat
-0 92409s01
+0 Empty sub-part placeholder for the 92409 tyre component.
 0 Name: s\42057 - 92409s01.dat
 0 Author: Massimo Maso [Sirio]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -3383,7 +3383,7 @@
 5 24 -1.9174 -21.916 1.0667 -1.9174 -21.916 -1.0667 1.9174 -21.916 1.0667 -5.69394 -21.250099 -1.0667
 5 24 1.9174 -21.916 -1.0667 1.9174 -21.916 1.0667 -1.9174 -21.916 1.0667 5.69394 -21.250099 -1.0667
 0 FILE 42057 -32523p01.dat
-0 Technic Beam  3 with "40 1977 - 2017" Text and 24 Tooth Gear Pattern
+0 Printed Technic beam primitive featuring a commemorative '40 1977 - 2017' text pattern with 24-tooth gear decoration.
 0 Name: 32523p01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part

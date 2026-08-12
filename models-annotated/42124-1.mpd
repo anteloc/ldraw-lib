@@ -1,5 +1,5 @@
 0 FILE 42124 - main.ldr
-0 main
+0 Complete off-road buggy model integrating steering, drivetrain with Control+ L motors, bodywork panels, and chassis substructures.
 0 Name: 42124 - main.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -9,7 +9,7 @@
 
 
 0 FILE 42124 - controlPlusMotorL-LQ-1.ldr
-0 controlPlusMotorL-LQ-1
+0 Control+ L Motor assembly with a black cable stub routing along a flexible 204.71 mm path.
 0 Name: 42124 - controlPlusMotorL-LQ-1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -59,7 +59,7 @@
 
 
 0 FILE 42124 - controlPlusMotorL-LQ-1_subPart1.ldr
-0 controlPlusMotorL-LQ-1_subPart1
+0 Subpart containing flexible cable geometry segments for the L motor's 204.71 mm routing path.
 0 Name: 42124 - controlPlusMotorL-LQ-1_subPart1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -334,7 +334,7 @@
 
 
 0 FILE 42124 - buggy.ldr
-0 buggy
+0 Main buggy substructure built from beams, pins, axles, cross blocks, and dark azure body panels forming the core frame.
 0 Name: 42124 - buggy.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -729,7 +729,7 @@
 
 
 0 FILE 42124 - steerfront.ldr
-0 steerfront
+0 Front steering assembly using beams, an H-shaped liftarm, and double pin connectors for steering linkage.
 0 Name: 42124 - steerfront.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -770,7 +770,7 @@
 
 
 0 FILE 42124 - chassisfrontbottom.ldr
-0 chassisfrontbottom
+0 Front bottom chassis section with bent liftarms, cross blocks, and axles forming the angled structural base.
 0 Name: 42124 - chassisfrontbottom.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -812,7 +812,7 @@
 
 
 0 FILE 42124 - roofrear.ldr
-0 roofrear
+0 Rear roof and bodywork assembly with curved panels, angle connectors, and transparent round tiles for detailing.
 0 Name: 42124 - roofrear.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -911,7 +911,7 @@
 
 
 0 FILE 42124 - drivemotor.ldr
-0 drivemotor
+0 Drive motor assembly featuring a large open-center beam frame, differential gear, and angle connectors for the drivetrain.
 0 Name: 42124 - drivemotor.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1073,7 +1073,7 @@
 
 
 0 FILE 42124 - drivemotor2.ldr
-0 drivemotor2
+0 Secondary drive motor assembly with beams, a 36-tooth double bevel gear, and cross blocks for gear reduction and mounting.
 0 Name: 42124 - drivemotor2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1157,7 +1157,7 @@
 
 
 0 FILE 42124 - controlPlusMotorL-LQ-2.ldr
-0 controlPlusMotorL-LQ-2
+0 Control+ L Motor assembly with a white cable stub routing along a flexible 286.44 mm path.
 0 Name: 42124 - controlPlusMotorL-LQ-2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1207,7 +1207,7 @@
 
 
 0 FILE 42124 - controlPlusMotorL-LQ-2_subPart1.ldr
-0 controlPlusMotorL-LQ-2_subPart1
+0 Subpart containing flexible cable geometry segments for the L motor's 286.44 mm routing path.
 0 Name: 42124 - controlPlusMotorL-LQ-2_subPart1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1584,7 +1584,7 @@
 
 
 0 FILE 42124 - chassisbottom1.ldr
-0 chassisbottom1
+0 Bottom chassis fairing section with smooth short black and long magenta panel fairings attached via pins.
 0 Name: 42124 - chassisbottom1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1608,7 +1608,7 @@
 
 
 0 FILE 42124 - chassisbottom2.ldr
-0 chassisbottom2
+0 Bottom chassis fairing section with smooth short black and long magenta panel fairings attached via pins.
 0 Name: 42124 - chassisbottom2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1632,7 +1632,7 @@
 
 
 0 FILE 42124 - 42924.dat
-0 42924
+0 Detailed Technic pin connector part geometry composed of friction pin ribs, collars, cylinders, and rings.
 0 Name: 42124 - 42924.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -1759,7 +1759,7 @@
 0 !LDCAD MIRROR_INFO [baseFlip=Z] [counterPart=self]
 
 0 FILE 42124 - 15100.dat
-0 15100
+0 Single Technic friction pin primitive with base collar and rectangular centre hole.
 0 Name: 42124 - 15100.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -1780,7 +1780,7 @@
 0 !LDCAD MIRROR_INFO [baseFlip=Z] [counterPart=self]
 
 0 FILE 42124 - 71709.dat
-0 71709
+0 Complex Technic connector part geometry with connector holes, peg holes, and box/disc sub-primitives forming a liftarm construction.
 0 Name: 42124 - 71709.dat
 0 Author: Gerald Lasser [GeraldLasser]
 0 !LDRAW_ORG Unofficial_Part
@@ -1887,7 +1887,7 @@
 1 16 0 9 -21 -20 0 0 0 -1 0 0 0 -9 rect2p.dat
 
 0 FILE 42124 - 32526.dat
-0 32526
+0 Technic part geometry (no visible sub-primitives, referencing external geometry).
 0 Name: 42124 - 32526.dat
 0 Author: Jonathan P. Brown
 0 !LDRAW_ORG Unofficial_Part
@@ -1915,7 +1915,7 @@
 0 !LDCAD MIRROR_INFO [baseFlip=Y]
 
 0 FILE 42124 - 60483.dat
-0 60483
+0 Technic part geometry (no visible sub-primitives, referencing external geometry).
 0 Name: 42124 - 60483.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -1932,7 +1932,7 @@
 4 16 9 10 0 9 10 20 9 -10 20 9 -10 0
 
 0 FILE 42124 - 31794.dat
-0 31794
+0 Technic connector part geometry with connector holes, beam holes, and cylinder/box sub-primitives.
 0 Name: 42124 - 31794.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -1966,7 +1966,7 @@
 4 16 1.5 -9 -10 1.5 -9 -50 10 -9 -51 10 -9 -9
 
 0 FILE 42124 - 44874.dat
-0 44874
+0 Technic friction pin primitive pair with base collars, small rectangular centre holes, and circle sub-primitives.
 0 Name: 42124 - 44874.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -1993,7 +1993,7 @@
 2 24 -10 -2.4 3 -10 -2.4 -3
 
 0 FILE 42124 - 71710.dat
-0 71710
+0 Technic beam/connector part geometry with multiple connector holes, peg holes, rings, and cylinders.
 0 Name: 42124 - 71710.dat
 0 Author: Gerald Lasser [GeraldLasser]
 0 !LDRAW_ORG Unofficial_Part
@@ -2119,7 +2119,7 @@
 1 16 0 -10 -140 -9 0 0 0 20 0 0 0 -9 2-4cylo.dat
 
 0 FILE 42124 - 69909.dat
-0 69909
+0 Technic part geometry (no visible sub-primitives, referencing external geometry).
 0 Name: 42124 - 69909.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -2191,7 +2191,7 @@
 1 16 0 0 0 0.93969 0.34202 0 -0.34202 0.93969 0 0 0 1 s\42124 - 69909s02.dat
 
 0 FILE 42124 - 32523.dat
-0 32523
+0 Technic part geometry (no visible sub-primitives, referencing external geometry).
 0 Name: 42124 - 32523.dat
 0 Author: Tim Gould [timgould]
 0 !LDRAW_ORG Unofficial_Part
@@ -2211,7 +2211,7 @@
 0 !LDCAD SNAP_INCL [ref=connhole.dat]
 
 0 FILE 42124 - 65098.dat
-0 65098
+0 Technic pin primitive set with base collars, rectangular centre holes, and thin base ribs with circle sub-primitives.
 0 Name: 42124 - 65098.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -2254,7 +2254,7 @@
 2 24 10 -12.8284 -2.8284 10 -12.8284 2.8284
 
 0 FILE 42124 - 71682.dat
-0 71682
+0 Detailed Technic part geometry with axle holes, semi-reduced axle holes, rings, discs, and cylinders forming a connector or bush component.
 0 Name: 42124 - 71682.dat
 0 Author: Gerald Lasser [GeraldLasser]
 0 !LDRAW_ORG Unofficial_Part
@@ -2465,7 +2465,7 @@
 4 16 -2.416 -29.690001 -28.021999 -2.416 -29.690001 28.021999 -1.637 -28.351 30 -1.637 -28.351 -30
 
 0 FILE 42124 - 62462.dat
-0 62462
+0 Cylindrical Technic connector primitive with peg holes, rings, and axle features.
 0 Name: 42124 - 62462.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -2553,7 +2553,7 @@
 0 !LDCAD SNAP_CYL [gender=F] [caps=none] [secs=R 8 2   R 6 16   R 8 4   R 6 16   R 8 2] [center=true] [slide=true]
 
 0 FILE 42124 - 33299b.dat
-0 33299b
+0 Small Technic connector primitive featuring axle and peg holes with rings.
 0 Name: 42124 - 33299b.dat
 0 Author: Santeri Piippo [arezey]
 0 !LDRAW_ORG Unofficial_Part
@@ -2590,7 +2590,7 @@
 4 16 3.444 10 31.684999 0 10 31 0 10 32 3.062 10 32.609001
 
 0 FILE 42124 - 55615.dat
-0 55615
+0 Complex Technic beam connector primitive with multiple connector holes, cylinders, and pin collars.
 0 Name: 42124 - 55615.dat
 0 Author: Steve Bliss [sbliss]
 0 !LDRAW_ORG Unofficial_Part
@@ -3042,7 +3042,7 @@
 0 !LDCAD SNAP_CYL [gender=F] [caps=none] [secs=R 8 2   R 6 16   S 8 2] [center=true] [slide=true]
 
 0 FILE 42124 - confric3.dat
-0 confric3
+0 Friction pin connector primitive with ribs, slits, and stop rings.
 0 Name: 42124 - confric3.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -3121,7 +3121,7 @@
 1 16 0 -2 0 8 0 0 0 2 0 0 0 -8 4-4cyli.dat
 
 0 FILE 42124 - connectcollar4.dat
-0 connectcollar4
+0 Small connector collar primitive with cylinders, rings, and rectangular edges.
 0 Name: 42124 - connectcollar4.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -3206,7 +3206,7 @@
 1 16 -2.4 5 2 0 -1 0 0 0 -5 1 0 0 rect2a.dat
 
 0 FILE 42124 - confricrib1.dat
-0 confricrib1
+0 Friction pin rib primitive with no direct geometry pieces.
 0 Name: 42124 - confricrib1.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -3242,7 +3242,7 @@
 5 24 4.773 -3.7 4.0659 4.773 0 4.0659 4.698 -3.7 3.5666 4.0659 0 4.773
 
 0 FILE 42124 - confricrib2.dat
-0 confricrib2
+0 Friction pin rib primitive with no direct geometry pieces.
 0 Name: 42124 - confricrib2.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -3324,7 +3324,7 @@
 5 24 6.25 -3.7 0.5 6.25 0 0.5 5.844 -3.7 0.8 6.25 0 -0.5
 
 0 FILE 42124 - confricrib3.dat
-0 confricrib3
+0 Friction pin rib primitive with no direct geometry pieces.
 0 Name: 42124 - confricrib3.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -3373,7 +3373,7 @@
 5 24 4.0659 5.7 4.773 3.5666 5.7 4.698 3.8188 6 4.5259 4.0659 -5.7 4.773
 
 0 FILE 42124 - confricrib4.dat
-0 confricrib4
+0 Minimal friction pin rib primitive with two circular faces.
 0 Name: 42124 - confricrib4.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -3435,7 +3435,7 @@
 2 24 6.0748 1.1 0.6294 6.1475 0 0.5757
 
 0 FILE 42124 - connectslit2.dat
-0 connectslit2
+0 Small connector slit primitive with cylinders and a rectangular edge strip.
 0 Name: 42124 - connectslit2.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -3463,7 +3463,7 @@
 1 16 3.9941 5 0 0 1 -0.199 1 0 0 0 0 1 8\1-4ndis.dat
 
 0 FILE 42124 - connectcollar3.dat
-0 connectcollar3
+0 Connector collar primitive with cylinders, rings, and rectangular edge details.
 0 Name: 42124 - connectcollar3.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -3544,7 +3544,7 @@
 1 16 -4.3146 4.5 1 1.4865 0 0 0 0 -4.5 0 1 0 rect3.dat
 
 0 FILE 42124 - connectslit1.dat
-0 connectslit1
+0 Small connector slit primitive with cylinders and a rectangular edge strip.
 0 Name: 42124 - connectslit1.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -3572,7 +3572,7 @@
 5 24 5.5433 9 2.2961 5.5434 -9 2.2962 4.2426 -9 4.2426 5.801 -9 1
 
 0 FILE s\42124 - 32523s01.dat
-0 32523s01
+0 Technic beam primitive with connector holes and cylindrical sides.
 0 Name: s\42124 - 32523s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -3607,7 +3607,7 @@
 1 16 -9 0 0 0 1 0 0 0 10 20 0 0 rect2p.dat
 
 0 FILE s\42124 - 32138s01.dat
-0 32138s01
+0 Technic axle connector primitive with open axle holes, cylinders, and rectangles.
 0 Name: s\42124 - 32138s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -3914,7 +3914,7 @@
 5 24 -7 4.8 -9 -7 4.8 -7.5 -8 3 -9 -6 6 -7.5
 
 0 FILE 42124 - connect7.dat
-0 connect7
+0 Connector primitive with cylinders, rings, ribs, and rectangular edge details.
 0 Name: 42124 - connect7.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -4184,7 +4184,7 @@
 0 !LDCAD SNAP_CYL [gender=M] [caps=one] [secs=R 8 2   R 6 16   _L 6.25 2]
 
 0 FILE 42124 - confric10.dat
-0 confric10
+0 Friction connector primitive with cylinders, rings, ribs, and rectangular edges.
 0 Name: 42124 - confric10.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -4572,7 +4572,7 @@
 5 24 -4.0659 -14.3 4.773 -4.0659 -18 4.773 -3.5666 -14.3 4.698 -4.773 -18 4.0659
 
 0 FILE s\42124 - 15100s01.dat
-0 15100s01
+0 Technic connector primitive with a long connector hole and sloped cylinders.
 0 Name: s\42124 - 15100s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -4626,7 +4626,7 @@
 4 16 10 -3 -4 10 3 -4 10 3 4 10 -3 4
 
 0 FILE s\42124 - 64782s01.dat
-0 64782s01
+0 Technic connector primitive with connector holes, cylinders, and sloped details.
 0 Name: s\42124 - 64782s01.dat
 0 Author: Gerald Lasser [GeraldLasser]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -4762,7 +4762,7 @@
 1 16 -28.305 7 20 0 0 2.895 0 -1 0 1 0 0 rect3.dat
 
 0 FILE s\42124 - 32526s01.dat
-0 32526s01
+0 Technic beam connector primitive with open cylinders and multiple peg holes.
 0 Name: s\42124 - 32526s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -4842,7 +4842,7 @@
 2 24 0 10 89 40 10 89
 
 0 FILE s\42124 - 60483s01.dat
-0 60483s01
+0 Technic connector primitive with axle and peg holes plus rings and cylinders.
 0 Name: s\42124 - 60483s01.dat
 0 Author: Jens Brühl [jb70]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -4880,7 +4880,7 @@
 2 24 9 10 20 9 10 0
 
 0 FILE 42124 - confric11.dat
-0 confric11
+0 Friction connector primitive with cylinders, rings, ribs, and edge rectangles.
 0 Name: 42124 - confric11.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -5244,7 +5244,7 @@
 5 24 -2.692 -5.7 5.6627 -2.5337 -6 5.3847 -3.558 -5.7 5.1627 -2.2962 -5.7 5.5434
 
 0 FILE s\42124 - 87082s01.dat
-0 87082s01
+0 Simple Technic connector primitive with a cylinder and sloped sides.
 0 Name: s\42124 - 87082s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -5290,7 +5290,7 @@
 4 16 -10 3 4 -10 3 -4 -10 -3 -4 -10 -3 4
 
 0 FILE s\42124 - 71710s01.dat
-0 71710s01
+0 Technic beam connector primitive with connector holes, peg holes, and rings.
 0 Name: s\42124 - 71710s01.dat
 0 Author: Gerald Lasser [GeraldLasser]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -5381,7 +5381,7 @@
 2 24 10 -10 -10 10 -10 -20
 
 0 FILE 42124 - u9320.dat
-0 u9320
+0 Electric Power Functions 2.0 socket primitive.
 0 Name: 42124 - u9320.dat
 0 Author: [PTadmin]
 0 !LDRAW_ORG Unofficial_Part
@@ -5399,7 +5399,7 @@
 0 !LDCAD SNAP_GEN [group=pwrFnc2Plg] [gender=F] [bounding=box 12.5 5 7]
 
 0 FILE 42124 - 23807.dat
-0 23807
+0 Box-based primitive featuring chrome-gold faced boxes with edge details.
 0 Name: 42124 - 23807.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part

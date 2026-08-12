@@ -1,5 +1,5 @@
 0 FILE 42114 - main.ldr
-0 main
+0 Main chassis assembly of a motorized heavy-duty truck featuring a multi-speed gearbox, drivetrain, live axles with portal hubs, XL/L drive motors, steering, linear actuators, and a detailed cab with engine.
 0 Name: 42114 - main.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -858,7 +858,7 @@
 
 
 0 FILE 42114 - gearboxframe.ldr
-0 gearboxframe
+0 Structural frame built from an open-center beam and connector blocks that mounts and aligns the gearbox internals.
 0 Name: 42114 - gearboxframe.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -891,7 +891,7 @@
 
 
 0 FILE 42114 - gearbox2.ldr
-0 gearbox2
+0 Gear cluster of reinforced 16-tooth gears, bent beams, and axle joiners forming one stage of the transmission.
 0 Name: 42114 - gearbox2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -957,7 +957,7 @@
 
 
 0 FILE 42114 - torquelim.ldr
-0 torquelim
+0 Torque-limiting clutch assembly using inner and outer clutch halves on a cross block and bent beam to slip under overload.
 0 Name: 42114 - torquelim.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -983,7 +983,7 @@
 
 
 0 FILE 42114 - gearbox3.ldr
-0 gearbox3
+0 Multi-gear transmission stage with an open-center frame, reinforced 16-tooth gears, a clutch gear, and supporting beams and cross blocks.
 0 Name: 42114 - gearbox3.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1082,7 +1082,7 @@
 
 
 0 FILE 42114 - gearbox4.ldr
-0 gearbox4
+0 Reinforced gearbox section using paired open-center beams and long liftarms pinned together to form a rigid mounting cage.
 0 Name: 42114 - gearbox4.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1149,7 +1149,7 @@
 
 
 0 FILE 42114 - chassis1.ldr
-0 chassis1
+0 Central chassis beam module built around an 11x5 open-center liftarm with axle joiners and pins for mounting drivetrain components.
 0 Name: 42114 - chassis1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1196,7 +1196,7 @@
 
 
 0 FILE 42114 - chassis1a.ldr
-0 chassis1a
+0 Rear axle assembly with a 16/24-tooth differential, three bevel gears, and cross blocks for drive output.
 0 Name: 42114 - chassis1a.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1241,7 +1241,7 @@
 
 
 0 FILE 42114 - wheelsupport.ldr
-0 wheelsupport
+0 Live-axle wheel support using a portal axle frame, wheel hub, 24-tooth drive gear, and 8-tooth reduction gear.
 0 Name: 42114 - wheelsupport.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1270,7 +1270,7 @@
 
 
 0 FILE 42114 - wheelsupport2.ldr
-0 wheelsupport2
+0 Portal-axle wheel support with steering frame, hub, and 24-tooth/8-tooth gear reduction, mirroring wheelsupport with minor axle differences.
 0 Name: 42114 - wheelsupport2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1297,7 +1297,7 @@
 
 
 0 FILE 42114 - motors.ldr
-0 motors
+0 Mounting structure of beams, cross blocks, and pins that holds the drive motors to the chassis frame.
 0 Name: 42114 - motors.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1377,7 +1377,7 @@
 
 
 0 FILE 42114 - controlPlusMotorXL-LQ-1.ldr
-0 controlPlusMotorXL-LQ-1
+0 Representation of a Control+ XL motor with cable and flexible routed wiring skin.
 0 Name: 42114 - controlPlusMotorXL-LQ-1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1429,7 +1429,7 @@
 
 
 0 FILE 42114 - controlPlusMotorXL-LQ-1_subPart1.ldr
-0 controlPlusMotorXL-LQ-1_subPart1
+0 Flexible cable-routing subpart containing the path segments for the XL motor wiring.
 0 Name: 42114 - controlPlusMotorXL-LQ-1_subPart1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1614,7 +1614,7 @@
 
 
 0 FILE 42114 - controlPlusMotorL-LQ-1.ldr
-0 controlPlusMotorL-LQ-1
+0 Representation of a Control+ L motor with cable and flexible routed wiring skin.
 0 Name: 42114 - controlPlusMotorL-LQ-1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1665,7 +1665,7 @@
 
 
 0 FILE 42114 - controlPlusMotorL-LQ-1_subPart1.ldr
-0 controlPlusMotorL-LQ-1_subPart1
+0 Flexible cable-routing subpart containing the path segments for the L motor wiring.
 0 Name: 42114 - controlPlusMotorL-LQ-1_subPart1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1853,7 +1853,7 @@
 
 
 0 FILE 42114 - linacbase1.ldr
-0 linacbase1
+0 Linear-actuator base assembly using a turntable, bevel gears, crankshafts, and a hinged actuator bracket for raising a mechanism.
 0 Name: 42114 - linacbase1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1918,7 +1918,7 @@
 
 
 0 FILE 42114 - linacbase2.ldr
-0 linacbase2
+0 Second linear-actuator base, identical in construction to linacbase1, using a turntable, bevel gears, crankshafts, and actuator bracket.
 0 Name: 42114 - linacbase2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -1983,7 +1983,7 @@
 
 
 0 FILE 42114 - cabin.ldr
-0 cabin
+0 Large operator cab structure built from open-center beams, numerous pins, cross blocks, and liftarms forming the detailed bodywork.
 0 Name: 42114 - cabin.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2629,7 +2629,7 @@
 
 
 0 FILE 42114 - wheelsupport3.ldr
-0 wheelsupport3
+0 Compact portal-axle wheel support with steering frame, hub, 24-tooth drive gear, 8-tooth reduction gear, and bushing.
 0 Name: 42114 - wheelsupport3.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2654,7 +2654,7 @@
 
 
 0 FILE 42114 - steermotor.ldr
-0 steermotor
+0 Steering motor mounting bracket of beams, bent liftarms, and pins that houses the steering drive motor.
 0 Name: 42114 - steermotor.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2775,7 +2775,7 @@
 
 
 0 FILE 42114 - spikePrimeMotorL-LQ-1.ldr
-0 spikePrimeMotorL-LQ-1
+0 Representation of a Spike Prime / Powered Up Large Angular Motor with cable and flexible wiring skin.
 0 Name: 42114 - spikePrimeMotorL-LQ-1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -2823,7 +2823,7 @@
 
 
 0 FILE 42114 - spikePrimeMotorL-LQ-1_subPart1.ldr
-0 spikePrimeMotorL-LQ-1_subPart1
+0 Flexible cable-routing subpart containing the path segments for the Spike Prime motor wiring.
 0 Name: 42114 - spikePrimeMotorL-LQ-1_subPart1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3835,7 +3835,7 @@
 
 
 0 FILE 42114 - cabin2.ldr
-0 cabin2
+0 Small linkage subassembly of beams, gears, and toggle joints used within or adjacent to the cabin mechanism.
 0 Name: 42114 - cabin2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3878,7 +3878,7 @@
 
 
 0 FILE 42114 - cabinroof.ldr
-0 cabinroof
+0 Cab roof module built from a large 11x7 open-center panel and beams pinned onto cross blocks.
 0 Name: 42114 - cabinroof.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -3919,7 +3919,7 @@
 
 
 0 FILE 42114 - engine.ldr
-0 engine
+0 Engine and front frame module using a large open-center beam, gears, liftarms, angle connectors, and a flexible axle joint to simulate an engine and hood structure.
 0 Name: 42114 - engine.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -4085,7 +4085,7 @@
 
 
 0 FILE 42114 - mudguard1.ldr
-0 mudguard1
+0 A small wheel mudguard assembly built from bent liftarms, beams, and axle pins.
 0 Name: 42114 - mudguard1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -4131,7 +4131,7 @@
 
 
 0 FILE 42114 - mudguard1a.ldr
-0 mudguard1a
+0 A mudguard section using an open-center liftarm beam secured with pins and cross blocks.
 0 Name: 42114 - mudguard1a.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -4157,7 +4157,7 @@
 
 
 0 FILE 42114 - mudguard2.ldr
-0 mudguard2
+0 A wheel mudguard assembly constructed from bent liftarms, beams, and axle pins.
 0 Name: 42114 - mudguard2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -4203,7 +4203,7 @@
 
 
 0 FILE 42114 - mudguard2a.ldr
-0 mudguard2a
+0 A mudguard section using an open-center liftarm beam with pins and cross blocks.
 0 Name: 42114 - mudguard2a.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -4229,7 +4229,7 @@
 
 
 0 FILE 42114 - bottomfront1.ldr
-0 bottomfront1
+0 A lower front body panel with yellow fairing panels, a 5x11 trapezium panel, and liftarms.
 0 Name: 42114 - bottomfront1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -4281,7 +4281,7 @@
 
 
 0 FILE 42114 - bottomfront2.ldr
-0 bottomfront2
+0 A lower front body panel with yellow fairing panels, a 5x11 trapezium panel, and liftarms.
 0 Name: 42114 - bottomfront2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -4333,7 +4333,7 @@
 
 
 0 FILE 42114 - hub.ldr
-0 hub
+0 The electric Control+ hub unit with mounting pins, clips, and a flex hose.
 0 Name: 42114 - hub.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -4372,7 +4372,7 @@
 
 
 0 FILE 42114 - mudguard3.ldr
-0 mudguard3
+0 A wheel mudguard with bent liftarms, slope bricks, and cross blocks forming an arched shape.
 0 Name: 42114 - mudguard3.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -4416,7 +4416,7 @@
 
 
 0 FILE 42114 - mudguard4.ldr
-0 mudguard4
+0 A wheel mudguard with bent liftarms, slope bricks, and cross blocks forming an arched shape.
 0 Name: 42114 - mudguard4.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -4460,7 +4460,7 @@
 
 
 0 FILE 42114 - onswitchlever.ldr
-0 onswitchlever
+0 An on/off switch lever assembly made from axles, a cross block, and thin liftarms.
 0 Name: 42114 - onswitchlever.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -4485,7 +4485,7 @@
 
 
 0 FILE 42114 - cabinrooftop.ldr
-0 cabinrooftop
+0 A cabin roof panel composed of yellow plates, tiles, panels, and orange flex hoses.
 0 Name: 42114 - cabinrooftop.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -4566,7 +4566,7 @@
 
 
 0 FILE 42114 - cabinrooftop2.ldr
-0 cabinrooftop2
+0 A secondary cabin roof section built from yellow plates, bricks, and grooved tiles.
 0 Name: 42114 - cabinrooftop2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -4624,7 +4624,7 @@
 
 
 0 FILE 42114 - enginetop.ldr
-0 enginetop
+0 The top of an engine assembly with green beams, cylinder elbows, and grooved tiles.
 0 Name: 42114 - enginetop.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -4758,7 +4758,7 @@
 
 
 0 FILE 42114 - flexHose10L-1.ldr
-0 flexHose10L-1
+0 A 10L flexible hose assembly made of 23 connected hose segments.
 0 Name: 42114 - flexHose10L-1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -4844,7 +4844,7 @@
 
 
 0 FILE 42114 - hoodfront.ldr
-0 hoodfront
+0 The front hood section with black panels, plates, a rotor, and angle connectors.
 0 Name: 42114 - hoodfront.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -4934,7 +4934,7 @@
 
 
 0 FILE 42114 - bottomfront4.ldr
-0 bottomfront4
+0 A lower front structural frame with thin liftarms, cross blocks, and axle joiners.
 0 Name: 42114 - bottomfront4.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -5004,7 +5004,7 @@
 
 
 0 FILE 42114 - engineside1.ldr
-0 engineside1
+0 An engine side panel with bent liftarms, grooved tiles, and a jet engine fan.
 0 Name: 42114 - engineside1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -5067,7 +5067,7 @@
 
 
 0 FILE 42114 - engineside2.ldr
-0 engineside2
+0 A secondary engine side panel with a jet engine fan, cross blocks, and liftarms.
 0 Name: 42114 - engineside2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -5111,7 +5111,7 @@
 
 
 0 FILE 42114 - hoodsides.ldr
-0 hoodsides
+0 The combined hood side panels with angle connectors, bent liftarms, and an open-center beam.
 0 Name: 42114 - hoodsides.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -5315,7 +5315,7 @@
 
 
 0 FILE 42114 - hoodside1.ldr
-0 hoodside1
+0 One hood side panel with a curved yellow panel, liftarms, and cross blocks.
 0 Name: 42114 - hoodside1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -5389,7 +5389,7 @@
 
 
 0 FILE 42114 - hoodside2.ldr
-0 hoodside2
+0 The opposite hood side panel with a curved yellow panel, liftarms, and cross blocks.
 0 Name: 42114 - hoodside2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -5463,7 +5463,7 @@
 
 
 0 FILE 42114 - hoodtop.ldr
-0 hoodtop
+0 The top hood surface made of yellow fairing panels and beams.
 0 Name: 42114 - hoodtop.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -5526,7 +5526,7 @@
 
 
 0 FILE 42114 - bonnet.ldr
-0 bonnet
+0 The bonnet assembly with large black panels, fairings, and long liftarms.
 0 Name: 42114 - bonnet.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -5593,7 +5593,7 @@
 
 
 0 FILE 42114 - sidebars.ldr
-0 sidebars
+0 A side bar or railing assembly made from angle connectors and a short liftarm.
 0 Name: 42114 - sidebars.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -5624,7 +5624,7 @@
 
 
 0 FILE 42114 - rigid3mmHose-studio-1.ldr
-0 rigid3mmHose-studio-1
+0 A long rigid 3mm hose assembly composed of 562 connected hose segments.
 0 Name: 42114 - rigid3mmHose-studio-1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -6782,7 +6782,7 @@
 
 
 0 FILE 42114 - sidemirror1.ldr
-0 sidemirror1
+0 Left side mirror assembly built from black Technic beams, axles, and a 2x4 tile mounted on a pin-and-axle frame.
 0 Name: 42114 - sidemirror1.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -6815,7 +6815,7 @@
 
 
 0 FILE 42114 - sidemirror2.ldr
-0 sidemirror2
+0 Right side mirror assembly mirroring the left, using black Technic beams, axles, and a 2x4 tile on a pin-and-axle frame.
 0 Name: 42114 - sidemirror2.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -6848,7 +6848,7 @@
 
 
 0 FILE 42114 - dumpbody.ldr
-0 dumpbody
+0 Large yellow dump truck body constructed from panels, bent liftarms, and beams held together by friction pins.
 0 Name: 42114 - dumpbody.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -7651,7 +7651,7 @@
 
 
 0 FILE 42114 - dumpbodybottom.ldr
-0 dumpbodybottom
+0 Reinforced yellow base frame for the dump body using long liftarms, cross blocks, and panels connected by pins.
 0 Name: 42114 - dumpbodybottom.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -7811,7 +7811,7 @@
 
 
 0 FILE 42114 - 18575.dat
-0 18575
+0 Technic axle-hole component formed from a rectangular open axle boss and edge rectangles.
 0 Name: 42114 - 18575.dat
 0 Author: Merlijn Wissink [legolijntje]
 0 !LDRAW_ORG Unofficial_Part
@@ -7933,7 +7933,7 @@
 1 16 1.5 5.7018 0 0 0 0.5 0 1 -0.0998 -10 0 0 rect3.dat
 
 0 FILE 42114 - 2654a.dat
-0 2654a
+0 Small conical/cylindrical primitive subpart combining cones, cylinders, and a disc into a rounded stud-like shape.
 0 Name: 42114 - 2654a.dat
 0 Author: Evert-Jan Boer [ejboer]
 0 !LDRAW_ORG Unofficial_Part
@@ -8006,7 +8006,7 @@
 5 24 4.5922 3.7 11.0866 0 3.7 12 0 3.075 13 2.2962 4.7 5.5434
 
 0 FILE 42114 - 62274c02.dat
-0 62274c02
+0 Technic linear actuator piston head subpart representing the internal moving piston element.
 0 Name: 42114 - 62274c02.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -8021,7 +8021,7 @@
 1 494 0 0 -19 1 0 0 0 1 0 0 0 1 42114 - u9488.dat
 
 0 FILE 42114 - 46835.dat
-0 46835
+0 Cylindrical Technic bush/connector subpart with closed axle holes and ribbed cylinder surfaces.
 0 Name: 42114 - 46835.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -8250,7 +8250,7 @@
 2 24 -1.3547 9.7306 1 -1.3547 9.7306 6
 
 0 FILE 42114 - 46834.dat
-0 46834
+0 Compact Technic axle-hole subpart with closed axle bores and rectangular box faces.
 0 Name: 42114 - 46834.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -8332,7 +8332,7 @@
 3 16 2 -5.602 -10 0 -6 -10 -2 -5.602 -10
 
 0 FILE 42114 - 92909.dat
-0 92909
+0 Geometric primitive subpart forming a grooved pulley/wheel using concentric rings, cylinders, and cones.
 0 Name: 42114 - 92909.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -8727,7 +8727,7 @@
 0 !LDCAD SNAP_GEN [group=nudge1] [gender=F] [bounding=sph 6]
 
 0 FILE 42114 - 32249.dat
-0 32249
+0 Technic connector subpart with peg/axle holes, rings, and cylindrical segments forming a multi-hole beam end.
 0 Name: 42114 - 32249.dat
 0 Author: Ishino Keiichiro
 0 !LDRAW_ORG Unofficial_Part
@@ -9373,7 +9373,7 @@
 0 !LDCAD MIRROR_INFO [baseFlip=Y]
 
 0 FILE 42114 - 69730.dat
-0 69730
+0 Empty placeholder submodel containing no direct pieces.
 0 Name: 42114 - 69730.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -9387,7 +9387,7 @@
 1 72 0 -50 0 1 0 0 0 1 0 0 0 1 u9363.dat
 
 0 FILE 42114 - 55615.dat
-0 55615
+0 Complex cylindrical Technic pin/connector subpart with multiple connector holes and ribbed collars.
 0 Name: 42114 - 55615.dat
 0 Author: Steve Bliss [sbliss]
 0 !LDRAW_ORG Unofficial_Part
@@ -9839,7 +9839,7 @@
 0 !LDCAD SNAP_CYL [gender=F] [caps=none] [secs=R 8 2   R 6 16   S 8 2] [center=true] [slide=true]
 
 0 FILE 42114 - 33299b.dat
-0 33299b
+0 Technic axle-and-peg-hole connector subpart with semi-reduced axle holes and ring detailing.
 0 Name: 42114 - 33299b.dat
 0 Author: Santeri Piippo [arezey]
 0 !LDRAW_ORG Unofficial_Part
@@ -9876,7 +9876,7 @@
 4 16 3.444 10 31.684999 0 10 31 0 10 32 3.062 10 32.609001
 
 0 FILE s\42114 - 32269s01.dat
-0 32269s01
+0 Rectangular panel subpart composed of plain and edged rectangles forming a flat surface.
 0 Name: s\42114 - 32269s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -9965,7 +9965,7 @@
 3 16 15.3375 12.7626 -10 14.6121 11.2123 -10 13.0227 13.0227 -10
 
 0 FILE s\42114 - 32269s02.dat
-0 32269s02
+0 Cylindrical end-cap subpart with rings and rectangles forming a rounded beam termination.
 0 Name: s\42114 - 32269s02.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -10036,7 +10036,7 @@
 3 16 17 0 -10 16.934099 -1 -10 16.934099 1 -10
 
 0 FILE 42114 - npeghol5.dat
-0 npeghol5
+0 Primitive peg-hole subpart with rings, boxes, and small cylinders defining a Technic pin socket.
 0 Name: 42114 - npeghol5.dat
 0 Author: Guy Vivan [guyvivan]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -10090,7 +10090,7 @@
 5 24 -3.4443 1 -1.6849 -3.4443 0 -1.6849 -6.3639 1 -3.6361 -2 1 -1.397
 
 0 FILE 42114 - axl4hole.dat
-0 axl4hole
+0 Axle-hole primitive subpart with toothed cylinders defining a cross-axle socket.
 0 Name: 42114 - axl4hole.dat
 0 Author: Santeri Piippo [arezey]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -10118,7 +10118,7 @@
 4 16 -2 1 5.602 0 1 6 0 0 6 -2 0 5.602
 
 0 FILE 42114 - axl4hol2.dat
-0 axl4hol2
+0 Simple circular primitive subpart forming part of an axle-hole cross section.
 0 Name: 42114 - axl4hol2.dat
 0 Author: Santeri Piippo [arezey]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -10136,7 +10136,7 @@
 1 16 0 0 0 -6 0 0 0 1 0 0 0 -6 1-4edge.dat
 
 0 FILE 42114 - axl4hol3.dat
-0 axl4hol3
+0 Simple circular primitive subpart forming a finer segment of an axle-hole cross section.
 0 Name: 42114 - axl4hol3.dat
 0 Author: Santeri Piippo [arezey]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -10154,7 +10154,7 @@
 1 16 0 0 0 2.296 0 5.543 0 1 0 -5.543 0 2.296 1-8edge.dat
 
 0 FILE 42114 - npeghol3.dat
-0 npeghol3
+0 Peg-hole primitive subpart with cylinders, rings, and boxes defining a Technic pin socket.
 0 Name: 42114 - npeghol3.dat
 0 Author: Guy Vivan [guyvivan]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -10199,7 +10199,7 @@
 1 16 2.7222 0.5 -3.041 0 -0.72215 0 0.5 0 0 0 0.14395 1.5 box2-7.dat
 
 0 FILE 42114 - u9367c02.dat
-0 u9367c02
+0 Cable stub subpart representing a wire or hose termination with see-through blockers.
 0 Name: 42114 - u9367c02.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -10233,7 +10233,7 @@
 4 72 -30.5 -13 92 -30.5 -28 92 -30.5 -28 108 -30.5 -13 108
 
 0 FILE s\42114 - 33299s01.dat
-0 33299s01
+0 Detailed cylindrical pin/axle-hole subpart with rings, collars, and discs forming a Technic connector.
 0 Name: s\42114 - 33299s01.dat
 0 Author: Santeri Piippo [arezey]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -10501,7 +10501,7 @@
 5 24 4.9497 10 35.050301 4.9498 0 35.050201 6 0 36.661999 2.6788 10 33.5327
 
 0 FILE s\42114 - 2654as01.dat
-0 2654as01
+0 Concentric ring and cylinder primitive subpart forming the base of a rounded stud element.
 0 Name: s\42114 - 2654as01.dat
 0 Author: Evert-Jan Boer [ejboer]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -10653,7 +10653,7 @@
 5 24 -15.013 1.125 6.2186 -15.013 0 6.2186 -12.4373 1.125 12.437 -16.250401 1.125 0
 
 0 FILE 42114 - stud6a.dat
-0 stud6a
+0 Hollow Technic stud primitive combining cylinders and rings into a stud shape.
 0 Name: 42114 - stud6a.dat
 0 Author: Steve Bliss [sbliss]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -10711,7 +10711,7 @@
 5 24 6 -4 0 6 0 0 5.5434 -4 -2.2962 5.6145 -4 1.9387
 
 0 FILE 42114 - 1-8ring35.dat
-0 1-8ring35
+0 A primitive-generated one-eighth ring segment at radius 35.
 0 Name: 42114 - 1-8ring35.dat
 0 Author: Evert-Jan Boer [ejboer]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -10724,7 +10724,7 @@
 0 // Build by Primitive Generator 2
 
 0 FILE 42114 - 1-8ring13.dat
-0 1-8ring13
+0 A primitive-generated one-eighth ring segment at radius 13.
 0 Name: 42114 - 1-8ring13.dat
 0 Author: Evert-Jan Boer [ejboer]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -10737,7 +10737,7 @@
 0 // Build by Primitive Generator 2
 
 0 FILE 42114 - u9488.dat
-0 u9488
+0 A small cylindrical part composed of two closed cylinders and a disc cap.
 0 Name: 42114 - u9488.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -10757,7 +10757,7 @@
 1 16 0 0 -168 10 0 0 0 0 10 0 1 0 4-4disc.dat
 
 0 FILE s\42114 - 46835s01.dat
-0 46835s01
+0 A curved geometric sub-part combining discs, chords, a cone, and a cylinder to form a contoured shape.
 0 Name: s\42114 - 46835s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -10874,7 +10874,7 @@
 3 16 3.8822 -14.4887 6 4.1675 -15.6 6 0 -15.6 6
 
 0 FILE s\42114 - 46834s01.dat
-0 46834s01
+0 A simple flat rectangular sub-part with two adjacent beveled edges.
 0 Name: s\42114 - 46834s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -10928,7 +10928,7 @@
 4 16 -2.1085 -21.5142 -7 -0.7178 -22.1054 -7 0.7178 -22.1054 -7 2.1085 -21.5142 -7
 
 0 FILE s\42114 - 46834s02.dat
-0 46834s02
+0 A cylindrical sub-part with multiple open cylinders, chords, and rings forming a ribbed or tiered tubular shape.
 0 Name: s\42114 - 46834s02.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart

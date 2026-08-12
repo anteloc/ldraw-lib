@@ -1,5 +1,5 @@
 0 FILE 41092 - main.ldr
-0 main
+0 The main model features an aviator cap and visor, with referenced submodels depicting a Friends minifig (Stephanie), a red scooter, a pink stool, an oven, a shop counter, and a table-stool set for a pizzeria scene.
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
 0 !LDRAW_ORG Model
@@ -13,7 +13,7 @@
 1 47 -138 0 -177 1 0 0 0 1 0 0 0 1 41092 - counter.ldr
 1 47 -28 0 -287 1 0 0 0 1 0 0 0 1 41092 - table-stool.ldr
 0 FILE 41092 - table-stool.ldr
-0 table-stool
+0 A round dining table with a pizza-pattern top, white pedestal base, red accents, two stools with green tabs, and two clear goblets.
 0 Name: table-stool.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -51,7 +51,7 @@
 1 29 0 0 -80 -1 0 0 0 1 0 0 0 -1 41092 - stool.ldr
 1 29 0 0 80 -1 0 0 0 1 0 0 0 -1 41092 - stool.ldr
 0 FILE 41092 - scooter.ldr
-0 scooter
+0 A red scooter with handlebars, two white wheels with smooth black tyres, and a light bluish grey frame with rounded white panels.
 0 Name: scooter.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -85,7 +85,7 @@
 0 // Tile  1 x  1 with Groove (white)
 1 15 0 -15.995 19.994 0 0 1 0 1 0 -1 0 0 3070b.dat
 0 FILE 41092 - stool.ldr
-0 stool
+0 A small bright pink stool consisting of an inverted tile seat and two light bluish grey side handles.
 0 Name: stool.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -97,7 +97,7 @@
 0 // Tile  1 x  2 with Handle (light_bluish_grey)
 1 71 0 0 -10 1 0 0 0 -1 0 0 0 -1 2432.dat
 0 FILE 41092 - oven.ldr
-0 oven
+0 A tan brick oven with an arched opening, sloped grey sides, an oar reinforcement, and embossed nougat brick detailing.
 0 Name: oven.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -138,7 +138,7 @@
 1 71 -10 -72 10 -1 0 0 0 1 0 0 0 -1 3040b.dat
 0 STEP
 0 FILE 41092 - counter.ldr
-0 counter
+0 A shop service counter with pink corner plates, nougat embossed bricks, arched tan storefront sections, pizza-pattern tiles, a coin tile, and a red bar detail.
 0 Name: counter.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -210,7 +210,7 @@
 1 26 30 -152 20 0 0 -1 0 1 0 1 0 0 11477.dat
 0 STEP
 0 FILE 41092 - stephanie.ldr
-0 stephanie
+0 A Friends minifig named Stephanie with long blonde hair, a white halter top, dark pink shorts, and sandals.
 0 Name: stephanie.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -228,7 +228,7 @@
 0 // Figure Friends Hair Long Straight (bright_light_yellow)
 1 226 0 -110 0.9 1 0 0 0 1 0 0 0 1 92255.dat
 0 FILE 41092 - 2447.dat
-0 Minifig Helmet Visor
+0 A minifig helmet visor constructed from geometric primitives including discs, rings, cylinders, and spheres forming a curved transparent shape.
 0 Name: 2447.dat
 0 Author: Chris Dee [cwdee]
 0 !LDRAW_ORG Unofficial_Part
@@ -363,7 +363,7 @@
 
 0 !LDCAD SNAP_GEN [group=visor] [gender=M] [bounding=cyl 2 15] [match=size]
 0 FILE 41092 - 14769p07.dat
-0 Tile  2 x  2 Round with Bottom Stud Holder with Pizza Pattern
+0 A 2x2 round pizza-pattern tile represented by a single adapter ring primitive.
 0 Name: 14769p07.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -378,7 +378,7 @@
 1 16 0 0 0 20 0 0 0 1 0 0 0 20 4-4ering.dat
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\41092 - 4150p02s01.dat
 0 FILE 41092 - 15396.dat
-0 Minifig Scooter Body
+0 A scooter body made from clips, circles, rings, cylinders, and rectangles forming a compact vehicular form.
 0 Name: 15396.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -524,7 +524,7 @@
 5 24 -3.6 29.804001 -36.326 3.6 29.804001 -36.326 3.6 27.156 -33.75 -3.6 32.463001 -37.460999
 5 24 3.6 29.804001 -23.674 -3.6 29.804001 -23.674 -3.6 27.156 -26.25 -3.6 32.463001 -22.539
 0 FILE 41092 - 30237.dat
-0 Brick  1 x  2 with Clip Vertical (Thick U-Clip) with Centre Notch
+0 A 1x2 brick with a vertical clip and center notch, built upon a basic 1x2 brick.
 0 Name: 30237.dat
 0 Author: Franklin W. Cain [fwcain]
 0 !LDRAW_ORG Unofficial_Part
@@ -551,7 +551,7 @@
 
 
 0 FILE 41092 - 87585.dat
-0 Minifig Tool Oar Reinforced
+0 A reinforced oar tool modeled from cylinders, cones, and chords forming a shaft with a paddle blade.
 0 Name: 87585.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -634,7 +634,7 @@
 5 24 2.8284 83 -2.8284 3.6956 83 -1.5308 3.6956 0 -1.5308 0 138 0
 5 24 3.6956 83 -1.5308 4 83 0 4 0 0 0 138 0
 0 FILE 41092 - 98138p0i.dat
-0 Tile  1 x  1 Round with Black "5" Coin Pattern
+0 A 1x1 round tile with a black number 5 coin pattern, represented by an adapter ring primitive.
 0 Name: 98138p0i.dat
 0 Author: Heiko Jelnikar [KlotzKiste]
 0 !LDRAW_ORG Unofficial_Part
@@ -1402,7 +1402,7 @@
 3 0 8.26 0 0.18 8.22 0 -0.32 8.75 0 0
 4 0 8.75 0 0 8.22 0 -0.32 8.08 0 -0.82 8.57 0 -1.71
 0 FILE 41092 - 3069bpw5.dat
-0 Tile  1 x  2 with 100 Dollar Bill Money Pattern
+0 A 1x2 tile printed with a 100 dollar bill money pattern.
 0 Name: 3069bpw5.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -2110,7 +2110,7 @@
 4 16 -7.1 0 2 -8.3 0 1.9 -8.4 0 -2.3 -7.1 0 -2.1
 3 10 10.2222 0 -6.3206 12.0161 0 -7.4841 12.0161 0 -6.2361
 0 FILE 41092 - 92241p19.dat
-0 Figure Friends Girl Torso with White Halter Top, Pink Outlined Stars Pattern
+0 A Friends girl torso printed with a white halter top and pink outlined stars pattern.
 0 Name: 92241p19.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Part
@@ -3338,7 +3338,7 @@
 5 24 -10.69 6.76 0.57 -11 4 0 -10.9 4.43 -3.25 -10.9038 4.6504 1.2301
 5 24 -10.9 4.43 -3.25 -11 4 0 -10.69 6.76 0.57 -11 2.8284 -2.8284
 0 FILE s\41092 - 15396s01.dat
-0 ~Minifig Scooter Body Half
+0 A half-section of the scooter body constructed from open cylinders, discs, and rectangles.
 0 Name: s\15396s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -4199,7 +4199,7 @@
 2 24 11.75 31.414 -68.585999 8 31.414 -68.585999
 2 24 8 31.414 -71.414001 11.75 31.414 -71.414001
 0 FILE 41092 - clip13.dat
-0 Clip Minimal (Thick C-Clip)
+0 A minimal thick C-clip made from open cylinders, boxes, and disc primitives forming a small clamping part.
 0 Name: clip13.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -4251,7 +4251,7 @@
 4 16 -6.3256 -4 4.1965 -4 -4 4 0 -4 4.0001 6.3256 -4 4.1965
 3 16 0 -4 4.0001 4 -4 4 6.3256 -4 4.1965
 0 FILE s\41092 - 98138s01.dat
-0 ~Tile  1 x  1 Round with Groove without Top Face
+0 The rim and body of a 1x1 round tile with groove, built from rings and open cylinders without the top face.
 0 Name: s\98138s01.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -4278,7 +4278,7 @@
 1 16 0 0.5 0 -9.5 0 0 0 -9.5 0 0 0 9.5 41092 - t02o0526.dat
 1 16 0 0.5 0 9.5 0 0 0 -9.5 0 0 0 -9.5 41092 - t02o0526.dat
 0 FILE 41092 - t02o0526.dat
-0 Torus Outside  1 x 0.0526 x 0.5
+0 An outside torus primitive with major radius 19, minor radius 1, and a half sweep of 8 segments.
 0 Name: t02o0526.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -4404,7 +4404,7 @@
 5 24 -1.0486 0.0201 0 -1.0526 0 0 -1.0486 0.0201 -0.4343 -0.9688 0.0201 0.4013
 0 // Build by Primitive Generator 2
 0 FILE s\41092 - 30237s01.dat
-0 ~Clip Vertical (Thick U-Clip) with Centre Notch
+0 A subpart defining the vertical thick U-clip with center notch using discs, open cylinders, and rectangles.
 0 Name: s\30237s01.dat
 0 Author: Michael Heidemann [mikeheide]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -4518,7 +4518,7 @@
 5 24 5.005 -4 -2.779 5.005 4 -2.779 5.393 4 -4.365 5.375 4 -0.998
 5 24 5.375 -4 -0.998 5.375 4 -0.998 5.005 4 -2.779 6.54 4 0
 0 FILE s\41092 - 4150p02s01.dat
-0 ~Tile  2 x  2 Round Pizza Pattern
+0 A subpart representing the pizza-pattern printed surface on a 2x2 round tile.
 0 Name: s\4150p02s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart

@@ -1,5 +1,5 @@
 0 FILE 41073 - Main.ldr
-0 Main
+0 A large Friends-themed ship with sails, an oyster display, and a two-level deck structure.
 0 Name: 41073 - Main.ldr
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model
@@ -10,7 +10,7 @@
 
 
 0 FILE 41073 - Oyster.ldr
-0 Oyster
+0 A decorative oyster figurine featuring a faceted gem, pearl tile, leaf, and Friends key inside a clear shell on a round base.
 0 Name: 41073 - Oyster.ldr
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model
@@ -53,7 +53,7 @@
 
 
 0 FILE 41073 - Ship.ldr
-0 Ship
+0 The main hull of a sailing ship built from dark blue bricks and tan plates with curved black slopes and towball connections.
 0 Name: 41073 - Ship.ldr
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model
@@ -497,7 +497,7 @@
 
 
 0 FILE 41073 - Ship Sideshell.ldr
-0 Ship Sideshell
+0 A small decorative side panel with a ball socket joint, lavender round tile, and clear dish.
 0 Name: 41073 - Ship Sideshell.ldr
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model
@@ -514,7 +514,7 @@
 
 
 0 FILE 41073 - Ship Sail.ldr
-0 Ship Sail
+0 A sail and rigging assembly using technic axles, gears, angle connectors, and towball pins to form the mast structure.
 0 Name: 41073 - Ship Sail.ldr
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model
@@ -569,7 +569,7 @@
 
 
 0 FILE 41073 - Ship Crank.ldr
-0 41073 - Ship Crank
+0 A mechanical crank mechanism with a gold-domed cylinder, round plate with bars, bevel gear, and technic axle.
 0 Name: 41073 - Ship Crank.ldr
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model
@@ -586,7 +586,7 @@
 
 
 0 FILE 41073 - Ship Second Floor.ldr
-0 Ship Second Floor
+0 An upper deck level with pearl gold railings, telescope, magenta and pink decorative plates, and lilac arches.
 0 Name: 41073 - Ship Second Floor.ldr
 0 Author: Merlijn Wissink [Legolijntje]
 0 !LDRAW_ORG Model
@@ -643,7 +643,7 @@
 
 
 0 FILE 15456.dat
-0 Plate  2 x  2 with Towball and Centre Hole
+0 A 2x2 plate with a towball and centre hole, modeled from spheres, cylinders, and cones.
 0 Name: 15456.dat
 0 Author: Owen Burgoyne [C3POwen]
 0 !LDRAW_ORG Unofficial_Part
@@ -702,7 +702,7 @@
 
 0 !LDCAD SNAP_GEN [gender=M] [bounding=sph 8] [match=size] [placement=free]
 0 FILE 14704.dat
-0 Plate  1 x  2 with Socket Joint-8 with Friction Centre
+0 A 1x2 plate with a friction ball socket joint, built from boxes, cylinders, and rectangular primitives.
 0 Name: 14704.dat
 0 Author: Tim Gould [timgould]
 0 !LDRAW_ORG Unofficial_Part
@@ -776,7 +776,7 @@
 
 0 !LDCAD SNAP_GEN [gender=F] [bounding=sph 8] [match=size] [placement=free]
 0 FILE 4-4cyl19sph40.dat
-0 Cylinder  0.76 LDU Truncated to Fit Sphere  1.6 LDU
+0 A truncated cylinder section fitted to a sphere, combining a sphere and cylinder primitive.
 0 Name: 4-4cyl19sph40.dat
 0 Author: Magnus Forsberg [MagFors]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -815,7 +815,7 @@
 2 24 -0.7022 -1.3504 0.2909 -0.6583 -1.3644 0.3565
 2 24 -0.76 -1.3795 0 -0.7022 -1.3504 0.2909
 0 FILE joint-8-socket-frica.dat
-0 Friction Socket Joint-8
+0 A friction ball socket joint-8 primitive composed of quarter sections, cylinders, chords, and cut-off spheres.
 0 Name: joint-8-socket-frica.dat
 0 Author: Tim Gould [timgould]
 0 !LDRAW_ORG Unofficial_Primitive
@@ -1407,7 +1407,7 @@
 5 24 -10 4 10 -10 -4 10 -9.817 4 9.68305 -10 4 15
 
 0 FILE 2-4edge.dat
-0 Circle 0.5
+0 A half-circle edge (circle 0.5) line primitive with no direct pieces.
 0 Name: 2-4edge.dat
 0 Author: James Jessiman
 0 !LDRAW_ORG Unofficial_Primitive
@@ -1428,7 +1428,7 @@
 2 24 -0.7071 0 0.7071 -0.9239 0 0.3827
 2 24 -0.9239 0 0.3827 -1 0 0
 0 FILE 19118.dat
-0 Friends Key Ornamented with Stud
+0 An ornamented Friends key element with a stud, built from cylinders, cones, and circular primitives.
 0 Name: 19118.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part

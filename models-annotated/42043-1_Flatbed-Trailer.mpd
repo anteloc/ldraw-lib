@@ -1,5 +1,5 @@
 0 FILE 42043 - Mercedes-Benz Arocs 3245 - Flatbed trailer.ldr
-0 Mercedes-Benz Arocs 3245 - Flatbed trailer
+0 Complete Mercedes-Benz Arocs 3245 flatbed trailer truck featuring a detailed engine, steering mechanism, multi-axle suspension, cab structure, fuel tank, exhaust, front bumper, and detachable flatbed trailer.
 0 Name: 42043 - Mercedes-Benz Arocs 3245 - Flatbed trailer.ldr
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Model
@@ -13,7 +13,7 @@
 
 
 0 FILE 42043 - engine.ldr
-0 engine
+0 Detailed inline Technic engine assembly with six cylinder heads, crankshaft, pistons, and connecting rods.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - engine.ldr
 0 !LDRAW_ORG Model
@@ -155,7 +155,7 @@
 
 
 0 FILE 42043 - sup1.ldr
-0 sup1
+0 Support subassembly built from bent liftarms, suspension arms, long beams, and angle connectors.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - sup1.ldr
 0 !LDRAW_ORG Model
@@ -216,7 +216,7 @@
 
 
 0 FILE 42043 - steergearing.ldr
-0 steergearing
+0 Steering gear linkage using bevel gears, cross blocks, axle joiners, and a towball for articulation.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - steergearing.ldr
 0 !LDRAW_ORG Model
@@ -270,7 +270,7 @@
 1 72 -40 70 -40 0 -1 0 0 0 1 -1 0 0 18654.dat
 
 0 FILE 42043 - frontaxle.ldr
-0 frontaxle
+0 Front axle module with suspension arms, towball joints, bent liftarms, and long pins for wheel mounting.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - frontaxle.ldr
 0 !LDRAW_ORG Model
@@ -414,7 +414,7 @@
 1 14 2 -120 140 0.977 -0.215 0 0.215 0.977 0 0 0 1 42043 - shock-06_5L-hard-1.ldr
 
 0 FILE 42043 - frontaxle2.ldr
-0 frontaxle2
+0 Secondary front axle assembly using cross blocks, bent liftarms, axle stops, and towball joints.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - frontaxle2.ldr
 0 !LDRAW_ORG Model
@@ -480,7 +480,7 @@
 
 
 0 FILE 42043 - shock-06_5L-hard-1.ldr
-0 shock-06_5L-hard-1
+0 Hard 6.5L shock absorber unit with cylinder, piston rod, and preloaded spring.
 0 !CATEGORY Technic
 0 Name: 42043 - shock-06_5L-hard-1.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -526,7 +526,7 @@
 1 494 0 56 0 1 0.000028 0 -0.000028 1 0 0 0 1 42043 - shock-06_5L-hard-1_springMesh.ldr
 
 0 FILE 42043 - shock-06_5L-hard-1_springMesh.ldr
-0 shock-06_5L-hard-1_springMesh
+0 Generated spring mesh defining the five-section coiled winding geometry for the 6.5L shock.
 0 !LDCAD GENERATED [generator=LDCad 1.5 Beta 1b] [master=42043 - shock-06_5L-hard-1.ldr]
 0 Name: 42043 - shock-06_5L-hard-1_springMesh.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -2377,7 +2377,7 @@
 5 24 -7.75 34.858868 0.187408 -7.75 34.103367 0.023476 -8.5 34.853001 0 -7 34.853001 0
 
 0 FILE 42043 - rearaxle.ldr
-0 rearaxle
+0 Rear axle assembly featuring a differential, constant velocity joint, bevel gears, and an open-center liftarm frame.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - rearaxle.ldr
 0 !LDRAW_ORG Model
@@ -2534,7 +2534,7 @@
 
 
 0 FILE 42043 - shock-06_5L-hard-2.ldr
-0 shock-06_5L-hard-2
+0 Second hard 6.5L shock absorber unit with cylinder, piston rod, and preloaded spring.
 0 !CATEGORY Technic
 0 Name: 42043 - shock-06_5L-hard-2.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -2580,7 +2580,7 @@
 1 494 0 56 0 1 0 0 0 1 0 0 0 1 42043 - shock-06_5L-hard-2_springMesh.ldr
 
 0 FILE 42043 - shock-06_5L-hard-2_springMesh.ldr
-0 shock-06_5L-hard-2_springMesh
+0 Generated spring mesh defining the five-section coiled winding geometry for the second 6.5L shock.
 0 !LDCAD GENERATED [generator=LDCad 1.5 Beta 1b] [master=42043 - shock-06_5L-hard-2.ldr]
 0 Name: 42043 - shock-06_5L-hard-2_springMesh.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -4431,7 +4431,7 @@
 5 24 -7.75 33.255871 0.187408 -7.75 32.500366 0.023476 -8.5 33.25 0 -7 33.25 0
 
 0 FILE 42043 - mg1.ldr
-0 mg1
+0 Small mounting bracket subassembly of a bent liftarm and short beams joined by long pins.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - mg1.ldr
 0 !LDRAW_ORG Model
@@ -4458,7 +4458,7 @@
 
 
 0 FILE 42043 - mg2.ldr
-0 mg2
+0 Reinforced mounting bracket built from multiple bent liftarms, short beams, and pins.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - mg2.ldr
 0 !LDRAW_ORG Model
@@ -4501,7 +4501,7 @@
 
 
 0 FILE 42043 - sparewheel.ldr
-0 sparewheel
+0 Spare wheel carrier with a clamshell bucket bracket, axle supports, and cross blocks.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - sparewheel.ldr
 0 !LDRAW_ORG Model
@@ -4571,7 +4571,7 @@
 
 
 0 FILE 42043 - mg3.ldr
-0 mg3
+0 Small mounting bracket subassembly of a bent liftarm and short beams joined by long pins.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - mg3.ldr
 0 !LDRAW_ORG Model
@@ -4598,7 +4598,7 @@
 
 
 0 FILE 42043 - mg4.ldr
-0 mg4
+0 Reinforced mounting bracket built from multiple bent liftarms, short beams, and pins.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - mg4.ldr
 0 !LDRAW_ORG Model
@@ -4641,7 +4641,7 @@
 
 
 0 FILE 42043 - tank.ldr
-0 tank
+0 Fuel tank module constructed from large smooth panels and long beams mounted on connectors.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - tank.ldr
 0 !LDRAW_ORG Model
@@ -4699,7 +4699,7 @@
 
 
 0 FILE 42043 - trailer.ldr
-0 trailer
+0 Large flatbed trailer frame assembled from long beams, cross blocks, towball joints, and numerous pins.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - trailer.ldr
 0 !LDRAW_ORG Model
@@ -5320,7 +5320,7 @@
 1 4 30.073 -100 -278.064 0.997 0 0 0 1 0 0 0 0.997 42043 - bucket.ldr
 
 0 FILE 42043 - traileraxle.ldr
-0 traileraxle
+0 Trailer axle unit with long liftarms, towball joints, a steering link, and cross blocks for wheel attachment.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - traileraxle.ldr
 0 !LDRAW_ORG Model
@@ -5386,7 +5386,7 @@
 
 
 0 FILE 42043 - cabinback.ldr
-0 cabinback
+0 Rear cabin wall structure built from liftarms, gears, toggle joints, and cross blocks.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - cabinback.ldr
 0 !LDRAW_ORG Model
@@ -5503,7 +5503,7 @@
 
 
 0 FILE 42043 - cabinback2.ldr
-0 cabinback2
+0 Secondary rear cabin support of a long beam, bent connector, and cross block with pins.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - cabinback2.ldr
 0 !LDRAW_ORG Model
@@ -5543,7 +5543,7 @@
 
 
 0 FILE 42043 - cabinback3.ldr
-0 cabinback3
+0 Tertiary rear cabin support of a long beam, bent connector, and cross block with pins.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - cabinback3.ldr
 0 !LDRAW_ORG Model
@@ -5583,7 +5583,7 @@
 
 
 0 FILE 42043 - exhaust.ldr
-0 exhaust
+0 Exhaust system made of round bricks, angle connectors, and joined axles forming a vertical stack.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - exhaust.ldr
 0 !LDRAW_ORG Model
@@ -5626,7 +5626,7 @@
 
 
 0 FILE 42043 - frontbumper.ldr
-0 frontbumper
+0 Front bumper assembly featuring panels, curved quarter-circle liftarms, long beams, and multiple pins.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - frontbumper.ldr
 0 !LDRAW_ORG Model
@@ -5864,7 +5864,7 @@
 1 0 0 -120 0 0 0 -1 0 1 0 1 0 0 41239.dat
 
 0 FILE 42043 - frontbump2.ldr
-0 frontbump2
+0 Front bumper accessory subassembly with a long liftarm, bent beams, plates, and round tiles.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - frontbump2.ldr
 0 !LDRAW_ORG Model
@@ -5952,7 +5952,7 @@
 
 
 0 FILE 42043 - grid1.ldr
-0 grid1
+0 Small structural grid subassembly built from beams, split cross blocks, and grooved tiles.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - grid1.ldr
 0 !LDRAW_ORG Model
@@ -5992,7 +5992,7 @@
 
 
 0 FILE 42043 - grid2.ldr
-0 grid2
+0 Mirror variant of the grid subassembly using beams, split cross blocks, and grooved tiles.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - grid2.ldr
 0 !LDRAW_ORG Model
@@ -6032,7 +6032,7 @@
 
 
 0 FILE 42043 - cabin.ldr
-0 cabin
+0 Large structural cabin frame constructed from numerous beams, liftarms, pins, and cross blocks.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - cabin.ldr
 0 !LDRAW_ORG Model
@@ -6917,7 +6917,7 @@
 0 STEP
 
 0 FILE 42043 - dashboard.ldr
-0 dashboard
+0 Dashboard subassembly built from bent liftarms, cross blocks, and axles forming an angled mounting structure.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - dashboard.ldr
 0 !LDRAW_ORG Model
@@ -6986,7 +6986,7 @@
 
 
 0 FILE 42043 - cabinbottombeam.ldr
-0 cabinbottombeam
+0 Reinforcing beam structure for the cabin floor using long beams, bent liftarms, and cross blocks.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - cabinbottombeam.ldr
 0 !LDRAW_ORG Model
@@ -7053,7 +7053,7 @@
 
 
 0 FILE 42043 - seat.ldr
-0 seat
+0 Operator seat built from blue and light bluish grey beams and bent liftarms pinned together.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - seat.ldr
 0 !LDRAW_ORG Model
@@ -7109,7 +7109,7 @@
 1 1 40 60 -60 0 1 0 -0.935 0 -0.355 -0.355 0 0.935 32348.dat
 
 0 FILE 42043 - cabinfront.ldr
-0 cabinfront
+0 Front cabin fascia featuring white panels and fairings mounted on a beam and connector frame.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - cabinfront.ldr
 0 !LDRAW_ORG Model
@@ -7178,7 +7178,7 @@
 
 
 0 FILE 42043 - cabinroof.ldr
-0 cabinroof
+0 Cabin roof assembly using white panels, fairings, beams, and angle connectors.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - cabinroof.ldr
 0 !LDRAW_ORG Model
@@ -7235,7 +7235,7 @@
 
 
 0 FILE 42043 - tractor.ldr
-0 tractor
+0 Tractor drive unit with gears, bent beams, axles, and joiners forming a geared structural chassis.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - tractor.ldr
 0 !LICENSE Redistributable under CCAL version 2.0 : see CAreadme.txt
@@ -7802,7 +7802,7 @@
 1 15 20 -20 398 1 0 0 0 0 1 0 -1 0 2431.dat
 
 0 FILE 42043 - outriggers.ldr
-0 outriggers
+0 Stabilizer outrigger mechanism using gear racks, gears, bent liftarms, and beams for extension.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - outriggers.ldr
 0 !LDRAW_ORG Model
@@ -7957,7 +7957,7 @@
 1 4 -100 -80 -10 0 0 -1 0.961 0.276 0 0.276 -0.961 0 18946.dat
 
 0 FILE 42043 - outrigger2.ldr
-0 outrigger2
+0 Companion outrigger subassembly with gear racks, gears, and beams for a stabilizer leg.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - outrigger2.ldr
 0 !LDRAW_ORG Model
@@ -8016,7 +8016,7 @@
 1 0 -20 -59.341 145.09 0 -1 0 -0.254 0 0.967 -0.967 0 -0.254 32523.dat
 
 0 FILE 42043 - standgearbox.ldr
-0 standgearbox
+0 Gearbox housing for the support stand built from beams, multiple gears, axles, and joiners.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - standgearbox.ldr
 0 !LDRAW_ORG Model
@@ -8201,7 +8201,7 @@
 1 71 -60 -80 -70 -1 0 0 0 1 0 0 0 -1 42043 - linactu.ldr
 
 0 FILE 42043 - gearshift.ldr
-0 gearshift
+0 Gearshift mechanism using clutch gears, driving rings, and gears along axles for gear selection.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - gearshift.ldr
 0 !LDRAW_ORG Model
@@ -8306,7 +8306,7 @@
 1 72 100 0 -160 0 -1 0 1 0 0 0 0 1 42003.dat
 
 0 FILE 42043 - standgearbox2.ldr
-0 standgearbox2
+0 Secondary support gearbox with an 8-tooth gear, clutch gear, and beams for power routing.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - standgearbox2.ldr
 0 !LDRAW_ORG Model
@@ -8399,7 +8399,7 @@
 1 71 0 -80 -40 0 -1 0 -1 0 0 0 0 -1 94925.dat
 
 0 FILE 42043 - linactu.ldr
-0 linactu
+0 Linear actuator assembly with a 20-tooth gear and cross blocks for linear drive output.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - linactu.ldr
 0 !LDRAW_ORG Model
@@ -8424,7 +8424,7 @@
 
 
 0 FILE 42043 - standgearboxbeam.ldr
-0 standgearboxbeam
+0 Supporting beam frame for the gearbox using long beams, cross blocks, and a perpendicular connector.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - standgearboxbeam.ldr
 0 !LDRAW_ORG Model
@@ -8462,7 +8462,7 @@
 
 
 0 FILE 42043 - shiftlever1.ldr
-0 shiftlever1
+0 Shift lever assembly using long beams, a changeover catch, and cross blocks for gear engagement.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - shiftlever1.ldr
 0 !LDRAW_ORG Model
@@ -8514,7 +8514,7 @@
 1 0 0 -40 0 1 0 0 0 1 0 0 0 1 41239.dat
 
 0 FILE 42043 - shiftlever2.ldr
-0 shiftlever2
+0 Mirror shift lever assembly with long beams, a changeover catch, and cross blocks.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - shiftlever2.ldr
 0 !LDRAW_ORG Model
@@ -8567,7 +8567,7 @@
 0 STEP
 
 0 FILE 42043 - tmg1.ldr
-0 tmg1
+0 Compact beam framework using beams and cross blocks with a notched axle for linkage mounting.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - tmg1.ldr
 0 !LDRAW_ORG Model
@@ -8616,7 +8616,7 @@
 
 
 0 FILE 42043 - tmg2.ldr
-0 tmg2
+0 Mirror compact beam framework using beams and cross blocks with a notched axle linkage.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - tmg2.ldr
 0 !LDRAW_ORG Model
@@ -8665,7 +8665,7 @@
 
 
 0 FILE 42043 - motorassy.ldr
-0 motorassy
+0 Motor assembly with angle connectors, bent liftarms, beams, and axles forming a powered drive unit.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - motorassy.ldr
 0 !LDRAW_ORG Model
@@ -8833,7 +8833,7 @@
 
 
 0 FILE 42043 - motorassy2.ldr
-0 motorassy2
+0 Secondary motor mount using beams, cross blocks, an angle connector, and axles.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - motorassy2.ldr
 0 !LDRAW_ORG Model
@@ -8874,7 +8874,7 @@
 
 
 0 FILE 42043 - pneumaticHose-1.ldr
-0 pneumaticHose-1
+0 Flexible pneumatic hose routed through multiple cylindrical segments forming a long curved line.
 0 !CATEGORY technic
 0 Name: 42043 - pneumaticHose-1.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -12678,7 +12678,7 @@
 5 24 -98.321976 416 60.351509 -96.371956 416 60.412254 -98.333366 416.999908 60.357101 -98.231537 408.062164 60.307121
 
 0 FILE 42043 - floor.ldr
-0 floor
+0 Flatbed floor made of multiple panels and long beams pinned together as a deck surface.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - floor.ldr
 0 !LDRAW_ORG Model
@@ -12792,7 +12792,7 @@
 
 
 0 FILE 42043 - floorraised.ldr
-0 floorraised
+0 Raised floor section using panels and beams forming an elevated deck platform.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - floorraised.ldr
 0 !LDRAW_ORG Model
@@ -12852,7 +12852,7 @@
 
 
 0 FILE 42043 - armbase.ldr
-0 armbase
+0 Structural base assembly of red Technic beams, pins, and cross blocks forming the mounting foundation for the crane arm.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - armbase.ldr
 0 !LDRAW_ORG Model
@@ -13229,7 +13229,7 @@
 1 72 40 16 112 1 0 0 0 -0.8 0.6 0 -0.6 -0.8 47223-v2-p1.dat
 
 0 FILE 42043 - powerFuncMotorL-1.ldr
-0 powerFuncMotorL-1
+0 Power Functions assembly containing a large motor and connector with a routed wiring path.
 0 !CATEGORY electric
 0 Name: 42043 - powerFuncMotorL-1.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -13272,7 +13272,7 @@
 1 0 0 0 0 1 0 0 0 1 0 0 0 1 42043 - powerFuncMotorL-1_subPart1.ldr
 
 0 FILE 42043 - powerFuncMotorL-1_subPart1.ldr
-0 powerFuncMotorL-1_subPart1
+0 Sub-part containing the flex routing path segments for the motor wiring harness.
 0 !LDCAD GENERATED [generator=LDCad 1.5 Beta 1b] [master=42043 - powerFuncMotorL-1.ldr]
 0 Name: 42043 - powerFuncMotorL-1_subPart1.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -14070,7 +14070,7 @@
 1 16 -259.00728 40.000397 540.37598 -0.999813 0.01936 -0.00001 -0.00001 -0.001055 -0.999999 -0.01936 -0.999812 0.001055 u9190.dat
 
 0 FILE 42043 - arm.ldr
-0 arm
+0 Red and bent Technic liftarm beam assembly forming the primary crane arm structure with pneumatic T-pieces.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - arm.ldr
 0 !LDRAW_ORG Model
@@ -14138,7 +14138,7 @@
 
 
 0 FILE 42043 - pneumaticHose-2.ldr
-0 pneumaticHose-2
+0 Long pneumatic hose routing approximately 64.7mm between pneumatic system connection points.
 0 !CATEGORY technic
 0 Name: 42043 - pneumaticHose-2.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -14341,7 +14341,7 @@
 1 16 0 0 194.132289 1 0 0 0 0 1 0 -4 0 166.dat
 
 0 FILE 42043 - pneumaticHose-3.ldr
-0 pneumaticHose-3
+0 Short pneumatic hose routing approximately 10mm between nearby pneumatic connection points.
 0 !CATEGORY technic
 0 Name: 42043 - pneumaticHose-3.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -14399,7 +14399,7 @@
 1 16 40.032506 12.064767 -9.013963 0.323956 -0.065959 0.945928 -0.943417 -0.321972 0.321692 0.070836 -3.986475 -0.041633 166.dat
 
 0 FILE 42043 - pneumaticHose-4.ldr
-0 pneumaticHose-4
+0 Short pneumatic hose routing approximately 6.3mm between adjacent pneumatic connection points.
 0 !CATEGORY technic
 0 Name: 42043 - pneumaticHose-4.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -14457,7 +14457,7 @@
 1 16 5.277078 11.632043 -1.120489 0.138666 -3.898638 -0.174876 -0.511637 -0.886014 0.829963 -0.847803 -0.102033 -0.529314 166.dat
 
 0 FILE 42043 - pneumaticHose-5.ldr
-0 pneumaticHose-5
+0 Medium pneumatic hose routing approximately 33mm between pneumatic system connection points.
 0 !CATEGORY technic
 0 Name: 42043 - pneumaticHose-5.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -14588,7 +14588,7 @@
 1 16 18.417928 52.791356 -17.272682 -0.999787 -0.054106 0.015587 0.0155 0.02598 0.999859 -0.013626 3.99955 -0.006284 166.dat
 
 0 FILE 42043 - pneumaticHose-6.ldr
-0 pneumaticHose-6
+0 Medium pneumatic hose routing approximately 21.7mm between pneumatic system connection points.
 0 !CATEGORY technic
 0 Name: 42043 - pneumaticHose-6.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -14717,7 +14717,7 @@
 1 16 -18.320034 52.926334 -77.438865 -0.65498 -0.244339 0.753173 0.754937 -0.384237 0.648724 0.032722 3.973998 0.109032 166.dat
 
 0 FILE 42043 - armpiston1.ldr
-0 armpiston1
+0 Pneumatic cylinder actuator assembly with bent liftarm mounts for driving arm movement.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - armpiston1.ldr
 0 !LDRAW_ORG Model
@@ -14749,7 +14749,7 @@
 
 
 0 FILE 42043 - pneumaticHose-9.ldr
-0 pneumaticHose-9
+0 Long pneumatic hose routing approximately 204.7mm between distant pneumatic system connection points.
 0 !CATEGORY technic
 0 Name: 42043 - pneumaticHose-9.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -15160,7 +15160,7 @@
 1 16 142.615902 -274.757779 30.843665 -0.722341 -0.063548 0.691244 -0.690296 -0.162133 -0.722327 0.039526 -3.996023 0.018391 166.dat
 
 0 FILE 42043 - pneumaticHose-10.ldr
-0 pneumaticHose-10
+0 Long pneumatic hose routing approximately 143.6mm between pneumatic system connection points.
 0 !CATEGORY technic
 0 Name: 42043 - pneumaticHose-10.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -15503,7 +15503,7 @@
 1 16 129.493571 -109.161342 30.778364 -0.243418 -0.63779 0.954885 -0.963046 -0.236179 -0.257021 0.098853 -3.935669 -0.137534 166.dat
 
 0 FILE 42043 - pneumaticHose-11.ldr
-0 pneumaticHose-11
+0 Medium pneumatic hose routing approximately 40.3mm between pneumatic system connection points.
 0 !CATEGORY technic
 0 Name: 42043 - pneumaticHose-11.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -15686,7 +15686,7 @@
 1 16 -18.382037 -31.209305 -57.409676 -0.999805 -0.051563 0.014993 0.014907 0.02693 0.999866 -0.01299 3.999577 -0.006539 166.dat
 
 0 FILE 42043 - pneumaticHose-12.ldr
-0 pneumaticHose-12
+0 Short pneumatic hose routing approximately 26.8mm between pneumatic system connection points.
 0 !CATEGORY technic
 0 Name: 42043 - pneumaticHose-12.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -15798,7 +15798,7 @@
 1 16 18.437093 -31.203059 -37.205167 0.999496 -0.127016 -0.000334 -0.000252 0.010271 -0.999997 0.031755 3.99797 0.002558 166.dat
 
 0 FILE 42043 - pneumaticHose-13.ldr
-0 pneumaticHose-13
+0 Long pneumatic hose routing approximately 170.2mm between pneumatic system connection points.
 0 !CATEGORY technic
 0 Name: 42043 - pneumaticHose-13.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -16146,7 +16146,7 @@
 1 16 26.135943 164.619345 165.999454 -0.285136 -3.830381 0.040562 -0.019436 -0.146032 -0.999119 0.958257 -1.14282 -0.00817 166.dat
 
 0 FILE 42043 - pneumaticHose-14.ldr
-0 pneumaticHose-14
+0 Long pneumatic hose routing approximately 139mm between pneumatic system connection points.
 0 !CATEGORY technic
 0 Name: 42043 - pneumaticHose-14.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -16437,7 +16437,7 @@
 1 16 31.837762 111.73402 148.41035 0.004516 -3.943821 -0.16727 0.700236 -0.465285 0.704457 -0.713972 -0.481366 0.689779 166.dat
 
 0 FILE 42043 - pneumaticHose-15.ldr
-0 pneumaticHose-15
+0 Long pneumatic hose routing approximately 184.1mm between pneumatic system connection points.
 0 !CATEGORY technic
 0 Name: 42043 - pneumaticHose-15.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -16810,7 +16810,7 @@
 1 16 40.456449 -80.143104 225.568058 -0.189099 3.926855 0.021474 0.495539 0.306152 0.865199 0.847741 0.697028 -0.500946 166.dat
 
 0 FILE 42043 - pneumaticHose-16.ldr
-0 pneumaticHose-16
+0 Long pneumatic hose routing approximately 173.3mm between pneumatic system connection points.
 0 !CATEGORY technic
 0 Name: 42043 - pneumaticHose-16.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -17290,7 +17290,7 @@
 1 16 42.884583 -86.897103 208.088274 -0.161651 3.896612 -0.156585 -0.028767 0.616454 0.987496 0.986238 0.657284 0.003275 166.dat
 
 0 FILE 42043 - pneumaticHose-17.ldr
-0 pneumaticHose-17
+0 Long pneumatic hose routing approximately 184.7mm between pneumatic system connection points.
 0 !CATEGORY technic
 0 Name: 42043 - pneumaticHose-17.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -17665,7 +17665,7 @@
 1 16 -48.048142 -97.360061 225.261585 0.267664 -3.687971 -0.278797 -0.291304 0.79516 -0.935422 0.918118 1.325454 -0.21525 166.dat
 
 0 FILE 42043 - pneumaticHose-18.ldr
-0 pneumaticHose-18
+0 Long pneumatic hose routing approximately 168.2mm between pneumatic system connection points.
 0 !CATEGORY technic
 0 Name: 42043 - pneumaticHose-18.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -18091,7 +18091,7 @@
 1 16 -45.719632 -64.155537 207.932003 0.166146 -3.873947 0.184513 0.985895 0.656479 -0.026288 -0.004781 0.745259 0.982474 166.dat
 
 0 FILE 42043 - arm2ndsection.ldr
-0 arm2ndsection
+0 Extended red liftarm beam section of the crane arm with long beams, cross blocks, and pneumatic hose connectors.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - arm2ndsection.ldr
 0 !LDRAW_ORG Model
@@ -18192,7 +18192,7 @@
 1 0 85 0 0 1 0 0 0 -1 0 0 0 -1 32291.dat
 
 0 FILE 42043 - pneumaticHose-19.ldr
-0 pneumaticHose-19
+0 Long pneumatic hose routing approximately 197mm between pneumatic system connection points.
 0 !CATEGORY technic
 0 Name: 42043 - pneumaticHose-19.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -18586,7 +18586,7 @@
 1 16 20.001276 193.83842 -189.717178 0.999975 -0.02839 -0.000067 -0.001717 -0.930934 -0.972539 0.006887 3.890058 -0.23274 166.dat
 
 0 FILE 42043 - pneumaticHose-20.ldr
-0 pneumaticHose-20
+0 Long pneumatic hose routing approximately 217.5mm between distant pneumatic system connection points.
 0 !CATEGORY technic
 0 Name: 42043 - pneumaticHose-20.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -19015,7 +19015,7 @@
 1 16 -20.001009 341.827527 -189.671547 0.999974 0.028852 0.000068 0.001743 -0.929968 -0.972597 -0.006999 3.890286 -0.232498 166.dat
 
 0 FILE 42043 - pneumaticHose-21.ldr
-0 pneumaticHose-21
+0 Long pneumatic hose routing approximately 179.8mm between pneumatic system connection points.
 0 !CATEGORY technic
 0 Name: 42043 - pneumaticHose-21.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -19374,7 +19374,7 @@
 1 16 0 193.148987 346.534389 1 0 0 0 -3.938001 0.175384 0 -0.701535 -0.9845 166.dat
 
 0 FILE 42043 - arm3rdsection.ldr
-0 arm3rdsection
+0 Third crane arm section featuring gear racks, bent liftarms, and cross blocks forming an extendable boom segment.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - arm3rdsection.ldr
 0 !LDRAW_ORG Model
@@ -19468,7 +19468,7 @@
 1 496 -60 -40 176 -1 0 0 0 1 0 0 0 -1 42043 - pneumaticHose-25.ldr
 
 0 FILE 42043 - pneumaticHose-22.ldr
-0 pneumaticHose-22
+0 A 122 mm pneumatic hose assembly with bulged tube ends.
 0 !CATEGORY technic
 0 Name: 42043 - pneumaticHose-22.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -19814,7 +19814,7 @@
 1 16 -228.305878 -40.001752 -130.281289 -0.907178 1.682979 -0.001475 -0.000018 0.013865 0.999994 0.420747 3.62869 -0.003137 166.dat
 
 0 FILE 42043 - pneumaticHose-23.ldr
-0 pneumaticHose-23
+0 A 188 mm pneumatic hose assembly with bulged tube ends.
 0 !CATEGORY technic
 0 Name: 42043 - pneumaticHose-23.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -20191,7 +20191,7 @@
 1 16 -388.159335 -60.002547 -129.963467 -0.906845 1.685834 -0.002084 -0.000039 0.019447 0.999988 0.421464 3.627339 -0.004393 166.dat
 
 0 FILE 42043 - pneumaticHose-25.ldr
-0 pneumaticHose-25
+0 A long 290 mm pneumatic hose assembly with bulged tube ends.
 0 !CATEGORY technic
 0 Name: 42043 - pneumaticHose-25.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -20840,7 +20840,7 @@
 1 16 0 80.10824 454.231544 1 0 0 0 -3.622589 0.424032 0 -1.696126 -0.905647 166.dat
 
 0 FILE 42043 - loadturn.ldr
-0 loadturn
+0 A turntable-based rotational mount built from liftarms, cross blocks, and pins.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - loadturn.ldr
 0 !LDRAW_ORG Model
@@ -20932,7 +20932,7 @@
 
 
 0 FILE 42043 - pneumaticHose-7.ldr
-0 pneumaticHose-7
+0 A short 41 mm pneumatic hose with tube ends and metadata.
 0 !CATEGORY technic
 0 Name: 42043 - pneumaticHose-7.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -22101,7 +22101,7 @@
 5 24 -13.366036 -31.9135 98.630203 -13.091898 -30 98.894073 -14.004881 -31.971468 99.397354 -10.372066 -31.65979 95.034592
 
 0 FILE 42043 - pneumaticHose-8.ldr
-0 pneumaticHose-8
+0 A short 39 mm pneumatic hose with tube ends and metadata.
 0 !CATEGORY technic
 0 Name: 42043 - pneumaticHose-8.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -23020,7 +23020,7 @@
 5 24 -13.366036 -1.9135 98.630203 -13.091898 0 98.894073 -14.00696 -1.9135 99.397812 -10.562099 -1.9135 95.277748
 
 0 FILE 42043 - bucket.ldr
-0 bucket
+0 A large excavator bucket built from long liftarms, panels, bevel gears, and pins.
 0 Author: Philippe Hurbain [Philo]
 0 Name: 42043 - bucket.ldr
 0 !LDRAW_ORG Model
@@ -23149,7 +23149,7 @@
 
 
 0 FILE 42043 - shock-06_5L-soft-1.ldr
-0 shock-06_5L-soft-1
+0 A 6.5L soft shock absorber with cylinder, piston rod, and coiled spring.
 0 !CATEGORY Technic
 0 Name: 42043 - shock-06_5L-soft-1.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -23193,7 +23193,7 @@
 1 494 -0.02 64.432 0 1 0.000562 0 -0.000562 1 0 0 0 1 42043 - shock-06_5L-soft-1_springMesh.ldr
 
 0 FILE 42043 - shock-06_5L-soft-1_springMesh.ldr
-0 shock-06_5L-soft-1_springMesh
+0 The coiled spring mesh for the 6.5L shock absorber with defined wire and coil geometry.
 0 !LDCAD GENERATED [generator=LDCad 1.5 Beta 1b] [master=42043 - shock-06_5L-soft-1.ldr]
 0 Name: 42043 - shock-06_5L-soft-1_springMesh.ldr
 0 Author: Philippe Hurbain [Philo]
@@ -24560,7 +24560,7 @@
 5 24 -7.625 34.947147 0.156195 -7.625 34.318226 0.016572 -8.25 34.943005 0 -7 34.943005 0
 
 0 FILE 42043 - 2850b.dat
-0 Technic Engine Cylinder Head with Bottom Slots
+0 A Technic engine cylinder head built from cylinders, rectangles, and disc primitives.
 0 Name: 42043 - 2850b.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -24731,7 +24731,7 @@
 
 
 0 FILE 42043 - 33299b.dat
-0 Technic Beam  3 x  0.5 Liftarm with Boss and Pin Semi-Reduced
+0 A 3x0.5 liftarm with boss and semi-reduced pin hole formed from axle and peg hole primitives.
 0 Name: 42043 - 33299b.dat
 0 Author: Santeri Piippo [arezey]
 0 !LDRAW_ORG Unofficial_Part
@@ -24770,7 +24770,7 @@
 
 
 0 FILE 42043 - 18943.dat
-0 Technic Excavator Bucket  7 x  5 x  4.5 Clamshell
+0 A Technic clamshell excavator bucket with connector holes and box geometry.
 0 Name: 42043 - 18943.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -24841,7 +24841,7 @@
 4 16 -66 76.8045 -57.1701 66 76.8045 -57.1701 70 78 -57.352 -70 78 -57.352
 
 0 FILE 42043 - 18938.dat
-0 Technic Turntable 60 Tooth Top
+0 A Technic 60-tooth turntable top represented by connector hole primitives.
 0 Name: 42043 - 18938.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -24902,7 +24902,7 @@
 
 
 0 FILE 42043 - 19466c01.dat
-0 Technic Pneumatic Cylinder  2 x 11 with  2 Ports Body and Cap
+0 A 2x11 pneumatic cylinder body and cap with two ports.
 0 Name: 42043 - 19466c01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -24917,7 +24917,7 @@
 
 
 0 FILE 42043 - 19467c01.dat
-0 Technic Pneumatic Cylinder  2 x 11 Piston Head and Rod
+0 A 2x11 pneumatic cylinder piston head and rod assembly.
 0 Name: 42043 - 19467c01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -24932,7 +24932,7 @@
 
 
 0 FILE 42043 - u9145c01.dat
-0 Technic Pneumatic Cylinder  1 x 11 with  2 Ports Body and Cap
+0 A 1x11 pneumatic cylinder body and cap with two ports.
 0 Name: 42043 - u9145c01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -24947,7 +24947,7 @@
 
 
 0 FILE 42043 - u9111c01.dat
-0 Technic Pneumatic Cylinder  1 x 11 Piston Head and Rod
+0 A 1x11 pneumatic cylinder piston head and rod assembly.
 0 Name: 42043 - u9111c01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Shortcut
@@ -24960,7 +24960,7 @@
 
 
 0 FILE s\42043 - 2850s01.dat
-0 ~Technic Engine Cylinder Head Common Geometry Half
+0 Common half geometry of a Technic engine cylinder head with cooling ribs and studs.
 0 Name: s\42043 - 2850s01.dat
 0 Author: Jeff Boen
 0 !LDRAW_ORG Unofficial_Subpart
@@ -25396,7 +25396,7 @@
 3 16 13.8585 36 5.7405 10.6065 36 10.6065 16 36 16
 
 0 FILE s\42043 - 33299s01.dat
-0 ~Technic Beam  3 x  0.5 Liftarm with Boss and Pin Common
+0 Common geometry for a 3x0.5 liftarm with boss, consisting of cylinders, rings, and pin holes.
 0 Name: s\42043 - 33299s01.dat
 0 Author: Orion Pobursky [OrionP]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -25652,7 +25652,7 @@
 
 
 0 FILE s\42043 - 18943s01.dat
-0 ~Technic Excavator Bucket  7 x  5 x  4.5 Clamshell Half
+0 Half of a Technic clamshell excavator bucket built from discs, cylinders, and rectangles.
 0 Name: s\42043 - 18943s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -25846,7 +25846,7 @@
 4 16 63 73.9864 -54.7987 63 74 -57.352 63 12 -49.352 63 14.893 -28.9999
 
 0 FILE s\42043 - 18938s01.dat
-0 ~Technic Turntable 60 Tooth Top Quarter
+0 Quarter section of a Technic 60-tooth turntable top with rings and cylinders.
 0 Name: s\42043 - 18938s01.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -26228,7 +26228,7 @@
 4 16 30 10 12.124 31.271 10 8.3787 32.0966 10 4.2249 32.375 10 0
 
 0 FILE s\42043 - 18938s02.dat
-0 ~Technic Turntable 60 Tooth Top -  5 Teeth
+0 A set of five teeth for the Technic 60-tooth turntable top formed from rectangles.
 0 Name: s\42043 - 18938s02.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Subpart
@@ -26576,7 +26576,7 @@
 
 
 0 FILE 42043 - 47222-v2.dat
-0 ~Technic Pneumatic Valve with Pegholes and Stepped Outlets Casing
+0 The casing of a pneumatic valve with stepped outlets made from cylinders, cones, and rings.
 0 Name: 42043 - 47222-v2.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
@@ -26634,7 +26634,7 @@
 
 
 0 FILE 42043 - 19466.dat
-0 ~Technic Pneumatic Cylinder  2 x 11 with  2 Ports Body
+0 The body of a 2x11 pneumatic cylinder with two ports, constructed from cylinders, circles, and rings.
 0 Name: 42043 - 19466.dat
 0 Author: Philippe Hurbain [Philo]
 0 !LDRAW_ORG Unofficial_Part
