@@ -26,7 +26,39 @@ function load_part_descriptions() {
 
     DELETE FROM PARTS_DESCRIPTIONS;
 
-    WITH RECURSIVE resolved(origin_alias, alias, description, path) AS (
+    WITH RECURSIVE
+    -- Normalize the '~Moved to <target>' text into something that can be matched
+    -- against PART_INFOS.alias: char(92) is the backslash separator used by some
+    -- targets, and the '.dat' extension is usually omitted.
+    moved(alias, dir, target) AS (
+        SELECT
+            alias,
+            CASE WHEN instr(alias, '/') > 0
+                 THEN substr(alias, 1, instr(alias, '/'))
+                 ELSE '' END,
+            lower(
+                CASE WHEN replace(trim(substr(description, length('~Moved to') + 1)), char(92), '/') LIKE '%.%'
+                     THEN replace(trim(substr(description, length('~Moved to') + 1)), char(92), '/')
+                     ELSE replace(trim(substr(description, length('~Moved to') + 1)), char(92), '/') || '.dat'
+                END
+            )
+        FROM PART_INFOS
+        WHERE description LIKE '~Moved to%'
+    ),
+
+    -- Exactly one target alias per moved alias: the literal target first, then the
+    -- form relative to the source's own directory. NULL when neither exists.
+    link(alias, target_alias) AS (
+        SELECT
+            m.alias,
+            COALESCE(
+                (SELECT p.alias FROM PART_INFOS AS p WHERE lower(p.alias) = m.target),
+                (SELECT p.alias FROM PART_INFOS AS p WHERE lower(p.alias) = m.dir || m.target)
+            )
+        FROM moved AS m
+    ),
+
+    resolved(origin_alias, alias, description, path) AS (
         SELECT
             alias,
             alias,
@@ -42,20 +74,30 @@ function load_part_descriptions() {
             p.description,
             r.path || p.alias || '|'
         FROM resolved AS r
+        JOIN link AS l
+          ON l.alias = r.alias
         JOIN PART_INFOS AS p
-          ON p.alias = trim(
-              substr(r.description, length('~Moved to') + 1)
-          )
+          ON p.alias = l.target_alias
         WHERE r.description LIKE '~Moved to%'
           AND instr(r.path, '|' || p.alias || '|') = 0
     )
 
+    -- Keep every alias. Prefer a real description over a '~Moved to' placeholder,
+    -- and among real ones the deepest hop of the chain. Aliases whose chain never
+    -- reaches a real description keep their raw placeholder text.
     INSERT INTO PARTS_DESCRIPTIONS(part, description)
-    SELECT
-        origin_alias AS part,
-        description
-    FROM resolved
-    WHERE description NOT LIKE '~Moved to%';
+    SELECT part, description
+    FROM (
+        SELECT
+            lower(origin_alias) AS part,
+            description,
+            row_number() OVER (
+                PARTITION BY lower(origin_alias)
+                ORDER BY (description LIKE '~Moved to%') ASC, length(path) DESC
+            ) AS rn
+        FROM resolved
+    )
+    WHERE rn = 1;
 
     COMMIT;
 EOF

@@ -1,26 +1,27 @@
 #!/usr/bin/env python3
 """
-This script adds parts descriptions as comments to an LDraw file based on a provided TSV file containing part names and their corresponding descriptions.
+This script adds parts descriptions as comments to an LDraw file based on part names and their corresponding descriptions stored in a sqlite3 database.
 Usage:
-    python add_parts_descriptions.py <parts_descriptions_tsv_file> <ldraw_file | ldraw_models_dir> <ldraw_file_with_descriptions | ldraw_files_with_descriptions_dir>
-The TSV file should have two columns: the first column is the part name (case-insensitive), and the second column is the description. 
-Each line in the TSV file should be tab-separated."""
+    python add_parts_descriptions.py <ldraw_file | ldraw_models_dir> <ldraw_file_with_descriptions | ldraw_files_with_descriptions_dir>
+The database file (ldraw-info.db, in the same directory as this script) must contain a table PARTS_DESCRIPTIONS(part, description)."""
 
 import os
+import sqlite3
 import sys
 
 
 PARTS_DESCRIPTIONS={}
 COLOURS_DESCRIPTIONS={}
 
-def cache_parts_descriptions_tsv(tsv_file_path):
+def cache_parts_descriptions_db(db_file_path):
     global PARTS_DESCRIPTIONS
-    with open(tsv_file_path, 'r') as f:
-        for line in f:
-            parts = line.strip().split('\t')
-            if len(parts) >= 2:
-                part_name, description =  parts[0].lower(), parts[1]
-                PARTS_DESCRIPTIONS[part_name] = description
+    conn = sqlite3.connect(db_file_path)
+    try:
+        cursor = conn.execute("SELECT part, description FROM PARTS_DESCRIPTIONS")
+        for part_name, description in cursor:
+            PARTS_DESCRIPTIONS[part_name.lower()] = description
+    finally:
+        conn.close()
 
 def cache_colours_descriptions(ldconfig_file_path):
     global COLOURS_DESCRIPTIONS
@@ -85,13 +86,13 @@ def main():
     ldraw_src_path = sys.argv[1]
     output_dest_path = sys.argv[2]
 
-    # TSV must reside in the upper directory relative to the script
-    tsv_file_path = os.path.join(os.path.dirname(__file__), "..", "part-descriptions-full.tsv")
+    # DB file must reside in the same directory as the script
+    db_file_path = os.path.join(os.path.dirname(__file__), "ldraw-info.db")
     # LDConfig file must reside in the ldraw/ directory, one level up from the script directory
     ldconfig_file_path = os.path.join(os.path.dirname(__file__), "..", "ldraw", "LDConfig.ldr")
 
-    if not os.path.isfile(tsv_file_path):
-        print(f"Error: File '{tsv_file_path}' does not exist.")
+    if not os.path.isfile(db_file_path):
+        print(f"Error: File '{db_file_path}' does not exist.")
         sys.exit(1)
 
     if not os.path.exists(ldraw_src_path):
@@ -99,8 +100,8 @@ def main():
         sys.exit(1)
 
     # Print status messages to stderr to avoid interfering with the output file
-    print(f"Loading parts descriptions from '{tsv_file_path}' and colours from '{ldconfig_file_path}'...", file=sys.stderr)
-    cache_parts_descriptions_tsv(tsv_file_path)
+    print(f"Loading parts descriptions from '{db_file_path}' and colours from '{ldconfig_file_path}'...", file=sys.stderr)
+    cache_parts_descriptions_db(db_file_path)
     cache_colours_descriptions(ldconfig_file_path)
     
     # Determine the output file or directory path

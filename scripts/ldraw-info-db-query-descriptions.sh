@@ -67,19 +67,32 @@ SQL
     exit 1
 }
 
+# FTS5 rejects MATCH inside an OR expression, so the constraint cannot be made
+# conditional in SQL. An empty query omits it entirely, along with the rank
+# ordering that only a MATCH can feed.
+function fts_match_clause() {
+    local table="$1"
+    local query="$2"
+
+    [[ -z "$query" ]] && return
+    # Unquoted on purpose: quoting the RHS would keep the escaping backslashes.
+    local sql_query=${query//\'/\'\'}
+    printf "AND %s MATCH '%s'\n    ORDER BY rank" "$table" "$sql_query"
+}
+
 function query_part_descriptions() {
     local max_results="$1"
     local where_clause="$2"
     local query="$3"
-    local sql_query=${query//\'/\'\'}
+    local match_clause
+    match_clause="$(fts_match_clause PARTS_DESCRIPTIONS_FTS "$query")"
 
     sqlite3 -$format "$DB" \
 <<SQL
     SELECT part, description
     FROM PARTS_DESCRIPTIONS_FTS
     WHERE $where_clause
-    AND ('$sql_query' = '' OR PARTS_DESCRIPTIONS_FTS MATCH '$sql_query')
-    ORDER BY rank
+    $match_clause
     LIMIT $max_results;
 SQL
 }
@@ -88,32 +101,32 @@ function query_model_descriptions() {
     local max_results="$1"
     local where_clause="$2"
     local query="$3"
-    local sql_query=${query//\'/\'\'}
+    local match_clause
+    match_clause="$(fts_match_clause MODELS_DESCRIPTIONS_FTS "$query")"
 
     sqlite3 -$format "$DB" \
 <<SQL
     SELECT model, description
     FROM MODELS_DESCRIPTIONS_FTS
     WHERE $where_clause
-    AND ('$sql_query' = '' OR MODELS_DESCRIPTIONS_FTS MATCH '$sql_query')
-    ORDER BY rank
+    $match_clause
     LIMIT $max_results;
 SQL
 }
 
 function query_submodel_descriptions() {
- local max_results="$1"
- local where_clause="$2"
- local query="$3"
- local sql_query=${query//\'/\'\'}
+    local max_results="$1"
+    local where_clause="$2"
+    local query="$3"
+    local match_clause
+    match_clause="$(fts_match_clause SUBMODELS_DESCRIPTIONS_FTS "$query")"
 
     sqlite3 -$format "$DB" \
 <<SQL
     SELECT model, submodel, description
     FROM SUBMODELS_DESCRIPTIONS_FTS
     WHERE $where_clause
-    AND ('$sql_query' = '' OR SUBMODELS_DESCRIPTIONS_FTS MATCH '$sql_query')
-    ORDER BY rank
+    $match_clause
     LIMIT $max_results;
 SQL
 }
@@ -145,7 +158,7 @@ while [[ $# -gt 0 ]]; do
         --where)
             where_clause="$2"
             # Add quotes where required for SQL
-            where_clause="$(printf '"%s"=%s' "${where_clause%%=*}" "'${where_clause#*=}'")"
+            where_clause="$(printf '"%s"=%s' "${where_clause%%=*}" "lower('${where_clause#*=}')")"
             shift 2
             ;;
         --max-results)
