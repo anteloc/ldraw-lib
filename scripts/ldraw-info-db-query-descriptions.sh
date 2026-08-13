@@ -7,13 +7,13 @@ parent_dir="$(dirname "$scripts_dir")"
 DB="$scripts_dir/ldraw-info.db"
 
 function usage() {
-    echo "Usage: $(basename $0) <--parts | --models | --submodels> [--max-results <number>] [--where "column=value"] --query <'query'>"
+    echo "Usage: $(basename $0) <--parts | --models | --submodels> [--max-results <number>] [--where "column=value"] [--query <'query'>"]
     echo "FTS (full-text-search) descriptions for parts, models and submodels from ldraw-info.db"
     echo " --parts: matches query against parts descriptions"
     echo " --models: matches query against models descriptions"
     echo " --submodels: matches query against submodels descriptions"
     echo " --where 'column=value': both column and value *must* be unquoted, used to build a WHERE clause to filter by specific columns (e.g. --where \"model=41606-1.mpd\")"
-    echo " --max-results <number>: limits the number of results returned (default: 10)"
+    echo " --max-results <number>: limits the number of results returned (default: 10), -1 no limit"
     echo " --query <'query'>: FTS query string to search for (enclose in single quotes), in SQLite FTS5 syntax"
     echo ""
     echo "Example: $(basename $0) --parts --max-results 10 --query 'star'"
@@ -77,7 +77,7 @@ function query_part_descriptions() {
     SELECT part, description
     FROM PARTS_DESCRIPTIONS_FTS
     WHERE $where_clause
-    AND PARTS_DESCRIPTIONS_FTS MATCH '$sql_query'
+    AND ('$sql_query' = '' OR PARTS_DESCRIPTIONS_FTS MATCH '$sql_query')
     ORDER BY rank
     LIMIT $max_results;
 SQL
@@ -119,6 +119,7 @@ SQL
 
 max_results=10
 where_clause="1=1"
+query=""
 
 # Parse command line arguments
 while [[ $# -gt 0 ]]; do
@@ -143,6 +144,8 @@ while [[ $# -gt 0 ]]; do
             ;;
         --max-results)
             max_results="$2"
+            # if unlimited, set to a high number, more than parts and models could be, for SQLite LIMIT
+            [ "$max_results" -lt 0 ] && max_results=1000000
             shift 2
             ;;
         --query)
@@ -157,8 +160,8 @@ while [[ $# -gt 0 ]]; do
 done
 
 # Validate required arguments
-if [[ -z "$query_type" || -z "$query" ]]; then
-    echo "Error: --query and one of --parts, --models or --submodels must be specified."
+if [[ -z "$query_type" ]]; then
+    echo "Error: one of --parts, --models or --submodels must be specified."
     usage
 fi
 
