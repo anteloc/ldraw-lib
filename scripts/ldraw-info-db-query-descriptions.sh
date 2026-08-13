@@ -7,13 +7,14 @@ parent_dir="$(dirname "$scripts_dir")"
 DB="$scripts_dir/ldraw-info.db"
 
 function usage() {
-    echo "Usage: $(basename $0) <--parts | --models | --submodels> [--max-results <number>] [--where "column=value"] [--query <'query'>"]
+    echo "Usage: $(basename $0) <--parts | --models | --submodels> [--format <format>] [--max-results <number>] [--where "column=value"] [--query <'query'>"]
     echo "FTS (full-text-search) descriptions for parts, models and submodels from ldraw-info.db"
     echo " --parts: matches query against parts descriptions"
     echo " --models: matches query against models descriptions"
     echo " --submodels: matches query against submodels descriptions"
+    echo " --format <format>: output format, same as sqlite3 CLI, one of: ascii|box|column|csv|html|json|line|list|markdown|quote|table|tabs (default: json)"
     echo " --where 'column=value': both column and value *must* be unquoted, used to build a WHERE clause to filter by specific columns (e.g. --where \"model=41606-1.mpd\")"
-    echo " --max-results <number>: limits the number of results returned (default: 10), -1 no limit"
+    echo " --max-results <number>: limits the number of results returned (default: 10, no-limit: -1)"
     echo " --query <'query'>: FTS query string to search for (enclose in single quotes), in SQLite FTS5 syntax"
     echo ""
     echo "Example: $(basename $0) --parts --max-results 10 --query 'star'"
@@ -72,7 +73,7 @@ function query_part_descriptions() {
     local query="$3"
     local sql_query=${query//\'/\'\'}
 
-    sqlite3 -json "$DB" \
+    sqlite3 -$format "$DB" \
 <<SQL
     SELECT part, description
     FROM PARTS_DESCRIPTIONS_FTS
@@ -89,12 +90,12 @@ function query_model_descriptions() {
     local query="$3"
     local sql_query=${query//\'/\'\'}
 
-    sqlite3 -json "$DB" \
+    sqlite3 -$format "$DB" \
 <<SQL
     SELECT model, description
     FROM MODELS_DESCRIPTIONS_FTS
     WHERE $where_clause
-    AND MODELS_DESCRIPTIONS_FTS MATCH '$sql_query'
+    AND ('$sql_query' = '' OR MODELS_DESCRIPTIONS_FTS MATCH '$sql_query')
     ORDER BY rank
     LIMIT $max_results;
 SQL
@@ -106,17 +107,18 @@ function query_submodel_descriptions() {
  local query="$3"
  local sql_query=${query//\'/\'\'}
 
-    sqlite3 -json "$DB" \
+    sqlite3 -$format "$DB" \
 <<SQL
     SELECT model, submodel, description
     FROM SUBMODELS_DESCRIPTIONS_FTS
     WHERE $where_clause
-    AND SUBMODELS_DESCRIPTIONS_FTS MATCH '$sql_query'
+    AND ('$sql_query' = '' OR SUBMODELS_DESCRIPTIONS_FTS MATCH '$sql_query')
     ORDER BY rank
     LIMIT $max_results;
 SQL
 }
 
+format="json"
 max_results=10
 where_clause="1=1"
 query=""
@@ -135,6 +137,10 @@ while [[ $# -gt 0 ]]; do
         --submodels)
             query_type="submodels"
             shift
+            ;;
+        --format)
+            format="$2"
+            shift 2
             ;;
         --where)
             where_clause="$2"
