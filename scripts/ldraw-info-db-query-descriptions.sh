@@ -158,7 +158,7 @@ while [[ $# -gt 0 ]]; do
         --where)
             where_clause="$2"
             # Add quotes where required for SQL
-            where_clause="$(printf '"%s"=%s' "${where_clause%%=*}" "lower('${where_clause#*=}')")"
+            where_clause="$(printf 'lower("%s")=lower(%s)' "${where_clause%%=*}" "'${where_clause#*=}'")"
             shift 2
             ;;
         --max-results)
